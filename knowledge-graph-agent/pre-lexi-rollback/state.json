@@ -1,0 +1,94 @@
+{
+  "lastRunAt": "2026-04-26T22:13:12.475Z",
+  "reviewCursor": 10,
+  "seenArticles": {
+    "93a049d060bc295b": {
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/tpus-8t-8i-cloud-next/",
+      "title": "We're launching two specialized TPUs for the agentic era.",
+      "publishedAt": "Wed, 22 Apr 2026 12:00:00 +0000",
+      "seenAt": "2026-04-26T22:13:12.475Z"
+    },
+    "ea9543e1b1187c9a": {
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/what-is-a-tpu/",
+      "title": "Here’s how our TPUs power increasingly demanding AI workloads.",
+      "publishedAt": "Thu, 23 Apr 2026 12:00:00 +0000",
+      "seenAt": "2026-04-26T22:13:12.475Z"
+    },
+    "6e6cdaf0d6010b44": {
+      "url": "https://openai.com/index/introducing-gpt-5-5",
+      "title": "Introducing GPT-5.5",
+      "publishedAt": "Thu, 23 Apr 2026 11:00:00 GMT",
+      "seenAt": "2026-04-26T22:13:12.475Z"
+    },
+    "cfbb97f4e142ddd9": {
+      "url": "https://openai.com/index/gpt-5-5-system-card",
+      "title": "GPT-5.5 System Card",
+      "publishedAt": "Thu, 23 Apr 2026 11:00:00 GMT",
+      "seenAt": "2026-04-26T22:13:12.475Z"
+    },
+    "8ffed2502175348b": {
+      "url": "https://www.anthropic.com/news/claude-opus-4-7",
+      "title": "Introducing Claude Opus 4.7",
+      "publishedAt": null,
+      "seenAt": "2026-04-26T22:13:12.475Z"
+    },
+    "afabafae073055fd": {
+      "url": "https://www.anthropic.com/news/claude-design-anthropic-labs",
+      "title": "Introducing Claude Design by Anthropic Labs",
+      "publishedAt": null,
+      "seenAt": "2026-04-26T22:13:12.475Z"
+    }
+  },
+  "nodeReviews": {
+    "a2a": {
+      "lastReviewedAt": "2026-04-26T22:13:12.475Z",
+      "status": "keep",
+      "reason": "No source material addresses A2A. Definition remains accurate as written."
+    },
+    "abstraction": {
+      "lastReviewedAt": "2026-04-26T22:13:12.475Z",
+      "status": "keep",
+      "reason": "No source material addresses this conceptual term. Definition remains appropriate."
+    },
+    "agent": {
+      "lastReviewedAt": "2026-04-26T22:13:12.475Z",
+      "status": "keep",
+      "reason": "No source material contradicts or materially updates this definition."
+    },
+    "agent-governance": {
+      "lastReviewedAt": "2026-04-26T22:13:12.475Z",
+      "status": "keep",
+      "reason": "No source material addresses agent governance or the EU AI Act timeline. Definition stands."
+    },
+    "agent-washing": {
+      "lastReviewedAt": "2026-04-26T22:13:12.475Z",
+      "status": "keep",
+      "reason": "No source material addresses this term. Definition remains accurate."
+    },
+    "agentic-engineering": {
+      "lastReviewedAt": "2026-04-26T22:13:12.475Z",
+      "status": "keep",
+      "reason": "No source material addresses Karpathy's coinage or this term's definition."
+    },
+    "agentic-harness": {
+      "lastReviewedAt": "2026-04-26T22:13:12.475Z",
+      "status": "keep",
+      "reason": "No source material addresses agentic harnesses or the Claude Code system prompt leak."
+    },
+    "ai-accelerator": {
+      "lastReviewedAt": "2026-04-26T22:13:12.475Z",
+      "status": "keep",
+      "reason": "The Google TPU sources confirm that specialized AI accelerator chips (TPUs) are purpose-built for AI workloads, consistent with the existing definition. The 'agentic era' framing is a marketing angle but does not require a definitional change."
+    },
+    "ai-assistant": {
+      "lastReviewedAt": "2026-04-26T22:13:12.475Z",
+      "status": "keep",
+      "reason": "No source material addresses this term directly."
+    },
+    "ai-red-teaming": {
+      "lastReviewedAt": "2026-04-26T22:13:12.475Z",
+      "status": "keep",
+      "reason": "The Claude Opus 4.7 announcement references a Cyber Verification Program for legitimate red-teaming use cases, which is consistent with the existing definition but does not materially change it."
+    }
+  }
+}

@@ -1,0 +1,540 @@
+{
+  "meta": {
+    "generatedAt": "2026-04-26T22:56:20.734Z",
+    "entryCount": 15,
+    "note": "Lexi-managed Tier 2 longlist — terms under observation, awaiting evidence to support promotion to the graph (Tier 1)."
+  },
+  "entries": [
+    {
+      "id": "tpu",
+      "label": "TPU (Tensor Processing Unit)",
+      "workingDef": "Google's custom application-specific integrated circuits (ASICs) designed to accelerate machine learning workloads, increasingly specialized for both training large models and serving fast agentic inference.",
+      "clusters": [
+        "technical",
+        "agentic"
+      ],
+      "suggestedRels": [
+        "inference",
+        "training",
+        "infrastructure",
+        "google-co",
+        "agent"
+      ],
+      "sources": [
+        {
+          "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/tpus-8t-8i-cloud-next/",
+          "domain": "blog.google",
+          "title": "We're launching two specialized TPUs for the agentic era.",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Wed, 22 Apr 2026 12:00:00 +0000",
+          "firstSeen": "2026-04-26T22:40:25.832Z"
+        },
+        {
+          "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/what-is-a-tpu/",
+          "domain": "blog.google",
+          "title": "Here’s how our TPUs power increasingly demanding AI workloads.",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Thu, 23 Apr 2026 12:00:00 +0000",
+          "firstSeen": "2026-04-26T22:40:25.832Z"
+        }
+      ],
+      "sourceCount": 2,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-04-26T22:40:25.832Z",
+      "dateLastSeen": "2026-04-26T22:56:20.734Z",
+      "sz": 14,
+      "nodeType": "product",
+      "proposalReason": "The article introduces two new TPU variants (8i and 8t) purpose-built for the agentic era, making TPU a distinct trackable product category with clear relevance to agentic infrastructure."
+    },
+    {
+      "id": "ai-inference-chip",
+      "label": "AI Inference Chip",
+      "workingDef": "Specialized silicon designed to run AI model inference at high speed and low latency, particularly to support responsive agentic workflows requiring rapid multi-step reasoning and execution.",
+      "clusters": [
+        "technical",
+        "agentic"
+      ],
+      "suggestedRels": [
+        "inference",
+        "latency",
+        "agent",
+        "edge-ai",
+        "infrastructure"
+      ],
+      "sources": [
+        {
+          "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/tpus-8t-8i-cloud-next/",
+          "domain": "blog.google",
+          "title": "We're launching two specialized TPUs for the agentic era.",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Wed, 22 Apr 2026 12:00:00 +0000",
+          "firstSeen": "2026-04-26T22:40:25.832Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-04-26T22:40:25.832Z",
+      "dateLastSeen": "2026-04-26T22:56:20.734Z",
+      "sz": 14,
+      "proposalReason": "TPU 8i is explicitly framed as an inference-optimized chip for agentic workloads, introducing a meaningful hardware category distinct from training chips and worth tracking as agentic infrastructure matures."
+    },
+    {
+      "id": "ai-training-chip",
+      "label": "AI Training Chip",
+      "workingDef": "Specialized silicon optimized for the memory-intensive and compute-intensive process of training large AI models, offering massive unified memory pools to accommodate frontier-scale model complexity.",
+      "clusters": [
+        "technical",
+        "models"
+      ],
+      "suggestedRels": [
+        "training",
+        "infrastructure",
+        "frontier-model",
+        "parameters",
+        "google-co"
+      ],
+      "sources": [
+        {
+          "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/tpus-8t-8i-cloud-next/",
+          "domain": "blog.google",
+          "title": "We're launching two specialized TPUs for the agentic era.",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Wed, 22 Apr 2026 12:00:00 +0000",
+          "firstSeen": "2026-04-26T22:40:25.832Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-04-26T22:40:25.832Z",
+      "dateLastSeen": "2026-04-26T22:56:20.734Z",
+      "sz": 14,
+      "proposalReason": "TPU 8t is described as optimized for training even the most complex models on a single massive memory pool, representing a distinct and trackable hardware category alongside inference chips."
+    },
+    {
+      "id": "purpose-built-ai-infrastructure",
+      "label": "Purpose-Built AI Infrastructure",
+      "workingDef": "The full-stack design philosophy of co-optimizing custom silicon, networking, data centers, and energy systems specifically for AI workloads rather than repurposing general-purpose computing infrastructure.",
+      "clusters": [
+        "agentic",
+        "technical"
+      ],
+      "suggestedRels": [
+        "infrastructure",
+        "agent",
+        "latency",
+        "cost",
+        "google-co"
+      ],
+      "sources": [
+        {
+          "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/tpus-8t-8i-cloud-next/",
+          "domain": "blog.google",
+          "title": "We're launching two specialized TPUs for the agentic era.",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Wed, 22 Apr 2026 12:00:00 +0000",
+          "firstSeen": "2026-04-26T22:40:25.832Z"
+        },
+        {
+          "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/what-is-a-tpu/",
+          "domain": "blog.google",
+          "title": "Here’s how our TPUs power increasingly demanding AI workloads.",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Thu, 23 Apr 2026 12:00:00 +0000",
+          "firstSeen": "2026-04-26T22:56:20.734Z"
+        }
+      ],
+      "sourceCount": 2,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-04-26T22:40:25.832Z",
+      "dateLastSeen": "2026-04-26T22:56:20.734Z",
+      "sz": 14,
+      "proposalReason": "The article explicitly frames Google's approach as 'full-stack purpose-built infrastructure' spanning chips to data centers and energy, a distinct and recurring framing concept in the AI infrastructure landscape."
+    },
+    {
+      "id": "ai-accelerator",
+      "label": "AI Accelerator",
+      "workingDef": "Specialized hardware chip designed to accelerate AI/ML computations, including matrix multiplications and tensor operations, enabling faster and more efficient model training and inference than general-purpose CPUs or GPUs.",
+      "clusters": [
+        "technical"
+      ],
+      "suggestedRels": [
+        "inference",
+        "training",
+        "infrastructure",
+        "tpu",
+        "edge-ai",
+        "parameters"
+      ],
+      "sources": [
+        {
+          "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/what-is-a-tpu/",
+          "domain": "blog.google",
+          "title": "Here’s how our TPUs power increasingly demanding AI workloads.",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Thu, 23 Apr 2026 12:00:00 +0000",
+          "firstSeen": "2026-04-26T22:40:25.832Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-04-26T22:40:25.832Z",
+      "dateLastSeen": "2026-04-26T22:56:20.734Z",
+      "sz": 14,
+      "fullName": "AI Accelerator (custom silicon)",
+      "proposalReason": "The article frames TPUs as one instance of the broader 'AI accelerator' category — custom chips built specifically for AI math at scale. This framing term is increasingly important as hardware specialization becomes central to the AI landscape."
+    },
+    {
+      "id": "gpt55",
+      "label": "GPT-5.5",
+      "workingDef": "A frontier language model released by OpenAI, successor in the GPT-5 family following GPT-5.4.",
+      "clusters": [
+        "models",
+        "companies"
+      ],
+      "suggestedRels": [
+        "openai-co",
+        "frontier-model",
+        "proprietary-model",
+        "gpt54"
+      ],
+      "sources": [
+        {
+          "url": "https://openai.com/index/introducing-gpt-5-5",
+          "domain": "openai.com",
+          "title": "Introducing GPT-5.5",
+          "sourceLabel": "OpenAI News",
+          "publishedAt": "Thu, 23 Apr 2026 11:00:00 GMT",
+          "firstSeen": "2026-04-26T22:40:25.832Z"
+        },
+        {
+          "url": "https://openai.com/index/gpt-5-5-system-card",
+          "domain": "openai.com",
+          "title": "GPT-5.5 System Card",
+          "sourceLabel": "OpenAI News",
+          "publishedAt": "Thu, 23 Apr 2026 11:00:00 GMT",
+          "firstSeen": "2026-04-26T22:40:25.832Z"
+        }
+      ],
+      "sourceCount": 2,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-04-26T22:40:25.832Z",
+      "dateLastSeen": "2026-04-26T22:56:20.734Z",
+      "sz": 14,
+      "fullName": "GPT-5.5 (OpenAI)",
+      "nodeType": "product",
+      "proposalReason": "New named model release from OpenAI not yet in the graph; distinct from the already-canonical GPT-5.4 entry and worth tracking as a new product node."
+    },
+    {
+      "id": "system-card",
+      "label": "System Card",
+      "workingDef": "A structured documentation artifact published alongside an AI model release that details its capabilities, limitations, safety evaluations, red-teaming results, and deployment guidelines.",
+      "clusters": [
+        "safety",
+        "lifecycle"
+      ],
+      "suggestedRels": [
+        "frontier-model",
+        "evals",
+        "red-teaming",
+        "responsible-scaling-policy",
+        "openai-co",
+        "alignment",
+        "guardrails"
+      ],
+      "sources": [
+        {
+          "url": "https://openai.com/index/gpt-5-5-system-card",
+          "domain": "openai.com",
+          "title": "GPT-5.5 System Card",
+          "sourceLabel": "OpenAI News",
+          "publishedAt": "Thu, 23 Apr 2026 11:00:00 GMT",
+          "firstSeen": "2026-04-26T22:40:25.832Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-04-26T22:40:25.832Z",
+      "dateLastSeen": "2026-04-26T22:56:20.734Z",
+      "sz": 14,
+      "proposalReason": "'System Card' is a widely used and consequential term in AI safety and model release governance, not yet in the graph or longlist. This article is a primary example of the artifact."
+    },
+    {
+      "id": "self-verification",
+      "label": "Self-Verification",
+      "workingDef": "A model's ability to check and validate its own outputs before reporting back, catching logical faults during planning or execution without human intervention.",
+      "clusters": [
+        "agentic",
+        "safety",
+        "technical"
+      ],
+      "suggestedRels": [
+        "hallucination",
+        "evals",
+        "stopping-criterion-failure",
+        "silent-failure",
+        "planning"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/claude-opus-4-7",
+          "domain": "anthropic.com",
+          "title": "Introducing Claude Opus 4.7",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-04-26T22:40:25.832Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-04-26T22:40:25.832Z",
+      "dateLastSeen": "2026-04-26T22:56:20.734Z",
+      "sz": 14,
+      "fullName": "Self-Verification (Model Output Verification)",
+      "proposalReason": "Opus 4.7 is explicitly described as 'devises ways to verify its own outputs before reporting back' — this is a distinct and recurring capability concept in agentic AI worth tracking."
+    },
+    {
+      "id": "cyber-verification-program",
+      "label": "Cyber Verification Program",
+      "workingDef": "Anthropic's credentialing program allowing vetted security professionals to access models with elevated cyber capabilities for legitimate purposes such as vulnerability research, penetration testing, and red teaming.",
+      "clusters": [
+        "security",
+        "safety",
+        "landscape"
+      ],
+      "suggestedRels": [
+        "penetration-testing",
+        "red-teaming",
+        "ai-red-teaming",
+        "guardrails",
+        "anthropic-co",
+        "responsible-scaling-policy"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/claude-opus-4-7",
+          "domain": "anthropic.com",
+          "title": "Introducing Claude Opus 4.7",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-04-26T22:40:25.832Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-04-26T22:40:25.832Z",
+      "dateLastSeen": "2026-04-26T22:56:20.734Z",
+      "sz": 14,
+      "fullName": "Cyber Verification Program (Anthropic)",
+      "nodeType": "initiative",
+      "proposalReason": "A novel, named program introduced in this article representing a new access-control mechanism for sensitive AI capabilities — distinct from existing graph terms and worth observing."
+    },
+    {
+      "id": "differential-capability-reduction",
+      "label": "Differential Capability Reduction",
+      "workingDef": "A training-time technique to selectively suppress specific dangerous capabilities (e.g., advanced cyber abilities) in a model while preserving general performance, allowing safer deployment at lower capability tiers.",
+      "clusters": [
+        "safety",
+        "technical",
+        "models"
+      ],
+      "suggestedRels": [
+        "alignment",
+        "responsible-scaling-policy",
+        "asl-4",
+        "guardrails",
+        "training",
+        "frontier-model"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/claude-opus-4-7",
+          "domain": "anthropic.com",
+          "title": "Introducing Claude Opus 4.7",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-04-26T22:40:25.832Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-04-26T22:40:25.832Z",
+      "dateLastSeen": "2026-04-26T22:56:20.734Z",
+      "sz": 14,
+      "proposalReason": "The article explicitly describes 'efforts to differentially reduce these capabilities' during training — a novel safety concept not represented in the current graph."
+    },
+    {
+      "id": "long-horizon-autonomy",
+      "label": "Long-Horizon Autonomy",
+      "workingDef": "An AI model's capacity to execute complex, multi-step tasks coherently over extended periods without human intervention, maintaining consistency and pushing through obstacles across long runs.",
+      "clusters": [
+        "agentic",
+        "autonomy",
+        "technical"
+      ],
+      "suggestedRels": [
+        "autonomous-agent",
+        "autonomy-spectrum",
+        "task-decomposition",
+        "planning",
+        "loop",
+        "stopping-criterion-failure",
+        "devin"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/claude-opus-4-7",
+          "domain": "anthropic.com",
+          "title": "Introducing Claude Opus 4.7",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-04-26T22:40:25.832Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-04-26T22:40:25.832Z",
+      "dateLastSeen": "2026-04-26T22:56:20.734Z",
+      "sz": 14,
+      "proposalReason": "Multiple testimonials and the article body specifically highlight 'long-horizon autonomy' as a named capability dimension, making it a distinct trackable concept in the agentic space."
+    },
+    {
+      "id": "claude-design",
+      "label": "Claude Design",
+      "workingDef": "An Anthropic Labs product that lets users collaborate with Claude to create polished visual work including designs, prototypes, slides, and marketing collateral, powered by Claude Opus 4.7 with integrated design system support.",
+      "clusters": [
+        "tools",
+        "agentic",
+        "work"
+      ],
+      "suggestedRels": [
+        "claude-code",
+        "claude-cowork",
+        "handoff-document",
+        "multimodal",
+        "artifact",
+        "research-preview",
+        "anthropic-co"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/claude-design-anthropic-labs",
+          "domain": "anthropic.com",
+          "title": "Introducing Claude Design by Anthropic Labs",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-04-26T22:40:25.832Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-04-26T22:40:25.832Z",
+      "dateLastSeen": "2026-04-26T22:56:20.734Z",
+      "sz": 14,
+      "fullName": "Claude Design (Anthropic Labs)",
+      "nodeType": "product",
+      "proposalReason": "Newly announced Anthropic product with distinct identity and functionality; likely to be referenced frequently in future coverage of AI design tools."
+    },
+    {
+      "id": "design-system-integration",
+      "label": "Design System Integration",
+      "workingDef": "The capability of an AI tool to automatically read and apply a team's existing design system—including colors, typography, and components—from codebases and design files to ensure brand-consistent output across all generated artifacts.",
+      "clusters": [
+        "work",
+        "agentic",
+        "context"
+      ],
+      "suggestedRels": [
+        "claude-design",
+        "grounding",
+        "context-engineering",
+        "artifact",
+        "workflow"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/claude-design-anthropic-labs",
+          "domain": "anthropic.com",
+          "title": "Introducing Claude Design by Anthropic Labs",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-04-26T22:40:25.832Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-04-26T22:40:25.832Z",
+      "dateLastSeen": "2026-04-26T22:56:20.734Z",
+      "sz": 14,
+      "fullName": "Design System Integration (AI-native)",
+      "proposalReason": "Recurring framing concept in the article describing how AI design tools ingest and respect organizational design systems; relevant beyond this single product."
+    },
+    {
+      "id": "handoff-bundle",
+      "label": "Handoff Bundle",
+      "workingDef": "A packaged artifact produced by an AI design tool containing all design specifications and assets needed to pass a completed design to a code-generation agent for implementation, enabling seamless design-to-development transitions.",
+      "clusters": [
+        "work",
+        "agentic",
+        "lifecycle"
+      ],
+      "suggestedRels": [
+        "handoff-document",
+        "claude-design",
+        "claude-code",
+        "artifact",
+        "handoff"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/claude-design-anthropic-labs",
+          "domain": "anthropic.com",
+          "title": "Introducing Claude Design by Anthropic Labs",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-04-26T22:40:25.832Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-04-26T22:40:25.832Z",
+      "dateLastSeen": "2026-04-26T22:56:20.734Z",
+      "sz": 14,
+      "fullName": "Handoff Bundle (Design-to-Code)",
+      "proposalReason": "Distinct operational concept introduced in the article for bridging AI design and AI coding workflows; extends the existing handoff-document concept in a product-specific way."
+    },
+    {
+      "id": "interactive-prototyping",
+      "label": "Interactive Prototyping",
+      "workingDef": "The use of AI to convert static design mockups into shareable, interactive prototypes with animations, voice, video, or 3D elements, without requiring manual code review or engineering involvement.",
+      "clusters": [
+        "work",
+        "tools",
+        "agentic"
+      ],
+      "suggestedRels": [
+        "claude-design",
+        "artifact",
+        "computer-use",
+        "multimodal",
+        "vibe-coding"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/claude-design-anthropic-labs",
+          "domain": "anthropic.com",
+          "title": "Introducing Claude Design by Anthropic Labs",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-04-26T22:40:25.832Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-04-26T22:40:25.832Z",
+      "dateLastSeen": "2026-04-26T22:56:20.734Z",
+      "sz": 14,
+      "fullName": "AI-Assisted Interactive Prototyping",
+      "proposalReason": "Prominent capability described throughout the article as a key use case; represents a distinct concept at the intersection of AI tooling and design workflows likely to recur in coverage."
+    }
+  ]
+}

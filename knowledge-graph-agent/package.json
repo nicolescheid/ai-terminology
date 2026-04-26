@@ -1,0 +1,14 @@
+{
+  "name": "knowledge-graph-agent",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "description": "Watches AI sources, proposes new graph nodes, and reviews definitions against fresh material. Powered by the Claude API.",
+  "main": "run.mjs",
+  "scripts": {
+    "start": "node run.mjs"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.65.0"
+  }
+}

@@ -1,0 +1,706 @@
+window.AGENT_GRAPH_PATCH = {
+  "meta": {
+    "generatedAt": "2026-04-26T22:13:12.475Z",
+    "sourceCount": 6,
+    "note": "Agent-managed overlay for AI Knowledge Graph maintenance."
+  },
+  "nodes": [
+    {
+      "id": "tpu",
+      "label": "TPU",
+      "clusters": [
+        "technical"
+      ],
+      "sz": 14,
+      "def": "Google's custom application-specific integrated circuits (ASICs) designed to accelerate machine learning workloads, including training and inference for large AI models.",
+      "rels": [
+        "inference",
+        "training",
+        "infrastructure",
+        "google-co",
+        "edge-ai"
+      ],
+      "refs": [
+        {
+          "n": 1,
+          "src": "Google AI Blog, Wed, 22 Apr 2026 12:00:00 +0000",
+          "q": "We're launching two specialized TPUs for the agentic era. Google AI Blog"
+        }
+      ],
+      "fullName": "TPU (Tensor Processing Unit)",
+      "nodeType": "product"
+    },
+    {
+      "id": "tpu-8i",
+      "label": "TPU 8i",
+      "clusters": [
+        "technical",
+        "agentic"
+      ],
+      "sz": 14,
+      "def": "Google's inference-optimized TPU chip announced at Cloud Next '26, designed for low-latency agentic AI workloads requiring rapid reasoning, planning, and multi-step execution.",
+      "rels": [
+        "tpu",
+        "inference",
+        "latency",
+        "agent",
+        "planning",
+        "google-co"
+      ],
+      "refs": [
+        {
+          "n": 1,
+          "src": "Google AI Blog, Wed, 22 Apr 2026 12:00:00 +0000",
+          "q": "We're launching two specialized TPUs for the agentic era. Google AI Blog"
+        }
+      ],
+      "fullName": "TPU 8i (Google)",
+      "nodeType": "product"
+    },
+    {
+      "id": "tpu-8t",
+      "label": "TPU 8t",
+      "clusters": [
+        "technical",
+        "models"
+      ],
+      "sz": 14,
+      "def": "Google's training-optimized TPU chip announced at Cloud Next '26, featuring a large unified memory pool capable of running the most complex frontier models on a single chip.",
+      "rels": [
+        "tpu",
+        "training",
+        "frontier-model",
+        "parameters",
+        "google-co"
+      ],
+      "refs": [
+        {
+          "n": 1,
+          "src": "Google AI Blog, Wed, 22 Apr 2026 12:00:00 +0000",
+          "q": "We're launching two specialized TPUs for the agentic era. Google AI Blog"
+        }
+      ],
+      "fullName": "TPU 8t (Google)",
+      "nodeType": "product"
+    },
+    {
+      "id": "ai-accelerator",
+      "label": "AI Accelerator",
+      "clusters": [
+        "technical"
+      ],
+      "sz": 14,
+      "def": "Specialized hardware chips—such as GPUs, TPUs, and other ASICs—purpose-built to accelerate AI training and inference workloads more efficiently than general-purpose CPUs.",
+      "rels": [
+        "tpu",
+        "inference",
+        "training",
+        "edge-ai",
+        "nvidia-co",
+        "google-co",
+        "infrastructure"
+      ],
+      "refs": [
+        {
+          "n": 1,
+          "src": "Google AI Blog, Wed, 22 Apr 2026 12:00:00 +0000",
+          "q": "We're launching two specialized TPUs for the agentic era. Google AI Blog"
+        }
+      ],
+      "fullName": "AI Accelerator (custom silicon)"
+    },
+    {
+      "id": "exaflops",
+      "label": "Exaflops",
+      "clusters": [
+        "technical",
+        "models"
+      ],
+      "sz": 14,
+      "def": "A measure of computational throughput equal to one quintillion (10¹⁸) floating-point operations per second. Used to characterize the peak performance of AI accelerators and supercomputing clusters; the newest Google TPU generation delivers 121 exaflops.",
+      "rels": [
+        "tpu",
+        "ai-accelerator",
+        "scaling-laws",
+        "parameters",
+        "latency",
+        "cost"
+      ],
+      "refs": [
+        {
+          "n": 1,
+          "src": "Google AI Blog, Thu, 23 Apr 2026 12:00:00 +0000",
+          "q": "Here’s how our TPUs power increasingly demanding AI workloads. Google AI Blog"
+        }
+      ],
+      "fullName": "Exaflops (Floating Point Operations per Second, ×10¹⁸)"
+    },
+    {
+      "id": "gpt55",
+      "label": "GPT-5.5",
+      "clusters": [
+        "models",
+        "companies"
+      ],
+      "sz": 14,
+      "def": "OpenAI's incremental frontier model release between GPT-5 and future versions, representing a point-release cadence for capability improvements.",
+      "rels": [
+        "openai-co",
+        "frontier-model",
+        "proprietary-model",
+        "reasoning-models",
+        "gpt54"
+      ],
+      "refs": [
+        {
+          "n": 1,
+          "src": "OpenAI News, Thu, 23 Apr 2026 11:00:00 GMT",
+          "q": "Introducing GPT-5.5 OpenAI News"
+        }
+      ],
+      "fullName": "GPT-5.5 (OpenAI)",
+      "nodeType": "product"
+    },
+    {
+      "id": "system-card",
+      "label": "System Card",
+      "clusters": [
+        "safety",
+        "lifecycle"
+      ],
+      "sz": 14,
+      "def": "A structured safety and capability disclosure document released alongside an AI model, summarizing evaluations, known limitations, risk mitigations, and intended use cases.",
+      "rels": [
+        "evals",
+        "responsible-scaling-policy",
+        "red-teaming",
+        "ai-red-teaming",
+        "frontier-model",
+        "alignment",
+        "guardrails"
+      ],
+      "refs": [
+        {
+          "n": 1,
+          "src": "OpenAI News, Thu, 23 Apr 2026 11:00:00 GMT",
+          "q": "GPT-5.5 System Card OpenAI News"
+        }
+      ]
+    },
+    {
+      "id": "differential-capability-reduction",
+      "label": "Differential Capability Reduction",
+      "clusters": [
+        "safety",
+        "models",
+        "technical"
+      ],
+      "sz": 14,
+      "def": "A training technique in which specific capabilities (e.g. advanced cybersecurity skills) are intentionally and selectively reduced in a model without broadly degrading overall performance, used to deploy capable models more safely before full release.",
+      "rels": [
+        "training",
+        "responsible-scaling-policy",
+        "asl-4",
+        "frontier-model",
+        "project-glasswing",
+        "claude-mythos",
+        "alignment",
+        "guardrails"
+      ],
+      "refs": [
+        {
+          "n": 1,
+          "src": "Anthropic Newsroom",
+          "q": "Introducing Claude Opus 4.7 Anthropic Newsroom"
+        }
+      ]
+    },
+    {
+      "id": "cyber-verification-program",
+      "label": "Cyber Verification Program",
+      "clusters": [
+        "security",
+        "safety",
+        "lifecycle"
+      ],
+      "sz": 14,
+      "def": "A gated access program by Anthropic that allows verified security professionals (penetration testers, red teamers, vulnerability researchers) to use otherwise restricted cybersecurity capabilities of Claude models for legitimate purposes.",
+      "rels": [
+        "penetration-testing",
+        "red-teaming",
+        "ai-red-teaming",
+        "project-glasswing",
+        "sandboxing",
+        "blast-radius",
+        "anthropic-co",
+        "guardrails"
+      ],
+      "refs": [
+        {
+          "n": 1,
+          "src": "Anthropic Newsroom",
+          "q": "Introducing Claude Opus 4.7 Anthropic Newsroom"
+        }
+      ],
+      "nodeType": "initiative"
+    },
+    {
+      "id": "self-verification",
+      "label": "Self-Verification",
+      "clusters": [
+        "agentic",
+        "technical",
+        "autonomy"
+      ],
+      "sz": 14,
+      "def": "The capacity of a model or agent to autonomously check and validate its own outputs, reasoning, or tool results before returning them to the user or advancing in a workflow, reducing reliance on external human review.",
+      "rels": [
+        "evals",
+        "human-in-the-loop",
+        "autonomous-agent",
+        "loop",
+        "retry-recovery",
+        "hallucination",
+        "silent-failure",
+        "stopping-criterion-failure",
+        "planning"
+      ],
+      "refs": [
+        {
+          "n": 1,
+          "src": "Anthropic Newsroom",
+          "q": "Introducing Claude Opus 4.7 Anthropic Newsroom"
+        }
+      ]
+    },
+    {
+      "id": "long-horizon-autonomy",
+      "label": "Long-Horizon Autonomy",
+      "clusters": [
+        "agentic",
+        "autonomy",
+        "work"
+      ],
+      "sz": 14,
+      "def": "The ability of an AI agent to sustain coherent, goal-directed execution across extended, multi-step tasks lasting hours without losing context, stalling, or requiring human intervention—distinguished from single-turn or short-loop agentic behavior.",
+      "rels": [
+        "autonomous-agent",
+        "autonomy-spectrum",
+        "loop",
+        "task",
+        "task-decomposition",
+        "planning",
+        "context-entropy",
+        "memory",
+        "goal-drift",
+        "stopping-criterion-failure"
+      ],
+      "refs": [
+        {
+          "n": 1,
+          "src": "Anthropic Newsroom",
+          "q": "Introducing Claude Opus 4.7 Anthropic Newsroom"
+        }
+      ]
+    },
+    {
+      "id": "claude-design",
+      "label": "Claude Design",
+      "clusters": [
+        "tools",
+        "agentic",
+        "work"
+      ],
+      "sz": 14,
+      "def": "An Anthropic Labs product that lets users collaborate with Claude to create visual work including designs, prototypes, slides, and marketing collateral, powered by Claude Opus 4.7 with design system integration and Claude Code handoff.",
+      "rels": [
+        "claude",
+        "claude-code",
+        "anthropic-co",
+        "research-preview",
+        "handoff",
+        "artifact",
+        "workflow",
+        "agentic-engineering"
+      ],
+      "refs": [
+        {
+          "n": 1,
+          "src": "Anthropic Newsroom",
+          "q": "Introducing Claude Design by Anthropic Labs Anthropic Newsroom"
+        }
+      ],
+      "fullName": "Claude Design (Anthropic Labs)",
+      "nodeType": "product"
+    },
+    {
+      "id": "design-system",
+      "label": "Design System",
+      "clusters": [
+        "work",
+        "context",
+        "technical"
+      ],
+      "sz": 14,
+      "def": "A codified collection of colors, typography, components, and design rules that an organization applies consistently across all visual work; in AI-assisted design, can be ingested automatically from codebases and design files to enforce brand consistency.",
+      "rels": [
+        "claude-design",
+        "artifact",
+        "grounding",
+        "persistent-memory",
+        "context-engineering"
+      ],
+      "refs": [
+        {
+          "n": 1,
+          "src": "Anthropic Newsroom",
+          "q": "Introducing Claude Design by Anthropic Labs Anthropic Newsroom"
+        }
+      ]
+    },
+    {
+      "id": "interactive-prototype",
+      "label": "Interactive Prototype",
+      "clusters": [
+        "work",
+        "agentic",
+        "tools"
+      ],
+      "sz": 14,
+      "def": "A clickable, code-powered simulation of a product or feature that can be shared for feedback and user testing, generated from static mockups or prompts without requiring traditional code review or deployment cycles.",
+      "rels": [
+        "claude-design",
+        "claude-code",
+        "artifact",
+        "shipped",
+        "handoff-document",
+        "vibe-coding"
+      ],
+      "refs": [
+        {
+          "n": 1,
+          "src": "Anthropic Newsroom",
+          "q": "Introducing Claude Design by Anthropic Labs Anthropic Newsroom"
+        }
+      ]
+    },
+    {
+      "id": "canva",
+      "label": "Canva",
+      "clusters": [
+        "companies",
+        "tools",
+        "work"
+      ],
+      "sz": 14,
+      "def": "A cloud-based visual design platform that enables non-designers to create professional graphics, presentations, and marketing materials; named integration partner for Claude Design with direct export capability.",
+      "rels": [
+        "claude-design",
+        "artifact",
+        "vertical-ai",
+        "saas"
+      ],
+      "refs": [
+        {
+          "n": 1,
+          "src": "Anthropic Newsroom",
+          "q": "Introducing Claude Design by Anthropic Labs Anthropic Newsroom"
+        }
+      ],
+      "nodeType": "product"
+    },
+    {
+      "id": "full-stack-ai-infrastructure",
+      "label": "Full-Stack AI Infrastructure",
+      "clusters": [
+        "technical",
+        "agentic"
+      ],
+      "sz": 14,
+      "def": "An end-to-end, purpose-built infrastructure approach encompassing custom silicon (TPUs/accelerators), high-speed networking, data centers, and energy systems — optimized holistically for AI workloads rather than assembled from general-purpose components.",
+      "rels": [
+        "infrastructure",
+        "stack",
+        "tpu",
+        "tpu-8i",
+        "tpu-8t",
+        "ai-accelerator",
+        "edge-ai"
+      ],
+      "refs": [
+        {
+          "n": 1,
+          "src": "Google AI Blog, Wed, 22 Apr 2026 12:00:00 +0000",
+          "q": "We're launching two specialized TPUs for the agentic era. Google AI Blog"
+        }
+      ]
+    },
+    {
+      "id": "custom-silicon",
+      "label": "Custom Silicon",
+      "clusters": [
+        "technical"
+      ],
+      "sz": 14,
+      "def": "Processor chips designed from the ground up for a specific workload (e.g., AI matrix math) rather than general-purpose computing; examples include Google TPUs, Apple Neural Engine, and AWS Trainium.",
+      "rels": [
+        "tpu",
+        "ai-accelerator",
+        "inference",
+        "training",
+        "exaflops"
+      ],
+      "refs": [
+        {
+          "n": 1,
+          "src": "Google AI Blog, Thu, 23 Apr 2026 12:00:00 +0000",
+          "q": "Here’s how our TPUs power increasingly demanding AI workloads. Google AI Blog"
+        }
+      ]
+    },
+    {
+      "id": "tensor-processing-unit",
+      "label": "Tensor Processing Unit",
+      "clusters": [
+        "technical"
+      ],
+      "sz": 14,
+      "def": "Google's proprietary class of custom AI accelerators optimized for tensor mathematics underlying neural network training and inference, first deployed internally over a decade ago and now available via Google Cloud.",
+      "rels": [
+        "tpu",
+        "tpu-8i",
+        "tpu-8t",
+        "ai-accelerator",
+        "google-co",
+        "exaflops",
+        "inference",
+        "training"
+      ],
+      "refs": [
+        {
+          "n": 1,
+          "src": "Google AI Blog, Thu, 23 Apr 2026 12:00:00 +0000",
+          "q": "Here’s how our TPUs power increasingly demanding AI workloads. Google AI Blog"
+        }
+      ],
+      "fullName": "Tensor Processing Unit (TPU) Architecture"
+    },
+    {
+      "id": "model-card",
+      "label": "Model Card",
+      "clusters": [
+        "safety",
+        "models",
+        "lifecycle"
+      ],
+      "sz": 14,
+      "def": "A structured document accompanying an AI model that discloses its intended use cases, limitations, evaluation results, and safety properties. Closely related to but distinct from a system card, which is OpenAI's specific term.",
+      "rels": [
+        "system-card",
+        "evals",
+        "alignment",
+        "frontier-model",
+        "responsible-scaling-policy"
+      ],
+      "refs": [
+        {
+          "n": 1,
+          "src": "OpenAI News, Thu, 23 Apr 2026 11:00:00 GMT",
+          "q": "GPT-5.5 System Card OpenAI News"
+        }
+      ]
+    },
+    {
+      "id": "claude-opus-47",
+      "label": "claude-opus-47",
+      "clusters": [
+        "models",
+        "safety"
+      ],
+      "sz": 14,
+      "def": "Anthropic's frontier model released April 2026, featuring advanced software engineering capabilities, improved vision, self-verification of outputs, and differential reduction of cyber capabilities relative to Claude Mythos Preview. The first model deployed with Anthropic's new cyber safeguard detection system.",
+      "rels": [
+        "claude",
+        "anthropic-co",
+        "self-verification",
+        "differential-capability-reduction",
+        "cyber-verification-program",
+        "long-horizon-autonomy",
+        "evals",
+        "frontier-model"
+      ],
+      "refs": [
+        {
+          "n": 1,
+          "src": "Anthropic Newsroom",
+          "q": "Introducing Claude Opus 4.7 Anthropic Newsroom"
+        }
+      ],
+      "fullName": "Claude Opus 4.7",
+      "nodeType": "product"
+    },
+    {
+      "id": "output-verification",
+      "label": "output-verification",
+      "clusters": [
+        "agentic",
+        "safety",
+        "technical"
+      ],
+      "sz": 14,
+      "def": "The capability of an AI model to check and validate its own outputs before reporting results to a user or downstream system, catching logical faults and errors autonomously without human intervention. Distinct from external evals; refers to in-context self-checking during task execution.",
+      "rels": [
+        "self-verification",
+        "evals",
+        "guardrails",
+        "hallucination",
+        "silent-failure",
+        "stopping-criterion-failure",
+        "agent"
+      ],
+      "refs": [
+        {
+          "n": 1,
+          "src": "Anthropic Newsroom",
+          "q": "Introducing Claude Opus 4.7 Anthropic Newsroom"
+        }
+      ],
+      "fullName": "Output Verification"
+    },
+    {
+      "id": "async-workflow",
+      "label": "async-workflow",
+      "clusters": [
+        "agentic",
+        "work",
+        "technical"
+      ],
+      "sz": 14,
+      "def": "A multi-step, non-blocking execution pattern where AI agents process tasks—such as CI/CD pipelines, automations, and long-running jobs—independently and asynchronously, without requiring synchronous human oversight at each step.",
+      "rels": [
+        "workflow",
+        "long-horizon-autonomy",
+        "autonomous-agent",
+        "loop",
+        "tool-use",
+        "orchestrator",
+        "task"
+      ],
+      "refs": [
+        {
+          "n": 1,
+          "src": "Anthropic Newsroom",
+          "q": "Introducing Claude Opus 4.7 Anthropic Newsroom"
+        }
+      ],
+      "fullName": "Async Workflow"
+    },
+    {
+      "id": "implicit-need-detection",
+      "label": "implicit-need-detection",
+      "clusters": [
+        "agentic",
+        "context",
+        "human"
+      ],
+      "sz": 14,
+      "def": "An agent capability to infer and act on unstated user requirements or intentions that are implied by context but not explicitly specified in instructions, going beyond literal task execution to address underlying goals.",
+      "rels": [
+        "task",
+        "context-engineering",
+        "grounding",
+        "planning",
+        "outcome-focused-work",
+        "agent",
+        "progressive-context"
+      ],
+      "refs": [
+        {
+          "n": 1,
+          "src": "Anthropic Newsroom",
+          "q": "Introducing Claude Opus 4.7 Anthropic Newsroom"
+        }
+      ],
+      "fullName": "Implicit Need Detection"
+    },
+    {
+      "id": "handoff-bundle",
+      "label": "Handoff Bundle",
+      "clusters": [
+        "agentic",
+        "work",
+        "tools"
+      ],
+      "sz": 14,
+      "def": "A packaged artifact containing design files, intent, and metadata that can be passed from a design tool directly to an AI coding agent (e.g., Claude Code) for implementation, bridging the design-to-development workflow.",
+      "rels": [
+        "handoff",
+        "handoff-document",
+        "artifact",
+        "claude-code",
+        "claude-design",
+        "workflow",
+        "task-decomposition"
+      ],
+      "refs": [
+        {
+          "n": 1,
+          "src": "Anthropic Newsroom",
+          "q": "Introducing Claude Design by Anthropic Labs Anthropic Newsroom"
+        }
+      ]
+    },
+    {
+      "id": "frontier-design",
+      "label": "Frontier Design",
+      "clusters": [
+        "agentic",
+        "work",
+        "tools"
+      ],
+      "sz": 14,
+      "def": "A category of AI-assisted creative work involving code-powered prototypes with advanced capabilities such as voice, video, shaders, 3D, and built-in AI—representing the bleeding edge of what AI design tools can produce.",
+      "rels": [
+        "claude-design",
+        "vibe-coding",
+        "interactive-prototype",
+        "artifact",
+        "output",
+        "multimodal"
+      ],
+      "refs": [
+        {
+          "n": 1,
+          "src": "Anthropic Newsroom",
+          "q": "Introducing Claude Design by Anthropic Labs Anthropic Newsroom"
+        }
+      ]
+    },
+    {
+      "id": "web-capture",
+      "label": "Web Capture",
+      "clusters": [
+        "tools",
+        "context"
+      ],
+      "sz": 14,
+      "def": "A tool that allows users to grab visual elements directly from live websites to use as input for AI design or prototyping workflows, ensuring prototypes closely match the real product's appearance.",
+      "rels": [
+        "claude-design",
+        "grounding",
+        "computer-use",
+        "artifact",
+        "context-engineering"
+      ],
+      "refs": [
+        {
+          "n": 1,
+          "src": "Anthropic Newsroom",
+          "q": "Introducing Claude Design by Anthropic Labs Anthropic Newsroom"
+        }
+      ],
+      "fullName": "Web Capture Tool"
+    }
+  ],
+  "definitionOverrides": []
+};

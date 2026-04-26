@@ -1,0 +1,25 @@
+# Node dependencies — restored via `npm install`, never committed.
+node_modules/
+
+# Local backups
+*.bak
+
+# Local secrets (none expected, defensive)
+.env
+.env.local
+.env.*.local
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# Build artifacts (no current build step; pre-empting future tooling)
+dist/
+build/
+.cache/
+
+# Cloudflare Wrangler local state, if used
+.wrangler/
