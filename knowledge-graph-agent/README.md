@@ -105,6 +105,38 @@ Each entry's `status` starts at `"unread"`. Edit it to `"read"`, `"actioned"`, o
 
 The contested-cluster term list lives in [`notes.mjs`](./notes.mjs) (`CONTESTED_CLUSTER_TERMS`) and is editable; the spec calls it out as living. Same for the contestation-marker phrases used to detect when a def already acknowledges contestation.
 
+## Operator-drift forcing functions
+
+Per spec §12, the system protects Nicole from gradual disengagement — the most-likely-to-occur failure mode for a daily operational responsibility held by one person, indefinitely. Implemented in [`forcing-functions.mjs`](./forcing-functions.mjs).
+
+### Global pause (skips the whole run)
+
+Two conditions cause the agent to skip the entire candidate-processing block — no article fetching, no API calls, no longlist mutations. A `RUN_PAUSED` note is written so the cause is visible in `notes-for-nicole.json`.
+
+| Trigger | Cleared by |
+|---|---|
+| Any Note for Nicole with `status: "unread"` and `writtenAt > 7 days ago` (spec §12.1) | Edit those notes' status to `read` / `actioned` / `dismissed` |
+| Manager-absent mode: `LEXI_MANAGER_ABSENT=1` env var or `config.managerAbsent: true` | Unset the env var or flag |
+
+### Throughput caps (per-action suppression)
+
+The action that would tip a counter past its cap is dropped; other actions continue. A `THROUGHPUT_CAP_HIT` note is written naming the cap and what was suppressed.
+
+| Cap | Default | Counts | Triggers on |
+|---|---|---|---|
+| `longlistAdditionsPer7d` | 7 | Longlist entries with `dateFirstSeen` in past 7 days | Each `ADD_TO_LONGLIST` (autonomous) |
+| `pendingProposalsBeforePause` | 10 | Proposals at `status: "pending"` | Each new `PROPOSE`-gated action |
+
+Both tunable in [`config.mjs`](./config.mjs) under `throughputCaps`.
+
+### Deferred (need design)
+
+| Feature | Why deferred |
+|---|---|
+| Weekly digest with click-through ack (spec §12.2) | Needs delivery channel decision — email? static dashboard? Cloudflare Worker? — and an ack mechanism. Better as its own session. |
+| Monthly manager review prompts (spec §12.3) | Same delivery channel question. |
+| Auto-trigger of manager-absent mode after 14 days of no Notes reads | Requires read-timestamp tracking, not yet schema'd on note entries. |
+
 ## What it does on each run
 
 1. Fetches recent articles from configured RSS/Atom feeds and HTML index pages.

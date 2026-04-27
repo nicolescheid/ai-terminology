@@ -18,6 +18,16 @@ export default {
   // Lexi phase per lexi-spec.md §8. Drives the permissions matrix in actions.mjs.
   // 0 = hand-run, 1 = batch automation (Nicole-triggered), 2 = autonomous + public.
   phase: Number.parseInt(process.env.LEXI_PHASE || "1", 10),
+  // Manager-absent mode (spec §12). When true, all autonomous publication is
+  // paused; Lexi continues observing but does not mutate the longlist or graph.
+  // Override at runtime with env var LEXI_MANAGER_ABSENT=1.
+  managerAbsent: false,
+  // Throughput caps (spec §12.4). Tunable. Cap-hit suppresses the offending
+  // action and writes a THROUGHPUT_CAP_HIT note to Notes for Nicole.
+  throughputCaps: {
+    longlistAdditionsPer7d: 7,
+    pendingProposalsBeforePause: 10
+  },
   model: process.env.ANTHROPIC_MODEL || "claude-sonnet-4-6",
   maxTokensPerCall: 16000,
   maxArticlesPerRun: 6,

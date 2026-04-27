@@ -7,6 +7,7 @@ import Anthropic from "@anthropic-ai/sdk";
 import { ACTIONS, GATES, resolveGate } from "./actions.mjs";
 import { createLogger, promptVersion } from "./logger.mjs";
 import { ENTRY_TYPES, buildNote, detectContestedOmission } from "./notes.mjs";
+import { detectGlobalPauseReasons, checkThroughputCap } from "./forcing-functions.mjs";
 
 const DEFAULT_STATE = {
   lastRunAt: null,
@@ -130,7 +131,17 @@ async function runMain(args, config, logger) {
   });
 
   const mergedNodes = mergeNodes(graph.nodes, patch);
-  const articles = await collectArticles(config, state, args);
+
+  // Spec §12 forcing functions. Detect global pause conditions BEFORE doing
+  // anything expensive (fetching articles, calling Claude). If paused, the run
+  // becomes a no-op for publication: state, longlist, and proposals are not
+  // mutated; Lexi writes a RUN_PAUSED note and exits cleanly. The cause must
+  // be cleared (Notes read/actioned, manager-absent disabled) before the next
+  // run will resume normal operation.
+  const pauseReasons = detectGlobalPauseReasons(notes, config);
+  const paused = pauseReasons.length > 0;
+
+  const articles = paused ? [] : await collectArticles(config, state, args);
   const report = {
     generatedAt: new Date().toISOString(),
     model: config.model,
@@ -147,12 +158,33 @@ async function runMain(args, config, logger) {
     notes: []
   };
 
+  // If pause conditions are active, surface them in the report and emit a
+  // single RUN_PAUSED note so the cause is visible when Nicole next checks
+  // Notes for Nicole. The actual pause is implemented above (articles=[]),
+  // which causes the candidate-processing block below to be a no-op.
+  if (paused) {
+    const summary = pauseReasons.map(r => r.type).join(", ");
+    report.notes.push(`Run paused (${summary}). No articles fetched, no candidates routed, no proposals queued.`);
+    notes.entries.push(buildNote({
+      type: ENTRY_TYPES.RUN_PAUSED,
+      runId: logger.runId,
+      phase: config.phase,
+      writtenAt: report.generatedAt,
+      subject: `Lexi run paused: ${summary}`,
+      details: pauseReasons.map(r => r.details).join(" "),
+      evidence: { pauseReasons },
+      suggestedAction: pauseReasons.some(r => r.type === "unread_notes_over_7d")
+        ? "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+        : "Disable manager-absent mode (unset LEXI_MANAGER_ABSENT or set config.managerAbsent to false) to resume normal operation."
+    }));
+  }
+
   const apiKey = process.env.ANTHROPIC_API_KEY;
-  if (!apiKey) {
+  if (!apiKey && !paused) {
     report.notes.push("ANTHROPIC_API_KEY is not set. The agent fetched sources and updated state, but skipped model-powered harvesting and definition review.");
   }
 
-  if (!articles.length) {
+  if (!articles.length && !paused) {
     report.notes.push("No new articles were available from the configured sources.");
   }
 
@@ -163,6 +195,34 @@ async function runMain(args, config, logger) {
   // (default-deny per spec §5, also logged to report.notes for surfacing).
   const route = async (action, target, payload, reason, source, onAutonomous) => {
     const gate = resolveGate(action, config.phase);
+
+    // Spec §12.4: throughput cap suppression. Per-action — only the action
+    // that would tip a counter past its cap is dropped; other actions still
+    // process. A THROUGHPUT_CAP_HIT note is written so Nicole sees what
+    // didn't happen.
+    const capHit = checkThroughputCap(action, longlist, proposals, gate, config.throughputCaps);
+    if (capHit) {
+      notes.entries.push(buildNote({
+        type: ENTRY_TYPES.THROUGHPUT_CAP_HIT,
+        runId: logger.runId,
+        phase: config.phase,
+        writtenAt: report.generatedAt,
+        subject: `Throughput cap hit: ${capHit.cap} (limit ${capHit.limit}, current ${capHit.current})`,
+        details: capHit.details,
+        evidence: { action, target, gate, ...capHit, suppressedReason: reason, source },
+        suggestedAction: capHit.cap === "longlistAdditionsPer7d"
+          ? "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+          : "Approve or reject the oldest pending proposals so Lexi can resume queueing new ones."
+      }));
+      await logger.action({
+        action, source, gate,
+        outcome: "suppressed_by_cap",
+        target, payload, reason,
+        errorMessage: capHit.details
+      });
+      return false;
+    }
+
     let outcome;
     let errorMessage = null;
     try {
@@ -434,12 +494,19 @@ async function runMain(args, config, logger) {
   const pendingTotal = proposals.meta.pendingCount;
   const notesUnread = notes.meta.unreadCount;
   const notesAddedThisRun = notes.entries.filter(n => n.writtenAt === report.generatedAt).length;
-  console.log(`Processed ${articles.length} article(s) at Phase ${config.phase}.`);
-  console.log(`Longlist: ${longlist.entries.length} entries total (${additions} added this run, ${sourcesAdded}/${updateAttempts} re-sightings landed as new sources, ${rejections} rejected).`);
-  console.log(`Proposals queue: ${queuedThisRun} queued this run, ${pendingTotal} pending total (review at proposals.json).`);
+  if (paused) {
+    console.log(`Run PAUSED at Phase ${config.phase}: ${pauseReasons.map(r => r.type).join(", ")}.`);
+    console.log(`No work performed. See notes-for-nicole.json for the pause-context note + clear the cause to resume.`);
+  } else {
+    console.log(`Processed ${articles.length} article(s) at Phase ${config.phase}.`);
+    console.log(`Longlist: ${longlist.entries.length} entries total (${additions} added this run, ${sourcesAdded}/${updateAttempts} re-sightings landed as new sources, ${rejections} rejected).`);
+    console.log(`Proposals queue: ${queuedThisRun} queued this run, ${pendingTotal} pending total (review at proposals.json).`);
+  }
   console.log(`Notes for Nicole: ${notesAddedThisRun} new this run, ${notesUnread} unread total (review at notes-for-nicole.json).`);
 
   await logger.runEnd({
+    paused,
+    pauseReasons: paused ? pauseReasons : undefined,
     articlesProcessed: articles.length,
     longlistTotal: longlist.entries.length,
     longlistAddedThisRun: additions,

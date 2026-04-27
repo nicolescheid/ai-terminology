@@ -22,6 +22,8 @@ export const ENTRY_TYPES = Object.freeze({
   TRUSTED_SOURCE_PROPOSAL: "trusted_source_proposal",   // §6.6 — needs trusted-source mechanism
   NEAR_MISS_WEEK: "near_miss_week",                     // §6.7 — needs self-eval (Phase F)
   DEFAULT_DENY: "default_deny",                         // §6.8 — implemented in Phase D
+  THROUGHPUT_CAP_HIT: "throughput_cap_hit",             // §12.4 — implemented in Phase E
+  RUN_PAUSED: "run_paused",                             // §12.1 — implemented in Phase E (informational; the unread notes themselves are the trigger)
   DISCRETIONARY: "discretionary"
 });
 
