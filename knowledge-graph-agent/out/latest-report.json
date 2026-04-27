@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-26T22:56:20.734Z",
+  "generatedAt": "2026-04-27T01:07:31.335Z",
   "model": "claude-sonnet-4-6",
   "sourcesConfigured": 4,
   "articlesConsidered": [
@@ -18,17 +18,17 @@
       "publishedAt": "Thu, 23 Apr 2026 12:00:00 +0000"
     },
     {
-      "id": "6e6cdaf0d6010b44",
-      "source": "OpenAI News",
-      "title": "Introducing GPT-5.5",
-      "url": "https://openai.com/index/introducing-gpt-5-5",
-      "publishedAt": "Thu, 23 Apr 2026 11:00:00 GMT"
-    },
-    {
       "id": "cfbb97f4e142ddd9",
       "source": "OpenAI News",
       "title": "GPT-5.5 System Card",
       "url": "https://openai.com/index/gpt-5-5-system-card",
+      "publishedAt": "Thu, 23 Apr 2026 11:00:00 GMT"
+    },
+    {
+      "id": "6e6cdaf0d6010b44",
+      "source": "OpenAI News",
+      "title": "Introducing GPT-5.5",
+      "url": "https://openai.com/index/introducing-gpt-5-5",
       "publishedAt": "Thu, 23 Apr 2026 11:00:00 GMT"
     },
     {
@@ -52,7 +52,7 @@
         "title": "We're launching two specialized TPUs for the agentic era.",
         "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/tpus-8t-8i-cloud-next/"
       },
-      "summary": "Google announces two new specialized TPU chips at Cloud Next '26: TPU 8i optimized for AI inference in agentic workloads, and TPU 8t optimized for training large models. The article frames these as purpose-built infrastructure for the agentic era, emphasizing fast multi-step reasoning and execution for autonomous agents.",
+      "summary": "Google announces two new specialized TPU chips at Cloud Next '26: TPU 8i (optimized for fast agentic inference) and TPU 8t (optimized for training large models on a single memory pool), framed explicitly around the demands of the agentic era.",
       "longlistAdditions": [],
       "longlistUpdates": [
         {
@@ -80,7 +80,7 @@
           "id": "purpose-built-ai-infrastructure",
           "label": "Purpose-Built AI Infrastructure",
           "sourceAdded": false,
-          "sourceCount": 1,
+          "sourceCount": 2,
           "independentSourceCount": 1
         }
       ],
@@ -92,7 +92,7 @@
         "title": "Here’s how our TPUs power increasingly demanding AI workloads.",
         "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/what-is-a-tpu/"
       },
-      "summary": "Google blog post explaining TPUs (Tensor Processing Units) and how they power AI workloads, highlighting the newest generation's 121 exaflops of compute power and double the bandwidth of previous generations. Primarily a product explainer focused on Google's custom AI silicon.",
+      "summary": "Google blog post explaining TPUs (Tensor Processing Units) as custom chips designed for AI workloads, noting the newest generation processes 121 exaflops with double the bandwidth of previous generations. Primarily a promotional/educational piece about Google's custom AI silicon.",
       "longlistAdditions": [],
       "longlistUpdates": [
         {
@@ -103,34 +103,8 @@
           "independentSourceCount": 1
         },
         {
-          "id": "ai-accelerator",
-          "label": "AI Accelerator",
-          "sourceAdded": false,
-          "sourceCount": 1,
-          "independentSourceCount": 1
-        },
-        {
           "id": "purpose-built-ai-infrastructure",
           "label": "Purpose-Built AI Infrastructure",
-          "sourceAdded": true,
-          "sourceCount": 2,
-          "independentSourceCount": 1
-        }
-      ],
-      "rejections": [],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "Introducing GPT-5.5",
-        "url": "https://openai.com/index/introducing-gpt-5-5"
-      },
-      "summary": "OpenAI announces GPT-5.5, a new model release. The article title and URL confirm a re-sighting of the longlist term GPT-5.5.",
-      "longlistAdditions": [],
-      "longlistUpdates": [
-        {
-          "id": "gpt55",
-          "label": "GPT-5.5",
           "sourceAdded": false,
           "sourceCount": 2,
           "independentSourceCount": 1
@@ -144,7 +118,7 @@
         "title": "GPT-5.5 System Card",
         "url": "https://openai.com/index/gpt-5-5-system-card"
       },
-      "summary": "OpenAI published the GPT-5.5 System Card, a formal safety and capability documentation artifact for GPT-5.5. The article materially references both the system card concept and GPT-5.5 as a model, providing additional sourcing for both longlist entries.",
+      "summary": "OpenAI releases a system card for GPT-5.5, a new model in their lineup. The article touches on safety evaluations, model documentation, and the system card format as a transparency mechanism.",
       "longlistAdditions": [],
       "longlistUpdates": [
         {
@@ -167,19 +141,31 @@
     },
     {
       "article": {
-        "title": "Introducing Claude Opus 4.7",
-        "url": "https://www.anthropic.com/news/claude-opus-4-7"
+        "title": "Introducing GPT-5.5",
+        "url": "https://openai.com/index/introducing-gpt-5-5"
       },
-      "summary": "Anthropic announces Claude Opus 4.7, emphasizing long-horizon autonomy, self-verification of outputs, differential capability reduction for cybersecurity, improved multimodal/vision capabilities, and deployment of a Cyber Verification Program for security professionals.",
+      "summary": "OpenAI announces GPT-5.5, a new model release. The article is from OpenAI's official news channel. No excerpt content is available, but the title directly names the model GPT-5.5, which is already on the longlist.",
       "longlistAdditions": [],
       "longlistUpdates": [
         {
-          "id": "long-horizon-autonomy",
-          "label": "Long-Horizon Autonomy",
+          "id": "gpt55",
+          "label": "GPT-5.5",
           "sourceAdded": false,
-          "sourceCount": 1,
+          "sourceCount": 2,
           "independentSourceCount": 1
-        },
+        }
+      ],
+      "rejections": [],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "Introducing Claude Opus 4.7",
+        "url": "https://www.anthropic.com/news/claude-opus-4-7"
+      },
+      "summary": "Claude Opus 4.7 launch article from Anthropic covering advanced software engineering capabilities, long-horizon autonomy, self-verification, differential capability reduction for cyber, and the Cyber Verification Program. Several longlist terms are materially referenced.",
+      "longlistAdditions": [],
+      "longlistUpdates": [
         {
           "id": "self-verification",
           "label": "Self-Verification",
@@ -200,6 +186,13 @@
           "sourceAdded": false,
           "sourceCount": 1,
           "independentSourceCount": 1
+        },
+        {
+          "id": "long-horizon-autonomy",
+          "label": "Long-Horizon Autonomy",
+          "sourceAdded": false,
+          "sourceCount": 1,
+          "independentSourceCount": 1
         }
       ],
       "rejections": [],
@@ -210,7 +203,7 @@
         "title": "Introducing Claude Design by Anthropic Labs",
         "url": "https://www.anthropic.com/news/claude-design-anthropic-labs"
       },
-      "summary": "Anthropic launches Claude Design, a new product in research preview that lets users collaborate with Claude to create visual work including designs, prototypes, slides, and more. The article covers design system integration, interactive prototyping, handoff bundles to Claude Code, and collaborative features. Several longlist terms are materially used.",
+      "summary": "Anthropic launches Claude Design, a new Labs product for AI-assisted visual design, prototyping, and design system integration. The article materially uses several longlist terms (claude-design, design-system-integration, handoff-bundle, interactive-prototyping) and introduces one new framing concept around AI-native design collaboration.",
       "longlistAdditions": [],
       "longlistUpdates": [
         {
@@ -250,52 +243,52 @@
     {
       "id": "a2a",
       "status": "keep",
-      "reason": "No source material addresses the A2A protocol, its backer count, or its relationship to MCP. Definition stands."
+      "reason": "No source material addresses the A2A protocol, its launch date, participant count, or its relationship to MCP. Definition stands."
     },
     {
       "id": "abstraction",
       "status": "keep",
-      "reason": "No source material relates to this conceptual definition. Definition stands."
+      "reason": "No source material bears on this conceptual definition. Definition stands."
     },
     {
       "id": "agent",
       "status": "keep",
-      "reason": "The Anthropic sources reinforce the agentic framing (long-running, autonomous, iterative tasks) but do not require any change to the definition. Definition stands."
+      "reason": "No source material contradicts or updates this core definition of an AI agent. Definition stands."
     },
     {
       "id": "agent-governance",
       "status": "keep",
-      "reason": "No source material addresses the EU AI Act timeline or agent governance frameworks. Definition stands."
+      "reason": "No source material updates the EU AI Act timeline or the broader governance framing. Definition stands."
     },
     {
       "id": "agent-washing",
       "status": "keep",
-      "reason": "No source material addresses agent-washing or CustomGPTs. Definition stands."
+      "reason": "No source material addresses agent-washing or changes the illustrative examples. Definition stands."
     },
     {
       "id": "agentic-engineering",
       "status": "keep",
-      "reason": "No source material references Karpathy's coinage or the agentic engineering concept. Definition stands."
+      "reason": "No source material references Karpathy's coinage or the substance of agentic engineering. Definition stands."
     },
     {
       "id": "agentic-harness",
       "status": "keep",
-      "reason": "No source material references agentic harnesses or the Claude Code system prompt leak. Definition stands."
+      "reason": "No source material addresses agentic harnesses or the Claude Code leak. Definition stands."
     },
     {
       "id": "ai-assistant",
       "status": "keep",
-      "reason": "No source material addresses this framing. Definition stands."
+      "reason": "No source material updates this framing note. Definition stands."
     },
     {
       "id": "ai-red-teaming",
       "status": "keep",
-      "reason": "The Opus 4.7 announcement briefly mentions cybersecurity safeguards and a Cyber Verification Program, which is tangentially related, but does not materially update the definition of AI red teaming. Definition stands."
+      "reason": "The Anthropic Opus 4.7 excerpt mentions a Cyber Verification Program for legitimate red-teaming uses, but this is a product policy detail that confirms rather than changes the definition. Definition stands."
     },
     {
       "id": "ai-washing",
       "status": "keep",
-      "reason": "No source material addresses AI-washing or SEC/FTC enforcement. Definition stands."
+      "reason": "No source material addresses AI-washing or enforcement actions. Definition stands."
     }
   ],
   "notes": []

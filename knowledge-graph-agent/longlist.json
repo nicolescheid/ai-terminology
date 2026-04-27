@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-04-26T22:56:20.734Z",
+    "generatedAt": "2026-04-27T01:07:31.335Z",
     "entryCount": 15,
     "note": "Lexi-managed Tier 2 longlist — terms under observation, awaiting evidence to support promotion to the graph (Tier 1)."
   },
@@ -41,7 +41,7 @@
       "sourceCount": 2,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-04-26T22:40:25.832Z",
-      "dateLastSeen": "2026-04-26T22:56:20.734Z",
+      "dateLastSeen": "2026-04-27T01:07:31.335Z",
       "sz": 14,
       "nodeType": "product",
       "proposalReason": "The article introduces two new TPU variants (8i and 8t) purpose-built for the agentic era, making TPU a distinct trackable product category with clear relevance to agentic infrastructure."
@@ -74,7 +74,7 @@
       "sourceCount": 1,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-04-26T22:40:25.832Z",
-      "dateLastSeen": "2026-04-26T22:56:20.734Z",
+      "dateLastSeen": "2026-04-27T01:07:31.335Z",
       "sz": 14,
       "proposalReason": "TPU 8i is explicitly framed as an inference-optimized chip for agentic workloads, introducing a meaningful hardware category distinct from training chips and worth tracking as agentic infrastructure matures."
     },
@@ -106,7 +106,7 @@
       "sourceCount": 1,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-04-26T22:40:25.832Z",
-      "dateLastSeen": "2026-04-26T22:56:20.734Z",
+      "dateLastSeen": "2026-04-27T01:07:31.335Z",
       "sz": 14,
       "proposalReason": "TPU 8t is described as optimized for training even the most complex models on a single massive memory pool, representing a distinct and trackable hardware category alongside inference chips."
     },
@@ -146,7 +146,7 @@
       "sourceCount": 2,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-04-26T22:40:25.832Z",
-      "dateLastSeen": "2026-04-26T22:56:20.734Z",
+      "dateLastSeen": "2026-04-27T01:07:31.335Z",
       "sz": 14,
       "proposalReason": "The article explicitly frames Google's approach as 'full-stack purpose-built infrastructure' spanning chips to data centers and energy, a distinct and recurring framing concept in the AI infrastructure landscape."
     },
@@ -218,7 +218,7 @@
       "sourceCount": 2,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-04-26T22:40:25.832Z",
-      "dateLastSeen": "2026-04-26T22:56:20.734Z",
+      "dateLastSeen": "2026-04-27T01:07:31.335Z",
       "sz": 14,
       "fullName": "GPT-5.5 (OpenAI)",
       "nodeType": "product",
@@ -254,7 +254,7 @@
       "sourceCount": 1,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-04-26T22:40:25.832Z",
-      "dateLastSeen": "2026-04-26T22:56:20.734Z",
+      "dateLastSeen": "2026-04-27T01:07:31.335Z",
       "sz": 14,
       "proposalReason": "'System Card' is a widely used and consequential term in AI safety and model release governance, not yet in the graph or longlist. This article is a primary example of the artifact."
     },
@@ -287,7 +287,7 @@
       "sourceCount": 1,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-04-26T22:40:25.832Z",
-      "dateLastSeen": "2026-04-26T22:56:20.734Z",
+      "dateLastSeen": "2026-04-27T01:07:31.335Z",
       "sz": 14,
       "fullName": "Self-Verification (Model Output Verification)",
       "proposalReason": "Opus 4.7 is explicitly described as 'devises ways to verify its own outputs before reporting back' — this is a distinct and recurring capability concept in agentic AI worth tracking."
@@ -322,7 +322,7 @@
       "sourceCount": 1,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-04-26T22:40:25.832Z",
-      "dateLastSeen": "2026-04-26T22:56:20.734Z",
+      "dateLastSeen": "2026-04-27T01:07:31.335Z",
       "sz": 14,
       "fullName": "Cyber Verification Program (Anthropic)",
       "nodeType": "initiative",
@@ -358,7 +358,7 @@
       "sourceCount": 1,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-04-26T22:40:25.832Z",
-      "dateLastSeen": "2026-04-26T22:56:20.734Z",
+      "dateLastSeen": "2026-04-27T01:07:31.335Z",
       "sz": 14,
       "proposalReason": "The article explicitly describes 'efforts to differentially reduce these capabilities' during training — a novel safety concept not represented in the current graph."
     },
@@ -393,7 +393,7 @@
       "sourceCount": 1,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-04-26T22:40:25.832Z",
-      "dateLastSeen": "2026-04-26T22:56:20.734Z",
+      "dateLastSeen": "2026-04-27T01:07:31.335Z",
       "sz": 14,
       "proposalReason": "Multiple testimonials and the article body specifically highlight 'long-horizon autonomy' as a named capability dimension, making it a distinct trackable concept in the agentic space."
     },
@@ -428,7 +428,7 @@
       "sourceCount": 1,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-04-26T22:40:25.832Z",
-      "dateLastSeen": "2026-04-26T22:56:20.734Z",
+      "dateLastSeen": "2026-04-27T01:07:31.335Z",
       "sz": 14,
       "fullName": "Claude Design (Anthropic Labs)",
       "nodeType": "product",
@@ -463,7 +463,7 @@
       "sourceCount": 1,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-04-26T22:40:25.832Z",
-      "dateLastSeen": "2026-04-26T22:56:20.734Z",
+      "dateLastSeen": "2026-04-27T01:07:31.335Z",
       "sz": 14,
       "fullName": "Design System Integration (AI-native)",
       "proposalReason": "Recurring framing concept in the article describing how AI design tools ingest and respect organizational design systems; relevant beyond this single product."
@@ -497,7 +497,7 @@
       "sourceCount": 1,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-04-26T22:40:25.832Z",
-      "dateLastSeen": "2026-04-26T22:56:20.734Z",
+      "dateLastSeen": "2026-04-27T01:07:31.335Z",
       "sz": 14,
       "fullName": "Handoff Bundle (Design-to-Code)",
       "proposalReason": "Distinct operational concept introduced in the article for bridging AI design and AI coding workflows; extends the existing handoff-document concept in a product-specific way."
@@ -531,7 +531,7 @@
       "sourceCount": 1,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-04-26T22:40:25.832Z",
-      "dateLastSeen": "2026-04-26T22:56:20.734Z",
+      "dateLastSeen": "2026-04-27T01:07:31.335Z",
       "sz": 14,
       "fullName": "AI-Assisted Interactive Prototyping",
       "proposalReason": "Prominent capability described throughout the article as a key use case; represents a distinct concept at the intersection of AI tooling and design workflows likely to recur in coverage."

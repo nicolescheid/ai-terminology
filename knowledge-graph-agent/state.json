@@ -1,94 +1,94 @@
 {
-  "lastRunAt": "2026-04-26T22:56:20.734Z",
+  "lastRunAt": "2026-04-27T01:07:31.335Z",
   "reviewCursor": 10,
   "seenArticles": {
     "93a049d060bc295b": {
       "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/tpus-8t-8i-cloud-next/",
       "title": "We're launching two specialized TPUs for the agentic era.",
       "publishedAt": "Wed, 22 Apr 2026 12:00:00 +0000",
-      "seenAt": "2026-04-26T22:56:20.734Z"
+      "seenAt": "2026-04-27T01:07:31.335Z"
     },
     "ea9543e1b1187c9a": {
       "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/what-is-a-tpu/",
       "title": "Here’s how our TPUs power increasingly demanding AI workloads.",
       "publishedAt": "Thu, 23 Apr 2026 12:00:00 +0000",
-      "seenAt": "2026-04-26T22:56:20.734Z"
-    },
-    "6e6cdaf0d6010b44": {
-      "url": "https://openai.com/index/introducing-gpt-5-5",
-      "title": "Introducing GPT-5.5",
-      "publishedAt": "Thu, 23 Apr 2026 11:00:00 GMT",
-      "seenAt": "2026-04-26T22:56:20.734Z"
+      "seenAt": "2026-04-27T01:07:31.335Z"
     },
     "cfbb97f4e142ddd9": {
       "url": "https://openai.com/index/gpt-5-5-system-card",
       "title": "GPT-5.5 System Card",
       "publishedAt": "Thu, 23 Apr 2026 11:00:00 GMT",
-      "seenAt": "2026-04-26T22:56:20.734Z"
+      "seenAt": "2026-04-27T01:07:31.335Z"
+    },
+    "6e6cdaf0d6010b44": {
+      "url": "https://openai.com/index/introducing-gpt-5-5",
+      "title": "Introducing GPT-5.5",
+      "publishedAt": "Thu, 23 Apr 2026 11:00:00 GMT",
+      "seenAt": "2026-04-27T01:07:31.335Z"
     },
     "8ffed2502175348b": {
       "url": "https://www.anthropic.com/news/claude-opus-4-7",
       "title": "Introducing Claude Opus 4.7",
       "publishedAt": null,
-      "seenAt": "2026-04-26T22:56:20.734Z"
+      "seenAt": "2026-04-27T01:07:31.335Z"
     },
     "afabafae073055fd": {
       "url": "https://www.anthropic.com/news/claude-design-anthropic-labs",
       "title": "Introducing Claude Design by Anthropic Labs",
       "publishedAt": null,
-      "seenAt": "2026-04-26T22:56:20.734Z"
+      "seenAt": "2026-04-27T01:07:31.335Z"
     }
   },
   "nodeReviews": {
     "a2a": {
-      "lastReviewedAt": "2026-04-26T22:56:20.734Z",
+      "lastReviewedAt": "2026-04-27T01:07:31.335Z",
       "status": "keep",
-      "reason": "No source material addresses the A2A protocol, its backer count, or its relationship to MCP. Definition stands."
+      "reason": "No source material addresses the A2A protocol, its launch date, participant count, or its relationship to MCP. Definition stands."
     },
     "abstraction": {
-      "lastReviewedAt": "2026-04-26T22:56:20.734Z",
+      "lastReviewedAt": "2026-04-27T01:07:31.335Z",
       "status": "keep",
-      "reason": "No source material relates to this conceptual definition. Definition stands."
+      "reason": "No source material bears on this conceptual definition. Definition stands."
     },
     "agent": {
-      "lastReviewedAt": "2026-04-26T22:56:20.734Z",
+      "lastReviewedAt": "2026-04-27T01:07:31.335Z",
       "status": "keep",
-      "reason": "The Anthropic sources reinforce the agentic framing (long-running, autonomous, iterative tasks) but do not require any change to the definition. Definition stands."
+      "reason": "No source material contradicts or updates this core definition of an AI agent. Definition stands."
     },
     "agent-governance": {
-      "lastReviewedAt": "2026-04-26T22:56:20.734Z",
+      "lastReviewedAt": "2026-04-27T01:07:31.335Z",
       "status": "keep",
-      "reason": "No source material addresses the EU AI Act timeline or agent governance frameworks. Definition stands."
+      "reason": "No source material updates the EU AI Act timeline or the broader governance framing. Definition stands."
     },
     "agent-washing": {
-      "lastReviewedAt": "2026-04-26T22:56:20.734Z",
+      "lastReviewedAt": "2026-04-27T01:07:31.335Z",
       "status": "keep",
-      "reason": "No source material addresses agent-washing or CustomGPTs. Definition stands."
+      "reason": "No source material addresses agent-washing or changes the illustrative examples. Definition stands."
     },
     "agentic-engineering": {
-      "lastReviewedAt": "2026-04-26T22:56:20.734Z",
+      "lastReviewedAt": "2026-04-27T01:07:31.335Z",
       "status": "keep",
-      "reason": "No source material references Karpathy's coinage or the agentic engineering concept. Definition stands."
+      "reason": "No source material references Karpathy's coinage or the substance of agentic engineering. Definition stands."
     },
     "agentic-harness": {
-      "lastReviewedAt": "2026-04-26T22:56:20.734Z",
+      "lastReviewedAt": "2026-04-27T01:07:31.335Z",
       "status": "keep",
-      "reason": "No source material references agentic harnesses or the Claude Code system prompt leak. Definition stands."
+      "reason": "No source material addresses agentic harnesses or the Claude Code leak. Definition stands."
     },
     "ai-assistant": {
-      "lastReviewedAt": "2026-04-26T22:56:20.734Z",
+      "lastReviewedAt": "2026-04-27T01:07:31.335Z",
       "status": "keep",
-      "reason": "No source material addresses this framing. Definition stands."
+      "reason": "No source material updates this framing note. Definition stands."
     },
     "ai-red-teaming": {
-      "lastReviewedAt": "2026-04-26T22:56:20.734Z",
+      "lastReviewedAt": "2026-04-27T01:07:31.335Z",
       "status": "keep",
-      "reason": "The Opus 4.7 announcement briefly mentions cybersecurity safeguards and a Cyber Verification Program, which is tangentially related, but does not materially update the definition of AI red teaming. Definition stands."
+      "reason": "The Anthropic Opus 4.7 excerpt mentions a Cyber Verification Program for legitimate red-teaming uses, but this is a product policy detail that confirms rather than changes the definition. Definition stands."
     },
     "ai-washing": {
-      "lastReviewedAt": "2026-04-26T22:56:20.734Z",
+      "lastReviewedAt": "2026-04-27T01:07:31.335Z",
       "status": "keep",
-      "reason": "No source material addresses AI-washing or SEC/FTC enforcement. Definition stands."
+      "reason": "No source material addresses AI-washing or enforcement actions. Definition stands."
     }
   }
 }
