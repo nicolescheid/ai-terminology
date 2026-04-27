@@ -100,6 +100,14 @@ export function createLogger({ runId, phase, logPath }) {
         promptVersion,
         errorMessage
       });
+    },
+
+    // Generic event escape hatch. Used by the auditor (audit.mjs) to write
+    // events with kinds outside the agent's lifecycle vocabulary —
+    // audit_start, audit_flag, audit_end, etc. The append() helper still adds
+    // the standard fields (ts, runId, phase, selfEval).
+    async event(kind, payload = {}) {
+      await append({ kind, ...payload });
     }
   };
 }

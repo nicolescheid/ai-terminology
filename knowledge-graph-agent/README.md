@@ -133,9 +133,51 @@ Both tunable in [`config.mjs`](./config.mjs) under `throughputCaps`.
 
 | Feature | Why deferred |
 |---|---|
-| Weekly digest with click-through ack (spec §12.2) | Needs delivery channel decision — email? static dashboard? Cloudflare Worker? — and an ack mechanism. Better as its own session. |
+| Email digest with click-through ack (spec §12.2) | Needs provider choice (Resend.com recommended), DNS records (SPF/DKIM/DMARC for ai-terminology.com), and an ack endpoint (Cloudflare Worker). Static dashboard at [/manager/](https://ai-terminology.com/manager/) is shipped as the first delivery channel — see "Manager dashboard" below. |
 | Monthly manager review prompts (spec §12.3) | Same delivery channel question. |
 | Auto-trigger of manager-absent mode after 14 days of no Notes reads | Requires read-timestamp tracking, not yet schema'd on note entries. |
+
+## Manager dashboard
+
+A static dashboard at [`https://ai-terminology.com/manager/`](https://ai-terminology.com/manager/) renders the live state of the agent for Nicole's review:
+
+- **Status banner** — green when operational, red when paused (replicates the pause-detection heuristic client-side).
+- **Notes for Nicole** — sorted with unread on top, color-coded type tags, inline suggested actions.
+- **Proposals queue** — pending items with action + target + reason.
+- **Longlist** — total + added-past-7d + promotion-eligible (≥2 independent sources); top 12 by source count.
+- **Last run** — timestamp + key state counts.
+
+The dashboard reads the *committed* state of the JSON files in this repo. To refresh what's visible: commit the agent's outputs (`longlist.json`, `proposals.json`, `notes-for-nicole.json`, `state.json`, `agent-patch.json`, `graph-data-agent.js`) and push. Default workflow is manual commits when state is meaningful.
+
+## The auditor
+
+Per spec §11, the agent is not its own auditor. A separate independent module — [`auditor.mjs`](./auditor.mjs) plus the [`audit.mjs`](./audit.mjs) entry point — runs against the longlist and writes flags to Notes for Nicole. It deliberately doesn't trust Lexi's self-reports for the things it's checking; it re-derives counts from the raw source data.
+
+Run it manually:
+
+```powershell
+cd C:\dev\ai-terminology\knowledge-graph-agent
+node audit.mjs
+```
+
+Heuristic checks (no API calls in this slice):
+
+| Check | Triggers when... | Note type |
+|---|---|---|
+| Cross-temporal source pattern (spec §9) | ≥2 longlist entries added in past 30 days share a domain | `source_pattern` |
+| Independence count mismatch | Stored `independentSourceCount` doesn't match re-derivation from sources | `source_pattern` |
+| Adoption velocity anomaly | A longlist entry hit ≥2 sources within 3 days of first sighting | `source_pattern` |
+
+Flags are deduped by stable signature: re-running the auditor against unchanged state produces no new notes. When state changes (new pattern emerges, count grows), new notes appear.
+
+The auditor logs its own activity to the deterministic log with `audit_start`, `audit_flag`, `audit_flag_skipped`, and `audit_end` event kinds — interleaved with the agent's normal events but distinguishable by kind.
+
+**Deferred to a future Phase F++ session:**
+
+- Claude-based second-opinion sampling (sample ~1-in-10 longlist additions, run a *different* prompt over the source article, compare the auditor's verdict to Lexi's reasoning, flag disagreements)
+- Rubric scoring + trend analysis
+- Fresh-source-pool detection (would false-positive heavily during early-days when the source pool itself is brand new)
+- Cross-author detection (requires article-author parsing, not yet captured during fetch)
 
 ## What it does on each run
 
