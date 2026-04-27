@@ -82,6 +82,29 @@ grep '"runId":"<uuid>"' knowledge-graph-agent/log/events.ndjson | grep '"kind":"
 
 **Prompt version hashes** appear in every relevant event. They roll forward automatically when either system prompt is edited — the historical record stays interpretable when prompts change.
 
+## Notes for Nicole
+
+[`notes-for-nicole.json`](./notes-for-nicole.json) is Lexi's **manager channel** (spec §6) — the structured surface where Lexi writes things that need Nicole's attention. Not a freeform diary; entries fall into mandatory types (must be written when their triggering condition is met) and discretionary observations.
+
+The 8 mandatory entry types from spec §6:
+
+| Type | Triggers when... | Wired up? |
+|---|---|---|
+| `default_deny` | An action falls outside the permissions matrix or hits the NEVER gate (spec §5 default-deny clause) | ✅ Phase D |
+| `contested_cluster_omission` | An `ADD_TO_LONGLIST` for a term in spec §10's contested-cluster list, where the working def doesn't acknowledge contestation | ✅ Phase D |
+| `reversal_late` | A published action is reversed > 24h after the original | ⏳ Needs reversal-detection infrastructure |
+| `reversal_contradiction` | Reversal where new reasoning contradicts (rather than supplements) the original | ⏳ Same |
+| `low_confidence_pass` | Candidate passes the credibility bar but Lexi's self-eval scored a rubric item below threshold | ⏳ Needs spec §15 self-check (Phase F) |
+| `source_pattern` | ≥2 longlist additions in a 30-day window share an author or domain | ⏳ Phase F (auditor's beat) |
+| `trusted_source_proposal` | Lexi proposes a source for the trusted list | ⏳ Needs spec §7 trusted-source mechanism |
+| `near_miss_week` | Self-eval near-misses on ≥3 candidates in a week | ⏳ Phase F |
+
+Discretionary entries (`type: "discretionary"`) are observations Lexi may write even without a mandatory trigger — encouraged but not required.
+
+Each entry's `status` starts at `"unread"`. Edit it to `"read"`, `"actioned"`, or `"dismissed"` after handling. (Spec §12 will eventually use unread-age to gate publication — Phase E.)
+
+The contested-cluster term list lives in [`notes.mjs`](./notes.mjs) (`CONTESTED_CLUSTER_TERMS`) and is editable; the spec calls it out as living. Same for the contestation-marker phrases used to detect when a def already acknowledges contestation.
+
 ## What it does on each run
 
 1. Fetches recent articles from configured RSS/Atom feeds and HTML index pages.
@@ -118,6 +141,7 @@ node "C:\dev\ai-terminology\knowledge-graph-agent\run.mjs"
 
 - **Tier 2 longlist**: [`longlist.json`](./longlist.json) — the watchlist of terms the agent is observing, with sources, source counts, and timestamps.
 - **Proposals queue**: [`proposals.json`](./proposals.json) — every `PROPOSE`-gated action lands here for Nicole's review.
+- **Notes for Nicole**: [`notes-for-nicole.json`](./notes-for-nicole.json) — manager channel for default-deny events, contested-cluster omissions, and (when wired) source patterns / reversal flags / near-miss weeks.
 - **Tier 1 graph overlay** (currently empty under propose-only discipline): [`agent-patch.json`](./agent-patch.json) and [`graph-data-agent.js`](</C:/dev/ai-terminology/graph-data-agent.js>).
 - **Run state** (dedup, review cursor): [`state.json`](./state.json).
 - **Latest report** (per-article harvest, rejections, default-deny notes): [`out/latest-report.json`](./out/latest-report.json).

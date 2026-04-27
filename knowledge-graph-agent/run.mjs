@@ -6,6 +6,7 @@ import { fileURLToPath, pathToFileURL } from "node:url";
 import Anthropic from "@anthropic-ai/sdk";
 import { ACTIONS, GATES, resolveGate } from "./actions.mjs";
 import { createLogger, promptVersion } from "./logger.mjs";
+import { ENTRY_TYPES, buildNote, detectContestedOmission } from "./notes.mjs";
 
 const DEFAULT_STATE = {
   lastRunAt: null,
@@ -123,6 +124,10 @@ async function runMain(args, config, logger) {
     meta: { generatedAt: null, pendingCount: 0, appliedCount: 0, rejectedCount: 0, note: "Lexi proposals queue. Actions gated as PROPOSE by the permissions matrix land here as status: 'pending'." },
     proposals: []
   });
+  const notes = await loadJson(config.notesForNicolePath, {
+    meta: { generatedAt: null, unreadCount: 0, totalCount: 0, note: "Notes for Nicole — Lexi's manager channel (spec §6)." },
+    entries: []
+  });
 
   const mergedNodes = mergeNodes(graph.nodes, patch);
   const articles = await collectArticles(config, state, args);
@@ -168,7 +173,20 @@ async function runMain(args, config, logger) {
         proposals.proposals.push(buildProposal(action, target, payload, reason, source, report.generatedAt, gate));
         outcome = "proposed";
       } else {
-        report.notes.push(`Default-deny: action '${action}' for target ${target?.id ?? "(none)"} dropped (gate=${gate ?? "unknown"}, phase=${config.phase}).`);
+        const denySubject = `Default-deny: action '${action}' for target ${target?.id ?? "(none)"}`;
+        report.notes.push(`${denySubject} (gate=${gate ?? "unknown"}, phase=${config.phase}).`);
+        notes.entries.push(buildNote({
+          type: ENTRY_TYPES.DEFAULT_DENY,
+          runId: logger.runId,
+          phase: config.phase,
+          writtenAt: report.generatedAt,
+          subject: denySubject,
+          details: `Gate resolved to '${gate ?? "unknown"}' under phase ${config.phase}; the action was not executed (per spec §5 default-deny clause).`,
+          evidence: { action, target, payload, reason, source, gate: gate ?? null },
+          suggestedAction: gate === GATES.NEVER
+            ? "This action is permanently denied per the matrix. If the underlying need is legitimate, this likely indicates a bug in the routing code or a missing matrix entry."
+            : "Either add this action to the permissions matrix in actions.mjs (with per-phase gates), or fix the calling code to use a known action."
+        }));
         outcome = "dropped";
       }
     } catch (err) {
@@ -276,6 +294,32 @@ async function runMain(args, config, logger) {
           if (applied && resolveGate(ACTIONS.ADD_TO_LONGLIST, config.phase) === GATES.PROPOSE) {
             harvest.proposalsQueued.push({ action: ACTIONS.ADD_TO_LONGLIST, id: entry.id, label: entry.label });
           }
+          // Spec §6 entry type 5 + §10: if the new longlist term touches a
+          // contested cluster but its working def doesn't name the contestation,
+          // flag it for Nicole BEFORE it accumulates evidence toward promotion.
+          if (applied) {
+            const contested = detectContestedOmission(entry.label, entry.fullName, entry.workingDef);
+            if (contested) {
+              notes.entries.push(buildNote({
+                type: ENTRY_TYPES.CONTESTED_CLUSTER_OMISSION,
+                runId: logger.runId,
+                phase: config.phase,
+                writtenAt: report.generatedAt,
+                subject: `Contested cluster term added without naming the contestation: '${entry.label}'`,
+                details: `The term '${entry.label}' matches the contested-cluster pattern '${contested.matchedTerm}' (per spec §10), but the working definition does not appear to acknowledge that the term is contested or that different camps use it differently. Per spec §6 entry type 5, this requires review before any move toward graph promotion.`,
+                evidence: {
+                  entryId: entry.id,
+                  label: entry.label,
+                  fullName: entry.fullName ?? null,
+                  matchedContestedTerm: contested.matchedTerm,
+                  workingDef: entry.workingDef,
+                  sourceUrl: article.url,
+                  sourceLabel: article.sourceLabel
+                },
+                suggestedAction: "Either revise the working definition to name the contestation (who uses it to mean what), or confirm this term doesn't warrant the contested treatment in this case."
+              }));
+            }
+          }
           continue;
         }
       }
@@ -366,12 +410,19 @@ async function runMain(args, config, logger) {
     rejectedCount: proposals.proposals.filter(p => p.status === "rejected").length,
     note: "Lexi proposals queue. Actions gated as PROPOSE land here as status: 'pending'. Edit a proposal's status to 'approved' or 'rejected' and run the apply step (TBD) to commit."
   };
+  notes.meta = {
+    generatedAt: report.generatedAt,
+    unreadCount: notes.entries.filter(n => n.status === "unread").length,
+    totalCount: notes.entries.length,
+    note: "Notes for Nicole — Lexi's manager channel (spec §6). Mandatory entry types fire when their triggering condition is met; discretionary entries are observations Lexi thinks Nicole should see. Set status to 'read', 'actioned', or 'dismissed' as appropriate."
+  };
   state.lastRunAt = report.generatedAt;
 
   await fs.writeFile(config.patchJsonPath, `${JSON.stringify(patch, null, 2)}\n`, "utf8");
   await fs.writeFile(config.agentPatchPath, `window.AGENT_GRAPH_PATCH = ${JSON.stringify(patch, null, 2)};\n`, "utf8");
   await fs.writeFile(config.longlistPath, `${JSON.stringify(longlist, null, 2)}\n`, "utf8");
   await fs.writeFile(config.proposalsPath, `${JSON.stringify(proposals, null, 2)}\n`, "utf8");
+  await fs.writeFile(config.notesForNicolePath, `${JSON.stringify(notes, null, 2)}\n`, "utf8");
   await fs.writeFile(config.statePath, `${JSON.stringify(state, null, 2)}\n`, "utf8");
   await fs.writeFile(config.reportPath, `${JSON.stringify(report, null, 2)}\n`, "utf8");
 
@@ -381,9 +432,12 @@ async function runMain(args, config, logger) {
   const rejections = report.harvestedTerms.reduce((sum, h) => sum + (h.rejections?.length || 0), 0);
   const queuedThisRun = proposals.proposals.filter(p => p.proposedAt === report.generatedAt).length;
   const pendingTotal = proposals.meta.pendingCount;
+  const notesUnread = notes.meta.unreadCount;
+  const notesAddedThisRun = notes.entries.filter(n => n.writtenAt === report.generatedAt).length;
   console.log(`Processed ${articles.length} article(s) at Phase ${config.phase}.`);
   console.log(`Longlist: ${longlist.entries.length} entries total (${additions} added this run, ${sourcesAdded}/${updateAttempts} re-sightings landed as new sources, ${rejections} rejected).`);
   console.log(`Proposals queue: ${queuedThisRun} queued this run, ${pendingTotal} pending total (review at proposals.json).`);
+  console.log(`Notes for Nicole: ${notesAddedThisRun} new this run, ${notesUnread} unread total (review at notes-for-nicole.json).`);
 
   await logger.runEnd({
     articlesProcessed: articles.length,
@@ -393,7 +447,9 @@ async function runMain(args, config, logger) {
     sourceMergeAttempts: updateAttempts,
     rejectionsThisRun: rejections,
     proposalsQueuedThisRun: queuedThisRun,
-    proposalsPendingTotal: pendingTotal
+    proposalsPendingTotal: pendingTotal,
+    notesAddedThisRun,
+    notesUnreadTotal: notesUnread
   });
 }
 
