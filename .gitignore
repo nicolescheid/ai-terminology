@@ -23,3 +23,7 @@ build/
 
 # Cloudflare Wrangler local state, if used
 .wrangler/
+
+# Claude Code per-user / per-session config (the project-level launch.json IS committed).
+.claude/settings.local.json
+.claude/.local/
