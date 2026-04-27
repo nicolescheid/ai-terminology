@@ -58,6 +58,8 @@ jobs:
           else
             git commit -m "Lexi audit $(date -u +%Y-%m-%d) [skip ci]" \
               -m "Auto-committed by .github/workflows/lexi-audit.yml"
+            # Defensive: see lexi-run.yml — remote may have moved during run.
+            git pull --rebase --strategy-option=theirs origin main
             git push
           fi
 

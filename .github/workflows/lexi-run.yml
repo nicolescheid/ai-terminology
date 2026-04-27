@@ -78,6 +78,11 @@ jobs:
           else
             git commit -m "Lexi run $(date -u +%Y-%m-%d) [skip ci]" \
               -m "Auto-committed by .github/workflows/lexi-run.yml"
+            # Defensive: remote may have moved during the run (manual pushes,
+            # other workflows). Pull-rebase preferring our changes for state
+            # files (-X theirs in rebase context = the commits being
+            # replayed, i.e., this workflow's commit). Then push.
+            git pull --rebase --strategy-option=theirs origin main
             git push
           fi
 
