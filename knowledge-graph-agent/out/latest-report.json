@@ -1,23 +1,77 @@
 {
-  "generatedAt": "2026-04-27T05:42:44.833Z",
+  "generatedAt": "2026-04-27T19:20:08.906Z",
   "model": "claude-sonnet-4-6",
   "sourcesConfigured": 4,
   "articlesConsidered": [
     {
-      "id": "b2acc3c294f376d2",
+      "id": "8a4b231f355d20da",
+      "source": "Google AI Blog",
+      "title": "Join the new AI Agents Vibe Coding Course from Google and Kaggle",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/kaggle-genai-intensive-course-vibe-coding-june-2026/",
+      "publishedAt": "Mon, 27 Apr 2026 13:00:00 +0000"
+    },
+    {
+      "id": "ce52abc8a3f020a5",
       "source": "OpenAI News",
-      "title": "Automations",
-      "url": "https://openai.com/academy/codex-automations",
-      "publishedAt": "Thu, 23 Apr 2026 10:00:00 GMT"
+      "title": "The next phase of the Microsoft OpenAI partnership",
+      "url": "https://openai.com/index/next-phase-of-microsoft-partnership",
+      "publishedAt": "Mon, 27 Apr 2026 06:00:00 GMT"
+    },
+    {
+      "id": "29e3d13268b3eecb",
+      "source": "OpenAI News",
+      "title": "An open-source spec for Codex orchestration: Symphony.",
+      "url": "https://openai.com/index/open-source-codex-orchestration-symphony",
+      "publishedAt": "Mon, 27 Apr 2026 00:00:00 GMT"
+    },
+    {
+      "id": "bc507498ac479287",
+      "source": "OpenAI News",
+      "title": "Choco automates food distribution with AI agents",
+      "url": "https://openai.com/index/choco",
+      "publishedAt": "Mon, 27 Apr 2026 00:00:00 GMT"
     }
   ],
   "harvestedTerms": [
     {
       "article": {
-        "title": "Automations",
-        "url": "https://openai.com/academy/codex-automations"
+        "title": "Join the new AI Agents Vibe Coding Course from Google and Kaggle",
+        "url": "https://blog.google/innovation-and-ai/technology/developers-tools/kaggle-genai-intensive-course-vibe-coding-june-2026/"
       },
-      "summary": "OpenAI Academy article on Codex Automations — covering scheduled and event-driven automation capabilities within the Codex system, touching on agentic workflows, task scheduling, and autonomous code execution pipelines.",
+      "summary": "Google and Kaggle announce a free five-day AI Agents Vibe Coding course (June 15-19, 2026) focused on building production-ready AI agents using natural language workflows, tool/API integration, and a capstone project. The article is largely promotional but introduces the framing of '10x agents' and reinforces vibe coding as a pedagogical paradigm for agent development.",
+      "longlistAdditions": [],
+      "longlistUpdates": [],
+      "rejections": [],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "The next phase of the Microsoft OpenAI partnership",
+        "url": "https://openai.com/index/next-phase-of-microsoft-partnership"
+      },
+      "summary": "OpenAI and Microsoft announce an amended partnership agreement covering cloud exclusivity, IP licensing through 2032, revenue share arrangements, and joint datacenter/silicon collaboration. The article touches on strategic partnership structure, cloud infrastructure, and next-gen silicon development.",
+      "longlistAdditions": [],
+      "longlistUpdates": [],
+      "rejections": [],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "An open-source spec for Codex orchestration: Symphony.",
+        "url": "https://openai.com/index/open-source-codex-orchestration-symphony"
+      },
+      "summary": "OpenAI's Symphony article describes an open-source orchestration spec that turns a project-management board (Linear) into a control plane for coding agents, enabling always-on, parallel, multi-agent software development workflows. Key novel concepts include task-tracker-as-control-plane orchestration, DAG-based task dependency execution, and continuous agent supervision at the ticket level rather than session level.",
+      "longlistAdditions": [],
+      "longlistUpdates": [],
+      "rejections": [],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "Choco automates food distribution with AI agents",
+        "url": "https://openai.com/index/choco"
+      },
+      "summary": "Article about Choco's use of OpenAI APIs to build AI agents (OrderAgent, VoiceAgent) for food distribution automation, covering multimodal order processing, in-context learning, evaluation frameworks, and the emerging role of non-engineer 'agent orchestrators'.",
       "longlistAdditions": [],
       "longlistUpdates": [],
       "rejections": [],
@@ -26,54 +80,54 @@
   ],
   "definitionReviews": [
     {
-      "id": "autonomous-goal-extension",
+      "id": "claude-ai",
       "status": "insufficient_evidence",
-      "reason": "The definition references a specific 'Mythos testing' incident with detailed claims about model behaviour and an Anthropic quote. The provided source has no excerpt content to confirm, update, or refute this. Cannot verify the factual basis of the example."
+      "reason": "No source material addresses Claude.ai features, availability, or positioning."
     },
     {
-      "id": "autonomy-spectrum",
-      "status": "keep",
-      "reason": "The three-level progression (human-in-the-loop → human-on-the-loop → human-out-of-the-loop) is a well-established framework. The empty source excerpt provides no reason to change it."
-    },
-    {
-      "id": "benchmark-gaming",
-      "status": "keep",
-      "reason": "Standard, well-established concept. Definition is accurate and concise. No source content to suggest any update is needed."
-    },
-    {
-      "id": "benchmark-saturation",
+      "id": "claude-code",
       "status": "insufficient_evidence",
-      "reason": "Definition makes specific claims about 'Mythos' and an Anthropic quote about 'mostly saturated' evaluations. The source provides no content to verify these claims. The factual basis remains unconfirmed by the provided material."
+      "reason": "No source material references Claude Code. The $1B ARR claim and other specifics cannot be verified or updated from these excerpts."
     },
     {
-      "id": "blast-radius",
-      "status": "keep",
-      "reason": "Clear, accurate definition of an established AI safety and engineering concept. No source content contradicts or materially adds to it."
-    },
-    {
-      "id": "blue-team",
-      "status": "keep",
-      "reason": "Accurate and stable definition of a standard security concept with appropriate AI-era framing. No source content suggests revision."
-    },
-    {
-      "id": "capability-overhang",
+      "id": "claude-cowork",
       "status": "insufficient_evidence",
-      "reason": "Definition attributes a specific April 2026 quote to OpenAI. The provided source URL is from OpenAI but the excerpt is empty, so the quote and framing cannot be verified or updated against fresh material."
+      "reason": "No source material references Claude Cowork or any Anthropic outcome-delegation product. The Microsoft partnership article discusses OpenAI, not Anthropic, and makes no mention of a Copilot Cowork product built on Claude."
     },
     {
-      "id": "chatbot",
-      "status": "keep",
-      "reason": "Broad, accurate definitional note on chatbot evolution. No source content to prompt revision."
-    },
-    {
-      "id": "chatgpt",
-      "status": "keep",
-      "reason": "General description of ChatGPT's origin and current direction. The empty source excerpt provides no new information to update version details or feature claims."
-    },
-    {
-      "id": "claude",
+      "id": "claude-mythos",
       "status": "insufficient_evidence",
-      "reason": "Definition specifies current model versions (Claude 4.6, Opus 4.6, Sonnet 4.6, Haiku) and attributes the name to Claude Shannon. Version numbers change frequently and cannot be confirmed as current without live source material. The provided source offers no content to verify."
+      "reason": "No source material references Claude Mythos or any Anthropic model announcement matching this description."
+    },
+    {
+      "id": "co-channeling",
+      "status": "insufficient_evidence",
+      "reason": "No source material addresses this concept."
+    },
+    {
+      "id": "codex-model",
+      "status": "keep",
+      "reason": "The Symphony post confirms Codex remains an active, production-scale OpenAI coding agent being used to orchestrate engineering workflows, consistent with the existing definition describing it as OpenAI's coding model family that established AI-assisted coding. No contradictions or significant gaps identified."
+    },
+    {
+      "id": "computer-use",
+      "status": "insufficient_evidence",
+      "reason": "No source material addresses the computer-use agent pattern."
+    },
+    {
+      "id": "connectors",
+      "status": "insufficient_evidence",
+      "reason": "No source material addresses pre-built MCP connectors or the connectors layer."
+    },
+    {
+      "id": "constitutional-ai",
+      "status": "insufficient_evidence",
+      "reason": "No source material addresses Anthropic's Constitutional AI approach."
+    },
+    {
+      "id": "context-compaction",
+      "status": "insufficient_evidence",
+      "reason": "No source material addresses context compaction or related techniques."
     }
   ],
   "notes": []

@@ -1,6 +1,6 @@
 {
-  "lastRunAt": "2026-04-27T05:42:44.833Z",
-  "reviewCursor": 30,
+  "lastRunAt": "2026-04-27T19:20:08.906Z",
+  "reviewCursor": 40,
   "seenArticles": {
     "93a049d060bc295b": {
       "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/tpus-8t-8i-cloud-next/",
@@ -79,6 +79,30 @@
       "title": "Automations",
       "publishedAt": "Thu, 23 Apr 2026 10:00:00 GMT",
       "seenAt": "2026-04-27T05:42:44.833Z"
+    },
+    "8a4b231f355d20da": {
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/kaggle-genai-intensive-course-vibe-coding-june-2026/",
+      "title": "Join the new AI Agents Vibe Coding Course from Google and Kaggle",
+      "publishedAt": "Mon, 27 Apr 2026 13:00:00 +0000",
+      "seenAt": "2026-04-27T19:20:08.906Z"
+    },
+    "ce52abc8a3f020a5": {
+      "url": "https://openai.com/index/next-phase-of-microsoft-partnership",
+      "title": "The next phase of the Microsoft OpenAI partnership",
+      "publishedAt": "Mon, 27 Apr 2026 06:00:00 GMT",
+      "seenAt": "2026-04-27T19:20:08.906Z"
+    },
+    "29e3d13268b3eecb": {
+      "url": "https://openai.com/index/open-source-codex-orchestration-symphony",
+      "title": "An open-source spec for Codex orchestration: Symphony.",
+      "publishedAt": "Mon, 27 Apr 2026 00:00:00 GMT",
+      "seenAt": "2026-04-27T19:20:08.906Z"
+    },
+    "bc507498ac479287": {
+      "url": "https://openai.com/index/choco",
+      "title": "Choco automates food distribution with AI agents",
+      "publishedAt": "Mon, 27 Apr 2026 00:00:00 GMT",
+      "seenAt": "2026-04-27T19:20:08.906Z"
     }
   },
   "nodeReviews": {
@@ -231,6 +255,56 @@
       "lastReviewedAt": "2026-04-27T05:42:44.833Z",
       "status": "insufficient_evidence",
       "reason": "Definition specifies current model versions (Claude 4.6, Opus 4.6, Sonnet 4.6, Haiku) and attributes the name to Claude Shannon. Version numbers change frequently and cannot be confirmed as current without live source material. The provided source offers no content to verify."
+    },
+    "claude-ai": {
+      "lastReviewedAt": "2026-04-27T19:20:08.906Z",
+      "status": "insufficient_evidence",
+      "reason": "No source material addresses Claude.ai features, availability, or positioning."
+    },
+    "claude-code": {
+      "lastReviewedAt": "2026-04-27T19:20:08.906Z",
+      "status": "insufficient_evidence",
+      "reason": "No source material references Claude Code. The $1B ARR claim and other specifics cannot be verified or updated from these excerpts."
+    },
+    "claude-cowork": {
+      "lastReviewedAt": "2026-04-27T19:20:08.906Z",
+      "status": "insufficient_evidence",
+      "reason": "No source material references Claude Cowork or any Anthropic outcome-delegation product. The Microsoft partnership article discusses OpenAI, not Anthropic, and makes no mention of a Copilot Cowork product built on Claude."
+    },
+    "claude-mythos": {
+      "lastReviewedAt": "2026-04-27T19:20:08.906Z",
+      "status": "insufficient_evidence",
+      "reason": "No source material references Claude Mythos or any Anthropic model announcement matching this description."
+    },
+    "co-channeling": {
+      "lastReviewedAt": "2026-04-27T19:20:08.906Z",
+      "status": "insufficient_evidence",
+      "reason": "No source material addresses this concept."
+    },
+    "codex-model": {
+      "lastReviewedAt": "2026-04-27T19:20:08.906Z",
+      "status": "keep",
+      "reason": "The Symphony post confirms Codex remains an active, production-scale OpenAI coding agent being used to orchestrate engineering workflows, consistent with the existing definition describing it as OpenAI's coding model family that established AI-assisted coding. No contradictions or significant gaps identified."
+    },
+    "computer-use": {
+      "lastReviewedAt": "2026-04-27T19:20:08.906Z",
+      "status": "insufficient_evidence",
+      "reason": "No source material addresses the computer-use agent pattern."
+    },
+    "connectors": {
+      "lastReviewedAt": "2026-04-27T19:20:08.906Z",
+      "status": "insufficient_evidence",
+      "reason": "No source material addresses pre-built MCP connectors or the connectors layer."
+    },
+    "constitutional-ai": {
+      "lastReviewedAt": "2026-04-27T19:20:08.906Z",
+      "status": "insufficient_evidence",
+      "reason": "No source material addresses Anthropic's Constitutional AI approach."
+    },
+    "context-compaction": {
+      "lastReviewedAt": "2026-04-27T19:20:08.906Z",
+      "status": "insufficient_evidence",
+      "reason": "No source material addresses context compaction or related techniques."
     }
   }
 }
