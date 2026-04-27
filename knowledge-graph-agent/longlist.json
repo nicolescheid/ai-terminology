@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-04-27T01:07:31.335Z",
+    "generatedAt": "2026-04-27T01:58:08.607Z",
     "entryCount": 15,
     "note": "Lexi-managed Tier 2 longlist — terms under observation, awaiting evidence to support promotion to the graph (Tier 1)."
   },
@@ -249,12 +249,20 @@
           "sourceLabel": "OpenAI News",
           "publishedAt": "Thu, 23 Apr 2026 11:00:00 GMT",
           "firstSeen": "2026-04-26T22:40:25.832Z"
+        },
+        {
+          "url": "https://openai.com/index/our-principles",
+          "domain": "openai.com",
+          "title": "Our principles",
+          "sourceLabel": "OpenAI News",
+          "publishedAt": "Sun, 26 Apr 2026 16:00:00 GMT",
+          "firstSeen": "2026-04-27T01:58:08.607Z"
         }
       ],
-      "sourceCount": 1,
+      "sourceCount": 2,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-04-26T22:40:25.832Z",
-      "dateLastSeen": "2026-04-27T01:07:31.335Z",
+      "dateLastSeen": "2026-04-27T01:58:08.607Z",
       "sz": 14,
       "proposalReason": "'System Card' is a widely used and consequential term in AI safety and model release governance, not yet in the graph or longlist. This article is a primary example of the artifact."
     },

@@ -1,6 +1,6 @@
 {
-  "lastRunAt": "2026-04-27T01:07:31.335Z",
-  "reviewCursor": 10,
+  "lastRunAt": "2026-04-27T01:58:08.607Z",
+  "reviewCursor": 20,
   "seenArticles": {
     "93a049d060bc295b": {
       "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/tpus-8t-8i-cloud-next/",
@@ -37,6 +37,42 @@
       "title": "Introducing Claude Design by Anthropic Labs",
       "publishedAt": null,
       "seenAt": "2026-04-27T01:07:31.335Z"
+    },
+    "3533fea5413f1a89": {
+      "url": "https://openai.com/academy/top-10-use-cases-codex-for-work",
+      "title": "Top 10 uses for Codex at work",
+      "publishedAt": "Thu, 23 Apr 2026 10:00:00 GMT",
+      "seenAt": "2026-04-27T01:58:08.607Z"
+    },
+    "1539442f8f9c23d5": {
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/google-data-center-austria/",
+      "title": "Elevating Austria: Google invests in its first data center in the Alps.",
+      "publishedAt": "Thu, 23 Apr 2026 09:00:00 +0000",
+      "seenAt": "2026-04-27T01:58:08.607Z"
+    },
+    "e1e83761f7ea575f": {
+      "url": "https://openai.com/index/our-principles",
+      "title": "Our principles",
+      "publishedAt": "Sun, 26 Apr 2026 16:00:00 GMT",
+      "seenAt": "2026-04-27T01:58:08.607Z"
+    },
+    "ebab479a84effc41": {
+      "url": "https://blog.google/products-and-platforms/products/gemini/gemini-spring-cleaning-tips/",
+      "title": "8 Gemini tips for organizing your space (and life)",
+      "publishedAt": "Fri, 24 Apr 2026 19:00:00 +0000",
+      "seenAt": "2026-04-27T01:58:08.607Z"
+    },
+    "26de9866b27d78a4": {
+      "url": "https://www.anthropic.com/news/claude-is-a-space-to-think",
+      "title": "Claude is a space to think | Anthropic",
+      "publishedAt": null,
+      "seenAt": "2026-04-27T01:58:08.607Z"
+    },
+    "7244f9fff96d6ecf": {
+      "url": "https://www.anthropic.com/news/election-safeguards-update",
+      "title": "An update on our election safeguards",
+      "publishedAt": null,
+      "seenAt": "2026-04-27T01:58:08.607Z"
     }
   },
   "nodeReviews": {
@@ -89,6 +125,56 @@
       "lastReviewedAt": "2026-04-27T01:07:31.335Z",
       "status": "keep",
       "reason": "No source material addresses AI-washing or enforcement actions. Definition stands."
+    },
+    "alignment": {
+      "lastReviewedAt": "2026-04-27T01:58:08.607Z",
+      "status": "keep",
+      "reason": "No source material addresses alignment research. Definition remains accurate and no update is warranted."
+    },
+    "anthropic-co": {
+      "lastReviewedAt": "2026-04-27T01:58:08.607Z",
+      "status": "keep",
+      "reason": "Sources confirm Anthropic's identity and safety focus. The election safeguards and ad-free policy excerpts are consistent with the definition. No material changes needed."
+    },
+    "api": {
+      "lastReviewedAt": "2026-04-27T01:58:08.607Z",
+      "status": "keep",
+      "reason": "No source material addresses APIs. Definition remains accurate."
+    },
+    "artifact": {
+      "lastReviewedAt": "2026-04-27T01:58:08.607Z",
+      "status": "keep",
+      "reason": "No source material addresses artifacts. Definition remains accurate."
+    },
+    "asl-4": {
+      "lastReviewedAt": "2026-04-27T01:58:08.607Z",
+      "status": "insufficient_evidence",
+      "reason": "The election safeguards excerpt references 'Opus 4.7' and 'Sonnet 4.6' model names, suggesting model versioning has advanced, but no source material confirms, updates, or refutes the specific ASL-4 survey claim about Claude Opus 4.6. Cannot verify or rewrite without further evidence."
+    },
+    "attention-budget": {
+      "lastReviewedAt": "2026-04-27T01:58:08.607Z",
+      "status": "keep",
+      "reason": "No source material addresses attention budgets or context engineering. Definition remains accurate."
+    },
+    "attention-dilution": {
+      "lastReviewedAt": "2026-04-27T01:58:08.607Z",
+      "status": "keep",
+      "reason": "No source material addresses attention dilution. Definition remains accurate."
+    },
+    "attention-sink": {
+      "lastReviewedAt": "2026-04-27T01:58:08.607Z",
+      "status": "keep",
+      "reason": "No source material addresses attention sinks. Definition remains accurate."
+    },
+    "autodream": {
+      "lastReviewedAt": "2026-04-27T01:58:08.607Z",
+      "status": "keep",
+      "reason": "No source material addresses autoDream. Definition remains accurate."
+    },
+    "autonomous-agent": {
+      "lastReviewedAt": "2026-04-27T01:58:08.607Z",
+      "status": "keep",
+      "reason": "No source material addresses autonomous agents. Definition remains accurate."
     }
   }
 }

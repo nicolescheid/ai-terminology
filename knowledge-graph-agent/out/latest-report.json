@@ -1,156 +1,86 @@
 {
-  "generatedAt": "2026-04-27T01:07:31.335Z",
+  "generatedAt": "2026-04-27T01:58:08.607Z",
   "model": "claude-sonnet-4-6",
   "sourcesConfigured": 4,
   "articlesConsidered": [
     {
-      "id": "93a049d060bc295b",
-      "source": "Google AI Blog",
-      "title": "We're launching two specialized TPUs for the agentic era.",
-      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/tpus-8t-8i-cloud-next/",
-      "publishedAt": "Wed, 22 Apr 2026 12:00:00 +0000"
-    },
-    {
-      "id": "ea9543e1b1187c9a",
-      "source": "Google AI Blog",
-      "title": "Here’s how our TPUs power increasingly demanding AI workloads.",
-      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/what-is-a-tpu/",
-      "publishedAt": "Thu, 23 Apr 2026 12:00:00 +0000"
-    },
-    {
-      "id": "cfbb97f4e142ddd9",
+      "id": "3533fea5413f1a89",
       "source": "OpenAI News",
-      "title": "GPT-5.5 System Card",
-      "url": "https://openai.com/index/gpt-5-5-system-card",
-      "publishedAt": "Thu, 23 Apr 2026 11:00:00 GMT"
+      "title": "Top 10 uses for Codex at work",
+      "url": "https://openai.com/academy/top-10-use-cases-codex-for-work",
+      "publishedAt": "Thu, 23 Apr 2026 10:00:00 GMT"
     },
     {
-      "id": "6e6cdaf0d6010b44",
+      "id": "1539442f8f9c23d5",
+      "source": "Google AI Blog",
+      "title": "Elevating Austria: Google invests in its first data center in the Alps.",
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/google-data-center-austria/",
+      "publishedAt": "Thu, 23 Apr 2026 09:00:00 +0000"
+    },
+    {
+      "id": "e1e83761f7ea575f",
       "source": "OpenAI News",
-      "title": "Introducing GPT-5.5",
-      "url": "https://openai.com/index/introducing-gpt-5-5",
-      "publishedAt": "Thu, 23 Apr 2026 11:00:00 GMT"
+      "title": "Our principles",
+      "url": "https://openai.com/index/our-principles",
+      "publishedAt": "Sun, 26 Apr 2026 16:00:00 GMT"
     },
     {
-      "id": "8ffed2502175348b",
+      "id": "ebab479a84effc41",
+      "source": "Google AI Blog",
+      "title": "8 Gemini tips for organizing your space (and life)",
+      "url": "https://blog.google/products-and-platforms/products/gemini/gemini-spring-cleaning-tips/",
+      "publishedAt": "Fri, 24 Apr 2026 19:00:00 +0000"
+    },
+    {
+      "id": "26de9866b27d78a4",
       "source": "Anthropic Newsroom",
-      "title": "Introducing Claude Opus 4.7",
-      "url": "https://www.anthropic.com/news/claude-opus-4-7",
+      "title": "Claude is a space to think | Anthropic",
+      "url": "https://www.anthropic.com/news/claude-is-a-space-to-think",
       "publishedAt": null
     },
     {
-      "id": "afabafae073055fd",
+      "id": "7244f9fff96d6ecf",
       "source": "Anthropic Newsroom",
-      "title": "Introducing Claude Design by Anthropic Labs",
-      "url": "https://www.anthropic.com/news/claude-design-anthropic-labs",
+      "title": "An update on our election safeguards",
+      "url": "https://www.anthropic.com/news/election-safeguards-update",
       "publishedAt": null
     }
   ],
   "harvestedTerms": [
     {
       "article": {
-        "title": "We're launching two specialized TPUs for the agentic era.",
-        "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/tpus-8t-8i-cloud-next/"
+        "title": "Top 10 uses for Codex at work",
+        "url": "https://openai.com/academy/top-10-use-cases-codex-for-work"
       },
-      "summary": "Google announces two new specialized TPU chips at Cloud Next '26: TPU 8i (optimized for fast agentic inference) and TPU 8t (optimized for training large models on a single memory pool), framed explicitly around the demands of the agentic era.",
+      "summary": "OpenAI Academy article promoting Codex for workplace use cases — coding assistance, automation, and developer productivity. Covers practical applications of the Codex model/agent in professional settings. No novel terminology introduced; primarily reinforces existing canonical concepts around agentic coding, workflow automation, and tool use.",
       "longlistAdditions": [],
-      "longlistUpdates": [
-        {
-          "id": "tpu",
-          "label": "TPU (Tensor Processing Unit)",
-          "sourceAdded": false,
-          "sourceCount": 2,
-          "independentSourceCount": 1
-        },
-        {
-          "id": "ai-inference-chip",
-          "label": "AI Inference Chip",
-          "sourceAdded": false,
-          "sourceCount": 1,
-          "independentSourceCount": 1
-        },
-        {
-          "id": "ai-training-chip",
-          "label": "AI Training Chip",
-          "sourceAdded": false,
-          "sourceCount": 1,
-          "independentSourceCount": 1
-        },
-        {
-          "id": "purpose-built-ai-infrastructure",
-          "label": "Purpose-Built AI Infrastructure",
-          "sourceAdded": false,
-          "sourceCount": 2,
-          "independentSourceCount": 1
-        }
-      ],
+      "longlistUpdates": [],
       "rejections": [],
       "proposalsQueued": []
     },
     {
       "article": {
-        "title": "Here’s how our TPUs power increasingly demanding AI workloads.",
-        "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/what-is-a-tpu/"
+        "title": "Elevating Austria: Google invests in its first data center in the Alps.",
+        "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/google-data-center-austria/"
       },
-      "summary": "Google blog post explaining TPUs (Tensor Processing Units) as custom chips designed for AI workloads, noting the newest generation processes 121 exaflops with double the bandwidth of previous generations. Primarily a promotional/educational piece about Google's custom AI silicon.",
+      "summary": "Google announces its first data center in Austria (Kronstorf), emphasizing AI infrastructure investment, sustainability commitments, and workforce skilling. The article is primarily about physical AI infrastructure expansion in Europe, touching on data center sustainability and regional digital competitiveness.",
       "longlistAdditions": [],
-      "longlistUpdates": [
-        {
-          "id": "tpu",
-          "label": "TPU (Tensor Processing Unit)",
-          "sourceAdded": false,
-          "sourceCount": 2,
-          "independentSourceCount": 1
-        },
-        {
-          "id": "purpose-built-ai-infrastructure",
-          "label": "Purpose-Built AI Infrastructure",
-          "sourceAdded": false,
-          "sourceCount": 2,
-          "independentSourceCount": 1
-        }
-      ],
+      "longlistUpdates": [],
       "rejections": [],
       "proposalsQueued": []
     },
     {
       "article": {
-        "title": "GPT-5.5 System Card",
-        "url": "https://openai.com/index/gpt-5-5-system-card"
+        "title": "Our principles",
+        "url": "https://openai.com/index/our-principles"
       },
-      "summary": "OpenAI releases a system card for GPT-5.5, a new model in their lineup. The article touches on safety evaluations, model documentation, and the system card format as a transparency mechanism.",
+      "summary": "OpenAI publishes a principles document outlining its approach to safety, mission, and values. The article likely covers alignment philosophy, responsible scaling, and governance principles — but the excerpt is empty, limiting analysis to the title and source context.",
       "longlistAdditions": [],
       "longlistUpdates": [
-        {
-          "id": "gpt55",
-          "label": "GPT-5.5",
-          "sourceAdded": false,
-          "sourceCount": 2,
-          "independentSourceCount": 1
-        },
         {
           "id": "system-card",
           "label": "System Card",
-          "sourceAdded": false,
-          "sourceCount": 1,
-          "independentSourceCount": 1
-        }
-      ],
-      "rejections": [],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "Introducing GPT-5.5",
-        "url": "https://openai.com/index/introducing-gpt-5-5"
-      },
-      "summary": "OpenAI announces GPT-5.5, a new model release. The article is from OpenAI's official news channel. No excerpt content is available, but the title directly names the model GPT-5.5, which is already on the longlist.",
-      "longlistAdditions": [],
-      "longlistUpdates": [
-        {
-          "id": "gpt55",
-          "label": "GPT-5.5",
-          "sourceAdded": false,
+          "sourceAdded": true,
           "sourceCount": 2,
           "independentSourceCount": 1
         }
@@ -160,135 +90,88 @@
     },
     {
       "article": {
-        "title": "Introducing Claude Opus 4.7",
-        "url": "https://www.anthropic.com/news/claude-opus-4-7"
+        "title": "8 Gemini tips for organizing your space (and life)",
+        "url": "https://blog.google/products-and-platforms/products/gemini/gemini-spring-cleaning-tips/"
       },
-      "summary": "Claude Opus 4.7 launch article from Anthropic covering advanced software engineering capabilities, long-horizon autonomy, self-verification, differential capability reduction for cyber, and the Cyber Verification Program. Several longlist terms are materially referenced.",
+      "summary": "A Google promotional article showcasing Gemini's practical use cases for spring cleaning and home organization — covering multimodal interaction, Gmail integration, an AI inbox feature, and an 'Agent Mode' mention. Mostly consumer lifestyle content with a few trackable product/concept terms.",
       "longlistAdditions": [],
-      "longlistUpdates": [
-        {
-          "id": "self-verification",
-          "label": "Self-Verification",
-          "sourceAdded": false,
-          "sourceCount": 1,
-          "independentSourceCount": 1
-        },
-        {
-          "id": "cyber-verification-program",
-          "label": "Cyber Verification Program",
-          "sourceAdded": false,
-          "sourceCount": 1,
-          "independentSourceCount": 1
-        },
-        {
-          "id": "differential-capability-reduction",
-          "label": "Differential Capability Reduction",
-          "sourceAdded": false,
-          "sourceCount": 1,
-          "independentSourceCount": 1
-        },
-        {
-          "id": "long-horizon-autonomy",
-          "label": "Long-Horizon Autonomy",
-          "sourceAdded": false,
-          "sourceCount": 1,
-          "independentSourceCount": 1
-        }
-      ],
+      "longlistUpdates": [],
       "rejections": [],
       "proposalsQueued": []
     },
     {
       "article": {
-        "title": "Introducing Claude Design by Anthropic Labs",
-        "url": "https://www.anthropic.com/news/claude-design-anthropic-labs"
+        "title": "Claude is a space to think | Anthropic",
+        "url": "https://www.anthropic.com/news/claude-is-a-space-to-think"
       },
-      "summary": "Anthropic launches Claude Design, a new Labs product for AI-assisted visual design, prototyping, and design system integration. The article materially uses several longlist terms (claude-design, design-system-integration, handoff-bundle, interactive-prototyping) and introduces one new framing concept around AI-native design collaboration.",
+      "summary": "Anthropic's post announces Claude will remain ad-free, explaining the incentive misalignment between advertising and genuine helpfulness. It introduces the concept of 'agentic commerce' and discusses Claude's subscription-based business model, user trust, and third-party tool integrations.",
       "longlistAdditions": [],
-      "longlistUpdates": [
-        {
-          "id": "claude-design",
-          "label": "Claude Design",
-          "sourceAdded": false,
-          "sourceCount": 1,
-          "independentSourceCount": 1
-        },
-        {
-          "id": "design-system-integration",
-          "label": "Design System Integration",
-          "sourceAdded": false,
-          "sourceCount": 1,
-          "independentSourceCount": 1
-        },
-        {
-          "id": "handoff-bundle",
-          "label": "Handoff Bundle",
-          "sourceAdded": false,
-          "sourceCount": 1,
-          "independentSourceCount": 1
-        },
-        {
-          "id": "interactive-prototyping",
-          "label": "Interactive Prototyping",
-          "sourceAdded": false,
-          "sourceCount": 1,
-          "independentSourceCount": 1
-        }
-      ],
+      "longlistUpdates": [],
+      "rejections": [],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "An update on our election safeguards",
+        "url": "https://www.anthropic.com/news/election-safeguards-update"
+      },
+      "summary": "Anthropic article on election safeguards for Claude, covering political bias evaluations, influence operation testing, election banners, and web search triggering. Introduces concepts around influence operations, election-specific policy enforcement, and autonomous campaign execution testing.",
+      "longlistAdditions": [],
+      "longlistUpdates": [],
       "rejections": [],
       "proposalsQueued": []
     }
   ],
   "definitionReviews": [
     {
-      "id": "a2a",
+      "id": "alignment",
       "status": "keep",
-      "reason": "No source material addresses the A2A protocol, its launch date, participant count, or its relationship to MCP. Definition stands."
+      "reason": "No source material addresses alignment research. Definition remains accurate and no update is warranted."
     },
     {
-      "id": "abstraction",
+      "id": "anthropic-co",
       "status": "keep",
-      "reason": "No source material bears on this conceptual definition. Definition stands."
+      "reason": "Sources confirm Anthropic's identity and safety focus. The election safeguards and ad-free policy excerpts are consistent with the definition. No material changes needed."
     },
     {
-      "id": "agent",
+      "id": "api",
       "status": "keep",
-      "reason": "No source material contradicts or updates this core definition of an AI agent. Definition stands."
+      "reason": "No source material addresses APIs. Definition remains accurate."
     },
     {
-      "id": "agent-governance",
+      "id": "artifact",
       "status": "keep",
-      "reason": "No source material updates the EU AI Act timeline or the broader governance framing. Definition stands."
+      "reason": "No source material addresses artifacts. Definition remains accurate."
     },
     {
-      "id": "agent-washing",
-      "status": "keep",
-      "reason": "No source material addresses agent-washing or changes the illustrative examples. Definition stands."
+      "id": "asl-4",
+      "status": "insufficient_evidence",
+      "reason": "The election safeguards excerpt references 'Opus 4.7' and 'Sonnet 4.6' model names, suggesting model versioning has advanced, but no source material confirms, updates, or refutes the specific ASL-4 survey claim about Claude Opus 4.6. Cannot verify or rewrite without further evidence."
     },
     {
-      "id": "agentic-engineering",
+      "id": "attention-budget",
       "status": "keep",
-      "reason": "No source material references Karpathy's coinage or the substance of agentic engineering. Definition stands."
+      "reason": "No source material addresses attention budgets or context engineering. Definition remains accurate."
     },
     {
-      "id": "agentic-harness",
+      "id": "attention-dilution",
       "status": "keep",
-      "reason": "No source material addresses agentic harnesses or the Claude Code leak. Definition stands."
+      "reason": "No source material addresses attention dilution. Definition remains accurate."
     },
     {
-      "id": "ai-assistant",
+      "id": "attention-sink",
       "status": "keep",
-      "reason": "No source material updates this framing note. Definition stands."
+      "reason": "No source material addresses attention sinks. Definition remains accurate."
     },
     {
-      "id": "ai-red-teaming",
+      "id": "autodream",
       "status": "keep",
-      "reason": "The Anthropic Opus 4.7 excerpt mentions a Cyber Verification Program for legitimate red-teaming uses, but this is a product policy detail that confirms rather than changes the definition. Definition stands."
+      "reason": "No source material addresses autoDream. Definition remains accurate."
     },
     {
-      "id": "ai-washing",
+      "id": "autonomous-agent",
       "status": "keep",
-      "reason": "No source material addresses AI-washing or enforcement actions. Definition stands."
+      "reason": "No source material addresses autonomous agents. Definition remains accurate."
     }
   ],
   "notes": []
