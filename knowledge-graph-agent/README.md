@@ -179,6 +179,30 @@ The auditor logs its own activity to the deterministic log with `audit_start`, `
 - Fresh-source-pool detection (would false-positive heavily during early-days when the source pool itself is brand new)
 - Cross-author detection (requires article-author parsing, not yet captured during fetch)
 
+## Slack notifications
+
+Optional manager-channel notifications via Slack incoming webhook. Implemented in [`notify.mjs`](./notify.mjs); wired into both `run.mjs` and `audit.mjs`. **No-ops cleanly when `LEXI_SLACK_WEBHOOK` is unset** — local runs without the secret stay silent rather than erroring.
+
+The agent posts to Slack only when there's news:
+
+| Surface | Posts when... |
+|---|---|
+| `run.mjs` | New notes were added this run, OR the run was paused. Quiet on no-op runs. |
+| `audit.mjs` | New audit findings landed (re-runs over unchanged data are silent via dedup). |
+| GitHub Actions workflows | Workflow itself failed (caught in workflow YAML, posts directly via curl). |
+
+**Setup** (one-time):
+
+1. Create a Slack app in the workspace (api.slack.com/apps → Create New App → From scratch)
+2. Add **Incoming Webhooks** feature, activate, add a webhook to a channel
+3. Copy the webhook URL (looks like `https://hooks.slack.com/services/T.../B.../...`)
+4. Test locally: set `LEXI_SLACK_WEBHOOK` env var, run `node test-notify.mjs`. Should post a hello message and print `{ ok: true }`.
+5. Add the same value as a GitHub repository secret named `LEXI_SLACK_WEBHOOK`. Workflows pick it up automatically.
+
+The webhook URL is treated as a write-only credential (anyone with it can post to that channel; can't read or admin) — never logged, never echoed. Still, treat it like a secret.
+
+**Public content stays on the website.** Slack is the *manager* notification channel; it does not republish Word of the Day or Curator's Notes. Those live at [/word-of-the-day/](https://ai-terminology.com/word-of-the-day/) and (eventually) `/curators-notes/`.
+
 ## What it does on each run
 
 1. Fetches recent articles from configured RSS/Atom feeds and HTML index pages.

@@ -42,6 +42,10 @@ jobs:
 
       - name: Run auditor
         working-directory: knowledge-graph-agent
+        env:
+          # Optional. The auditor only posts to Slack when new findings land
+          # (re-runs over unchanged data are silent via dedup).
+          LEXI_SLACK_WEBHOOK: ${{ secrets.LEXI_SLACK_WEBHOOK }}
         run: node audit.mjs
 
       - name: Commit + push new audit notes
@@ -55,4 +59,18 @@ jobs:
             git commit -m "Lexi audit $(date -u +%Y-%m-%d) [skip ci]" \
               -m "Auto-committed by .github/workflows/lexi-audit.yml"
             git push
+          fi
+
+      - name: Notify Slack on failure
+        if: failure()
+        env:
+          LEXI_SLACK_WEBHOOK: ${{ secrets.LEXI_SLACK_WEBHOOK }}
+        run: |
+          if [ -n "$LEXI_SLACK_WEBHOOK" ]; then
+            payload=$(cat <<JSON
+          {"text":":rotating_light: *Lexi audit FAILED*\nWorkflow: ${{ github.workflow }}\nRun: <https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}|#${{ github.run_id }}>"}
+          JSON
+          )
+            curl -sS -X POST -H 'Content-Type: application/json' \
+              -d "$payload" "$LEXI_SLACK_WEBHOOK" || true
           fi

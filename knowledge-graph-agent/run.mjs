@@ -8,6 +8,7 @@ import { ACTIONS, GATES, resolveGate } from "./actions.mjs";
 import { createLogger, promptVersion } from "./logger.mjs";
 import { ENTRY_TYPES, buildNote, detectContestedOmission } from "./notes.mjs";
 import { detectGlobalPauseReasons, checkThroughputCap } from "./forcing-functions.mjs";
+import { createNotifier } from "./notify.mjs";
 
 const DEFAULT_STATE = {
   lastRunAt: null,
@@ -518,6 +519,23 @@ async function runMain(args, config, logger) {
     notesAddedThisRun,
     notesUnreadTotal: notesUnread
   });
+
+  // Slack notification (optional — no-ops if LEXI_SLACK_WEBHOOK is unset).
+  // Quiet by design: only fires when there's news (new notes OR a pause).
+  const notifier = createNotifier({ webhookUrl: process.env.LEXI_SLACK_WEBHOOK });
+  if (notifier.enabled) {
+    const dateStr = report.generatedAt.slice(0, 16).replace("T", " ") + " UTC";
+    await notifier.sendRunSummary({
+      runId: logger.runId,
+      runLabel: `Lexi run · ${dateStr}`,
+      notes,
+      longlist,
+      proposals,
+      paused,
+      pauseReasons,
+      dashboardUrl: "https://ai-terminology.com/manager/"
+    });
+  }
 }
 
 function parseArgs(argv) {

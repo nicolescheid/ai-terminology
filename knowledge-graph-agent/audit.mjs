@@ -18,6 +18,7 @@ import { fileURLToPath, pathToFileURL } from "node:url";
 import { buildNote } from "./notes.mjs";
 import { createLogger } from "./logger.mjs";
 import { runAllChecks } from "./auditor.mjs";
+import { createNotifier } from "./notify.mjs";
 
 main().catch(err => {
   console.error(err.stack || err.message);
@@ -110,6 +111,20 @@ async function main() {
   console.log(`Longlist: ${(longlist.entries || []).length} entries inspected.`);
   console.log(`Flags raised: ${flags.length} (${added} new notes, ${dedupSkipped} deduped).`);
   console.log(`Total unread notes: ${notes.meta.unreadCount}.`);
+
+  // Slack notification — only fires when new findings landed.
+  const notifier = createNotifier({ webhookUrl: process.env.LEXI_SLACK_WEBHOOK });
+  if (notifier.enabled) {
+    const dateStr = writtenAt.slice(0, 16).replace("T", " ") + " UTC";
+    await notifier.sendAuditSummary({
+      runId,
+      runLabel: `Lexi audit · ${dateStr}`,
+      notes,
+      flagsRaised: flags.length,
+      dedupSkipped,
+      dashboardUrl: "https://ai-terminology.com/manager/"
+    });
+  }
 }
 
 async function loadJson(filePath, fallback) {

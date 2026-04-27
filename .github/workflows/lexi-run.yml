@@ -53,6 +53,10 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           LEXI_PHASE: '1'
+          # Optional. If unset, the agent skips Slack posts cleanly. The
+          # agent itself only posts a Slack message when there's news
+          # (new notes, or a pause) — quiet on no-op runs.
+          LEXI_SLACK_WEBHOOK: ${{ secrets.LEXI_SLACK_WEBHOOK }}
         run: node run.mjs
 
       - name: Commit + push state changes
@@ -75,4 +79,18 @@ jobs:
             git commit -m "Lexi run $(date -u +%Y-%m-%d) [skip ci]" \
               -m "Auto-committed by .github/workflows/lexi-run.yml"
             git push
+          fi
+
+      - name: Notify Slack on failure
+        if: failure()
+        env:
+          LEXI_SLACK_WEBHOOK: ${{ secrets.LEXI_SLACK_WEBHOOK }}
+        run: |
+          if [ -n "$LEXI_SLACK_WEBHOOK" ]; then
+            payload=$(cat <<JSON
+          {"text":":rotating_light: *Lexi run FAILED*\nWorkflow: ${{ github.workflow }}\nRun: <https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}|#${{ github.run_id }}>"}
+          JSON
+          )
+            curl -sS -X POST -H 'Content-Type: application/json' \
+              -d "$payload" "$LEXI_SLACK_WEBHOOK" || true
           fi
