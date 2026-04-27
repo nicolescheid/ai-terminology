@@ -1,0 +1,78 @@
+name: Lexi daily run
+
+# Scheduled execution of the knowledge-graph-agent. Per spec §8, this is the
+# Phase 1→2 transition piece — Lexi goes from "Nicole-triggered batch" to
+# "runs on a schedule." The forcing functions in forcing-functions.mjs are
+# the safety floor: pause-on-unread and throughput caps mean an unattended
+# scheduled run can't run away.
+
+on:
+  schedule:
+    # 18:00 UTC daily = ~6am NZST / ~7am NZDT (gives Nicole fresh state
+    # when she starts her morning). Cron is always UTC; adjust if cadence
+    # or timezone changes.
+    - cron: '0 18 * * *'
+  workflow_dispatch:
+    # Allows manual run from the Actions tab — used for testing the
+    # workflow before relying on the schedule, and for ad-hoc runs.
+
+permissions:
+  contents: write
+  # Required so the workflow can push the agent's output files
+  # (longlist.json, proposals.json, notes-for-nicole.json, state.json, etc.)
+  # back to main, which triggers Cloudflare Pages to redeploy the dashboard.
+
+concurrency:
+  group: lexi-run
+  cancel-in-progress: false
+  # If a previous scheduled run is somehow still going when the next fires,
+  # let it finish before starting another. Avoids overlapping mutations to
+  # the longlist / proposals state.
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Node 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: knowledge-graph-agent/package-lock.json
+
+      - name: Install agent dependencies
+        working-directory: knowledge-graph-agent
+        run: npm ci
+
+      - name: Run Lexi
+        working-directory: knowledge-graph-agent
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          LEXI_PHASE: '1'
+        run: node run.mjs
+
+      - name: Commit + push state changes
+        run: |
+          git config user.name 'lexi-bot'
+          git config user.email 'lexi-bot@users.noreply.github.com'
+          # Stage every file the agent might have touched. The `|| true`
+          # guards against staging errors if a file doesn't exist for some
+          # reason (e.g., never been written before this run).
+          git add knowledge-graph-agent/longlist.json \
+                  knowledge-graph-agent/proposals.json \
+                  knowledge-graph-agent/notes-for-nicole.json \
+                  knowledge-graph-agent/state.json \
+                  knowledge-graph-agent/agent-patch.json \
+                  knowledge-graph-agent/out/latest-report.json \
+                  graph-data-agent.js 2>/dev/null || true
+          if git diff --staged --quiet; then
+            echo "No state changes to commit."
+          else
+            git commit -m "Lexi run $(date -u +%Y-%m-%d) [skip ci]" \
+              -m "Auto-committed by .github/workflows/lexi-run.yml"
+            git push
+          fi

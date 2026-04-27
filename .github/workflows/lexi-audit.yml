@@ -1,0 +1,58 @@
+name: Lexi weekly audit
+
+# Spec §11 establishes that the auditor runs independently from the agent,
+# with a different invocation path. Here that means a separate workflow on
+# its own schedule. Currently heuristic-only (no API calls); when Phase F++
+# adds Claude-based second-opinion sampling, ANTHROPIC_API_KEY becomes
+# required here too — for now the audit job runs without secrets.
+
+on:
+  schedule:
+    # Weekly on Mondays at 19:00 UTC = ~7am NZST / ~8am NZDT Tuesdays.
+    # One hour offset from the daily run so they don't overlap on the day
+    # they coincide (Tuesdays in UTC).
+    - cron: '0 19 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: lexi-audit
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Node 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: knowledge-graph-agent/package-lock.json
+
+      - name: Install agent dependencies
+        working-directory: knowledge-graph-agent
+        run: npm ci
+
+      - name: Run auditor
+        working-directory: knowledge-graph-agent
+        run: node audit.mjs
+
+      - name: Commit + push new audit notes
+        run: |
+          git config user.name 'lexi-bot'
+          git config user.email 'lexi-bot@users.noreply.github.com'
+          git add knowledge-graph-agent/notes-for-nicole.json 2>/dev/null || true
+          if git diff --staged --quiet; then
+            echo "No new audit findings — dedup or no flags."
+          else
+            git commit -m "Lexi audit $(date -u +%Y-%m-%d) [skip ci]" \
+              -m "Auto-committed by .github/workflows/lexi-audit.yml"
+            git push
+          fi
