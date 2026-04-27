@@ -1,121 +1,23 @@
 {
-  "generatedAt": "2026-04-27T01:58:08.607Z",
+  "generatedAt": "2026-04-27T05:42:44.833Z",
   "model": "claude-sonnet-4-6",
   "sourcesConfigured": 4,
   "articlesConsidered": [
     {
-      "id": "3533fea5413f1a89",
+      "id": "b2acc3c294f376d2",
       "source": "OpenAI News",
-      "title": "Top 10 uses for Codex at work",
-      "url": "https://openai.com/academy/top-10-use-cases-codex-for-work",
+      "title": "Automations",
+      "url": "https://openai.com/academy/codex-automations",
       "publishedAt": "Thu, 23 Apr 2026 10:00:00 GMT"
-    },
-    {
-      "id": "1539442f8f9c23d5",
-      "source": "Google AI Blog",
-      "title": "Elevating Austria: Google invests in its first data center in the Alps.",
-      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/google-data-center-austria/",
-      "publishedAt": "Thu, 23 Apr 2026 09:00:00 +0000"
-    },
-    {
-      "id": "e1e83761f7ea575f",
-      "source": "OpenAI News",
-      "title": "Our principles",
-      "url": "https://openai.com/index/our-principles",
-      "publishedAt": "Sun, 26 Apr 2026 16:00:00 GMT"
-    },
-    {
-      "id": "ebab479a84effc41",
-      "source": "Google AI Blog",
-      "title": "8 Gemini tips for organizing your space (and life)",
-      "url": "https://blog.google/products-and-platforms/products/gemini/gemini-spring-cleaning-tips/",
-      "publishedAt": "Fri, 24 Apr 2026 19:00:00 +0000"
-    },
-    {
-      "id": "26de9866b27d78a4",
-      "source": "Anthropic Newsroom",
-      "title": "Claude is a space to think | Anthropic",
-      "url": "https://www.anthropic.com/news/claude-is-a-space-to-think",
-      "publishedAt": null
-    },
-    {
-      "id": "7244f9fff96d6ecf",
-      "source": "Anthropic Newsroom",
-      "title": "An update on our election safeguards",
-      "url": "https://www.anthropic.com/news/election-safeguards-update",
-      "publishedAt": null
     }
   ],
   "harvestedTerms": [
     {
       "article": {
-        "title": "Top 10 uses for Codex at work",
-        "url": "https://openai.com/academy/top-10-use-cases-codex-for-work"
+        "title": "Automations",
+        "url": "https://openai.com/academy/codex-automations"
       },
-      "summary": "OpenAI Academy article promoting Codex for workplace use cases — coding assistance, automation, and developer productivity. Covers practical applications of the Codex model/agent in professional settings. No novel terminology introduced; primarily reinforces existing canonical concepts around agentic coding, workflow automation, and tool use.",
-      "longlistAdditions": [],
-      "longlistUpdates": [],
-      "rejections": [],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "Elevating Austria: Google invests in its first data center in the Alps.",
-        "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/google-data-center-austria/"
-      },
-      "summary": "Google announces its first data center in Austria (Kronstorf), emphasizing AI infrastructure investment, sustainability commitments, and workforce skilling. The article is primarily about physical AI infrastructure expansion in Europe, touching on data center sustainability and regional digital competitiveness.",
-      "longlistAdditions": [],
-      "longlistUpdates": [],
-      "rejections": [],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "Our principles",
-        "url": "https://openai.com/index/our-principles"
-      },
-      "summary": "OpenAI publishes a principles document outlining its approach to safety, mission, and values. The article likely covers alignment philosophy, responsible scaling, and governance principles — but the excerpt is empty, limiting analysis to the title and source context.",
-      "longlistAdditions": [],
-      "longlistUpdates": [
-        {
-          "id": "system-card",
-          "label": "System Card",
-          "sourceAdded": true,
-          "sourceCount": 2,
-          "independentSourceCount": 1
-        }
-      ],
-      "rejections": [],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "8 Gemini tips for organizing your space (and life)",
-        "url": "https://blog.google/products-and-platforms/products/gemini/gemini-spring-cleaning-tips/"
-      },
-      "summary": "A Google promotional article showcasing Gemini's practical use cases for spring cleaning and home organization — covering multimodal interaction, Gmail integration, an AI inbox feature, and an 'Agent Mode' mention. Mostly consumer lifestyle content with a few trackable product/concept terms.",
-      "longlistAdditions": [],
-      "longlistUpdates": [],
-      "rejections": [],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "Claude is a space to think | Anthropic",
-        "url": "https://www.anthropic.com/news/claude-is-a-space-to-think"
-      },
-      "summary": "Anthropic's post announces Claude will remain ad-free, explaining the incentive misalignment between advertising and genuine helpfulness. It introduces the concept of 'agentic commerce' and discusses Claude's subscription-based business model, user trust, and third-party tool integrations.",
-      "longlistAdditions": [],
-      "longlistUpdates": [],
-      "rejections": [],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "An update on our election safeguards",
-        "url": "https://www.anthropic.com/news/election-safeguards-update"
-      },
-      "summary": "Anthropic article on election safeguards for Claude, covering political bias evaluations, influence operation testing, election banners, and web search triggering. Introduces concepts around influence operations, election-specific policy enforcement, and autonomous campaign execution testing.",
+      "summary": "OpenAI Academy article on Codex Automations — covering scheduled and event-driven automation capabilities within the Codex system, touching on agentic workflows, task scheduling, and autonomous code execution pipelines.",
       "longlistAdditions": [],
       "longlistUpdates": [],
       "rejections": [],
@@ -124,54 +26,54 @@
   ],
   "definitionReviews": [
     {
-      "id": "alignment",
-      "status": "keep",
-      "reason": "No source material addresses alignment research. Definition remains accurate and no update is warranted."
-    },
-    {
-      "id": "anthropic-co",
-      "status": "keep",
-      "reason": "Sources confirm Anthropic's identity and safety focus. The election safeguards and ad-free policy excerpts are consistent with the definition. No material changes needed."
-    },
-    {
-      "id": "api",
-      "status": "keep",
-      "reason": "No source material addresses APIs. Definition remains accurate."
-    },
-    {
-      "id": "artifact",
-      "status": "keep",
-      "reason": "No source material addresses artifacts. Definition remains accurate."
-    },
-    {
-      "id": "asl-4",
+      "id": "autonomous-goal-extension",
       "status": "insufficient_evidence",
-      "reason": "The election safeguards excerpt references 'Opus 4.7' and 'Sonnet 4.6' model names, suggesting model versioning has advanced, but no source material confirms, updates, or refutes the specific ASL-4 survey claim about Claude Opus 4.6. Cannot verify or rewrite without further evidence."
+      "reason": "The definition references a specific 'Mythos testing' incident with detailed claims about model behaviour and an Anthropic quote. The provided source has no excerpt content to confirm, update, or refute this. Cannot verify the factual basis of the example."
     },
     {
-      "id": "attention-budget",
+      "id": "autonomy-spectrum",
       "status": "keep",
-      "reason": "No source material addresses attention budgets or context engineering. Definition remains accurate."
+      "reason": "The three-level progression (human-in-the-loop → human-on-the-loop → human-out-of-the-loop) is a well-established framework. The empty source excerpt provides no reason to change it."
     },
     {
-      "id": "attention-dilution",
+      "id": "benchmark-gaming",
       "status": "keep",
-      "reason": "No source material addresses attention dilution. Definition remains accurate."
+      "reason": "Standard, well-established concept. Definition is accurate and concise. No source content to suggest any update is needed."
     },
     {
-      "id": "attention-sink",
-      "status": "keep",
-      "reason": "No source material addresses attention sinks. Definition remains accurate."
+      "id": "benchmark-saturation",
+      "status": "insufficient_evidence",
+      "reason": "Definition makes specific claims about 'Mythos' and an Anthropic quote about 'mostly saturated' evaluations. The source provides no content to verify these claims. The factual basis remains unconfirmed by the provided material."
     },
     {
-      "id": "autodream",
+      "id": "blast-radius",
       "status": "keep",
-      "reason": "No source material addresses autoDream. Definition remains accurate."
+      "reason": "Clear, accurate definition of an established AI safety and engineering concept. No source content contradicts or materially adds to it."
     },
     {
-      "id": "autonomous-agent",
+      "id": "blue-team",
       "status": "keep",
-      "reason": "No source material addresses autonomous agents. Definition remains accurate."
+      "reason": "Accurate and stable definition of a standard security concept with appropriate AI-era framing. No source content suggests revision."
+    },
+    {
+      "id": "capability-overhang",
+      "status": "insufficient_evidence",
+      "reason": "Definition attributes a specific April 2026 quote to OpenAI. The provided source URL is from OpenAI but the excerpt is empty, so the quote and framing cannot be verified or updated against fresh material."
+    },
+    {
+      "id": "chatbot",
+      "status": "keep",
+      "reason": "Broad, accurate definitional note on chatbot evolution. No source content to prompt revision."
+    },
+    {
+      "id": "chatgpt",
+      "status": "keep",
+      "reason": "General description of ChatGPT's origin and current direction. The empty source excerpt provides no new information to update version details or feature claims."
+    },
+    {
+      "id": "claude",
+      "status": "insufficient_evidence",
+      "reason": "Definition specifies current model versions (Claude 4.6, Opus 4.6, Sonnet 4.6, Haiku) and attributes the name to Claude Shannon. Version numbers change frequently and cannot be confirmed as current without live source material. The provided source offers no content to verify."
     }
   ],
   "notes": []

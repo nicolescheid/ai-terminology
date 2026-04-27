@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generatedAt": "2026-04-27T01:58:08.607Z",
-    "unreadCount": 27,
-    "totalCount": 27,
+    "generatedAt": "2026-04-27T05:42:44.833Z",
+    "unreadCount": 29,
+    "totalCount": 29,
     "note": "Notes for Nicole — Lexi's manager channel (spec §6). Mandatory entry types fire when their triggering condition is met; discretionary entries are observations Lexi thinks Nicole should see. Set status to 'read', 'actioned', or 'dismissed' as appropriate."
   },
   "entries": [
@@ -674,6 +674,56 @@
         "current": 15,
         "details": "Would exceed cap of 7 longlist additions per 7-day window (current: 15).",
         "suppressedReason": "The article explicitly names 'character training' as a distinct mechanism separate from system prompts, used to bake political neutrality into Claude at the model level. This is a meaningful technical framing term worth tracking.",
+        "source": "extract-flow"
+      },
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+    },
+    {
+      "id": "3c4880e2a54acc0e",
+      "type": "throughput_cap_hit",
+      "writtenAt": "2026-04-27T05:42:44.833Z",
+      "runId": "0a3bd990-3280-4777-ab18-f0cfdbdcd82e",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 7, current 15)",
+      "details": "Would exceed cap of 7 longlist additions per 7-day window (current: 15).",
+      "evidence": {
+        "action": "add_to_longlist",
+        "target": {
+          "kind": "longlist_entry",
+          "id": "codex-automations"
+        },
+        "gate": "autonomous",
+        "cap": "longlistAdditionsPer7d",
+        "limit": 7,
+        "current": 15,
+        "details": "Would exceed cap of 7 longlist additions per 7-day window (current: 15).",
+        "suppressedReason": "Named product feature from OpenAI Academy focused on automating Codex-driven tasks; distinct from the base Codex model and worth tracking as an agentic product capability.",
+        "source": "extract-flow"
+      },
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+    },
+    {
+      "id": "3c4880e2a54acc0e",
+      "type": "throughput_cap_hit",
+      "writtenAt": "2026-04-27T05:42:44.833Z",
+      "runId": "0a3bd990-3280-4777-ab18-f0cfdbdcd82e",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 7, current 15)",
+      "details": "Would exceed cap of 7 longlist additions per 7-day window (current: 15).",
+      "evidence": {
+        "action": "add_to_longlist",
+        "target": {
+          "kind": "longlist_entry",
+          "id": "event-driven-automation"
+        },
+        "gate": "autonomous",
+        "cap": "longlistAdditionsPer7d",
+        "limit": 7,
+        "current": 15,
+        "details": "Would exceed cap of 7 longlist additions per 7-day window (current: 15).",
+        "suppressedReason": "Distinct from cron-based scheduling; event-driven triggering is an important architectural concept for agentic systems and worth observing as it appears in product documentation.",
         "source": "extract-flow"
       },
       "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."

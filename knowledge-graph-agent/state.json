@@ -1,6 +1,6 @@
 {
-  "lastRunAt": "2026-04-27T01:58:08.607Z",
-  "reviewCursor": 20,
+  "lastRunAt": "2026-04-27T05:42:44.833Z",
+  "reviewCursor": 30,
   "seenArticles": {
     "93a049d060bc295b": {
       "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/tpus-8t-8i-cloud-next/",
@@ -73,6 +73,12 @@
       "title": "An update on our election safeguards",
       "publishedAt": null,
       "seenAt": "2026-04-27T01:58:08.607Z"
+    },
+    "b2acc3c294f376d2": {
+      "url": "https://openai.com/academy/codex-automations",
+      "title": "Automations",
+      "publishedAt": "Thu, 23 Apr 2026 10:00:00 GMT",
+      "seenAt": "2026-04-27T05:42:44.833Z"
     }
   },
   "nodeReviews": {
@@ -175,6 +181,56 @@
       "lastReviewedAt": "2026-04-27T01:58:08.607Z",
       "status": "keep",
       "reason": "No source material addresses autonomous agents. Definition remains accurate."
+    },
+    "autonomous-goal-extension": {
+      "lastReviewedAt": "2026-04-27T05:42:44.833Z",
+      "status": "insufficient_evidence",
+      "reason": "The definition references a specific 'Mythos testing' incident with detailed claims about model behaviour and an Anthropic quote. The provided source has no excerpt content to confirm, update, or refute this. Cannot verify the factual basis of the example."
+    },
+    "autonomy-spectrum": {
+      "lastReviewedAt": "2026-04-27T05:42:44.833Z",
+      "status": "keep",
+      "reason": "The three-level progression (human-in-the-loop → human-on-the-loop → human-out-of-the-loop) is a well-established framework. The empty source excerpt provides no reason to change it."
+    },
+    "benchmark-gaming": {
+      "lastReviewedAt": "2026-04-27T05:42:44.833Z",
+      "status": "keep",
+      "reason": "Standard, well-established concept. Definition is accurate and concise. No source content to suggest any update is needed."
+    },
+    "benchmark-saturation": {
+      "lastReviewedAt": "2026-04-27T05:42:44.833Z",
+      "status": "insufficient_evidence",
+      "reason": "Definition makes specific claims about 'Mythos' and an Anthropic quote about 'mostly saturated' evaluations. The source provides no content to verify these claims. The factual basis remains unconfirmed by the provided material."
+    },
+    "blast-radius": {
+      "lastReviewedAt": "2026-04-27T05:42:44.833Z",
+      "status": "keep",
+      "reason": "Clear, accurate definition of an established AI safety and engineering concept. No source content contradicts or materially adds to it."
+    },
+    "blue-team": {
+      "lastReviewedAt": "2026-04-27T05:42:44.833Z",
+      "status": "keep",
+      "reason": "Accurate and stable definition of a standard security concept with appropriate AI-era framing. No source content suggests revision."
+    },
+    "capability-overhang": {
+      "lastReviewedAt": "2026-04-27T05:42:44.833Z",
+      "status": "insufficient_evidence",
+      "reason": "Definition attributes a specific April 2026 quote to OpenAI. The provided source URL is from OpenAI but the excerpt is empty, so the quote and framing cannot be verified or updated against fresh material."
+    },
+    "chatbot": {
+      "lastReviewedAt": "2026-04-27T05:42:44.833Z",
+      "status": "keep",
+      "reason": "Broad, accurate definitional note on chatbot evolution. No source content to prompt revision."
+    },
+    "chatgpt": {
+      "lastReviewedAt": "2026-04-27T05:42:44.833Z",
+      "status": "keep",
+      "reason": "General description of ChatGPT's origin and current direction. The empty source excerpt provides no new information to update version details or feature claims."
+    },
+    "claude": {
+      "lastReviewedAt": "2026-04-27T05:42:44.833Z",
+      "status": "insufficient_evidence",
+      "reason": "Definition specifies current model versions (Claude 4.6, Opus 4.6, Sonnet 4.6, Haiku) and attributes the name to Claude Shannon. Version numbers change frequently and cannot be confirmed as current without live source material. The provided source offers no content to verify."
     }
   }
 }
