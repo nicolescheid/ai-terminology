@@ -1,0 +1,8 @@
+# Cloudflare Pages redirect rules.
+#
+# /atlas/ was the staging path for the Lexicon Atlas redesign during its
+# preview phase (2026-04-27). It's now the homepage; old /atlas/* links
+# forward to /. 301 = permanent — safe for browser/CDN caching.
+
+/atlas/*  /  301
+/atlas    /  301
