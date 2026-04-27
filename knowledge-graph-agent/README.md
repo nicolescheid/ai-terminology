@@ -1,6 +1,6 @@
 # Knowledge Graph Agent (Lexi, Phase 0–1)
 
-This agent watches configured article sources, extracts candidate AI terminology, and curates a tiered knowledge structure. It is the working prototype of **Lexi**, the AI lexicographer described in [`lexi-spec.md`](</C:/dev/dyadic mind/lexi-spec.md>).
+This agent watches configured article sources, extracts candidate AI terminology, and curates a tiered knowledge structure. It is the working prototype of **Lexi**, the AI lexicographer described in [`lexi-spec.md`](</C:/dev/ai-terminology/lexi-spec.md>).
 
 ## The three-tier model
 
@@ -8,9 +8,9 @@ The spec defines three tiers; the agent operates against the first two:
 
 | Tier | What it is | File | Who writes it |
 |---|---|---|---|
-| **1. Graph** | Promoted, canonical terms. Visible at the public knowledge graph. | [`graph-data.js`](</C:/dev/dyadic mind/graph-data.js>) (curated base) + [`graph-data-agent.js`](</C:/dev/dyadic mind/graph-data-agent.js>) (overlay) | Nicole curates the base. The overlay is **propose-only** — graph promotions and substantive definition changes go to [`proposals.json`](./proposals.json) for Nicole to approve. |
+| **1. Graph** | Promoted, canonical terms. Visible at the public knowledge graph. | [`graph-data.js`](</C:/dev/ai-terminology/graph-data.js>) (curated base) + [`graph-data-agent.js`](</C:/dev/ai-terminology/graph-data-agent.js>) (overlay) | Nicole curates the base. The overlay is **propose-only** — graph promotions and substantive definition changes go to [`proposals.json`](./proposals.json) for Nicole to approve. |
 | **2. Longlist** | Terms under observation, awaiting evidence to support promotion. | [`longlist.json`](./longlist.json) | The agent autonomously adds new terms and merges new sources into existing entries (matrix-configured; see below). |
-| **3. Rejected** | Terms the agent considered and rejected, with reasons. | (currently captured per-run in `out/latest-report.json`; Phase C will move this to a deterministic event log) | The agent records rejections inline. |
+| **3. Rejected** | Terms the agent considered and rejected, with reasons. | Per-run in [`out/latest-report.json`](./out/latest-report.json) (per-article harvest), and as `action` events with outcome `rejected` in the deterministic log (see below). | The agent records rejections inline. |
 
 ## The permissions matrix
 
@@ -23,7 +23,7 @@ Every state-changing action the agent can take is named in [`actions.mjs`](./act
 | `HUMAN_IN_LOOP` | Pre-publication human review required (e.g. Word of the Day). |
 | `NEVER` | Not allowed under any circumstances. |
 
-The matrix is derived directly from [`lexi-spec.md` §5](</C:/dev/dyadic mind/lexi-spec.md>). Notable current gates under Phase 1:
+The matrix is derived directly from [`lexi-spec.md` §5](</C:/dev/ai-terminology/lexi-spec.md>). Notable current gates under Phase 1:
 
 - `ADD_TO_LONGLIST` — `AUTONOMOUS` (the spec's strict reading is `PROPOSE` until Phase 2; we're holding that flip until an approval CLI exists).
 - `EDIT_GRAPH_DEF_SUBSTANTIVE` — `PROPOSE`. Refresh suggestions from the definition-review pass land in the proposals queue.
@@ -50,7 +50,37 @@ The matrix is derived directly from [`lexi-spec.md` §5](</C:/dev/dyadic mind/le
 }
 ```
 
-To approve a proposal: edit its `status` to `"approved"`. To reject: set to `"rejected"`. The apply step that commits approvals is forthcoming (Phase C/D work).
+To approve a proposal: edit its `status` to `"approved"`. To reject: set to `"rejected"`. The apply step that commits approvals is forthcoming (Phase D work).
+
+## The deterministic log
+
+Per spec §11, the orchestration code (`run.mjs`) writes a deterministic event log to [`log/events.ndjson`](./log/) — append-only, one JSON event per line, never rewritten. **This is the system of record**, separate from Lexi's self-reports (`report.json`, `longlist.json`, `proposals.json`). When something goes wrong, debugging from Lexi's self-reports means debugging via the testimony of the thing that broke; the deterministic log is the independent witness.
+
+The log is gitignored (operational forensics data, grows per run, not source). It lives only on the machine where the agent ran.
+
+Every run emits at minimum:
+
+| Event kind | When | Notable fields |
+|---|---|---|
+| `run_start` | Once at start | `model`, `phase`, `extractPromptVersion`, `reviewPromptVersion`, `sourcesConfigured` |
+| `api_call` | Per Claude API call (extract per article + one review) | `call`, `promptVersion`, `inputs` (URL/title), `outputs` (counts/summary), `durationMs`, `errored`, `errorMessage` |
+| `action` | Per action routed through the permissions matrix | `action` (from `ACTIONS`), `gate`, `outcome` (`applied` / `proposed` / `dropped` / `errored`), `target`, `payload`, `reason`, `source` |
+| `run_end` | Once at end (success path) | `articlesProcessed`, `longlistTotal`, `longlistAddedThisRun`, `proposalsQueuedThisRun`, etc. |
+| `run_errored` | Instead of `run_end` if the run throws | `errorMessage`, `errorStack` |
+
+Common fields on every event: `ts` (ISO timestamp UTC), `runId` (UUID grouping all events of one invocation), `phase`, `selfEval` (currently `null`; placeholder for spec §15 self-check output when that lands).
+
+To inspect a recent run:
+
+```bash
+# Last 20 events
+tail -n 20 knowledge-graph-agent/log/events.ndjson | jq .
+
+# All actions of one run (replace <uuid>)
+grep '"runId":"<uuid>"' knowledge-graph-agent/log/events.ndjson | grep '"kind":"action"' | jq .
+```
+
+**Prompt version hashes** appear in every relevant event. They roll forward automatically when either system prompt is edited — the historical record stays interpretable when prompts change.
 
 ## What it does on each run
 
@@ -67,7 +97,7 @@ To approve a proposal: edit its `status` to `"approved"`. To reject: set to `"re
 1. Install dependencies:
 
    ```powershell
-   cd "C:\dev\dyadic mind\knowledge-graph-agent"
+   cd "C:\dev\ai-terminology\knowledge-graph-agent"
    npm install
    ```
 
@@ -81,14 +111,14 @@ To approve a proposal: edit its `status` to `"approved"`. To reject: set to `"re
 
 ```powershell
 $env:ANTHROPIC_API_KEY="sk-ant-..."
-node "C:\dev\dyadic mind\knowledge-graph-agent\run.mjs"
+node "C:\dev\ai-terminology\knowledge-graph-agent\run.mjs"
 ```
 
 ## Output files
 
 - **Tier 2 longlist**: [`longlist.json`](./longlist.json) — the watchlist of terms the agent is observing, with sources, source counts, and timestamps.
 - **Proposals queue**: [`proposals.json`](./proposals.json) — every `PROPOSE`-gated action lands here for Nicole's review.
-- **Tier 1 graph overlay** (currently empty under propose-only discipline): [`agent-patch.json`](./agent-patch.json) and [`graph-data-agent.js`](</C:/dev/dyadic mind/graph-data-agent.js>).
+- **Tier 1 graph overlay** (currently empty under propose-only discipline): [`agent-patch.json`](./agent-patch.json) and [`graph-data-agent.js`](</C:/dev/ai-terminology/graph-data-agent.js>).
 - **Run state** (dedup, review cursor): [`state.json`](./state.json).
 - **Latest report** (per-article harvest, rejections, default-deny notes): [`out/latest-report.json`](./out/latest-report.json).
 - **Pre-Lexi rollback snapshot** (the prototype's pre-discipline output, preserved as a comparison test case): [`pre-lexi-rollback/`](./pre-lexi-rollback/).

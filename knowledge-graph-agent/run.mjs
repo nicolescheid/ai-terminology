@@ -5,6 +5,7 @@ import vm from "node:vm";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import Anthropic from "@anthropic-ai/sdk";
 import { ACTIONS, GATES, resolveGate } from "./actions.mjs";
+import { createLogger, promptVersion } from "./logger.mjs";
 
 const DEFAULT_STATE = {
   lastRunAt: null,
@@ -82,6 +83,30 @@ async function main() {
   await ensureParent(config.agentPatchPath);
   await ensureParent(config.longlistPath);
   await ensureParent(config.proposalsPath);
+  await ensureParent(config.logPath);
+
+  // Deterministic event log (spec §11). One logger per run; runId groups all
+  // events of this invocation. Lifecycle events (run_start / run_end /
+  // run_errored) bracket the work; action events are emitted from route()
+  // below; api_call events wrap the two model calls.
+  const runId = crypto.randomUUID();
+  const logger = createLogger({ runId, phase: config.phase, logPath: config.logPath });
+  await logger.runStart({
+    model: config.model,
+    sourcesConfigured: (config.sources || []).length,
+    extractPromptVersion: EXTRACT_PROMPT_VERSION,
+    reviewPromptVersion: REVIEW_PROMPT_VERSION
+  });
+
+  try {
+    await runMain(args, config, logger);
+  } catch (err) {
+    await logger.runErrored(err);
+    throw err;
+  }
+}
+
+async function runMain(args, config, logger) {
 
   const graph = await loadGraphData(config.graphDataPath);
   const state = await loadJson(config.statePath, structuredClone(DEFAULT_STATE));
@@ -127,22 +152,32 @@ async function main() {
   }
 
   // Helper bound to this run's context — routes a candidate action through the
-  // permissions matrix. Returns true iff the caller should treat the action as
-  // applied (autonomous OR proposal queued); false for NEVER / unknown (logged
-  // to report.notes via default-deny).
-  const route = (action, target, payload, reason, source, onAutonomous) => {
+  // permissions matrix and records an event in the deterministic log. Returns
+  // true iff the caller should treat the action as applied (autonomous) or
+  // proposed (queued for Nicole's review); false for NEVER / unknown actions
+  // (default-deny per spec §5, also logged to report.notes for surfacing).
+  const route = async (action, target, payload, reason, source, onAutonomous) => {
     const gate = resolveGate(action, config.phase);
-    if (gate === GATES.AUTONOMOUS) {
-      onAutonomous();
-      return true;
+    let outcome;
+    let errorMessage = null;
+    try {
+      if (gate === GATES.AUTONOMOUS) {
+        onAutonomous();
+        outcome = "applied";
+      } else if (gate === GATES.PROPOSE || gate === GATES.HUMAN_IN_LOOP) {
+        proposals.proposals.push(buildProposal(action, target, payload, reason, source, report.generatedAt, gate));
+        outcome = "proposed";
+      } else {
+        report.notes.push(`Default-deny: action '${action}' for target ${target?.id ?? "(none)"} dropped (gate=${gate ?? "unknown"}, phase=${config.phase}).`);
+        outcome = "dropped";
+      }
+    } catch (err) {
+      outcome = "errored";
+      errorMessage = err.message;
     }
-    if (gate === GATES.PROPOSE || gate === GATES.HUMAN_IN_LOOP) {
-      proposals.proposals.push(buildProposal(action, target, payload, reason, source, report.generatedAt, gate));
-      return true;
-    }
-    // NEVER, or unknown action (default-deny per spec §5)
-    report.notes.push(`Default-deny: action '${action}' for target ${target?.id ?? "(none)"} dropped (gate=${gate ?? "unknown"}, phase=${config.phase}).`);
-    return false;
+    await logger.action({ action, source, gate, outcome, target, payload, reason, errorMessage });
+    if (outcome === "errored") throw new Error(errorMessage);
+    return outcome === "applied" || outcome === "proposed";
   };
 
   if (apiKey && articles.length) {
@@ -158,7 +193,29 @@ async function main() {
     const reviewableNodes = [...mergedNodes];
 
     for (const article of articles) {
-      const analysis = await extractNewTerms(article, extractContext, config, anthropic);
+      const apiStart = Date.now();
+      let analysis;
+      try {
+        analysis = await extractNewTerms(article, extractContext, config, anthropic);
+        await logger.apiCall({
+          call: "extract",
+          promptVersion: EXTRACT_PROMPT_VERSION,
+          inputs: { url: article.url, title: article.title, sourceLabel: article.sourceLabel },
+          outputs: { candidatesCount: analysis.candidates?.length ?? 0, summary: analysis.summary },
+          durationMs: Date.now() - apiStart,
+          errored: false
+        });
+      } catch (err) {
+        await logger.apiCall({
+          call: "extract",
+          promptVersion: EXTRACT_PROMPT_VERSION,
+          inputs: { url: article.url, title: article.title, sourceLabel: article.sourceLabel },
+          durationMs: Date.now() - apiStart,
+          errored: true,
+          errorMessage: err.message
+        });
+        throw err;
+      }
       const harvest = {
         article: { title: article.title, url: article.url },
         summary: analysis.summary,
@@ -183,7 +240,7 @@ async function main() {
         if (decision.action === ACTIONS.INCREMENT_LONGLIST_SOURCE) {
           const entry = longlist.entries.find(e => e.id === decision.target);
           const newSource = buildSourceRef(article, report.generatedAt);
-          route(
+          await route(
             ACTIONS.INCREMENT_LONGLIST_SOURCE,
             { kind: "longlist_entry", id: entry.id },
             { source: newSource },
@@ -205,7 +262,7 @@ async function main() {
 
         if (decision.action === ACTIONS.ADD_TO_LONGLIST) {
           const entry = buildLonglistEntry(decision.candidate, article, report.generatedAt, graph.clusters);
-          const applied = route(
+          const applied = await route(
             ACTIONS.ADD_TO_LONGLIST,
             { kind: "longlist_entry", id: entry.id },
             { entry },
@@ -229,7 +286,29 @@ async function main() {
     // (EDIT_GRAPH_DEF_SUBSTANTIVE = PROPOSE), they land in the proposals queue.
     const reviewTargets = pickNodesForReview(reviewableNodes, state, config.maxNodesToReviewPerRun);
     if (reviewTargets.length) {
-      const reviewResult = await reviewDefinitions(reviewTargets, articles, config, anthropic);
+      const reviewStart = Date.now();
+      let reviewResult;
+      try {
+        reviewResult = await reviewDefinitions(reviewTargets, articles, config, anthropic);
+        await logger.apiCall({
+          call: "review",
+          promptVersion: REVIEW_PROMPT_VERSION,
+          inputs: { targetCount: reviewTargets.length, targetIds: reviewTargets.map(n => n.id), articleCount: articles.length },
+          outputs: { reviewsCount: reviewResult.reviews?.length ?? 0, summary: reviewResult.summary },
+          durationMs: Date.now() - reviewStart,
+          errored: false
+        });
+      } catch (err) {
+        await logger.apiCall({
+          call: "review",
+          promptVersion: REVIEW_PROMPT_VERSION,
+          inputs: { targetCount: reviewTargets.length, targetIds: reviewTargets.map(n => n.id), articleCount: articles.length },
+          durationMs: Date.now() - reviewStart,
+          errored: true,
+          errorMessage: err.message
+        });
+        throw err;
+      }
       report.definitionReviews = reviewResult.reviews;
       for (const review of reviewResult.reviews) {
         state.nodeReviews[review.id] = {
@@ -238,7 +317,7 @@ async function main() {
           reason: review.reason
         };
         if (review.status === "refresh" && review.def) {
-          route(
+          await route(
             ACTIONS.EDIT_GRAPH_DEF_SUBSTANTIVE,
             { kind: "graph_node", id: review.id },
             { def: cleanText(review.def), refs: nextRefsFromSources(articles) },
@@ -305,6 +384,17 @@ async function main() {
   console.log(`Processed ${articles.length} article(s) at Phase ${config.phase}.`);
   console.log(`Longlist: ${longlist.entries.length} entries total (${additions} added this run, ${sourcesAdded}/${updateAttempts} re-sightings landed as new sources, ${rejections} rejected).`);
   console.log(`Proposals queue: ${queuedThisRun} queued this run, ${pendingTotal} pending total (review at proposals.json).`);
+
+  await logger.runEnd({
+    articlesProcessed: articles.length,
+    longlistTotal: longlist.entries.length,
+    longlistAddedThisRun: additions,
+    sourcesAddedThisRun: sourcesAdded,
+    sourceMergeAttempts: updateAttempts,
+    rejectionsThisRun: rejections,
+    proposalsQueuedThisRun: queuedThisRun,
+    proposalsPendingTotal: pendingTotal
+  });
 }
 
 function parseArgs(argv) {
@@ -509,6 +599,11 @@ const EXTRACT_SYSTEM_PROMPT = [
 ].join("\n");
 
 const REVIEW_SYSTEM_PROMPT = "You review AI knowledge graph definitions against fresh source material. Only recommend a rewritten definition when the sources clearly justify it. If the sources do not materially update a term, mark it keep or insufficient_evidence. Return JSON only.";
+
+// Stable hashes recorded in every log entry the corresponding prompt produced.
+// Update either prompt above and the version automatically rolls forward.
+const EXTRACT_PROMPT_VERSION = promptVersion("extract", EXTRACT_SYSTEM_PROMPT);
+const REVIEW_PROMPT_VERSION = promptVersion("review", REVIEW_SYSTEM_PROMPT);
 
 function buildExtractContext(graphNodes, longlistEntries, clusters) {
   const graphTerms = graphNodes

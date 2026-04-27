@@ -11,6 +11,9 @@ export default {
   proposalsPath: path.resolve(__dirname, "./proposals.json"),
   statePath: path.resolve(__dirname, "./state.json"),
   reportPath: path.resolve(__dirname, "./out/latest-report.json"),
+  // Deterministic event log (spec §11). Append-only NDJSON. Gitignored —
+  // this is operational forensics data, not source code.
+  logPath: path.resolve(__dirname, "./log/events.ndjson"),
   // Lexi phase per lexi-spec.md §8. Drives the permissions matrix in actions.mjs.
   // 0 = hand-run, 1 = batch automation (Nicole-triggered), 2 = autonomous + public.
   phase: Number.parseInt(process.env.LEXI_PHASE || "1", 10),
