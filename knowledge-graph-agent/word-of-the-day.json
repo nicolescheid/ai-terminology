@@ -1,0 +1,11 @@
+{
+  "meta": {
+    "generatedAt": null,
+    "queuedCount": 0,
+    "approvedCount": 0,
+    "publishedCount": 0,
+    "note": "Word of the Day queue (spec §13). Lexi drafts entries with status: 'queued'; Nicole edits status to 'approved' or 'rejected'. The /word-of-the-day/ page displays whichever entry has scheduledFor matching today (or the most recent published if today's isn't ready). Spec §13 wants the queue ≥7 days ahead; if it dips below 3 days, Lexi should pause auto-publication and write a Notes for Nicole entry. Drafting flow + auto-publication mechanism are deferred to a follow-up session — for now, queue is hand-edited."
+  },
+  "queue": [],
+  "published": []
+}

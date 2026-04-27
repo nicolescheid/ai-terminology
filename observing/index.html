@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Observing · AI Terminology</title>
+<meta name="description" content="Terms Lexi is currently watching. Seen at least once, not yet promoted to the canonical graph — the longlist of AI vocabulary under observation.">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Observing · AI Terminology">
+<meta property="og:description" content="Terms Lexi is currently watching — the longlist of AI vocabulary under observation.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ai-terminology.com/observing/">
+
+<!-- GA -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WHN5G9LEND"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-WHN5G9LEND');</script>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&family=IBM+Plex+Mono:wght@300;400&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#f7f5f0;font-family:'IBM Plex Sans',sans-serif;font-weight:300;color:#2c2c2c;min-height:100vh;line-height:1.5}
+.wrap{max-width:980px;margin:0 auto;padding:32px 24px 96px}
+
+/* Header */
+.hdr{display:flex;align-items:baseline;gap:14px;margin-bottom:14px;flex-wrap:wrap}
+.hdr .wm{font-family:'Instrument Serif',serif;font-size:24px}
+.hdr .wm em{font-style:italic;color:#5a6b8f}
+.hdr .sub{font-size:11px;font-weight:400;letter-spacing:.12em;text-transform:uppercase;color:#888}
+.hdr .actions{margin-left:auto;display:flex;gap:14px;align-items:center}
+.hdr .actions a{font-size:12px;color:#5a6b8f;text-decoration:none}
+.hdr .actions a:hover{text-decoration:underline}
+
+.intro{font-size:14px;color:#444;line-height:1.6;margin-bottom:24px;max-width:680px}
+.intro em{font-family:'Instrument Serif',serif;font-style:italic;color:#5a6b8f;font-size:15px}
+
+/* Filter chips */
+.filters{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:22px;padding:14px 0;border-top:1px solid rgba(0,0,0,.08);border-bottom:1px solid rgba(0,0,0,.08)}
+.chip{font-size:12px;color:#666;border:1px solid rgba(0,0,0,.12);border-radius:20px;padding:5px 12px;background:transparent;cursor:pointer;font-family:'IBM Plex Sans',sans-serif;transition:all .15s}
+.chip:hover{border-color:rgba(0,0,0,.3)}
+.chip.active{background:#2c2c2c;color:#fff;border-color:#2c2c2c}
+.summary{margin-left:auto;font-size:12px;color:#888;align-self:center}
+
+/* Entry cards */
+.card{background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:10px;padding:22px 24px;margin-bottom:14px}
+.card.eligible{border-color:#b6d09c;background:linear-gradient(to right, #fbfdf8, #fff)}
+.card.deprecated{opacity:.65}
+.card.deprecated .label{text-decoration:line-through}
+.card-head{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+.card .label{font-family:'Instrument Serif',serif;font-size:22px;font-weight:400}
+.card .fullname{font-family:'IBM Plex Sans',sans-serif;font-size:13px;color:#888;font-weight:300}
+.card .badges{display:flex;gap:6px;flex-wrap:wrap;margin-left:auto}
+.badge{font-size:10px;letter-spacing:.05em;text-transform:uppercase;padding:3px 9px;border-radius:20px;border:1px solid rgba(0,0,0,.12);color:#666;font-weight:400;white-space:nowrap}
+.badge.cluster{background:rgba(0,0,0,.03)}
+.badge.eligible{background:#e9f1e3;border-color:#b6d09c;color:#2f5f1f;font-weight:500}
+.badge.deprecated{background:#eee;border-color:#ccc;color:#666}
+.card .def{font-size:14px;line-height:1.6;color:#2c2c2c;margin-bottom:14px}
+.card .meta{font-size:11px;color:#888;letter-spacing:.04em;display:flex;gap:14px;flex-wrap:wrap;padding-top:12px;border-top:1px solid rgba(0,0,0,.06)}
+.card .meta strong{color:#444;font-weight:500}
+.card .sources{margin-top:14px;font-size:12px}
+.card .sources-label{font-size:10px;color:#888;text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px}
+.card .source{padding:4px 0;color:#555;display:flex;gap:8px;align-items:baseline}
+.card .source a{color:#5a6b8f;text-decoration:none}
+.card .source a:hover{text-decoration:underline}
+.card .source .src-label{font-size:10px;color:#888;text-transform:uppercase;letter-spacing:.04em;flex-shrink:0}
+.card .source .src-date{font-family:'IBM Plex Mono',monospace;font-size:10px;color:#999;flex-shrink:0}
+.card .superseded{margin-top:10px;font-size:12px;color:#5a6b8f;font-style:italic}
+
+/* Footer */
+.foot{margin-top:48px;font-size:11px;color:#999;text-align:center;letter-spacing:.04em}
+.foot a{color:#5a6b8f;text-decoration:none}
+
+.error{background:#f9e3e3;border:1px solid #d09c9c;color:#7a2222;padding:14px 18px;border-radius:8px;font-size:13px}
+
+@media (max-width:600px){
+  .wrap{padding:18px 14px 60px}
+  .card-head{flex-direction:column;align-items:flex-start;gap:8px}
+  .card .badges{margin-left:0}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hdr">
+  <div class="wm">AI <em>Terminology</em></div>
+  <div class="sub">Observing</div>
+  <div class="actions">
+    <a href="/">Graph</a>
+    <a href="/word-of-the-day/">Word of the Day</a>
+  </div>
+</header>
+
+<p class="intro">
+  Terms <em>Lexi</em> is currently watching. Each has been seen at least once but hasn't yet accumulated enough independent evidence to enter the canonical graph. Promotion happens when sources from genuinely different domains converge on the same meaning. This is the leading edge of how AI vocabulary is being used.
+</p>
+
+<div class="filters">
+  <button class="chip active" data-sort="recent">Recently seen</button>
+  <button class="chip" data-sort="sources">Most sources</button>
+  <button class="chip" data-sort="eligible">Promotion-eligible</button>
+  <button class="chip" data-sort="alpha">Alphabetical</button>
+  <span class="summary" id="summary">Loading…</span>
+</div>
+
+<div id="content"></div>
+
+<div class="foot">
+  Curated by <a href="https://github.com/nicolescheid/ai-terminology" target="_blank" rel="noopener">Lexi</a> · part of <a href="/">AI Terminology</a>
+</div>
+
+</div>
+
+<script>
+const LONGLIST_PATH = "/knowledge-graph-agent/longlist.json";
+let entries = [];
+let currentSort = "recent";
+
+async function loadLonglist() {
+  try {
+    const r = await fetch(LONGLIST_PATH, { cache: "no-store" });
+    if (!r.ok) throw new Error("HTTP " + r.status);
+    const data = await r.json();
+    return data.entries || [];
+  } catch (e) {
+    console.error(e);
+    return null;
+  }
+}
+
+function fmtDate(iso) {
+  if (!iso) return "—";
+  return new Date(iso).toISOString().slice(0, 10);
+}
+
+function fmtSourceDate(iso) {
+  if (!iso) return "";
+  // For source dates, prefer the source's own publishedAt format if it's a string;
+  // otherwise format the ISO. Sources may have either ISO or RFC822 strings.
+  if (typeof iso === "string" && !iso.match(/^\d{4}-/)) return iso.slice(0, 16);
+  return fmtDate(iso);
+}
+
+function el(tag, attrs, ...kids) {
+  const e = document.createElement(tag);
+  if (attrs) for (const [k, v] of Object.entries(attrs)) {
+    if (k === "class") e.className = v;
+    else if (k === "html") e.innerHTML = v;
+    else if (k === "href" || k === "target" || k === "rel" || k === "data-sort") e.setAttribute(k, v);
+    else e.setAttribute(k, v);
+  }
+  for (const k of kids.flat()) {
+    if (k == null) continue;
+    e.appendChild(typeof k === "string" ? document.createTextNode(k) : k);
+  }
+  return e;
+}
+
+function sortEntries(entries, mode) {
+  const copy = [...entries];
+  if (mode === "alpha") {
+    return copy.sort((a, b) => (a.label || "").localeCompare(b.label || ""));
+  }
+  if (mode === "sources") {
+    return copy.sort((a, b) =>
+      (b.sourceCount || 0) - (a.sourceCount || 0) ||
+      (b.independentSourceCount || 0) - (a.independentSourceCount || 0)
+    );
+  }
+  if (mode === "eligible") {
+    return copy.sort((a, b) => {
+      const ae = (a.independentSourceCount || 0) >= 2 ? 1 : 0;
+      const be = (b.independentSourceCount || 0) >= 2 ? 1 : 0;
+      if (ae !== be) return be - ae;
+      return (b.independentSourceCount || 0) - (a.independentSourceCount || 0);
+    });
+  }
+  // recent (default)
+  return copy.sort((a, b) =>
+    (b.dateLastSeen || b.dateFirstSeen || "").localeCompare(a.dateLastSeen || a.dateFirstSeen || "")
+  );
+}
+
+function renderEntry(entry) {
+  const eligible = (entry.independentSourceCount || 0) >= 2;
+  const deprecated = entry.deprecated === true;
+  const cls = ["card"];
+  if (eligible) cls.push("eligible");
+  if (deprecated) cls.push("deprecated");
+  const card = el("div", { class: cls.join(" ") });
+
+  const head = el("div", { class: "card-head" },
+    el("div", { class: "label" }, entry.label || entry.id),
+    entry.fullName && entry.fullName !== entry.label
+      ? el("div", { class: "fullname" }, "· " + entry.fullName)
+      : null
+  );
+  const badges = el("div", { class: "badges" });
+  for (const c of (entry.clusters || [])) {
+    badges.appendChild(el("span", { class: "badge cluster" }, c));
+  }
+  if (eligible) badges.appendChild(el("span", { class: "badge eligible" }, "promotion-eligible"));
+  if (deprecated) badges.appendChild(el("span", { class: "badge deprecated" }, "deprecated"));
+  head.appendChild(badges);
+  card.appendChild(head);
+
+  if (entry.workingDef) {
+    card.appendChild(el("div", { class: "def" }, entry.workingDef));
+  }
+
+  if (deprecated && entry.supersededBy) {
+    card.appendChild(el("div", { class: "superseded" }, "→ See: " + entry.supersededBy));
+  }
+
+  const meta = el("div", { class: "meta" });
+  meta.appendChild(el("span", null,
+    el("strong", null, String(entry.sourceCount || 0)),
+    " source(s), ",
+    el("strong", null, String(entry.independentSourceCount || 0)),
+    " independent"
+  ));
+  meta.appendChild(el("span", null, "first seen: " + fmtDate(entry.dateFirstSeen)));
+  if (entry.dateLastSeen && entry.dateLastSeen !== entry.dateFirstSeen) {
+    meta.appendChild(el("span", null, "last seen: " + fmtDate(entry.dateLastSeen)));
+  }
+  card.appendChild(meta);
+
+  if ((entry.sources || []).length > 0) {
+    const sources = el("div", { class: "sources" });
+    sources.appendChild(el("div", { class: "sources-label" }, "Sources"));
+    for (const s of entry.sources) {
+      const row = el("div", { class: "source" });
+      row.appendChild(el("span", { class: "src-label" }, s.sourceLabel || s.domain || ""));
+      row.appendChild(el("a", { href: s.url, target: "_blank", rel: "noopener" }, s.title || s.url));
+      if (s.publishedAt) row.appendChild(el("span", { class: "src-date" }, fmtSourceDate(s.publishedAt)));
+      sources.appendChild(row);
+    }
+    card.appendChild(sources);
+  }
+
+  return card;
+}
+
+function render() {
+  const container = document.getElementById("content");
+  container.innerHTML = "";
+  if (!entries) {
+    container.appendChild(el("div", { class: "error" }, "Couldn't load the longlist (knowledge-graph-agent/longlist.json). The agent may not have committed any state yet."));
+    document.getElementById("summary").textContent = "—";
+    return;
+  }
+  const sorted = sortEntries(entries, currentSort);
+  for (const e of sorted) container.appendChild(renderEntry(e));
+  const eligibleCount = entries.filter(e => (e.independentSourceCount || 0) >= 2).length;
+  document.getElementById("summary").textContent =
+    entries.length + " entries · " + eligibleCount + " promotion-eligible";
+}
+
+(async function init() {
+  entries = await loadLonglist();
+  render();
+  for (const chip of document.querySelectorAll(".chip")) {
+    chip.addEventListener("click", () => {
+      document.querySelectorAll(".chip").forEach(c => c.classList.remove("active"));
+      chip.classList.add("active");
+      currentSort = chip.getAttribute("data-sort");
+      render();
+    });
+  }
+})();
+</script>
+</body>
+</html>

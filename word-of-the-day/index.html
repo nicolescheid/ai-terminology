@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Word of the Day · AI Terminology</title>
+<meta name="description" content="One AI vocabulary term, every day, with context — drafted by Lexi the AI lexicographer, reviewed before publication.">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Word of the Day · AI Terminology">
+<meta property="og:description" content="One AI vocabulary term, every day, with context.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ai-terminology.com/word-of-the-day/">
+
+<!-- GA -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WHN5G9LEND"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-WHN5G9LEND');</script>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&family=IBM+Plex+Mono:wght@300;400&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#f7f5f0;font-family:'IBM Plex Sans',sans-serif;font-weight:300;color:#2c2c2c;min-height:100vh;line-height:1.5}
+.wrap{max-width:780px;margin:0 auto;padding:32px 24px 96px}
+
+/* Header */
+.hdr{display:flex;align-items:baseline;gap:14px;margin-bottom:32px;flex-wrap:wrap}
+.hdr .wm{font-family:'Instrument Serif',serif;font-size:24px}
+.hdr .wm em{font-style:italic;color:#5a6b8f}
+.hdr .sub{font-size:11px;font-weight:400;letter-spacing:.12em;text-transform:uppercase;color:#888}
+.hdr .actions{margin-left:auto;display:flex;gap:14px;align-items:center}
+.hdr .actions a{font-size:12px;color:#5a6b8f;text-decoration:none}
+.hdr .actions a:hover{text-decoration:underline}
+
+/* Date navigation */
+.datenav{display:flex;align-items:center;justify-content:space-between;padding:14px 0;border-top:1px solid rgba(0,0,0,.08);border-bottom:1px solid rgba(0,0,0,.08);margin-bottom:32px;font-size:13px}
+.datenav .nav-btn{background:transparent;border:none;font-size:14px;color:#5a6b8f;cursor:pointer;font-family:'IBM Plex Sans',sans-serif;padding:4px 8px}
+.datenav .nav-btn[disabled]{color:#ccc;cursor:default}
+.datenav .nav-btn:not([disabled]):hover{text-decoration:underline}
+.datenav .current{font-family:'IBM Plex Mono',monospace;font-size:13px;color:#444;letter-spacing:.04em}
+
+/* Word card */
+.word{padding:20px 0 40px}
+.word .label{font-family:'Instrument Serif',serif;font-size:48px;line-height:1.1;margin-bottom:6px;color:#2c2c2c}
+.word .label em{font-style:italic;color:#5a6b8f}
+.word .fullname{font-family:'IBM Plex Sans',sans-serif;font-size:14px;color:#888;margin-bottom:24px;font-weight:300}
+.word .intro{font-size:18px;line-height:1.6;color:#2c2c2c;margin-bottom:24px;font-weight:300}
+.word .intro em{font-family:'Instrument Serif',serif;font-style:italic;color:#5a6b8f;font-size:19px}
+.word .section-label{font-size:10px;color:#888;text-transform:uppercase;letter-spacing:.1em;margin-bottom:8px;margin-top:24px}
+.word .def{font-size:14px;line-height:1.6;color:#444}
+.word .context{font-size:14px;line-height:1.6;color:#444;font-style:italic}
+.word .meta{font-size:11px;color:#888;letter-spacing:.04em;margin-top:32px;padding-top:16px;border-top:1px solid rgba(0,0,0,.06);display:flex;gap:18px;flex-wrap:wrap}
+.word .meta a{color:#5a6b8f;text-decoration:none}
+.word .meta a:hover{text-decoration:underline}
+
+/* Empty state */
+.empty{padding:60px 20px;text-align:center;color:#666}
+.empty .label{font-family:'Instrument Serif',serif;font-size:32px;color:#5a6b8f;font-style:italic;margin-bottom:12px}
+.empty p{font-size:14px;line-height:1.6;max-width:480px;margin:0 auto 12px}
+.empty p em{font-family:'Instrument Serif',serif;font-style:italic;color:#5a6b8f}
+.empty a{color:#5a6b8f;text-decoration:none}
+.empty a:hover{text-decoration:underline}
+
+/* Footer */
+.foot{margin-top:48px;font-size:11px;color:#999;text-align:center;letter-spacing:.04em}
+.foot a{color:#5a6b8f;text-decoration:none}
+
+.error{background:#f9e3e3;border:1px solid #d09c9c;color:#7a2222;padding:14px 18px;border-radius:8px;font-size:13px}
+
+@media (max-width:600px){
+  .wrap{padding:18px 14px 60px}
+  .word .label{font-size:36px}
+  .word .intro{font-size:16px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hdr">
+  <div class="wm">AI <em>Terminology</em></div>
+  <div class="sub">Word of the Day</div>
+  <div class="actions">
+    <a href="/">Graph</a>
+    <a href="/observing/">Observing</a>
+  </div>
+</header>
+
+<div id="content">
+  <p style="text-align:center;color:#888;font-size:13px;padding:40px 0">Loading…</p>
+</div>
+
+<div class="foot">
+  Curated by <a href="https://github.com/nicolescheid/ai-terminology" target="_blank" rel="noopener">Lexi</a> · part of <a href="/">AI Terminology</a>
+</div>
+
+</div>
+
+<script>
+const QUEUE_PATH = "/knowledge-graph-agent/word-of-the-day.json";
+
+function todayISO() {
+  return new Date().toISOString().slice(0, 10);
+}
+
+function el(tag, attrs, ...kids) {
+  const e = document.createElement(tag);
+  if (attrs) for (const [k, v] of Object.entries(attrs)) {
+    if (k === "class") e.className = v;
+    else if (k === "html") e.innerHTML = v;
+    else e.setAttribute(k, v);
+  }
+  for (const k of kids.flat()) {
+    if (k == null) continue;
+    e.appendChild(typeof k === "string" ? document.createTextNode(k) : k);
+  }
+  return e;
+}
+
+async function loadQueue() {
+  try {
+    const r = await fetch(QUEUE_PATH, { cache: "no-store" });
+    if (!r.ok) throw new Error("HTTP " + r.status);
+    return await r.json();
+  } catch (e) {
+    console.error(e);
+    return null;
+  }
+}
+
+// Combine published + approved entries, sort by scheduledFor descending. The
+// ones renderable on a given date are: status=published OR (status=approved
+// AND scheduledFor <= today).
+function buildRenderable(data) {
+  const today = todayISO();
+  const published = (data.published || []).map(e => ({ ...e, _renderable: true }));
+  const approved = (data.queue || [])
+    .filter(e => e.status === "approved" && e.scheduledFor && e.scheduledFor <= today)
+    .map(e => ({ ...e, _renderable: true }));
+  const merged = [...published, ...approved];
+  // Dedup by id, preferring published over approved
+  const byId = new Map();
+  for (const e of merged) {
+    if (!byId.has(e.id)) byId.set(e.id, e);
+  }
+  return [...byId.values()].sort((a, b) =>
+    (b.scheduledFor || "").localeCompare(a.scheduledFor || "")
+  );
+}
+
+function renderEmpty() {
+  const c = document.getElementById("content");
+  c.innerHTML = "";
+  c.appendChild(el("div", { class: "empty" },
+    el("div", { class: "label" }, "Coming soon"),
+    el("p", null, "Word of the Day will start publishing once ", el("em", null, "Lexi"), " has drafted a queue and the entries have been reviewed. Each day will feature one term — drawn from the canonical ", el("a", { href: "/" }, "graph"), " or the ", el("a", { href: "/observing/" }, "longlist"), " — with context for why it matters now."),
+    el("p", null, "In the meantime: explore the graph, or browse what Lexi is currently watching.")
+  ));
+}
+
+function renderWord(entry, all, currentIdx) {
+  const c = document.getElementById("content");
+  c.innerHTML = "";
+
+  const olderIdx = currentIdx + 1;
+  const newerIdx = currentIdx - 1;
+  const hasOlder = olderIdx < all.length;
+  const hasNewer = newerIdx >= 0;
+
+  const nav = el("div", { class: "datenav" });
+  const olderBtn = el("button", { class: "nav-btn" }, "← older");
+  if (!hasOlder) olderBtn.setAttribute("disabled", "true");
+  else olderBtn.addEventListener("click", () => navigate(all[olderIdx].scheduledFor));
+  nav.appendChild(olderBtn);
+  nav.appendChild(el("div", { class: "current" }, entry.scheduledFor || "—"));
+  const newerBtn = el("button", { class: "nav-btn" }, "newer →");
+  if (!hasNewer) newerBtn.setAttribute("disabled", "true");
+  else newerBtn.addEventListener("click", () => navigate(all[newerIdx].scheduledFor));
+  nav.appendChild(newerBtn);
+  c.appendChild(nav);
+
+  const word = el("div", { class: "word" });
+  word.appendChild(el("div", { class: "label" }, entry.termLabel || entry.termId || "(untitled)"));
+  if (entry.termFullName && entry.termFullName !== entry.termLabel) {
+    word.appendChild(el("div", { class: "fullname" }, entry.termFullName));
+  }
+
+  if (entry.intro) word.appendChild(el("div", { class: "intro" }, entry.intro));
+
+  if (entry.workingDef) {
+    word.appendChild(el("div", { class: "section-label" }, "Definition"));
+    word.appendChild(el("div", { class: "def" }, entry.workingDef));
+  }
+
+  if (entry.context) {
+    word.appendChild(el("div", { class: "section-label" }, "Why now"));
+    word.appendChild(el("div", { class: "context" }, entry.context));
+  }
+
+  const meta = el("div", { class: "meta" });
+  meta.appendChild(el("span", null, "Tier: " + (entry.tier || "—")));
+  if (entry.termId) meta.appendChild(el("a", { href: "/observing/#" + entry.termId }, "→ on the longlist"));
+  word.appendChild(meta);
+  c.appendChild(word);
+}
+
+function navigate(dateStr) {
+  if (dateStr) location.hash = dateStr;
+  // Re-render
+  init();
+}
+
+async function init() {
+  const data = await loadQueue();
+  if (!data) {
+    document.getElementById("content").innerHTML = "";
+    document.getElementById("content").appendChild(el("div", { class: "error" }, "Couldn't load word-of-the-day.json. The queue may not have been committed yet."));
+    return;
+  }
+  const renderable = buildRenderable(data);
+  if (renderable.length === 0) {
+    renderEmpty();
+    return;
+  }
+  // Determine which date to show. Hash overrides; otherwise show the most recent.
+  const requested = location.hash.replace(/^#/, "");
+  let idx = 0;
+  if (requested) {
+    const found = renderable.findIndex(e => e.scheduledFor === requested);
+    if (found >= 0) idx = found;
+  }
+  renderWord(renderable[idx], renderable, idx);
+}
+
+window.addEventListener("hashchange", init);
+init();
+</script>
+</body>
+</html>
