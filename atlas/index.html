@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lexicon — Atlas of AI Terminology</title>
+<meta name="description" content="A living atlas of AI vocabulary, curated by Lexi.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Newsreader:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%;background:#f4f1ea;color:#1f1d18;
+    font-family:'Inter Tight','Inter',system-ui,sans-serif;
+    overflow:hidden}
+  #root,.atlas-stage{height:100%;width:100%;position:relative;overflow:hidden}
+  /* loading splash */
+  #splash{position:fixed;inset:0;z-index:9999;background:#f4f1ea;
+    display:flex;align-items:center;justify-content:center;
+    transition:opacity 0.6s ease, visibility 0.6s ease}
+  #splash.hidden{opacity:0;visibility:hidden;pointer-events:none}
+  #splash img{max-width:min(90vw, 720px);max-height:min(70vh, 580px);
+    border-radius:18px;box-shadow:0 30px 80px -30px rgba(60,40,15,0.5),
+      0 8px 24px -8px rgba(60,40,15,0.25)}
+  #splash .splash-meta{position:absolute;bottom:6vh;left:0;right:0;text-align:center;
+    font-family:'JetBrains Mono',ui-monospace,monospace;font-size:10px;letter-spacing:0.2em;
+    text-transform:uppercase;color:#7a7568}
+</style>
+</head>
+<body>
+<div id="splash">
+  <img src="assets/lexi-scene.png" alt="Lexi at her desk, hoovering up AI terminology" />
+  <div class="splash-meta">Lexi is settling in&nbsp;·&nbsp;Lexicon Atlas</div>
+</div>
+<div id="root"></div>
+
+<!-- Data + engine -->
+<script src="d3.min.js"></script>
+<script src="graph-data.js"></script>
+<script>
+  // top-level `const`s in graph-data.js do not attach to window — shim them.
+  window.CL = CL;
+  window.NODES = NODES;
+  window.GRAPH_META = GRAPH_META;
+</script>
+<script src="graph-data-agent.js"></script>
+<script src="shared/palette.js?v=3"></script>
+<script src="shared/graph-engine.js?v=3"></script>
+
+<!-- React + Babel -->
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<script type="text/babel" src="variations/detail-panel.jsx?v=3"></script>
+<script type="text/babel" src="variations/lexi.jsx?v=3"></script>
+<script type="text/babel" src="variations/atlas.jsx?v=3"></script>
+
+<script type="text/babel">
+function App() {
+  return <window.AtlasVariation />;
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+
+// Drop the splash once the engine has laid out (after first sim tick batch).
+function dismissSplash() {
+  setTimeout(() => {
+    const s = document.getElementById('splash');
+    if (s) s.classList.add('hidden');
+    setTimeout(() => s && s.remove(), 700);
+  }, 900);
+}
+if (document.readyState === 'complete') dismissSplash();
+else window.addEventListener('load', dismissSplash);
+</script>
+</body>
+</html>

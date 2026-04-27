@@ -1,0 +1,26 @@
+/* Shared chrome utilities used by all three variations */
+.ge-svg { user-select: none; }
+.ge-node:focus { outline: none; }
+.ge-node circle:last-of-type { transition: stroke-width .15s, stroke .15s; }
+.ge-node:focus-visible circle:last-of-type { stroke-width: 3; }
+
+.ge-panel { position: absolute; overflow-y: auto; }
+.ge-panel::-webkit-scrollbar { width: 6px; }
+.ge-panel::-webkit-scrollbar-thumb { background: rgba(0,0,0,.15); border-radius: 3px; }
+
+/* common typography defaults — overridden per variation */
+.ge-panel sup a { font-size: 9px; font-weight: 500; vertical-align: super;
+  line-height: 0; text-decoration: none; color: inherit; opacity: .6; }
+.ge-panel sup a:hover { opacity: 1; }
+.ge-panel a { color: inherit; }
+.ge-chip { cursor: pointer; transition: opacity .12s, transform .12s; }
+.ge-chip:hover { opacity: .7; }
+
+/* stage shells */
+.atlas-stage, .observatory-stage, .document-stage {
+  position: relative; width: 100%; height: 100%; overflow: hidden;
+  border-radius: 14px;
+}
+
+/* design-canvas artboard outer */
+.dc-artboard { background: transparent !important; }

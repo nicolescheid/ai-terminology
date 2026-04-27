@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Terminology — Design explorations</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Newsreader:ital,wght@0,300;0,400;0,500;1,300;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared/chrome.css">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%;background:#1a1a1a;color:#eee;font-family:'Inter Tight',sans-serif}
+  #root{height:100%}
+  /* default-canvas tweaks */
+  .dc-artboard-frame { background: transparent !important; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+
+<!-- Data + engine -->
+<script src="d3.min.js"></script>
+<script src="graph-data.js"></script>
+<script>
+  // graph-data.js declares CL/NODES/GRAPH_META as top-level `const`,
+  // which (per spec) does NOT attach to `window`. Shim them onto window
+  // so the engine and variations can read them.
+  window.CL = CL;
+  window.NODES = NODES;
+  window.GRAPH_META = GRAPH_META;
+</script>
+<script src="graph-data-agent.js"></script>
+<script src="shared/palette.js"></script>
+<script src="shared/graph-engine.js"></script>
+
+<!-- React + Babel -->
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<script type="text/babel" src="design-canvas.jsx"></script>
+<script type="text/babel" src="variations/detail-panel.jsx"></script>
+<script type="text/babel" src="variations/lexi.jsx"></script>
+<script type="text/babel" src="variations/atlas.jsx"></script>
+<script type="text/babel" src="variations/observatory.jsx"></script>
+<script type="text/babel" src="variations/document.jsx"></script>
+
+<script type="text/babel">
+const { DesignCanvas, DCSection, DCArtboard } = window;
+
+function App() {
+  return (
+    <DesignCanvas title="AI Terminology — Quiet-luxury redesign · 3 directions">
+      <DCSection id="redesign" title="Redesign explorations">
+        <DCArtboard id="atlas" label="01 · Atlas — paper, cartographic, contour territories" width={1440} height={900}>
+          <window.AtlasVariation />
+        </DCArtboard>
+        <DCArtboard id="observatory" label="02 · Observatory — dark, star-chart, glowing nodes" width={1440} height={900}>
+          <window.ObservatoryVariation />
+        </DCArtboard>
+        <DCArtboard id="document" label="03 · Document — editorial, big serif, footnote sheet" width={1440} height={900}>
+          <window.DocumentVariation />
+        </DCArtboard>
+      </DCSection>
+    </DesignCanvas>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+</body>
+</html>
