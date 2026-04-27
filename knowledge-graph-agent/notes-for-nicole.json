@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generatedAt": "2026-04-27T19:20:08.906Z",
-    "unreadCount": 44,
-    "totalCount": 44,
+    "generatedAt": "2026-04-27T20:10:51.425Z",
+    "unreadCount": 45,
+    "totalCount": 45,
     "note": "Notes for Nicole — Lexi's manager channel (spec §6). Mandatory entry types fire when their triggering condition is met; discretionary entries are observations Lexi thinks Nicole should see. Set status to 'read', 'actioned', or 'dismissed' as appropriate."
   },
   "entries": [
@@ -1102,6 +1102,30 @@
         "source": "extract-flow"
       },
       "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+    },
+    {
+      "id": "6d1878f417779e16",
+      "type": "source_pattern",
+      "writtenAt": "2026-04-27T20:10:51.425Z",
+      "runId": "c1b4d313-d7f9-4034-89f3-d0cdc00e07b2",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Adoption velocity: 'System Card' hit 2 sources in 1d",
+      "details": "This entry accumulated 2 sources within 1 day(s) of first sighting. Often legitimate for product launches, but rapid multi-sourcing from a tight source pool can also signal coordinated promotion. Source labels involved: OpenAI News.",
+      "evidence": {
+        "check": "adoption_velocity",
+        "entryId": "system-card",
+        "label": "System Card",
+        "sourceCount": 2,
+        "spanDays": 1,
+        "sourceLabels": [
+          "OpenAI News"
+        ],
+        "firstSourceTs": "2026-04-26T22:40:25.832Z",
+        "lastSourceTs": "2026-04-27T01:58:08.607Z"
+      },
+      "suggestedAction": "Cross-check the sources for shared authors or cross-citation. If sources are tightly coupled (same publication network, same author byline), treat as one source for promotion-eligibility purposes.",
+      "source": "auditor"
     }
   ]
 }
