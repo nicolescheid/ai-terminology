@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manager · AI Terminology</title>
+<meta name="description" content="Lexi's manager surface — pause status, Notes for Nicole, proposals queue, longlist health.">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta name="robots" content="noindex">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&family=IBM+Plex+Mono:wght@300;400&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#f7f5f0;font-family:'IBM Plex Sans',sans-serif;font-weight:300;color:#2c2c2c;min-height:100vh;line-height:1.5}
+.wrap{max-width:980px;margin:0 auto;padding:32px 24px 96px}
+
+/* Header */
+.hdr{display:flex;align-items:baseline;gap:14px;margin-bottom:32px;flex-wrap:wrap}
+.hdr .wm{font-family:'Instrument Serif',serif;font-size:24px}
+.hdr .wm em{font-style:italic;color:#5a6b8f}
+.hdr .sub{font-size:11px;font-weight:400;letter-spacing:.12em;text-transform:uppercase;color:#888}
+.hdr .actions{margin-left:auto;display:flex;gap:14px;align-items:center}
+.hdr .actions a{font-size:12px;color:#5a6b8f;text-decoration:none}
+.hdr .actions a:hover{text-decoration:underline}
+
+/* Status banner */
+.banner{padding:14px 18px;border-radius:8px;margin-bottom:24px;font-size:14px;display:flex;align-items:center;gap:12px}
+.banner.ok{background:#e9f1e3;border:1px solid #b6d09c;color:#2f5f1f}
+.banner.paused{background:#f9e3e3;border:1px solid #d09c9c;color:#7a2222}
+.banner.unknown{background:#f0eee8;border:1px solid rgba(0,0,0,.12);color:#888}
+.banner .dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
+.banner.ok .dot{background:#5a8f3a}
+.banner.paused .dot{background:#c54a4a}
+.banner.unknown .dot{background:#888}
+.banner .label{font-weight:500}
+.banner .why{font-size:12px;color:inherit;opacity:.85}
+
+/* Cards */
+.card{background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:10px;padding:22px 24px;margin-bottom:18px}
+.card h2{font-family:'Instrument Serif',serif;font-size:22px;font-weight:400;margin-bottom:4px;display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.card h2 em{font-style:italic;color:#5a6b8f}
+.card .sub{font-size:11px;font-weight:400;letter-spacing:.08em;text-transform:uppercase;color:#888;margin-bottom:18px}
+.card .empty{font-size:13px;color:#888;font-style:italic;padding:14px 0}
+
+/* Pills (counts) */
+.pills{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px}
+.pill{font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#666;border:1px solid rgba(0,0,0,.12);border-radius:20px;padding:4px 10px;background:rgba(0,0,0,.02)}
+.pill strong{color:#2c2c2c;font-weight:500}
+.pill.alert{background:#f9e3e3;border-color:#d09c9c;color:#7a2222}
+.pill.alert strong{color:#7a2222}
+
+/* Lists */
+.row{padding:12px 0;border-top:1px solid rgba(0,0,0,.06);display:flex;gap:14px;align-items:flex-start}
+.row:first-child{border-top:none}
+.row.unread{background:linear-gradient(to right, rgba(245,210,80,.08), transparent);margin:0 -10px;padding-left:10px;padding-right:10px;border-radius:4px}
+.row .meta{flex-shrink:0;width:88px;font-size:10px;color:#888;letter-spacing:.04em}
+.row .meta .when{font-family:'IBM Plex Mono',monospace;font-size:10px;color:#999;display:block;margin-top:2px}
+.row .body{flex:1;min-width:0}
+.row .head{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:4px}
+.row .title{font-size:13px;font-weight:500;color:#2c2c2c}
+.row .details{font-size:12px;color:#555;line-height:1.5}
+.row .suggested{font-size:12px;color:#5a6b8f;margin-top:4px;font-style:italic}
+.tag{font-size:9px;letter-spacing:.06em;text-transform:uppercase;padding:2px 7px;border-radius:10px;border:1px solid rgba(0,0,0,.12);color:#666;font-family:'IBM Plex Sans',sans-serif;font-weight:400}
+.tag.unread{background:#f5d250;border-color:#d4a814;color:#5a4400}
+.tag.read{background:#e2eaf3;border-color:#b9c9da;color:#3a5878}
+.tag.actioned{background:#e9f1e3;border-color:#b6d09c;color:#2f5f1f}
+.tag.dismissed{background:#eee;border-color:#ccc;color:#666}
+.tag.contested_cluster_omission{background:#fbecdc;border-color:#e0bf95;color:#7a4a1f}
+.tag.default_deny{background:#f9e3e3;border-color:#d09c9c;color:#7a2222}
+.tag.throughput_cap_hit{background:#f3e9f9;border-color:#bf95e0;color:#5a1f7a}
+.tag.run_paused{background:#f0eee8;border-color:#888;color:#444}
+.tag.discretionary{background:rgba(0,0,0,.04);color:#666}
+.tag.pending{background:#f5d250;border-color:#d4a814;color:#5a4400}
+.tag.approved{background:#e9f1e3;border-color:#b6d09c;color:#2f5f1f}
+.tag.rejected{background:#eee;border-color:#ccc;color:#666}
+
+/* Longlist top */
+.toplist{display:grid;grid-template-columns:1fr auto auto;gap:8px 14px;font-size:12px;align-items:center}
+.toplist .id{font-family:'IBM Plex Mono',monospace;font-size:11px;color:#555;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.toplist .label{font-size:13px;color:#2c2c2c;font-weight:400}
+.toplist .count{text-align:right;font-family:'IBM Plex Mono',monospace;font-size:11px;color:#888}
+
+/* Footer */
+.foot{margin-top:32px;font-size:11px;color:#999;text-align:center;letter-spacing:.04em}
+.foot a{color:#5a6b8f;text-decoration:none}
+.foot code{font-family:'IBM Plex Mono',monospace;background:rgba(0,0,0,.04);padding:1px 6px;border-radius:3px;color:#444}
+
+.error{background:#f9e3e3;border:1px solid #d09c9c;color:#7a2222;padding:14px 18px;border-radius:8px;font-size:13px}
+
+@media (max-width:600px){
+  .wrap{padding:18px 14px 60px}
+  .row{flex-direction:column;gap:6px}
+  .row .meta{width:auto}
+  .toplist{grid-template-columns:1fr auto}
+  .toplist .id{display:none}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hdr">
+  <div class="wm">AI <em>Terminology</em></div>
+  <div class="sub">Manager Dashboard</div>
+  <div class="actions">
+    <a href="/">↩ Graph</a>
+    <a href="https://github.com/nicolescheid/ai-terminology" target="_blank" rel="noopener">Repo</a>
+  </div>
+</header>
+
+<div id="status"></div>
+<div id="content">
+  <p style="text-align:center;color:#888;font-size:13px;padding:40px 0">Loading…</p>
+</div>
+
+<div class="foot">
+  Generated by Lexi. Status reflects the latest committed state of <code>knowledge-graph-agent/</code> JSON files.
+  <br>To act on a note or proposal: edit its <code>status</code> in the source JSON, then commit + push.
+</div>
+
+</div>
+
+<script>
+const PATHS = {
+  notes:     "/knowledge-graph-agent/notes-for-nicole.json",
+  proposals: "/knowledge-graph-agent/proposals.json",
+  longlist:  "/knowledge-graph-agent/longlist.json",
+  state:     "/knowledge-graph-agent/state.json"
+};
+
+const SEVEN_DAYS_MS = 7 * 24 * 60 * 60 * 1000;
+
+async function loadJson(path) {
+  try {
+    const r = await fetch(path, { cache: "no-store" });
+    if (!r.ok) throw new Error(`${path} → ${r.status}`);
+    return await r.json();
+  } catch (e) {
+    console.error(e);
+    return null;
+  }
+}
+
+function fmtAgo(iso) {
+  if (!iso) return "—";
+  const ms = Date.now() - new Date(iso).getTime();
+  const d = Math.floor(ms / (24 * 60 * 60 * 1000));
+  const h = Math.floor(ms / (60 * 60 * 1000));
+  const m = Math.floor(ms / (60 * 1000));
+  if (d >= 1) return `${d}d ago`;
+  if (h >= 1) return `${h}h ago`;
+  if (m >= 1) return `${m}m ago`;
+  return "just now";
+}
+
+function fmtAbs(iso) {
+  if (!iso) return "—";
+  const d = new Date(iso);
+  return d.toISOString().slice(0, 16).replace("T", " ") + " UTC";
+}
+
+function el(tag, attrs, ...kids) {
+  const e = document.createElement(tag);
+  if (attrs) for (const [k, v] of Object.entries(attrs)) {
+    if (k === "class") e.className = v;
+    else if (k === "html") e.innerHTML = v;
+    else e.setAttribute(k, v);
+  }
+  for (const k of kids.flat()) {
+    if (k == null) continue;
+    e.appendChild(typeof k === "string" ? document.createTextNode(k) : k);
+  }
+  return e;
+}
+
+function renderStatusBanner(notes) {
+  const wrap = document.getElementById("status");
+  wrap.innerHTML = "";
+  if (!notes) {
+    wrap.appendChild(el("div", { class: "banner unknown" },
+      el("div", { class: "dot" }),
+      el("div", null,
+        el("div", { class: "label" }, "Status unknown"),
+        el("div", { class: "why" }, "Couldn't load notes-for-nicole.json. The agent may not have been deployed yet, or the file is missing."))
+    ));
+    return;
+  }
+  const oldUnread = (notes.entries || []).filter(n =>
+    n.status === "unread" && (Date.now() - new Date(n.writtenAt).getTime()) > SEVEN_DAYS_MS
+  );
+  if (oldUnread.length > 0) {
+    const oldest = oldUnread.map(n => n.writtenAt).sort()[0];
+    const ageDays = Math.floor((Date.now() - new Date(oldest).getTime()) / (24 * 60 * 60 * 1000));
+    wrap.appendChild(el("div", { class: "banner paused" },
+      el("div", { class: "dot" }),
+      el("div", null,
+        el("div", { class: "label" }, `PAUSED · ${oldUnread.length} note(s) unread > 7d (oldest ${ageDays}d)`),
+        el("div", { class: "why" }, "Lexi will skip publication on every run until these notes are read or actioned."))
+    ));
+  } else {
+    wrap.appendChild(el("div", { class: "banner ok" },
+      el("div", { class: "dot" }),
+      el("div", null,
+        el("div", { class: "label" }, "Operational"),
+        el("div", { class: "why" }, "No pause conditions active."))
+    ));
+  }
+}
+
+function renderNotes(notes) {
+  const card = el("div", { class: "card" });
+  card.appendChild(el("h2", null, "Notes for ", el("em", null, "Nicole")));
+  card.appendChild(el("div", { class: "sub" }, "spec §6 — manager channel"));
+  if (!notes) {
+    card.appendChild(el("div", { class: "error" }, "Couldn't load notes-for-nicole.json"));
+    return card;
+  }
+  const all = notes.entries || [];
+  const unread = all.filter(n => n.status === "unread");
+  const byType = {};
+  for (const n of all) byType[n.type] = (byType[n.type] || 0) + 1;
+
+  const pills = el("div", { class: "pills" });
+  pills.appendChild(el("span", { class: unread.length > 0 ? "pill alert" : "pill" }, "Unread ", el("strong", null, String(unread.length))));
+  pills.appendChild(el("span", { class: "pill" }, "Total ", el("strong", null, String(all.length))));
+  for (const [t, c] of Object.entries(byType).sort((a, b) => b[1] - a[1])) {
+    pills.appendChild(el("span", { class: "pill" }, t.replace(/_/g, " "), " ", el("strong", null, String(c))));
+  }
+  card.appendChild(pills);
+
+  if (all.length === 0) {
+    card.appendChild(el("div", { class: "empty" }, "No notes yet. The channel is quiet."));
+    return card;
+  }
+
+  const sorted = [...all].sort((a, b) => {
+    if (a.status === "unread" && b.status !== "unread") return -1;
+    if (b.status === "unread" && a.status !== "unread") return 1;
+    return (b.writtenAt || "").localeCompare(a.writtenAt || "");
+  });
+
+  for (const n of sorted) {
+    const row = el("div", { class: "row" + (n.status === "unread" ? " unread" : "") });
+    row.appendChild(el("div", { class: "meta" },
+      el("span", { class: "tag " + n.status }, n.status),
+      el("span", { class: "when" }, fmtAgo(n.writtenAt))
+    ));
+    const body = el("div", { class: "body" });
+    const head = el("div", { class: "head" });
+    head.appendChild(el("span", { class: "tag " + n.type }, n.type.replace(/_/g, " ")));
+    head.appendChild(el("span", { class: "title" }, n.subject || "(no subject)"));
+    body.appendChild(head);
+    if (n.details) body.appendChild(el("div", { class: "details" }, n.details));
+    if (n.suggestedAction) body.appendChild(el("div", { class: "suggested" }, "→ " + n.suggestedAction));
+    row.appendChild(body);
+    card.appendChild(row);
+  }
+  return card;
+}
+
+function renderProposals(proposals) {
+  const card = el("div", { class: "card" });
+  card.appendChild(el("h2", null, "Proposals ", el("em", null, "queue")));
+  card.appendChild(el("div", { class: "sub" }, "actions awaiting approval"));
+  if (!proposals) {
+    card.appendChild(el("div", { class: "error" }, "Couldn't load proposals.json"));
+    return card;
+  }
+  const all = proposals.proposals || [];
+  const pending = all.filter(p => p.status === "pending");
+  const approved = all.filter(p => p.status === "approved");
+  const rejected = all.filter(p => p.status === "rejected");
+
+  const pills = el("div", { class: "pills" });
+  pills.appendChild(el("span", { class: pending.length > 0 ? "pill alert" : "pill" }, "Pending ", el("strong", null, String(pending.length))));
+  pills.appendChild(el("span", { class: "pill" }, "Approved ", el("strong", null, String(approved.length))));
+  pills.appendChild(el("span", { class: "pill" }, "Rejected ", el("strong", null, String(rejected.length))));
+  card.appendChild(pills);
+
+  if (pending.length === 0) {
+    card.appendChild(el("div", { class: "empty" }, "Nothing pending. All caught up."));
+    return card;
+  }
+
+  for (const p of pending.sort((a, b) => (a.proposedAt || "").localeCompare(b.proposedAt || ""))) {
+    const row = el("div", { class: "row" });
+    row.appendChild(el("div", { class: "meta" },
+      el("span", { class: "tag pending" }, "pending"),
+      el("span", { class: "when" }, fmtAgo(p.proposedAt))
+    ));
+    const body = el("div", { class: "body" });
+    const head = el("div", { class: "head" });
+    head.appendChild(el("span", { class: "tag" }, p.action));
+    head.appendChild(el("span", { class: "title" }, (p.target?.kind || "") + " · " + (p.target?.id || "(no target)")));
+    body.appendChild(head);
+    if (p.reason) body.appendChild(el("div", { class: "details" }, p.reason));
+    row.appendChild(body);
+    card.appendChild(row);
+  }
+  return card;
+}
+
+function renderLonglist(longlist) {
+  const card = el("div", { class: "card" });
+  card.appendChild(el("h2", null, "Longlist ", el("em", null, "Tier 2")));
+  card.appendChild(el("div", { class: "sub" }, "terms under observation"));
+  if (!longlist) {
+    card.appendChild(el("div", { class: "error" }, "Couldn't load longlist.json"));
+    return card;
+  }
+  const all = longlist.entries || [];
+  const recentCutoff = Date.now() - SEVEN_DAYS_MS;
+  const recentAdds = all.filter(e => e.dateFirstSeen && new Date(e.dateFirstSeen).getTime() >= recentCutoff);
+  const promotionEligible = all.filter(e => (e.independentSourceCount || 0) >= 2);
+
+  const pills = el("div", { class: "pills" });
+  pills.appendChild(el("span", { class: "pill" }, "Total ", el("strong", null, String(all.length))));
+  pills.appendChild(el("span", { class: "pill" }, "Added past 7d ", el("strong", null, String(recentAdds.length))));
+  pills.appendChild(el("span", { class: promotionEligible.length > 0 ? "pill alert" : "pill" }, "Promotion-eligible ", el("strong", null, String(promotionEligible.length))));
+  card.appendChild(pills);
+
+  if (all.length === 0) {
+    card.appendChild(el("div", { class: "empty" }, "Longlist is empty."));
+    return card;
+  }
+
+  card.appendChild(el("div", { class: "sub", style: "margin-top:12px" }, "Top by source count"));
+  const top = [...all]
+    .sort((a, b) => (b.sourceCount || 0) - (a.sourceCount || 0) || (b.independentSourceCount || 0) - (a.independentSourceCount || 0))
+    .slice(0, 12);
+  const grid = el("div", { class: "toplist" });
+  grid.appendChild(el("div", { class: "label", style: "font-size:10px;color:#888;text-transform:uppercase;letter-spacing:.06em" }, "Term"));
+  grid.appendChild(el("div", { class: "count", style: "font-size:10px;color:#888;text-transform:uppercase;letter-spacing:.06em" }, "Sources"));
+  grid.appendChild(el("div", { class: "count", style: "font-size:10px;color:#888;text-transform:uppercase;letter-spacing:.06em" }, "Indep."));
+  for (const e of top) {
+    grid.appendChild(el("div", { class: "label" }, e.label || e.id));
+    grid.appendChild(el("div", { class: "count" }, String(e.sourceCount || 0)));
+    grid.appendChild(el("div", { class: "count" }, String(e.independentSourceCount || 0)));
+  }
+  card.appendChild(grid);
+  return card;
+}
+
+function renderRunInfo(state) {
+  const card = el("div", { class: "card" });
+  card.appendChild(el("h2", null, "Last ", el("em", null, "run")));
+  if (!state || !state.lastRunAt) {
+    card.appendChild(el("div", { class: "empty" }, "No run recorded yet."));
+    return card;
+  }
+  card.appendChild(el("div", { class: "sub" }, fmtAbs(state.lastRunAt) + " · " + fmtAgo(state.lastRunAt)));
+  const seen = Object.keys(state.seenArticles || {}).length;
+  const reviewed = Object.keys(state.nodeReviews || {}).length;
+  const pills = el("div", { class: "pills" });
+  pills.appendChild(el("span", { class: "pill" }, "Articles seen total ", el("strong", null, String(seen))));
+  pills.appendChild(el("span", { class: "pill" }, "Definitions reviewed ", el("strong", null, String(reviewed))));
+  pills.appendChild(el("span", { class: "pill" }, "Review cursor ", el("strong", null, String(state.reviewCursor ?? 0))));
+  card.appendChild(pills);
+  return card;
+}
+
+(async function main() {
+  const [notes, proposals, longlist, state] = await Promise.all([
+    loadJson(PATHS.notes),
+    loadJson(PATHS.proposals),
+    loadJson(PATHS.longlist),
+    loadJson(PATHS.state)
+  ]);
+
+  renderStatusBanner(notes);
+
+  const content = document.getElementById("content");
+  content.innerHTML = "";
+  content.appendChild(renderNotes(notes));
+  content.appendChild(renderProposals(proposals));
+  content.appendChild(renderLonglist(longlist));
+  content.appendChild(renderRunInfo(state));
+})();
+</script>
+</body>
+</html>
