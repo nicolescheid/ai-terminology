@@ -1,6 +1,6 @@
 {
-  "lastRunAt": "2026-04-27T19:20:08.906Z",
-  "reviewCursor": 40,
+  "lastRunAt": "2026-04-28T19:40:36.332Z",
+  "reviewCursor": 50,
   "seenArticles": {
     "93a049d060bc295b": {
       "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/tpus-8t-8i-cloud-next/",
@@ -103,6 +103,30 @@
       "title": "Choco automates food distribution with AI agents",
       "publishedAt": "Mon, 27 Apr 2026 00:00:00 GMT",
       "seenAt": "2026-04-27T19:20:08.906Z"
+    },
+    "f98304eba2d040c7": {
+      "url": "https://blog.google/products-and-platforms/products/translate/fun-facts-google-translate-20-years/",
+      "title": "Celebrating 20 years of Google Translate: Fun facts, tips and new features to try",
+      "publishedAt": "Tue, 28 Apr 2026 16:00:00 +0000",
+      "seenAt": "2026-04-28T19:40:36.332Z"
+    },
+    "368128e6f2812923": {
+      "url": "https://openai.com/index/openai-on-aws",
+      "title": "OpenAI models, Codex, and Managed Agents come to AWS",
+      "publishedAt": "Tue, 28 Apr 2026 00:00:00 GMT",
+      "seenAt": "2026-04-28T19:40:36.332Z"
+    },
+    "bc680bc14e9fe206": {
+      "url": "https://openai.com/index/openai-available-at-fedramp-moderate",
+      "title": "OpenAI available at FedRAMP Moderate",
+      "publishedAt": "Mon, 27 Apr 2026 14:00:00 GMT",
+      "seenAt": "2026-04-28T19:40:36.332Z"
+    },
+    "1c2272f9572d4fa7": {
+      "url": "https://www.anthropic.com/news/claude-for-creative-work",
+      "title": "Claude for Creative Work",
+      "publishedAt": null,
+      "seenAt": "2026-04-28T19:40:36.332Z"
     }
   },
   "nodeReviews": {
@@ -305,6 +329,56 @@
       "lastReviewedAt": "2026-04-27T19:20:08.906Z",
       "status": "insufficient_evidence",
       "reason": "No source material addresses context compaction or related techniques."
+    },
+    "context-drift": {
+      "lastReviewedAt": "2026-04-28T19:40:36.332Z",
+      "status": "keep",
+      "reason": "No source material addresses context drift, attention de-prioritisation, or the cited 65% enterprise failure statistic. Definition stands unchanged."
+    },
+    "context-economy": {
+      "lastReviewedAt": "2026-04-28T19:40:36.332Z",
+      "status": "keep",
+      "reason": "No source material references context economy or the cited Anthropic context engineering documentation. Definition stands unchanged."
+    },
+    "context-engineering": {
+      "lastReviewedAt": "2026-04-28T19:40:36.332Z",
+      "status": "keep",
+      "reason": "No source material addresses context engineering as a discipline. Definition stands unchanged."
+    },
+    "context-entropy": {
+      "lastReviewedAt": "2026-04-28T19:40:36.332Z",
+      "status": "keep",
+      "reason": "No source material addresses context entropy or agentic memory architecture. Definition stands unchanged."
+    },
+    "context-folding": {
+      "lastReviewedAt": "2026-04-28T19:40:36.332Z",
+      "status": "keep",
+      "reason": "No source material addresses context folding or related architectural approaches. Definition stands unchanged."
+    },
+    "context-pollution": {
+      "lastReviewedAt": "2026-04-28T19:40:36.332Z",
+      "status": "keep",
+      "reason": "No source material addresses context pollution or signal-to-noise degradation in agent contexts. Definition stands unchanged."
+    },
+    "context-rot": {
+      "lastReviewedAt": "2026-04-28T19:40:36.332Z",
+      "status": "keep",
+      "reason": "No source material addresses context rot or the cited Chroma 2025 research. Definition stands unchanged."
+    },
+    "context-window": {
+      "lastReviewedAt": "2026-04-28T19:40:36.332Z",
+      "status": "keep",
+      "reason": "No source material addresses context window mechanics or token limits. Definition stands unchanged."
+    },
+    "coordinated-disclosure": {
+      "lastReviewedAt": "2026-04-28T19:40:36.332Z",
+      "status": "keep",
+      "reason": "No source material addresses coordinated disclosure, Project Mythos, or Project Glasswing. Definition stands unchanged."
+    },
+    "coordinator-mode": {
+      "lastReviewedAt": "2026-04-28T19:40:36.332Z",
+      "status": "keep",
+      "reason": "No source material addresses Claude Code's coordinator mode or multi-agent orchestration specifics. Definition stands unchanged."
     }
   }
 }

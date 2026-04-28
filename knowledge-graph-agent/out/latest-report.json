@@ -1,133 +1,179 @@
 {
-  "generatedAt": "2026-04-27T19:20:08.906Z",
+  "generatedAt": "2026-04-28T19:40:36.332Z",
   "model": "claude-sonnet-4-6",
   "sourcesConfigured": 4,
   "articlesConsidered": [
     {
-      "id": "8a4b231f355d20da",
+      "id": "f98304eba2d040c7",
       "source": "Google AI Blog",
-      "title": "Join the new AI Agents Vibe Coding Course from Google and Kaggle",
-      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/kaggle-genai-intensive-course-vibe-coding-june-2026/",
-      "publishedAt": "Mon, 27 Apr 2026 13:00:00 +0000"
+      "title": "Celebrating 20 years of Google Translate: Fun facts, tips and new features to try",
+      "url": "https://blog.google/products-and-platforms/products/translate/fun-facts-google-translate-20-years/",
+      "publishedAt": "Tue, 28 Apr 2026 16:00:00 +0000"
     },
     {
-      "id": "ce52abc8a3f020a5",
+      "id": "368128e6f2812923",
       "source": "OpenAI News",
-      "title": "The next phase of the Microsoft OpenAI partnership",
-      "url": "https://openai.com/index/next-phase-of-microsoft-partnership",
-      "publishedAt": "Mon, 27 Apr 2026 06:00:00 GMT"
+      "title": "OpenAI models, Codex, and Managed Agents come to AWS",
+      "url": "https://openai.com/index/openai-on-aws",
+      "publishedAt": "Tue, 28 Apr 2026 00:00:00 GMT"
     },
     {
-      "id": "29e3d13268b3eecb",
+      "id": "bc680bc14e9fe206",
       "source": "OpenAI News",
-      "title": "An open-source spec for Codex orchestration: Symphony.",
-      "url": "https://openai.com/index/open-source-codex-orchestration-symphony",
-      "publishedAt": "Mon, 27 Apr 2026 00:00:00 GMT"
+      "title": "OpenAI available at FedRAMP Moderate",
+      "url": "https://openai.com/index/openai-available-at-fedramp-moderate",
+      "publishedAt": "Mon, 27 Apr 2026 14:00:00 GMT"
     },
     {
-      "id": "bc507498ac479287",
-      "source": "OpenAI News",
-      "title": "Choco automates food distribution with AI agents",
-      "url": "https://openai.com/index/choco",
-      "publishedAt": "Mon, 27 Apr 2026 00:00:00 GMT"
+      "id": "1c2272f9572d4fa7",
+      "source": "Anthropic Newsroom",
+      "title": "Claude for Creative Work",
+      "url": "https://www.anthropic.com/news/claude-for-creative-work",
+      "publishedAt": null
     }
   ],
   "harvestedTerms": [
     {
       "article": {
-        "title": "Join the new AI Agents Vibe Coding Course from Google and Kaggle",
-        "url": "https://blog.google/innovation-and-ai/technology/developers-tools/kaggle-genai-intensive-course-vibe-coding-june-2026/"
+        "title": "Celebrating 20 years of Google Translate: Fun facts, tips and new features to try",
+        "url": "https://blog.google/products-and-platforms/products/translate/fun-facts-google-translate-20-years/"
       },
-      "summary": "Google and Kaggle announce a free five-day AI Agents Vibe Coding course (June 15-19, 2026) focused on building production-ready AI agents using natural language workflows, tool/API integration, and a capstone project. The article is largely promotional but introduces the framing of '10x agents' and reinforces vibe coding as a pedagogical paradigm for agent development.",
+      "summary": "Google Translate 20th anniversary article covers its evolution from statistical ML to neural networks and current Gemini/TPU-powered translation, plus new pronunciation practice feature. References TPU hardware, statistical machine translation, neural machine translation, and live translation. Limited novel AI terminology for graph purposes.",
       "longlistAdditions": [],
-      "longlistUpdates": [],
+      "longlistUpdates": [
+        {
+          "id": "tpu",
+          "label": "TPU (Tensor Processing Unit)",
+          "sourceAdded": true,
+          "sourceCount": 3,
+          "independentSourceCount": 1
+        }
+      ],
       "rejections": [],
       "proposalsQueued": []
     },
     {
       "article": {
-        "title": "The next phase of the Microsoft OpenAI partnership",
-        "url": "https://openai.com/index/next-phase-of-microsoft-partnership"
+        "title": "OpenAI models, Codex, and Managed Agents come to AWS",
+        "url": "https://openai.com/index/openai-on-aws"
       },
-      "summary": "OpenAI and Microsoft announce an amended partnership agreement covering cloud exclusivity, IP licensing through 2032, revenue share arrangements, and joint datacenter/silicon collaboration. The article touches on strategic partnership structure, cloud infrastructure, and next-gen silicon development.",
+      "summary": "OpenAI and AWS announce an expanded strategic partnership bringing OpenAI models (including GPT-5.5), Codex, and a new Amazon Bedrock Managed Agents offering to AWS enterprise customers. The article introduces 'Amazon Bedrock Managed Agents' as a distinct named product for deploying agents within AWS infrastructure, and re-surfaces GPT-5.5 and the concept of managed/hosted agent infrastructure.",
       "longlistAdditions": [],
-      "longlistUpdates": [],
+      "longlistUpdates": [
+        {
+          "id": "gpt55",
+          "label": "GPT-5.5",
+          "sourceAdded": true,
+          "sourceCount": 3,
+          "independentSourceCount": 1
+        }
+      ],
       "rejections": [],
       "proposalsQueued": []
     },
     {
       "article": {
-        "title": "An open-source spec for Codex orchestration: Symphony.",
-        "url": "https://openai.com/index/open-source-codex-orchestration-symphony"
+        "title": "OpenAI available at FedRAMP Moderate",
+        "url": "https://openai.com/index/openai-available-at-fedramp-moderate"
       },
-      "summary": "OpenAI's Symphony article describes an open-source orchestration spec that turns a project-management board (Linear) into a control plane for coding agents, enabling always-on, parallel, multi-agent software development workflows. Key novel concepts include task-tracker-as-control-plane orchestration, DAG-based task dependency execution, and continuous agent supervision at the ticket level rather than session level.",
+      "summary": "OpenAI announces FedRAMP 20x Moderate authorization for ChatGPT Enterprise and API Platform, enabling U.S. federal agencies to use frontier AI tools including GPT-5.5 and Codex in secure government environments. The article introduces FedRAMP 20x as a cloud-native, faster authorization path and describes government use cases spanning research, drafting, translation, and software development.",
       "longlistAdditions": [],
-      "longlistUpdates": [],
+      "longlistUpdates": [
+        {
+          "id": "gpt55",
+          "label": "GPT-5.5",
+          "sourceAdded": true,
+          "sourceCount": 4,
+          "independentSourceCount": 1
+        }
+      ],
       "rejections": [],
       "proposalsQueued": []
     },
     {
       "article": {
-        "title": "Choco automates food distribution with AI agents",
-        "url": "https://openai.com/index/choco"
+        "title": "Claude for Creative Work",
+        "url": "https://www.anthropic.com/news/claude-for-creative-work"
       },
-      "summary": "Article about Choco's use of OpenAI APIs to build AI agents (OrderAgent, VoiceAgent) for food distribution automation, covering multimodal order processing, in-context learning, evaluation frameworks, and the emerging role of non-engineer 'agent orchestrators'.",
+      "summary": "Anthropic announces Claude for Creative Work, launching connectors with Blender, Adobe, Autodesk, Ableton, Splice and others, plus educational partnerships with RISD, Ringling, and Goldsmiths. The article prominently features Claude Design and creative-pipeline use cases including code generation, asset bridging, and rapid prototyping.",
       "longlistAdditions": [],
-      "longlistUpdates": [],
+      "longlistUpdates": [
+        {
+          "id": "claude-design",
+          "label": "Claude Design",
+          "sourceAdded": true,
+          "sourceCount": 2,
+          "independentSourceCount": 1
+        },
+        {
+          "id": "interactive-prototyping",
+          "label": "Interactive Prototyping",
+          "sourceAdded": true,
+          "sourceCount": 2,
+          "independentSourceCount": 1
+        },
+        {
+          "id": "handoff-bundle",
+          "label": "Handoff Bundle",
+          "sourceAdded": true,
+          "sourceCount": 2,
+          "independentSourceCount": 1
+        }
+      ],
       "rejections": [],
       "proposalsQueued": []
     }
   ],
   "definitionReviews": [
     {
-      "id": "claude-ai",
-      "status": "insufficient_evidence",
-      "reason": "No source material addresses Claude.ai features, availability, or positioning."
-    },
-    {
-      "id": "claude-code",
-      "status": "insufficient_evidence",
-      "reason": "No source material references Claude Code. The $1B ARR claim and other specifics cannot be verified or updated from these excerpts."
-    },
-    {
-      "id": "claude-cowork",
-      "status": "insufficient_evidence",
-      "reason": "No source material references Claude Cowork or any Anthropic outcome-delegation product. The Microsoft partnership article discusses OpenAI, not Anthropic, and makes no mention of a Copilot Cowork product built on Claude."
-    },
-    {
-      "id": "claude-mythos",
-      "status": "insufficient_evidence",
-      "reason": "No source material references Claude Mythos or any Anthropic model announcement matching this description."
-    },
-    {
-      "id": "co-channeling",
-      "status": "insufficient_evidence",
-      "reason": "No source material addresses this concept."
-    },
-    {
-      "id": "codex-model",
+      "id": "context-drift",
       "status": "keep",
-      "reason": "The Symphony post confirms Codex remains an active, production-scale OpenAI coding agent being used to orchestrate engineering workflows, consistent with the existing definition describing it as OpenAI's coding model family that established AI-assisted coding. No contradictions or significant gaps identified."
+      "reason": "No source material addresses context drift, attention de-prioritisation, or the cited 65% enterprise failure statistic. Definition stands unchanged."
     },
     {
-      "id": "computer-use",
-      "status": "insufficient_evidence",
-      "reason": "No source material addresses the computer-use agent pattern."
+      "id": "context-economy",
+      "status": "keep",
+      "reason": "No source material references context economy or the cited Anthropic context engineering documentation. Definition stands unchanged."
     },
     {
-      "id": "connectors",
-      "status": "insufficient_evidence",
-      "reason": "No source material addresses pre-built MCP connectors or the connectors layer."
+      "id": "context-engineering",
+      "status": "keep",
+      "reason": "No source material addresses context engineering as a discipline. Definition stands unchanged."
     },
     {
-      "id": "constitutional-ai",
-      "status": "insufficient_evidence",
-      "reason": "No source material addresses Anthropic's Constitutional AI approach."
+      "id": "context-entropy",
+      "status": "keep",
+      "reason": "No source material addresses context entropy or agentic memory architecture. Definition stands unchanged."
     },
     {
-      "id": "context-compaction",
-      "status": "insufficient_evidence",
-      "reason": "No source material addresses context compaction or related techniques."
+      "id": "context-folding",
+      "status": "keep",
+      "reason": "No source material addresses context folding or related architectural approaches. Definition stands unchanged."
+    },
+    {
+      "id": "context-pollution",
+      "status": "keep",
+      "reason": "No source material addresses context pollution or signal-to-noise degradation in agent contexts. Definition stands unchanged."
+    },
+    {
+      "id": "context-rot",
+      "status": "keep",
+      "reason": "No source material addresses context rot or the cited Chroma 2025 research. Definition stands unchanged."
+    },
+    {
+      "id": "context-window",
+      "status": "keep",
+      "reason": "No source material addresses context window mechanics or token limits. Definition stands unchanged."
+    },
+    {
+      "id": "coordinated-disclosure",
+      "status": "keep",
+      "reason": "No source material addresses coordinated disclosure, Project Mythos, or Project Glasswing. Definition stands unchanged."
+    },
+    {
+      "id": "coordinator-mode",
+      "status": "keep",
+      "reason": "No source material addresses Claude Code's coordinator mode or multi-agent orchestration specifics. Definition stands unchanged."
     }
   ],
   "notes": []

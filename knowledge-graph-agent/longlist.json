@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-04-27T19:20:08.906Z",
+    "generatedAt": "2026-04-28T19:40:36.332Z",
     "entryCount": 15,
     "note": "Lexi-managed Tier 2 longlist — terms under observation, awaiting evidence to support promotion to the graph (Tier 1)."
   },
@@ -36,12 +36,20 @@
           "sourceLabel": "Google AI Blog",
           "publishedAt": "Thu, 23 Apr 2026 12:00:00 +0000",
           "firstSeen": "2026-04-26T22:40:25.832Z"
+        },
+        {
+          "url": "https://blog.google/products-and-platforms/products/translate/fun-facts-google-translate-20-years/",
+          "domain": "blog.google",
+          "title": "Celebrating 20 years of Google Translate: Fun facts, tips and new features to try",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Tue, 28 Apr 2026 16:00:00 +0000",
+          "firstSeen": "2026-04-28T19:40:36.332Z"
         }
       ],
-      "sourceCount": 2,
+      "sourceCount": 3,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-04-26T22:40:25.832Z",
-      "dateLastSeen": "2026-04-27T01:07:31.335Z",
+      "dateLastSeen": "2026-04-28T19:40:36.332Z",
       "sz": 14,
       "nodeType": "product",
       "proposalReason": "The article introduces two new TPU variants (8i and 8t) purpose-built for the agentic era, making TPU a distinct trackable product category with clear relevance to agentic infrastructure."
@@ -213,12 +221,28 @@
           "sourceLabel": "OpenAI News",
           "publishedAt": "Thu, 23 Apr 2026 11:00:00 GMT",
           "firstSeen": "2026-04-26T22:40:25.832Z"
+        },
+        {
+          "url": "https://openai.com/index/openai-on-aws",
+          "domain": "openai.com",
+          "title": "OpenAI models, Codex, and Managed Agents come to AWS",
+          "sourceLabel": "OpenAI News",
+          "publishedAt": "Tue, 28 Apr 2026 00:00:00 GMT",
+          "firstSeen": "2026-04-28T19:40:36.332Z"
+        },
+        {
+          "url": "https://openai.com/index/openai-available-at-fedramp-moderate",
+          "domain": "openai.com",
+          "title": "OpenAI available at FedRAMP Moderate",
+          "sourceLabel": "OpenAI News",
+          "publishedAt": "Mon, 27 Apr 2026 14:00:00 GMT",
+          "firstSeen": "2026-04-28T19:40:36.332Z"
         }
       ],
-      "sourceCount": 2,
+      "sourceCount": 4,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-04-26T22:40:25.832Z",
-      "dateLastSeen": "2026-04-27T01:07:31.335Z",
+      "dateLastSeen": "2026-04-28T19:40:36.332Z",
       "sz": 14,
       "fullName": "GPT-5.5 (OpenAI)",
       "nodeType": "product",
@@ -431,12 +455,20 @@
           "sourceLabel": "Anthropic Newsroom",
           "publishedAt": null,
           "firstSeen": "2026-04-26T22:40:25.832Z"
+        },
+        {
+          "url": "https://www.anthropic.com/news/claude-for-creative-work",
+          "domain": "anthropic.com",
+          "title": "Claude for Creative Work",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-04-28T19:40:36.332Z"
         }
       ],
-      "sourceCount": 1,
+      "sourceCount": 2,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-04-26T22:40:25.832Z",
-      "dateLastSeen": "2026-04-27T01:07:31.335Z",
+      "dateLastSeen": "2026-04-28T19:40:36.332Z",
       "sz": 14,
       "fullName": "Claude Design (Anthropic Labs)",
       "nodeType": "product",
@@ -500,12 +532,20 @@
           "sourceLabel": "Anthropic Newsroom",
           "publishedAt": null,
           "firstSeen": "2026-04-26T22:40:25.832Z"
+        },
+        {
+          "url": "https://www.anthropic.com/news/claude-for-creative-work",
+          "domain": "anthropic.com",
+          "title": "Claude for Creative Work",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-04-28T19:40:36.332Z"
         }
       ],
-      "sourceCount": 1,
+      "sourceCount": 2,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-04-26T22:40:25.832Z",
-      "dateLastSeen": "2026-04-27T01:07:31.335Z",
+      "dateLastSeen": "2026-04-28T19:40:36.332Z",
       "sz": 14,
       "fullName": "Handoff Bundle (Design-to-Code)",
       "proposalReason": "Distinct operational concept introduced in the article for bridging AI design and AI coding workflows; extends the existing handoff-document concept in a product-specific way."
@@ -534,12 +574,20 @@
           "sourceLabel": "Anthropic Newsroom",
           "publishedAt": null,
           "firstSeen": "2026-04-26T22:40:25.832Z"
+        },
+        {
+          "url": "https://www.anthropic.com/news/claude-for-creative-work",
+          "domain": "anthropic.com",
+          "title": "Claude for Creative Work",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-04-28T19:40:36.332Z"
         }
       ],
-      "sourceCount": 1,
+      "sourceCount": 2,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-04-26T22:40:25.832Z",
-      "dateLastSeen": "2026-04-27T01:07:31.335Z",
+      "dateLastSeen": "2026-04-28T19:40:36.332Z",
       "sz": 14,
       "fullName": "AI-Assisted Interactive Prototyping",
       "proposalReason": "Prominent capability described throughout the article as a key use case; represents a distinct concept at the intersection of AI tooling and design workflows likely to recur in coverage."
