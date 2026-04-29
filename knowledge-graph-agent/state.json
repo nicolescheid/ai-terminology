@@ -1,6 +1,6 @@
 {
-  "lastRunAt": "2026-04-28T19:40:36.332Z",
-  "reviewCursor": 50,
+  "lastRunAt": "2026-04-29T19:24:05.664Z",
+  "reviewCursor": 60,
   "seenArticles": {
     "93a049d060bc295b": {
       "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/tpus-8t-8i-cloud-next/",
@@ -127,6 +127,18 @@
       "title": "Claude for Creative Work",
       "publishedAt": null,
       "seenAt": "2026-04-28T19:40:36.332Z"
+    },
+    "6d737041e91d8e01": {
+      "url": "https://openai.com/index/cybersecurity-in-the-intelligence-age",
+      "title": "Cybersecurity in the Intelligence Age",
+      "publishedAt": "Wed, 29 Apr 2026 04:00:00 GMT",
+      "seenAt": "2026-04-29T19:24:05.664Z"
+    },
+    "e6284b864c34a324": {
+      "url": "https://openai.com/index/our-commitment-to-community-safety",
+      "title": "Our commitment to community safety",
+      "publishedAt": "Tue, 28 Apr 2026 00:00:00 GMT",
+      "seenAt": "2026-04-29T19:24:05.664Z"
     }
   },
   "nodeReviews": {
@@ -379,6 +391,56 @@
       "lastReviewedAt": "2026-04-28T19:40:36.332Z",
       "status": "keep",
       "reason": "No source material addresses Claude Code's coordinator mode or multi-agent orchestration specifics. Definition stands unchanged."
+    },
+    "copilot": {
+      "lastReviewedAt": "2026-04-29T19:24:05.664Z",
+      "status": "keep",
+      "reason": "No source material touches on the copilot pattern or Microsoft Copilot products."
+    },
+    "copilot-cowork": {
+      "lastReviewedAt": "2026-04-29T19:24:05.664Z",
+      "status": "keep",
+      "reason": "No source material references Microsoft Copilot Cowork or Wave 3 of Microsoft 365 Copilot."
+    },
+    "cost": {
+      "lastReviewedAt": "2026-04-29T19:24:05.664Z",
+      "status": "keep",
+      "reason": "No source material addresses AI token-based cost economics."
+    },
+    "cost-runaway": {
+      "lastReviewedAt": "2026-04-29T19:24:05.664Z",
+      "status": "keep",
+      "reason": "No source material references agentic cost runaway or related failure modes."
+    },
+    "cowork": {
+      "lastReviewedAt": "2026-04-29T19:24:05.664Z",
+      "status": "keep",
+      "reason": "No source material references the Cowork collaboration model or Anthropic's implementation."
+    },
+    "critical-thinking": {
+      "lastReviewedAt": "2026-04-29T19:24:05.664Z",
+      "status": "keep",
+      "reason": "No source material bears on the definition of critical thinking as an AI literacy skill."
+    },
+    "cron-scheduling": {
+      "lastReviewedAt": "2026-04-29T19:24:05.664Z",
+      "status": "keep",
+      "reason": "No source material references cron scheduling or Claude Code features."
+    },
+    "cursor": {
+      "lastReviewedAt": "2026-04-29T19:24:05.664Z",
+      "status": "keep",
+      "reason": "No source material references Cursor or AI-first IDEs."
+    },
+    "cve": {
+      "lastReviewedAt": "2026-04-29T19:24:05.664Z",
+      "status": "keep",
+      "reason": "The OpenAI cybersecurity piece discusses cyber defense generally but contains no information that would alter or enrich the CVE definition, which correctly describes the standard vulnerability cataloguing system."
+    },
+    "daemon": {
+      "lastReviewedAt": "2026-04-29T19:24:05.664Z",
+      "status": "keep",
+      "reason": "No source material references daemon processes or KAIROS architecture."
     }
   }
 }

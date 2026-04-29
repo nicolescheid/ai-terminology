@@ -1,179 +1,97 @@
 {
-  "generatedAt": "2026-04-28T19:40:36.332Z",
+  "generatedAt": "2026-04-29T19:24:05.664Z",
   "model": "claude-sonnet-4-6",
   "sourcesConfigured": 4,
   "articlesConsidered": [
     {
-      "id": "f98304eba2d040c7",
-      "source": "Google AI Blog",
-      "title": "Celebrating 20 years of Google Translate: Fun facts, tips and new features to try",
-      "url": "https://blog.google/products-and-platforms/products/translate/fun-facts-google-translate-20-years/",
-      "publishedAt": "Tue, 28 Apr 2026 16:00:00 +0000"
+      "id": "6d737041e91d8e01",
+      "source": "OpenAI News",
+      "title": "Cybersecurity in the Intelligence Age",
+      "url": "https://openai.com/index/cybersecurity-in-the-intelligence-age",
+      "publishedAt": "Wed, 29 Apr 2026 04:00:00 GMT"
     },
     {
-      "id": "368128e6f2812923",
+      "id": "e6284b864c34a324",
       "source": "OpenAI News",
-      "title": "OpenAI models, Codex, and Managed Agents come to AWS",
-      "url": "https://openai.com/index/openai-on-aws",
+      "title": "Our commitment to community safety",
+      "url": "https://openai.com/index/our-commitment-to-community-safety",
       "publishedAt": "Tue, 28 Apr 2026 00:00:00 GMT"
-    },
-    {
-      "id": "bc680bc14e9fe206",
-      "source": "OpenAI News",
-      "title": "OpenAI available at FedRAMP Moderate",
-      "url": "https://openai.com/index/openai-available-at-fedramp-moderate",
-      "publishedAt": "Mon, 27 Apr 2026 14:00:00 GMT"
-    },
-    {
-      "id": "1c2272f9572d4fa7",
-      "source": "Anthropic Newsroom",
-      "title": "Claude for Creative Work",
-      "url": "https://www.anthropic.com/news/claude-for-creative-work",
-      "publishedAt": null
     }
   ],
   "harvestedTerms": [
     {
       "article": {
-        "title": "Celebrating 20 years of Google Translate: Fun facts, tips and new features to try",
-        "url": "https://blog.google/products-and-platforms/products/translate/fun-facts-google-translate-20-years/"
+        "title": "Cybersecurity in the Intelligence Age",
+        "url": "https://openai.com/index/cybersecurity-in-the-intelligence-age"
       },
-      "summary": "Google Translate 20th anniversary article covers its evolution from statistical ML to neural networks and current Gemini/TPU-powered translation, plus new pronunciation practice feature. References TPU hardware, statistical machine translation, neural machine translation, and live translation. Limited novel AI terminology for graph purposes.",
+      "summary": "OpenAI publishes a cybersecurity action plan focused on democratizing AI-powered cyber defense, coordinating across government and industry, and preserving visibility in deployment. The article introduces framing around 'Intelligence Age' cybersecurity and structured pillars for AI-assisted defense.",
       "longlistAdditions": [],
-      "longlistUpdates": [
-        {
-          "id": "tpu",
-          "label": "TPU (Tensor Processing Unit)",
-          "sourceAdded": true,
-          "sourceCount": 3,
-          "independentSourceCount": 1
-        }
-      ],
+      "longlistUpdates": [],
       "rejections": [],
       "proposalsQueued": []
     },
     {
       "article": {
-        "title": "OpenAI models, Codex, and Managed Agents come to AWS",
-        "url": "https://openai.com/index/openai-on-aws"
+        "title": "Our commitment to community safety",
+        "url": "https://openai.com/index/our-commitment-to-community-safety"
       },
-      "summary": "OpenAI and AWS announce an expanded strategic partnership bringing OpenAI models (including GPT-5.5), Codex, and a new Amazon Bedrock Managed Agents offering to AWS enterprise customers. The article introduces 'Amazon Bedrock Managed Agents' as a distinct named product for deploying agents within AWS infrastructure, and re-surfaces GPT-5.5 and the concept of managed/hosted agent infrastructure.",
+      "summary": "OpenAI article on community safety practices for ChatGPT, covering model training for harm avoidance, automated detection systems, human review workflows, law enforcement referrals, and parental controls. Introduces concepts around behavioral pattern detection, structured risk assessment, and safety escalation pipelines.",
       "longlistAdditions": [],
-      "longlistUpdates": [
-        {
-          "id": "gpt55",
-          "label": "GPT-5.5",
-          "sourceAdded": true,
-          "sourceCount": 3,
-          "independentSourceCount": 1
-        }
-      ],
-      "rejections": [],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "OpenAI available at FedRAMP Moderate",
-        "url": "https://openai.com/index/openai-available-at-fedramp-moderate"
-      },
-      "summary": "OpenAI announces FedRAMP 20x Moderate authorization for ChatGPT Enterprise and API Platform, enabling U.S. federal agencies to use frontier AI tools including GPT-5.5 and Codex in secure government environments. The article introduces FedRAMP 20x as a cloud-native, faster authorization path and describes government use cases spanning research, drafting, translation, and software development.",
-      "longlistAdditions": [],
-      "longlistUpdates": [
-        {
-          "id": "gpt55",
-          "label": "GPT-5.5",
-          "sourceAdded": true,
-          "sourceCount": 4,
-          "independentSourceCount": 1
-        }
-      ],
-      "rejections": [],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "Claude for Creative Work",
-        "url": "https://www.anthropic.com/news/claude-for-creative-work"
-      },
-      "summary": "Anthropic announces Claude for Creative Work, launching connectors with Blender, Adobe, Autodesk, Ableton, Splice and others, plus educational partnerships with RISD, Ringling, and Goldsmiths. The article prominently features Claude Design and creative-pipeline use cases including code generation, asset bridging, and rapid prototyping.",
-      "longlistAdditions": [],
-      "longlistUpdates": [
-        {
-          "id": "claude-design",
-          "label": "Claude Design",
-          "sourceAdded": true,
-          "sourceCount": 2,
-          "independentSourceCount": 1
-        },
-        {
-          "id": "interactive-prototyping",
-          "label": "Interactive Prototyping",
-          "sourceAdded": true,
-          "sourceCount": 2,
-          "independentSourceCount": 1
-        },
-        {
-          "id": "handoff-bundle",
-          "label": "Handoff Bundle",
-          "sourceAdded": true,
-          "sourceCount": 2,
-          "independentSourceCount": 1
-        }
-      ],
+      "longlistUpdates": [],
       "rejections": [],
       "proposalsQueued": []
     }
   ],
   "definitionReviews": [
     {
-      "id": "context-drift",
+      "id": "copilot",
       "status": "keep",
-      "reason": "No source material addresses context drift, attention de-prioritisation, or the cited 65% enterprise failure statistic. Definition stands unchanged."
+      "reason": "No source material touches on the copilot pattern or Microsoft Copilot products."
     },
     {
-      "id": "context-economy",
+      "id": "copilot-cowork",
       "status": "keep",
-      "reason": "No source material references context economy or the cited Anthropic context engineering documentation. Definition stands unchanged."
+      "reason": "No source material references Microsoft Copilot Cowork or Wave 3 of Microsoft 365 Copilot."
     },
     {
-      "id": "context-engineering",
+      "id": "cost",
       "status": "keep",
-      "reason": "No source material addresses context engineering as a discipline. Definition stands unchanged."
+      "reason": "No source material addresses AI token-based cost economics."
     },
     {
-      "id": "context-entropy",
+      "id": "cost-runaway",
       "status": "keep",
-      "reason": "No source material addresses context entropy or agentic memory architecture. Definition stands unchanged."
+      "reason": "No source material references agentic cost runaway or related failure modes."
     },
     {
-      "id": "context-folding",
+      "id": "cowork",
       "status": "keep",
-      "reason": "No source material addresses context folding or related architectural approaches. Definition stands unchanged."
+      "reason": "No source material references the Cowork collaboration model or Anthropic's implementation."
     },
     {
-      "id": "context-pollution",
+      "id": "critical-thinking",
       "status": "keep",
-      "reason": "No source material addresses context pollution or signal-to-noise degradation in agent contexts. Definition stands unchanged."
+      "reason": "No source material bears on the definition of critical thinking as an AI literacy skill."
     },
     {
-      "id": "context-rot",
+      "id": "cron-scheduling",
       "status": "keep",
-      "reason": "No source material addresses context rot or the cited Chroma 2025 research. Definition stands unchanged."
+      "reason": "No source material references cron scheduling or Claude Code features."
     },
     {
-      "id": "context-window",
+      "id": "cursor",
       "status": "keep",
-      "reason": "No source material addresses context window mechanics or token limits. Definition stands unchanged."
+      "reason": "No source material references Cursor or AI-first IDEs."
     },
     {
-      "id": "coordinated-disclosure",
+      "id": "cve",
       "status": "keep",
-      "reason": "No source material addresses coordinated disclosure, Project Mythos, or Project Glasswing. Definition stands unchanged."
+      "reason": "The OpenAI cybersecurity piece discusses cyber defense generally but contains no information that would alter or enrich the CVE definition, which correctly describes the standard vulnerability cataloguing system."
     },
     {
-      "id": "coordinator-mode",
+      "id": "daemon",
       "status": "keep",
-      "reason": "No source material addresses Claude Code's coordinator mode or multi-agent orchestration specifics. Definition stands unchanged."
+      "reason": "No source material references daemon processes or KAIROS architecture."
     }
   ],
   "notes": []

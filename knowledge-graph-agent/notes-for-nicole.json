@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generatedAt": "2026-04-28T19:40:36.332Z",
-    "unreadCount": 55,
-    "totalCount": 55,
+    "generatedAt": "2026-04-29T19:24:05.664Z",
+    "unreadCount": 63,
+    "totalCount": 63,
     "note": "Notes for Nicole — Lexi's manager channel (spec §6). Mandatory entry types fire when their triggering condition is met; discretionary entries are observations Lexi thinks Nicole should see. Set status to 'read', 'actioned', or 'dismissed' as appropriate."
   },
   "entries": [
@@ -1373,6 +1373,206 @@
         "current": 15,
         "details": "Would exceed cap of 7 longlist additions per 7-day window (current: 15).",
         "suppressedReason": "Novel framing term introduced by the article to describe a distinct AI use case: bridging disparate creative tools (Blender, Adobe, Ableton, SketchUp) in a single pipeline via Claude connectors — sufficiently specific and recurring to warrant tracking.",
+        "source": "extract-flow"
+      },
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+    },
+    {
+      "id": "a6ab120141846c6f",
+      "type": "throughput_cap_hit",
+      "writtenAt": "2026-04-29T19:24:05.664Z",
+      "runId": "5182d6e5-bf46-4de7-b377-1d2a83926cfa",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 7, current 15)",
+      "details": "Would exceed cap of 7 longlist additions per 7-day window (current: 15).",
+      "evidence": {
+        "action": "add_to_longlist",
+        "target": {
+          "kind": "longlist_entry",
+          "id": "ai-cyber-defense"
+        },
+        "gate": "autonomous",
+        "cap": "longlistAdditionsPer7d",
+        "limit": 7,
+        "current": 15,
+        "details": "Would exceed cap of 7 longlist additions per 7-day window (current: 15).",
+        "suppressedReason": "The article's central subject — an OpenAI action plan for 'democratizing AI-powered cyber defense' — establishes this as a distinct, reusable framing term for AI applied to defensive security.",
+        "source": "extract-flow"
+      },
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+    },
+    {
+      "id": "a6ab120141846c6f",
+      "type": "throughput_cap_hit",
+      "writtenAt": "2026-04-29T19:24:05.664Z",
+      "runId": "5182d6e5-bf46-4de7-b377-1d2a83926cfa",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 7, current 15)",
+      "details": "Would exceed cap of 7 longlist additions per 7-day window (current: 15).",
+      "evidence": {
+        "action": "add_to_longlist",
+        "target": {
+          "kind": "longlist_entry",
+          "id": "intelligence-age"
+        },
+        "gate": "autonomous",
+        "cap": "longlistAdditionsPer7d",
+        "limit": 7,
+        "current": 15,
+        "details": "Would exceed cap of 7 longlist additions per 7-day window (current: 15).",
+        "suppressedReason": "The article uses 'Intelligence Age' explicitly and repeatedly as a named era framing cybersecurity challenges, paralleling how 'Information Age' was used; OpenAI also uses it in their FedRAMP article title in the same session.",
+        "source": "extract-flow"
+      },
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+    },
+    {
+      "id": "a6ab120141846c6f",
+      "type": "throughput_cap_hit",
+      "writtenAt": "2026-04-29T19:24:05.664Z",
+      "runId": "5182d6e5-bf46-4de7-b377-1d2a83926cfa",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 7, current 15)",
+      "details": "Would exceed cap of 7 longlist additions per 7-day window (current: 15).",
+      "evidence": {
+        "action": "add_to_longlist",
+        "target": {
+          "kind": "longlist_entry",
+          "id": "cyber-defense-democratization"
+        },
+        "gate": "autonomous",
+        "cap": "longlistAdditionsPer7d",
+        "limit": 7,
+        "current": 15,
+        "details": "Would exceed cap of 7 longlist additions per 7-day window (current: 15).",
+        "suppressedReason": "One of the five named pillars in OpenAI's action plan and the primary organizing theme; represents a distinct, trackable policy concept in the AI-security space.",
+        "source": "extract-flow"
+      },
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+    },
+    {
+      "id": "a6ab120141846c6f",
+      "type": "throughput_cap_hit",
+      "writtenAt": "2026-04-29T19:24:05.664Z",
+      "runId": "5182d6e5-bf46-4de7-b377-1d2a83926cfa",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 7, current 15)",
+      "details": "Would exceed cap of 7 longlist additions per 7-day window (current: 15).",
+      "evidence": {
+        "action": "add_to_longlist",
+        "target": {
+          "kind": "longlist_entry",
+          "id": "frontier-cyber-capabilities"
+        },
+        "gate": "autonomous",
+        "cap": "longlistAdditionsPer7d",
+        "limit": 7,
+        "current": 15,
+        "details": "Would exceed cap of 7 longlist additions per 7-day window (current: 15).",
+        "suppressedReason": "The article names 'Strengthening security around frontier cyber capabilities' as an explicit pillar, making this a trackable concept distinct from general cybersecurity — particularly relevant to AI safety and dual-use concerns.",
+        "source": "extract-flow"
+      },
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+    },
+    {
+      "id": "a6ab120141846c6f",
+      "type": "throughput_cap_hit",
+      "writtenAt": "2026-04-29T19:24:05.664Z",
+      "runId": "5182d6e5-bf46-4de7-b377-1d2a83926cfa",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 7, current 15)",
+      "details": "Would exceed cap of 7 longlist additions per 7-day window (current: 15).",
+      "evidence": {
+        "action": "add_to_longlist",
+        "target": {
+          "kind": "longlist_entry",
+          "id": "model-spec"
+        },
+        "gate": "autonomous",
+        "cap": "longlistAdditionsPer7d",
+        "limit": 7,
+        "current": 15,
+        "details": "Would exceed cap of 7 longlist additions per 7-day window (current: 15).",
+        "suppressedReason": "The article explicitly references OpenAI's Model Spec as the foundational document guiding ChatGPT's safety behavior—a recurring and important concept in AI governance discourse worth tracking.",
+        "source": "extract-flow"
+      },
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+    },
+    {
+      "id": "a6ab120141846c6f",
+      "type": "throughput_cap_hit",
+      "writtenAt": "2026-04-29T19:24:05.664Z",
+      "runId": "5182d6e5-bf46-4de7-b377-1d2a83926cfa",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 7, current 15)",
+      "details": "Would exceed cap of 7 longlist additions per 7-day window (current: 15).",
+      "evidence": {
+        "action": "add_to_longlist",
+        "target": {
+          "kind": "longlist_entry",
+          "id": "usage-policy"
+        },
+        "gate": "autonomous",
+        "cap": "longlistAdditionsPer7d",
+        "limit": 7,
+        "current": 15,
+        "details": "Would exceed cap of 7 longlist additions per 7-day window (current: 15).",
+        "suppressedReason": "The article foregrounds OpenAI's Usage Policies as the enforcement backbone for community safety—a distinct, recurring governance artifact distinct from system prompts or model specs.",
+        "source": "extract-flow"
+      },
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+    },
+    {
+      "id": "a6ab120141846c6f",
+      "type": "throughput_cap_hit",
+      "writtenAt": "2026-04-29T19:24:05.664Z",
+      "runId": "5182d6e5-bf46-4de7-b377-1d2a83926cfa",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 7, current 15)",
+      "details": "Would exceed cap of 7 longlist additions per 7-day window (current: 15).",
+      "evidence": {
+        "action": "add_to_longlist",
+        "target": {
+          "kind": "longlist_entry",
+          "id": "behavioral-pattern-detection"
+        },
+        "gate": "autonomous",
+        "cap": "longlistAdditionsPer7d",
+        "limit": 7,
+        "current": 15,
+        "details": "Would exceed cap of 7 longlist additions per 7-day window (current: 15).",
+        "suppressedReason": "The article specifically highlights that single messages may seem harmless but patterns across long conversations reveal risk—this longitudinal behavioral analysis framing is a distinct and emerging concept in platform safety.",
+        "source": "extract-flow"
+      },
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+    },
+    {
+      "id": "a6ab120141846c6f",
+      "type": "throughput_cap_hit",
+      "writtenAt": "2026-04-29T19:24:05.664Z",
+      "runId": "5182d6e5-bf46-4de7-b377-1d2a83926cfa",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 7, current 15)",
+      "details": "Would exceed cap of 7 longlist additions per 7-day window (current: 15).",
+      "evidence": {
+        "action": "add_to_longlist",
+        "target": {
+          "kind": "longlist_entry",
+          "id": "safety-escalation-pipeline"
+        },
+        "gate": "autonomous",
+        "cap": "longlistAdditionsPer7d",
+        "limit": 7,
+        "current": 15,
+        "details": "Would exceed cap of 7 longlist additions per 7-day window (current: 15).",
+        "suppressedReason": "The article describes a clear tiered escalation architecture—automated detection → human review → expert assessment → law enforcement referral—that constitutes a named operational pattern in AI safety worth tracking.",
         "source": "extract-flow"
       },
       "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
