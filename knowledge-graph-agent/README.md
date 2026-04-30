@@ -249,13 +249,48 @@ node "C:\dev\ai-terminology\knowledge-graph-agent\run.mjs"
 
 Per the spec's credibility bar, a longlist entry is eligible for promotion when:
 
-1. **Source count ≥ 2 independent sources** (different domain, and ideally different author).
+1. **Source count ≥ 2 independent sources** (different domain, ideally different author too).
 2. **Recency** — at least one sighting within the last 90 days.
 3. **Time on longlist ≥ 14 days** (anti-haste).
 4. **Definition consistency** across sources.
 5. **Concept reality check** — names a concept not already covered by an existing graph node.
 
-This eligibility check is not yet implemented in code; promotion is currently a manual review step pending Phase A's downstream phases.
+[`promote.mjs`](./promote.mjs) runs the heuristic-checkable parts of this bar (1–3) on every longlist entry and writes a `PROMOTE_TO_GRAPH` proposal for each eligible term to [`proposals.json`](./proposals.json). Definition consistency (4) and concept reality (5) are deferred — they need LLM-based checks; intended for a later session.
+
+Approve a proposal by editing its `status` to `"approved"`. The next run of [`apply-proposals.mjs`](./apply-proposals.mjs) — which runs as part of every daily cron — will commit the approved promotion into [`agent-patch.json`](./agent-patch.json) and re-write [`graph-data-agent.js`](</C:/dev/ai-terminology/graph-data-agent.js>), so the term appears on the graph automatically. To reject: set status to `"rejected"`. Both scripts are idempotent — re-running over already-applied or already-rejected proposals is a clean no-op.
+
+Run manually:
+
+```powershell
+# Scan for newly-eligible terms (writes proposals to proposals.json)
+cd C:\dev\ai-terminology\knowledge-graph-agent
+node promote.mjs
+
+# Apply any proposals you've marked status: "approved"
+node apply-proposals.mjs
+```
+
+Both also run automatically as steps of `.github/workflows/lexi-run.yml`.
+
+## Triage CLI for Notes for Nicole
+
+[`triage.mjs`](./triage.mjs) is a stopgap tool until the manager dashboard gets a real "mark read" button (which needs a Cloudflare Pages Function with auth — separate session).
+
+```powershell
+# Just see what's pending
+node triage.mjs --list
+
+# Bulk-mark every unread note → read (use when you've eyeballed everything via dashboard)
+node triage.mjs --all-read
+
+# Bulk-update by type (e.g., dismiss all the throughput-cap-hit notes after raising the cap)
+node triage.mjs --type throughput_cap_hit --to dismissed
+
+# Interactive walk-through, one note at a time
+node triage.mjs
+```
+
+Status changes are local-only — commit + push after, or just wait for the next cron tick to bundle them into its auto-commit.
 
 ## Notes
 

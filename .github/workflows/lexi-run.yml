@@ -59,6 +59,18 @@ jobs:
           LEXI_SLACK_WEBHOOK: ${{ secrets.LEXI_SLACK_WEBHOOK }}
         run: node run.mjs
 
+      - name: Scan longlist for promotion-eligible terms
+        working-directory: knowledge-graph-agent
+        env:
+          LEXI_SLACK_WEBHOOK: ${{ secrets.LEXI_SLACK_WEBHOOK }}
+        run: node promote.mjs
+
+      - name: Apply approved proposals
+        working-directory: knowledge-graph-agent
+        env:
+          LEXI_SLACK_WEBHOOK: ${{ secrets.LEXI_SLACK_WEBHOOK }}
+        run: node apply-proposals.mjs
+
       - name: Commit + push state changes
         run: |
           git config user.name 'lexi-bot'

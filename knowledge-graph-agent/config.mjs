@@ -24,8 +24,11 @@ export default {
   managerAbsent: false,
   // Throughput caps (spec §12.4). Tunable. Cap-hit suppresses the offending
   // action and writes a THROUGHPUT_CAP_HIT note to Notes for Nicole.
+  // Bumped from 7 → 30 on 2026-04-30 after the original cap suppressed
+  // ~56 candidates in 3 days from the AI-labs source pool. 30/week roughly
+  // matches the natural extraction rate from the current ~10 source feeds.
   throughputCaps: {
-    longlistAdditionsPer7d: 7,
+    longlistAdditionsPer7d: 30,
     pendingProposalsBeforePause: 10
   },
   model: process.env.ANTHROPIC_MODEL || "claude-sonnet-4-6",
@@ -36,6 +39,9 @@ export default {
   requestTimeoutMs: 45000,
   userAgent: "DyadicMindKnowledgeGraphAgent/1.0",
   sources: [
+    // The labs themselves (concentrated, share opinions, single-domain echo
+    // chambers — useful as primary signal but cannot meet the credibility bar
+    // alone, which is why the diverse independent voices below were added).
     { type: "rss", label: "OpenAI News", url: "https://openai.com/news/rss.xml", limit: 4 },
     {
       type: "html_index",
@@ -51,6 +57,16 @@ export default {
       includeUrlPatterns: ["^https://deepmind\\.google/(blog|discover/blog)/"],
       limit: 4
     },
-    { type: "rss", label: "Google AI Blog", url: "https://blog.google/technology/ai/rss/", limit: 4 }
+    { type: "rss", label: "Google AI Blog", url: "https://blog.google/technology/ai/rss/", limit: 4 },
+    // Independent voices — different domains. These unlock the credibility
+    // bar (≥2 independent sources from different domains) for terms that
+    // are genuinely circulating in the field, not just being announced
+    // by their manufacturers.
+    { type: "rss", label: "Simon Willison's Weblog", url: "https://simonwillison.net/atom/everything/", limit: 4 },
+    { type: "rss", label: "Stratechery", url: "https://stratechery.com/feed/", limit: 3 },
+    { type: "rss", label: "AI Snake Oil", url: "https://www.aisnakeoil.com/feed", limit: 3 },
+    { type: "rss", label: "Last Week in AI", url: "https://lastweekin.ai/feed", limit: 3 },
+    { type: "rss", label: "Hugging Face Blog", url: "https://huggingface.co/blog/feed.xml", limit: 3 },
+    { type: "rss", label: "The Verge — AI", url: "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml", limit: 4 }
   ]
 };
