@@ -1,6 +1,6 @@
 {
-  "lastRunAt": "2026-04-29T19:24:05.664Z",
-  "reviewCursor": 60,
+  "lastRunAt": "2026-04-30T19:20:00.611Z",
+  "reviewCursor": 70,
   "seenArticles": {
     "93a049d060bc295b": {
       "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/tpus-8t-8i-cloud-next/",
@@ -139,6 +139,42 @@
       "title": "Our commitment to community safety",
       "publishedAt": "Tue, 28 Apr 2026 00:00:00 GMT",
       "seenAt": "2026-04-29T19:24:05.664Z"
+    },
+    "6ce07af346a49ef2": {
+      "url": "https://openai.com/index/where-the-goblins-came-from",
+      "title": "Where the goblins came from",
+      "publishedAt": "Wed, 29 Apr 2026 20:00:00 GMT",
+      "seenAt": "2026-04-30T19:20:00.611Z"
+    },
+    "1280d7239d1116c3": {
+      "url": "https://huggingface.co/blog/evaleval/eval-costs-bottleneck",
+      "title": "AI evals are becoming the new compute bottleneck",
+      "publishedAt": "Wed, 29 Apr 2026 16:45:09 GMT",
+      "seenAt": "2026-04-30T19:20:00.611Z"
+    },
+    "6d733d2dc93c1a12": {
+      "url": "https://stratechery.com/2026/intel-earnings-intels-differentiation-whither-terafab/",
+      "title": "Intel Earnings, Intel’s Differentiation?, Whither Terafab",
+      "publishedAt": "Wed, 29 Apr 2026 10:00:00 +0000",
+      "seenAt": "2026-04-30T19:20:00.611Z"
+    },
+    "3dae249492da65d3": {
+      "url": "https://lastweekin.ai/p/lwiai-podcast-238-gpt-54-mini-openai",
+      "title": "LWiAI Podcast #238 - GPT 5.4 mini, OpenAI Pivot, Mamba 3, Attention Residuals ",
+      "publishedAt": "Wed, 01 Apr 2026 08:07:15 GMT",
+      "seenAt": "2026-04-30T19:20:00.611Z"
+    },
+    "2120c0dcbf3a320e": {
+      "url": "https://www.normaltech.ai/p/new-paper-towards-a-science-of-ai",
+      "title": "New Paper: Towards a science of AI agent reliability",
+      "publishedAt": "Tue, 24 Feb 2026 13:07:19 GMT",
+      "seenAt": "2026-04-30T19:20:00.611Z"
+    },
+    "9f56a8b6305211f0": {
+      "url": "https://simonwillison.net/2026/Apr/30/rss-vibe-coded-apps/#atom-everything",
+      "title": "We need RSS for sharing abundant vibe-coded apps",
+      "publishedAt": "2026-04-30T18:38:48+00:00",
+      "seenAt": "2026-04-30T19:20:00.611Z"
     }
   },
   "nodeReviews": {
@@ -441,6 +477,56 @@
       "lastReviewedAt": "2026-04-29T19:24:05.664Z",
       "status": "keep",
       "reason": "No source material references daemon processes or KAIROS architecture."
+    },
+    "data-sovereignty": {
+      "lastReviewedAt": "2026-04-30T19:20:00.611Z",
+      "status": "keep",
+      "reason": "No source material addresses data sovereignty. Definition remains accurate and no update is warranted."
+    },
+    "deep-research": {
+      "lastReviewedAt": "2026-04-30T19:20:00.611Z",
+      "status": "keep",
+      "reason": "No source material addresses the deep research agentic mode. Definition remains accurate."
+    },
+    "deepseek": {
+      "lastReviewedAt": "2026-04-30T19:20:00.611Z",
+      "status": "keep",
+      "reason": "One source briefly mentions DeepSeek V4 as 'almost on the frontier, a fraction of the price,' which is consistent with the existing definition. No material change is justified."
+    },
+    "delegation": {
+      "lastReviewedAt": "2026-04-30T19:20:00.611Z",
+      "status": "keep",
+      "reason": "No source material addresses delegation as an AI interaction paradigm. Definition remains accurate."
+    },
+    "deprecated": {
+      "lastReviewedAt": "2026-04-30T19:20:00.611Z",
+      "status": "keep",
+      "reason": "No source material addresses deprecation cycles. Definition remains accurate."
+    },
+    "devin": {
+      "lastReviewedAt": "2026-04-30T19:20:00.611Z",
+      "status": "keep",
+      "reason": "No source material addresses Devin or Cognition. Definition remains accurate."
+    },
+    "distribution-shift": {
+      "lastReviewedAt": "2026-04-30T19:20:00.611Z",
+      "status": "keep",
+      "reason": "No source material addresses distribution shift. Definition remains accurate."
+    },
+    "edge-ai": {
+      "lastReviewedAt": "2026-04-30T19:20:00.611Z",
+      "status": "keep",
+      "reason": "No source material addresses edge AI or Gemma 4. Definition remains accurate based on available evidence."
+    },
+    "embeddings": {
+      "lastReviewedAt": "2026-04-30T19:20:00.611Z",
+      "status": "keep",
+      "reason": "No source material addresses embeddings. Definition remains accurate."
+    },
+    "emergent-capability": {
+      "lastReviewedAt": "2026-04-30T19:20:00.611Z",
+      "status": "insufficient_evidence",
+      "reason": "The definition makes a specific claim attributing a quote about cybersecurity abilities to Anthropic regarding 'Mythos Preview,' a model not verifiable from any of the provided sources. No source here corroborates or refutes this claim, so the specific example cannot be validated, but there is insufficient evidence to rewrite the definition."
     }
   }
 }

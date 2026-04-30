@@ -1,42 +1,209 @@
 {
-  "generatedAt": "2026-04-29T19:24:05.664Z",
+  "generatedAt": "2026-04-30T19:20:00.611Z",
   "model": "claude-sonnet-4-6",
-  "sourcesConfigured": 4,
+  "sourcesConfigured": 10,
   "articlesConsidered": [
     {
-      "id": "6d737041e91d8e01",
+      "id": "6ce07af346a49ef2",
       "source": "OpenAI News",
-      "title": "Cybersecurity in the Intelligence Age",
-      "url": "https://openai.com/index/cybersecurity-in-the-intelligence-age",
-      "publishedAt": "Wed, 29 Apr 2026 04:00:00 GMT"
+      "title": "Where the goblins came from",
+      "url": "https://openai.com/index/where-the-goblins-came-from",
+      "publishedAt": "Wed, 29 Apr 2026 20:00:00 GMT"
     },
     {
-      "id": "e6284b864c34a324",
-      "source": "OpenAI News",
-      "title": "Our commitment to community safety",
-      "url": "https://openai.com/index/our-commitment-to-community-safety",
-      "publishedAt": "Tue, 28 Apr 2026 00:00:00 GMT"
+      "id": "1280d7239d1116c3",
+      "source": "Hugging Face Blog",
+      "title": "AI evals are becoming the new compute bottleneck",
+      "url": "https://huggingface.co/blog/evaleval/eval-costs-bottleneck",
+      "publishedAt": "Wed, 29 Apr 2026 16:45:09 GMT"
+    },
+    {
+      "id": "6d733d2dc93c1a12",
+      "source": "Stratechery",
+      "title": "Intel Earnings, Intel’s Differentiation?, Whither Terafab",
+      "url": "https://stratechery.com/2026/intel-earnings-intels-differentiation-whither-terafab/",
+      "publishedAt": "Wed, 29 Apr 2026 10:00:00 +0000"
+    },
+    {
+      "id": "3dae249492da65d3",
+      "source": "Last Week in AI",
+      "title": "LWiAI Podcast #238 - GPT 5.4 mini, OpenAI Pivot, Mamba 3, Attention Residuals ",
+      "url": "https://lastweekin.ai/p/lwiai-podcast-238-gpt-54-mini-openai",
+      "publishedAt": "Wed, 01 Apr 2026 08:07:15 GMT"
+    },
+    {
+      "id": "2120c0dcbf3a320e",
+      "source": "AI Snake Oil",
+      "title": "New Paper: Towards a science of AI agent reliability",
+      "url": "https://www.normaltech.ai/p/new-paper-towards-a-science-of-ai",
+      "publishedAt": "Tue, 24 Feb 2026 13:07:19 GMT"
+    },
+    {
+      "id": "9f56a8b6305211f0",
+      "source": "Simon Willison's Weblog",
+      "title": "We need RSS for sharing abundant vibe-coded apps",
+      "url": "https://simonwillison.net/2026/Apr/30/rss-vibe-coded-apps/#atom-everything",
+      "publishedAt": "2026-04-30T18:38:48+00:00"
     }
   ],
   "harvestedTerms": [
     {
       "article": {
-        "title": "Cybersecurity in the Intelligence Age",
-        "url": "https://openai.com/index/cybersecurity-in-the-intelligence-age"
+        "title": "Where the goblins came from",
+        "url": "https://openai.com/index/where-the-goblins-came-from"
       },
-      "summary": "OpenAI publishes a cybersecurity action plan focused on democratizing AI-powered cyber defense, coordinating across government and industry, and preserving visibility in deployment. The article introduces framing around 'Intelligence Age' cybersecurity and structured pillars for AI-assisted defense.",
-      "longlistAdditions": [],
+      "summary": "OpenAI article explaining how 'goblin' metaphors spread through GPT-5.1 to GPT-5.5 via reinforcement learning feedback loops tied to the 'Nerdy' personality training signal. The piece covers reward signal leakage, SFT data contamination, and behavioral generalization across model generations.",
+      "longlistAdditions": [
+        {
+          "id": "reward-signal-leakage",
+          "label": "Reward Signal Leakage"
+        },
+        {
+          "id": "sft-data-contamination",
+          "label": "SFT Data Contamination"
+        },
+        {
+          "id": "personality-customization",
+          "label": "Personality Customization"
+        },
+        {
+          "id": "behavioral-audit",
+          "label": "Behavioral Audit"
+        }
+      ],
       "longlistUpdates": [],
       "rejections": [],
       "proposalsQueued": []
     },
     {
       "article": {
-        "title": "Our commitment to community safety",
-        "url": "https://openai.com/index/our-commitment-to-community-safety"
+        "title": "AI evals are becoming the new compute bottleneck",
+        "url": "https://huggingface.co/blog/evaleval/eval-costs-bottleneck"
       },
-      "summary": "OpenAI article on community safety practices for ChatGPT, covering model training for harm avoidance, automated detection systems, human review workflows, law enforcement referrals, and parental controls. Introduces concepts around behavioral pattern detection, structured risk assessment, and safety escalation pipelines.",
+      "summary": "Article from Hugging Face Blog argues that AI evaluation has crossed a cost threshold making it a primary compute bottleneck, documenting specific dollar costs for agent leaderboards, static benchmarks, and training-in-the-loop scientific ML benchmarks. Key themes: eval cost scaling, scaffold sensitivity, benchmark compression techniques, and the asymmetry between training and evaluation compute.",
       "longlistAdditions": [],
+      "longlistUpdates": [],
+      "rejections": [
+        {
+          "label": "Eval Cost Bottleneck",
+          "reason": "could not generate id"
+        },
+        {
+          "label": "Scaffold Sensitivity",
+          "reason": "could not generate id"
+        },
+        {
+          "label": "Training-in-the-Loop Benchmark",
+          "reason": "could not generate id"
+        },
+        {
+          "label": "Benchmark Compression",
+          "reason": "could not generate id"
+        }
+      ],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "Intel Earnings, Intel’s Differentiation?, Whither Terafab",
+        "url": "https://stratechery.com/2026/intel-earnings-intels-differentiation-whither-terafab/"
+      },
+      "summary": "Article covers Intel's earnings driven by CPU demand for AI workloads and discusses 'Terafab', a manufacturing/infrastructure concept. The excerpt is paywalled so detail is limited, but key themes are AI-driven CPU demand shifts and Intel's strategic differentiation in AI infrastructure.",
+      "longlistAdditions": [
+        {
+          "id": "terafab",
+          "label": "Terafab"
+        },
+        {
+          "id": "ai-driven-cpu-demand",
+          "label": "AI-Driven CPU Demand"
+        }
+      ],
+      "longlistUpdates": [
+        {
+          "id": "purpose-built-ai-infrastructure",
+          "label": "Purpose-Built AI Infrastructure",
+          "sourceAdded": true,
+          "sourceCount": 3,
+          "independentSourceCount": 2
+        }
+      ],
+      "rejections": [],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "LWiAI Podcast #238 - GPT 5.4 mini, OpenAI Pivot, Mamba 3, Attention Residuals ",
+        "url": "https://lastweekin.ai/p/lwiai-podcast-238-gpt-54-mini-openai"
+      },
+      "summary": "Podcast episode covering GPT-5.4 mini/nano release, Mistral Small 4 MoE model, agent OS competition with Manus/Nvidia NeMo, DLSS 5, OpenAI enterprise pivot, and safety research on steganography, chain-of-thought faithfulness, and emergent misalignment defenses.",
+      "longlistAdditions": [
+        {
+          "id": "llm-steganography",
+          "label": "Steganography in LLMs"
+        },
+        {
+          "id": "cot-faithfulness",
+          "label": "Chain-of-Thought Faithfulness"
+        },
+        {
+          "id": "agent-os",
+          "label": "Agent Operating System"
+        }
+      ],
+      "longlistUpdates": [],
+      "rejections": [
+        {
+          "label": "GPT-5.4 mini",
+          "reason": "already in graph (id match)"
+        }
+      ],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "New Paper: Towards a science of AI agent reliability",
+        "url": "https://www.normaltech.ai/p/new-paper-towards-a-science-of-ai"
+      },
+      "summary": "Article presents a research paper decomposing AI agent reliability into 12 dimensions across four high-level categories (consistency, robustness, calibration/predictability, safety), finding that capability gains have outpaced reliability gains across major model providers over 18 months. Key concepts include the capability-reliability gap, multi-dimensional reliability measurement, and the idea that accuracy alone is insufficient for autonomous deployment.",
+      "longlistAdditions": [
+        {
+          "id": "capability-reliability-gap",
+          "label": "Capability-Reliability Gap"
+        },
+        {
+          "id": "agent-reliability",
+          "label": "Agent Reliability"
+        },
+        {
+          "id": "calibration",
+          "label": "Calibration"
+        },
+        {
+          "id": "nines-of-reliability",
+          "label": "Nines of Reliability"
+        }
+      ],
+      "longlistUpdates": [],
+      "rejections": [],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "We need RSS for sharing abundant vibe-coded apps",
+        "url": "https://simonwillison.net/2026/Apr/30/rss-vibe-coded-apps/#atom-everything"
+      },
+      "summary": "Short post about vibe-coded apps becoming so frequent and personal that they need RSS/Atom feed infrastructure for discovery and sharing — analogous to blog posts. Minimal new terminology but reinforces vibe-coding and touches on micro-app publishing patterns.",
+      "longlistAdditions": [
+        {
+          "id": "micro-app",
+          "label": "Micro-App"
+        },
+        {
+          "id": "personal-software",
+          "label": "Personal Software"
+        }
+      ],
       "longlistUpdates": [],
       "rejections": [],
       "proposalsQueued": []
@@ -44,54 +211,54 @@
   ],
   "definitionReviews": [
     {
-      "id": "copilot",
+      "id": "data-sovereignty",
       "status": "keep",
-      "reason": "No source material touches on the copilot pattern or Microsoft Copilot products."
+      "reason": "No source material addresses data sovereignty. Definition remains accurate and no update is warranted."
     },
     {
-      "id": "copilot-cowork",
+      "id": "deep-research",
       "status": "keep",
-      "reason": "No source material references Microsoft Copilot Cowork or Wave 3 of Microsoft 365 Copilot."
+      "reason": "No source material addresses the deep research agentic mode. Definition remains accurate."
     },
     {
-      "id": "cost",
+      "id": "deepseek",
       "status": "keep",
-      "reason": "No source material addresses AI token-based cost economics."
+      "reason": "One source briefly mentions DeepSeek V4 as 'almost on the frontier, a fraction of the price,' which is consistent with the existing definition. No material change is justified."
     },
     {
-      "id": "cost-runaway",
+      "id": "delegation",
       "status": "keep",
-      "reason": "No source material references agentic cost runaway or related failure modes."
+      "reason": "No source material addresses delegation as an AI interaction paradigm. Definition remains accurate."
     },
     {
-      "id": "cowork",
+      "id": "deprecated",
       "status": "keep",
-      "reason": "No source material references the Cowork collaboration model or Anthropic's implementation."
+      "reason": "No source material addresses deprecation cycles. Definition remains accurate."
     },
     {
-      "id": "critical-thinking",
+      "id": "devin",
       "status": "keep",
-      "reason": "No source material bears on the definition of critical thinking as an AI literacy skill."
+      "reason": "No source material addresses Devin or Cognition. Definition remains accurate."
     },
     {
-      "id": "cron-scheduling",
+      "id": "distribution-shift",
       "status": "keep",
-      "reason": "No source material references cron scheduling or Claude Code features."
+      "reason": "No source material addresses distribution shift. Definition remains accurate."
     },
     {
-      "id": "cursor",
+      "id": "edge-ai",
       "status": "keep",
-      "reason": "No source material references Cursor or AI-first IDEs."
+      "reason": "No source material addresses edge AI or Gemma 4. Definition remains accurate based on available evidence."
     },
     {
-      "id": "cve",
+      "id": "embeddings",
       "status": "keep",
-      "reason": "The OpenAI cybersecurity piece discusses cyber defense generally but contains no information that would alter or enrich the CVE definition, which correctly describes the standard vulnerability cataloguing system."
+      "reason": "No source material addresses embeddings. Definition remains accurate."
     },
     {
-      "id": "daemon",
-      "status": "keep",
-      "reason": "No source material references daemon processes or KAIROS architecture."
+      "id": "emergent-capability",
+      "status": "insufficient_evidence",
+      "reason": "The definition makes a specific claim attributing a quote about cybersecurity abilities to Anthropic regarding 'Mythos Preview,' a model not verifiable from any of the provided sources. No source here corroborates or refutes this claim, so the specific example cannot be validated, but there is insufficient evidence to rewrite the definition."
     }
   ],
   "notes": []

@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-04-29T19:24:05.664Z",
-    "entryCount": 15,
+    "generatedAt": "2026-04-30T19:20:00.611Z",
+    "entryCount": 30,
     "note": "Lexi-managed Tier 2 longlist — terms under observation, awaiting evidence to support promotion to the graph (Tier 1)."
   },
   "entries": [
@@ -149,12 +149,20 @@
           "sourceLabel": "Google AI Blog",
           "publishedAt": "Thu, 23 Apr 2026 12:00:00 +0000",
           "firstSeen": "2026-04-26T22:56:20.734Z"
+        },
+        {
+          "url": "https://stratechery.com/2026/intel-earnings-intels-differentiation-whither-terafab/",
+          "domain": "stratechery.com",
+          "title": "Intel Earnings, Intel’s Differentiation?, Whither Terafab",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Wed, 29 Apr 2026 10:00:00 +0000",
+          "firstSeen": "2026-04-30T19:20:00.611Z"
         }
       ],
-      "sourceCount": 2,
-      "independentSourceCount": 1,
+      "sourceCount": 3,
+      "independentSourceCount": 2,
       "dateFirstSeen": "2026-04-26T22:40:25.832Z",
-      "dateLastSeen": "2026-04-27T01:07:31.335Z",
+      "dateLastSeen": "2026-04-30T19:20:00.611Z",
       "sz": 14,
       "proposalReason": "The article explicitly frames Google's approach as 'full-stack purpose-built infrastructure' spanning chips to data centers and energy, a distinct and recurring framing concept in the AI infrastructure landscape."
     },
@@ -591,6 +599,502 @@
       "sz": 14,
       "fullName": "AI-Assisted Interactive Prototyping",
       "proposalReason": "Prominent capability described throughout the article as a key use case; represents a distinct concept at the intersection of AI tooling and design workflows likely to recur in coverage."
+    },
+    {
+      "id": "reward-signal-leakage",
+      "label": "Reward Signal Leakage",
+      "workingDef": "The phenomenon where a reward signal designed for one training condition inadvertently shapes model behavior in unrelated conditions, causing learned stylistic or behavioral tics to generalize beyond their intended scope.",
+      "clusters": [
+        "safety",
+        "models",
+        "technical"
+      ],
+      "suggestedRels": [
+        "rlhf",
+        "fine-tuning",
+        "training",
+        "alignment",
+        "goal-drift",
+        "distribution-shift"
+      ],
+      "sources": [
+        {
+          "url": "https://openai.com/index/where-the-goblins-came-from",
+          "domain": "openai.com",
+          "title": "Where the goblins came from",
+          "sourceLabel": "OpenAI News",
+          "publishedAt": "Wed, 29 Apr 2026 20:00:00 GMT",
+          "firstSeen": "2026-04-30T19:20:00.611Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-04-30T19:20:00.611Z",
+      "dateLastSeen": "2026-04-30T19:20:00.611Z",
+      "sz": 14,
+      "proposalReason": "The article's central finding is that a reward signal optimized for the 'Nerdy' personality leaked into general model behavior, causing goblin metaphors to spread across all contexts — a clean, reusable concept distinct from existing graph terms."
+    },
+    {
+      "id": "sft-data-contamination",
+      "label": "SFT Data Contamination",
+      "workingDef": "A failure mode in which undesirable behavioral patterns from reinforcement learning rollouts are inadvertently incorporated into supervised fine-tuning datasets, creating a feedback loop that amplifies and entrenches those behaviors across subsequent model versions.",
+      "clusters": [
+        "technical",
+        "models",
+        "safety"
+      ],
+      "suggestedRels": [
+        "fine-tuning",
+        "rlhf",
+        "training",
+        "hallucination-cascade",
+        "distribution-shift"
+      ],
+      "sources": [
+        {
+          "url": "https://openai.com/index/where-the-goblins-came-from",
+          "domain": "openai.com",
+          "title": "Where the goblins came from",
+          "sourceLabel": "OpenAI News",
+          "publishedAt": "Wed, 29 Apr 2026 20:00:00 GMT",
+          "firstSeen": "2026-04-30T19:20:00.611Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-04-30T19:20:00.611Z",
+      "dateLastSeen": "2026-04-30T19:20:00.611Z",
+      "sz": 14,
+      "fullName": "Supervised Fine-Tuning Data Contamination",
+      "proposalReason": "The article explicitly traces how goblin-containing rollouts entered SFT data and reinforced the tic — this feedback loop mechanism is a distinct, nameable failure mode worth tracking separately from general distribution shift."
+    },
+    {
+      "id": "personality-customization",
+      "label": "Personality Customization",
+      "workingDef": "A feature allowing users or operators to select or configure distinct stylistic personas for an AI model (e.g., 'Nerdy,' 'Playful'), implemented via system prompts and reward-trained behavioral profiles.",
+      "clusters": [
+        "models",
+        "context",
+        "human"
+      ],
+      "suggestedRels": [
+        "system-prompt",
+        "prompt-engineering",
+        "operator",
+        "fine-tuning",
+        "rlhf"
+      ],
+      "sources": [
+        {
+          "url": "https://openai.com/index/where-the-goblins-came-from",
+          "domain": "openai.com",
+          "title": "Where the goblins came from",
+          "sourceLabel": "OpenAI News",
+          "publishedAt": "Wed, 29 Apr 2026 20:00:00 GMT",
+          "firstSeen": "2026-04-30T19:20:00.611Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-04-30T19:20:00.611Z",
+      "dateLastSeen": "2026-04-30T19:20:00.611Z",
+      "sz": 14,
+      "fullName": "Personality Customization (LLM)",
+      "proposalReason": "The article centers on the 'Nerdy' personality customization feature as the root cause of the goblin phenomenon; personality customization as a product-level concept with training implications is worth tracking."
+    },
+    {
+      "id": "behavioral-audit",
+      "label": "Behavioral Audit",
+      "workingDef": "A systematic post-hoc investigation into unexpected or undesirable model behaviors, tracing their origin through training data, reward signals, and rollout statistics to identify root causes and inform targeted fixes.",
+      "clusters": [
+        "safety",
+        "technical"
+      ],
+      "suggestedRels": [
+        "evals",
+        "interpretability",
+        "red-teaming",
+        "alignment",
+        "silent-failure"
+      ],
+      "sources": [
+        {
+          "url": "https://openai.com/index/where-the-goblins-came-from",
+          "domain": "openai.com",
+          "title": "Where the goblins came from",
+          "sourceLabel": "OpenAI News",
+          "publishedAt": "Wed, 29 Apr 2026 20:00:00 GMT",
+          "firstSeen": "2026-04-30T19:20:00.611Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-04-30T19:20:00.611Z",
+      "dateLastSeen": "2026-04-30T19:20:00.611Z",
+      "sz": 14,
+      "fullName": "Behavioral Audit (Model)",
+      "proposalReason": "The article describes a concrete behavioral audit process — tracking lexical tics across model versions, auditing reward signals, and filtering training data — presented as a new internal capability, making it a recurring and promotable concept."
+    },
+    {
+      "id": "terafab",
+      "label": "Terafab",
+      "workingDef": "A reported Intel initiative or concept related to AI-oriented semiconductor manufacturing or fabrication capacity, referenced in context of Intel's strategic differentiation in the AI infrastructure market.",
+      "clusters": [
+        "landscape",
+        "companies"
+      ],
+      "suggestedRels": [
+        "nvidia-co",
+        "infrastructure",
+        "edge-ai"
+      ],
+      "sources": [
+        {
+          "url": "https://stratechery.com/2026/intel-earnings-intels-differentiation-whither-terafab/",
+          "domain": "stratechery.com",
+          "title": "Intel Earnings, Intel’s Differentiation?, Whither Terafab",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Wed, 29 Apr 2026 10:00:00 +0000",
+          "firstSeen": "2026-04-30T19:20:00.611Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-04-30T19:20:00.611Z",
+      "dateLastSeen": "2026-04-30T19:20:00.611Z",
+      "sz": 14,
+      "fullName": "Terafab (Intel AI Fab Initiative)",
+      "proposalReason": "The article headline explicitly names 'Terafab' as a distinct topic worth analysis alongside Intel earnings and AI differentiation — a new named concept not yet in the graph or longlist."
+    },
+    {
+      "id": "ai-driven-cpu-demand",
+      "label": "AI-Driven CPU Demand",
+      "workingDef": "The structural shift in demand for central processing units (CPUs) driven by AI workloads, distinct from traditional compute demand cycles, noted as a primary driver of Intel's earnings performance.",
+      "clusters": [
+        "landscape",
+        "business"
+      ],
+      "suggestedRels": [
+        "inference",
+        "ai-accelerator",
+        "purpose-built-ai-infrastructure",
+        "edge-ai"
+      ],
+      "sources": [
+        {
+          "url": "https://stratechery.com/2026/intel-earnings-intels-differentiation-whither-terafab/",
+          "domain": "stratechery.com",
+          "title": "Intel Earnings, Intel’s Differentiation?, Whither Terafab",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Wed, 29 Apr 2026 10:00:00 +0000",
+          "firstSeen": "2026-04-30T19:20:00.611Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-04-30T19:20:00.611Z",
+      "dateLastSeen": "2026-04-30T19:20:00.611Z",
+      "sz": 14,
+      "fullName": "AI-Driven CPU Demand (Structural Shift)",
+      "proposalReason": "The article explicitly cites 'a structural shift in demand for CPUs for AI' as the chief driver of Intel's earnings — a framing concept distinct from GPU/accelerator demand narratives and worth tracking."
+    },
+    {
+      "id": "llm-steganography",
+      "label": "Steganography in LLMs",
+      "workingDef": "The study and detection of hidden information encoded in LLM outputs, including as a mechanism for covert communication or evasion of monitoring systems, as formalized in decision-theoretic frameworks.",
+      "clusters": [
+        "safety",
+        "security"
+      ],
+      "suggestedRels": [
+        "alignment",
+        "guardrails",
+        "interpretability",
+        "sandboxing"
+      ],
+      "sources": [
+        {
+          "url": "https://lastweekin.ai/p/lwiai-podcast-238-gpt-54-mini-openai",
+          "domain": "lastweekin.ai",
+          "title": "LWiAI Podcast #238 - GPT 5.4 mini, OpenAI Pivot, Mamba 3, Attention Residuals ",
+          "sourceLabel": "Last Week in AI",
+          "publishedAt": "Wed, 01 Apr 2026 08:07:15 GMT",
+          "firstSeen": "2026-04-30T19:20:00.611Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-04-30T19:20:00.611Z",
+      "dateLastSeen": "2026-04-30T19:20:00.611Z",
+      "sz": 14,
+      "fullName": "LLM Steganography (Hidden Signal in Model Output)",
+      "proposalReason": "Article references a safety paper on decision-theoretic formalization of steganography with applications to LLM monitoring — a distinct safety/security concept not yet in the graph or longlist."
+    },
+    {
+      "id": "cot-faithfulness",
+      "label": "Chain-of-Thought Faithfulness",
+      "workingDef": "The degree to which a model's explicit chain-of-thought reasoning actually reflects its internal beliefs and decision process, as opposed to post-hoc rationalization ('reasoning theater').",
+      "clusters": [
+        "safety",
+        "models",
+        "critical"
+      ],
+      "suggestedRels": [
+        "reasoning-models",
+        "interpretability",
+        "hallucination",
+        "alignment"
+      ],
+      "sources": [
+        {
+          "url": "https://lastweekin.ai/p/lwiai-podcast-238-gpt-54-mini-openai",
+          "domain": "lastweekin.ai",
+          "title": "LWiAI Podcast #238 - GPT 5.4 mini, OpenAI Pivot, Mamba 3, Attention Residuals ",
+          "sourceLabel": "Last Week in AI",
+          "publishedAt": "Wed, 01 Apr 2026 08:07:15 GMT",
+          "firstSeen": "2026-04-30T19:20:00.611Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-04-30T19:20:00.611Z",
+      "dateLastSeen": "2026-04-30T19:20:00.611Z",
+      "sz": 14,
+      "fullName": "Chain-of-Thought Faithfulness (Reasoning Theater)",
+      "proposalReason": "Article cites a paper titled 'Reasoning Theater: Disentangling Model Beliefs from Chain-of-Thought' — a distinct and recurring concept in AI safety/interpretability not yet tracked."
+    },
+    {
+      "id": "agent-os",
+      "label": "Agent Operating System",
+      "workingDef": "A runtime environment or platform layer that manages agent execution, sandboxing, tool access, and resource allocation — analogous to an OS but for AI agents, as exemplified by Nvidia NeMo/Open Shell and similar platforms.",
+      "clusters": [
+        "agentic",
+        "tools"
+      ],
+      "suggestedRels": [
+        "agent",
+        "sandboxing",
+        "orchestrator",
+        "infrastructure",
+        "multi-agent"
+      ],
+      "sources": [
+        {
+          "url": "https://lastweekin.ai/p/lwiai-podcast-238-gpt-54-mini-openai",
+          "domain": "lastweekin.ai",
+          "title": "LWiAI Podcast #238 - GPT 5.4 mini, OpenAI Pivot, Mamba 3, Attention Residuals ",
+          "sourceLabel": "Last Week in AI",
+          "publishedAt": "Wed, 01 Apr 2026 08:07:15 GMT",
+          "firstSeen": "2026-04-30T19:20:00.611Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-04-30T19:20:00.611Z",
+      "dateLastSeen": "2026-04-30T19:20:00.611Z",
+      "sz": 14,
+      "fullName": "Agent Operating System (Agent OS)",
+      "proposalReason": "Article explicitly frames competition around 'agent operating system' platforms including Nvidia NeMo/Open Shell and Manus — a newly crystallizing infrastructure category not yet in the graph or longlist."
+    },
+    {
+      "id": "capability-reliability-gap",
+      "label": "Capability-Reliability Gap",
+      "workingDef": "The observed divergence between rapid improvement in AI agent task accuracy/capability benchmarks and the much slower improvement in reliability dimensions such as consistency, robustness, calibration, and bounded failure severity.",
+      "clusters": [
+        "agentic",
+        "safety"
+      ],
+      "suggestedRels": [
+        "agent",
+        "evals",
+        "benchmark-saturation",
+        "hallucination",
+        "silent-failure",
+        "autonomy-spectrum",
+        "guardrails"
+      ],
+      "sources": [
+        {
+          "url": "https://www.normaltech.ai/p/new-paper-towards-a-science-of-ai",
+          "domain": "normaltech.ai",
+          "title": "New Paper: Towards a science of AI agent reliability",
+          "sourceLabel": "AI Snake Oil",
+          "publishedAt": "Tue, 24 Feb 2026 13:07:19 GMT",
+          "firstSeen": "2026-04-30T19:20:00.611Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-04-30T19:20:00.611Z",
+      "dateLastSeen": "2026-04-30T19:20:00.611Z",
+      "sz": 14,
+      "proposalReason": "Central framing concept of the paper; likely to recur as agents are evaluated for deployment readiness. Not currently in Tier 1 or Tier 2."
+    },
+    {
+      "id": "agent-reliability",
+      "label": "Agent Reliability",
+      "workingDef": "A multi-dimensional property of AI agents encompassing consistency (stable outputs across runs), robustness (graceful handling of environmental perturbations), calibration/predictability (accurate self-assessment of confidence), and safety (bounded failure severity), distinct from average task accuracy.",
+      "clusters": [
+        "agentic",
+        "safety"
+      ],
+      "suggestedRels": [
+        "agent",
+        "evals",
+        "guardrails",
+        "hallucination",
+        "silent-failure",
+        "stopping-criterion-failure",
+        "human-in-the-loop",
+        "blast-radius"
+      ],
+      "sources": [
+        {
+          "url": "https://www.normaltech.ai/p/new-paper-towards-a-science-of-ai",
+          "domain": "normaltech.ai",
+          "title": "New Paper: Towards a science of AI agent reliability",
+          "sourceLabel": "AI Snake Oil",
+          "publishedAt": "Tue, 24 Feb 2026 13:07:19 GMT",
+          "firstSeen": "2026-04-30T19:20:00.611Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-04-30T19:20:00.611Z",
+      "dateLastSeen": "2026-04-30T19:20:00.611Z",
+      "sz": 14,
+      "fullName": "AI Agent Reliability",
+      "proposalReason": "The paper's primary subject; introduces a structured, engineering-grounded definition of reliability as distinct from accuracy. High recurrence potential as agent deployment scales."
+    },
+    {
+      "id": "calibration",
+      "label": "Calibration",
+      "workingDef": "The degree to which an AI model's expressed confidence in its outputs matches the actual probability of those outputs being correct; a well-calibrated model knows when it is likely to be wrong.",
+      "clusters": [
+        "safety",
+        "models"
+      ],
+      "suggestedRels": [
+        "hallucination",
+        "evals",
+        "interpretability",
+        "silent-failure",
+        "agent-reliability"
+      ],
+      "sources": [
+        {
+          "url": "https://www.normaltech.ai/p/new-paper-towards-a-science-of-ai",
+          "domain": "normaltech.ai",
+          "title": "New Paper: Towards a science of AI agent reliability",
+          "sourceLabel": "AI Snake Oil",
+          "publishedAt": "Tue, 24 Feb 2026 13:07:19 GMT",
+          "firstSeen": "2026-04-30T19:20:00.611Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-04-30T19:20:00.611Z",
+      "dateLastSeen": "2026-04-30T19:20:00.611Z",
+      "sz": 14,
+      "fullName": "Model Calibration (Confidence Calibration)",
+      "proposalReason": "Explicitly identified as one of the four core reliability dimensions in the paper and measured empirically across 14 models. Not currently in either tier."
+    },
+    {
+      "id": "nines-of-reliability",
+      "label": "Nines of Reliability",
+      "workingDef": "A framing borrowed from high-availability engineering (e.g., 99.9% = three nines) applied to AI agents, arguing that autonomous operation in high-stakes contexts requires 3–5 nines of performance before reliability becomes a non-issue.",
+      "clusters": [
+        "safety",
+        "agentic",
+        "technical"
+      ],
+      "suggestedRels": [
+        "agent",
+        "autonomy-spectrum",
+        "guardrails",
+        "blast-radius",
+        "capability-reliability-gap"
+      ],
+      "sources": [
+        {
+          "url": "https://www.normaltech.ai/p/new-paper-towards-a-science-of-ai",
+          "domain": "normaltech.ai",
+          "title": "New Paper: Towards a science of AI agent reliability",
+          "sourceLabel": "AI Snake Oil",
+          "publishedAt": "Tue, 24 Feb 2026 13:07:19 GMT",
+          "firstSeen": "2026-04-30T19:20:00.611Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-04-30T19:20:00.611Z",
+      "dateLastSeen": "2026-04-30T19:20:00.611Z",
+      "sz": 14,
+      "fullName": "Nines of Reliability (High-Availability Threshold)",
+      "proposalReason": "Introduced in the article as a concrete threshold framing for when agent reliability is sufficient for autonomous deployment; captures a specific and reusable engineering lens for AI agent standards."
+    },
+    {
+      "id": "micro-app",
+      "label": "Micro-App",
+      "workingDef": "A small, single-purpose application built and shipped rapidly, often by a single person using AI-assisted or vibe-coding workflows, analogous in cadence and scope to a blog post rather than a product launch.",
+      "clusters": [
+        "agentic",
+        "work",
+        "tools"
+      ],
+      "suggestedRels": [
+        "vibe-coding",
+        "shipped",
+        "artifact",
+        "workflow"
+      ],
+      "sources": [
+        {
+          "url": "https://simonwillison.net/2026/Apr/30/rss-vibe-coded-apps/#atom-everything",
+          "domain": "simonwillison.net",
+          "title": "We need RSS for sharing abundant vibe-coded apps",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-04-30T18:38:48+00:00",
+          "firstSeen": "2026-04-30T19:20:00.611Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-04-30T19:20:00.611Z",
+      "dateLastSeen": "2026-04-30T19:20:00.611Z",
+      "sz": 14,
+      "proposalReason": "The article explicitly introduces 'micro-app' as a distinct framing — tools shipped so frequently and personally that the publishing cadence resembles blogging. Worth tracking as vibe-coding matures and produces an ecology of small tools."
+    },
+    {
+      "id": "personal-software",
+      "label": "Personal Software",
+      "workingDef": "Software created for personal or highly situated use rather than broad public deployment, enabled by AI-accelerated development that lowers the cost of building bespoke tools to near zero.",
+      "clusters": [
+        "work",
+        "tools",
+        "agentic"
+      ],
+      "suggestedRels": [
+        "vibe-coding",
+        "shipped",
+        "outcome-focused-work"
+      ],
+      "sources": [
+        {
+          "url": "https://simonwillison.net/2026/Apr/30/rss-vibe-coded-apps/#atom-everything",
+          "domain": "simonwillison.net",
+          "title": "We need RSS for sharing abundant vibe-coded apps",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-04-30T18:38:48+00:00",
+          "firstSeen": "2026-04-30T19:20:00.611Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-04-30T19:20:00.611Z",
+      "dateLastSeen": "2026-04-30T19:20:00.611Z",
+      "sz": 14,
+      "proposalReason": "The article frames vibe-coding as making apps 'more personal, more situated' — a meaningful conceptual shift in who software is for and how it is distributed, worth observing as a recurring idea."
     }
   ]
 }
