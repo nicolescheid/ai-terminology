@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generatedAt": "2026-04-30T19:20:00.611Z",
-    "unreadCount": 34,
-    "totalCount": 63,
+    "generatedAt": "2026-05-01T19:10:07.910Z",
+    "unreadCount": 51,
+    "totalCount": 80,
     "note": "Notes for Nicole — Lexi's manager channel (spec §6). Mandatory entry types fire when their triggering condition is met; discretionary entries are observations Lexi thinks Nicole should see. Set status to 'read', 'actioned', or 'dismissed' as appropriate."
   },
   "entries": [
@@ -1601,6 +1601,431 @@
         "current": 15,
         "details": "Would exceed cap of 7 longlist additions per 7-day window (current: 15).",
         "suppressedReason": "The article describes a clear tiered escalation architecture—automated detection → human review → expert assessment → law enforcement referral—that constitutes a named operational pattern in AI safety worth tracking.",
+        "source": "extract-flow"
+      },
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+    },
+    {
+      "id": "7b63f8ca075e8bc1",
+      "type": "throughput_cap_hit",
+      "writtenAt": "2026-05-01T19:10:07.910Z",
+      "runId": "41b68b65-27ef-44fb-a3c0-89ff9fbc6e86",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 30, current 30)",
+      "details": "Would exceed cap of 30 longlist additions per 7-day window (current: 30).",
+      "evidence": {
+        "action": "add_to_longlist",
+        "target": {
+          "kind": "longlist_entry",
+          "id": "llm-as-judge"
+        },
+        "gate": "autonomous",
+        "cap": "longlistAdditionsPer7d",
+        "limit": 30,
+        "current": 30,
+        "details": "Would exceed cap of 30 longlist additions per 7-day window (current: 30).",
+        "suppressedReason": "The article extensively describes an LLM-as-Judge framework as the core quality-control mechanism for SFT data curation, including multi-dimensional rubrics and specialized judge prompts — a term with broad and lasting relevance in the AI training landscape.",
+        "source": "extract-flow"
+      },
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+    },
+    {
+      "id": "7b63f8ca075e8bc1",
+      "type": "throughput_cap_hit",
+      "writtenAt": "2026-05-01T19:10:07.910Z",
+      "runId": "41b68b65-27ef-44fb-a3c0-89ff9fbc6e86",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 30, current 30)",
+      "details": "Would exceed cap of 30 longlist additions per 7-day window (current: 30).",
+      "evidence": {
+        "action": "add_to_longlist",
+        "target": {
+          "kind": "longlist_entry",
+          "id": "data-annealing"
+        },
+        "gate": "autonomous",
+        "cap": "longlistAdditionsPer7d",
+        "limit": 30,
+        "current": 30,
+        "details": "Would exceed cap of 30 longlist additions per 7-day window (current: 30).",
+        "suppressedReason": "The article dedicates multiple phases (3 and 4) explicitly to 'high-quality data annealing' as a named methodology, and it is used in contrast to simple scaling — a distinct and reusable concept in model training discourse.",
+        "source": "extract-flow"
+      },
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+    },
+    {
+      "id": "7b63f8ca075e8bc1",
+      "type": "throughput_cap_hit",
+      "writtenAt": "2026-05-01T19:10:07.910Z",
+      "runId": "41b68b65-27ef-44fb-a3c0-89ff9fbc6e86",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 30, current 30)",
+      "details": "Would exceed cap of 30 longlist additions per 7-day window (current: 30).",
+      "evidence": {
+        "action": "add_to_longlist",
+        "target": {
+          "kind": "longlist_entry",
+          "id": "grpo"
+        },
+        "gate": "autonomous",
+        "cap": "longlistAdditionsPer7d",
+        "limit": 30,
+        "current": 30,
+        "details": "Would exceed cap of 30 longlist additions per 7-day window (current: 30).",
+        "suppressedReason": "The article specifically names GRPO with DAPO loss as the RL algorithm used in Granite 4.1's multi-stage RL pipeline — a concrete, named technique increasingly referenced across the LLM training literature.",
+        "source": "extract-flow"
+      },
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+    },
+    {
+      "id": "7b63f8ca075e8bc1",
+      "type": "throughput_cap_hit",
+      "writtenAt": "2026-05-01T19:10:07.910Z",
+      "runId": "41b68b65-27ef-44fb-a3c0-89ff9fbc6e86",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 30, current 30)",
+      "details": "Would exceed cap of 30 longlist additions per 7-day window (current: 30).",
+      "evidence": {
+        "action": "add_to_longlist",
+        "target": {
+          "kind": "longlist_entry",
+          "id": "long-context-extension"
+        },
+        "gate": "autonomous",
+        "cap": "longlistAdditionsPer7d",
+        "limit": 30,
+        "current": 30,
+        "details": "Would exceed cap of 30 longlist additions per 7-day window (current: 30).",
+        "suppressedReason": "The article introduces LCE (Long Context Extension) as a formal phase in the training pipeline, extending context from 4K to 512K tokens through staged training — a named, reusable technique distinct from simply having a large context window.",
+        "source": "extract-flow"
+      },
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+    },
+    {
+      "id": "7b63f8ca075e8bc1",
+      "type": "throughput_cap_hit",
+      "writtenAt": "2026-05-01T19:10:07.910Z",
+      "runId": "41b68b65-27ef-44fb-a3c0-89ff9fbc6e86",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 30, current 30)",
+      "details": "Would exceed cap of 30 longlist additions per 7-day window (current: 30).",
+      "evidence": {
+        "action": "add_to_longlist",
+        "target": {
+          "kind": "longlist_entry",
+          "id": "stargate-initiative"
+        },
+        "gate": "autonomous",
+        "cap": "longlistAdditionsPer7d",
+        "limit": 30,
+        "current": 30,
+        "details": "Would exceed cap of 30 longlist additions per 7-day window (current: 30).",
+        "suppressedReason": "OpenAI's compute infrastructure announcements are closely tied to the Stargate initiative; this article is likely a direct reference to or update on that program.",
+        "source": "extract-flow"
+      },
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+    },
+    {
+      "id": "7b63f8ca075e8bc1",
+      "type": "throughput_cap_hit",
+      "writtenAt": "2026-05-01T19:10:07.910Z",
+      "runId": "41b68b65-27ef-44fb-a3c0-89ff9fbc6e86",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 30, current 30)",
+      "details": "Would exceed cap of 30 longlist additions per 7-day window (current: 30).",
+      "evidence": {
+        "action": "add_to_longlist",
+        "target": {
+          "kind": "longlist_entry",
+          "id": "trainium"
+        },
+        "gate": "autonomous",
+        "cap": "longlistAdditionsPer7d",
+        "limit": 30,
+        "current": 30,
+        "details": "Would exceed cap of 30 longlist additions per 7-day window (current: 30).",
+        "suppressedReason": "Article headline and core analysis centers on Trainium and its role in Amazon's AI infrastructure strategy as workloads shift from training to inference and agents. New term not in graph or longlist.",
+        "source": "extract-flow"
+      },
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+    },
+    {
+      "id": "7b63f8ca075e8bc1",
+      "type": "throughput_cap_hit",
+      "writtenAt": "2026-05-01T19:10:07.910Z",
+      "runId": "41b68b65-27ef-44fb-a3c0-89ff9fbc6e86",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 30, current 30)",
+      "details": "Would exceed cap of 30 longlist additions per 7-day window (current: 30).",
+      "evidence": {
+        "action": "add_to_longlist",
+        "target": {
+          "kind": "longlist_entry",
+          "id": "bedrock-managed-agents"
+        },
+        "gate": "autonomous",
+        "cap": "longlistAdditionsPer7d",
+        "limit": 30,
+        "current": 30,
+        "details": "Would exceed cap of 30 longlist additions per 7-day window (current: 30).",
+        "suppressedReason": "Referenced directly in the related interview title 'An Interview with OpenAI CEO Sam Altman and AWS CEO Matt Garman About Bedrock Managed Agents' — a named product relevant to the agentic infrastructure theme of the article. New term.",
+        "source": "extract-flow"
+      },
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+    },
+    {
+      "id": "7b63f8ca075e8bc1",
+      "type": "throughput_cap_hit",
+      "writtenAt": "2026-05-01T19:10:07.910Z",
+      "runId": "41b68b65-27ef-44fb-a3c0-89ff9fbc6e86",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 30, current 30)",
+      "details": "Would exceed cap of 30 longlist additions per 7-day window (current: 30).",
+      "evidence": {
+        "action": "add_to_longlist",
+        "target": {
+          "kind": "longlist_entry",
+          "id": "kimi-k2"
+        },
+        "gate": "autonomous",
+        "cap": "longlistAdditionsPer7d",
+        "limit": 30,
+        "current": 30,
+        "details": "Would exceed cap of 30 longlist additions per 7-day window (current: 30).",
+        "suppressedReason": "New model release discussed substantively in the episode; not yet in Tier 1 or Tier 2.",
+        "source": "extract-flow"
+      },
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+    },
+    {
+      "id": "7b63f8ca075e8bc1",
+      "type": "throughput_cap_hit",
+      "writtenAt": "2026-05-01T19:10:07.910Z",
+      "runId": "41b68b65-27ef-44fb-a3c0-89ff9fbc6e86",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 30, current 30)",
+      "details": "Would exceed cap of 30 longlist additions per 7-day window (current: 30).",
+      "evidence": {
+        "action": "add_to_longlist",
+        "target": {
+          "kind": "longlist_entry",
+          "id": "text-in-image"
+        },
+        "gate": "autonomous",
+        "cap": "longlistAdditionsPer7d",
+        "limit": 30,
+        "current": 30,
+        "details": "Would exceed cap of 30 longlist additions per 7-day window (current: 30).",
+        "suppressedReason": "The episode centers a segment on ChatGPT Images 2.0 excelling at accurate text rendering, framing it as a distinct and newly emergent capability worth tracking.",
+        "source": "extract-flow"
+      },
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+    },
+    {
+      "id": "7b63f8ca075e8bc1",
+      "type": "throughput_cap_hit",
+      "writtenAt": "2026-05-01T19:10:07.910Z",
+      "runId": "41b68b65-27ef-44fb-a3c0-89ff9fbc6e86",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 30, current 30)",
+      "details": "Would exceed cap of 30 longlist additions per 7-day window (current: 30).",
+      "evidence": {
+        "action": "add_to_longlist",
+        "target": {
+          "kind": "longlist_entry",
+          "id": "self-evolving-model"
+        },
+        "gate": "autonomous",
+        "cap": "longlistAdditionsPer7d",
+        "limit": 30,
+        "current": 30,
+        "details": "Would exceed cap of 30 longlist additions per 7-day window (current: 30).",
+        "suppressedReason": "MiniMax M2.7 is explicitly described as a 'self-evolving agent model'; the concept of self-evolution in models is distinct from existing canonical terms and warrants tracking.",
+        "source": "extract-flow"
+      },
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+    },
+    {
+      "id": "7b63f8ca075e8bc1",
+      "type": "throughput_cap_hit",
+      "writtenAt": "2026-05-01T19:10:07.910Z",
+      "runId": "41b68b65-27ef-44fb-a3c0-89ff9fbc6e86",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 30, current 30)",
+      "details": "Would exceed cap of 30 longlist additions per 7-day window (current: 30).",
+      "evidence": {
+        "action": "add_to_longlist",
+        "target": {
+          "kind": "longlist_entry",
+          "id": "influence-functions"
+        },
+        "gate": "autonomous",
+        "cap": "longlistAdditionsPer7d",
+        "limit": 30,
+        "current": 30,
+        "details": "Would exceed cap of 30 longlist additions per 7-day window (current: 30).",
+        "suppressedReason": "The 'Infusion' paper on shaping model behavior via influence functions is discussed in the episode; this is a distinct technical concept not yet tracked in either tier.",
+        "source": "extract-flow"
+      },
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+    },
+    {
+      "id": "7b63f8ca075e8bc1",
+      "type": "throughput_cap_hit",
+      "writtenAt": "2026-05-01T19:10:07.910Z",
+      "runId": "41b68b65-27ef-44fb-a3c0-89ff9fbc6e86",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 30, current 30)",
+      "details": "Would exceed cap of 30 longlist additions per 7-day window (current: 30).",
+      "evidence": {
+        "action": "add_to_longlist",
+        "target": {
+          "kind": "longlist_entry",
+          "id": "open-world-eval"
+        },
+        "gate": "autonomous",
+        "cap": "longlistAdditionsPer7d",
+        "limit": 30,
+        "current": 30,
+        "details": "Would exceed cap of 30 longlist additions per 7-day window (current: 30).",
+        "suppressedReason": "The article's central concept, explicitly named and defined as an emerging evaluation paradigm distinct from benchmarks. High lasting relevance for AI capability assessment discourse.",
+        "source": "extract-flow"
+      },
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+    },
+    {
+      "id": "7b63f8ca075e8bc1",
+      "type": "throughput_cap_hit",
+      "writtenAt": "2026-05-01T19:10:07.910Z",
+      "runId": "41b68b65-27ef-44fb-a3c0-89ff9fbc6e86",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 30, current 30)",
+      "details": "Would exceed cap of 30 longlist additions per 7-day window (current: 30).",
+      "evidence": {
+        "action": "add_to_longlist",
+        "target": {
+          "kind": "longlist_entry",
+          "id": "crux-eval"
+        },
+        "gate": "autonomous",
+        "cap": "longlistAdditionsPer7d",
+        "limit": 30,
+        "current": 30,
+        "details": "Would exceed cap of 30 longlist additions per 7-day window (current: 30).",
+        "suppressedReason": "New named initiative directly introduced in this article with cross-sector membership; serves as an institutional node for open-world evaluation work worth tracking.",
+        "source": "extract-flow"
+      },
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+    },
+    {
+      "id": "7b63f8ca075e8bc1",
+      "type": "throughput_cap_hit",
+      "writtenAt": "2026-05-01T19:10:07.910Z",
+      "runId": "41b68b65-27ef-44fb-a3c0-89ff9fbc6e86",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 30, current 30)",
+      "details": "Would exceed cap of 30 longlist additions per 7-day window (current: 30).",
+      "evidence": {
+        "action": "add_to_longlist",
+        "target": {
+          "kind": "longlist_entry",
+          "id": "codex-cli"
+        },
+        "gate": "autonomous",
+        "cap": "longlistAdditionsPer7d",
+        "limit": 30,
+        "current": 30,
+        "details": "Would exceed cap of 30 longlist additions per 7-day window (current: 30).",
+        "suppressedReason": "Codex CLI is a distinct product (OpenAI's CLI coding agent) mentioned as the subject of the article. Not yet in Tier 1 or Tier 2.",
+        "source": "extract-flow"
+      },
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+    },
+    {
+      "id": "7b63f8ca075e8bc1",
+      "type": "throughput_cap_hit",
+      "writtenAt": "2026-05-01T19:10:07.910Z",
+      "runId": "41b68b65-27ef-44fb-a3c0-89ff9fbc6e86",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 30, current 30)",
+      "details": "Would exceed cap of 30 longlist additions per 7-day window (current: 30).",
+      "evidence": {
+        "action": "add_to_longlist",
+        "target": {
+          "kind": "longlist_entry",
+          "id": "goal-directed-loop"
+        },
+        "gate": "autonomous",
+        "cap": "longlistAdditionsPer7d",
+        "limit": 30,
+        "current": 30,
+        "details": "Would exceed cap of 30 longlist additions per 7-day window (current: 30).",
+        "suppressedReason": "The /goal feature in Codex CLI implements a specific named pattern—loop until goal evaluated as complete or budget exhausted—distinct from generic loops and worth tracking as an agentic design concept.",
+        "source": "extract-flow"
+      },
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+    },
+    {
+      "id": "7b63f8ca075e8bc1",
+      "type": "throughput_cap_hit",
+      "writtenAt": "2026-05-01T19:10:07.910Z",
+      "runId": "41b68b65-27ef-44fb-a3c0-89ff9fbc6e86",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 30, current 30)",
+      "details": "Would exceed cap of 30 longlist additions per 7-day window (current: 30).",
+      "evidence": {
+        "action": "add_to_longlist",
+        "target": {
+          "kind": "longlist_entry",
+          "id": "token-budget"
+        },
+        "gate": "autonomous",
+        "cap": "longlistAdditionsPer7d",
+        "limit": 30,
+        "current": 30,
+        "details": "Would exceed cap of 30 longlist additions per 7-day window (current: 30).",
+        "suppressedReason": "The article explicitly describes the token budget as the fallback stopping mechanism for the goal loop, making it a distinct resource-management concept in agentic systems worth tracking.",
+        "source": "extract-flow"
+      },
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+    },
+    {
+      "id": "7b63f8ca075e8bc1",
+      "type": "throughput_cap_hit",
+      "writtenAt": "2026-05-01T19:10:07.910Z",
+      "runId": "41b68b65-27ef-44fb-a3c0-89ff9fbc6e86",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 30, current 30)",
+      "details": "Would exceed cap of 30 longlist additions per 7-day window (current: 30).",
+      "evidence": {
+        "action": "add_to_longlist",
+        "target": {
+          "kind": "longlist_entry",
+          "id": "continuation-prompt"
+        },
+        "gate": "autonomous",
+        "cap": "longlistAdditionsPer7d",
+        "limit": 30,
+        "current": 30,
+        "details": "Would exceed cap of 30 longlist additions per 7-day window (current: 30).",
+        "suppressedReason": "The article specifically notes the feature is implemented via automatically injected prompts (goals/continuation.md, goals/budget_limit.md), representing a distinct prompt-injection pattern for agentic looping control.",
         "source": "extract-flow"
       },
       "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."

@@ -1,6 +1,6 @@
 {
-  "lastRunAt": "2026-04-30T19:20:00.611Z",
-  "reviewCursor": 70,
+  "lastRunAt": "2026-05-01T19:10:07.910Z",
+  "reviewCursor": 80,
   "seenArticles": {
     "93a049d060bc295b": {
       "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/tpus-8t-8i-cloud-next/",
@@ -175,6 +175,42 @@
       "title": "We need RSS for sharing abundant vibe-coded apps",
       "publishedAt": "2026-04-30T18:38:48+00:00",
       "seenAt": "2026-04-30T19:20:00.611Z"
+    },
+    "6af9b6a7000314f8": {
+      "url": "https://huggingface.co/blog/ibm-granite/granite-4-1",
+      "title": "Granite 4.1 LLMs: How They’re Built",
+      "publishedAt": "Wed, 29 Apr 2026 15:01:48 GMT",
+      "seenAt": "2026-05-01T19:10:07.910Z"
+    },
+    "0889e6f0be8e183a": {
+      "url": "https://openai.com/index/building-the-compute-infrastructure-for-the-intelligence-age",
+      "title": "Building the compute infrastructure for the Intelligence Age",
+      "publishedAt": "Wed, 29 Apr 2026 15:00:00 GMT",
+      "seenAt": "2026-05-01T19:10:07.910Z"
+    },
+    "f8e2d2d0f6ce84bb": {
+      "url": "https://stratechery.com/2026/amazon-earnings-trainium-and-commodity-markets-additional-amazon-notes/",
+      "title": "Amazon Earnings, Trainium and Commodity Markets, Additional Amazon Notes",
+      "publishedAt": "Thu, 30 Apr 2026 10:00:00 +0000",
+      "seenAt": "2026-05-01T19:10:07.910Z"
+    },
+    "4efbcb4a4c3ecc1b": {
+      "url": "https://lastweekin.ai/p/lwiai-podcast-242-chatgpt-images",
+      "title": "LWiAI Podcast #242 - ChatGPT Images 2.0, Qwen 3.6 Max, Kimi-K2.6",
+      "publishedAt": "Thu, 30 Apr 2026 07:14:45 GMT",
+      "seenAt": "2026-05-01T19:10:07.910Z"
+    },
+    "47da4457851c2ffa": {
+      "url": "https://www.normaltech.ai/p/open-world-evaluations-for-measuring",
+      "title": "Open-world evaluations for measuring frontier AI capabilities",
+      "publishedAt": "Thu, 16 Apr 2026 17:47:29 GMT",
+      "seenAt": "2026-05-01T19:10:07.910Z"
+    },
+    "c681fd61f7badbff": {
+      "url": "https://simonwillison.net/2026/Apr/30/codex-goals/#atom-everything",
+      "title": "Codex CLI 0.128.0 adds /goal",
+      "publishedAt": "2026-04-30T23:23:17+00:00",
+      "seenAt": "2026-05-01T19:10:07.910Z"
     }
   },
   "nodeReviews": {
@@ -527,6 +563,56 @@
       "lastReviewedAt": "2026-04-30T19:20:00.611Z",
       "status": "insufficient_evidence",
       "reason": "The definition makes a specific claim attributing a quote about cybersecurity abilities to Anthropic regarding 'Mythos Preview,' a model not verifiable from any of the provided sources. No source here corroborates or refutes this claim, so the specific example cannot be validated, but there is insufficient evidence to rewrite the definition."
+    },
+    "evals": {
+      "lastReviewedAt": "2026-05-01T19:10:07.910Z",
+      "status": "keep",
+      "reason": "The CRUX paper on open-world evaluations reinforces the existing definition's point that building good evals is hard and that benchmark saturation is a real problem. The new material (open-world evals, CRUX project) extends the concept but doesn't contradict or materially update the core definition enough to require a rewrite."
+    },
+    "evaluation-gaming": {
+      "lastReviewedAt": "2026-05-01T19:10:07.910Z",
+      "status": "keep",
+      "reason": "No source material addresses evaluation gaming or the specific Mythos testing statistics cited. The podcast mention of 'Anthropic's Mythos' fixing Firefox bugs is a different use context and doesn't bear on this definition."
+    },
+    "exploit": {
+      "lastReviewedAt": "2026-05-01T19:10:07.910Z",
+      "status": "keep",
+      "reason": "No source material addresses exploits or the Claude Mythos exploit-writing capability described in the definition."
+    },
+    "exploit-chain": {
+      "lastReviewedAt": "2026-05-01T19:10:07.910Z",
+      "status": "keep",
+      "reason": "No source material addresses exploit chains or autonomous vulnerability chaining capabilities."
+    },
+    "feature-flag": {
+      "lastReviewedAt": "2026-05-01T19:10:07.910Z",
+      "status": "keep",
+      "reason": "No source material addresses feature flags or the Claude Code leak referenced in the definition."
+    },
+    "fine-tuning": {
+      "lastReviewedAt": "2026-05-01T19:10:07.910Z",
+      "status": "keep",
+      "reason": "The Granite 4.1 article describes supervised fine-tuning in technical detail (LLM-as-Judge, multi-stage RL pipeline) but does not contradict or materially change the existing concise definition. The definition accurately captures the concept."
+    },
+    "frontier-model": {
+      "lastReviewedAt": "2026-05-01T19:10:07.910Z",
+      "status": "keep",
+      "reason": "No source material directly addresses the frontier model definition or contradicts its characterisation."
+    },
+    "frontier-red-team": {
+      "lastReviewedAt": "2026-05-01T19:10:07.910Z",
+      "status": "keep",
+      "reason": "No source material addresses Anthropic's Frontier Red Team or its role."
+    },
+    "gemini": {
+      "lastReviewedAt": "2026-05-01T19:10:07.910Z",
+      "status": "insufficient_evidence",
+      "reason": "The podcast mentions 'Google expanded Deep Research with a Max option built on Gemini 3.1 Pro' — suggesting a Gemini 3.1 generation exists — but there is insufficient detail in the excerpts to justify rewriting the definition with confidence."
+    },
+    "gemma-4": {
+      "lastReviewedAt": "2026-05-01T19:10:07.910Z",
+      "status": "keep",
+      "reason": "No source material references Gemma 4 or contradicts the existing definition."
     }
   }
 }

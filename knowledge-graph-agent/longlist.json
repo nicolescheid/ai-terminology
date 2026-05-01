@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-04-30T19:20:00.611Z",
+    "generatedAt": "2026-05-01T19:10:07.910Z",
     "entryCount": 30,
     "note": "Lexi-managed Tier 2 longlist — terms under observation, awaiting evidence to support promotion to the graph (Tier 1)."
   },
@@ -44,12 +44,20 @@
           "sourceLabel": "Google AI Blog",
           "publishedAt": "Tue, 28 Apr 2026 16:00:00 +0000",
           "firstSeen": "2026-04-28T19:40:36.332Z"
+        },
+        {
+          "url": "https://openai.com/index/building-the-compute-infrastructure-for-the-intelligence-age",
+          "domain": "openai.com",
+          "title": "Building the compute infrastructure for the Intelligence Age",
+          "sourceLabel": "OpenAI News",
+          "publishedAt": "Wed, 29 Apr 2026 15:00:00 GMT",
+          "firstSeen": "2026-05-01T19:10:07.910Z"
         }
       ],
-      "sourceCount": 3,
-      "independentSourceCount": 1,
+      "sourceCount": 4,
+      "independentSourceCount": 2,
       "dateFirstSeen": "2026-04-26T22:40:25.832Z",
-      "dateLastSeen": "2026-04-28T19:40:36.332Z",
+      "dateLastSeen": "2026-05-01T19:10:07.910Z",
       "sz": 14,
       "nodeType": "product",
       "proposalReason": "The article introduces two new TPU variants (8i and 8t) purpose-built for the agentic era, making TPU a distinct trackable product category with clear relevance to agentic infrastructure."
@@ -77,12 +85,20 @@
           "sourceLabel": "Google AI Blog",
           "publishedAt": "Wed, 22 Apr 2026 12:00:00 +0000",
           "firstSeen": "2026-04-26T22:40:25.832Z"
+        },
+        {
+          "url": "https://stratechery.com/2026/amazon-earnings-trainium-and-commodity-markets-additional-amazon-notes/",
+          "domain": "stratechery.com",
+          "title": "Amazon Earnings, Trainium and Commodity Markets, Additional Amazon Notes",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Thu, 30 Apr 2026 10:00:00 +0000",
+          "firstSeen": "2026-05-01T19:10:07.910Z"
         }
       ],
-      "sourceCount": 1,
-      "independentSourceCount": 1,
+      "sourceCount": 2,
+      "independentSourceCount": 2,
       "dateFirstSeen": "2026-04-26T22:40:25.832Z",
-      "dateLastSeen": "2026-04-27T01:07:31.335Z",
+      "dateLastSeen": "2026-05-01T19:10:07.910Z",
       "sz": 14,
       "proposalReason": "TPU 8i is explicitly framed as an inference-optimized chip for agentic workloads, introducing a meaningful hardware category distinct from training chips and worth tracking as agentic infrastructure matures."
     },
@@ -157,12 +173,28 @@
           "sourceLabel": "Stratechery",
           "publishedAt": "Wed, 29 Apr 2026 10:00:00 +0000",
           "firstSeen": "2026-04-30T19:20:00.611Z"
+        },
+        {
+          "url": "https://openai.com/index/building-the-compute-infrastructure-for-the-intelligence-age",
+          "domain": "openai.com",
+          "title": "Building the compute infrastructure for the Intelligence Age",
+          "sourceLabel": "OpenAI News",
+          "publishedAt": "Wed, 29 Apr 2026 15:00:00 GMT",
+          "firstSeen": "2026-05-01T19:10:07.910Z"
+        },
+        {
+          "url": "https://stratechery.com/2026/amazon-earnings-trainium-and-commodity-markets-additional-amazon-notes/",
+          "domain": "stratechery.com",
+          "title": "Amazon Earnings, Trainium and Commodity Markets, Additional Amazon Notes",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Thu, 30 Apr 2026 10:00:00 +0000",
+          "firstSeen": "2026-05-01T19:10:07.910Z"
         }
       ],
-      "sourceCount": 3,
-      "independentSourceCount": 2,
+      "sourceCount": 5,
+      "independentSourceCount": 3,
       "dateFirstSeen": "2026-04-26T22:40:25.832Z",
-      "dateLastSeen": "2026-04-30T19:20:00.611Z",
+      "dateLastSeen": "2026-05-01T19:10:07.910Z",
       "sz": 14,
       "proposalReason": "The article explicitly frames Google's approach as 'full-stack purpose-built infrastructure' spanning chips to data centers and energy, a distinct and recurring framing concept in the AI infrastructure landscape."
     },
@@ -189,12 +221,20 @@
           "sourceLabel": "Google AI Blog",
           "publishedAt": "Thu, 23 Apr 2026 12:00:00 +0000",
           "firstSeen": "2026-04-26T22:40:25.832Z"
+        },
+        {
+          "url": "https://openai.com/index/building-the-compute-infrastructure-for-the-intelligence-age",
+          "domain": "openai.com",
+          "title": "Building the compute infrastructure for the Intelligence Age",
+          "sourceLabel": "OpenAI News",
+          "publishedAt": "Wed, 29 Apr 2026 15:00:00 GMT",
+          "firstSeen": "2026-05-01T19:10:07.910Z"
         }
       ],
-      "sourceCount": 1,
-      "independentSourceCount": 1,
+      "sourceCount": 2,
+      "independentSourceCount": 2,
       "dateFirstSeen": "2026-04-26T22:40:25.832Z",
-      "dateLastSeen": "2026-04-26T22:56:20.734Z",
+      "dateLastSeen": "2026-05-01T19:10:07.910Z",
       "sz": 14,
       "fullName": "AI Accelerator (custom silicon)",
       "proposalReason": "The article frames TPUs as one instance of the broader 'AI accelerator' category — custom chips built specifically for AI math at scale. This framing term is increasingly important as hardware specialization becomes central to the AI landscape."
@@ -428,12 +468,20 @@
           "sourceLabel": "Anthropic Newsroom",
           "publishedAt": null,
           "firstSeen": "2026-04-26T22:40:25.832Z"
+        },
+        {
+          "url": "https://www.normaltech.ai/p/open-world-evaluations-for-measuring",
+          "domain": "normaltech.ai",
+          "title": "Open-world evaluations for measuring frontier AI capabilities",
+          "sourceLabel": "AI Snake Oil",
+          "publishedAt": "Thu, 16 Apr 2026 17:47:29 GMT",
+          "firstSeen": "2026-05-01T19:10:07.910Z"
         }
       ],
-      "sourceCount": 1,
-      "independentSourceCount": 1,
+      "sourceCount": 2,
+      "independentSourceCount": 2,
       "dateFirstSeen": "2026-04-26T22:40:25.832Z",
-      "dateLastSeen": "2026-04-27T01:07:31.335Z",
+      "dateLastSeen": "2026-05-01T19:10:07.910Z",
       "sz": 14,
       "proposalReason": "Multiple testimonials and the article body specifically highlight 'long-horizon autonomy' as a named capability dimension, making it a distinct trackable concept in the agentic space."
     },
@@ -921,12 +969,20 @@
           "sourceLabel": "AI Snake Oil",
           "publishedAt": "Tue, 24 Feb 2026 13:07:19 GMT",
           "firstSeen": "2026-04-30T19:20:00.611Z"
+        },
+        {
+          "url": "https://www.normaltech.ai/p/open-world-evaluations-for-measuring",
+          "domain": "normaltech.ai",
+          "title": "Open-world evaluations for measuring frontier AI capabilities",
+          "sourceLabel": "AI Snake Oil",
+          "publishedAt": "Thu, 16 Apr 2026 17:47:29 GMT",
+          "firstSeen": "2026-05-01T19:10:07.910Z"
         }
       ],
-      "sourceCount": 1,
+      "sourceCount": 2,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-04-30T19:20:00.611Z",
-      "dateLastSeen": "2026-04-30T19:20:00.611Z",
+      "dateLastSeen": "2026-05-01T19:10:07.910Z",
       "sz": 14,
       "proposalReason": "Central framing concept of the paper; likely to recur as agents are evaluated for deployment readiness. Not currently in Tier 1 or Tier 2."
     },

@@ -1,130 +1,90 @@
 {
-  "generatedAt": "2026-04-30T19:20:00.611Z",
+  "generatedAt": "2026-05-01T19:10:07.910Z",
   "model": "claude-sonnet-4-6",
   "sourcesConfigured": 10,
   "articlesConsidered": [
     {
-      "id": "6ce07af346a49ef2",
-      "source": "OpenAI News",
-      "title": "Where the goblins came from",
-      "url": "https://openai.com/index/where-the-goblins-came-from",
-      "publishedAt": "Wed, 29 Apr 2026 20:00:00 GMT"
-    },
-    {
-      "id": "1280d7239d1116c3",
+      "id": "6af9b6a7000314f8",
       "source": "Hugging Face Blog",
-      "title": "AI evals are becoming the new compute bottleneck",
-      "url": "https://huggingface.co/blog/evaleval/eval-costs-bottleneck",
-      "publishedAt": "Wed, 29 Apr 2026 16:45:09 GMT"
+      "title": "Granite 4.1 LLMs: How They’re Built",
+      "url": "https://huggingface.co/blog/ibm-granite/granite-4-1",
+      "publishedAt": "Wed, 29 Apr 2026 15:01:48 GMT"
     },
     {
-      "id": "6d733d2dc93c1a12",
+      "id": "0889e6f0be8e183a",
+      "source": "OpenAI News",
+      "title": "Building the compute infrastructure for the Intelligence Age",
+      "url": "https://openai.com/index/building-the-compute-infrastructure-for-the-intelligence-age",
+      "publishedAt": "Wed, 29 Apr 2026 15:00:00 GMT"
+    },
+    {
+      "id": "f8e2d2d0f6ce84bb",
       "source": "Stratechery",
-      "title": "Intel Earnings, Intel’s Differentiation?, Whither Terafab",
-      "url": "https://stratechery.com/2026/intel-earnings-intels-differentiation-whither-terafab/",
-      "publishedAt": "Wed, 29 Apr 2026 10:00:00 +0000"
+      "title": "Amazon Earnings, Trainium and Commodity Markets, Additional Amazon Notes",
+      "url": "https://stratechery.com/2026/amazon-earnings-trainium-and-commodity-markets-additional-amazon-notes/",
+      "publishedAt": "Thu, 30 Apr 2026 10:00:00 +0000"
     },
     {
-      "id": "3dae249492da65d3",
+      "id": "4efbcb4a4c3ecc1b",
       "source": "Last Week in AI",
-      "title": "LWiAI Podcast #238 - GPT 5.4 mini, OpenAI Pivot, Mamba 3, Attention Residuals ",
-      "url": "https://lastweekin.ai/p/lwiai-podcast-238-gpt-54-mini-openai",
-      "publishedAt": "Wed, 01 Apr 2026 08:07:15 GMT"
+      "title": "LWiAI Podcast #242 - ChatGPT Images 2.0, Qwen 3.6 Max, Kimi-K2.6",
+      "url": "https://lastweekin.ai/p/lwiai-podcast-242-chatgpt-images",
+      "publishedAt": "Thu, 30 Apr 2026 07:14:45 GMT"
     },
     {
-      "id": "2120c0dcbf3a320e",
+      "id": "47da4457851c2ffa",
       "source": "AI Snake Oil",
-      "title": "New Paper: Towards a science of AI agent reliability",
-      "url": "https://www.normaltech.ai/p/new-paper-towards-a-science-of-ai",
-      "publishedAt": "Tue, 24 Feb 2026 13:07:19 GMT"
+      "title": "Open-world evaluations for measuring frontier AI capabilities",
+      "url": "https://www.normaltech.ai/p/open-world-evaluations-for-measuring",
+      "publishedAt": "Thu, 16 Apr 2026 17:47:29 GMT"
     },
     {
-      "id": "9f56a8b6305211f0",
+      "id": "c681fd61f7badbff",
       "source": "Simon Willison's Weblog",
-      "title": "We need RSS for sharing abundant vibe-coded apps",
-      "url": "https://simonwillison.net/2026/Apr/30/rss-vibe-coded-apps/#atom-everything",
-      "publishedAt": "2026-04-30T18:38:48+00:00"
+      "title": "Codex CLI 0.128.0 adds /goal",
+      "url": "https://simonwillison.net/2026/Apr/30/codex-goals/#atom-everything",
+      "publishedAt": "2026-04-30T23:23:17+00:00"
     }
   ],
   "harvestedTerms": [
     {
       "article": {
-        "title": "Where the goblins came from",
-        "url": "https://openai.com/index/where-the-goblins-came-from"
+        "title": "Granite 4.1 LLMs: How They’re Built",
+        "url": "https://huggingface.co/blog/ibm-granite/granite-4-1"
       },
-      "summary": "OpenAI article explaining how 'goblin' metaphors spread through GPT-5.1 to GPT-5.5 via reinforcement learning feedback loops tied to the 'Nerdy' personality training signal. The piece covers reward signal leakage, SFT data contamination, and behavioral generalization across model generations.",
-      "longlistAdditions": [
-        {
-          "id": "reward-signal-leakage",
-          "label": "Reward Signal Leakage"
-        },
-        {
-          "id": "sft-data-contamination",
-          "label": "SFT Data Contamination"
-        },
-        {
-          "id": "personality-customization",
-          "label": "Personality Customization"
-        },
-        {
-          "id": "behavioral-audit",
-          "label": "Behavioral Audit"
-        }
-      ],
+      "summary": "IBM's Granite 4.1 technical walkthrough covers a multi-stage pre-training pipeline, LLM-as-Judge SFT quality control, GRPO-based reinforcement learning, and long-context extension techniques. Several trackable concepts emerge including the LLM-as-Judge evaluation framework, GRPO (a specific RL algorithm), long-context extension (LCE), and data annealing.",
+      "longlistAdditions": [],
       "longlistUpdates": [],
       "rejections": [],
       "proposalsQueued": []
     },
     {
       "article": {
-        "title": "AI evals are becoming the new compute bottleneck",
-        "url": "https://huggingface.co/blog/evaleval/eval-costs-bottleneck"
+        "title": "Building the compute infrastructure for the Intelligence Age",
+        "url": "https://openai.com/index/building-the-compute-infrastructure-for-the-intelligence-age"
       },
-      "summary": "Article from Hugging Face Blog argues that AI evaluation has crossed a cost threshold making it a primary compute bottleneck, documenting specific dollar costs for agent leaderboards, static benchmarks, and training-in-the-loop scientific ML benchmarks. Key themes: eval cost scaling, scaffold sensitivity, benchmark compression techniques, and the asymmetry between training and evaluation compute.",
+      "summary": "OpenAI article about building compute infrastructure for the Intelligence Age — likely covers purpose-built AI infrastructure, custom silicon/accelerators, and data center scale topics. Article excerpt is empty so candidates are inferred from title and source context.",
       "longlistAdditions": [],
-      "longlistUpdates": [],
-      "rejections": [
-        {
-          "label": "Eval Cost Bottleneck",
-          "reason": "could not generate id"
-        },
-        {
-          "label": "Scaffold Sensitivity",
-          "reason": "could not generate id"
-        },
-        {
-          "label": "Training-in-the-Loop Benchmark",
-          "reason": "could not generate id"
-        },
-        {
-          "label": "Benchmark Compression",
-          "reason": "could not generate id"
-        }
-      ],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "Intel Earnings, Intel’s Differentiation?, Whither Terafab",
-        "url": "https://stratechery.com/2026/intel-earnings-intels-differentiation-whither-terafab/"
-      },
-      "summary": "Article covers Intel's earnings driven by CPU demand for AI workloads and discusses 'Terafab', a manufacturing/infrastructure concept. The excerpt is paywalled so detail is limited, but key themes are AI-driven CPU demand shifts and Intel's strategic differentiation in AI infrastructure.",
-      "longlistAdditions": [
-        {
-          "id": "terafab",
-          "label": "Terafab"
-        },
-        {
-          "id": "ai-driven-cpu-demand",
-          "label": "AI-Driven CPU Demand"
-        }
-      ],
       "longlistUpdates": [
         {
           "id": "purpose-built-ai-infrastructure",
           "label": "Purpose-Built AI Infrastructure",
           "sourceAdded": true,
-          "sourceCount": 3,
+          "sourceCount": 4,
+          "independentSourceCount": 3
+        },
+        {
+          "id": "ai-accelerator",
+          "label": "AI Accelerator",
+          "sourceAdded": true,
+          "sourceCount": 2,
+          "independentSourceCount": 2
+        },
+        {
+          "id": "tpu",
+          "label": "TPU (Tensor Processing Unit)",
+          "sourceAdded": true,
+          "sourceCount": 4,
           "independentSourceCount": 2
         }
       ],
@@ -133,77 +93,74 @@
     },
     {
       "article": {
-        "title": "LWiAI Podcast #238 - GPT 5.4 mini, OpenAI Pivot, Mamba 3, Attention Residuals ",
-        "url": "https://lastweekin.ai/p/lwiai-podcast-238-gpt-54-mini-openai"
+        "title": "Amazon Earnings, Trainium and Commodity Markets, Additional Amazon Notes",
+        "url": "https://stratechery.com/2026/amazon-earnings-trainium-and-commodity-markets-additional-amazon-notes/"
       },
-      "summary": "Podcast episode covering GPT-5.4 mini/nano release, Mistral Small 4 MoE model, agent OS competition with Manus/Nvidia NeMo, DLSS 5, OpenAI enterprise pivot, and safety research on steganography, chain-of-thought faithfulness, and emergent misalignment defenses.",
-      "longlistAdditions": [
+      "summary": "Article covers Amazon's Q1 2026 earnings with focus on Trainium (Amazon's custom AI chip), the shift from training to inference and agents, and broader implications for AI infrastructure. Key themes: custom silicon for inference, commodity dynamics in AI hardware markets, and agentic workloads driving chip demand.",
+      "longlistAdditions": [],
+      "longlistUpdates": [
         {
-          "id": "llm-steganography",
-          "label": "Steganography in LLMs"
+          "id": "ai-inference-chip",
+          "label": "AI Inference Chip",
+          "sourceAdded": true,
+          "sourceCount": 2,
+          "independentSourceCount": 2
         },
         {
-          "id": "cot-faithfulness",
-          "label": "Chain-of-Thought Faithfulness"
-        },
-        {
-          "id": "agent-os",
-          "label": "Agent Operating System"
+          "id": "purpose-built-ai-infrastructure",
+          "label": "Purpose-Built AI Infrastructure",
+          "sourceAdded": true,
+          "sourceCount": 5,
+          "independentSourceCount": 3
         }
       ],
-      "longlistUpdates": [],
-      "rejections": [
-        {
-          "label": "GPT-5.4 mini",
-          "reason": "already in graph (id match)"
-        }
-      ],
+      "rejections": [],
       "proposalsQueued": []
     },
     {
       "article": {
-        "title": "New Paper: Towards a science of AI agent reliability",
-        "url": "https://www.normaltech.ai/p/new-paper-towards-a-science-of-ai"
+        "title": "LWiAI Podcast #242 - ChatGPT Images 2.0, Qwen 3.6 Max, Kimi-K2.6",
+        "url": "https://lastweekin.ai/p/lwiai-podcast-242-chatgpt-images"
       },
-      "summary": "Article presents a research paper decomposing AI agent reliability into 12 dimensions across four high-level categories (consistency, robustness, calibration/predictability, safety), finding that capability gains have outpaced reliability gains across major model providers over 18 months. Key concepts include the capability-reliability gap, multi-dimensional reliability measurement, and the idea that accuracy alone is insufficient for autonomous deployment.",
-      "longlistAdditions": [
-        {
-          "id": "capability-reliability-gap",
-          "label": "Capability-Reliability Gap"
-        },
-        {
-          "id": "agent-reliability",
-          "label": "Agent Reliability"
-        },
-        {
-          "id": "calibration",
-          "label": "Calibration"
-        },
-        {
-          "id": "nines-of-reliability",
-          "label": "Nines of Reliability"
-        }
-      ],
+      "summary": "Podcast episode covering ChatGPT Images 2.0 for text-in-image generation, Chinese model releases (Qwen 3.6 Max, Kimi K2.6 1T MoE, MiniMax M2.7), Google Deep Research Max with MCP, Claude Mythos security incidents, SpaceX-Cursor deal, Cerebras IPO filing, and synthetic media policy topics.",
+      "longlistAdditions": [],
       "longlistUpdates": [],
       "rejections": [],
       "proposalsQueued": []
     },
     {
       "article": {
-        "title": "We need RSS for sharing abundant vibe-coded apps",
-        "url": "https://simonwillison.net/2026/Apr/30/rss-vibe-coded-apps/#atom-everything"
+        "title": "Open-world evaluations for measuring frontier AI capabilities",
+        "url": "https://www.normaltech.ai/p/open-world-evaluations-for-measuring"
       },
-      "summary": "Short post about vibe-coded apps becoming so frequent and personal that they need RSS/Atom feed infrastructure for discovery and sharing — analogous to blog posts. Minimal new terminology but reinforces vibe-coding and touches on micro-app publishing patterns.",
-      "longlistAdditions": [
+      "summary": "Article introduces CRUX, a collaborative project for open-world AI evaluations—long, messy, real-world tasks that go beyond standard benchmarks. Key concepts include open-world evaluations as a distinct evaluation paradigm, the CRUX organization itself, and the iOS app publication experiment as an example of agentic capability assessment.",
+      "longlistAdditions": [],
+      "longlistUpdates": [
         {
-          "id": "micro-app",
-          "label": "Micro-App"
+          "id": "long-horizon-autonomy",
+          "label": "Long-Horizon Autonomy",
+          "sourceAdded": true,
+          "sourceCount": 2,
+          "independentSourceCount": 2
         },
         {
-          "id": "personal-software",
-          "label": "Personal Software"
+          "id": "capability-reliability-gap",
+          "label": "Capability-Reliability Gap",
+          "sourceAdded": true,
+          "sourceCount": 2,
+          "independentSourceCount": 1
         }
       ],
+      "rejections": [],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "Codex CLI 0.128.0 adds /goal",
+        "url": "https://simonwillison.net/2026/Apr/30/codex-goals/#atom-everything"
+      },
+      "summary": "Article covers Codex CLI 0.128.0's new /goal feature, which implements a loop-until-goal-achieved pattern with token budget management, referencing the 'Ralph loop' concept and automatic prompt injection for goal evaluation.",
+      "longlistAdditions": [],
       "longlistUpdates": [],
       "rejections": [],
       "proposalsQueued": []
@@ -211,54 +168,54 @@
   ],
   "definitionReviews": [
     {
-      "id": "data-sovereignty",
+      "id": "evals",
       "status": "keep",
-      "reason": "No source material addresses data sovereignty. Definition remains accurate and no update is warranted."
+      "reason": "The CRUX paper on open-world evaluations reinforces the existing definition's point that building good evals is hard and that benchmark saturation is a real problem. The new material (open-world evals, CRUX project) extends the concept but doesn't contradict or materially update the core definition enough to require a rewrite."
     },
     {
-      "id": "deep-research",
+      "id": "evaluation-gaming",
       "status": "keep",
-      "reason": "No source material addresses the deep research agentic mode. Definition remains accurate."
+      "reason": "No source material addresses evaluation gaming or the specific Mythos testing statistics cited. The podcast mention of 'Anthropic's Mythos' fixing Firefox bugs is a different use context and doesn't bear on this definition."
     },
     {
-      "id": "deepseek",
+      "id": "exploit",
       "status": "keep",
-      "reason": "One source briefly mentions DeepSeek V4 as 'almost on the frontier, a fraction of the price,' which is consistent with the existing definition. No material change is justified."
+      "reason": "No source material addresses exploits or the Claude Mythos exploit-writing capability described in the definition."
     },
     {
-      "id": "delegation",
+      "id": "exploit-chain",
       "status": "keep",
-      "reason": "No source material addresses delegation as an AI interaction paradigm. Definition remains accurate."
+      "reason": "No source material addresses exploit chains or autonomous vulnerability chaining capabilities."
     },
     {
-      "id": "deprecated",
+      "id": "feature-flag",
       "status": "keep",
-      "reason": "No source material addresses deprecation cycles. Definition remains accurate."
+      "reason": "No source material addresses feature flags or the Claude Code leak referenced in the definition."
     },
     {
-      "id": "devin",
+      "id": "fine-tuning",
       "status": "keep",
-      "reason": "No source material addresses Devin or Cognition. Definition remains accurate."
+      "reason": "The Granite 4.1 article describes supervised fine-tuning in technical detail (LLM-as-Judge, multi-stage RL pipeline) but does not contradict or materially change the existing concise definition. The definition accurately captures the concept."
     },
     {
-      "id": "distribution-shift",
+      "id": "frontier-model",
       "status": "keep",
-      "reason": "No source material addresses distribution shift. Definition remains accurate."
+      "reason": "No source material directly addresses the frontier model definition or contradicts its characterisation."
     },
     {
-      "id": "edge-ai",
+      "id": "frontier-red-team",
       "status": "keep",
-      "reason": "No source material addresses edge AI or Gemma 4. Definition remains accurate based on available evidence."
+      "reason": "No source material addresses Anthropic's Frontier Red Team or its role."
     },
     {
-      "id": "embeddings",
-      "status": "keep",
-      "reason": "No source material addresses embeddings. Definition remains accurate."
-    },
-    {
-      "id": "emergent-capability",
+      "id": "gemini",
       "status": "insufficient_evidence",
-      "reason": "The definition makes a specific claim attributing a quote about cybersecurity abilities to Anthropic regarding 'Mythos Preview,' a model not verifiable from any of the provided sources. No source here corroborates or refutes this claim, so the specific example cannot be validated, but there is insufficient evidence to rewrite the definition."
+      "reason": "The podcast mentions 'Google expanded Deep Research with a Max option built on Gemini 3.1 Pro' — suggesting a Gemini 3.1 generation exists — but there is insufficient detail in the excerpts to justify rewriting the definition with confidence."
+    },
+    {
+      "id": "gemma-4",
+      "status": "keep",
+      "reason": "No source material references Gemma 4 or contradicts the existing definition."
     }
   ],
   "notes": []
