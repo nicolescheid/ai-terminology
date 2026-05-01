@@ -44,6 +44,15 @@ export default {
     // alone, which is why the diverse independent voices below were added).
     { type: "rss", label: "OpenAI News", url: "https://openai.com/news/rss.xml", limit: 4 },
     {
+      // Different content shape from /news (which is product-and-policy):
+      // /research is where new framing terms tend to appear first.
+      type: "html_index",
+      label: "OpenAI Research",
+      url: "https://openai.com/research/",
+      includeUrlPatterns: ["^https://openai\\.com/(research|index)/(?!$)"],
+      limit: 3
+    },
+    {
       type: "html_index",
       label: "Anthropic Newsroom",
       url: "https://www.anthropic.com/news",
@@ -67,6 +76,15 @@ export default {
     { type: "rss", label: "AI Snake Oil", url: "https://www.aisnakeoil.com/feed", limit: 3 },
     { type: "rss", label: "Last Week in AI", url: "https://lastweekin.ai/feed", limit: 3 },
     { type: "rss", label: "Hugging Face Blog", url: "https://huggingface.co/blog/feed.xml", limit: 3 },
-    { type: "rss", label: "The Verge — AI", url: "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml", limit: 4 }
+    { type: "rss", label: "The Verge — AI", url: "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml", limit: 4 },
+    // HBR is broad-coverage business writing; the AI/management framing it
+    // reaches for is distinct from the lab/dev/critic voices above. Limit
+    // is intentionally low — Lexi's extract prompt will reject non-AI
+    // articles, but that costs a Claude call per skip, so we minimize.
+    // The original feeds.hbr.org host fails SSL; the Feedburner mirror serves
+    // the same Atom feed reliably. Limit is intentionally low — HBR is broad
+    // business writing, and the AI/management framing it reaches for is the
+    // useful slice; the extract prompt rejects non-AI articles.
+    { type: "rss", label: "Harvard Business Review", url: "https://feeds.feedburner.com/harvardbusiness", limit: 2 }
   ]
 };
