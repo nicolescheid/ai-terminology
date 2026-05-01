@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-05-01T19:10:07.910Z",
-    "unreadCount": 51,
+    "generatedAt": "2026-05-01T19:38:14.447Z",
+    "unreadCount": 1,
     "totalCount": 80,
     "note": "Notes for Nicole — Lexi's manager channel (spec §6). Mandatory entry types fire when their triggering condition is met; discretionary entries are observations Lexi thinks Nicole should see. Set status to 'read', 'actioned', or 'dismissed' as appropriate."
   },
@@ -762,7 +762,7 @@
       "writtenAt": "2026-04-27T19:20:08.906Z",
       "runId": "c33849d5-91ac-44ea-8dd9-4a03a7c84069",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 7, current 15)",
       "details": "Would exceed cap of 7 longlist additions per 7-day window (current: 15).",
       "evidence": {
@@ -779,7 +779,8 @@
         "suppressedReason": "The article explicitly coins and uses '10x agents' as a target outcome of the course curriculum, framing it as agents that achieve outsized productivity through tool and API integration. This is a novel term not in the graph or longlist.",
         "source": "extract-flow"
       },
-      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted.",
+      "readAt": "2026-05-01T19:38:14.447Z"
     },
     {
       "id": "bbce4716fd5c72f4",
@@ -787,7 +788,7 @@
       "writtenAt": "2026-04-27T19:20:08.906Z",
       "runId": "c33849d5-91ac-44ea-8dd9-4a03a7c84069",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 7, current 15)",
       "details": "Would exceed cap of 7 longlist additions per 7-day window (current: 15).",
       "evidence": {
@@ -804,7 +805,8 @@
         "suppressedReason": "The article repeatedly uses 'production-ready AI agents' as the end-state learning goal, distinguishing it from experimental or demo agents. This framing recurs across the agentic ecosystem and merits tracking.",
         "source": "extract-flow"
       },
-      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted.",
+      "readAt": "2026-05-01T19:38:14.447Z"
     },
     {
       "id": "bbce4716fd5c72f4",
@@ -812,7 +814,7 @@
       "writtenAt": "2026-04-27T19:20:08.906Z",
       "runId": "c33849d5-91ac-44ea-8dd9-4a03a7c84069",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 7, current 15)",
       "details": "Would exceed cap of 7 longlist additions per 7-day window (current: 15).",
       "evidence": {
@@ -829,7 +831,8 @@
         "suppressedReason": "The article explicitly introduces 'natural language workflows' as a distinct concept within vibe coding, where natural language becomes the primary programming interface. This is a specific enough framing to track separately from vibe coding itself.",
         "source": "extract-flow"
       },
-      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted.",
+      "readAt": "2026-05-01T19:38:14.447Z"
     },
     {
       "id": "bbce4716fd5c72f4",
@@ -837,7 +840,7 @@
       "writtenAt": "2026-04-27T19:20:08.906Z",
       "runId": "c33849d5-91ac-44ea-8dd9-4a03a7c84069",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 7, current 15)",
       "details": "Would exceed cap of 7 longlist additions per 7-day window (current: 15).",
       "evidence": {
@@ -854,7 +857,8 @@
         "suppressedReason": "The article explicitly mentions 'collaborating on next-generation silicon' as a key pillar of the Microsoft-OpenAI partnership, making this a trackable framing concept for AI hardware co-development between strategic partners.",
         "source": "extract-flow"
       },
-      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted.",
+      "readAt": "2026-05-01T19:38:14.447Z"
     },
     {
       "id": "bbce4716fd5c72f4",
@@ -862,7 +866,7 @@
       "writtenAt": "2026-04-27T19:20:08.906Z",
       "runId": "c33849d5-91ac-44ea-8dd9-4a03a7c84069",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 7, current 15)",
       "details": "Would exceed cap of 7 longlist additions per 7-day window (current: 15).",
       "evidence": {
@@ -879,7 +883,8 @@
         "suppressedReason": "The amendment explicitly restructures exclusivity terms — OpenAI now gains the right to serve customers across any cloud provider while Microsoft retains primary status. This pattern of exclusive-to-non-exclusive cloud transitions is an emerging business model concept worth tracking.",
         "source": "extract-flow"
       },
-      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted.",
+      "readAt": "2026-05-01T19:38:14.447Z"
     },
     {
       "id": "bbce4716fd5c72f4",
@@ -887,7 +892,7 @@
       "writtenAt": "2026-04-27T19:20:08.906Z",
       "runId": "c33849d5-91ac-44ea-8dd9-4a03a7c84069",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 7, current 15)",
       "details": "Would exceed cap of 7 longlist additions per 7-day window (current: 15).",
       "evidence": {
@@ -904,7 +909,8 @@
         "suppressedReason": "The article centers on Microsoft's license to OpenAI IP for models and products through 2032, now made non-exclusive — a structural shift in how AI model IP is licensed between major partners that is increasingly relevant to the AI industry landscape.",
         "source": "extract-flow"
       },
-      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted.",
+      "readAt": "2026-05-01T19:38:14.447Z"
     },
     {
       "id": "bbce4716fd5c72f4",
@@ -912,7 +918,7 @@
       "writtenAt": "2026-04-27T19:20:08.906Z",
       "runId": "c33849d5-91ac-44ea-8dd9-4a03a7c84069",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 7, current 15)",
       "details": "Would exceed cap of 7 longlist additions per 7-day window (current: 15).",
       "evidence": {
@@ -929,7 +935,8 @@
         "suppressedReason": "The article specifically references 'scaling gigawatts of new datacenter capacity' as a joint priority, reflecting a broader industry trend of massive physical infrastructure investment tied to AI scaling laws and frontier model development.",
         "source": "extract-flow"
       },
-      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted.",
+      "readAt": "2026-05-01T19:38:14.447Z"
     },
     {
       "id": "bbce4716fd5c72f4",
@@ -937,7 +944,7 @@
       "writtenAt": "2026-04-27T19:20:08.906Z",
       "runId": "c33849d5-91ac-44ea-8dd9-4a03a7c84069",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 7, current 15)",
       "details": "Would exceed cap of 7 longlist additions per 7-day window (current: 15).",
       "evidence": {
@@ -954,7 +961,8 @@
         "suppressedReason": "Symphony is a named system introduced in this article with a distinct identity as a Codex orchestration layer — not yet on the graph or longlist. It represents a concrete, referenceable product with lasting relevance to agentic engineering patterns.",
         "source": "extract-flow"
       },
-      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted.",
+      "readAt": "2026-05-01T19:38:14.447Z"
     },
     {
       "id": "bbce4716fd5c72f4",
@@ -962,7 +970,7 @@
       "writtenAt": "2026-04-27T19:20:08.906Z",
       "runId": "c33849d5-91ac-44ea-8dd9-4a03a7c84069",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 7, current 15)",
       "details": "Would exceed cap of 7 longlist additions per 7-day window (current: 15).",
       "evidence": {
@@ -979,7 +987,8 @@
         "suppressedReason": "The article articulates a clear, reusable architectural concept — using the issue tracker as a control plane — that generalises beyond Symphony and is likely to recur in agentic engineering discourse.",
         "source": "extract-flow"
       },
-      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted.",
+      "readAt": "2026-05-01T19:38:14.447Z"
     },
     {
       "id": "bbce4716fd5c72f4",
@@ -987,7 +996,7 @@
       "writtenAt": "2026-04-27T19:20:08.906Z",
       "runId": "c33849d5-91ac-44ea-8dd9-4a03a7c84069",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 7, current 15)",
       "details": "Would exceed cap of 7 longlist additions per 7-day window (current: 15).",
       "evidence": {
@@ -1004,7 +1013,8 @@
         "suppressedReason": "The article explicitly describes DAG-driven parallel execution as a key mechanism of Symphony, and this pattern is conceptually distinct from generic task decomposition — it captures dependency-aware parallel agentic scheduling.",
         "source": "extract-flow"
       },
-      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted.",
+      "readAt": "2026-05-01T19:38:14.447Z"
     },
     {
       "id": "bbce4716fd5c72f4",
@@ -1012,7 +1022,7 @@
       "writtenAt": "2026-04-27T19:20:08.906Z",
       "runId": "c33849d5-91ac-44ea-8dd9-4a03a7c84069",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 7, current 15)",
       "details": "Would exceed cap of 7 longlist additions per 7-day window (current: 15).",
       "evidence": {
@@ -1029,7 +1039,8 @@
         "suppressedReason": "The article highlights CI shepherding as a distinct, high-value agent capability that addresses the 'last mile' of PR landing in large monorepos — a reusable concept likely to appear in future agentic engineering literature.",
         "source": "extract-flow"
       },
-      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted.",
+      "readAt": "2026-05-01T19:38:14.447Z"
     },
     {
       "id": "bbce4716fd5c72f4",
@@ -1037,7 +1048,7 @@
       "writtenAt": "2026-04-27T19:20:08.906Z",
       "runId": "c33849d5-91ac-44ea-8dd9-4a03a7c84069",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 7, current 15)",
       "details": "Would exceed cap of 7 longlist additions per 7-day window (current: 15).",
       "evidence": {
@@ -1054,7 +1065,8 @@
         "suppressedReason": "The article explicitly highlights 'dynamic in-context learning infrastructure' as the core engineering challenge distinguishing automation from intelligence, making it a distinct and materially relevant concept worth tracking.",
         "source": "extract-flow"
       },
-      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted.",
+      "readAt": "2026-05-01T19:38:14.447Z"
     },
     {
       "id": "bbce4716fd5c72f4",
@@ -1062,7 +1074,7 @@
       "writtenAt": "2026-04-27T19:20:08.906Z",
       "runId": "c33849d5-91ac-44ea-8dd9-4a03a7c84069",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 7, current 15)",
       "details": "Would exceed cap of 7 longlist additions per 7-day window (current: 15).",
       "evidence": {
@@ -1079,7 +1091,8 @@
         "suppressedReason": "Named explicitly as the technology powering Choco's VoiceAgent with sub-second latency; a distinct product-level node not currently in the graph or longlist.",
         "source": "extract-flow"
       },
-      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted.",
+      "readAt": "2026-05-01T19:38:14.447Z"
     },
     {
       "id": "bbce4716fd5c72f4",
@@ -1087,7 +1100,7 @@
       "writtenAt": "2026-04-27T19:20:08.906Z",
       "runId": "c33849d5-91ac-44ea-8dd9-4a03a7c84069",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 7, current 15)",
       "details": "Would exceed cap of 7 longlist additions per 7-day window (current: 15).",
       "evidence": {
@@ -1104,7 +1117,8 @@
         "suppressedReason": "Explicitly named as a leadership lesson and distinct practice—'AI-native observability'—with a clear definition differentiating it from traditional observability; relevant to agentic production deployments.",
         "source": "extract-flow"
       },
-      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted.",
+      "readAt": "2026-05-01T19:38:14.447Z"
     },
     {
       "id": "bbce4716fd5c72f4",
@@ -1112,7 +1126,7 @@
       "writtenAt": "2026-04-27T19:20:08.906Z",
       "runId": "c33849d5-91ac-44ea-8dd9-4a03a7c84069",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 7, current 15)",
       "details": "Would exceed cap of 7 longlist additions per 7-day window (current: 15).",
       "evidence": {
@@ -1129,7 +1143,8 @@
         "suppressedReason": "The article explicitly introduces 'agent orchestrators' as a new class of users—non-engineers managing intelligent systems—framing a distinct emerging role concept worth tracking in the agentic work landscape.",
         "source": "extract-flow"
       },
-      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted.",
+      "readAt": "2026-05-01T19:38:14.447Z"
     },
     {
       "id": "6d1878f417779e16",
@@ -1161,7 +1176,7 @@
       "writtenAt": "2026-04-28T19:40:36.332Z",
       "runId": "7173c3e4-66e0-413c-a1f2-464eefd2f3b6",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 7, current 15)",
       "details": "Would exceed cap of 7 longlist additions per 7-day window (current: 15).",
       "evidence": {
@@ -1178,7 +1193,8 @@
         "suppressedReason": "Article explicitly describes the 2016 pivot from statistical machine learning to neural networks for translation, framing NMT as a foundational shift in applied AI. This is a durable technical concept not yet tracked in either tier.",
         "source": "extract-flow"
       },
-      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted.",
+      "readAt": "2026-05-01T19:38:14.447Z"
     },
     {
       "id": "b0b16ca2ab1f8978",
@@ -1186,7 +1202,7 @@
       "writtenAt": "2026-04-28T19:40:36.332Z",
       "runId": "7173c3e4-66e0-413c-a1f2-464eefd2f3b6",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 7, current 15)",
       "details": "Would exceed cap of 7 longlist additions per 7-day window (current: 15).",
       "evidence": {
@@ -1203,7 +1219,8 @@
         "suppressedReason": "Article contrasts Google Translate's original 2006 statistical machine learning approach with later neural methods, making SMT a historically meaningful concept worth tracking as context for the neural shift narrative.",
         "source": "extract-flow"
       },
-      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted.",
+      "readAt": "2026-05-01T19:38:14.447Z"
     },
     {
       "id": "b0b16ca2ab1f8978",
@@ -1211,7 +1228,7 @@
       "writtenAt": "2026-04-28T19:40:36.332Z",
       "runId": "7173c3e4-66e0-413c-a1f2-464eefd2f3b6",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 7, current 15)",
       "details": "Would exceed cap of 7 longlist additions per 7-day window (current: 15).",
       "evidence": {
@@ -1228,7 +1245,8 @@
         "suppressedReason": "The article launches a new 'pronunciation practice' tool as a headline feature, representing an emerging AI-assisted language learning capability with potential relevance beyond Google Translate alone.",
         "source": "extract-flow"
       },
-      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted.",
+      "readAt": "2026-05-01T19:38:14.447Z"
     },
     {
       "id": "b0b16ca2ab1f8978",
@@ -1236,7 +1254,7 @@
       "writtenAt": "2026-04-28T19:40:36.332Z",
       "runId": "7173c3e4-66e0-413c-a1f2-464eefd2f3b6",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 7, current 15)",
       "details": "Would exceed cap of 7 longlist additions per 7-day window (current: 15).",
       "evidence": {
@@ -1253,7 +1271,8 @@
         "suppressedReason": "New named product launched in this article — a distinct managed-agent platform combining AWS infrastructure with OpenAI capabilities. Not previously in graph or longlist.",
         "source": "extract-flow"
       },
-      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted.",
+      "readAt": "2026-05-01T19:38:14.447Z"
     },
     {
       "id": "b0b16ca2ab1f8978",
@@ -1261,7 +1280,7 @@
       "writtenAt": "2026-04-28T19:40:36.332Z",
       "runId": "7173c3e4-66e0-413c-a1f2-464eefd2f3b6",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 7, current 15)",
       "details": "Would exceed cap of 7 longlist additions per 7-day window (current: 15).",
       "evidence": {
@@ -1278,7 +1297,8 @@
         "suppressedReason": "New framing concept emerging from this article and the broader trend of cloud providers offering turnkey agent deployment layers. Distinct from raw API access or DIY agent frameworks.",
         "source": "extract-flow"
       },
-      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted.",
+      "readAt": "2026-05-01T19:38:14.447Z"
     },
     {
       "id": "b0b16ca2ab1f8978",
@@ -1286,7 +1306,7 @@
       "writtenAt": "2026-04-28T19:40:36.332Z",
       "runId": "7173c3e4-66e0-413c-a1f2-464eefd2f3b6",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 7, current 15)",
       "details": "Would exceed cap of 7 longlist additions per 7-day window (current: 15).",
       "evidence": {
@@ -1303,7 +1323,8 @@
         "suppressedReason": "New concept introduced in this article — applying Codex/OpenAI usage toward AWS cloud commits is a distinct commercial mechanism enabling enterprise AI adoption at scale, worth tracking as it spreads across cloud providers.",
         "source": "extract-flow"
       },
-      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted.",
+      "readAt": "2026-05-01T19:38:14.447Z"
     },
     {
       "id": "b0b16ca2ab1f8978",
@@ -1311,7 +1332,7 @@
       "writtenAt": "2026-04-28T19:40:36.332Z",
       "runId": "7173c3e4-66e0-413c-a1f2-464eefd2f3b6",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 7, current 15)",
       "details": "Would exceed cap of 7 longlist additions per 7-day window (current: 15).",
       "evidence": {
@@ -1328,7 +1349,8 @@
         "suppressedReason": "The article centers entirely on FedRAMP 20x Moderate authorization as the mechanism enabling government AI adoption. This is a named, durable compliance concept with growing relevance to AI deployment in regulated environments — not currently tracked on the graph or longlist.",
         "source": "extract-flow"
       },
-      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted.",
+      "readAt": "2026-05-01T19:38:14.447Z"
     },
     {
       "id": "b0b16ca2ab1f8978",
@@ -1336,7 +1358,7 @@
       "writtenAt": "2026-04-28T19:40:36.332Z",
       "runId": "7173c3e4-66e0-413c-a1f2-464eefd2f3b6",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 7, current 15)",
       "details": "Would exceed cap of 7 longlist additions per 7-day window (current: 15).",
       "evidence": {
@@ -1353,7 +1375,8 @@
         "suppressedReason": "The article describes a distinct procurement context — federal agency acquisition paths, authorized resellers, trust portals — that represents an emerging pattern in AI deployment worth tracking separately from general enterprise SaaS.",
         "source": "extract-flow"
       },
-      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted.",
+      "readAt": "2026-05-01T19:38:14.447Z"
     },
     {
       "id": "b0b16ca2ab1f8978",
@@ -1361,7 +1384,7 @@
       "writtenAt": "2026-04-28T19:40:36.332Z",
       "runId": "7173c3e4-66e0-413c-a1f2-464eefd2f3b6",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 7, current 15)",
       "details": "Would exceed cap of 7 longlist additions per 7-day window (current: 15).",
       "evidence": {
@@ -1378,7 +1401,8 @@
         "suppressedReason": "The article distinguishes Codex Cloud as a specific product environment separate from the base Codex model — a named deployment variant with distinct integration characteristics worth tracking on the longlist.",
         "source": "extract-flow"
       },
-      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted.",
+      "readAt": "2026-05-01T19:38:14.447Z"
     },
     {
       "id": "b0b16ca2ab1f8978",
@@ -1386,7 +1410,7 @@
       "writtenAt": "2026-04-28T19:40:36.332Z",
       "runId": "7173c3e4-66e0-413c-a1f2-464eefd2f3b6",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 7, current 15)",
       "details": "Would exceed cap of 7 longlist additions per 7-day window (current: 15).",
       "evidence": {
@@ -1403,7 +1427,8 @@
         "suppressedReason": "Novel framing term introduced by the article to describe a distinct AI use case: bridging disparate creative tools (Blender, Adobe, Ableton, SketchUp) in a single pipeline via Claude connectors — sufficiently specific and recurring to warrant tracking.",
         "source": "extract-flow"
       },
-      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted.",
+      "readAt": "2026-05-01T19:38:14.447Z"
     },
     {
       "id": "a6ab120141846c6f",
@@ -1411,7 +1436,7 @@
       "writtenAt": "2026-04-29T19:24:05.664Z",
       "runId": "5182d6e5-bf46-4de7-b377-1d2a83926cfa",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 7, current 15)",
       "details": "Would exceed cap of 7 longlist additions per 7-day window (current: 15).",
       "evidence": {
@@ -1428,7 +1453,8 @@
         "suppressedReason": "The article's central subject — an OpenAI action plan for 'democratizing AI-powered cyber defense' — establishes this as a distinct, reusable framing term for AI applied to defensive security.",
         "source": "extract-flow"
       },
-      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted.",
+      "readAt": "2026-05-01T19:38:14.447Z"
     },
     {
       "id": "a6ab120141846c6f",
@@ -1436,7 +1462,7 @@
       "writtenAt": "2026-04-29T19:24:05.664Z",
       "runId": "5182d6e5-bf46-4de7-b377-1d2a83926cfa",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 7, current 15)",
       "details": "Would exceed cap of 7 longlist additions per 7-day window (current: 15).",
       "evidence": {
@@ -1453,7 +1479,8 @@
         "suppressedReason": "The article uses 'Intelligence Age' explicitly and repeatedly as a named era framing cybersecurity challenges, paralleling how 'Information Age' was used; OpenAI also uses it in their FedRAMP article title in the same session.",
         "source": "extract-flow"
       },
-      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted.",
+      "readAt": "2026-05-01T19:38:14.447Z"
     },
     {
       "id": "a6ab120141846c6f",
@@ -1461,7 +1488,7 @@
       "writtenAt": "2026-04-29T19:24:05.664Z",
       "runId": "5182d6e5-bf46-4de7-b377-1d2a83926cfa",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 7, current 15)",
       "details": "Would exceed cap of 7 longlist additions per 7-day window (current: 15).",
       "evidence": {
@@ -1478,7 +1505,8 @@
         "suppressedReason": "One of the five named pillars in OpenAI's action plan and the primary organizing theme; represents a distinct, trackable policy concept in the AI-security space.",
         "source": "extract-flow"
       },
-      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted.",
+      "readAt": "2026-05-01T19:38:14.447Z"
     },
     {
       "id": "a6ab120141846c6f",
@@ -1486,7 +1514,7 @@
       "writtenAt": "2026-04-29T19:24:05.664Z",
       "runId": "5182d6e5-bf46-4de7-b377-1d2a83926cfa",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 7, current 15)",
       "details": "Would exceed cap of 7 longlist additions per 7-day window (current: 15).",
       "evidence": {
@@ -1503,7 +1531,8 @@
         "suppressedReason": "The article names 'Strengthening security around frontier cyber capabilities' as an explicit pillar, making this a trackable concept distinct from general cybersecurity — particularly relevant to AI safety and dual-use concerns.",
         "source": "extract-flow"
       },
-      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted.",
+      "readAt": "2026-05-01T19:38:14.447Z"
     },
     {
       "id": "a6ab120141846c6f",
@@ -1511,7 +1540,7 @@
       "writtenAt": "2026-04-29T19:24:05.664Z",
       "runId": "5182d6e5-bf46-4de7-b377-1d2a83926cfa",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 7, current 15)",
       "details": "Would exceed cap of 7 longlist additions per 7-day window (current: 15).",
       "evidence": {
@@ -1528,7 +1557,8 @@
         "suppressedReason": "The article explicitly references OpenAI's Model Spec as the foundational document guiding ChatGPT's safety behavior—a recurring and important concept in AI governance discourse worth tracking.",
         "source": "extract-flow"
       },
-      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted.",
+      "readAt": "2026-05-01T19:38:14.447Z"
     },
     {
       "id": "a6ab120141846c6f",
@@ -1536,7 +1566,7 @@
       "writtenAt": "2026-04-29T19:24:05.664Z",
       "runId": "5182d6e5-bf46-4de7-b377-1d2a83926cfa",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 7, current 15)",
       "details": "Would exceed cap of 7 longlist additions per 7-day window (current: 15).",
       "evidence": {
@@ -1553,7 +1583,8 @@
         "suppressedReason": "The article foregrounds OpenAI's Usage Policies as the enforcement backbone for community safety—a distinct, recurring governance artifact distinct from system prompts or model specs.",
         "source": "extract-flow"
       },
-      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted.",
+      "readAt": "2026-05-01T19:38:14.447Z"
     },
     {
       "id": "a6ab120141846c6f",
@@ -1561,7 +1592,7 @@
       "writtenAt": "2026-04-29T19:24:05.664Z",
       "runId": "5182d6e5-bf46-4de7-b377-1d2a83926cfa",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 7, current 15)",
       "details": "Would exceed cap of 7 longlist additions per 7-day window (current: 15).",
       "evidence": {
@@ -1578,7 +1609,8 @@
         "suppressedReason": "The article specifically highlights that single messages may seem harmless but patterns across long conversations reveal risk—this longitudinal behavioral analysis framing is a distinct and emerging concept in platform safety.",
         "source": "extract-flow"
       },
-      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted.",
+      "readAt": "2026-05-01T19:38:14.447Z"
     },
     {
       "id": "a6ab120141846c6f",
@@ -1586,7 +1618,7 @@
       "writtenAt": "2026-04-29T19:24:05.664Z",
       "runId": "5182d6e5-bf46-4de7-b377-1d2a83926cfa",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 7, current 15)",
       "details": "Would exceed cap of 7 longlist additions per 7-day window (current: 15).",
       "evidence": {
@@ -1603,7 +1635,8 @@
         "suppressedReason": "The article describes a clear tiered escalation architecture—automated detection → human review → expert assessment → law enforcement referral—that constitutes a named operational pattern in AI safety worth tracking.",
         "source": "extract-flow"
       },
-      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted.",
+      "readAt": "2026-05-01T19:38:14.447Z"
     },
     {
       "id": "7b63f8ca075e8bc1",
@@ -1611,7 +1644,7 @@
       "writtenAt": "2026-05-01T19:10:07.910Z",
       "runId": "41b68b65-27ef-44fb-a3c0-89ff9fbc6e86",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 30, current 30)",
       "details": "Would exceed cap of 30 longlist additions per 7-day window (current: 30).",
       "evidence": {
@@ -1628,7 +1661,8 @@
         "suppressedReason": "The article extensively describes an LLM-as-Judge framework as the core quality-control mechanism for SFT data curation, including multi-dimensional rubrics and specialized judge prompts — a term with broad and lasting relevance in the AI training landscape.",
         "source": "extract-flow"
       },
-      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted.",
+      "readAt": "2026-05-01T19:38:14.447Z"
     },
     {
       "id": "7b63f8ca075e8bc1",
@@ -1636,7 +1670,7 @@
       "writtenAt": "2026-05-01T19:10:07.910Z",
       "runId": "41b68b65-27ef-44fb-a3c0-89ff9fbc6e86",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 30, current 30)",
       "details": "Would exceed cap of 30 longlist additions per 7-day window (current: 30).",
       "evidence": {
@@ -1653,7 +1687,8 @@
         "suppressedReason": "The article dedicates multiple phases (3 and 4) explicitly to 'high-quality data annealing' as a named methodology, and it is used in contrast to simple scaling — a distinct and reusable concept in model training discourse.",
         "source": "extract-flow"
       },
-      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted.",
+      "readAt": "2026-05-01T19:38:14.447Z"
     },
     {
       "id": "7b63f8ca075e8bc1",
@@ -1661,7 +1696,7 @@
       "writtenAt": "2026-05-01T19:10:07.910Z",
       "runId": "41b68b65-27ef-44fb-a3c0-89ff9fbc6e86",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 30, current 30)",
       "details": "Would exceed cap of 30 longlist additions per 7-day window (current: 30).",
       "evidence": {
@@ -1678,7 +1713,8 @@
         "suppressedReason": "The article specifically names GRPO with DAPO loss as the RL algorithm used in Granite 4.1's multi-stage RL pipeline — a concrete, named technique increasingly referenced across the LLM training literature.",
         "source": "extract-flow"
       },
-      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted.",
+      "readAt": "2026-05-01T19:38:14.447Z"
     },
     {
       "id": "7b63f8ca075e8bc1",
@@ -1686,7 +1722,7 @@
       "writtenAt": "2026-05-01T19:10:07.910Z",
       "runId": "41b68b65-27ef-44fb-a3c0-89ff9fbc6e86",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 30, current 30)",
       "details": "Would exceed cap of 30 longlist additions per 7-day window (current: 30).",
       "evidence": {
@@ -1703,7 +1739,8 @@
         "suppressedReason": "The article introduces LCE (Long Context Extension) as a formal phase in the training pipeline, extending context from 4K to 512K tokens through staged training — a named, reusable technique distinct from simply having a large context window.",
         "source": "extract-flow"
       },
-      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted.",
+      "readAt": "2026-05-01T19:38:14.447Z"
     },
     {
       "id": "7b63f8ca075e8bc1",
@@ -1711,7 +1748,7 @@
       "writtenAt": "2026-05-01T19:10:07.910Z",
       "runId": "41b68b65-27ef-44fb-a3c0-89ff9fbc6e86",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 30, current 30)",
       "details": "Would exceed cap of 30 longlist additions per 7-day window (current: 30).",
       "evidence": {
@@ -1728,7 +1765,8 @@
         "suppressedReason": "OpenAI's compute infrastructure announcements are closely tied to the Stargate initiative; this article is likely a direct reference to or update on that program.",
         "source": "extract-flow"
       },
-      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted.",
+      "readAt": "2026-05-01T19:38:14.447Z"
     },
     {
       "id": "7b63f8ca075e8bc1",
@@ -1736,7 +1774,7 @@
       "writtenAt": "2026-05-01T19:10:07.910Z",
       "runId": "41b68b65-27ef-44fb-a3c0-89ff9fbc6e86",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 30, current 30)",
       "details": "Would exceed cap of 30 longlist additions per 7-day window (current: 30).",
       "evidence": {
@@ -1753,7 +1791,8 @@
         "suppressedReason": "Article headline and core analysis centers on Trainium and its role in Amazon's AI infrastructure strategy as workloads shift from training to inference and agents. New term not in graph or longlist.",
         "source": "extract-flow"
       },
-      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted.",
+      "readAt": "2026-05-01T19:38:14.447Z"
     },
     {
       "id": "7b63f8ca075e8bc1",
@@ -1761,7 +1800,7 @@
       "writtenAt": "2026-05-01T19:10:07.910Z",
       "runId": "41b68b65-27ef-44fb-a3c0-89ff9fbc6e86",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 30, current 30)",
       "details": "Would exceed cap of 30 longlist additions per 7-day window (current: 30).",
       "evidence": {
@@ -1778,7 +1817,8 @@
         "suppressedReason": "Referenced directly in the related interview title 'An Interview with OpenAI CEO Sam Altman and AWS CEO Matt Garman About Bedrock Managed Agents' — a named product relevant to the agentic infrastructure theme of the article. New term.",
         "source": "extract-flow"
       },
-      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted.",
+      "readAt": "2026-05-01T19:38:14.447Z"
     },
     {
       "id": "7b63f8ca075e8bc1",
@@ -1786,7 +1826,7 @@
       "writtenAt": "2026-05-01T19:10:07.910Z",
       "runId": "41b68b65-27ef-44fb-a3c0-89ff9fbc6e86",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 30, current 30)",
       "details": "Would exceed cap of 30 longlist additions per 7-day window (current: 30).",
       "evidence": {
@@ -1803,7 +1843,8 @@
         "suppressedReason": "New model release discussed substantively in the episode; not yet in Tier 1 or Tier 2.",
         "source": "extract-flow"
       },
-      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted.",
+      "readAt": "2026-05-01T19:38:14.447Z"
     },
     {
       "id": "7b63f8ca075e8bc1",
@@ -1811,7 +1852,7 @@
       "writtenAt": "2026-05-01T19:10:07.910Z",
       "runId": "41b68b65-27ef-44fb-a3c0-89ff9fbc6e86",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 30, current 30)",
       "details": "Would exceed cap of 30 longlist additions per 7-day window (current: 30).",
       "evidence": {
@@ -1828,7 +1869,8 @@
         "suppressedReason": "The episode centers a segment on ChatGPT Images 2.0 excelling at accurate text rendering, framing it as a distinct and newly emergent capability worth tracking.",
         "source": "extract-flow"
       },
-      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted.",
+      "readAt": "2026-05-01T19:38:14.447Z"
     },
     {
       "id": "7b63f8ca075e8bc1",
@@ -1836,7 +1878,7 @@
       "writtenAt": "2026-05-01T19:10:07.910Z",
       "runId": "41b68b65-27ef-44fb-a3c0-89ff9fbc6e86",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 30, current 30)",
       "details": "Would exceed cap of 30 longlist additions per 7-day window (current: 30).",
       "evidence": {
@@ -1853,7 +1895,8 @@
         "suppressedReason": "MiniMax M2.7 is explicitly described as a 'self-evolving agent model'; the concept of self-evolution in models is distinct from existing canonical terms and warrants tracking.",
         "source": "extract-flow"
       },
-      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted.",
+      "readAt": "2026-05-01T19:38:14.447Z"
     },
     {
       "id": "7b63f8ca075e8bc1",
@@ -1861,7 +1904,7 @@
       "writtenAt": "2026-05-01T19:10:07.910Z",
       "runId": "41b68b65-27ef-44fb-a3c0-89ff9fbc6e86",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 30, current 30)",
       "details": "Would exceed cap of 30 longlist additions per 7-day window (current: 30).",
       "evidence": {
@@ -1878,7 +1921,8 @@
         "suppressedReason": "The 'Infusion' paper on shaping model behavior via influence functions is discussed in the episode; this is a distinct technical concept not yet tracked in either tier.",
         "source": "extract-flow"
       },
-      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted.",
+      "readAt": "2026-05-01T19:38:14.447Z"
     },
     {
       "id": "7b63f8ca075e8bc1",
@@ -1886,7 +1930,7 @@
       "writtenAt": "2026-05-01T19:10:07.910Z",
       "runId": "41b68b65-27ef-44fb-a3c0-89ff9fbc6e86",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 30, current 30)",
       "details": "Would exceed cap of 30 longlist additions per 7-day window (current: 30).",
       "evidence": {
@@ -1903,7 +1947,8 @@
         "suppressedReason": "The article's central concept, explicitly named and defined as an emerging evaluation paradigm distinct from benchmarks. High lasting relevance for AI capability assessment discourse.",
         "source": "extract-flow"
       },
-      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted.",
+      "readAt": "2026-05-01T19:38:14.447Z"
     },
     {
       "id": "7b63f8ca075e8bc1",
@@ -1911,7 +1956,7 @@
       "writtenAt": "2026-05-01T19:10:07.910Z",
       "runId": "41b68b65-27ef-44fb-a3c0-89ff9fbc6e86",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 30, current 30)",
       "details": "Would exceed cap of 30 longlist additions per 7-day window (current: 30).",
       "evidence": {
@@ -1928,7 +1973,8 @@
         "suppressedReason": "New named initiative directly introduced in this article with cross-sector membership; serves as an institutional node for open-world evaluation work worth tracking.",
         "source": "extract-flow"
       },
-      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted.",
+      "readAt": "2026-05-01T19:38:14.447Z"
     },
     {
       "id": "7b63f8ca075e8bc1",
@@ -1936,7 +1982,7 @@
       "writtenAt": "2026-05-01T19:10:07.910Z",
       "runId": "41b68b65-27ef-44fb-a3c0-89ff9fbc6e86",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 30, current 30)",
       "details": "Would exceed cap of 30 longlist additions per 7-day window (current: 30).",
       "evidence": {
@@ -1953,7 +1999,8 @@
         "suppressedReason": "Codex CLI is a distinct product (OpenAI's CLI coding agent) mentioned as the subject of the article. Not yet in Tier 1 or Tier 2.",
         "source": "extract-flow"
       },
-      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted.",
+      "readAt": "2026-05-01T19:38:14.447Z"
     },
     {
       "id": "7b63f8ca075e8bc1",
@@ -1961,7 +2008,7 @@
       "writtenAt": "2026-05-01T19:10:07.910Z",
       "runId": "41b68b65-27ef-44fb-a3c0-89ff9fbc6e86",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 30, current 30)",
       "details": "Would exceed cap of 30 longlist additions per 7-day window (current: 30).",
       "evidence": {
@@ -1978,7 +2025,8 @@
         "suppressedReason": "The /goal feature in Codex CLI implements a specific named pattern—loop until goal evaluated as complete or budget exhausted—distinct from generic loops and worth tracking as an agentic design concept.",
         "source": "extract-flow"
       },
-      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted.",
+      "readAt": "2026-05-01T19:38:14.447Z"
     },
     {
       "id": "7b63f8ca075e8bc1",
@@ -1986,7 +2034,7 @@
       "writtenAt": "2026-05-01T19:10:07.910Z",
       "runId": "41b68b65-27ef-44fb-a3c0-89ff9fbc6e86",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 30, current 30)",
       "details": "Would exceed cap of 30 longlist additions per 7-day window (current: 30).",
       "evidence": {
@@ -2003,7 +2051,8 @@
         "suppressedReason": "The article explicitly describes the token budget as the fallback stopping mechanism for the goal loop, making it a distinct resource-management concept in agentic systems worth tracking.",
         "source": "extract-flow"
       },
-      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted.",
+      "readAt": "2026-05-01T19:38:14.447Z"
     },
     {
       "id": "7b63f8ca075e8bc1",
@@ -2011,7 +2060,7 @@
       "writtenAt": "2026-05-01T19:10:07.910Z",
       "runId": "41b68b65-27ef-44fb-a3c0-89ff9fbc6e86",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 30, current 30)",
       "details": "Would exceed cap of 30 longlist additions per 7-day window (current: 30).",
       "evidence": {
@@ -2028,7 +2077,8 @@
         "suppressedReason": "The article specifically notes the feature is implemented via automatically injected prompts (goals/continuation.md, goals/budget_limit.md), representing a distinct prompt-injection pattern for agentic looping control.",
         "source": "extract-flow"
       },
-      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted.",
+      "readAt": "2026-05-01T19:38:14.447Z"
     }
   ]
 }
