@@ -18,14 +18,15 @@
   if (window.SITE_MENU_DISABLED) return;
   if (document.querySelector(".site-menu")) return; // already injected
 
-  // Order chosen by Nicole: Graph → Almanac → Spec → Repo → Manager.
+  // Order chosen by Nicole: Graph → Almanac → Lexi's List → Spec → Repo → Manager.
   // Manager has a `private` hint until Pages Functions auth ships in Phase 4.
   var LINKS = [
-    { label: "Graph",    href: "/",                                                                    match: ["/", "/index.html"] },
-    { label: "Almanac",  href: "/almanac/",                                                            match: ["/almanac/", "/almanac"] },
-    { label: "Spec",     href: "https://github.com/nicolescheid/ai-terminology/blob/main/lexi-spec.md", external: true },
-    { label: "Repo",     href: "https://github.com/nicolescheid/ai-terminology",                       external: true },
-    { label: "Manager",  href: "/manager/", match: ["/manager/", "/manager"], hint: "private" }
+    { label: "Graph",        href: "/",                                                                    match: ["/", "/index.html"] },
+    { label: "Almanac",      href: "/almanac/",                                                            match: ["/almanac/", "/almanac"] },
+    { label: "Lexi's List",  href: "/lexis-list/",                                                         match: ["/lexis-list/", "/lexis-list"] },
+    { label: "Spec",         href: "https://github.com/nicolescheid/ai-terminology/blob/main/lexi-spec.md", external: true },
+    { label: "Repo",         href: "https://github.com/nicolescheid/ai-terminology",                       external: true },
+    { label: "Manager",      href: "/manager/", match: ["/manager/", "/manager"], hint: "private" }
   ];
 
   function buildMenu() {

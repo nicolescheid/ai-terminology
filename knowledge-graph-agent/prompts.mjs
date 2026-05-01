@@ -30,17 +30,25 @@ export const NEW_TERM_SCHEMA = {
         }
       }
     },
-    // Optional editorial signal — Lexi flags articles she thinks Nicole
-    // should read in full (not just terminologically interesting). Most
-    // articles should NOT be flagged; the bar is editorial value, not news
-    // value. Omit the field for articles that don't clear it.
+    // Optional editorial signal — Lexi flags articles she thinks readers
+    // (Nicole + the public via Lexi's List at /lexis-list/) should read in
+    // full. Most articles should NOT be flagged; the bar is editorial
+    // value, not news value. Omit for articles that don't clear it.
     mustRead: {
       type: ["object", "null"],
       additionalProperties: false,
-      required: ["priority", "reason"],
+      required: ["priority", "reason", "clusters"],
       properties: {
         priority: { type: "integer", enum: [1, 2, 3] },
-        reason: { type: "string" }
+        reason: { type: "string" },
+        // 1-2 cluster ids from the available clusters that best describe
+        // the article's subject matter (used to group the public listing).
+        clusters: {
+          type: "array",
+          items: { type: "string" },
+          minItems: 1,
+          maxItems: 2
+        }
       }
     }
   }
@@ -84,9 +92,11 @@ export const EXTRACT_SYSTEM_PROMPT = [
   "",
   "Prefer concepts, named systems, product categories, and framing terms with lasting relevance. Avoid generic vocabulary, marketing slogans, and unit names.",
   "",
-  "### B. Flag must-reads for Nicole",
+  "### B. Flag must-reads for Lexi's List",
   "",
-  "Optionally, set the top-level `mustRead` field on the response when (and only when) you judge that this article is worth Nicole reading in full. Most articles should NOT be flagged. The bar is editorial value, not news value — Nicole reads to understand the field, not to keep up with product launches.",
+  "Optionally, set the top-level `mustRead` field on the response when (and only when) you judge that this article is worth reading in full. Most articles should NOT be flagged. The bar is editorial value, not news value — readers come to Lexi's List to understand the field, not to keep up with product launches.",
+  "",
+  "Lexi's List is BOTH Nicole's personal reading queue AND a public page (at /lexis-list/) where any visitor can see your recommendations. Write the `reason` field with that public voice in mind: it should read as a brief, generous recommendation to a curious reader, not a private note. Avoid 'Nicole, you'll like…' framings; instead, describe what the piece offers.",
   "",
   "Flag if the article:",
   "- Introduces a substantive framing shift, new concept, or worldview about AI",
@@ -100,9 +110,11 @@ export const EXTRACT_SYSTEM_PROMPT = [
   "- Only repeats things already canonical in the graph",
   "- Is news-of-the-day with no lasting interpretive value",
   "",
-  "Priority levels: 1 = highly recommend (rare; reserve for genuinely outstanding pieces), 2 = interesting and worthwhile, 3 = if she has time. Be honest. The recommendation is precious because it's rare.",
+  "Priority levels: 1 = highly recommend (rare; reserve for genuinely outstanding pieces), 2 = interesting and worthwhile, 3 = if you have time. Be honest. The recommendation is precious because it's rare.",
   "",
-  "The `reason` should be one sentence — what makes this article worth her time, in your voice as her curator.",
+  "The `reason` should be one or two sentences — what makes this article worth a reader's time, in your voice as a curator.",
+  "",
+  "The `clusters` field should be 1-2 cluster ids (from the Available clusters list provided to you) that best describe the article's subject matter — used to group entries on the public page. These are about the article's topic, not the candidate terms' clusters (which can differ).",
   "",
   "Return JSON only."
 ].join("\n");

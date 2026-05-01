@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-01T23:16:53.227Z",
+  "generatedAt": "2026-05-01T23:47:41.997Z",
   "firstRunAt": "2026-04-27T01:07:31.335Z",
   "phase": 1,
   "headline": {
@@ -270,6 +270,98 @@
     ]
   },
   "clusters": {
+    "palette": [
+      {
+        "id": "critical",
+        "label": "Critical / Hype",
+        "hex": "#FF5555"
+      },
+      {
+        "id": "agentic",
+        "label": "Agentic Systems",
+        "hex": "#FF9040"
+      },
+      {
+        "id": "models",
+        "label": "Models",
+        "hex": "#FFB060"
+      },
+      {
+        "id": "technical",
+        "label": "Technical",
+        "hex": "#D0D040"
+      },
+      {
+        "id": "safety",
+        "label": "Safety",
+        "hex": "#FF6090"
+      },
+      {
+        "id": "human",
+        "label": "Human Skills",
+        "hex": "#40D080"
+      },
+      {
+        "id": "dyadic",
+        "label": "Dyadic Mind",
+        "hex": "#40C0D0"
+      },
+      {
+        "id": "evolved",
+        "label": "Evolved",
+        "hex": "#5090FF"
+      },
+      {
+        "id": "core",
+        "label": "Core",
+        "hex": "#C070FF"
+      },
+      {
+        "id": "tools",
+        "label": "Tools & Platforms",
+        "hex": "#70C8F8"
+      },
+      {
+        "id": "companies",
+        "label": "Companies",
+        "hex": "#9090A8"
+      },
+      {
+        "id": "work",
+        "label": "Work & Output",
+        "hex": "#E8A838"
+      },
+      {
+        "id": "autonomy",
+        "label": "Autonomy Spectrum",
+        "hex": "#58B8E8"
+      },
+      {
+        "id": "lifecycle",
+        "label": "Product Lifecycle",
+        "hex": "#B888D8"
+      },
+      {
+        "id": "business",
+        "label": "Business Reality",
+        "hex": "#48C888"
+      },
+      {
+        "id": "security",
+        "label": "AI Security",
+        "hex": "#E05050"
+      },
+      {
+        "id": "context",
+        "label": "Context Health",
+        "hex": "#A0D060"
+      },
+      {
+        "id": "landscape",
+        "label": "Model Landscape",
+        "hex": "#D0A050"
+      }
+    ],
     "distribution": [
       {
         "id": "agentic",

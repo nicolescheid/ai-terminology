@@ -238,6 +238,16 @@ export function computeMetrics({ longlist, proposals, notes, state, baseGraphSiz
     }))
     .sort((a, b) => b.count - a.count);
 
+  // Full cluster palette (every cluster known to the graph, not just those
+  // that have appeared on the longlist). Used by /lexis-list/ and any
+  // future page that needs to render arbitrary cluster ids — must-reads
+  // can carry clusters that have zero longlist entries.
+  const clusterPalette = Object.entries(clusters || {}).map(([id, c]) => ({
+    id,
+    label: c?.label || id,
+    hex: c?.hex || null
+  }));
+
   // ─── Velocity: agentic vs human-gated ───────────────────────────────
   // Derived from proposals: anything with status=applied that came in via
   // a PROPOSE/HUMAN_IN_LOOP gate counts as human-gated. Autonomous gate is
@@ -316,6 +326,7 @@ export function computeMetrics({ longlist, proposals, notes, state, baseGraphSiz
       newDomainsLast30d
     },
     clusters: {
+      palette: clusterPalette,
       distribution: clustersOrdered
     },
     velocity: {

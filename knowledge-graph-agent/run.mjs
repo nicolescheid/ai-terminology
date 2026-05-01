@@ -368,6 +368,10 @@ async function runMain(args, config, logger) {
       // (e.g., feed jitter) won't re-add it. Skip if already on the list.
       if (analysis.mustRead && !mustReads.entries.some(e => e.url === article.url)) {
         const novelTermCount = harvest.longlistAdditions.length;
+        // Validate cluster ids against the live cluster list — drop any
+        // hallucinated clusters; default to ['technical'] if all dropped.
+        const validClusters = (analysis.mustRead.clusters || [])
+          .filter(c => graph.clusters[c]);
         const flagged = {
           id: article.id,
           title: article.title,
@@ -377,6 +381,7 @@ async function runMain(args, config, logger) {
           summary: cleanText(analysis.summary || ""),
           priority: analysis.mustRead.priority,
           reason: cleanText(analysis.mustRead.reason || ""),
+          clusters: validClusters.length ? validClusters : ["technical"],
           novelTermsInArticle: novelTermCount,
           flaggedAt: report.generatedAt,
           status: "unread"
