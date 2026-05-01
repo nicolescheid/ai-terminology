@@ -1,0 +1,61 @@
+name: Build stamp
+
+# Writes /build.json with the deployed commit + timestamp on every push to
+# main. The site-wide menu pill (shared/menu.js) fetches it and renders a
+# 'build · <sha> · <date>' footer in the popup, so it's always visible
+# which version of the site is currently live.
+#
+# Loop avoidance: paths-ignore on build.json itself means the workflow's own
+# commit doesn't re-trigger it. Belt + suspenders: the commit is also tagged
+# [skip ci] so the Lexi cron workflows ignore it.
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - 'build.json'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-stamp
+  cancel-in-progress: true
+
+jobs:
+  stamp:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Write build.json
+        run: |
+          SHA="${{ github.sha }}"
+          SHORT="${SHA:0:7}"
+          NOW=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+          cat > build.json <<EOF
+          {
+            "commit": "$SHA",
+            "shortSha": "$SHORT",
+            "branch": "${{ github.ref_name }}",
+            "generatedAt": "$NOW"
+          }
+          EOF
+          cat build.json
+
+      - name: Commit if changed
+        run: |
+          SHA="${{ github.sha }}"
+          SHORT="${SHA:0:7}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add build.json
+          if git diff --staged --quiet; then
+            echo "No build stamp change — skipping commit."
+          else
+            git commit -m "Build stamp $SHORT [skip ci]"
+            git pull --rebase --strategy-option=theirs origin main
+            git push
+          fi

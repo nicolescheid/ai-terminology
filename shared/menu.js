@@ -87,7 +87,29 @@
 
     root.appendChild(panel);
 
-    function open()  { panel.hidden = false; pill.setAttribute("aria-expanded", "true"); }
+    // Build stamp footer — fetched once on first open. Tells you which
+    // commit is currently deployed (saves the "is it live yet?" round-trip).
+    var stampFetched = false;
+    function loadBuildStamp() {
+      if (stampFetched) return;
+      stampFetched = true;
+      fetch("/build.json", { cache: "no-store" })
+        .then(function (r) { return r.ok ? r.json() : null; })
+        .then(function (stamp) {
+          if (!stamp || !stamp.shortSha) return;
+          var footer = document.createElement("a");
+          footer.className = "site-menu__build";
+          footer.href = "https://github.com/nicolescheid/ai-terminology/commit/" + stamp.commit;
+          footer.target = "_blank";
+          footer.rel = "noopener noreferrer";
+          var date = (stamp.generatedAt || "").slice(0, 10);
+          footer.textContent = "build · " + stamp.shortSha + (date ? " · " + date : "");
+          panel.appendChild(footer);
+        })
+        .catch(function () { /* fail silently — stamp is informational */ });
+    }
+
+    function open()  { panel.hidden = false; pill.setAttribute("aria-expanded", "true"); loadBuildStamp(); }
     function close() { panel.hidden = true;  pill.setAttribute("aria-expanded", "false"); }
     function toggle() { if (panel.hidden) open(); else close(); }
 

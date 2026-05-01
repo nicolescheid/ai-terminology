@@ -109,6 +109,24 @@
   color: #8a857a;
 }
 
+.site-menu__build {
+  display: block;
+  margin: 8px 14px 4px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(31, 29, 24, 0.08);
+  font-family: 'JetBrains Mono', 'IBM Plex Mono', ui-monospace, monospace;
+  font-size: 9px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #a39e90;
+  text-decoration: none;
+}
+.site-menu__build:hover,
+.site-menu__build:focus-visible {
+  color: #5a6b8f;
+  outline: none;
+}
+
 @media (max-width: 600px) {
   .site-menu {
     top: 18px;
