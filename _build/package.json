@@ -1,0 +1,16 @@
+{
+  "name": "ai-terminology-frontend-build",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Build tooling for the ai-terminology.com homepage (JSX pre-compilation + PNG→WebP conversion). Separate from knowledge-graph-agent/ which has its own deps.",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "build:jsx": "node build.mjs --jsx-only",
+    "build:images": "node build.mjs --images-only"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.0",
+    "sharp": "^0.33.5"
+  }
+}
