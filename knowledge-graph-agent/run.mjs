@@ -369,9 +369,12 @@ async function runMain(args, config, logger) {
       if (analysis.mustRead && !mustReads.entries.some(e => e.url === article.url)) {
         const novelTermCount = harvest.longlistAdditions.length;
         // Validate cluster ids against the live cluster list — drop any
-        // hallucinated clusters; default to ['technical'] if all dropped.
+        // hallucinated clusters; cap at 2 (the prompt asks for 1-2 but the
+        // API schema can't enforce array length); default to ['technical']
+        // if all dropped.
         const validClusters = (analysis.mustRead.clusters || [])
-          .filter(c => graph.clusters[c]);
+          .filter(c => graph.clusters[c])
+          .slice(0, 2);
         const flagged = {
           id: article.id,
           title: article.title,

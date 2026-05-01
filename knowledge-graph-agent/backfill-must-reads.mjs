@@ -41,7 +41,10 @@ const JUDGMENT_SCHEMA = {
       properties: {
         priority: { type: "integer", enum: [1, 2, 3] },
         reason: { type: "string" },
-        clusters: { type: "array", items: { type: "string" }, minItems: 1, maxItems: 2 }
+        // No minItems/maxItems — the Anthropic json_schema output config
+        // doesn't accept them on arrays. Count enforced in the prompt +
+        // by the consumer code (.slice(0, 2) below).
+        clusters: { type: "array", items: { type: "string" } }
       }
     },
     summary: { type: "string" }
@@ -192,7 +195,9 @@ async function main() {
       continue;
     }
 
-    const validClusters = (judgment.mustRead.clusters || []).filter(c => graph.clusters[c]);
+    const validClusters = (judgment.mustRead.clusters || [])
+      .filter(c => graph.clusters[c])
+      .slice(0, 2);
     const flagged = {
       id: seen.id || article.id,
       title: article.title || seen.title,

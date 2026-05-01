@@ -43,11 +43,11 @@ export const NEW_TERM_SCHEMA = {
         reason: { type: "string" },
         // 1-2 cluster ids from the available clusters that best describe
         // the article's subject matter (used to group the public listing).
+        // Count enforced via the prompt + runtime validation — Anthropic's
+        // json_schema output doesn't accept minItems / maxItems on arrays.
         clusters: {
           type: "array",
-          items: { type: "string" },
-          minItems: 1,
-          maxItems: 2
+          items: { type: "string" }
         }
       }
     }
