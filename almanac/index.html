@@ -21,19 +21,106 @@
 <style>
   *{box-sizing:border-box;margin:0;padding:0}
   body{background:#f7f5f0;font-family:'IBM Plex Sans',sans-serif;font-weight:300;color:#2c2c2c;min-height:100vh;line-height:1.6}
-  .wrap{max-width:760px;margin:0 auto;padding:80px 24px 96px}
-  .wm{font-family:'Instrument Serif',serif;font-size:34px;margin-bottom:6px}
+  .wrap{max-width:880px;margin:0 auto;padding:80px 24px 96px}
+
+  /* Page header */
+  .wm{font-family:'Instrument Serif',serif;font-size:38px;line-height:1.05;margin-bottom:6px}
   .wm em{font-style:italic;color:#5a6b8f}
-  .sub{font-size:11px;font-weight:400;letter-spacing:.14em;text-transform:uppercase;color:#888;margin-bottom:36px}
-  h2{font-family:'Instrument Serif',serif;font-size:22px;font-weight:400;margin:36px 0 10px;color:#1f1d18}
-  h2 em{font-style:italic;color:#5a6b8f}
-  p{font-size:15px;color:#3a3a36;margin-bottom:14px}
-  p em{font-style:italic;color:#5a6b8f}
-  .placeholder{background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:10px;padding:28px 32px;margin-top:24px}
-  .placeholder .label{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#a39e90;margin-bottom:8px;font-family:'JetBrains Mono',monospace}
-  .placeholder ul{margin:14px 0 0 18px;padding:0}
-  .placeholder li{font-size:14px;color:#3a3a36;margin-bottom:6px;line-height:1.5}
-  .foot{margin-top:48px;font-size:11px;color:#999;letter-spacing:.04em}
+  .sub{font-size:11px;font-weight:400;letter-spacing:.14em;text-transform:uppercase;color:#888;margin-bottom:20px}
+  .lede{font-size:16px;color:#3a3a36;margin-bottom:36px;max-width:62ch}
+  .lede em{font-style:italic;color:#5a6b8f}
+
+  /* Section */
+  section{margin-bottom:44px}
+  section h2{font-family:'Instrument Serif',serif;font-size:24px;font-weight:400;color:#1f1d18;margin-bottom:4px}
+  section h2 em{font-style:italic;color:#5a6b8f}
+  section .sectionsub{font-size:11px;font-weight:400;letter-spacing:.10em;text-transform:uppercase;color:#a39e90;margin-bottom:18px}
+  section .empty{font-size:13px;color:#999;font-style:italic;padding:8px 0}
+
+  /* Headline cards */
+  .headline{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:8px}
+  .headline .stat{background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:10px;padding:18px 16px}
+  .headline .num{font-family:'Instrument Serif',serif;font-size:34px;line-height:1;color:#1f1d18;margin-bottom:6px}
+  .headline .lbl{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#888;font-family:'JetBrains Mono',monospace}
+
+  /* Cards */
+  .card{background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:10px;padding:22px 24px}
+
+  /* Stat rows */
+  .statrow{display:flex;justify-content:space-between;align-items:baseline;padding:8px 0;border-bottom:1px solid rgba(0,0,0,.05)}
+  .statrow:last-child{border-bottom:none}
+  .statrow .name{font-size:14px;color:#3a3a36}
+  .statrow .name .hint{font-size:11px;color:#a39e90;margin-left:8px;font-style:italic}
+  .statrow .val{font-family:'JetBrains Mono',monospace;font-size:13px;color:#2c2c2c}
+
+  /* Almost-there list */
+  .almost{display:flex;flex-direction:column;gap:14px}
+  .almost .item{background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:10px;padding:14px 18px}
+  .almost .item .head{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:6px}
+  .almost .item .label{font-size:15px;color:#1f1d18;font-weight:400}
+  .almost .item .full{font-size:11px;color:#888;font-style:italic;margin-left:6px}
+  .almost .item .clusters{display:flex;gap:4px;flex-wrap:wrap}
+  .almost .item .cluster{font-size:9px;letter-spacing:.10em;text-transform:uppercase;padding:2px 7px;border-radius:10px;background:rgba(90,107,143,.10);color:#5a6b8f}
+  .almost .item .meta{font-size:11px;color:#888;font-family:'JetBrains Mono',monospace;letter-spacing:.04em;margin-bottom:8px}
+  .almost .item .gap{font-size:12px;color:#7a7568;font-style:italic}
+  .almost .item .gap.ready{color:#2f5f1f;font-style:normal;font-weight:500}
+  .almost .item .domains{margin-top:6px;font-size:11px;color:#a39e90;font-family:'JetBrains Mono',monospace}
+
+  /* Bar lists (sources) */
+  .bars{display:flex;flex-direction:column;gap:6px}
+  .bars .bar{display:grid;grid-template-columns:1fr 36px;gap:8px;align-items:center;font-size:12px}
+  .bars .bar .lbl{position:relative;height:22px;display:flex;align-items:center}
+  .bars .bar .fill{position:absolute;inset:0;background:linear-gradient(90deg,rgba(90,107,143,.16),rgba(90,107,143,.08));border-radius:4px;transform-origin:left center}
+  .bars .bar .lbl span{position:relative;padding-left:10px;color:#3a3a36}
+  .bars .bar .n{font-family:'JetBrains Mono',monospace;color:#666;font-size:11px;text-align:right}
+
+  /* Cluster distribution — stacked horizontal bar */
+  .stackbar{display:flex;height:36px;border-radius:6px;overflow:hidden;margin-bottom:14px;border:1px solid rgba(0,0,0,.08)}
+  .stackbar .seg{display:flex;align-items:center;justify-content:center;font-size:10px;color:rgba(0,0,0,.7);font-weight:500;letter-spacing:.04em;min-width:18px}
+  .clusterlegend{display:flex;flex-wrap:wrap;gap:8px 14px}
+  .clusterlegend .item{display:flex;align-items:center;gap:6px;font-size:12px}
+  .clusterlegend .swatch{width:10px;height:10px;border-radius:2px}
+
+  /* Velocity */
+  .velocity .bar2{display:flex;height:42px;border-radius:6px;overflow:hidden;margin-bottom:14px;border:1px solid rgba(0,0,0,.08)}
+  .velocity .seg{display:flex;align-items:center;justify-content:center;font-size:11px;color:#fff;letter-spacing:.04em;font-weight:500}
+  .velocity .seg.human{background:#5a6b8f}
+  .velocity .seg.agentic{background:#8a9070}
+  .velocity .seg.empty{background:rgba(0,0,0,.04);color:#888;flex:1}
+  .velocity .note{font-size:13px;color:#3a3a36;font-style:italic;line-height:1.5}
+
+  /* Growth curve SVG */
+  .growth{margin-top:8px}
+  .growth svg{display:block;width:100%;height:240px;background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:10px}
+  .growth .axis{fill:#a39e90;font-size:10px;font-family:'JetBrains Mono',monospace;letter-spacing:.04em}
+  .growth .gridline{stroke:rgba(0,0,0,.06);stroke-width:1}
+  .growth .area-graph{fill:rgba(90,107,143,.18)}
+  .growth .area-longlist{fill:rgba(180,140,80,.18)}
+  .growth .line-graph{fill:none;stroke:#5a6b8f;stroke-width:2}
+  .growth .line-longlist{fill:none;stroke:#a8854a;stroke-width:2}
+  .growth .single{fill:#5a6b8f}
+  .growth .legend{display:flex;gap:18px;margin-top:10px;font-size:12px;color:#3a3a36}
+  .growth .legend .swatch{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;vertical-align:baseline}
+
+  /* Coming soon */
+  .coming{background:#fbf9f3;border:1px dashed rgba(0,0,0,.14);border-radius:10px;padding:16px 20px}
+  .coming .lbl{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#a39e90;margin-bottom:6px;font-family:'JetBrains Mono',monospace}
+  .coming p{font-size:13px;color:#7a7568;font-style:italic}
+
+  /* Footer */
+  .foot{margin-top:48px;font-size:11px;color:#999;letter-spacing:.04em;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+  .foot a{color:#5a6b8f;text-decoration:none}
+  .foot a:hover{text-decoration:underline}
+
+  /* Loading state */
+  #loading{padding:40px 0;text-align:center;color:#888;font-size:13px}
+
+  @media (max-width:600px){
+    .wrap{padding:60px 16px 80px}
+    .wm{font-size:32px}
+    .headline{grid-template-columns:repeat(2,1fr)}
+    .almost .item .head{flex-direction:column;align-items:flex-start;gap:6px}
+  }
 </style>
 </head>
 <body>
@@ -41,25 +128,74 @@
   <div class="wm">Lexi's <em>Almanac</em></div>
   <div class="sub">Behind the curtain · Public</div>
 
-  <p>What <em>Lexi</em> has read, found, and proposed since she started keeping watch on AI terminology — the headline curves, the source ecosystem, the terms close to graduating, the costs of running an AI lexicographer.</p>
+  <p class="lede">What <em>Lexi</em> has read, found, and proposed since she started keeping watch on AI terminology — the headline curves, the source ecosystem, the terms close to graduating, and the costs of running an AI lexicographer.</p>
 
-  <div class="placeholder">
-    <div class="label">Coming soon · Phase 3</div>
-    <p>The <em>Almanac</em> is being built. Sections in the works:</p>
-    <ul>
-      <li><strong>Growth curves</strong> — graph and longlist size over time</li>
-      <li><strong>This week</strong> — articles read, terms added, sources merged, audit flags raised</li>
-      <li><strong>Almost there</strong> — terms closest to graph promotion</li>
-      <li><strong>Source ecosystem</strong> — where the evidence comes from, domain diversity</li>
-      <li><strong>Curator's hand</strong> — cluster distribution, approval shape, decision velocity</li>
-      <li><strong>Agentic vs. human</strong> — how much Lexi proposes vs. acts on, evolving as autonomy grows</li>
-      <li><strong>Costs</strong> — tokens, dollars, what an AI lexicographer actually costs to run</li>
-      <li><strong>Audit</strong> — what the auditor watches for, and what it has flagged</li>
-    </ul>
+  <div id="loading">Loading…</div>
+  <div id="content" hidden>
+
+    <section id="headline-section">
+      <div class="headline" id="headline"></div>
+      <div class="sectionsub" id="firstrun"></div>
+    </section>
+
+    <section>
+      <h2>The growth <em>curves</em></h2>
+      <div class="sectionsub">graph (Tier 1) and longlist (Tier 2) over time</div>
+      <div class="growth" id="growth"></div>
+    </section>
+
+    <section>
+      <h2>This <em>week</em></h2>
+      <div class="sectionsub">last 7 days of activity</div>
+      <div class="card" id="thisweek"></div>
+    </section>
+
+    <section>
+      <h2>Almost <em>there</em></h2>
+      <div class="sectionsub">terms closest to graph promotion (spec §7 credibility bar)</div>
+      <div class="almost" id="almost"></div>
+    </section>
+
+    <section>
+      <h2>Where the <em>evidence</em> comes from</h2>
+      <div class="sectionsub">domains Lexi has read, by article count</div>
+      <div class="card" id="sources"></div>
+    </section>
+
+    <section>
+      <h2>Cluster <em>distribution</em></h2>
+      <div class="sectionsub">how the longlist breaks down by topic</div>
+      <div class="card" id="clusters"></div>
+    </section>
+
+    <section class="velocity">
+      <h2>Velocity · agentic vs <em>human-gated</em></h2>
+      <div class="sectionsub">how much Lexi proposes vs. acts on autonomously</div>
+      <div class="card" id="velocity"></div>
+    </section>
+
+    <section>
+      <h2>Decision <em>flow</em></h2>
+      <div class="sectionsub">proposals queue at a glance</div>
+      <div class="card" id="proposals"></div>
+    </section>
+
+    <section>
+      <h2>What does this <em>cost</em>?</h2>
+      <div class="sectionsub">tokens, dollars, what an AI lexicographer takes to run</div>
+      <div id="costs"></div>
+    </section>
+
+    <section>
+      <h2>The <em>auditor</em></h2>
+      <div class="sectionsub">heuristic checks Lexi's work — what's been flagged</div>
+      <div class="card" id="audit"></div>
+    </section>
+
+    <div class="foot" id="foot"></div>
   </div>
-
-  <div class="foot">In the meantime, see the <a href="/" style="color:#5a6b8f;text-decoration:none">Graph</a> for what's currently canonical.</div>
 </div>
 <script src="/shared/menu.js?v=2" defer></script>
+<script src="almanac.js?v=1" defer></script>
 </body>
 </html>
