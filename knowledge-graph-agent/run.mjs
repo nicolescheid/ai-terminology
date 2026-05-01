@@ -103,6 +103,10 @@ async function runMain(args, config, logger) {
     meta: { generatedAt: null, unreadCount: 0, totalCount: 0, note: "Notes for Nicole — Lexi's manager channel (spec §6)." },
     entries: []
   });
+  const mustReads = await loadJson(config.mustReadsPath, {
+    meta: { generatedAt: null, unreadCount: 0, totalCount: 0, note: "Lexi's must-reads — articles she flags as worth Nicole reading in full." },
+    entries: []
+  });
 
   const mergedNodes = mergeNodes(graph.nodes, patch);
 
@@ -357,6 +361,38 @@ async function runMain(args, config, logger) {
           continue;
         }
       }
+
+      // Must-read flagging — Lexi's editorial channel. If she set
+      // `analysis.mustRead` on this article, queue it for Nicole's reading list.
+      // Dedup by article URL: re-fetching the same article on a later run
+      // (e.g., feed jitter) won't re-add it. Skip if already on the list.
+      if (analysis.mustRead && !mustReads.entries.some(e => e.url === article.url)) {
+        const novelTermCount = harvest.longlistAdditions.length;
+        const flagged = {
+          id: article.id,
+          title: article.title,
+          url: article.url,
+          source: article.sourceLabel,
+          publishedAt: article.publishedAt,
+          summary: cleanText(analysis.summary || ""),
+          priority: analysis.mustRead.priority,
+          reason: cleanText(analysis.mustRead.reason || ""),
+          novelTermsInArticle: novelTermCount,
+          flaggedAt: report.generatedAt,
+          status: "unread"
+        };
+        await route(
+          ACTIONS.FLAG_MUST_READ,
+          { kind: "article", id: article.id },
+          { flagged },
+          `Lexi flagged "${article.title}" as a must-read (priority ${flagged.priority}).`,
+          "extract-flow",
+          () => {
+            mustReads.entries.push(flagged);
+            harvest.mustReadFlagged = { priority: flagged.priority, reason: flagged.reason };
+          }
+        );
+      }
     }
 
     // Definition review runs against existing graph nodes. Refresh outputs are
@@ -450,6 +486,12 @@ async function runMain(args, config, logger) {
     totalCount: notes.entries.length,
     note: "Notes for Nicole — Lexi's manager channel (spec §6). Mandatory entry types fire when their triggering condition is met; discretionary entries are observations Lexi thinks Nicole should see. Set status to 'read', 'actioned', or 'dismissed' as appropriate."
   };
+  mustReads.meta = {
+    generatedAt: report.generatedAt,
+    unreadCount: mustReads.entries.filter(e => e.status === "unread").length,
+    totalCount: mustReads.entries.length,
+    note: "Lexi's must-reads — articles she flags as worth Nicole reading in full. Editorial signal, not news feed. Set status to 'read' or 'dismissed' via mark-must-reads.mjs."
+  };
   state.lastRunAt = report.generatedAt;
 
   await writeJson(config.patchJsonPath, patch);
@@ -457,6 +499,7 @@ async function runMain(args, config, logger) {
   await writeJson(config.longlistPath, longlist);
   await writeJson(config.proposalsPath, proposals);
   await writeJson(config.notesForNicolePath, notes);
+  await writeJson(config.mustReadsPath, mustReads);
   await writeJson(config.statePath, state);
   await writeJson(config.reportPath, report);
 
@@ -468,6 +511,8 @@ async function runMain(args, config, logger) {
   const pendingTotal = proposals.meta.pendingCount;
   const notesUnread = notes.meta.unreadCount;
   const notesAddedThisRun = notes.entries.filter(n => n.writtenAt === report.generatedAt).length;
+  const mustReadsUnread = mustReads.meta.unreadCount;
+  const mustReadsAddedThisRun = mustReads.entries.filter(e => e.flaggedAt === report.generatedAt).length;
   if (paused) {
     console.log(`Run PAUSED at Phase ${config.phase}: ${pauseReasons.map(r => r.type).join(", ")}.`);
     console.log(`No work performed. See notes-for-nicole.json for the pause-context note + clear the cause to resume.`);
@@ -477,6 +522,7 @@ async function runMain(args, config, logger) {
     console.log(`Proposals queue: ${queuedThisRun} queued this run, ${pendingTotal} pending total (review at proposals.json).`);
   }
   console.log(`Notes for Nicole: ${notesAddedThisRun} new this run, ${notesUnread} unread total (review at notes-for-nicole.json).`);
+  console.log(`Must-reads: ${mustReadsAddedThisRun} new this run, ${mustReadsUnread} unread total (review at must-reads.json).`);
 
   await logger.runEnd({
     paused,

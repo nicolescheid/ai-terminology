@@ -70,6 +70,16 @@ body{background:#f7f5f0;font-family:'IBM Plex Sans',sans-serif;font-weight:300;c
 .tag.throughput_cap_hit{background:#f3e9f9;border-color:#bf95e0;color:#5a1f7a}
 .tag.run_paused{background:#f0eee8;border-color:#888;color:#444}
 .tag.discretionary{background:rgba(0,0,0,.04);color:#666}
+.tag.mr-priority{font-family:'IBM Plex Mono',monospace;background:rgba(90,107,143,.10);border-color:rgba(90,107,143,.25);color:#5a6b8f}
+.tag.mr-priority.p1{background:#fbecdc;border-color:#e0bf95;color:#7a4a1f}
+.tag.mr-priority.p2{background:#e9f1e3;border-color:#b6d09c;color:#2f5f1f}
+.tag.mr-priority.p3{background:rgba(0,0,0,.04);color:#888}
+.mr-title{font-size:14px;color:#5a6b8f;text-decoration:none;font-weight:500}
+.mr-title:hover{text-decoration:underline}
+.mr-source{font-size:11px;letter-spacing:.04em;color:#a39e90;font-family:'IBM Plex Mono',monospace;margin-left:6px}
+.mr-reason{font-size:13px;color:#3a3a36;font-style:italic;margin-top:6px}
+.mr-summary{margin-top:6px;color:#666}
+.mr-meta{font-size:11px;color:#a39e90;margin-top:6px;font-family:'IBM Plex Mono',monospace}
 .tag.pending{background:#f5d250;border-color:#d4a814;color:#5a4400}
 .tag.approved{background:#e9f1e3;border-color:#b6d09c;color:#2f5f1f}
 .tag.rejected{background:#eee;border-color:#ccc;color:#666}
@@ -122,7 +132,8 @@ const PATHS = {
   notes:     "/knowledge-graph-agent/notes-for-nicole.json",
   proposals: "/knowledge-graph-agent/proposals.json",
   longlist:  "/knowledge-graph-agent/longlist.json",
-  state:     "/knowledge-graph-agent/state.json"
+  state:     "/knowledge-graph-agent/state.json",
+  mustReads: "/knowledge-graph-agent/must-reads.json"
 };
 
 const SEVEN_DAYS_MS = 7 * 24 * 60 * 60 * 1000;
@@ -202,6 +213,62 @@ function renderStatusBanner(notes) {
         el("div", { class: "why" }, "No pause conditions active."))
     ));
   }
+}
+
+function renderMustReads(mustReads) {
+  const card = el("div", { class: "card" });
+  card.appendChild(el("h2", null, "Must reads — for ", el("em", null, "Nicole")));
+  card.appendChild(el("div", { class: "sub" }, "articles Lexi flagged as worth your time in full"));
+  if (!mustReads) {
+    card.appendChild(el("div", { class: "error" }, "Couldn't load must-reads.json"));
+    return card;
+  }
+  const all = mustReads.entries || [];
+  const unread = all.filter(e => e.status === "unread");
+  const pills = el("div", { class: "pills" });
+  pills.appendChild(el("span", { class: unread.length > 0 ? "pill alert" : "pill" },
+    "Unread ", el("strong", null, String(unread.length))));
+  pills.appendChild(el("span", { class: "pill" }, "Total ", el("strong", null, String(all.length))));
+  card.appendChild(pills);
+
+  if (all.length === 0) {
+    card.appendChild(el("div", { class: "empty" },
+      "No must-reads yet. Lexi flags articles only when they clear an editorial bar — most articles don't."));
+    return card;
+  }
+
+  // Unread first, then by priority (lower = higher priority), then newest first.
+  const sorted = [...all].sort((a, b) => {
+    if (a.status === "unread" && b.status !== "unread") return -1;
+    if (b.status === "unread" && a.status !== "unread") return 1;
+    if ((a.priority || 9) !== (b.priority || 9)) return (a.priority || 9) - (b.priority || 9);
+    return (b.flaggedAt || "").localeCompare(a.flaggedAt || "");
+  });
+
+  for (const e of sorted) {
+    const row = el("div", { class: "row" + (e.status === "unread" ? " unread" : "") });
+    const priorityClass = e.priority === 1 ? "p1" : e.priority === 2 ? "p2" : "p3";
+    row.appendChild(el("div", { class: "meta" },
+      el("span", { class: "tag " + e.status }, e.status),
+      el("span", { class: "tag mr-priority " + priorityClass }, "p" + (e.priority || "?")),
+      el("span", { class: "when" }, fmtAgo(e.flaggedAt))
+    ));
+    const body = el("div", { class: "body" });
+    const head = el("div", { class: "head" });
+    head.appendChild(el("a", { class: "title mr-title", href: e.url, target: "_blank", rel: "noopener" },
+      e.title || "(untitled)"));
+    head.appendChild(el("span", { class: "mr-source" }, e.source || ""));
+    body.appendChild(head);
+    if (e.reason) body.appendChild(el("div", { class: "suggested mr-reason" }, "“" + e.reason + "”"));
+    if (e.summary) body.appendChild(el("div", { class: "details mr-summary" }, e.summary));
+    if (e.novelTermsInArticle > 0) {
+      body.appendChild(el("div", { class: "mr-meta" },
+        e.novelTermsInArticle + " novel term" + (e.novelTermsInArticle === 1 ? "" : "s") + " surfaced from this article."));
+    }
+    row.appendChild(body);
+    card.appendChild(row);
+  }
+  return card;
 }
 
 function renderNotes(notes) {
@@ -357,17 +424,20 @@ function renderRunInfo(state) {
 }
 
 (async function main() {
-  const [notes, proposals, longlist, state] = await Promise.all([
+  const [notes, proposals, longlist, state, mustReads] = await Promise.all([
     loadJson(PATHS.notes),
     loadJson(PATHS.proposals),
     loadJson(PATHS.longlist),
-    loadJson(PATHS.state)
+    loadJson(PATHS.state),
+    loadJson(PATHS.mustReads)
   ]);
 
   renderStatusBanner(notes);
 
   const content = document.getElementById("content");
   content.innerHTML = "";
+  // Must-reads first — pleasant channel before the operational ones.
+  content.appendChild(renderMustReads(mustReads));
   content.appendChild(renderNotes(notes));
   content.appendChild(renderProposals(proposals));
   content.appendChild(renderLonglist(longlist));

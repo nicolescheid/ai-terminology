@@ -31,7 +31,8 @@ export const ACTIONS = Object.freeze({
   // Communication channels
   CURATORS_NOTES_ENTRY: "curators_notes_entry",
   WORD_OF_THE_DAY: "word_of_the_day",
-  NOTES_FOR_NICOLE: "notes_for_nicole"
+  NOTES_FOR_NICOLE: "notes_for_nicole",
+  FLAG_MUST_READ: "flag_must_read"
 });
 
 // Gate types — what happens when Lexi attempts an action.
@@ -76,7 +77,11 @@ export const PERMISSIONS = Object.freeze({
 
   [ACTIONS.CURATORS_NOTES_ENTRY]:             { 0: GATES.PROPOSE,       1: GATES.PROPOSE,       2: GATES.AUTONOMOUS },
   [ACTIONS.WORD_OF_THE_DAY]:                  { 0: GATES.HUMAN_IN_LOOP, 1: GATES.HUMAN_IN_LOOP, 2: GATES.HUMAN_IN_LOOP },
-  [ACTIONS.NOTES_FOR_NICOLE]:                 { 0: GATES.AUTONOMOUS,    1: GATES.AUTONOMOUS,    2: GATES.AUTONOMOUS }
+  [ACTIONS.NOTES_FOR_NICOLE]:                 { 0: GATES.AUTONOMOUS,    1: GATES.AUTONOMOUS,    2: GATES.AUTONOMOUS },
+  // Personal recommendation channel — Lexi flags articles she thinks Nicole
+  // would want to read in full. Same gate as Notes for Nicole (it's another
+  // private channel from Lexi to her manager, just on the pleasant side).
+  [ACTIONS.FLAG_MUST_READ]:                   { 0: GATES.AUTONOMOUS,    1: GATES.AUTONOMOUS,    2: GATES.AUTONOMOUS }
 });
 
 // Resolve the gate for (action, phase). Returns null when the action is not

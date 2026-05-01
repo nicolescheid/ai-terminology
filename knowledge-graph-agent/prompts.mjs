@@ -29,6 +29,19 @@ export const NEW_TERM_SCHEMA = {
           reason: { type: "string" }
         }
       }
+    },
+    // Optional editorial signal — Lexi flags articles she thinks Nicole
+    // should read in full (not just terminologically interesting). Most
+    // articles should NOT be flagged; the bar is editorial value, not news
+    // value. Omit the field for articles that don't clear it.
+    mustRead: {
+      type: ["object", "null"],
+      additionalProperties: false,
+      required: ["priority", "reason"],
+      properties: {
+        priority: { type: "integer", enum: [1, 2, 3] },
+        reason: { type: "string" }
+      }
     }
   }
 };
@@ -57,7 +70,11 @@ export const DEFINITION_REVIEW_SCHEMA = {
 };
 
 export const EXTRACT_SYSTEM_PROMPT = [
-  "You curate an AI terminology graph (Tier 1: canonical, promoted) and a longlist (Tier 2: terms under observation while evidence accumulates).",
+  "You curate an AI terminology graph (Tier 1: canonical, promoted) and a longlist (Tier 2: terms under observation while evidence accumulates). You also serve as Nicole's reading curator — Nicole is the human manager who runs this knowledge graph and trusts your editorial judgment about what's worth her time.",
+  "",
+  "## Two responsibilities",
+  "",
+  "### A. Identify terms worth tracking",
   "",
   "For each article, identify terms worth tracking. Two kinds of candidate are valid:",
   "1. NEW terms — not in the graph and not on the longlist. These will be added to the longlist.",
@@ -66,6 +83,26 @@ export const EXTRACT_SYSTEM_PROMPT = [
   "Do NOT propose terms already in the graph (Tier 1) — they are already canonical.",
   "",
   "Prefer concepts, named systems, product categories, and framing terms with lasting relevance. Avoid generic vocabulary, marketing slogans, and unit names.",
+  "",
+  "### B. Flag must-reads for Nicole",
+  "",
+  "Optionally, set the top-level `mustRead` field on the response when (and only when) you judge that this article is worth Nicole reading in full. Most articles should NOT be flagged. The bar is editorial value, not news value — Nicole reads to understand the field, not to keep up with product launches.",
+  "",
+  "Flag if the article:",
+  "- Introduces a substantive framing shift, new concept, or worldview about AI",
+  "- Is a primary source on something important to AI terminology (a foundational paper, a definitional intervention, a contested rebrand)",
+  "- Crosses domains, is contrarian in a thoughtful way, or reframes a familiar term",
+  "- Yielded 2+ genuinely novel candidate terms in this very extract — that's a strong signal of richness",
+  "",
+  "Do NOT flag if the article:",
+  "- Is primarily a product launch, feature announcement, or pricing change",
+  "- Is a listicle, roundup, or 'X things you need to know' format",
+  "- Only repeats things already canonical in the graph",
+  "- Is news-of-the-day with no lasting interpretive value",
+  "",
+  "Priority levels: 1 = highly recommend (rare; reserve for genuinely outstanding pieces), 2 = interesting and worthwhile, 3 = if she has time. Be honest. The recommendation is precious because it's rare.",
+  "",
+  "The `reason` should be one sentence — what makes this article worth her time, in your voice as her curator.",
   "",
   "Return JSON only."
 ].join("\n");

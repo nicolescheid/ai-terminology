@@ -85,6 +85,7 @@ jobs:
           git add knowledge-graph-agent/longlist.json \
                   knowledge-graph-agent/proposals.json \
                   knowledge-graph-agent/notes-for-nicole.json \
+                  knowledge-graph-agent/must-reads.json \
                   knowledge-graph-agent/state.json \
                   knowledge-graph-agent/agent-patch.json \
                   knowledge-graph-agent/out/latest-report.json \

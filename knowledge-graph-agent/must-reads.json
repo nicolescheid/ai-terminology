@@ -1,0 +1,9 @@
+{
+  "meta": {
+    "generatedAt": null,
+    "unreadCount": 0,
+    "totalCount": 0,
+    "note": "Lexi's must-reads — articles she flags as worth Nicole reading in full. Editorial signal, not news feed. Set status to 'read' or 'dismissed' via mark-must-reads.mjs."
+  },
+  "entries": []
+}

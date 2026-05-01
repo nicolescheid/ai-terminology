@@ -10,6 +10,7 @@ export default {
   longlistPath: path.resolve(__dirname, "./longlist.json"),
   proposalsPath: path.resolve(__dirname, "./proposals.json"),
   notesForNicolePath: path.resolve(__dirname, "./notes-for-nicole.json"),
+  mustReadsPath: path.resolve(__dirname, "./must-reads.json"),
   statePath: path.resolve(__dirname, "./state.json"),
   reportPath: path.resolve(__dirname, "./out/latest-report.json"),
   // Deterministic event log (spec §11). Append-only NDJSON. Gitignored —
