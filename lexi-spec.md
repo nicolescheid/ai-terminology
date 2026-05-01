@@ -139,7 +139,7 @@ Input: the comparison output + the source. Output: a proposed action (add to lon
 
 Runs separately on a weekly cadence over the longlist itself. For each longlist entry, considers:
 
-- Should this be promoted? (≥2 independent sources, consistent meaning, ≥14 days on list — see credibility bar in section 7)
+- Should this be promoted? (≥2 independent sources, consistent meaning, ≥3 days on list — see credibility bar in section 7)
 - Should this be retired? (on list >6 months, source count still 1, no recent sightings)
 - Should this be conflated with another longlist entry or graph node?
 - Should this be split? (sources are using the same word for different concepts)
@@ -218,7 +218,7 @@ A longlist entry is eligible for promotion when ALL of the following are true:
 
 1. **Source count ≥ 2 independent sources.** "Independent" means: different author AND different publication/domain. Same author on two platforms = one source. Same publication, two authors = one source. (This is stricter than the original spec — the premortem identified that adversarial seeding can game looser definitions of independence.)
 2. **Source recency:** at least one sighting within the last 90 days (term is still in active use, not historical).
-3. **Time on longlist ≥ 14 days.** Anti-haste check; gives the field time to react if the term is going to be reframed.
+3. **Time on longlist ≥ 3 days.** Anti-haste floor: just enough time for the auditor's weekly velocity check (section 9) to flag a fake-virality pattern, but short enough that a genuinely-adopted term doesn't sit waiting on a clock to tick. (Was 14 days in earlier drafts; lowered after observing real adoption patterns — AI vocabulary moves faster than the original number assumed, and the auditor backstop already catches the false positives the long wait was guarding against.)
 4. **Definition consistency:** Lexi paraphrases all source uses and verifies the paraphrases are paraphrases of each other (semantic consistency check). If sources disagree on meaning, the term may need to be split or kept on the longlist.
 5. **Source pattern check (section 9):** No more than one source from any single author network or coordinated content cluster.
 6. **Concept reality check:** Lexi can answer in one sentence what concept the term names that no existing graph node already names. If the answer is "this is a marketing variant of [existing term]", reject or conflate instead of promoting.

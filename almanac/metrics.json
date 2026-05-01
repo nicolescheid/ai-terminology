@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-01T20:47:55.319Z",
+  "generatedAt": "2026-05-01T23:16:53.227Z",
   "firstRunAt": "2026-04-27T01:07:31.335Z",
   "phase": 1,
   "headline": {
@@ -28,14 +28,14 @@
       ],
       "sourceCount": 5,
       "independentSources": 3,
-      "daysOnLonglist": 4,
+      "daysOnLonglist": 5,
       "domains": [
         "blog.google",
         "stratechery.com",
         "openai.com"
       ],
-      "gapCount": 1,
-      "gap": "10 more days on longlist"
+      "gapCount": 0,
+      "gap": "meets credibility bar"
     },
     {
       "id": "tpu",
@@ -47,13 +47,13 @@
       ],
       "sourceCount": 4,
       "independentSources": 2,
-      "daysOnLonglist": 4,
+      "daysOnLonglist": 5,
       "domains": [
         "blog.google",
         "openai.com"
       ],
-      "gapCount": 1,
-      "gap": "10 more days on longlist"
+      "gapCount": 0,
+      "gap": "meets credibility bar"
     },
     {
       "id": "ai-inference-chip",
@@ -65,13 +65,13 @@
       ],
       "sourceCount": 2,
       "independentSources": 2,
-      "daysOnLonglist": 4,
+      "daysOnLonglist": 5,
       "domains": [
         "blog.google",
         "stratechery.com"
       ],
-      "gapCount": 1,
-      "gap": "10 more days on longlist"
+      "gapCount": 0,
+      "gap": "meets credibility bar"
     },
     {
       "id": "ai-accelerator",
@@ -82,13 +82,13 @@
       ],
       "sourceCount": 2,
       "independentSources": 2,
-      "daysOnLonglist": 4,
+      "daysOnLonglist": 5,
       "domains": [
         "blog.google",
         "openai.com"
       ],
-      "gapCount": 1,
-      "gap": "10 more days on longlist"
+      "gapCount": 0,
+      "gap": "meets credibility bar"
     },
     {
       "id": "long-horizon-autonomy",
@@ -101,13 +101,13 @@
       ],
       "sourceCount": 2,
       "independentSources": 2,
-      "daysOnLonglist": 4,
+      "daysOnLonglist": 5,
       "domains": [
         "anthropic.com",
         "normaltech.ai"
       ],
-      "gapCount": 1,
-      "gap": "10 more days on longlist"
+      "gapCount": 0,
+      "gap": "meets credibility bar"
     },
     {
       "id": "gpt55",
@@ -119,12 +119,12 @@
       ],
       "sourceCount": 4,
       "independentSources": 1,
-      "daysOnLonglist": 4,
+      "daysOnLonglist": 5,
       "domains": [
         "openai.com"
       ],
-      "gapCount": 2,
-      "gap": "needs 1 more independent source; 10 more days on longlist"
+      "gapCount": 1,
+      "gap": "needs 1 more independent source"
     },
     {
       "id": "system-card",
@@ -136,12 +136,12 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 4,
+      "daysOnLonglist": 5,
       "domains": [
         "openai.com"
       ],
-      "gapCount": 2,
-      "gap": "needs 1 more independent source; 10 more days on longlist"
+      "gapCount": 1,
+      "gap": "needs 1 more independent source"
     },
     {
       "id": "claude-design",
@@ -154,12 +154,12 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 4,
+      "daysOnLonglist": 5,
       "domains": [
         "anthropic.com"
       ],
-      "gapCount": 2,
-      "gap": "needs 1 more independent source; 10 more days on longlist"
+      "gapCount": 1,
+      "gap": "needs 1 more independent source"
     },
     {
       "id": "handoff-bundle",
@@ -172,12 +172,12 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 4,
+      "daysOnLonglist": 5,
       "domains": [
         "anthropic.com"
       ],
-      "gapCount": 2,
-      "gap": "needs 1 more independent source; 10 more days on longlist"
+      "gapCount": 1,
+      "gap": "needs 1 more independent source"
     },
     {
       "id": "interactive-prototyping",
@@ -190,12 +190,12 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 4,
+      "daysOnLonglist": 5,
       "domains": [
         "anthropic.com"
       ],
-      "gapCount": 2,
-      "gap": "needs 1 more independent source; 10 more days on longlist"
+      "gapCount": 1,
+      "gap": "needs 1 more independent source"
     }
   ],
   "sources": {

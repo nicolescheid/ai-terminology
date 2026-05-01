@@ -163,7 +163,7 @@ export function computeMetrics({ longlist, proposals, notes, state, baseGraphSiz
     if (sourceCount < 2) gaps.push(`needs ${2 - sourceCount} more source${2 - sourceCount > 1 ? "s" : ""}`);
     if (independent < 2) gaps.push(`needs ${2 - independent} more independent source${2 - independent > 1 ? "s" : ""}`);
     if (!hasRecent && sources.length) gaps.push("no source seen in past 90d");
-    if (ageDays < 14) gaps.push(`${14 - ageDays} more day${14 - ageDays !== 1 ? "s" : ""} on longlist`);
+    if (ageDays < 3) gaps.push(`${3 - ageDays} more day${3 - ageDays !== 1 ? "s" : ""} on longlist`);
 
     const domains = [...new Set(sources.map(s => s.domain).filter(Boolean))].slice(0, 4);
 

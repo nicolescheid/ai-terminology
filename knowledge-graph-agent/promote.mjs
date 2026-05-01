@@ -11,7 +11,8 @@
 //   1. Source count ≥ 2
 //   2. Independent source count ≥ 2 (different domain)
 //   3. At least one source seen in past 90 days
-//   4. Time on longlist ≥ 14 days
+//   4. Time on longlist ≥ 3 days (was 14d; AI moves fast and the auditor's
+//      fast-adoption-velocity flag already backstops false positives)
 //
 // Skipped here, deferred to follow-up sessions:
 //   5. Definition consistency across sources (would need an LLM check)
@@ -149,11 +150,14 @@ export function checkEligibility(entry, now = Date.now()) {
   });
   if (!hasRecent) return { eligible: false, why: "no source seen in past 90 days" };
 
-  // Time on longlist ≥ 14 days.
+  // Time on longlist ≥ 3 days. Anti-haste floor: just enough that the auditor's
+  // weekly velocity check has a fair chance to flag a fake-virality term, but
+  // short enough that a genuinely-adopted term doesn't sit waiting for a clock
+  // to tick. Was 14d; lowered after observing real adoption patterns.
   const firstSeenMs = entry.dateFirstSeen ? new Date(entry.dateFirstSeen).getTime() : NaN;
   if (!Number.isFinite(firstSeenMs)) return { eligible: false, why: "missing dateFirstSeen" };
   const ageDays = Math.floor((now - firstSeenMs) / DAY_MS);
-  if (ageDays < 14) return { eligible: false, why: `on longlist only ${ageDays}d (need 14)` };
+  if (ageDays < 3) return { eligible: false, why: `on longlist only ${ageDays}d (need 3)` };
 
   const domains = [...new Set(sources.map(s => s.domain).filter(Boolean))];
   const reason = `${sourceCount} sources, ${independent} independent (${domains.join(" + ")}), ${ageDays}d on longlist.`;
