@@ -52,7 +52,7 @@
 </head>
 <body>
 <div id="splash">
-  <img src="assets/lexi-scene.png" alt="Lexi at her desk, hoovering up AI terminology" />
+  <img src="assets/lexi-scene.webp" alt="Lexi at her desk, hoovering up AI terminology" />
   <div class="splash-meta">Lexi is settling in&nbsp;·&nbsp;Lexicon Atlas</div>
 </div>
 <div id="root"></div>
@@ -67,30 +67,29 @@
   window.GRAPH_META = GRAPH_META;
 </script>
 <script src="graph-data-agent.js"></script>
-<script src="shared/palette.js?v=3"></script>
-<script src="shared/graph-engine.js?v=3"></script>
+<script src="shared/palette.js?v=4"></script>
+<script src="shared/graph-engine.js?v=4"></script>
 
-<!-- React + Babel -->
-<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<!-- React (production builds — no Babel-in-browser; JSX is pre-compiled by build.mjs) -->
+<script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
 
-<script type="text/babel" src="variations/detail-panel.jsx?v=3"></script>
-<script type="text/babel" src="variations/lexi.jsx?v=3"></script>
-<script type="text/babel" src="variations/atlas.jsx?v=3"></script>
+<script src="variations/detail-panel.js?v=4"></script>
+<script src="variations/lexi.js?v=4"></script>
+<script src="variations/atlas.js?v=4"></script>
 
-<script type="text/babel">
-function App() {
-  return <window.AtlasVariation />;
-}
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+<script>
+// Pre-compiled JSX (see build.mjs); no Babel needed at runtime.
+ReactDOM.createRoot(document.getElementById('root')).render(
+  React.createElement(window.AtlasVariation)
+);
 
 // Drop the splash once the engine has laid out (after first sim tick batch).
 function dismissSplash() {
-  setTimeout(() => {
-    const s = document.getElementById('splash');
+  setTimeout(function () {
+    var s = document.getElementById('splash');
     if (s) s.classList.add('hidden');
-    setTimeout(() => s && s.remove(), 700);
+    setTimeout(function () { s && s.remove(); }, 700);
   }, 900);
 }
 if (document.readyState === 'complete') dismissSplash();

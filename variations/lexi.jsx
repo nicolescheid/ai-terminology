@@ -11,11 +11,14 @@
   const { useState, useEffect, useRef } = React;
 
   const SRC = {
-    idle: 'assets/lexi-idle.png',
-    curious: 'assets/lexi-curious.png',
-    excited: 'assets/lexi-excited.png',
-    teaching: 'assets/lexi-teaching.png',
-    sleeping: 'assets/lexi-sleeping.png',
+    // WebP: ~10× smaller than source PNGs, universally supported (Chrome 2014,
+    // FF 2019, Safari 14+ in 2020). Source PNGs are still in the repo as
+    // canonical assets; build.mjs regenerates these WebPs.
+    idle: 'assets/lexi-idle.webp',
+    curious: 'assets/lexi-curious.webp',
+    excited: 'assets/lexi-excited.webp',
+    teaching: 'assets/lexi-teaching.webp',
+    sleeping: 'assets/lexi-sleeping.webp',
   };
 
   // The PNGs are on white. Mask them inside a soft circular frame
