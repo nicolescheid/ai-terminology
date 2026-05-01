@@ -71,6 +71,10 @@ jobs:
           LEXI_SLACK_WEBHOOK: ${{ secrets.LEXI_SLACK_WEBHOOK }}
         run: node apply-proposals.mjs
 
+      - name: Rebuild Almanac metrics
+        working-directory: knowledge-graph-agent
+        run: node build-almanac.mjs
+
       - name: Commit + push state changes
         run: |
           git config user.name 'lexi-bot'
@@ -84,6 +88,8 @@ jobs:
                   knowledge-graph-agent/state.json \
                   knowledge-graph-agent/agent-patch.json \
                   knowledge-graph-agent/out/latest-report.json \
+                  almanac/metrics.json \
+                  almanac/history.jsonl \
                   graph-data-agent.js 2>/dev/null || true
           if git diff --staged --quiet; then
             echo "No state changes to commit."

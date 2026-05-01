@@ -1,0 +1,388 @@
+{
+  "generatedAt": "2026-05-01T20:47:55.319Z",
+  "firstRunAt": "2026-04-27T01:07:31.335Z",
+  "phase": 1,
+  "headline": {
+    "articlesRead": 35,
+    "daysRunning": 5,
+    "longlistSize": 30,
+    "graphSize": 198
+  },
+  "thisWeek": {
+    "articlesFetched": 35,
+    "longlistAdded": 30,
+    "sourcesAdded": 0,
+    "promotionsToGraph": 0,
+    "proposalsQueued": 0,
+    "auditFlags": 7,
+    "notesAdded": 80
+  },
+  "almostThere": [
+    {
+      "id": "purpose-built-ai-infrastructure",
+      "label": "Purpose-Built AI Infrastructure",
+      "fullName": null,
+      "clusters": [
+        "agentic",
+        "technical"
+      ],
+      "sourceCount": 5,
+      "independentSources": 3,
+      "daysOnLonglist": 4,
+      "domains": [
+        "blog.google",
+        "stratechery.com",
+        "openai.com"
+      ],
+      "gapCount": 1,
+      "gap": "10 more days on longlist"
+    },
+    {
+      "id": "tpu",
+      "label": "TPU (Tensor Processing Unit)",
+      "fullName": null,
+      "clusters": [
+        "technical",
+        "agentic"
+      ],
+      "sourceCount": 4,
+      "independentSources": 2,
+      "daysOnLonglist": 4,
+      "domains": [
+        "blog.google",
+        "openai.com"
+      ],
+      "gapCount": 1,
+      "gap": "10 more days on longlist"
+    },
+    {
+      "id": "ai-inference-chip",
+      "label": "AI Inference Chip",
+      "fullName": null,
+      "clusters": [
+        "technical",
+        "agentic"
+      ],
+      "sourceCount": 2,
+      "independentSources": 2,
+      "daysOnLonglist": 4,
+      "domains": [
+        "blog.google",
+        "stratechery.com"
+      ],
+      "gapCount": 1,
+      "gap": "10 more days on longlist"
+    },
+    {
+      "id": "ai-accelerator",
+      "label": "AI Accelerator",
+      "fullName": "AI Accelerator (custom silicon)",
+      "clusters": [
+        "technical"
+      ],
+      "sourceCount": 2,
+      "independentSources": 2,
+      "daysOnLonglist": 4,
+      "domains": [
+        "blog.google",
+        "openai.com"
+      ],
+      "gapCount": 1,
+      "gap": "10 more days on longlist"
+    },
+    {
+      "id": "long-horizon-autonomy",
+      "label": "Long-Horizon Autonomy",
+      "fullName": null,
+      "clusters": [
+        "agentic",
+        "autonomy",
+        "technical"
+      ],
+      "sourceCount": 2,
+      "independentSources": 2,
+      "daysOnLonglist": 4,
+      "domains": [
+        "anthropic.com",
+        "normaltech.ai"
+      ],
+      "gapCount": 1,
+      "gap": "10 more days on longlist"
+    },
+    {
+      "id": "gpt55",
+      "label": "GPT-5.5",
+      "fullName": "GPT-5.5 (OpenAI)",
+      "clusters": [
+        "models",
+        "companies"
+      ],
+      "sourceCount": 4,
+      "independentSources": 1,
+      "daysOnLonglist": 4,
+      "domains": [
+        "openai.com"
+      ],
+      "gapCount": 2,
+      "gap": "needs 1 more independent source; 10 more days on longlist"
+    },
+    {
+      "id": "system-card",
+      "label": "System Card",
+      "fullName": null,
+      "clusters": [
+        "safety",
+        "lifecycle"
+      ],
+      "sourceCount": 2,
+      "independentSources": 1,
+      "daysOnLonglist": 4,
+      "domains": [
+        "openai.com"
+      ],
+      "gapCount": 2,
+      "gap": "needs 1 more independent source; 10 more days on longlist"
+    },
+    {
+      "id": "claude-design",
+      "label": "Claude Design",
+      "fullName": "Claude Design (Anthropic Labs)",
+      "clusters": [
+        "tools",
+        "agentic",
+        "work"
+      ],
+      "sourceCount": 2,
+      "independentSources": 1,
+      "daysOnLonglist": 4,
+      "domains": [
+        "anthropic.com"
+      ],
+      "gapCount": 2,
+      "gap": "needs 1 more independent source; 10 more days on longlist"
+    },
+    {
+      "id": "handoff-bundle",
+      "label": "Handoff Bundle",
+      "fullName": "Handoff Bundle (Design-to-Code)",
+      "clusters": [
+        "work",
+        "agentic",
+        "lifecycle"
+      ],
+      "sourceCount": 2,
+      "independentSources": 1,
+      "daysOnLonglist": 4,
+      "domains": [
+        "anthropic.com"
+      ],
+      "gapCount": 2,
+      "gap": "needs 1 more independent source; 10 more days on longlist"
+    },
+    {
+      "id": "interactive-prototyping",
+      "label": "Interactive Prototyping",
+      "fullName": "AI-Assisted Interactive Prototyping",
+      "clusters": [
+        "work",
+        "tools",
+        "agentic"
+      ],
+      "sourceCount": 2,
+      "independentSources": 1,
+      "daysOnLonglist": 4,
+      "domains": [
+        "anthropic.com"
+      ],
+      "gapCount": 2,
+      "gap": "needs 1 more independent source; 10 more days on longlist"
+    }
+  ],
+  "sources": {
+    "byDomain": [
+      {
+        "domain": "openai.com",
+        "count": 14
+      },
+      {
+        "domain": "blog.google",
+        "count": 6
+      },
+      {
+        "domain": "anthropic.com",
+        "count": 5
+      },
+      {
+        "domain": "huggingface.co",
+        "count": 2
+      },
+      {
+        "domain": "stratechery.com",
+        "count": 2
+      },
+      {
+        "domain": "lastweekin.ai",
+        "count": 2
+      },
+      {
+        "domain": "normaltech.ai",
+        "count": 2
+      },
+      {
+        "domain": "simonwillison.net",
+        "count": 2
+      }
+    ],
+    "totalUniqueDomains": 8,
+    "newDomainsLast30d": [
+      {
+        "domain": "huggingface.co",
+        "firstSeen": "2026-04-30T19:20:00.611Z"
+      },
+      {
+        "domain": "stratechery.com",
+        "firstSeen": "2026-04-30T19:20:00.611Z"
+      },
+      {
+        "domain": "lastweekin.ai",
+        "firstSeen": "2026-04-30T19:20:00.611Z"
+      },
+      {
+        "domain": "normaltech.ai",
+        "firstSeen": "2026-04-30T19:20:00.611Z"
+      },
+      {
+        "domain": "simonwillison.net",
+        "firstSeen": "2026-04-30T19:20:00.611Z"
+      },
+      {
+        "domain": "blog.google",
+        "firstSeen": "2026-04-27T01:07:31.335Z"
+      },
+      {
+        "domain": "openai.com",
+        "firstSeen": "2026-04-27T01:07:31.335Z"
+      },
+      {
+        "domain": "anthropic.com",
+        "firstSeen": "2026-04-27T01:07:31.335Z"
+      }
+    ]
+  },
+  "clusters": {
+    "distribution": [
+      {
+        "id": "agentic",
+        "label": "Agentic Systems",
+        "hex": "#FF9040",
+        "count": 15
+      },
+      {
+        "id": "safety",
+        "label": "Safety",
+        "hex": "#FF6090",
+        "count": 13
+      },
+      {
+        "id": "technical",
+        "label": "Technical",
+        "hex": "#D0D040",
+        "count": 12
+      },
+      {
+        "id": "models",
+        "label": "Models",
+        "hex": "#FFB060",
+        "count": 8
+      },
+      {
+        "id": "work",
+        "label": "Work & Output",
+        "hex": "#E8A838",
+        "count": 6
+      },
+      {
+        "id": "tools",
+        "label": "Tools & Platforms",
+        "hex": "#70C8F8",
+        "count": 5
+      },
+      {
+        "id": "landscape",
+        "label": "Model Landscape",
+        "hex": "#D0A050",
+        "count": 3
+      },
+      {
+        "id": "companies",
+        "label": "Companies",
+        "hex": "#9090A8",
+        "count": 2
+      },
+      {
+        "id": "lifecycle",
+        "label": "Product Lifecycle",
+        "hex": "#B888D8",
+        "count": 2
+      },
+      {
+        "id": "security",
+        "label": "AI Security",
+        "hex": "#E05050",
+        "count": 2
+      },
+      {
+        "id": "context",
+        "label": "Context Health",
+        "hex": "#A0D060",
+        "count": 2
+      },
+      {
+        "id": "autonomy",
+        "label": "Autonomy Spectrum",
+        "hex": "#58B8E8",
+        "count": 1
+      },
+      {
+        "id": "human",
+        "label": "Human Skills",
+        "hex": "#40D080",
+        "count": 1
+      },
+      {
+        "id": "business",
+        "label": "Business Reality",
+        "hex": "#48C888",
+        "count": 1
+      },
+      {
+        "id": "critical",
+        "label": "Critical / Hype",
+        "hex": "#FF5555",
+        "count": 1
+      }
+    ]
+  },
+  "velocity": {
+    "humanGated": 0,
+    "autonomous": 0,
+    "note": "All graph promotions and substantive edits are currently human-gated. Lexi proposes; Nicole approves."
+  },
+  "proposalsByStatus": {
+    "pending": 0,
+    "approved": 0,
+    "applied": 0,
+    "rejected": 0
+  },
+  "decisionsByCluster": {},
+  "audit": {
+    "flagsTotal": 7,
+    "flagsByType": {
+      "source_pattern": 7
+    }
+  },
+  "costs": {
+    "available": false,
+    "note": "Token + cost data lands in a follow-up; the runtime captures it but doesn't yet persist a public summary."
+  }
+}

@@ -48,11 +48,17 @@ jobs:
           LEXI_SLACK_WEBHOOK: ${{ secrets.LEXI_SLACK_WEBHOOK }}
         run: node audit.mjs
 
+      - name: Rebuild Almanac metrics
+        working-directory: knowledge-graph-agent
+        run: node build-almanac.mjs
+
       - name: Commit + push new audit notes
         run: |
           git config user.name 'lexi-bot'
           git config user.email 'lexi-bot@users.noreply.github.com'
-          git add knowledge-graph-agent/notes-for-nicole.json 2>/dev/null || true
+          git add knowledge-graph-agent/notes-for-nicole.json \
+                  almanac/metrics.json \
+                  almanac/history.jsonl 2>/dev/null || true
           if git diff --staged --quiet; then
             echo "No new audit findings — dedup or no flags."
           else
