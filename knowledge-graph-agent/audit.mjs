@@ -11,7 +11,6 @@
 // produces no new notes; only when the underlying state changes (a new
 // pattern emerges, a count grows) do new notes appear.
 
-import fs from "node:fs/promises";
 import path from "node:path";
 import crypto from "node:crypto";
 import { fileURLToPath, pathToFileURL } from "node:url";
@@ -19,6 +18,7 @@ import { buildNote } from "./notes.mjs";
 import { createLogger } from "./logger.mjs";
 import { runAllChecks } from "./auditor.mjs";
 import { createNotifier } from "./notify.mjs";
+import { loadJson, writeJson } from "./state-io.mjs";
 
 main().catch(err => {
   console.error(err.stack || err.message);
@@ -98,7 +98,7 @@ async function main() {
     note: notes.meta?.note ?? "Notes for Nicole — Lexi's manager channel (spec §6)."
   };
 
-  await fs.writeFile(config.notesForNicolePath, `${JSON.stringify(notes, null, 2)}\n`, "utf8");
+  await writeJson(config.notesForNicolePath, notes);
 
   await logger.event("audit_end", {
     flagsRaised: flags.length,
@@ -127,10 +127,3 @@ async function main() {
   }
 }
 
-async function loadJson(filePath, fallback) {
-  try {
-    return JSON.parse(await fs.readFile(filePath, "utf8"));
-  } catch {
-    return fallback;
-  }
-}

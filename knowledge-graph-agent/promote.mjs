@@ -28,13 +28,13 @@
 //
 // Run with: node promote.mjs
 
-import fs from "node:fs/promises";
 import path from "node:path";
 import crypto from "node:crypto";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { ACTIONS, GATES } from "./actions.mjs";
 import { createLogger } from "./logger.mjs";
 import { createNotifier } from "./notify.mjs";
+import { loadJson, writeJson } from "./state-io.mjs";
 
 const DAY_MS = 24 * 60 * 60 * 1000;
 
@@ -97,7 +97,7 @@ async function main() {
     note: proposals.meta?.note ?? "Lexi proposals queue. Actions gated as PROPOSE land here as status: 'pending'. Edit a proposal's status to 'approved' or 'rejected', then run apply-proposals.mjs to commit."
   };
 
-  await fs.writeFile(config.proposalsPath, `${JSON.stringify(proposals, null, 2)}\n`, "utf8");
+  await writeJson(config.proposalsPath, proposals);
 
   await logger.event("promote_scan_end", {
     proposalsWritten: newProposals.length,
@@ -200,10 +200,3 @@ function buildPromotionProposal({ id, entry, verdict, writtenAt, runId }) {
   };
 }
 
-async function loadJson(filePath, fallback) {
-  try {
-    return JSON.parse(await fs.readFile(filePath, "utf8"));
-  } catch {
-    return fallback;
-  }
-}

@@ -23,6 +23,7 @@ import { fileURLToPath, pathToFileURL } from "node:url";
 import { ACTIONS } from "./actions.mjs";
 import { createLogger } from "./logger.mjs";
 import { createNotifier } from "./notify.mjs";
+import { loadJson, writeJson } from "./state-io.mjs";
 
 main().catch(err => {
   console.error(err.stack || err.message);
@@ -102,8 +103,8 @@ async function main() {
     note: patch.meta?.note ?? "Agent-managed overlay."
   };
 
-  await fs.writeFile(config.proposalsPath, `${JSON.stringify(proposals, null, 2)}\n`, "utf8");
-  await fs.writeFile(config.patchJsonPath, `${JSON.stringify(patch, null, 2)}\n`, "utf8");
+  await writeJson(config.proposalsPath, proposals);
+  await writeJson(config.patchJsonPath, patch);
   await fs.writeFile(config.agentPatchPath, `window.AGENT_GRAPH_PATCH = ${JSON.stringify(patch, null, 2)};\n`, "utf8");
 
   await logger.event("apply_proposals_end", { applied, skipped });
@@ -152,10 +153,3 @@ function applyOne(proposal, patch) {
   }
 }
 
-async function loadJson(filePath, fallback) {
-  try {
-    return JSON.parse(await fs.readFile(filePath, "utf8"));
-  } catch {
-    return fallback;
-  }
-}
