@@ -18,15 +18,21 @@
   if (window.SITE_MENU_DISABLED) return;
   if (document.querySelector(".site-menu")) return; // already injected
 
-  // Order chosen by Nicole: Graph → Almanac → Lexi's List → Spec → Repo → Manager.
-  // Manager has a `private` hint until Pages Functions auth ships in Phase 4.
+  // Order chosen by Nicole: Graph → Almanac → Lexi's List → Spec → Repo.
+  // Manager (/manager/) is intentionally NOT listed — the page is reachable
+  // by direct URL or bookmark but isn't advertised. Notes for Nicole is
+  // operationally sensitive (it's where Lexi flags suspicious sources,
+  // contested-cluster omissions, default-deny events) and shouldn't be one
+  // click off every public page. The page itself is tagged noindex,nofollow
+  // so it doesn't appear in search. Real auth (Pages Functions Basic Auth
+  // or Cloudflare Access) is queued for Phase 4 — until then, the URL
+  // remains fetchable, but unlinked.
   var LINKS = [
     { label: "Graph",        href: "/",                                                                    match: ["/", "/index.html"] },
     { label: "Almanac",      href: "/almanac/",                                                            match: ["/almanac/", "/almanac"] },
     { label: "Lexi's List",  href: "/lexis-list/",                                                         match: ["/lexis-list/", "/lexis-list"] },
     { label: "Spec",         href: "https://github.com/nicolescheid/ai-terminology/blob/main/lexi-spec.md", external: true },
-    { label: "Repo",         href: "https://github.com/nicolescheid/ai-terminology",                       external: true },
-    { label: "Manager",      href: "/manager/", match: ["/manager/", "/manager"], hint: "private" }
+    { label: "Repo",         href: "https://github.com/nicolescheid/ai-terminology",                       external: true }
   ];
 
   function buildMenu() {
