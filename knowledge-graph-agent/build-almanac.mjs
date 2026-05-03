@@ -101,6 +101,14 @@ export function computeMetrics({ longlist, proposals, notes, state, baseGraphSiz
   const thirtyDaysAgo = nowMs - 30 * DAY_MS;
 
   const longlistEntries = longlist.entries || [];
+  // "Currently watching" — entries the agent is still tracking in Tier 2.
+  // Entries marked status: "promoted" by apply-proposals.mjs are kept in
+  // the file (audit trail) but should be excluded from "currently observing"
+  // metrics (longlistSize, almostThere, cluster counts). Time-window
+  // metrics that count past activity (e.g. longlistAdded over the past 7d)
+  // still iterate longlistEntries — a term that was added then promoted
+  // is still a real "addition" for the throughput record.
+  const watchingEntries = longlistEntries.filter(e => e.status !== "promoted");
   const allProposals = proposals.proposals || [];
   const allNotes = notes.entries || [];
   const seenArticles = Object.values(state.seenArticles || {});
@@ -119,7 +127,7 @@ export function computeMetrics({ longlist, proposals, notes, state, baseGraphSiz
 
   // ─── Headline counts ────────────────────────────────────────────────
   const articlesRead = seenArticles.length;
-  const longlistSize = longlistEntries.length;
+  const longlistSize = watchingEntries.length;
   const graphSize = mergedNodes.length;
 
   // ─── This week ──────────────────────────────────────────────────────
@@ -148,7 +156,11 @@ export function computeMetrics({ longlist, proposals, notes, state, baseGraphSiz
   // ─── Almost-there list ──────────────────────────────────────────────
   // Distance to spec §7 credibility bar: 4 checks. Closer = fewer failed checks.
   // Tie-break by independentSourceCount (more = better) then sourceCount.
-  const almostThere = longlistEntries.map(e => {
+  // Operates on watchingEntries — promoted terms are no longer "almost there,"
+  // they're there. The proposals-lookup filter below is now defensive
+  // belt-and-braces (catches pending/approved proposals where the longlist
+  // status flip hasn't happened yet).
+  const almostThere = watchingEntries.map(e => {
     const sources = e.sources || [];
     const sourceCount = e.sourceCount ?? sources.length;
     const independent = e.independentSourceCount ?? new Set(sources.map(s => s.domain).filter(Boolean)).size;
@@ -222,9 +234,11 @@ export function computeMetrics({ longlist, proposals, notes, state, baseGraphSiz
     .map(([domain, ms]) => ({ domain, firstSeen: new Date(ms).toISOString() }));
 
   // ─── Cluster distribution ───────────────────────────────────────────
-  // Counts each cluster's appearances on longlist entries.
+  // Counts each cluster's appearances on currently-watched longlist entries.
+  // Promoted terms now live on the graph — counting them here would
+  // double-count (they show up under graph cluster distribution elsewhere).
   const clusterCounts = {};
-  for (const e of longlistEntries) {
+  for (const e of watchingEntries) {
     for (const c of (e.clusters || [])) {
       clusterCounts[c] = (clusterCounts[c] || 0) + 1;
     }

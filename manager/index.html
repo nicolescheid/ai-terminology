@@ -372,7 +372,10 @@ function renderLonglist(longlist) {
     card.appendChild(el("div", { class: "error" }, "Couldn't load longlist.json"));
     return card;
   }
-  const all = longlist.entries || [];
+  // "Currently watching" = entries that haven't been promoted to the graph.
+  // Promoted entries stay in longlist.json for audit trail but now live on
+  // the graph; double-counting them here would mislead the at-a-glance read.
+  const all = (longlist.entries || []).filter(e => e.status !== "promoted");
   const recentCutoff = Date.now() - SEVEN_DAYS_MS;
   const recentAdds = all.filter(e => e.dateFirstSeen && new Date(e.dateFirstSeen).getTime() >= recentCutoff);
   const promotionEligible = all.filter(e => (e.independentSourceCount || 0) >= 2);

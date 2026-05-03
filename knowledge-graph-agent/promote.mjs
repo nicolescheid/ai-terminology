@@ -135,6 +135,11 @@ async function main() {
 
 // Spec §7 credibility bar — heuristic checks (data only, no LLM).
 export function checkEligibility(entry, now = Date.now()) {
+  // Already promoted to the graph — apply-proposals.mjs marked it. Skip
+  // re-eligibility (otherwise this scan would re-write a proposal every
+  // run for terms that have already landed).
+  if (entry.status === "promoted") return { eligible: false, why: "already promoted to graph" };
+
   const sources = entry.sources || [];
   const sourceCount = entry.sourceCount ?? sources.length;
   const independent = entry.independentSourceCount ?? new Set(sources.map(s => s.domain).filter(Boolean)).size;

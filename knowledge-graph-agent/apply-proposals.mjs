@@ -4,6 +4,12 @@
 // the action to the appropriate state file:
 //   - PROMOTE_TO_GRAPH: adds payload.graphNode to agent-patch.json's `nodes`
 //     array (and re-writes graph-data-agent.js so the frontend picks it up).
+//     ALSO marks the matching longlist.json entry as status: "promoted"
+//     (with promotedAt timestamp + promotedToGraphNodeId pointer) so
+//     /observing, /manager, and the almanac stop double-showing it.
+//     The entry is kept rather than deleted: preserves audit trail
+//     (sources at promotion time, days on longlist) and leaves the
+//     status field free for future demote-to-watching flows.
 //   - EDIT_GRAPH_DEF_SUBSTANTIVE: adds payload to definitionOverrides.
 //   - Other actions: logged + skipped (no apply path defined yet).
 //
@@ -41,6 +47,8 @@ async function main() {
     nodes: [],
     definitionOverrides: []
   });
+  const longlist = await loadJson(config.longlistPath, { meta: {}, entries: [] });
+  let longlistMutated = false;
 
   const runId = crypto.randomUUID();
   const logger = createLogger({ runId, phase: config.phase, logPath: config.logPath });
@@ -63,7 +71,8 @@ async function main() {
   const appliedTermLabels = [];
 
   for (const proposal of approved) {
-    const result = applyOne(proposal, patch);
+    const result = applyOne(proposal, patch, longlist, appliedAt);
+    if (result.longlistMutated) longlistMutated = true;
     if (result.ok) {
       proposal.status = "applied";
       proposal.appliedAt = appliedAt;
@@ -106,6 +115,12 @@ async function main() {
   await writeJson(config.proposalsPath, proposals);
   await writeJson(config.patchJsonPath, patch);
   await fs.writeFile(config.agentPatchPath, `window.AGENT_GRAPH_PATCH = ${JSON.stringify(patch, null, 2)};\n`, "utf8");
+  // Only rewrite longlist.json if at least one promotion actually touched it.
+  // Avoids spurious diffs (and downstream Cloudflare Pages rebuilds) on runs
+  // that only apply non-promotion proposals.
+  if (longlistMutated) {
+    await writeJson(config.longlistPath, longlist);
+  }
 
   await logger.event("apply_proposals_end", { applied, skipped });
 
@@ -129,8 +144,11 @@ async function main() {
   }
 }
 
-// Apply a single approved proposal to the patch. Returns { ok, why?, label? }.
-function applyOne(proposal, patch) {
+// Apply a single approved proposal. Mutates patch (always) and longlist
+// (for PROMOTE_TO_GRAPH, when a matching entry exists). Returns
+// { ok, why?, label?, longlistMutated? } so the caller can decide whether
+// to write longlist.json back.
+function applyOne(proposal, patch, longlist, appliedAt) {
   switch (proposal.action) {
     case ACTIONS.PROMOTE_TO_GRAPH: {
       const node = proposal.payload?.graphNode;
@@ -138,7 +156,21 @@ function applyOne(proposal, patch) {
       const existing = patch.nodes.find(n => n.id === node.id);
       if (existing) return { ok: false, why: `already in patch.nodes: ${node.id}` };
       patch.nodes.push(node);
-      return { ok: true, label: node.label || node.id };
+
+      // Mark the source longlist entry as promoted, keeping the entry in
+      // place. /observing, /manager, the almanac, and promote.mjs all
+      // filter on `status === "promoted"` to stop double-showing it. The
+      // entry stays for audit trail (sources at promotion time, days on
+      // longlist) and to leave the field free for a future demote action.
+      const llEntry = (longlist.entries || []).find(e => e.id === proposal.target?.id);
+      let longlistMutated = false;
+      if (llEntry && llEntry.status !== "promoted") {
+        llEntry.status = "promoted";
+        llEntry.promotedAt = appliedAt;
+        llEntry.promotedToGraphNodeId = node.id;
+        longlistMutated = true;
+      }
+      return { ok: true, label: node.label || node.id, longlistMutated };
     }
     case ACTIONS.EDIT_GRAPH_DEF_SUBSTANTIVE: {
       const override = proposal.payload;

@@ -1,114 +1,23 @@
 {
-  "generatedAt": "2026-05-01T23:47:41.997Z",
+  "generatedAt": "2026-05-03T08:22:46.199Z",
   "firstRunAt": "2026-04-27T01:07:31.335Z",
   "phase": 1,
   "headline": {
     "articlesRead": 35,
-    "daysRunning": 5,
-    "longlistSize": 30,
-    "graphSize": 198
+    "daysRunning": 7,
+    "longlistSize": 22,
+    "graphSize": 206
   },
   "thisWeek": {
     "articlesFetched": 35,
     "longlistAdded": 30,
     "sourcesAdded": 0,
-    "promotionsToGraph": 0,
-    "proposalsQueued": 0,
+    "promotionsToGraph": 8,
+    "proposalsQueued": 8,
     "auditFlags": 7,
     "notesAdded": 80
   },
   "almostThere": [
-    {
-      "id": "purpose-built-ai-infrastructure",
-      "label": "Purpose-Built AI Infrastructure",
-      "fullName": null,
-      "clusters": [
-        "agentic",
-        "technical"
-      ],
-      "sourceCount": 5,
-      "independentSources": 3,
-      "daysOnLonglist": 5,
-      "domains": [
-        "blog.google",
-        "stratechery.com",
-        "openai.com"
-      ],
-      "gapCount": 0,
-      "gap": "meets credibility bar"
-    },
-    {
-      "id": "tpu",
-      "label": "TPU (Tensor Processing Unit)",
-      "fullName": null,
-      "clusters": [
-        "technical",
-        "agentic"
-      ],
-      "sourceCount": 4,
-      "independentSources": 2,
-      "daysOnLonglist": 5,
-      "domains": [
-        "blog.google",
-        "openai.com"
-      ],
-      "gapCount": 0,
-      "gap": "meets credibility bar"
-    },
-    {
-      "id": "ai-inference-chip",
-      "label": "AI Inference Chip",
-      "fullName": null,
-      "clusters": [
-        "technical",
-        "agentic"
-      ],
-      "sourceCount": 2,
-      "independentSources": 2,
-      "daysOnLonglist": 5,
-      "domains": [
-        "blog.google",
-        "stratechery.com"
-      ],
-      "gapCount": 0,
-      "gap": "meets credibility bar"
-    },
-    {
-      "id": "ai-accelerator",
-      "label": "AI Accelerator",
-      "fullName": "AI Accelerator (custom silicon)",
-      "clusters": [
-        "technical"
-      ],
-      "sourceCount": 2,
-      "independentSources": 2,
-      "daysOnLonglist": 5,
-      "domains": [
-        "blog.google",
-        "openai.com"
-      ],
-      "gapCount": 0,
-      "gap": "meets credibility bar"
-    },
-    {
-      "id": "long-horizon-autonomy",
-      "label": "Long-Horizon Autonomy",
-      "fullName": null,
-      "clusters": [
-        "agentic",
-        "autonomy",
-        "technical"
-      ],
-      "sourceCount": 2,
-      "independentSources": 2,
-      "daysOnLonglist": 5,
-      "domains": [
-        "anthropic.com",
-        "normaltech.ai"
-      ],
-      "gapCount": 0,
-      "gap": "meets credibility bar"
-    },
     {
       "id": "gpt55",
       "label": "GPT-5.5",
@@ -119,7 +28,7 @@
       ],
       "sourceCount": 4,
       "independentSources": 1,
-      "daysOnLonglist": 5,
+      "daysOnLonglist": 6,
       "domains": [
         "openai.com"
       ],
@@ -136,7 +45,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 5,
+      "daysOnLonglist": 6,
       "domains": [
         "openai.com"
       ],
@@ -144,58 +53,146 @@
       "gap": "needs 1 more independent source"
     },
     {
-      "id": "claude-design",
-      "label": "Claude Design",
-      "fullName": "Claude Design (Anthropic Labs)",
+      "id": "capability-reliability-gap",
+      "label": "Capability-Reliability Gap",
+      "fullName": null,
       "clusters": [
-        "tools",
         "agentic",
-        "work"
+        "safety"
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 5,
+      "daysOnLonglist": 2,
+      "domains": [
+        "normaltech.ai"
+      ],
+      "gapCount": 2,
+      "gap": "needs 1 more independent source; 1 more day on longlist"
+    },
+    {
+      "id": "ai-training-chip",
+      "label": "AI Training Chip",
+      "fullName": null,
+      "clusters": [
+        "technical",
+        "models"
+      ],
+      "sourceCount": 1,
+      "independentSources": 1,
+      "daysOnLonglist": 6,
+      "domains": [
+        "blog.google"
+      ],
+      "gapCount": 2,
+      "gap": "needs 1 more source; needs 1 more independent source"
+    },
+    {
+      "id": "self-verification",
+      "label": "Self-Verification",
+      "fullName": "Self-Verification (Model Output Verification)",
+      "clusters": [
+        "agentic",
+        "safety",
+        "technical"
+      ],
+      "sourceCount": 1,
+      "independentSources": 1,
+      "daysOnLonglist": 6,
       "domains": [
         "anthropic.com"
       ],
-      "gapCount": 1,
-      "gap": "needs 1 more independent source"
+      "gapCount": 2,
+      "gap": "needs 1 more source; needs 1 more independent source"
     },
     {
-      "id": "handoff-bundle",
-      "label": "Handoff Bundle",
-      "fullName": "Handoff Bundle (Design-to-Code)",
+      "id": "cyber-verification-program",
+      "label": "Cyber Verification Program",
+      "fullName": "Cyber Verification Program (Anthropic)",
+      "clusters": [
+        "security",
+        "safety",
+        "landscape"
+      ],
+      "sourceCount": 1,
+      "independentSources": 1,
+      "daysOnLonglist": 6,
+      "domains": [
+        "anthropic.com"
+      ],
+      "gapCount": 2,
+      "gap": "needs 1 more source; needs 1 more independent source"
+    },
+    {
+      "id": "differential-capability-reduction",
+      "label": "Differential Capability Reduction",
+      "fullName": null,
+      "clusters": [
+        "safety",
+        "technical",
+        "models"
+      ],
+      "sourceCount": 1,
+      "independentSources": 1,
+      "daysOnLonglist": 6,
+      "domains": [
+        "anthropic.com"
+      ],
+      "gapCount": 2,
+      "gap": "needs 1 more source; needs 1 more independent source"
+    },
+    {
+      "id": "design-system-integration",
+      "label": "Design System Integration",
+      "fullName": "Design System Integration (AI-native)",
       "clusters": [
         "work",
         "agentic",
-        "lifecycle"
+        "context"
       ],
-      "sourceCount": 2,
+      "sourceCount": 1,
       "independentSources": 1,
-      "daysOnLonglist": 5,
+      "daysOnLonglist": 6,
       "domains": [
         "anthropic.com"
       ],
-      "gapCount": 1,
-      "gap": "needs 1 more independent source"
+      "gapCount": 2,
+      "gap": "needs 1 more source; needs 1 more independent source"
     },
     {
-      "id": "interactive-prototyping",
-      "label": "Interactive Prototyping",
-      "fullName": "AI-Assisted Interactive Prototyping",
+      "id": "reward-signal-leakage",
+      "label": "Reward Signal Leakage",
+      "fullName": null,
       "clusters": [
-        "work",
-        "tools",
-        "agentic"
+        "safety",
+        "models",
+        "technical"
       ],
-      "sourceCount": 2,
+      "sourceCount": 1,
       "independentSources": 1,
-      "daysOnLonglist": 5,
+      "daysOnLonglist": 2,
       "domains": [
-        "anthropic.com"
+        "openai.com"
       ],
-      "gapCount": 1,
-      "gap": "needs 1 more independent source"
+      "gapCount": 3,
+      "gap": "needs 1 more source; needs 1 more independent source; 1 more day on longlist"
+    },
+    {
+      "id": "sft-data-contamination",
+      "label": "SFT Data Contamination",
+      "fullName": "Supervised Fine-Tuning Data Contamination",
+      "clusters": [
+        "technical",
+        "models",
+        "safety"
+      ],
+      "sourceCount": 1,
+      "independentSources": 1,
+      "daysOnLonglist": 2,
+      "domains": [
+        "openai.com"
+      ],
+      "gapCount": 3,
+      "gap": "needs 1 more source; needs 1 more independent source; 1 more day on longlist"
     }
   ],
   "sources": {
@@ -364,22 +361,10 @@
     ],
     "distribution": [
       {
-        "id": "agentic",
-        "label": "Agentic Systems",
-        "hex": "#FF9040",
-        "count": 15
-      },
-      {
         "id": "safety",
         "label": "Safety",
         "hex": "#FF6090",
         "count": 13
-      },
-      {
-        "id": "technical",
-        "label": "Technical",
-        "hex": "#D0D040",
-        "count": 12
       },
       {
         "id": "models",
@@ -388,16 +373,16 @@
         "count": 8
       },
       {
-        "id": "work",
-        "label": "Work & Output",
-        "hex": "#E8A838",
-        "count": 6
+        "id": "agentic",
+        "label": "Agentic Systems",
+        "hex": "#FF9040",
+        "count": 8
       },
       {
-        "id": "tools",
-        "label": "Tools & Platforms",
-        "hex": "#70C8F8",
-        "count": 5
+        "id": "technical",
+        "label": "Technical",
+        "hex": "#D0D040",
+        "count": 7
       },
       {
         "id": "landscape",
@@ -406,15 +391,21 @@
         "count": 3
       },
       {
+        "id": "work",
+        "label": "Work & Output",
+        "hex": "#E8A838",
+        "count": 3
+      },
+      {
+        "id": "tools",
+        "label": "Tools & Platforms",
+        "hex": "#70C8F8",
+        "count": 3
+      },
+      {
         "id": "companies",
         "label": "Companies",
         "hex": "#9090A8",
-        "count": 2
-      },
-      {
-        "id": "lifecycle",
-        "label": "Product Lifecycle",
-        "hex": "#B888D8",
         "count": 2
       },
       {
@@ -430,9 +421,9 @@
         "count": 2
       },
       {
-        "id": "autonomy",
-        "label": "Autonomy Spectrum",
-        "hex": "#58B8E8",
+        "id": "lifecycle",
+        "label": "Product Lifecycle",
+        "hex": "#B888D8",
         "count": 1
       },
       {
@@ -456,17 +447,42 @@
     ]
   },
   "velocity": {
-    "humanGated": 0,
+    "humanGated": 8,
     "autonomous": 0,
     "note": "All graph promotions and substantive edits are currently human-gated. Lexi proposes; Nicole approves."
   },
   "proposalsByStatus": {
     "pending": 0,
     "approved": 0,
-    "applied": 0,
+    "applied": 8,
     "rejected": 0
   },
-  "decisionsByCluster": {},
+  "decisionsByCluster": {
+    "technical": {
+      "approved": 5,
+      "rejected": 0
+    },
+    "agentic": {
+      "approved": 7,
+      "rejected": 0
+    },
+    "autonomy": {
+      "approved": 1,
+      "rejected": 0
+    },
+    "tools": {
+      "approved": 2,
+      "rejected": 0
+    },
+    "work": {
+      "approved": 3,
+      "rejected": 0
+    },
+    "lifecycle": {
+      "approved": 1,
+      "rejected": 0
+    }
+  },
   "audit": {
     "flagsTotal": 7,
     "flagsByType": {

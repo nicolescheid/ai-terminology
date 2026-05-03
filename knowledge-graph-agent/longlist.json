@@ -60,7 +60,10 @@
       "dateLastSeen": "2026-05-01T19:10:07.910Z",
       "sz": 14,
       "nodeType": "product",
-      "proposalReason": "The article introduces two new TPU variants (8i and 8t) purpose-built for the agentic era, making TPU a distinct trackable product category with clear relevance to agentic infrastructure."
+      "proposalReason": "The article introduces two new TPU variants (8i and 8t) purpose-built for the agentic era, making TPU a distinct trackable product category with clear relevance to agentic infrastructure.",
+      "status": "promoted",
+      "promotedAt": "2026-05-03T08:04:27.840Z",
+      "promotedToGraphNodeId": "tpu"
     },
     {
       "id": "ai-inference-chip",
@@ -100,7 +103,10 @@
       "dateFirstSeen": "2026-04-26T22:40:25.832Z",
       "dateLastSeen": "2026-05-01T19:10:07.910Z",
       "sz": 14,
-      "proposalReason": "TPU 8i is explicitly framed as an inference-optimized chip for agentic workloads, introducing a meaningful hardware category distinct from training chips and worth tracking as agentic infrastructure matures."
+      "proposalReason": "TPU 8i is explicitly framed as an inference-optimized chip for agentic workloads, introducing a meaningful hardware category distinct from training chips and worth tracking as agentic infrastructure matures.",
+      "status": "promoted",
+      "promotedAt": "2026-05-03T08:04:27.840Z",
+      "promotedToGraphNodeId": "ai-inference-chip"
     },
     {
       "id": "ai-training-chip",
@@ -196,7 +202,10 @@
       "dateFirstSeen": "2026-04-26T22:40:25.832Z",
       "dateLastSeen": "2026-05-01T19:10:07.910Z",
       "sz": 14,
-      "proposalReason": "The article explicitly frames Google's approach as 'full-stack purpose-built infrastructure' spanning chips to data centers and energy, a distinct and recurring framing concept in the AI infrastructure landscape."
+      "proposalReason": "The article explicitly frames Google's approach as 'full-stack purpose-built infrastructure' spanning chips to data centers and energy, a distinct and recurring framing concept in the AI infrastructure landscape.",
+      "status": "promoted",
+      "promotedAt": "2026-05-03T08:04:27.840Z",
+      "promotedToGraphNodeId": "purpose-built-ai-infrastructure"
     },
     {
       "id": "ai-accelerator",
@@ -237,7 +246,10 @@
       "dateLastSeen": "2026-05-01T19:10:07.910Z",
       "sz": 14,
       "fullName": "AI Accelerator (custom silicon)",
-      "proposalReason": "The article frames TPUs as one instance of the broader 'AI accelerator' category — custom chips built specifically for AI math at scale. This framing term is increasingly important as hardware specialization becomes central to the AI landscape."
+      "proposalReason": "The article frames TPUs as one instance of the broader 'AI accelerator' category — custom chips built specifically for AI math at scale. This framing term is increasingly important as hardware specialization becomes central to the AI landscape.",
+      "status": "promoted",
+      "promotedAt": "2026-05-03T08:04:27.840Z",
+      "promotedToGraphNodeId": "ai-accelerator"
     },
     {
       "id": "gpt55",
@@ -483,7 +495,10 @@
       "dateFirstSeen": "2026-04-26T22:40:25.832Z",
       "dateLastSeen": "2026-05-01T19:10:07.910Z",
       "sz": 14,
-      "proposalReason": "Multiple testimonials and the article body specifically highlight 'long-horizon autonomy' as a named capability dimension, making it a distinct trackable concept in the agentic space."
+      "proposalReason": "Multiple testimonials and the article body specifically highlight 'long-horizon autonomy' as a named capability dimension, making it a distinct trackable concept in the agentic space.",
+      "status": "promoted",
+      "promotedAt": "2026-05-03T08:04:27.840Z",
+      "promotedToGraphNodeId": "long-horizon-autonomy"
     },
     {
       "id": "claude-design",
@@ -528,7 +543,10 @@
       "sz": 14,
       "fullName": "Claude Design (Anthropic Labs)",
       "nodeType": "product",
-      "proposalReason": "Newly announced Anthropic product with distinct identity and functionality; likely to be referenced frequently in future coverage of AI design tools."
+      "proposalReason": "Newly announced Anthropic product with distinct identity and functionality; likely to be referenced frequently in future coverage of AI design tools.",
+      "status": "promoted",
+      "promotedAt": "2026-05-03T08:04:27.840Z",
+      "promotedToGraphNodeId": "claude-design"
     },
     {
       "id": "design-system-integration",
@@ -604,7 +622,10 @@
       "dateLastSeen": "2026-04-28T19:40:36.332Z",
       "sz": 14,
       "fullName": "Handoff Bundle (Design-to-Code)",
-      "proposalReason": "Distinct operational concept introduced in the article for bridging AI design and AI coding workflows; extends the existing handoff-document concept in a product-specific way."
+      "proposalReason": "Distinct operational concept introduced in the article for bridging AI design and AI coding workflows; extends the existing handoff-document concept in a product-specific way.",
+      "status": "promoted",
+      "promotedAt": "2026-05-03T08:04:27.840Z",
+      "promotedToGraphNodeId": "handoff-bundle"
     },
     {
       "id": "interactive-prototyping",
@@ -646,7 +667,10 @@
       "dateLastSeen": "2026-04-28T19:40:36.332Z",
       "sz": 14,
       "fullName": "AI-Assisted Interactive Prototyping",
-      "proposalReason": "Prominent capability described throughout the article as a key use case; represents a distinct concept at the intersection of AI tooling and design workflows likely to recur in coverage."
+      "proposalReason": "Prominent capability described throughout the article as a key use case; represents a distinct concept at the intersection of AI tooling and design workflows likely to recur in coverage.",
+      "status": "promoted",
+      "promotedAt": "2026-05-03T08:04:27.840Z",
+      "promotedToGraphNodeId": "interactive-prototyping"
     },
     {
       "id": "reward-signal-leakage",
