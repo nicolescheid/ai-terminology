@@ -134,13 +134,17 @@ async function main() {
   // UA works on most index pages but some upstreams (notably OpenAI's
   // individual article pages and Anthropic's news article pages) appear to
   // distinguish — a browser-style UA slips through where the agent UA gets
-  // 403'd. Override only for backfill; regular runs keep the honest UA.
+  // 403'd. Override only for backfill; regular runs keep the honest UA at
+  // the config root (individual sources can opt into a UA override in
+  // config.mjs if they need it — see OpenAI Research).
   const fetchConfig = {
     ...config,
     userAgent: "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 DyadicMindKnowledgeGraphAgent/1.0"
   };
+  // Inter-request politeness gap. Distinct from the retry-on-failure
+  // backoff inside fetchText itself — this spaces out sequential fetches
+  // when iterating many articles, to avoid bursting an upstream.
   const REQUEST_PAUSE_MS = 1000;
-  const RETRY_PAUSE_MS = 3000;
   const sleep = (ms) => new Promise(r => setTimeout(r, ms));
 
   await logger.event("backfill_must_reads_start", {
@@ -166,14 +170,11 @@ async function main() {
     // on the first iteration (nothing to space from).
     if (i > 0) await sleep(REQUEST_PAUSE_MS);
 
-    // Try fetch; on failure, sleep + retry once. Some upstreams briefly
-    // 403/429 under burst then recover; one retry is enough to dodge most
-    // transient blocks without making backfill significantly slower.
-    let article = await tryFetch(seen, fetchConfig);
-    if (!article || !article.excerpt) {
-      await sleep(RETRY_PAUSE_MS);
-      article = await tryFetch(seen, fetchConfig);
-    }
+    // fetchText already retries once on failure (3s pause), so a single
+    // tryFetch call here covers transient 403/429 hiccups. If both attempts
+    // fail or the page parses to empty, count it as errored and move on —
+    // backfill is best-effort across many articles, never blocking.
+    const article = await tryFetch(seen, fetchConfig);
     if (!article || !article.excerpt) {
       console.log("fetch failed (after retry)");
       erroredCount++;

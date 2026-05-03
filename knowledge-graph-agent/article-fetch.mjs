@@ -1,6 +1,16 @@
 // Article collection: RSS/Atom feeds, HTML index pages, individual articles.
 // Pure side effects are network fetches and AbortController timeouts; everything
 // else is parsing strings.
+//
+// Failure discipline (this matters):
+//   - fetchText retries once on failure (3s pause) — transient 403/429s
+//     under burst recover by the second try.
+//   - fetchFeedItems and fetchIndexItems wrap fetchText in try/catch — a
+//     single failed source returns [] and the run continues with whatever
+//     other sources succeeded. Crashing the whole run on one upstream's
+//     bad day caused the 2 May 2026 scheduled-run outage.
+//   - fetchArticle already had try/catch (one bad article shouldn't lose
+//     the rest of the harvest); it now also benefits from fetchText's retry.
 
 import {
   collapseWhitespace,
@@ -15,6 +25,9 @@ import {
   stripHtml,
   titleFromUrl
 } from "./text-utils.mjs";
+
+const RETRY_PAUSE_MS = 3000;
+const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
 /**
  * Iterate every configured source and produce a deduplicated, freshness-sorted
@@ -37,6 +50,13 @@ export async function collectArticles(config, state) {
     } else {
       items = await fetchFeedItems(source, config);
     }
+    // Per-source UA override propagates onto each item so the subsequent
+    // fetchArticle call (which only sees the item, not the source) uses
+    // the same UA the index/feed fetch used. Most sources omit this and
+    // fall back to config.userAgent.
+    if (source.userAgent) {
+      items = items.map(item => ({ ...item, userAgent: source.userAgent }));
+    }
     sourceBatches.push(items);
   }
 
@@ -56,7 +76,13 @@ export async function collectArticles(config, state) {
 
 /** RSS or Atom feed → list of {title, url, publishedAt, sourceLabel}. */
 export async function fetchFeedItems(source, config) {
-  const xml = await fetchText(source.url, config);
+  let xml;
+  try {
+    xml = await fetchText(source.url, config, { userAgent: source.userAgent });
+  } catch (err) {
+    console.warn(`[article-fetch] Source "${source.label || source.url}" failed: ${err.message}. Skipping this source for this run.`);
+    return [];
+  }
   const items = [];
   const rssItems = matchBlocks(xml, "item");
   const atomItems = rssItems.length ? [] : matchBlocks(xml, "entry");
@@ -89,7 +115,13 @@ export async function fetchFeedItems(source, config) {
  * with includeUrlPatterns/excludeUrlPatterns regexes (against absolute URL).
  */
 export async function fetchIndexItems(source, config) {
-  const html = await fetchText(source.url, config);
+  let html;
+  try {
+    html = await fetchText(source.url, config, { userAgent: source.userAgent });
+  } catch (err) {
+    console.warn(`[article-fetch] Source "${source.label || source.url}" failed: ${err.message}. Skipping this source for this run.`);
+    return [];
+  }
   const anchors = [...html.matchAll(/<a\b[^>]*href=["']([^"'#]+)["'][^>]*>([\s\S]*?)<\/a>/gi)];
   const seen = new Set();
   const items = [];
@@ -131,7 +163,7 @@ export async function fetchIndexItems(source, config) {
  */
 export async function fetchArticle(item, config) {
   try {
-    const html = await fetchText(item.url, config);
+    const html = await fetchText(item.url, config, { userAgent: item.userAgent });
     const title = decodeEntities(
       extractMetaContent(html, "property", "og:title") ||
       extractTag(html, "title") ||
@@ -152,14 +184,34 @@ export async function fetchArticle(item, config) {
   }
 }
 
-/** Plain HTTP GET with the configured user-agent + abortable timeout. */
-export async function fetchText(url, config) {
+/**
+ * Plain HTTP GET with the configured user-agent + abortable timeout.
+ * Retries once on failure with a 3s pause — some upstreams briefly 403/429
+ * under burst then recover, and one retry is enough to dodge most transient
+ * blocks. Persistent failures (config error, dead host, sustained block)
+ * still throw on the second attempt and propagate to the caller's try/catch.
+ *
+ * The `options.userAgent` override lets per-source UA settings (set in
+ * config.mjs) flow through. Falls back to config.userAgent — the honest
+ * agent UA — for sources that don't need an override.
+ */
+export async function fetchText(url, config, options = {}) {
+  const userAgent = options.userAgent || config.userAgent;
+  try {
+    return await rawFetchText(url, config, userAgent);
+  } catch (err) {
+    await sleep(RETRY_PAUSE_MS);
+    return await rawFetchText(url, config, userAgent);
+  }
+}
+
+async function rawFetchText(url, config, userAgent) {
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), config.requestTimeoutMs);
   try {
     const response = await fetch(url, {
       headers: {
-        "user-agent": config.userAgent,
+        "user-agent": userAgent,
         accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
       },
       signal: controller.signal
