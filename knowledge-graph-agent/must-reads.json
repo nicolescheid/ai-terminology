@@ -1,9 +1,95 @@
 {
   "meta": {
-    "generatedAt": null,
-    "unreadCount": 0,
-    "totalCount": 0,
+    "generatedAt": "2026-05-03T08:34:24.939Z",
+    "unreadCount": 5,
+    "totalCount": 5,
     "note": "Lexi's must-reads — articles she flags as worth Nicole reading in full. Editorial signal, not news feed. Set status to 'read' or 'dismissed' via mark-must-reads.mjs."
   },
-  "entries": []
+  "entries": [
+    {
+      "title": "Claude is a space to think | Anthropic",
+      "url": "https://www.anthropic.com/news/claude-is-a-space-to-think",
+      "publishedAt": null,
+      "summary": "Anthropic publicly commits to keeping Claude ad-free, arguing that advertising incentives are structurally incompatible with a genuinely helpful AI assistant.",
+      "priority": 2,
+      "reason": "A rare public declaration from a frontier AI lab about business model philosophy, this piece frames the AI assistant as a 'space to think' — a framing with real terminological stakes for how we distinguish tools, advisors, and ad-supported platforms. The incentive-structure argument is articulated clearly enough to become a reference point in future debates about AI alignment and commercialization.",
+      "clusters": [
+        "core",
+        "business"
+      ],
+      "novelTermsInArticle": 0,
+      "flaggedAt": "2026-04-27T01:58:08.607Z",
+      "backfilled": true,
+      "backfilledAt": "2026-05-03T08:34:24.939Z",
+      "status": "unread"
+    },
+    {
+      "title": "AI evals are becoming the new compute bottleneck",
+      "url": "https://huggingface.co/blog/evaleval/eval-costs-bottleneck",
+      "publishedAt": "Wed, 29 Apr 2026 16:45:09 GMT",
+      "summary": "A detailed accounting of how AI evaluation costs — especially for agentic benchmarks — have crossed a threshold that limits who can participate, with evidence that eval compute can now exceed training compute in some domains.",
+      "priority": 2,
+      "reason": "This piece reframes 'evaluation' from a methodological footnote into a first-order infrastructure and economic constraint — a genuine vocabulary shift for anyone thinking about AI development cycles. The argument that eval compute can exceed training compute inverts a foundational assumption in the field and introduces cost-efficiency trade-offs (scaffold sensitivity, compression limits) as primary terminology for discussing benchmark design.",
+      "clusters": [
+        "technical",
+        "lifecycle"
+      ],
+      "novelTermsInArticle": 0,
+      "flaggedAt": "2026-04-30T19:20:00.611Z",
+      "backfilled": true,
+      "backfilledAt": "2026-05-03T08:34:24.939Z",
+      "status": "unread"
+    },
+    {
+      "title": "New Paper: Towards a science of AI agent reliability",
+      "url": "https://www.normaltech.ai/p/new-paper-towards-a-science-of-ai",
+      "publishedAt": "Tue, 24 Feb 2026 13:07:19 GMT",
+      "summary": "Researchers propose a 12-dimension framework for measuring AI agent reliability, finding that while capability benchmarks have improved rapidly over 18 months, reliability (consistency, robustness, calibration, and safety) has lagged significantly behind across all major model providers.",
+      "priority": 1,
+      "reason": "This paper offers a rigorous, multi-dimensional framework for thinking about AI agent reliability — distinguishing it sharply from accuracy — and draws on safety engineering traditions from aviation and nuclear to do so. It's a genuine conceptual contribution to how we define and discuss agentic AI, not just another benchmark paper.",
+      "clusters": [
+        "agentic",
+        "safety"
+      ],
+      "novelTermsInArticle": 0,
+      "flaggedAt": "2026-04-30T19:20:00.611Z",
+      "backfilled": true,
+      "backfilledAt": "2026-05-03T08:34:24.939Z",
+      "status": "unread"
+    },
+    {
+      "title": "We need RSS for sharing abundant vibe-coded apps",
+      "url": "https://simonwillison.net/2026/Apr/30/rss-vibe-coded-apps/#atom-everything",
+      "publishedAt": "2026-04-30T18:38:48+00:00",
+      "summary": "Simon Willison riffs on Matt Webb's idea that the proliferation of vibe-coded micro-apps calls for an RSS-like feed format, arguing that AI-accelerated app development makes shipping tools feel more like blogging than launching software.",
+      "priority": 3,
+      "reason": "A small but genuinely interesting framing: vibe-coding changes the cadence of software shipping so fundamentally that apps start to resemble blog posts, implying we need publishing infrastructure (like RSS) built for that rhythm. It reframes 'vibe-coded apps' not as products but as a new kind of personal, frequent artifact.",
+      "clusters": [
+        "evolved",
+        "tools"
+      ],
+      "novelTermsInArticle": 0,
+      "flaggedAt": "2026-04-30T19:20:00.611Z",
+      "backfilled": true,
+      "backfilledAt": "2026-05-03T08:34:24.939Z",
+      "status": "unread"
+    },
+    {
+      "title": "Open-world evaluations for measuring frontier AI capabilities",
+      "url": "https://www.normaltech.ai/p/open-world-evaluations-for-measuring",
+      "publishedAt": "Thu, 16 Apr 2026 17:47:29 GMT",
+      "summary": "Researchers introduce 'open-world evaluations' — long, unstructured, real-world AI capability tests — and launch CRUX, a multi-institutional project to conduct them systematically, including a demonstration where an AI agent successfully published an iOS app to the App Store.",
+      "priority": 1,
+      "reason": "Kapoor and Narayanan introduce 'open-world evaluations' as a distinct and well-defined class of AI assessment — a conceptual contribution that fills a genuine gap between narrow benchmarks and real-world capability claims. The CRUX framework and its methodology for handling messy, long-horizon tasks will likely anchor how researchers and policy analysts talk about capability measurement for years.",
+      "clusters": [
+        "technical",
+        "safety"
+      ],
+      "novelTermsInArticle": 0,
+      "flaggedAt": "2026-05-01T19:10:07.910Z",
+      "backfilled": true,
+      "backfilledAt": "2026-05-03T08:34:24.939Z",
+      "status": "unread"
+    }
+  ]
 }
