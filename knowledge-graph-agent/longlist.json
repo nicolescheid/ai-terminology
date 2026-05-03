@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-05-01T19:10:07.910Z",
+    "generatedAt": "2026-05-03T18:58:28.223Z",
     "entryCount": 30,
     "note": "Lexi-managed Tier 2 longlist — terms under observation, awaiting evidence to support promotion to the graph (Tier 1)."
   },
@@ -297,12 +297,20 @@
           "sourceLabel": "OpenAI News",
           "publishedAt": "Mon, 27 Apr 2026 14:00:00 GMT",
           "firstSeen": "2026-04-28T19:40:36.332Z"
+        },
+        {
+          "url": "https://openai.com/research/index/",
+          "domain": "openai.com",
+          "title": "OpenAI Research",
+          "sourceLabel": "OpenAI Research",
+          "publishedAt": null,
+          "firstSeen": "2026-05-03T18:58:28.223Z"
         }
       ],
-      "sourceCount": 4,
+      "sourceCount": 5,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-04-26T22:40:25.832Z",
-      "dateLastSeen": "2026-04-28T19:40:36.332Z",
+      "dateLastSeen": "2026-05-03T18:58:28.223Z",
       "sz": 14,
       "fullName": "GPT-5.5 (OpenAI)",
       "nodeType": "product",
@@ -341,12 +349,20 @@
           "sourceLabel": "OpenAI News",
           "publishedAt": "Sun, 26 Apr 2026 16:00:00 GMT",
           "firstSeen": "2026-04-27T01:58:08.607Z"
+        },
+        {
+          "url": "https://openai.com/research/index/",
+          "domain": "openai.com",
+          "title": "OpenAI Research",
+          "sourceLabel": "OpenAI Research",
+          "publishedAt": null,
+          "firstSeen": "2026-05-03T18:58:28.223Z"
         }
       ],
-      "sourceCount": 2,
+      "sourceCount": 3,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-04-26T22:40:25.832Z",
-      "dateLastSeen": "2026-04-27T01:58:08.607Z",
+      "dateLastSeen": "2026-05-03T18:58:28.223Z",
       "sz": 14,
       "proposalReason": "'System Card' is a widely used and consequential term in AI safety and model release governance, not yet in the graph or longlist. This article is a primary example of the artifact."
     },
@@ -797,12 +813,20 @@
           "sourceLabel": "OpenAI News",
           "publishedAt": "Wed, 29 Apr 2026 20:00:00 GMT",
           "firstSeen": "2026-04-30T19:20:00.611Z"
+        },
+        {
+          "url": "https://simonwillison.net/2026/May/3/anthropic/#atom-everything",
+          "domain": "simonwillison.net",
+          "title": "A quote from Anthropic",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-05-03T15:13:23+00:00",
+          "firstSeen": "2026-05-03T18:58:28.223Z"
         }
       ],
-      "sourceCount": 1,
-      "independentSourceCount": 1,
+      "sourceCount": 2,
+      "independentSourceCount": 2,
       "dateFirstSeen": "2026-04-30T19:20:00.611Z",
-      "dateLastSeen": "2026-04-30T19:20:00.611Z",
+      "dateLastSeen": "2026-05-03T18:58:28.223Z",
       "sz": 14,
       "fullName": "Behavioral Audit (Model)",
       "proposalReason": "The article describes a concrete behavioral audit process — tracking lexical tics across model versions, auditing reward signals, and filtering training data — presented as a new internal capability, making it a recurring and promotable concept."
@@ -828,12 +852,20 @@
           "sourceLabel": "Stratechery",
           "publishedAt": "Wed, 29 Apr 2026 10:00:00 +0000",
           "firstSeen": "2026-04-30T19:20:00.611Z"
+        },
+        {
+          "url": "https://stratechery.com/2026/long-term-peripheral-myopic-visions/",
+          "domain": "stratechery.com",
+          "title": "2026.18: Long-term, Peripheral & Myopic Visions",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Fri, 01 May 2026 17:00:00 +0000",
+          "firstSeen": "2026-05-03T18:58:28.223Z"
         }
       ],
-      "sourceCount": 1,
+      "sourceCount": 2,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-04-30T19:20:00.611Z",
-      "dateLastSeen": "2026-04-30T19:20:00.611Z",
+      "dateLastSeen": "2026-05-03T18:58:28.223Z",
       "sz": 14,
       "fullName": "Terafab (Intel AI Fab Initiative)",
       "proposalReason": "The article headline explicitly names 'Terafab' as a distinct topic worth analysis alongside Intel earnings and AI differentiation — a new named concept not yet in the graph or longlist."
@@ -860,12 +892,20 @@
           "sourceLabel": "Stratechery",
           "publishedAt": "Wed, 29 Apr 2026 10:00:00 +0000",
           "firstSeen": "2026-04-30T19:20:00.611Z"
+        },
+        {
+          "url": "https://stratechery.com/2026/long-term-peripheral-myopic-visions/",
+          "domain": "stratechery.com",
+          "title": "2026.18: Long-term, Peripheral & Myopic Visions",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Fri, 01 May 2026 17:00:00 +0000",
+          "firstSeen": "2026-05-03T18:58:28.223Z"
         }
       ],
-      "sourceCount": 1,
+      "sourceCount": 2,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-04-30T19:20:00.611Z",
-      "dateLastSeen": "2026-04-30T19:20:00.611Z",
+      "dateLastSeen": "2026-05-03T18:58:28.223Z",
       "sz": 14,
       "fullName": "AI-Driven CPU Demand (Structural Shift)",
       "proposalReason": "The article explicitly cites 'a structural shift in demand for CPUs for AI' as the chief driver of Intel's earnings — a framing concept distinct from GPU/accelerator demand narratives and worth tracking."

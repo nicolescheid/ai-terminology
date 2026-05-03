@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generatedAt": "2026-05-03T08:34:24.939Z",
-    "unreadCount": 5,
-    "totalCount": 5,
+    "generatedAt": "2026-05-03T18:58:28.223Z",
+    "unreadCount": 6,
+    "totalCount": 6,
     "note": "Lexi's must-reads — articles she flags as worth Nicole reading in full. Editorial signal, not news feed. Set status to 'read' or 'dismissed' via mark-must-reads.mjs."
   },
   "entries": [
@@ -89,6 +89,23 @@
       "flaggedAt": "2026-05-01T19:10:07.910Z",
       "backfilled": true,
       "backfilledAt": "2026-05-03T08:34:24.939Z",
+      "status": "unread"
+    },
+    {
+      "id": "4f62e0e117279b6a",
+      "title": "AI Won’t Automatically Make Legal Services Cheaper",
+      "url": "https://www.normaltech.ai/p/ai-wont-automatically-make-legal",
+      "source": "AI Snake Oil",
+      "publishedAt": "Thu, 12 Feb 2026 19:26:05 GMT",
+      "summary": "A rigorous essay applying the 'AI as Normal Technology' framework to legal services, arguing that three structural bottlenecks—regulatory barriers, adversarial dynamics, and human involvement—will prevent AI from automatically making legal outcomes cheaper or more accessible, regardless of capability advances.",
+      "priority": 1,
+      "reason": "A rigorous, domain-specific stress test of AI optimism: by tracing exactly why capability advances don't automatically translate to better outcomes in legal services, it offers a transferable analytical template for any high-stakes professional domain. The 'adversarial dynamics' argument alone is worth the read.",
+      "clusters": [
+        "critical",
+        "work"
+      ],
+      "novelTermsInArticle": 0,
+      "flaggedAt": "2026-05-03T18:58:28.223Z",
       "status": "unread"
     }
   ]

@@ -1,6 +1,6 @@
 {
-  "lastRunAt": "2026-05-01T19:10:07.910Z",
-  "reviewCursor": 80,
+  "lastRunAt": "2026-05-03T18:58:28.223Z",
+  "reviewCursor": 90,
   "seenArticles": {
     "93a049d060bc295b": {
       "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/tpus-8t-8i-cloud-next/",
@@ -211,6 +211,42 @@
       "title": "Codex CLI 0.128.0 adds /goal",
       "publishedAt": "2026-04-30T23:23:17+00:00",
       "seenAt": "2026-05-01T19:10:07.910Z"
+    },
+    "92f8ee26a85afd65": {
+      "url": "https://openai.com/index/advanced-account-security",
+      "title": "Introducing Advanced Account Security",
+      "publishedAt": "Thu, 30 Apr 2026 00:00:00 GMT",
+      "seenAt": "2026-05-03T18:58:28.223Z"
+    },
+    "4f62e0e117279b6a": {
+      "url": "https://www.normaltech.ai/p/ai-wont-automatically-make-legal",
+      "title": "AI Won’t Automatically Make Legal Services Cheaper",
+      "publishedAt": "Thu, 12 Feb 2026 19:26:05 GMT",
+      "seenAt": "2026-05-03T18:58:28.223Z"
+    },
+    "0e65dc22a46ec85b": {
+      "url": "https://lastweekin.ai/p/last-week-in-ai-339-dlss-5-openai",
+      "title": "Last Week in AI #339 - DLSS 5, OpenAI Superapp, MiniMax M2.7",
+      "publishedAt": "Mon, 23 Mar 2026 08:11:29 GMT",
+      "seenAt": "2026-05-03T18:58:28.223Z"
+    },
+    "191be98d658af752": {
+      "url": "https://stratechery.com/2026/long-term-peripheral-myopic-visions/",
+      "title": "2026.18: Long-term, Peripheral & Myopic Visions",
+      "publishedAt": "Fri, 01 May 2026 17:00:00 +0000",
+      "seenAt": "2026-05-03T18:58:28.223Z"
+    },
+    "1722432180f0faf0": {
+      "url": "https://simonwillison.net/2026/May/3/anthropic/#atom-everything",
+      "title": "A quote from Anthropic",
+      "publishedAt": "2026-05-03T15:13:23+00:00",
+      "seenAt": "2026-05-03T18:58:28.223Z"
+    },
+    "687f75100be8e4e4": {
+      "url": "https://openai.com/research/index/",
+      "title": "OpenAI Research",
+      "publishedAt": null,
+      "seenAt": "2026-05-03T18:58:28.223Z"
     }
   },
   "nodeReviews": {
@@ -600,19 +636,54 @@
       "reason": "No source material directly addresses the frontier model definition or contradicts its characterisation."
     },
     "frontier-red-team": {
-      "lastReviewedAt": "2026-05-01T19:10:07.910Z",
+      "lastReviewedAt": "2026-05-03T18:58:28.223Z",
       "status": "keep",
-      "reason": "No source material addresses Anthropic's Frontier Red Team or its role."
+      "reason": "No source material addresses Anthropic's Frontier Red Team. Definition remains accurate based on prior knowledge; no update warranted."
     },
     "gemini": {
-      "lastReviewedAt": "2026-05-01T19:10:07.910Z",
-      "status": "insufficient_evidence",
-      "reason": "The podcast mentions 'Google expanded Deep Research with a Max option built on Gemini 3.1 Pro' — suggesting a Gemini 3.1 generation exists — but there is insufficient detail in the excerpts to justify rewriting the definition with confidence."
+      "lastReviewedAt": "2026-05-03T18:58:28.223Z",
+      "status": "keep",
+      "reason": "No source material provides updated information about Gemini's capabilities or context window. Definition can be retained as-is."
     },
     "gemma-4": {
-      "lastReviewedAt": "2026-05-01T19:10:07.910Z",
+      "lastReviewedAt": "2026-05-03T18:58:28.223Z",
+      "status": "insufficient_evidence",
+      "reason": "No source material confirms or contradicts the Gemma 4 definition. Cannot verify the April 2, 2026 release date, Apache 2.0 licensing, or MoE architecture claims from provided excerpts."
+    },
+    "general-availability": {
+      "lastReviewedAt": "2026-05-03T18:58:28.223Z",
       "status": "keep",
-      "reason": "No source material references Gemma 4 or contradicts the existing definition."
+      "reason": "Conceptual definition with no time-sensitive claims. No source material challenges it."
+    },
+    "github-copilot": {
+      "lastReviewedAt": "2026-05-03T18:58:28.223Z",
+      "status": "keep",
+      "reason": "No source material addresses GitHub Copilot. Historical facts in the definition remain accurate."
+    },
+    "goal-drift": {
+      "lastReviewedAt": "2026-05-03T18:58:28.223Z",
+      "status": "keep",
+      "reason": "Conceptual definition. No source material addresses or contradicts it."
+    },
+    "google-co": {
+      "lastReviewedAt": "2026-05-03T18:58:28.223Z",
+      "status": "keep",
+      "reason": "No source material contradicts the Google/DeepMind definition. Facts stated are stable."
+    },
+    "gpt54": {
+      "lastReviewedAt": "2026-05-03T18:58:28.223Z",
+      "status": "refresh",
+      "reason": "OpenAI Research confirms GPT-5.5 was introduced April 23, 2026 as their 'smartest model yet,' directly contradicting the definition's claim that GPT-5.4 is the 'current flagship model as of March 2026.' The definition requires updating to reflect GPT-5.4's superseded status."
+    },
+    "grok": {
+      "lastReviewedAt": "2026-05-03T18:58:28.223Z",
+      "status": "insufficient_evidence",
+      "reason": "No source material confirms or contradicts the current Grok version number or architectural claims. Cannot verify 'Grok 4.20' or the four-agent parallel processing claim from provided excerpts."
+    },
+    "grounding": {
+      "lastReviewedAt": "2026-05-03T18:58:28.223Z",
+      "status": "keep",
+      "reason": "Conceptual definition. No source material challenges the explanation of grounding or RAG."
     }
   }
 }

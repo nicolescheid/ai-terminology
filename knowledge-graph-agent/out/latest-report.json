@@ -1,58 +1,58 @@
 {
-  "generatedAt": "2026-05-01T19:10:07.910Z",
+  "generatedAt": "2026-05-03T18:58:28.223Z",
   "model": "claude-sonnet-4-6",
-  "sourcesConfigured": 10,
+  "sourcesConfigured": 12,
   "articlesConsidered": [
     {
-      "id": "6af9b6a7000314f8",
-      "source": "Hugging Face Blog",
-      "title": "Granite 4.1 LLMs: How They’re Built",
-      "url": "https://huggingface.co/blog/ibm-granite/granite-4-1",
-      "publishedAt": "Wed, 29 Apr 2026 15:01:48 GMT"
-    },
-    {
-      "id": "0889e6f0be8e183a",
+      "id": "92f8ee26a85afd65",
       "source": "OpenAI News",
-      "title": "Building the compute infrastructure for the Intelligence Age",
-      "url": "https://openai.com/index/building-the-compute-infrastructure-for-the-intelligence-age",
-      "publishedAt": "Wed, 29 Apr 2026 15:00:00 GMT"
+      "title": "Introducing Advanced Account Security",
+      "url": "https://openai.com/index/advanced-account-security",
+      "publishedAt": "Thu, 30 Apr 2026 00:00:00 GMT"
     },
     {
-      "id": "f8e2d2d0f6ce84bb",
-      "source": "Stratechery",
-      "title": "Amazon Earnings, Trainium and Commodity Markets, Additional Amazon Notes",
-      "url": "https://stratechery.com/2026/amazon-earnings-trainium-and-commodity-markets-additional-amazon-notes/",
-      "publishedAt": "Thu, 30 Apr 2026 10:00:00 +0000"
-    },
-    {
-      "id": "4efbcb4a4c3ecc1b",
-      "source": "Last Week in AI",
-      "title": "LWiAI Podcast #242 - ChatGPT Images 2.0, Qwen 3.6 Max, Kimi-K2.6",
-      "url": "https://lastweekin.ai/p/lwiai-podcast-242-chatgpt-images",
-      "publishedAt": "Thu, 30 Apr 2026 07:14:45 GMT"
-    },
-    {
-      "id": "47da4457851c2ffa",
+      "id": "4f62e0e117279b6a",
       "source": "AI Snake Oil",
-      "title": "Open-world evaluations for measuring frontier AI capabilities",
-      "url": "https://www.normaltech.ai/p/open-world-evaluations-for-measuring",
-      "publishedAt": "Thu, 16 Apr 2026 17:47:29 GMT"
+      "title": "AI Won’t Automatically Make Legal Services Cheaper",
+      "url": "https://www.normaltech.ai/p/ai-wont-automatically-make-legal",
+      "publishedAt": "Thu, 12 Feb 2026 19:26:05 GMT"
     },
     {
-      "id": "c681fd61f7badbff",
+      "id": "0e65dc22a46ec85b",
+      "source": "Last Week in AI",
+      "title": "Last Week in AI #339 - DLSS 5, OpenAI Superapp, MiniMax M2.7",
+      "url": "https://lastweekin.ai/p/last-week-in-ai-339-dlss-5-openai",
+      "publishedAt": "Mon, 23 Mar 2026 08:11:29 GMT"
+    },
+    {
+      "id": "191be98d658af752",
+      "source": "Stratechery",
+      "title": "2026.18: Long-term, Peripheral & Myopic Visions",
+      "url": "https://stratechery.com/2026/long-term-peripheral-myopic-visions/",
+      "publishedAt": "Fri, 01 May 2026 17:00:00 +0000"
+    },
+    {
+      "id": "1722432180f0faf0",
       "source": "Simon Willison's Weblog",
-      "title": "Codex CLI 0.128.0 adds /goal",
-      "url": "https://simonwillison.net/2026/Apr/30/codex-goals/#atom-everything",
-      "publishedAt": "2026-04-30T23:23:17+00:00"
+      "title": "A quote from Anthropic",
+      "url": "https://simonwillison.net/2026/May/3/anthropic/#atom-everything",
+      "publishedAt": "2026-05-03T15:13:23+00:00"
+    },
+    {
+      "id": "687f75100be8e4e4",
+      "source": "OpenAI Research",
+      "title": "OpenAI Research",
+      "url": "https://openai.com/research/index/",
+      "publishedAt": null
     }
   ],
   "harvestedTerms": [
     {
       "article": {
-        "title": "Granite 4.1 LLMs: How They’re Built",
-        "url": "https://huggingface.co/blog/ibm-granite/granite-4-1"
+        "title": "Introducing Advanced Account Security",
+        "url": "https://openai.com/index/advanced-account-security"
       },
-      "summary": "IBM's Granite 4.1 technical walkthrough covers a multi-stage pre-training pipeline, LLM-as-Judge SFT quality control, GRPO-based reinforcement learning, and long-context extension techniques. Several trackable concepts emerge including the LLM-as-Judge evaluation framework, GRPO (a specific RL algorithm), long-context extension (LCE), and data annealing.",
+      "summary": "OpenAI announces Advanced Account Security, an opt-in hardened account protection feature for ChatGPT and Codex users, featuring phishing-resistant authentication (passkeys/security keys), restricted account recovery, shorter sessions, and automatic training exclusion. Also announces a Yubico partnership and mandates the feature for Trusted Access for Cyber program members.",
       "longlistAdditions": [],
       "longlistUpdates": [],
       "rejections": [],
@@ -60,69 +60,25 @@
     },
     {
       "article": {
-        "title": "Building the compute infrastructure for the Intelligence Age",
-        "url": "https://openai.com/index/building-the-compute-infrastructure-for-the-intelligence-age"
+        "title": "AI Won’t Automatically Make Legal Services Cheaper",
+        "url": "https://www.normaltech.ai/p/ai-wont-automatically-make-legal"
       },
-      "summary": "OpenAI article about building compute infrastructure for the Intelligence Age — likely covers purpose-built AI infrastructure, custom silicon/accelerators, and data center scale topics. Article excerpt is empty so candidates are inferred from title and source context.",
+      "summary": "A rigorous essay applying the 'AI as Normal Technology' framework to legal services, arguing that three structural bottlenecks—regulatory barriers, adversarial dynamics, and human involvement—will prevent AI from automatically making legal outcomes cheaper or more accessible, regardless of capability advances.",
       "longlistAdditions": [],
-      "longlistUpdates": [
-        {
-          "id": "purpose-built-ai-infrastructure",
-          "label": "Purpose-Built AI Infrastructure",
-          "sourceAdded": true,
-          "sourceCount": 4,
-          "independentSourceCount": 3
-        },
-        {
-          "id": "ai-accelerator",
-          "label": "AI Accelerator",
-          "sourceAdded": true,
-          "sourceCount": 2,
-          "independentSourceCount": 2
-        },
-        {
-          "id": "tpu",
-          "label": "TPU (Tensor Processing Unit)",
-          "sourceAdded": true,
-          "sourceCount": 4,
-          "independentSourceCount": 2
-        }
-      ],
+      "longlistUpdates": [],
       "rejections": [],
-      "proposalsQueued": []
+      "proposalsQueued": [],
+      "mustReadFlagged": {
+        "priority": 1,
+        "reason": "A rigorous, domain-specific stress test of AI optimism: by tracing exactly why capability advances don't automatically translate to better outcomes in legal services, it offers a transferable analytical template for any high-stakes professional domain. The 'adversarial dynamics' argument alone is worth the read."
+      }
     },
     {
       "article": {
-        "title": "Amazon Earnings, Trainium and Commodity Markets, Additional Amazon Notes",
-        "url": "https://stratechery.com/2026/amazon-earnings-trainium-and-commodity-markets-additional-amazon-notes/"
+        "title": "Last Week in AI #339 - DLSS 5, OpenAI Superapp, MiniMax M2.7",
+        "url": "https://lastweekin.ai/p/last-week-in-ai-339-dlss-5-openai"
       },
-      "summary": "Article covers Amazon's Q1 2026 earnings with focus on Trainium (Amazon's custom AI chip), the shift from training to inference and agents, and broader implications for AI infrastructure. Key themes: custom silicon for inference, commodity dynamics in AI hardware markets, and agentic workloads driving chip demand.",
-      "longlistAdditions": [],
-      "longlistUpdates": [
-        {
-          "id": "ai-inference-chip",
-          "label": "AI Inference Chip",
-          "sourceAdded": true,
-          "sourceCount": 2,
-          "independentSourceCount": 2
-        },
-        {
-          "id": "purpose-built-ai-infrastructure",
-          "label": "Purpose-Built AI Infrastructure",
-          "sourceAdded": true,
-          "sourceCount": 5,
-          "independentSourceCount": 3
-        }
-      ],
-      "rejections": [],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "LWiAI Podcast #242 - ChatGPT Images 2.0, Qwen 3.6 Max, Kimi-K2.6",
-        "url": "https://lastweekin.ai/p/lwiai-podcast-242-chatgpt-images"
-      },
-      "summary": "Podcast episode covering ChatGPT Images 2.0 for text-in-image generation, Chinese model releases (Qwen 3.6 Max, Kimi K2.6 1T MoE, MiniMax M2.7), Google Deep Research Max with MCP, Claude Mythos security incidents, SpaceX-Cursor deal, Cerebras IPO filing, and synthetic media policy topics.",
+      "summary": "A news roundup covering DLSS 5 generative AI upscaling for games, OpenAI's reported pivot toward business/productivity, and MiniMax M2.7. The excerpt is paywalled and thin on substance, offering only headlines.",
       "longlistAdditions": [],
       "longlistUpdates": [],
       "rejections": [],
@@ -130,22 +86,22 @@
     },
     {
       "article": {
-        "title": "Open-world evaluations for measuring frontier AI capabilities",
-        "url": "https://www.normaltech.ai/p/open-world-evaluations-for-measuring"
+        "title": "2026.18: Long-term, Peripheral & Myopic Visions",
+        "url": "https://stratechery.com/2026/long-term-peripheral-myopic-visions/"
       },
-      "summary": "Article introduces CRUX, a collaborative project for open-world AI evaluations—long, messy, real-world tasks that go beyond standard benchmarks. Key concepts include open-world evaluations as a distinct evaluation paradigm, the CRUX organization itself, and the iOS app publication experiment as an example of agentic capability assessment.",
+      "summary": "A weekly Stratechery roundup covering Amazon/AWS's AI infrastructure bet on Trainium and inference, the OpenAI-AWS Bedrock Managed Agents partnership, Intel's CPU demand shift, Meta's AR Display glasses, and China's blocking of Meta's Manus acquisition. Primarily a newsletter index with brief editorial framing rather than deep analysis.",
       "longlistAdditions": [],
       "longlistUpdates": [
         {
-          "id": "long-horizon-autonomy",
-          "label": "Long-Horizon Autonomy",
+          "id": "terafab",
+          "label": "Terafab",
           "sourceAdded": true,
           "sourceCount": 2,
-          "independentSourceCount": 2
+          "independentSourceCount": 1
         },
         {
-          "id": "capability-reliability-gap",
-          "label": "Capability-Reliability Gap",
+          "id": "ai-driven-cpu-demand",
+          "label": "AI-Driven CPU Demand",
           "sourceAdded": true,
           "sourceCount": 2,
           "independentSourceCount": 1
@@ -156,66 +112,101 @@
     },
     {
       "article": {
-        "title": "Codex CLI 0.128.0 adds /goal",
-        "url": "https://simonwillison.net/2026/Apr/30/codex-goals/#atom-everything"
+        "title": "A quote from Anthropic",
+        "url": "https://simonwillison.net/2026/May/3/anthropic/#atom-everything"
       },
-      "summary": "Article covers Codex CLI 0.128.0's new /goal feature, which implements a loop-until-goal-achieved pattern with token budget management, referencing the 'Ralph loop' concept and automatic prompt injection for goal evaluation.",
+      "summary": "Simon Willison quotes Anthropic's report on Claude's sycophantic behavior, noting that while sycophancy appeared in only 9% of conversations overall, it spiked in spirituality (38%) and relationship (25%) topics. The piece references an automatic classifier used to measure sycophancy dimensions like willingness to push back and frankness.",
       "longlistAdditions": [],
-      "longlistUpdates": [],
+      "longlistUpdates": [
+        {
+          "id": "behavioral-audit",
+          "label": "Behavioral Audit",
+          "sourceAdded": true,
+          "sourceCount": 2,
+          "independentSourceCount": 2
+        }
+      ],
+      "rejections": [],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "OpenAI Research",
+        "url": "https://openai.com/research/index/"
+      },
+      "summary": "OpenAI Research index page listing recent publications including GPT-5.5 launch, system card, goblin output analysis, privacy filter, chain-of-thought misalignment monitoring, and instruction hierarchy work. Primarily a product/research index rather than a deep conceptual article.",
+      "longlistAdditions": [],
+      "longlistUpdates": [
+        {
+          "id": "gpt55",
+          "label": "GPT-5.5",
+          "sourceAdded": true,
+          "sourceCount": 5,
+          "independentSourceCount": 1
+        },
+        {
+          "id": "system-card",
+          "label": "System Card",
+          "sourceAdded": true,
+          "sourceCount": 3,
+          "independentSourceCount": 1
+        }
+      ],
       "rejections": [],
       "proposalsQueued": []
     }
   ],
   "definitionReviews": [
     {
-      "id": "evals",
-      "status": "keep",
-      "reason": "The CRUX paper on open-world evaluations reinforces the existing definition's point that building good evals is hard and that benchmark saturation is a real problem. The new material (open-world evals, CRUX project) extends the concept but doesn't contradict or materially update the core definition enough to require a rewrite."
-    },
-    {
-      "id": "evaluation-gaming",
-      "status": "keep",
-      "reason": "No source material addresses evaluation gaming or the specific Mythos testing statistics cited. The podcast mention of 'Anthropic's Mythos' fixing Firefox bugs is a different use context and doesn't bear on this definition."
-    },
-    {
-      "id": "exploit",
-      "status": "keep",
-      "reason": "No source material addresses exploits or the Claude Mythos exploit-writing capability described in the definition."
-    },
-    {
-      "id": "exploit-chain",
-      "status": "keep",
-      "reason": "No source material addresses exploit chains or autonomous vulnerability chaining capabilities."
-    },
-    {
-      "id": "feature-flag",
-      "status": "keep",
-      "reason": "No source material addresses feature flags or the Claude Code leak referenced in the definition."
-    },
-    {
-      "id": "fine-tuning",
-      "status": "keep",
-      "reason": "The Granite 4.1 article describes supervised fine-tuning in technical detail (LLM-as-Judge, multi-stage RL pipeline) but does not contradict or materially change the existing concise definition. The definition accurately captures the concept."
-    },
-    {
-      "id": "frontier-model",
-      "status": "keep",
-      "reason": "No source material directly addresses the frontier model definition or contradicts its characterisation."
-    },
-    {
       "id": "frontier-red-team",
       "status": "keep",
-      "reason": "No source material addresses Anthropic's Frontier Red Team or its role."
+      "reason": "No source material addresses Anthropic's Frontier Red Team. Definition remains accurate based on prior knowledge; no update warranted."
     },
     {
       "id": "gemini",
-      "status": "insufficient_evidence",
-      "reason": "The podcast mentions 'Google expanded Deep Research with a Max option built on Gemini 3.1 Pro' — suggesting a Gemini 3.1 generation exists — but there is insufficient detail in the excerpts to justify rewriting the definition with confidence."
+      "status": "keep",
+      "reason": "No source material provides updated information about Gemini's capabilities or context window. Definition can be retained as-is."
     },
     {
       "id": "gemma-4",
+      "status": "insufficient_evidence",
+      "reason": "No source material confirms or contradicts the Gemma 4 definition. Cannot verify the April 2, 2026 release date, Apache 2.0 licensing, or MoE architecture claims from provided excerpts."
+    },
+    {
+      "id": "general-availability",
       "status": "keep",
-      "reason": "No source material references Gemma 4 or contradicts the existing definition."
+      "reason": "Conceptual definition with no time-sensitive claims. No source material challenges it."
+    },
+    {
+      "id": "github-copilot",
+      "status": "keep",
+      "reason": "No source material addresses GitHub Copilot. Historical facts in the definition remain accurate."
+    },
+    {
+      "id": "goal-drift",
+      "status": "keep",
+      "reason": "Conceptual definition. No source material addresses or contradicts it."
+    },
+    {
+      "id": "google-co",
+      "status": "keep",
+      "reason": "No source material contradicts the Google/DeepMind definition. Facts stated are stable."
+    },
+    {
+      "id": "gpt54",
+      "status": "refresh",
+      "def": "OpenAI model released prior to GPT-5.5. Combines advanced reasoning, coding, and computer use. Available in standard, Thinking, and Pro variants with up to 1M token context via API. Superseded by GPT-5.5 (released April 23, 2026) as OpenAI's flagship model.",
+      "reason": "OpenAI Research confirms GPT-5.5 was introduced April 23, 2026 as their 'smartest model yet,' directly contradicting the definition's claim that GPT-5.4 is the 'current flagship model as of March 2026.' The definition requires updating to reflect GPT-5.4's superseded status."
+    },
+    {
+      "id": "grok",
+      "status": "insufficient_evidence",
+      "reason": "No source material confirms or contradicts the current Grok version number or architectural claims. Cannot verify 'Grok 4.20' or the four-agent parallel processing claim from provided excerpts."
+    },
+    {
+      "id": "grounding",
+      "status": "keep",
+      "reason": "Conceptual definition. No source material challenges the explanation of grounding or RAG."
     }
   ],
   "notes": []

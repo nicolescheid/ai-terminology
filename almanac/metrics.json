@@ -1,23 +1,41 @@
 {
-  "generatedAt": "2026-05-03T08:22:46.199Z",
+  "generatedAt": "2026-05-03T19:00:04.158Z",
   "firstRunAt": "2026-04-27T01:07:31.335Z",
   "phase": 1,
   "headline": {
-    "articlesRead": 35,
+    "articlesRead": 41,
     "daysRunning": 7,
     "longlistSize": 22,
     "graphSize": 206
   },
   "thisWeek": {
-    "articlesFetched": 35,
+    "articlesFetched": 41,
     "longlistAdded": 30,
     "sourcesAdded": 0,
     "promotionsToGraph": 8,
-    "proposalsQueued": 8,
+    "proposalsQueued": 9,
     "auditFlags": 7,
-    "notesAdded": 80
+    "notesAdded": 94
   },
   "almostThere": [
+    {
+      "id": "behavioral-audit",
+      "label": "Behavioral Audit",
+      "fullName": "Behavioral Audit (Model)",
+      "clusters": [
+        "safety",
+        "technical"
+      ],
+      "sourceCount": 2,
+      "independentSources": 2,
+      "daysOnLonglist": 2,
+      "domains": [
+        "openai.com",
+        "simonwillison.net"
+      ],
+      "gapCount": 1,
+      "gap": "1 more day on longlist"
+    },
     {
       "id": "gpt55",
       "label": "GPT-5.5",
@@ -26,7 +44,7 @@
         "models",
         "companies"
       ],
-      "sourceCount": 4,
+      "sourceCount": 5,
       "independentSources": 1,
       "daysOnLonglist": 6,
       "domains": [
@@ -43,7 +61,7 @@
         "safety",
         "lifecycle"
       ],
-      "sourceCount": 2,
+      "sourceCount": 3,
       "independentSources": 1,
       "daysOnLonglist": 6,
       "domains": [
@@ -51,6 +69,40 @@
       ],
       "gapCount": 1,
       "gap": "needs 1 more independent source"
+    },
+    {
+      "id": "terafab",
+      "label": "Terafab",
+      "fullName": "Terafab (Intel AI Fab Initiative)",
+      "clusters": [
+        "landscape",
+        "companies"
+      ],
+      "sourceCount": 2,
+      "independentSources": 1,
+      "daysOnLonglist": 2,
+      "domains": [
+        "stratechery.com"
+      ],
+      "gapCount": 2,
+      "gap": "needs 1 more independent source; 1 more day on longlist"
+    },
+    {
+      "id": "ai-driven-cpu-demand",
+      "label": "AI-Driven CPU Demand",
+      "fullName": "AI-Driven CPU Demand (Structural Shift)",
+      "clusters": [
+        "landscape",
+        "business"
+      ],
+      "sourceCount": 2,
+      "independentSources": 1,
+      "daysOnLonglist": 2,
+      "domains": [
+        "stratechery.com"
+      ],
+      "gapCount": 2,
+      "gap": "needs 1 more independent source; 1 more day on longlist"
     },
     {
       "id": "capability-reliability-gap",
@@ -139,67 +191,13 @@
       ],
       "gapCount": 2,
       "gap": "needs 1 more source; needs 1 more independent source"
-    },
-    {
-      "id": "design-system-integration",
-      "label": "Design System Integration",
-      "fullName": "Design System Integration (AI-native)",
-      "clusters": [
-        "work",
-        "agentic",
-        "context"
-      ],
-      "sourceCount": 1,
-      "independentSources": 1,
-      "daysOnLonglist": 6,
-      "domains": [
-        "anthropic.com"
-      ],
-      "gapCount": 2,
-      "gap": "needs 1 more source; needs 1 more independent source"
-    },
-    {
-      "id": "reward-signal-leakage",
-      "label": "Reward Signal Leakage",
-      "fullName": null,
-      "clusters": [
-        "safety",
-        "models",
-        "technical"
-      ],
-      "sourceCount": 1,
-      "independentSources": 1,
-      "daysOnLonglist": 2,
-      "domains": [
-        "openai.com"
-      ],
-      "gapCount": 3,
-      "gap": "needs 1 more source; needs 1 more independent source; 1 more day on longlist"
-    },
-    {
-      "id": "sft-data-contamination",
-      "label": "SFT Data Contamination",
-      "fullName": "Supervised Fine-Tuning Data Contamination",
-      "clusters": [
-        "technical",
-        "models",
-        "safety"
-      ],
-      "sourceCount": 1,
-      "independentSources": 1,
-      "daysOnLonglist": 2,
-      "domains": [
-        "openai.com"
-      ],
-      "gapCount": 3,
-      "gap": "needs 1 more source; needs 1 more independent source; 1 more day on longlist"
     }
   ],
   "sources": {
     "byDomain": [
       {
         "domain": "openai.com",
-        "count": 14
+        "count": 16
       },
       {
         "domain": "blog.google",
@@ -210,23 +208,23 @@
         "count": 5
       },
       {
-        "domain": "huggingface.co",
-        "count": 2
-      },
-      {
         "domain": "stratechery.com",
-        "count": 2
+        "count": 3
       },
       {
         "domain": "lastweekin.ai",
-        "count": 2
+        "count": 3
       },
       {
         "domain": "normaltech.ai",
-        "count": 2
+        "count": 3
       },
       {
         "domain": "simonwillison.net",
+        "count": 3
+      },
+      {
+        "domain": "huggingface.co",
         "count": 2
       }
     ],
@@ -452,7 +450,7 @@
     "note": "All graph promotions and substantive edits are currently human-gated. Lexi proposes; Nicole approves."
   },
   "proposalsByStatus": {
-    "pending": 0,
+    "pending": 1,
     "approved": 0,
     "applied": 8,
     "rejected": 0

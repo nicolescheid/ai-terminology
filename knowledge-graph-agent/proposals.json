@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-05-03T08:04:27.840Z",
-    "pendingCount": 0,
+    "generatedAt": "2026-05-03T19:00:03.654Z",
+    "pendingCount": 1,
     "appliedCount": 8,
     "rejectedCount": 0,
     "note": "Lexi proposals queue. Actions gated as PROPOSE land here as status: 'pending'. Edit a proposal's status to 'approved' or 'rejected' and run the apply step (TBD) to commit."
@@ -414,6 +414,34 @@
       "reason": "Force-promoted: 2 sources all from anthropic.com (fails 2-domain independence check), but Nicole confirms term is in widespread use within Anthropic's product surface.",
       "runId": "cecc076c-1570-4938-9e0a-ccfa3f66d599",
       "appliedAt": "2026-05-03T08:04:27.840Z"
+    },
+    {
+      "id": "e74306cc02ca5217",
+      "action": "edit_graph_def_substantive",
+      "gate": "propose",
+      "proposedAt": "2026-05-03T18:58:28.223Z",
+      "status": "pending",
+      "source": "definition-review",
+      "target": {
+        "kind": "graph_node",
+        "id": "gpt54"
+      },
+      "payload": {
+        "def": "OpenAI model released prior to GPT-5.5. Combines advanced reasoning, coding, and computer use. Available in standard, Thinking, and Pro variants with up to 1M token context via API. Superseded by GPT-5.5 (released April 23, 2026) as OpenAI's flagship model.",
+        "refs": [
+          {
+            "n": 1,
+            "src": "OpenAI News, Thu, 30 Apr 2026 00:00:00 GMT",
+            "q": "Introducing Advanced Account Security OpenAI News"
+          },
+          {
+            "n": 2,
+            "src": "AI Snake Oil, Thu, 12 Feb 2026 19:26:05 GMT",
+            "q": "AI Won’t Automatically Make Legal Services Cheaper AI Snake Oil"
+          }
+        ]
+      },
+      "reason": "OpenAI Research confirms GPT-5.5 was introduced April 23, 2026 as their 'smartest model yet,' directly contradicting the definition's claim that GPT-5.4 is the 'current flagship model as of March 2026.' The definition requires updating to reflect GPT-5.4's superseded status."
     }
   ]
 }
