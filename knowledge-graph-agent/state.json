@@ -1,6 +1,6 @@
 {
-  "lastRunAt": "2026-05-03T18:58:28.223Z",
-  "reviewCursor": 90,
+  "lastRunAt": "2026-05-04T19:27:54.284Z",
+  "reviewCursor": 100,
   "seenArticles": {
     "93a049d060bc295b": {
       "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/tpus-8t-8i-cloud-next/",
@@ -247,6 +247,42 @@
       "title": "OpenAI Research",
       "publishedAt": null,
       "seenAt": "2026-05-03T18:58:28.223Z"
+    },
+    "4e60ba9595b8ef99": {
+      "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-april-2026/",
+      "title": "The latest AI news we announced in April 2026",
+      "publishedAt": "Mon, 04 May 2026 17:00:00 +0000",
+      "seenAt": "2026-05-04T19:27:54.284Z"
+    },
+    "637ec671dad66e69": {
+      "url": "https://stratechery.com/2026/google-earnings-meta-earnings/",
+      "title": "Google Earnings, Meta Earnings",
+      "publishedAt": "Mon, 04 May 2026 10:00:00 +0000",
+      "seenAt": "2026-05-04T19:27:54.284Z"
+    },
+    "d6581b92c87ef014": {
+      "url": "https://openai.com/index/delivering-low-latency-voice-ai-at-scale",
+      "title": "How OpenAI delivers low-latency voice AI at scale",
+      "publishedAt": "Mon, 04 May 2026 00:00:00 GMT",
+      "seenAt": "2026-05-04T19:27:54.284Z"
+    },
+    "375b3d26ea022606": {
+      "url": "https://simonwillison.net/2026/May/4/tre-python-binding/#atom-everything",
+      "title": "Research: TRE Python binding — ReDoS robustness demo",
+      "publishedAt": "2026-05-04T17:52:00+00:00",
+      "seenAt": "2026-05-04T19:27:54.284Z"
+    },
+    "6659803055f395cb": {
+      "url": "https://openai.com/index/introducing-gpt-5-5/",
+      "title": "Introducing GPT-5.5",
+      "publishedAt": null,
+      "seenAt": "2026-05-04T19:27:54.284Z"
+    },
+    "2f244068731d266d": {
+      "url": "https://www.anthropic.com/news/enterprise-ai-services-company",
+      "title": "Building a new enterprise AI services company with Blackstone, Hellman & Friedman, and Goldman Sachs ",
+      "publishedAt": null,
+      "seenAt": "2026-05-04T19:27:54.284Z"
     }
   },
   "nodeReviews": {
@@ -684,6 +720,56 @@
       "lastReviewedAt": "2026-05-03T18:58:28.223Z",
       "status": "keep",
       "reason": "Conceptual definition. No source material challenges the explanation of grounding or RAG."
+    },
+    "guardrails": {
+      "lastReviewedAt": "2026-05-04T19:27:54.284Z",
+      "status": "keep",
+      "reason": "No source material addresses guardrails in a way that contradicts or materially extends the existing definition. Definition remains accurate."
+    },
+    "hallucination": {
+      "lastReviewedAt": "2026-05-04T19:27:54.284Z",
+      "status": "keep",
+      "reason": "No source material covers hallucination conceptually. Definition remains accurate."
+    },
+    "hallucination-cascade": {
+      "lastReviewedAt": "2026-05-04T19:27:54.284Z",
+      "status": "keep",
+      "reason": "No source material addresses hallucination cascades. Definition remains accurate."
+    },
+    "handoff": {
+      "lastReviewedAt": "2026-05-04T19:27:54.284Z",
+      "status": "keep",
+      "reason": "No source material addresses agent handoff. Definition remains accurate."
+    },
+    "handoff-bundle": {
+      "lastReviewedAt": "2026-05-04T19:27:54.284Z",
+      "status": "keep",
+      "reason": "No source material addresses handoff bundles. Definition remains accurate."
+    },
+    "handoff-document": {
+      "lastReviewedAt": "2026-05-04T19:27:54.284Z",
+      "status": "keep",
+      "reason": "No source material addresses handoff documents. Definition remains accurate."
+    },
+    "harness": {
+      "lastReviewedAt": "2026-05-04T19:27:54.284Z",
+      "status": "keep",
+      "reason": "No source material addresses the harness concept. Definition remains accurate."
+    },
+    "hugging-face": {
+      "lastReviewedAt": "2026-05-04T19:27:54.284Z",
+      "status": "insufficient_evidence",
+      "reason": "No source material references Hugging Face or provides updated statistics on model/dataset counts that could be used to refresh the definition's figures."
+    },
+    "human-in-the-loop": {
+      "lastReviewedAt": "2026-05-04T19:27:54.284Z",
+      "status": "keep",
+      "reason": "No source material addresses human-in-the-loop as a concept. Definition remains accurate."
+    },
+    "idempotency": {
+      "lastReviewedAt": "2026-05-04T19:27:54.284Z",
+      "status": "keep",
+      "reason": "No source material addresses idempotency. Definition remains accurate."
     }
   }
 }

@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-05-03T18:58:28.223Z",
-    "entryCount": 30,
+    "generatedAt": "2026-05-04T19:27:54.284Z",
+    "entryCount": 42,
     "note": "Lexi-managed Tier 2 longlist — terms under observation, awaiting evidence to support promotion to the graph (Tier 1)."
   },
   "entries": [
@@ -305,12 +305,20 @@
           "sourceLabel": "OpenAI Research",
           "publishedAt": null,
           "firstSeen": "2026-05-03T18:58:28.223Z"
+        },
+        {
+          "url": "https://openai.com/index/introducing-gpt-5-5/",
+          "domain": "openai.com",
+          "title": "Introducing GPT-5.5",
+          "sourceLabel": "OpenAI Research",
+          "publishedAt": null,
+          "firstSeen": "2026-05-04T19:27:54.284Z"
         }
       ],
-      "sourceCount": 5,
+      "sourceCount": 6,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-04-26T22:40:25.832Z",
-      "dateLastSeen": "2026-05-03T18:58:28.223Z",
+      "dateLastSeen": "2026-05-04T19:27:54.284Z",
       "sz": 14,
       "fullName": "GPT-5.5 (OpenAI)",
       "nodeType": "product",
@@ -357,12 +365,20 @@
           "sourceLabel": "OpenAI Research",
           "publishedAt": null,
           "firstSeen": "2026-05-03T18:58:28.223Z"
+        },
+        {
+          "url": "https://openai.com/index/introducing-gpt-5-5/",
+          "domain": "openai.com",
+          "title": "Introducing GPT-5.5",
+          "sourceLabel": "OpenAI Research",
+          "publishedAt": null,
+          "firstSeen": "2026-05-04T19:27:54.284Z"
         }
       ],
-      "sourceCount": 3,
+      "sourceCount": 4,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-04-26T22:40:25.832Z",
-      "dateLastSeen": "2026-05-03T18:58:28.223Z",
+      "dateLastSeen": "2026-05-04T19:27:54.284Z",
       "sz": 14,
       "proposalReason": "'System Card' is a widely used and consequential term in AI safety and model release governance, not yet in the graph or longlist. This article is a primary example of the artifact."
     },
@@ -821,12 +837,20 @@
           "sourceLabel": "Simon Willison's Weblog",
           "publishedAt": "2026-05-03T15:13:23+00:00",
           "firstSeen": "2026-05-03T18:58:28.223Z"
+        },
+        {
+          "url": "https://openai.com/index/introducing-gpt-5-5/",
+          "domain": "openai.com",
+          "title": "Introducing GPT-5.5",
+          "sourceLabel": "OpenAI Research",
+          "publishedAt": null,
+          "firstSeen": "2026-05-04T19:27:54.284Z"
         }
       ],
-      "sourceCount": 2,
+      "sourceCount": 3,
       "independentSourceCount": 2,
       "dateFirstSeen": "2026-04-30T19:20:00.611Z",
-      "dateLastSeen": "2026-05-03T18:58:28.223Z",
+      "dateLastSeen": "2026-05-04T19:27:54.284Z",
       "sz": 14,
       "fullName": "Behavioral Audit (Model)",
       "proposalReason": "The article describes a concrete behavioral audit process — tracking lexical tics across model versions, auditing reward signals, and filtering training data — presented as a new internal capability, making it a recurring and promotable concept."
@@ -860,12 +884,20 @@
           "sourceLabel": "Stratechery",
           "publishedAt": "Fri, 01 May 2026 17:00:00 +0000",
           "firstSeen": "2026-05-03T18:58:28.223Z"
+        },
+        {
+          "url": "https://stratechery.com/2026/google-earnings-meta-earnings/",
+          "domain": "stratechery.com",
+          "title": "Google Earnings, Meta Earnings",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Mon, 04 May 2026 10:00:00 +0000",
+          "firstSeen": "2026-05-04T19:27:54.284Z"
         }
       ],
-      "sourceCount": 2,
+      "sourceCount": 3,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-04-30T19:20:00.611Z",
-      "dateLastSeen": "2026-05-03T18:58:28.223Z",
+      "dateLastSeen": "2026-05-04T19:27:54.284Z",
       "sz": 14,
       "fullName": "Terafab (Intel AI Fab Initiative)",
       "proposalReason": "The article headline explicitly names 'Terafab' as a distinct topic worth analysis alongside Intel earnings and AI differentiation — a new named concept not yet in the graph or longlist."
@@ -1215,6 +1247,387 @@
       "dateLastSeen": "2026-04-30T19:20:00.611Z",
       "sz": 14,
       "proposalReason": "The article frames vibe-coding as making apps 'more personal, more situated' — a meaningful conceptual shift in who software is for and how it is distributed, worth observing as a recurring idea."
+    },
+    {
+      "id": "gemini-enterprise-agent-platform",
+      "label": "Gemini Enterprise Agent Platform",
+      "workingDef": "Google Cloud's platform for building, governing, and managing autonomous AI agents capable of handling complex, multi-step business processes in enterprise environments.",
+      "clusters": [
+        "agentic",
+        "companies"
+      ],
+      "suggestedRels": [
+        "gemini",
+        "multi-agent",
+        "orchestrator",
+        "agent-governance",
+        "workflow"
+      ],
+      "sources": [
+        {
+          "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-april-2026/",
+          "domain": "blog.google",
+          "title": "The latest AI news we announced in April 2026",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Mon, 04 May 2026 17:00:00 +0000",
+          "firstSeen": "2026-05-04T19:27:54.284Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-04T19:27:54.284Z",
+      "dateLastSeen": "2026-05-04T19:27:54.284Z",
+      "sz": 14,
+      "fullName": "Gemini Enterprise Agent Platform (Google Cloud)",
+      "nodeType": "product",
+      "proposalReason": "Newly announced enterprise agent platform from Google Cloud, relevant as a named product in the agentic AI landscape."
+    },
+    {
+      "id": "deep-research-max",
+      "label": "Deep Research Max",
+      "workingDef": "An advanced data analysis and research capability from Google, positioned as an enhanced tier of the Deep Research feature with greater analytical depth.",
+      "clusters": [
+        "tools",
+        "agentic"
+      ],
+      "suggestedRels": [
+        "deep-research",
+        "gemini",
+        "rag"
+      ],
+      "sources": [
+        {
+          "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-april-2026/",
+          "domain": "blog.google",
+          "title": "The latest AI news we announced in April 2026",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Mon, 04 May 2026 17:00:00 +0000",
+          "firstSeen": "2026-05-04T19:27:54.284Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-04T19:27:54.284Z",
+      "dateLastSeen": "2026-05-04T19:27:54.284Z",
+      "sz": 14,
+      "fullName": "Deep Research Max (Google)",
+      "nodeType": "product",
+      "proposalReason": "A named product extension of Deep Research, worth tracking as Google expands its research-agent product line."
+    },
+    {
+      "id": "learn-mode-colab",
+      "label": "Learn Mode (Colab)",
+      "workingDef": "A Gemini-powered interactive coding tutor mode within Google Colab that provides personalized programming guidance to learners.",
+      "clusters": [
+        "tools",
+        "human"
+      ],
+      "suggestedRels": [
+        "gemini",
+        "socratic-dialogue",
+        "cowork"
+      ],
+      "sources": [
+        {
+          "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-april-2026/",
+          "domain": "blog.google",
+          "title": "The latest AI news we announced in April 2026",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Mon, 04 May 2026 17:00:00 +0000",
+          "firstSeen": "2026-05-04T19:27:54.284Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-04T19:27:54.284Z",
+      "dateLastSeen": "2026-05-04T19:27:54.284Z",
+      "sz": 14,
+      "fullName": "Learn Mode in Google Colab",
+      "nodeType": "product",
+      "proposalReason": "Represents AI-as-tutor pattern embedded in a developer tool; potentially interesting for tracking AI-assisted learning product patterns."
+    },
+    {
+      "id": "agentic-era",
+      "label": "Agentic Era",
+      "workingDef": "An industry framing term describing the current or emerging phase of AI development defined by the widespread deployment of autonomous agents that manage multi-step tasks and workflows for enterprises and individuals.",
+      "clusters": [
+        "agentic",
+        "landscape"
+      ],
+      "suggestedRels": [
+        "agent",
+        "autonomous-agent",
+        "multi-agent",
+        "workflow",
+        "long-horizon-autonomy"
+      ],
+      "sources": [
+        {
+          "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-april-2026/",
+          "domain": "blog.google",
+          "title": "The latest AI news we announced in April 2026",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Mon, 04 May 2026 17:00:00 +0000",
+          "firstSeen": "2026-05-04T19:27:54.284Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-04T19:27:54.284Z",
+      "dateLastSeen": "2026-05-04T19:27:54.284Z",
+      "sz": 14,
+      "fullName": "The Agentic Era",
+      "proposalReason": "Used repeatedly and centrally by Google to frame their entire April 2026 strategy; worth tracking as a competing periodization framing alongside similar terms."
+    },
+    {
+      "id": "trainium",
+      "label": "Trainium",
+      "workingDef": "AWS's purpose-built AI training chip, referenced in the context of Amazon's AI infrastructure strategy and commodity market dynamics for AI compute.",
+      "clusters": [
+        "technical",
+        "companies"
+      ],
+      "suggestedRels": [
+        "ai-accelerator",
+        "ai-inference-chip",
+        "purpose-built-ai-infrastructure"
+      ],
+      "sources": [
+        {
+          "url": "https://stratechery.com/2026/google-earnings-meta-earnings/",
+          "domain": "stratechery.com",
+          "title": "Google Earnings, Meta Earnings",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Mon, 04 May 2026 10:00:00 +0000",
+          "firstSeen": "2026-05-04T19:27:54.284Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-04T19:27:54.284Z",
+      "dateLastSeen": "2026-05-04T19:27:54.284Z",
+      "sz": 14,
+      "fullName": "Trainium (AWS AI Training Chip)",
+      "nodeType": "product",
+      "proposalReason": "Mentioned in adjacent Stratechery updates ('Amazon Earnings, Trainium and Commodity Markets') as a named AWS chip product distinct from general accelerators — worth tracking as a specific product node alongside TPU and other named silicon."
+    },
+    {
+      "id": "streaming-inference",
+      "label": "Streaming Inference",
+      "workingDef": "A mode of model inference in which outputs are generated and transmitted incrementally in real time rather than waiting for full completion, essential for low-latency voice and conversational AI applications.",
+      "clusters": [
+        "technical",
+        "models"
+      ],
+      "suggestedRels": [
+        "inference",
+        "latency",
+        "api"
+      ],
+      "sources": [
+        {
+          "url": "https://openai.com/index/delivering-low-latency-voice-ai-at-scale",
+          "domain": "openai.com",
+          "title": "How OpenAI delivers low-latency voice AI at scale",
+          "sourceLabel": "OpenAI News",
+          "publishedAt": "Mon, 04 May 2026 00:00:00 GMT",
+          "firstSeen": "2026-05-04T19:27:54.284Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-04T19:27:54.284Z",
+      "dateLastSeen": "2026-05-04T19:27:54.284Z",
+      "sz": 16,
+      "proposalReason": "Streaming inference is a distinct operational pattern from standard batch or request-response inference, and is central to voice AI delivery at scale — worth tracking as a durable technical term."
+    },
+    {
+      "id": "voice-ai",
+      "label": "Voice AI",
+      "workingDef": "AI systems designed for real-time spoken interaction, encompassing speech recognition, language modeling, and speech synthesis in an integrated pipeline optimized for conversational latency.",
+      "clusters": [
+        "models",
+        "tools"
+      ],
+      "suggestedRels": [
+        "inference",
+        "latency",
+        "multimodal",
+        "chatbot"
+      ],
+      "sources": [
+        {
+          "url": "https://openai.com/index/delivering-low-latency-voice-ai-at-scale",
+          "domain": "openai.com",
+          "title": "How OpenAI delivers low-latency voice AI at scale",
+          "sourceLabel": "OpenAI News",
+          "publishedAt": "Mon, 04 May 2026 00:00:00 GMT",
+          "firstSeen": "2026-05-04T19:27:54.284Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-04T19:27:54.284Z",
+      "dateLastSeen": "2026-05-04T19:27:54.284Z",
+      "sz": 16,
+      "proposalReason": "Voice AI is increasingly a distinct product and infrastructure category, separate from text-based AI, with its own latency, streaming, and deployment requirements."
+    },
+    {
+      "id": "real-time-audio-pipeline",
+      "label": "Real-Time Audio Pipeline",
+      "workingDef": "The end-to-end system architecture connecting microphone input through transcription, language model inference, and text-to-speech output with sufficiently low latency for natural spoken conversation.",
+      "clusters": [
+        "technical"
+      ],
+      "suggestedRels": [
+        "inference",
+        "latency",
+        "workflow"
+      ],
+      "sources": [
+        {
+          "url": "https://openai.com/index/delivering-low-latency-voice-ai-at-scale",
+          "domain": "openai.com",
+          "title": "How OpenAI delivers low-latency voice AI at scale",
+          "sourceLabel": "OpenAI News",
+          "publishedAt": "Mon, 04 May 2026 00:00:00 GMT",
+          "firstSeen": "2026-05-04T19:27:54.284Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-04T19:27:54.284Z",
+      "dateLastSeen": "2026-05-04T19:27:54.284Z",
+      "sz": 16,
+      "proposalReason": "A specific architectural concept for voice AI that differs meaningfully from general inference pipelines — tracking it helps distinguish voice infrastructure as a domain."
+    },
+    {
+      "id": "redos",
+      "label": "ReDoS",
+      "workingDef": "A class of denial-of-service attack that exploits pathological backtracking in regex engines, causing exponential time complexity on specially crafted inputs.",
+      "clusters": [
+        "security",
+        "technical"
+      ],
+      "suggestedRels": [
+        "sandboxing",
+        "blast-radius",
+        "exploit"
+      ],
+      "sources": [
+        {
+          "url": "https://simonwillison.net/2026/May/4/tre-python-binding/#atom-everything",
+          "domain": "simonwillison.net",
+          "title": "Research: TRE Python binding — ReDoS robustness demo",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-05-04T17:52:00+00:00",
+          "firstSeen": "2026-05-04T19:27:54.284Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-04T19:27:54.284Z",
+      "dateLastSeen": "2026-05-04T19:27:54.284Z",
+      "sz": 14,
+      "fullName": "Regular Expression Denial-of-Service (ReDoS)",
+      "proposalReason": "ReDoS is a named security vulnerability class with lasting relevance to both traditional and AI-assisted software development contexts, distinct from existing security terms in the graph."
+    },
+    {
+      "id": "claude-partner-network",
+      "label": "Claude Partner Network",
+      "workingDef": "Anthropic's ecosystem of consulting and systems integration firms — including Accenture, Deloitte, and PwC — authorized to deploy and build on Claude for enterprise customers, supported by Anthropic programs, funding, and dedicated teams.",
+      "clusters": [
+        "companies",
+        "business"
+      ],
+      "suggestedRels": [
+        "anthropic-co",
+        "claude",
+        "vertical-ai",
+        "wrapper"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/enterprise-ai-services-company",
+          "domain": "anthropic.com",
+          "title": "Building a new enterprise AI services company with Blackstone, Hellman & Friedman, and Goldman Sachs ",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-05-04T19:27:54.284Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-04T19:27:54.284Z",
+      "dateLastSeen": "2026-05-04T19:27:54.284Z",
+      "sz": 14,
+      "fullName": "Claude Partner Network (Anthropic)",
+      "nodeType": "initiative",
+      "proposalReason": "First primary-source mention of this named partner program from Anthropic's own newsroom; worth tracking as a named distribution initiative."
+    },
+    {
+      "id": "applied-ai-engineering",
+      "label": "Applied AI Engineering",
+      "workingDef": "A staffing and delivery model in which AI-provider engineers (here, Anthropic Applied AI staff) embed alongside a client's own engineering team to identify high-impact use cases, build custom systems, and provide long-term operational support — distinct from pure product or API access.",
+      "clusters": [
+        "work",
+        "business"
+      ],
+      "suggestedRels": [
+        "anthropic-co",
+        "claude",
+        "vertical-ai",
+        "outcome-focused-work"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/enterprise-ai-services-company",
+          "domain": "anthropic.com",
+          "title": "Building a new enterprise AI services company with Blackstone, Hellman & Friedman, and Goldman Sachs ",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-05-04T19:27:54.284Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-04T19:27:54.284Z",
+      "dateLastSeen": "2026-05-04T19:27:54.284Z",
+      "sz": 14,
+      "fullName": "Applied AI Engineering (Anthropic)",
+      "proposalReason": "Emerging term for a distinct go-to-market and delivery pattern that differs from self-serve API or SI-led work; likely to recur as hyperscalers and labs build professional-services arms."
+    },
+    {
+      "id": "ai-systems-integrator",
+      "label": "AI Systems Integrator",
+      "workingDef": "A consulting or engineering firm that leads the end-to-end deployment of AI models into enterprise operations — analogous to traditional IT systems integrators but specializing in frontier AI integration, workflow embedding, and long-term support.",
+      "clusters": [
+        "business",
+        "companies"
+      ],
+      "suggestedRels": [
+        "vertical-ai",
+        "wrapper",
+        "infrastructure",
+        "stack",
+        "claude-partner-network"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/enterprise-ai-services-company",
+          "domain": "anthropic.com",
+          "title": "Building a new enterprise AI services company with Blackstone, Hellman & Friedman, and Goldman Sachs ",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-05-04T19:27:54.284Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-04T19:27:54.284Z",
+      "dateLastSeen": "2026-05-04T19:27:54.284Z",
+      "sz": 14,
+      "proposalReason": "The article repeatedly distinguishes this role from pure software licensing; tracking it captures an important structural concept in how AI reaches enterprises."
     }
   ]
 }

@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generatedAt": "2026-05-03T18:58:28.223Z",
-    "unreadCount": 15,
-    "totalCount": 94,
+    "generatedAt": "2026-05-04T19:27:54.284Z",
+    "unreadCount": 16,
+    "totalCount": 95,
     "note": "Notes for Nicole — Lexi's manager channel (spec §6). Mandatory entry types fire when their triggering condition is met; discretionary entries are observations Lexi thinks Nicole should see. Set status to 'read', 'actioned', or 'dismissed' as appropriate."
   },
   "entries": [
@@ -2429,6 +2429,26 @@
         "source": "extract-flow"
       },
       "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+    },
+    {
+      "id": "ed7d25561497bef1",
+      "type": "contested_cluster_omission",
+      "writtenAt": "2026-05-04T19:27:54.284Z",
+      "runId": "7463fd6c-b125-4044-be4b-489133737a39",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Contested cluster term added without naming the contestation: 'Agentic Era'",
+      "details": "The term 'Agentic Era' matches the contested-cluster pattern 'agentic' (per spec §10), but the working definition does not appear to acknowledge that the term is contested or that different camps use it differently. Per spec §6 entry type 5, this requires review before any move toward graph promotion.",
+      "evidence": {
+        "entryId": "agentic-era",
+        "label": "Agentic Era",
+        "fullName": "The Agentic Era",
+        "matchedContestedTerm": "agentic",
+        "workingDef": "An industry framing term describing the current or emerging phase of AI development defined by the widespread deployment of autonomous agents that manage multi-step tasks and workflows for enterprises and individuals.",
+        "sourceUrl": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-april-2026/",
+        "sourceLabel": "Google AI Blog"
+      },
+      "suggestedAction": "Either revise the working definition to name the contestation (who uses it to mean what), or confirm this term doesn't warrant the contested treatment in this case."
     }
   ]
 }

@@ -1,41 +1,23 @@
 {
-  "generatedAt": "2026-05-03T19:00:04.158Z",
+  "generatedAt": "2026-05-04T19:29:27.407Z",
   "firstRunAt": "2026-04-27T01:07:31.335Z",
   "phase": 1,
   "headline": {
-    "articlesRead": 41,
-    "daysRunning": 7,
-    "longlistSize": 22,
+    "articlesRead": 47,
+    "daysRunning": 8,
+    "longlistSize": 34,
     "graphSize": 206
   },
   "thisWeek": {
-    "articlesFetched": 41,
-    "longlistAdded": 30,
-    "sourcesAdded": 0,
+    "articlesFetched": 30,
+    "longlistAdded": 27,
+    "sourcesAdded": 10,
     "promotionsToGraph": 8,
-    "proposalsQueued": 9,
-    "auditFlags": 7,
-    "notesAdded": 94
+    "proposalsQueued": 10,
+    "auditFlags": 1,
+    "notesAdded": 51
   },
   "almostThere": [
-    {
-      "id": "behavioral-audit",
-      "label": "Behavioral Audit",
-      "fullName": "Behavioral Audit (Model)",
-      "clusters": [
-        "safety",
-        "technical"
-      ],
-      "sourceCount": 2,
-      "independentSources": 2,
-      "daysOnLonglist": 2,
-      "domains": [
-        "openai.com",
-        "simonwillison.net"
-      ],
-      "gapCount": 1,
-      "gap": "1 more day on longlist"
-    },
     {
       "id": "gpt55",
       "label": "GPT-5.5",
@@ -44,9 +26,9 @@
         "models",
         "companies"
       ],
-      "sourceCount": 5,
+      "sourceCount": 6,
       "independentSources": 1,
-      "daysOnLonglist": 6,
+      "daysOnLonglist": 7,
       "domains": [
         "openai.com"
       ],
@@ -61,9 +43,9 @@
         "safety",
         "lifecycle"
       ],
-      "sourceCount": 3,
+      "sourceCount": 4,
       "independentSources": 1,
-      "daysOnLonglist": 6,
+      "daysOnLonglist": 7,
       "domains": [
         "openai.com"
       ],
@@ -78,14 +60,14 @@
         "landscape",
         "companies"
       ],
-      "sourceCount": 2,
+      "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 2,
+      "daysOnLonglist": 4,
       "domains": [
         "stratechery.com"
       ],
-      "gapCount": 2,
-      "gap": "needs 1 more independent source; 1 more day on longlist"
+      "gapCount": 1,
+      "gap": "needs 1 more independent source"
     },
     {
       "id": "ai-driven-cpu-demand",
@@ -97,12 +79,12 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 2,
+      "daysOnLonglist": 4,
       "domains": [
         "stratechery.com"
       ],
-      "gapCount": 2,
-      "gap": "needs 1 more independent source; 1 more day on longlist"
+      "gapCount": 1,
+      "gap": "needs 1 more independent source"
     },
     {
       "id": "capability-reliability-gap",
@@ -114,12 +96,12 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 2,
+      "daysOnLonglist": 4,
       "domains": [
         "normaltech.ai"
       ],
-      "gapCount": 2,
-      "gap": "needs 1 more independent source; 1 more day on longlist"
+      "gapCount": 1,
+      "gap": "needs 1 more independent source"
     },
     {
       "id": "ai-training-chip",
@@ -131,7 +113,7 @@
       ],
       "sourceCount": 1,
       "independentSources": 1,
-      "daysOnLonglist": 6,
+      "daysOnLonglist": 7,
       "domains": [
         "blog.google"
       ],
@@ -149,7 +131,7 @@
       ],
       "sourceCount": 1,
       "independentSources": 1,
-      "daysOnLonglist": 6,
+      "daysOnLonglist": 7,
       "domains": [
         "anthropic.com"
       ],
@@ -167,7 +149,7 @@
       ],
       "sourceCount": 1,
       "independentSources": 1,
-      "daysOnLonglist": 6,
+      "daysOnLonglist": 7,
       "domains": [
         "anthropic.com"
       ],
@@ -185,7 +167,25 @@
       ],
       "sourceCount": 1,
       "independentSources": 1,
-      "daysOnLonglist": 6,
+      "daysOnLonglist": 7,
+      "domains": [
+        "anthropic.com"
+      ],
+      "gapCount": 2,
+      "gap": "needs 1 more source; needs 1 more independent source"
+    },
+    {
+      "id": "design-system-integration",
+      "label": "Design System Integration",
+      "fullName": "Design System Integration (AI-native)",
+      "clusters": [
+        "work",
+        "agentic",
+        "context"
+      ],
+      "sourceCount": 1,
+      "independentSources": 1,
+      "daysOnLonglist": 7,
       "domains": [
         "anthropic.com"
       ],
@@ -197,19 +197,23 @@
     "byDomain": [
       {
         "domain": "openai.com",
-        "count": 16
+        "count": 18
       },
       {
         "domain": "blog.google",
-        "count": 6
+        "count": 7
       },
       {
         "domain": "anthropic.com",
-        "count": 5
+        "count": 6
       },
       {
         "domain": "stratechery.com",
-        "count": 3
+        "count": 4
+      },
+      {
+        "domain": "simonwillison.net",
+        "count": 4
       },
       {
         "domain": "lastweekin.ai",
@@ -217,10 +221,6 @@
       },
       {
         "domain": "normaltech.ai",
-        "count": 3
-      },
-      {
-        "domain": "simonwillison.net",
         "count": 3
       },
       {
@@ -365,52 +365,58 @@
         "count": 13
       },
       {
-        "id": "models",
-        "label": "Models",
-        "hex": "#FFB060",
-        "count": 8
+        "id": "technical",
+        "label": "Technical",
+        "hex": "#D0D040",
+        "count": 11
       },
       {
         "id": "agentic",
         "label": "Agentic Systems",
         "hex": "#FF9040",
-        "count": 8
+        "count": 11
       },
       {
-        "id": "technical",
-        "label": "Technical",
-        "hex": "#D0D040",
-        "count": 7
-      },
-      {
-        "id": "landscape",
-        "label": "Model Landscape",
-        "hex": "#D0A050",
-        "count": 3
-      },
-      {
-        "id": "work",
-        "label": "Work & Output",
-        "hex": "#E8A838",
-        "count": 3
-      },
-      {
-        "id": "tools",
-        "label": "Tools & Platforms",
-        "hex": "#70C8F8",
-        "count": 3
+        "id": "models",
+        "label": "Models",
+        "hex": "#FFB060",
+        "count": 10
       },
       {
         "id": "companies",
         "label": "Companies",
         "hex": "#9090A8",
-        "count": 2
+        "count": 6
+      },
+      {
+        "id": "tools",
+        "label": "Tools & Platforms",
+        "hex": "#70C8F8",
+        "count": 6
+      },
+      {
+        "id": "landscape",
+        "label": "Model Landscape",
+        "hex": "#D0A050",
+        "count": 4
+      },
+      {
+        "id": "work",
+        "label": "Work & Output",
+        "hex": "#E8A838",
+        "count": 4
+      },
+      {
+        "id": "business",
+        "label": "Business Reality",
+        "hex": "#48C888",
+        "count": 4
       },
       {
         "id": "security",
         "label": "AI Security",
         "hex": "#E05050",
-        "count": 2
+        "count": 3
       },
       {
         "id": "context",
@@ -419,21 +425,15 @@
         "count": 2
       },
       {
-        "id": "lifecycle",
-        "label": "Product Lifecycle",
-        "hex": "#B888D8",
-        "count": 1
-      },
-      {
         "id": "human",
         "label": "Human Skills",
         "hex": "#40D080",
-        "count": 1
+        "count": 2
       },
       {
-        "id": "business",
-        "label": "Business Reality",
-        "hex": "#48C888",
+        "id": "lifecycle",
+        "label": "Product Lifecycle",
+        "hex": "#B888D8",
         "count": 1
       },
       {
@@ -450,7 +450,7 @@
     "note": "All graph promotions and substantive edits are currently human-gated. Lexi proposes; Nicole approves."
   },
   "proposalsByStatus": {
-    "pending": 1,
+    "pending": 2,
     "approved": 0,
     "applied": 8,
     "rejected": 0

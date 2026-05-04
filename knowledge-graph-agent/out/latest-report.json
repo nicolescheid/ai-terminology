@@ -1,152 +1,96 @@
 {
-  "generatedAt": "2026-05-03T18:58:28.223Z",
+  "generatedAt": "2026-05-04T19:27:54.284Z",
   "model": "claude-sonnet-4-6",
   "sourcesConfigured": 12,
   "articlesConsidered": [
     {
-      "id": "92f8ee26a85afd65",
-      "source": "OpenAI News",
-      "title": "Introducing Advanced Account Security",
-      "url": "https://openai.com/index/advanced-account-security",
-      "publishedAt": "Thu, 30 Apr 2026 00:00:00 GMT"
+      "id": "4e60ba9595b8ef99",
+      "source": "Google AI Blog",
+      "title": "The latest AI news we announced in April 2026",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-april-2026/",
+      "publishedAt": "Mon, 04 May 2026 17:00:00 +0000"
     },
     {
-      "id": "4f62e0e117279b6a",
-      "source": "AI Snake Oil",
-      "title": "AI Won’t Automatically Make Legal Services Cheaper",
-      "url": "https://www.normaltech.ai/p/ai-wont-automatically-make-legal",
-      "publishedAt": "Thu, 12 Feb 2026 19:26:05 GMT"
-    },
-    {
-      "id": "0e65dc22a46ec85b",
-      "source": "Last Week in AI",
-      "title": "Last Week in AI #339 - DLSS 5, OpenAI Superapp, MiniMax M2.7",
-      "url": "https://lastweekin.ai/p/last-week-in-ai-339-dlss-5-openai",
-      "publishedAt": "Mon, 23 Mar 2026 08:11:29 GMT"
-    },
-    {
-      "id": "191be98d658af752",
+      "id": "637ec671dad66e69",
       "source": "Stratechery",
-      "title": "2026.18: Long-term, Peripheral & Myopic Visions",
-      "url": "https://stratechery.com/2026/long-term-peripheral-myopic-visions/",
-      "publishedAt": "Fri, 01 May 2026 17:00:00 +0000"
+      "title": "Google Earnings, Meta Earnings",
+      "url": "https://stratechery.com/2026/google-earnings-meta-earnings/",
+      "publishedAt": "Mon, 04 May 2026 10:00:00 +0000"
     },
     {
-      "id": "1722432180f0faf0",
+      "id": "d6581b92c87ef014",
+      "source": "OpenAI News",
+      "title": "How OpenAI delivers low-latency voice AI at scale",
+      "url": "https://openai.com/index/delivering-low-latency-voice-ai-at-scale",
+      "publishedAt": "Mon, 04 May 2026 00:00:00 GMT"
+    },
+    {
+      "id": "375b3d26ea022606",
       "source": "Simon Willison's Weblog",
-      "title": "A quote from Anthropic",
-      "url": "https://simonwillison.net/2026/May/3/anthropic/#atom-everything",
-      "publishedAt": "2026-05-03T15:13:23+00:00"
+      "title": "Research: TRE Python binding — ReDoS robustness demo",
+      "url": "https://simonwillison.net/2026/May/4/tre-python-binding/#atom-everything",
+      "publishedAt": "2026-05-04T17:52:00+00:00"
     },
     {
-      "id": "687f75100be8e4e4",
+      "id": "6659803055f395cb",
       "source": "OpenAI Research",
-      "title": "OpenAI Research",
-      "url": "https://openai.com/research/index/",
+      "title": "Introducing GPT-5.5",
+      "url": "https://openai.com/index/introducing-gpt-5-5/",
+      "publishedAt": null
+    },
+    {
+      "id": "2f244068731d266d",
+      "source": "Anthropic Newsroom",
+      "title": "Building a new enterprise AI services company with Blackstone, Hellman & Friedman, and Goldman Sachs ",
+      "url": "https://www.anthropic.com/news/enterprise-ai-services-company",
       "publishedAt": null
     }
   ],
   "harvestedTerms": [
     {
       "article": {
-        "title": "Introducing Advanced Account Security",
-        "url": "https://openai.com/index/advanced-account-security"
+        "title": "The latest AI news we announced in April 2026",
+        "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-april-2026/"
       },
-      "summary": "OpenAI announces Advanced Account Security, an opt-in hardened account protection feature for ChatGPT and Codex users, featuring phishing-resistant authentication (passkeys/security keys), restricted account recovery, shorter sessions, and automatic training exclusion. Also announces a Yubico partnership and mandates the feature for Trusted Access for Cyber program members.",
-      "longlistAdditions": [],
+      "summary": "Google's April 2026 AI roundup covers Cloud Next '26 announcements including the Gemini Enterprise Agent Platform, eighth-generation TPUs, Gemma 4, Deep Research Max, and Learn Mode in Colab. Heavy emphasis on the 'agentic era' framing for enterprise AI.",
+      "longlistAdditions": [
+        {
+          "id": "gemini-enterprise-agent-platform",
+          "label": "Gemini Enterprise Agent Platform"
+        },
+        {
+          "id": "deep-research-max",
+          "label": "Deep Research Max"
+        },
+        {
+          "id": "learn-mode-colab",
+          "label": "Learn Mode (Colab)"
+        },
+        {
+          "id": "agentic-era",
+          "label": "Agentic Era"
+        }
+      ],
       "longlistUpdates": [],
       "rejections": [],
       "proposalsQueued": []
     },
     {
       "article": {
-        "title": "AI Won’t Automatically Make Legal Services Cheaper",
-        "url": "https://www.normaltech.ai/p/ai-wont-automatically-make-legal"
+        "title": "Google Earnings, Meta Earnings",
+        "url": "https://stratechery.com/2026/google-earnings-meta-earnings/"
       },
-      "summary": "A rigorous essay applying the 'AI as Normal Technology' framework to legal services, arguing that three structural bottlenecks—regulatory barriers, adversarial dynamics, and human involvement—will prevent AI from automatically making legal outcomes cheaper or more accessible, regardless of capability advances.",
-      "longlistAdditions": [],
-      "longlistUpdates": [],
-      "rejections": [],
-      "proposalsQueued": [],
-      "mustReadFlagged": {
-        "priority": 1,
-        "reason": "A rigorous, domain-specific stress test of AI optimism: by tracing exactly why capability advances don't automatically translate to better outcomes in legal services, it offers a transferable analytical template for any high-stakes professional domain. The 'adversarial dynamics' argument alone is worth the read."
-      }
-    },
-    {
-      "article": {
-        "title": "Last Week in AI #339 - DLSS 5, OpenAI Superapp, MiniMax M2.7",
-        "url": "https://lastweekin.ai/p/last-week-in-ai-339-dlss-5-openai"
-      },
-      "summary": "A news roundup covering DLSS 5 generative AI upscaling for games, OpenAI's reported pivot toward business/productivity, and MiniMax M2.7. The excerpt is paywalled and thin on substance, offering only headlines.",
-      "longlistAdditions": [],
-      "longlistUpdates": [],
-      "rejections": [],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "2026.18: Long-term, Peripheral & Myopic Visions",
-        "url": "https://stratechery.com/2026/long-term-peripheral-myopic-visions/"
-      },
-      "summary": "A weekly Stratechery roundup covering Amazon/AWS's AI infrastructure bet on Trainium and inference, the OpenAI-AWS Bedrock Managed Agents partnership, Intel's CPU demand shift, Meta's AR Display glasses, and China's blocking of Meta's Manus acquisition. Primarily a newsletter index with brief editorial framing rather than deep analysis.",
-      "longlistAdditions": [],
+      "summary": "Stratechery paywalled earnings analysis comparing Google and Meta Q results, with Ben Thompson arguing Google is monetizing AI investments now (possibly via Anthropic) while Meta's core business was stronger despite worse market reception. The excerpt is largely navigational/promotional with minimal substantive content visible.",
+      "longlistAdditions": [
+        {
+          "id": "trainium",
+          "label": "Trainium"
+        }
+      ],
       "longlistUpdates": [
         {
           "id": "terafab",
           "label": "Terafab",
-          "sourceAdded": true,
-          "sourceCount": 2,
-          "independentSourceCount": 1
-        },
-        {
-          "id": "ai-driven-cpu-demand",
-          "label": "AI-Driven CPU Demand",
-          "sourceAdded": true,
-          "sourceCount": 2,
-          "independentSourceCount": 1
-        }
-      ],
-      "rejections": [],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "A quote from Anthropic",
-        "url": "https://simonwillison.net/2026/May/3/anthropic/#atom-everything"
-      },
-      "summary": "Simon Willison quotes Anthropic's report on Claude's sycophantic behavior, noting that while sycophancy appeared in only 9% of conversations overall, it spiked in spirituality (38%) and relationship (25%) topics. The piece references an automatic classifier used to measure sycophancy dimensions like willingness to push back and frankness.",
-      "longlistAdditions": [],
-      "longlistUpdates": [
-        {
-          "id": "behavioral-audit",
-          "label": "Behavioral Audit",
-          "sourceAdded": true,
-          "sourceCount": 2,
-          "independentSourceCount": 2
-        }
-      ],
-      "rejections": [],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "OpenAI Research",
-        "url": "https://openai.com/research/index/"
-      },
-      "summary": "OpenAI Research index page listing recent publications including GPT-5.5 launch, system card, goblin output analysis, privacy filter, chain-of-thought misalignment monitoring, and instruction hierarchy work. Primarily a product/research index rather than a deep conceptual article.",
-      "longlistAdditions": [],
-      "longlistUpdates": [
-        {
-          "id": "gpt55",
-          "label": "GPT-5.5",
-          "sourceAdded": true,
-          "sourceCount": 5,
-          "independentSourceCount": 1
-        },
-        {
-          "id": "system-card",
-          "label": "System Card",
           "sourceAdded": true,
           "sourceCount": 3,
           "independentSourceCount": 1
@@ -154,59 +98,160 @@
       ],
       "rejections": [],
       "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "How OpenAI delivers low-latency voice AI at scale",
+        "url": "https://openai.com/index/delivering-low-latency-voice-ai-at-scale"
+      },
+      "summary": "OpenAI engineering article on the infrastructure and techniques behind low-latency voice AI delivery at scale. Likely covers streaming, real-time inference, edge deployment, and custom hardware considerations for voice workloads.",
+      "longlistAdditions": [
+        {
+          "id": "streaming-inference",
+          "label": "Streaming Inference"
+        },
+        {
+          "id": "voice-ai",
+          "label": "Voice AI"
+        },
+        {
+          "id": "real-time-audio-pipeline",
+          "label": "Real-Time Audio Pipeline"
+        }
+      ],
+      "longlistUpdates": [],
+      "rejections": [],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "Research: TRE Python binding — ReDoS robustness demo",
+        "url": "https://simonwillison.net/2026/May/4/tre-python-binding/#atom-everything"
+      },
+      "summary": "Simon Willison demonstrates using Claude Code to build an experimental Python ctypes binding to the TRE regex library, showing TRE's immunity to ReDoS (Regular Expression Denial-of-Service) attacks due to its lack of backtracking support. The article is primarily a technical research note with minimal AI terminology content beyond Claude Code being used as a coding assistant.",
+      "longlistAdditions": [
+        {
+          "id": "redos",
+          "label": "ReDoS"
+        }
+      ],
+      "longlistUpdates": [],
+      "rejections": [],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "Introducing GPT-5.5",
+        "url": "https://openai.com/index/introducing-gpt-5-5/"
+      },
+      "summary": "OpenAI announces GPT-5.5, a flagship agentic model with improved coding, computer use, and long-horizon task performance. The announcement covers benchmark results, safety frameworks, efficiency gains, and early-access partner feedback. Primarily a product launch with some terminological interest around agentic coding benchmarks and inference efficiency.",
+      "longlistAdditions": [],
+      "longlistUpdates": [
+        {
+          "id": "gpt55",
+          "label": "GPT-5.5",
+          "sourceAdded": true,
+          "sourceCount": 6,
+          "independentSourceCount": 1
+        },
+        {
+          "id": "system-card",
+          "label": "System Card",
+          "sourceAdded": true,
+          "sourceCount": 4,
+          "independentSourceCount": 1
+        },
+        {
+          "id": "behavioral-audit",
+          "label": "Behavioral Audit",
+          "sourceAdded": true,
+          "sourceCount": 3,
+          "independentSourceCount": 2
+        }
+      ],
+      "rejections": [
+        {
+          "label": "Long-Horizon Autonomy",
+          "reason": "already in graph (label match)"
+        }
+      ],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "Building a new enterprise AI services company with Blackstone, Hellman & Friedman, and Goldman Sachs ",
+        "url": "https://www.anthropic.com/news/enterprise-ai-services-company"
+      },
+      "summary": "Anthropic announces the formation of a new enterprise AI services company backed by Blackstone, Hellman & Friedman, Goldman Sachs, and others, aimed at deploying Claude in mid-sized companies across sectors. The article describes a delivery model where applied AI engineers work alongside client staff to build custom Claude-powered systems, and positions the new firm within the growing Claude Partner Network alongside Accenture, Deloitte, and PwC.",
+      "longlistAdditions": [
+        {
+          "id": "claude-partner-network",
+          "label": "Claude Partner Network"
+        },
+        {
+          "id": "applied-ai-engineering",
+          "label": "Applied AI Engineering"
+        },
+        {
+          "id": "ai-systems-integrator",
+          "label": "AI Systems Integrator"
+        }
+      ],
+      "longlistUpdates": [],
+      "rejections": [],
+      "proposalsQueued": []
     }
   ],
   "definitionReviews": [
     {
-      "id": "frontier-red-team",
+      "id": "guardrails",
       "status": "keep",
-      "reason": "No source material addresses Anthropic's Frontier Red Team. Definition remains accurate based on prior knowledge; no update warranted."
+      "reason": "No source material addresses guardrails in a way that contradicts or materially extends the existing definition. Definition remains accurate."
     },
     {
-      "id": "gemini",
+      "id": "hallucination",
       "status": "keep",
-      "reason": "No source material provides updated information about Gemini's capabilities or context window. Definition can be retained as-is."
+      "reason": "No source material covers hallucination conceptually. Definition remains accurate."
     },
     {
-      "id": "gemma-4",
+      "id": "hallucination-cascade",
+      "status": "keep",
+      "reason": "No source material addresses hallucination cascades. Definition remains accurate."
+    },
+    {
+      "id": "handoff",
+      "status": "keep",
+      "reason": "No source material addresses agent handoff. Definition remains accurate."
+    },
+    {
+      "id": "handoff-bundle",
+      "status": "keep",
+      "reason": "No source material addresses handoff bundles. Definition remains accurate."
+    },
+    {
+      "id": "handoff-document",
+      "status": "keep",
+      "reason": "No source material addresses handoff documents. Definition remains accurate."
+    },
+    {
+      "id": "harness",
+      "status": "keep",
+      "reason": "No source material addresses the harness concept. Definition remains accurate."
+    },
+    {
+      "id": "hugging-face",
       "status": "insufficient_evidence",
-      "reason": "No source material confirms or contradicts the Gemma 4 definition. Cannot verify the April 2, 2026 release date, Apache 2.0 licensing, or MoE architecture claims from provided excerpts."
+      "reason": "No source material references Hugging Face or provides updated statistics on model/dataset counts that could be used to refresh the definition's figures."
     },
     {
-      "id": "general-availability",
+      "id": "human-in-the-loop",
       "status": "keep",
-      "reason": "Conceptual definition with no time-sensitive claims. No source material challenges it."
+      "reason": "No source material addresses human-in-the-loop as a concept. Definition remains accurate."
     },
     {
-      "id": "github-copilot",
+      "id": "idempotency",
       "status": "keep",
-      "reason": "No source material addresses GitHub Copilot. Historical facts in the definition remain accurate."
-    },
-    {
-      "id": "goal-drift",
-      "status": "keep",
-      "reason": "Conceptual definition. No source material addresses or contradicts it."
-    },
-    {
-      "id": "google-co",
-      "status": "keep",
-      "reason": "No source material contradicts the Google/DeepMind definition. Facts stated are stable."
-    },
-    {
-      "id": "gpt54",
-      "status": "refresh",
-      "def": "OpenAI model released prior to GPT-5.5. Combines advanced reasoning, coding, and computer use. Available in standard, Thinking, and Pro variants with up to 1M token context via API. Superseded by GPT-5.5 (released April 23, 2026) as OpenAI's flagship model.",
-      "reason": "OpenAI Research confirms GPT-5.5 was introduced April 23, 2026 as their 'smartest model yet,' directly contradicting the definition's claim that GPT-5.4 is the 'current flagship model as of March 2026.' The definition requires updating to reflect GPT-5.4's superseded status."
-    },
-    {
-      "id": "grok",
-      "status": "insufficient_evidence",
-      "reason": "No source material confirms or contradicts the current Grok version number or architectural claims. Cannot verify 'Grok 4.20' or the four-agent parallel processing claim from provided excerpts."
-    },
-    {
-      "id": "grounding",
-      "status": "keep",
-      "reason": "Conceptual definition. No source material challenges the explanation of grounding or RAG."
+      "reason": "No source material addresses idempotency. Definition remains accurate."
     }
   ],
   "notes": []
