@@ -30,3 +30,7 @@ build/
 
 # Lexi deterministic event log — operational forensics data, grows per run.
 knowledge-graph-agent/log/
+
+.dev.vars*
+!.dev.vars.example
+!.env.example
