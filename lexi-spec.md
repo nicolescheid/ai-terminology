@@ -10,16 +10,12 @@
 
 This is the single source of truth for Lexi. It consolidates:
 
-- The **v0 architecture** designed in the night-before-Microsoft-AI-Tour session (20–21 April 2026), originally under the name *Verso*.
+- The **v0 architecture** designed on 20–21 April 2026.
 - The **hardening layers** from the 27 April premortem session.
 
 The v0 architecture is the foundation. The hardening layers are the safety, observability, and governance scaffolding that sit on top of it. Both must be implemented; neither replaces the other.
 
 **Re-read at the start of every Claude Code session on Lexi.** The single highest-likelihood failure mode for this project is the soft-language colleague frame quietly reasserting itself during build. Re-reading section 2 ("Operational language discipline") at the start of each session is the cheapest available defence.
-
-### Naming note
-
-The project was originally named *Verso* and was publicly described under that name at the Microsoft AI Tour Auckland (April 2026), in the in-progress CV draft, and in the Article 2 Substack draft. The project is now named **Lexi** — a deliberate rename made during the 27 April premortem. Rationale: Lexi is short for *lexicographer*, which is the formal name for the role (someone who finds words and edits the dictionary), and contains the secondary play *Lexi-co-grapher* — co-graphing the AI Terminology Knowledge Graph. The rename should be applied consistently from this point forward in all new artefacts. Existing public references to Verso can stand or be updated as a separate editorial decision.
 
 ### Pronoun convention
 
