@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-05-06T19:44:59.949Z",
+  "generatedAt": "2026-05-07T19:42:03.144Z",
   "firstRunAt": "2026-04-27T01:07:31.335Z",
   "phase": 1,
   "headline": {
     "articlesRead": 47,
-    "daysRunning": 10,
+    "daysRunning": 11,
     "longlistSize": 34,
     "graphSize": 206
   },
   "thisWeek": {
-    "articlesFetched": 24,
-    "longlistAdded": 27,
-    "sourcesAdded": 7,
+    "articlesFetched": 18,
+    "longlistAdded": 12,
+    "sourcesAdded": 11,
     "promotionsToGraph": 8,
     "proposalsQueued": 10,
     "auditFlags": 12,
-    "notesAdded": 46
+    "notesAdded": 47
   },
   "almostThere": [
     {
@@ -28,7 +28,7 @@
       ],
       "sourceCount": 6,
       "independentSources": 1,
-      "daysOnLonglist": 9,
+      "daysOnLonglist": 10,
       "domains": [
         "openai.com"
       ],
@@ -45,7 +45,7 @@
       ],
       "sourceCount": 4,
       "independentSources": 1,
-      "daysOnLonglist": 9,
+      "daysOnLonglist": 10,
       "domains": [
         "openai.com"
       ],
@@ -62,7 +62,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 6,
+      "daysOnLonglist": 7,
       "domains": [
         "stratechery.com"
       ],
@@ -79,7 +79,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 6,
+      "daysOnLonglist": 7,
       "domains": [
         "stratechery.com"
       ],
@@ -96,7 +96,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 6,
+      "daysOnLonglist": 7,
       "domains": [
         "normaltech.ai"
       ],
@@ -113,7 +113,7 @@
       ],
       "sourceCount": 1,
       "independentSources": 1,
-      "daysOnLonglist": 9,
+      "daysOnLonglist": 10,
       "domains": [
         "blog.google"
       ],
@@ -131,7 +131,7 @@
       ],
       "sourceCount": 1,
       "independentSources": 1,
-      "daysOnLonglist": 9,
+      "daysOnLonglist": 10,
       "domains": [
         "anthropic.com"
       ],
@@ -149,7 +149,7 @@
       ],
       "sourceCount": 1,
       "independentSources": 1,
-      "daysOnLonglist": 9,
+      "daysOnLonglist": 10,
       "domains": [
         "anthropic.com"
       ],
@@ -167,7 +167,7 @@
       ],
       "sourceCount": 1,
       "independentSources": 1,
-      "daysOnLonglist": 9,
+      "daysOnLonglist": 10,
       "domains": [
         "anthropic.com"
       ],
@@ -185,7 +185,7 @@
       ],
       "sourceCount": 1,
       "independentSources": 1,
-      "daysOnLonglist": 9,
+      "daysOnLonglist": 10,
       "domains": [
         "anthropic.com"
       ],
