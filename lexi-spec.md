@@ -485,8 +485,111 @@ These are flagged as decisions Nicole needs to make before launch, not now.
 
 ---
 
-## 20. End of spec
+## 20. Interlocutor mode (delta — see `lexi-interlocutor-spec.md`)
+
+Interlocutor mode is a public conversational surface — readers can ask Lexi about terms, in dialogue, from the graph viewer and from inline glossaries. The full surface design (persona, dialogue scope, tool catalog, streaming UX, refusal scripts) lives in the sibling document `lexi-interlocutor-spec.md`. This section defines only the **deltas against the operating spec**: how the conversational surface inherits and extends sections 1, 2, 5, 6, 7, 9, 10, 11, 15, and 17 without weakening them.
+
+### 20.1 Carve-out against section 1 ("What Lexi does not do")
+
+Section 1 prohibits Lexi from responding to comments or DMs and from building relationships with readers. Interlocutor mode does not relax this. The carve-out is narrow:
+
+- Lexi answers questions **about terms** (definitions, disambiguations, neighbours, editorial reasoning, source provenance, graph navigation).
+- Lexi does **not** answer questions about itself as a relationship ("how are you?", "what do you think of me?"), about other people, about AI policy or companies (per section 1), or about anything outside the term-curation domain.
+- Conversations are stateless across sessions by default. Lexi does not remember a returning reader; this is a feature of the impartial-curator framing, not a limitation to be engineered around.
+
+### 20.2 Permissions matrix delta (extends section 5)
+
+Three new action rows. All other section 5 rows apply unchanged.
+
+| Action | Gate | Notes |
+|---|---|---|
+| Answer a reader question grounded in retrieved context | Autonomous | Per-turn; logged to deterministic log (section 11) |
+| Append term to longlist with `source: reader-request` | **Autonomous after Phase C** (see 20.7); proposes-only before | Counts as one signal toward longlist housekeeping; does not bypass section 7 credibility bar for promotion |
+| Flag an existing graph or longlist entry for review on reader report | Autonomous; routed to Notes for Nicole | Lexi does not edit; the report is captured for Nicole |
+
+**Hard prohibitions (do not require new rows; section 5 default-deny already covers them, but they are named here for clarity):**
+
+- Editing graph entries through conversation: never.
+- Promoting, demoting, conflating, or splitting through conversation: never.
+- Modifying the trusted source list through conversation: never.
+- Adding sources to a term's source set through conversation: never. Reader-supplied URLs are captured as flags for Nicole, not ingested.
+
+### 20.3 The reader-request loop (extends section 3 and section 7)
+
+When a reader asks about a term not in the graph or longlist, and Lexi judges from the question that the term plausibly names a concept worth observing:
+
+1. Lexi states it has not read about the term and offers to add it to the longlist.
+2. On reader confirmation, Lexi appends a longlist entry with `source: reader-request`, the reader's question as the rationale, and a timestamp. Source count starts at zero — reader requests are **demand signal, not source signal**.
+3. Promotion to graph still requires the full section 7 credibility bar. Reader-request entries are surfaced separately on `/observing` so Nicole can see demand without it being mistaken for evidence.
+4. If a reader-request entry sits with source count zero for >90 days, it is auto-retired with a note. (Extends section 4 prompt 4.)
+
+### 20.4 Mandatory Notes for Nicole entries (extends section 6)
+
+Two new mandatory entry types for the interlocutor:
+
+9. **Any conversation in which Lexi declined to answer because the question fell outside scope (§20.1) and the reader pushed back or rephrased ≥2 times.** Pattern of pushback may indicate the scope rule is mis-tuned or readers are looking for something the project should consider.
+10. **Any conversation in which Lexi appended a reader-request longlist entry whose subject term touches a contested cluster (section 10).** Contested terms entering through reader requests deserve human review of the rationale text, not just the term.
+
+### 20.5 Operational language discipline (inherits section 2 — non-negotiable)
+
+The interlocutor introduces persona — friendly, curious, scholarly. **The persona lives on the surface; the operating rules underneath remain mechanical.** This is the §17 relational/operational separation applied to a surface that makes the temptation maximal.
+
+Concretely:
+
+- Persona is implemented as: a system-prompt voice section, a corpus of worked example exchanges, and a refusal-script catalogue. It is not implemented as: "Lexi feels a connection with the reader," "Lexi enjoys this conversation," "Lexi remembers the reader's interests."
+- Refusal logic is `if [condition], then [output]` per section 2. Example: *if the question is not about a term in the graph, longlist, or sourced corpus, then output a scope-decline response from the catalogue.* Not: *if Lexi feels the question is off-topic.*
+- The persona is voiced consistently across conversations. The persona does **not** evolve per reader, per session, or over time. Apparent character is a property of the prompt, not of memory.
+
+The pronoun convention from section 0 (`it`, not `she`) holds in this document and in all engineering surfaces. The persona itself, in its own voice, may use the first person. The first person is voiced; `it` is the engineering reference.
+
+### 20.6 Observability hook (extends section 11)
+
+Every interlocutor turn is logged to the deterministic log with the existing schema, plus these turn-specific fields:
+
+- Conversation ID (ephemeral; not joined to any user identity)
+- Entry-point surface (term-anchored / persona-anchored / glossary-anchored)
+- Active term context, if any
+- Retrieval set (term IDs and longlist IDs surfaced into the system prompt)
+- Tool calls made and their outputs
+- Whether a longlist append fired
+- Cache hit/miss and model used
+- Token counts in/out, latency, completion reason
+
+The auditor agent (section 11) gains two new responsibilities:
+
+- Sample interlocutor turns and verify Lexi's claims are supported by the retrieval set (hallucination check).
+- Flag scope drift — turns where Lexi answered something that should have triggered a scope-decline.
+
+### 20.7 Phased rollout (extends section 8)
+
+Interlocutor mode rolls out in three sub-phases, all gated on Phase 2 (autonomy + public launch) being stable. Interlocutor mode does **not** launch before Phase 2 is stable; it is not a Phase 0 or Phase 1 surface.
+
+- **Phase 2-A — internal:** Drawer behind a feature flag, Nicole-only. Term-anchored entry point only. Longlist write disabled. Goal: tune persona, refusal scripts, and retrieval against real questions.
+- **Phase 2-B — public, read-only:** All entry points live to public traffic. Longlist write still disabled. Auditor begins sampling turns for hallucination and scope drift.
+- **Phase 2-C — full loop:** Reader-request longlist write enabled. `/observing` surfaces reader-request entries distinctly from sourced entries.
+
+Each sub-phase is gated on the auditor's report from the previous one returning clean.
+
+### 20.8 Kill-switch coverage (extends section 16)
+
+The kill switch (section 16) pauses interlocutor mode along with everything else. Pause behaviour: the conversational endpoint returns a static "Lexi is paused" message in the same voice (the message itself is in `lexi-interlocutor-spec.md`). No model invocations occur during pause.
+
+### 20.9 Self-evaluation rubric additions (extends section 15)
+
+Three new rubric items, evaluated per turn:
+
+7. Is every factual claim in the response supported by the retrieval set provided in the system prompt?
+8. Is the response in scope per §20.1?
+9. If the term is contested (section 10), does the response name the contestation?
+
+Item 7 failing routes the turn to a "I'm not certain about that — let me not guess" response. Items 8 and 9 failing route to the corresponding refusal scripts in the sibling spec.
+
+---
+
+## 21. End of spec
 
 If you are Claude Code reading this for the first time: re-read sections 2, 5, and 11 before you write any code. Those three sections are where the project's risk lives.
+
+If you are working on the interlocutor specifically, also read sections 1, 17, and 20 — the conversational surface is where the operational/relational separation is most easily lost.
 
 If you are Nicole re-reading this at the start of a session: section 2 is the one that decays fastest. Read it again.
