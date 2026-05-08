@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-05-07T19:42:03.144Z",
+  "generatedAt": "2026-05-08T19:15:56.640Z",
   "firstRunAt": "2026-04-27T01:07:31.335Z",
   "phase": 1,
   "headline": {
     "articlesRead": 47,
-    "daysRunning": 11,
+    "daysRunning": 12,
     "longlistSize": 34,
     "graphSize": 206
   },
   "thisWeek": {
-    "articlesFetched": 18,
+    "articlesFetched": 12,
     "longlistAdded": 12,
-    "sourcesAdded": 11,
+    "sourcesAdded": 5,
     "promotionsToGraph": 8,
     "proposalsQueued": 10,
     "auditFlags": 12,
-    "notesAdded": 47
+    "notesAdded": 31
   },
   "almostThere": [
     {
@@ -28,7 +28,7 @@
       ],
       "sourceCount": 6,
       "independentSources": 1,
-      "daysOnLonglist": 10,
+      "daysOnLonglist": 11,
       "domains": [
         "openai.com"
       ],
@@ -45,7 +45,7 @@
       ],
       "sourceCount": 4,
       "independentSources": 1,
-      "daysOnLonglist": 10,
+      "daysOnLonglist": 11,
       "domains": [
         "openai.com"
       ],
@@ -113,7 +113,7 @@
       ],
       "sourceCount": 1,
       "independentSources": 1,
-      "daysOnLonglist": 10,
+      "daysOnLonglist": 11,
       "domains": [
         "blog.google"
       ],
@@ -131,7 +131,7 @@
       ],
       "sourceCount": 1,
       "independentSources": 1,
-      "daysOnLonglist": 10,
+      "daysOnLonglist": 11,
       "domains": [
         "anthropic.com"
       ],
@@ -149,7 +149,7 @@
       ],
       "sourceCount": 1,
       "independentSources": 1,
-      "daysOnLonglist": 10,
+      "daysOnLonglist": 11,
       "domains": [
         "anthropic.com"
       ],
@@ -167,7 +167,7 @@
       ],
       "sourceCount": 1,
       "independentSources": 1,
-      "daysOnLonglist": 10,
+      "daysOnLonglist": 11,
       "domains": [
         "anthropic.com"
       ],
@@ -185,7 +185,7 @@
       ],
       "sourceCount": 1,
       "independentSources": 1,
-      "daysOnLonglist": 10,
+      "daysOnLonglist": 11,
       "domains": [
         "anthropic.com"
       ],
