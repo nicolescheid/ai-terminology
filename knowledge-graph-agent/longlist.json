@@ -1349,7 +1349,7 @@
     {
       "id": "agentic-era",
       "label": "Agentic Era",
-      "workingDef": "An industry framing term describing the current or emerging phase of AI development defined by the widespread deployment of autonomous agents that manage multi-step tasks and workflows for enterprises and individuals.",
+      "workingDef": "An industry framing — most prominently used by Google (\"the agentic era\") and adopted by other lab marketing — for the current or emerging phase of AI development centered on widespread deployment of autonomous, multi-step agents. The framing is contested: critics (notably the AI agent reliability literature) argue it asserts a periodization that outpaces measured capability, while proponents argue agentic deployment represents a genuine workflow-integration shift distinct from prior single-turn patterns.",
       "clusters": [
         "agentic",
         "landscape"
