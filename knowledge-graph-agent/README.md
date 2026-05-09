@@ -58,17 +58,63 @@ Per spec §11, the orchestration code (`run.mjs`) writes a deterministic event l
 
 The log is gitignored (operational forensics data, grows per run, not source). It lives only on the machine where the agent ran.
 
-Every run emits at minimum:
+Every event has the common fields: `ts` (ISO timestamp UTC), `runId` (UUID grouping all events of one invocation), `kind` (the event type), `phase`, `selfEval` (currently `null`; placeholder for spec §15 self-check output when that lands).
+
+The full event-kind catalog, grouped by surface:
+
+**Run lifecycle (run.mjs)** — bracket every scheduled or manual run:
 
 | Event kind | When | Notable fields |
 |---|---|---|
 | `run_start` | Once at start | `model`, `phase`, `extractPromptVersion`, `reviewPromptVersion`, `sourcesConfigured` |
-| `api_call` | Per Claude API call (extract per article + one review) | `call`, `promptVersion`, `inputs` (URL/title), `outputs` (counts/summary), `durationMs`, `errored`, `errorMessage` |
-| `action` | Per action routed through the permissions matrix | `action` (from `ACTIONS`), `gate`, `outcome` (`applied` / `proposed` / `dropped` / `errored`), `target`, `payload`, `reason`, `source` |
-| `run_end` | Once at end (success path) | `articlesProcessed`, `longlistTotal`, `longlistAddedThisRun`, `proposalsQueuedThisRun`, etc. |
+| `run_end` | Once at end (success path) | `articlesProcessed`, `longlistTotal`, `longlistAddedThisRun`, `proposalsQueuedThisRun`, `notesUnreadTotal`, etc. |
 | `run_errored` | Instead of `run_end` if the run throws | `errorMessage`, `errorStack` |
+| `api_call` | Per Claude API call (extract per article + one review) | `call`, `promptVersion`, `inputs` (URL/title), `outputs` (counts/summary), `durationMs`, `errored`, `errorMessage` |
+| `action` | Per action routed through the permissions matrix | `action` (from `ACTIONS`), `gate`, `outcome` (`applied` / `proposed` / `suppressed_by_cap` / `dropped` / `errored`), `target`, `payload`, `reason`, `source`, `errorMessage` |
+| `source_fetch_error` | Per source whose index/feed page fetch failed | `sourceLabel`, `url`, `sourceType`, `message` |
+| `article_fetch_error` | Per individual article whose fetch failed (or rendered to empty excerpt) | `articleId`, `url`, `title`, `sourceLabel`, `reason` |
 
-Common fields on every event: `ts` (ISO timestamp UTC), `runId` (UUID grouping all events of one invocation), `phase`, `selfEval` (currently `null`; placeholder for spec §15 self-check output when that lands).
+**Promote / demote / apply (promote.mjs, demote.mjs, apply-proposals.mjs)** — the proposal pipeline:
+
+| Event kind | When | Notable fields |
+|---|---|---|
+| `promote_scan_start` | Start of `node promote.mjs` | `longlistEntries`, `existingProposals` |
+| `promote_proposal_written` | Per longlist entry that crossed the credibility bar this scan | `entryId`, `proposalId`, `reason` |
+| `promote_scan_end` | End of `node promote.mjs` | `proposalsWritten`, `skippedAlreadyProposed`, `skippedNotEligible` |
+| `demote_proposal_written` | Per `node demote.mjs` invocation that wrote a proposal | `proposalId`, `targetId`, `targetLabel`, `reason`, `hadLonglistEntry` |
+| `apply_proposals_start` | Start of `node apply-proposals.mjs` | `totalProposals`, `approvedToApply` |
+| `apply_proposal_skipped` | Per approved proposal whose apply path returned `ok: false` | `proposalId`, `action`, `why` |
+| `apply_proposals_end` | End of apply | `applied`, `skipped` |
+
+**Auditor (audit.mjs)** — independent observation pass:
+
+| Event kind | When | Notable fields |
+|---|---|---|
+| `audit_start` | Start of `node audit.mjs` | `auditor` (`heuristic`), `auditorVersion`, `checks`, `longlistEntries` |
+| `audit_flag` | Per new auditor finding | `signature`, `type`, `subject`, `noteId` |
+| `audit_flag_skipped` | Per finding deduped against an existing note | `signature`, `reason` |
+| `audit_end` | End of audit | `flagsRaised`, `notesAdded`, `dedupSkipped`, `longlistEntries` |
+
+**Manual mark operations (mark-notes.mjs, mark-must-reads.mjs)** — bracket bulk dispositioning:
+
+| Event kind | When | Notable fields |
+|---|---|---|
+| `mark_notes_start` | Start of `node mark-notes.mjs` | `filter`, `targetStatus`, `matchedCount`, `dryRun` |
+| `mark_notes_end` | End | `targetStatus`, `changed`, `unreadAfter` |
+| `mark_must_reads_start` | Start of `node mark-must-reads.mjs` | (analogous) |
+| `mark_must_reads_end` | End | (analogous) |
+
+**Must-read backfill (backfill-must-reads.mjs)** — re-judging articles:
+
+| Event kind | When | Notable fields |
+|---|---|---|
+| `backfill_must_reads_start` | Start of `node backfill-must-reads.mjs` | `candidateCount`, `dryRun` |
+| `backfill_fetch_error` | Per article fetch that failed during backfill | `articleId`, `url`, `title`, `sourceLabel`, `reason` |
+| `backfill_judgment_error` | Per article whose Claude judgment call threw | `articleId`, `url`, `title`, `sourceLabel`, `message` |
+| `backfill_not_flagged` | Per article Claude judged below the editorial bar | `articleId`, `url`, `title`, `sourceLabel`, `summary` |
+| `backfill_must_reads_end` | End | `flagged`, `skipped`, `errored`, `totalProcessed` |
+
+**Manager-dashboard mutations (Worker)** — note: NOT logged to `events.ndjson`. The Worker (`src/worker.js`) writes via the GitHub Contents API; the audit trail is the **git commit log** rather than the deterministic event log. Each mutation produces a commit with a message like `Mark note <id>… as <status>` or `Mark proposal <id>… as <status>`. To inspect: `git log --grep="^Mark note\|^Mark proposal"`.
 
 To inspect a recent run:
 
