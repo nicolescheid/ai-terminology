@@ -1,11 +1,265 @@
 {
-  "generatedAt": "2026-05-08T19:15:56.203Z",
+  "generatedAt": "2026-05-09T07:44:17.196Z",
   "model": "claude-sonnet-4-6",
   "sourcesConfigured": 12,
-  "articlesConsidered": [],
-  "harvestedTerms": [],
-  "definitionReviews": [],
-  "notes": [
-    "Run paused (unread_notes_over_7d). No articles fetched, no candidates routed, no proposals queued."
-  ]
+  "articlesConsidered": [
+    {
+      "id": "7fd7635574ec5271",
+      "source": "Google AI Blog",
+      "title": "5 gardening tips you can try right in Search",
+      "url": "https://blog.google/products-and-platforms/products/search/gardening-tips/",
+      "publishedAt": "Wed, 06 May 2026 16:00:00 +0000"
+    },
+    {
+      "id": "47047de314568e4b",
+      "source": "Stratechery",
+      "title": "Microsoft Earnings, Apple Earnings",
+      "url": "https://stratechery.com/2026/microsoft-earnings-apple-earnings/",
+      "publishedAt": "Wed, 06 May 2026 10:00:00 +0000"
+    },
+    {
+      "id": "288ea344bbe070b9",
+      "source": "OpenAI News",
+      "title": "Scaling Trusted Access for Cyber with GPT-5.5 and GPT-5.5-Cyber",
+      "url": "https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber",
+      "publishedAt": "Thu, 07 May 2026 13:00:00 GMT"
+    },
+    {
+      "id": "3eb04cdf5dff7818",
+      "source": "Simon Willison's Weblog",
+      "title": "A quote from Luke Curley",
+      "url": "https://simonwillison.net/2026/May/9/luke-curley/#atom-everything",
+      "publishedAt": "2026-05-09T01:03:58+00:00"
+    },
+    {
+      "id": "1df3c91e850c7f2d",
+      "source": "OpenAI Research",
+      "title": "Introducing GPT-5.4",
+      "url": "https://openai.com/index/introducing-gpt-5-4/",
+      "publishedAt": null
+    },
+    {
+      "id": "cb85d5cc4e125d63",
+      "source": "Anthropic Newsroom",
+      "title": "Higher usage limits for Claude and a compute deal with SpaceX",
+      "url": "https://www.anthropic.com/news/higher-limits-spacex",
+      "publishedAt": null
+    }
+  ],
+  "harvestedTerms": [
+    {
+      "article": {
+        "title": "5 gardening tips you can try right in Search",
+        "url": "https://blog.google/products-and-platforms/products/search/gardening-tips/"
+      },
+      "summary": "A Google promotional piece showing gardening use-cases for Search AI features (AI Mode, Canvas, Search Live, Shopping filters). Essentially a marketing listicle for Google Search capabilities dressed as gardening tips. No substantive AI terminology introduced.",
+      "longlistAdditions": [
+        {
+          "id": "ai-mode",
+          "label": "AI Mode"
+        },
+        {
+          "id": "canvas-ai-mode",
+          "label": "Canvas (AI Mode)"
+        }
+      ],
+      "longlistUpdates": [],
+      "rejections": [],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "Microsoft Earnings, Apple Earnings",
+        "url": "https://stratechery.com/2026/microsoft-earnings-apple-earnings/"
+      },
+      "summary": "Paywalled Stratechery earnings analysis covering Microsoft's agentic business model and Apple's AI-related hardware constraints. Only the headline and sub-headline are visible; no substantive body content is accessible.",
+      "longlistAdditions": [
+        {
+          "id": "agentic-business-model",
+          "label": "Agentic Business Model"
+        }
+      ],
+      "longlistUpdates": [],
+      "rejections": [],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "Scaling Trusted Access for Cyber with GPT-5.5 and GPT-5.5-Cyber",
+        "url": "https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber"
+      },
+      "summary": "OpenAI announces GPT-5.5 and GPT-5.5-Cyber with a tiered 'Trusted Access for Cyber' (TAC) framework, differentiating model access levels for defensive security workflows, penetration testing, and critical infrastructure protection. The article details how identity-verified access unlocks progressively more permissive cybersecurity capabilities, and introduces Codex Security for open-source defenders.",
+      "longlistAdditions": [
+        {
+          "id": "trusted-access-cyber",
+          "label": "Trusted Access for Cyber"
+        },
+        {
+          "id": "security-flywheel",
+          "label": "Security Flywheel"
+        },
+        {
+          "id": "codex-security",
+          "label": "Codex Security"
+        }
+      ],
+      "longlistUpdates": [
+        {
+          "id": "gpt55",
+          "label": "GPT-5.5",
+          "sourceAdded": true,
+          "sourceCount": 7,
+          "independentSourceCount": 1
+        }
+      ],
+      "rejections": [],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "A quote from Luke Curley",
+        "url": "https://simonwillison.net/2026/May/9/luke-curley/#atom-everything"
+      },
+      "summary": "A brief quote/commentary post about WebRTC's audio packet-dropping behavior causing problems for voice AI prompts — noting that WebRTC's latency-first design conflicts with LLM use cases where accuracy matters more than speed.",
+      "longlistAdditions": [
+        {
+          "id": "webrtc",
+          "label": "WebRTC"
+        }
+      ],
+      "longlistUpdates": [
+        {
+          "id": "voice-ai",
+          "label": "Voice AI",
+          "sourceAdded": true,
+          "sourceCount": 2,
+          "independentSourceCount": 2
+        },
+        {
+          "id": "real-time-audio-pipeline",
+          "label": "Real-Time Audio Pipeline",
+          "sourceAdded": true,
+          "sourceCount": 2,
+          "independentSourceCount": 2
+        }
+      ],
+      "rejections": [],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "Introducing GPT-5.4",
+        "url": "https://openai.com/index/introducing-gpt-5-4/"
+      },
+      "summary": "OpenAI announces GPT-5.4, a frontier model combining reasoning, coding, and agentic capabilities with native computer-use, 1M token context, tool search, and improvements in knowledge work, spreadsheets, and presentations. Benchmarks cited include GDPval, OSWorld-Verified, SWE-Bench Pro, and Toolathlon.",
+      "longlistAdditions": [
+        {
+          "id": "gdpval",
+          "label": "GDPval"
+        },
+        {
+          "id": "tool-search",
+          "label": "Tool Search"
+        },
+        {
+          "id": "toolathlon",
+          "label": "Toolathlon"
+        }
+      ],
+      "longlistUpdates": [],
+      "rejections": [
+        {
+          "label": "GPT-5.4",
+          "reason": "already in graph (label match)"
+        }
+      ],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "Higher usage limits for Claude and a compute deal with SpaceX",
+        "url": "https://www.anthropic.com/news/higher-limits-spacex"
+      },
+      "summary": "Anthropic announces a compute partnership with SpaceX's Colossus 1 data center (300MW, 220,000+ NVIDIA GPUs), alongside usage limit increases for Claude Code and the Claude API. The article also recaps other major compute deals with Amazon, Google/Broadcom, Microsoft/NVIDIA, and Fluidstack, and mentions interest in orbital AI compute capacity and international data residency expansion.",
+      "longlistAdditions": [
+        {
+          "id": "orbital-ai-compute",
+          "label": "Orbital AI Compute"
+        },
+        {
+          "id": "data-residency",
+          "label": "Data Residency"
+        }
+      ],
+      "longlistUpdates": [
+        {
+          "id": "trainium",
+          "label": "Trainium",
+          "sourceAdded": true,
+          "sourceCount": 2,
+          "independentSourceCount": 2
+        }
+      ],
+      "rejections": [
+        {
+          "label": "Purpose-Built AI Infrastructure",
+          "reason": "already in graph (label match)"
+        }
+      ],
+      "proposalsQueued": []
+    }
+  ],
+  "definitionReviews": [
+    {
+      "id": "inference",
+      "status": "keep",
+      "reason": "No source material addresses or contradicts this definition. It remains accurate as written."
+    },
+    {
+      "id": "information-literacy",
+      "status": "keep",
+      "reason": "No source material addresses this definition. It remains accurate as written."
+    },
+    {
+      "id": "infrastructure",
+      "status": "keep",
+      "reason": "No source material addresses this definition. It remains accurate as written."
+    },
+    {
+      "id": "interactive-prototyping",
+      "status": "keep",
+      "reason": "No source material addresses this definition. It remains accurate as written."
+    },
+    {
+      "id": "interpretability",
+      "status": "keep",
+      "reason": "No source material addresses this definition. It remains accurate as written."
+    },
+    {
+      "id": "jailbreak",
+      "status": "keep",
+      "reason": "No source material addresses this definition. It remains accurate as written."
+    },
+    {
+      "id": "kairos",
+      "status": "insufficient_evidence",
+      "reason": "The definition makes a specific and extraordinary claim about an unreleased autonomous background mode inside Claude Code revealed via a source code leak in March 2026. None of the provided sources reference KAIROS, the described leak, or these specific capabilities. The claim cannot be verified or refuted from available evidence and warrants scrutiny before publication."
+    },
+    {
+      "id": "kv-cache",
+      "status": "keep",
+      "reason": "No source material addresses this definition. It remains accurate as written."
+    },
+    {
+      "id": "langchain",
+      "status": "keep",
+      "reason": "No source material addresses this definition. It remains accurate as written."
+    },
+    {
+      "id": "latency",
+      "status": "keep",
+      "reason": "The WebRTC/latency excerpt discusses latency tradeoffs in voice AI (packet dropping to maintain low latency) but does not contradict or materially expand the existing definition, which correctly characterizes latency compounding in agentic systems. No update is warranted."
+    }
+  ],
+  "notes": []
 }

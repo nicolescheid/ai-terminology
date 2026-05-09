@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-05-08T19:15:56.203Z",
-    "entryCount": 42,
+    "generatedAt": "2026-05-09T07:44:17.196Z",
+    "entryCount": 54,
     "note": "Lexi-managed Tier 2 longlist — terms under observation, awaiting evidence to support promotion to the graph (Tier 1)."
   },
   "entries": [
@@ -313,12 +313,20 @@
           "sourceLabel": "OpenAI Research",
           "publishedAt": null,
           "firstSeen": "2026-05-04T19:27:54.284Z"
+        },
+        {
+          "url": "https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber",
+          "domain": "openai.com",
+          "title": "Scaling Trusted Access for Cyber with GPT-5.5 and GPT-5.5-Cyber",
+          "sourceLabel": "OpenAI News",
+          "publishedAt": "Thu, 07 May 2026 13:00:00 GMT",
+          "firstSeen": "2026-05-09T07:44:17.196Z"
         }
       ],
-      "sourceCount": 6,
+      "sourceCount": 7,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-04-26T22:40:25.832Z",
-      "dateLastSeen": "2026-05-04T19:27:54.284Z",
+      "dateLastSeen": "2026-05-09T07:44:17.196Z",
       "sz": 14,
       "fullName": "GPT-5.5 (OpenAI)",
       "nodeType": "product",
@@ -1400,12 +1408,20 @@
           "sourceLabel": "Stratechery",
           "publishedAt": "Mon, 04 May 2026 10:00:00 +0000",
           "firstSeen": "2026-05-04T19:27:54.284Z"
+        },
+        {
+          "url": "https://www.anthropic.com/news/higher-limits-spacex",
+          "domain": "anthropic.com",
+          "title": "Higher usage limits for Claude and a compute deal with SpaceX",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-05-09T07:44:17.196Z"
         }
       ],
-      "sourceCount": 1,
-      "independentSourceCount": 1,
+      "sourceCount": 2,
+      "independentSourceCount": 2,
       "dateFirstSeen": "2026-05-04T19:27:54.284Z",
-      "dateLastSeen": "2026-05-04T19:27:54.284Z",
+      "dateLastSeen": "2026-05-09T07:44:17.196Z",
       "sz": 14,
       "fullName": "Trainium (AWS AI Training Chip)",
       "nodeType": "product",
@@ -1463,12 +1479,20 @@
           "sourceLabel": "OpenAI News",
           "publishedAt": "Mon, 04 May 2026 00:00:00 GMT",
           "firstSeen": "2026-05-04T19:27:54.284Z"
+        },
+        {
+          "url": "https://simonwillison.net/2026/May/9/luke-curley/#atom-everything",
+          "domain": "simonwillison.net",
+          "title": "A quote from Luke Curley",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-05-09T01:03:58+00:00",
+          "firstSeen": "2026-05-09T07:44:17.196Z"
         }
       ],
-      "sourceCount": 1,
-      "independentSourceCount": 1,
+      "sourceCount": 2,
+      "independentSourceCount": 2,
       "dateFirstSeen": "2026-05-04T19:27:54.284Z",
-      "dateLastSeen": "2026-05-04T19:27:54.284Z",
+      "dateLastSeen": "2026-05-09T07:44:17.196Z",
       "sz": 16,
       "proposalReason": "Voice AI is increasingly a distinct product and infrastructure category, separate from text-based AI, with its own latency, streaming, and deployment requirements."
     },
@@ -1492,12 +1516,20 @@
           "sourceLabel": "OpenAI News",
           "publishedAt": "Mon, 04 May 2026 00:00:00 GMT",
           "firstSeen": "2026-05-04T19:27:54.284Z"
+        },
+        {
+          "url": "https://simonwillison.net/2026/May/9/luke-curley/#atom-everything",
+          "domain": "simonwillison.net",
+          "title": "A quote from Luke Curley",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-05-09T01:03:58+00:00",
+          "firstSeen": "2026-05-09T07:44:17.196Z"
         }
       ],
-      "sourceCount": 1,
-      "independentSourceCount": 1,
+      "sourceCount": 2,
+      "independentSourceCount": 2,
       "dateFirstSeen": "2026-05-04T19:27:54.284Z",
-      "dateLastSeen": "2026-05-04T19:27:54.284Z",
+      "dateLastSeen": "2026-05-09T07:44:17.196Z",
       "sz": 16,
       "proposalReason": "A specific architectural concept for voice AI that differs meaningfully from general inference pipelines — tracking it helps distinguish voice infrastructure as a domain."
     },
@@ -1628,6 +1660,387 @@
       "dateLastSeen": "2026-05-04T19:27:54.284Z",
       "sz": 14,
       "proposalReason": "The article repeatedly distinguishes this role from pure software licensing; tracking it captures an important structural concept in how AI reaches enterprises."
+    },
+    {
+      "id": "ai-mode",
+      "label": "AI Mode",
+      "workingDef": "A conversational, AI-powered interface within Google Search that allows users to combine natural language prompts, image uploads, and specialized tools like Canvas for planning and visualization tasks.",
+      "clusters": [
+        "tools",
+        "landscape"
+      ],
+      "suggestedRels": [
+        "gemini",
+        "deep-research",
+        "grounding"
+      ],
+      "sources": [
+        {
+          "url": "https://blog.google/products-and-platforms/products/search/gardening-tips/",
+          "domain": "blog.google",
+          "title": "5 gardening tips you can try right in Search",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Wed, 06 May 2026 16:00:00 +0000",
+          "firstSeen": "2026-05-09T07:44:17.196Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-09T07:44:17.196Z",
+      "dateLastSeen": "2026-05-09T07:44:17.196Z",
+      "sz": 14,
+      "fullName": "AI Mode (Google Search)",
+      "nodeType": "product",
+      "proposalReason": "AI Mode appears as a named Google Search product feature with enough specificity to warrant tracking as a distinct product entry."
+    },
+    {
+      "id": "canvas-ai-mode",
+      "label": "Canvas (AI Mode)",
+      "workingDef": "A side-panel document-building tool within Google Search's AI Mode that enables users to generate, structure, and iteratively refine long-form plans and formatted documents through conversational prompting.",
+      "clusters": [
+        "tools",
+        "work"
+      ],
+      "suggestedRels": [
+        "ai-mode",
+        "structured-output",
+        "recursive-refinement"
+      ],
+      "sources": [
+        {
+          "url": "https://blog.google/products-and-platforms/products/search/gardening-tips/",
+          "domain": "blog.google",
+          "title": "5 gardening tips you can try right in Search",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Wed, 06 May 2026 16:00:00 +0000",
+          "firstSeen": "2026-05-09T07:44:17.196Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-09T07:44:17.196Z",
+      "dateLastSeen": "2026-05-09T07:44:17.196Z",
+      "sz": 14,
+      "fullName": "Canvas Tool in AI Mode (Google Search)",
+      "nodeType": "product",
+      "proposalReason": "Canvas is a named sub-feature of AI Mode distinct enough from generic structured output tools to track separately, particularly as document-generation UI patterns proliferate across AI products."
+    },
+    {
+      "id": "agentic-business-model",
+      "label": "Agentic Business Model",
+      "workingDef": "A commercial model in which revenue or value delivery is structured around autonomous AI agents performing tasks on behalf of customers, rather than traditional seat- or usage-based SaaS pricing.",
+      "clusters": [
+        "business",
+        "agentic"
+      ],
+      "suggestedRels": [
+        "agent",
+        "saas",
+        "saaspocalypse",
+        "vertical-ai",
+        "workflow"
+      ],
+      "sources": [
+        {
+          "url": "https://stratechery.com/2026/microsoft-earnings-apple-earnings/",
+          "domain": "stratechery.com",
+          "title": "Microsoft Earnings, Apple Earnings",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Wed, 06 May 2026 10:00:00 +0000",
+          "firstSeen": "2026-05-09T07:44:17.196Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-09T07:44:17.196Z",
+      "dateLastSeen": "2026-05-09T07:44:17.196Z",
+      "sz": 16,
+      "proposalReason": "The headline explicitly frames Microsoft's earnings around an 'agentic business model' shift — a distinct framing of how agentic AI is reshaping commercial structures, not just product features."
+    },
+    {
+      "id": "trusted-access-cyber",
+      "label": "Trusted Access for Cyber",
+      "workingDef": "An identity and trust-based access framework from OpenAI that grants verified cybersecurity defenders tiered, more permissive model behaviors for authorized defensive workflows, while maintaining safeguards against malicious use.",
+      "clusters": [
+        "security",
+        "autonomy"
+      ],
+      "suggestedRels": [
+        "gpt55",
+        "penetration-testing",
+        "red-teaming",
+        "ai-red-teaming",
+        "guardrails",
+        "jailbreak",
+        "cve"
+      ],
+      "sources": [
+        {
+          "url": "https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber",
+          "domain": "openai.com",
+          "title": "Scaling Trusted Access for Cyber with GPT-5.5 and GPT-5.5-Cyber",
+          "sourceLabel": "OpenAI News",
+          "publishedAt": "Thu, 07 May 2026 13:00:00 GMT",
+          "firstSeen": "2026-05-09T07:44:17.196Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-09T07:44:17.196Z",
+      "dateLastSeen": "2026-05-09T07:44:17.196Z",
+      "sz": 14,
+      "fullName": "Trusted Access for Cyber (TAC) (OpenAI)",
+      "nodeType": "initiative",
+      "proposalReason": "Core subject of the article; a novel access-governance concept that sits at the intersection of model safety and security practitioner enablement."
+    },
+    {
+      "id": "security-flywheel",
+      "label": "Security Flywheel",
+      "workingDef": "A conceptual model in which AI-powered defensive capabilities improve iteratively as more defenders use and validate the tools, creating a reinforcing cycle of better security outcomes across the ecosystem.",
+      "clusters": [
+        "security",
+        "landscape"
+      ],
+      "suggestedRels": [
+        "trusted-access-cyber",
+        "red-teaming",
+        "ai-red-teaming",
+        "guardrails",
+        "evals"
+      ],
+      "sources": [
+        {
+          "url": "https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber",
+          "domain": "openai.com",
+          "title": "Scaling Trusted Access for Cyber with GPT-5.5 and GPT-5.5-Cyber",
+          "sourceLabel": "OpenAI News",
+          "publishedAt": "Thu, 07 May 2026 13:00:00 GMT",
+          "firstSeen": "2026-05-09T07:44:17.196Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-09T07:44:17.196Z",
+      "dateLastSeen": "2026-05-09T07:44:17.196Z",
+      "sz": 14,
+      "fullName": "Security Flywheel (AI-Powered Defensive Ecosystem)",
+      "proposalReason": "Introduced as a framing concept for OpenAI's cybersecurity strategy; represents a strategic posture worth tracking as AI-native security discourse matures."
+    },
+    {
+      "id": "codex-security",
+      "label": "Codex Security",
+      "workingDef": "An OpenAI offering extending Codex capabilities specifically toward open-source and defensive security use cases, aimed at broadening access to AI-powered vulnerability analysis for the defender community.",
+      "clusters": [
+        "security",
+        "tools"
+      ],
+      "suggestedRels": [
+        "codex-model",
+        "openai-co",
+        "penetration-testing",
+        "cve",
+        "exploit"
+      ],
+      "sources": [
+        {
+          "url": "https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber",
+          "domain": "openai.com",
+          "title": "Scaling Trusted Access for Cyber with GPT-5.5 and GPT-5.5-Cyber",
+          "sourceLabel": "OpenAI News",
+          "publishedAt": "Thu, 07 May 2026 13:00:00 GMT",
+          "firstSeen": "2026-05-09T07:44:17.196Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-09T07:44:17.196Z",
+      "dateLastSeen": "2026-05-09T07:44:17.196Z",
+      "sz": 14,
+      "fullName": "Codex Security (OpenAI)",
+      "nodeType": "product",
+      "proposalReason": "Named product introduced in this article for the first time, targeting a distinct open-source/defender audience segment distinct from the TAC tiers."
+    },
+    {
+      "id": "webrtc",
+      "label": "WebRTC",
+      "workingDef": "A browser protocol for real-time peer-to-peer audio, video, and data communication that aggressively drops packets to minimize latency — a design tradeoff that conflicts with voice AI use cases where prompt accuracy matters more than speed.",
+      "clusters": [
+        "technical",
+        "tools"
+      ],
+      "suggestedRels": [
+        "voice-ai",
+        "real-time-audio-pipeline",
+        "latency"
+      ],
+      "sources": [
+        {
+          "url": "https://simonwillison.net/2026/May/9/luke-curley/#atom-everything",
+          "domain": "simonwillison.net",
+          "title": "A quote from Luke Curley",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-05-09T01:03:58+00:00",
+          "firstSeen": "2026-05-09T07:44:17.196Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-09T07:44:17.196Z",
+      "dateLastSeen": "2026-05-09T07:44:17.196Z",
+      "sz": 14,
+      "fullName": "WebRTC (Web Real-Time Communication)",
+      "proposalReason": "The article's core technical subject: WebRTC's packet-dropping behavior and why it creates problems for voice AI delivery at scale."
+    },
+    {
+      "id": "gdpval",
+      "label": "GDPval",
+      "workingDef": "An evaluation benchmark that tests AI agents' ability to produce professional knowledge work outputs across 44 occupations spanning the top 9 industries contributing to U.S. GDP, using real work products such as presentations, spreadsheets, schedules, and financial models as criteria.",
+      "clusters": [
+        "models"
+      ],
+      "suggestedRels": [
+        "evals",
+        "benchmark-gaming",
+        "benchmark-saturation",
+        "reasoning-models"
+      ],
+      "sources": [
+        {
+          "url": "https://openai.com/index/introducing-gpt-5-4/",
+          "domain": "openai.com",
+          "title": "Introducing GPT-5.4",
+          "sourceLabel": "OpenAI Research",
+          "publishedAt": null,
+          "firstSeen": "2026-05-09T07:44:17.196Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-09T07:44:17.196Z",
+      "dateLastSeen": "2026-05-09T07:44:17.196Z",
+      "sz": 16,
+      "proposalReason": "A newly named professional-work benchmark from OpenAI that spans 44 occupations; distinct from existing coding or reasoning evals and likely to appear in future model comparisons."
+    },
+    {
+      "id": "tool-search",
+      "label": "Tool Search",
+      "workingDef": "A model capability that allows agents to dynamically find and select the most relevant tools from a large ecosystem of connectors at runtime, without requiring the full tool list to be loaded into context, maintaining intelligence while improving efficiency.",
+      "clusters": [
+        "agentic",
+        "tools"
+      ],
+      "suggestedRels": [
+        "tool-use",
+        "connectors",
+        "agent",
+        "context-window",
+        "orchestrator"
+      ],
+      "sources": [
+        {
+          "url": "https://openai.com/index/introducing-gpt-5-4/",
+          "domain": "openai.com",
+          "title": "Introducing GPT-5.4",
+          "sourceLabel": "OpenAI Research",
+          "publishedAt": null,
+          "firstSeen": "2026-05-09T07:44:17.196Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-09T07:44:17.196Z",
+      "dateLastSeen": "2026-05-09T07:44:17.196Z",
+      "sz": 16,
+      "proposalReason": "A new agentic mechanism introduced in GPT-5.4 for navigating large tool ecosystems; addresses a real scaling challenge distinct from tool-use broadly and worth tracking as a pattern."
+    },
+    {
+      "id": "toolathlon",
+      "label": "Toolathlon",
+      "workingDef": "A benchmark measuring AI model performance across a diverse suite of tool-use tasks, testing how effectively models can select and invoke tools in realistic agentic workflows.",
+      "clusters": [
+        "agentic"
+      ],
+      "suggestedRels": [
+        "evals",
+        "tool-use",
+        "agent",
+        "benchmark-saturation"
+      ],
+      "sources": [
+        {
+          "url": "https://openai.com/index/introducing-gpt-5-4/",
+          "domain": "openai.com",
+          "title": "Introducing GPT-5.4",
+          "sourceLabel": "OpenAI Research",
+          "publishedAt": null,
+          "firstSeen": "2026-05-09T07:44:17.196Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-09T07:44:17.196Z",
+      "dateLastSeen": "2026-05-09T07:44:17.196Z",
+      "sz": 16,
+      "proposalReason": "A newly named tool-use benchmark appearing in GPT-5.4's launch; worth tracking as a recurring reference point for agentic tool-use evaluation."
+    },
+    {
+      "id": "orbital-ai-compute",
+      "label": "Orbital AI Compute",
+      "workingDef": "AI compute infrastructure deployed in orbital/space-based data centers, as distinct from terrestrial cloud infrastructure. Referenced here as a future development Anthropic is exploring with SpaceX.",
+      "clusters": [
+        "technical"
+      ],
+      "suggestedRels": [
+        "purpose-built-ai-infrastructure",
+        "ai-accelerator",
+        "infrastructure"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/higher-limits-spacex",
+          "domain": "anthropic.com",
+          "title": "Higher usage limits for Claude and a compute deal with SpaceX",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-05-09T07:44:17.196Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-09T07:44:17.196Z",
+      "dateLastSeen": "2026-05-09T07:44:17.196Z",
+      "sz": 14,
+      "proposalReason": "The article introduces 'orbital AI compute capacity' as a concrete near-term interest, representing a genuinely novel infrastructure category worth tracking as it moves from concept to implementation."
+    },
+    {
+      "id": "data-residency",
+      "label": "Data Residency",
+      "workingDef": "The requirement that data be stored and processed within a specified geographic or jurisdictional boundary, increasingly relevant for enterprise AI deployments in regulated industries.",
+      "clusters": [
+        "security",
+        "business"
+      ],
+      "suggestedRels": [
+        "data-sovereignty",
+        "sandboxing",
+        "infrastructure"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/higher-limits-spacex",
+          "domain": "anthropic.com",
+          "title": "Higher usage limits for Claude and a compute deal with SpaceX",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-05-09T07:44:17.196Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-09T07:44:17.196Z",
+      "dateLastSeen": "2026-05-09T07:44:17.196Z",
+      "sz": 14,
+      "proposalReason": "Appears as a driving business requirement for Anthropic's international infrastructure expansion, distinct from but related to data-sovereignty; worth tracking as a compliance-driven concept shaping AI deployment patterns."
     }
   ]
 }

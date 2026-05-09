@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-05-08T19:15:56.527Z",
-    "pendingCount": 2,
+    "generatedAt": "2026-05-09T07:45:53.052Z",
+    "pendingCount": 5,
     "appliedCount": 8,
     "rejectedCount": 0,
     "note": "Lexi proposals queue. Actions gated as PROPOSE land here as status: 'pending'. Edit a proposal's status to 'approved' or 'rejected' and run the apply step (TBD) to commit."
@@ -493,6 +493,137 @@
       },
       "reason": "3 sources, 2 independent (openai.com + simonwillison.net), 4d on longlist.",
       "runId": "6229932d-9fff-4451-9962-f84cdc93943e"
+    },
+    {
+      "id": "be7e5fc46bc64b50",
+      "action": "promote_to_graph",
+      "gate": "propose",
+      "proposedAt": "2026-05-09T07:45:53.052Z",
+      "status": "pending",
+      "source": "promote-eligibility-scan",
+      "target": {
+        "kind": "longlist_entry",
+        "id": "trainium"
+      },
+      "payload": {
+        "graphNode": {
+          "id": "trainium",
+          "label": "Trainium",
+          "clusters": [
+            "technical",
+            "companies"
+          ],
+          "sz": 14,
+          "def": "AWS's purpose-built AI training chip, referenced in the context of Amazon's AI infrastructure strategy and commodity market dynamics for AI compute.",
+          "rels": [
+            "ai-accelerator",
+            "ai-inference-chip",
+            "purpose-built-ai-infrastructure"
+          ],
+          "refs": [
+            {
+              "n": 1,
+              "src": "Stratechery, Mon, 04 May 2026 10:00:00 +0000",
+              "q": "Google Earnings, Meta Earnings Stratechery"
+            },
+            {
+              "n": 2,
+              "src": "Anthropic Newsroom",
+              "q": "Higher usage limits for Claude and a compute deal with SpaceX Anthropic Newsroom"
+            }
+          ],
+          "fullName": "Trainium (AWS AI Training Chip)",
+          "nodeType": "product"
+        }
+      },
+      "reason": "2 sources, 2 independent (stratechery.com + anthropic.com), 4d on longlist.",
+      "runId": "4d669e89-7040-47b9-9eca-a35490210bc9"
+    },
+    {
+      "id": "2a9167205c4b0661",
+      "action": "promote_to_graph",
+      "gate": "propose",
+      "proposedAt": "2026-05-09T07:45:53.052Z",
+      "status": "pending",
+      "source": "promote-eligibility-scan",
+      "target": {
+        "kind": "longlist_entry",
+        "id": "voice-ai"
+      },
+      "payload": {
+        "graphNode": {
+          "id": "voice-ai",
+          "label": "Voice AI",
+          "clusters": [
+            "models",
+            "tools"
+          ],
+          "sz": 16,
+          "def": "AI systems designed for real-time spoken interaction, encompassing speech recognition, language modeling, and speech synthesis in an integrated pipeline optimized for conversational latency.",
+          "rels": [
+            "inference",
+            "latency",
+            "multimodal",
+            "chatbot"
+          ],
+          "refs": [
+            {
+              "n": 1,
+              "src": "OpenAI News, Mon, 04 May 2026 00:00:00 GMT",
+              "q": "How OpenAI delivers low-latency voice AI at scale OpenAI News"
+            },
+            {
+              "n": 2,
+              "src": "Simon Willison's Weblog, 2026-05-09T01:03:58+00:00",
+              "q": "A quote from Luke Curley Simon Willison's Weblog"
+            }
+          ]
+        }
+      },
+      "reason": "2 sources, 2 independent (openai.com + simonwillison.net), 4d on longlist.",
+      "runId": "4d669e89-7040-47b9-9eca-a35490210bc9"
+    },
+    {
+      "id": "b3236121bd2b8d65",
+      "action": "promote_to_graph",
+      "gate": "propose",
+      "proposedAt": "2026-05-09T07:45:53.052Z",
+      "status": "pending",
+      "source": "promote-eligibility-scan",
+      "target": {
+        "kind": "longlist_entry",
+        "id": "real-time-audio-pipeline"
+      },
+      "payload": {
+        "graphNode": {
+          "id": "real-time-audio-pipeline",
+          "label": "Real-Time Audio Pipeline",
+          "clusters": [
+            "technical"
+          ],
+          "sz": 16,
+          "def": "The end-to-end system architecture connecting microphone input through transcription, language model inference, and text-to-speech output with sufficiently low latency for natural spoken conversation.",
+          "rels": [
+            "inference",
+            "latency",
+            "workflow"
+          ],
+          "refs": [
+            {
+              "n": 1,
+              "src": "OpenAI News, Mon, 04 May 2026 00:00:00 GMT",
+              "q": "How OpenAI delivers low-latency voice AI at scale OpenAI News"
+            },
+            {
+              "n": 2,
+              "src": "Simon Willison's Weblog, 2026-05-09T01:03:58+00:00",
+              "q": "A quote from Luke Curley Simon Willison's Weblog"
+            }
+          ]
+        }
+      },
+      "reason": "2 sources, 2 independent (openai.com + simonwillison.net), 4d on longlist.",
+      "runId": "4d669e89-7040-47b9-9eca-a35490210bc9"
     }
   ]
 }

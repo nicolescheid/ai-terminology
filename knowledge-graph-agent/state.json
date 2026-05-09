@@ -1,6 +1,6 @@
 {
-  "lastRunAt": "2026-05-08T19:15:56.203Z",
-  "reviewCursor": 100,
+  "lastRunAt": "2026-05-09T07:44:17.196Z",
+  "reviewCursor": 110,
   "seenArticles": {
     "93a049d060bc295b": {
       "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/tpus-8t-8i-cloud-next/",
@@ -283,6 +283,42 @@
       "title": "Building a new enterprise AI services company with Blackstone, Hellman & Friedman, and Goldman Sachs ",
       "publishedAt": null,
       "seenAt": "2026-05-04T19:27:54.284Z"
+    },
+    "7fd7635574ec5271": {
+      "url": "https://blog.google/products-and-platforms/products/search/gardening-tips/",
+      "title": "5 gardening tips you can try right in Search",
+      "publishedAt": "Wed, 06 May 2026 16:00:00 +0000",
+      "seenAt": "2026-05-09T07:44:17.196Z"
+    },
+    "47047de314568e4b": {
+      "url": "https://stratechery.com/2026/microsoft-earnings-apple-earnings/",
+      "title": "Microsoft Earnings, Apple Earnings",
+      "publishedAt": "Wed, 06 May 2026 10:00:00 +0000",
+      "seenAt": "2026-05-09T07:44:17.196Z"
+    },
+    "288ea344bbe070b9": {
+      "url": "https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber",
+      "title": "Scaling Trusted Access for Cyber with GPT-5.5 and GPT-5.5-Cyber",
+      "publishedAt": "Thu, 07 May 2026 13:00:00 GMT",
+      "seenAt": "2026-05-09T07:44:17.196Z"
+    },
+    "3eb04cdf5dff7818": {
+      "url": "https://simonwillison.net/2026/May/9/luke-curley/#atom-everything",
+      "title": "A quote from Luke Curley",
+      "publishedAt": "2026-05-09T01:03:58+00:00",
+      "seenAt": "2026-05-09T07:44:17.196Z"
+    },
+    "1df3c91e850c7f2d": {
+      "url": "https://openai.com/index/introducing-gpt-5-4/",
+      "title": "Introducing GPT-5.4",
+      "publishedAt": null,
+      "seenAt": "2026-05-09T07:44:17.196Z"
+    },
+    "cb85d5cc4e125d63": {
+      "url": "https://www.anthropic.com/news/higher-limits-spacex",
+      "title": "Higher usage limits for Claude and a compute deal with SpaceX",
+      "publishedAt": null,
+      "seenAt": "2026-05-09T07:44:17.196Z"
     }
   },
   "nodeReviews": {
@@ -770,6 +806,56 @@
       "lastReviewedAt": "2026-05-04T19:27:54.284Z",
       "status": "keep",
       "reason": "No source material addresses idempotency. Definition remains accurate."
+    },
+    "inference": {
+      "lastReviewedAt": "2026-05-09T07:44:17.196Z",
+      "status": "keep",
+      "reason": "No source material addresses or contradicts this definition. It remains accurate as written."
+    },
+    "information-literacy": {
+      "lastReviewedAt": "2026-05-09T07:44:17.196Z",
+      "status": "keep",
+      "reason": "No source material addresses this definition. It remains accurate as written."
+    },
+    "infrastructure": {
+      "lastReviewedAt": "2026-05-09T07:44:17.196Z",
+      "status": "keep",
+      "reason": "No source material addresses this definition. It remains accurate as written."
+    },
+    "interactive-prototyping": {
+      "lastReviewedAt": "2026-05-09T07:44:17.196Z",
+      "status": "keep",
+      "reason": "No source material addresses this definition. It remains accurate as written."
+    },
+    "interpretability": {
+      "lastReviewedAt": "2026-05-09T07:44:17.196Z",
+      "status": "keep",
+      "reason": "No source material addresses this definition. It remains accurate as written."
+    },
+    "jailbreak": {
+      "lastReviewedAt": "2026-05-09T07:44:17.196Z",
+      "status": "keep",
+      "reason": "No source material addresses this definition. It remains accurate as written."
+    },
+    "kairos": {
+      "lastReviewedAt": "2026-05-09T07:44:17.196Z",
+      "status": "insufficient_evidence",
+      "reason": "The definition makes a specific and extraordinary claim about an unreleased autonomous background mode inside Claude Code revealed via a source code leak in March 2026. None of the provided sources reference KAIROS, the described leak, or these specific capabilities. The claim cannot be verified or refuted from available evidence and warrants scrutiny before publication."
+    },
+    "kv-cache": {
+      "lastReviewedAt": "2026-05-09T07:44:17.196Z",
+      "status": "keep",
+      "reason": "No source material addresses this definition. It remains accurate as written."
+    },
+    "langchain": {
+      "lastReviewedAt": "2026-05-09T07:44:17.196Z",
+      "status": "keep",
+      "reason": "No source material addresses this definition. It remains accurate as written."
+    },
+    "latency": {
+      "lastReviewedAt": "2026-05-09T07:44:17.196Z",
+      "status": "keep",
+      "reason": "The WebRTC/latency excerpt discusses latency tradeoffs in voice AI (packet dropping to maintain low latency) but does not contradict or materially expand the existing definition, which correctly characterizes latency compounding in agentic systems. No update is warranted."
     }
   }
 }
