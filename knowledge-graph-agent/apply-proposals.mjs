@@ -9,7 +9,12 @@
 //     /observing, /manager, and the almanac stop double-showing it.
 //     The entry is kept rather than deleted: preserves audit trail
 //     (sources at promotion time, days on longlist) and leaves the
-//     status field free for future demote-to-watching flows.
+//     status field free for the demote-to-watching reverse path below.
+//   - DEMOTE_TO_LONGLIST: reverse of PROMOTE_TO_GRAPH. Removes the node
+//     from the agent overlay and flips the longlist entry's status from
+//     "promoted" back to "watching" with a demotedAt timestamp. Only
+//     handles overlay nodes — base-graph nodes (graph-data.js) need
+//     curator action and return a clear error pointing there.
 //   - EDIT_GRAPH_DEF_SUBSTANTIVE: adds payload to definitionOverrides.
 //   - Other actions: logged + skipped (no apply path defined yet).
 //
@@ -171,6 +176,54 @@ function applyOne(proposal, patch, longlist, appliedAt) {
         longlistMutated = true;
       }
       return { ok: true, label: node.label || node.id, longlistMutated };
+    }
+    case ACTIONS.DEMOTE_TO_LONGLIST: {
+      // Reverse of PROMOTE_TO_GRAPH. Removes the node from the agent
+      // overlay and flips the matching longlist entry's status from
+      // "promoted" back to "watching" with a demotedAt timestamp. The
+      // entry's prior promotedAt + promotedToGraphNodeId are kept as
+      // historical record (they answer "was this ever promoted?" — a
+      // future re-promotion would refresh promotedAt).
+      //
+      // Scope limit: only handles agent-overlay nodes. Base-graph nodes
+      // (in graph-data.js, curated by Nicole) cannot be demoted by this
+      // path — that file is curator territory, not agent territory.
+      // A demote proposal targeting a base node returns a clear error
+      // pointing Nicole at the manual fix.
+      //
+      // No `demote.mjs` CLI yet — proposals can be created manually in
+      // proposals.json (same pattern as the force-promote proposals from
+      // 2026-05-03). Followup if/when a demote becomes a regular action.
+      const targetId = proposal.target?.id;
+      if (!targetId) return { ok: false, why: "missing target.id" };
+
+      const patchIdx = patch.nodes.findIndex(n => n.id === targetId);
+      if (patchIdx < 0) {
+        return {
+          ok: false,
+          why: `node '${targetId}' not in agent overlay (likely a base-graph node curated in graph-data.js — demote it manually by removing the entry there and re-adding to longlist.json)`
+        };
+      }
+      const removedNode = patch.nodes.splice(patchIdx, 1)[0];
+
+      const llEntry = (longlist.entries || []).find(e => e.id === targetId);
+      let longlistMutated = false;
+      if (llEntry) {
+        llEntry.status = "watching";
+        llEntry.demotedAt = appliedAt;
+        // Keep promotedAt + promotedToGraphNodeId as audit trail (the
+        // entry was promoted at some point; that's still true).
+        longlistMutated = true;
+      }
+      // If no longlist entry exists, that's fine — node was promoted before
+      // the mark-as-promoted bookkeeping existed, or the entry was
+      // separately removed. Removing from the overlay is the main action.
+
+      return {
+        ok: true,
+        label: removedNode.label || targetId,
+        longlistMutated
+      };
     }
     case ACTIONS.EDIT_GRAPH_DEF_SUBSTANTIVE: {
       // Read the target node id from proposal.target.id (consistent with
