@@ -119,7 +119,22 @@ async function runMain(args, config, logger) {
   const pauseReasons = detectGlobalPauseReasons(notes, config);
   const paused = pauseReasons.length > 0;
 
-  const articles = paused ? [] : await collectArticles(config, state, args);
+  // collectArticles now returns { articles, sourceErrors } — the latter
+  // surfaces per-source fetch failures that fetchFeedItems/fetchIndexItems
+  // catch internally (so the run continues with the other sources). Log
+  // each as a structured event so source-level health is visible from
+  // events.ndjson, not only from console.warn / GitHub Actions stdout.
+  const { articles, sourceErrors } = paused
+    ? { articles: [], sourceErrors: [] }
+    : await collectArticles(config, state, args);
+  for (const srcErr of sourceErrors) {
+    await logger.event("source_fetch_error", {
+      sourceLabel: srcErr.sourceLabel,
+      url: srcErr.url,
+      sourceType: srcErr.type,
+      message: srcErr.message
+    });
+  }
   const report = {
     generatedAt: new Date().toISOString(),
     model: config.model,

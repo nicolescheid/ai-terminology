@@ -33,9 +33,16 @@ const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
  * Iterate every configured source and produce a deduplicated, freshness-sorted
  * list of unseen articles, capped at config.maxArticlesPerRun. Article ids
  * are sha-1 fingerprints of their URL — same URL across runs = same id.
+ *
+ * Return shape: { articles, sourceErrors }. sourceErrors is the per-source
+ * fetch-failure info (sourceLabel + url + message) that the caller (run.mjs)
+ * is expected to log to the deterministic event log. Without this side
+ * channel, source-level failures would only appear in console.warn /
+ * GitHub Actions stdout — invisible to anyone reviewing events.ndjson.
  */
 export async function collectArticles(config, state) {
   const sourceBatches = [];
+  const sourceErrors = [];
   for (const source of config.sources || []) {
     let items = [];
     if (source.type === "article") {
@@ -50,6 +57,10 @@ export async function collectArticles(config, state) {
     } else {
       items = await fetchFeedItems(source, config);
     }
+    // Side-channel error info from fetchFeedItems / fetchIndexItems (see
+    // their catch blocks). When present, the items array is empty and the
+    // error info has been stashed on the array as _sourceError.
+    if (items._sourceError) sourceErrors.push(items._sourceError);
     // Per-source UA override propagates onto each item so the subsequent
     // fetchArticle call (which only sees the item, not the source) uses
     // the same UA the index/feed fetch used. Most sources omit this and
@@ -71,7 +82,7 @@ export async function collectArticles(config, state) {
     const article = await fetchArticle(item, config);
     if (article) articles.push(article);
   }
-  return articles;
+  return { articles, sourceErrors };
 }
 
 /** RSS or Atom feed → list of {title, url, publishedAt, sourceLabel}. */
@@ -81,7 +92,12 @@ export async function fetchFeedItems(source, config) {
     xml = await fetchText(source.url, config, { userAgent: source.userAgent });
   } catch (err) {
     console.warn(`[article-fetch] Source "${source.label || source.url}" failed: ${err.message}. Skipping this source for this run.`);
-    return [];
+    // Empty array with a side-channel property so collectArticles can
+    // surface this to the deterministic event log without us needing to
+    // pass a logger through. Existing iterators ignore the extra field.
+    const empty = [];
+    empty._sourceError = { sourceLabel: source.label, url: source.url, message: err.message, type: source.type };
+    return empty;
   }
   const items = [];
   const rssItems = matchBlocks(xml, "item");
@@ -120,7 +136,10 @@ export async function fetchIndexItems(source, config) {
     html = await fetchText(source.url, config, { userAgent: source.userAgent });
   } catch (err) {
     console.warn(`[article-fetch] Source "${source.label || source.url}" failed: ${err.message}. Skipping this source for this run.`);
-    return [];
+    // See fetchFeedItems above: side-channel error info via array property.
+    const empty = [];
+    empty._sourceError = { sourceLabel: source.label, url: source.url, message: err.message, type: source.type };
+    return empty;
   }
   const anchors = [...html.matchAll(/<a\b[^>]*href=["']([^"'#]+)["'][^>]*>([\s\S]*?)<\/a>/gi)];
   const seen = new Set();
