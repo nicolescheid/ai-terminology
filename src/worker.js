@@ -122,7 +122,12 @@ async function tryMarkOnce({ id, status, env }) {
   const newContentB64  = utf8ToBase64(newContent);
 
   const putBody = {
-    message: `Mark note ${id.slice(0, 8)}… as ${status}\n\nVia /api/mark-note from /manager dashboard.\n[skip ci]`,
+    // Intentionally NO [skip ci]: Cloudflare Workers Static Assets respects
+    // [skip ci] and skips the deploy, which would strand this very commit's
+    // notes-for-nicole.json update in main without ever reaching the live
+    // site. The point of the click is to update what /manager shows; a
+    // commit without a deploy defeats that. Same lesson as lexi-run.yml.
+    message: `Mark note ${id.slice(0, 8)}… as ${status}\n\nVia /api/mark-note from /manager dashboard.`,
     content: newContentB64,
     sha: fileMeta.sha,
     branch: "main",

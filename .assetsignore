@@ -1,0 +1,49 @@
+# Files/directories to exclude from the Workers Static Assets bundle.
+#
+# Workers Static Assets defaults to bundling EVERY file in the configured
+# `assets.directory` (set to "." in wrangler.jsonc — i.e. the whole repo).
+# Without this file, the deploy would publish .git/objects, node_modules,
+# and the Worker's own source code as static URLs — wasting space and
+# exposing implementation detail unnecessarily.
+#
+# Pages (the older deployment model) excluded these by default. Workers
+# Static Assets does not. This file is the explicit equivalent.
+#
+# Pattern syntax matches .gitignore. One pattern per line.
+
+# Git internals — the repo is public on github.com, but no reason to
+# also serve .git/objects/* via the CDN. Halves the deploy file count.
+.git
+.gitignore
+.gitattributes
+
+# CI configs and worktree scaffolding — not user-facing assets.
+.github
+.claude
+.vscode
+
+# Dependencies — never user-facing. Restored from package-lock on each
+# environment that needs them.
+node_modules
+
+# Local build / scratch directories.
+_build
+out
+log
+
+# Worker source — bundled separately as the Worker entrypoint via the
+# `main` field in wrangler.jsonc. Serving it again as a static asset at
+# /src/worker.js would expose the source unnecessarily.
+src
+
+# Wrangler config — not a runtime asset; just published to the bundle
+# would be confusing.
+wrangler.jsonc
+package.json
+package-lock.json
+
+# Local-only state files that aren't meant to be web-accessible.
+*.bak
+*.local
+.env
+.env.*
