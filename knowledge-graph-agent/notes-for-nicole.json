@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-05-09T19:10:55.311Z",
-    "unreadCount": 1,
+    "generatedAt": "2026-05-09T19:17:26.706Z",
+    "unreadCount": 0,
     "totalCount": 113,
     "note": "Notes for Nicole — Lexi's manager channel (spec §6). Mandatory entry types fire when their triggering condition is met; discretionary entries are observations Lexi thinks Nicole should see. Set status to 'read', 'actioned', or 'dismissed' as appropriate."
   },
@@ -2906,7 +2906,7 @@
       "writtenAt": "2026-05-09T19:00:00.611Z",
       "runId": "7f54a346-a35b-473f-bb8b-3b6e540d8336",
       "phase": 1,
-      "status": "unread",
+      "status": "actioned",
       "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 30, current 30)",
       "details": "Would exceed cap of 30 longlist additions per 7-day window (current: 30).",
       "evidence": {
@@ -2923,7 +2923,8 @@
         "suppressedReason": "The Musk v. Altman trial surfaced Musk's admission that xAI 'partly' used OpenAI models to train Grok — a direct, high-profile instance of model distillation becoming a legal and ethical flashpoint. The term carries lasting relevance as a named practice with contested legitimacy.",
         "source": "extract-flow"
       },
-      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted.",
+      "readAt": "2026-05-09T19:17:26.706Z"
     }
   ]
 }

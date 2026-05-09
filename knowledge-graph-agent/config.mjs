@@ -25,11 +25,24 @@ export default {
   managerAbsent: false,
   // Throughput caps (spec §12.4). Tunable. Cap-hit suppresses the offending
   // action and writes a THROUGHPUT_CAP_HIT note to Notes for Nicole.
-  // Bumped from 7 → 30 on 2026-04-30 after the original cap suppressed
-  // ~56 candidates in 3 days from the AI-labs source pool. 30/week roughly
-  // matches the natural extraction rate from the current ~10 source feeds.
+  //
+  // History:
+  //   2026-04-27: initial value 7 (per spec §12 starting guess).
+  //   2026-04-30: bumped to 30 after the 7 cap suppressed ~56 candidates in
+  //               3 days from the AI-labs source pool.
+  //   2026-05-10: bumped to 75. The 30 cap was hitting every single 7-day
+  //               window since Lexi started production (verified by counting
+  //               longlist entries with dateFirstSeen in each window —
+  //               always exactly 30). The cap was silently shaping normal
+  //               output rather than catching abnormal behaviour, which
+  //               inverts a circuit-breaker's purpose. 75 gives realistic
+  //               natural-rate headroom (estimate: 30–80/week from the
+  //               current 12 sources) while still flagging genuine floods
+  //               (200+/week would be clearly anomalous — that's where
+  //               adversarial seeding or model regression would land).
+  //               Re-evaluate after a few weeks of uncapped operation.
   throughputCaps: {
-    longlistAdditionsPer7d: 30,
+    longlistAdditionsPer7d: 75,
     pendingProposalsBeforePause: 10
   },
   model: process.env.ANTHROPIC_MODEL || "claude-sonnet-4-6",
