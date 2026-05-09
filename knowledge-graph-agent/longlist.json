@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-05-09T07:44:17.196Z",
-    "entryCount": 54,
+    "generatedAt": "2026-05-09T19:00:00.611Z",
+    "entryCount": 60,
     "note": "Lexi-managed Tier 2 longlist — terms under observation, awaiting evidence to support promotion to the graph (Tier 1)."
   },
   "entries": [
@@ -2041,6 +2041,191 @@
       "dateLastSeen": "2026-05-09T07:44:17.196Z",
       "sz": 14,
       "proposalReason": "Appears as a driving business requirement for Anthropic's international infrastructure expansion, distinct from but related to data-sovereignty; worth tracking as a compliance-driven concept shaping AI deployment patterns."
+    },
+    {
+      "id": "train-inference-mismatch",
+      "label": "Train-Inference Mismatch",
+      "workingDef": "A class of correctness failure in online reinforcement learning where the logprobabilities or numerical outputs produced by the inference/rollout engine diverge from those expected by the training policy, corrupting policy ratios, KL divergence, and reward signals.",
+      "clusters": [
+        "technical",
+        "models"
+      ],
+      "suggestedRels": [
+        "inference",
+        "training",
+        "rlhf",
+        "reasoning-models"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections",
+          "domain": "huggingface.co",
+          "title": "vLLM V0 to V1: Correctness Before Corrections in RL",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Wed, 06 May 2026 19:06:55 GMT",
+          "firstSeen": "2026-05-09T19:00:00.611Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-09T19:00:00.611Z",
+      "dateLastSeen": "2026-05-09T19:00:00.611Z",
+      "sz": 14,
+      "proposalReason": "The article's central problem is a train-inference mismatch introduced during a version migration; the concept is named and diagnosed systematically, making it a durable framing term for RL pipeline engineering."
+    },
+    {
+      "id": "rollout-logprobs",
+      "label": "Rollout Logprobs",
+      "workingDef": "The per-token log-probabilities produced by an inference engine during the rollout (sampling) phase of online RL training, used by the trainer to compute policy ratios, KL divergence, clip rate, and entropy. Their correctness is a prerequisite for stable RL optimization.",
+      "clusters": [
+        "technical",
+        "models"
+      ],
+      "suggestedRels": [
+        "inference",
+        "training",
+        "rlhf",
+        "structured-output"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections",
+          "domain": "huggingface.co",
+          "title": "vLLM V0 to V1: Correctness Before Corrections in RL",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Wed, 06 May 2026 19:06:55 GMT",
+          "firstSeen": "2026-05-09T19:00:00.611Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-09T19:00:00.611Z",
+      "dateLastSeen": "2026-05-09T19:00:00.611Z",
+      "sz": 14,
+      "proposalReason": "Rollout logprobs are treated as a distinct correctness surface throughout the article, separate from training-side logprobs, and the term is operationally precise enough to warrant tracking in the context of agentic and RL systems."
+    },
+    {
+      "id": "inflight-weight-update",
+      "label": "Inflight Weight Update",
+      "workingDef": "A mechanism in online RL inference pipelines where model weights are updated in the rollout server while inference requests are in flight, requiring careful synchronization to avoid stale-weight cache hits and policy-ratio drift.",
+      "clusters": [
+        "technical",
+        "models"
+      ],
+      "suggestedRels": [
+        "inference",
+        "training",
+        "rlhf",
+        "kv-cache"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections",
+          "domain": "huggingface.co",
+          "title": "vLLM V0 to V1: Correctness Before Corrections in RL",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Wed, 06 May 2026 19:06:55 GMT",
+          "firstSeen": "2026-05-09T19:00:00.611Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-09T19:00:00.611Z",
+      "dateLastSeen": "2026-05-09T19:00:00.611Z",
+      "sz": 14,
+      "proposalReason": "The article gives a precise account of how inflight weight updates interact with prefix caching and scheduling defaults, surfacing a concrete failure mode relevant to any team running online RL at scale."
+    },
+    {
+      "id": "fp32-lm-head",
+      "label": "fp32 lm_head",
+      "workingDef": "The practice of computing the final language-model output projection (lm_head) in 32-bit floating point rather than lower precision, used to ensure numerical consistency between training and inference logits in RL pipelines where small logit differences compound into policy-ratio and KL errors.",
+      "clusters": [
+        "technical",
+        "models"
+      ],
+      "suggestedRels": [
+        "inference",
+        "training",
+        "rlhf",
+        "quantization"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections",
+          "domain": "huggingface.co",
+          "title": "vLLM V0 to V1: Correctness Before Corrections in RL",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Wed, 06 May 2026 19:06:55 GMT",
+          "firstSeen": "2026-05-09T19:00:00.611Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-09T19:00:00.611Z",
+      "dateLastSeen": "2026-05-09T19:00:00.611Z",
+      "sz": 14,
+      "proposalReason": "Cited independently in both the MiniMax-M1 technical report and the ScaleRL paper as a necessary RL recipe ingredient; the article ablates it explicitly, giving the concept cross-source evidence as a precision-correctness design choice."
+    },
+    {
+      "id": "google-flow",
+      "label": "Google Flow",
+      "workingDef": "An AI-powered creative tool from Google designed to assist filmmakers with production workflows, referenced here as a tool available to competition entrants for generating or augmenting film content.",
+      "clusters": [
+        "tools",
+        "companies"
+      ],
+      "suggestedRels": [
+        "google-co",
+        "multimodal"
+      ],
+      "sources": [
+        {
+          "url": "https://blog.google/innovation-and-ai/technology/ai/future-vision-film-competition-xprize/",
+          "domain": "blog.google",
+          "title": "Google is partnering with XPRIZE and Range Media Partners on the $3.5 million Future Vision film competition.",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Tue, 05 May 2026 16:00:00 +0000",
+          "firstSeen": "2026-05-09T19:00:00.611Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-09T19:00:00.611Z",
+      "dateLastSeen": "2026-05-09T19:00:00.611Z",
+      "sz": 14,
+      "fullName": "Google Flow (AI Filmmaking Tool)",
+      "nodeType": "product",
+      "proposalReason": "Newly named Google product for AI-assisted filmmaking; worth tracking as AI creative tools expand into long-form video production."
+    },
+    {
+      "id": "ai-assisted-filmmaking",
+      "label": "AI-Assisted Filmmaking",
+      "workingDef": "The use of AI tools to lower production barriers and augment the creative process for video and film creation, enabling emerging filmmakers to produce content that would traditionally require large budgets or crews.",
+      "clusters": [
+        "tools",
+        "human"
+      ],
+      "suggestedRels": [
+        "multimodal",
+        "vibe-coding",
+        "computer-use"
+      ],
+      "sources": [
+        {
+          "url": "https://blog.google/innovation-and-ai/technology/ai/future-vision-film-competition-xprize/",
+          "domain": "blog.google",
+          "title": "Google is partnering with XPRIZE and Range Media Partners on the $3.5 million Future Vision film competition.",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Tue, 05 May 2026 16:00:00 +0000",
+          "firstSeen": "2026-05-09T19:00:00.611Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-09T19:00:00.611Z",
+      "dateLastSeen": "2026-05-09T19:00:00.611Z",
+      "sz": 14,
+      "proposalReason": "A framing concept for how AI is changing creative production pipelines; relevant as more AI tools target media creation."
     }
   ]
 }

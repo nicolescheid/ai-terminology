@@ -1,6 +1,6 @@
 {
-  "lastRunAt": "2026-05-09T07:44:17.196Z",
-  "reviewCursor": 110,
+  "lastRunAt": "2026-05-09T19:00:00.611Z",
+  "reviewCursor": 120,
   "seenArticles": {
     "93a049d060bc295b": {
       "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/tpus-8t-8i-cloud-next/",
@@ -319,6 +319,42 @@
       "title": "Higher usage limits for Claude and a compute deal with SpaceX",
       "publishedAt": null,
       "seenAt": "2026-05-09T07:44:17.196Z"
+    },
+    "08c10eedccbd3d4b": {
+      "url": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections",
+      "title": "vLLM V0 to V1: Correctness Before Corrections in RL",
+      "publishedAt": "Wed, 06 May 2026 19:06:55 GMT",
+      "seenAt": "2026-05-09T19:00:00.611Z"
+    },
+    "96a76e6b90cc858c": {
+      "url": "https://blog.google/innovation-and-ai/technology/ai/future-vision-film-competition-xprize/",
+      "title": "Google is partnering with XPRIZE and Range Media Partners on the $3.5 million Future Vision film competition.",
+      "publishedAt": "Tue, 05 May 2026 16:00:00 +0000",
+      "seenAt": "2026-05-09T19:00:00.611Z"
+    },
+    "a73dee93208b9f35": {
+      "url": "https://lastweekin.ai/p/last-week-in-ai-340-openai-vs-musk",
+      "title": "Last Week in AI #340 - OpenAI vs Musk + Microsoft, DeepSeek v4, Vision Banana",
+      "publishedAt": "Tue, 05 May 2026 08:30:35 GMT",
+      "seenAt": "2026-05-09T19:00:00.611Z"
+    },
+    "e41b9b9c2133078d": {
+      "url": "https://openai.com/index/parloa",
+      "title": "Parloa builds service agents customers want to talk to",
+      "publishedAt": "Thu, 07 May 2026 11:00:00 GMT",
+      "seenAt": "2026-05-09T19:00:00.611Z"
+    },
+    "8ee15a25b1d901ce": {
+      "url": "https://stratechery.com/2026/an-interview-with-joanna-stern-about-living-with-ai/",
+      "title": "An Interview with Joanna Stern About Living With AI",
+      "publishedAt": "Thu, 07 May 2026 10:00:00 +0000",
+      "seenAt": "2026-05-09T19:00:00.611Z"
+    },
+    "4603f86027bf6141": {
+      "url": "https://simonwillison.net/2026/May/8/unreasonable-effectiveness-of-html/#atom-everything",
+      "title": "Using Claude Code: The Unreasonable Effectiveness of HTML",
+      "publishedAt": "2026-05-08T21:00:11+00:00",
+      "seenAt": "2026-05-09T19:00:00.611Z"
     }
   },
   "nodeReviews": {
@@ -856,6 +892,56 @@
       "lastReviewedAt": "2026-05-09T07:44:17.196Z",
       "status": "keep",
       "reason": "The WebRTC/latency excerpt discusses latency tradeoffs in voice AI (packet dropping to maintain low latency) but does not contradict or materially expand the existing definition, which correctly characterizes latency compounding in agentic systems. No update is warranted."
+    },
+    "llama": {
+      "lastReviewedAt": "2026-05-09T19:00:00.611Z",
+      "status": "keep",
+      "reason": "No source material addresses Llama or Meta's open-weight model releases. Definition remains accurate and unsupported for revision."
+    },
+    "long-horizon-autonomy": {
+      "lastReviewedAt": "2026-05-09T19:00:00.611Z",
+      "status": "keep",
+      "reason": "No source directly addresses long-horizon autonomy as a concept. Definition is sound and unchanged."
+    },
+    "loop": {
+      "lastReviewedAt": "2026-05-09T19:00:00.611Z",
+      "status": "keep",
+      "reason": "No source material updates or contradicts the observe-think-act loop definition."
+    },
+    "lost-in-the-middle": {
+      "lastReviewedAt": "2026-05-09T19:00:00.611Z",
+      "status": "keep",
+      "reason": "No source material references or updates the lost-in-the-middle phenomenon or the Liu et al. findings."
+    },
+    "manus": {
+      "lastReviewedAt": "2026-05-09T19:00:00.611Z",
+      "status": "keep",
+      "reason": "No source material references Manus or updates its description."
+    },
+    "mcp": {
+      "lastReviewedAt": "2026-05-09T19:00:00.611Z",
+      "status": "keep",
+      "reason": "No source material addresses MCP or the Model Context Protocol."
+    },
+    "memory": {
+      "lastReviewedAt": "2026-05-09T19:00:00.611Z",
+      "status": "keep",
+      "reason": "No source material updates the definition of AI memory."
+    },
+    "memory-consolidation": {
+      "lastReviewedAt": "2026-05-09T19:00:00.611Z",
+      "status": "keep",
+      "reason": "No source material addresses memory consolidation in AI agents."
+    },
+    "meta-co": {
+      "lastReviewedAt": "2026-05-09T19:00:00.611Z",
+      "status": "keep",
+      "reason": "No source material updates Meta's open-weight strategy or Llama releases."
+    },
+    "metacognition": {
+      "lastReviewedAt": "2026-05-09T19:00:00.611Z",
+      "status": "keep",
+      "reason": "No source material addresses metacognition as defined here."
     }
   }
 }

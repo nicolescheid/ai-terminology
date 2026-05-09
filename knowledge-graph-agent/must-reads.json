@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generatedAt": "2026-05-09T07:44:17.196Z",
-    "unreadCount": 6,
-    "totalCount": 6,
+    "generatedAt": "2026-05-09T19:00:00.611Z",
+    "unreadCount": 7,
+    "totalCount": 7,
     "note": "Lexi's must-reads — articles she flags as worth Nicole reading in full. Editorial signal, not news feed. Set status to 'read' or 'dismissed' via mark-must-reads.mjs."
   },
   "entries": [
@@ -106,6 +106,23 @@
       ],
       "novelTermsInArticle": 0,
       "flaggedAt": "2026-05-03T18:58:28.223Z",
+      "status": "unread"
+    },
+    {
+      "id": "08c10eedccbd3d4b",
+      "title": "vLLM V0 to V1: Correctness Before Corrections in RL",
+      "url": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections",
+      "source": "Hugging Face Blog",
+      "publishedAt": "Wed, 06 May 2026 19:06:55 GMT",
+      "summary": "A technical deep-dive from ServiceNow AI on migrating vLLM from V0 to V1 for online reinforcement learning (PipelineRL/GSPO), documenting four backend correctness issues — logprob semantics, runtime defaults, inflight weight updates, and fp32 lm_head precision — that caused train-inference mismatch. Highly specialized ML engineering content focused on the numerical correctness surface of RL training pipelines.",
+      "priority": 3,
+      "reason": "A rare piece of honest RL engineering archaeology: the authors document exactly which four backend correctness issues broke their training run during a vLLM migration, and why they fixed infrastructure before touching the RL objective. Useful for anyone building or debugging online RL pipelines with shared inference engines.",
+      "clusters": [
+        "technical",
+        "models"
+      ],
+      "novelTermsInArticle": 4,
+      "flaggedAt": "2026-05-09T19:00:00.611Z",
       "status": "unread"
     }
   ]

@@ -1,66 +1,98 @@
 {
-  "generatedAt": "2026-05-09T07:44:17.196Z",
+  "generatedAt": "2026-05-09T19:00:00.611Z",
   "model": "claude-sonnet-4-6",
   "sourcesConfigured": 12,
   "articlesConsidered": [
     {
-      "id": "7fd7635574ec5271",
+      "id": "08c10eedccbd3d4b",
+      "source": "Hugging Face Blog",
+      "title": "vLLM V0 to V1: Correctness Before Corrections in RL",
+      "url": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections",
+      "publishedAt": "Wed, 06 May 2026 19:06:55 GMT"
+    },
+    {
+      "id": "96a76e6b90cc858c",
       "source": "Google AI Blog",
-      "title": "5 gardening tips you can try right in Search",
-      "url": "https://blog.google/products-and-platforms/products/search/gardening-tips/",
-      "publishedAt": "Wed, 06 May 2026 16:00:00 +0000"
+      "title": "Google is partnering with XPRIZE and Range Media Partners on the $3.5 million Future Vision film competition.",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/future-vision-film-competition-xprize/",
+      "publishedAt": "Tue, 05 May 2026 16:00:00 +0000"
     },
     {
-      "id": "47047de314568e4b",
-      "source": "Stratechery",
-      "title": "Microsoft Earnings, Apple Earnings",
-      "url": "https://stratechery.com/2026/microsoft-earnings-apple-earnings/",
-      "publishedAt": "Wed, 06 May 2026 10:00:00 +0000"
+      "id": "a73dee93208b9f35",
+      "source": "Last Week in AI",
+      "title": "Last Week in AI #340 - OpenAI vs Musk + Microsoft, DeepSeek v4, Vision Banana",
+      "url": "https://lastweekin.ai/p/last-week-in-ai-340-openai-vs-musk",
+      "publishedAt": "Tue, 05 May 2026 08:30:35 GMT"
     },
     {
-      "id": "288ea344bbe070b9",
+      "id": "e41b9b9c2133078d",
       "source": "OpenAI News",
-      "title": "Scaling Trusted Access for Cyber with GPT-5.5 and GPT-5.5-Cyber",
-      "url": "https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber",
-      "publishedAt": "Thu, 07 May 2026 13:00:00 GMT"
+      "title": "Parloa builds service agents customers want to talk to",
+      "url": "https://openai.com/index/parloa",
+      "publishedAt": "Thu, 07 May 2026 11:00:00 GMT"
     },
     {
-      "id": "3eb04cdf5dff7818",
+      "id": "8ee15a25b1d901ce",
+      "source": "Stratechery",
+      "title": "An Interview with Joanna Stern About Living With AI",
+      "url": "https://stratechery.com/2026/an-interview-with-joanna-stern-about-living-with-ai/",
+      "publishedAt": "Thu, 07 May 2026 10:00:00 +0000"
+    },
+    {
+      "id": "4603f86027bf6141",
       "source": "Simon Willison's Weblog",
-      "title": "A quote from Luke Curley",
-      "url": "https://simonwillison.net/2026/May/9/luke-curley/#atom-everything",
-      "publishedAt": "2026-05-09T01:03:58+00:00"
-    },
-    {
-      "id": "1df3c91e850c7f2d",
-      "source": "OpenAI Research",
-      "title": "Introducing GPT-5.4",
-      "url": "https://openai.com/index/introducing-gpt-5-4/",
-      "publishedAt": null
-    },
-    {
-      "id": "cb85d5cc4e125d63",
-      "source": "Anthropic Newsroom",
-      "title": "Higher usage limits for Claude and a compute deal with SpaceX",
-      "url": "https://www.anthropic.com/news/higher-limits-spacex",
-      "publishedAt": null
+      "title": "Using Claude Code: The Unreasonable Effectiveness of HTML",
+      "url": "https://simonwillison.net/2026/May/8/unreasonable-effectiveness-of-html/#atom-everything",
+      "publishedAt": "2026-05-08T21:00:11+00:00"
     }
   ],
   "harvestedTerms": [
     {
       "article": {
-        "title": "5 gardening tips you can try right in Search",
-        "url": "https://blog.google/products-and-platforms/products/search/gardening-tips/"
+        "title": "vLLM V0 to V1: Correctness Before Corrections in RL",
+        "url": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections"
       },
-      "summary": "A Google promotional piece showing gardening use-cases for Search AI features (AI Mode, Canvas, Search Live, Shopping filters). Essentially a marketing listicle for Google Search capabilities dressed as gardening tips. No substantive AI terminology introduced.",
+      "summary": "A technical deep-dive from ServiceNow AI on migrating vLLM from V0 to V1 for online reinforcement learning (PipelineRL/GSPO), documenting four backend correctness issues — logprob semantics, runtime defaults, inflight weight updates, and fp32 lm_head precision — that caused train-inference mismatch. Highly specialized ML engineering content focused on the numerical correctness surface of RL training pipelines.",
       "longlistAdditions": [
         {
-          "id": "ai-mode",
-          "label": "AI Mode"
+          "id": "train-inference-mismatch",
+          "label": "Train-Inference Mismatch"
         },
         {
-          "id": "canvas-ai-mode",
-          "label": "Canvas (AI Mode)"
+          "id": "rollout-logprobs",
+          "label": "Rollout Logprobs"
+        },
+        {
+          "id": "inflight-weight-update",
+          "label": "Inflight Weight Update"
+        },
+        {
+          "id": "fp32-lm-head",
+          "label": "fp32 lm_head"
+        }
+      ],
+      "longlistUpdates": [],
+      "rejections": [],
+      "proposalsQueued": [],
+      "mustReadFlagged": {
+        "priority": 3,
+        "reason": "A rare piece of honest RL engineering archaeology: the authors document exactly which four backend correctness issues broke their training run during a vLLM migration, and why they fixed infrastructure before touching the RL objective. Useful for anyone building or debugging online RL pipelines with shared inference engines."
+      }
+    },
+    {
+      "article": {
+        "title": "Google is partnering with XPRIZE and Range Media Partners on the $3.5 million Future Vision film competition.",
+        "url": "https://blog.google/innovation-and-ai/technology/ai/future-vision-film-competition-xprize/"
+      },
+      "summary": "Google announces a $3.5 million film competition (Future Vision XPRIZE) in partnership with XPRIZE and Range Media Partners, inviting filmmakers to submit short films envisioning an optimistic AI-forward future, with Google providing production support via its Google Flow AI tool and 100 ZEROS initiative.",
+      "longlistAdditions": [
+        {
+          "id": "google-flow",
+          "label": "Google Flow"
+        },
+        {
+          "id": "ai-assisted-filmmaking",
+          "label": "AI-Assisted Filmmaking"
         }
       ],
       "longlistUpdates": [],
@@ -69,196 +101,116 @@
     },
     {
       "article": {
-        "title": "Microsoft Earnings, Apple Earnings",
-        "url": "https://stratechery.com/2026/microsoft-earnings-apple-earnings/"
+        "title": "Last Week in AI #340 - OpenAI vs Musk + Microsoft, DeepSeek v4, Vision Banana",
+        "url": "https://lastweekin.ai/p/last-week-in-ai-340-openai-vs-musk"
       },
-      "summary": "Paywalled Stratechery earnings analysis covering Microsoft's agentic business model and Apple's AI-related hardware constraints. Only the headline and sub-headline are visible; no substantive body content is accessible.",
-      "longlistAdditions": [
-        {
-          "id": "agentic-business-model",
-          "label": "Agentic Business Model"
-        }
-      ],
+      "summary": "Weekly AI roundup covering the Musk v. Altman trial (including xAI's distillation admission), OpenAI-Microsoft partnership renegotiation, DeepSeek V4 launch, and Google DeepMind's Vision Banana unified model. Rich in industry/legal drama and a few technically notable releases.",
+      "longlistAdditions": [],
       "longlistUpdates": [],
       "rejections": [],
       "proposalsQueued": []
     },
     {
       "article": {
-        "title": "Scaling Trusted Access for Cyber with GPT-5.5 and GPT-5.5-Cyber",
-        "url": "https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber"
+        "title": "Parloa builds service agents customers want to talk to",
+        "url": "https://openai.com/index/parloa"
       },
-      "summary": "OpenAI announces GPT-5.5 and GPT-5.5-Cyber with a tiered 'Trusted Access for Cyber' (TAC) framework, differentiating model access levels for defensive security workflows, penetration testing, and critical infrastructure protection. The article details how identity-verified access unlocks progressively more permissive cybersecurity capabilities, and introduces Codex Security for open-source defenders.",
-      "longlistAdditions": [
-        {
-          "id": "trusted-access-cyber",
-          "label": "Trusted Access for Cyber"
-        },
-        {
-          "id": "security-flywheel",
-          "label": "Security Flywheel"
-        },
-        {
-          "id": "codex-security",
-          "label": "Codex Security"
-        }
-      ],
-      "longlistUpdates": [
-        {
-          "id": "gpt55",
-          "label": "GPT-5.5",
-          "sourceAdded": true,
-          "sourceCount": 7,
-          "independentSourceCount": 1
-        }
-      ],
-      "rejections": [],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "A quote from Luke Curley",
-        "url": "https://simonwillison.net/2026/May/9/luke-curley/#atom-everything"
-      },
-      "summary": "A brief quote/commentary post about WebRTC's audio packet-dropping behavior causing problems for voice AI prompts — noting that WebRTC's latency-first design conflicts with LLM use cases where accuracy matters more than speed.",
-      "longlistAdditions": [
-        {
-          "id": "webrtc",
-          "label": "WebRTC"
-        }
-      ],
-      "longlistUpdates": [
-        {
-          "id": "voice-ai",
-          "label": "Voice AI",
-          "sourceAdded": true,
-          "sourceCount": 2,
-          "independentSourceCount": 2
-        },
-        {
-          "id": "real-time-audio-pipeline",
-          "label": "Real-Time Audio Pipeline",
-          "sourceAdded": true,
-          "sourceCount": 2,
-          "independentSourceCount": 2
-        }
-      ],
-      "rejections": [],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "Introducing GPT-5.4",
-        "url": "https://openai.com/index/introducing-gpt-5-4/"
-      },
-      "summary": "OpenAI announces GPT-5.4, a frontier model combining reasoning, coding, and agentic capabilities with native computer-use, 1M token context, tool search, and improvements in knowledge work, spreadsheets, and presentations. Benchmarks cited include GDPval, OSWorld-Verified, SWE-Bench Pro, and Toolathlon.",
-      "longlistAdditions": [
-        {
-          "id": "gdpval",
-          "label": "GDPval"
-        },
-        {
-          "id": "tool-search",
-          "label": "Tool Search"
-        },
-        {
-          "id": "toolathlon",
-          "label": "Toolathlon"
-        }
-      ],
+      "summary": "Parloa, a Berlin-based startup, uses OpenAI models to build an AI Agent Management Platform (AMP) for enterprise voice-driven customer service. The article details their evaluation-first approach, modular sub-agent architecture, voice pipeline optimization, and LLM-as-a-judge scoring methodology.",
+      "longlistAdditions": [],
       "longlistUpdates": [],
       "rejections": [
         {
-          "label": "GPT-5.4",
-          "reason": "already in graph (label match)"
+          "label": "LLM-as-a-Judge",
+          "reason": "could not generate id"
+        },
+        {
+          "label": "Agent Management Platform",
+          "reason": "could not generate id"
+        },
+        {
+          "label": "Voice Agent Pipeline",
+          "reason": "could not generate id"
+        },
+        {
+          "label": "Simulation-Based Evaluation",
+          "reason": "could not generate id"
         }
       ],
       "proposalsQueued": []
     },
     {
       "article": {
-        "title": "Higher usage limits for Claude and a compute deal with SpaceX",
-        "url": "https://www.anthropic.com/news/higher-limits-spacex"
+        "title": "An Interview with Joanna Stern About Living With AI",
+        "url": "https://stratechery.com/2026/an-interview-with-joanna-stern-about-living-with-ai/"
       },
-      "summary": "Anthropic announces a compute partnership with SpaceX's Colossus 1 data center (300MW, 220,000+ NVIDIA GPUs), alongside usage limit increases for Claude Code and the Claude API. The article also recaps other major compute deals with Amazon, Google/Broadcom, Microsoft/NVIDIA, and Fluidstack, and mentions interest in orbital AI compute capacity and international data residency expansion.",
-      "longlistAdditions": [
-        {
-          "id": "orbital-ai-compute",
-          "label": "Orbital AI Compute"
-        },
-        {
-          "id": "data-residency",
-          "label": "Data Residency"
-        }
-      ],
-      "longlistUpdates": [
-        {
-          "id": "trainium",
-          "label": "Trainium",
-          "sourceAdded": true,
-          "sourceCount": 2,
-          "independentSourceCount": 2
-        }
-      ],
-      "rejections": [
-        {
-          "label": "Purpose-Built AI Infrastructure",
-          "reason": "already in graph (label match)"
-        }
-      ],
+      "summary": "A paywalled Stratechery interview with Joanna Stern about her book on living with AI and her new media company. The excerpt is essentially a subscription gate with no substantive article content visible — only title, metadata, and related links are accessible.",
+      "longlistAdditions": [],
+      "longlistUpdates": [],
+      "rejections": [],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "Using Claude Code: The Unreasonable Effectiveness of HTML",
+        "url": "https://simonwillison.net/2026/May/8/unreasonable-effectiveness-of-html/#atom-everything"
+      },
+      "summary": "Simon Willison links to and reflects on a piece by Thariq Shihipar (Claude Code team at Anthropic) advocating for HTML as a richer output format over Markdown when prompting Claude, with examples of interactive, annotated HTML artifacts generated from prompts. Willison also tries the approach with GPT-5.5 on a Linux exploit explanation.",
+      "longlistAdditions": [],
+      "longlistUpdates": [],
+      "rejections": [],
       "proposalsQueued": []
     }
   ],
   "definitionReviews": [
     {
-      "id": "inference",
+      "id": "llama",
       "status": "keep",
-      "reason": "No source material addresses or contradicts this definition. It remains accurate as written."
+      "reason": "No source material addresses Llama or Meta's open-weight model releases. Definition remains accurate and unsupported for revision."
     },
     {
-      "id": "information-literacy",
+      "id": "long-horizon-autonomy",
       "status": "keep",
-      "reason": "No source material addresses this definition. It remains accurate as written."
+      "reason": "No source directly addresses long-horizon autonomy as a concept. Definition is sound and unchanged."
     },
     {
-      "id": "infrastructure",
+      "id": "loop",
       "status": "keep",
-      "reason": "No source material addresses this definition. It remains accurate as written."
+      "reason": "No source material updates or contradicts the observe-think-act loop definition."
     },
     {
-      "id": "interactive-prototyping",
+      "id": "lost-in-the-middle",
       "status": "keep",
-      "reason": "No source material addresses this definition. It remains accurate as written."
+      "reason": "No source material references or updates the lost-in-the-middle phenomenon or the Liu et al. findings."
     },
     {
-      "id": "interpretability",
+      "id": "manus",
       "status": "keep",
-      "reason": "No source material addresses this definition. It remains accurate as written."
+      "reason": "No source material references Manus or updates its description."
     },
     {
-      "id": "jailbreak",
+      "id": "mcp",
       "status": "keep",
-      "reason": "No source material addresses this definition. It remains accurate as written."
+      "reason": "No source material addresses MCP or the Model Context Protocol."
     },
     {
-      "id": "kairos",
-      "status": "insufficient_evidence",
-      "reason": "The definition makes a specific and extraordinary claim about an unreleased autonomous background mode inside Claude Code revealed via a source code leak in March 2026. None of the provided sources reference KAIROS, the described leak, or these specific capabilities. The claim cannot be verified or refuted from available evidence and warrants scrutiny before publication."
+      "id": "memory",
+      "status": "keep",
+      "reason": "No source material updates the definition of AI memory."
     },
     {
-      "id": "kv-cache",
+      "id": "memory-consolidation",
       "status": "keep",
-      "reason": "No source material addresses this definition. It remains accurate as written."
+      "reason": "No source material addresses memory consolidation in AI agents."
     },
     {
-      "id": "langchain",
+      "id": "meta-co",
       "status": "keep",
-      "reason": "No source material addresses this definition. It remains accurate as written."
+      "reason": "No source material updates Meta's open-weight strategy or Llama releases."
     },
     {
-      "id": "latency",
+      "id": "metacognition",
       "status": "keep",
-      "reason": "The WebRTC/latency excerpt discusses latency tradeoffs in voice AI (packet dropping to maintain low latency) but does not contradict or materially expand the existing definition, which correctly characterizes latency compounding in agentic systems. No update is warranted."
+      "reason": "No source material addresses metacognition as defined here."
     }
   ],
   "notes": []
