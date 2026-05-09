@@ -172,14 +172,24 @@ async function main() {
 
     // fetchText already retries once on failure (3s pause), so a single
     // tryFetch call here covers transient 403/429 hiccups. If both attempts
-    // fail or the page parses to empty, count it as errored and move on —
-    // backfill is best-effort across many articles, never blocking.
-    const article = await tryFetch(seen, fetchConfig);
-    if (!article || !article.excerpt) {
-      console.log("fetch failed (after retry)");
+    // fail or the page parses to empty, count it as errored, log the URL
+    // and reason to the deterministic event log, and move on — backfill is
+    // best-effort across many articles, never blocking. The per-URL log
+    // event is what makes "14 articles errored" diagnosable later.
+    const fetchResult = await tryFetch(seen, fetchConfig);
+    if (fetchResult.errored) {
+      console.log(`fetch failed: ${fetchResult.reason}`);
       erroredCount++;
+      await logger.event("backfill_fetch_error", {
+        articleId: seen.id || null,
+        url: seen.url,
+        title: seen.title || null,
+        sourceLabel: seen.sourceLabel || null,
+        reason: fetchResult.reason
+      });
       continue;
     }
+    const article = fetchResult.article;
 
     let judgment;
     try {
@@ -279,17 +289,26 @@ async function main() {
   }
 }
 
-// Fetch wrapper that swallows errors and returns null instead of throwing,
-// so the caller's retry/error logic stays simple. fetchArticle already
-// returns the same shape on error, but might throw on dns/socket-level
-// failures.
+// Fetch wrapper that returns a discriminated result so the caller can log
+// per-URL failure reasons instead of swallowing them as an opaque count.
+// Returns either { article } on success or { errored: true, reason } on
+// failure. The reason distinguishes the four failure modes:
+//   - thrown error (dns/socket-level failure)
+//   - fetchArticle returned null (excerpt empty during processing)
+//   - fetchArticle returned the error shape (HTTP 4xx/5xx after retries)
+//   - fetchArticle returned an article with empty excerpt (page rendered to
+//     nothing — common on JS-only sites and login walls)
 async function tryFetch(seen, config) {
+  let result;
   try {
-    const article = await fetchArticle(seen, config);
-    return article && article.excerpt ? article : null;
-  } catch {
-    return null;
+    result = await fetchArticle(seen, config);
+  } catch (err) {
+    return { errored: true, reason: `threw: ${err.message}` };
   }
+  if (!result) return { errored: true, reason: "fetchArticle returned null" };
+  if (result.error) return { errored: true, reason: `HTTP error: ${result.error}` };
+  if (!result.excerpt) return { errored: true, reason: "empty excerpt (page rendered to nothing)" };
+  return { article: result };
 }
 
 function parseArgs(argv) {
