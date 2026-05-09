@@ -14,7 +14,7 @@
 import path from "node:path";
 import crypto from "node:crypto";
 import { fileURLToPath, pathToFileURL } from "node:url";
-import { buildNote } from "./notes.mjs";
+import { buildNote, pushNote } from "./notes.mjs";
 import { createLogger } from "./logger.mjs";
 import { runAllChecks } from "./auditor.mjs";
 import { createNotifier } from "./notify.mjs";
@@ -81,7 +81,8 @@ async function main() {
     });
     note.id = id; // override with deterministic-from-signature id for dedup
     note.source = "auditor";
-    notes.entries.push(note);
+    pushNote(notes, note); // pushNote dedupes by id (defensive — auditor's
+                           // signature-based dedup already guards earlier)
     added++;
     await logger.event("audit_flag", {
       signature: flag.signature,

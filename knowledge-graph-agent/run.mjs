@@ -14,7 +14,7 @@ import Anthropic from "@anthropic-ai/sdk";
 
 import { ACTIONS, GATES, resolveGate } from "./actions.mjs";
 import { createLogger } from "./logger.mjs";
-import { ENTRY_TYPES, buildNote, detectContestedOmission } from "./notes.mjs";
+import { ENTRY_TYPES, buildNote, pushNote, detectContestedOmission } from "./notes.mjs";
 import { detectGlobalPauseReasons, checkThroughputCap } from "./forcing-functions.mjs";
 import { createNotifier } from "./notify.mjs";
 
@@ -143,7 +143,7 @@ async function runMain(args, config, logger) {
   if (paused) {
     const summary = pauseReasons.map(r => r.type).join(", ");
     report.notes.push(`Run paused (${summary}). No articles fetched, no candidates routed, no proposals queued.`);
-    notes.entries.push(buildNote({
+    pushNote(notes, buildNote({
       type: ENTRY_TYPES.RUN_PAUSED,
       runId: logger.runId,
       phase: config.phase,
@@ -180,7 +180,7 @@ async function runMain(args, config, logger) {
     // didn't happen.
     const capHit = checkThroughputCap(action, longlist, proposals, gate, config.throughputCaps);
     if (capHit) {
-      notes.entries.push(buildNote({
+      pushNote(notes, buildNote({
         type: ENTRY_TYPES.THROUGHPUT_CAP_HIT,
         runId: logger.runId,
         phase: config.phase,
@@ -213,7 +213,7 @@ async function runMain(args, config, logger) {
       } else {
         const denySubject = `Default-deny: action '${action}' for target ${target?.id ?? "(none)"}`;
         report.notes.push(`${denySubject} (gate=${gate ?? "unknown"}, phase=${config.phase}).`);
-        notes.entries.push(buildNote({
+        pushNote(notes, buildNote({
           type: ENTRY_TYPES.DEFAULT_DENY,
           runId: logger.runId,
           phase: config.phase,
@@ -338,7 +338,7 @@ async function runMain(args, config, logger) {
           if (applied) {
             const contested = detectContestedOmission(entry.label, entry.fullName, entry.workingDef);
             if (contested) {
-              notes.entries.push(buildNote({
+              pushNote(notes, buildNote({
                 type: ENTRY_TYPES.CONTESTED_CLUSTER_OMISSION,
                 runId: logger.runId,
                 phase: config.phase,

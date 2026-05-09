@@ -94,10 +94,32 @@ export function detectContestedOmission(termLabel, termFullName, workingDef) {
   };
 }
 
+// Append a note to the channel, deduping by id. Returns true if appended,
+// false if a note with the same id was already present.
+//
+// Why this matters: buildNote's id is sha1(type|subject|writtenAt) (see
+// below). writtenAt is run-level (set once per run from report.generatedAt),
+// so any condition that fires multiple times within ONE run produces an
+// identical id. Without dedup the channel collects duplicates — the
+// canonical case is throughput_cap_hit firing once per cap-suppressed action
+// (observed: 14 identical entries in a single 3-May run). Cross-run dedup
+// is preserved naturally because writtenAt differs between runs.
+//
+// All notes-channel writers should go through this helper rather than
+// pushing directly onto notes.entries — that's how the dedup invariant
+// stays cheap to maintain.
+export function pushNote(notes, note) {
+  if (!notes.entries) notes.entries = [];
+  if (notes.entries.some(e => e.id === note.id)) return false;
+  notes.entries.push(note);
+  return true;
+}
+
 // Build a Notes for Nicole entry. The id is deterministic per
-// (type + subject + writtenAt) so re-runs that re-trigger the same condition
-// will produce a new entry per run (the writtenAt component differs); this
-// preserves the temporal trail rather than silently deduping.
+// (type + subject + writtenAt). Combined with pushNote's dedup-by-id,
+// the same condition firing multiple times in one run produces a single
+// entry; firing on different runs produces distinct entries (different
+// writtenAt → different id), preserving the temporal trail.
 export function buildNote({ type, runId, phase, subject, details, evidence, suggestedAction, writtenAt }) {
   const ts = writtenAt || new Date().toISOString();
   const id = crypto.createHash("sha1")
