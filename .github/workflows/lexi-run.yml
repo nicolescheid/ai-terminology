@@ -95,7 +95,15 @@ jobs:
           if git diff --staged --quiet; then
             echo "No state changes to commit."
           else
-            git commit -m "Lexi run $(date -u +%Y-%m-%d) [skip ci]" \
+            # Intentionally NO [skip ci]: this workflow only triggers on
+            # `schedule` and `workflow_dispatch`, not `push`, so its own
+            # commit cannot re-trigger it (no loop risk). Cloudflare Workers
+            # Static Assets, on the other hand, DOES respect [skip ci] in
+            # commit messages — and skipping the deploy means every Lexi
+            # run leaves new state in main that never reaches the live
+            # site until a manual commit comes along to flush. Plain commit
+            # message lets CF deploy normally.
+            git commit -m "Lexi run $(date -u +%Y-%m-%d)" \
               -m "Auto-committed by .github/workflows/lexi-run.yml"
             # Defensive: remote may have moved during the run (manual pushes,
             # other workflows). Pull-rebase preferring our changes for state

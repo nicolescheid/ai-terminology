@@ -62,7 +62,12 @@ jobs:
           if git diff --staged --quiet; then
             echo "No new audit findings — dedup or no flags."
           else
-            git commit -m "Lexi audit $(date -u +%Y-%m-%d) [skip ci]" \
+            # Intentionally NO [skip ci]: same reasoning as lexi-run.yml —
+            # this workflow only triggers on schedule/workflow_dispatch (no
+            # push trigger, no loop risk), but Cloudflare's deploy respects
+            # [skip ci] and skipping the deploy strands new audit findings
+            # in main where they never reach the live dashboard.
+            git commit -m "Lexi audit $(date -u +%Y-%m-%d)" \
               -m "Auto-committed by .github/workflows/lexi-audit.yml"
             # Defensive: see lexi-run.yml — remote may have moved during run.
             git pull --rebase --strategy-option=theirs origin main
