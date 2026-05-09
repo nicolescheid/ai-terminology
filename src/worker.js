@@ -1,9 +1,10 @@
 // Worker entry point for ai-terminology.com.
 //
 // Routes:
-//   POST /api/mark-note → handleMarkNote (Basic Auth + GitHub commit)
-//   /api/*              → 404
-//   everything else     → static assets (env.ASSETS.fetch)
+//   POST /api/mark-note     → handleMarkNote     (Basic Auth + GitHub commit)
+//   POST /api/mark-proposal → handleMarkProposal (Basic Auth + GitHub commit)
+//   /api/*                  → 404
+//   everything else         → static assets (env.ASSETS.fetch)
 //
 // Two secrets required (set via `npx wrangler secret put <NAME>`):
 //   MARK_NOTE_PASSWORD — shared password the dashboard prompts for
@@ -17,8 +18,10 @@
 
 const REPO_OWNER  = "nicolescheid";
 const REPO_NAME   = "ai-terminology";
-const NOTES_PATH  = "knowledge-graph-agent/notes-for-nicole.json";
-const VALID_STATUSES = new Set(["read", "actioned", "dismissed"]);
+const NOTES_PATH      = "knowledge-graph-agent/notes-for-nicole.json";
+const PROPOSALS_PATH  = "knowledge-graph-agent/proposals.json";
+const VALID_NOTE_STATUSES     = new Set(["read", "actioned", "dismissed"]);
+const VALID_PROPOSAL_STATUSES = new Set(["approved", "rejected"]);
 
 export default {
   async fetch(request, env, ctx) {
@@ -32,6 +35,15 @@ export default {
         });
       }
       return handleMarkNote(request, env);
+    }
+    if (url.pathname === "/api/mark-proposal") {
+      if (request.method !== "POST") {
+        return new Response("Method not allowed", {
+          status: 405,
+          headers: { Allow: "POST" }
+        });
+      }
+      return handleMarkProposal(request, env);
     }
     if (url.pathname.startsWith("/api/")) {
       return new Response("Not found", { status: 404 });
@@ -60,8 +72,8 @@ async function handleMarkNote(request, env) {
   catch { return jsonError(400, "Invalid JSON body"); }
   const { id, status } = body || {};
   if (!id || typeof id !== "string") return jsonError(400, "id (string) is required");
-  if (!VALID_STATUSES.has(status)) {
-    return jsonError(400, `status must be one of: ${[...VALID_STATUSES].join(", ")}`);
+  if (!VALID_NOTE_STATUSES.has(status)) {
+    return jsonError(400, `status must be one of: ${[...VALID_NOTE_STATUSES].join(", ")}`);
   }
 
   // Try once; retry once on sha conflict (concurrent commit during our get/put gap).
@@ -72,6 +84,143 @@ async function handleMarkNote(request, env) {
       return jsonError(result.status || 502, result.error || "Mark failed");
     }
   }
+}
+
+async function handleMarkProposal(request, env) {
+  // Auth (same as mark-note — single shared password protects all writes).
+  if (!checkBasicAuth(request.headers.get("Authorization"), env.MARK_NOTE_PASSWORD)) {
+    return new Response("Unauthorized", {
+      status: 401,
+      headers: { "WWW-Authenticate": 'Basic realm="ai-terminology manager"' }
+    });
+  }
+  if (!env.GITHUB_TOKEN) {
+    return new Response("Server misconfigured: GITHUB_TOKEN secret not set", { status: 500 });
+  }
+
+  let body;
+  try { body = await request.json(); }
+  catch { return jsonError(400, "Invalid JSON body"); }
+  const { id, status, reason } = body || {};
+  if (!id || typeof id !== "string") return jsonError(400, "id (string) is required");
+  if (!VALID_PROPOSAL_STATUSES.has(status)) {
+    return jsonError(400, `status must be one of: ${[...VALID_PROPOSAL_STATUSES].join(", ")}`);
+  }
+  if (reason !== undefined && typeof reason !== "string") {
+    return jsonError(400, "reason, if provided, must be a string");
+  }
+
+  // Try once; retry once on sha conflict (concurrent commit during get/put gap).
+  for (let attempt = 1; attempt <= 2; attempt++) {
+    const result = await tryMarkProposalOnce({ id, status, reason, env });
+    if (result.ok) return jsonResponse(200, result);
+    if (result.status !== 409 || attempt === 2) {
+      return jsonError(result.status || 502, result.error || "Mark failed");
+    }
+  }
+}
+
+async function tryMarkProposalOnce({ id, status, reason, env }) {
+  const ghHeaders = {
+    "Authorization":         `Bearer ${env.GITHUB_TOKEN}`,
+    "Accept":                "application/vnd.github+json",
+    "X-GitHub-Api-Version":  "2022-11-28",
+    "User-Agent":            "ai-terminology-mark-proposal-worker"
+  };
+  const apiUrl = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${PROPOSALS_PATH}`;
+
+  const getResp = await fetch(apiUrl, { headers: ghHeaders });
+  if (!getResp.ok) {
+    return { ok: false, status: 502, error: `GitHub fetch failed: ${getResp.status}` };
+  }
+  const fileMeta = await getResp.json();
+  if (!fileMeta.content || !fileMeta.sha) {
+    return { ok: false, status: 502, error: "GitHub response missing content/sha" };
+  }
+
+  let proposalsJson;
+  try {
+    proposalsJson = JSON.parse(base64ToUtf8(fileMeta.content.replace(/\n/g, "")));
+  } catch (e) {
+    return { ok: false, status: 502, error: "Could not parse proposals.json: " + e.message };
+  }
+
+  const proposal = (proposalsJson.proposals || []).find(p => p.id === id);
+  if (!proposal) return { ok: false, status: 404, error: `Proposal id ${id} not found` };
+
+  // Refuse to flip an already-applied or already-rejected proposal — that
+  // would silently overwrite outcome state. Idempotent if the requested
+  // status already matches (returns noChange).
+  if (proposal.status === status) {
+    return { ok: true, noChange: true, id, status };
+  }
+  if (proposal.status === "applied" || (proposal.status === "rejected" && status === "approved")) {
+    return {
+      ok: false,
+      status: 409,
+      error: `Cannot transition proposal from '${proposal.status}' to '${status}'.`
+    };
+  }
+
+  const now = new Date().toISOString();
+  proposal.status = status;
+  if (status === "approved") {
+    proposal.approvedAt = now;
+    proposal.approvedBy = "nicole";
+  } else if (status === "rejected") {
+    proposal.rejectedAt = now;
+    proposal.rejectedBy = "nicole";
+    if (reason) proposal.rejectionReason = reason;
+  }
+
+  // Refresh meta counts to match the existing schema.
+  const all = proposalsJson.proposals || [];
+  proposalsJson.meta = {
+    generatedAt: now,
+    pendingCount:  all.filter(p => p.status === "pending").length,
+    approvedCount: all.filter(p => p.status === "approved").length,
+    appliedCount:  all.filter(p => p.status === "applied").length,
+    rejectedCount: all.filter(p => p.status === "rejected").length,
+    note: proposalsJson.meta?.note ?? "Lexi proposals queue."
+  };
+
+  const newContent    = JSON.stringify(proposalsJson, null, 2) + "\n";
+  const newContentB64 = utf8ToBase64(newContent);
+
+  const putBody = {
+    // No [skip ci] — we want CF to redeploy so the manager dashboard's
+    // next read of proposals.json reflects the change.
+    message: `Mark proposal ${id.slice(0, 8)}… as ${status}\n\nVia /api/mark-proposal from /manager dashboard.`,
+    content: newContentB64,
+    sha: fileMeta.sha,
+    branch: "main",
+    committer: { name: "lexi-bot", email: "lexi-bot@users.noreply.github.com" }
+  };
+
+  const putResp = await fetch(apiUrl, {
+    method: "PUT",
+    headers: { ...ghHeaders, "content-type": "application/json" },
+    body: JSON.stringify(putBody)
+  });
+  if (putResp.status === 409) {
+    return { ok: false, status: 409, error: "sha conflict (will retry)" };
+  }
+  if (!putResp.ok) {
+    const errText = await putResp.text();
+    return { ok: false, status: 502, error: `GitHub commit failed (${putResp.status}): ${errText.slice(0, 200)}` };
+  }
+  const commitResult = await putResp.json();
+  return {
+    ok: true,
+    id,
+    status,
+    decidedAt: now,
+    commitSha: commitResult.commit?.sha,
+    pendingRemaining: proposalsJson.meta.pendingCount,
+    note: status === "approved"
+      ? "Approved. Will apply to the graph on the next scheduled lexi-run (within 24h via the daily 18:00 UTC cron, or sooner if you trigger workflow_dispatch)."
+      : "Rejected. Recorded with rationale for audit; no graph mutation."
+  };
 }
 
 async function tryMarkOnce({ id, status, env }) {

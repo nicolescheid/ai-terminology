@@ -94,6 +94,10 @@ body{background:#f7f5f0;font-family:'IBM Plex Sans',sans-serif;font-weight:300;c
 .mark-btn.actioned{color:#2f5f1f;border-color:#b6d09c}
 .mark-btn.actioned:hover:not(:disabled){background:#e9f1e3}
 .mark-btn.dismissed{color:#666}
+.mark-btn.approve{color:#2f5f1f;border-color:#b6d09c}
+.mark-btn.approve:hover:not(:disabled){background:#e9f1e3}
+.mark-btn.reject{color:#7a2222;border-color:#d09c9c}
+.mark-btn.reject:hover:not(:disabled){background:#f9e3e3}
 .mark-indicator{font-size:11px;color:#888;font-style:italic;margin-top:6px}
 .mark-error{font-size:11px;color:#7a2222;margin-top:6px}
 
@@ -415,10 +419,58 @@ function renderProposals(proposals) {
     head.appendChild(el("span", { class: "title" }, (p.target?.kind || "") + " · " + (p.target?.id || "(no target)")));
     body.appendChild(head);
     if (p.reason) body.appendChild(el("div", { class: "details" }, p.reason));
+    const actions = el("div", { class: "note-actions" });
+    const approveBtn = el("button", { class: "mark-btn approve", type: "button" }, "approve");
+    const rejectBtn  = el("button", { class: "mark-btn reject",  type: "button" }, "reject");
+    approveBtn.addEventListener("click", () => markProposal(p.id, "approved", null, approveBtn, body));
+    rejectBtn.addEventListener("click", () => {
+      // Native prompt for the rejection reason. Empty/cancel both treated
+      // as "rejected without recorded reason" (allowed per the Worker's
+      // schema). The reason becomes part of the proposal's rejectionReason
+      // field for audit.
+      const reason = window.prompt("Optional reason for rejection (blank = no reason recorded):");
+      if (reason === null) return; // cancelled
+      markProposal(p.id, "rejected", reason || null, rejectBtn, body);
+    });
+    actions.appendChild(approveBtn);
+    actions.appendChild(rejectBtn);
+    body.appendChild(actions);
     row.appendChild(body);
     card.appendChild(row);
   }
   return card;
+}
+
+// Mark a proposal via the /api/mark-proposal Worker endpoint. Same auth +
+// optimistic-UI pattern as markNote. Approve and reject both flow through
+// here; reject carries an optional reason captured via window.prompt().
+async function markProposal(proposalId, status, reason, clickedBtn, bodyEl) {
+  const actionsEl = clickedBtn.parentElement;
+  const buttons = actionsEl.querySelectorAll("button");
+  for (const b of buttons) b.disabled = true;
+  for (const e of bodyEl.querySelectorAll(".mark-error")) e.remove();
+
+  try {
+    const resp = await fetch("/api/mark-proposal", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({ id: proposalId, status, reason })
+    });
+    if (resp.status === 401) {
+      throw new Error("Authentication required (or wrong password). Reload the page to re-prompt.");
+    }
+    if (!resp.ok) {
+      const errText = await resp.text();
+      throw new Error("HTTP " + resp.status + ": " + errText.slice(0, 200));
+    }
+    const result = await resp.json();
+    actionsEl.remove();
+    bodyEl.appendChild(el("div", { class: "mark-indicator" },
+      (result.note || ("Marked as " + status + ".")) + " (Live state in ~30s after redeploy.)"));
+  } catch (err) {
+    for (const b of buttons) b.disabled = false;
+    bodyEl.appendChild(el("div", { class: "mark-error" }, "Failed: " + err.message));
+  }
 }
 
 function renderLonglist(longlist) {
