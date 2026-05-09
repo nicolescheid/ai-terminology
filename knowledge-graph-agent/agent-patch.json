@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-05-09T19:00:00.611Z",
+    "generatedAt": "2026-05-09T19:11:42.616Z",
     "sourceCount": 6,
     "note": "Agent-managed overlay. Graph-affecting changes are routed through the permissions matrix (actions.mjs) — see proposals.json for pending items."
   },
@@ -260,7 +260,116 @@
         }
       ],
       "fullName": "AI-Assisted Interactive Prototyping"
+    },
+    {
+      "id": "behavioral-audit",
+      "label": "Behavioral Audit",
+      "clusters": [
+        "safety",
+        "technical"
+      ],
+      "sz": 14,
+      "def": "A systematic post-hoc investigation into unexpected or undesirable model behaviors, tracing their origin through training data, reward signals, and rollout statistics to identify root causes and inform targeted fixes.",
+      "rels": [
+        "evals",
+        "interpretability",
+        "red-teaming",
+        "alignment",
+        "silent-failure"
+      ],
+      "refs": [
+        {
+          "n": 1,
+          "src": "OpenAI News, Wed, 29 Apr 2026 20:00:00 GMT",
+          "q": "Where the goblins came from OpenAI News"
+        },
+        {
+          "n": 2,
+          "src": "Simon Willison's Weblog, 2026-05-03T15:13:23+00:00",
+          "q": "A quote from Anthropic Simon Willison's Weblog"
+        },
+        {
+          "n": 3,
+          "src": "OpenAI Research",
+          "q": "Introducing GPT-5.5 OpenAI Research"
+        }
+      ],
+      "fullName": "Behavioral Audit (Model)"
+    },
+    {
+      "id": "trainium",
+      "label": "Trainium",
+      "clusters": [
+        "technical",
+        "companies"
+      ],
+      "sz": 14,
+      "def": "AWS's purpose-built AI training chip, referenced in the context of Amazon's AI infrastructure strategy and commodity market dynamics for AI compute.",
+      "rels": [
+        "ai-accelerator",
+        "ai-inference-chip",
+        "purpose-built-ai-infrastructure"
+      ],
+      "refs": [
+        {
+          "n": 1,
+          "src": "Stratechery, Mon, 04 May 2026 10:00:00 +0000",
+          "q": "Google Earnings, Meta Earnings Stratechery"
+        },
+        {
+          "n": 2,
+          "src": "Anthropic Newsroom",
+          "q": "Higher usage limits for Claude and a compute deal with SpaceX Anthropic Newsroom"
+        }
+      ],
+      "fullName": "Trainium (AWS AI Training Chip)",
+      "nodeType": "product"
+    },
+    {
+      "id": "voice-ai",
+      "label": "Voice AI",
+      "clusters": [
+        "models",
+        "tools"
+      ],
+      "sz": 16,
+      "def": "AI systems designed for real-time spoken interaction, encompassing speech recognition, language modeling, and speech synthesis in an integrated pipeline optimized for conversational latency.",
+      "rels": [
+        "inference",
+        "latency",
+        "multimodal",
+        "chatbot"
+      ],
+      "refs": [
+        {
+          "n": 1,
+          "src": "OpenAI News, Mon, 04 May 2026 00:00:00 GMT",
+          "q": "How OpenAI delivers low-latency voice AI at scale OpenAI News"
+        },
+        {
+          "n": 2,
+          "src": "Simon Willison's Weblog, 2026-05-09T01:03:58+00:00",
+          "q": "A quote from Luke Curley Simon Willison's Weblog"
+        }
+      ]
     }
   ],
-  "definitionOverrides": []
+  "definitionOverrides": [
+    {
+      "id": "gpt54",
+      "def": "OpenAI model released prior to GPT-5.5. Combines advanced reasoning, coding, and computer use. Available in standard, Thinking, and Pro variants with up to 1M token context via API. Superseded by GPT-5.5 (released April 23, 2026) as OpenAI's flagship model.",
+      "refs": [
+        {
+          "n": 1,
+          "src": "OpenAI News, Thu, 30 Apr 2026 00:00:00 GMT",
+          "q": "Introducing Advanced Account Security OpenAI News"
+        },
+        {
+          "n": 2,
+          "src": "AI Snake Oil, Thu, 12 Feb 2026 19:26:05 GMT",
+          "q": "AI Won’t Automatically Make Legal Services Cheaper AI Snake Oil"
+        }
+      ]
+    }
+  ]
 }

@@ -861,7 +861,10 @@
       "dateLastSeen": "2026-05-04T19:27:54.284Z",
       "sz": 14,
       "fullName": "Behavioral Audit (Model)",
-      "proposalReason": "The article describes a concrete behavioral audit process — tracking lexical tics across model versions, auditing reward signals, and filtering training data — presented as a new internal capability, making it a recurring and promotable concept."
+      "proposalReason": "The article describes a concrete behavioral audit process — tracking lexical tics across model versions, auditing reward signals, and filtering training data — presented as a new internal capability, making it a recurring and promotable concept.",
+      "status": "promoted",
+      "promotedAt": "2026-05-09T19:10:55.410Z",
+      "promotedToGraphNodeId": "behavioral-audit"
     },
     {
       "id": "terafab",
@@ -1425,7 +1428,10 @@
       "sz": 14,
       "fullName": "Trainium (AWS AI Training Chip)",
       "nodeType": "product",
-      "proposalReason": "Mentioned in adjacent Stratechery updates ('Amazon Earnings, Trainium and Commodity Markets') as a named AWS chip product distinct from general accelerators — worth tracking as a specific product node alongside TPU and other named silicon."
+      "proposalReason": "Mentioned in adjacent Stratechery updates ('Amazon Earnings, Trainium and Commodity Markets') as a named AWS chip product distinct from general accelerators — worth tracking as a specific product node alongside TPU and other named silicon.",
+      "status": "promoted",
+      "promotedAt": "2026-05-09T19:10:55.410Z",
+      "promotedToGraphNodeId": "trainium"
     },
     {
       "id": "streaming-inference",
@@ -1494,7 +1500,10 @@
       "dateFirstSeen": "2026-05-04T19:27:54.284Z",
       "dateLastSeen": "2026-05-09T07:44:17.196Z",
       "sz": 16,
-      "proposalReason": "Voice AI is increasingly a distinct product and infrastructure category, separate from text-based AI, with its own latency, streaming, and deployment requirements."
+      "proposalReason": "Voice AI is increasingly a distinct product and infrastructure category, separate from text-based AI, with its own latency, streaming, and deployment requirements.",
+      "status": "promoted",
+      "promotedAt": "2026-05-09T19:10:55.410Z",
+      "promotedToGraphNodeId": "voice-ai"
     },
     {
       "id": "real-time-audio-pipeline",

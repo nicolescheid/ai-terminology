@@ -173,12 +173,20 @@ function applyOne(proposal, patch, longlist, appliedAt) {
       return { ok: true, label: node.label || node.id, longlistMutated };
     }
     case ACTIONS.EDIT_GRAPH_DEF_SUBSTANTIVE: {
+      // Read the target node id from proposal.target.id (consistent with
+      // PROMOTE_TO_GRAPH above). Earlier code expected proposal.payload.id,
+      // but the proposal-creation path on the definition-review side never
+      // populates payload.id — only payload.def + payload.refs. Result:
+      // every approved def refresh got skipped silently. Caught when the
+      // gpt54 stale-flagship-def refresh wouldn't apply on 2026-05-10.
+      const targetId = proposal.target?.id;
       const override = proposal.payload;
-      if (!override?.id || !override?.def) return { ok: false, why: "missing payload.id or payload.def" };
-      const existing = patch.definitionOverrides.findIndex(o => o.id === override.id);
-      if (existing >= 0) patch.definitionOverrides[existing] = { id: override.id, def: override.def, refs: override.refs || [] };
-      else patch.definitionOverrides.push({ id: override.id, def: override.def, refs: override.refs || [] });
-      return { ok: true, label: override.id };
+      if (!targetId || !override?.def) return { ok: false, why: "missing target.id or payload.def" };
+      const newOverride = { id: targetId, def: override.def, refs: override.refs || [] };
+      const existing = patch.definitionOverrides.findIndex(o => o.id === targetId);
+      if (existing >= 0) patch.definitionOverrides[existing] = newOverride;
+      else patch.definitionOverrides.push(newOverride);
+      return { ok: true, label: targetId };
     }
     default:
       return { ok: false, why: `no apply path for action '${proposal.action}'` };

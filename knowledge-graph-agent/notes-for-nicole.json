@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-05-09T19:00:00.611Z",
+    "generatedAt": "2026-05-09T19:10:55.311Z",
     "unreadCount": 1,
     "totalCount": 113,
     "note": "Notes for Nicole — Lexi's manager channel (spec §6). Mandatory entry types fire when their triggering condition is met; discretionary entries are observations Lexi thinks Nicole should see. Set status to 'read', 'actioned', or 'dismissed' as appropriate."
@@ -2885,7 +2885,7 @@
       "writtenAt": "2026-05-09T07:44:17.196Z",
       "runId": "481ce90f-0e45-458e-b4bd-a0c1c7eac0cd",
       "phase": 1,
-      "status": "read",
+      "status": "dismissed",
       "subject": "Contested cluster term added without naming the contestation: 'Agentic Business Model'",
       "details": "The term 'Agentic Business Model' matches the contested-cluster pattern 'agentic' (per spec §10), but the working definition does not appear to acknowledge that the term is contested or that different camps use it differently. Per spec §6 entry type 5, this requires review before any move toward graph promotion.",
       "evidence": {
@@ -2898,7 +2898,7 @@
         "sourceLabel": "Stratechery"
       },
       "suggestedAction": "Either revise the working definition to name the contestation (who uses it to mean what), or confirm this term doesn't warrant the contested treatment in this case.",
-      "readAt": "2026-05-09T08:12:23.531Z"
+      "readAt": "2026-05-09T19:10:55.311Z"
     },
     {
       "id": "7354736f0dd24e80",

@@ -1,9 +1,9 @@
 {
   "meta": {
-    "generatedAt": "2026-05-09T19:01:24.025Z",
-    "pendingCount": 5,
-    "appliedCount": 8,
-    "rejectedCount": 0,
+    "generatedAt": "2026-05-09T19:11:42.616Z",
+    "pendingCount": 0,
+    "appliedCount": 12,
+    "rejectedCount": 1,
     "note": "Lexi proposals queue. Actions gated as PROPOSE land here as status: 'pending'. Edit a proposal's status to 'approved' or 'rejected' and run the apply step (TBD) to commit."
   },
   "proposals": [
@@ -420,7 +420,7 @@
       "action": "edit_graph_def_substantive",
       "gate": "propose",
       "proposedAt": "2026-05-03T18:58:28.223Z",
-      "status": "pending",
+      "status": "applied",
       "source": "definition-review",
       "target": {
         "kind": "graph_node",
@@ -441,14 +441,17 @@
           }
         ]
       },
-      "reason": "OpenAI Research confirms GPT-5.5 was introduced April 23, 2026 as their 'smartest model yet,' directly contradicting the definition's claim that GPT-5.4 is the 'current flagship model as of March 2026.' The definition requires updating to reflect GPT-5.4's superseded status."
+      "reason": "OpenAI Research confirms GPT-5.5 was introduced April 23, 2026 as their 'smartest model yet,' directly contradicting the definition's claim that GPT-5.4 is the 'current flagship model as of March 2026.' The definition requires updating to reflect GPT-5.4's superseded status.",
+      "approvedAt": "2026-05-09T19:10:55.244Z",
+      "approvedBy": "nicole",
+      "appliedAt": "2026-05-09T19:11:42.616Z"
     },
     {
       "id": "d5ed5b875452c5d4",
       "action": "promote_to_graph",
       "gate": "propose",
       "proposedAt": "2026-05-04T19:29:27.038Z",
-      "status": "pending",
+      "status": "applied",
       "source": "promote-eligibility-scan",
       "target": {
         "kind": "longlist_entry",
@@ -492,14 +495,17 @@
         }
       },
       "reason": "3 sources, 2 independent (openai.com + simonwillison.net), 4d on longlist.",
-      "runId": "6229932d-9fff-4451-9962-f84cdc93943e"
+      "runId": "6229932d-9fff-4451-9962-f84cdc93943e",
+      "approvedAt": "2026-05-09T19:10:55.244Z",
+      "approvedBy": "nicole",
+      "appliedAt": "2026-05-09T19:10:55.410Z"
     },
     {
       "id": "be7e5fc46bc64b50",
       "action": "promote_to_graph",
       "gate": "propose",
       "proposedAt": "2026-05-09T07:45:53.052Z",
-      "status": "pending",
+      "status": "applied",
       "source": "promote-eligibility-scan",
       "target": {
         "kind": "longlist_entry",
@@ -537,14 +543,17 @@
         }
       },
       "reason": "2 sources, 2 independent (stratechery.com + anthropic.com), 4d on longlist.",
-      "runId": "4d669e89-7040-47b9-9eca-a35490210bc9"
+      "runId": "4d669e89-7040-47b9-9eca-a35490210bc9",
+      "approvedAt": "2026-05-09T19:10:55.244Z",
+      "approvedBy": "nicole",
+      "appliedAt": "2026-05-09T19:10:55.410Z"
     },
     {
       "id": "2a9167205c4b0661",
       "action": "promote_to_graph",
       "gate": "propose",
       "proposedAt": "2026-05-09T07:45:53.052Z",
-      "status": "pending",
+      "status": "applied",
       "source": "promote-eligibility-scan",
       "target": {
         "kind": "longlist_entry",
@@ -581,14 +590,17 @@
         }
       },
       "reason": "2 sources, 2 independent (openai.com + simonwillison.net), 4d on longlist.",
-      "runId": "4d669e89-7040-47b9-9eca-a35490210bc9"
+      "runId": "4d669e89-7040-47b9-9eca-a35490210bc9",
+      "approvedAt": "2026-05-09T19:10:55.244Z",
+      "approvedBy": "nicole",
+      "appliedAt": "2026-05-09T19:10:55.410Z"
     },
     {
       "id": "b3236121bd2b8d65",
       "action": "promote_to_graph",
       "gate": "propose",
       "proposedAt": "2026-05-09T07:45:53.052Z",
-      "status": "pending",
+      "status": "rejected",
       "source": "promote-eligibility-scan",
       "target": {
         "kind": "longlist_entry",
@@ -623,7 +635,10 @@
         }
       },
       "reason": "2 sources, 2 independent (openai.com + simonwillison.net), 4d on longlist.",
-      "runId": "4d669e89-7040-47b9-9eca-a35490210bc9"
+      "runId": "4d669e89-7040-47b9-9eca-a35490210bc9",
+      "rejectedAt": "2026-05-09T19:10:55.244Z",
+      "rejectedBy": "nicole",
+      "rejectionReason": "Lexicographic judgment by Nicole 2026-05-10: more description than term — \"Real-Time Audio Pipeline\" reads as descriptive prose for the architecture inside Voice AI, not as a coined label the field has adopted as its own concept. Voice AI captures the same surface adequately."
     }
   ]
 }
