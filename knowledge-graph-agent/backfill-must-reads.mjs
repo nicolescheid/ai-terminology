@@ -214,12 +214,32 @@ async function main() {
     } catch (err) {
       console.log(`judgment errored: ${err.message}`);
       erroredCount++;
+      await logger.event("backfill_judgment_error", {
+        articleId: seen.id || article.id || null,
+        url: article.url || seen.url,
+        title: article.title || seen.title || null,
+        sourceLabel: article.sourceLabel || seen.sourceLabel || null,
+        message: err.message
+      });
       continue;
     }
 
     if (!judgment.mustRead) {
       console.log("not flagged");
       skippedCount++;
+      // Log per-article so we can later re-evaluate just the not-flagged
+      // set without re-paying the full backfill cost. The summary is
+      // populated even when mustRead is null (per the JUDGMENT_SCHEMA),
+      // so we capture Lexi's brief read of the article — useful if the
+      // editorial bar is later retuned and Nicole wants to spot-check
+      // which past judgments would flip.
+      await logger.event("backfill_not_flagged", {
+        articleId: seen.id || article.id || null,
+        url: article.url || seen.url,
+        title: article.title || seen.title || null,
+        sourceLabel: article.sourceLabel || seen.sourceLabel || null,
+        summary: judgment.summary || null
+      });
       continue;
     }
 
