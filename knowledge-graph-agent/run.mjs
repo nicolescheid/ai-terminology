@@ -249,6 +249,23 @@ async function runMain(args, config, logger) {
     const reviewableNodes = [...mergedNodes];
 
     for (const article of articles) {
+      // Skip articles whose fetch failed (article-fetch.mjs returns the
+      // article shape with error:<msg> and excerpt:"" when fetchText
+      // throws after retry). Without this guard we'd waste a Claude
+      // call on an empty excerpt and silently lose the URL — same
+      // observability gap that bit the must-read backfill until we
+      // closed it. Log the per-URL failure to the deterministic log
+      // and continue to the next article.
+      if (!article.excerpt) {
+        await logger.event("article_fetch_error", {
+          articleId: article.id || null,
+          url: article.url,
+          title: article.title || null,
+          sourceLabel: article.sourceLabel || null,
+          reason: article.error || "empty excerpt (page rendered to nothing)"
+        });
+        continue;
+      }
       const apiStart = Date.now();
       let analysis;
       try {
