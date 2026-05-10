@@ -25,6 +25,10 @@
 
   .wm{font-family:'Instrument Serif',serif;font-size:38px;line-height:1.05;margin-bottom:6px}
   .wm em{font-style:italic;color:#5a6b8f}
+  .page-head{display:flex;align-items:center;gap:24px;margin-bottom:18px}
+  .page-head>div{flex:1;min-width:0}
+  .page-head-character{flex:0 0 auto;width:130px;height:auto;pointer-events:none;user-select:none;filter:drop-shadow(0 6px 12px rgba(60,40,15,0.20))}
+  @media (max-width:600px){.page-head{flex-direction:column-reverse;align-items:flex-start;gap:12px}.page-head-character{width:100px;align-self:center}}
   .sub{font-size:11px;font-weight:400;letter-spacing:.14em;text-transform:uppercase;color:#888;margin-bottom:20px}
   .lede{font-size:16px;color:#3a3a36;margin-bottom:36px;max-width:62ch}
   .lede em{font-style:italic;color:#5a6b8f}
@@ -70,8 +74,13 @@
 </head>
 <body>
 <div class="wrap">
-  <div class="wm"><em>Lexi's</em> List</div>
-  <div class="sub">A reading list, curated</div>
+  <div class="page-head">
+    <div>
+      <div class="wm"><em>Lexi's</em> List</div>
+      <div class="sub">A reading list, curated</div>
+    </div>
+    <img class="page-head-character" src="/assets/lexi-explorer.webp" alt="Lexi in explorer mode, out finding articles worth your attention" />
+  </div>
 
   <p class="lede">From the articles <em>Lexi</em> reads each day, these are the ones she flags as worth your full attention — not the news, but the pieces that actually help you understand where AI vocabulary is going. Grouped by subject; the latest at the top of each group.</p>
 
