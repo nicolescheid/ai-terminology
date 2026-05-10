@@ -373,7 +373,7 @@ async function runMain(args, config, logger) {
           // contested cluster but its working def doesn't name the contestation,
           // flag it for Nicole BEFORE it accumulates evidence toward promotion.
           if (applied) {
-            const contested = detectContestedOmission(entry.label, entry.fullName, entry.workingDef);
+            const contested = detectContestedOmission(entry.label, entry.fullName, entry.workingDef, contestedTerms);
             if (contested) {
               pushNote(notes, buildNote({
                 type: ENTRY_TYPES.CONTESTED_CLUSTER_OMISSION,

@@ -27,33 +27,6 @@ export const ENTRY_TYPES = Object.freeze({
   DISCRETIONARY: "discretionary"
 });
 
-// Per spec §10. Non-exhaustive list of AI terms where the definition itself
-// is the political battleground. When Lexi proposes one of these without
-// naming the contestation, an entry type 5 is written so Nicole can intervene.
-//
-// Kept in lowercase for case-insensitive comparison. Update as the field's
-// vocabulary evolves; the spec calls out this list as living.
-export const CONTESTED_CLUSTER_TERMS = Object.freeze([
-  "alignment",
-  "agentic",
-  "open-weights",
-  "open weights",
-  "open source",
-  "agi",
-  "superintelligence",
-  "ai safety",
-  "ai ethics",
-  "responsible ai",
-  "ai welfare",
-  "frontier model",
-  "frontier ai",
-  "catastrophic risk",
-  "existential risk",
-  "x-risk",
-  "p(doom)",
-  "doomer"
-]);
-
 // Contestation markers — phrases Lexi might use in a working definition that
 // indicate it has acknowledged the term is contested. If at least one of these
 // appears in the def, we DON'T flag (the def is doing its job).
@@ -73,23 +46,51 @@ const CONTESTATION_MARKERS = [
   "is used to mean"
 ];
 
-// Returns null if the candidate is not contested OR if the def already names
-// the contestation. Returns { matchedTerm, ... } if a Notes for Nicole entry
-// should be written. Conservative — false positives (flagging defs that DO
-// acknowledge contestation in their own way) are preferable to false negatives.
-export function detectContestedOmission(termLabel, termFullName, workingDef) {
+/**
+ * Spec §10 post-hoc detector — fires when a candidate's label or fullName
+ * matches a contested-cluster term but the working def doesn't acknowledge
+ * the contestation. Belt-and-braces against the inoculation list (loaded
+ * from contested-terms.json and folded into the extract prompt) failing
+ * to land the framing instruction.
+ *
+ * The contestedTerms argument is the parsed contested-terms.json shape
+ * ({ meta, terms: [...] }). Match logic walks each term's label + aliases
+ * and tests case-insensitive substring inclusion against the candidate's
+ * label / fullName.
+ *
+ * Returns null when the candidate isn't a contested-list match, or when
+ * the def already includes a contestation marker (def is doing its job).
+ * Returns { matchedTerm: string, matchedEntry: full-entry, workingDef }
+ * when an entry type 5 (CONTESTED_CLUSTER_OMISSION) note should be written.
+ *
+ * Conservative — false positives (flagging defs that acknowledge contestation
+ * in their own way without using a known marker phrase) are preferable to
+ * false negatives.
+ */
+export function detectContestedOmission(termLabel, termFullName, workingDef, contestedTerms) {
   const candidates = [termLabel, termFullName].filter(Boolean).map(s => s.toLowerCase());
-  const matched = CONTESTED_CLUSTER_TERMS.find(contested =>
-    candidates.some(c => c === contested || c.includes(contested))
-  );
-  if (!matched) return null;
+  const terms = contestedTerms?.terms || [];
+  if (!candidates.length || !terms.length) return null;
+
+  let matchedEntry = null;
+  for (const t of terms) {
+    const triggers = [t.label, ...(t.aliases || [])]
+      .filter(Boolean)
+      .map(s => s.toLowerCase());
+    const hit = triggers.some(trigger =>
+      candidates.some(c => c === trigger || c.includes(trigger))
+    );
+    if (hit) { matchedEntry = t; break; }
+  }
+  if (!matchedEntry) return null;
 
   const defLower = (workingDef || "").toLowerCase();
   const acknowledgesContestation = CONTESTATION_MARKERS.some(m => defLower.includes(m));
   if (acknowledgesContestation) return null;
 
   return {
-    matchedTerm: matched,
+    matchedTerm: matchedEntry.label,
+    matchedEntry,
     workingDef: workingDef || ""
   };
 }
