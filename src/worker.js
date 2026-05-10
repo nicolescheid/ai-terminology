@@ -210,6 +210,17 @@ async function tryMarkProposalOnce({ id, status, reason, env }) {
     return { ok: false, status: 502, error: `GitHub commit failed (${putResp.status}): ${errText.slice(0, 200)}` };
   }
   const commitResult = await putResp.json();
+
+  // Apply-on-approve: trigger the lexi-run workflow so apply-proposals.mjs
+  // runs within ~5 min instead of waiting up to 24h for the next cron.
+  // Best-effort: if the dispatch call fails (e.g., PAT lacks actions:write),
+  // the approve still succeeded; the apply just falls back to the cron path.
+  let dispatchResult = null;
+  if (status === "approved") {
+    dispatchResult = await triggerLexiRunWorkflow(env)
+      .catch(e => ({ triggered: false, httpStatus: 0, error: e.message }));
+  }
+
   return {
     ok: true,
     id,
@@ -217,10 +228,46 @@ async function tryMarkProposalOnce({ id, status, reason, env }) {
     decidedAt: now,
     commitSha: commitResult.commit?.sha,
     pendingRemaining: proposalsJson.meta.pendingCount,
-    note: status === "approved"
-      ? "Approved. Will apply to the graph on the next scheduled lexi-run (within 24h via the daily 18:00 UTC cron, or sooner if you trigger workflow_dispatch)."
-      : "Rejected. Recorded with rationale for audit; no graph mutation."
+    dispatch: dispatchResult,
+    note: buildResponseNote(status, dispatchResult)
   };
+}
+
+// POST /repos/{owner}/{repo}/actions/workflows/{workflow}/dispatches
+// Returns 204 on success, 403 if the PAT lacks actions:write, 404 if the
+// workflow doesn't exist on `main`. Caller treats failure as a soft fall
+// through to the next-cron apply path.
+async function triggerLexiRunWorkflow(env) {
+  const apiUrl = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/actions/workflows/lexi-run.yml/dispatches`;
+  const resp = await fetch(apiUrl, {
+    method: "POST",
+    headers: {
+      "Authorization":         `Bearer ${env.GITHUB_TOKEN}`,
+      "Accept":                "application/vnd.github+json",
+      "X-GitHub-Api-Version":  "2022-11-28",
+      "User-Agent":            "ai-terminology-mark-proposal-worker",
+      "content-type":          "application/json"
+    },
+    body: JSON.stringify({ ref: "main" })
+  });
+  if (resp.ok) return { triggered: true, httpStatus: resp.status };
+  let errBody = null;
+  try { errBody = (await resp.text()).slice(0, 200); } catch { /* ignore */ }
+  return { triggered: false, httpStatus: resp.status, error: errBody };
+}
+
+function buildResponseNote(status, dispatchResult) {
+  if (status === "rejected") {
+    return "Rejected. Recorded with rationale for audit; no graph mutation.";
+  }
+  if (dispatchResult?.triggered) {
+    return "Approved + apply triggered. Live within ~5 min once the lexi-run workflow finishes.";
+  }
+  // Approved but dispatch failed (or wasn't attempted, which shouldn't happen).
+  const failHint = dispatchResult
+    ? ` (Dispatch attempt got ${dispatchResult.httpStatus}; check PAT has actions:write.)`
+    : "";
+  return `Approved. Apply will run on the next scheduled cron (within 24h).${failHint}`;
 }
 
 async function tryMarkOnce({ id, status, env }) {
