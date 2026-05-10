@@ -1,160 +1,191 @@
 {
-  "generatedAt": "2026-05-09T19:00:00.611Z",
+  "generatedAt": "2026-05-10T19:02:19.492Z",
   "model": "claude-sonnet-4-6",
-  "sourcesConfigured": 12,
+  "sourcesConfigured": 14,
   "articlesConsidered": [
     {
-      "id": "08c10eedccbd3d4b",
-      "source": "Hugging Face Blog",
-      "title": "vLLM V0 to V1: Correctness Before Corrections in RL",
-      "url": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections",
-      "publishedAt": "Wed, 06 May 2026 19:06:55 GMT"
-    },
-    {
-      "id": "96a76e6b90cc858c",
-      "source": "Google AI Blog",
-      "title": "Google is partnering with XPRIZE and Range Media Partners on the $3.5 million Future Vision film competition.",
-      "url": "https://blog.google/innovation-and-ai/technology/ai/future-vision-film-competition-xprize/",
-      "publishedAt": "Tue, 05 May 2026 16:00:00 +0000"
-    },
-    {
-      "id": "a73dee93208b9f35",
-      "source": "Last Week in AI",
-      "title": "Last Week in AI #340 - OpenAI vs Musk + Microsoft, DeepSeek v4, Vision Banana",
-      "url": "https://lastweekin.ai/p/last-week-in-ai-340-openai-vs-musk",
-      "publishedAt": "Tue, 05 May 2026 08:30:35 GMT"
-    },
-    {
-      "id": "e41b9b9c2133078d",
+      "id": "4ba89a634a8ba847",
       "source": "OpenAI News",
-      "title": "Parloa builds service agents customers want to talk to",
-      "url": "https://openai.com/index/parloa",
-      "publishedAt": "Thu, 07 May 2026 11:00:00 GMT"
+      "title": "Advancing voice intelligence with new models in the API",
+      "url": "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api",
+      "publishedAt": "Thu, 07 May 2026 10:00:00 GMT"
     },
     {
-      "id": "8ee15a25b1d901ce",
+      "id": "116105217784c106",
+      "source": "Hugging Face Blog",
+      "title": "MachinaCheck: Building a Multi-Agent CNC Manufacturability System on AMD MI300X",
+      "url": "https://huggingface.co/blog/lablab-ai-amd-developer-hackathon/machinacheck",
+      "publishedAt": "Sun, 10 May 2026 18:44:11 GMT"
+    },
+    {
+      "id": "29ffe93c8a209fa3",
+      "source": "Last Week in AI",
+      "title": "LWiAI Podcast #243 - GPT 5.5, DeepSeek V4, AI safety sabotage",
+      "url": "https://lastweekin.ai/p/lwiai-podcast-243-gpt-55-deepseek",
+      "publishedAt": "Mon, 04 May 2026 07:54:06 GMT"
+    },
+    {
+      "id": "29626376f64045f9",
       "source": "Stratechery",
-      "title": "An Interview with Joanna Stern About Living With AI",
-      "url": "https://stratechery.com/2026/an-interview-with-joanna-stern-about-living-with-ai/",
-      "publishedAt": "Thu, 07 May 2026 10:00:00 +0000"
+      "title": "2026.19: Earning & Spending",
+      "url": "https://stratechery.com/2026/earning-spending/",
+      "publishedAt": "Fri, 08 May 2026 17:00:00 +0000"
     },
     {
-      "id": "4603f86027bf6141",
+      "id": "68512a3cbeda65ed",
+      "source": "Google AI Blog",
+      "title": "See what happens when creative legends use AI to make ads for small businesses.",
+      "url": "https://blog.google/company-news/inside-google/company-announcements/the-small-brief/",
+      "publishedAt": "Fri, 08 May 2026 15:00:00 +0000"
+    },
+    {
+      "id": "95424f2dd1206188",
       "source": "Simon Willison's Weblog",
-      "title": "Using Claude Code: The Unreasonable Effectiveness of HTML",
-      "url": "https://simonwillison.net/2026/May/8/unreasonable-effectiveness-of-html/#atom-everything",
-      "publishedAt": "2026-05-08T21:00:11+00:00"
+      "title": "A quote from Andrew Quinn",
+      "url": "https://simonwillison.net/2026/May/10/andrew-quinn/#atom-everything",
+      "publishedAt": "2026-05-10T14:59:17+00:00"
     }
   ],
   "harvestedTerms": [
     {
       "article": {
-        "title": "vLLM V0 to V1: Correctness Before Corrections in RL",
-        "url": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections"
+        "title": "Advancing voice intelligence with new models in the API",
+        "url": "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api"
       },
-      "summary": "A technical deep-dive from ServiceNow AI on migrating vLLM from V0 to V1 for online reinforcement learning (PipelineRL/GSPO), documenting four backend correctness issues — logprob semantics, runtime defaults, inflight weight updates, and fp32 lm_head precision — that caused train-inference mismatch. Highly specialized ML engineering content focused on the numerical correctness surface of RL training pipelines.",
+      "summary": "OpenAI announces three new realtime audio API models: GPT-Realtime-2 (voice reasoning/agentic), GPT-Realtime-Translate (live speech translation across 70+ languages), and GPT-Realtime-Whisper (streaming transcription). The article introduces voice-to-action, systems-to-voice, and voice-to-voice as emerging developer patterns, and highlights agentic voice features like parallel tool calls, preambles, and adjustable reasoning effort.",
       "longlistAdditions": [
         {
-          "id": "train-inference-mismatch",
-          "label": "Train-Inference Mismatch"
+          "id": "gpt-realtime-2",
+          "label": "GPT-Realtime-2"
         },
         {
-          "id": "rollout-logprobs",
-          "label": "Rollout Logprobs"
+          "id": "voice-to-action",
+          "label": "Voice-to-Action"
         },
         {
-          "id": "inflight-weight-update",
-          "label": "Inflight Weight Update"
+          "id": "adjustable-reasoning-effort",
+          "label": "Adjustable Reasoning Effort"
+        }
+      ],
+      "longlistUpdates": [
+        {
+          "id": "real-time-audio-pipeline",
+          "label": "Real-Time Audio Pipeline",
+          "sourceAdded": true,
+          "sourceCount": 3,
+          "independentSourceCount": 2
+        }
+      ],
+      "rejections": [],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "MachinaCheck: Building a Multi-Agent CNC Manufacturability System on AMD MI300X",
+        "url": "https://huggingface.co/blog/lablab-ai-amd-developer-hackathon/machinacheck"
+      },
+      "summary": "A hackathon project write-up describing MachinaCheck, a multi-agent CNC manufacturability analysis system built on AMD MI300X hardware using Qwen 2.5 7B, LangChain, and vLLM. The system parses STEP CAD files and runs a five-stage pipeline mixing deterministic Python logic with LLM-based reasoning agents. The article is primarily a technical how-to/demo piece rather than a conceptual contribution.",
+      "longlistAdditions": [
+        {
+          "id": "hybrid-agent-pipeline",
+          "label": "Hybrid Agent Pipeline"
         },
         {
-          "id": "fp32-lm-head",
-          "label": "fp32 lm_head"
+          "id": "privacy-by-design",
+          "label": "Privacy by Design"
+        },
+        {
+          "id": "vllm",
+          "label": "vLLM"
         }
       ],
       "longlistUpdates": [],
       "rejections": [],
-      "proposalsQueued": [],
-      "mustReadFlagged": {
-        "priority": 3,
-        "reason": "A rare piece of honest RL engineering archaeology: the authors document exactly which four backend correctness issues broke their training run during a vLLM migration, and why they fixed infrastructure before touching the RL objective. Useful for anyone building or debugging online RL pipelines with shared inference engines."
-      }
+      "proposalsQueued": []
     },
     {
       "article": {
-        "title": "Google is partnering with XPRIZE and Range Media Partners on the $3.5 million Future Vision film competition.",
-        "url": "https://blog.google/innovation-and-ai/technology/ai/future-vision-film-competition-xprize/"
+        "title": "LWiAI Podcast #243 - GPT 5.5, DeepSeek V4, AI safety sabotage",
+        "url": "https://lastweekin.ai/p/lwiai-podcast-243-gpt-55-deepseek"
       },
-      "summary": "Google announces a $3.5 million film competition (Future Vision XPRIZE) in partnership with XPRIZE and Range Media Partners, inviting filmmakers to submit short films envisioning an optimistic AI-forward future, with Google providing production support via its Google Flow AI tool and 100 ZEROS initiative.",
+      "summary": "Podcast episode covering GPT-5.5 release with system card and chain-of-thought monitorability discussion, xAI's Grok Voice Think Fast launch, DeepSeek V4 open-sourcing with MoE and 1M-token context, a new long-horizon agent benchmark (Clawmark), and policy/safety research on AI sabotage, document delegation corruption, and bit-flip attacks on neural networks.",
       "longlistAdditions": [
         {
+          "id": "clawmark",
+          "label": "Clawmark"
+        },
+        {
+          "id": "ai-sabotage-eval",
+          "label": "AI Sabotage Evaluation"
+        },
+        {
+          "id": "document-delegation-corruption",
+          "label": "Document Delegation Corruption"
+        }
+      ],
+      "longlistUpdates": [
+        {
+          "id": "gpt55",
+          "label": "GPT-5.5",
+          "sourceAdded": true,
+          "sourceCount": 8,
+          "independentSourceCount": 2
+        }
+      ],
+      "rejections": [],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "2026.19: Earning & Spending",
+        "url": "https://stratechery.com/2026/earning-spending/"
+      },
+      "summary": "A Stratechery weekly digest covering Big Tech Q1 earnings, AI infrastructure spending (CapEx comparisons), Microsoft's agentic business model framing, Amazon's inference-era positioning, and an interview with Joanna Stern about her AI book. The article is a content roundup with brief summaries of underlying pieces rather than substantive analysis itself.",
+      "longlistAdditions": [],
+      "longlistUpdates": [
+        {
+          "id": "agentic-business-model",
+          "label": "Agentic Business Model",
+          "sourceAdded": true,
+          "sourceCount": 2,
+          "independentSourceCount": 1
+        }
+      ],
+      "rejections": [],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "See what happens when creative legends use AI to make ads for small businesses.",
+        "url": "https://blog.google/company-news/inside-google/company-announcements/the-small-brief/"
+      },
+      "summary": "Google blog post announcing 'The Small Brief,' an initiative pairing three advertising industry veterans with small businesses to create AI-assisted ad campaigns using Google Flow. The post is essentially a product initiative announcement with minimal substantive AI content.",
+      "longlistAdditions": [],
+      "longlistUpdates": [
+        {
           "id": "google-flow",
-          "label": "Google Flow"
+          "label": "Google Flow",
+          "sourceAdded": true,
+          "sourceCount": 2,
+          "independentSourceCount": 1
         },
         {
           "id": "ai-assisted-filmmaking",
-          "label": "AI-Assisted Filmmaking"
+          "label": "AI-Assisted Filmmaking",
+          "sourceAdded": true,
+          "sourceCount": 2,
+          "independentSourceCount": 1
         }
       ],
-      "longlistUpdates": [],
       "rejections": [],
       "proposalsQueued": []
     },
     {
       "article": {
-        "title": "Last Week in AI #340 - OpenAI vs Musk + Microsoft, DeepSeek v4, Vision Banana",
-        "url": "https://lastweekin.ai/p/last-week-in-ai-340-openai-vs-musk"
+        "title": "A quote from Andrew Quinn",
+        "url": "https://simonwillison.net/2026/May/10/andrew-quinn/#atom-everything"
       },
-      "summary": "Weekly AI roundup covering the Musk v. Altman trial (including xAI's distillation admission), OpenAI-Microsoft partnership renegotiation, DeepSeek V4 launch, and Google DeepMind's Vision Banana unified model. Rich in industry/legal drama and a few technically notable releases.",
-      "longlistAdditions": [],
-      "longlistUpdates": [],
-      "rejections": [],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "Parloa builds service agents customers want to talk to",
-        "url": "https://openai.com/index/parloa"
-      },
-      "summary": "Parloa, a Berlin-based startup, uses OpenAI models to build an AI Agent Management Platform (AMP) for enterprise voice-driven customer service. The article details their evaluation-first approach, modular sub-agent architecture, voice pipeline optimization, and LLM-as-a-judge scoring methodology.",
-      "longlistAdditions": [],
-      "longlistUpdates": [],
-      "rejections": [
-        {
-          "label": "LLM-as-a-Judge",
-          "reason": "could not generate id"
-        },
-        {
-          "label": "Agent Management Platform",
-          "reason": "could not generate id"
-        },
-        {
-          "label": "Voice Agent Pipeline",
-          "reason": "could not generate id"
-        },
-        {
-          "label": "Simulation-Based Evaluation",
-          "reason": "could not generate id"
-        }
-      ],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "An Interview with Joanna Stern About Living With AI",
-        "url": "https://stratechery.com/2026/an-interview-with-joanna-stern-about-living-with-ai/"
-      },
-      "summary": "A paywalled Stratechery interview with Joanna Stern about her book on living with AI and her new media company. The excerpt is essentially a subscription gate with no substantive article content visible — only title, metadata, and related links are accessible.",
-      "longlistAdditions": [],
-      "longlistUpdates": [],
-      "rejections": [],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "Using Claude Code: The Unreasonable Effectiveness of HTML",
-        "url": "https://simonwillison.net/2026/May/8/unreasonable-effectiveness-of-html/#atom-everything"
-      },
-      "summary": "Simon Willison links to and reflects on a piece by Thariq Shihipar (Claude Code team at Anthropic) advocating for HTML as a richer output format over Markdown when prompting Claude, with examples of interactive, annotated HTML artifacts generated from prompts. Willison also tries the approach with GPT-5.5 on a Linux exploit explanation.",
+      "summary": "A short quotation post from Simon Willison's blog, citing Andrew Quinn on the philosophy of learning by doing — specifically the 'wheel reinvention' heuristic for reaching genuine expertise. No AI-specific technical content; the excerpt touches on programming epistemology and learning strategies. No new or longlist terms materially used.",
       "longlistAdditions": [],
       "longlistUpdates": [],
       "rejections": [],
@@ -163,54 +194,54 @@
   ],
   "definitionReviews": [
     {
-      "id": "llama",
-      "status": "keep",
-      "reason": "No source material addresses Llama or Meta's open-weight model releases. Definition remains accurate and unsupported for revision."
-    },
-    {
-      "id": "long-horizon-autonomy",
-      "status": "keep",
-      "reason": "No source directly addresses long-horizon autonomy as a concept. Definition is sound and unchanged."
-    },
-    {
-      "id": "loop",
-      "status": "keep",
-      "reason": "No source material updates or contradicts the observe-think-act loop definition."
-    },
-    {
-      "id": "lost-in-the-middle",
-      "status": "keep",
-      "reason": "No source material references or updates the lost-in-the-middle phenomenon or the Liu et al. findings."
-    },
-    {
-      "id": "manus",
-      "status": "keep",
-      "reason": "No source material references Manus or updates its description."
-    },
-    {
-      "id": "mcp",
-      "status": "keep",
-      "reason": "No source material addresses MCP or the Model Context Protocol."
-    },
-    {
-      "id": "memory",
-      "status": "keep",
-      "reason": "No source material updates the definition of AI memory."
-    },
-    {
-      "id": "memory-consolidation",
-      "status": "keep",
-      "reason": "No source material addresses memory consolidation in AI agents."
-    },
-    {
-      "id": "meta-co",
-      "status": "keep",
-      "reason": "No source material updates Meta's open-weight strategy or Llama releases."
-    },
-    {
       "id": "metacognition",
       "status": "keep",
-      "reason": "No source material addresses metacognition as defined here."
+      "reason": "No source material touches on metacognition. Definition stands as written."
+    },
+    {
+      "id": "microsoft-co",
+      "status": "keep",
+      "reason": "The podcast briefly mentions a 'revamped OpenAI–Microsoft agreement' but provides no detail sufficient to justify updating the definition. Core description of Microsoft as enterprise AI distribution layer, Azure AI, GitHub Copilot, and Microsoft 365 integration remains accurate."
+    },
+    {
+      "id": "mistral",
+      "status": "keep",
+      "reason": "No source material references Mistral or its models. Definition stands."
+    },
+    {
+      "id": "mistral-co",
+      "status": "keep",
+      "reason": "No source material references Mistral AI. Definition stands."
+    },
+    {
+      "id": "mixture-of-experts",
+      "status": "keep",
+      "reason": "DeepSeek V4 release with MoE scaling is briefly mentioned in the podcast excerpt, corroborating the existing definition. No new information that would require a change."
+    },
+    {
+      "id": "model-concept",
+      "status": "keep",
+      "reason": "No source material challenges or materially adds to this definition."
+    },
+    {
+      "id": "moltbook",
+      "status": "keep",
+      "reason": "No source material references Moltbook or the OpenClaw ecosystem."
+    },
+    {
+      "id": "multi-agent",
+      "status": "keep",
+      "reason": "The MachinaCheck article illustrates multi-agent design with specialised agents (parser, classifier, matcher, decision agent, report generator), consistent with the existing definition. No update needed."
+    },
+    {
+      "id": "multi-agent-orchestration",
+      "status": "keep",
+      "reason": "MachinaCheck's architecture corroborates the pattern described, but adds nothing that would require revising the definition."
+    },
+    {
+      "id": "multimodal",
+      "status": "keep",
+      "reason": "No source material challenges this definition. Voice/audio capabilities mentioned in OpenAI's realtime models article are consistent with the existing multimodal framing but do not require a rewrite."
     }
   ],
   "notes": []

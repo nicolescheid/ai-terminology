@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-05-09T19:11:42.616Z",
-    "pendingCount": 0,
+    "generatedAt": "2026-05-10T19:04:00.858Z",
+    "pendingCount": 1,
     "appliedCount": 12,
     "rejectedCount": 1,
     "note": "Lexi proposals queue. Actions gated as PROPOSE land here as status: 'pending'. Edit a proposal's status to 'approved' or 'rejected' and run the apply step (TBD) to commit."
@@ -639,6 +639,57 @@
       "rejectedAt": "2026-05-09T19:10:55.244Z",
       "rejectedBy": "nicole",
       "rejectionReason": "Lexicographic judgment by Nicole 2026-05-10: more description than term — \"Real-Time Audio Pipeline\" reads as descriptive prose for the architecture inside Voice AI, not as a coined label the field has adopted as its own concept. Voice AI captures the same surface adequately."
+    },
+    {
+      "id": "b5ab33eb2b0dbd9a",
+      "action": "promote_to_graph",
+      "gate": "propose",
+      "proposedAt": "2026-05-10T19:04:00.858Z",
+      "status": "pending",
+      "source": "promote-eligibility-scan",
+      "target": {
+        "kind": "longlist_entry",
+        "id": "gpt55"
+      },
+      "payload": {
+        "graphNode": {
+          "id": "gpt55",
+          "label": "GPT-5.5",
+          "clusters": [
+            "models",
+            "companies"
+          ],
+          "sz": 14,
+          "def": "A frontier language model released by OpenAI, successor in the GPT-5 family following GPT-5.4.",
+          "rels": [
+            "openai-co",
+            "frontier-model",
+            "proprietary-model",
+            "gpt54"
+          ],
+          "refs": [
+            {
+              "n": 1,
+              "src": "OpenAI News, Thu, 23 Apr 2026 11:00:00 GMT",
+              "q": "Introducing GPT-5.5 OpenAI News"
+            },
+            {
+              "n": 2,
+              "src": "OpenAI News, Thu, 23 Apr 2026 11:00:00 GMT",
+              "q": "GPT-5.5 System Card OpenAI News"
+            },
+            {
+              "n": 3,
+              "src": "OpenAI News, Tue, 28 Apr 2026 00:00:00 GMT",
+              "q": "OpenAI models, Codex, and Managed Agents come to AWS OpenAI News"
+            }
+          ],
+          "fullName": "GPT-5.5 (OpenAI)",
+          "nodeType": "product"
+        }
+      },
+      "reason": "8 sources, 2 independent (openai.com + lastweekin.ai), 13d on longlist.",
+      "runId": "ff116973-9272-442b-929d-21bca2f6d67e"
     }
   ]
 }

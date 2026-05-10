@@ -1,6 +1,6 @@
 {
-  "lastRunAt": "2026-05-09T19:00:00.611Z",
-  "reviewCursor": 120,
+  "lastRunAt": "2026-05-10T19:02:19.492Z",
+  "reviewCursor": 130,
   "seenArticles": {
     "93a049d060bc295b": {
       "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/tpus-8t-8i-cloud-next/",
@@ -355,6 +355,42 @@
       "title": "Using Claude Code: The Unreasonable Effectiveness of HTML",
       "publishedAt": "2026-05-08T21:00:11+00:00",
       "seenAt": "2026-05-09T19:00:00.611Z"
+    },
+    "4ba89a634a8ba847": {
+      "url": "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api",
+      "title": "Advancing voice intelligence with new models in the API",
+      "publishedAt": "Thu, 07 May 2026 10:00:00 GMT",
+      "seenAt": "2026-05-10T19:02:19.492Z"
+    },
+    "116105217784c106": {
+      "url": "https://huggingface.co/blog/lablab-ai-amd-developer-hackathon/machinacheck",
+      "title": "MachinaCheck: Building a Multi-Agent CNC Manufacturability System on AMD MI300X",
+      "publishedAt": "Sun, 10 May 2026 18:44:11 GMT",
+      "seenAt": "2026-05-10T19:02:19.492Z"
+    },
+    "29ffe93c8a209fa3": {
+      "url": "https://lastweekin.ai/p/lwiai-podcast-243-gpt-55-deepseek",
+      "title": "LWiAI Podcast #243 - GPT 5.5, DeepSeek V4, AI safety sabotage",
+      "publishedAt": "Mon, 04 May 2026 07:54:06 GMT",
+      "seenAt": "2026-05-10T19:02:19.492Z"
+    },
+    "29626376f64045f9": {
+      "url": "https://stratechery.com/2026/earning-spending/",
+      "title": "2026.19: Earning & Spending",
+      "publishedAt": "Fri, 08 May 2026 17:00:00 +0000",
+      "seenAt": "2026-05-10T19:02:19.492Z"
+    },
+    "68512a3cbeda65ed": {
+      "url": "https://blog.google/company-news/inside-google/company-announcements/the-small-brief/",
+      "title": "See what happens when creative legends use AI to make ads for small businesses.",
+      "publishedAt": "Fri, 08 May 2026 15:00:00 +0000",
+      "seenAt": "2026-05-10T19:02:19.492Z"
+    },
+    "95424f2dd1206188": {
+      "url": "https://simonwillison.net/2026/May/10/andrew-quinn/#atom-everything",
+      "title": "A quote from Andrew Quinn",
+      "publishedAt": "2026-05-10T14:59:17+00:00",
+      "seenAt": "2026-05-10T19:02:19.492Z"
     }
   },
   "nodeReviews": {
@@ -939,9 +975,54 @@
       "reason": "No source material updates Meta's open-weight strategy or Llama releases."
     },
     "metacognition": {
-      "lastReviewedAt": "2026-05-09T19:00:00.611Z",
+      "lastReviewedAt": "2026-05-10T19:02:19.492Z",
       "status": "keep",
-      "reason": "No source material addresses metacognition as defined here."
+      "reason": "No source material touches on metacognition. Definition stands as written."
+    },
+    "microsoft-co": {
+      "lastReviewedAt": "2026-05-10T19:02:19.492Z",
+      "status": "keep",
+      "reason": "The podcast briefly mentions a 'revamped OpenAI–Microsoft agreement' but provides no detail sufficient to justify updating the definition. Core description of Microsoft as enterprise AI distribution layer, Azure AI, GitHub Copilot, and Microsoft 365 integration remains accurate."
+    },
+    "mistral": {
+      "lastReviewedAt": "2026-05-10T19:02:19.492Z",
+      "status": "keep",
+      "reason": "No source material references Mistral or its models. Definition stands."
+    },
+    "mistral-co": {
+      "lastReviewedAt": "2026-05-10T19:02:19.492Z",
+      "status": "keep",
+      "reason": "No source material references Mistral AI. Definition stands."
+    },
+    "mixture-of-experts": {
+      "lastReviewedAt": "2026-05-10T19:02:19.492Z",
+      "status": "keep",
+      "reason": "DeepSeek V4 release with MoE scaling is briefly mentioned in the podcast excerpt, corroborating the existing definition. No new information that would require a change."
+    },
+    "model-concept": {
+      "lastReviewedAt": "2026-05-10T19:02:19.492Z",
+      "status": "keep",
+      "reason": "No source material challenges or materially adds to this definition."
+    },
+    "moltbook": {
+      "lastReviewedAt": "2026-05-10T19:02:19.492Z",
+      "status": "keep",
+      "reason": "No source material references Moltbook or the OpenClaw ecosystem."
+    },
+    "multi-agent": {
+      "lastReviewedAt": "2026-05-10T19:02:19.492Z",
+      "status": "keep",
+      "reason": "The MachinaCheck article illustrates multi-agent design with specialised agents (parser, classifier, matcher, decision agent, report generator), consistent with the existing definition. No update needed."
+    },
+    "multi-agent-orchestration": {
+      "lastReviewedAt": "2026-05-10T19:02:19.492Z",
+      "status": "keep",
+      "reason": "MachinaCheck's architecture corroborates the pattern described, but adds nothing that would require revising the definition."
+    },
+    "multimodal": {
+      "lastReviewedAt": "2026-05-10T19:02:19.492Z",
+      "status": "keep",
+      "reason": "No source material challenges this definition. Voice/audio capabilities mentioned in OpenAI's realtime models article are consistent with the existing multimodal framing but do not require a rewrite."
     }
   }
 }

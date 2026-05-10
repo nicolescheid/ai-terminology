@@ -1,39 +1,39 @@
 {
-  "generatedAt": "2026-05-09T19:01:24.143Z",
+  "generatedAt": "2026-05-10T19:04:01.249Z",
   "firstRunAt": "2026-04-27T01:07:31.335Z",
   "phase": 1,
   "headline": {
-    "articlesRead": 59,
-    "daysRunning": 13,
-    "longlistSize": 52,
-    "graphSize": 206
+    "articlesRead": 65,
+    "daysRunning": 14,
+    "longlistSize": 58,
+    "graphSize": 209
   },
   "thisWeek": {
     "articlesFetched": 24,
-    "longlistAdded": 30,
-    "sourcesAdded": 5,
-    "promotionsToGraph": 8,
-    "proposalsQueued": 13,
+    "longlistAdded": 39,
+    "sourcesAdded": 4,
+    "promotionsToGraph": 3,
+    "proposalsQueued": 5,
     "auditFlags": 12,
-    "notesAdded": 33
+    "notesAdded": 19
   },
   "almostThere": [
     {
-      "id": "gpt55",
-      "label": "GPT-5.5",
-      "fullName": "GPT-5.5 (OpenAI)",
+      "id": "real-time-audio-pipeline",
+      "label": "Real-Time Audio Pipeline",
+      "fullName": null,
       "clusters": [
-        "models",
-        "companies"
+        "technical"
       ],
-      "sourceCount": 7,
-      "independentSources": 1,
-      "daysOnLonglist": 12,
+      "sourceCount": 3,
+      "independentSources": 2,
+      "daysOnLonglist": 5,
       "domains": [
-        "openai.com"
+        "openai.com",
+        "simonwillison.net"
       ],
-      "gapCount": 1,
-      "gap": "needs 1 more independent source"
+      "gapCount": 0,
+      "gap": "meets credibility bar"
     },
     {
       "id": "system-card",
@@ -45,7 +45,7 @@
       ],
       "sourceCount": 4,
       "independentSources": 1,
-      "daysOnLonglist": 12,
+      "daysOnLonglist": 13,
       "domains": [
         "openai.com"
       ],
@@ -62,7 +62,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 8,
+      "daysOnLonglist": 9,
       "domains": [
         "stratechery.com"
       ],
@@ -79,7 +79,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 8,
+      "daysOnLonglist": 9,
       "domains": [
         "stratechery.com"
       ],
@@ -96,12 +96,63 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 8,
+      "daysOnLonglist": 9,
       "domains": [
         "normaltech.ai"
       ],
       "gapCount": 1,
       "gap": "needs 1 more independent source"
+    },
+    {
+      "id": "agentic-business-model",
+      "label": "Agentic Business Model",
+      "fullName": null,
+      "clusters": [
+        "business",
+        "agentic"
+      ],
+      "sourceCount": 2,
+      "independentSources": 1,
+      "daysOnLonglist": 1,
+      "domains": [
+        "stratechery.com"
+      ],
+      "gapCount": 2,
+      "gap": "needs 1 more independent source; 2 more days on longlist"
+    },
+    {
+      "id": "google-flow",
+      "label": "Google Flow",
+      "fullName": "Google Flow (AI Filmmaking Tool)",
+      "clusters": [
+        "tools",
+        "companies"
+      ],
+      "sourceCount": 2,
+      "independentSources": 1,
+      "daysOnLonglist": 1,
+      "domains": [
+        "blog.google"
+      ],
+      "gapCount": 2,
+      "gap": "needs 1 more independent source; 2 more days on longlist"
+    },
+    {
+      "id": "ai-assisted-filmmaking",
+      "label": "AI-Assisted Filmmaking",
+      "fullName": null,
+      "clusters": [
+        "tools",
+        "human"
+      ],
+      "sourceCount": 2,
+      "independentSources": 1,
+      "daysOnLonglist": 1,
+      "domains": [
+        "blog.google"
+      ],
+      "gapCount": 2,
+      "gap": "needs 1 more independent source; 2 more days on longlist"
     },
     {
       "id": "ai-training-chip",
@@ -113,7 +164,7 @@
       ],
       "sourceCount": 1,
       "independentSources": 1,
-      "daysOnLonglist": 12,
+      "daysOnLonglist": 13,
       "domains": [
         "blog.google"
       ],
@@ -131,61 +182,7 @@
       ],
       "sourceCount": 1,
       "independentSources": 1,
-      "daysOnLonglist": 12,
-      "domains": [
-        "anthropic.com"
-      ],
-      "gapCount": 2,
-      "gap": "needs 1 more source; needs 1 more independent source"
-    },
-    {
-      "id": "cyber-verification-program",
-      "label": "Cyber Verification Program",
-      "fullName": "Cyber Verification Program (Anthropic)",
-      "clusters": [
-        "security",
-        "safety",
-        "landscape"
-      ],
-      "sourceCount": 1,
-      "independentSources": 1,
-      "daysOnLonglist": 12,
-      "domains": [
-        "anthropic.com"
-      ],
-      "gapCount": 2,
-      "gap": "needs 1 more source; needs 1 more independent source"
-    },
-    {
-      "id": "differential-capability-reduction",
-      "label": "Differential Capability Reduction",
-      "fullName": null,
-      "clusters": [
-        "safety",
-        "technical",
-        "models"
-      ],
-      "sourceCount": 1,
-      "independentSources": 1,
-      "daysOnLonglist": 12,
-      "domains": [
-        "anthropic.com"
-      ],
-      "gapCount": 2,
-      "gap": "needs 1 more source; needs 1 more independent source"
-    },
-    {
-      "id": "design-system-integration",
-      "label": "Design System Integration",
-      "fullName": "Design System Integration (AI-native)",
-      "clusters": [
-        "work",
-        "agentic",
-        "context"
-      ],
-      "sourceCount": 1,
-      "independentSources": 1,
-      "daysOnLonglist": 12,
+      "daysOnLonglist": 13,
       "domains": [
         "anthropic.com"
       ],
@@ -197,11 +194,11 @@
     "byDomain": [
       {
         "domain": "openai.com",
-        "count": 21
+        "count": 22
       },
       {
         "domain": "blog.google",
-        "count": 9
+        "count": 10
       },
       {
         "domain": "anthropic.com",
@@ -209,19 +206,19 @@
       },
       {
         "domain": "stratechery.com",
-        "count": 6
+        "count": 7
       },
       {
         "domain": "simonwillison.net",
-        "count": 6
+        "count": 7
       },
       {
         "domain": "lastweekin.ai",
-        "count": 4
+        "count": 5
       },
       {
         "domain": "huggingface.co",
-        "count": 3
+        "count": 4
       },
       {
         "domain": "normaltech.ai",
@@ -359,40 +356,34 @@
     ],
     "distribution": [
       {
+        "id": "agentic",
+        "label": "Agentic Systems",
+        "hex": "#FF9040",
+        "count": 20
+      },
+      {
         "id": "technical",
         "label": "Technical",
         "hex": "#D0D040",
-        "count": 17
+        "count": 19
       },
       {
         "id": "models",
         "label": "Models",
         "hex": "#FFB060",
-        "count": 15
-      },
-      {
-        "id": "agentic",
-        "label": "Agentic Systems",
-        "hex": "#FF9040",
-        "count": 14
-      },
-      {
-        "id": "safety",
-        "label": "Safety",
-        "hex": "#FF6090",
-        "count": 13
+        "count": 16
       },
       {
         "id": "tools",
         "label": "Tools & Platforms",
         "hex": "#70C8F8",
-        "count": 13
+        "count": 15
       },
       {
-        "id": "companies",
-        "label": "Companies",
-        "hex": "#9090A8",
-        "count": 7
+        "id": "safety",
+        "label": "Safety",
+        "hex": "#FF6090",
+        "count": 14
       },
       {
         "id": "security",
@@ -401,15 +392,21 @@
         "count": 7
       },
       {
-        "id": "landscape",
-        "label": "Model Landscape",
-        "hex": "#D0A050",
-        "count": 6
-      },
-      {
         "id": "business",
         "label": "Business Reality",
         "hex": "#48C888",
+        "count": 7
+      },
+      {
+        "id": "companies",
+        "label": "Companies",
+        "hex": "#9090A8",
+        "count": 6
+      },
+      {
+        "id": "landscape",
+        "label": "Model Landscape",
+        "hex": "#D0A050",
         "count": 6
       },
       {
@@ -451,20 +448,20 @@
     ]
   },
   "velocity": {
-    "humanGated": 8,
+    "humanGated": 12,
     "autonomous": 0,
     "note": "All graph promotions and substantive edits are currently human-gated. Lexi proposes; Nicole approves."
   },
   "proposalsByStatus": {
-    "pending": 5,
+    "pending": 1,
     "approved": 0,
-    "applied": 8,
-    "rejected": 0
+    "applied": 12,
+    "rejected": 1
   },
   "decisionsByCluster": {
     "technical": {
-      "approved": 5,
-      "rejected": 0
+      "approved": 7,
+      "rejected": 1
     },
     "agentic": {
       "approved": 7,
@@ -475,7 +472,7 @@
       "rejected": 0
     },
     "tools": {
-      "approved": 2,
+      "approved": 3,
       "rejected": 0
     },
     "work": {
@@ -483,6 +480,18 @@
       "rejected": 0
     },
     "lifecycle": {
+      "approved": 1,
+      "rejected": 0
+    },
+    "safety": {
+      "approved": 1,
+      "rejected": 0
+    },
+    "companies": {
+      "approved": 1,
+      "rejected": 0
+    },
+    "models": {
       "approved": 1,
       "rejected": 0
     }

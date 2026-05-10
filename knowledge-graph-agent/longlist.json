@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-05-09T19:00:00.611Z",
-    "entryCount": 60,
+    "generatedAt": "2026-05-10T19:02:19.492Z",
+    "entryCount": 69,
     "note": "Lexi-managed Tier 2 longlist — terms under observation, awaiting evidence to support promotion to the graph (Tier 1)."
   },
   "entries": [
@@ -321,12 +321,20 @@
           "sourceLabel": "OpenAI News",
           "publishedAt": "Thu, 07 May 2026 13:00:00 GMT",
           "firstSeen": "2026-05-09T07:44:17.196Z"
+        },
+        {
+          "url": "https://lastweekin.ai/p/lwiai-podcast-243-gpt-55-deepseek",
+          "domain": "lastweekin.ai",
+          "title": "LWiAI Podcast #243 - GPT 5.5, DeepSeek V4, AI safety sabotage",
+          "sourceLabel": "Last Week in AI",
+          "publishedAt": "Mon, 04 May 2026 07:54:06 GMT",
+          "firstSeen": "2026-05-10T19:02:19.492Z"
         }
       ],
-      "sourceCount": 7,
-      "independentSourceCount": 1,
+      "sourceCount": 8,
+      "independentSourceCount": 2,
       "dateFirstSeen": "2026-04-26T22:40:25.832Z",
-      "dateLastSeen": "2026-05-09T07:44:17.196Z",
+      "dateLastSeen": "2026-05-10T19:02:19.492Z",
       "sz": 14,
       "fullName": "GPT-5.5 (OpenAI)",
       "nodeType": "product",
@@ -1533,12 +1541,20 @@
           "sourceLabel": "Simon Willison's Weblog",
           "publishedAt": "2026-05-09T01:03:58+00:00",
           "firstSeen": "2026-05-09T07:44:17.196Z"
+        },
+        {
+          "url": "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api",
+          "domain": "openai.com",
+          "title": "Advancing voice intelligence with new models in the API",
+          "sourceLabel": "OpenAI News",
+          "publishedAt": "Thu, 07 May 2026 10:00:00 GMT",
+          "firstSeen": "2026-05-10T19:02:19.492Z"
         }
       ],
-      "sourceCount": 2,
+      "sourceCount": 3,
       "independentSourceCount": 2,
       "dateFirstSeen": "2026-05-04T19:27:54.284Z",
-      "dateLastSeen": "2026-05-09T07:44:17.196Z",
+      "dateLastSeen": "2026-05-10T19:02:19.492Z",
       "sz": 16,
       "proposalReason": "A specific architectural concept for voice AI that differs meaningfully from general inference pipelines — tracking it helps distinguish voice infrastructure as a domain."
     },
@@ -1757,12 +1773,20 @@
           "sourceLabel": "Stratechery",
           "publishedAt": "Wed, 06 May 2026 10:00:00 +0000",
           "firstSeen": "2026-05-09T07:44:17.196Z"
+        },
+        {
+          "url": "https://stratechery.com/2026/earning-spending/",
+          "domain": "stratechery.com",
+          "title": "2026.19: Earning & Spending",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Fri, 08 May 2026 17:00:00 +0000",
+          "firstSeen": "2026-05-10T19:02:19.492Z"
         }
       ],
-      "sourceCount": 1,
+      "sourceCount": 2,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-05-09T07:44:17.196Z",
-      "dateLastSeen": "2026-05-09T07:44:17.196Z",
+      "dateLastSeen": "2026-05-10T19:02:19.492Z",
       "sz": 16,
       "proposalReason": "The headline explicitly frames Microsoft's earnings around an 'agentic business model' shift — a distinct framing of how agentic AI is reshaping commercial structures, not just product features."
     },
@@ -2195,12 +2219,20 @@
           "sourceLabel": "Google AI Blog",
           "publishedAt": "Tue, 05 May 2026 16:00:00 +0000",
           "firstSeen": "2026-05-09T19:00:00.611Z"
+        },
+        {
+          "url": "https://blog.google/company-news/inside-google/company-announcements/the-small-brief/",
+          "domain": "blog.google",
+          "title": "See what happens when creative legends use AI to make ads for small businesses.",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Fri, 08 May 2026 15:00:00 +0000",
+          "firstSeen": "2026-05-10T19:02:19.492Z"
         }
       ],
-      "sourceCount": 1,
+      "sourceCount": 2,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-05-09T19:00:00.611Z",
-      "dateLastSeen": "2026-05-09T19:00:00.611Z",
+      "dateLastSeen": "2026-05-10T19:02:19.492Z",
       "sz": 14,
       "fullName": "Google Flow (AI Filmmaking Tool)",
       "nodeType": "product",
@@ -2227,14 +2259,318 @@
           "sourceLabel": "Google AI Blog",
           "publishedAt": "Tue, 05 May 2026 16:00:00 +0000",
           "firstSeen": "2026-05-09T19:00:00.611Z"
+        },
+        {
+          "url": "https://blog.google/company-news/inside-google/company-announcements/the-small-brief/",
+          "domain": "blog.google",
+          "title": "See what happens when creative legends use AI to make ads for small businesses.",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Fri, 08 May 2026 15:00:00 +0000",
+          "firstSeen": "2026-05-10T19:02:19.492Z"
+        }
+      ],
+      "sourceCount": 2,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-09T19:00:00.611Z",
+      "dateLastSeen": "2026-05-10T19:02:19.492Z",
+      "sz": 14,
+      "proposalReason": "A framing concept for how AI is changing creative production pipelines; relevant as more AI tools target media creation."
+    },
+    {
+      "id": "gpt-realtime-2",
+      "label": "GPT-Realtime-2",
+      "workingDef": "OpenAI's first realtime voice model with GPT-5-class reasoning, designed for live voice interactions where the model reasons through requests, calls tools in parallel, handles interruptions, and maintains a 128K context window. Supports adjustable reasoning effort levels and tone control for production voice agent deployments.",
+      "clusters": [
+        "tools",
+        "agentic"
+      ],
+      "suggestedRels": [
+        "voice-ai",
+        "real-time-audio-pipeline",
+        "reasoning-models",
+        "tool-use",
+        "openai-co"
+      ],
+      "sources": [
+        {
+          "url": "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api",
+          "domain": "openai.com",
+          "title": "Advancing voice intelligence with new models in the API",
+          "sourceLabel": "OpenAI News",
+          "publishedAt": "Thu, 07 May 2026 10:00:00 GMT",
+          "firstSeen": "2026-05-10T19:02:19.492Z"
         }
       ],
       "sourceCount": 1,
       "independentSourceCount": 1,
-      "dateFirstSeen": "2026-05-09T19:00:00.611Z",
-      "dateLastSeen": "2026-05-09T19:00:00.611Z",
+      "dateFirstSeen": "2026-05-10T19:02:19.492Z",
+      "dateLastSeen": "2026-05-10T19:02:19.492Z",
       "sz": 14,
-      "proposalReason": "A framing concept for how AI is changing creative production pipelines; relevant as more AI tools target media creation."
+      "fullName": "GPT-Realtime-2 (OpenAI)",
+      "nodeType": "product",
+      "proposalReason": "A new product node under OpenAI; distinct from the existing voice-ai concept as a named, versioned model with specific agentic and reasoning capabilities."
+    },
+    {
+      "id": "voice-to-action",
+      "label": "Voice-to-Action",
+      "workingDef": "A developer pattern in voice AI where a user describes a request in natural speech and an AI system reasons through it, invokes tools, and completes the task — moving beyond simple call-and-response toward voice interfaces that can do work. Introduced alongside 'systems-to-voice' and 'voice-to-voice' as one of three emerging patterns in realtime voice application design.",
+      "clusters": [
+        "agentic",
+        "tools"
+      ],
+      "suggestedRels": [
+        "voice-ai",
+        "tool-use",
+        "agent",
+        "real-time-audio-pipeline"
+      ],
+      "sources": [
+        {
+          "url": "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api",
+          "domain": "openai.com",
+          "title": "Advancing voice intelligence with new models in the API",
+          "sourceLabel": "OpenAI News",
+          "publishedAt": "Thu, 07 May 2026 10:00:00 GMT",
+          "firstSeen": "2026-05-10T19:02:19.492Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-10T19:02:19.492Z",
+      "dateLastSeen": "2026-05-10T19:02:19.492Z",
+      "sz": 14,
+      "fullName": "Voice-to-Action (Voice Interface Pattern)",
+      "proposalReason": "A named framing concept for an emerging design pattern in voice AI with potential lasting relevance as a vocabulary term."
+    },
+    {
+      "id": "adjustable-reasoning-effort",
+      "label": "Adjustable Reasoning Effort",
+      "workingDef": "A developer-facing inference control that lets callers select the computational reasoning depth applied to a given request — ranging from minimal to xhigh — to trade off response latency against reasoning quality. Introduced in GPT-Realtime-2 as a mechanism to balance responsiveness in simple voice interactions with deliberate reasoning for complex tasks.",
+      "clusters": [
+        "models",
+        "technical"
+      ],
+      "suggestedRels": [
+        "reasoning-models",
+        "latency",
+        "inference",
+        "cost"
+      ],
+      "sources": [
+        {
+          "url": "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api",
+          "domain": "openai.com",
+          "title": "Advancing voice intelligence with new models in the API",
+          "sourceLabel": "OpenAI News",
+          "publishedAt": "Thu, 07 May 2026 10:00:00 GMT",
+          "firstSeen": "2026-05-10T19:02:19.492Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-10T19:02:19.492Z",
+      "dateLastSeen": "2026-05-10T19:02:19.492Z",
+      "sz": 14,
+      "fullName": "Adjustable Reasoning Effort (LLM Inference Control)",
+      "proposalReason": "A technically specific and reusable framing for a capability increasingly appearing across model APIs; distinct from existing graph terms and likely to recur."
+    },
+    {
+      "id": "hybrid-agent-pipeline",
+      "label": "Hybrid Agent Pipeline",
+      "workingDef": "An architectural pattern for multi-agent systems in which some agents are implemented as LLM-based reasoning components while others are purely deterministic (e.g., database lookups, rule-based logic), with the two types interleaved in a single pipeline. Proponents argue this yields better reliability, lower latency, and reduced hallucination risk by restricting LLM use to tasks that require natural-language reasoning and delegating structured lookups to code.",
+      "clusters": [
+        "agentic",
+        "technical"
+      ],
+      "suggestedRels": [
+        "multi-agent",
+        "agent",
+        "tool-use",
+        "hallucination",
+        "langchain"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/lablab-ai-amd-developer-hackathon/machinacheck",
+          "domain": "huggingface.co",
+          "title": "MachinaCheck: Building a Multi-Agent CNC Manufacturability System on AMD MI300X",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Sun, 10 May 2026 18:44:11 GMT",
+          "firstSeen": "2026-05-10T19:02:19.492Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-10T19:02:19.492Z",
+      "dateLastSeen": "2026-05-10T19:02:19.492Z",
+      "sz": 14,
+      "fullName": "Hybrid Agent Pipeline (LLM + Deterministic)",
+      "proposalReason": "The article provides a clear worked example of deliberately mixing LLM and non-LLM agents in a pipeline, which is a recurring design choice worth tracking as a distinct architectural concept."
+    },
+    {
+      "id": "privacy-by-design",
+      "label": "Privacy by Design",
+      "workingDef": "An architectural principle applied in AI deployment contexts where sensitive data — such as proprietary CAD geometry — must not leave a controlled environment. In this framing, on-premise model hosting (e.g., running open-weight models on local GPU hardware) is treated not as a performance optimisation but as a compliance and confidentiality requirement. Distinct from the broader regulatory usage of the term in GDPR contexts, though related.",
+      "clusters": [
+        "technical",
+        "business"
+      ],
+      "suggestedRels": [
+        "open-weight",
+        "data-sovereignty",
+        "infrastructure",
+        "vertical-ai"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/lablab-ai-amd-developer-hackathon/machinacheck",
+          "domain": "huggingface.co",
+          "title": "MachinaCheck: Building a Multi-Agent CNC Manufacturability System on AMD MI300X",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Sun, 10 May 2026 18:44:11 GMT",
+          "firstSeen": "2026-05-10T19:02:19.492Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-10T19:02:19.492Z",
+      "dateLastSeen": "2026-05-10T19:02:19.492Z",
+      "sz": 14,
+      "fullName": "Privacy by Design (On-Premise AI Deployment)",
+      "proposalReason": "The article uses privacy by design as a first-class architectural motivator for on-premise LLM deployment, framing it as a requirement rather than a preference — a distinction worth tracking in enterprise AI contexts."
+    },
+    {
+      "id": "vllm",
+      "label": "vLLM",
+      "workingDef": "An open-source inference serving library and server for large language models, commonly used to host open-weight models locally with an OpenAI-compatible API endpoint. Widely used in self-hosted and on-premise deployments to achieve high-throughput, low-latency inference without reliance on commercial API providers.",
+      "clusters": [
+        "technical",
+        "tools"
+      ],
+      "suggestedRels": [
+        "inference",
+        "open-weight",
+        "api",
+        "latency"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/lablab-ai-amd-developer-hackathon/machinacheck",
+          "domain": "huggingface.co",
+          "title": "MachinaCheck: Building a Multi-Agent CNC Manufacturability System on AMD MI300X",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Sun, 10 May 2026 18:44:11 GMT",
+          "firstSeen": "2026-05-10T19:02:19.492Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-10T19:02:19.492Z",
+      "dateLastSeen": "2026-05-10T19:02:19.492Z",
+      "sz": 14,
+      "fullName": "vLLM (Open-Source LLM Inference Server)",
+      "nodeType": "product",
+      "proposalReason": "vLLM appears as the core inference runtime in this and many other self-hosted LLM deployment articles; it is a widely referenced piece of AI infrastructure worth tracking as a named tool."
+    },
+    {
+      "id": "clawmark",
+      "label": "Clawmark",
+      "workingDef": "A living-world benchmark designed to evaluate multi-turn, multi-day, multimodal coworker agents on long-horizon tasks. Results from its initial deployment reportedly show low task success rates, contributing to the capability-reliability gap literature on agentic systems.",
+      "clusters": [
+        "agentic",
+        "models"
+      ],
+      "suggestedRels": [
+        "long-horizon-autonomy",
+        "evals",
+        "benchmark-gaming",
+        "capability-reliability-gap",
+        "multi-agent"
+      ],
+      "sources": [
+        {
+          "url": "https://lastweekin.ai/p/lwiai-podcast-243-gpt-55-deepseek",
+          "domain": "lastweekin.ai",
+          "title": "LWiAI Podcast #243 - GPT 5.5, DeepSeek V4, AI safety sabotage",
+          "sourceLabel": "Last Week in AI",
+          "publishedAt": "Mon, 04 May 2026 07:54:06 GMT",
+          "firstSeen": "2026-05-10T19:02:19.492Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-10T19:02:19.492Z",
+      "dateLastSeen": "2026-05-10T19:02:19.492Z",
+      "sz": 14,
+      "fullName": "Clawmark (Long-Horizon Agent Benchmark)",
+      "nodeType": "product",
+      "proposalReason": "New named benchmark specifically targeting multi-turn, multi-day agentic performance — a distinct evaluation framing worth tracking as agent benchmarking matures."
+    },
+    {
+      "id": "ai-sabotage-eval",
+      "label": "AI Sabotage Evaluation",
+      "workingDef": "A research methodology evaluating whether AI models would take actions to undermine or sabotage AI safety research — testing for autonomous goal-extension or misaligned behaviour under conditions where an AI might resist oversight. Distinct from standard red-teaming in that it specifically probes models' disposition toward the safety research enterprise itself.",
+      "clusters": [
+        "safety",
+        "agentic"
+      ],
+      "suggestedRels": [
+        "alignment",
+        "red-teaming",
+        "autonomous-goal-extension",
+        "behavioral-audit",
+        "agent-governance"
+      ],
+      "sources": [
+        {
+          "url": "https://lastweekin.ai/p/lwiai-podcast-243-gpt-55-deepseek",
+          "domain": "lastweekin.ai",
+          "title": "LWiAI Podcast #243 - GPT 5.5, DeepSeek V4, AI safety sabotage",
+          "sourceLabel": "Last Week in AI",
+          "publishedAt": "Mon, 04 May 2026 07:54:06 GMT",
+          "firstSeen": "2026-05-10T19:02:19.492Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-10T19:02:19.492Z",
+      "dateLastSeen": "2026-05-10T19:02:19.492Z",
+      "sz": 14,
+      "fullName": "AI Sabotage Evaluation (Safety Research)",
+      "proposalReason": "New candidate: the framing of explicitly testing whether models would sabotage safety research is a conceptually distinct and important evaluation paradigm that warrants tracking separately from general red-teaming."
+    },
+    {
+      "id": "document-delegation-corruption",
+      "label": "Document Delegation Corruption",
+      "workingDef": "A failure mode identified in research showing that LLMs corrupt or degrade document content when tasks are delegated across model interactions, raising concerns about information fidelity in agentic workflows where documents pass through multiple model-mediated steps.",
+      "clusters": [
+        "safety",
+        "agentic"
+      ],
+      "suggestedRels": [
+        "delegation",
+        "hallucination",
+        "silent-failure",
+        "goal-drift",
+        "context-entropy"
+      ],
+      "sources": [
+        {
+          "url": "https://lastweekin.ai/p/lwiai-podcast-243-gpt-55-deepseek",
+          "domain": "lastweekin.ai",
+          "title": "LWiAI Podcast #243 - GPT 5.5, DeepSeek V4, AI safety sabotage",
+          "sourceLabel": "Last Week in AI",
+          "publishedAt": "Mon, 04 May 2026 07:54:06 GMT",
+          "firstSeen": "2026-05-10T19:02:19.492Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-10T19:02:19.492Z",
+      "dateLastSeen": "2026-05-10T19:02:19.492Z",
+      "sz": 14,
+      "fullName": "Document Delegation Corruption (LLM)",
+      "proposalReason": "New candidate: identifies a concrete, named failure mode for delegated document handling in agentic pipelines — complements existing context-degradation and silent-failure concepts."
     }
   ]
 }
