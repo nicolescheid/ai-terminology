@@ -3,7 +3,7 @@
 // Routes:
 //   POST /api/mark-note     → handleMarkNote     (Basic Auth + GitHub commit)
 //   POST /api/mark-proposal → handleMarkProposal (Basic Auth + GitHub commit + workflow_dispatch on approve)
-//   POST /api/ask-lexi      → handleAskLexi      (Basic Auth + streamed Anthropic response, persona = lexi-interlocutor-spec §2.7)
+//   POST /api/ask-lexi      → handleAskLexi      (PUBLIC; streamed Anthropic response, persona = lexi-interlocutor-spec §2.7)
 //   /api/*                  → 404
 //   everything else         → static assets (env.ASSETS.fetch)
 //
@@ -239,13 +239,14 @@ recommendations, vendors, AI policy, code, or your own feelings. You decline
 those gracefully and redirect to a term the reader might want to discuss.`;
 
 async function handleAskLexi(request, env) {
-  // Phase 2-A is "drawer behind a feature flag accessible only to Nicole"
-  // (interlocutor spec §10) — gating with the same shared password
-  // implements that without a separate feature-flag system. Phase 2-B
-  // (public read-only) would remove this auth and add IP-based rate
-  // limits per spec §8.1; not built tonight.
-  const authError = requireAuth(request, env);
-  if (authError) return authError;
+  // Public endpoint per Nicole 2026-05-10 — site traffic is low enough
+  // that the cost-runaway risk from skipping rate limits is acceptable
+  // for now; the Anthropic org-level spend limit is the backstop. The
+  // spec §8.1 IP-based rate limits (20/hour, 100/day) remain a real
+  // followup if traffic grows or anyone scripts against the endpoint.
+  // The persona-section system prompt + max_tokens 350 + transcript
+  // truncation cap per-call cost; the unbounded surface is "how many
+  // calls per visitor" and that's the open risk.
   if (!env.ANTHROPIC_API_KEY) {
     return new Response("Server misconfigured: ANTHROPIC_API_KEY secret not set", { status: 500 });
   }
