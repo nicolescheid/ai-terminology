@@ -2,6 +2,13 @@
 // Floating in the bottom-right corner. Expression reflects app state.
 // Optionally calls window.claude.complete for in-character one-liners.
 //
+// Click-to-open interlocutor mode (Phase 2-A — see lexi-interlocutor-spec.md):
+// Clicking Lexi opens a lightbox where the reader can ask her about the
+// active term. Lexi switches to her teaching state in the lightbox; the
+// conversation is streamed from /api/ask-lexi (Worker proxy to Anthropic).
+// Term-anchored entry only in v1; persona-anchored + glossary-anchored
+// entries are spec'd at §3.2 but not built tonight.
+//
 // Props:
 //   state:    'idle' | 'curious' | 'excited' | 'teaching' | 'sleeping'
 //   message:  string | null  — overrides claude-generated message
@@ -9,6 +16,145 @@
 //   palette:  shared palette (for tinting cluster name in copy)
 (function () {
   const { useState, useEffect, useRef } = React;
+
+  // ─── Interlocutor mode CSS ─────────────────────────────────────────
+  // Injected once on script load. Self-contained — no external CSS file.
+  // Uses Atlas paper tones (#fbf6e8 / #2a2418) for visual cohesion with
+  // the existing speech bubble.
+  if (typeof document !== 'undefined' && !document.getElementById('lexi-interlocutor-styles')) {
+    const style = document.createElement('style');
+    style.id = 'lexi-interlocutor-styles';
+    style.textContent = `
+      .lexi-overlay {
+        position: fixed; inset: 0; z-index: 9999;
+        background: rgba(40, 30, 15, 0.55);
+        backdrop-filter: blur(3px);
+        display: flex; align-items: center; justify-content: center;
+        padding: 24px;
+        animation: lexi-fade-in 180ms ease-out;
+      }
+      @keyframes lexi-fade-in { from { opacity: 0; } to { opacity: 1; } }
+      .lexi-lightbox {
+        background: #f7f5f0;
+        border: 1px solid rgba(80,60,30,0.18);
+        border-radius: 16px;
+        box-shadow: 0 20px 60px -10px rgba(60,40,15,0.4), 0 6px 20px -4px rgba(60,40,15,0.2);
+        width: 100%; max-width: 640px; max-height: 88vh;
+        display: flex; flex-direction: column;
+        position: relative;
+        overflow: hidden;
+        animation: lexi-rise 220ms cubic-bezier(0.2, 0.8, 0.2, 1);
+      }
+      @keyframes lexi-rise {
+        from { opacity: 0; transform: translateY(16px) scale(0.98); }
+        to { opacity: 1; transform: translateY(0) scale(1); }
+      }
+      .lexi-close {
+        position: absolute; top: 12px; right: 14px; z-index: 2;
+        width: 32px; height: 32px; border-radius: 50%;
+        border: 1px solid rgba(80,60,30,0.18);
+        background: #fbf6e8; color: #5a4a2a;
+        font-size: 20px; line-height: 1; cursor: pointer;
+        display: flex; align-items: center; justify-content: center;
+        transition: all 120ms;
+        font-family: 'IBM Plex Sans', sans-serif;
+      }
+      .lexi-close:hover { background: #f0ead8; border-color: rgba(80,60,30,0.4); }
+      .lexi-stage {
+        display: flex; justify-content: center;
+        padding: 28px 24px 8px;
+        background: linear-gradient(to bottom, #fbf6e8 0%, #f7f5f0 100%);
+        border-bottom: 1px solid rgba(80,60,30,0.06);
+      }
+      .lexi-context {
+        font-family: 'IBM Plex Mono', ui-monospace, monospace;
+        font-size: 11px; letter-spacing: 0.04em;
+        color: #888; text-transform: uppercase;
+        text-align: center; padding: 10px 24px;
+        border-bottom: 1px solid rgba(80,60,30,0.06);
+        background: #fbf6e8;
+      }
+      .lexi-context strong { color: #2a2418; font-weight: 500; letter-spacing: 0; text-transform: none; font-family: 'Newsreader','Times New Roman',serif; font-size: 14px; }
+      .lexi-transcript {
+        flex: 1; overflow-y: auto;
+        padding: 18px 24px 12px;
+        display: flex; flex-direction: column; gap: 14px;
+        font-family: 'Newsreader', 'Times New Roman', serif;
+        font-size: 15px; line-height: 1.5; color: #2a2418;
+      }
+      .lexi-msg { padding: 10px 14px; border-radius: 12px; max-width: 92%; }
+      .lexi-msg-user {
+        align-self: flex-end;
+        background: #e8e3d4;
+        color: #2a2418;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 14px;
+        border: 1px solid rgba(80,60,30,0.10);
+      }
+      .lexi-msg-assistant {
+        align-self: flex-start;
+        background: transparent;
+        font-style: italic;
+        color: #2a2418;
+        padding-left: 4px;
+        max-width: 100%;
+      }
+      .lexi-cursor {
+        display: inline-block; width: 8px; height: 1em;
+        background: #5a4a2a;
+        margin-left: 2px; opacity: 0.6;
+        animation: lexi-blink 1s steps(1) infinite;
+        vertical-align: text-bottom;
+      }
+      @keyframes lexi-blink { 50% { opacity: 0; } }
+      .lexi-thinking {
+        align-self: flex-start;
+        font-family: 'IBM Plex Mono', monospace;
+        color: #888; opacity: 0.6; padding-left: 4px;
+      }
+      .lexi-error {
+        background: #f9e3e3; border: 1px solid #d09c9c;
+        color: #7a2222; padding: 10px 14px; border-radius: 8px;
+        font-size: 13px; font-family: 'IBM Plex Sans', sans-serif;
+        font-style: normal;
+      }
+      .lexi-composer {
+        display: flex; gap: 10px; padding: 14px 18px 18px;
+        border-top: 1px solid rgba(80,60,30,0.08);
+        background: #fbf6e8;
+      }
+      .lexi-composer textarea {
+        flex: 1; resize: none;
+        padding: 10px 12px; border-radius: 10px;
+        border: 1px solid rgba(80,60,30,0.20);
+        background: #fff; color: #2a2418;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 14px; line-height: 1.4;
+        outline: none;
+        transition: border-color 120ms;
+      }
+      .lexi-composer textarea:focus { border-color: #5a4a2a; }
+      .lexi-composer textarea:disabled { background: #f0ead8; cursor: wait; }
+      .lexi-composer button {
+        align-self: flex-end;
+        padding: 8px 18px; border-radius: 10px;
+        background: #2a2418; color: #fbf6e8;
+        border: 1px solid #2a2418;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 13px; letter-spacing: 0.04em;
+        cursor: pointer; transition: all 120ms;
+      }
+      .lexi-composer button:hover:not(:disabled) { background: #3a3022; }
+      .lexi-composer button:disabled { opacity: 0.4; cursor: not-allowed; }
+      .lexi-avatar-clickable { cursor: pointer; transition: transform 150ms; }
+      .lexi-avatar-clickable:hover { transform: translateY(-2px) scale(1.04); }
+      @media (max-width: 640px) {
+        .lexi-overlay { padding: 0; }
+        .lexi-lightbox { max-width: none; max-height: 100vh; height: 100vh; border-radius: 0; }
+      }
+    `;
+    document.head.appendChild(style);
+  }
 
   const SRC = {
     // WebP: ~10× smaller than source PNGs, universally supported (Chrome 2014,
@@ -106,10 +252,178 @@
     );
   }
 
+  // ─── Interlocutor lightbox ─────────────────────────────────────────
+  // Click-to-open conversation surface. Streams from /api/ask-lexi
+  // (Worker proxy to Anthropic Messages API). Term-anchored entry only
+  // for Phase 2-A; the prop activeTerm gets passed through to the Worker
+  // so Lexi can answer grounded in the entry the reader is looking at.
+  function LexiInterlocutor({ activeTerm, onClose }) {
+    const [transcript, setTranscript] = useState([]);
+    const [input, setInput] = useState('');
+    const [streaming, setStreaming] = useState(false);
+    const [partial, setPartial] = useState('');
+    const [error, setError] = useState(null);
+    const transcriptEndRef = useRef(null);
+
+    // Esc closes the lightbox.
+    useEffect(() => {
+      const handler = (e) => { if (e.key === 'Escape') onClose(); };
+      window.addEventListener('keydown', handler);
+      return () => window.removeEventListener('keydown', handler);
+    }, [onClose]);
+
+    // Auto-scroll on new content (after every render that adds text).
+    useEffect(() => {
+      transcriptEndRef.current?.scrollIntoView({ behavior: 'smooth', block: 'end' });
+    }, [transcript, partial]);
+
+    async function send(e) {
+      e?.preventDefault();
+      const text = input.trim();
+      if (!text || streaming) return;
+
+      const userMessage = { role: 'user', content: text };
+      const newTranscript = [...transcript, userMessage];
+      setTranscript(newTranscript);
+      setInput('');
+      setStreaming(true);
+      setPartial('');
+      setError(null);
+
+      try {
+        const resp = await fetch('/api/ask-lexi', {
+          method: 'POST',
+          headers: { 'content-type': 'application/json' },
+          body: JSON.stringify({
+            transcript: newTranscript,
+            term: activeTerm ? {
+              id: activeTerm.id,
+              label: activeTerm.label,
+              fullName: activeTerm.fullName,
+              def: activeTerm.def,
+              clusters: activeTerm.clusters,
+              refs: activeTerm.refs,
+            } : null,
+          }),
+        });
+
+        if (!resp.ok) {
+          if (resp.status === 401) {
+            throw new Error('Authentication required. Reload the page to re-prompt for the password.');
+          }
+          const errText = await resp.text();
+          throw new Error('HTTP ' + resp.status + ': ' + errText.slice(0, 200));
+        }
+
+        // Parse Anthropic SSE stream. The relevant events are
+        // content_block_delta with delta.type === 'text_delta'; we
+        // accumulate the token text and update `partial` so the UI
+        // renders incrementally. Other event types (message_start,
+        // content_block_start, message_stop, ping) are ignored.
+        let assembled = '';
+        const reader = resp.body.getReader();
+        const decoder = new TextDecoder();
+        let buffer = '';
+
+        while (true) {
+          const { done, value } = await reader.read();
+          if (done) break;
+          buffer += decoder.decode(value, { stream: true });
+
+          // SSE events are separated by blank lines. Each event has a
+          // `data: <json>` line. Parse out complete events; keep any
+          // trailing partial event in the buffer for the next chunk.
+          const events = buffer.split('\n\n');
+          buffer = events.pop(); // keep last (possibly incomplete)
+          for (const event of events) {
+            for (const line of event.split('\n')) {
+              if (!line.startsWith('data:')) continue;
+              const dataStr = line.slice(5).trim();
+              if (!dataStr || dataStr === '[DONE]') continue;
+              try {
+                const ev = JSON.parse(dataStr);
+                if (ev.type === 'content_block_delta' && ev.delta?.type === 'text_delta') {
+                  assembled += ev.delta.text;
+                  setPartial(assembled);
+                }
+              } catch (e) {
+                console.warn('Lexi SSE parse error:', e, dataStr);
+              }
+            }
+          }
+        }
+
+        // Stream done — commit assembled message to transcript.
+        setTranscript([...newTranscript, { role: 'assistant', content: assembled }]);
+        setPartial('');
+      } catch (err) {
+        setError(err.message);
+      } finally {
+        setStreaming(false);
+      }
+    }
+
+    return (
+      <div className="lexi-overlay" onClick={onClose}>
+        <div className="lexi-lightbox" onClick={(e) => e.stopPropagation()}>
+          <button className="lexi-close" onClick={onClose} aria-label="Close">×</button>
+          <div className="lexi-stage">
+            <LexiAvatar state="teaching" size={140} />
+          </div>
+          {activeTerm && (
+            <div className="lexi-context">
+              On <strong>{activeTerm.label}</strong>
+            </div>
+          )}
+          <div className="lexi-transcript">
+            {transcript.length === 0 && !streaming && (
+              <div style={{ color: '#888', fontStyle: 'italic', textAlign: 'center', padding: '20px 0' }}>
+                {activeTerm
+                  ? `Ask Lexi about ${activeTerm.label}.`
+                  : 'Ask Lexi about a term.'}
+              </div>
+            )}
+            {transcript.map((m, i) => (
+              <div key={i} className={'lexi-msg lexi-msg-' + m.role}>{m.content}</div>
+            ))}
+            {streaming && partial && (
+              <div className="lexi-msg lexi-msg-assistant">
+                {partial}<span className="lexi-cursor">▌</span>
+              </div>
+            )}
+            {streaming && !partial && <div className="lexi-thinking">·&nbsp;·&nbsp;·</div>}
+            {error && <div className="lexi-error">{error}</div>}
+            <div ref={transcriptEndRef} />
+          </div>
+          <form className="lexi-composer" onSubmit={send}>
+            <textarea
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' && !e.shiftKey) {
+                  e.preventDefault();
+                  send(e);
+                }
+              }}
+              placeholder={activeTerm ? 'Ask Lexi about "' + activeTerm.label + '"…' : 'Ask Lexi…'}
+              disabled={streaming}
+              rows={2}
+              autoFocus
+            />
+            <button type="submit" disabled={streaming || !input.trim()}>
+              {streaming ? '…' : 'Ask'}
+            </button>
+          </form>
+        </div>
+      </div>
+    );
+  }
+
   function Lexi({ state = 'idle', activeTerm = null, palette = null, customMessage = null, notFoundQuery = null }) {
     const [msg, setMsg] = useState(null);
     const [loading, setLoading] = useState(false);
     const [crawling, setCrawling] = useState(false);
+    const [interlocutorOpen, setInterlocutorOpen] = useState(false);
     const lastTermId = useRef(null);
     const lastNotFound = useRef(null);
 
@@ -187,20 +501,36 @@
     } : null;
 
     return (
-      <div style={{
-        position:'absolute', bottom: 24, right: 28, zIndex: 8,
-        display:'flex', alignItems:'flex-end', gap: 0,
-        flexDirection:'column',
-        pointerEvents: 'none',
-      }}>
-        <div style={{ pointerEvents:'auto', alignSelf:'flex-end',
-          marginRight: 18 /* nudge bubble left so tail points at Lexi */ }}>
-          <SpeechBubble text={msg} loading={loading} action={bubbleAction} />
+      <>
+        <div style={{
+          position:'absolute', bottom: 24, right: 28, zIndex: 8,
+          display:'flex', alignItems:'flex-end', gap: 0,
+          flexDirection:'column',
+          pointerEvents: 'none',
+        }}>
+          <div style={{ pointerEvents:'auto', alignSelf:'flex-end',
+            marginRight: 18 /* nudge bubble left so tail points at Lexi */ }}>
+            <SpeechBubble text={msg} loading={loading} action={bubbleAction} />
+          </div>
+          <div
+            className="lexi-avatar-clickable"
+            style={{ pointerEvents:'auto' }}
+            onClick={() => setInterlocutorOpen(true)}
+            title="Ask Lexi a question"
+            role="button"
+            tabIndex={0}
+            onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setInterlocutorOpen(true); } }}
+          >
+            <LexiAvatar state={state} size={size} />
+          </div>
         </div>
-        <div style={{ pointerEvents:'auto' }}>
-          <LexiAvatar state={state} size={size} />
-        </div>
-      </div>
+        {interlocutorOpen && (
+          <LexiInterlocutor
+            activeTerm={activeTerm}
+            onClose={() => setInterlocutorOpen(false)}
+          />
+        )}
+      </>
     );
   }
 

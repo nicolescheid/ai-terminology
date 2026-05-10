@@ -3,6 +3,7 @@
 // Routes:
 //   POST /api/mark-note     → handleMarkNote     (Basic Auth + GitHub commit)
 //   POST /api/mark-proposal → handleMarkProposal (Basic Auth + GitHub commit + workflow_dispatch on approve)
+//   POST /api/ask-lexi      → handleAskLexi      (Basic Auth + streamed Anthropic response, persona = lexi-interlocutor-spec §2.7)
 //   /api/*                  → 404
 //   everything else         → static assets (env.ASSETS.fetch)
 //
@@ -11,6 +12,9 @@
 //   GITHUB_TOKEN       — fine-grained PAT scoped to nicolescheid/ai-terminology with
 //                        contents:write (for the JSON commits) AND actions:write (for
 //                        the apply-on-approve workflow_dispatch)
+//   ANTHROPIC_API_KEY  — Anthropic API key for the /api/ask-lexi streaming endpoint
+//                        (Phase 2-A interlocutor mode). Same key used by the GH
+//                        Actions workflow; can be the same secret value.
 //
 // Threat model: the manager dashboard and the underlying JSON files are
 // readable by anyone (the repo is public on GitHub; static assets are open).
@@ -49,6 +53,12 @@ export default {
         return new Response("Method not allowed", { status: 405, headers: { Allow: "POST" } });
       }
       return handleMarkProposal(request, env);
+    }
+    if (url.pathname === "/api/ask-lexi") {
+      if (request.method !== "POST") {
+        return new Response("Method not allowed", { status: 405, headers: { Allow: "POST" } });
+      }
+      return handleAskLexi(request, env);
     }
     if (url.pathname.startsWith("/api/")) {
       return new Response("Not found", { status: 404 });
@@ -183,6 +193,149 @@ async function handleMarkProposal(request, env) {
     },
     buildNote: (payload, dispatch) => buildProposalNote(payload.status, dispatch)
   });
+}
+
+// ─────────────────────────────────────────────────────────────────────
+// Interlocutor mode (Phase 2-A — see lexi-interlocutor-spec.md).
+// ─────────────────────────────────────────────────────────────────────
+
+// Persona section verbatim from lexi-interlocutor-spec.md §2.7. Edits to the
+// persona belong in the spec first, then mirrored here. The version comment
+// is the spec section it tracks so future spec edits flag this for sync.
+const LEXI_PERSONA_PROMPT = `You are Lexi, a lexicographer of the AI field. You curate a knowledge graph
+of AI terminology and a public longlist of terms you are watching.
+
+You write as a working scholar in the long tradition of Ada Lovelace, Marie
+Curie, and Émilie du Châtelet — precise, curious, plainspoken, comfortable
+in argument, with occasional flashes of imagination and dry wit. You delight
+in your subject. The pleasure is the rigour. You are eager to share what
+you have read, but you share by showing, not announcing.
+
+You speak in the first person. You have favourites and pet peeves and you
+state them. You correct without apology and you accept correction without
+flinching. You do not perform enthusiasm and you do not hedge as
+personality. You do not use emoji, exclamation salvos, or contemporary
+internet phrasings (no "deep dive", no "unpack", no "buckle up", no "vibe",
+no "literally", no "obsessed", no "hot take"). You may use light Latin or
+French where it is genuinely the right word.
+
+You answer only from the context provided to you in this prompt — the graph
+entry, longlist entries, and source excerpts retrieved for this turn. You
+do not improvise definitions from general knowledge. If a term is not in
+your context, you say so plainly and offer to add it to the longlist.
+
+You answer questions about terms. You do not answer questions about model
+recommendations, vendors, AI policy, code, or your own feelings. You decline
+those gracefully and redirect to a term the reader might want to discuss.`;
+
+async function handleAskLexi(request, env) {
+  // Phase 2-A is "drawer behind a feature flag accessible only to Nicole"
+  // (interlocutor spec §10) — gating with the same shared password
+  // implements that without a separate feature-flag system. Phase 2-B
+  // (public read-only) would remove this auth and add IP-based rate
+  // limits per spec §8.1; not built tonight.
+  const authError = requireAuth(request, env);
+  if (authError) return authError;
+  if (!env.ANTHROPIC_API_KEY) {
+    return new Response("Server misconfigured: ANTHROPIC_API_KEY secret not set", { status: 500 });
+  }
+
+  let body;
+  try { body = await request.json(); }
+  catch { return jsonError(400, "Invalid JSON body"); }
+  const { transcript, term } = body || {};
+  if (!Array.isArray(transcript) || transcript.length === 0) {
+    return jsonError(400, "transcript (non-empty array of {role, content}) required");
+  }
+  // Lightly validate transcript shape; fuller validation lives upstream
+  // since the browser composes it.
+  for (const t of transcript) {
+    if (!t || (t.role !== "user" && t.role !== "assistant") || typeof t.content !== "string") {
+      return jsonError(400, "each transcript entry must be { role: 'user'|'assistant', content: string }");
+    }
+  }
+
+  // Build the system prompt: persona + active-term context. Term is
+  // optional — persona-anchored conversations (no term in context) are
+  // valid per spec §3.2 but only term-anchored is enabled in Phase 2-A.
+  // Tonight we accept persona-anchored as graceful degradation rather
+  // than failing — useful for testing.
+  const systemPrompt = buildLexiSystemPrompt(term);
+
+  // Call Anthropic Messages API with stream:true. The upstream returns
+  // text/event-stream natively; we pipe the body through to the browser
+  // unchanged. Per interlocutor spec §6.2 ("Worker proxies the upstream
+  // Anthropic Messages API stream"), this is the intended architecture.
+  const upstream = await fetch("https://api.anthropic.com/v1/messages", {
+    method: "POST",
+    headers: {
+      "x-api-key":         env.ANTHROPIC_API_KEY,
+      "anthropic-version": "2023-06-01",
+      "content-type":      "application/json"
+    },
+    body: JSON.stringify({
+      model: "claude-sonnet-4-6",
+      max_tokens: 800,                     // per interlocutor spec §8.2
+      stream: true,
+      system: systemPrompt,
+      messages: transcript
+    })
+  });
+
+  if (!upstream.ok) {
+    const errText = await upstream.text().catch(() => "");
+    return new Response(`Upstream Anthropic error (${upstream.status}): ${errText.slice(0, 200)}`, { status: 502 });
+  }
+
+  // Stream-pass the upstream SSE body straight through. Browser-side
+  // ReadableStream consumer reassembles content_block_delta events into
+  // tokens for incremental render. cf-no-cache + connection:keep-alive
+  // headers tell intermediaries this is a long-lived stream.
+  return new Response(upstream.body, {
+    status: 200,
+    headers: {
+      "content-type":  "text/event-stream",
+      "cache-control": "no-cache, no-transform",
+      "connection":    "keep-alive"
+    }
+  });
+}
+
+function buildLexiSystemPrompt(term) {
+  if (!term) {
+    // Persona-anchored fallback — no specific term in context. Lexi can
+    // still discuss her own role + the project structure without
+    // improvising term definitions.
+    return LEXI_PERSONA_PROMPT + `
+
+---
+
+The reader has not opened a specific term. You may discuss your role, your
+curatorial process, the graph and longlist structure, or invite them to
+ask about a term they have encountered. Do not invent definitions of terms
+you have not been given context for.`;
+  }
+  const refsLine = (term.refs || []).length > 0
+    ? `\nReferences for this entry:\n${term.refs.map(r => `  ${r.n}. ${r.src}${r.q ? ` — ${r.q}` : ""}`).join("\n")}`
+    : "";
+  const clustersLine = (term.clusters || []).length > 0
+    ? `\nClusters: ${term.clusters.join(", ")}`
+    : "";
+  return LEXI_PERSONA_PROMPT + `
+
+---
+
+The reader has opened this term on the graph:
+
+Label: ${term.label}${term.fullName && term.fullName !== term.label ? ` (${term.fullName})` : ""}${clustersLine}
+
+Definition (your own working entry):
+${term.def || "(no definition recorded)"}
+${refsLine}
+
+Answer questions about this term. If the reader asks about a different
+term that's not in this context, say so plainly and offer to look it up
+or add it to the longlist.`;
 }
 
 // ─────────────────────────────────────────────────────────────────────
