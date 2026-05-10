@@ -40,8 +40,12 @@ body{background:#f7f5f0;font-family:'IBM Plex Sans',sans-serif;font-weight:300;c
 .hdr .actions a{font-size:12px;color:#5a6b8f;text-decoration:none}
 .hdr .actions a:hover{text-decoration:underline}
 
-.intro{font-size:14px;color:#444;line-height:1.6;margin-bottom:24px;max-width:660px}
+.intro{font-size:14px;color:#444;line-height:1.6;margin-bottom:0;max-width:660px}
 .intro em{font-family:'Instrument Serif',serif;font-style:italic;color:#5a6b8f;font-size:15px}
+.page-head{display:flex;align-items:center;gap:24px;margin-bottom:24px}
+.page-head>div{flex:1;min-width:0}
+.page-head-character{flex:0 0 auto;width:130px;height:auto;pointer-events:none;user-select:none;filter:drop-shadow(0 6px 12px rgba(60,40,15,0.20))}
+@media (max-width:600px){.page-head{flex-direction:column-reverse;align-items:flex-start;gap:12px}.page-head-character{width:100px;align-self:center}}
 
 /* Filter chips */
 .filters{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:22px;padding:14px 0;border-top:1px solid rgba(0,0,0,.08);border-bottom:1px solid rgba(0,0,0,.08)}
@@ -104,8 +108,13 @@ body{background:#f7f5f0;font-family:'IBM Plex Sans',sans-serif;font-weight:300;c
   </div>
 </header>
 
-<div class="intro">
-  <em>Release notes for the graph.</em> What Lexi has promoted, demoted, refreshed, or rejected — when, and why. The graph at <a href="/" style="color:#5a6b8f">/</a> shows the current state; this page shows how it got there. Per <a href="https://github.com/nicolescheid/ai-terminology/blob/main/lexi-spec.md" style="color:#5a6b8f">spec §14</a>, the rationale per entry is the proposal's own reasoning, in Lexi's voice as impartial curator.
+<div class="page-head">
+  <div>
+    <div class="intro">
+      <em>Release notes for the graph.</em> What Lexi has promoted, demoted, refreshed, or rejected — when, and why. The graph at <a href="/" style="color:#5a6b8f">/</a> shows the current state; this page shows how it got there. Per <a href="https://github.com/nicolescheid/ai-terminology/blob/main/lexi-spec.md" style="color:#5a6b8f">spec §14</a>, the rationale per entry is the proposal's own reasoning, in Lexi's voice as impartial curator.
+    </div>
+  </div>
+  <img class="page-head-character" src="/assets/lexi-celebrating.webp" alt="Lexi celebrating each release that lands on the graph" />
 </div>
 
 <div class="filters">
