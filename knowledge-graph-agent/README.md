@@ -142,14 +142,14 @@ The 8 mandatory entry types from spec §6:
 | `reversal_contradiction` | Reversal where new reasoning contradicts (rather than supplements) the original | ⏳ Same |
 | `low_confidence_pass` | Candidate passes the credibility bar but Lexi's self-eval scored a rubric item below threshold | ⏳ Needs spec §15 self-check (Phase F) |
 | `source_pattern` | ≥2 longlist additions in a 30-day window share an author or domain | ⏳ Phase F (auditor's beat) |
-| `trusted_source_proposal` | Lexi proposes a source for the trusted list | ⏳ Needs spec §7 trusted-source mechanism |
+| `trusted_source_proposal` | Lexi proposes a source for the trusted list | ⏳ List exists (see `trusted-sources.json`), auto-proposal loop not yet wired |
 | `near_miss_week` | Self-eval near-misses on ≥3 candidates in a week | ⏳ Phase F |
 
 Discretionary entries (`type: "discretionary"`) are observations Lexi may write even without a mandatory trigger — encouraged but not required.
 
-Each entry's `status` starts at `"unread"`. Edit it to `"read"`, `"actioned"`, or `"dismissed"` after handling. (Spec §12 will eventually use unread-age to gate publication — Phase E.)
+Each entry's `status` starts at `"unread"`. Mark it `"read"`, `"actioned"`, or `"dismissed"` via the **mark-read buttons on `/manager`** (see Manager dashboard section), via [`mark-notes.mjs`](./mark-notes.mjs) for bulk operations, or by editing JSON directly. Spec §12.1's pause-on-unread is enforced in [`forcing-functions.mjs`](./forcing-functions.mjs): any unread note older than 7 days pauses publication on the next run.
 
-The contested-cluster term list lives in [`notes.mjs`](./notes.mjs) (`CONTESTED_CLUSTER_TERMS`) and is editable; the spec calls it out as living. Same for the contestation-marker phrases used to detect when a def already acknowledges contestation.
+The contested-cluster term list lives in [`contested-terms.json`](./contested-terms.json) — see "Contested-cluster inoculation list" below. The hardcoded `CONTESTED_CLUSTER_TERMS` array previously in `notes.mjs` was retired 2026-05-10 in favour of the JSON file as the single source of truth (the post-hoc detector reads from the same data the extract prompt is now seeded with).
 
 ## Operator-drift forcing functions
 
@@ -185,15 +185,33 @@ Both tunable in [`config.mjs`](./config.mjs) under `throughputCaps`.
 
 ## Manager dashboard
 
-A static dashboard at [`https://ai-terminology.com/manager/`](https://ai-terminology.com/manager/) renders the live state of the agent for Nicole's review:
+A dashboard at [`https://ai-terminology.com/manager/`](https://ai-terminology.com/manager/) renders the live state of the agent for Nicole's review and exposes mark-read / approve / reject buttons backed by a Cloudflare Worker. Intentionally not linked from the site menu (it's reachable by direct URL or bookmark; tagged `noindex,nofollow`); not gated by auth-for-reads but auth-gated for writes (single shared password — see "Worker write endpoints" below).
+
+Surfaces:
 
 - **Status banner** — green when operational, red when paused (replicates the pause-detection heuristic client-side).
-- **Notes for Nicole** — sorted with unread on top, color-coded type tags, inline suggested actions.
-- **Proposals queue** — pending items with action + target + reason.
+- **Notes for Nicole** — sorted with unread on top, color-coded type tags, inline suggested actions, plus per-unread `[mark read] [mark actioned] [mark dismissed]` buttons that POST to the Worker.
+- **Proposals queue** — pending items with action + target + reason, plus per-pending `[approve] [reject]` buttons. Reject opens a `prompt()` for an optional rationale.
 - **Longlist** — total + added-past-7d + promotion-eligible (≥2 independent sources); top 12 by source count.
 - **Last run** — timestamp + key state counts.
 
-The dashboard reads the *committed* state of the JSON files in this repo. To refresh what's visible: commit the agent's outputs (`longlist.json`, `proposals.json`, `notes-for-nicole.json`, `state.json`, `agent-patch.json`, `graph-data-agent.js`) and push. Default workflow is manual commits when state is meaningful.
+### Worker write endpoints (`src/worker.js`)
+
+Two `POST` endpoints live alongside the static assets, gated by HTTP Basic Auth (any username; only the password matters):
+
+| Endpoint | Mutates | Body |
+|---|---|---|
+| `/api/mark-note` | `notes-for-nicole.json` | `{ id, status }` where status ∈ `read \| actioned \| dismissed` |
+| `/api/mark-proposal` | `proposals.json` | `{ id, status, reason? }` where status ∈ `approved \| rejected` |
+
+Each click commits a state change to `main` via the GitHub Contents API (committed as `lexi-bot`), no `[skip ci]` so Cloudflare redeploys within ~30s. `mark-proposal` also fires `workflow_dispatch` on `lexi-run.yml` after a successful approve, so `apply-proposals.mjs` runs within ~5 min instead of waiting up to 24h for the next cron.
+
+Two secrets required (set once via `npx wrangler secret put <NAME>`):
+
+- `MARK_NOTE_PASSWORD` — shared password the dashboard prompts for
+- `GITHUB_TOKEN` — fine-grained PAT scoped to this repo with **contents:write** AND **actions:write**
+
+The dashboard surface is **read** by reading the committed JSON files; mutations roundtrip through the Worker. The legacy "edit JSON, commit + push by hand" workflow still works as a fallback.
 
 ## The auditor
 
@@ -283,12 +301,24 @@ node "C:\dev\ai-terminology\knowledge-graph-agent\run.mjs"
 
 ## Output files
 
-- **Tier 2 longlist**: [`longlist.json`](./longlist.json) — the watchlist of terms the agent is observing, with sources, source counts, and timestamps.
-- **Proposals queue**: [`proposals.json`](./proposals.json) — every `PROPOSE`-gated action lands here for Nicole's review.
-- **Notes for Nicole**: [`notes-for-nicole.json`](./notes-for-nicole.json) — manager channel for default-deny events, contested-cluster omissions, and (when wired) source patterns / reversal flags / near-miss weeks.
-- **Tier 1 graph overlay** (currently empty under propose-only discipline): [`agent-patch.json`](./agent-patch.json) and [`graph-data-agent.js`](</C:/dev/ai-terminology/graph-data-agent.js>).
-- **Run state** (dedup, review cursor): [`state.json`](./state.json).
-- **Latest report** (per-article harvest, rejections, default-deny notes): [`out/latest-report.json`](./out/latest-report.json).
+State surfaces — written by Lexi, read by the public-facing pages:
+
+- **Tier 2 longlist**: [`longlist.json`](./longlist.json) — terms under observation, with sources, source counts, timestamps. Promoted entries are kept here with `status: "promoted"` for audit trail; readers filter them out via `status !== "promoted"`.
+- **Tier 1 graph overlay**: [`agent-patch.json`](./agent-patch.json) + [`graph-data-agent.js`](</C:/dev/ai-terminology/graph-data-agent.js>) — agent-promoted nodes + definition overrides, layered on top of the curator-edited [`graph-data.js`](</C:/dev/ai-terminology/graph-data.js>) base. 11 nodes + 1 def override as of 2026-05-10.
+- **Proposals queue**: [`proposals.json`](./proposals.json) — every `PROPOSE`-gated action lands here pending Nicole's review.
+- **Notes for Nicole**: [`notes-for-nicole.json`](./notes-for-nicole.json) — manager channel (spec §6).
+- **Lexi's must-reads**: [`must-reads.json`](./must-reads.json) — articles Lexi flags as worth reading in full. Public at [`/lexis-list/`](https://ai-terminology.com/lexis-list/).
+
+Editorial config — Nicole-edited, never agent-mutated:
+
+- **Trusted source list**: [`trusted-sources.json`](./trusted-sources.json) — publications with `source: §7` confidence weighting (see "Trusted source list" below).
+- **Contested-terms inoculation list**: [`contested-terms.json`](./contested-terms.json) — terms where the def itself is the political battleground (spec §10). Folded into the extract prompt so Lexi writes contested defs first-pass; also consulted by the post-hoc detector in `notes.mjs`.
+
+Operational state — internal to the agent:
+
+- **Run state** (dedup, review cursor, seenArticles): [`state.json`](./state.json).
+- **Latest report** (per-article harvest, rejections, default-deny notes): [`out/latest-report.json`](./out/latest-report.json). **Gitignored** (operational forensics, not source).
+- **Deterministic event log**: [`log/events.ndjson`](./log/) — append-only audit trail. **Gitignored**, lives only on the machine where the agent ran.
 - **Pre-Lexi rollback snapshot** (the prototype's pre-discipline output, preserved as a comparison test case): [`pre-lexi-rollback/`](./pre-lexi-rollback/).
 
 ## Promotion (longlist → graph)
@@ -297,13 +327,15 @@ Per the spec's credibility bar, a longlist entry is eligible for promotion when:
 
 1. **Source count ≥ 2 independent sources** (different domain, ideally different author too).
 2. **Recency** — at least one sighting within the last 90 days.
-3. **Time on longlist ≥ 14 days** (anti-haste).
+3. **Time on longlist ≥ 3 days** (anti-haste; was 14d, lowered after observing real adoption patterns).
 4. **Definition consistency** across sources.
 5. **Concept reality check** — names a concept not already covered by an existing graph node.
 
-[`promote.mjs`](./promote.mjs) runs the heuristic-checkable parts of this bar (1–3) on every longlist entry and writes a `PROMOTE_TO_GRAPH` proposal for each eligible term to [`proposals.json`](./proposals.json). Definition consistency (4) and concept reality (5) are deferred — they need LLM-based checks; intended for a later session.
+[`promote.mjs`](./promote.mjs) runs the heuristic-checkable parts of this bar (1–3) on every longlist entry and writes a `PROMOTE_TO_GRAPH` proposal for each eligible term to [`proposals.json`](./proposals.json). Sources from `trusted-sources.json` are annotated in the proposal `reason` for confidence-weighting at review time (per spec §7). Definition consistency (4) and concept reality (5) are deferred — they need LLM-based checks; intended for a later session.
 
-Approve a proposal by editing its `status` to `"approved"`. The next run of [`apply-proposals.mjs`](./apply-proposals.mjs) — which runs as part of every daily cron — will commit the approved promotion into [`agent-patch.json`](./agent-patch.json) and re-write [`graph-data-agent.js`](</C:/dev/ai-terminology/graph-data-agent.js>), so the term appears on the graph automatically. To reject: set status to `"rejected"`. Both scripts are idempotent — re-running over already-applied or already-rejected proposals is a clean no-op.
+**Approving:** click `[approve]` on `/manager` (preferred — fires `apply-proposals` via workflow_dispatch within ~5 min) OR edit the proposal's `status` to `"approved"` directly (waits up to 24h for the next scheduled cron). **Rejecting:** click `[reject]` on `/manager` (with optional rationale prompt) OR set status to `"rejected"`. Both `apply-proposals.mjs` and `promote.mjs` are idempotent — re-running over already-applied or already-rejected proposals is a clean no-op.
+
+**Demoting (the reverse direction):** [`demote.mjs`](./demote.mjs) creates a `DEMOTE_TO_LONGLIST` proposal for an overlay node; once approved + applied, the node is removed from the overlay and the longlist entry's status flips back to `"watching"` with a `demotedAt` timestamp. Only handles agent-overlay nodes (base-graph nodes need curator action).
 
 Run manually:
 
@@ -318,9 +350,26 @@ node apply-proposals.mjs
 
 Both also run automatically as steps of `.github/workflows/lexi-run.yml`.
 
+## Trusted source list
+
+Per spec §7. Lives in [`trusted-sources.json`](./trusted-sources.json) — Nicole-edited; an array of canonical-domain entries with rationale + category + added/review-by dates. The list is a **confidence weight, not a bypass**: the two-source rule still applies; trusted-listing just annotates the proposal `reason` so Nicole sees the credibility texture at review time, and surfaces a "trusted" badge per source row on `/observing`.
+
+Initial seed (12 entries; 7 trusted, plus the 5 contested-cluster terms): `simonwillison.net`, `normaltech.ai`, `aisnakeoil.com`, `stratechery.com`, `hbr.org`, `sloanreview.mit.edu`, `importai.substack.com`. Excluded by design: lab sources (openai/anthropic/google/deepmind) — per spec §7 they are "primary signal but cannot meet the credibility bar alone." Quarterly review loop (Lexi proposes additions/removals via Notes for Nicole) is not yet wired.
+
+## Contested-cluster inoculation list
+
+Per spec §10 + §19's "to resolve before Phase 2 launches" open question. Lives in [`contested-terms.json`](./contested-terms.json) — Nicole-edited; an array of `{ label, aliases, camps, contestation }` entries for terms where the def itself is the political battleground.
+
+Two consumers, single source of truth:
+
+1. [`claude-calls.mjs`](./claude-calls.mjs) `buildExtractContext` folds the list into the cached extract-prompt prefix. The system prompt instructs Claude to write contested-style defs (name camps + contestation, don't pick a side) for any candidate matching a label or alias.
+2. [`notes.mjs`](./notes.mjs) `detectContestedOmission` is the post-hoc detector — fires a `contested_cluster_omission` Note for Nicole if a contested-list match lands without a contestation marker in its def. Belt-and-braces against the inoculation prompt failing to land.
+
+Initial seed (12 terms): `alignment`, `agentic`, `open-weights`, `AGI`, `superintelligence`, `AI safety`, `AI ethics`, `responsible AI`, `frontier model`, `existential risk`, `prompt engineering`, `AI welfare`. Aliases curated using a two-test heuristic: would someone search the variant specifically, AND would someone feel something is missing if it weren't here.
+
 ## Triage CLI for Notes for Nicole
 
-[`triage.mjs`](./triage.mjs) is a stopgap tool until the manager dashboard gets a real "mark read" button (which needs a Cloudflare Pages Function with auth — separate session).
+[`triage.mjs`](./triage.mjs) — bulk operations on the notes channel. The `/manager` dashboard's mark-read buttons handle the per-note happy path (see "Manager dashboard" above); triage remains useful for bulk dispositioning (e.g., dismiss all throughput-cap-hit notes after raising the cap) and for batch operations from the CLI when the dashboard is overkill.
 
 ```powershell
 # Just see what's pending
