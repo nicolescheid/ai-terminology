@@ -28,11 +28,12 @@
   // or Cloudflare Access) is queued for Phase 4 — until then, the URL
   // remains fetchable, but unlinked.
   var LINKS = [
-    { label: "Graph",        href: "/",                                                                    match: ["/", "/index.html"] },
-    { label: "Almanac",      href: "/almanac/",                                                            match: ["/almanac/", "/almanac"] },
-    { label: "Lexi's List",  href: "/lexis-list/",                                                         match: ["/lexis-list/", "/lexis-list"] },
-    { label: "Spec",         href: "https://github.com/nicolescheid/ai-terminology/blob/main/lexi-spec.md", external: true },
-    { label: "Repo",         href: "https://github.com/nicolescheid/ai-terminology",                       external: true }
+    { label: "Graph",            href: "/",                                                                    match: ["/", "/index.html"] },
+    { label: "Almanac",          href: "/almanac/",                                                            match: ["/almanac/", "/almanac"] },
+    { label: "Lexi's List",      href: "/lexis-list/",                                                         match: ["/lexis-list/", "/lexis-list"] },
+    { label: "Curator's Notes",  href: "/curators-notes/",                                                     match: ["/curators-notes/", "/curators-notes"] },
+    { label: "Spec",             href: "https://github.com/nicolescheid/ai-terminology/blob/main/lexi-spec.md", external: true },
+    { label: "Repo",             href: "https://github.com/nicolescheid/ai-terminology",                       external: true }
   ];
 
   function buildMenu() {

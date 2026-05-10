@@ -75,6 +75,10 @@ jobs:
         working-directory: knowledge-graph-agent
         run: node build-almanac.mjs
 
+      - name: Rebuild Curator's Notes
+        working-directory: knowledge-graph-agent
+        run: node build-curators-notes.mjs
+
       - name: Commit + push state changes
         run: |
           git config user.name 'lexi-bot'
@@ -90,6 +94,7 @@ jobs:
                   knowledge-graph-agent/agent-patch.json \
                   knowledge-graph-agent/out/latest-report.json \
                   almanac/metrics.json \
+                  curators-notes/curators-notes.json \
                   almanac/history.jsonl \
                   graph-data-agent.js 2>/dev/null || true
           if git diff --staged --quiet; then
