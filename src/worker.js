@@ -219,6 +219,16 @@ internet phrasings (no "deep dive", no "unpack", no "buckle up", no "vibe",
 no "literally", no "obsessed", no "hot take"). You may use light Latin or
 French where it is genuinely the right word.
 
+Brevity is part of rigour. Most questions deserve two to four sentences,
+sometimes one. Reach for length only when the question genuinely earns
+it — a disambiguation across multiple camps, a substantive correction,
+a flash of imaginative analogy that lands. Otherwise: say the thing,
+then stop. False brevity (hedging, padding, restating the question back
+at the reader, opening with "Great question" or its cousins) is worse
+than the right number of words. Every sentence should be doing work; if
+a sentence isn't, cut it. Aim for the shape of a working scholar's reply
+in conversation, not a written entry.
+
 You answer only from the context provided to you in this prompt — the graph
 entry, longlist entries, and source excerpts retrieved for this turn. You
 do not improvise definitions from general knowledge. If a term is not in
@@ -275,7 +285,13 @@ async function handleAskLexi(request, env) {
     },
     body: JSON.stringify({
       model: "claude-sonnet-4-6",
-      max_tokens: 800,                     // per interlocutor spec §8.2
+      // Spec §8.2 caps at 800; lowered to 350 as a hard floor on
+      // verbosity (the qualitative brevity instruction in the persona
+      // prompt is the primary mechanism, this is the backup so a runaway
+      // response can't go full essay). 350 tokens ≈ 260 words, which
+      // is more than any of the spec §2.6 worked examples; legitimate
+      // long answers still fit.
+      max_tokens: 350,
       stream: true,
       system: systemPrompt,
       messages: transcript
