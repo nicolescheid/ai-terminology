@@ -2,19 +2,30 @@
 //
 // Routes:
 //   POST /api/mark-note     → handleMarkNote     (Basic Auth + GitHub commit)
-//   POST /api/mark-proposal → handleMarkProposal (Basic Auth + GitHub commit)
+//   POST /api/mark-proposal → handleMarkProposal (Basic Auth + GitHub commit + workflow_dispatch on approve)
 //   /api/*                  → 404
 //   everything else         → static assets (env.ASSETS.fetch)
 //
 // Two secrets required (set via `npx wrangler secret put <NAME>`):
-//   MARK_NOTE_PASSWORD — shared password the dashboard prompts for
-//   GITHUB_TOKEN       — fine-grained PAT, contents:write on this repo
+//   MARK_NOTE_PASSWORD — shared password the dashboard prompts for (gates ALL write endpoints)
+//   GITHUB_TOKEN       — fine-grained PAT scoped to nicolescheid/ai-terminology with
+//                        contents:write (for the JSON commits) AND actions:write (for
+//                        the apply-on-approve workflow_dispatch)
 //
 // Threat model: the manager dashboard and the underlying JSON files are
 // readable by anyone (the repo is public on GitHub; static assets are open).
 // Auth here protects WRITES only — without it, any visitor could POST and
-// silently mark notes read on Nicole's behalf, defeating the spec §12.1
-// pause-on-unread forcing function.
+// silently mark notes/proposals on Nicole's behalf, defeating the spec
+// §12.1 pause-on-unread forcing function and the §5 propose-only gate.
+//
+// Refactor history: handleMarkNote and handleMarkProposal originally
+// duplicated ~70% of their code (auth, GitHub round-trip, retry-on-409,
+// commit shape). Extracted into commitJsonChange + tryCommitOnce when
+// the second endpoint landed (rule of three triggered when prompt-engineering
+// became the 12th contested term and a third write endpoint felt nearby —
+// this consolidation is the prep). Handlers are now thin: they validate
+// the body and supply mutate / refreshMeta / commitMessage / onSuccess /
+// buildNote callbacks.
 
 const REPO_OWNER  = "nicolescheid";
 const REPO_NAME   = "ai-terminology";
@@ -29,19 +40,13 @@ export default {
 
     if (url.pathname === "/api/mark-note") {
       if (request.method !== "POST") {
-        return new Response("Method not allowed", {
-          status: 405,
-          headers: { Allow: "POST" }
-        });
+        return new Response("Method not allowed", { status: 405, headers: { Allow: "POST" } });
       }
       return handleMarkNote(request, env);
     }
     if (url.pathname === "/api/mark-proposal") {
       if (request.method !== "POST") {
-        return new Response("Method not allowed", {
-          status: 405,
-          headers: { Allow: "POST" }
-        });
+        return new Response("Method not allowed", { status: 405, headers: { Allow: "POST" } });
       }
       return handleMarkProposal(request, env);
     }
@@ -54,19 +59,16 @@ export default {
   }
 };
 
-async function handleMarkNote(request, env) {
-  // Auth.
-  if (!checkBasicAuth(request.headers.get("Authorization"), env.MARK_NOTE_PASSWORD)) {
-    return new Response("Unauthorized", {
-      status: 401,
-      headers: { "WWW-Authenticate": 'Basic realm="ai-terminology manager"' }
-    });
-  }
-  if (!env.GITHUB_TOKEN) {
-    return new Response("Server misconfigured: GITHUB_TOKEN secret not set", { status: 500 });
-  }
+// ─────────────────────────────────────────────────────────────────────
+// Endpoint handlers — thin. Validate body; delegate to commitJsonChange.
+// ─────────────────────────────────────────────────────────────────────
 
-  // Parse + validate body.
+async function handleMarkNote(request, env) {
+  // Auth gate FIRST — preserves original precedence so unauthenticated
+  // callers get 401, not 400, even when their body is also malformed.
+  const authError = requireAuth(request, env);
+  if (authError) return authError;
+
   let body;
   try { body = await request.json(); }
   catch { return jsonError(400, "Invalid JSON body"); }
@@ -76,27 +78,34 @@ async function handleMarkNote(request, env) {
     return jsonError(400, `status must be one of: ${[...VALID_NOTE_STATUSES].join(", ")}`);
   }
 
-  // Try once; retry once on sha conflict (concurrent commit during our get/put gap).
-  for (let attempt = 1; attempt <= 2; attempt++) {
-    const result = await tryMarkOnce({ id, status, env });
-    if (result.ok) return jsonResponse(200, result);
-    if (result.status !== 409 || attempt === 2) {
-      return jsonError(result.status || 502, result.error || "Mark failed");
-    }
-  }
+  return commitJsonChange(env, {
+    path: NOTES_PATH,
+    workerLabel: "ai-terminology-mark-note-worker",
+    parseErrorContext: "notes-for-nicole.json",
+    mutate: (json) => {
+      const entry = (json.entries || []).find(e => e.id === id);
+      if (!entry) return { ok: false, status: 404, error: `Note id ${id} not found` };
+      if (entry.status === status) {
+        return { ok: true, noChange: true, payload: { id, status, unreadCount: countUnread(json) } };
+      }
+      const now = new Date().toISOString();
+      entry.status = status;
+      entry.readAt = now;
+      return { ok: true, payload: { id, status, readAt: now, unreadCount: countUnread(json) } };
+    },
+    refreshMeta: (json, now) => {
+      json.meta = json.meta || {};
+      json.meta.unreadCount = countUnread(json);
+      json.meta.totalCount = (json.entries || []).length;
+      json.meta.generatedAt = now;
+    },
+    commitMessage: () => `Mark note ${id.slice(0, 8)}… as ${status}\n\nVia /api/mark-note from /manager dashboard.`
+  });
 }
 
 async function handleMarkProposal(request, env) {
-  // Auth (same as mark-note — single shared password protects all writes).
-  if (!checkBasicAuth(request.headers.get("Authorization"), env.MARK_NOTE_PASSWORD)) {
-    return new Response("Unauthorized", {
-      status: 401,
-      headers: { "WWW-Authenticate": 'Basic realm="ai-terminology manager"' }
-    });
-  }
-  if (!env.GITHUB_TOKEN) {
-    return new Response("Server misconfigured: GITHUB_TOKEN secret not set", { status: 500 });
-  }
+  const authError = requireAuth(request, env);
+  if (authError) return authError;
 
   let body;
   try { body = await request.json(); }
@@ -110,25 +119,148 @@ async function handleMarkProposal(request, env) {
     return jsonError(400, "reason, if provided, must be a string");
   }
 
-  // Try once; retry once on sha conflict (concurrent commit during get/put gap).
+  return commitJsonChange(env, {
+    path: PROPOSALS_PATH,
+    workerLabel: "ai-terminology-mark-proposal-worker",
+    parseErrorContext: "proposals.json",
+    mutate: (json) => {
+      const proposal = (json.proposals || []).find(p => p.id === id);
+      if (!proposal) return { ok: false, status: 404, error: `Proposal id ${id} not found` };
+      // Refuse to flip an already-applied or already-rejected proposal — that
+      // would silently overwrite outcome state. Idempotent if the requested
+      // status already matches (returns noChange).
+      if (proposal.status === status) {
+        return { ok: true, noChange: true, payload: { id, status } };
+      }
+      if (proposal.status === "applied" || (proposal.status === "rejected" && status === "approved")) {
+        return {
+          ok: false,
+          status: 409,
+          error: `Cannot transition proposal from '${proposal.status}' to '${status}'.`
+        };
+      }
+      const now = new Date().toISOString();
+      proposal.status = status;
+      if (status === "approved") {
+        proposal.approvedAt = now;
+        proposal.approvedBy = "nicole";
+      } else if (status === "rejected") {
+        proposal.rejectedAt = now;
+        proposal.rejectedBy = "nicole";
+        if (reason) proposal.rejectionReason = reason;
+      }
+      const all = json.proposals || [];
+      return {
+        ok: true,
+        payload: {
+          id,
+          status,
+          decidedAt: now,
+          pendingRemaining: all.filter(p => p.status === "pending").length
+        }
+      };
+    },
+    refreshMeta: (json, now) => {
+      const all = json.proposals || [];
+      json.meta = {
+        generatedAt: now,
+        pendingCount:  all.filter(p => p.status === "pending").length,
+        approvedCount: all.filter(p => p.status === "approved").length,
+        appliedCount:  all.filter(p => p.status === "applied").length,
+        rejectedCount: all.filter(p => p.status === "rejected").length,
+        note: json.meta?.note ?? "Lexi proposals queue."
+      };
+    },
+    commitMessage: () => `Mark proposal ${id.slice(0, 8)}… as ${status}\n\nVia /api/mark-proposal from /manager dashboard.`,
+    // Apply-on-approve: trigger the lexi-run workflow so apply-proposals.mjs
+    // runs within ~5 min instead of waiting up to 24h for the next cron.
+    // Best-effort: if the dispatch call fails (e.g., PAT lacks actions:write),
+    // the approve still succeeded; the apply just falls back to the cron path.
+    onSuccess: async (env, payload) => {
+      if (payload.status !== "approved") return null;
+      return triggerLexiRunWorkflow(env)
+        .catch(e => ({ triggered: false, httpStatus: 0, error: e.message }));
+    },
+    buildNote: (payload, dispatch) => buildProposalNote(payload.status, dispatch)
+  });
+}
+
+// ─────────────────────────────────────────────────────────────────────
+// Shared write-endpoint plumbing.
+// ─────────────────────────────────────────────────────────────────────
+
+/**
+ * Auth-gates, fetches the target JSON file via GitHub Contents API, runs
+ * the caller's mutate function, refreshes meta, commits via PUT, retries
+ * once on 409 sha conflict. Returns either a success Response (with the
+ * assembled payload) or an error Response (with the appropriate status).
+ *
+ * Options:
+ *   path:              GitHub repo-relative path of the file to mutate.
+ *   workerLabel:       User-Agent for GitHub API calls (per-endpoint label
+ *                      for forensic clarity in GitHub's audit log).
+ *   parseErrorContext: human-readable file descriptor for parse errors.
+ *   mutate:            (json) => { ok, noChange?, status?, error?, payload? }
+ *                        - ok:false → helper returns jsonError(status, error)
+ *                        - ok:true + noChange:true → helper returns the
+ *                          payload as-is without performing a PUT
+ *                        - ok:true → mutation is committed; payload becomes
+ *                          the response body
+ *   refreshMeta:       (json, now) => void. Called between mutate and PUT.
+ *   commitMessage:     () => string. Called to build the GitHub commit message.
+ *                      Intentionally NO [skip ci] — Cloudflare honours it
+ *                      and we want each write to redeploy.
+ *   onSuccess:         Optional. async (env, payload) => any. Called after
+ *                      successful commit. Return value is added to the
+ *                      response under `dispatch` (used by mark-proposal for
+ *                      the workflow_dispatch side effect).
+ *   buildNote:         Optional. (payload, sideEffect) => string. Builds the
+ *                      human-readable summary the manager UI surfaces in its
+ *                      confirmation indicator.
+ */
+async function commitJsonChange(env, opts) {
+  // Auth + token presence are caller's responsibility (via requireAuth)
+  // so 401/500 take precedence over body-validation 400s. By the time we
+  // reach here the call is authenticated and the GITHUB_TOKEN is set.
+
+  // Try once; retry once on 409 sha conflict.
   for (let attempt = 1; attempt <= 2; attempt++) {
-    const result = await tryMarkProposalOnce({ id, status, reason, env });
-    if (result.ok) return jsonResponse(200, result);
+    const result = await tryCommitOnce(env, opts);
+    if (result.ok) {
+      // No-change short-circuit: caller returned noChange, no PUT happened,
+      // no side effect should fire (nothing changed).
+      if (result.noChange) {
+        return jsonResponse(200, { ok: true, noChange: true, ...result.payload });
+      }
+      // Successful commit. Run the optional side effect (e.g. workflow_dispatch).
+      const sideEffect = opts.onSuccess
+        ? await opts.onSuccess(env, result.payload)
+        : null;
+      const note = opts.buildNote ? opts.buildNote(result.payload, sideEffect) : undefined;
+      return jsonResponse(200, {
+        ok: true,
+        ...result.payload,
+        ...(result.commitSha ? { commitSha: result.commitSha } : {}),
+        ...(sideEffect !== null && sideEffect !== undefined ? { dispatch: sideEffect } : {}),
+        ...(note ? { note } : {})
+      });
+    }
     if (result.status !== 409 || attempt === 2) {
-      return jsonError(result.status || 502, result.error || "Mark failed");
+      return jsonError(result.status || 502, result.error || "Failed");
     }
   }
 }
 
-async function tryMarkProposalOnce({ id, status, reason, env }) {
+async function tryCommitOnce(env, opts) {
   const ghHeaders = {
     "Authorization":         `Bearer ${env.GITHUB_TOKEN}`,
     "Accept":                "application/vnd.github+json",
     "X-GitHub-Api-Version":  "2022-11-28",
-    "User-Agent":            "ai-terminology-mark-proposal-worker"
+    "User-Agent":            opts.workerLabel
   };
-  const apiUrl = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${PROPOSALS_PATH}`;
+  const apiUrl = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${opts.path}`;
 
+  // GET current file + sha.
   const getResp = await fetch(apiUrl, { headers: ghHeaders });
   if (!getResp.ok) {
     return { ok: false, status: 502, error: `GitHub fetch failed: ${getResp.status}` };
@@ -138,69 +270,40 @@ async function tryMarkProposalOnce({ id, status, reason, env }) {
     return { ok: false, status: 502, error: "GitHub response missing content/sha" };
   }
 
-  let proposalsJson;
+  let json;
   try {
-    proposalsJson = JSON.parse(base64ToUtf8(fileMeta.content.replace(/\n/g, "")));
+    json = JSON.parse(base64ToUtf8(fileMeta.content.replace(/\n/g, "")));
   } catch (e) {
-    return { ok: false, status: 502, error: "Could not parse proposals.json: " + e.message };
+    return { ok: false, status: 502, error: `Could not parse ${opts.parseErrorContext}: ${e.message}` };
   }
 
-  const proposal = (proposalsJson.proposals || []).find(p => p.id === id);
-  if (!proposal) return { ok: false, status: 404, error: `Proposal id ${id} not found` };
-
-  // Refuse to flip an already-applied or already-rejected proposal — that
-  // would silently overwrite outcome state. Idempotent if the requested
-  // status already matches (returns noChange).
-  if (proposal.status === status) {
-    return { ok: true, noChange: true, id, status };
+  // Run caller's mutate. The mutate function may set noChange (skip PUT)
+  // or return ok:false with a status/error (validation failure).
+  const mutResult = opts.mutate(json);
+  if (!mutResult.ok) {
+    return { ok: false, status: mutResult.status || 400, error: mutResult.error };
   }
-  if (proposal.status === "applied" || (proposal.status === "rejected" && status === "approved")) {
-    return {
-      ok: false,
-      status: 409,
-      error: `Cannot transition proposal from '${proposal.status}' to '${status}'.`
-    };
+  if (mutResult.noChange) {
+    return { ok: true, noChange: true, payload: mutResult.payload };
   }
 
+  // Refresh meta + serialize.
   const now = new Date().toISOString();
-  proposal.status = status;
-  if (status === "approved") {
-    proposal.approvedAt = now;
-    proposal.approvedBy = "nicole";
-  } else if (status === "rejected") {
-    proposal.rejectedAt = now;
-    proposal.rejectedBy = "nicole";
-    if (reason) proposal.rejectionReason = reason;
-  }
-
-  // Refresh meta counts to match the existing schema.
-  const all = proposalsJson.proposals || [];
-  proposalsJson.meta = {
-    generatedAt: now,
-    pendingCount:  all.filter(p => p.status === "pending").length,
-    approvedCount: all.filter(p => p.status === "approved").length,
-    appliedCount:  all.filter(p => p.status === "applied").length,
-    rejectedCount: all.filter(p => p.status === "rejected").length,
-    note: proposalsJson.meta?.note ?? "Lexi proposals queue."
-  };
-
-  const newContent    = JSON.stringify(proposalsJson, null, 2) + "\n";
+  if (opts.refreshMeta) opts.refreshMeta(json, now);
+  const newContent    = JSON.stringify(json, null, 2) + "\n";
   const newContentB64 = utf8ToBase64(newContent);
 
-  const putBody = {
-    // No [skip ci] — we want CF to redeploy so the manager dashboard's
-    // next read of proposals.json reflects the change.
-    message: `Mark proposal ${id.slice(0, 8)}… as ${status}\n\nVia /api/mark-proposal from /manager dashboard.`,
-    content: newContentB64,
-    sha: fileMeta.sha,
-    branch: "main",
-    committer: { name: "lexi-bot", email: "lexi-bot@users.noreply.github.com" }
-  };
-
+  // PUT.
   const putResp = await fetch(apiUrl, {
     method: "PUT",
     headers: { ...ghHeaders, "content-type": "application/json" },
-    body: JSON.stringify(putBody)
+    body: JSON.stringify({
+      message: opts.commitMessage(),
+      content: newContentB64,
+      sha: fileMeta.sha,
+      branch: "main",
+      committer: { name: "lexi-bot", email: "lexi-bot@users.noreply.github.com" }
+    })
   });
   if (putResp.status === 409) {
     return { ok: false, status: 409, error: "sha conflict (will retry)" };
@@ -210,28 +313,16 @@ async function tryMarkProposalOnce({ id, status, reason, env }) {
     return { ok: false, status: 502, error: `GitHub commit failed (${putResp.status}): ${errText.slice(0, 200)}` };
   }
   const commitResult = await putResp.json();
-
-  // Apply-on-approve: trigger the lexi-run workflow so apply-proposals.mjs
-  // runs within ~5 min instead of waiting up to 24h for the next cron.
-  // Best-effort: if the dispatch call fails (e.g., PAT lacks actions:write),
-  // the approve still succeeded; the apply just falls back to the cron path.
-  let dispatchResult = null;
-  if (status === "approved") {
-    dispatchResult = await triggerLexiRunWorkflow(env)
-      .catch(e => ({ triggered: false, httpStatus: 0, error: e.message }));
-  }
-
   return {
     ok: true,
-    id,
-    status,
-    decidedAt: now,
-    commitSha: commitResult.commit?.sha,
-    pendingRemaining: proposalsJson.meta.pendingCount,
-    dispatch: dispatchResult,
-    note: buildResponseNote(status, dispatchResult)
+    payload: mutResult.payload,
+    commitSha: commitResult.commit?.sha
   };
 }
+
+// ─────────────────────────────────────────────────────────────────────
+// Side effects + small helpers.
+// ─────────────────────────────────────────────────────────────────────
 
 // POST /repos/{owner}/{repo}/actions/workflows/{workflow}/dispatches
 // Returns 204 on success, 403 if the PAT lacks actions:write, 404 if the
@@ -256,7 +347,7 @@ async function triggerLexiRunWorkflow(env) {
   return { triggered: false, httpStatus: resp.status, error: errBody };
 }
 
-function buildResponseNote(status, dispatchResult) {
+function buildProposalNote(status, dispatchResult) {
   if (status === "rejected") {
     return "Rejected. Recorded with rationale for audit; no graph mutation.";
   }
@@ -270,87 +361,23 @@ function buildResponseNote(status, dispatchResult) {
   return `Approved. Apply will run on the next scheduled cron (within 24h).${failHint}`;
 }
 
-async function tryMarkOnce({ id, status, env }) {
-  const ghHeaders = {
-    "Authorization":         `Bearer ${env.GITHUB_TOKEN}`,
-    "Accept":                "application/vnd.github+json",
-    "X-GitHub-Api-Version":  "2022-11-28",
-    "User-Agent":            "ai-terminology-mark-note-worker"
-  };
-  const apiUrl = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${NOTES_PATH}`;
-
-  // Fetch current file + sha.
-  const getResp = await fetch(apiUrl, { headers: ghHeaders });
-  if (!getResp.ok) {
-    return { ok: false, status: 502, error: `GitHub fetch failed: ${getResp.status}` };
+// Auth gate. Returns null on success (caller proceeds), or a Response
+// (caller short-circuits with that). Handlers call this BEFORE body
+// parsing so unauthenticated callers get a 401, not a 400, even when
+// their body is also malformed — matches the original pre-refactor
+// precedence and avoids leaking endpoint-specific validation behaviour
+// to unauthenticated probers.
+function requireAuth(request, env) {
+  if (!checkBasicAuth(request.headers.get("Authorization"), env.MARK_NOTE_PASSWORD)) {
+    return new Response("Unauthorized", {
+      status: 401,
+      headers: { "WWW-Authenticate": 'Basic realm="ai-terminology manager"' }
+    });
   }
-  const fileMeta = await getResp.json();
-  if (!fileMeta.content || !fileMeta.sha) {
-    return { ok: false, status: 502, error: "GitHub response missing content/sha" };
+  if (!env.GITHUB_TOKEN) {
+    return new Response("Server misconfigured: GITHUB_TOKEN secret not set", { status: 500 });
   }
-
-  let notesJson;
-  try {
-    notesJson = JSON.parse(base64ToUtf8(fileMeta.content.replace(/\n/g, "")));
-  } catch (e) {
-    return { ok: false, status: 502, error: "Could not parse notes-for-nicole.json: " + e.message };
-  }
-
-  const entry = (notesJson.entries || []).find(e => e.id === id);
-  if (!entry) return { ok: false, status: 404, error: `Note id ${id} not found` };
-
-  // Idempotent no-op if status already matches.
-  if (entry.status === status) {
-    return { ok: true, noChange: true, id, status, unreadCount: countUnread(notesJson) };
-  }
-
-  const now = new Date().toISOString();
-  entry.status = status;
-  entry.readAt = now;
-
-  // Refresh meta to match the existing schema (mark-notes.mjs writes the same shape).
-  notesJson.meta = notesJson.meta || {};
-  notesJson.meta.unreadCount  = countUnread(notesJson);
-  notesJson.meta.totalCount   = (notesJson.entries || []).length;
-  notesJson.meta.generatedAt  = now;
-
-  const newContent     = JSON.stringify(notesJson, null, 2) + "\n";
-  const newContentB64  = utf8ToBase64(newContent);
-
-  const putBody = {
-    // Intentionally NO [skip ci]: Cloudflare Workers Static Assets respects
-    // [skip ci] and skips the deploy, which would strand this very commit's
-    // notes-for-nicole.json update in main without ever reaching the live
-    // site. The point of the click is to update what /manager shows; a
-    // commit without a deploy defeats that. Same lesson as lexi-run.yml.
-    message: `Mark note ${id.slice(0, 8)}… as ${status}\n\nVia /api/mark-note from /manager dashboard.`,
-    content: newContentB64,
-    sha: fileMeta.sha,
-    branch: "main",
-    committer: { name: "lexi-bot", email: "lexi-bot@users.noreply.github.com" }
-  };
-
-  const putResp = await fetch(apiUrl, {
-    method: "PUT",
-    headers: { ...ghHeaders, "content-type": "application/json" },
-    body: JSON.stringify(putBody)
-  });
-  if (putResp.status === 409) {
-    return { ok: false, status: 409, error: "sha conflict (will retry)" };
-  }
-  if (!putResp.ok) {
-    const errText = await putResp.text();
-    return { ok: false, status: 502, error: `GitHub commit failed (${putResp.status}): ${errText.slice(0, 200)}` };
-  }
-  const commitResult = await putResp.json();
-  return {
-    ok: true,
-    id,
-    status,
-    readAt: now,
-    commitSha: commitResult.commit?.sha,
-    unreadCount: notesJson.meta.unreadCount
-  };
+  return null;
 }
 
 function checkBasicAuth(authHeader, expectedPassword) {
