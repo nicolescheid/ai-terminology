@@ -15,8 +15,14 @@ import {
  * Marked with cache_control: ephemeral by the caller — Claude serves it
  * from the prompt cache after the first request in a run (≥2048 tokens
  * to actually cache on Sonnet 4.6).
+ *
+ * The contestedTerms argument is the loaded contested-terms.json data
+ * (spec §10 inoculation list). When present, its terms are formatted
+ * into the prefix so Claude can write contested-style defs from the
+ * first pass — see the "Contested-cluster framing discipline" section
+ * of EXTRACT_SYSTEM_PROMPT for how Claude is instructed to use them.
  */
-export function buildExtractContext(graphNodes, longlistEntries, clusters) {
+export function buildExtractContext(graphNodes, longlistEntries, clusters, contestedTerms = null) {
   const graphTerms = graphNodes
     .map(node => `${node.id}: ${node.label}${node.fullName ? ` (${node.fullName})` : ""}`)
     .join("\n");
@@ -24,6 +30,21 @@ export function buildExtractContext(graphNodes, longlistEntries, clusters) {
     .map(entry => `${entry.id}: ${entry.label}${entry.fullName ? ` (${entry.fullName})` : ""} [sources: ${entry.sourceCount}, independent: ${entry.independentSourceCount}]`)
     .join("\n");
   const clusterNames = Object.keys(clusters).join(", ");
+
+  // Contested-terms section (spec §10). Only included when contestedTerms
+  // data is provided. Format: per-term block with label, aliases, camps,
+  // and contestation. Claude reads this list and applies the contested
+  // framing discipline from the system prompt to any candidate matching
+  // a label or alias.
+  const contestedBlock = (contestedTerms?.terms || []).length > 0
+    ? [
+        "",
+        "Contested terms (spec §10) — when a candidate's label or fullName matches any entry's label or aliases below (case-insensitive substring), write its `def` in the contested style per system-prompt section C:",
+        "",
+        ...contestedTerms.terms.map(t => formatContestedTerm(t)),
+      ].join("\n")
+    : "";
+
   const stablePrefix = [
     `Available clusters: ${clusterNames}`,
     "",
@@ -31,9 +52,23 @@ export function buildExtractContext(graphNodes, longlistEntries, clusters) {
     graphTerms || "(none)",
     "",
     "Tier 2 longlist (under observation — propose these only if the article materially uses them, so we can record an additional source):",
-    longlistTerms || "(none)"
+    longlistTerms || "(none)",
+    contestedBlock
   ].join("\n");
   return { stablePrefix };
+}
+
+function formatContestedTerm(t) {
+  const aliasesLine = (t.aliases || []).length > 0
+    ? ` (aliases: ${t.aliases.join(", ")})`
+    : "";
+  const campsLines = (t.camps || []).map(c => `    - ${c}`).join("\n");
+  return [
+    `- ${t.label}${aliasesLine}`,
+    `  Camps:`,
+    campsLines,
+    `  Contestation: ${t.contestation || "(unspecified)"}`
+  ].join("\n");
 }
 
 /**

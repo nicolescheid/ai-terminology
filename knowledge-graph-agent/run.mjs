@@ -107,6 +107,11 @@ async function runMain(args, config, logger) {
     meta: { generatedAt: null, unreadCount: 0, totalCount: 0, note: "Lexi's must-reads — articles she flags as worth Nicole reading in full." },
     entries: []
   });
+  // Spec §10 contested-cluster inoculation list. When present, gets folded
+  // into the cached extract-prompt prefix so Claude writes contested-style
+  // defs from the first pass instead of needing the post-hoc auditor to
+  // catch omissions and Nicole to retroactively edit.
+  const contestedTerms = await loadJson(config.contestedTermsPath, { meta: {}, terms: [] });
 
   const mergedNodes = mergeNodes(graph.nodes, patch);
 
@@ -258,7 +263,7 @@ async function runMain(args, config, logger) {
     // longlist entries created earlier in the same run; cross-article re-sightings
     // get reconciled by classifyCandidate against the live longlist below.
     const longlistSnapshot = [...longlist.entries];
-    const extractContext = buildExtractContext(mergedNodes, longlistSnapshot, graph.clusters);
+    const extractContext = buildExtractContext(mergedNodes, longlistSnapshot, graph.clusters, contestedTerms);
     // Snapshot the review-eligible set BEFORE the article loop so freshly-proposed
     // candidates aren't reviewed in the same run that proposed them.
     const reviewableNodes = [...mergedNodes];

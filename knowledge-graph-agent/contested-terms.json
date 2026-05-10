@@ -1,0 +1,130 @@
+{
+  "meta": {
+    "note": "Contested-cluster inoculation list (spec §10 + §19 open question). Editable only by Nicole. When Lexi extracts a candidate term whose label matches any entry's `label` or `aliases` (case-insensitive substring match), she is instructed to write the working definition in the contested-cluster style: name who uses the term and what they mean by it, name the contestation, do not pick a side. The post-hoc detector in notes.mjs (CONTESTED_CLUSTER_TERMS + detectContestedOmission) remains as belt-and-braces — it catches def drift after the fact; this list teaches Lexi to write the def correctly the first time.",
+    "createdAt": "2026-05-10T00:00:00.000Z",
+    "createdBy": "nicole",
+    "reviewCadence": "Re-read at the start of each Phase 2 push. The list of contested terms in AI is itself contested; this is a living document."
+  },
+  "terms": [
+    {
+      "label": "alignment",
+      "aliases": ["AI alignment"],
+      "camps": [
+        "AI safety researchers (e.g., MIRI, Anthropic safety team): alignment is the technical problem of ensuring an advanced AI system pursues the intended goal of its principal, particularly under distribution shift or adversarial pressure.",
+        "Mainstream ML / industry RLHF practitioners: alignment is the engineering task of making language models helpful, harmless, and honest in everyday interactions.",
+        "Critical AI scholars (e.g., Mitchell, Gebru, Bender): the term's vagueness obscures whose values get encoded and decided by whom; framing alignment as primarily technical hides a sociopolitical choice."
+      ],
+      "contestation": "Whether alignment is a well-defined technical problem at all, or a value-laden choice presented as a technical one — and which timescale (current models vs. hypothetical advanced systems) the work should target."
+    },
+    {
+      "label": "agentic",
+      "aliases": ["agentic AI", "agentic systems"],
+      "camps": [
+        "Lab and cloud marketing (Google, Anthropic, OpenAI in 2026 framing): agentic refers to AI systems that take autonomous multi-step actions on behalf of a user, often in tool-using loops.",
+        "Academic reinforcement learning: agent has a precise technical meaning — a policy interacting with an environment via observations and actions, optimising for a reward signal.",
+        "Critics (e.g., Kapoor & Narayanan): 'agentic' is a periodization label that outpaces measured capability; agent reliability literature shows the gap between marketing claims and demonstrated robustness."
+      ],
+      "contestation": "Whether the term names a real shift in AI deployment patterns or is a marketing periodization that conflates multi-step LLM workflows with the formal RL sense of 'agent.'"
+    },
+    {
+      "label": "open-weights",
+      "aliases": ["open weights", "open-source AI", "open source AI"],
+      "camps": [
+        "Technically-precise users: open-weights means the model parameters are downloadable, with no claim about training data, training code, or licence.",
+        "Open Source Initiative (and adjacent open-source advocates): the OSI's 'Open Source AI Definition' requires more than weights — training code and data documentation are part of meaningful openness; weights-only releases are not 'open source.'",
+        "Lab marketing (Meta with Llama, Mistral, others): 'open' is treated as sufficient for weights-downloadable releases regardless of training-data transparency."
+      ],
+      "contestation": "Where the line between 'open' and 'open-source' sits for AI, and whether weights-only releases qualify as either."
+    },
+    {
+      "label": "AGI",
+      "aliases": ["artificial general intelligence", "general AI"],
+      "camps": [
+        "OpenAI / industry capability framings: AGI is systems that outperform humans at most economically valuable work, or analogous capability-based thresholds.",
+        "Theoretical / academic (Hutter, Goertzel lineage): AGI denotes generality across cognitive tasks at human level — a more abstract construct than any specific economic threshold.",
+        "Skeptics (Marcus, Bender, Mitchell): the term has no operational definition; each speaker uses it to fit their narrative; the goalposts shift with marketing cycles."
+      ],
+      "contestation": "Whether AGI is a coherent technical target, a moving capability threshold tied to commercial framing, or a rhetorical device with no fixed referent."
+    },
+    {
+      "label": "superintelligence",
+      "aliases": ["ASI", "artificial superintelligence"],
+      "camps": [
+        "Bostrom / existential-risk-focused safety: superintelligence is an intellect substantially exceeding human cognitive performance across virtually all domains; treated as a research-priority anchor.",
+        "Mainstream ML researchers: the term is rarely used in technical work; capability comparisons happen task-by-task, not on a global 'intellect' scalar.",
+        "Critics: the framing assumes a unidimensional intelligence variable that human cognition doesn't actually reduce to."
+      ],
+      "contestation": "Whether 'superintelligence' is well-formed enough to anchor research priorities or x-risk arguments, or whether it imports an unjustified scalar conception of intelligence."
+    },
+    {
+      "label": "AI safety",
+      "aliases": ["AI Safety"],
+      "camps": [
+        "Existential-risk-focused (MIRI legacy, parts of Anthropic/DeepMind safety teams): AI safety is preventing catastrophic or existential outcomes from advanced AI, framed long-term.",
+        "Mainstream ML / industry: AI safety is preventing harmful outputs (toxic, biased, untruthful, jailbroken) from currently-deployed models.",
+        "Critical AI scholars: the long-term frame distracts from documented current harms; the budget and research attention should follow the harms that exist."
+      ],
+      "contestation": "Whether 'AI safety' is fundamentally about long-term existential risk or near-term deployed harms — and whether either framing crowds out the other (this is the famous 'AI safety vs AI ethics' debate)."
+    },
+    {
+      "label": "AI ethics",
+      "aliases": ["responsible AI ethics", "ethical AI"],
+      "camps": [
+        "Critical AI scholars (Crawford, Gebru, Bender, Birhane): AI ethics is structural examination of systemic harms — labour conditions, environmental impact, surveillance, discriminatory outcomes — and accountability for current systems.",
+        "Corporate ethics functions: AI ethics is principles, guardrails, and review processes embedded in product development workflows.",
+        "AI safety community: AI ethics is sometimes treated as adjacent-but-narrower than AI safety, focused on present-day deployment rather than long-term risks."
+      ],
+      "contestation": "Whether AI ethics is structural sociopolitical critique with teeth, a corporate compliance function, or a narrower near-term-focused complement to AI safety. Tied directly to the AI safety vs AI ethics framing dispute."
+    },
+    {
+      "label": "responsible AI",
+      "aliases": ["responsible artificial intelligence", "RAI"],
+      "camps": [
+        "Industry and consultancy: responsible AI is a development framework — fairness, accountability, transparency, explainability — operationalised through process gates and compliance checks.",
+        "Critics (especially in the AI ethics tradition): 'responsible AI' rebrands AI ethics in industry-friendlier language and substitutes process artefacts for actual accountability."
+      ],
+      "contestation": "Whether the term denotes meaningful methodology or marketing — whether 'responsible AI' programs change outcomes or function as compliance theatre."
+    },
+    {
+      "label": "frontier model",
+      "aliases": ["frontier AI", "frontier system"],
+      "camps": [
+        "Industry (Frontier Model Forum, top labs): frontier model is the most capable AI models pushing the technology frontier, often paired with self-imposed safety commitments and governance proposals.",
+        "Policy critics: the term is convenient for the labs who self-identify; it carves out a regulatory category that the same labs help define, with associated implications for special treatment or carve-outs.",
+        "Academic researchers: 'frontier' is fuzzy — what counts depends on which capability dimension is being measured at which moment."
+      ],
+      "contestation": "Whether 'frontier model' denotes a real capability category warranting differentiated governance, or whether it functions primarily as regulatory positioning by the labels naming themselves into it."
+    },
+    {
+      "label": "existential risk",
+      "aliases": ["x-risk", "x risk", "catastrophic risk", "catastrophic AI risk", "p(doom)"],
+      "camps": [
+        "Effective altruism / AI safety: existential risk is a class of outcomes that would end humanity or permanently and drastically curtail its potential. Catastrophic is severe but recoverable. p(doom) is a personal probability assignment over such outcomes.",
+        "Critics (most of the AI ethics tradition, also some mainstream researchers): the framing inflates speculative scenarios into top priorities; treats unfounded futures as more important than documented present harms.",
+        "Pragmatist middle: x-risk concerns are not crazy in expectation, but the public discourse around them is dominated by motivated estimates and informal probability talk."
+      ],
+      "contestation": "Whether existential / x-risk framing is a legitimate priority signal grounded in expected-value reasoning, or a rhetorical move that crowds out near-term harm work — and whether the entire vocabulary (p(doom), 'doomer') usefully describes views or polarises the field."
+    },
+    {
+      "label": "prompt engineering",
+      "aliases": ["prompt design", "prompting"],
+      "camps": [
+        "Practitioner / craft: prompt engineering is the iterative skill of designing, testing, and refining prompts to elicit reliable and useful outputs from large language models — practiced daily by application developers, red teamers, RLHF data workers, and anyone whose work depends on consistent model behaviour.",
+        "Research / academic: prompt engineering is the study of how prompt structure, exemplars, and instructions affect model outputs — chain-of-thought, in-context learning, instruction tuning. Has produced peer-reviewed work, though the line between 'research technique' and 'practical skill' is fuzzy.",
+        "'Obsolete-soon' framing (parts of OpenAI's public messaging, others): as models improve, careful prompting matters less because models become more robust to imprecise inputs; the discipline will fade as a distinct activity.",
+        "Skeptical: prompt engineering is largely trial-and-error rebranded as engineering; lacks the formal rigor of actual engineering disciplines, and the 2023–24 job-title boom inflated marketing more than it reflected a stable role."
+      ],
+      "contestation": "Whether prompt engineering is a legitimate emerging skill or research field, a transient phenomenon disappearing as models improve, a marketing-inflated job title, or trial-and-error dressed up. The framing depends heavily on whether the speaker is selling LLM products, hiring for them, doing research on them, or skeptical of the broader AI hype cycle."
+    },
+    {
+      "label": "AI welfare",
+      "aliases": ["model welfare", "moral status of AI"],
+      "camps": [
+        "Mainstream-but-cautious: AI welfare is a legitimate emerging question — whether some AI systems may have moral status — actively engaged by Anthropic's model-welfare team, parts of academic philosophy (Schwitzgebel, Long), and an increasing number of researchers willing to take the question seriously without claiming current systems are sentient.",
+        "Skeptical / pragmatic: current systems do not have morally-relevant interests in any verifiable sense; the question is at best premature, and treating it as urgent risks anthropomorphising function approximators.",
+        "Critical AI scholars: framing AI welfare as a near-term concern can deflect from documented harms to humans, especially exploited annotation workforces and communities most affected by model-driven decisions."
+      ],
+      "contestation": "Whether the question of AI moral status is a serious near-term ethical concern, a premature anthropomorphism, or an attention-displacing distraction from documented harms to people. The 'is the question well-formed?' debate is itself contested — including by people who otherwise take the question seriously."
+    }
+  ]
+}

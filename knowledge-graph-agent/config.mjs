@@ -12,6 +12,7 @@ export default {
   notesForNicolePath: path.resolve(__dirname, "./notes-for-nicole.json"),
   mustReadsPath: path.resolve(__dirname, "./must-reads.json"),
   trustedSourcesPath: path.resolve(__dirname, "./trusted-sources.json"),
+  contestedTermsPath: path.resolve(__dirname, "./contested-terms.json"),
   statePath: path.resolve(__dirname, "./state.json"),
   reportPath: path.resolve(__dirname, "./out/latest-report.json"),
   // Deterministic event log (spec §11). Append-only NDJSON. Gitignored —
