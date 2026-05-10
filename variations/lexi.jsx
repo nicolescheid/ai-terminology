@@ -160,11 +160,24 @@
     // WebP: ~10× smaller than source PNGs, universally supported (Chrome 2014,
     // FF 2019, Safari 14+ in 2020). Source PNGs are still in the repo as
     // canonical assets; build.mjs regenerates these WebPs.
-    idle: 'assets/lexi-idle.webp',
-    curious: 'assets/lexi-curious.webp',
-    excited: 'assets/lexi-excited.webp',
-    teaching: 'assets/lexi-teaching.webp',
-    sleeping: 'assets/lexi-sleeping.webp',
+    //
+    // The full character palette as of 2026-05-10. Not every state has a
+    // current trigger — some are in the map for future use (auditor flag
+    // states, milestone moments, page-header identities) and added now so
+    // they're available when the trigger logic lands. The interlocutor
+    // lightbox uses 'graduate' (the spec calls this "professor mode" but
+    // graduate is the actual visual — cap + diploma + robes).
+    idle:        'assets/lexi-idle.webp',
+    curious:     'assets/lexi-curious.webp',
+    excited:     'assets/lexi-excited.webp',
+    teaching:    'assets/lexi-teaching.webp',
+    sleeping:    'assets/lexi-sleeping.webp',
+    attentive:   'assets/lexi-attentive.webp',
+    thinking:    'assets/lexi-thinking.webp',
+    graduate:    'assets/lexi-graduate.webp',     // interlocutor lightbox / "professor mode"
+    celebrating: 'assets/lexi-celebrating.webp',  // available — milestone / win-state moments (e.g. promotion lands)
+    explorer:    'assets/lexi-explorer.webp',     // available — "out hunting for vocabulary" moments (e.g. scheduled run header on /observing)
+    ideating:    'assets/lexi-ideating.webp',     // available — "synthesising what she's seen" moments (e.g. /almanac header, proposal generation)
   };
 
   // The PNGs are on white. Mask them inside a soft circular frame
@@ -368,7 +381,7 @@
         <div className="lexi-lightbox" onClick={(e) => e.stopPropagation()}>
           <button className="lexi-close" onClick={onClose} aria-label="Close">×</button>
           <div className="lexi-stage">
-            <LexiAvatar state="teaching" size={140} />
+            <LexiAvatar state="graduate" size={150} />
           </div>
           {activeTerm && (
             <div className="lexi-context">
