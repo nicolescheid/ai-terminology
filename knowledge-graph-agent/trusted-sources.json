@@ -1,0 +1,65 @@
+{
+  "meta": {
+    "note": "Trusted source list (spec §7). Editable only by Nicole. Per the spec: 'A single use by a trusted source is not sufficient on its own. The two-source rule still applies. The trusted list is a confidence weight, not a bypass.' Sources match by canonical domain — Lexi's source extraction normalizes URLs to domain-only before checking. The list reviews quarterly per spec §7; Lexi proposes additions/removals via Notes for Nicole and Nicole approves.",
+    "createdAt": "2026-05-10T00:00:00.000Z",
+    "createdBy": "nicole"
+  },
+  "sources": [
+    {
+      "domain": "simonwillison.net",
+      "label": "Simon Willison's Weblog",
+      "category": "technical-independent",
+      "addedAt": "2026-05-10T00:00:00.000Z",
+      "reviewBy": null,
+      "rationale": "Independent technical commentator. Citation-heavy, links generously, often the first place a term appears in serious technical use. Already cited in 4 of 7 current must-reads; consistently high signal for 'is this term being used by practitioners.'"
+    },
+    {
+      "domain": "normaltech.ai",
+      "label": "Normaltech (Kapoor & Narayanan)",
+      "category": "academic-skeptical",
+      "addedAt": "2026-05-10T00:00:00.000Z",
+      "reviewBy": null,
+      "rationale": "Arvind Narayanan and Sayash Kapoor's primary substack. Academic rigor + willingness to call out hype. Source of capability-reliability gap, open-world evaluations, and agent-reliability framings now in the graph or longlist."
+    },
+    {
+      "domain": "aisnakeoil.com",
+      "label": "AI Snake Oil",
+      "category": "academic-skeptical",
+      "addedAt": "2026-05-10T00:00:00.000Z",
+      "reviewBy": null,
+      "rationale": "Same author cluster as normaltech.ai (Kapoor & Narayanan) but a more journalistic register. Trusted-listing both is a deliberate choice to weight the skeptical-academic voice — note that the auditor still treats single-author clusters as a source-pattern signal independently."
+    },
+    {
+      "domain": "stratechery.com",
+      "label": "Stratechery (Ben Thompson)",
+      "category": "business-strategy-independent",
+      "addedAt": "2026-05-10T00:00:00.000Z",
+      "reviewBy": null,
+      "rationale": "Independent (subscription-funded — no advertiser pressure), reasoned, willing to dissent from consensus. Strong on the strategy/economics angle of AI. Source of the trainium promotion and several infrastructure-tier framings."
+    },
+    {
+      "domain": "hbr.org",
+      "label": "Harvard Business Review",
+      "category": "business-academic",
+      "addedAt": "2026-05-10T00:00:00.000Z",
+      "reviewBy": null,
+      "rationale": "Peer-business writing on AI strategy and management. The venue where business framings of AI tend to get formal treatment. Trusted only when the article is AI-relevant — Lexi's extract prompt rejects HBR's broad non-AI coverage; trust-weight applies on the surviving subset. Fetched via the Feedburner mirror in config.mjs."
+    },
+    {
+      "domain": "sloanreview.mit.edu",
+      "label": "MIT Sloan Management Review",
+      "category": "business-academic",
+      "addedAt": "2026-05-10T00:00:00.000Z",
+      "reviewBy": null,
+      "rationale": "Academic-business venue, peer-reviewed-ish. Complements HBR with more research-grounded angle. Added to config.mjs sources alongside this trusted-listing so the weight has somewhere to land."
+    },
+    {
+      "domain": "importai.substack.com",
+      "label": "Import AI (Jack Clark)",
+      "category": "technical-policy-independent",
+      "addedAt": "2026-05-10T00:00:00.000Z",
+      "reviewBy": null,
+      "rationale": "Jack Clark's weekly newsletter (former OpenAI policy lead, Anthropic co-founder). Synthesizes ~30 papers/week with editorial framing. Now-independent voice (not Anthropic content despite the founder connection). Added to config.mjs sources alongside this trusted-listing."
+    }
+  ]
+}

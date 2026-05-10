@@ -51,13 +51,19 @@ async function main() {
 
   const longlist = await loadJson(config.longlistPath, { entries: [] });
   const proposals = await loadJson(config.proposalsPath, { meta: {}, proposals: [] });
+  const trusted = await loadJson(config.trustedSourcesPath, { meta: {}, sources: [] });
+  // Domain set for fast lookup. The trusted-sources file is keyed by canonical
+  // domain (sans scheme, sans www). Lexi's source extraction normalizes URLs
+  // to the same shape via hostnameFromUrl.
+  const trustedDomains = new Set((trusted.sources || []).map(s => s.domain.toLowerCase()));
 
   const runId = crypto.randomUUID();
   const logger = createLogger({ runId, phase: config.phase, logPath: config.logPath });
 
   await logger.event("promote_scan_start", {
     longlistEntries: (longlist.entries || []).length,
-    existingProposals: (proposals.proposals || []).length
+    existingProposals: (proposals.proposals || []).length,
+    trustedDomainCount: trustedDomains.size
   });
 
   const existingIds = new Set(proposals.proposals.map(p => p.id));
@@ -67,7 +73,7 @@ async function main() {
   const skippedAlreadyProposed = [];
 
   for (const entry of longlist.entries || []) {
-    const verdict = checkEligibility(entry);
+    const verdict = checkEligibility(entry, Date.now(), trustedDomains);
     if (!verdict.eligible) {
       skippedNotEligible.push({ id: entry.id, why: verdict.why });
       continue;
@@ -134,7 +140,11 @@ async function main() {
 }
 
 // Spec §7 credibility bar — heuristic checks (data only, no LLM).
-export function checkEligibility(entry, now = Date.now()) {
+// Optional trustedDomains arg is a Set of lowercased canonical domains;
+// when provided, the verdict's reason annotates which sources are trusted
+// per spec §7's confidence-weighting clause. The eligibility math itself
+// is unchanged — trusted-listing is a weight, not a bypass.
+export function checkEligibility(entry, now = Date.now(), trustedDomains = null) {
   // Already promoted to the graph — apply-proposals.mjs marked it. Skip
   // re-eligibility (otherwise this scan would re-write a proposal every
   // run for terms that have already landed).
@@ -165,13 +175,27 @@ export function checkEligibility(entry, now = Date.now()) {
   if (ageDays < 3) return { eligible: false, why: `on longlist only ${ageDays}d (need 3)` };
 
   const domains = [...new Set(sources.map(s => s.domain).filter(Boolean))];
-  const reason = `${sourceCount} sources, ${independent} independent (${domains.join(" + ")}), ${ageDays}d on longlist.`;
+
+  // Trusted-source annotation (spec §7). The set is optional — callers
+  // that don't care about trust-weighting (e.g. the heuristic-only
+  // auditor) can omit it. When provided, we mark which of this entry's
+  // domains are on the trusted list and inflate the reason text so
+  // Nicole sees the confidence weighting at proposal-review time.
+  const trustedHits = trustedDomains
+    ? domains.filter(d => trustedDomains.has(d.toLowerCase()))
+    : [];
+  const trustAnnotation = trustedHits.length > 0
+    ? ` Trusted: ${trustedHits.join(", ")}.`
+    : "";
+  const reason = `${sourceCount} sources, ${independent} independent (${domains.join(" + ")}), ${ageDays}d on longlist.${trustAnnotation}`;
+
   return {
     eligible: true,
     reason,
     sourceCount,
     independent,
     domains,
+    trustedDomains: trustedHits,
     ageDays
   };
 }

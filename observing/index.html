@@ -73,6 +73,7 @@ body{background:#f7f5f0;font-family:'IBM Plex Sans',sans-serif;font-weight:300;c
 .card .source a:hover{text-decoration:underline}
 .card .source .src-label{font-size:10px;color:#888;text-transform:uppercase;letter-spacing:.04em;flex-shrink:0}
 .card .source .src-date{font-family:'IBM Plex Mono',monospace;font-size:10px;color:#999;flex-shrink:0}
+.card .source .src-trusted{font-size:9px;letter-spacing:.06em;text-transform:uppercase;padding:1px 6px;border-radius:8px;background:#e9f1e3;color:#2f5f1f;border:1px solid #b6d09c;flex-shrink:0;cursor:help;font-weight:500}
 .card .superseded{margin-top:10px;font-size:12px;color:#5a6b8f;font-style:italic}
 
 /* Footer */
@@ -122,8 +123,22 @@ body{background:#f7f5f0;font-family:'IBM Plex Sans',sans-serif;font-weight:300;c
 
 <script>
 const LONGLIST_PATH = "/knowledge-graph-agent/longlist.json";
+const TRUSTED_SOURCES_PATH = "/knowledge-graph-agent/trusted-sources.json";
 let entries = [];
+let trustedDomains = new Set(); // populated from trusted-sources.json on load
 let currentSort = "recent";
+
+async function loadTrustedDomains() {
+  try {
+    const r = await fetch(TRUSTED_SOURCES_PATH, { cache: "no-store" });
+    if (!r.ok) return new Set();
+    const data = await r.json();
+    return new Set((data.sources || []).map(s => (s.domain || "").toLowerCase()));
+  } catch (e) {
+    console.warn("Couldn't load trusted-sources.json", e);
+    return new Set();
+  }
+}
 
 async function loadLonglist() {
   try {
@@ -244,6 +259,12 @@ function renderEntry(entry) {
     for (const s of entry.sources) {
       const row = el("div", { class: "source" });
       row.appendChild(el("span", { class: "src-label" }, s.sourceLabel || s.domain || ""));
+      // Trusted-source badge per spec §7. The trusted list is a confidence
+      // weight, not a bypass — but readers benefit from seeing which
+      // citations come from publications Lexi treats as higher-credibility.
+      if (s.domain && trustedDomains.has(s.domain.toLowerCase())) {
+        row.appendChild(el("span", { class: "src-trusted", title: "On Lexi's trusted source list (spec §7) — extra credibility weight, not a bypass." }, "trusted"));
+      }
       row.appendChild(el("a", { href: s.url, target: "_blank", rel: "noopener" }, s.title || s.url));
       if (s.publishedAt) row.appendChild(el("span", { class: "src-date" }, fmtSourceDate(s.publishedAt)));
       sources.appendChild(row);
@@ -270,7 +291,15 @@ function render() {
 }
 
 (async function init() {
-  entries = await loadLonglist();
+  // Load trusted domains in parallel with the longlist; trustedDomains is
+  // a module-level Set consulted by renderEntry when emitting source rows.
+  // If the trusted file fails to load, the badge just doesn't render.
+  const [longlistEntries, trusted] = await Promise.all([
+    loadLonglist(),
+    loadTrustedDomains()
+  ]);
+  entries = longlistEntries;
+  trustedDomains = trusted;
   render();
   for (const chip of document.querySelectorAll(".chip")) {
     chip.addEventListener("click", () => {

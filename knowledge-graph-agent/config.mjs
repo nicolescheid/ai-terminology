@@ -11,6 +11,7 @@ export default {
   proposalsPath: path.resolve(__dirname, "./proposals.json"),
   notesForNicolePath: path.resolve(__dirname, "./notes-for-nicole.json"),
   mustReadsPath: path.resolve(__dirname, "./must-reads.json"),
+  trustedSourcesPath: path.resolve(__dirname, "./trusted-sources.json"),
   statePath: path.resolve(__dirname, "./state.json"),
   reportPath: path.resolve(__dirname, "./out/latest-report.json"),
   // Deterministic event log (spec §11). Append-only NDJSON. Gitignored —
@@ -106,6 +107,16 @@ export default {
     // the same Atom feed reliably. Limit is intentionally low — HBR is broad
     // business writing, and the AI/management framing it reaches for is the
     // useful slice; the extract prompt rejects non-AI articles.
-    { type: "rss", label: "Harvard Business Review", url: "https://feeds.feedburner.com/harvardbusiness", limit: 2 }
+    { type: "rss", label: "Harvard Business Review", url: "https://feeds.feedburner.com/harvardbusiness", limit: 2 },
+    // MIT Sloan Management Review — academic-business; complements HBR with
+    // a more research-grounded angle. Fetches all articles (the feed isn't
+    // AI-tagged); the extract prompt rejects non-AI pieces. Trusted-listed
+    // as sloanreview.mit.edu in trusted-sources.json (added 2026-05-10).
+    { type: "rss", label: "MIT Sloan Management Review", url: "https://sloanreview.mit.edu/feed/", limit: 2 },
+    // Import AI — Jack Clark's weekly newsletter (former OpenAI policy lead,
+    // Anthropic co-founder, now-independent voice). Synthesizes ~30 papers/
+    // week with editorial framing. Substack default RSS at /feed. Trusted-
+    // listed as importai.substack.com in trusted-sources.json (added 2026-05-10).
+    { type: "rss", label: "Import AI", url: "https://importai.substack.com/feed", limit: 3 }
   ]
 };
