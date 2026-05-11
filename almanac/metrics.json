@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-05-10T19:04:01.249Z",
+  "generatedAt": "2026-05-11T07:08:27.962Z",
   "firstRunAt": "2026-04-27T01:07:31.335Z",
   "phase": 1,
   "headline": {
-    "articlesRead": 65,
-    "daysRunning": 14,
-    "longlistSize": 58,
-    "graphSize": 209
+    "articlesRead": 71,
+    "daysRunning": 15,
+    "longlistSize": 70,
+    "graphSize": 206
   },
   "thisWeek": {
-    "articlesFetched": 24,
-    "longlistAdded": 39,
+    "articlesFetched": 30,
+    "longlistAdded": 51,
     "sourcesAdded": 4,
     "promotionsToGraph": 3,
     "proposalsQueued": 5,
     "auditFlags": 12,
-    "notesAdded": 19
+    "notesAdded": 21
   },
   "almostThere": [
     {
@@ -27,7 +27,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 2,
-      "daysOnLonglist": 5,
+      "daysOnLonglist": 6,
       "domains": [
         "openai.com",
         "simonwillison.net"
@@ -45,7 +45,7 @@
       ],
       "sourceCount": 4,
       "independentSources": 1,
-      "daysOnLonglist": 13,
+      "daysOnLonglist": 14,
       "domains": [
         "openai.com"
       ],
@@ -62,7 +62,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 9,
+      "daysOnLonglist": 10,
       "domains": [
         "stratechery.com"
       ],
@@ -79,7 +79,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 9,
+      "daysOnLonglist": 10,
       "domains": [
         "stratechery.com"
       ],
@@ -96,7 +96,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 9,
+      "daysOnLonglist": 10,
       "domains": [
         "normaltech.ai"
       ],
@@ -164,7 +164,7 @@
       ],
       "sourceCount": 1,
       "independentSources": 1,
-      "daysOnLonglist": 13,
+      "daysOnLonglist": 14,
       "domains": [
         "blog.google"
       ],
@@ -182,7 +182,7 @@
       ],
       "sourceCount": 1,
       "independentSources": 1,
-      "daysOnLonglist": 13,
+      "daysOnLonglist": 14,
       "domains": [
         "anthropic.com"
       ],
@@ -194,11 +194,15 @@
     "byDomain": [
       {
         "domain": "openai.com",
-        "count": 22
+        "count": 23
       },
       {
         "domain": "blog.google",
-        "count": 10
+        "count": 11
+      },
+      {
+        "domain": "simonwillison.net",
+        "count": 8
       },
       {
         "domain": "anthropic.com",
@@ -209,24 +213,36 @@
         "count": 7
       },
       {
-        "domain": "simonwillison.net",
-        "count": 7
+        "domain": "huggingface.co",
+        "count": 5
       },
       {
         "domain": "lastweekin.ai",
         "count": 5
       },
       {
-        "domain": "huggingface.co",
-        "count": 4
-      },
-      {
         "domain": "normaltech.ai",
         "count": 3
+      },
+      {
+        "domain": "theverge.com",
+        "count": 1
+      },
+      {
+        "domain": "hbr.org",
+        "count": 1
       }
     ],
-    "totalUniqueDomains": 8,
+    "totalUniqueDomains": 10,
     "newDomainsLast30d": [
+      {
+        "domain": "theverge.com",
+        "firstSeen": "2026-05-11T07:07:01.775Z"
+      },
+      {
+        "domain": "hbr.org",
+        "firstSeen": "2026-05-11T07:07:01.775Z"
+      },
       {
         "domain": "huggingface.co",
         "firstSeen": "2026-04-30T19:20:00.611Z"
@@ -294,11 +310,6 @@
         "hex": "#40D080"
       },
       {
-        "id": "dyadic",
-        "label": "Dyadic Mind",
-        "hex": "#40C0D0"
-      },
-      {
         "id": "evolved",
         "label": "Evolved",
         "hex": "#5090FF"
@@ -356,28 +367,28 @@
     ],
     "distribution": [
       {
+        "id": "technical",
+        "label": "Technical",
+        "hex": "#D0D040",
+        "count": 24
+      },
+      {
+        "id": "models",
+        "label": "Models",
+        "hex": "#FFB060",
+        "count": 20
+      },
+      {
         "id": "agentic",
         "label": "Agentic Systems",
         "hex": "#FF9040",
         "count": 20
       },
       {
-        "id": "technical",
-        "label": "Technical",
-        "hex": "#D0D040",
-        "count": 19
-      },
-      {
-        "id": "models",
-        "label": "Models",
-        "hex": "#FFB060",
-        "count": 16
-      },
-      {
         "id": "tools",
         "label": "Tools & Platforms",
         "hex": "#70C8F8",
-        "count": 15
+        "count": 17
       },
       {
         "id": "safety",
@@ -386,40 +397,46 @@
         "count": 14
       },
       {
+        "id": "landscape",
+        "label": "Model Landscape",
+        "hex": "#D0A050",
+        "count": 11
+      },
+      {
         "id": "security",
         "label": "AI Security",
         "hex": "#E05050",
-        "count": 7
+        "count": 8
       },
       {
         "id": "business",
         "label": "Business Reality",
         "hex": "#48C888",
-        "count": 7
+        "count": 8
       },
       {
         "id": "companies",
         "label": "Companies",
         "hex": "#9090A8",
-        "count": 6
-      },
-      {
-        "id": "landscape",
-        "label": "Model Landscape",
-        "hex": "#D0A050",
-        "count": 6
+        "count": 7
       },
       {
         "id": "work",
         "label": "Work & Output",
         "hex": "#E8A838",
-        "count": 5
+        "count": 6
       },
       {
         "id": "human",
         "label": "Human Skills",
         "hex": "#40D080",
-        "count": 3
+        "count": 4
+      },
+      {
+        "id": "critical",
+        "label": "Critical / Hype",
+        "hex": "#FF5555",
+        "count": 4
       },
       {
         "id": "context",
@@ -431,12 +448,6 @@
         "id": "lifecycle",
         "label": "Product Lifecycle",
         "hex": "#B888D8",
-        "count": 1
-      },
-      {
-        "id": "critical",
-        "label": "Critical / Hype",
-        "hex": "#FF5555",
         "count": 1
       },
       {

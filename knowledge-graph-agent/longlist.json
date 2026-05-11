@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-05-10T19:02:19.492Z",
-    "entryCount": 69,
+    "generatedAt": "2026-05-11T07:07:01.775Z",
+    "entryCount": 81,
     "note": "Lexi-managed Tier 2 longlist — terms under observation, awaiting evidence to support promotion to the graph (Tier 1)."
   },
   "entries": [
@@ -2571,6 +2571,390 @@
       "sz": 14,
       "fullName": "Document Delegation Corruption (LLM)",
       "proposalReason": "New candidate: identifies a concrete, named failure mode for delegated document handling in agentic pipelines — complements existing context-degradation and silent-failure concepts."
+    },
+    {
+      "id": "deep-search-finance",
+      "label": "Deep Search",
+      "workingDef": "A feature within Google Finance (and Google Search more broadly) that handles complex financial and market questions by generating comprehensive AI-synthesised responses with sourced links. Distinct from Deep Research as a product name but represents a similar pattern of AI-mediated multi-step information synthesis applied to a specific vertical domain.",
+      "clusters": [
+        "tools",
+        "landscape"
+      ],
+      "suggestedRels": [
+        "deep-research",
+        "gemini",
+        "grounding",
+        "rag"
+      ],
+      "sources": [
+        {
+          "url": "https://blog.google/products-and-platforms/products/search/ai-powered-google-finance-in-europe/",
+          "domain": "blog.google",
+          "title": "The new AI-powered Google Finance is expanding to Europe.",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Mon, 11 May 2026 06:00:00 +0000",
+          "firstSeen": "2026-05-11T07:07:01.775Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-11T07:07:01.775Z",
+      "dateLastSeen": "2026-05-11T07:07:01.775Z",
+      "sz": 14,
+      "fullName": "Deep Search (Google Finance)",
+      "nodeType": "product",
+      "proposalReason": "New product-specific instantiation of AI-powered deep search within a financial vertical; worth tracking as a named feature with potential lasting usage."
+    },
+    {
+      "id": "live-earnings-ai",
+      "label": "Live Earnings AI",
+      "workingDef": "A Google Finance feature that pairs live corporate earnings call audio with synchronised transcripts and AI-generated insights, including annotated highlights. Represents a class of real-time AI summarisation applied to time-sensitive financial events.",
+      "clusters": [
+        "tools",
+        "work"
+      ],
+      "suggestedRels": [
+        "voice-ai",
+        "grounding",
+        "gemini",
+        "multimodal"
+      ],
+      "sources": [
+        {
+          "url": "https://blog.google/products-and-platforms/products/search/ai-powered-google-finance-in-europe/",
+          "domain": "blog.google",
+          "title": "The new AI-powered Google Finance is expanding to Europe.",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Mon, 11 May 2026 06:00:00 +0000",
+          "firstSeen": "2026-05-11T07:07:01.775Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-11T07:07:01.775Z",
+      "dateLastSeen": "2026-05-11T07:07:01.775Z",
+      "sz": 14,
+      "fullName": "Live Earnings AI (Google Finance)",
+      "nodeType": "product",
+      "proposalReason": "Represents a named pattern of real-time AI summarisation over live audio events in a high-stakes financial context; may be indicative of a broader product category."
+    },
+    {
+      "id": "emergent-modularity",
+      "label": "Emergent Modularity",
+      "workingDef": "A training objective and model property in which a Mixture-of-Experts architecture develops coherent, domain-aligned expert groupings without relying on predefined human labels. Achieved in EMO (Allen AI, 2026) by constraining all tokens within a document to route through a shared expert pool, so recurring expert groups self-organise from data structure rather than externally imposed categories. Enables selective deployment of small expert subsets for specific tasks while retaining near full-model performance.",
+      "clusters": [
+        "technical",
+        "models"
+      ],
+      "suggestedRels": [
+        "mixture-of-experts",
+        "training",
+        "inference"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/allenai/emo",
+          "domain": "huggingface.co",
+          "title": "EMO: Pretraining mixture of experts for emergent modularity",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Fri, 08 May 2026 16:03:50 GMT",
+          "firstSeen": "2026-05-11T07:07:01.775Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-11T07:07:01.775Z",
+      "dateLastSeen": "2026-05-11T07:07:01.775Z",
+      "sz": 14,
+      "fullName": "Emergent Modularity (MoE)",
+      "proposalReason": "Newly coined framing from this Ai2 paper — the modular structure is emergent rather than designed, which is a meaningful conceptual distinction from standard MoE and prior domain-routing work."
+    },
+    {
+      "id": "document-boundary-routing",
+      "label": "Document-Boundary Routing",
+      "workingDef": "A training technique introduced in EMO (Allen AI, 2026) in which all tokens within a single document are constrained to activate experts drawn from a shared, document-level expert pool. The pool is selected by averaging per-token router preferences across the document. This uses document boundaries as a weak, unlabelled supervisory signal to encourage higher-level domain specialisation in MoE experts, avoiding the need for explicit domain labels on the pretraining corpus.",
+      "clusters": [
+        "technical",
+        "models"
+      ],
+      "suggestedRels": [
+        "mixture-of-experts",
+        "training",
+        "structured-output"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/allenai/emo",
+          "domain": "huggingface.co",
+          "title": "EMO: Pretraining mixture of experts for emergent modularity",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Fri, 08 May 2026 16:03:50 GMT",
+          "firstSeen": "2026-05-11T07:07:01.775Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-11T07:07:01.775Z",
+      "dateLastSeen": "2026-05-11T07:07:01.775Z",
+      "sz": 14,
+      "fullName": "Document-Boundary Routing (MoE Training Signal)",
+      "proposalReason": "A novel routing mechanism with a distinct conceptual identity — using document boundaries as a routing constraint is a concrete methodological contribution not yet tracked in the graph."
+    },
+    {
+      "id": "selective-expert-use",
+      "label": "Selective Expert Use",
+      "workingDef": "An inference-time capability of certain Mixture-of-Experts models (notably EMO, Allen AI 2026) whereby only a small, task-relevant subset of total experts is loaded and activated, while the remaining experts are discarded. Subset selection is guided by routing-usage statistics on a small validation sample. Enables improved memory and compute efficiency for specific tasks without separate fine-tuned models. Contrasts with standard MoE behaviour where full expert access is required to avoid significant performance degradation.",
+      "clusters": [
+        "technical",
+        "models"
+      ],
+      "suggestedRels": [
+        "mixture-of-experts",
+        "inference",
+        "latency",
+        "cost"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/allenai/emo",
+          "domain": "huggingface.co",
+          "title": "EMO: Pretraining mixture of experts for emergent modularity",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Fri, 08 May 2026 16:03:50 GMT",
+          "firstSeen": "2026-05-11T07:07:01.775Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-11T07:07:01.775Z",
+      "dateLastSeen": "2026-05-11T07:07:01.775Z",
+      "sz": 14,
+      "fullName": "Selective Expert Use (MoE Inference)",
+      "proposalReason": "Distinct operational concept for composable deployment of large sparse models — relevant to cost, latency, and infrastructure planning as MoE models scale."
+    },
+    {
+      "id": "expert-subset-specialization",
+      "label": "Expert Subset Specialization",
+      "workingDef": "The observed phenomenon in MoE models where identifiable groups of experts cluster around higher-level semantic domains (e.g., mathematics, code, biomedical text) rather than low-level lexical patterns such as punctuation or prepositions. Standard MoE training tends to produce the latter; EMO's document-boundary routing is designed to produce the former. Linked to the broader goal of composable and interpretable model architectures.",
+      "clusters": [
+        "technical",
+        "models"
+      ],
+      "suggestedRels": [
+        "mixture-of-experts",
+        "interpretability",
+        "training"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/allenai/emo",
+          "domain": "huggingface.co",
+          "title": "EMO: Pretraining mixture of experts for emergent modularity",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Fri, 08 May 2026 16:03:50 GMT",
+          "firstSeen": "2026-05-11T07:07:01.775Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-11T07:07:01.775Z",
+      "dateLastSeen": "2026-05-11T07:07:01.775Z",
+      "sz": 14,
+      "fullName": "Expert Subset Specialization (MoE Domain Alignment)",
+      "proposalReason": "Captures a meaningful distinction — domain-level vs. lexical-level expert specialisation — that has implications for interpretability and composable deployment patterns."
+    },
+    {
+      "id": "ai-generated-quotation-error",
+      "label": "AI-Generated Quotation Error",
+      "workingDef": "A class of AI-assisted journalism failure in which text generated by an AI tool — typically a summary or paraphrase — is mistakenly treated and published as a verbatim quotation from a real person. The NYT Editors' Note of May 2026 is a documented primary-source example: a reporter published an AI-rendered summary of Pierre Poilievre's views as a direct quote. Distinct from general hallucination in that the error involves misattribution of words to a named individual, with direct reputational and factual stakes.",
+      "clusters": [
+        "critical",
+        "human"
+      ],
+      "suggestedRels": [
+        "hallucination",
+        "hallucination-cascade",
+        "grounding",
+        "information-literacy"
+      ],
+      "sources": [
+        {
+          "url": "https://simonwillison.net/2026/May/10/new-york-times-editors-note/#atom-everything",
+          "domain": "simonwillison.net",
+          "title": "A quote from New York Times Editors’ Note",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-05-10T23:58:49+00:00",
+          "firstSeen": "2026-05-11T07:07:01.775Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-11T07:07:01.775Z",
+      "dateLastSeen": "2026-05-11T07:07:01.775Z",
+      "sz": 14,
+      "proposalReason": "Adds a journalism-specific subcategory to the hallucination cluster with a concrete, citable real-world incident."
+    },
+    {
+      "id": "hyperscale-data-center",
+      "label": "Hyperscale Data Center",
+      "workingDef": "A very large-scale data center facility — typically tens of thousands of acres or gigawatts of power capacity — built to support cloud and AI compute at massive scale. In the AI context, hyperscale data centers are the physical substrate for frontier model training and inference infrastructure. The term is used by operators, planners, and critics alike, though 'hyperscale' has no universal threshold; usage ranges from technical capacity descriptors to policy shorthand for facilities whose energy demands rival those of entire states.",
+      "clusters": [
+        "technical",
+        "landscape"
+      ],
+      "suggestedRels": [
+        "purpose-built-ai-infrastructure",
+        "ai-accelerator",
+        "inference",
+        "training",
+        "infrastructure"
+      ],
+      "sources": [
+        {
+          "url": "https://www.theverge.com/ai-artificial-intelligence/902546/data-centers-ai-energy-power-grids-controversy",
+          "domain": "theverge.com",
+          "title": "All the latest updates on AI data centers",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-05-08T14:45:08-04:00",
+          "firstSeen": "2026-05-11T07:07:01.775Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-11T07:07:01.775Z",
+      "dateLastSeen": "2026-05-11T07:07:01.775Z",
+      "sz": 14,
+      "proposalReason": "The article materially uses 'hyperscale data center' (e.g., 'planned hyperscale data center in Box Elder County') as a distinct category of AI infrastructure with policy and environmental stakes — a term with lasting relevance to AI infrastructure discourse."
+    },
+    {
+      "id": "ai-energy-demand",
+      "label": "AI Energy Demand",
+      "workingDef": "The aggregate electricity consumption attributable to AI compute infrastructure — primarily data centers running training and inference workloads. The term appears in policy, environmental, and utility discourse as a framing for how AI expansion strains power grids and raises residential energy bills. It is contested in scope: industry characterises data center energy growth as manageable and offset by efficiency gains, while critics and regulators (including the NAACP, bipartisan senators, and Pew survey respondents) frame it as an inequitably distributed burden on communities and ratepayers.",
+      "clusters": [
+        "landscape",
+        "critical"
+      ],
+      "suggestedRels": [
+        "purpose-built-ai-infrastructure",
+        "inference",
+        "training",
+        "infrastructure",
+        "ai-accelerator"
+      ],
+      "sources": [
+        {
+          "url": "https://www.theverge.com/ai-artificial-intelligence/902546/data-centers-ai-energy-power-grids-controversy",
+          "domain": "theverge.com",
+          "title": "All the latest updates on AI data centers",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-05-08T14:45:08-04:00",
+          "firstSeen": "2026-05-11T07:07:01.775Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-11T07:07:01.775Z",
+      "dateLastSeen": "2026-05-11T07:07:01.775Z",
+      "sz": 14,
+      "fullName": "AI Energy Demand (Data Center Power Consumption)",
+      "proposalReason": "The article's central throughline — from Pew survey data to Senate letters to the EIA to a 9-gigawatt Utah approval — consistently names AI energy demand as the organising policy and community concern."
+    },
+    {
+      "id": "ratepayer-protection-pledge",
+      "label": "Ratepayer Protection Pledge",
+      "workingDef": "A voluntary commitment signed by major tech companies, referenced in a Senate letter to the EIA, to protect electricity ratepayers from cost increases attributable to data center expansion. The pledge is cited by Senators Warren and Hawley as a benchmark against which mandatory energy-use disclosures would hold signatories accountable. Its voluntary nature is precisely what critics say warrants mandatory reporting requirements to verify compliance.",
+      "clusters": [
+        "business",
+        "landscape"
+      ],
+      "suggestedRels": [
+        "purpose-built-ai-infrastructure",
+        "infrastructure",
+        "agent-governance"
+      ],
+      "sources": [
+        {
+          "url": "https://www.theverge.com/ai-artificial-intelligence/902546/data-centers-ai-energy-power-grids-controversy",
+          "domain": "theverge.com",
+          "title": "All the latest updates on AI data centers",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-05-08T14:45:08-04:00",
+          "firstSeen": "2026-05-11T07:07:01.775Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-11T07:07:01.775Z",
+      "dateLastSeen": "2026-05-11T07:07:01.775Z",
+      "sz": 14,
+      "fullName": "Ratepayer Protection Pledge (Tech Industry Energy Commitment)",
+      "proposalReason": "Named explicitly in the article as the mechanism motivating bipartisan Senate pressure for mandatory data center energy disclosures — a policy-layer term with relevance to AI infrastructure governance."
+    },
+    {
+      "id": "stargate-project",
+      "label": "Stargate",
+      "workingDef": "OpenAI's $500 billion AI infrastructure initiative, involving partnerships with Oracle, Nvidia, Cisco, and SoftBank, to build large-scale data center capacity globally — including a $30 billion facility in Abu Dhabi. The project is cited in geopolitical, environmental, and policy contexts as an emblematic instance of frontier AI infrastructure at nation-state scale. The name 'Stargate' is used both for the overarching investment program and for specific facilities under construction.",
+      "clusters": [
+        "companies",
+        "landscape"
+      ],
+      "suggestedRels": [
+        "openai-co",
+        "purpose-built-ai-infrastructure",
+        "infrastructure",
+        "nvidia-co",
+        "frontier-model"
+      ],
+      "sources": [
+        {
+          "url": "https://www.theverge.com/ai-artificial-intelligence/902546/data-centers-ai-energy-power-grids-controversy",
+          "domain": "theverge.com",
+          "title": "All the latest updates on AI data centers",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-05-08T14:45:08-04:00",
+          "firstSeen": "2026-05-11T07:07:01.775Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-11T07:07:01.775Z",
+      "dateLastSeen": "2026-05-11T07:07:01.775Z",
+      "sz": 14,
+      "fullName": "Stargate (OpenAI AI Infrastructure Project)",
+      "nodeType": "product",
+      "proposalReason": "The article references Stargate directly in the context of geopolitical threats from Iran's IRGC — a concrete instance of AI infrastructure entering international security discourse, making the term worth tracking."
+    },
+    {
+      "id": "ai-speed-cyber-defense",
+      "label": "AI-Speed Cyber Defense",
+      "workingDef": "A strategic framing — used in executive and business leadership contexts (e.g., HBR, enterprise security discourse) — for the proposition that defensive cybersecurity operations must match or exceed the tempo at which AI-assisted offensive attacks can be launched and iterated. The concept implies that traditional human-paced security operations centers (SOCs) and response workflows are structurally outpaced by AI-accelerated threat actors, requiring AI-native defensive tooling and automated response.",
+      "clusters": [
+        "security",
+        "critical"
+      ],
+      "suggestedRels": [
+        "guardrails",
+        "ai-red-teaming",
+        "blue-team",
+        "sandboxing",
+        "blast-radius"
+      ],
+      "sources": [
+        {
+          "url": "https://hbr.org/2026/05/cyber-defense-has-to-move-at-the-speed-of-ai",
+          "domain": "hbr.org",
+          "title": "“Cyber Defense Has to Move at the Speed of AI”",
+          "sourceLabel": "Harvard Business Review",
+          "publishedAt": "2026-05-08T12:25:11Z",
+          "firstSeen": "2026-05-11T07:07:01.775Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-11T07:07:01.775Z",
+      "dateLastSeen": "2026-05-11T07:07:01.775Z",
+      "sz": 16,
+      "proposalReason": "A nascent framing term appearing in executive discourse; worth tracking as 'AI-speed' becomes a recurring rhetorical device for justifying AI adoption in security operations."
     }
   ]
 }

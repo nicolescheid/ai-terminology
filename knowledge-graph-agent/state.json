@@ -1,6 +1,6 @@
 {
-  "lastRunAt": "2026-05-10T19:02:19.492Z",
-  "reviewCursor": 130,
+  "lastRunAt": "2026-05-11T07:07:01.775Z",
+  "reviewCursor": 140,
   "seenArticles": {
     "93a049d060bc295b": {
       "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/tpus-8t-8i-cloud-next/",
@@ -391,6 +391,42 @@
       "title": "A quote from Andrew Quinn",
       "publishedAt": "2026-05-10T14:59:17+00:00",
       "seenAt": "2026-05-10T19:02:19.492Z"
+    },
+    "4ca12da2ae6a65c2": {
+      "url": "https://openai.com/business/guides-and-resources/how-enterprises-are-scaling-ai",
+      "title": "How enterprises are scaling AI",
+      "publishedAt": "Mon, 11 May 2026 10:00:00 GMT",
+      "seenAt": "2026-05-11T07:07:01.775Z"
+    },
+    "519f0d44ef237117": {
+      "url": "https://blog.google/products-and-platforms/products/search/ai-powered-google-finance-in-europe/",
+      "title": "The new AI-powered Google Finance is expanding to Europe.",
+      "publishedAt": "Mon, 11 May 2026 06:00:00 +0000",
+      "seenAt": "2026-05-11T07:07:01.775Z"
+    },
+    "a40b2ba2d440123f": {
+      "url": "https://huggingface.co/blog/allenai/emo",
+      "title": "EMO: Pretraining mixture of experts for emergent modularity",
+      "publishedAt": "Fri, 08 May 2026 16:03:50 GMT",
+      "seenAt": "2026-05-11T07:07:01.775Z"
+    },
+    "fdaf19544702bb34": {
+      "url": "https://simonwillison.net/2026/May/10/new-york-times-editors-note/#atom-everything",
+      "title": "A quote from New York Times Editors’ Note",
+      "publishedAt": "2026-05-10T23:58:49+00:00",
+      "seenAt": "2026-05-11T07:07:01.775Z"
+    },
+    "c0641eb0de56205a": {
+      "url": "https://www.theverge.com/ai-artificial-intelligence/902546/data-centers-ai-energy-power-grids-controversy",
+      "title": "All the latest updates on AI data centers",
+      "publishedAt": "2026-05-08T14:45:08-04:00",
+      "seenAt": "2026-05-11T07:07:01.775Z"
+    },
+    "0f4327f61d55accc": {
+      "url": "https://hbr.org/2026/05/cyber-defense-has-to-move-at-the-speed-of-ai",
+      "title": "“Cyber Defense Has to Move at the Speed of AI”",
+      "publishedAt": "2026-05-08T12:25:11Z",
+      "seenAt": "2026-05-11T07:07:01.775Z"
     }
   },
   "nodeReviews": {
@@ -1023,6 +1059,56 @@
       "lastReviewedAt": "2026-05-10T19:02:19.492Z",
       "status": "keep",
       "reason": "No source material challenges this definition. Voice/audio capabilities mentioned in OpenAI's realtime models article are consistent with the existing multimodal framing but do not require a rewrite."
+    },
+    "nvidia-co": {
+      "lastReviewedAt": "2026-05-11T07:07:01.775Z",
+      "status": "insufficient_evidence",
+      "reason": "No source material touches on Nvidia, GTC 2026, Jensen Huang, OpenClaw, or NemoClaw. Cannot verify or update the existing definition from these excerpts."
+    },
+    "opal": {
+      "lastReviewedAt": "2026-05-11T07:07:01.775Z",
+      "status": "insufficient_evidence",
+      "reason": "None of the source excerpts mention Opal, Google Labs' no-code AI builder, or its agent step feature. No basis to update or challenge the existing definition."
+    },
+    "open-weight": {
+      "lastReviewedAt": "2026-05-11T07:07:01.775Z",
+      "status": "insufficient_evidence",
+      "reason": "No source discusses open-weight models, their licensing, or the specific model families listed. Cannot update the definition from these excerpts."
+    },
+    "openai-co": {
+      "lastReviewedAt": "2026-05-11T07:07:01.775Z",
+      "status": "keep",
+      "reason": "No source material contradicts or materially adds to the existing definition of OpenAI. The definition remains accurate based on available evidence."
+    },
+    "openclaw": {
+      "lastReviewedAt": "2026-05-11T07:07:01.775Z",
+      "status": "insufficient_evidence",
+      "reason": "No source excerpt covers OpenClaw, its features, or Jensen Huang's GTC 2026 remarks about it. Cannot verify or update the definition."
+    },
+    "openclaw-company": {
+      "lastReviewedAt": "2026-05-11T07:07:01.775Z",
+      "status": "insufficient_evidence",
+      "reason": "No source material addresses the OpenClaw project community or organization. No basis to update."
+    },
+    "operator": {
+      "lastReviewedAt": "2026-05-11T07:07:01.775Z",
+      "status": "keep",
+      "reason": "No source contradicts the existing definition of Operator as OpenAI's browser agent launched January 2025. Definition can stand as-is."
+    },
+    "orchestrator": {
+      "lastReviewedAt": "2026-05-11T07:07:01.775Z",
+      "status": "keep",
+      "reason": "The definition is a conceptual description of a multi-agent coordination role. No source material challenges or adds to this definition."
+    },
+    "outcome-focused-work": {
+      "lastReviewedAt": "2026-05-11T07:07:01.775Z",
+      "status": "insufficient_evidence",
+      "reason": "No source mentions outcome-focused work, Copilot Cowork, or Claude Cowork. Cannot verify or update the definition."
+    },
+    "output": {
+      "lastReviewedAt": "2026-05-11T07:07:01.775Z",
+      "status": "keep",
+      "reason": "The definition is a general conceptual description. No source material contradicts or meaningfully updates it."
     }
   }
 }
