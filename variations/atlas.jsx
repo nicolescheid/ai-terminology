@@ -13,10 +13,11 @@
     const [active, setActive] = useState(null);
     const [filters, setFilters] = useState(() => new Set());
     const [search, setSearch] = useState('');
-    const [legendOpen, setLegendOpen] = useState(false);
+    const [legendOpen, setLegendOpen] = useState(true); // open by default — clusters are the navigation; spec §self-evidence calls them out as too easy to miss otherwise
     const [palette, setPalette] = useState(null);
     const [nodes, setNodes] = useState([]);
     const [idle, setIdle] = useState(false);
+    const [firstVisitCue, setFirstVisitCue] = useState('Click me to chat about any term.'); // dismisses on first interaction or after 8s — see effect below
 
     // idle detection — Lexi falls asleep after 60s of no input
     useEffect(() => {
@@ -26,6 +27,20 @@
       const evts = ['mousemove','keydown','wheel','pointerdown'];
       evts.forEach((e) => window.addEventListener(e, reset, { passive: true }));
       return () => { clearTimeout(t); evts.forEach((e) => window.removeEventListener(e, reset)); };
+    }, []);
+
+    // First-visit Lexi-is-clickable cue — auto-clears on first user interaction
+    // OR after 8 seconds. The point is "she's interactive now, click her" — most
+    // visitors don't realise the corner mascot is also a chat surface.
+    useEffect(() => {
+      const clear = () => setFirstVisitCue(null);
+      const t = setTimeout(clear, 8000);
+      const evts = ['mousedown', 'keydown', 'touchstart'];
+      evts.forEach((e) => window.addEventListener(e, clear, { once: true, passive: true }));
+      return () => {
+        clearTimeout(t);
+        evts.forEach((e) => window.removeEventListener(e, clear));
+      };
     }, []);
 
     useEffect(() => {
@@ -118,19 +133,28 @@
           </div>
         </div>
 
-        {/* Cardinal-direction scale rule, top-right */}
-        <div style={{ position:'absolute', top: 28, right: 32, zIndex: 5,
-          fontFamily:"'JetBrains Mono',ui-monospace,monospace", fontSize: 9,
-          letterSpacing:'0.18em', textTransform:'uppercase', color:'#7a7568',
-          textAlign:'right' }}>
-          A living map of <br/> AI vocabulary
+        {/* Top-right: framing + how-to-use, slightly louder than the original
+            mono micro-text. Two lines: what it is (serif, larger) + how to
+            use it (mono, smaller). Survives mobile via right-aligned column;
+            on small screens the help line wraps without breaking layout. */}
+        <div style={{ position:'absolute', top: 24, right: 32, zIndex: 5,
+          textAlign:'right', maxWidth: 280 }}>
+          <div style={{ fontFamily: "'GT Sectra','Times New Roman',serif", fontSize: 14,
+            lineHeight: 1.3, color: '#1f1d18', fontStyle: 'italic' }}>
+            An atlas of AI vocabulary, curated.
+          </div>
+          <div style={{ marginTop: 6,
+            fontFamily:"'JetBrains Mono',ui-monospace,monospace", fontSize: 10,
+            letterSpacing:'0.10em', color:'#7a7568', lineHeight: 1.5 }}>
+            Click any term · Type to search · Ask Lexi (corner)
+          </div>
         </div>
 
         {/* Search — floating, minimal */}
         <div style={{ position:'absolute', top: 78, left: 32, zIndex: 6, width: 260 }}>
           <input
             value={search} onChange={(e) => setSearch(e.target.value)}
-            placeholder="Find a term"
+            placeholder="Find a term — try alignment, agentic, AGI…"
             style={{ width:'100%', padding:'10px 14px', border:'1px solid rgba(31,29,24,0.14)',
               borderRadius: 999, background:'rgba(255,255,255,0.6)', color:'#1f1d18',
               fontFamily:'inherit', fontSize: 13, outline:'none' }}
@@ -212,7 +236,12 @@
             theme="atlas" />
         )}
 
-        {/* Lexi — bottom right */}
+        {/* Lexi — bottom right.
+            customMessage shows the first-visit "click me to chat" cue ONLY
+            when Lexi would otherwise be idle and there's no other state-driven
+            message wanting attention (no active term, no live search). After
+            8s or first user interaction, firstVisitCue clears and Lexi falls
+            back to her normal canned/state-driven messaging. */}
         {window.Lexi ? (
           <window.Lexi
             state={
@@ -225,6 +254,10 @@
             activeTerm={active}
             palette={palette}
             notFoundQuery={search.trim().length >= 2 && hits.length === 0 ? search.trim() : null}
+            customMessage={
+              firstVisitCue && !active && !idle && search.trim().length === 0
+                ? firstVisitCue : null
+            }
           />
         ) : null}
       </div>

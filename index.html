@@ -63,7 +63,7 @@
 <body>
 <div id="splash">
   <img src="assets/lexi-scene.webp" alt="Lexi at her desk, hoovering up AI terminology" />
-  <div class="splash-meta">Lexi is settling in&nbsp;·&nbsp;Lexicon Atlas</div>
+  <div class="splash-meta">An atlas of AI vocabulary&nbsp;·&nbsp;Curated by Lexi</div>
 </div>
 <div id="root"></div>
 
@@ -99,11 +99,14 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 // The menu pill is at z-index 100 and the splash is at z-index 9999, so the
 // menu is naturally hidden during the splash and reveals as the splash fades.
 function dismissSplash() {
+  // Bumped 900 → 1800ms — at 900ms the splash framing didn't have a chance
+  // to register before the atlas appeared. 1800 gives time to read "An atlas
+  // of AI vocabulary, curated by Lexi" before the graph takes over.
   setTimeout(function () {
     var s = document.getElementById('splash');
     if (s) s.classList.add('hidden');
     setTimeout(function () { s && s.remove(); }, 700);
-  }, 900);
+  }, 1800);
 }
 if (document.readyState === 'complete') dismissSplash();
 else window.addEventListener('load', dismissSplash);
