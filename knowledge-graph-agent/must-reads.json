@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generatedAt": "2026-05-11T07:07:01.775Z",
-    "unreadCount": 7,
-    "totalCount": 7,
+    "generatedAt": "2026-05-11T19:45:39.014Z",
+    "unreadCount": 9,
+    "totalCount": 9,
     "note": "Lexi's must-reads — articles she flags as worth Nicole reading in full. Editorial signal, not news feed. Set status to 'read' or 'dismissed' via mark-must-reads.mjs."
   },
   "entries": [
@@ -123,6 +123,40 @@
       ],
       "novelTermsInArticle": 4,
       "flaggedAt": "2026-05-09T19:00:00.611Z",
+      "status": "unread"
+    },
+    {
+      "id": "5618a9906da7df47",
+      "title": "The Inference Shift",
+      "url": "https://stratechery.com/2026/the-inference-shift/",
+      "source": "Stratechery",
+      "publishedAt": "Mon, 11 May 2026 10:00:00 +0000",
+      "summary": "Ben Thompson's Stratechery piece analyses the hardware implications of the inference shift — the transition from GPU-dominated AI compute (optimised for training) to a heterogeneous mix including specialised inference chips like Cerebras' wafer-scale engine. The article covers GPU architecture, KV cache memory dynamics, prefill vs. decode distinctions, and why inference workloads have fundamentally different hardware requirements than training. Cerebras' IPO is the news hook, but the analytical substance is a detailed breakdown of why the inference era may require purpose-built silicon distinct from Nvidia's GPU dominance.",
+      "priority": 2,
+      "reason": "A clear-eyed, technically grounded breakdown of why inference and training impose fundamentally different hardware requirements — and what that means for the future of the AI chip market. Thompson's hardware literacy here is unusually good for a strategy writer; the prefill–decode–KV cache analysis is worth reading for anyone trying to understand why 'more GPUs' may not be the whole answer to AI scaling.",
+      "clusters": [
+        "technical",
+        "landscape"
+      ],
+      "novelTermsInArticle": 4,
+      "flaggedAt": "2026-05-11T19:45:39.014Z",
+      "status": "unread"
+    },
+    {
+      "id": "608d9206911fec7c",
+      "title": "Your AI Use Is Breaking My Brain",
+      "url": "https://simonwillison.net/2026/May/11/zombie-internet/#atom-everything",
+      "source": "Simon Willison's Weblog",
+      "publishedAt": "2026-05-11T19:21:27+00:00",
+      "summary": "Simon Willison links approvingly to Jason Koebler's essay coining 'Zombie Internet' — a more nuanced alternative to 'Dead Internet Theory' describing the messy hybrid ecology of humans, bots, and AI-assisted actors intermingling online. The piece introduces a useful framing term for AI-saturated, authenticity-degraded online spaces.",
+      "priority": 2,
+      "reason": "Koebler's 'Zombie Internet' framing is the kind of terminological intervention worth paying attention to — it sharpens a real and growing problem (AI-saturated, authenticity-ambiguous online spaces) with more precision than 'bots' or 'AI slop' alone offer. Worth reading for the coinage and the argument behind it.",
+      "clusters": [
+        "critical",
+        "landscape"
+      ],
+      "novelTermsInArticle": 3,
+      "flaggedAt": "2026-05-11T19:45:39.014Z",
       "status": "unread"
     }
   ]

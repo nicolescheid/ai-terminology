@@ -1,66 +1,74 @@
 {
-  "generatedAt": "2026-05-11T07:07:01.775Z",
+  "generatedAt": "2026-05-11T19:45:39.014Z",
   "model": "claude-sonnet-4-6",
   "sourcesConfigured": 14,
   "articlesConsidered": [
     {
-      "id": "4ca12da2ae6a65c2",
+      "id": "351d00366b56e172",
+      "source": "Hugging Face Blog",
+      "title": "Adding Benchmaxxer Repellant to the Open ASR Leaderboard",
+      "url": "https://huggingface.co/blog/open-asr-leaderboard-private-data",
+      "publishedAt": "Wed, 06 May 2026 00:00:00 GMT"
+    },
+    {
+      "id": "ee5564e4d43f9040",
       "source": "OpenAI News",
-      "title": "How enterprises are scaling AI",
-      "url": "https://openai.com/business/guides-and-resources/how-enterprises-are-scaling-ai",
+      "title": "OpenAI Campus Network: Student club interest form",
+      "url": "https://openai.com/index/openai-campus-network-student-club-interest-form",
       "publishedAt": "Mon, 11 May 2026 10:00:00 GMT"
     },
     {
-      "id": "519f0d44ef237117",
-      "source": "Google AI Blog",
-      "title": "The new AI-powered Google Finance is expanding to Europe.",
-      "url": "https://blog.google/products-and-platforms/products/search/ai-powered-google-finance-in-europe/",
-      "publishedAt": "Mon, 11 May 2026 06:00:00 +0000"
+      "id": "5618a9906da7df47",
+      "source": "Stratechery",
+      "title": "The Inference Shift",
+      "url": "https://stratechery.com/2026/the-inference-shift/",
+      "publishedAt": "Mon, 11 May 2026 10:00:00 +0000"
     },
     {
-      "id": "a40b2ba2d440123f",
-      "source": "Hugging Face Blog",
-      "title": "EMO: Pretraining mixture of experts for emergent modularity",
-      "url": "https://huggingface.co/blog/allenai/emo",
-      "publishedAt": "Fri, 08 May 2026 16:03:50 GMT"
-    },
-    {
-      "id": "fdaf19544702bb34",
+      "id": "608d9206911fec7c",
       "source": "Simon Willison's Weblog",
-      "title": "A quote from New York Times Editors’ Note",
-      "url": "https://simonwillison.net/2026/May/10/new-york-times-editors-note/#atom-everything",
-      "publishedAt": "2026-05-10T23:58:49+00:00"
+      "title": "Your AI Use Is Breaking My Brain",
+      "url": "https://simonwillison.net/2026/May/11/zombie-internet/#atom-everything",
+      "publishedAt": "2026-05-11T19:21:27+00:00"
     },
     {
-      "id": "c0641eb0de56205a",
-      "source": "The Verge — AI",
-      "title": "All the latest updates on AI data centers",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/902546/data-centers-ai-energy-power-grids-controversy",
-      "publishedAt": "2026-05-08T14:45:08-04:00"
-    },
-    {
-      "id": "0f4327f61d55accc",
+      "id": "7c58891b9445ca6d",
       "source": "Harvard Business Review",
-      "title": "“Cyber Defense Has to Move at the Speed of AI”",
-      "url": "https://hbr.org/2026/05/cyber-defense-has-to-move-at-the-speed-of-ai",
-      "publishedAt": "2026-05-08T12:25:11Z"
+      "title": "Why Leaders Should Let Minor Mistakes Slide",
+      "url": "https://hbr.org/2026/05/why-leaders-should-let-minor-mistakes-slide",
+      "publishedAt": "2026-05-11T12:15:16Z"
+    },
+    {
+      "id": "eb9a6b2347db5504",
+      "source": "The Verge — AI",
+      "title": "Google stopped a zero-day hack that it says was developed with AI",
+      "url": "https://www.theverge.com/tech/928007/google-ai-zero-day-exploit-stopped",
+      "publishedAt": "2026-05-11T12:09:42-04:00"
     }
   ],
   "harvestedTerms": [
     {
       "article": {
-        "title": "The new AI-powered Google Finance is expanding to Europe.",
-        "url": "https://blog.google/products-and-platforms/products/search/ai-powered-google-finance-in-europe/"
+        "title": "Adding Benchmaxxer Repellant to the Open ASR Leaderboard",
+        "url": "https://huggingface.co/blog/open-asr-leaderboard-private-data"
       },
-      "summary": "Google announces the European expansion of its AI-powered Google Finance product, featuring AI-driven research queries, advanced charting tools, real-time market data, and live earnings call audio with synchronized transcripts and AI-generated insights. A 'Deep Search' feature for complex financial questions is highlighted as globally available.",
+      "summary": "Hugging Face's Open ASR Leaderboard team announces the addition of private, high-quality English speech datasets from Appen and DataoceanAI to combat 'benchmaxxing' — the practice of optimizing models specifically for leaderboard metrics without genuine real-world improvement. The article introduces anti-contamination strategies for ASR benchmarking, including hidden test sets and macroaveraged metrics across accents and speech styles.",
       "longlistAdditions": [
         {
-          "id": "deep-search-finance",
-          "label": "Deep Search"
+          "id": "benchmaxxing",
+          "label": "Benchmaxxing"
         },
         {
-          "id": "live-earnings-ai",
-          "label": "Live Earnings AI"
+          "id": "test-set-contamination",
+          "label": "Test-Set Contamination"
+        },
+        {
+          "id": "private-eval-dataset",
+          "label": "Private Evaluation Dataset"
+        },
+        {
+          "id": "word-error-rate",
+          "label": "Word Error Rate"
         }
       ],
       "longlistUpdates": [],
@@ -69,26 +77,14 @@
     },
     {
       "article": {
-        "title": "EMO: Pretraining mixture of experts for emergent modularity",
-        "url": "https://huggingface.co/blog/allenai/emo"
+        "title": "OpenAI Campus Network: Student club interest form",
+        "url": "https://openai.com/index/openai-campus-network-student-club-interest-form"
       },
-      "summary": "Allen AI (Ai2) releases EMO, a Mixture-of-Experts model trained end-to-end so that modular expert subsets emerge from data (using document-boundary routing constraints) rather than predefined domain labels. The result is a composable model where 12.5% of experts can serve a specific task at near full-model quality. The article is primarily a technical research announcement covering a novel MoE training methodology.",
+      "summary": "OpenAI's Campus Network announcement is a sign-up form for student clubs to partner with OpenAI for AI learning events, workshops, and early tool access. The article is almost entirely form fields and navigation boilerplate with no substantive AI concepts, terminology, or analysis.",
       "longlistAdditions": [
         {
-          "id": "emergent-modularity",
-          "label": "Emergent Modularity"
-        },
-        {
-          "id": "document-boundary-routing",
-          "label": "Document-Boundary Routing"
-        },
-        {
-          "id": "selective-expert-use",
-          "label": "Selective Expert Use"
-        },
-        {
-          "id": "expert-subset-specialization",
-          "label": "Expert Subset Specialization"
+          "id": "openai-campus-network",
+          "label": "OpenAI Campus Network"
         }
       ],
       "longlistUpdates": [],
@@ -97,115 +93,158 @@
     },
     {
       "article": {
-        "title": "A quote from New York Times Editors’ Note",
-        "url": "https://simonwillison.net/2026/May/10/new-york-times-editors-note/#atom-everything"
+        "title": "The Inference Shift",
+        "url": "https://stratechery.com/2026/the-inference-shift/"
       },
-      "summary": "Simon Willison quotes a New York Times Editors' Note acknowledging that a reporter published an AI-generated summary of a politician's views as a direct quotation. The note is a brief but significant primary-source document illustrating AI hallucination causing real-world journalistic harm.",
+      "summary": "Ben Thompson's Stratechery piece analyses the hardware implications of the inference shift — the transition from GPU-dominated AI compute (optimised for training) to a heterogeneous mix including specialised inference chips like Cerebras' wafer-scale engine. The article covers GPU architecture, KV cache memory dynamics, prefill vs. decode distinctions, and why inference workloads have fundamentally different hardware requirements than training. Cerebras' IPO is the news hook, but the analytical substance is a detailed breakdown of why the inference era may require purpose-built silicon distinct from Nvidia's GPU dominance.",
       "longlistAdditions": [
         {
-          "id": "ai-generated-quotation-error",
-          "label": "AI-Generated Quotation Error"
+          "id": "wafer-scale-engine",
+          "label": "Wafer-Scale Engine"
+        },
+        {
+          "id": "prefill-decode-split",
+          "label": "Prefill–Decode Split"
+        },
+        {
+          "id": "heterogeneous-ai-compute",
+          "label": "Heterogeneous AI Compute"
+        },
+        {
+          "id": "inference-shift",
+          "label": "Inference Shift"
         }
       ],
+      "longlistUpdates": [],
+      "rejections": [],
+      "proposalsQueued": [],
+      "mustReadFlagged": {
+        "priority": 2,
+        "reason": "A clear-eyed, technically grounded breakdown of why inference and training impose fundamentally different hardware requirements — and what that means for the future of the AI chip market. Thompson's hardware literacy here is unusually good for a strategy writer; the prefill–decode–KV cache analysis is worth reading for anyone trying to understand why 'more GPUs' may not be the whole answer to AI scaling."
+      }
+    },
+    {
+      "article": {
+        "title": "Your AI Use Is Breaking My Brain",
+        "url": "https://simonwillison.net/2026/May/11/zombie-internet/#atom-everything"
+      },
+      "summary": "Simon Willison links approvingly to Jason Koebler's essay coining 'Zombie Internet' — a more nuanced alternative to 'Dead Internet Theory' describing the messy hybrid ecology of humans, bots, and AI-assisted actors intermingling online. The piece introduces a useful framing term for AI-saturated, authenticity-degraded online spaces.",
+      "longlistAdditions": [
+        {
+          "id": "zombie-internet",
+          "label": "Zombie Internet"
+        },
+        {
+          "id": "dead-internet-theory",
+          "label": "Dead Internet Theory"
+        },
+        {
+          "id": "ai-slop",
+          "label": "AI Slop"
+        }
+      ],
+      "longlistUpdates": [],
+      "rejections": [],
+      "proposalsQueued": [],
+      "mustReadFlagged": {
+        "priority": 2,
+        "reason": "Koebler's 'Zombie Internet' framing is the kind of terminological intervention worth paying attention to — it sharpens a real and growing problem (AI-saturated, authenticity-ambiguous online spaces) with more precision than 'bots' or 'AI slop' alone offer. Worth reading for the coinage and the argument behind it."
+      }
+    },
+    {
+      "article": {
+        "title": "Why Leaders Should Let Minor Mistakes Slide",
+        "url": "https://hbr.org/2026/05/why-leaders-should-let-minor-mistakes-slide"
+      },
+      "summary": "An HBR article about management strategy — specifically whether leaders should overlook minor employee mistakes. The article excerpt provides almost no substantive content beyond metadata, navigation, and author/publication information. No AI terminology is present.",
+      "longlistAdditions": [],
       "longlistUpdates": [],
       "rejections": [],
       "proposalsQueued": []
     },
     {
       "article": {
-        "title": "All the latest updates on AI data centers",
-        "url": "https://www.theverge.com/ai-artificial-intelligence/902546/data-centers-ai-energy-power-grids-controversy"
+        "title": "Google stopped a zero-day hack that it says was developed with AI",
+        "url": "https://www.theverge.com/tech/928007/google-ai-zero-day-exploit-stopped"
       },
-      "summary": "A rolling news roundup from The Verge covering data center expansion, energy consumption controversies, environmental impact lawsuits, geopolitical threats, and infrastructure policy debates. The article covers topics from Arm's first CPU to NAACP litigation against xAI to bipartisan energy-usage disclosure efforts.",
+      "summary": "Google's Threat Intelligence Group reports the first confirmed AI-assisted zero-day exploit in the wild, identifying hallucinated CVSS scores and LLM-style formatting as forensic signals in attacker-written Python code. The article also notes hackers using persona-driven jailbreaking and targeting AI system components like connectors and autonomous skills.",
       "longlistAdditions": [
         {
-          "id": "hyperscale-data-center",
-          "label": "Hyperscale Data Center"
+          "id": "ai-generated-exploit",
+          "label": "AI-Generated Exploit"
         },
         {
-          "id": "ai-energy-demand",
-          "label": "AI Energy Demand"
+          "id": "persona-driven-jailbreaking",
+          "label": "Persona-Driven Jailbreaking"
         },
         {
-          "id": "ratepayer-protection-pledge",
-          "label": "Ratepayer Protection Pledge"
-        },
-        {
-          "id": "stargate-project",
-          "label": "Stargate"
+          "id": "hallucinated-cvss-score",
+          "label": "Hallucinated CVSS Score"
         }
       ],
-      "longlistUpdates": [],
-      "rejections": [],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "“Cyber Defense Has to Move at the Speed of AI”",
-        "url": "https://hbr.org/2026/05/cyber-defense-has-to-move-at-the-speed-of-ai"
-      },
-      "summary": "HBR executive newsletter framing AI-speed cyber defense as a strategic leadership concern. The article excerpt is largely paywalled boilerplate with minimal substantive content beyond the headline framing.",
-      "longlistAdditions": [
+      "longlistUpdates": [
         {
           "id": "ai-speed-cyber-defense",
-          "label": "AI-Speed Cyber Defense"
+          "label": "AI-Speed Cyber Defense",
+          "sourceAdded": true,
+          "sourceCount": 2,
+          "independentSourceCount": 2
         }
       ],
-      "longlistUpdates": [],
       "rejections": [],
       "proposalsQueued": []
     }
   ],
   "definitionReviews": [
     {
-      "id": "nvidia-co",
-      "status": "insufficient_evidence",
-      "reason": "No source material touches on Nvidia, GTC 2026, Jensen Huang, OpenClaw, or NemoClaw. Cannot verify or update the existing definition from these excerpts."
-    },
-    {
-      "id": "opal",
-      "status": "insufficient_evidence",
-      "reason": "None of the source excerpts mention Opal, Google Labs' no-code AI builder, or its agent step feature. No basis to update or challenge the existing definition."
-    },
-    {
-      "id": "open-weight",
-      "status": "insufficient_evidence",
-      "reason": "No source discusses open-weight models, their licensing, or the specific model families listed. Cannot update the definition from these excerpts."
-    },
-    {
-      "id": "openai-co",
+      "id": "parameters",
       "status": "keep",
-      "reason": "No source material contradicts or materially adds to the existing definition of OpenAI. The definition remains accurate based on available evidence."
+      "reason": "No source material addresses parameter counts, MoE architectures, or related concepts. Definition remains accurate and current."
     },
     {
-      "id": "openclaw",
-      "status": "insufficient_evidence",
-      "reason": "No source excerpt covers OpenClaw, its features, or Jensen Huang's GTC 2026 remarks about it. Cannot verify or update the definition."
-    },
-    {
-      "id": "openclaw-company",
-      "status": "insufficient_evidence",
-      "reason": "No source material addresses the OpenClaw project community or organization. No basis to update."
-    },
-    {
-      "id": "operator",
+      "id": "penetration-testing",
       "status": "keep",
-      "reason": "No source contradicts the existing definition of Operator as OpenAI's browser agent launched January 2025. Definition can stand as-is."
+      "reason": "The Google zero-day article touches on AI-assisted exploitation but provides no substantive detail in the excerpt to justify revising the definition. The core definition remains sound."
     },
     {
-      "id": "orchestrator",
+      "id": "permission-creep",
       "status": "keep",
-      "reason": "The definition is a conceptual description of a multi-agent coordination role. No source material challenges or adds to this definition."
+      "reason": "No source material addresses agentic permission behavior. Definition stands."
     },
     {
-      "id": "outcome-focused-work",
-      "status": "insufficient_evidence",
-      "reason": "No source mentions outcome-focused work, Copilot Cowork, or Claude Cowork. Cannot verify or update the definition."
-    },
-    {
-      "id": "output",
+      "id": "perplexity",
       "status": "keep",
-      "reason": "The definition is a general conceptual description. No source material contradicts or meaningfully updates it."
+      "reason": "No source material references Perplexity the company or its products. Definition stands."
+    },
+    {
+      "id": "persistent-memory",
+      "status": "keep",
+      "reason": "No source material addresses persistent memory in AI agents. Definition stands."
+    },
+    {
+      "id": "pilot-purgatory",
+      "status": "keep",
+      "reason": "No source material addresses enterprise AI deployment challenges. Definition stands."
+    },
+    {
+      "id": "planner-worker",
+      "status": "keep",
+      "reason": "No source material addresses planner-worker architectures. Definition stands."
+    },
+    {
+      "id": "planning",
+      "status": "keep",
+      "reason": "No source material addresses agent planning capabilities. Definition stands."
+    },
+    {
+      "id": "proactive-agent",
+      "status": "keep",
+      "reason": "No source material addresses proactive agents or KAIROS. Definition stands."
+    },
+    {
+      "id": "project-glasswing",
+      "status": "keep",
+      "reason": "No source material references Project Glasswing. Definition stands."
     }
   ],
   "notes": []

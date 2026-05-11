@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-05-11T07:07:01.775Z",
-    "entryCount": 81,
+    "generatedAt": "2026-05-11T19:45:39.014Z",
+    "entryCount": 96,
     "note": "Lexi-managed Tier 2 longlist — terms under observation, awaiting evidence to support promotion to the graph (Tier 1)."
   },
   "entries": [
@@ -2947,14 +2947,497 @@
           "sourceLabel": "Harvard Business Review",
           "publishedAt": "2026-05-08T12:25:11Z",
           "firstSeen": "2026-05-11T07:07:01.775Z"
+        },
+        {
+          "url": "https://www.theverge.com/tech/928007/google-ai-zero-day-exploit-stopped",
+          "domain": "theverge.com",
+          "title": "Google stopped a zero-day hack that it says was developed with AI",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-05-11T12:09:42-04:00",
+          "firstSeen": "2026-05-11T19:45:39.014Z"
+        }
+      ],
+      "sourceCount": 2,
+      "independentSourceCount": 2,
+      "dateFirstSeen": "2026-05-11T07:07:01.775Z",
+      "dateLastSeen": "2026-05-11T19:45:39.014Z",
+      "sz": 16,
+      "proposalReason": "A nascent framing term appearing in executive discourse; worth tracking as 'AI-speed' becomes a recurring rhetorical device for justifying AI adoption in security operations."
+    },
+    {
+      "id": "benchmaxxing",
+      "label": "Benchmaxxing",
+      "workingDef": "The practice of optimizing a model specifically to improve its score on a known benchmark without achieving corresponding gains in real-world performance. Coined as a portmanteau of 'benchmark' and 'maxxing,' the term describes deliberate or incidental overfitting to public test sets — including training on data that closely resembles evaluation splits. Closely related to benchmark gaming and evaluation gaming, but implies an active, targeted optimization strategy rather than accidental saturation.",
+      "clusters": [
+        "critical",
+        "models"
+      ],
+      "suggestedRels": [
+        "benchmark-gaming",
+        "evals",
+        "evaluation-gaming",
+        "benchmark-saturation"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/open-asr-leaderboard-private-data",
+          "domain": "huggingface.co",
+          "title": "Adding Benchmaxxer Repellant to the Open ASR Leaderboard",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Wed, 06 May 2026 00:00:00 GMT",
+          "firstSeen": "2026-05-11T19:45:39.014Z"
         }
       ],
       "sourceCount": 1,
       "independentSourceCount": 1,
-      "dateFirstSeen": "2026-05-11T07:07:01.775Z",
-      "dateLastSeen": "2026-05-11T07:07:01.775Z",
-      "sz": 16,
-      "proposalReason": "A nascent framing term appearing in executive discourse; worth tracking as 'AI-speed' becomes a recurring rhetorical device for justifying AI adoption in security operations."
+      "dateFirstSeen": "2026-05-11T19:45:39.014Z",
+      "dateLastSeen": "2026-05-11T19:45:39.014Z",
+      "sz": 14,
+      "fullName": "Benchmaxxing (Benchmark-Specific Optimization)",
+      "proposalReason": "A new, memorable coinage for an important and recurring failure mode in AI evaluation — more specific and more vivid than the existing 'benchmark gaming' framing. Worth tracking as it may propagate."
+    },
+    {
+      "id": "test-set-contamination",
+      "label": "Test-Set Contamination",
+      "workingDef": "The condition in which data drawn from or closely resembling a held-out evaluation set appears in a model's training data, inflating benchmark scores relative to true generalisation performance. In ASR and LLM contexts alike, contamination may be explicit (direct inclusion of test examples) or distributional (training on data from the same source or domain as the test set). Motivates the use of private or undisclosed evaluation sets.",
+      "clusters": [
+        "critical",
+        "models"
+      ],
+      "suggestedRels": [
+        "benchmark-gaming",
+        "evals",
+        "benchmaxxing",
+        "distribution-shift"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/open-asr-leaderboard-private-data",
+          "domain": "huggingface.co",
+          "title": "Adding Benchmaxxer Repellant to the Open ASR Leaderboard",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Wed, 06 May 2026 00:00:00 GMT",
+          "firstSeen": "2026-05-11T19:45:39.014Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-11T19:45:39.014Z",
+      "dateLastSeen": "2026-05-11T19:45:39.014Z",
+      "sz": 14,
+      "proposalReason": "A foundational concept in evaluation integrity that is increasingly central to leaderboard design decisions — the article treats it as the primary threat motivating private dataset adoption."
+    },
+    {
+      "id": "private-eval-dataset",
+      "label": "Private Evaluation Dataset",
+      "workingDef": "A benchmark dataset whose contents are withheld from model developers and the public, used to produce evaluation scores that are harder to game through targeted optimization or data contamination. Distinct from public leaderboard sets, private evaluation datasets are typically administered by a third party; developers submit models for scoring without direct access to the examples. The Open ASR Leaderboard's adoption of private sets from Appen and DataoceanAI is an illustrative instance.",
+      "clusters": [
+        "models",
+        "technical"
+      ],
+      "suggestedRels": [
+        "evals",
+        "benchmark-gaming",
+        "benchmaxxing",
+        "test-set-contamination"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/open-asr-leaderboard-private-data",
+          "domain": "huggingface.co",
+          "title": "Adding Benchmaxxer Repellant to the Open ASR Leaderboard",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Wed, 06 May 2026 00:00:00 GMT",
+          "firstSeen": "2026-05-11T19:45:39.014Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-11T19:45:39.014Z",
+      "dateLastSeen": "2026-05-11T19:45:39.014Z",
+      "sz": 14,
+      "fullName": "Private Evaluation Dataset (Hidden Test Set)",
+      "proposalReason": "A concrete methodological response to benchmaxxing and contamination — worth tracking as a countermeasure pattern in evaluation infrastructure."
+    },
+    {
+      "id": "word-error-rate",
+      "label": "Word Error Rate",
+      "workingDef": "The standard metric for automatic speech recognition (ASR) system performance, computed as the number of word-level errors (substitutions, deletions, insertions) divided by the total number of words in the reference transcript. Lower WER indicates better transcription accuracy. The article uses macroaveraged WER across multiple dataset splits and accents as the primary leaderboard ranking signal.",
+      "clusters": [
+        "models",
+        "technical"
+      ],
+      "suggestedRels": [
+        "evals",
+        "benchmark-gaming",
+        "benchmark-saturation"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/open-asr-leaderboard-private-data",
+          "domain": "huggingface.co",
+          "title": "Adding Benchmaxxer Repellant to the Open ASR Leaderboard",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Wed, 06 May 2026 00:00:00 GMT",
+          "firstSeen": "2026-05-11T19:45:39.014Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-11T19:45:39.014Z",
+      "dateLastSeen": "2026-05-11T19:45:39.014Z",
+      "sz": 14,
+      "fullName": "Word Error Rate (WER)",
+      "proposalReason": "The primary evaluation metric for the ASR domain; relevant as the graph expands to cover speech and audio AI capabilities alongside text-based model evaluation."
+    },
+    {
+      "id": "openai-campus-network",
+      "label": "OpenAI Campus Network",
+      "workingDef": "An OpenAI initiative partnering with university student clubs worldwide to facilitate hands-on AI learning, workshops, hackathons, and early access to OpenAI tools and programs. Positioned as a community-building and talent-pipeline effort targeting student leaders across disciplines.",
+      "clusters": [
+        "companies",
+        "landscape"
+      ],
+      "suggestedRels": [
+        "openai-co",
+        "chatgpt",
+        "codex-model"
+      ],
+      "sources": [
+        {
+          "url": "https://openai.com/index/openai-campus-network-student-club-interest-form",
+          "domain": "openai.com",
+          "title": "OpenAI Campus Network: Student club interest form",
+          "sourceLabel": "OpenAI News",
+          "publishedAt": "Mon, 11 May 2026 10:00:00 GMT",
+          "firstSeen": "2026-05-11T19:45:39.014Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-11T19:45:39.014Z",
+      "dateLastSeen": "2026-05-11T19:45:39.014Z",
+      "sz": 14,
+      "nodeType": "initiative",
+      "proposalReason": "New initiative name worth tracking as a longlist entry; represents OpenAI's institutional outreach strategy toward academic communities."
+    },
+    {
+      "id": "wafer-scale-engine",
+      "label": "Wafer-Scale Engine",
+      "workingDef": "A chip architecture pioneered by Cerebras Systems in which the entire silicon wafer — rather than individual dies cut from it — is treated as a single integrated chip. By laying wiring across the scribe lines that normally separate reticle exposures, Cerebras eliminates chip-to-chip interconnects within the device, yielding extremely high on-chip SRAM and memory bandwidth. The WSE-3, for example, offers ~44GB of SRAM at ~21 PB/s bandwidth — roughly 6,000× the memory bandwidth of an H100 GPU — making it highly suited to memory-bandwidth-bound inference workloads, though its limited off-chip scaling constrains large-model training use cases.",
+      "clusters": [
+        "technical",
+        "companies"
+      ],
+      "suggestedRels": [
+        "inference",
+        "kv-cache",
+        "ai-inference-chip",
+        "ai-accelerator"
+      ],
+      "sources": [
+        {
+          "url": "https://stratechery.com/2026/the-inference-shift/",
+          "domain": "stratechery.com",
+          "title": "The Inference Shift",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Mon, 11 May 2026 10:00:00 +0000",
+          "firstSeen": "2026-05-11T19:45:39.014Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-11T19:45:39.014Z",
+      "dateLastSeen": "2026-05-11T19:45:39.014Z",
+      "sz": 14,
+      "fullName": "Wafer-Scale Engine (WSE)",
+      "nodeType": "product",
+      "proposalReason": "A new product category concept — the wafer-scale chip — that is central to the article's thesis about hardware heterogeneity in AI inference. Distinct enough from generic 'AI accelerator' framing to merit its own entry."
+    },
+    {
+      "id": "prefill-decode-split",
+      "label": "Prefill–Decode Split",
+      "workingDef": "A decomposition of LLM inference into two functionally distinct phases with different hardware requirements: (1) prefill, which encodes the full input context into an internal state and is highly parallelisable and compute-bound; and (2) decode, which autoregressively generates output tokens by reading both the KV cache (context) and model weights on every step, and is serial and memory-bandwidth-bound. The split has practical implications for chip selection — prefill favours high-compute GPUs while decode favours high-bandwidth, low-latency memory — and motivates heterogeneous or disaggregated inference architectures.",
+      "clusters": [
+        "technical"
+      ],
+      "suggestedRels": [
+        "inference",
+        "kv-cache",
+        "latency",
+        "ai-inference-chip",
+        "token"
+      ],
+      "sources": [
+        {
+          "url": "https://stratechery.com/2026/the-inference-shift/",
+          "domain": "stratechery.com",
+          "title": "The Inference Shift",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Mon, 11 May 2026 10:00:00 +0000",
+          "firstSeen": "2026-05-11T19:45:39.014Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-11T19:45:39.014Z",
+      "dateLastSeen": "2026-05-11T19:45:39.014Z",
+      "sz": 14,
+      "fullName": "Prefill–Decode Split (Inference Pipeline Decomposition)",
+      "proposalReason": "A technically precise concept the article defines in detail. Directly relevant to understanding why inference and training require different hardware, and foundational to any serious treatment of AI compute architecture."
+    },
+    {
+      "id": "heterogeneous-ai-compute",
+      "label": "Heterogeneous AI Compute",
+      "workingDef": "A framing for the emerging AI infrastructure landscape in which no single chip architecture dominates all workloads. Contrasted with the 'GPU era' where Nvidia's GPUs handled both training and inference, heterogeneous compute argues that future AI deployments will mix purpose-built silicon — e.g., wafer-scale chips for low-latency inference, specialised training accelerators, edge chips — matched to specific workload profiles. The article treats Cerebras' IPO as a signal of this structural shift.",
+      "clusters": [
+        "technical",
+        "landscape"
+      ],
+      "suggestedRels": [
+        "inference",
+        "training",
+        "ai-accelerator",
+        "purpose-built-ai-infrastructure",
+        "ai-inference-chip"
+      ],
+      "sources": [
+        {
+          "url": "https://stratechery.com/2026/the-inference-shift/",
+          "domain": "stratechery.com",
+          "title": "The Inference Shift",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Mon, 11 May 2026 10:00:00 +0000",
+          "firstSeen": "2026-05-11T19:45:39.014Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-11T19:45:39.014Z",
+      "dateLastSeen": "2026-05-11T19:45:39.014Z",
+      "sz": 14,
+      "proposalReason": "A framing concept the article centres its thesis on — that the GPU monoculture is giving way to a heterogeneous hardware stack. Captures a structurally important shift in the AI infrastructure landscape."
+    },
+    {
+      "id": "inference-shift",
+      "label": "Inference Shift",
+      "workingDef": "A periodization framing — introduced and elaborated by Ben Thompson in this Stratechery piece — for the structural transition in AI compute demand from training-dominated GPU workloads to inference-dominated, increasingly heterogeneous hardware deployments. The framing argues that as agent usage scales, inference becomes the primary driver of compute spend, creating market conditions for specialised inference silicon distinct from Nvidia's GPU-centric stack. As a named framing by a single analyst, its adoption and durability as industry terminology remains to be seen.",
+      "clusters": [
+        "landscape",
+        "technical"
+      ],
+      "suggestedRels": [
+        "inference",
+        "ai-accelerator",
+        "purpose-built-ai-infrastructure",
+        "ai-inference-chip",
+        "agentic-era"
+      ],
+      "sources": [
+        {
+          "url": "https://stratechery.com/2026/the-inference-shift/",
+          "domain": "stratechery.com",
+          "title": "The Inference Shift",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Mon, 11 May 2026 10:00:00 +0000",
+          "firstSeen": "2026-05-11T19:45:39.014Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-11T19:45:39.014Z",
+      "dateLastSeen": "2026-05-11T19:45:39.014Z",
+      "sz": 14,
+      "fullName": "The Inference Shift",
+      "proposalReason": "The article's own coinage and central thesis — worth tracking to see if it gains independent adoption as a framing term in the infrastructure and AI policy discourse."
+    },
+    {
+      "id": "zombie-internet",
+      "label": "Zombie Internet",
+      "workingDef": "A term coined by Jason Koebler to describe the current state of the internet as neither purely bot-driven (the 'Dead Internet' scenario) nor authentically human — but a hybrid ecology in which humans using AI interact with other humans using AI, humans interact with bots, and automated accounts interact with real people. The framing captures the cognitive and epistemic exhaustion of navigating spaces where the provenance of any given piece of content is genuinely unclear. Distinguished from 'Dead Internet Theory' in that the internet is not dead but animated by something ambiguous and harder to filter: zombie-like human-AI hybrids rather than pure bot-spam.",
+      "clusters": [
+        "critical",
+        "landscape"
+      ],
+      "suggestedRels": [
+        "ai-washing",
+        "hallucination",
+        "agent-washing",
+        "the-ai"
+      ],
+      "sources": [
+        {
+          "url": "https://simonwillison.net/2026/May/11/zombie-internet/#atom-everything",
+          "domain": "simonwillison.net",
+          "title": "Your AI Use Is Breaking My Brain",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-05-11T19:21:27+00:00",
+          "firstSeen": "2026-05-11T19:45:39.014Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-11T19:45:39.014Z",
+      "dateLastSeen": "2026-05-11T19:45:39.014Z",
+      "sz": 14,
+      "proposalReason": "A vivid and precise framing term for a real phenomenon — the hybrid authenticity crisis of AI-saturated online spaces. Strong candidate for lasting terminological relevance."
+    },
+    {
+      "id": "dead-internet-theory",
+      "label": "Dead Internet Theory",
+      "workingDef": "A pre-existing internet culture theory holding that large portions of internet traffic and content are generated entirely by bots interacting with other bots, with human presence diminishing to a marginal role. Invoked here as the foil to the 'Zombie Internet' framing — the Dead Internet imagines a clean separation (bots vs. humans) whereas the Zombie Internet describes a messier, harder-to-detect hybrid. The term precedes the current AI content wave but has been revived as context for understanding AI's effect on online authenticity.",
+      "clusters": [
+        "critical",
+        "landscape"
+      ],
+      "suggestedRels": [
+        "zombie-internet",
+        "the-ai",
+        "chatbot"
+      ],
+      "sources": [
+        {
+          "url": "https://simonwillison.net/2026/May/11/zombie-internet/#atom-everything",
+          "domain": "simonwillison.net",
+          "title": "Your AI Use Is Breaking My Brain",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-05-11T19:21:27+00:00",
+          "firstSeen": "2026-05-11T19:45:39.014Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-11T19:45:39.014Z",
+      "dateLastSeen": "2026-05-11T19:45:39.014Z",
+      "sz": 14,
+      "proposalReason": "Foundational foil concept for the 'Zombie Internet' framing; useful to track as a paired term."
+    },
+    {
+      "id": "ai-slop",
+      "label": "AI Slop",
+      "workingDef": "Informal term (tagged as 'slop' in Simon Willison's own taxonomy) for low-quality, bulk AI-generated content produced primarily for economic incentives — spam blogs, automated YouTube channels, AI-written social media posts — rather than to inform or entertain. Distinct from hallucination (which is a model failure) and from AI-assisted writing (which may be high quality); slop specifically connotes volume-over-quality content farms. The term is gaining traction in critical discourse about AI's effect on information environments.",
+      "clusters": [
+        "critical",
+        "landscape"
+      ],
+      "suggestedRels": [
+        "hallucination",
+        "ai-washing",
+        "the-ai",
+        "chatbot"
+      ],
+      "sources": [
+        {
+          "url": "https://simonwillison.net/2026/May/11/zombie-internet/#atom-everything",
+          "domain": "simonwillison.net",
+          "title": "Your AI Use Is Breaking My Brain",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-05-11T19:21:27+00:00",
+          "firstSeen": "2026-05-11T19:45:39.014Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-11T19:45:39.014Z",
+      "dateLastSeen": "2026-05-11T19:45:39.014Z",
+      "sz": 14,
+      "proposalReason": "Willison's own tagging of this post with 'slop' signals it as an established term in his vocabulary; the Koebler piece it links to is centrally about this phenomenon."
+    },
+    {
+      "id": "ai-generated-exploit",
+      "label": "AI-Generated Exploit",
+      "workingDef": "An exploit or malicious payload whose code shows evidence of having been drafted or refined using a large language model — for example, hallucinated CVSS scores, structured 'textbook' formatting consistent with LLM training data, or AI-optimised payload tuning. Google Threat Intelligence Group's May 2026 report is the first public instance of a major threat-intelligence organisation attributing a zero-day exploit to AI-assisted development. The category is distinct from AI-discovered vulnerabilities (where AI finds flaws in legitimate code); here AI is used by the attacker to construct the offensive payload. Forensic identification relies partly on LLM output artefacts embedded in the code.",
+      "clusters": [
+        "security",
+        "critical"
+      ],
+      "suggestedRels": [
+        "zero-day",
+        "hallucination",
+        "jailbreak",
+        "exploit"
+      ],
+      "sources": [
+        {
+          "url": "https://www.theverge.com/tech/928007/google-ai-zero-day-exploit-stopped",
+          "domain": "theverge.com",
+          "title": "Google stopped a zero-day hack that it says was developed with AI",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-05-11T12:09:42-04:00",
+          "firstSeen": "2026-05-11T19:45:39.014Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-11T19:45:39.014Z",
+      "dateLastSeen": "2026-05-11T19:45:39.014Z",
+      "sz": 14,
+      "fullName": "AI-Generated Exploit (AI-Assisted Cyberattack Payload)",
+      "proposalReason": "First confirmed real-world case of an AI-assisted zero-day exploit, establishing a new forensic category for threat intelligence."
+    },
+    {
+      "id": "persona-driven-jailbreaking",
+      "label": "Persona-Driven Jailbreaking",
+      "workingDef": "A jailbreaking technique in which an attacker instructs an AI model to adopt a persona — such as a security expert — in order to elicit responses the model would otherwise refuse, such as vulnerability analysis or exploit generation. Documented by Google GTIG as an observed attacker pattern in 2026. Related to but distinct from generic prompt injection; persona-driven jailbreaking relies on role-framing rather than instruction overrides or data-plane attacks.",
+      "clusters": [
+        "security",
+        "critical"
+      ],
+      "suggestedRels": [
+        "jailbreak",
+        "prompt-injection",
+        "red-teaming",
+        "exploit"
+      ],
+      "sources": [
+        {
+          "url": "https://www.theverge.com/tech/928007/google-ai-zero-day-exploit-stopped",
+          "domain": "theverge.com",
+          "title": "Google stopped a zero-day hack that it says was developed with AI",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-05-11T12:09:42-04:00",
+          "firstSeen": "2026-05-11T19:45:39.014Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-11T19:45:39.014Z",
+      "dateLastSeen": "2026-05-11T19:45:39.014Z",
+      "sz": 14,
+      "fullName": "Persona-Driven Jailbreaking (Attacker Jailbreak Technique)",
+      "proposalReason": "A named attacker technique distinct from generic jailbreaking, materialising in active threat-intelligence reports."
+    },
+    {
+      "id": "hallucinated-cvss-score",
+      "label": "Hallucinated CVSS Score",
+      "workingDef": "A Common Vulnerability Scoring System (CVSS) score embedded in attacker-authored exploit code that is factually incorrect or fabricated — identified by Google GTIG as a forensic signal indicating the code was produced with LLM assistance. The hallucinated score is a characteristic LLM output artefact: the model generates plausible-looking metadata without verifying its accuracy. Its presence in a malicious script provides defenders with a new category of attribution evidence for AI-assisted attacks.",
+      "clusters": [
+        "security",
+        "critical"
+      ],
+      "suggestedRels": [
+        "hallucination",
+        "zero-day",
+        "exploit",
+        "cve"
+      ],
+      "sources": [
+        {
+          "url": "https://www.theverge.com/tech/928007/google-ai-zero-day-exploit-stopped",
+          "domain": "theverge.com",
+          "title": "Google stopped a zero-day hack that it says was developed with AI",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-05-11T12:09:42-04:00",
+          "firstSeen": "2026-05-11T19:45:39.014Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-11T19:45:39.014Z",
+      "dateLastSeen": "2026-05-11T19:45:39.014Z",
+      "sz": 14,
+      "fullName": "Hallucinated CVSS Score (LLM Forensic Artefact in Exploit Code)",
+      "proposalReason": "Introduces a concrete forensic signal — hallucinated metadata in exploit code — that may become a standard attribution indicator for AI-assisted attacks."
     }
   ]
 }

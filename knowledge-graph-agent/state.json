@@ -1,6 +1,6 @@
 {
-  "lastRunAt": "2026-05-11T07:07:01.775Z",
-  "reviewCursor": 140,
+  "lastRunAt": "2026-05-11T19:45:39.014Z",
+  "reviewCursor": 150,
   "seenArticles": {
     "93a049d060bc295b": {
       "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/tpus-8t-8i-cloud-next/",
@@ -427,6 +427,42 @@
       "title": "“Cyber Defense Has to Move at the Speed of AI”",
       "publishedAt": "2026-05-08T12:25:11Z",
       "seenAt": "2026-05-11T07:07:01.775Z"
+    },
+    "351d00366b56e172": {
+      "url": "https://huggingface.co/blog/open-asr-leaderboard-private-data",
+      "title": "Adding Benchmaxxer Repellant to the Open ASR Leaderboard",
+      "publishedAt": "Wed, 06 May 2026 00:00:00 GMT",
+      "seenAt": "2026-05-11T19:45:39.014Z"
+    },
+    "ee5564e4d43f9040": {
+      "url": "https://openai.com/index/openai-campus-network-student-club-interest-form",
+      "title": "OpenAI Campus Network: Student club interest form",
+      "publishedAt": "Mon, 11 May 2026 10:00:00 GMT",
+      "seenAt": "2026-05-11T19:45:39.014Z"
+    },
+    "5618a9906da7df47": {
+      "url": "https://stratechery.com/2026/the-inference-shift/",
+      "title": "The Inference Shift",
+      "publishedAt": "Mon, 11 May 2026 10:00:00 +0000",
+      "seenAt": "2026-05-11T19:45:39.014Z"
+    },
+    "608d9206911fec7c": {
+      "url": "https://simonwillison.net/2026/May/11/zombie-internet/#atom-everything",
+      "title": "Your AI Use Is Breaking My Brain",
+      "publishedAt": "2026-05-11T19:21:27+00:00",
+      "seenAt": "2026-05-11T19:45:39.014Z"
+    },
+    "7c58891b9445ca6d": {
+      "url": "https://hbr.org/2026/05/why-leaders-should-let-minor-mistakes-slide",
+      "title": "Why Leaders Should Let Minor Mistakes Slide",
+      "publishedAt": "2026-05-11T12:15:16Z",
+      "seenAt": "2026-05-11T19:45:39.014Z"
+    },
+    "eb9a6b2347db5504": {
+      "url": "https://www.theverge.com/tech/928007/google-ai-zero-day-exploit-stopped",
+      "title": "Google stopped a zero-day hack that it says was developed with AI",
+      "publishedAt": "2026-05-11T12:09:42-04:00",
+      "seenAt": "2026-05-11T19:45:39.014Z"
     }
   },
   "nodeReviews": {
@@ -1109,6 +1145,56 @@
       "lastReviewedAt": "2026-05-11T07:07:01.775Z",
       "status": "keep",
       "reason": "The definition is a general conceptual description. No source material contradicts or meaningfully updates it."
+    },
+    "parameters": {
+      "lastReviewedAt": "2026-05-11T19:45:39.014Z",
+      "status": "keep",
+      "reason": "No source material addresses parameter counts, MoE architectures, or related concepts. Definition remains accurate and current."
+    },
+    "penetration-testing": {
+      "lastReviewedAt": "2026-05-11T19:45:39.014Z",
+      "status": "keep",
+      "reason": "The Google zero-day article touches on AI-assisted exploitation but provides no substantive detail in the excerpt to justify revising the definition. The core definition remains sound."
+    },
+    "permission-creep": {
+      "lastReviewedAt": "2026-05-11T19:45:39.014Z",
+      "status": "keep",
+      "reason": "No source material addresses agentic permission behavior. Definition stands."
+    },
+    "perplexity": {
+      "lastReviewedAt": "2026-05-11T19:45:39.014Z",
+      "status": "keep",
+      "reason": "No source material references Perplexity the company or its products. Definition stands."
+    },
+    "persistent-memory": {
+      "lastReviewedAt": "2026-05-11T19:45:39.014Z",
+      "status": "keep",
+      "reason": "No source material addresses persistent memory in AI agents. Definition stands."
+    },
+    "pilot-purgatory": {
+      "lastReviewedAt": "2026-05-11T19:45:39.014Z",
+      "status": "keep",
+      "reason": "No source material addresses enterprise AI deployment challenges. Definition stands."
+    },
+    "planner-worker": {
+      "lastReviewedAt": "2026-05-11T19:45:39.014Z",
+      "status": "keep",
+      "reason": "No source material addresses planner-worker architectures. Definition stands."
+    },
+    "planning": {
+      "lastReviewedAt": "2026-05-11T19:45:39.014Z",
+      "status": "keep",
+      "reason": "No source material addresses agent planning capabilities. Definition stands."
+    },
+    "proactive-agent": {
+      "lastReviewedAt": "2026-05-11T19:45:39.014Z",
+      "status": "keep",
+      "reason": "No source material addresses proactive agents or KAIROS. Definition stands."
+    },
+    "project-glasswing": {
+      "lastReviewedAt": "2026-05-11T19:45:39.014Z",
+      "status": "keep",
+      "reason": "No source material references Project Glasswing. Definition stands."
     }
   }
 }
