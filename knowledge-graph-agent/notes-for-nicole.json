@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generatedAt": "2026-05-11T19:45:39.014Z",
-    "unreadCount": 0,
-    "totalCount": 115,
+    "generatedAt": "2026-05-11T20:47:45.482Z",
+    "unreadCount": 12,
+    "totalCount": 127,
     "note": "Notes for Nicole — Lexi's manager channel (spec §6). Mandatory entry types fire when their triggering condition is met; discretionary entries are observations Lexi thinks Nicole should see. Set status to 'read', 'actioned', or 'dismissed' as appropriate."
   },
   "entries": [
@@ -2967,6 +2967,365 @@
       },
       "suggestedAction": "Either revise the working definition to name the contestation (who uses it to mean what), or confirm this term doesn't warrant the contested treatment in this case.",
       "readAt": "2026-05-11T07:10:50.062Z"
+    },
+    {
+      "id": "d79da27924ea2474",
+      "type": "source_pattern",
+      "writtenAt": "2026-05-11T20:47:45.482Z",
+      "runId": "8968ddf4-d9e0-4869-9485-c6a044db3876",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Source pattern: domain 'blog.google' appears in 15 recent longlist entries",
+      "details": "In the past 30 days, 15 longlist entries have at least one source from blog.google. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
+      "evidence": {
+        "check": "cross_temporal_domain_share",
+        "domain": "blog.google",
+        "entryIds": [
+          "tpu",
+          "ai-inference-chip",
+          "ai-training-chip",
+          "purpose-built-ai-infrastructure",
+          "ai-accelerator",
+          "gemini-enterprise-agent-platform",
+          "deep-research-max",
+          "learn-mode-colab",
+          "agentic-era",
+          "ai-mode",
+          "canvas-ai-mode",
+          "google-flow",
+          "ai-assisted-filmmaking",
+          "deep-search-finance",
+          "live-earnings-ai"
+        ],
+        "windowDays": 30,
+        "recentEntryCount": 96
+      },
+      "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
+      "source": "auditor"
+    },
+    {
+      "id": "17d3a37535b05915",
+      "type": "source_pattern",
+      "writtenAt": "2026-05-11T20:47:45.482Z",
+      "runId": "8968ddf4-d9e0-4869-9485-c6a044db3876",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Source pattern: domain 'openai.com' appears in 22 recent longlist entries",
+      "details": "In the past 30 days, 22 longlist entries have at least one source from openai.com. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
+      "evidence": {
+        "check": "cross_temporal_domain_share",
+        "domain": "openai.com",
+        "entryIds": [
+          "tpu",
+          "purpose-built-ai-infrastructure",
+          "ai-accelerator",
+          "gpt55",
+          "system-card",
+          "reward-signal-leakage",
+          "sft-data-contamination",
+          "personality-customization",
+          "behavioral-audit",
+          "streaming-inference",
+          "voice-ai",
+          "real-time-audio-pipeline",
+          "trusted-access-cyber",
+          "security-flywheel",
+          "codex-security",
+          "gdpval",
+          "tool-search",
+          "toolathlon",
+          "gpt-realtime-2",
+          "voice-to-action",
+          "adjustable-reasoning-effort",
+          "openai-campus-network"
+        ],
+        "windowDays": 30,
+        "recentEntryCount": 96
+      },
+      "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
+      "source": "auditor"
+    },
+    {
+      "id": "381e33e79a22963e",
+      "type": "source_pattern",
+      "writtenAt": "2026-05-11T20:47:45.482Z",
+      "runId": "8968ddf4-d9e0-4869-9485-c6a044db3876",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Source pattern: domain 'stratechery.com' appears in 10 recent longlist entries",
+      "details": "In the past 30 days, 10 longlist entries have at least one source from stratechery.com. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
+      "evidence": {
+        "check": "cross_temporal_domain_share",
+        "domain": "stratechery.com",
+        "entryIds": [
+          "ai-inference-chip",
+          "purpose-built-ai-infrastructure",
+          "terafab",
+          "ai-driven-cpu-demand",
+          "trainium",
+          "agentic-business-model",
+          "wafer-scale-engine",
+          "prefill-decode-split",
+          "heterogeneous-ai-compute",
+          "inference-shift"
+        ],
+        "windowDays": 30,
+        "recentEntryCount": 96
+      },
+      "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
+      "source": "auditor"
+    },
+    {
+      "id": "94c963631a0c03b2",
+      "type": "source_pattern",
+      "writtenAt": "2026-05-11T20:47:45.482Z",
+      "runId": "8968ddf4-d9e0-4869-9485-c6a044db3876",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Source pattern: domain 'lastweekin.ai' appears in 7 recent longlist entries",
+      "details": "In the past 30 days, 7 longlist entries have at least one source from lastweekin.ai. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
+      "evidence": {
+        "check": "cross_temporal_domain_share",
+        "domain": "lastweekin.ai",
+        "entryIds": [
+          "gpt55",
+          "llm-steganography",
+          "cot-faithfulness",
+          "agent-os",
+          "clawmark",
+          "ai-sabotage-eval",
+          "document-delegation-corruption"
+        ],
+        "windowDays": 30,
+        "recentEntryCount": 96
+      },
+      "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
+      "source": "auditor"
+    },
+    {
+      "id": "b4a554444079cec5",
+      "type": "source_pattern",
+      "writtenAt": "2026-05-11T20:47:45.482Z",
+      "runId": "8968ddf4-d9e0-4869-9485-c6a044db3876",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Source pattern: domain 'anthropic.com' appears in 14 recent longlist entries",
+      "details": "In the past 30 days, 14 longlist entries have at least one source from anthropic.com. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
+      "evidence": {
+        "check": "cross_temporal_domain_share",
+        "domain": "anthropic.com",
+        "entryIds": [
+          "self-verification",
+          "cyber-verification-program",
+          "differential-capability-reduction",
+          "long-horizon-autonomy",
+          "claude-design",
+          "design-system-integration",
+          "handoff-bundle",
+          "interactive-prototyping",
+          "trainium",
+          "claude-partner-network",
+          "applied-ai-engineering",
+          "ai-systems-integrator",
+          "orbital-ai-compute",
+          "data-residency"
+        ],
+        "windowDays": 30,
+        "recentEntryCount": 96
+      },
+      "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
+      "source": "auditor"
+    },
+    {
+      "id": "ae7fcf006989eecd",
+      "type": "source_pattern",
+      "writtenAt": "2026-05-11T20:47:45.482Z",
+      "runId": "8968ddf4-d9e0-4869-9485-c6a044db3876",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Source pattern: domain 'simonwillison.net' appears in 11 recent longlist entries",
+      "details": "In the past 30 days, 11 longlist entries have at least one source from simonwillison.net. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
+      "evidence": {
+        "check": "cross_temporal_domain_share",
+        "domain": "simonwillison.net",
+        "entryIds": [
+          "behavioral-audit",
+          "micro-app",
+          "personal-software",
+          "voice-ai",
+          "real-time-audio-pipeline",
+          "redos",
+          "webrtc",
+          "ai-generated-quotation-error",
+          "zombie-internet",
+          "dead-internet-theory",
+          "ai-slop"
+        ],
+        "windowDays": 30,
+        "recentEntryCount": 96
+      },
+      "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
+      "source": "auditor"
+    },
+    {
+      "id": "943e9725c98c302e",
+      "type": "source_pattern",
+      "writtenAt": "2026-05-11T20:47:45.482Z",
+      "runId": "8968ddf4-d9e0-4869-9485-c6a044db3876",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Source pattern: domain 'huggingface.co' appears in 15 recent longlist entries",
+      "details": "In the past 30 days, 15 longlist entries have at least one source from huggingface.co. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
+      "evidence": {
+        "check": "cross_temporal_domain_share",
+        "domain": "huggingface.co",
+        "entryIds": [
+          "train-inference-mismatch",
+          "rollout-logprobs",
+          "inflight-weight-update",
+          "fp32-lm-head",
+          "hybrid-agent-pipeline",
+          "privacy-by-design",
+          "vllm",
+          "emergent-modularity",
+          "document-boundary-routing",
+          "selective-expert-use",
+          "expert-subset-specialization",
+          "benchmaxxing",
+          "test-set-contamination",
+          "private-eval-dataset",
+          "word-error-rate"
+        ],
+        "windowDays": 30,
+        "recentEntryCount": 96
+      },
+      "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
+      "source": "auditor"
+    },
+    {
+      "id": "f4f14d164c57003f",
+      "type": "source_pattern",
+      "writtenAt": "2026-05-11T20:47:45.482Z",
+      "runId": "8968ddf4-d9e0-4869-9485-c6a044db3876",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Source pattern: domain 'theverge.com' appears in 8 recent longlist entries",
+      "details": "In the past 30 days, 8 longlist entries have at least one source from theverge.com. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
+      "evidence": {
+        "check": "cross_temporal_domain_share",
+        "domain": "theverge.com",
+        "entryIds": [
+          "hyperscale-data-center",
+          "ai-energy-demand",
+          "ratepayer-protection-pledge",
+          "stargate-project",
+          "ai-speed-cyber-defense",
+          "ai-generated-exploit",
+          "persona-driven-jailbreaking",
+          "hallucinated-cvss-score"
+        ],
+        "windowDays": 30,
+        "recentEntryCount": 96
+      },
+      "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
+      "source": "auditor"
+    },
+    {
+      "id": "9852821d4bb68745",
+      "type": "source_pattern",
+      "writtenAt": "2026-05-11T20:47:45.482Z",
+      "runId": "8968ddf4-d9e0-4869-9485-c6a044db3876",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Adoption velocity: 'Agentic Business Model' hit 2 sources in 1d",
+      "details": "This entry accumulated 2 sources within 1 day(s) of first sighting. Often legitimate for product launches, but rapid multi-sourcing from a tight source pool can also signal coordinated promotion. Source labels involved: Stratechery.",
+      "evidence": {
+        "check": "adoption_velocity",
+        "entryId": "agentic-business-model",
+        "label": "Agentic Business Model",
+        "sourceCount": 2,
+        "spanDays": 1,
+        "sourceLabels": [
+          "Stratechery"
+        ],
+        "firstSourceTs": "2026-05-09T07:44:17.196Z",
+        "lastSourceTs": "2026-05-10T19:02:19.492Z"
+      },
+      "suggestedAction": "Cross-check the sources for shared authors or cross-citation. If sources are tightly coupled (same publication network, same author byline), treat as one source for promotion-eligibility purposes.",
+      "source": "auditor"
+    },
+    {
+      "id": "686bdd3bbd052132",
+      "type": "source_pattern",
+      "writtenAt": "2026-05-11T20:47:45.482Z",
+      "runId": "8968ddf4-d9e0-4869-9485-c6a044db3876",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Adoption velocity: 'Google Flow' hit 2 sources in 1d",
+      "details": "This entry accumulated 2 sources within 1 day(s) of first sighting. Often legitimate for product launches, but rapid multi-sourcing from a tight source pool can also signal coordinated promotion. Source labels involved: Google AI Blog.",
+      "evidence": {
+        "check": "adoption_velocity",
+        "entryId": "google-flow",
+        "label": "Google Flow",
+        "sourceCount": 2,
+        "spanDays": 1,
+        "sourceLabels": [
+          "Google AI Blog"
+        ],
+        "firstSourceTs": "2026-05-09T19:00:00.611Z",
+        "lastSourceTs": "2026-05-10T19:02:19.492Z"
+      },
+      "suggestedAction": "Cross-check the sources for shared authors or cross-citation. If sources are tightly coupled (same publication network, same author byline), treat as one source for promotion-eligibility purposes.",
+      "source": "auditor"
+    },
+    {
+      "id": "c2641600e56a34ad",
+      "type": "source_pattern",
+      "writtenAt": "2026-05-11T20:47:45.482Z",
+      "runId": "8968ddf4-d9e0-4869-9485-c6a044db3876",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Adoption velocity: 'AI-Assisted Filmmaking' hit 2 sources in 1d",
+      "details": "This entry accumulated 2 sources within 1 day(s) of first sighting. Often legitimate for product launches, but rapid multi-sourcing from a tight source pool can also signal coordinated promotion. Source labels involved: Google AI Blog.",
+      "evidence": {
+        "check": "adoption_velocity",
+        "entryId": "ai-assisted-filmmaking",
+        "label": "AI-Assisted Filmmaking",
+        "sourceCount": 2,
+        "spanDays": 1,
+        "sourceLabels": [
+          "Google AI Blog"
+        ],
+        "firstSourceTs": "2026-05-09T19:00:00.611Z",
+        "lastSourceTs": "2026-05-10T19:02:19.492Z"
+      },
+      "suggestedAction": "Cross-check the sources for shared authors or cross-citation. If sources are tightly coupled (same publication network, same author byline), treat as one source for promotion-eligibility purposes.",
+      "source": "auditor"
+    },
+    {
+      "id": "48302036551fa5f8",
+      "type": "source_pattern",
+      "writtenAt": "2026-05-11T20:47:45.482Z",
+      "runId": "8968ddf4-d9e0-4869-9485-c6a044db3876",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Adoption velocity: 'AI-Speed Cyber Defense' hit 2 sources in 1d",
+      "details": "This entry accumulated 2 sources within 1 day(s) of first sighting. Often legitimate for product launches, but rapid multi-sourcing from a tight source pool can also signal coordinated promotion. Source labels involved: Harvard Business Review, The Verge — AI.",
+      "evidence": {
+        "check": "adoption_velocity",
+        "entryId": "ai-speed-cyber-defense",
+        "label": "AI-Speed Cyber Defense",
+        "sourceCount": 2,
+        "spanDays": 1,
+        "sourceLabels": [
+          "Harvard Business Review",
+          "The Verge — AI"
+        ],
+        "firstSourceTs": "2026-05-11T07:07:01.775Z",
+        "lastSourceTs": "2026-05-11T19:45:39.014Z"
+      },
+      "suggestedAction": "Cross-check the sources for shared authors or cross-citation. If sources are tightly coupled (same publication network, same author byline), treat as one source for promotion-eligibility purposes.",
+      "source": "auditor"
     }
   ]
 }

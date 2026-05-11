@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-11T19:47:31.753Z",
+  "generatedAt": "2026-05-11T20:47:45.823Z",
   "firstRunAt": "2026-04-27T01:07:31.335Z",
   "phase": 1,
   "headline": {
@@ -508,9 +508,9 @@
     }
   },
   "audit": {
-    "flagsTotal": 19,
+    "flagsTotal": 31,
     "flagsByType": {
-      "source_pattern": 19
+      "source_pattern": 31
     }
   },
   "costs": {
