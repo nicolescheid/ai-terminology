@@ -20,7 +20,6 @@ const CL = {
   technical: { label:'Technical',            hex:'#D0D040', cx:.82, cy:.58 },
   safety:    { label:'Safety',               hex:'#FF6090', cx:.62, cy:.68 },
   human:     { label:'Human Skills',         hex:'#40D080', cx:.42, cy:.82 },
-  dyadic:    { label:'Dyadic Mind',          hex:'#40C0D0', cx:.22, cy:.75 },
   evolved:   { label:'Evolved',              hex:'#5090FF', cx:.14, cy:.52 },
   core:      { label:'Core',                hex:'#C070FF', cx:.38, cy:.44 },
   tools:     { label:'Tools & Platforms',    hex:'#70C8F8', cx:.60, cy:.42 },
@@ -58,12 +57,12 @@ const NODES = [
 
 {id:'system-prompt',label:'System Prompt',clusters:['core'],sz:19,
  def:'A hidden set of instructions that shapes how an AI model behaves before the user types anything — defining its persona, constraints, tone, and purpose. Users typically cannot see a system prompt; it operates in the background, establishing the rules of the interaction.',
- rels:['context-window','model-concept','guardrails','co-channeling','prompt','context-engineering','harness','undercover-mode'],
+ rels:['context-window','model-concept','guardrails','prompt','context-engineering','harness','undercover-mode'],
  refs:[]},
 
 {id:'context-window',label:'Context Window',clusters:['core','technical'],sz:20,
  def:'The maximum amount of text — measured in tokens — that an AI model can "see" and reason about at once. Everything outside the context window is invisible to the model during that interaction. Context windows have grown dramatically (from thousands to millions of tokens), but they remain finite — which is why context entropy, memory consolidation, and context engineering exist as disciplines.',
- rels:['memory','system-prompt','model-concept','progressive-context','context-engineering','context-entropy','token','context-rot','attention-budget','kv-cache','transformer'],refs:[]},
+ rels:['memory','system-prompt','model-concept','context-engineering','context-entropy','token','context-rot','attention-budget','kv-cache','transformer'],refs:[]},
 
 {id:'harness',label:'Harness',clusters:['core','safety'],sz:22,
  def:'The software layer that wraps an AI model and makes it production-capable — governing how it accesses tools, manages files, executes commands, and respects safety boundaries. The model provides intelligence; the harness provides behaviour.<sup><a href="#fn1">¹</a></sup> See also: Agentic Harness.',
@@ -92,7 +91,7 @@ const NODES = [
 
 {id:'memory',label:'Memory',clusters:['agentic','technical'],sz:22,
  def:'How an AI retains information. Short-term memory lives in the context window and disappears when the conversation ends. Long-term memory is stored externally and retrieved when needed.',
- rels:['agent','context-window','handoff','rag','progressive-context','persistent-memory','memory-consolidation'],refs:[]},
+ rels:['agent','context-window','handoff','rag','persistent-memory','memory-consolidation'],refs:[]},
 
 {id:'orchestrator',label:'Orchestrator',clusters:['agentic'],sz:21,
  def:'The model or system that coordinates a team of agents — deciding which agent does what, in what order, and what to do with results. The project manager of the multi-agent world.',
@@ -240,7 +239,7 @@ const NODES = [
 
 {id:'context-engineering',label:'Context Engineering',clusters:['technical','core'],sz:20,
  def:'The discipline that has displaced prompt engineering as the critical skill in 2026.<sup><a href="#fn1">¹</a></sup> Not about crafting a clever sentence — it\'s about ensuring the agent sees the right information, at the right time, in the right format.',
- rels:['context-window','harness','prompt-engineering','progressive-context','system-prompt','memory','prompt','attention-budget','context-economy','lost-in-the-middle'],
+ rels:['context-window','harness','prompt-engineering','system-prompt','memory','prompt','attention-budget','context-economy','lost-in-the-middle'],
  refs:[{n:1,src:'Anthropic engineering blog, 2026',q:'context engineering AI agents 2026'}]},
 
 {id:'open-weight',label:'Open-Weight Models',clusters:['technical','models','landscape'],sz:17,
@@ -301,7 +300,7 @@ const NODES = [
 
 {id:'evals',label:'Evals',clusters:['safety','technical'],sz:16,
  def:'Systematic tests that measure how well an AI performs on specific tasks. Building good evals is surprisingly hard. Without evals, you don\'t know if your AI is working; you\'re just hoping.',
- rels:['guardrails','human-in-the-loop','recursive-refinement','verifiable-domain','verifiability','benchmark-saturation','evaluation-gaming'],
+ rels:['guardrails','human-in-the-loop','verifiable-domain','verifiability','benchmark-saturation','evaluation-gaming'],
  refs:[]},
 
 {id:'autonomy-spectrum',label:'Autonomy Spectrum',clusters:['safety','agentic','autonomy'],sz:18,
@@ -377,7 +376,7 @@ const NODES = [
  fullName:'Prompt Engineering',
  def:'The practice of carefully crafting inputs — structure, framing, examples, instructions — to steer a model toward better outputs. For two years, this was the primary skill separating effective AI users from ineffective ones.',
  evo:'As a job title it\'s fading — absorbed into context engineering, system prompt design, and agentic workflow architecture. The scale changed: you\'re not writing one good prompt, you\'re designing how an AI thinks across an entire interaction.',
- rels:['system-prompt','context-window','co-channeling','progressive-context','context-engineering','prompt'],
+ rels:['system-prompt','context-window','context-engineering','prompt'],
  refs:[{n:1,src:'Mike Mason, 2026',q:'prompt engineering vs context engineering 2026'}]},
 
 {id:'ai-assistant',label:'AI Assistant',clusters:['evolved'],sz:15,evolved:true,
@@ -418,25 +417,11 @@ const NODES = [
  rels:['chatgpt','openai-co','computer-use','agent','deep-research'],
  refs:[{n:1,src:'OpenAI / Wikipedia, 2025',q:'OpenAI Operator browser agent deprecated 2025'}]},
 
-// ── DYADIC MIND ─────────────────────────────────────────────────
-
-{id:'progressive-context',label:'Progressive Context',clusters:['dyadic'],sz:16,
- def:'Building shared understanding across a conversation iteratively — not dumping all context upfront, but letting it accumulate through sustained interaction until patterns emerge. The clay-on-the-wheel methodology. (Dyadic Mind framework)',
- rels:['context-window','memory','recursive-refinement','prompt-engineering','context-engineering'],refs:[]},
-
-{id:'co-channeling',label:'Co-Channeling',clusters:['dyadic'],sz:16,
- def:'Designing AI interaction to optimise both the human\'s input and the AI\'s output simultaneously. Not just "how do I prompt better" — but "how do I structure this so we both show up well?" (Coined: Dyadic Mind)',
- rels:['system-prompt','prompt-engineering','socratic-dialogue'],refs:[]},
-
-{id:'socratic-dialogue',label:'Socratic Dialogue',clusters:['dyadic','human'],sz:16,
- def:'Using structured questioning — rather than direct instruction — to draw out reasoning, surface assumptions, and build understanding through the conversation itself. Ancient method, newly urgent in AI interaction design.',
- rels:['co-channeling','progressive-context','critical-thinking','metacognition'],refs:[]},
-
-{id:'recursive-refinement',label:'Recursive Refinement',clusters:['dyadic'],sz:14,
- def:'Iterating on AI output not by starting over, but by feeding each result back into the next prompt — treating the conversation as a series of increasingly precise passes over the same material. (Dyadic Mind framework)',
- rels:['progressive-context','context-window','evals'],refs:[]},
-
 // ── HUMAN SKILLS ────────────────────────────────────────────────
+
+{id:'socratic-dialogue',label:'Socratic Dialogue',clusters:['human'],sz:16,
+ def:'Using structured questioning — rather than direct instruction — to draw out reasoning, surface assumptions, and build understanding through the conversation itself. Ancient method, newly urgent in AI interaction design.',
+ rels:['critical-thinking','metacognition'],refs:[]},
 
 {id:'critical-thinking',label:'Critical Thinking',clusters:['human'],sz:20,
  def:'The disciplined practice of evaluating claims, spotting logical gaps, and asking "does this actually do what it says?" The most important skill for navigating a world full of agent-washing and AI hype.',
@@ -447,9 +432,9 @@ const NODES = [
  rels:['multi-agent','orchestrator','critical-thinking','abstraction','delegation'],
  refs:[{n:1,src:'Deloitte, 2025',q:'systems thinking AI agents enterprise'}]},
 
-{id:'metacognition',label:'Metacognition',clusters:['human','dyadic'],sz:16,
+{id:'metacognition',label:'Metacognition',clusters:['human'],sz:16,
  def:'Thinking about how you think. Awareness of your own reasoning patterns, biases, and blind spots. The foundation of effective human-AI collaboration.',
- rels:['critical-thinking','socratic-dialogue','progressive-context','information-literacy'],refs:[]},
+ rels:['critical-thinking','socratic-dialogue','information-literacy'],refs:[]},
 
 {id:'information-literacy',label:'Information Literacy',clusters:['human'],sz:17,
  def:'The ability to evaluate sources, understand provenance, and distinguish reliable evidence from noise.<sup><a href="#fn1">¹</a></sup> In an AI world saturated with plausible-sounding outputs, this is the foundational skill.',
@@ -692,7 +677,7 @@ const NODES = [
 // ── COMPANIES ───────────────────────────────────────────────────
 
 {id:'anthropic-co',label:'Anthropic',clusters:['companies'],sz:20,
- def:'AI safety company founded 2021 by former OpenAI researchers. Constitutional AI approach, safety-first research, Claude model family. Creator of Claude.ai, Claude Code, MCP, and the Dyadic Mind community\'s primary AI partner.',
+ def:'AI safety company founded 2021 by former OpenAI researchers. Constitutional AI approach, safety-first research, Claude model family. Creator of Claude.ai, Claude Code, and MCP.',
  rels:['claude','claude-ai','claude-code','mcp','openai-co','claude-mythos','project-glasswing','responsible-scaling-policy','constitutional-ai'],refs:[]},
 
 {id:'openai-co',label:'OpenAI',clusters:['companies'],sz:20,

@@ -79,7 +79,6 @@
     context:   135,  // green-yellow
     human:     150,  // green
     business:  165,  // teal-green
-    dyadic:    195,  // teal
     autonomy:  215,  // cyan-blue
     tools:     225,  // sky blue
     evolved:   250,  // periwinkle

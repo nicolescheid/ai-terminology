@@ -240,15 +240,23 @@
               borderRadius: 14,
               boxShadow:'0 16px 40px -12px rgba(0,0,0,0.14)',
               display:'grid', gridTemplateColumns:'1fr 1fr', gap: 6, minWidth: 320,
-              // Slide animation: when closed, slip down 12px + fade out.
+              // Drawer animation: when closed, the panel slides DOWN past the
+              // legend pill and shrinks toward bottom-left so it reads as
+              // tucking back into the pill that spawned it. The opacity fade
+              // is slower than the transform so motion is visible end-to-end
+              // rather than the panel disappearing mid-slide ("poof").
               // pointerEvents:none ensures the hidden panel doesn't intercept
-              // clicks meant for the graph behind it. transform-origin is
-              // bottom-left so the slide reads as "tucking back into" the pill.
-              transform: legendOpen ? 'translateY(0)' : 'translateY(12px)',
+              // clicks meant for the graph behind it.
+              transform: legendOpen
+                ? 'translateY(0) scale(1)'
+                : 'translateY(28px) scale(0.92)',
               opacity: legendOpen ? 1 : 0,
               pointerEvents: legendOpen ? 'auto' : 'none',
-              transition: 'transform 240ms cubic-bezier(0.2,0.8,0.2,1), opacity 200ms ease-out',
+              transition: legendOpen
+                ? 'transform 320ms cubic-bezier(0.2,0.9,0.25,1.05), opacity 260ms ease-out'
+                : 'transform 360ms cubic-bezier(0.4,0,0.6,1), opacity 360ms ease-in',
               transformOrigin: 'bottom left',
+              willChange: 'transform, opacity',
             }}>
               {Object.entries(palette).map(([cid, c]) => (
                 <button key={cid} onClick={() => toggleFilter(cid)}

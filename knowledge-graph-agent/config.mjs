@@ -53,7 +53,7 @@ export default {
   maxTermsPerArticle: 4,
   maxNodesToReviewPerRun: 10,
   requestTimeoutMs: 45000,
-  userAgent: "DyadicMindKnowledgeGraphAgent/1.0",
+  userAgent: "LexiKnowledgeGraphAgent/1.0",
   sources: [
     // The labs themselves (concentrated, share opinions, single-domain echo
     // chambers — useful as primary signal but cannot meet the credibility bar
@@ -69,10 +69,10 @@ export default {
       // Per-source UA override. OpenAI's Cloudflare bot defence 403s the bare
       // agent UA on Node fetch (curl with the same UA passes — the gating
       // signal is more than just the UA string, but a Mozilla-prefixed UA
-      // flips the verdict to 200). The DyadicMindKnowledgeGraphAgent suffix
+      // flips the verdict to 200). The LexiKnowledgeGraphAgent suffix
       // preserves attribution. Default for other sources stays the honest
       // agent UA at the config root — this override is opt-in per source.
-      userAgent: "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 DyadicMindKnowledgeGraphAgent/1.0",
+      userAgent: "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 LexiKnowledgeGraphAgent/1.0",
       limit: 3
     },
     {
