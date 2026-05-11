@@ -13,7 +13,8 @@
     const [active, setActive] = useState(null);
     const [filters, setFilters] = useState(() => new Set());
     const [search, setSearch] = useState('');
-    const [legendOpen, setLegendOpen] = useState(true); // open by default — clusters are the navigation; spec §self-evidence calls them out as too easy to miss otherwise
+    const [legendOpen, setLegendOpen] = useState(true); // open by default — clusters are the navigation; auto-closes after 6s if not engaged with (effect below)
+    const [legendEngaged, setLegendEngaged] = useState(false); // true once user toggles the pill or clicks a cluster chip → don't auto-close
     const [palette, setPalette] = useState(null);
     const [nodes, setNodes] = useState([]);
     const [idle, setIdle] = useState(false);
@@ -42,6 +43,16 @@
         evts.forEach((e) => window.removeEventListener(e, clear));
       };
     }, []);
+
+    // Legend auto-close — opens on first paint so the cluster vocabulary is
+    // visible immediately, then slides closed after 6s so it doesn't crowd
+    // the page. Once the user engages (toggles the pill or clicks a chip),
+    // legendEngaged flips true and auto-close is suppressed for the session.
+    useEffect(() => {
+      if (legendEngaged) return;
+      const t = setTimeout(() => setLegendOpen(false), 6000);
+      return () => clearTimeout(t);
+    }, [legendEngaged]);
 
     useEffect(() => {
       if (!stageRef.current || apiRef.current) return;
@@ -106,10 +117,16 @@
     }, [search, nodes]);
 
     function toggleFilter(id) {
+      setLegendEngaged(true);
       const next = new Set(filters);
       next.has(id) ? next.delete(id) : next.add(id);
       setFilters(next);
       apiRef.current?.filterByCluster(next);
+    }
+
+    function toggleLegend() {
+      setLegendEngaged(true);
+      setLegendOpen((o) => !o);
     }
 
     return (
@@ -121,37 +138,52 @@
           background: "radial-gradient(ellipse at 30% 20%, rgba(220,200,160,0.10), transparent 50%), radial-gradient(ellipse at 80% 75%, rgba(160,170,200,0.08), transparent 55%)",
           zIndex: 0 }} />
 
-        {/* Top mark — minimal */}
-        <div style={{ position:'absolute', top: 28, left: 32, zIndex: 5,
-          display:'flex', alignItems:'baseline', gap: 14 }}>
-          <div style={{ fontFamily: "'GT Sectra','Times New Roman',serif", fontSize: 26, lineHeight: 1, letterSpacing: '-0.01em' }}>
-            Lexicon
+        {/* Header bar — semi-transparent strip across the top, anchors the
+            title + the framing/how-to copy as one block. Backdrop blur lets
+            the paper texture show through gently. The 1px bottom border gives
+            a soft visual separation from the graph stage below without
+            looking like a chrome ribbon. Search input sits just below the
+            header (top: 98px now to clear it on small screens). */}
+        <div style={{
+          position:'absolute', top: 0, left: 0, right: 0, zIndex: 4,
+          padding:'18px 32px 16px',
+          background:'rgba(244,241,234,0.72)',
+          backdropFilter:'blur(12px)',
+          WebkitBackdropFilter:'blur(12px)',
+          borderBottom:'1px solid rgba(31,29,24,0.06)',
+          display:'flex', justifyContent:'space-between', alignItems:'flex-start',
+          gap: 24, flexWrap:'wrap',
+        }}>
+          {/* Title left */}
+          <div style={{ display:'flex', alignItems:'baseline', gap: 14 }}>
+            <div style={{ fontFamily: "'GT Sectra','Times New Roman',serif",
+              fontSize: 26, lineHeight: 1, letterSpacing: '-0.01em' }}>
+              Lexicon
+            </div>
+            <div style={{ fontFamily:"'JetBrains Mono',ui-monospace,monospace",
+              fontSize: 9, letterSpacing:'0.18em', textTransform:'uppercase',
+              color:'#7a7568', paddingTop: 4 }}>
+              ATLAS &nbsp;·&nbsp; Q1 2026 &nbsp;·&nbsp; v2.0
+            </div>
           </div>
-          <div style={{ fontFamily:"'JetBrains Mono',ui-monospace,monospace", fontSize: 9, letterSpacing:'0.18em',
-            textTransform:'uppercase', color:'#7a7568', paddingTop: 4 }}>
-            ATLAS &nbsp;·&nbsp; Q1 2026 &nbsp;·&nbsp; v2.0
+
+          {/* Framing right */}
+          <div style={{ textAlign:'right', maxWidth: 280 }}>
+            <div style={{ fontFamily: "'GT Sectra','Times New Roman',serif",
+              fontSize: 14, lineHeight: 1.3, color: '#1f1d18', fontStyle: 'italic' }}>
+              An atlas of AI vocabulary, curated.
+            </div>
+            <div style={{ marginTop: 4,
+              fontFamily:"'JetBrains Mono',ui-monospace,monospace",
+              fontSize: 10, letterSpacing:'0.10em', color:'#7a7568', lineHeight: 1.5 }}>
+              Click any term · Type to search · Ask Lexi (corner)
+            </div>
           </div>
         </div>
 
-        {/* Top-right: framing + how-to-use, slightly louder than the original
-            mono micro-text. Two lines: what it is (serif, larger) + how to
-            use it (mono, smaller). Survives mobile via right-aligned column;
-            on small screens the help line wraps without breaking layout. */}
-        <div style={{ position:'absolute', top: 24, right: 32, zIndex: 5,
-          textAlign:'right', maxWidth: 280 }}>
-          <div style={{ fontFamily: "'GT Sectra','Times New Roman',serif", fontSize: 14,
-            lineHeight: 1.3, color: '#1f1d18', fontStyle: 'italic' }}>
-            An atlas of AI vocabulary, curated.
-          </div>
-          <div style={{ marginTop: 6,
-            fontFamily:"'JetBrains Mono',ui-monospace,monospace", fontSize: 10,
-            letterSpacing:'0.10em', color:'#7a7568', lineHeight: 1.5 }}>
-            Click any term · Type to search · Ask Lexi (corner)
-          </div>
-        </div>
-
-        {/* Search — floating, minimal */}
-        <div style={{ position:'absolute', top: 78, left: 32, zIndex: 6, width: 260 }}>
+        {/* Search — floating, minimal. top:96 clears the new semi-transparent
+            header bar above (which is ~80px tall with padding). */}
+        <div style={{ position:'absolute', top: 96, left: 32, zIndex: 6, width: 260 }}>
           <input
             value={search} onChange={(e) => setSearch(e.target.value)}
             placeholder="Find a term — try alignment, agentic, AGI…"
@@ -183,9 +215,12 @@
         {/* Stage */}
         <div ref={stageRef} style={{ position:'absolute', inset: 0, zIndex: 1 }} />
 
-        {/* Legend dial — bottom left */}
+        {/* Legend drawer — bottom left. Always rendered (so the slide
+            animation works on toggle); CSS transform + opacity drive
+            show/hide. Auto-opens on first paint and closes after 6s
+            unless engaged with (legendEngaged flag in state). */}
         <div style={{ position:'absolute', bottom: 28, left: 32, zIndex: 5 }}>
-          <button onClick={() => setLegendOpen(!legendOpen)}
+          <button onClick={toggleLegend}
             style={{ display:'flex', alignItems:'center', gap: 8,
               padding:'8px 14px', borderRadius: 999, border:'1px solid rgba(31,29,24,0.16)',
               background:'rgba(255,255,255,0.7)', backdropFilter:'blur(8px)',
@@ -196,11 +231,25 @@
               background: 'conic-gradient(from 0deg, #d97a4a, #d9c33a, #4ad97a, #4abad9, #8a4ad9, #d94a8a, #d97a4a)' }} />
             Legend ({filters.size || 'all'})
           </button>
-          {legendOpen && palette && (
-            <div style={{ marginTop: 10, padding: 16, background:'rgba(255,255,255,0.95)',
-              border:'1px solid rgba(31,29,24,0.10)', borderRadius: 14,
+          {palette && (
+            <div style={{
+              marginTop: 10,
+              padding: 16,
+              background:'rgba(255,255,255,0.95)',
+              border:'1px solid rgba(31,29,24,0.10)',
+              borderRadius: 14,
               boxShadow:'0 16px 40px -12px rgba(0,0,0,0.14)',
-              display:'grid', gridTemplateColumns:'1fr 1fr', gap: 6, minWidth: 320 }}>
+              display:'grid', gridTemplateColumns:'1fr 1fr', gap: 6, minWidth: 320,
+              // Slide animation: when closed, slip down 12px + fade out.
+              // pointerEvents:none ensures the hidden panel doesn't intercept
+              // clicks meant for the graph behind it. transform-origin is
+              // bottom-left so the slide reads as "tucking back into" the pill.
+              transform: legendOpen ? 'translateY(0)' : 'translateY(12px)',
+              opacity: legendOpen ? 1 : 0,
+              pointerEvents: legendOpen ? 'auto' : 'none',
+              transition: 'transform 240ms cubic-bezier(0.2,0.8,0.2,1), opacity 200ms ease-out',
+              transformOrigin: 'bottom left',
+            }}>
               {Object.entries(palette).map(([cid, c]) => (
                 <button key={cid} onClick={() => toggleFilter(cid)}
                   style={{ display:'flex', alignItems:'center', gap: 8,
