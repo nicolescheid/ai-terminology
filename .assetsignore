@@ -47,3 +47,7 @@ package-lock.json
 *.local
 .env
 .env.*
+
+# Internal handoff / collaboration docs — not user-facing.
+HANDOFF.md
+CLAUDE.md
