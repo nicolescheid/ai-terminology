@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generatedAt": "2026-05-11T19:45:39.014Z",
-    "unreadCount": 9,
-    "totalCount": 9,
+    "generatedAt": "2026-05-13T19:53:32.068Z",
+    "unreadCount": 10,
+    "totalCount": 10,
     "note": "Lexi's must-reads — articles she flags as worth Nicole reading in full. Editorial signal, not news feed. Set status to 'read' or 'dismissed' via mark-must-reads.mjs."
   },
   "entries": [
@@ -157,6 +157,23 @@
       ],
       "novelTermsInArticle": 3,
       "flaggedAt": "2026-05-11T19:45:39.014Z",
+      "status": "unread"
+    },
+    {
+      "id": "73f7949394039a8a",
+      "title": "The Deployment Company, Back to the 70s, Apple and Intel",
+      "url": "https://stratechery.com/2026/the-deployment-company-back-to-the-70s-apple-and-intel/",
+      "source": "Stratechery",
+      "publishedAt": "Wed, 13 May 2026 10:00:00 +0000",
+      "summary": "Ben Thompson's Stratechery Update covers three themes: (1) OpenAI and Google launching 'forward deployed engineer' units/consulting ventures to embed AI in enterprises — framed as top-down enterprise transformation analogous to the mainframe era, not SaaS; (2) a historical analogy argument that AI is more like 1970s computing (mainframe wave) than the internet, with enterprises as buyers and workers as the replaced/augmented; (3) bullishness on Palantir's Foundry/ontology layer as the data-integration piece enabling agent-as-worker-replacement. The piece is rich in business-model and deployment framing.",
+      "priority": 2,
+      "reason": "Thompson's mainframe analogy is one of the more substantive historical framings for how enterprise AI deployment actually works — and why it looks less like SaaS adoption and more like a 1970s top-down computing wave with executives as buyers and workers as the replaced. The piece introduces 'Forward Deployed Engineers' as a structural market pattern and develops the 'enterprise philosophy' concept with concrete industry evidence. Worth reading for anyone trying to understand the business logic underneath the current AI deployment push.",
+      "clusters": [
+        "business",
+        "work"
+      ],
+      "novelTermsInArticle": 3,
+      "flaggedAt": "2026-05-13T19:53:32.068Z",
       "status": "unread"
     }
   ]

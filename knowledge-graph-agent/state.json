@@ -1,6 +1,6 @@
 {
-  "lastRunAt": "2026-05-11T19:45:39.014Z",
-  "reviewCursor": 150,
+  "lastRunAt": "2026-05-13T19:53:32.068Z",
+  "reviewCursor": 160,
   "seenArticles": {
     "93a049d060bc295b": {
       "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/tpus-8t-8i-cloud-next/",
@@ -463,6 +463,42 @@
       "title": "Google stopped a zero-day hack that it says was developed with AI",
       "publishedAt": "2026-05-11T12:09:42-04:00",
       "seenAt": "2026-05-11T19:45:39.014Z"
+    },
+    "73f7949394039a8a": {
+      "url": "https://stratechery.com/2026/the-deployment-company-back-to-the-70s-apple-and-intel/",
+      "title": "The Deployment Company, Back to the 70s, Apple and Intel",
+      "publishedAt": "Wed, 13 May 2026 10:00:00 +0000",
+      "seenAt": "2026-05-13T19:53:32.068Z"
+    },
+    "7d12c750a4ea6f38": {
+      "url": "https://openai.com/academy/how-finance-teams-use-codex",
+      "title": "How finance teams use Codex",
+      "publishedAt": "Tue, 12 May 2026 15:00:00 GMT",
+      "seenAt": "2026-05-13T19:53:32.068Z"
+    },
+    "ce49fe8e0cb4aba7": {
+      "url": "https://huggingface.co/blog/amazon/foundation-model-building-blocks",
+      "title": "Building Blocks for Foundation Model Training and Inference on AWS",
+      "publishedAt": "Mon, 11 May 2026 23:18:26 GMT",
+      "seenAt": "2026-05-13T19:53:32.068Z"
+    },
+    "b549a5489129d6d4": {
+      "url": "https://simonwillison.net/2026/May/13/boris-mann/#atom-everything",
+      "title": "A quote from Boris Mann",
+      "publishedAt": "2026-05-13T16:15:50+00:00",
+      "seenAt": "2026-05-13T19:53:32.068Z"
+    },
+    "e501e1effa7f61df": {
+      "url": "https://www.theverge.com/tech/929791/meta-ai-incognito-chats",
+      "title": "Mark Zuckerberg announces ‘completely private’ encrypted Meta AI chat",
+      "publishedAt": "2026-05-13T12:45:43-04:00",
+      "seenAt": "2026-05-13T19:53:32.068Z"
+    },
+    "a9ef977b8a8403f8": {
+      "url": "https://www.anthropic.com/news/claude-for-small-business",
+      "title": "Introducing Claude for Small Business",
+      "publishedAt": null,
+      "seenAt": "2026-05-13T19:53:32.068Z"
     }
   },
   "nodeReviews": {
@@ -1195,6 +1231,56 @@
       "lastReviewedAt": "2026-05-11T19:45:39.014Z",
       "status": "keep",
       "reason": "No source material references Project Glasswing. Definition stands."
+    },
+    "prompt": {
+      "lastReviewedAt": "2026-05-13T19:53:32.068Z",
+      "status": "keep",
+      "reason": "No source material addresses or updates the definition of a prompt. Definition remains accurate."
+    },
+    "prompt-compression": {
+      "lastReviewedAt": "2026-05-13T19:53:32.068Z",
+      "status": "keep",
+      "reason": "No source material addresses prompt compression techniques. Definition remains accurate."
+    },
+    "prompt-engineering": {
+      "lastReviewedAt": "2026-05-13T19:53:32.068Z",
+      "status": "keep",
+      "reason": "No source material addresses prompt engineering. Definition remains accurate."
+    },
+    "prompt-injection": {
+      "lastReviewedAt": "2026-05-13T19:53:32.068Z",
+      "status": "keep",
+      "reason": "No source material addresses prompt injection. Definition remains accurate."
+    },
+    "proprietary-model": {
+      "lastReviewedAt": "2026-05-13T19:53:32.068Z",
+      "status": "keep",
+      "reason": "No source material directly addresses the proprietary vs. open-weight model distinction. Definition remains accurate."
+    },
+    "purple-team": {
+      "lastReviewedAt": "2026-05-13T19:53:32.068Z",
+      "status": "keep",
+      "reason": "No source material addresses purple teaming. Definition remains accurate."
+    },
+    "purpose-built-ai-infrastructure": {
+      "lastReviewedAt": "2026-05-13T19:53:32.068Z",
+      "status": "keep",
+      "reason": "The AWS HuggingFace blog touches on co-optimized infrastructure for AI (accelerators, networking, storage) and is consistent with the existing definition, but does not introduce new concepts that would require a revision."
+    },
+    "quantization": {
+      "lastReviewedAt": "2026-05-13T19:53:32.068Z",
+      "status": "keep",
+      "reason": "No source material addresses quantization. Definition remains accurate."
+    },
+    "rag": {
+      "lastReviewedAt": "2026-05-13T19:53:32.068Z",
+      "status": "keep",
+      "reason": "No source material addresses RAG. Definition remains accurate."
+    },
+    "reactive-agent": {
+      "lastReviewedAt": "2026-05-13T19:53:32.068Z",
+      "status": "keep",
+      "reason": "The Boris Mann quote comments on agent terminology being overused but does not materially change the technical definition of a reactive agent. Definition remains accurate."
     }
   }
 }

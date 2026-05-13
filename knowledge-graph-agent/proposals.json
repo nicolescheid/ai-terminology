@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-05-11T19:47:31.638Z",
-    "pendingCount": 1,
+    "generatedAt": "2026-05-13T19:55:47.342Z",
+    "pendingCount": 3,
     "appliedCount": 12,
     "rejectedCount": 1,
     "note": "Lexi proposals queue. Actions gated as PROPOSE land here as status: 'pending'. Edit a proposal's status to 'approved' or 'rejected' and run the apply step (TBD) to commit."
@@ -690,6 +690,99 @@
       },
       "reason": "8 sources, 2 independent (openai.com + lastweekin.ai), 13d on longlist.",
       "runId": "ff116973-9272-442b-929d-21bca2f6d67e"
+    },
+    {
+      "id": "f84d66e1f196fcd0",
+      "action": "promote_to_graph",
+      "gate": "propose",
+      "proposedAt": "2026-05-13T19:55:47.342Z",
+      "status": "pending",
+      "source": "promote-eligibility-scan",
+      "target": {
+        "kind": "longlist_entry",
+        "id": "agentic-business-model"
+      },
+      "payload": {
+        "graphNode": {
+          "id": "agentic-business-model",
+          "label": "Agentic Business Model",
+          "clusters": [
+            "business",
+            "agentic"
+          ],
+          "sz": 16,
+          "def": "A commercial model in which revenue or value delivery is structured around autonomous AI agents performing tasks on behalf of customers, rather than traditional seat- or usage-based SaaS pricing.",
+          "rels": [
+            "agent",
+            "saas",
+            "saaspocalypse",
+            "vertical-ai",
+            "workflow"
+          ],
+          "refs": [
+            {
+              "n": 1,
+              "src": "Stratechery, Wed, 06 May 2026 10:00:00 +0000",
+              "q": "Microsoft Earnings, Apple Earnings Stratechery"
+            },
+            {
+              "n": 2,
+              "src": "Stratechery, Fri, 08 May 2026 17:00:00 +0000",
+              "q": "2026.19: Earning & Spending Stratechery"
+            },
+            {
+              "n": 3,
+              "src": "Stratechery, Wed, 13 May 2026 10:00:00 +0000",
+              "q": "The Deployment Company, Back to the 70s, Apple and Intel Stratechery"
+            }
+          ]
+        }
+      },
+      "reason": "4 sources, 2 independent (stratechery.com + anthropic.com), 4d on longlist. Trusted: stratechery.com.",
+      "runId": "6497c953-05e0-42ca-92c8-5a900398723a"
+    },
+    {
+      "id": "75aaea8dfbbf8a5f",
+      "action": "promote_to_graph",
+      "gate": "propose",
+      "proposedAt": "2026-05-13T19:55:47.342Z",
+      "status": "pending",
+      "source": "promote-eligibility-scan",
+      "target": {
+        "kind": "longlist_entry",
+        "id": "data-residency"
+      },
+      "payload": {
+        "graphNode": {
+          "id": "data-residency",
+          "label": "Data Residency",
+          "clusters": [
+            "security",
+            "business"
+          ],
+          "sz": 14,
+          "def": "The requirement that data be stored and processed within a specified geographic or jurisdictional boundary, increasingly relevant for enterprise AI deployments in regulated industries.",
+          "rels": [
+            "data-sovereignty",
+            "sandboxing",
+            "infrastructure"
+          ],
+          "refs": [
+            {
+              "n": 1,
+              "src": "Anthropic Newsroom",
+              "q": "Higher usage limits for Claude and a compute deal with SpaceX Anthropic Newsroom"
+            },
+            {
+              "n": 2,
+              "src": "The Verge — AI, 2026-05-13T12:45:43-04:00",
+              "q": "Mark Zuckerberg announces ‘completely private’ encrypted Meta AI chat The Verge — AI"
+            }
+          ]
+        }
+      },
+      "reason": "2 sources, 2 independent (anthropic.com + theverge.com), 4d on longlist.",
+      "runId": "6497c953-05e0-42ca-92c8-5a900398723a"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-05-11T19:45:39.014Z",
-    "entryCount": 96,
+    "generatedAt": "2026-05-13T19:53:32.068Z",
+    "entryCount": 114,
     "note": "Lexi-managed Tier 2 longlist — terms under observation, awaiting evidence to support promotion to the graph (Tier 1)."
   },
   "entries": [
@@ -1781,12 +1781,28 @@
           "sourceLabel": "Stratechery",
           "publishedAt": "Fri, 08 May 2026 17:00:00 +0000",
           "firstSeen": "2026-05-10T19:02:19.492Z"
+        },
+        {
+          "url": "https://stratechery.com/2026/the-deployment-company-back-to-the-70s-apple-and-intel/",
+          "domain": "stratechery.com",
+          "title": "The Deployment Company, Back to the 70s, Apple and Intel",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Wed, 13 May 2026 10:00:00 +0000",
+          "firstSeen": "2026-05-13T19:53:32.068Z"
+        },
+        {
+          "url": "https://www.anthropic.com/news/claude-for-small-business",
+          "domain": "anthropic.com",
+          "title": "Introducing Claude for Small Business",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-05-13T19:53:32.068Z"
         }
       ],
-      "sourceCount": 2,
-      "independentSourceCount": 1,
+      "sourceCount": 4,
+      "independentSourceCount": 2,
       "dateFirstSeen": "2026-05-09T07:44:17.196Z",
-      "dateLastSeen": "2026-05-10T19:02:19.492Z",
+      "dateLastSeen": "2026-05-13T19:53:32.068Z",
       "sz": 16,
       "proposalReason": "The headline explicitly frames Microsoft's earnings around an 'agentic business model' shift — a distinct framing of how agentic AI is reshaping commercial structures, not just product features."
     },
@@ -2066,12 +2082,20 @@
           "sourceLabel": "Anthropic Newsroom",
           "publishedAt": null,
           "firstSeen": "2026-05-09T07:44:17.196Z"
+        },
+        {
+          "url": "https://www.theverge.com/tech/929791/meta-ai-incognito-chats",
+          "domain": "theverge.com",
+          "title": "Mark Zuckerberg announces ‘completely private’ encrypted Meta AI chat",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-05-13T12:45:43-04:00",
+          "firstSeen": "2026-05-13T19:53:32.068Z"
         }
       ],
-      "sourceCount": 1,
-      "independentSourceCount": 1,
+      "sourceCount": 2,
+      "independentSourceCount": 2,
       "dateFirstSeen": "2026-05-09T07:44:17.196Z",
-      "dateLastSeen": "2026-05-09T07:44:17.196Z",
+      "dateLastSeen": "2026-05-13T19:53:32.068Z",
       "sz": 14,
       "proposalReason": "Appears as a driving business requirement for Anthropic's international infrastructure expansion, distinct from but related to data-sovereignty; worth tracking as a compliance-driven concept shaping AI deployment patterns."
     },
@@ -3438,6 +3462,582 @@
       "sz": 14,
       "fullName": "Hallucinated CVSS Score (LLM Forensic Artefact in Exploit Code)",
       "proposalReason": "Introduces a concrete forensic signal — hallucinated metadata in exploit code — that may become a standard attribution indicator for AI-assisted attacks."
+    },
+    {
+      "id": "forward-deployed-engineers",
+      "label": "Forward Deployed Engineers",
+      "workingDef": "Engineers embedded directly inside customer organizations to implement and integrate AI systems — a deployment model adopted by OpenAI (via its OpenAI Deployment Company) and Google Cloud in 2026. The term borrows from the Palantir playbook of placing technical staff inside enterprises rather than selling software at arm's length. Distinct from conventional sales engineering; the role involves hands-on rearchitecting of business processes around AI capabilities rather than pre-sales demos or post-sales support.",
+      "clusters": [
+        "business",
+        "work"
+      ],
+      "suggestedRels": [
+        "openai-co",
+        "google-co",
+        "vertical-ai",
+        "workflow",
+        "agentic-business-model"
+      ],
+      "sources": [
+        {
+          "url": "https://stratechery.com/2026/the-deployment-company-back-to-the-70s-apple-and-intel/",
+          "domain": "stratechery.com",
+          "title": "The Deployment Company, Back to the 70s, Apple and Intel",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Wed, 13 May 2026 10:00:00 +0000",
+          "firstSeen": "2026-05-13T19:53:32.068Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-13T19:53:32.068Z",
+      "dateLastSeen": "2026-05-13T19:53:32.068Z",
+      "sz": 14,
+      "fullName": "Forward Deployed Engineers (AI Deployment Specialists)",
+      "proposalReason": "A product-deployment pattern with lasting industry significance: the term marks a structural shift in how AI vendors go to market — not as self-serve SaaS but as embedded implementation teams."
+    },
+    {
+      "id": "enterprise-philosophy",
+      "label": "Enterprise Philosophy",
+      "workingDef": "Ben Thompson's framing (Stratechery, 2024–2026) for the third wave of technology business logic, distinct from the consumer and productivity-copilot philosophies. Under this framing, the buyer — not the end user — drives adoption; the motivation is bottom-line improvement through cost reduction and revenue growth; and AI systems act as worker replacements rather than worker augmentations. Thompson argues the correct historical analogy is the 1970s mainframe wave (accounting/ERP software eliminating back-office roles), not SaaS or the consumer internet.",
+      "clusters": [
+        "business",
+        "work"
+      ],
+      "suggestedRels": [
+        "saas",
+        "saaspocalypse",
+        "pilot-purgatory",
+        "outcome-focused-work",
+        "agentic-business-model",
+        "vertical-ai"
+      ],
+      "sources": [
+        {
+          "url": "https://stratechery.com/2026/the-deployment-company-back-to-the-70s-apple-and-intel/",
+          "domain": "stratechery.com",
+          "title": "The Deployment Company, Back to the 70s, Apple and Intel",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Wed, 13 May 2026 10:00:00 +0000",
+          "firstSeen": "2026-05-13T19:53:32.068Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-13T19:53:32.068Z",
+      "dateLastSeen": "2026-05-13T19:53:32.068Z",
+      "sz": 14,
+      "fullName": "Enterprise Philosophy (AI Deployment Paradigm)",
+      "proposalReason": "A durable analytical frame for understanding enterprise AI adoption logic — distinct from the copilot/assistant paradigm — worth tracking as a vocabulary term in the AI deployment landscape."
+    },
+    {
+      "id": "ontology-powered-os",
+      "label": "Ontology-Powered Operating System",
+      "workingDef": "Palantir's term for Foundry, its enterprise data integration platform that constructs a unified ontology — a structured semantic representation of an organization's operations, entities, and relationships — as the substrate for AI reasoning and agentic workflows. The framing positions structured enterprise data as a prerequisite for reliable agent-as-worker-replacement, contrasting with the 'unstructured data handling' capability of LLMs alone. Thompson cites the concept to argue that data integration depth, not model capability alone, determines which enterprises can realize AI-driven productivity gains.",
+      "clusters": [
+        "business",
+        "technical"
+      ],
+      "suggestedRels": [
+        "rag",
+        "grounding",
+        "memory",
+        "workflow",
+        "state",
+        "infrastructure"
+      ],
+      "sources": [
+        {
+          "url": "https://stratechery.com/2026/the-deployment-company-back-to-the-70s-apple-and-intel/",
+          "domain": "stratechery.com",
+          "title": "The Deployment Company, Back to the 70s, Apple and Intel",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Wed, 13 May 2026 10:00:00 +0000",
+          "firstSeen": "2026-05-13T19:53:32.068Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-13T19:53:32.068Z",
+      "dateLastSeen": "2026-05-13T19:53:32.068Z",
+      "sz": 14,
+      "fullName": "Ontology-Powered Operating System (Enterprise Data Layer)",
+      "proposalReason": "A substantive framing term for the enterprise data-layer problem — the argument that ontology (not just RAG or embeddings) is the foundation for agentic enterprise deployment."
+    },
+    {
+      "id": "variance-driver-bridge",
+      "label": "Variance Driver Bridge",
+      "workingDef": "A structured analytical output — popularised in finance reporting workflows — that decomposes the movement between budget, forecast, and actuals into labelled causal drivers across revenue, margin, operating expenses, and cash flow. In the context of LLM-assisted finance work, Codex and similar tools are prompted to auto-generate these bridges from close workbooks and dashboards, reducing manual assembly time.",
+      "clusters": [
+        "work",
+        "tools"
+      ],
+      "suggestedRels": [
+        "codex-model",
+        "workflow",
+        "artifact",
+        "output"
+      ],
+      "sources": [
+        {
+          "url": "https://openai.com/academy/how-finance-teams-use-codex",
+          "domain": "openai.com",
+          "title": "How finance teams use Codex",
+          "sourceLabel": "OpenAI News",
+          "publishedAt": "Tue, 12 May 2026 15:00:00 GMT",
+          "firstSeen": "2026-05-13T19:53:32.068Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-13T19:53:32.068Z",
+      "dateLastSeen": "2026-05-13T19:53:32.068Z",
+      "sz": 14,
+      "proposalReason": "A domain-specific analytical artefact term appearing in AI-assisted finance workflows; worth tracking as vertical-AI use cases codify finance-specific output patterns."
+    },
+    {
+      "id": "management-business-review",
+      "label": "Management Business Review",
+      "workingDef": "A recurring executive reporting cadence — typically monthly — in which finance teams consolidate close outputs, forecast updates, and owner commentary into a structured narrative for senior leadership review. Increasingly targeted as a primary AI-automation use case, where models like Codex are used to generate a 'first-pass' narrative from raw source materials before human editorial shaping.",
+      "clusters": [
+        "work",
+        "business"
+      ],
+      "suggestedRels": [
+        "codex-model",
+        "workflow",
+        "outcome-focused-work",
+        "artifact"
+      ],
+      "sources": [
+        {
+          "url": "https://openai.com/academy/how-finance-teams-use-codex",
+          "domain": "openai.com",
+          "title": "How finance teams use Codex",
+          "sourceLabel": "OpenAI News",
+          "publishedAt": "Tue, 12 May 2026 15:00:00 GMT",
+          "firstSeen": "2026-05-13T19:53:32.068Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-13T19:53:32.068Z",
+      "dateLastSeen": "2026-05-13T19:53:32.068Z",
+      "sz": 14,
+      "fullName": "Management Business Review (MBR)",
+      "proposalReason": "Emerges as a named target workflow category in vertical AI deployment for finance; worth observing as labs define domain-specific agentic use cases."
+    },
+    {
+      "id": "qa-memo",
+      "label": "QA Memo",
+      "workingDef": "A structured document output produced during AI-assisted finance model review, summarising high-risk issues found, cleanup changes made, outstanding business assumptions, and items requiring human owner review. Codex is prompted to generate severity-ranked QA memos alongside cleaned model files as part of a dual-output pattern.",
+      "clusters": [
+        "work",
+        "tools"
+      ],
+      "suggestedRels": [
+        "codex-model",
+        "artifact",
+        "output",
+        "human-in-the-loop"
+      ],
+      "sources": [
+        {
+          "url": "https://openai.com/academy/how-finance-teams-use-codex",
+          "domain": "openai.com",
+          "title": "How finance teams use Codex",
+          "sourceLabel": "OpenAI News",
+          "publishedAt": "Tue, 12 May 2026 15:00:00 GMT",
+          "firstSeen": "2026-05-13T19:53:32.068Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-13T19:53:32.068Z",
+      "dateLastSeen": "2026-05-13T19:53:32.068Z",
+      "sz": 14,
+      "fullName": "QA Memo (Finance Model Quality Assurance Memo)",
+      "proposalReason": "A named artefact pattern in AI-assisted finance workflows; the dual-output model (cleaned file + QA memo) is a recurring design pattern worth tracking as agentic tools formalise review workflows."
+    },
+    {
+      "id": "vertical-ai-use-case",
+      "label": "Vertical AI Use Case",
+      "workingDef": "A named, domain-specific application pattern for a general-purpose AI tool — such as 'variance driver bridge' or 'CFO reporting pack refresh' for finance teams — that translates broad model capability into a workflow-specific prompt, plugin configuration, and output template. Labs and enterprise vendors increasingly publish catalogues of vertical use cases to drive adoption in specific functions (finance, legal, HR) without requiring custom model training.",
+      "clusters": [
+        "business",
+        "work"
+      ],
+      "suggestedRels": [
+        "vertical-ai",
+        "codex-model",
+        "workflow",
+        "copilot",
+        "outcome-focused-work"
+      ],
+      "sources": [
+        {
+          "url": "https://openai.com/academy/how-finance-teams-use-codex",
+          "domain": "openai.com",
+          "title": "How finance teams use Codex",
+          "sourceLabel": "OpenAI News",
+          "publishedAt": "Tue, 12 May 2026 15:00:00 GMT",
+          "firstSeen": "2026-05-13T19:53:32.068Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-13T19:53:32.068Z",
+      "dateLastSeen": "2026-05-13T19:53:32.068Z",
+      "sz": 14,
+      "proposalReason": "The article is essentially a vertical-use-case catalogue; tracking this framing helps capture how labs are positioning general tools as domain-specific solutions."
+    },
+    {
+      "id": "post-training-scaling",
+      "label": "Post-Training Scaling",
+      "workingDef": "A scaling regime, distinct from pre-training scaling, in which model performance improves through methods applied after initial training — including supervised fine-tuning (SFT), reinforcement learning-based alignment methods, and related post-training techniques. Gaining prominence as a complement to pre-training scaling, with NVIDIA and others framing it as one of 'three scaling laws' alongside pre-training and test-time compute scaling.",
+      "clusters": [
+        "models",
+        "technical"
+      ],
+      "suggestedRels": [
+        "fine-tuning",
+        "rlhf",
+        "scaling-laws",
+        "training",
+        "reasoning-models"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/amazon/foundation-model-building-blocks",
+          "domain": "huggingface.co",
+          "title": "Building Blocks for Foundation Model Training and Inference on AWS",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Mon, 11 May 2026 23:18:26 GMT",
+          "firstSeen": "2026-05-13T19:53:32.068Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-13T19:53:32.068Z",
+      "dateLastSeen": "2026-05-13T19:53:32.068Z",
+      "sz": 14,
+      "proposalReason": "Materially introduced as a distinct scaling regime; the 'three scaling laws' framing elevates post-training to a first-class axis alongside pre-training compute, making this worth tracking as the term stabilises."
+    },
+    {
+      "id": "test-time-compute-scaling",
+      "label": "Test-Time Compute Scaling",
+      "workingDef": "A scaling regime in which model performance improves by allocating more compute at inference time — through 'long thinking', search-and-verification strategies, or multi-sample generation — rather than by increasing training compute. Part of NVIDIA's 'three scaling laws' framing alongside pre-training and post-training scaling. Related to reasoning models and the broader shift toward inference-heavy workloads.",
+      "clusters": [
+        "models",
+        "technical"
+      ],
+      "suggestedRels": [
+        "inference",
+        "scaling-laws",
+        "reasoning-models",
+        "latency",
+        "kv-cache"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/amazon/foundation-model-building-blocks",
+          "domain": "huggingface.co",
+          "title": "Building Blocks for Foundation Model Training and Inference on AWS",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Mon, 11 May 2026 23:18:26 GMT",
+          "firstSeen": "2026-05-13T19:53:32.068Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-13T19:53:32.068Z",
+      "dateLastSeen": "2026-05-13T19:53:32.068Z",
+      "sz": 14,
+      "proposalReason": "Distinct from training-time scaling and increasingly foregrounded in infrastructure planning; the article treats it as a first-class scaling axis deserving dedicated infrastructure investment."
+    },
+    {
+      "id": "elastic-fabric-adapter",
+      "label": "Elastic Fabric Adapter",
+      "workingDef": "AWS's OS-bypass networking technology (EFA) used for high-bandwidth, low-latency inter-node communication in large GPU clusters. A core scale-out building block in Amazon EC2 UltraClusters, enabling collective communication operations (all-reduce, all-gather) to span thousands of instances without traversing the standard host networking stack.",
+      "clusters": [
+        "technical"
+      ],
+      "suggestedRels": [
+        "purpose-built-ai-infrastructure",
+        "ai-accelerator",
+        "trainium",
+        "infrastructure"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/amazon/foundation-model-building-blocks",
+          "domain": "huggingface.co",
+          "title": "Building Blocks for Foundation Model Training and Inference on AWS",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Mon, 11 May 2026 23:18:26 GMT",
+          "firstSeen": "2026-05-13T19:53:32.068Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-13T19:53:32.068Z",
+      "dateLastSeen": "2026-05-13T19:53:32.068Z",
+      "sz": 14,
+      "nodeType": "product",
+      "proposalReason": "A specific AWS infrastructure term that recurs across foundation model training discussions; worth tracking as a named component in the distributed training stack."
+    },
+    {
+      "id": "ml-observability",
+      "label": "Observability (ML Infrastructure)",
+      "workingDef": "The practice of monitoring, visualising, and diagnosing the health and performance of large-scale machine learning infrastructure — spanning cluster hardware, network utilisation, and model training runs. In foundation model contexts, typically implemented via tools such as Prometheus (metrics collection) and Grafana (visualisation/alerting), positioned as a cross-cutting operational layer above hardware, orchestration, and ML framework tiers.",
+      "clusters": [
+        "technical",
+        "lifecycle"
+      ],
+      "suggestedRels": [
+        "evals",
+        "infrastructure",
+        "purpose-built-ai-infrastructure",
+        "workflow"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/amazon/foundation-model-building-blocks",
+          "domain": "huggingface.co",
+          "title": "Building Blocks for Foundation Model Training and Inference on AWS",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Mon, 11 May 2026 23:18:26 GMT",
+          "firstSeen": "2026-05-13T19:53:32.068Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-13T19:53:32.068Z",
+      "dateLastSeen": "2026-05-13T19:53:32.068Z",
+      "sz": 14,
+      "proposalReason": "Surfaces as a named architectural layer in distributed ML systems, distinct from model evals; worth tracking as the term acquires more precise meaning in the MLOps and agentic infrastructure literature."
+    },
+    {
+      "id": "agent-count-fallacy",
+      "label": "Agent Count Fallacy",
+      "workingDef": "The rhetorical or analytical error of treating the number of AI agents deployed or running as a meaningful metric of capability, productivity, or complexity. Boris Mann's 2026 formulation — 'I have 11 AI agents' is as meaningful as 'I have 11 spreadsheets' — frames agent count as an abstraction so coarse it tells you almost nothing about what work is actually being done. Related to agent-washing: agent count can function as a vanity metric that inflates perceived AI adoption.",
+      "clusters": [
+        "critical",
+        "agentic"
+      ],
+      "suggestedRels": [
+        "agent",
+        "agent-washing",
+        "ai-washing",
+        "autonomous-agent"
+      ],
+      "sources": [
+        {
+          "url": "https://simonwillison.net/2026/May/13/boris-mann/#atom-everything",
+          "domain": "simonwillison.net",
+          "title": "A quote from Boris Mann",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-05-13T16:15:50+00:00",
+          "firstSeen": "2026-05-13T19:53:32.068Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-13T19:53:32.068Z",
+      "dateLastSeen": "2026-05-13T19:53:32.068Z",
+      "sz": 14,
+      "proposalReason": "A neat coinage for a real critical concept: the vacuousness of quoting raw agent counts as a proxy for AI sophistication."
+    },
+    {
+      "id": "incognito-chat",
+      "label": "Incognito Chat",
+      "workingDef": "A chat mode in Meta AI (and WhatsApp) that combines no server-side conversation logging with end-to-end encryption, so that messages are not retained after a session ends and cannot be read by Meta. Meta positions it as distinct from other AI incognito or temporary-chat modes, which may still transmit cleartext to the provider's servers even if logs are deleted on a schedule.",
+      "clusters": [
+        "security",
+        "tools"
+      ],
+      "suggestedRels": [
+        "chatgpt",
+        "gemini",
+        "claude-ai",
+        "privacy-by-design",
+        "data-sovereignty"
+      ],
+      "sources": [
+        {
+          "url": "https://www.theverge.com/tech/929791/meta-ai-incognito-chats",
+          "domain": "theverge.com",
+          "title": "Mark Zuckerberg announces ‘completely private’ encrypted Meta AI chat",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-05-13T12:45:43-04:00",
+          "firstSeen": "2026-05-13T19:53:32.068Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-13T19:53:32.068Z",
+      "dateLastSeen": "2026-05-13T19:53:32.068Z",
+      "sz": 14,
+      "fullName": "Incognito Chat (Meta AI)",
+      "nodeType": "product",
+      "proposalReason": "New named product from Meta introducing a specific privacy architecture for AI chat; worth tracking as a product category term."
+    },
+    {
+      "id": "private-processing",
+      "label": "Private Processing",
+      "workingDef": "A server-side privacy architecture developed by Meta for processing sensitive user data — initially deployed for WhatsApp — that underpins Meta's Incognito Chat feature. Positioned by Meta as enabling computation on user messages without exposing plaintext to Meta's infrastructure.",
+      "clusters": [
+        "security",
+        "technical"
+      ],
+      "suggestedRels": [
+        "incognito-chat",
+        "sandboxing",
+        "data-sovereignty"
+      ],
+      "sources": [
+        {
+          "url": "https://www.theverge.com/tech/929791/meta-ai-incognito-chats",
+          "domain": "theverge.com",
+          "title": "Mark Zuckerberg announces ‘completely private’ encrypted Meta AI chat",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-05-13T12:45:43-04:00",
+          "firstSeen": "2026-05-13T19:53:32.068Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-13T19:53:32.068Z",
+      "dateLastSeen": "2026-05-13T19:53:32.068Z",
+      "sz": 14,
+      "fullName": "Private Processing (Meta)",
+      "proposalReason": "Technical infrastructure term with potential cross-product relevance; named primitive in Meta's AI privacy stack."
+    },
+    {
+      "id": "ephemeral-ai-chat",
+      "label": "Ephemeral AI Chat",
+      "workingDef": "A design pattern across AI assistant products (including ChatGPT temporary chats, Gemini temporary chats, Claude incognito mode, and Meta Incognito Chat) where conversation history is not persistently stored or is deleted within a defined retention window. Providers differ significantly in retention duration and whether end-to-end encryption is applied, making 'ephemeral' a spectrum rather than a binary property.",
+      "clusters": [
+        "security",
+        "tools"
+      ],
+      "suggestedRels": [
+        "chatgpt",
+        "gemini",
+        "claude-ai",
+        "persistent-memory",
+        "privacy-by-design"
+      ],
+      "sources": [
+        {
+          "url": "https://www.theverge.com/tech/929791/meta-ai-incognito-chats",
+          "domain": "theverge.com",
+          "title": "Mark Zuckerberg announces ‘completely private’ encrypted Meta AI chat",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-05-13T12:45:43-04:00",
+          "firstSeen": "2026-05-13T19:53:32.068Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-13T19:53:32.068Z",
+      "dateLastSeen": "2026-05-13T19:53:32.068Z",
+      "sz": 14,
+      "proposalReason": "Emerging product-category concept spanning multiple major AI chat providers; the article's comparison table of retention policies is the clearest single-source definition of this pattern yet."
+    },
+    {
+      "id": "ai-fluency",
+      "label": "AI Fluency",
+      "workingDef": "A framing used by Anthropic and PayPal in their joint 'AI Fluency for Small Business' course to describe the practical competency of knowing when and how to use AI tools in an operational business context — distinct from technical AI skill and focused on workflow integration, task selection, and responsible use by non-technical owners.",
+      "clusters": [
+        "work",
+        "human"
+      ],
+      "suggestedRels": [
+        "connectors",
+        "workflow",
+        "skills",
+        "human-in-the-loop"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/claude-for-small-business",
+          "domain": "anthropic.com",
+          "title": "Introducing Claude for Small Business",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-05-13T19:53:32.068Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-13T19:53:32.068Z",
+      "dateLastSeen": "2026-05-13T19:53:32.068Z",
+      "sz": 14,
+      "proposalReason": "A new named literacy construct with potential staying power as AI adoption training becomes its own category of product and discourse."
+    },
+    {
+      "id": "ready-to-run-workflow",
+      "label": "Ready-to-Run Workflow",
+      "workingDef": "Pre-configured agentic task sequences that can be activated without custom development — as used by Anthropic in Claude for Small Business to describe the 15 packaged workflows covering finance, operations, sales, marketing, HR, and customer service. Represents a productization pattern in which agentic capability is delivered as a curated, domain-specific template rather than a composable primitive.",
+      "clusters": [
+        "work",
+        "agentic"
+      ],
+      "suggestedRels": [
+        "workflow",
+        "connectors",
+        "agentic-harness",
+        "skills",
+        "task-decomposition"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/claude-for-small-business",
+          "domain": "anthropic.com",
+          "title": "Introducing Claude for Small Business",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-05-13T19:53:32.068Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-13T19:53:32.068Z",
+      "dateLastSeen": "2026-05-13T19:53:32.068Z",
+      "sz": 14,
+      "proposalReason": "A distinct productization layer sitting between raw agent infrastructure and bespoke automation — worth tracking as labs increasingly compete on workflow libraries rather than model capability alone."
+    },
+    {
+      "id": "smb-ai-adoption-gap",
+      "label": "SMB AI Adoption Gap",
+      "workingDef": "The observed disparity in AI tool adoption between small-to-medium businesses and larger enterprises, attributed to lack of tailored tooling, training, and integration with existing SMB software stacks. Used by Anthropic as a strategic and public-benefit framing to justify the Claude for Small Business launch.",
+      "clusters": [
+        "business",
+        "landscape"
+      ],
+      "suggestedRels": [
+        "pilot-purgatory",
+        "vertical-ai",
+        "connectors",
+        "agentic-business-model"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/claude-for-small-business",
+          "domain": "anthropic.com",
+          "title": "Introducing Claude for Small Business",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-05-13T19:53:32.068Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-13T19:53:32.068Z",
+      "dateLastSeen": "2026-05-13T19:53:32.068Z",
+      "sz": 14,
+      "proposalReason": "A named market framing that may recur as labs compete for the SMB segment and as adoption research develops around this demographic."
     }
   ]
 }

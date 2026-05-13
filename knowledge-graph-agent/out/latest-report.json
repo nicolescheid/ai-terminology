@@ -1,193 +1,218 @@
 {
-  "generatedAt": "2026-05-11T19:45:39.014Z",
+  "generatedAt": "2026-05-13T19:53:32.068Z",
   "model": "claude-sonnet-4-6",
   "sourcesConfigured": 14,
   "articlesConsidered": [
     {
-      "id": "351d00366b56e172",
-      "source": "Hugging Face Blog",
-      "title": "Adding Benchmaxxer Repellant to the Open ASR Leaderboard",
-      "url": "https://huggingface.co/blog/open-asr-leaderboard-private-data",
-      "publishedAt": "Wed, 06 May 2026 00:00:00 GMT"
-    },
-    {
-      "id": "ee5564e4d43f9040",
-      "source": "OpenAI News",
-      "title": "OpenAI Campus Network: Student club interest form",
-      "url": "https://openai.com/index/openai-campus-network-student-club-interest-form",
-      "publishedAt": "Mon, 11 May 2026 10:00:00 GMT"
-    },
-    {
-      "id": "5618a9906da7df47",
+      "id": "73f7949394039a8a",
       "source": "Stratechery",
-      "title": "The Inference Shift",
-      "url": "https://stratechery.com/2026/the-inference-shift/",
-      "publishedAt": "Mon, 11 May 2026 10:00:00 +0000"
+      "title": "The Deployment Company, Back to the 70s, Apple and Intel",
+      "url": "https://stratechery.com/2026/the-deployment-company-back-to-the-70s-apple-and-intel/",
+      "publishedAt": "Wed, 13 May 2026 10:00:00 +0000"
     },
     {
-      "id": "608d9206911fec7c",
+      "id": "7d12c750a4ea6f38",
+      "source": "OpenAI News",
+      "title": "How finance teams use Codex",
+      "url": "https://openai.com/academy/how-finance-teams-use-codex",
+      "publishedAt": "Tue, 12 May 2026 15:00:00 GMT"
+    },
+    {
+      "id": "ce49fe8e0cb4aba7",
+      "source": "Hugging Face Blog",
+      "title": "Building Blocks for Foundation Model Training and Inference on AWS",
+      "url": "https://huggingface.co/blog/amazon/foundation-model-building-blocks",
+      "publishedAt": "Mon, 11 May 2026 23:18:26 GMT"
+    },
+    {
+      "id": "b549a5489129d6d4",
       "source": "Simon Willison's Weblog",
-      "title": "Your AI Use Is Breaking My Brain",
-      "url": "https://simonwillison.net/2026/May/11/zombie-internet/#atom-everything",
-      "publishedAt": "2026-05-11T19:21:27+00:00"
+      "title": "A quote from Boris Mann",
+      "url": "https://simonwillison.net/2026/May/13/boris-mann/#atom-everything",
+      "publishedAt": "2026-05-13T16:15:50+00:00"
     },
     {
-      "id": "7c58891b9445ca6d",
-      "source": "Harvard Business Review",
-      "title": "Why Leaders Should Let Minor Mistakes Slide",
-      "url": "https://hbr.org/2026/05/why-leaders-should-let-minor-mistakes-slide",
-      "publishedAt": "2026-05-11T12:15:16Z"
-    },
-    {
-      "id": "eb9a6b2347db5504",
+      "id": "e501e1effa7f61df",
       "source": "The Verge — AI",
-      "title": "Google stopped a zero-day hack that it says was developed with AI",
-      "url": "https://www.theverge.com/tech/928007/google-ai-zero-day-exploit-stopped",
-      "publishedAt": "2026-05-11T12:09:42-04:00"
+      "title": "Mark Zuckerberg announces ‘completely private’ encrypted Meta AI chat",
+      "url": "https://www.theverge.com/tech/929791/meta-ai-incognito-chats",
+      "publishedAt": "2026-05-13T12:45:43-04:00"
+    },
+    {
+      "id": "a9ef977b8a8403f8",
+      "source": "Anthropic Newsroom",
+      "title": "Introducing Claude for Small Business",
+      "url": "https://www.anthropic.com/news/claude-for-small-business",
+      "publishedAt": null
     }
   ],
   "harvestedTerms": [
     {
       "article": {
-        "title": "Adding Benchmaxxer Repellant to the Open ASR Leaderboard",
-        "url": "https://huggingface.co/blog/open-asr-leaderboard-private-data"
+        "title": "The Deployment Company, Back to the 70s, Apple and Intel",
+        "url": "https://stratechery.com/2026/the-deployment-company-back-to-the-70s-apple-and-intel/"
       },
-      "summary": "Hugging Face's Open ASR Leaderboard team announces the addition of private, high-quality English speech datasets from Appen and DataoceanAI to combat 'benchmaxxing' — the practice of optimizing models specifically for leaderboard metrics without genuine real-world improvement. The article introduces anti-contamination strategies for ASR benchmarking, including hidden test sets and macroaveraged metrics across accents and speech styles.",
+      "summary": "Ben Thompson's Stratechery Update covers three themes: (1) OpenAI and Google launching 'forward deployed engineer' units/consulting ventures to embed AI in enterprises — framed as top-down enterprise transformation analogous to the mainframe era, not SaaS; (2) a historical analogy argument that AI is more like 1970s computing (mainframe wave) than the internet, with enterprises as buyers and workers as the replaced/augmented; (3) bullishness on Palantir's Foundry/ontology layer as the data-integration piece enabling agent-as-worker-replacement. The piece is rich in business-model and deployment framing.",
       "longlistAdditions": [
         {
-          "id": "benchmaxxing",
-          "label": "Benchmaxxing"
+          "id": "forward-deployed-engineers",
+          "label": "Forward Deployed Engineers"
         },
         {
-          "id": "test-set-contamination",
-          "label": "Test-Set Contamination"
+          "id": "enterprise-philosophy",
+          "label": "Enterprise Philosophy"
         },
         {
-          "id": "private-eval-dataset",
-          "label": "Private Evaluation Dataset"
-        },
-        {
-          "id": "word-error-rate",
-          "label": "Word Error Rate"
-        }
-      ],
-      "longlistUpdates": [],
-      "rejections": [],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "OpenAI Campus Network: Student club interest form",
-        "url": "https://openai.com/index/openai-campus-network-student-club-interest-form"
-      },
-      "summary": "OpenAI's Campus Network announcement is a sign-up form for student clubs to partner with OpenAI for AI learning events, workshops, and early tool access. The article is almost entirely form fields and navigation boilerplate with no substantive AI concepts, terminology, or analysis.",
-      "longlistAdditions": [
-        {
-          "id": "openai-campus-network",
-          "label": "OpenAI Campus Network"
-        }
-      ],
-      "longlistUpdates": [],
-      "rejections": [],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "The Inference Shift",
-        "url": "https://stratechery.com/2026/the-inference-shift/"
-      },
-      "summary": "Ben Thompson's Stratechery piece analyses the hardware implications of the inference shift — the transition from GPU-dominated AI compute (optimised for training) to a heterogeneous mix including specialised inference chips like Cerebras' wafer-scale engine. The article covers GPU architecture, KV cache memory dynamics, prefill vs. decode distinctions, and why inference workloads have fundamentally different hardware requirements than training. Cerebras' IPO is the news hook, but the analytical substance is a detailed breakdown of why the inference era may require purpose-built silicon distinct from Nvidia's GPU dominance.",
-      "longlistAdditions": [
-        {
-          "id": "wafer-scale-engine",
-          "label": "Wafer-Scale Engine"
-        },
-        {
-          "id": "prefill-decode-split",
-          "label": "Prefill–Decode Split"
-        },
-        {
-          "id": "heterogeneous-ai-compute",
-          "label": "Heterogeneous AI Compute"
-        },
-        {
-          "id": "inference-shift",
-          "label": "Inference Shift"
-        }
-      ],
-      "longlistUpdates": [],
-      "rejections": [],
-      "proposalsQueued": [],
-      "mustReadFlagged": {
-        "priority": 2,
-        "reason": "A clear-eyed, technically grounded breakdown of why inference and training impose fundamentally different hardware requirements — and what that means for the future of the AI chip market. Thompson's hardware literacy here is unusually good for a strategy writer; the prefill–decode–KV cache analysis is worth reading for anyone trying to understand why 'more GPUs' may not be the whole answer to AI scaling."
-      }
-    },
-    {
-      "article": {
-        "title": "Your AI Use Is Breaking My Brain",
-        "url": "https://simonwillison.net/2026/May/11/zombie-internet/#atom-everything"
-      },
-      "summary": "Simon Willison links approvingly to Jason Koebler's essay coining 'Zombie Internet' — a more nuanced alternative to 'Dead Internet Theory' describing the messy hybrid ecology of humans, bots, and AI-assisted actors intermingling online. The piece introduces a useful framing term for AI-saturated, authenticity-degraded online spaces.",
-      "longlistAdditions": [
-        {
-          "id": "zombie-internet",
-          "label": "Zombie Internet"
-        },
-        {
-          "id": "dead-internet-theory",
-          "label": "Dead Internet Theory"
-        },
-        {
-          "id": "ai-slop",
-          "label": "AI Slop"
-        }
-      ],
-      "longlistUpdates": [],
-      "rejections": [],
-      "proposalsQueued": [],
-      "mustReadFlagged": {
-        "priority": 2,
-        "reason": "Koebler's 'Zombie Internet' framing is the kind of terminological intervention worth paying attention to — it sharpens a real and growing problem (AI-saturated, authenticity-ambiguous online spaces) with more precision than 'bots' or 'AI slop' alone offer. Worth reading for the coinage and the argument behind it."
-      }
-    },
-    {
-      "article": {
-        "title": "Why Leaders Should Let Minor Mistakes Slide",
-        "url": "https://hbr.org/2026/05/why-leaders-should-let-minor-mistakes-slide"
-      },
-      "summary": "An HBR article about management strategy — specifically whether leaders should overlook minor employee mistakes. The article excerpt provides almost no substantive content beyond metadata, navigation, and author/publication information. No AI terminology is present.",
-      "longlistAdditions": [],
-      "longlistUpdates": [],
-      "rejections": [],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "Google stopped a zero-day hack that it says was developed with AI",
-        "url": "https://www.theverge.com/tech/928007/google-ai-zero-day-exploit-stopped"
-      },
-      "summary": "Google's Threat Intelligence Group reports the first confirmed AI-assisted zero-day exploit in the wild, identifying hallucinated CVSS scores and LLM-style formatting as forensic signals in attacker-written Python code. The article also notes hackers using persona-driven jailbreaking and targeting AI system components like connectors and autonomous skills.",
-      "longlistAdditions": [
-        {
-          "id": "ai-generated-exploit",
-          "label": "AI-Generated Exploit"
-        },
-        {
-          "id": "persona-driven-jailbreaking",
-          "label": "Persona-Driven Jailbreaking"
-        },
-        {
-          "id": "hallucinated-cvss-score",
-          "label": "Hallucinated CVSS Score"
+          "id": "ontology-powered-os",
+          "label": "Ontology-Powered Operating System"
         }
       ],
       "longlistUpdates": [
         {
-          "id": "ai-speed-cyber-defense",
-          "label": "AI-Speed Cyber Defense",
+          "id": "agentic-business-model",
+          "label": "Agentic Business Model",
+          "sourceAdded": true,
+          "sourceCount": 3,
+          "independentSourceCount": 1
+        }
+      ],
+      "rejections": [],
+      "proposalsQueued": [],
+      "mustReadFlagged": {
+        "priority": 2,
+        "reason": "Thompson's mainframe analogy is one of the more substantive historical framings for how enterprise AI deployment actually works — and why it looks less like SaaS adoption and more like a 1970s top-down computing wave with executives as buyers and workers as the replaced. The piece introduces 'Forward Deployed Engineers' as a structural market pattern and develops the 'enterprise philosophy' concept with concrete industry evidence. Worth reading for anyone trying to understand the business logic underneath the current AI deployment push."
+      }
+    },
+    {
+      "article": {
+        "title": "How finance teams use Codex",
+        "url": "https://openai.com/academy/how-finance-teams-use-codex"
+      },
+      "summary": "An OpenAI Academy article detailing how finance teams can use Codex across 10 use cases — monthly business reviews, model cleanup, CFO reporting packs, variance analysis, and scenario planning. It is a practical how-to guide with copy-ready prompts and plugin suggestions. No new conceptual framing; primarily a product education/use-case showcase for Codex in a specific vertical.",
+      "longlistAdditions": [
+        {
+          "id": "variance-driver-bridge",
+          "label": "Variance Driver Bridge"
+        },
+        {
+          "id": "management-business-review",
+          "label": "Management Business Review"
+        },
+        {
+          "id": "qa-memo",
+          "label": "QA Memo"
+        },
+        {
+          "id": "vertical-ai-use-case",
+          "label": "Vertical AI Use Case"
+        }
+      ],
+      "longlistUpdates": [],
+      "rejections": [],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "Building Blocks for Foundation Model Training and Inference on AWS",
+        "url": "https://huggingface.co/blog/amazon/foundation-model-building-blocks"
+      },
+      "summary": "A technical deep-dive from AWS/Hugging Face on the layered infrastructure for foundation model training and inference, covering accelerated compute (NVIDIA GPU generations), high-bandwidth networking (NVLink, EFA), distributed storage, orchestration (Slurm, Kubernetes), and observability. The article introduces the 'three scaling laws' framing (pre-training, post-training, test-time compute) and maps how AWS building blocks interact with the OSS ML stack across the full model lifecycle.",
+      "longlistAdditions": [
+        {
+          "id": "post-training-scaling",
+          "label": "Post-Training Scaling"
+        },
+        {
+          "id": "test-time-compute-scaling",
+          "label": "Test-Time Compute Scaling"
+        },
+        {
+          "id": "elastic-fabric-adapter",
+          "label": "Elastic Fabric Adapter"
+        },
+        {
+          "id": "ml-observability",
+          "label": "Observability (ML Infrastructure)"
+        }
+      ],
+      "longlistUpdates": [],
+      "rejections": [],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "A quote from Boris Mann",
+        "url": "https://simonwillison.net/2026/May/13/boris-mann/#atom-everything"
+      },
+      "summary": "A pithy quote from Boris Mann (via Simon Willison) arguing that counting AI agents — e.g. '11 AI agents' — is as meaningless as counting spreadsheets or browser tabs, skewering the tendency to treat agent count as a meaningful metric.",
+      "longlistAdditions": [
+        {
+          "id": "agent-count-fallacy",
+          "label": "Agent Count Fallacy"
+        }
+      ],
+      "longlistUpdates": [],
+      "rejections": [],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "Mark Zuckerberg announces ‘completely private’ encrypted Meta AI chat",
+        "url": "https://www.theverge.com/tech/929791/meta-ai-incognito-chats"
+      },
+      "summary": "Meta CEO Mark Zuckerberg announces 'Incognito Chat' for Meta AI — an end-to-end encrypted chat mode that stores no server-side logs, built on Meta's Private Processing technology. The article briefly compares temporary/incognito chat retention policies across Meta, Google (Gemini), OpenAI (ChatGPT), and Anthropic (Claude), and notes legal context around AI chat logs.",
+      "longlistAdditions": [
+        {
+          "id": "incognito-chat",
+          "label": "Incognito Chat"
+        },
+        {
+          "id": "private-processing",
+          "label": "Private Processing"
+        },
+        {
+          "id": "ephemeral-ai-chat",
+          "label": "Ephemeral AI Chat"
+        }
+      ],
+      "longlistUpdates": [
+        {
+          "id": "data-residency",
+          "label": "Data Residency",
           "sourceAdded": true,
           "sourceCount": 2,
+          "independentSourceCount": 2
+        }
+      ],
+      "rejections": [],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "Introducing Claude for Small Business",
+        "url": "https://www.anthropic.com/news/claude-for-small-business"
+      },
+      "summary": "Anthropic launches Claude for Small Business, a packaged suite of agentic workflows and connectors built on Claude Cowork targeting SMBs. The article introduces a named product tier, a new course initiative, and reinforces several existing graph terms around connectors, workflows, and agentic deployment patterns.",
+      "longlistAdditions": [
+        {
+          "id": "ai-fluency",
+          "label": "AI Fluency"
+        },
+        {
+          "id": "ready-to-run-workflow",
+          "label": "Ready-to-Run Workflow"
+        },
+        {
+          "id": "smb-ai-adoption-gap",
+          "label": "SMB AI Adoption Gap"
+        }
+      ],
+      "longlistUpdates": [
+        {
+          "id": "agentic-business-model",
+          "label": "Agentic Business Model",
+          "sourceAdded": true,
+          "sourceCount": 4,
           "independentSourceCount": 2
         }
       ],
@@ -197,54 +222,54 @@
   ],
   "definitionReviews": [
     {
-      "id": "parameters",
+      "id": "prompt",
       "status": "keep",
-      "reason": "No source material addresses parameter counts, MoE architectures, or related concepts. Definition remains accurate and current."
+      "reason": "No source material addresses or updates the definition of a prompt. Definition remains accurate."
     },
     {
-      "id": "penetration-testing",
+      "id": "prompt-compression",
       "status": "keep",
-      "reason": "The Google zero-day article touches on AI-assisted exploitation but provides no substantive detail in the excerpt to justify revising the definition. The core definition remains sound."
+      "reason": "No source material addresses prompt compression techniques. Definition remains accurate."
     },
     {
-      "id": "permission-creep",
+      "id": "prompt-engineering",
       "status": "keep",
-      "reason": "No source material addresses agentic permission behavior. Definition stands."
+      "reason": "No source material addresses prompt engineering. Definition remains accurate."
     },
     {
-      "id": "perplexity",
+      "id": "prompt-injection",
       "status": "keep",
-      "reason": "No source material references Perplexity the company or its products. Definition stands."
+      "reason": "No source material addresses prompt injection. Definition remains accurate."
     },
     {
-      "id": "persistent-memory",
+      "id": "proprietary-model",
       "status": "keep",
-      "reason": "No source material addresses persistent memory in AI agents. Definition stands."
+      "reason": "No source material directly addresses the proprietary vs. open-weight model distinction. Definition remains accurate."
     },
     {
-      "id": "pilot-purgatory",
+      "id": "purple-team",
       "status": "keep",
-      "reason": "No source material addresses enterprise AI deployment challenges. Definition stands."
+      "reason": "No source material addresses purple teaming. Definition remains accurate."
     },
     {
-      "id": "planner-worker",
+      "id": "purpose-built-ai-infrastructure",
       "status": "keep",
-      "reason": "No source material addresses planner-worker architectures. Definition stands."
+      "reason": "The AWS HuggingFace blog touches on co-optimized infrastructure for AI (accelerators, networking, storage) and is consistent with the existing definition, but does not introduce new concepts that would require a revision."
     },
     {
-      "id": "planning",
+      "id": "quantization",
       "status": "keep",
-      "reason": "No source material addresses agent planning capabilities. Definition stands."
+      "reason": "No source material addresses quantization. Definition remains accurate."
     },
     {
-      "id": "proactive-agent",
+      "id": "rag",
       "status": "keep",
-      "reason": "No source material addresses proactive agents or KAIROS. Definition stands."
+      "reason": "No source material addresses RAG. Definition remains accurate."
     },
     {
-      "id": "project-glasswing",
+      "id": "reactive-agent",
       "status": "keep",
-      "reason": "No source material references Project Glasswing. Definition stands."
+      "reason": "The Boris Mann quote comments on agent terminology being overused but does not materially change the technical definition of a reactive agent. Definition remains accurate."
     }
   ],
   "notes": []
