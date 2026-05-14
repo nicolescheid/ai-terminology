@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-05-13T19:55:47.342Z",
-    "pendingCount": 3,
+    "generatedAt": "2026-05-14T19:46:45.141Z",
+    "pendingCount": 4,
     "appliedCount": 12,
     "rejectedCount": 1,
     "note": "Lexi proposals queue. Actions gated as PROPOSE land here as status: 'pending'. Edit a proposal's status to 'approved' or 'rejected' and run the apply step (TBD) to commit."
@@ -783,6 +783,51 @@
       },
       "reason": "2 sources, 2 independent (anthropic.com + theverge.com), 4d on longlist.",
       "runId": "6497c953-05e0-42ca-92c8-5a900398723a"
+    },
+    {
+      "id": "6c8073ca62415f45",
+      "action": "promote_to_graph",
+      "gate": "propose",
+      "proposedAt": "2026-05-14T19:46:45.141Z",
+      "status": "pending",
+      "source": "promote-eligibility-scan",
+      "target": {
+        "kind": "longlist_entry",
+        "id": "ai-speed-cyber-defense"
+      },
+      "payload": {
+        "graphNode": {
+          "id": "ai-speed-cyber-defense",
+          "label": "AI-Speed Cyber Defense",
+          "clusters": [
+            "security",
+            "critical"
+          ],
+          "sz": 16,
+          "def": "A strategic framing — used in executive and business leadership contexts (e.g., HBR, enterprise security discourse) — for the proposition that defensive cybersecurity operations must match or exceed the tempo at which AI-assisted offensive attacks can be launched and iterated. The concept implies that traditional human-paced security operations centers (SOCs) and response workflows are structurally outpaced by AI-accelerated threat actors, requiring AI-native defensive tooling and automated response.",
+          "rels": [
+            "guardrails",
+            "ai-red-teaming",
+            "blue-team",
+            "sandboxing",
+            "blast-radius"
+          ],
+          "refs": [
+            {
+              "n": 1,
+              "src": "Harvard Business Review, 2026-05-08T12:25:11Z",
+              "q": "“Cyber Defense Has to Move at the Speed of AI” Harvard Business Review"
+            },
+            {
+              "n": 2,
+              "src": "The Verge — AI, 2026-05-11T12:09:42-04:00",
+              "q": "Google stopped a zero-day hack that it says was developed with AI The Verge — AI"
+            }
+          ]
+        }
+      },
+      "reason": "2 sources, 2 independent (hbr.org + theverge.com), 3d on longlist. Trusted: hbr.org.",
+      "runId": "271c6753-5b8e-4b07-aae3-58ca61cc994d"
     }
   ]
 }

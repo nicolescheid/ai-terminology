@@ -1,110 +1,70 @@
 {
-  "generatedAt": "2026-05-13T19:53:32.068Z",
+  "generatedAt": "2026-05-14T19:44:37.204Z",
   "model": "claude-sonnet-4-6",
   "sourcesConfigured": 14,
   "articlesConsidered": [
     {
-      "id": "73f7949394039a8a",
-      "source": "Stratechery",
-      "title": "The Deployment Company, Back to the 70s, Apple and Intel",
-      "url": "https://stratechery.com/2026/the-deployment-company-back-to-the-70s-apple-and-intel/",
-      "publishedAt": "Wed, 13 May 2026 10:00:00 +0000"
-    },
-    {
-      "id": "7d12c750a4ea6f38",
+      "id": "5502a50a46d6e39e",
       "source": "OpenAI News",
-      "title": "How finance teams use Codex",
-      "url": "https://openai.com/academy/how-finance-teams-use-codex",
-      "publishedAt": "Tue, 12 May 2026 15:00:00 GMT"
+      "title": "Building a safe, effective sandbox to enable Codex on Windows",
+      "url": "https://openai.com/index/building-codex-windows-sandbox",
+      "publishedAt": "Wed, 13 May 2026 11:00:00 GMT"
     },
     {
-      "id": "ce49fe8e0cb4aba7",
+      "id": "92d0971e98fa464b",
+      "source": "Stratechery",
+      "title": "SpaceX and Anthropic, xAI’s Two Companies, Elon Musk and SpaceXAI’s Future",
+      "url": "https://stratechery.com/2026/spacex-and-anthropic-xais-two-companies-elon-musk-and-spacexais-future/",
+      "publishedAt": "Tue, 12 May 2026 10:00:00 +0000"
+    },
+    {
+      "id": "469a04ba2849ba89",
       "source": "Hugging Face Blog",
-      "title": "Building Blocks for Foundation Model Training and Inference on AWS",
-      "url": "https://huggingface.co/blog/amazon/foundation-model-building-blocks",
-      "publishedAt": "Mon, 11 May 2026 23:18:26 GMT"
+      "title": "Granite Embedding Multilingual R2: Open Apache 2.0 Multilingual Embeddings with 32K Context — Best Sub-100M Retrieval Quality",
+      "url": "https://huggingface.co/blog/ibm-granite/granite-embedding-multilingual-r2",
+      "publishedAt": "Thu, 14 May 2026 18:55:01 GMT"
     },
     {
-      "id": "b549a5489129d6d4",
-      "source": "Simon Willison's Weblog",
-      "title": "A quote from Boris Mann",
-      "url": "https://simonwillison.net/2026/May/13/boris-mann/#atom-everything",
-      "publishedAt": "2026-05-13T16:15:50+00:00"
-    },
-    {
-      "id": "e501e1effa7f61df",
+      "id": "76e5a237b85b49ce",
       "source": "The Verge — AI",
-      "title": "Mark Zuckerberg announces ‘completely private’ encrypted Meta AI chat",
-      "url": "https://www.theverge.com/tech/929791/meta-ai-incognito-chats",
-      "publishedAt": "2026-05-13T12:45:43-04:00"
+      "title": "Microsoft starts canceling Claude Code licenses",
+      "url": "https://www.theverge.com/tech/930447/microsoft-claude-code-discontinued-notepad",
+      "publishedAt": "2026-05-14T15:00:00-04:00"
     },
     {
-      "id": "a9ef977b8a8403f8",
+      "id": "52ed20ae303a1601",
+      "source": "Simon Willison's Weblog",
+      "title": "Release: datasette-ip-rate-limit 0.1a0",
+      "url": "https://simonwillison.net/2026/May/14/datasette-ip-rate-limit/#atom-everything",
+      "publishedAt": "2026-05-14T04:10:23+00:00"
+    },
+    {
+      "id": "82ccf6abe5fcd41f",
       "source": "Anthropic Newsroom",
-      "title": "Introducing Claude for Small Business",
-      "url": "https://www.anthropic.com/news/claude-for-small-business",
+      "title": "Anthropic forms $200 million partnership with the Gates Foundation",
+      "url": "https://www.anthropic.com/news/gates-foundation-partnership",
       "publishedAt": null
     }
   ],
   "harvestedTerms": [
     {
       "article": {
-        "title": "The Deployment Company, Back to the 70s, Apple and Intel",
-        "url": "https://stratechery.com/2026/the-deployment-company-back-to-the-70s-apple-and-intel/"
+        "title": "Building a safe, effective sandbox to enable Codex on Windows",
+        "url": "https://openai.com/index/building-codex-windows-sandbox"
       },
-      "summary": "Ben Thompson's Stratechery Update covers three themes: (1) OpenAI and Google launching 'forward deployed engineer' units/consulting ventures to embed AI in enterprises — framed as top-down enterprise transformation analogous to the mainframe era, not SaaS; (2) a historical analogy argument that AI is more like 1970s computing (mainframe wave) than the internet, with enterprises as buyers and workers as the replaced/augmented; (3) bullishness on Palantir's Foundry/ontology layer as the data-integration piece enabling agent-as-worker-replacement. The piece is rich in business-model and deployment framing.",
+      "summary": "A detailed engineering post from OpenAI describing the design and implementation of a custom Windows sandbox for Codex, the coding agent. The article walks through why existing Windows isolation primitives (AppContainer, Windows Sandbox, Mandatory Integrity Control) were inadequate, and how the team built a custom sandbox using SIDs, write-restricted tokens, and process tokens to enforce file-write and network access constraints without requiring administrator elevation.",
       "longlistAdditions": [
         {
-          "id": "forward-deployed-engineers",
-          "label": "Forward Deployed Engineers"
+          "id": "unelevated-sandbox",
+          "label": "Unelevated Sandbox"
         },
         {
-          "id": "enterprise-philosophy",
-          "label": "Enterprise Philosophy"
+          "id": "write-restricted-token",
+          "label": "Write-Restricted Token"
         },
         {
-          "id": "ontology-powered-os",
-          "label": "Ontology-Powered Operating System"
-        }
-      ],
-      "longlistUpdates": [
-        {
-          "id": "agentic-business-model",
-          "label": "Agentic Business Model",
-          "sourceAdded": true,
-          "sourceCount": 3,
-          "independentSourceCount": 1
-        }
-      ],
-      "rejections": [],
-      "proposalsQueued": [],
-      "mustReadFlagged": {
-        "priority": 2,
-        "reason": "Thompson's mainframe analogy is one of the more substantive historical framings for how enterprise AI deployment actually works — and why it looks less like SaaS adoption and more like a 1970s top-down computing wave with executives as buyers and workers as the replaced. The piece introduces 'Forward Deployed Engineers' as a structural market pattern and develops the 'enterprise philosophy' concept with concrete industry evidence. Worth reading for anyone trying to understand the business logic underneath the current AI deployment push."
-      }
-    },
-    {
-      "article": {
-        "title": "How finance teams use Codex",
-        "url": "https://openai.com/academy/how-finance-teams-use-codex"
-      },
-      "summary": "An OpenAI Academy article detailing how finance teams can use Codex across 10 use cases — monthly business reviews, model cleanup, CFO reporting packs, variance analysis, and scenario planning. It is a practical how-to guide with copy-ready prompts and plugin suggestions. No new conceptual framing; primarily a product education/use-case showcase for Codex in a specific vertical.",
-      "longlistAdditions": [
-        {
-          "id": "variance-driver-bridge",
-          "label": "Variance Driver Bridge"
-        },
-        {
-          "id": "management-business-review",
-          "label": "Management Business Review"
-        },
-        {
-          "id": "qa-memo",
-          "label": "QA Memo"
-        },
-        {
-          "id": "vertical-ai-use-case",
-          "label": "Vertical AI Use Case"
+          "id": "process-token",
+          "label": "Process Token"
         }
       ],
       "longlistUpdates": [],
@@ -113,75 +73,51 @@
     },
     {
       "article": {
-        "title": "Building Blocks for Foundation Model Training and Inference on AWS",
-        "url": "https://huggingface.co/blog/amazon/foundation-model-building-blocks"
+        "title": "SpaceX and Anthropic, xAI’s Two Companies, Elon Musk and SpaceXAI’s Future",
+        "url": "https://stratechery.com/2026/spacex-and-anthropic-xais-two-companies-elon-musk-and-spacexais-future/"
       },
-      "summary": "A technical deep-dive from AWS/Hugging Face on the layered infrastructure for foundation model training and inference, covering accelerated compute (NVIDIA GPU generations), high-bandwidth networking (NVLink, EFA), distributed storage, orchestration (Slurm, Kubernetes), and observability. The article introduces the 'three scaling laws' framing (pre-training, post-training, test-time compute) and maps how AWS building blocks interact with the OSS ML stack across the full model lifecycle.",
-      "longlistAdditions": [
-        {
-          "id": "post-training-scaling",
-          "label": "Post-Training Scaling"
-        },
-        {
-          "id": "test-time-compute-scaling",
-          "label": "Test-Time Compute Scaling"
-        },
-        {
-          "id": "elastic-fabric-adapter",
-          "label": "Elastic Fabric Adapter"
-        },
-        {
-          "id": "ml-observability",
-          "label": "Observability (ML Infrastructure)"
-        }
-      ],
+      "summary": "A Stratechery paywalled article by Ben Thompson analyzing a reported Anthropic-xAI deal and its strategic implications for Elon Musk and SpaceX. The article excerpt is almost entirely a subscription paywall page with minimal substantive content visible — the headline and a one-line teaser ('Musk should double down on serving other companies') are the only content available for analysis.",
+      "longlistAdditions": [],
       "longlistUpdates": [],
       "rejections": [],
       "proposalsQueued": []
     },
     {
       "article": {
-        "title": "A quote from Boris Mann",
-        "url": "https://simonwillison.net/2026/May/13/boris-mann/#atom-everything"
+        "title": "Granite Embedding Multilingual R2: Open Apache 2.0 Multilingual Embeddings with 32K Context — Best Sub-100M Retrieval Quality",
+        "url": "https://huggingface.co/blog/ibm-granite/granite-embedding-multilingual-r2"
       },
-      "summary": "A pithy quote from Boris Mann (via Simon Willison) arguing that counting AI agents — e.g. '11 AI agents' — is as meaningless as counting spreadsheets or browser tabs, skewering the tendency to treat agent count as a meaningful metric.",
-      "longlistAdditions": [
-        {
-          "id": "agent-count-fallacy",
-          "label": "Agent Count Fallacy"
-        }
-      ],
+      "summary": "IBM releases two new multilingual embedding models (97M and 311M parameters) built on ModernBERT, featuring 32K context windows, Apache 2.0 licensing, and top MTEB retrieval scores. The article details architecture choices including ModernBERT, Matryoshka embeddings, tokenizer pruning, and knowledge distillation for building enterprise-ready multilingual retrievers.",
+      "longlistAdditions": [],
       "longlistUpdates": [],
       "rejections": [],
       "proposalsQueued": []
     },
     {
       "article": {
-        "title": "Mark Zuckerberg announces ‘completely private’ encrypted Meta AI chat",
-        "url": "https://www.theverge.com/tech/929791/meta-ai-incognito-chats"
+        "title": "Microsoft starts canceling Claude Code licenses",
+        "url": "https://www.theverge.com/tech/930447/microsoft-claude-code-discontinued-notepad"
       },
-      "summary": "Meta CEO Mark Zuckerberg announces 'Incognito Chat' for Meta AI — an end-to-end encrypted chat mode that stores no server-side logs, built on Meta's Private Processing technology. The article briefly compares temporary/incognito chat retention policies across Meta, Google (Gemini), OpenAI (ChatGPT), and Anthropic (Claude), and notes legal context around AI chat logs.",
-      "longlistAdditions": [
-        {
-          "id": "incognito-chat",
-          "label": "Incognito Chat"
-        },
-        {
-          "id": "private-processing",
-          "label": "Private Processing"
-        },
-        {
-          "id": "ephemeral-ai-chat",
-          "label": "Ephemeral AI Chat"
-        }
-      ],
+      "summary": "Microsoft is canceling most of its Claude Code licenses for the Experiences + Devices team, redirecting developers to GitHub Copilot CLI. The decision reflects both financial considerations (end of fiscal year) and a strategic preference for a tool Microsoft can shape internally via GitHub. Claude Code had been popular but undermined Copilot CLI adoption. Anthropic models will remain accessible through Copilot CLI and other Microsoft products.",
+      "longlistAdditions": [],
+      "longlistUpdates": [],
+      "rejections": [],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "Release: datasette-ip-rate-limit 0.1a0",
+        "url": "https://simonwillison.net/2026/May/14/datasette-ip-rate-limit/#atom-everything"
+      },
+      "summary": "A brief release note from Simon Willison announcing a Datasette rate-limiting plugin (datasette-ip-rate-limit 0.1a0) built using Codex (GPT-5.5 xhigh) to block poorly-behaved web crawlers. The post is primarily a practical software release announcement with minimal conceptual depth.",
+      "longlistAdditions": [],
       "longlistUpdates": [
         {
-          "id": "data-residency",
-          "label": "Data Residency",
+          "id": "gpt55",
+          "label": "GPT-5.5",
           "sourceAdded": true,
-          "sourceCount": 2,
-          "independentSourceCount": 2
+          "sourceCount": 9,
+          "independentSourceCount": 3
         }
       ],
       "rejections": [],
@@ -189,87 +125,66 @@
     },
     {
       "article": {
-        "title": "Introducing Claude for Small Business",
-        "url": "https://www.anthropic.com/news/claude-for-small-business"
+        "title": "Anthropic forms $200 million partnership with the Gates Foundation",
+        "url": "https://www.anthropic.com/news/gates-foundation-partnership"
       },
-      "summary": "Anthropic launches Claude for Small Business, a packaged suite of agentic workflows and connectors built on Claude Cowork targeting SMBs. The article introduces a named product tier, a new course initiative, and reinforces several existing graph terms around connectors, workflows, and agentic deployment patterns.",
-      "longlistAdditions": [
-        {
-          "id": "ai-fluency",
-          "label": "AI Fluency"
-        },
-        {
-          "id": "ready-to-run-workflow",
-          "label": "Ready-to-Run Workflow"
-        },
-        {
-          "id": "smb-ai-adoption-gap",
-          "label": "SMB AI Adoption Gap"
-        }
-      ],
-      "longlistUpdates": [
-        {
-          "id": "agentic-business-model",
-          "label": "Agentic Business Model",
-          "sourceAdded": true,
-          "sourceCount": 4,
-          "independentSourceCount": 2
-        }
-      ],
+      "summary": "Anthropic announces a $200 million partnership with the Gates Foundation covering global health, life sciences, education, and economic mobility, deploying Claude credits, technical support, and public goods (benchmarks, datasets, knowledge graphs) for low- and middle-income country programs over four years.",
+      "longlistAdditions": [],
+      "longlistUpdates": [],
       "rejections": [],
       "proposalsQueued": []
     }
   ],
   "definitionReviews": [
     {
-      "id": "prompt",
+      "id": "reasoning-models",
       "status": "keep",
-      "reason": "No source material addresses or updates the definition of a prompt. Definition remains accurate."
+      "reason": "No source material addresses reasoning models. Definition stands as written."
     },
     {
-      "id": "prompt-compression",
+      "id": "red-teaming",
       "status": "keep",
-      "reason": "No source material addresses prompt compression techniques. Definition remains accurate."
+      "reason": "No source material addresses red teaming. Definition stands as written."
     },
     {
-      "id": "prompt-engineering",
+      "id": "research-preview",
       "status": "keep",
-      "reason": "No source material addresses prompt engineering. Definition remains accurate."
+      "reason": "No source material addresses research previews. Definition stands as written."
     },
     {
-      "id": "prompt-injection",
+      "id": "responsible-scaling-policy",
       "status": "keep",
-      "reason": "No source material addresses prompt injection. Definition remains accurate."
+      "reason": "No source material addresses Anthropic's RSP or ASL framework. Definition stands as written."
     },
     {
-      "id": "proprietary-model",
+      "id": "retry-recovery",
       "status": "keep",
-      "reason": "No source material directly addresses the proprietary vs. open-weight model distinction. Definition remains accurate."
+      "reason": "No source material addresses retry/recovery mechanisms. Definition stands as written."
     },
     {
-      "id": "purple-team",
+      "id": "rlhf",
       "status": "keep",
-      "reason": "No source material addresses purple teaming. Definition remains accurate."
+      "reason": "No source material addresses RLHF. Definition stands as written."
     },
     {
-      "id": "purpose-built-ai-infrastructure",
+      "id": "saas",
       "status": "keep",
-      "reason": "The AWS HuggingFace blog touches on co-optimized infrastructure for AI (accelerators, networking, storage) and is consistent with the existing definition, but does not introduce new concepts that would require a revision."
+      "reason": "No source material addresses SaaS or the agentic disruption thesis. Definition stands as written."
     },
     {
-      "id": "quantization",
+      "id": "saaspocalypse",
       "status": "keep",
-      "reason": "No source material addresses quantization. Definition remains accurate."
+      "reason": "No source material addresses the SaaSpocalypse thesis. Definition stands as written."
     },
     {
-      "id": "rag",
+      "id": "sandbox-escape",
       "status": "keep",
-      "reason": "No source material addresses RAG. Definition remains accurate."
+      "reason": "No source material addresses the sandbox-escape event described. Definition stands as written."
     },
     {
-      "id": "reactive-agent",
+      "id": "sandboxing",
       "status": "keep",
-      "reason": "The Boris Mann quote comments on agent terminology being overused but does not materially change the technical definition of a reactive agent. Definition remains accurate."
+      "reason": "The OpenAI Codex Windows sandbox article is consistent with the existing definition — it describes a constrained execution environment limiting file writes and network access — but adds no information that contradicts or materially updates the definition. No refresh warranted."
     }
   ],
   "notes": []

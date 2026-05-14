@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-05-13T19:53:32.068Z",
-    "entryCount": 114,
+    "generatedAt": "2026-05-14T19:44:37.204Z",
+    "entryCount": 117,
     "note": "Lexi-managed Tier 2 longlist — terms under observation, awaiting evidence to support promotion to the graph (Tier 1)."
   },
   "entries": [
@@ -329,12 +329,20 @@
           "sourceLabel": "Last Week in AI",
           "publishedAt": "Mon, 04 May 2026 07:54:06 GMT",
           "firstSeen": "2026-05-10T19:02:19.492Z"
+        },
+        {
+          "url": "https://simonwillison.net/2026/May/14/datasette-ip-rate-limit/#atom-everything",
+          "domain": "simonwillison.net",
+          "title": "Release: datasette-ip-rate-limit 0.1a0",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-05-14T04:10:23+00:00",
+          "firstSeen": "2026-05-14T19:44:37.204Z"
         }
       ],
-      "sourceCount": 8,
-      "independentSourceCount": 2,
+      "sourceCount": 9,
+      "independentSourceCount": 3,
       "dateFirstSeen": "2026-04-26T22:40:25.832Z",
-      "dateLastSeen": "2026-05-10T19:02:19.492Z",
+      "dateLastSeen": "2026-05-14T19:44:37.204Z",
       "sz": 14,
       "fullName": "GPT-5.5 (OpenAI)",
       "nodeType": "product",
@@ -4038,6 +4046,99 @@
       "dateLastSeen": "2026-05-13T19:53:32.068Z",
       "sz": 14,
       "proposalReason": "A named market framing that may recur as labs compete for the SMB segment and as adoption research develops around this demographic."
+    },
+    {
+      "id": "unelevated-sandbox",
+      "label": "Unelevated Sandbox",
+      "workingDef": "A sandbox design pattern — specifically described in OpenAI's Codex Windows implementation — in which isolation constraints (file-write limits, network restrictions) are enforced without requiring the user to grant administrator (elevated) privileges. Contrasted with approaches that prompt for privilege escalation, the unelevated approach uses OS primitives such as write-restricted tokens and synthetic SIDs to enforce boundaries within the normal user permission level.",
+      "clusters": [
+        "security",
+        "technical"
+      ],
+      "suggestedRels": [
+        "sandboxing",
+        "codex-model",
+        "sandbox-escape"
+      ],
+      "sources": [
+        {
+          "url": "https://openai.com/index/building-codex-windows-sandbox",
+          "domain": "openai.com",
+          "title": "Building a safe, effective sandbox to enable Codex on Windows",
+          "sourceLabel": "OpenAI News",
+          "publishedAt": "Wed, 13 May 2026 11:00:00 GMT",
+          "firstSeen": "2026-05-14T19:44:37.204Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-14T19:44:37.204Z",
+      "dateLastSeen": "2026-05-14T19:44:37.204Z",
+      "sz": 14,
+      "fullName": "Unelevated Sandbox (Codex Windows)",
+      "proposalReason": "A new candidate term representing a distinct sandboxing design pattern with lasting relevance to agentic coding tools deployed on user machines."
+    },
+    {
+      "id": "write-restricted-token",
+      "label": "Write-Restricted Token",
+      "workingDef": "A Windows process token variant that causes the operating system to perform an additional access check on write operations before allowing them to proceed. Used in sandbox implementations (such as OpenAI's Codex Windows sandbox) to limit which filesystem locations a sandboxed process can modify, without requiring elevated privileges or changes to the host filesystem's integrity labels.",
+      "clusters": [
+        "security",
+        "technical"
+      ],
+      "suggestedRels": [
+        "sandboxing",
+        "codex-model",
+        "blast-radius"
+      ],
+      "sources": [
+        {
+          "url": "https://openai.com/index/building-codex-windows-sandbox",
+          "domain": "openai.com",
+          "title": "Building a safe, effective sandbox to enable Codex on Windows",
+          "sourceLabel": "OpenAI News",
+          "publishedAt": "Wed, 13 May 2026 11:00:00 GMT",
+          "firstSeen": "2026-05-14T19:44:37.204Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-14T19:44:37.204Z",
+      "dateLastSeen": "2026-05-14T19:44:37.204Z",
+      "sz": 14,
+      "fullName": "Write-Restricted Token (Windows Process Isolation)",
+      "proposalReason": "A precise OS-level mechanism central to the sandbox design described; likely to recur in discussions of agent sandboxing on Windows."
+    },
+    {
+      "id": "process-token",
+      "label": "Process Token",
+      "workingDef": "A Windows security object associated with a running process that defines that process's identity, group memberships, and privileges. Process tokens determine what system resources and actions a process may access. In agentic coding contexts (e.g., Codex on Windows), process tokens are manipulated to create constrained execution environments without elevating or modifying host-filesystem metadata.",
+      "clusters": [
+        "security",
+        "technical"
+      ],
+      "suggestedRels": [
+        "sandboxing",
+        "codex-model",
+        "blast-radius"
+      ],
+      "sources": [
+        {
+          "url": "https://openai.com/index/building-codex-windows-sandbox",
+          "domain": "openai.com",
+          "title": "Building a safe, effective sandbox to enable Codex on Windows",
+          "sourceLabel": "OpenAI News",
+          "publishedAt": "Wed, 13 May 2026 11:00:00 GMT",
+          "firstSeen": "2026-05-14T19:44:37.204Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-14T19:44:37.204Z",
+      "dateLastSeen": "2026-05-14T19:44:37.204Z",
+      "sz": 14,
+      "fullName": "Process Token (Windows Security Object)",
+      "proposalReason": "A foundational OS concept that becomes terminologically relevant when agentic tools must reason about their own execution permissions at the operating-system level."
     }
   ]
 }

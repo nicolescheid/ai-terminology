@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generatedAt": "2026-05-13T19:53:32.068Z",
-    "unreadCount": 13,
-    "totalCount": 128,
+    "generatedAt": "2026-05-14T19:44:37.204Z",
+    "unreadCount": 14,
+    "totalCount": 129,
     "note": "Notes for Nicole — Lexi's manager channel (spec §6). Mandatory entry types fire when their triggering condition is met; discretionary entries are observations Lexi thinks Nicole should see. Set status to 'read', 'actioned', or 'dismissed' as appropriate."
   },
   "entries": [
@@ -3346,6 +3346,31 @@
         "sourceLabel": "Hugging Face Blog"
       },
       "suggestedAction": "Either revise the working definition to name the contestation (who uses it to mean what), or confirm this term doesn't warrant the contested treatment in this case."
+    },
+    {
+      "id": "a0079240a54dd138",
+      "type": "throughput_cap_hit",
+      "writtenAt": "2026-05-14T19:44:37.204Z",
+      "runId": "a52018c1-fa21-4b86-9c3e-94ba3c83359a",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 75, current 75)",
+      "details": "Would exceed cap of 75 longlist additions per 7-day window (current: 75).",
+      "evidence": {
+        "action": "add_to_longlist",
+        "target": {
+          "kind": "longlist_entry",
+          "id": "capability-based-isolation"
+        },
+        "gate": "autonomous",
+        "cap": "longlistAdditionsPer7d",
+        "limit": 75,
+        "current": 75,
+        "details": "Would exceed cap of 75 longlist additions per 7-day window (current: 75).",
+        "suppressedReason": "A useful conceptual counterpoint to the custom sandbox design; names a real OS design pattern relevant to the broader question of how agentic tools are constrained.",
+        "source": "extract-flow"
+      },
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
     }
   ]
 }

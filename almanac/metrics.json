@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-05-13T19:55:47.768Z",
+  "generatedAt": "2026-05-14T19:46:45.530Z",
   "firstRunAt": "2026-04-27T01:07:31.335Z",
   "phase": 1,
   "headline": {
-    "articlesRead": 83,
-    "daysRunning": 17,
-    "longlistSize": 103,
+    "articlesRead": 89,
+    "daysRunning": 18,
+    "longlistSize": 106,
     "graphSize": 206
   },
   "thisWeek": {
-    "articlesFetched": 36,
-    "longlistAdded": 72,
+    "articlesFetched": 42,
+    "longlistAdded": 75,
     "sourcesAdded": 4,
     "promotionsToGraph": 3,
-    "proposalsQueued": 6,
+    "proposalsQueued": 7,
     "auditFlags": 12,
     "notesAdded": 19
   },
@@ -27,31 +27,13 @@
       ],
       "sourceCount": 3,
       "independentSources": 2,
-      "daysOnLonglist": 9,
+      "daysOnLonglist": 10,
       "domains": [
         "openai.com",
         "simonwillison.net"
       ],
       "gapCount": 0,
       "gap": "meets credibility bar"
-    },
-    {
-      "id": "ai-speed-cyber-defense",
-      "label": "AI-Speed Cyber Defense",
-      "fullName": null,
-      "clusters": [
-        "security",
-        "critical"
-      ],
-      "sourceCount": 2,
-      "independentSources": 2,
-      "daysOnLonglist": 2,
-      "domains": [
-        "hbr.org",
-        "theverge.com"
-      ],
-      "gapCount": 1,
-      "gap": "1 more day on longlist"
     },
     {
       "id": "system-card",
@@ -63,7 +45,7 @@
       ],
       "sourceCount": 4,
       "independentSources": 1,
-      "daysOnLonglist": 16,
+      "daysOnLonglist": 17,
       "domains": [
         "openai.com"
       ],
@@ -80,7 +62,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 13,
+      "daysOnLonglist": 14,
       "domains": [
         "stratechery.com"
       ],
@@ -97,7 +79,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 13,
+      "daysOnLonglist": 14,
       "domains": [
         "stratechery.com"
       ],
@@ -114,7 +96,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 13,
+      "daysOnLonglist": 14,
       "domains": [
         "normaltech.ai"
       ],
@@ -131,7 +113,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 4,
+      "daysOnLonglist": 5,
       "domains": [
         "blog.google"
       ],
@@ -148,7 +130,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 4,
+      "daysOnLonglist": 5,
       "domains": [
         "blog.google"
       ],
@@ -165,7 +147,7 @@
       ],
       "sourceCount": 1,
       "independentSources": 1,
-      "daysOnLonglist": 16,
+      "daysOnLonglist": 17,
       "domains": [
         "blog.google"
       ],
@@ -183,7 +165,25 @@
       ],
       "sourceCount": 1,
       "independentSources": 1,
-      "daysOnLonglist": 16,
+      "daysOnLonglist": 17,
+      "domains": [
+        "anthropic.com"
+      ],
+      "gapCount": 2,
+      "gap": "needs 1 more source; needs 1 more independent source"
+    },
+    {
+      "id": "cyber-verification-program",
+      "label": "Cyber Verification Program",
+      "fullName": "Cyber Verification Program (Anthropic)",
+      "clusters": [
+        "security",
+        "safety",
+        "landscape"
+      ],
+      "sourceCount": 1,
+      "independentSources": 1,
+      "daysOnLonglist": 17,
       "domains": [
         "anthropic.com"
       ],
@@ -195,7 +195,7 @@
     "byDomain": [
       {
         "domain": "openai.com",
-        "count": 25
+        "count": 26
       },
       {
         "domain": "blog.google",
@@ -203,30 +203,30 @@
       },
       {
         "domain": "simonwillison.net",
-        "count": 10
+        "count": 11
       },
       {
         "domain": "stratechery.com",
-        "count": 9
+        "count": 10
       },
       {
         "domain": "anthropic.com",
-        "count": 8
+        "count": 9
       },
       {
         "domain": "huggingface.co",
-        "count": 7
+        "count": 8
       },
       {
         "domain": "lastweekin.ai",
         "count": 5
       },
       {
-        "domain": "normaltech.ai",
-        "count": 3
+        "domain": "theverge.com",
+        "count": 4
       },
       {
-        "domain": "theverge.com",
+        "domain": "normaltech.ai",
         "count": 3
       },
       {
@@ -371,7 +371,7 @@
         "id": "technical",
         "label": "Technical",
         "hex": "#D0D040",
-        "count": 36
+        "count": 39
       },
       {
         "id": "models",
@@ -398,15 +398,15 @@
         "count": 18
       },
       {
-        "id": "safety",
-        "label": "Safety",
-        "hex": "#FF6090",
-        "count": 14
-      },
-      {
         "id": "security",
         "label": "AI Security",
         "hex": "#E05050",
+        "count": 17
+      },
+      {
+        "id": "safety",
+        "label": "Safety",
+        "hex": "#FF6090",
         "count": 14
       },
       {
@@ -465,7 +465,7 @@
     "note": "All graph promotions and substantive edits are currently human-gated. Lexi proposes; Nicole approves."
   },
   "proposalsByStatus": {
-    "pending": 3,
+    "pending": 4,
     "approved": 0,
     "applied": 12,
     "rejected": 1
