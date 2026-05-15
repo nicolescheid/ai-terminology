@@ -1,6 +1,6 @@
 {
-  "lastRunAt": "2026-05-14T19:44:37.204Z",
-  "reviewCursor": 170,
+  "lastRunAt": "2026-05-15T19:28:01.171Z",
+  "reviewCursor": 180,
   "seenArticles": {
     "93a049d060bc295b": {
       "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/tpus-8t-8i-cloud-next/",
@@ -535,6 +535,42 @@
       "title": "Anthropic forms $200 million partnership with the Gates Foundation",
       "publishedAt": null,
       "seenAt": "2026-05-14T19:44:37.204Z"
+    },
+    "ca03c8de33d6b9a6": {
+      "url": "https://openai.com/index/sea-david-chen",
+      "title": "Sea's View on the Future of Agentic Software Development with Codex",
+      "publishedAt": "Thu, 14 May 2026 20:30:00 GMT",
+      "seenAt": "2026-05-15T19:28:01.171Z"
+    },
+    "175f5165b51a54b4": {
+      "url": "https://stratechery.com/2026/an-interview-with-ben-thompson-at-the-moffettnathanson-media-internet-communications-conference/",
+      "title": "An Interview with Ben Thompson at the MoffettNathanson Media, Internet & Communications Conference",
+      "publishedAt": "Thu, 14 May 2026 10:00:00 +0000",
+      "seenAt": "2026-05-15T19:28:01.171Z"
+    },
+    "f6eafc08e75f7a36": {
+      "url": "https://huggingface.co/blog/continuous_async",
+      "title": "Unlocking asynchronicity in continuous batching",
+      "publishedAt": "Thu, 14 May 2026 00:00:00 GMT",
+      "seenAt": "2026-05-15T19:28:01.171Z"
+    },
+    "59911f201be4108e": {
+      "url": "https://www.theverge.com/ai-artificial-intelligence/931544/openai-keeps-shuffling-its-executives-in-bid-to-win-ai-agent-battle",
+      "title": "OpenAI keeps shuffling its executives in bid to win AI agent battle",
+      "publishedAt": "2026-05-15T14:21:35-04:00",
+      "seenAt": "2026-05-15T19:28:01.171Z"
+    },
+    "cacc9730059c1be6": {
+      "url": "https://simonwillison.net/2026/May/15/qr-code-generator/#atom-everything",
+      "title": "Tool: QR code generator",
+      "publishedAt": "2026-05-15T04:00:49+00:00",
+      "seenAt": "2026-05-15T19:28:01.171Z"
+    },
+    "6bd2d5a7ff35db0b": {
+      "url": "https://www.anthropic.com/news/pwc-expanded-partnership",
+      "title": "PwC is deploying Claude to build technology, execute deals, and reinvent enterprise functions for clients",
+      "publishedAt": null,
+      "seenAt": "2026-05-15T19:28:01.171Z"
     }
   },
   "nodeReviews": {
@@ -1367,6 +1403,56 @@
       "lastReviewedAt": "2026-05-14T19:44:37.204Z",
       "status": "keep",
       "reason": "The OpenAI Codex Windows sandbox article is consistent with the existing definition — it describes a constrained execution environment limiting file writes and network access — but adds no information that contradicts or materially updates the definition. No refresh warranted."
+    },
+    "scaling-laws": {
+      "lastReviewedAt": "2026-05-15T19:28:01.171Z",
+      "status": "keep",
+      "reason": "No source material touches scaling laws. Definition accurately captures Kaplan/Chinchilla findings and their implications."
+    },
+    "shipped": {
+      "lastReviewedAt": "2026-05-15T19:28:01.171Z",
+      "status": "keep",
+      "reason": "No source material updates this definition. The concept and framing remain accurate."
+    },
+    "silent-failure": {
+      "lastReviewedAt": "2026-05-15T19:28:01.171Z",
+      "status": "keep",
+      "reason": "No source material addresses silent failure. Definition is accurate and well-framed."
+    },
+    "skills": {
+      "lastReviewedAt": "2026-05-15T19:28:01.171Z",
+      "status": "keep",
+      "reason": "The Sea/Codex article confirms ongoing Codex usage but provides no new definitional information about 'skills' as a technical term. Definition stands."
+    },
+    "small-language-model": {
+      "lastReviewedAt": "2026-05-15T19:28:01.171Z",
+      "status": "keep",
+      "reason": "No source material addresses SLMs or their capability benchmarks. Definition stands."
+    },
+    "socratic-dialogue": {
+      "lastReviewedAt": "2026-05-15T19:28:01.171Z",
+      "status": "keep",
+      "reason": "No source material is relevant. Definition stands."
+    },
+    "stack": {
+      "lastReviewedAt": "2026-05-15T19:28:01.171Z",
+      "status": "keep",
+      "reason": "No source material updates this definition. Stands as accurate practitioner shorthand."
+    },
+    "state": {
+      "lastReviewedAt": "2026-05-15T19:28:01.171Z",
+      "status": "keep",
+      "reason": "No source material is relevant. Definition stands."
+    },
+    "stopping-criterion-failure": {
+      "lastReviewedAt": "2026-05-15T19:28:01.171Z",
+      "status": "keep",
+      "reason": "No source material addresses this concept. Definition stands."
+    },
+    "structured-output": {
+      "lastReviewedAt": "2026-05-15T19:28:01.171Z",
+      "status": "keep",
+      "reason": "No source material updates this definition. Stands as accurate."
     }
   }
 }

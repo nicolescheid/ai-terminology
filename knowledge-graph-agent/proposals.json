@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-05-14T19:46:45.141Z",
-    "pendingCount": 4,
+    "generatedAt": "2026-05-15T19:30:15.909Z",
+    "pendingCount": 5,
     "appliedCount": 12,
     "rejectedCount": 1,
     "note": "Lexi proposals queue. Actions gated as PROPOSE land here as status: 'pending'. Edit a proposal's status to 'approved' or 'rejected' and run the apply step (TBD) to commit."
@@ -828,6 +828,57 @@
       },
       "reason": "2 sources, 2 independent (hbr.org + theverge.com), 3d on longlist. Trusted: hbr.org.",
       "runId": "271c6753-5b8e-4b07-aae3-58ca61cc994d"
+    },
+    {
+      "id": "a37fae161ae4ff60",
+      "action": "promote_to_graph",
+      "gate": "propose",
+      "proposedAt": "2026-05-15T19:30:15.909Z",
+      "status": "pending",
+      "source": "promote-eligibility-scan",
+      "target": {
+        "kind": "longlist_entry",
+        "id": "agentic-era"
+      },
+      "payload": {
+        "graphNode": {
+          "id": "agentic-era",
+          "label": "Agentic Era",
+          "clusters": [
+            "agentic",
+            "landscape"
+          ],
+          "sz": 14,
+          "def": "An industry framing — most prominently used by Google (\"the agentic era\") and adopted by other lab marketing — for the current or emerging phase of AI development centered on widespread deployment of autonomous, multi-step agents. The framing is contested: critics (notably the AI agent reliability literature) argue it asserts a periodization that outpaces measured capability, while proponents argue agentic deployment represents a genuine workflow-integration shift distinct from prior single-turn patterns.",
+          "rels": [
+            "agent",
+            "autonomous-agent",
+            "multi-agent",
+            "workflow",
+            "long-horizon-autonomy"
+          ],
+          "refs": [
+            {
+              "n": 1,
+              "src": "Google AI Blog, Mon, 04 May 2026 17:00:00 +0000",
+              "q": "The latest AI news we announced in April 2026 Google AI Blog"
+            },
+            {
+              "n": 2,
+              "src": "Stratechery, Thu, 14 May 2026 10:00:00 +0000",
+              "q": "An Interview with Ben Thompson at the MoffettNathanson Media, Internet & Communications Conference Stratechery"
+            },
+            {
+              "n": 3,
+              "src": "The Verge — AI, 2026-05-15T14:21:35-04:00",
+              "q": "OpenAI keeps shuffling its executives in bid to win AI agent battle The Verge — AI"
+            }
+          ],
+          "fullName": "The Agentic Era"
+        }
+      },
+      "reason": "3 sources, 3 independent (blog.google + stratechery.com + theverge.com), 11d on longlist. Trusted: stratechery.com.",
+      "runId": "22ece666-f33a-496c-b2ef-6428ce2d75db"
     }
   ]
 }

@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generatedAt": "2026-05-14T19:44:37.204Z",
-    "unreadCount": 14,
-    "totalCount": 129,
+    "generatedAt": "2026-05-15T19:28:01.171Z",
+    "unreadCount": 15,
+    "totalCount": 130,
     "note": "Notes for Nicole — Lexi's manager channel (spec §6). Mandatory entry types fire when their triggering condition is met; discretionary entries are observations Lexi thinks Nicole should see. Set status to 'read', 'actioned', or 'dismissed' as appropriate."
   },
   "entries": [
@@ -3368,6 +3368,31 @@
         "current": 75,
         "details": "Would exceed cap of 75 longlist additions per 7-day window (current: 75).",
         "suppressedReason": "A useful conceptual counterpoint to the custom sandbox design; names a real OS design pattern relevant to the broader question of how agentic tools are constrained.",
+        "source": "extract-flow"
+      },
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+    },
+    {
+      "id": "4212be43d7c9a416",
+      "type": "throughput_cap_hit",
+      "writtenAt": "2026-05-15T19:28:01.171Z",
+      "runId": "b1bacbd0-e70c-4aee-9f20-4fce4dbbb94b",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 75, current 75)",
+      "details": "Would exceed cap of 75 longlist additions per 7-day window (current: 75).",
+      "evidence": {
+        "action": "add_to_longlist",
+        "target": {
+          "kind": "longlist_entry",
+          "id": "ai-native-software-development"
+        },
+        "gate": "autonomous",
+        "cap": "longlistAdditionsPer7d",
+        "limit": 75,
+        "current": 75,
+        "details": "Would exceed cap of 75 longlist additions per 7-day window (current: 75).",
+        "suppressedReason": "Coined and used substantively in this article as a distinct paradigm label — not a marketing synonym for Copilot-style autocomplete, but a claim about organisational redesign. Worth tracking as a potential framing competitor to 'agentic engineering' and 'vibe coding.'",
         "source": "extract-flow"
       },
       "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."

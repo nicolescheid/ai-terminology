@@ -1,82 +1,58 @@
 {
-  "generatedAt": "2026-05-14T19:44:37.204Z",
+  "generatedAt": "2026-05-15T19:28:01.171Z",
   "model": "claude-sonnet-4-6",
   "sourcesConfigured": 14,
   "articlesConsidered": [
     {
-      "id": "5502a50a46d6e39e",
+      "id": "ca03c8de33d6b9a6",
       "source": "OpenAI News",
-      "title": "Building a safe, effective sandbox to enable Codex on Windows",
-      "url": "https://openai.com/index/building-codex-windows-sandbox",
-      "publishedAt": "Wed, 13 May 2026 11:00:00 GMT"
+      "title": "Sea's View on the Future of Agentic Software Development with Codex",
+      "url": "https://openai.com/index/sea-david-chen",
+      "publishedAt": "Thu, 14 May 2026 20:30:00 GMT"
     },
     {
-      "id": "92d0971e98fa464b",
+      "id": "175f5165b51a54b4",
       "source": "Stratechery",
-      "title": "SpaceX and Anthropic, xAI’s Two Companies, Elon Musk and SpaceXAI’s Future",
-      "url": "https://stratechery.com/2026/spacex-and-anthropic-xais-two-companies-elon-musk-and-spacexais-future/",
-      "publishedAt": "Tue, 12 May 2026 10:00:00 +0000"
+      "title": "An Interview with Ben Thompson at the MoffettNathanson Media, Internet & Communications Conference",
+      "url": "https://stratechery.com/2026/an-interview-with-ben-thompson-at-the-moffettnathanson-media-internet-communications-conference/",
+      "publishedAt": "Thu, 14 May 2026 10:00:00 +0000"
     },
     {
-      "id": "469a04ba2849ba89",
+      "id": "f6eafc08e75f7a36",
       "source": "Hugging Face Blog",
-      "title": "Granite Embedding Multilingual R2: Open Apache 2.0 Multilingual Embeddings with 32K Context — Best Sub-100M Retrieval Quality",
-      "url": "https://huggingface.co/blog/ibm-granite/granite-embedding-multilingual-r2",
-      "publishedAt": "Thu, 14 May 2026 18:55:01 GMT"
+      "title": "Unlocking asynchronicity in continuous batching",
+      "url": "https://huggingface.co/blog/continuous_async",
+      "publishedAt": "Thu, 14 May 2026 00:00:00 GMT"
     },
     {
-      "id": "76e5a237b85b49ce",
+      "id": "59911f201be4108e",
       "source": "The Verge — AI",
-      "title": "Microsoft starts canceling Claude Code licenses",
-      "url": "https://www.theverge.com/tech/930447/microsoft-claude-code-discontinued-notepad",
-      "publishedAt": "2026-05-14T15:00:00-04:00"
+      "title": "OpenAI keeps shuffling its executives in bid to win AI agent battle",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/931544/openai-keeps-shuffling-its-executives-in-bid-to-win-ai-agent-battle",
+      "publishedAt": "2026-05-15T14:21:35-04:00"
     },
     {
-      "id": "52ed20ae303a1601",
+      "id": "cacc9730059c1be6",
       "source": "Simon Willison's Weblog",
-      "title": "Release: datasette-ip-rate-limit 0.1a0",
-      "url": "https://simonwillison.net/2026/May/14/datasette-ip-rate-limit/#atom-everything",
-      "publishedAt": "2026-05-14T04:10:23+00:00"
+      "title": "Tool: QR code generator",
+      "url": "https://simonwillison.net/2026/May/15/qr-code-generator/#atom-everything",
+      "publishedAt": "2026-05-15T04:00:49+00:00"
     },
     {
-      "id": "82ccf6abe5fcd41f",
+      "id": "6bd2d5a7ff35db0b",
       "source": "Anthropic Newsroom",
-      "title": "Anthropic forms $200 million partnership with the Gates Foundation",
-      "url": "https://www.anthropic.com/news/gates-foundation-partnership",
+      "title": "PwC is deploying Claude to build technology, execute deals, and reinvent enterprise functions for clients",
+      "url": "https://www.anthropic.com/news/pwc-expanded-partnership",
       "publishedAt": null
     }
   ],
   "harvestedTerms": [
     {
       "article": {
-        "title": "Building a safe, effective sandbox to enable Codex on Windows",
-        "url": "https://openai.com/index/building-codex-windows-sandbox"
+        "title": "Sea's View on the Future of Agentic Software Development with Codex",
+        "url": "https://openai.com/index/sea-david-chen"
       },
-      "summary": "A detailed engineering post from OpenAI describing the design and implementation of a custom Windows sandbox for Codex, the coding agent. The article walks through why existing Windows isolation primitives (AppContainer, Windows Sandbox, Mandatory Integrity Control) were inadequate, and how the team built a custom sandbox using SIDs, write-restricted tokens, and process tokens to enforce file-write and network access constraints without requiring administrator elevation.",
-      "longlistAdditions": [
-        {
-          "id": "unelevated-sandbox",
-          "label": "Unelevated Sandbox"
-        },
-        {
-          "id": "write-restricted-token",
-          "label": "Write-Restricted Token"
-        },
-        {
-          "id": "process-token",
-          "label": "Process Token"
-        }
-      ],
-      "longlistUpdates": [],
-      "rejections": [],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "SpaceX and Anthropic, xAI’s Two Companies, Elon Musk and SpaceXAI’s Future",
-        "url": "https://stratechery.com/2026/spacex-and-anthropic-xais-two-companies-elon-musk-and-spacexais-future/"
-      },
-      "summary": "A Stratechery paywalled article by Ben Thompson analyzing a reported Anthropic-xAI deal and its strategic implications for Elon Musk and SpaceX. The article excerpt is almost entirely a subscription paywall page with minimal substantive content visible — the headline and a one-line teaser ('Musk should double down on serving other companies') are the only content available for analysis.",
+      "summary": "An interview with Sea Limited's Co-Founder David Chen on deploying OpenAI's Codex across their engineering organisation. The piece covers AI-assisted coding in large microservices architectures, CI/CD integration of AI agents, the evolution of the developer role toward 'system orchestrator,' and Sea's Codex Hackathon Series across Southeast Asia. Primarily an enterprise adoption story with some substantive framing around how agentic workflows restructure engineering teams.",
       "longlistAdditions": [],
       "longlistUpdates": [],
       "rejections": [],
@@ -84,40 +60,18 @@
     },
     {
       "article": {
-        "title": "Granite Embedding Multilingual R2: Open Apache 2.0 Multilingual Embeddings with 32K Context — Best Sub-100M Retrieval Quality",
-        "url": "https://huggingface.co/blog/ibm-granite/granite-embedding-multilingual-r2"
+        "title": "An Interview with Ben Thompson at the MoffettNathanson Media, Internet & Communications Conference",
+        "url": "https://stratechery.com/2026/an-interview-with-ben-thompson-at-the-moffettnathanson-media-internet-communications-conference/"
       },
-      "summary": "IBM releases two new multilingual embedding models (97M and 311M parameters) built on ModernBERT, featuring 32K context windows, Apache 2.0 licensing, and top MTEB retrieval scores. The article details architecture choices including ModernBERT, Matryoshka embeddings, tokenizer pruning, and knowledge distillation for building enterprise-ready multilingual retrievers.",
-      "longlistAdditions": [],
-      "longlistUpdates": [],
-      "rejections": [],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "Microsoft starts canceling Claude Code licenses",
-        "url": "https://www.theverge.com/tech/930447/microsoft-claude-code-discontinued-notepad"
-      },
-      "summary": "Microsoft is canceling most of its Claude Code licenses for the Experiences + Devices team, redirecting developers to GitHub Copilot CLI. The decision reflects both financial considerations (end of fiscal year) and a strategic preference for a tool Microsoft can shape internally via GitHub. Claude Code had been popular but undermined Copilot CLI adoption. Anthropic models will remain accessible through Copilot CLI and other Microsoft products.",
-      "longlistAdditions": [],
-      "longlistUpdates": [],
-      "rejections": [],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "Release: datasette-ip-rate-limit 0.1a0",
-        "url": "https://simonwillison.net/2026/May/14/datasette-ip-rate-limit/#atom-everything"
-      },
-      "summary": "A brief release note from Simon Willison announcing a Datasette rate-limiting plugin (datasette-ip-rate-limit 0.1a0) built using Codex (GPT-5.5 xhigh) to block poorly-behaved web crawlers. The post is primarily a practical software release announcement with minimal conceptual depth.",
+      "summary": "A paywalled Stratechery interview with Ben Thompson at the MoffettNathanson Media, Internet & Communications Conference. The excerpt reveals the topics covered — compute shortage implications for Aggregation Theory, consumer AI, and the 'agentic future' — but the full content is subscriber-only. The visible material is primarily navigational/promotional boilerplate with minimal substantive terminology.",
       "longlistAdditions": [],
       "longlistUpdates": [
         {
-          "id": "gpt55",
-          "label": "GPT-5.5",
+          "id": "agentic-era",
+          "label": "Agentic Era",
           "sourceAdded": true,
-          "sourceCount": 9,
-          "independentSourceCount": 3
+          "sourceCount": 2,
+          "independentSourceCount": 2
         }
       ],
       "rejections": [],
@@ -125,66 +79,129 @@
     },
     {
       "article": {
-        "title": "Anthropic forms $200 million partnership with the Gates Foundation",
-        "url": "https://www.anthropic.com/news/gates-foundation-partnership"
+        "title": "Unlocking asynchronicity in continuous batching",
+        "url": "https://huggingface.co/blog/continuous_async"
       },
-      "summary": "Anthropic announces a $200 million partnership with the Gates Foundation covering global health, life sciences, education, and economic mobility, deploying Claude credits, technical support, and public goods (benchmarks, datasets, knowledge graphs) for low- and middle-income country programs over four years.",
+      "summary": "A Hugging Face Blog technical deep-dive into asynchronous continuous batching for LLM inference, explaining how to overlap CPU and GPU work using CUDA streams and events to eliminate idle GPU time — achieving a ~24% throughput gain with no model changes. Covers synchronous vs. asynchronous batching, CUDA stream semantics, race conditions, and carry-over patterns.",
       "longlistAdditions": [],
       "longlistUpdates": [],
+      "rejections": [],
+      "proposalsQueued": [],
+      "mustReadFlagged": {
+        "priority": 2,
+        "reason": "A clear, first-principles engineering explainer on a real and underappreciated performance bottleneck in LLM serving — the CPU-GPU synchronization gap in continuous batching. Rare in that it builds intuition from scratch (CUDA streams, events, race conditions) rather than summarising results, making it useful for anyone reasoning about inference infrastructure rather than just following product announcements."
+      }
+    },
+    {
+      "article": {
+        "title": "OpenAI keeps shuffling its executives in bid to win AI agent battle",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/931544/openai-keeps-shuffling-its-executives-in-bid-to-win-ai-agent-battle"
+      },
+      "summary": "OpenAI reorganization article: Greg Brockman officially takes product leadership, with a stated strategy to merge ChatGPT and Codex into a 'single agentic platform.' The piece is primarily a corporate org-chart news story with limited terminological novelty.",
+      "longlistAdditions": [],
+      "longlistUpdates": [
+        {
+          "id": "agentic-era",
+          "label": "Agentic Era",
+          "sourceAdded": true,
+          "sourceCount": 3,
+          "independentSourceCount": 3
+        }
+      ],
+      "rejections": [
+        {
+          "label": "Agentic Platform",
+          "reason": "could not generate id"
+        }
+      ],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "Tool: QR code generator",
+        "url": "https://simonwillison.net/2026/May/15/qr-code-generator/#atom-everything"
+      },
+      "summary": "Simon Willison's brief post announcing a QR code generator tool he built with Claude's assistance, tagged under vibe-coding. Minimal substantive content beyond the tool description and a few related article titles.",
+      "longlistAdditions": [],
+      "longlistUpdates": [],
+      "rejections": [
+        {
+          "label": "Vibe Coding",
+          "reason": "already in graph (label match)"
+        }
+      ],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "PwC is deploying Claude to build technology, execute deals, and reinvent enterprise functions for clients",
+        "url": "https://www.anthropic.com/news/pwc-expanded-partnership"
+      },
+      "summary": "Anthropic and PwC announce an expanded strategic alliance deploying Claude, Claude Code, and Claude Cowork across PwC's global workforce of hundreds of thousands. The partnership centers on three focus areas: agentic technology build, AI-native deal-making, and enterprise function reinvention. Notable elements include a joint Center of Excellence, certification of 30,000 professionals, a new 'Office of the CFO' business group, and live production deployments across insurance, healthcare, sports, and cybersecurity with reported 70% delivery improvements.",
+      "longlistAdditions": [],
+      "longlistUpdates": [
+        {
+          "id": "agentic-business-model",
+          "label": "Agentic Business Model",
+          "sourceAdded": true,
+          "sourceCount": 5,
+          "independentSourceCount": 2
+        }
+      ],
       "rejections": [],
       "proposalsQueued": []
     }
   ],
   "definitionReviews": [
     {
-      "id": "reasoning-models",
+      "id": "scaling-laws",
       "status": "keep",
-      "reason": "No source material addresses reasoning models. Definition stands as written."
+      "reason": "No source material touches scaling laws. Definition accurately captures Kaplan/Chinchilla findings and their implications."
     },
     {
-      "id": "red-teaming",
+      "id": "shipped",
       "status": "keep",
-      "reason": "No source material addresses red teaming. Definition stands as written."
+      "reason": "No source material updates this definition. The concept and framing remain accurate."
     },
     {
-      "id": "research-preview",
+      "id": "silent-failure",
       "status": "keep",
-      "reason": "No source material addresses research previews. Definition stands as written."
+      "reason": "No source material addresses silent failure. Definition is accurate and well-framed."
     },
     {
-      "id": "responsible-scaling-policy",
+      "id": "skills",
       "status": "keep",
-      "reason": "No source material addresses Anthropic's RSP or ASL framework. Definition stands as written."
+      "reason": "The Sea/Codex article confirms ongoing Codex usage but provides no new definitional information about 'skills' as a technical term. Definition stands."
     },
     {
-      "id": "retry-recovery",
+      "id": "small-language-model",
       "status": "keep",
-      "reason": "No source material addresses retry/recovery mechanisms. Definition stands as written."
+      "reason": "No source material addresses SLMs or their capability benchmarks. Definition stands."
     },
     {
-      "id": "rlhf",
+      "id": "socratic-dialogue",
       "status": "keep",
-      "reason": "No source material addresses RLHF. Definition stands as written."
+      "reason": "No source material is relevant. Definition stands."
     },
     {
-      "id": "saas",
+      "id": "stack",
       "status": "keep",
-      "reason": "No source material addresses SaaS or the agentic disruption thesis. Definition stands as written."
+      "reason": "No source material updates this definition. Stands as accurate practitioner shorthand."
     },
     {
-      "id": "saaspocalypse",
+      "id": "state",
       "status": "keep",
-      "reason": "No source material addresses the SaaSpocalypse thesis. Definition stands as written."
+      "reason": "No source material is relevant. Definition stands."
     },
     {
-      "id": "sandbox-escape",
+      "id": "stopping-criterion-failure",
       "status": "keep",
-      "reason": "No source material addresses the sandbox-escape event described. Definition stands as written."
+      "reason": "No source material addresses this concept. Definition stands."
     },
     {
-      "id": "sandboxing",
+      "id": "structured-output",
       "status": "keep",
-      "reason": "The OpenAI Codex Windows sandbox article is consistent with the existing definition — it describes a constrained execution environment limiting file writes and network access — but adds no information that contradicts or materially updates the definition. No refresh warranted."
+      "reason": "No source material updates this definition. Stands as accurate."
     }
   ],
   "notes": []

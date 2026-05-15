@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-05-14T19:44:37.204Z",
+    "generatedAt": "2026-05-15T19:28:01.171Z",
     "entryCount": 117,
     "note": "Lexi-managed Tier 2 longlist — terms under observation, awaiting evidence to support promotion to the graph (Tier 1)."
   },
@@ -1396,12 +1396,28 @@
           "sourceLabel": "Google AI Blog",
           "publishedAt": "Mon, 04 May 2026 17:00:00 +0000",
           "firstSeen": "2026-05-04T19:27:54.284Z"
+        },
+        {
+          "url": "https://stratechery.com/2026/an-interview-with-ben-thompson-at-the-moffettnathanson-media-internet-communications-conference/",
+          "domain": "stratechery.com",
+          "title": "An Interview with Ben Thompson at the MoffettNathanson Media, Internet & Communications Conference",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Thu, 14 May 2026 10:00:00 +0000",
+          "firstSeen": "2026-05-15T19:28:01.171Z"
+        },
+        {
+          "url": "https://www.theverge.com/ai-artificial-intelligence/931544/openai-keeps-shuffling-its-executives-in-bid-to-win-ai-agent-battle",
+          "domain": "theverge.com",
+          "title": "OpenAI keeps shuffling its executives in bid to win AI agent battle",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-05-15T14:21:35-04:00",
+          "firstSeen": "2026-05-15T19:28:01.171Z"
         }
       ],
-      "sourceCount": 1,
-      "independentSourceCount": 1,
+      "sourceCount": 3,
+      "independentSourceCount": 3,
       "dateFirstSeen": "2026-05-04T19:27:54.284Z",
-      "dateLastSeen": "2026-05-04T19:27:54.284Z",
+      "dateLastSeen": "2026-05-15T19:28:01.171Z",
       "sz": 14,
       "fullName": "The Agentic Era",
       "proposalReason": "Used repeatedly and centrally by Google to frame their entire April 2026 strategy; worth tracking as a competing periodization framing alongside similar terms."
@@ -1805,12 +1821,20 @@
           "sourceLabel": "Anthropic Newsroom",
           "publishedAt": null,
           "firstSeen": "2026-05-13T19:53:32.068Z"
+        },
+        {
+          "url": "https://www.anthropic.com/news/pwc-expanded-partnership",
+          "domain": "anthropic.com",
+          "title": "PwC is deploying Claude to build technology, execute deals, and reinvent enterprise functions for clients",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-05-15T19:28:01.171Z"
         }
       ],
-      "sourceCount": 4,
+      "sourceCount": 5,
       "independentSourceCount": 2,
       "dateFirstSeen": "2026-05-09T07:44:17.196Z",
-      "dateLastSeen": "2026-05-13T19:53:32.068Z",
+      "dateLastSeen": "2026-05-15T19:28:01.171Z",
       "sz": 16,
       "proposalReason": "The headline explicitly frames Microsoft's earnings around an 'agentic business model' shift — a distinct framing of how agentic AI is reshaping commercial structures, not just product features."
     },

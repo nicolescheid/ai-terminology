@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generatedAt": "2026-05-14T19:44:37.204Z",
-    "unreadCount": 10,
-    "totalCount": 10,
+    "generatedAt": "2026-05-15T19:28:01.171Z",
+    "unreadCount": 11,
+    "totalCount": 11,
     "note": "Lexi's must-reads — articles she flags as worth Nicole reading in full. Editorial signal, not news feed. Set status to 'read' or 'dismissed' via mark-must-reads.mjs."
   },
   "entries": [
@@ -174,6 +174,22 @@
       ],
       "novelTermsInArticle": 3,
       "flaggedAt": "2026-05-13T19:53:32.068Z",
+      "status": "unread"
+    },
+    {
+      "id": "f6eafc08e75f7a36",
+      "title": "Unlocking asynchronicity in continuous batching",
+      "url": "https://huggingface.co/blog/continuous_async",
+      "source": "Hugging Face Blog",
+      "publishedAt": "Thu, 14 May 2026 00:00:00 GMT",
+      "summary": "A Hugging Face Blog technical deep-dive into asynchronous continuous batching for LLM inference, explaining how to overlap CPU and GPU work using CUDA streams and events to eliminate idle GPU time — achieving a ~24% throughput gain with no model changes. Covers synchronous vs. asynchronous batching, CUDA stream semantics, race conditions, and carry-over patterns.",
+      "priority": 2,
+      "reason": "A clear, first-principles engineering explainer on a real and underappreciated performance bottleneck in LLM serving — the CPU-GPU synchronization gap in continuous batching. Rare in that it builds intuition from scratch (CUDA streams, events, race conditions) rather than summarising results, making it useful for anyone reasoning about inference infrastructure rather than just following product announcements.",
+      "clusters": [
+        "technical"
+      ],
+      "novelTermsInArticle": 0,
+      "flaggedAt": "2026-05-15T19:28:01.171Z",
       "status": "unread"
     }
   ]
