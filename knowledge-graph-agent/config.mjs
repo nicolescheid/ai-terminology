@@ -43,8 +43,16 @@ export default {
   //               (200+/week would be clearly anomalous — that's where
   //               adversarial seeding or model regression would land).
   //               Re-evaluate after a few weeks of uncapped operation.
+  //   2026-05-16: bumped to 200. The 75 cap repeated the 30 cap's failure
+  //               mode — it hit on 2026-05-14 and 2026-05-15, both windows
+  //               at exactly 75, so it was again shaping normal output, not
+  //               catching anomalies. The 5/10 "30–80/week" estimate was
+  //               simply too low; true demand is censored by the cap but is
+  //               clearly >=75/week. Per the 5/10 reasoning, the breaker
+  //               belongs at the anomaly line, not the natural rate: 200 is
+  //               where adversarial seeding or model regression would land.
   throughputCaps: {
-    longlistAdditionsPer7d: 75,
+    longlistAdditionsPer7d: 200,
     pendingProposalsBeforePause: 10
   },
   model: process.env.ANTHROPIC_MODEL || "claude-sonnet-4-6",

@@ -168,9 +168,9 @@ Two conditions cause the agent to skip the entire candidate-processing block —
 
 The action that would tip a counter past its cap is dropped; other actions continue. A `THROUGHPUT_CAP_HIT` note is written naming the cap and what was suppressed.
 
-| Cap | Default | Counts | Triggers on |
+| Cap | Current | Counts | Triggers on |
 |---|---|---|---|
-| `longlistAdditionsPer7d` | 7 | Longlist entries with `dateFirstSeen` in past 7 days | Each `ADD_TO_LONGLIST` (autonomous) |
+| `longlistAdditionsPer7d` | 200 | Longlist entries with `dateFirstSeen` in past 7 days | Each `ADD_TO_LONGLIST` (autonomous) |
 | `pendingProposalsBeforePause` | 10 | Proposals at `status: "pending"` | Each new `PROPOSE`-gated action |
 
 Both tunable in [`config.mjs`](./config.mjs) under `throughputCaps`.
