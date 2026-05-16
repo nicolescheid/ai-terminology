@@ -1,77 +1,103 @@
 {
-  "generatedAt": "2026-05-15T19:28:01.171Z",
+  "generatedAt": "2026-05-16T19:02:56.992Z",
   "model": "claude-sonnet-4-6",
   "sourcesConfigured": 14,
   "articlesConsidered": [
     {
-      "id": "ca03c8de33d6b9a6",
+      "id": "9f02ec46fdb5642f",
+      "source": "MIT Sloan Management Review",
+      "title": "  Resolve the Conflict Between Efficiency and Resilience",
+      "url": "https://sloanreview.mit.edu/article/resolve-the-conflict-between-efficiency-and-resilience/",
+      "publishedAt": "Wed, 13 May 2026 11:00:40 +0000"
+    },
+    {
+      "id": "f0106247dee486f0",
       "source": "OpenAI News",
-      "title": "Sea's View on the Future of Agentic Software Development with Codex",
-      "url": "https://openai.com/index/sea-david-chen",
-      "publishedAt": "Thu, 14 May 2026 20:30:00 GMT"
+      "title": "OpenAI and Malta partner to bring ChatGPT Plus to all citizens",
+      "url": "https://openai.com/index/malta-chatgpt-plus-partnership",
+      "publishedAt": "Sat, 16 May 2026 00:00:00 GMT"
     },
     {
-      "id": "175f5165b51a54b4",
+      "id": "e74bb831af23ec97",
       "source": "Stratechery",
-      "title": "An Interview with Ben Thompson at the MoffettNathanson Media, Internet & Communications Conference",
-      "url": "https://stratechery.com/2026/an-interview-with-ben-thompson-at-the-moffettnathanson-media-internet-communications-conference/",
-      "publishedAt": "Thu, 14 May 2026 10:00:00 +0000"
+      "title": "2026.20: Shifting Alliances in a Changing World",
+      "url": "https://stratechery.com/2026/shifting-alliances-in-a-changing-world/",
+      "publishedAt": "Fri, 15 May 2026 17:00:00 +0000"
     },
     {
-      "id": "f6eafc08e75f7a36",
-      "source": "Hugging Face Blog",
-      "title": "Unlocking asynchronicity in continuous batching",
-      "url": "https://huggingface.co/blog/continuous_async",
-      "publishedAt": "Thu, 14 May 2026 00:00:00 GMT"
-    },
-    {
-      "id": "59911f201be4108e",
-      "source": "The Verge — AI",
-      "title": "OpenAI keeps shuffling its executives in bid to win AI agent battle",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/931544/openai-keeps-shuffling-its-executives-in-bid-to-win-ai-agent-battle",
-      "publishedAt": "2026-05-15T14:21:35-04:00"
-    },
-    {
-      "id": "cacc9730059c1be6",
+      "id": "6ce3e6ac5419dfb0",
       "source": "Simon Willison's Weblog",
-      "title": "Tool: QR code generator",
-      "url": "https://simonwillison.net/2026/May/15/qr-code-generator/#atom-everything",
-      "publishedAt": "2026-05-15T04:00:49+00:00"
+      "title": "A quote from Julia Evans",
+      "url": "https://simonwillison.net/2026/May/16/julia-evans/#atom-everything",
+      "publishedAt": "2026-05-16T16:45:37+00:00"
     },
     {
-      "id": "6bd2d5a7ff35db0b",
-      "source": "Anthropic Newsroom",
-      "title": "PwC is deploying Claude to build technology, execute deals, and reinvent enterprise functions for clients",
-      "url": "https://www.anthropic.com/news/pwc-expanded-partnership",
-      "publishedAt": null
+      "id": "084a44bd86035a7f",
+      "source": "The Verge — AI",
+      "title": "Sony tries to explain that its AI Camera Assistant doesn’t suck",
+      "url": "https://www.theverge.com/tech/932133/sony-xperia-1-xiii-ai-camera-assistant",
+      "publishedAt": "2026-05-16T11:37:05-04:00"
+    },
+    {
+      "id": "57cf7ce09b43c6f3",
+      "source": "Harvard Business Review",
+      "title": "Do You Recognize Burnout in Your Organization?",
+      "url": "https://hbr.org/2026/05/do-you-recognize-burnout-in-your-organization",
+      "publishedAt": "2026-05-15T12:25:28Z"
     }
   ],
   "harvestedTerms": [
     {
       "article": {
-        "title": "Sea's View on the Future of Agentic Software Development with Codex",
-        "url": "https://openai.com/index/sea-david-chen"
+        "title": "  Resolve the Conflict Between Efficiency and Resilience",
+        "url": "https://sloanreview.mit.edu/article/resolve-the-conflict-between-efficiency-and-resilience/"
       },
-      "summary": "An interview with Sea Limited's Co-Founder David Chen on deploying OpenAI's Codex across their engineering organisation. The piece covers AI-assisted coding in large microservices architectures, CI/CD integration of AI agents, the evolution of the developer role toward 'system orchestrator,' and Sea's Codex Hackathon Series across Southeast Asia. Primarily an enterprise adoption story with some substantive framing around how agentic workflows restructure engineering teams.",
-      "longlistAdditions": [],
+      "summary": "MIT Sloan Management Review article on resolving the efficiency-resilience tradeoff in operations, using the airline industry as a primary case study. Introduces three strategies: measuring customer-centric metrics, smart buffer allocation via predictive analytics, and shaping customer options. Limited AI-specific content — primarily an operations management piece with AI/analytics as supporting tools.",
+      "longlistAdditions": [
+        {
+          "id": "schedule-padding",
+          "label": "Schedule Padding"
+        },
+        {
+          "id": "customer-centric-metrics",
+          "label": "Customer-Centric Metrics"
+        },
+        {
+          "id": "operational-resilience",
+          "label": "Operational Resilience"
+        }
+      ],
       "longlistUpdates": [],
       "rejections": [],
       "proposalsQueued": []
     },
     {
       "article": {
-        "title": "An Interview with Ben Thompson at the MoffettNathanson Media, Internet & Communications Conference",
-        "url": "https://stratechery.com/2026/an-interview-with-ben-thompson-at-the-moffettnathanson-media-internet-communications-conference/"
+        "title": "2026.20: Shifting Alliances in a Changing World",
+        "url": "https://stratechery.com/2026/shifting-alliances-in-a-changing-world/"
       },
-      "summary": "A paywalled Stratechery interview with Ben Thompson at the MoffettNathanson Media, Internet & Communications Conference. The excerpt reveals the topics covered — compute shortage implications for Aggregation Theory, consumer AI, and the 'agentic future' — but the full content is subscriber-only. The visible material is primarily navigational/promotional boilerplate with minimal substantive terminology.",
-      "longlistAdditions": [],
+      "summary": "A Stratechery weekly roundup by Ben Thompson covering the 'Inference Shift' thesis (agentic vs. answer inference), the Anthropic-xAI compute deal, space data centers, US-China AI relations, and OpenAI's deployment company plans. The key original concept is the distinction between 'answer inference' (human-in-the-loop, latency-sensitive) and 'agentic inference' (autonomous, latency-tolerant), with downstream implications for compute architecture.",
+      "longlistAdditions": [
+        {
+          "id": "agentic-inference",
+          "label": "Agentic Inference"
+        },
+        {
+          "id": "answer-inference",
+          "label": "Answer Inference"
+        },
+        {
+          "id": "deployment-company",
+          "label": "Deployment Company"
+        }
+      ],
       "longlistUpdates": [
         {
-          "id": "agentic-era",
-          "label": "Agentic Era",
+          "id": "inference-shift",
+          "label": "Inference Shift",
           "sourceAdded": true,
           "sourceCount": 2,
-          "independentSourceCount": 2
+          "independentSourceCount": 1
         }
       ],
       "rejections": [],
@@ -79,129 +105,93 @@
     },
     {
       "article": {
-        "title": "Unlocking asynchronicity in continuous batching",
-        "url": "https://huggingface.co/blog/continuous_async"
+        "title": "A quote from Julia Evans",
+        "url": "https://simonwillison.net/2026/May/16/julia-evans/#atom-everything"
       },
-      "summary": "A Hugging Face Blog technical deep-dive into asynchronous continuous batching for LLM inference, explaining how to overlap CPU and GPU work using CUDA streams and events to eliminate idle GPU time — achieving a ~24% throughput gain with no model changes. Covers synchronous vs. asynchronous batching, CUDA stream semantics, race conditions, and carry-over patterns.",
+      "summary": "A brief quote post from Simon Willison's Weblog featuring Julia Evans on CSS complexity and her approach to learning it seriously. The article has no substantive AI content and yields no trackable AI terms.",
       "longlistAdditions": [],
       "longlistUpdates": [],
       "rejections": [],
-      "proposalsQueued": [],
-      "mustReadFlagged": {
-        "priority": 2,
-        "reason": "A clear, first-principles engineering explainer on a real and underappreciated performance bottleneck in LLM serving — the CPU-GPU synchronization gap in continuous batching. Rare in that it builds intuition from scratch (CUDA streams, events, race conditions) rather than summarising results, making it useful for anyone reasoning about inference infrastructure rather than just following product announcements."
-      }
-    },
-    {
-      "article": {
-        "title": "OpenAI keeps shuffling its executives in bid to win AI agent battle",
-        "url": "https://www.theverge.com/ai-artificial-intelligence/931544/openai-keeps-shuffling-its-executives-in-bid-to-win-ai-agent-battle"
-      },
-      "summary": "OpenAI reorganization article: Greg Brockman officially takes product leadership, with a stated strategy to merge ChatGPT and Codex into a 'single agentic platform.' The piece is primarily a corporate org-chart news story with limited terminological novelty.",
-      "longlistAdditions": [],
-      "longlistUpdates": [
-        {
-          "id": "agentic-era",
-          "label": "Agentic Era",
-          "sourceAdded": true,
-          "sourceCount": 3,
-          "independentSourceCount": 3
-        }
-      ],
-      "rejections": [
-        {
-          "label": "Agentic Platform",
-          "reason": "could not generate id"
-        }
-      ],
       "proposalsQueued": []
     },
     {
       "article": {
-        "title": "Tool: QR code generator",
-        "url": "https://simonwillison.net/2026/May/15/qr-code-generator/#atom-everything"
+        "title": "Sony tries to explain that its AI Camera Assistant doesn’t suck",
+        "url": "https://www.theverge.com/tech/932133/sony-xperia-1-xiii-ai-camera-assistant"
       },
-      "summary": "Simon Willison's brief post announcing a QR code generator tool he built with Claude's assistance, tagged under vibe-coding. Minimal substantive content beyond the tool description and a few related article titles.",
+      "summary": "Sony defends its AI Camera Assistant feature on the Xperia 1 XIII after criticism that its photo suggestions are poor quality. The article covers a specific consumer product feature that uses AI to suggest exposure, colour, and framing adjustments. Primarily product criticism with limited terminological density.",
+      "longlistAdditions": [
+        {
+          "id": "ai-camera-assistant",
+          "label": "AI Camera Assistant"
+        }
+      ],
+      "longlistUpdates": [],
+      "rejections": [],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "Do You Recognize Burnout in Your Organization?",
+        "url": "https://hbr.org/2026/05/do-you-recognize-burnout-in-your-organization"
+      },
+      "summary": "An HBR Executive Agenda newsletter item on organizational burnout recognition — no substantive AI content. The article excerpt is almost entirely navigation chrome and subscription boilerplate with no AI terminology, concepts, or relevant framing.",
       "longlistAdditions": [],
       "longlistUpdates": [],
-      "rejections": [
-        {
-          "label": "Vibe Coding",
-          "reason": "already in graph (label match)"
-        }
-      ],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "PwC is deploying Claude to build technology, execute deals, and reinvent enterprise functions for clients",
-        "url": "https://www.anthropic.com/news/pwc-expanded-partnership"
-      },
-      "summary": "Anthropic and PwC announce an expanded strategic alliance deploying Claude, Claude Code, and Claude Cowork across PwC's global workforce of hundreds of thousands. The partnership centers on three focus areas: agentic technology build, AI-native deal-making, and enterprise function reinvention. Notable elements include a joint Center of Excellence, certification of 30,000 professionals, a new 'Office of the CFO' business group, and live production deployments across insurance, healthcare, sports, and cybersecurity with reported 70% delivery improvements.",
-      "longlistAdditions": [],
-      "longlistUpdates": [
-        {
-          "id": "agentic-business-model",
-          "label": "Agentic Business Model",
-          "sourceAdded": true,
-          "sourceCount": 5,
-          "independentSourceCount": 2
-        }
-      ],
       "rejections": [],
       "proposalsQueued": []
     }
   ],
   "definitionReviews": [
     {
-      "id": "scaling-laws",
+      "id": "system-prompt",
       "status": "keep",
-      "reason": "No source material touches scaling laws. Definition accurately captures Kaplan/Chinchilla findings and their implications."
+      "reason": "No source material addresses system prompts. Definition remains accurate and well-formed."
     },
     {
-      "id": "shipped",
+      "id": "systems-thinking",
       "status": "keep",
-      "reason": "No source material updates this definition. The concept and framing remain accurate."
+      "reason": "No source material addresses systems thinking. Definition remains accurate."
     },
     {
-      "id": "silent-failure",
+      "id": "task",
       "status": "keep",
-      "reason": "No source material addresses silent failure. Definition is accurate and well-framed."
+      "reason": "No source material addresses the concept of AI tasks. Definition remains accurate."
     },
     {
-      "id": "skills",
+      "id": "task-decomposition",
       "status": "keep",
-      "reason": "The Sea/Codex article confirms ongoing Codex usage but provides no new definitional information about 'skills' as a technical term. Definition stands."
+      "reason": "No source material addresses task decomposition. Definition remains accurate."
     },
     {
-      "id": "small-language-model",
+      "id": "the-ai",
       "status": "keep",
-      "reason": "No source material addresses SLMs or their capability benchmarks. Definition stands."
+      "reason": "No source material addresses this concept. Definition remains accurate."
     },
     {
-      "id": "socratic-dialogue",
+      "id": "token",
       "status": "keep",
-      "reason": "No source material is relevant. Definition stands."
+      "reason": "No source material addresses tokens. Definition remains accurate."
     },
     {
-      "id": "stack",
+      "id": "tool-misuse",
       "status": "keep",
-      "reason": "No source material updates this definition. Stands as accurate practitioner shorthand."
+      "reason": "No source material addresses tool misuse. Definition remains accurate and detailed."
     },
     {
-      "id": "state",
+      "id": "tool-use",
       "status": "keep",
-      "reason": "No source material is relevant. Definition stands."
+      "reason": "No source material addresses tool use. Definition remains accurate."
     },
     {
-      "id": "stopping-criterion-failure",
+      "id": "tpu",
       "status": "keep",
-      "reason": "No source material addresses this concept. Definition stands."
+      "reason": "No source material addresses TPUs. Definition remains accurate."
     },
     {
-      "id": "structured-output",
+      "id": "training",
       "status": "keep",
-      "reason": "No source material updates this definition. Stands as accurate."
+      "reason": "The Stratechery excerpt briefly distinguishes 'answer inference' from 'agentic inference' but does not provide substantive new information about the training process itself that would justify revising the definition."
     }
   ],
   "notes": []

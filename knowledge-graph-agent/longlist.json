@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-05-15T19:28:01.171Z",
-    "entryCount": 117,
+    "generatedAt": "2026-05-16T19:02:56.992Z",
+    "entryCount": 124,
     "note": "Lexi-managed Tier 2 longlist — terms under observation, awaiting evidence to support promotion to the graph (Tier 1)."
   },
   "entries": [
@@ -3297,12 +3297,20 @@
           "sourceLabel": "Stratechery",
           "publishedAt": "Mon, 11 May 2026 10:00:00 +0000",
           "firstSeen": "2026-05-11T19:45:39.014Z"
+        },
+        {
+          "url": "https://stratechery.com/2026/shifting-alliances-in-a-changing-world/",
+          "domain": "stratechery.com",
+          "title": "2026.20: Shifting Alliances in a Changing World",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Fri, 15 May 2026 17:00:00 +0000",
+          "firstSeen": "2026-05-16T19:02:56.992Z"
         }
       ],
-      "sourceCount": 1,
+      "sourceCount": 2,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-05-11T19:45:39.014Z",
-      "dateLastSeen": "2026-05-11T19:45:39.014Z",
+      "dateLastSeen": "2026-05-16T19:02:56.992Z",
       "sz": 14,
       "fullName": "The Inference Shift",
       "proposalReason": "The article's own coinage and central thesis — worth tracking to see if it gains independent adoption as a framing term in the infrastructure and AI policy discourse."
@@ -4163,6 +4171,220 @@
       "sz": 14,
       "fullName": "Process Token (Windows Security Object)",
       "proposalReason": "A foundational OS concept that becomes terminologically relevant when agentic tools must reason about their own execution permissions at the operating-system level."
+    },
+    {
+      "id": "schedule-padding",
+      "label": "Schedule Padding",
+      "workingDef": "The practice of deliberately adding extra time to published flight schedules to improve on-time performance (OTP) statistics without materially improving operational reliability. A form of metric gaming in which reported performance diverges from actual customer experience — airlines inflate scheduled durations so flights arrive 'on time' by the official definition even when nothing operationally improved.",
+      "clusters": [
+        "work",
+        "business"
+      ],
+      "suggestedRels": [
+        "benchmark-gaming",
+        "evals"
+      ],
+      "sources": [
+        {
+          "url": "https://sloanreview.mit.edu/article/resolve-the-conflict-between-efficiency-and-resilience/",
+          "domain": "sloanreview.mit.edu",
+          "title": "  Resolve the Conflict Between Efficiency and Resilience",
+          "sourceLabel": "MIT Sloan Management Review",
+          "publishedAt": "Wed, 13 May 2026 11:00:40 +0000",
+          "firstSeen": "2026-05-16T19:02:56.992Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-16T19:02:56.992Z",
+      "dateLastSeen": "2026-05-16T19:02:56.992Z",
+      "sz": 14,
+      "proposalReason": "A specific, nameable instance of metric-gaming behaviour with clear analogues in AI benchmarking and evaluation contexts; worth tracking as a cross-domain example of how organisations optimise reported metrics rather than underlying outcomes."
+    },
+    {
+      "id": "customer-centric-metrics",
+      "label": "Customer-Centric Metrics",
+      "workingDef": "Performance measurement frameworks that align KPIs with actual customer outcomes rather than operational proxies. Contrasted with traditional operational metrics (e.g., on-time performance based on 15-minute cutoffs) that can be gamed or that fail to capture experience for heterogeneous customer segments — e.g., connecting passengers vs. non-stop passengers in the airline context.",
+      "clusters": [
+        "business",
+        "work"
+      ],
+      "suggestedRels": [
+        "evals",
+        "outcome-focused-work"
+      ],
+      "sources": [
+        {
+          "url": "https://sloanreview.mit.edu/article/resolve-the-conflict-between-efficiency-and-resilience/",
+          "domain": "sloanreview.mit.edu",
+          "title": "  Resolve the Conflict Between Efficiency and Resilience",
+          "sourceLabel": "MIT Sloan Management Review",
+          "publishedAt": "Wed, 13 May 2026 11:00:40 +0000",
+          "firstSeen": "2026-05-16T19:02:56.992Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-16T19:02:56.992Z",
+      "dateLastSeen": "2026-05-16T19:02:56.992Z",
+      "sz": 14,
+      "proposalReason": "A framing concept relevant to AI evaluation design: the argument that proxy metrics diverge from actual user outcomes parallels debates in AI evals about benchmark saturation and whether benchmarks track real capability or user value."
+    },
+    {
+      "id": "operational-resilience",
+      "label": "Operational Resilience",
+      "workingDef": "The capacity of an operational system to absorb disruptions, recover quickly, and protect end-user outcomes without disproportionate cost. In the article's framing, resilience is positioned as compatible with — rather than opposed to — efficiency, when buffers are allocated predictively and metrics are designed around customer outcomes rather than operational proxies.",
+      "clusters": [
+        "business",
+        "work"
+      ],
+      "suggestedRels": [
+        "workflow",
+        "cost",
+        "outcome-focused-work"
+      ],
+      "sources": [
+        {
+          "url": "https://sloanreview.mit.edu/article/resolve-the-conflict-between-efficiency-and-resilience/",
+          "domain": "sloanreview.mit.edu",
+          "title": "  Resolve the Conflict Between Efficiency and Resilience",
+          "sourceLabel": "MIT Sloan Management Review",
+          "publishedAt": "Wed, 13 May 2026 11:00:40 +0000",
+          "firstSeen": "2026-05-16T19:02:56.992Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-16T19:02:56.992Z",
+      "dateLastSeen": "2026-05-16T19:02:56.992Z",
+      "sz": 14,
+      "proposalReason": "A cross-domain framing concept with relevance to AI system design: the efficiency-resilience tradeoff maps onto agentic system design questions around retry/recovery, latency budgets, and the costs of over-optimised pipelines."
+    },
+    {
+      "id": "agentic-inference",
+      "label": "Agentic Inference",
+      "workingDef": "A term used in Stratechery's 'The Inference Shift' (Thompson, 2026) to distinguish the class of AI inference where no human is in the loop — autonomous agents executing tasks without real-time human oversight — from 'answer inference', where humans wait for a response and latency is a primary constraint. The agentic inference framing is part of the broader contested 'agentic' framing: lab and industry marketing uses 'agentic' to name a new deployment paradigm, while critics (e.g., Kapoor & Narayanan) argue it outpaces measured capability and conflates multi-step LLM workflows with the formal RL meaning of 'agent.'",
+      "clusters": [
+        "agentic",
+        "technical"
+      ],
+      "suggestedRels": [
+        "inference",
+        "agent",
+        "autonomous-agent",
+        "long-horizon-autonomy",
+        "agentic-era"
+      ],
+      "sources": [
+        {
+          "url": "https://stratechery.com/2026/shifting-alliances-in-a-changing-world/",
+          "domain": "stratechery.com",
+          "title": "2026.20: Shifting Alliances in a Changing World",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Fri, 15 May 2026 17:00:00 +0000",
+          "firstSeen": "2026-05-16T19:02:56.992Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-16T19:02:56.992Z",
+      "dateLastSeen": "2026-05-16T19:02:56.992Z",
+      "sz": 14,
+      "proposalReason": "New candidate: the article introduces a specific sub-category of inference with architectural implications distinct from the general inference term already in the graph."
+    },
+    {
+      "id": "answer-inference",
+      "label": "Answer Inference",
+      "workingDef": "Thompson's (Stratechery, 2026) label for the currently dominant mode of AI inference: a human submits a query and waits for a response, making latency a primary optimization target. Contrasted with 'agentic inference', where no human is in the loop and throughput or cost may matter more than speed. The distinction is used to argue that compute infrastructure optimized for today's inference workloads may be poorly suited to future autonomous-agent workloads.",
+      "clusters": [
+        "technical",
+        "agentic"
+      ],
+      "suggestedRels": [
+        "inference",
+        "latency",
+        "human-in-the-loop"
+      ],
+      "sources": [
+        {
+          "url": "https://stratechery.com/2026/shifting-alliances-in-a-changing-world/",
+          "domain": "stratechery.com",
+          "title": "2026.20: Shifting Alliances in a Changing World",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Fri, 15 May 2026 17:00:00 +0000",
+          "firstSeen": "2026-05-16T19:02:56.992Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-16T19:02:56.992Z",
+      "dateLastSeen": "2026-05-16T19:02:56.992Z",
+      "sz": 14,
+      "proposalReason": "New candidate: a named sub-category of inference introduced alongside Agentic Inference; useful as a paired concept for the architectural distinction Thompson is drawing."
+    },
+    {
+      "id": "deployment-company",
+      "label": "Deployment Company",
+      "workingDef": "A framing used in Stratechery (Thompson, 2026) for a new organizational form — separate from the AI lab itself — dedicated to deploying AI into enterprises and workflows at scale. Thompson notes OpenAI is forming such a company, and argues other labs are likely to follow, with the thesis that AI's real impact requires 'top-down implementation' distinct from platform-layer model development.",
+      "clusters": [
+        "business",
+        "companies"
+      ],
+      "suggestedRels": [
+        "vertical-ai",
+        "infrastructure",
+        "saas",
+        "stack"
+      ],
+      "sources": [
+        {
+          "url": "https://stratechery.com/2026/shifting-alliances-in-a-changing-world/",
+          "domain": "stratechery.com",
+          "title": "2026.20: Shifting Alliances in a Changing World",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Fri, 15 May 2026 17:00:00 +0000",
+          "firstSeen": "2026-05-16T19:02:56.992Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-16T19:02:56.992Z",
+      "dateLastSeen": "2026-05-16T19:02:56.992Z",
+      "sz": 14,
+      "fullName": "AI Deployment Company",
+      "proposalReason": "New candidate: names an emerging organizational pattern distinct from 'lab' or 'product company' — worth tracking as the AI industry structure evolves."
+    },
+    {
+      "id": "ai-camera-assistant",
+      "label": "AI Camera Assistant",
+      "workingDef": "A Sony product feature, debuted on the Xperia 1 XIII, that analyses a camera viewfinder in real time and suggests adjustments to exposure, colour grading, and background blur. Distinct from generative editing — Sony positions it as a suggestion layer, not a post-processing tool. Noted in coverage primarily as an example of AI feature integration in consumer hardware whose output quality fell short of marketing claims.",
+      "clusters": [
+        "tools",
+        "landscape"
+      ],
+      "suggestedRels": [
+        "ai-assistant",
+        "multimodal",
+        "computer-use"
+      ],
+      "sources": [
+        {
+          "url": "https://www.theverge.com/tech/932133/sony-xperia-1-xiii-ai-camera-assistant",
+          "domain": "theverge.com",
+          "title": "Sony tries to explain that its AI Camera Assistant doesn’t suck",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-05-16T11:37:05-04:00",
+          "firstSeen": "2026-05-16T19:02:56.992Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-16T19:02:56.992Z",
+      "dateLastSeen": "2026-05-16T19:02:56.992Z",
+      "sz": 14,
+      "fullName": "AI Camera Assistant (Sony Xperia)",
+      "nodeType": "product",
+      "proposalReason": "New consumer AI product term with potential tracking value as a named AI-in-camera feature category, though evidence is thin at one source."
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
-  "lastRunAt": "2026-05-15T19:28:01.171Z",
-  "reviewCursor": 180,
+  "lastRunAt": "2026-05-16T19:02:56.992Z",
+  "reviewCursor": 190,
   "seenArticles": {
     "93a049d060bc295b": {
       "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/tpus-8t-8i-cloud-next/",
@@ -571,6 +571,42 @@
       "title": "PwC is deploying Claude to build technology, execute deals, and reinvent enterprise functions for clients",
       "publishedAt": null,
       "seenAt": "2026-05-15T19:28:01.171Z"
+    },
+    "9f02ec46fdb5642f": {
+      "url": "https://sloanreview.mit.edu/article/resolve-the-conflict-between-efficiency-and-resilience/",
+      "title": "  Resolve the Conflict Between Efficiency and Resilience",
+      "publishedAt": "Wed, 13 May 2026 11:00:40 +0000",
+      "seenAt": "2026-05-16T19:02:56.992Z"
+    },
+    "f0106247dee486f0": {
+      "url": "https://openai.com/index/malta-chatgpt-plus-partnership",
+      "title": "OpenAI and Malta partner to bring ChatGPT Plus to all citizens",
+      "publishedAt": "Sat, 16 May 2026 00:00:00 GMT",
+      "seenAt": "2026-05-16T19:02:56.992Z"
+    },
+    "e74bb831af23ec97": {
+      "url": "https://stratechery.com/2026/shifting-alliances-in-a-changing-world/",
+      "title": "2026.20: Shifting Alliances in a Changing World",
+      "publishedAt": "Fri, 15 May 2026 17:00:00 +0000",
+      "seenAt": "2026-05-16T19:02:56.992Z"
+    },
+    "6ce3e6ac5419dfb0": {
+      "url": "https://simonwillison.net/2026/May/16/julia-evans/#atom-everything",
+      "title": "A quote from Julia Evans",
+      "publishedAt": "2026-05-16T16:45:37+00:00",
+      "seenAt": "2026-05-16T19:02:56.992Z"
+    },
+    "084a44bd86035a7f": {
+      "url": "https://www.theverge.com/tech/932133/sony-xperia-1-xiii-ai-camera-assistant",
+      "title": "Sony tries to explain that its AI Camera Assistant doesn’t suck",
+      "publishedAt": "2026-05-16T11:37:05-04:00",
+      "seenAt": "2026-05-16T19:02:56.992Z"
+    },
+    "57cf7ce09b43c6f3": {
+      "url": "https://hbr.org/2026/05/do-you-recognize-burnout-in-your-organization",
+      "title": "Do You Recognize Burnout in Your Organization?",
+      "publishedAt": "2026-05-15T12:25:28Z",
+      "seenAt": "2026-05-16T19:02:56.992Z"
     }
   },
   "nodeReviews": {
@@ -1453,6 +1489,56 @@
       "lastReviewedAt": "2026-05-15T19:28:01.171Z",
       "status": "keep",
       "reason": "No source material updates this definition. Stands as accurate."
+    },
+    "system-prompt": {
+      "lastReviewedAt": "2026-05-16T19:02:56.992Z",
+      "status": "keep",
+      "reason": "No source material addresses system prompts. Definition remains accurate and well-formed."
+    },
+    "systems-thinking": {
+      "lastReviewedAt": "2026-05-16T19:02:56.992Z",
+      "status": "keep",
+      "reason": "No source material addresses systems thinking. Definition remains accurate."
+    },
+    "task": {
+      "lastReviewedAt": "2026-05-16T19:02:56.992Z",
+      "status": "keep",
+      "reason": "No source material addresses the concept of AI tasks. Definition remains accurate."
+    },
+    "task-decomposition": {
+      "lastReviewedAt": "2026-05-16T19:02:56.992Z",
+      "status": "keep",
+      "reason": "No source material addresses task decomposition. Definition remains accurate."
+    },
+    "the-ai": {
+      "lastReviewedAt": "2026-05-16T19:02:56.992Z",
+      "status": "keep",
+      "reason": "No source material addresses this concept. Definition remains accurate."
+    },
+    "token": {
+      "lastReviewedAt": "2026-05-16T19:02:56.992Z",
+      "status": "keep",
+      "reason": "No source material addresses tokens. Definition remains accurate."
+    },
+    "tool-misuse": {
+      "lastReviewedAt": "2026-05-16T19:02:56.992Z",
+      "status": "keep",
+      "reason": "No source material addresses tool misuse. Definition remains accurate and detailed."
+    },
+    "tool-use": {
+      "lastReviewedAt": "2026-05-16T19:02:56.992Z",
+      "status": "keep",
+      "reason": "No source material addresses tool use. Definition remains accurate."
+    },
+    "tpu": {
+      "lastReviewedAt": "2026-05-16T19:02:56.992Z",
+      "status": "keep",
+      "reason": "No source material addresses TPUs. Definition remains accurate."
+    },
+    "training": {
+      "lastReviewedAt": "2026-05-16T19:02:56.992Z",
+      "status": "keep",
+      "reason": "The Stratechery excerpt briefly distinguishes 'answer inference' from 'agentic inference' but does not provide substantive new information about the training process itself that would justify revising the definition."
     }
   }
 }
