@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-05-16T19:02:56.992Z",
-    "entryCount": 124,
+    "generatedAt": "2026-05-17T19:07:50.069Z",
+    "entryCount": 127,
     "note": "Lexi-managed Tier 2 longlist — terms under observation, awaiting evidence to support promotion to the graph (Tier 1)."
   },
   "entries": [
@@ -2485,12 +2485,20 @@
           "sourceLabel": "Hugging Face Blog",
           "publishedAt": "Sun, 10 May 2026 18:44:11 GMT",
           "firstSeen": "2026-05-10T19:02:19.492Z"
+        },
+        {
+          "url": "https://www.theverge.com/tech/932207/siri-apple-intelligence-auto-deleting-chats",
+          "domain": "theverge.com",
+          "title": "Revamped Siri will reportedly offer auto-deleting chats",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-05-17T14:40:28-04:00",
+          "firstSeen": "2026-05-17T19:07:50.069Z"
         }
       ],
-      "sourceCount": 1,
-      "independentSourceCount": 1,
+      "sourceCount": 2,
+      "independentSourceCount": 2,
       "dateFirstSeen": "2026-05-10T19:02:19.492Z",
-      "dateLastSeen": "2026-05-10T19:02:19.492Z",
+      "dateLastSeen": "2026-05-17T19:07:50.069Z",
       "sz": 14,
       "fullName": "Privacy by Design (On-Premise AI Deployment)",
       "proposalReason": "The article uses privacy by design as a first-class architectural motivator for on-premise LLM deployment, framing it as a requirement rather than a preference — a distinction worth tracking in enterprise AI contexts."
@@ -3848,12 +3856,20 @@
           "sourceLabel": "Hugging Face Blog",
           "publishedAt": "Mon, 11 May 2026 23:18:26 GMT",
           "firstSeen": "2026-05-13T19:53:32.068Z"
+        },
+        {
+          "url": "https://simonwillison.net/2026/May/17/gds-weighs-in/#atom-everything",
+          "domain": "simonwillison.net",
+          "title": "GDS weighs in on the NHS’s decision to retreat from Open Source",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-05-17T15:59:41+00:00",
+          "firstSeen": "2026-05-17T19:07:50.069Z"
         }
       ],
-      "sourceCount": 1,
-      "independentSourceCount": 1,
+      "sourceCount": 2,
+      "independentSourceCount": 2,
       "dateFirstSeen": "2026-05-13T19:53:32.068Z",
-      "dateLastSeen": "2026-05-13T19:53:32.068Z",
+      "dateLastSeen": "2026-05-17T19:07:50.069Z",
       "sz": 14,
       "proposalReason": "Surfaces as a named architectural layer in distributed ML systems, distinct from model evals; worth tracking as the term acquires more precise meaning in the MLOps and agentic infrastructure literature."
     },
@@ -3976,12 +3992,20 @@
           "sourceLabel": "The Verge — AI",
           "publishedAt": "2026-05-13T12:45:43-04:00",
           "firstSeen": "2026-05-13T19:53:32.068Z"
+        },
+        {
+          "url": "https://www.theverge.com/tech/932207/siri-apple-intelligence-auto-deleting-chats",
+          "domain": "theverge.com",
+          "title": "Revamped Siri will reportedly offer auto-deleting chats",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-05-17T14:40:28-04:00",
+          "firstSeen": "2026-05-17T19:07:50.069Z"
         }
       ],
-      "sourceCount": 1,
+      "sourceCount": 2,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-05-13T19:53:32.068Z",
-      "dateLastSeen": "2026-05-13T19:53:32.068Z",
+      "dateLastSeen": "2026-05-17T19:07:50.069Z",
       "sz": 14,
       "proposalReason": "Emerging product-category concept spanning multiple major AI chat providers; the article's comparison table of retention policies is the clearest single-source definition of this pattern yet."
     },
@@ -4385,6 +4409,100 @@
       "fullName": "AI Camera Assistant (Sony Xperia)",
       "nodeType": "product",
       "proposalReason": "New consumer AI product term with potential tracking value as a named AI-in-camera feature category, though evidence is thin at one source."
+    },
+    {
+      "id": "curb-cut-effect",
+      "label": "Curb Cut Effect",
+      "workingDef": "The phenomenon — originating in disability studies and universal design literature — whereby accommodations designed for people with disabilities (e.g., curb cuts for wheelchair users) prove broadly beneficial to the general population. Increasingly cited in technology and AI product design discourse to argue that accessibility-first design generates features with wide adoption, such as voice recognition, caption tools, and ergonomic interfaces.",
+      "clusters": [
+        "human",
+        "work"
+      ],
+      "suggestedRels": [
+        "human-in-the-loop",
+        "workflow",
+        "outcome-focused-work"
+      ],
+      "sources": [
+        {
+          "url": "https://sloanreview.mit.edu/article/how-job-design-for-disability-improves-work-for-everyone/",
+          "domain": "sloanreview.mit.edu",
+          "title": "  How Job Design for Disability Improves Work for Everyone",
+          "sourceLabel": "MIT Sloan Management Review",
+          "publishedAt": "Thu, 14 May 2026 11:00:09 +0000",
+          "firstSeen": "2026-05-17T19:07:50.069Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-17T19:07:50.069Z",
+      "dateLastSeen": "2026-05-17T19:07:50.069Z",
+      "sz": 14,
+      "fullName": "Curb Cut Effect (Universal Design Spillover)",
+      "proposalReason": "A recurring framing concept in discussions about accessibility-driven technology innovation; worth tracking as it appears in AI product and UX discourse as justification for accessibility-first feature development."
+    },
+    {
+      "id": "job-design",
+      "label": "Job Design",
+      "workingDef": "The deliberate structuring of tasks, responsibilities, and workflows within a role or team. Increasingly relevant in AI contexts as organisations reassess task allocation between humans and AI systems, and as accommodation-driven redesign reveals suboptimal assumptions baked into legacy work processes.",
+      "clusters": [
+        "work",
+        "human"
+      ],
+      "suggestedRels": [
+        "workflow",
+        "task-decomposition",
+        "outcome-focused-work",
+        "delegation"
+      ],
+      "sources": [
+        {
+          "url": "https://sloanreview.mit.edu/article/how-job-design-for-disability-improves-work-for-everyone/",
+          "domain": "sloanreview.mit.edu",
+          "title": "  How Job Design for Disability Improves Work for Everyone",
+          "sourceLabel": "MIT Sloan Management Review",
+          "publishedAt": "Thu, 14 May 2026 11:00:09 +0000",
+          "firstSeen": "2026-05-17T19:07:50.069Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-17T19:07:50.069Z",
+      "dateLastSeen": "2026-05-17T19:07:50.069Z",
+      "sz": 14,
+      "fullName": "Job Design (Work Redesign for AI Integration)",
+      "proposalReason": "Emerging as a relevant framing as AI deployment forces organisations to reconsider which tasks humans do, how roles are structured, and what 'optimal' work design looks like — directly intersecting with delegation and workflow concepts in the graph."
+    },
+    {
+      "id": "open-by-default",
+      "label": "Open by Default",
+      "workingDef": "A policy posture, advocated in contexts such as the UK Government Digital Service's 2026 guidance, holding that public sector code repositories should be publicly accessible unless there is a specific, deliberate reason to restrict them. Proponents argue openness enables reuse, scrutiny, and accountability; critics or cautious practitioners point to vulnerability exposure as a reason to restrict access, as illustrated by the NHS's decision to close repositories following disclosures via Project Glasswing.",
+      "clusters": [
+        "security",
+        "critical"
+      ],
+      "suggestedRels": [
+        "project-glasswing",
+        "coordinated-disclosure",
+        "open-weight"
+      ],
+      "sources": [
+        {
+          "url": "https://simonwillison.net/2026/May/17/gds-weighs-in/#atom-everything",
+          "domain": "simonwillison.net",
+          "title": "GDS weighs in on the NHS’s decision to retreat from Open Source",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-05-17T15:59:41+00:00",
+          "firstSeen": "2026-05-17T19:07:50.069Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-17T19:07:50.069Z",
+      "dateLastSeen": "2026-05-17T19:07:50.069Z",
+      "sz": 14,
+      "fullName": "Open by Default (Public Sector Code Policy)",
+      "proposalReason": "The GDS guidance formalises a contested posture around code openness in public institutions — a framing with lasting relevance to how governments manage AI and software risk."
     }
   ]
 }

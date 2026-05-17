@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-05-16T19:04:09.423Z",
-    "pendingCount": 5,
+    "generatedAt": "2026-05-17T19:08:54.339Z",
+    "pendingCount": 7,
     "appliedCount": 12,
     "rejectedCount": 1,
     "note": "Lexi proposals queue. Actions gated as PROPOSE land here as status: 'pending'. Edit a proposal's status to 'approved' or 'rejected' and run the apply step (TBD) to commit."
@@ -879,6 +879,95 @@
       },
       "reason": "3 sources, 3 independent (blog.google + stratechery.com + theverge.com), 11d on longlist. Trusted: stratechery.com.",
       "runId": "22ece666-f33a-496c-b2ef-6428ce2d75db"
+    },
+    {
+      "id": "1efe7f3ee6133ec5",
+      "action": "promote_to_graph",
+      "gate": "propose",
+      "proposedAt": "2026-05-17T19:08:54.339Z",
+      "status": "pending",
+      "source": "promote-eligibility-scan",
+      "target": {
+        "kind": "longlist_entry",
+        "id": "privacy-by-design"
+      },
+      "payload": {
+        "graphNode": {
+          "id": "privacy-by-design",
+          "label": "Privacy by Design",
+          "clusters": [
+            "technical",
+            "business"
+          ],
+          "sz": 14,
+          "def": "An architectural principle applied in AI deployment contexts where sensitive data — such as proprietary CAD geometry — must not leave a controlled environment. In this framing, on-premise model hosting (e.g., running open-weight models on local GPU hardware) is treated not as a performance optimisation but as a compliance and confidentiality requirement. Distinct from the broader regulatory usage of the term in GDPR contexts, though related.",
+          "rels": [
+            "open-weight",
+            "data-sovereignty",
+            "infrastructure",
+            "vertical-ai"
+          ],
+          "refs": [
+            {
+              "n": 1,
+              "src": "Hugging Face Blog, Sun, 10 May 2026 18:44:11 GMT",
+              "q": "MachinaCheck: Building a Multi-Agent CNC Manufacturability System on AMD MI300X Hugging Face Blog"
+            },
+            {
+              "n": 2,
+              "src": "The Verge — AI, 2026-05-17T14:40:28-04:00",
+              "q": "Revamped Siri will reportedly offer auto-deleting chats The Verge — AI"
+            }
+          ],
+          "fullName": "Privacy by Design (On-Premise AI Deployment)"
+        }
+      },
+      "reason": "2 sources, 2 independent (huggingface.co + theverge.com), 7d on longlist.",
+      "runId": "b2b2efee-2efc-4cda-8d6d-eb0f336c96f2"
+    },
+    {
+      "id": "e40405a51d9212ca",
+      "action": "promote_to_graph",
+      "gate": "propose",
+      "proposedAt": "2026-05-17T19:08:54.339Z",
+      "status": "pending",
+      "source": "promote-eligibility-scan",
+      "target": {
+        "kind": "longlist_entry",
+        "id": "ml-observability"
+      },
+      "payload": {
+        "graphNode": {
+          "id": "ml-observability",
+          "label": "Observability (ML Infrastructure)",
+          "clusters": [
+            "technical",
+            "lifecycle"
+          ],
+          "sz": 14,
+          "def": "The practice of monitoring, visualising, and diagnosing the health and performance of large-scale machine learning infrastructure — spanning cluster hardware, network utilisation, and model training runs. In foundation model contexts, typically implemented via tools such as Prometheus (metrics collection) and Grafana (visualisation/alerting), positioned as a cross-cutting operational layer above hardware, orchestration, and ML framework tiers.",
+          "rels": [
+            "evals",
+            "infrastructure",
+            "purpose-built-ai-infrastructure",
+            "workflow"
+          ],
+          "refs": [
+            {
+              "n": 1,
+              "src": "Hugging Face Blog, Mon, 11 May 2026 23:18:26 GMT",
+              "q": "Building Blocks for Foundation Model Training and Inference on AWS Hugging Face Blog"
+            },
+            {
+              "n": 2,
+              "src": "Simon Willison's Weblog, 2026-05-17T15:59:41+00:00",
+              "q": "GDS weighs in on the NHS’s decision to retreat from Open Source Simon Willison's Weblog"
+            }
+          ]
+        }
+      },
+      "reason": "2 sources, 2 independent (huggingface.co + simonwillison.net), 3d on longlist. Trusted: simonwillison.net.",
+      "runId": "b2b2efee-2efc-4cda-8d6d-eb0f336c96f2"
     }
   ]
 }

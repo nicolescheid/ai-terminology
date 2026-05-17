@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-05-16T19:04:09.549Z",
+  "generatedAt": "2026-05-17T19:08:54.739Z",
   "firstRunAt": "2026-04-27T01:07:31.335Z",
   "phase": 1,
   "headline": {
-    "articlesRead": 101,
-    "daysRunning": 20,
-    "longlistSize": 113,
+    "articlesRead": 107,
+    "daysRunning": 21,
+    "longlistSize": 116,
     "graphSize": 206
   },
   "thisWeek": {
     "articlesFetched": 42,
-    "longlistAdded": 64,
-    "sourcesAdded": 7,
-    "promotionsToGraph": 3,
-    "proposalsQueued": 5,
+    "longlistAdded": 58,
+    "sourcesAdded": 5,
+    "promotionsToGraph": 0,
+    "proposalsQueued": 6,
     "auditFlags": 12,
     "notesAdded": 17
   },
@@ -27,7 +27,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 2,
-      "daysOnLonglist": 11,
+      "daysOnLonglist": 12,
       "domains": [
         "openai.com",
         "simonwillison.net"
@@ -45,7 +45,7 @@
       ],
       "sourceCount": 4,
       "independentSources": 1,
-      "daysOnLonglist": 19,
+      "daysOnLonglist": 20,
       "domains": [
         "openai.com"
       ],
@@ -62,7 +62,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 15,
+      "daysOnLonglist": 16,
       "domains": [
         "stratechery.com"
       ],
@@ -79,7 +79,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 15,
+      "daysOnLonglist": 16,
       "domains": [
         "stratechery.com"
       ],
@@ -96,7 +96,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 15,
+      "daysOnLonglist": 16,
       "domains": [
         "normaltech.ai"
       ],
@@ -113,7 +113,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 7,
+      "daysOnLonglist": 8,
       "domains": [
         "blog.google"
       ],
@@ -130,7 +130,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 7,
+      "daysOnLonglist": 8,
       "domains": [
         "blog.google"
       ],
@@ -147,9 +147,26 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 4,
+      "daysOnLonglist": 5,
       "domains": [
         "stratechery.com"
+      ],
+      "gapCount": 1,
+      "gap": "needs 1 more independent source"
+    },
+    {
+      "id": "ephemeral-ai-chat",
+      "label": "Ephemeral AI Chat",
+      "fullName": null,
+      "clusters": [
+        "security",
+        "tools"
+      ],
+      "sourceCount": 2,
+      "independentSources": 1,
+      "daysOnLonglist": 3,
+      "domains": [
+        "theverge.com"
       ],
       "gapCount": 1,
       "gap": "needs 1 more independent source"
@@ -164,27 +181,9 @@
       ],
       "sourceCount": 1,
       "independentSources": 1,
-      "daysOnLonglist": 19,
+      "daysOnLonglist": 20,
       "domains": [
         "blog.google"
-      ],
-      "gapCount": 2,
-      "gap": "needs 1 more source; needs 1 more independent source"
-    },
-    {
-      "id": "self-verification",
-      "label": "Self-Verification",
-      "fullName": "Self-Verification (Model Output Verification)",
-      "clusters": [
-        "agentic",
-        "safety",
-        "technical"
-      ],
-      "sourceCount": 1,
-      "independentSources": 1,
-      "daysOnLonglist": 19,
-      "domains": [
-        "anthropic.com"
       ],
       "gapCount": 2,
       "gap": "needs 1 more source; needs 1 more independent source"
@@ -194,11 +193,11 @@
     "byDomain": [
       {
         "domain": "openai.com",
-        "count": 28
+        "count": 30
       },
       {
         "domain": "simonwillison.net",
-        "count": 13
+        "count": 14
       },
       {
         "domain": "stratechery.com",
@@ -218,23 +217,23 @@
       },
       {
         "domain": "theverge.com",
-        "count": 6
+        "count": 7
       },
       {
         "domain": "lastweekin.ai",
         "count": 5
       },
       {
+        "domain": "hbr.org",
+        "count": 4
+      },
+      {
         "domain": "normaltech.ai",
         "count": 3
       },
       {
-        "domain": "hbr.org",
-        "count": 3
-      },
-      {
         "domain": "sloanreview.mit.edu",
-        "count": 1
+        "count": 2
       }
     ],
     "totalUniqueDomains": 11,
@@ -405,22 +404,22 @@
         "count": 19
       },
       {
-        "id": "business",
-        "label": "Business Reality",
-        "hex": "#48C888",
-        "count": 18
+        "id": "work",
+        "label": "Work & Output",
+        "hex": "#E8A838",
+        "count": 19
       },
       {
         "id": "security",
         "label": "AI Security",
         "hex": "#E05050",
-        "count": 17
+        "count": 18
       },
       {
-        "id": "work",
-        "label": "Work & Output",
-        "hex": "#E8A838",
-        "count": 17
+        "id": "business",
+        "label": "Business Reality",
+        "hex": "#48C888",
+        "count": 18
       },
       {
         "id": "safety",
@@ -432,7 +431,7 @@
         "id": "critical",
         "label": "Critical / Hype",
         "hex": "#FF5555",
-        "count": 13
+        "count": 14
       },
       {
         "id": "companies",
@@ -444,7 +443,7 @@
         "id": "human",
         "label": "Human Skills",
         "hex": "#40D080",
-        "count": 5
+        "count": 7
       },
       {
         "id": "lifecycle",
@@ -472,7 +471,7 @@
     "note": "All graph promotions and substantive edits are currently human-gated. Lexi proposes; Nicole approves."
   },
   "proposalsByStatus": {
-    "pending": 5,
+    "pending": 7,
     "approved": 0,
     "applied": 12,
     "rejected": 1

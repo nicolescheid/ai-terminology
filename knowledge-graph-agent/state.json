@@ -1,6 +1,6 @@
 {
-  "lastRunAt": "2026-05-16T19:02:56.992Z",
-  "reviewCursor": 190,
+  "lastRunAt": "2026-05-17T19:07:50.069Z",
+  "reviewCursor": 200,
   "seenArticles": {
     "93a049d060bc295b": {
       "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/tpus-8t-8i-cloud-next/",
@@ -607,6 +607,42 @@
       "title": "Do You Recognize Burnout in Your Organization?",
       "publishedAt": "2026-05-15T12:25:28Z",
       "seenAt": "2026-05-16T19:02:56.992Z"
+    },
+    "2b6e6d349507cb7c": {
+      "url": "https://sloanreview.mit.edu/article/how-job-design-for-disability-improves-work-for-everyone/",
+      "title": "  How Job Design for Disability Improves Work for Everyone",
+      "publishedAt": "Thu, 14 May 2026 11:00:09 +0000",
+      "seenAt": "2026-05-17T19:07:50.069Z"
+    },
+    "b5b1610b252a64e9": {
+      "url": "https://openai.com/academy/codex-for-work/how-business-operations-teams-use-codex",
+      "title": "How business operations teams use Codex",
+      "publishedAt": "Fri, 15 May 2026 00:00:00 GMT",
+      "seenAt": "2026-05-17T19:07:50.069Z"
+    },
+    "c64312c3121cafd6": {
+      "url": "https://openai.com/index/databricks",
+      "title": "Databricks brings GPT-5.5 to enterprise agent workflows",
+      "publishedAt": "Fri, 15 May 2026 00:00:00 GMT",
+      "seenAt": "2026-05-17T19:07:50.069Z"
+    },
+    "cd10f9ca291ae347": {
+      "url": "https://simonwillison.net/2026/May/17/gds-weighs-in/#atom-everything",
+      "title": "GDS weighs in on the NHS’s decision to retreat from Open Source",
+      "publishedAt": "2026-05-17T15:59:41+00:00",
+      "seenAt": "2026-05-17T19:07:50.069Z"
+    },
+    "d43c59c2dd0c2586": {
+      "url": "https://www.theverge.com/tech/932207/siri-apple-intelligence-auto-deleting-chats",
+      "title": "Revamped Siri will reportedly offer auto-deleting chats",
+      "publishedAt": "2026-05-17T14:40:28-04:00",
+      "seenAt": "2026-05-17T19:07:50.069Z"
+    },
+    "98b966e7fa2dc1f6": {
+      "url": "https://hbr.org/2026/05/should-your-subscription-business-use-auto-renew",
+      "title": "Should Your Subscription Business Use Auto-Renew?",
+      "publishedAt": "2026-05-15T12:15:26Z",
+      "seenAt": "2026-05-17T19:07:50.069Z"
     }
   },
   "nodeReviews": {
@@ -1539,6 +1575,56 @@
       "lastReviewedAt": "2026-05-16T19:02:56.992Z",
       "status": "keep",
       "reason": "The Stratechery excerpt briefly distinguishes 'answer inference' from 'agentic inference' but does not provide substantive new information about the training process itself that would justify revising the definition."
+    },
+    "trainium": {
+      "lastReviewedAt": "2026-05-17T19:07:50.069Z",
+      "status": "keep",
+      "reason": "No source material addresses Trainium or AWS AI chip infrastructure. Definition remains accurate as stated."
+    },
+    "transformer": {
+      "lastReviewedAt": "2026-05-17T19:07:50.069Z",
+      "status": "keep",
+      "reason": "No source material addresses the Transformer architecture. Definition remains accurate and comprehensive."
+    },
+    "undercover-mode": {
+      "lastReviewedAt": "2026-05-17T19:07:50.069Z",
+      "status": "keep",
+      "reason": "No source material addresses Claude Code's undercover mode or related features. Definition unchanged."
+    },
+    "vector-database": {
+      "lastReviewedAt": "2026-05-17T19:07:50.069Z",
+      "status": "keep",
+      "reason": "No source material addresses vector databases or embedding search. Definition remains accurate."
+    },
+    "vendor-lock-in": {
+      "lastReviewedAt": "2026-05-17T19:07:50.069Z",
+      "status": "keep",
+      "reason": "No source material addresses vendor lock-in in the AI context. Definition remains accurate."
+    },
+    "verifiability": {
+      "lastReviewedAt": "2026-05-17T19:07:50.069Z",
+      "status": "keep",
+      "reason": "No source material addresses verifiability as an AI concept. Definition remains accurate."
+    },
+    "verifiable-domain": {
+      "lastReviewedAt": "2026-05-17T19:07:50.069Z",
+      "status": "keep",
+      "reason": "No source material addresses verifiable domains in AI. Definition remains accurate."
+    },
+    "vertical-ai": {
+      "lastReviewedAt": "2026-05-17T19:07:50.069Z",
+      "status": "keep",
+      "reason": "No source material addresses vertical AI products or differentiation. Definition remains accurate."
+    },
+    "vibe-coding": {
+      "lastReviewedAt": "2026-05-17T19:07:50.069Z",
+      "status": "insufficient_evidence",
+      "reason": "A Simon Willison post title ('Vibe coding and agentic engineering are getting closer than I'd like', dated 6 May 2026) is tangentially relevant and could suggest the distinction between vibe coding and agentic engineering is evolving, but no excerpt content is available to draw substantive conclusions. The existing definition, which already notes Karpathy coined 'agentic engineering' as a successor, does not require revision based on available evidence."
+    },
+    "voice-ai": {
+      "lastReviewedAt": "2026-05-17T19:07:50.069Z",
+      "status": "keep",
+      "reason": "No source material addresses voice AI systems or pipelines. Definition remains accurate."
     }
   }
 }
