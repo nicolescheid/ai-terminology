@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-18T19:45:25.987Z",
+  "generatedAt": "2026-05-18T20:27:26.739Z",
   "firstRunAt": "2026-04-27T01:07:31.335Z",
   "phase": 1,
   "headline": {
@@ -9,13 +9,13 @@
     "graphSize": 206
   },
   "thisWeek": {
-    "articlesFetched": 42,
-    "longlistAdded": 52,
+    "articlesFetched": 36,
+    "longlistAdded": 37,
     "sourcesAdded": 9,
     "promotionsToGraph": 0,
     "proposalsQueued": 9,
-    "auditFlags": 12,
-    "notesAdded": 15
+    "auditFlags": 20,
+    "notesAdded": 23
   },
   "almostThere": [
     {
@@ -147,7 +147,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 6,
+      "daysOnLonglist": 7,
       "domains": [
         "stratechery.com"
       ],
@@ -164,7 +164,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 4,
+      "daysOnLonglist": 5,
       "domains": [
         "theverge.com"
       ],
@@ -515,9 +515,9 @@
     }
   },
   "audit": {
-    "flagsTotal": 31,
+    "flagsTotal": 39,
     "flagsByType": {
-      "source_pattern": 31
+      "source_pattern": 39
     }
   },
   "costs": {
