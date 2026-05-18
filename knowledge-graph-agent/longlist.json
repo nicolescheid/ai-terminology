@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-05-17T19:07:50.069Z",
-    "entryCount": 127,
+    "generatedAt": "2026-05-18T19:43:41.150Z",
+    "entryCount": 133,
     "note": "Lexi-managed Tier 2 longlist — terms under observation, awaiting evidence to support promotion to the graph (Tier 1)."
   },
   "entries": [
@@ -2881,12 +2881,20 @@
           "sourceLabel": "The Verge — AI",
           "publishedAt": "2026-05-08T14:45:08-04:00",
           "firstSeen": "2026-05-11T07:07:01.775Z"
+        },
+        {
+          "url": "https://stratechery.com/2026/data-center-discontent-understanding-the-opposition-fixing-the-problem/",
+          "domain": "stratechery.com",
+          "title": "Data Center Discontent, Understanding the Opposition, Fixing the Problem",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Mon, 18 May 2026 10:00:00 +0000",
+          "firstSeen": "2026-05-18T19:43:41.150Z"
         }
       ],
-      "sourceCount": 1,
-      "independentSourceCount": 1,
+      "sourceCount": 2,
+      "independentSourceCount": 2,
       "dateFirstSeen": "2026-05-11T07:07:01.775Z",
-      "dateLastSeen": "2026-05-11T07:07:01.775Z",
+      "dateLastSeen": "2026-05-18T19:43:41.150Z",
       "sz": 14,
       "proposalReason": "The article materially uses 'hyperscale data center' (e.g., 'planned hyperscale data center in Box Elder County') as a distinct category of AI infrastructure with policy and environmental stakes — a term with lasting relevance to AI infrastructure discourse."
     },
@@ -2913,12 +2921,20 @@
           "sourceLabel": "The Verge — AI",
           "publishedAt": "2026-05-08T14:45:08-04:00",
           "firstSeen": "2026-05-11T07:07:01.775Z"
+        },
+        {
+          "url": "https://stratechery.com/2026/data-center-discontent-understanding-the-opposition-fixing-the-problem/",
+          "domain": "stratechery.com",
+          "title": "Data Center Discontent, Understanding the Opposition, Fixing the Problem",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Mon, 18 May 2026 10:00:00 +0000",
+          "firstSeen": "2026-05-18T19:43:41.150Z"
         }
       ],
-      "sourceCount": 1,
-      "independentSourceCount": 1,
+      "sourceCount": 2,
+      "independentSourceCount": 2,
       "dateFirstSeen": "2026-05-11T07:07:01.775Z",
-      "dateLastSeen": "2026-05-11T07:07:01.775Z",
+      "dateLastSeen": "2026-05-18T19:43:41.150Z",
       "sz": 14,
       "fullName": "AI Energy Demand (Data Center Power Consumption)",
       "proposalReason": "The article's central throughline — from Pew survey data to Senate letters to the EIA to a 9-gigawatt Utah approval — consistently names AI energy demand as the organising policy and community concern."
@@ -2944,12 +2960,20 @@
           "sourceLabel": "The Verge — AI",
           "publishedAt": "2026-05-08T14:45:08-04:00",
           "firstSeen": "2026-05-11T07:07:01.775Z"
+        },
+        {
+          "url": "https://stratechery.com/2026/data-center-discontent-understanding-the-opposition-fixing-the-problem/",
+          "domain": "stratechery.com",
+          "title": "Data Center Discontent, Understanding the Opposition, Fixing the Problem",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Mon, 18 May 2026 10:00:00 +0000",
+          "firstSeen": "2026-05-18T19:43:41.150Z"
         }
       ],
-      "sourceCount": 1,
-      "independentSourceCount": 1,
+      "sourceCount": 2,
+      "independentSourceCount": 2,
       "dateFirstSeen": "2026-05-11T07:07:01.775Z",
-      "dateLastSeen": "2026-05-11T07:07:01.775Z",
+      "dateLastSeen": "2026-05-18T19:43:41.150Z",
       "sz": 14,
       "fullName": "Ratepayer Protection Pledge (Tech Industry Energy Commitment)",
       "proposalReason": "Named explicitly in the article as the mechanism motivating bipartisan Senate pressure for mandatory data center energy disclosures — a policy-layer term with relevance to AI infrastructure governance."
@@ -4368,12 +4392,20 @@
           "sourceLabel": "Stratechery",
           "publishedAt": "Fri, 15 May 2026 17:00:00 +0000",
           "firstSeen": "2026-05-16T19:02:56.992Z"
+        },
+        {
+          "url": "https://stratechery.com/2026/data-center-discontent-understanding-the-opposition-fixing-the-problem/",
+          "domain": "stratechery.com",
+          "title": "Data Center Discontent, Understanding the Opposition, Fixing the Problem",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Mon, 18 May 2026 10:00:00 +0000",
+          "firstSeen": "2026-05-18T19:43:41.150Z"
         }
       ],
-      "sourceCount": 1,
+      "sourceCount": 2,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-05-16T19:02:56.992Z",
-      "dateLastSeen": "2026-05-16T19:02:56.992Z",
+      "dateLastSeen": "2026-05-18T19:43:41.150Z",
       "sz": 14,
       "fullName": "AI Deployment Company",
       "proposalReason": "New candidate: names an emerging organizational pattern distinct from 'lab' or 'product company' — worth tracking as the AI industry structure evolves."
@@ -4503,6 +4535,201 @@
       "sz": 14,
       "fullName": "Open by Default (Public Sector Code Policy)",
       "proposalReason": "The GDS guidance formalises a contested posture around code openness in public institutions — a framing with lasting relevance to how governments manage AI and software risk."
+    },
+    {
+      "id": "agi",
+      "label": "AGI",
+      "workingDef": "A term contested across multiple communities. OpenAI/industry capability framings — prominently foregrounded in this article's trial evidence — use AGI to mean systems that broadly equal or surpass human knowledge and ability across economically valuable tasks, a threshold that served as the explicit founding motivation for OpenAI. Theoretical/academic lineages (Hutter, Goertzel) define it as generality across cognitive tasks at human level, a more abstract construct. Skeptics (Marcus, Bender, Mitchell) argue the term has no stable operational definition: each speaker defines it to fit their narrative and the goalposts shift with marketing cycles. The Musk v. Altman trial made the contestation concrete — both sides invoked AGI as the supreme motivating stake while disagreeing entirely about who should control it.",
+      "clusters": [
+        "critical",
+        "safety"
+      ],
+      "suggestedRels": [
+        "openai-co",
+        "xai-co",
+        "google-co",
+        "alignment",
+        "frontier-model"
+      ],
+      "sources": [
+        {
+          "url": "https://www.theverge.com/ai-artificial-intelligence/932464/musk-v-altman-proved-that-ai-is-led-by-the-wrong-people",
+          "domain": "theverge.com",
+          "title": "Musk v. Altman proved that AI is led by the wrong people",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-05-18T15:00:00-04:00",
+          "firstSeen": "2026-05-18T19:43:41.150Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-18T19:43:41.150Z",
+      "dateLastSeen": "2026-05-18T19:43:41.150Z",
+      "sz": 14,
+      "fullName": "Artificial General Intelligence (AGI)",
+      "proposalReason": "The trial placed AGI at the centre of OpenAI's founding rationale and control disputes, making this a primary-source moment for how the term functions as a political and motivational instrument among AI's most powerful actors."
+    },
+    {
+      "id": "ai-leadership-accountability",
+      "label": "AI Leadership Accountability",
+      "workingDef": "A framing — emerging from criticism of the AI industry's governance culture — for the question of whether the individuals and organisations directing frontier AI development are sufficiently trustworthy, honest, and structurally accountable to the public whose lives their systems affect. Used critically by journalists, AI ethics scholars, and governance researchers to challenge the assumption that technical or commercial success confers the legitimacy to make civilisation-scale decisions. The Musk v. Altman trial gave the concept renewed force: testimony from multiple senior insiders alleged a pattern of deception and power-seeking at the highest levels of the industry's leading lab.",
+      "clusters": [
+        "critical",
+        "safety"
+      ],
+      "suggestedRels": [
+        "agent-governance",
+        "alignment",
+        "openai-co",
+        "xai-co",
+        "responsible-scaling-policy"
+      ],
+      "sources": [
+        {
+          "url": "https://www.theverge.com/ai-artificial-intelligence/932464/musk-v-altman-proved-that-ai-is-led-by-the-wrong-people",
+          "domain": "theverge.com",
+          "title": "Musk v. Altman proved that AI is led by the wrong people",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-05-18T15:00:00-04:00",
+          "firstSeen": "2026-05-18T19:43:41.150Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-18T19:43:41.150Z",
+      "dateLastSeen": "2026-05-18T19:43:41.150Z",
+      "sz": 14,
+      "proposalReason": "The article's central argument — that AI's leadership is structurally untrustworthy — names a governance framing that goes beyond any single lawsuit and deserves tracking as a recurring critical lens."
+    },
+    {
+      "id": "ai-governance-culture",
+      "label": "AI Governance Culture",
+      "workingDef": "A term used in journalism and critical AI discourse to describe the internal norms, power structures, and accountability mechanisms (or their absence) within AI organisations — distinct from formal external regulation. The Musk v. Altman trial surfaced specific allegations: safety reviews allegedly bypassed, board members switching allegiances, and executive decision-making described under oath as deceptive. The term captures how internal culture shapes whether stated safety commitments translate into actual practice, and is increasingly invoked as a lens for evaluating whether self-governance by AI labs is credible.",
+      "clusters": [
+        "critical",
+        "safety"
+      ],
+      "suggestedRels": [
+        "agent-governance",
+        "alignment",
+        "responsible-scaling-policy",
+        "openai-co",
+        "sandboxing"
+      ],
+      "sources": [
+        {
+          "url": "https://www.theverge.com/ai-artificial-intelligence/932464/musk-v-altman-proved-that-ai-is-led-by-the-wrong-people",
+          "domain": "theverge.com",
+          "title": "Musk v. Altman proved that AI is led by the wrong people",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-05-18T15:00:00-04:00",
+          "firstSeen": "2026-05-18T19:43:41.150Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-18T19:43:41.150Z",
+      "dateLastSeen": "2026-05-18T19:43:41.150Z",
+      "sz": 14,
+      "fullName": "AI Governance Culture (Internal)",
+      "proposalReason": "Trial testimony about skipped safety reviews and internal power struggles gave this concept concrete grounding, making it worth tracking as a distinct framing from formal regulatory governance."
+    },
+    {
+      "id": "sdk-generation",
+      "label": "SDK Generation",
+      "workingDef": "The automated process of producing Software Development Kits — language-idiomatic client libraries, CLIs, and connectors — from an API specification. Stainless, acquired by Anthropic in 2026, pioneered this approach, generating official Anthropic SDKs across TypeScript, Python, Go, Java, Kotlin, and more from a single spec source. In the agentic context, SDK generation is framed as infrastructure-layer work: agents are only as capable as the APIs they can reliably reach, making high-quality, automatically-maintained SDKs a prerequisite for robust agent connectivity.",
+      "clusters": [
+        "tools",
+        "technical"
+      ],
+      "suggestedRels": [
+        "mcp",
+        "api",
+        "connectors",
+        "agent"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/anthropic-acquires-stainless",
+          "domain": "anthropic.com",
+          "title": "Anthropic acquires Stainless",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-05-18T19:43:41.150Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-18T19:43:41.150Z",
+      "dateLastSeen": "2026-05-18T19:43:41.150Z",
+      "sz": 14,
+      "fullName": "SDK Generation (Automated SDK Generation from API Spec)",
+      "proposalReason": "Novel infrastructure concept with direct relevance to the agent connectivity layer; not currently tracked in the graph."
+    },
+    {
+      "id": "agent-connectivity",
+      "label": "Agent Connectivity",
+      "workingDef": "The capacity of an AI agent to reliably reach and interact with external data sources, APIs, and tools at runtime. Anthropic frames agent connectivity as a core constraint on agent capability — 'agents are only as useful as what they can connect to' — making SDK quality, MCP server tooling, and connector infrastructure first-class engineering concerns. The term marks a shift in framing from model capability alone toward the surrounding integration surface as the binding constraint on agent usefulness.",
+      "clusters": [
+        "agentic",
+        "technical"
+      ],
+      "suggestedRels": [
+        "agent",
+        "mcp",
+        "connectors",
+        "tool-use",
+        "api"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/anthropic-acquires-stainless",
+          "domain": "anthropic.com",
+          "title": "Anthropic acquires Stainless",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-05-18T19:43:41.150Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-18T19:43:41.150Z",
+      "dateLastSeen": "2026-05-18T19:43:41.150Z",
+      "sz": 14,
+      "proposalReason": "Emerging framing term for the integration-surface constraint on agent capability; distinct from tool-use as a runtime concept and worth tracking as it gains currency in lab communications."
+    },
+    {
+      "id": "claude-small-business",
+      "label": "Claude for Small Business",
+      "workingDef": "A product tier from Anthropic targeting small businesses, bundling connectors and ready-to-run workflows designed to embed Claude inside the tools small businesses use routinely. Mentioned in the article's related content section as a concurrent launch alongside the Stainless acquisition.",
+      "clusters": [
+        "companies",
+        "business"
+      ],
+      "suggestedRels": [
+        "claude",
+        "connectors",
+        "ready-to-run-workflow",
+        "smb-ai-adoption-gap"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/anthropic-acquires-stainless",
+          "domain": "anthropic.com",
+          "title": "Anthropic acquires Stainless",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-05-18T19:43:41.150Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-18T19:43:41.150Z",
+      "dateLastSeen": "2026-05-18T19:43:41.150Z",
+      "sz": 14,
+      "fullName": "Claude for Small Business (Anthropic)",
+      "nodeType": "product",
+      "proposalReason": "Named product from Anthropic with a distinct SMB positioning; worth tracking as a market-segment entry alongside the enterprise and individual tiers already in the graph."
     }
   ]
 }

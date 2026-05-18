@@ -1,6 +1,6 @@
 {
-  "lastRunAt": "2026-05-17T19:07:50.069Z",
-  "reviewCursor": 200,
+  "lastRunAt": "2026-05-18T19:43:41.150Z",
+  "reviewCursor": 4,
   "seenArticles": {
     "93a049d060bc295b": {
       "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/tpus-8t-8i-cloud-next/",
@@ -643,28 +643,64 @@
       "title": "Should Your Subscription Business Use Auto-Renew?",
       "publishedAt": "2026-05-15T12:15:26Z",
       "seenAt": "2026-05-17T19:07:50.069Z"
+    },
+    "a15f62575e9358e1": {
+      "url": "https://huggingface.co/blog/nvidia/cosmos-fine-tuning-for-robot-video-generation",
+      "title": "Fine-Tuning NVIDIA Cosmos Predict 2.5 with LoRA/DoRA for Robot Video Generation",
+      "publishedAt": "Mon, 18 May 2026 16:00:21 GMT",
+      "seenAt": "2026-05-18T19:43:41.150Z"
+    },
+    "210c7a7c78264981": {
+      "url": "https://openai.com/index/dell-codex-enterprise-partnership",
+      "title": "OpenAI and Dell partner to bring Codex to hybrid and on-premise enterprise environments",
+      "publishedAt": "Mon, 18 May 2026 10:00:00 GMT",
+      "seenAt": "2026-05-18T19:43:41.150Z"
+    },
+    "4b33e1ee5bc707a5": {
+      "url": "https://stratechery.com/2026/data-center-discontent-understanding-the-opposition-fixing-the-problem/",
+      "title": "Data Center Discontent, Understanding the Opposition, Fixing the Problem",
+      "publishedAt": "Mon, 18 May 2026 10:00:00 +0000",
+      "seenAt": "2026-05-18T19:43:41.150Z"
+    },
+    "faddcc8dd53ea097": {
+      "url": "https://www.theverge.com/ai-artificial-intelligence/932464/musk-v-altman-proved-that-ai-is-led-by-the-wrong-people",
+      "title": "Musk v. Altman proved that AI is led by the wrong people",
+      "publishedAt": "2026-05-18T15:00:00-04:00",
+      "seenAt": "2026-05-18T19:43:41.150Z"
+    },
+    "41b2a2f6dff1ea57": {
+      "url": "https://simonwillison.net/2026/May/18/sighting-362781627/#atom-everything",
+      "title": "Sighting: Glaucous-winged Gull, Brown Pelican, Snowy Egret, Canada Goose",
+      "publishedAt": "2026-05-18T14:51:00+00:00",
+      "seenAt": "2026-05-18T19:43:41.150Z"
+    },
+    "9c0ddb2d59a6955e": {
+      "url": "https://www.anthropic.com/news/anthropic-acquires-stainless",
+      "title": "Anthropic acquires Stainless",
+      "publishedAt": null,
+      "seenAt": "2026-05-18T19:43:41.150Z"
     }
   },
   "nodeReviews": {
     "a2a": {
-      "lastReviewedAt": "2026-04-27T01:07:31.335Z",
+      "lastReviewedAt": "2026-05-18T19:43:41.150Z",
       "status": "keep",
-      "reason": "No source material addresses the A2A protocol, its launch date, participant count, or its relationship to MCP. Definition stands."
+      "reason": "Definition is consistent with known facts about Google's A2A protocol. No source material contradicts it. The Anthropic/Stainless acquisition excerpt reinforces the importance of agent connectivity but does not change the A2A definition."
     },
     "abstraction": {
-      "lastReviewedAt": "2026-04-27T01:07:31.335Z",
+      "lastReviewedAt": "2026-05-18T19:43:41.150Z",
       "status": "keep",
-      "reason": "No source material bears on this conceptual definition. Definition stands."
+      "reason": "Definition is a stable conceptual description. No source material is relevant."
     },
     "agent": {
-      "lastReviewedAt": "2026-04-27T01:07:31.335Z",
+      "lastReviewedAt": "2026-05-18T19:43:41.150Z",
       "status": "keep",
-      "reason": "No source material contradicts or updates this core definition of an AI agent. Definition stands."
+      "reason": "Definition is a stable conceptual description. No source material contradicts it."
     },
     "agent-governance": {
-      "lastReviewedAt": "2026-04-27T01:07:31.335Z",
+      "lastReviewedAt": "2026-05-18T19:43:41.150Z",
       "status": "keep",
-      "reason": "No source material updates the EU AI Act timeline or the broader governance framing. Definition stands."
+      "reason": "Definition is consistent with EU AI Act rollout timeline facts. No source material contradicts or updates it."
     },
     "agent-washing": {
       "lastReviewedAt": "2026-04-27T01:07:31.335Z",
@@ -1625,6 +1661,36 @@
       "lastReviewedAt": "2026-05-17T19:07:50.069Z",
       "status": "keep",
       "reason": "No source material addresses voice AI systems or pipelines. Definition remains accurate."
+    },
+    "vulnpocalypse": {
+      "lastReviewedAt": "2026-05-18T19:43:41.150Z",
+      "status": "insufficient_evidence",
+      "reason": "No source material addresses Project Glasswing, Mythos, or AI-discovered zero-day vulnerability volumes. Cannot confirm or update the definition's specific claims."
+    },
+    "work-iq": {
+      "lastReviewedAt": "2026-05-18T19:43:41.150Z",
+      "status": "insufficient_evidence",
+      "reason": "No source material addresses Microsoft Copilot Cowork or the Work IQ concept."
+    },
+    "workflow": {
+      "lastReviewedAt": "2026-05-18T19:43:41.150Z",
+      "status": "keep",
+      "reason": "Definition is a stable conceptual description. No source material contradicts or meaningfully expands it."
+    },
+    "wrapper": {
+      "lastReviewedAt": "2026-05-18T19:43:41.150Z",
+      "status": "keep",
+      "reason": "Definition is a stable industry-usage description. No source material contradicts or expands it."
+    },
+    "xai-co": {
+      "lastReviewedAt": "2026-05-18T19:43:41.150Z",
+      "status": "keep",
+      "reason": "No source material updates the foundational facts about xAI. The Simon Willison blog mentions an 'xAI/Anthropic data center deal' in a sidebar link title but provides no substantive excerpt to justify a revision."
+    },
+    "zero-day": {
+      "lastReviewedAt": "2026-05-18T19:43:41.150Z",
+      "status": "insufficient_evidence",
+      "reason": "No source material addresses Claude Mythos Preview or its zero-day findings. The specific claims cannot be verified or updated from the provided excerpts."
     }
   }
 }

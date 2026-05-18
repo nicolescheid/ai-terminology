@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-05-17T19:08:54.339Z",
-    "pendingCount": 7,
+    "generatedAt": "2026-05-18T19:45:25.653Z",
+    "pendingCount": 10,
     "appliedCount": 12,
     "rejectedCount": 1,
     "note": "Lexi proposals queue. Actions gated as PROPOSE land here as status: 'pending'. Edit a proposal's status to 'approved' or 'rejected' and run the apply step (TBD) to commit."
@@ -968,6 +968,141 @@
       },
       "reason": "2 sources, 2 independent (huggingface.co + simonwillison.net), 3d on longlist. Trusted: simonwillison.net.",
       "runId": "b2b2efee-2efc-4cda-8d6d-eb0f336c96f2"
+    },
+    {
+      "id": "223c2a66c1076e0d",
+      "action": "promote_to_graph",
+      "gate": "propose",
+      "proposedAt": "2026-05-18T19:45:25.653Z",
+      "status": "pending",
+      "source": "promote-eligibility-scan",
+      "target": {
+        "kind": "longlist_entry",
+        "id": "hyperscale-data-center"
+      },
+      "payload": {
+        "graphNode": {
+          "id": "hyperscale-data-center",
+          "label": "Hyperscale Data Center",
+          "clusters": [
+            "technical",
+            "landscape"
+          ],
+          "sz": 14,
+          "def": "A very large-scale data center facility — typically tens of thousands of acres or gigawatts of power capacity — built to support cloud and AI compute at massive scale. In the AI context, hyperscale data centers are the physical substrate for frontier model training and inference infrastructure. The term is used by operators, planners, and critics alike, though 'hyperscale' has no universal threshold; usage ranges from technical capacity descriptors to policy shorthand for facilities whose energy demands rival those of entire states.",
+          "rels": [
+            "purpose-built-ai-infrastructure",
+            "ai-accelerator",
+            "inference",
+            "training",
+            "infrastructure"
+          ],
+          "refs": [
+            {
+              "n": 1,
+              "src": "The Verge — AI, 2026-05-08T14:45:08-04:00",
+              "q": "All the latest updates on AI data centers The Verge — AI"
+            },
+            {
+              "n": 2,
+              "src": "Stratechery, Mon, 18 May 2026 10:00:00 +0000",
+              "q": "Data Center Discontent, Understanding the Opposition, Fixing the Problem Stratechery"
+            }
+          ]
+        }
+      },
+      "reason": "2 sources, 2 independent (theverge.com + stratechery.com), 7d on longlist. Trusted: stratechery.com.",
+      "runId": "9d0530c4-0a08-493f-bf56-193c87bb546a"
+    },
+    {
+      "id": "47c491ecf82f584b",
+      "action": "promote_to_graph",
+      "gate": "propose",
+      "proposedAt": "2026-05-18T19:45:25.653Z",
+      "status": "pending",
+      "source": "promote-eligibility-scan",
+      "target": {
+        "kind": "longlist_entry",
+        "id": "ai-energy-demand"
+      },
+      "payload": {
+        "graphNode": {
+          "id": "ai-energy-demand",
+          "label": "AI Energy Demand",
+          "clusters": [
+            "landscape",
+            "critical"
+          ],
+          "sz": 14,
+          "def": "The aggregate electricity consumption attributable to AI compute infrastructure — primarily data centers running training and inference workloads. The term appears in policy, environmental, and utility discourse as a framing for how AI expansion strains power grids and raises residential energy bills. It is contested in scope: industry characterises data center energy growth as manageable and offset by efficiency gains, while critics and regulators (including the NAACP, bipartisan senators, and Pew survey respondents) frame it as an inequitably distributed burden on communities and ratepayers.",
+          "rels": [
+            "purpose-built-ai-infrastructure",
+            "inference",
+            "training",
+            "infrastructure",
+            "ai-accelerator"
+          ],
+          "refs": [
+            {
+              "n": 1,
+              "src": "The Verge — AI, 2026-05-08T14:45:08-04:00",
+              "q": "All the latest updates on AI data centers The Verge — AI"
+            },
+            {
+              "n": 2,
+              "src": "Stratechery, Mon, 18 May 2026 10:00:00 +0000",
+              "q": "Data Center Discontent, Understanding the Opposition, Fixing the Problem Stratechery"
+            }
+          ],
+          "fullName": "AI Energy Demand (Data Center Power Consumption)"
+        }
+      },
+      "reason": "2 sources, 2 independent (theverge.com + stratechery.com), 7d on longlist. Trusted: stratechery.com.",
+      "runId": "9d0530c4-0a08-493f-bf56-193c87bb546a"
+    },
+    {
+      "id": "1635c071e4075d8e",
+      "action": "promote_to_graph",
+      "gate": "propose",
+      "proposedAt": "2026-05-18T19:45:25.653Z",
+      "status": "pending",
+      "source": "promote-eligibility-scan",
+      "target": {
+        "kind": "longlist_entry",
+        "id": "ratepayer-protection-pledge"
+      },
+      "payload": {
+        "graphNode": {
+          "id": "ratepayer-protection-pledge",
+          "label": "Ratepayer Protection Pledge",
+          "clusters": [
+            "business",
+            "landscape"
+          ],
+          "sz": 14,
+          "def": "A voluntary commitment signed by major tech companies, referenced in a Senate letter to the EIA, to protect electricity ratepayers from cost increases attributable to data center expansion. The pledge is cited by Senators Warren and Hawley as a benchmark against which mandatory energy-use disclosures would hold signatories accountable. Its voluntary nature is precisely what critics say warrants mandatory reporting requirements to verify compliance.",
+          "rels": [
+            "purpose-built-ai-infrastructure",
+            "infrastructure",
+            "agent-governance"
+          ],
+          "refs": [
+            {
+              "n": 1,
+              "src": "The Verge — AI, 2026-05-08T14:45:08-04:00",
+              "q": "All the latest updates on AI data centers The Verge — AI"
+            },
+            {
+              "n": 2,
+              "src": "Stratechery, Mon, 18 May 2026 10:00:00 +0000",
+              "q": "Data Center Discontent, Understanding the Opposition, Fixing the Problem Stratechery"
+            }
+          ],
+          "fullName": "Ratepayer Protection Pledge (Tech Industry Energy Commitment)"
+        }
+      },
+      "reason": "2 sources, 2 independent (theverge.com + stratechery.com), 7d on longlist. Trusted: stratechery.com.",
+      "runId": "9d0530c4-0a08-493f-bf56-193c87bb546a"
     }
   ]
 }

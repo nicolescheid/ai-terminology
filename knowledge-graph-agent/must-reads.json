@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generatedAt": "2026-05-17T19:07:50.069Z",
-    "unreadCount": 11,
-    "totalCount": 11,
+    "generatedAt": "2026-05-18T19:43:41.150Z",
+    "unreadCount": 12,
+    "totalCount": 12,
     "note": "Lexi's must-reads — articles she flags as worth Nicole reading in full. Editorial signal, not news feed. Set status to 'read' or 'dismissed' via mark-must-reads.mjs."
   },
   "entries": [
@@ -190,6 +190,23 @@
       ],
       "novelTermsInArticle": 0,
       "flaggedAt": "2026-05-15T19:28:01.171Z",
+      "status": "unread"
+    },
+    {
+      "id": "faddcc8dd53ea097",
+      "title": "Musk v. Altman proved that AI is led by the wrong people",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/932464/musk-v-altman-proved-that-ai-is-led-by-the-wrong-people",
+      "source": "The Verge — AI",
+      "publishedAt": "2026-05-18T15:00:00-04:00",
+      "summary": "Opinion piece from The Verge arguing the Musk v. Altman trial revealed deep trustworthiness failures among AI's most powerful leaders, using trial testimony to raise questions about who controls AI development and why. The article uses AGI prominently as a motivating concept and touches on governance, safety culture, and the founding ideology of OpenAI.",
+      "priority": 2,
+      "reason": "A rare primary-source piece that uses sworn trial testimony — from Altman, Murati, Brockman, and others — to interrogate the trustworthiness of AI's most powerful figures. Less a news story than a structural argument about governance culture, and worth reading for anyone who wants to understand how AGI ideology and personal power dynamics have intertwined at the industry's apex.",
+      "clusters": [
+        "critical",
+        "safety"
+      ],
+      "novelTermsInArticle": 3,
+      "flaggedAt": "2026-05-18T19:43:41.150Z",
       "status": "unread"
     }
   ]

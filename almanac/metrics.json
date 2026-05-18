@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-05-17T19:08:54.739Z",
+  "generatedAt": "2026-05-18T19:45:25.987Z",
   "firstRunAt": "2026-04-27T01:07:31.335Z",
   "phase": 1,
   "headline": {
-    "articlesRead": 107,
-    "daysRunning": 21,
-    "longlistSize": 116,
+    "articlesRead": 113,
+    "daysRunning": 22,
+    "longlistSize": 122,
     "graphSize": 206
   },
   "thisWeek": {
     "articlesFetched": 42,
-    "longlistAdded": 58,
-    "sourcesAdded": 5,
+    "longlistAdded": 52,
+    "sourcesAdded": 9,
     "promotionsToGraph": 0,
-    "proposalsQueued": 6,
+    "proposalsQueued": 9,
     "auditFlags": 12,
-    "notesAdded": 17
+    "notesAdded": 15
   },
   "almostThere": [
     {
@@ -27,7 +27,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 2,
-      "daysOnLonglist": 12,
+      "daysOnLonglist": 14,
       "domains": [
         "openai.com",
         "simonwillison.net"
@@ -45,7 +45,7 @@
       ],
       "sourceCount": 4,
       "independentSources": 1,
-      "daysOnLonglist": 20,
+      "daysOnLonglist": 21,
       "domains": [
         "openai.com"
       ],
@@ -62,7 +62,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 16,
+      "daysOnLonglist": 18,
       "domains": [
         "stratechery.com"
       ],
@@ -79,7 +79,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 16,
+      "daysOnLonglist": 18,
       "domains": [
         "stratechery.com"
       ],
@@ -96,7 +96,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 16,
+      "daysOnLonglist": 18,
       "domains": [
         "normaltech.ai"
       ],
@@ -113,7 +113,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 8,
+      "daysOnLonglist": 9,
       "domains": [
         "blog.google"
       ],
@@ -130,7 +130,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 8,
+      "daysOnLonglist": 9,
       "domains": [
         "blog.google"
       ],
@@ -147,7 +147,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 5,
+      "daysOnLonglist": 6,
       "domains": [
         "stratechery.com"
       ],
@@ -164,7 +164,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 3,
+      "daysOnLonglist": 4,
       "domains": [
         "theverge.com"
       ],
@@ -172,36 +172,36 @@
       "gap": "needs 1 more independent source"
     },
     {
-      "id": "ai-training-chip",
-      "label": "AI Training Chip",
-      "fullName": null,
+      "id": "deployment-company",
+      "label": "Deployment Company",
+      "fullName": "AI Deployment Company",
       "clusters": [
-        "technical",
-        "models"
+        "business",
+        "companies"
       ],
-      "sourceCount": 1,
+      "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 20,
+      "daysOnLonglist": 2,
       "domains": [
-        "blog.google"
+        "stratechery.com"
       ],
       "gapCount": 2,
-      "gap": "needs 1 more source; needs 1 more independent source"
+      "gap": "needs 1 more independent source; 1 more day on longlist"
     }
   ],
   "sources": {
     "byDomain": [
       {
         "domain": "openai.com",
-        "count": 30
+        "count": 31
       },
       {
         "domain": "simonwillison.net",
-        "count": 14
+        "count": 15
       },
       {
         "domain": "stratechery.com",
-        "count": 12
+        "count": 13
       },
       {
         "domain": "blog.google",
@@ -209,15 +209,15 @@
       },
       {
         "domain": "anthropic.com",
-        "count": 10
+        "count": 11
       },
       {
         "domain": "huggingface.co",
-        "count": 9
+        "count": 10
       },
       {
         "domain": "theverge.com",
-        "count": 7
+        "count": 8
       },
       {
         "domain": "lastweekin.ai",
@@ -377,7 +377,7 @@
         "id": "technical",
         "label": "Technical",
         "hex": "#D0D040",
-        "count": 41
+        "count": 43
       },
       {
         "id": "models",
@@ -389,13 +389,13 @@
         "id": "agentic",
         "label": "Agentic Systems",
         "hex": "#FF9040",
-        "count": 24
+        "count": 25
       },
       {
         "id": "tools",
         "label": "Tools & Platforms",
         "hex": "#70C8F8",
-        "count": 22
+        "count": 23
       },
       {
         "id": "landscape",
@@ -410,34 +410,34 @@
         "count": 19
       },
       {
+        "id": "business",
+        "label": "Business Reality",
+        "hex": "#48C888",
+        "count": 19
+      },
+      {
         "id": "security",
         "label": "AI Security",
         "hex": "#E05050",
         "count": 18
       },
       {
-        "id": "business",
-        "label": "Business Reality",
-        "hex": "#48C888",
-        "count": 18
-      },
-      {
         "id": "safety",
         "label": "Safety",
         "hex": "#FF6090",
-        "count": 14
+        "count": 17
       },
       {
         "id": "critical",
         "label": "Critical / Hype",
         "hex": "#FF5555",
-        "count": 14
+        "count": 17
       },
       {
         "id": "companies",
         "label": "Companies",
         "hex": "#9090A8",
-        "count": 10
+        "count": 11
       },
       {
         "id": "human",
@@ -471,7 +471,7 @@
     "note": "All graph promotions and substantive edits are currently human-gated. Lexi proposes; Nicole approves."
   },
   "proposalsByStatus": {
-    "pending": 7,
+    "pending": 10,
     "approved": 0,
     "applied": 12,
     "rejected": 1
