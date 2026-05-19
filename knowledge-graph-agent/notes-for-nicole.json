@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-05-19T23:22:59.190Z",
-    "unreadCount": 20,
+    "generatedAt": "2026-05-19T23:23:02.011Z",
+    "unreadCount": 19,
     "totalCount": 139,
     "note": "Notes for Nicole — Lexi's manager channel (spec §6). Mandatory entry types fire when their triggering condition is met; discretionary entries are observations Lexi thinks Nicole should see. Set status to 'read', 'actioned', or 'dismissed' as appropriate."
   },
@@ -3530,7 +3530,7 @@
       "writtenAt": "2026-05-18T20:27:26.383Z",
       "runId": "2bb8a2d5-88a4-4738-9d23-7ed43dd18bfb",
       "phase": 1,
-      "status": "unread",
+      "status": "actioned",
       "subject": "Source pattern: domain 'anthropic.com' appears in 21 recent longlist entries",
       "details": "In the past 30 days, 21 longlist entries have at least one source from anthropic.com. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
       "evidence": {
@@ -3563,7 +3563,8 @@
         "recentEntryCount": 133
       },
       "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
-      "source": "auditor"
+      "source": "auditor",
+      "readAt": "2026-05-19T23:23:02.011Z"
     },
     {
       "id": "96fd97342d1f75d2",
