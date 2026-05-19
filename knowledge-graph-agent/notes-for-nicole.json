@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-05-19T23:24:07.829Z",
-    "unreadCount": 7,
+    "generatedAt": "2026-05-19T23:24:10.414Z",
+    "unreadCount": 6,
     "totalCount": 139,
     "note": "Notes for Nicole — Lexi's manager channel (spec §6). Mandatory entry types fire when their triggering condition is met; discretionary entries are observations Lexi thinks Nicole should see. Set status to 'read', 'actioned', or 'dismissed' as appropriate."
   },
@@ -3290,7 +3290,7 @@
       "writtenAt": "2026-05-11T20:47:45.482Z",
       "runId": "8968ddf4-d9e0-4869-9485-c6a044db3876",
       "phase": 1,
-      "status": "unread",
+      "status": "actioned",
       "subject": "Adoption velocity: 'AI-Assisted Filmmaking' hit 2 sources in 1d",
       "details": "This entry accumulated 2 sources within 1 day(s) of first sighting. Often legitimate for product launches, but rapid multi-sourcing from a tight source pool can also signal coordinated promotion. Source labels involved: Google AI Blog.",
       "evidence": {
@@ -3306,7 +3306,8 @@
         "lastSourceTs": "2026-05-10T19:02:19.492Z"
       },
       "suggestedAction": "Cross-check the sources for shared authors or cross-citation. If sources are tightly coupled (same publication network, same author byline), treat as one source for promotion-eligibility purposes.",
-      "source": "auditor"
+      "source": "auditor",
+      "readAt": "2026-05-19T23:24:10.414Z"
     },
     {
       "id": "48302036551fa5f8",
