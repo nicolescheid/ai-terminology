@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-05-19T23:23:13.247Z",
-    "unreadCount": 15,
+    "generatedAt": "2026-05-19T23:23:48.809Z",
+    "unreadCount": 14,
     "totalCount": 139,
     "note": "Notes for Nicole — Lexi's manager channel (spec §6). Mandatory entry types fire when their triggering condition is met; discretionary entries are observations Lexi thinks Nicole should see. Set status to 'read', 'actioned', or 'dismissed' as appropriate."
   },
@@ -3378,7 +3378,7 @@
       "writtenAt": "2026-05-15T19:28:01.171Z",
       "runId": "b1bacbd0-e70c-4aee-9f20-4fce4dbbb94b",
       "phase": 1,
-      "status": "unread",
+      "status": "actioned",
       "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 75, current 75)",
       "details": "Would exceed cap of 75 longlist additions per 7-day window (current: 75).",
       "evidence": {
@@ -3395,7 +3395,8 @@
         "suppressedReason": "Coined and used substantively in this article as a distinct paradigm label — not a marketing synonym for Copilot-style autocomplete, but a claim about organisational redesign. Worth tracking as a potential framing competitor to 'agentic engineering' and 'vibe coding.'",
         "source": "extract-flow"
       },
-      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted.",
+      "readAt": "2026-05-19T23:23:48.809Z"
     },
     {
       "id": "2d1a3e8899200e4c",
