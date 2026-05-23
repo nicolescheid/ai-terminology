@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-05-22T19:43:00.945Z",
+  "generatedAt": "2026-05-23T19:08:04.748Z",
   "firstRunAt": "2026-04-27T01:07:31.335Z",
   "phase": 1,
   "headline": {
     "articlesRead": 113,
-    "daysRunning": 26,
+    "daysRunning": 27,
     "longlistSize": 122,
     "graphSize": 206
   },
   "thisWeek": {
-    "articlesFetched": 18,
-    "longlistAdded": 16,
+    "articlesFetched": 12,
+    "longlistAdded": 9,
     "sourcesAdded": 7,
     "promotionsToGraph": 0,
     "proposalsQueued": 5,
     "auditFlags": 8,
-    "notesAdded": 12
+    "notesAdded": 13
   },
   "almostThere": [
     {
@@ -45,7 +45,7 @@
       ],
       "sourceCount": 4,
       "independentSources": 1,
-      "daysOnLonglist": 25,
+      "daysOnLonglist": 26,
       "domains": [
         "openai.com"
       ],
@@ -113,7 +113,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 13,
+      "daysOnLonglist": 14,
       "domains": [
         "blog.google"
       ],
@@ -130,7 +130,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 13,
+      "daysOnLonglist": 14,
       "domains": [
         "blog.google"
       ],
@@ -147,7 +147,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 10,
+      "daysOnLonglist": 11,
       "domains": [
         "stratechery.com"
       ],
@@ -164,7 +164,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 8,
+      "daysOnLonglist": 9,
       "domains": [
         "theverge.com"
       ],
@@ -181,7 +181,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 6,
+      "daysOnLonglist": 7,
       "domains": [
         "stratechery.com"
       ],
