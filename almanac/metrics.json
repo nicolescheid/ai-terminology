@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-25T19:28:13.672Z",
+  "generatedAt": "2026-05-25T20:23:42.115Z",
   "firstRunAt": "2026-04-27T01:07:31.335Z",
   "phase": 1,
   "headline": {
@@ -9,11 +9,11 @@
     "graphSize": 206
   },
   "thisWeek": {
-    "articlesFetched": 6,
-    "longlistAdded": 6,
-    "sourcesAdded": 4,
+    "articlesFetched": 0,
+    "longlistAdded": 0,
+    "sourcesAdded": 0,
     "promotionsToGraph": 0,
-    "proposalsQueued": 3,
+    "proposalsQueued": 0,
     "auditFlags": 8,
     "notesAdded": 15
   },
@@ -147,7 +147,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 13,
+      "daysOnLonglist": 14,
       "domains": [
         "stratechery.com"
       ],
@@ -164,7 +164,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 11,
+      "daysOnLonglist": 12,
       "domains": [
         "theverge.com"
       ],
