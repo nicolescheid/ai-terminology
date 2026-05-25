@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-05-24T19:15:37.762Z",
+  "generatedAt": "2026-05-25T19:28:13.672Z",
   "firstRunAt": "2026-04-27T01:07:31.335Z",
   "phase": 1,
   "headline": {
     "articlesRead": 113,
-    "daysRunning": 28,
+    "daysRunning": 29,
     "longlistSize": 122,
     "graphSize": 206
   },
@@ -15,7 +15,7 @@
     "promotionsToGraph": 0,
     "proposalsQueued": 3,
     "auditFlags": 8,
-    "notesAdded": 14
+    "notesAdded": 15
   },
   "almostThere": [
     {
@@ -27,7 +27,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 2,
-      "daysOnLonglist": 19,
+      "daysOnLonglist": 21,
       "domains": [
         "openai.com",
         "simonwillison.net"
@@ -45,7 +45,7 @@
       ],
       "sourceCount": 4,
       "independentSources": 1,
-      "daysOnLonglist": 27,
+      "daysOnLonglist": 28,
       "domains": [
         "openai.com"
       ],
@@ -62,7 +62,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 23,
+      "daysOnLonglist": 25,
       "domains": [
         "stratechery.com"
       ],
@@ -79,7 +79,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 23,
+      "daysOnLonglist": 25,
       "domains": [
         "stratechery.com"
       ],
@@ -96,7 +96,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 23,
+      "daysOnLonglist": 25,
       "domains": [
         "normaltech.ai"
       ],
@@ -113,7 +113,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 15,
+      "daysOnLonglist": 16,
       "domains": [
         "blog.google"
       ],
@@ -130,7 +130,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 15,
+      "daysOnLonglist": 16,
       "domains": [
         "blog.google"
       ],
@@ -147,7 +147,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 12,
+      "daysOnLonglist": 13,
       "domains": [
         "stratechery.com"
       ],
@@ -164,7 +164,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 10,
+      "daysOnLonglist": 11,
       "domains": [
         "theverge.com"
       ],
@@ -181,7 +181,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 8,
+      "daysOnLonglist": 9,
       "domains": [
         "stratechery.com"
       ],
