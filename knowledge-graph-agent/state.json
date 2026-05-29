@@ -1,6 +1,6 @@
 {
-  "lastRunAt": "2026-05-29T20:24:10.894Z",
-  "reviewCursor": 14,
+  "lastRunAt": "2026-05-29T20:29:06.123Z",
+  "reviewCursor": 24,
   "seenArticles": {
     "93a049d060bc295b": {
       "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/tpus-8t-8i-cloud-next/",
@@ -715,6 +715,42 @@
       "title": "Introducing Claude Opus 4.8",
       "publishedAt": null,
       "seenAt": "2026-05-29T20:24:10.894Z"
+    },
+    "19dc6fb920a7ae06": {
+      "url": "https://stratechery.com/2026/an-interview-with-eric-seufert-about-models-and-ads-and-ais-upside-for-humanity/",
+      "title": "An Interview with Eric Seufert About Models and Ads, and AI’s Upside for Humanity",
+      "publishedAt": "Thu, 28 May 2026 10:00:00 +0000",
+      "seenAt": "2026-05-29T20:29:06.123Z"
+    },
+    "944dd86b3cacec94": {
+      "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-vibe-coded-quiz/",
+      "title": "Take our I/O 2026 quiz, vibe coded in Google AI Studio.",
+      "publishedAt": "Fri, 29 May 2026 19:00:00 +0000",
+      "seenAt": "2026-05-29T20:29:06.123Z"
+    },
+    "507ec0fdf6297e19": {
+      "url": "https://openai.com/index/braintrust",
+      "title": "How Braintrust turns customer requests into code with Codex",
+      "publishedAt": "Fri, 29 May 2026 12:00:00 GMT",
+      "seenAt": "2026-05-29T20:29:06.123Z"
+    },
+    "faf376f098ef681c": {
+      "url": "https://www.normaltech.ai/p/did-googles-ai-agents-really-build",
+      "title": "Did Google’s AI agents really build an operating system for $916?",
+      "publishedAt": "Fri, 22 May 2026 22:24:18 GMT",
+      "seenAt": "2026-05-29T20:29:06.123Z"
+    },
+    "57e343324007784f": {
+      "url": "https://simonwillison.net/2026/May/29/anthropic/#atom-everything",
+      "title": "Anthropic's run-rate revenue hits $47 billion",
+      "publishedAt": "2026-05-29T01:23:08+00:00",
+      "seenAt": "2026-05-29T20:29:06.123Z"
+    },
+    "a3d8c6fadccfee2b": {
+      "url": "https://www.anthropic.com/news/series-h",
+      "title": "Anthropic raises $65B in Series H funding at $965B post-money valuation",
+      "publishedAt": null,
+      "seenAt": "2026-05-29T20:29:06.123Z"
     }
   },
   "nodeReviews": {
@@ -779,54 +815,54 @@
       "reason": "The Anthropic Newsroom source (May 28, 2026) confirms a new flagship model — Claude Opus 4.8 — with notable agentic capabilities and Claude Code enhancements. The existing definition references 'Claude model family' generically; a brief update noting the current flagship is warranted to keep the definition current and credible."
     },
     "api": {
-      "lastReviewedAt": "2026-04-27T01:58:08.607Z",
+      "lastReviewedAt": "2026-05-29T20:29:06.123Z",
       "status": "keep",
-      "reason": "No source material addresses APIs. Definition remains accurate."
+      "reason": "No source material touches on APIs, MCP, or Claude Code tool-calling mechanics. Definition stands."
     },
     "artifact": {
-      "lastReviewedAt": "2026-04-27T01:58:08.607Z",
+      "lastReviewedAt": "2026-05-29T20:29:06.123Z",
       "status": "keep",
-      "reason": "No source material addresses artifacts. Definition remains accurate."
+      "reason": "No source material addresses the concept of AI artifacts or agentic outputs. Definition stands."
     },
     "asl-4": {
-      "lastReviewedAt": "2026-04-27T01:58:08.607Z",
-      "status": "insufficient_evidence",
-      "reason": "The election safeguards excerpt references 'Opus 4.7' and 'Sonnet 4.6' model names, suggesting model versioning has advanced, but no source material confirms, updates, or refutes the specific ASL-4 survey claim about Claude Opus 4.6. Cannot verify or rewrite without further evidence."
+      "lastReviewedAt": "2026-05-29T20:29:06.123Z",
+      "status": "keep",
+      "reason": "The Simon Willison post mentions 'Claude Opus 4.8' in the context of revenue announcements but provides no information about ASL thresholds, safety levels, or engineer surveys. The definition references 'Claude Opus 4.6' at ASL-4 thresholds; the sources neither confirm nor deny this. Insufficient new evidence to trigger a refresh."
     },
     "attention-budget": {
-      "lastReviewedAt": "2026-04-27T01:58:08.607Z",
+      "lastReviewedAt": "2026-05-29T20:29:06.123Z",
       "status": "keep",
-      "reason": "No source material addresses attention budgets or context engineering. Definition remains accurate."
+      "reason": "No source material covers attention mechanisms or context engineering. Definition stands."
     },
     "attention-dilution": {
-      "lastReviewedAt": "2026-04-27T01:58:08.607Z",
+      "lastReviewedAt": "2026-05-29T20:29:06.123Z",
       "status": "keep",
-      "reason": "No source material addresses attention dilution. Definition remains accurate."
+      "reason": "No source material covers transformer attention or context window mechanics. Definition stands."
     },
     "attention-sink": {
-      "lastReviewedAt": "2026-04-27T01:58:08.607Z",
+      "lastReviewedAt": "2026-05-29T20:29:06.123Z",
       "status": "keep",
-      "reason": "No source material addresses attention sinks. Definition remains accurate."
+      "reason": "No source material covers attention sink phenomena or context compression. Definition stands."
     },
     "autodream": {
-      "lastReviewedAt": "2026-04-27T01:58:08.607Z",
+      "lastReviewedAt": "2026-05-29T20:29:06.123Z",
       "status": "keep",
-      "reason": "No source material addresses autoDream. Definition remains accurate."
+      "reason": "No source material references autoDream or Claude Code memory consolidation. Definition stands."
     },
     "autonomous-agent": {
-      "lastReviewedAt": "2026-04-27T01:58:08.607Z",
+      "lastReviewedAt": "2026-05-29T20:29:06.123Z",
       "status": "keep",
-      "reason": "No source material addresses autonomous agents. Definition remains accurate."
+      "reason": "The Google AI agent OS story touches loosely on autonomous agents but adds no definitional nuance beyond what is already captured. Definition stands."
     },
     "autonomous-goal-extension": {
-      "lastReviewedAt": "2026-04-27T05:42:44.833Z",
-      "status": "insufficient_evidence",
-      "reason": "The definition references a specific 'Mythos testing' incident with detailed claims about model behaviour and an Anthropic quote. The provided source has no excerpt content to confirm, update, or refute this. Cannot verify the factual basis of the example."
+      "lastReviewedAt": "2026-05-29T20:29:06.123Z",
+      "status": "keep",
+      "reason": "No source material references Mythos testing or autonomous goal extension behavior. Definition stands."
     },
     "autonomy-spectrum": {
-      "lastReviewedAt": "2026-04-27T05:42:44.833Z",
+      "lastReviewedAt": "2026-05-29T20:29:06.123Z",
       "status": "keep",
-      "reason": "The three-level progression (human-in-the-loop → human-on-the-loop → human-out-of-the-loop) is a well-established framework. The empty source excerpt provides no reason to change it."
+      "reason": "No source material addresses the human-in/on/out-of-the-loop autonomy spectrum framework. Definition stands."
     },
     "benchmark-gaming": {
       "lastReviewedAt": "2026-04-27T05:42:44.833Z",

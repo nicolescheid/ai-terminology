@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-05-29T20:24:10.894Z",
-    "entryCount": 144,
+    "generatedAt": "2026-05-29T20:29:06.123Z",
+    "entryCount": 152,
     "note": "Lexi-managed Tier 2 longlist — terms under observation, awaiting evidence to support promotion to the graph (Tier 1)."
   },
   "entries": [
@@ -1423,12 +1423,20 @@
           "sourceLabel": "The Verge — AI",
           "publishedAt": "2026-05-15T14:21:35-04:00",
           "firstSeen": "2026-05-15T19:28:01.171Z"
+        },
+        {
+          "url": "https://www.normaltech.ai/p/did-googles-ai-agents-really-build",
+          "domain": "normaltech.ai",
+          "title": "Did Google’s AI agents really build an operating system for $916?",
+          "sourceLabel": "AI Snake Oil",
+          "publishedAt": "Fri, 22 May 2026 22:24:18 GMT",
+          "firstSeen": "2026-05-29T20:29:06.123Z"
         }
       ],
-      "sourceCount": 3,
-      "independentSourceCount": 3,
+      "sourceCount": 4,
+      "independentSourceCount": 4,
       "dateFirstSeen": "2026-05-04T19:27:54.284Z",
-      "dateLastSeen": "2026-05-15T19:28:01.171Z",
+      "dateLastSeen": "2026-05-29T20:29:06.123Z",
       "sz": 14,
       "fullName": "The Agentic Era",
       "proposalReason": "Used repeatedly and centrally by Google to frame their entire April 2026 strategy; worth tracking as a competing periodization framing alongside similar terms."
@@ -4928,12 +4936,28 @@
           "sourceLabel": "Google AI Blog",
           "publishedAt": "Thu, 28 May 2026 15:00:00 +0000",
           "firstSeen": "2026-05-29T20:24:10.894Z"
+        },
+        {
+          "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-vibe-coded-quiz/",
+          "domain": "blog.google",
+          "title": "Take our I/O 2026 quiz, vibe coded in Google AI Studio.",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Fri, 29 May 2026 19:00:00 +0000",
+          "firstSeen": "2026-05-29T20:29:06.123Z"
+        },
+        {
+          "url": "https://www.normaltech.ai/p/did-googles-ai-agents-really-build",
+          "domain": "normaltech.ai",
+          "title": "Did Google’s AI agents really build an operating system for $916?",
+          "sourceLabel": "AI Snake Oil",
+          "publishedAt": "Fri, 22 May 2026 22:24:18 GMT",
+          "firstSeen": "2026-05-29T20:29:06.123Z"
         }
       ],
-      "sourceCount": 1,
-      "independentSourceCount": 1,
+      "sourceCount": 3,
+      "independentSourceCount": 2,
       "dateFirstSeen": "2026-05-29T20:24:10.894Z",
-      "dateLastSeen": "2026-05-29T20:24:10.894Z",
+      "dateLastSeen": "2026-05-29T20:29:06.123Z",
       "sz": 14,
       "nodeType": "product",
       "proposalReason": "New named Google platform enabling in-Search code generation and mini-app creation; relates to the emerging personal-software and micro-app concepts on the longlist."
@@ -5133,6 +5157,267 @@
       "fullName": "Effort Control (Claude.ai / API)",
       "nodeType": "product",
       "proposalReason": "Concrete product instantiation of the adjustable-reasoning-effort pattern; worth tracking as a named, shipping control that exposes inference-time compute trade-offs directly to end users."
+    },
+    {
+      "id": "agentic-web",
+      "label": "Agentic Web",
+      "workingDef": "A framing — appearing in the title of a related Stratechery interview about 'valuing content on the agentic web' — for an emergent internet architecture in which AI agents, rather than human users, are the primary browsing, querying, and transacting entities. The term is contested in the same way as 'agentic': lab and platform marketing treats it as a description of an imminent shift in web traffic and content economics, while critics argue it conflates aspirational deployment patterns with demonstrated reliability and scale.",
+      "clusters": [
+        "agentic",
+        "landscape"
+      ],
+      "suggestedRels": [
+        "agent",
+        "agentic-era",
+        "autonomous-agent",
+        "agentic-business-model"
+      ],
+      "sources": [
+        {
+          "url": "https://stratechery.com/2026/an-interview-with-eric-seufert-about-models-and-ads-and-ais-upside-for-humanity/",
+          "domain": "stratechery.com",
+          "title": "An Interview with Eric Seufert About Models and Ads, and AI’s Upside for Humanity",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Thu, 28 May 2026 10:00:00 +0000",
+          "firstSeen": "2026-05-29T20:29:06.123Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-29T20:29:06.123Z",
+      "dateLastSeen": "2026-05-29T20:29:06.123Z",
+      "sz": 14,
+      "fullName": "The Agentic Web",
+      "proposalReason": "NEW term implied by adjacent Stratechery interview title; captures an emerging framing about how AI agents transform content and advertising economics on the web."
+    },
+    {
+      "id": "open-world-evaluation",
+      "label": "Open-World Evaluation",
+      "workingDef": "A paradigm for evaluating AI agents on real-world, long-horizon tasks (such as building software end-to-end) rather than on fixed benchmarks with predetermined test sets. Coined and defined by Rabanser, Kapoor, Bommasani et al. in their 2026 paper. The approach is positioned as a necessary complement to benchmark evaluation for tasks where cost and open-endedness make traditional benchmarking infeasible. The methodology brings its own challenges — reproducibility, cost reporting, human-intervention definition, and the risk of vendor-narrated 'puffery' — prompting calls for standardised norms around transparency, log disclosure, and independent replication.",
+      "clusters": [
+        "critical",
+        "agentic"
+      ],
+      "suggestedRels": [
+        "evals",
+        "benchmark-gaming",
+        "long-horizon-autonomy",
+        "agent-reliability",
+        "capability-reliability-gap"
+      ],
+      "sources": [
+        {
+          "url": "https://www.normaltech.ai/p/did-googles-ai-agents-really-build",
+          "domain": "normaltech.ai",
+          "title": "Did Google’s AI agents really build an operating system for $916?",
+          "sourceLabel": "AI Snake Oil",
+          "publishedAt": "Fri, 22 May 2026 22:24:18 GMT",
+          "firstSeen": "2026-05-29T20:29:06.123Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-29T20:29:06.123Z",
+      "dateLastSeen": "2026-05-29T20:29:06.123Z",
+      "sz": 14,
+      "fullName": "Open-World Evaluation (Long-Horizon Real-World Agent Task Assessment)",
+      "proposalReason": "Materially named and defined in this article as an emerging evaluation paradigm by the paper's authors."
+    },
+    {
+      "id": "scaffold",
+      "label": "Scaffold",
+      "workingDef": "The layer of code, prompts, and tooling built around an AI model that enables autonomous behaviour — handling memory, tool access, subagent delegation, environment interaction, and task routing. Distinct from the underlying model; the scaffold determines what the model can do, not what it knows. This article uses the term formally (with a footnote definition) and raises a key methodological concern: whether a scaffold optimised for one task (e.g., OS construction) generalises to other complex tasks, or is 'overfit' to the demonstration scenario. Related products include Claude Code (as scaffold for Claude) and Google Antigravity.",
+      "clusters": [
+        "agentic",
+        "technical"
+      ],
+      "suggestedRels": [
+        "agent",
+        "agentic-harness",
+        "orchestrator",
+        "multi-agent",
+        "tool-use",
+        "memory",
+        "claude-code",
+        "planner-worker"
+      ],
+      "sources": [
+        {
+          "url": "https://www.normaltech.ai/p/did-googles-ai-agents-really-build",
+          "domain": "normaltech.ai",
+          "title": "Did Google’s AI agents really build an operating system for $916?",
+          "sourceLabel": "AI Snake Oil",
+          "publishedAt": "Fri, 22 May 2026 22:24:18 GMT",
+          "firstSeen": "2026-05-29T20:29:06.123Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-29T20:29:06.123Z",
+      "dateLastSeen": "2026-05-29T20:29:06.123Z",
+      "sz": 14,
+      "fullName": "Agent Scaffold",
+      "proposalReason": "Explicitly defined in a footnote in this article and used as a central analytical concept throughout the critique."
+    },
+    {
+      "id": "run-rate-revenue",
+      "label": "Run-Rate Revenue",
+      "workingDef": "A financial reporting practice in which a company annualizes its most recent period's revenue (typically by multiplying a single month's figure by 12) to project a forward-looking revenue figure. Used by Anthropic in successive fundraise announcements to communicate growth trajectory to investors. The term is standard in startup finance but has attracted scrutiny in AI contexts because it can reflect a single high-momentum month rather than a sustained run, and companies have incentive to time announcements to favorable periods.",
+      "clusters": [
+        "business"
+      ],
+      "suggestedRels": [
+        "anthropic-co"
+      ],
+      "sources": [
+        {
+          "url": "https://simonwillison.net/2026/May/29/anthropic/#atom-everything",
+          "domain": "simonwillison.net",
+          "title": "Anthropic's run-rate revenue hits $47 billion",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-05-29T01:23:08+00:00",
+          "firstSeen": "2026-05-29T20:29:06.123Z"
+        },
+        {
+          "url": "https://www.anthropic.com/news/series-h",
+          "domain": "anthropic.com",
+          "title": "Anthropic raises $65B in Series H funding at $965B post-money valuation",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-05-29T20:29:06.123Z"
+        }
+      ],
+      "sourceCount": 2,
+      "independentSourceCount": 2,
+      "dateFirstSeen": "2026-05-29T20:29:06.123Z",
+      "dateLastSeen": "2026-05-29T20:29:06.123Z",
+      "sz": 14,
+      "fullName": "Run-Rate Revenue (ARR Projection)",
+      "proposalReason": "Anthropic has used this metric repeatedly in major fundraise announcements; tracking it establishes a useful context node for the graph's business cluster."
+    },
+    {
+      "id": "product-market-fit",
+      "label": "Product-Market Fit",
+      "workingDef": "A startup framing — originating with Marc Andreessen — for the state in which a product satisfies strong market demand, evidenced by organic, accelerating uptake. In AI industry discourse, commentators (including Simon Willison) have recently applied the label to Anthropic and OpenAI specifically to distinguish their current revenue growth from earlier hype-cycle adoption. The term carries analytical weight in business contexts but is inherently retrospective and self-affirming: 'product-market fit' is typically declared after sustained revenue growth rather than measured independently.",
+      "clusters": [
+        "business"
+      ],
+      "suggestedRels": [
+        "anthropic-co",
+        "openai-co"
+      ],
+      "sources": [
+        {
+          "url": "https://simonwillison.net/2026/May/29/anthropic/#atom-everything",
+          "domain": "simonwillison.net",
+          "title": "Anthropic's run-rate revenue hits $47 billion",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-05-29T01:23:08+00:00",
+          "firstSeen": "2026-05-29T20:29:06.123Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-29T20:29:06.123Z",
+      "dateLastSeen": "2026-05-29T20:29:06.123Z",
+      "sz": 14,
+      "fullName": "Product-Market Fit (AI)",
+      "proposalReason": "The linked article (referenced in the excerpt: 'I think Anthropic and OpenAI have found product-market fit') deploys this concept directly in relation to frontier AI companies; worth tracking as a framing term in the AI business cluster."
+    },
+    {
+      "id": "colossus",
+      "label": "Colossus",
+      "workingDef": "A GPU compute cluster operated by SpaceX, referenced here as Colossus 1 and Colossus 2. Anthropic has signed an agreement with SpaceX for access to GPU capacity within this infrastructure as part of its compute expansion strategy.",
+      "clusters": [
+        "technical",
+        "companies"
+      ],
+      "suggestedRels": [
+        "anthropic-co",
+        "tpu",
+        "purpose-built-ai-infrastructure"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/series-h",
+          "domain": "anthropic.com",
+          "title": "Anthropic raises $65B in Series H funding at $965B post-money valuation",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-05-29T20:29:06.123Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-29T20:29:06.123Z",
+      "dateLastSeen": "2026-05-29T20:29:06.123Z",
+      "sz": 14,
+      "fullName": "Colossus (SpaceX GPU Cluster)",
+      "nodeType": "product",
+      "proposalReason": "First documented sighting of Colossus as a named compute facility accessed by a major AI lab outside SpaceX/xAI; worth tracking as AI compute geography expands beyond hyperscaler data centers."
+    },
+    {
+      "id": "series-h-anthropic",
+      "label": "Series H",
+      "workingDef": "Anthropic's eighth disclosed funding round, raising $65B at a $965B post-money valuation (May 2026). Notable for its scale, the inclusion of strategic infrastructure partners (Micron, Samsung, SK hynix), and compute-capacity agreements embedded within the financing structure alongside traditional equity investors.",
+      "clusters": [
+        "business",
+        "companies"
+      ],
+      "suggestedRels": [
+        "anthropic-co",
+        "claude",
+        "stargate-project"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/series-h",
+          "domain": "anthropic.com",
+          "title": "Anthropic raises $65B in Series H funding at $965B post-money valuation",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-05-29T20:29:06.123Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-29T20:29:06.123Z",
+      "dateLastSeen": "2026-05-29T20:29:06.123Z",
+      "sz": 14,
+      "fullName": "Anthropic Series H Funding Round",
+      "proposalReason": "A valuation milestone and structural financing model (compute deals bundled with equity rounds) that is worth tracking as a business-model term in the AI infrastructure landscape."
+    },
+    {
+      "id": "hyperscaler",
+      "label": "Hyperscaler",
+      "workingDef": "A shorthand for large-scale cloud platform providers — specifically Amazon Web Services, Google Cloud, and Microsoft Azure in this context — whose infrastructure underpins AI model training and deployment. Used here to distinguish the $15B in previously committed hyperscaler investment from new investors, and to note Anthropic's position as the first frontier model available across all three.",
+      "clusters": [
+        "business",
+        "technical"
+      ],
+      "suggestedRels": [
+        "anthropic-co",
+        "purpose-built-ai-infrastructure",
+        "claude",
+        "trainium"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/series-h",
+          "domain": "anthropic.com",
+          "title": "Anthropic raises $65B in Series H funding at $965B post-money valuation",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-05-29T20:29:06.123Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-29T20:29:06.123Z",
+      "dateLastSeen": "2026-05-29T20:29:06.123Z",
+      "sz": 14,
+      "fullName": "Hyperscaler (Cloud Provider in AI Context)",
+      "proposalReason": "The term is used with increasing precision in AI financing and infrastructure discourse to denote a specific tier of compute provider; worth tracking as it accumulates a distinct meaning beyond generic 'cloud.'"
     }
   ]
 }

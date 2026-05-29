@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generatedAt": "2026-05-29T20:24:10.894Z",
-    "unreadCount": 13,
-    "totalCount": 13,
+    "generatedAt": "2026-05-29T20:29:06.123Z",
+    "unreadCount": 14,
+    "totalCount": 14,
     "note": "Lexi's must-reads — articles she flags as worth Nicole reading in full. Editorial signal, not news feed. Set status to 'read' or 'dismissed' via mark-must-reads.mjs."
   },
   "entries": [
@@ -224,6 +224,23 @@
       ],
       "novelTermsInArticle": 4,
       "flaggedAt": "2026-05-29T20:24:10.894Z",
+      "status": "unread"
+    },
+    {
+      "id": "faf376f098ef681c",
+      "title": "Did Google’s AI agents really build an operating system for $916?",
+      "url": "https://www.normaltech.ai/p/did-googles-ai-agents-really-build",
+      "source": "AI Snake Oil",
+      "publishedAt": "Fri, 22 May 2026 22:24:18 GMT",
+      "summary": "Kapoor, Narayanan et al. (AI Snake Oil) critique Google's Antigravity 2.0 / Gemini 3.5 Flash 'OS-building agent' demo, focusing on methodological gaps: the 'single prompt' was thousands of lines, no dry-run reporting, no similarity analysis, no logs released. They introduce 'open-world evaluations' as a named paradigm and call for independent evaluation norms for long-horizon agentic tasks.",
+      "priority": 1,
+      "reason": "Kapoor, Narayanan et al. do something rare here: they take a headline AI demo seriously enough to dissect its methodology rather than dismiss or celebrate it. In doing so, they introduce 'open-world evaluation' as a named paradigm with its own methodological requirements — a genuine conceptual contribution that belongs in any serious vocabulary of AI assessment. Essential reading for anyone thinking about how to evaluate long-horizon agentic claims.",
+      "clusters": [
+        "critical",
+        "agentic"
+      ],
+      "novelTermsInArticle": 2,
+      "flaggedAt": "2026-05-29T20:29:06.123Z",
       "status": "unread"
     }
   ]

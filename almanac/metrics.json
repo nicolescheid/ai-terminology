@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-05-29T20:26:12.886Z",
+  "generatedAt": "2026-05-29T20:30:36.070Z",
   "firstRunAt": "2026-04-27T01:07:31.335Z",
   "phase": 1,
   "headline": {
-    "articlesRead": 119,
+    "articlesRead": 125,
     "daysRunning": 33,
-    "longlistSize": 132,
+    "longlistSize": 140,
     "graphSize": 207
   },
   "thisWeek": {
-    "articlesFetched": 6,
-    "longlistAdded": 11,
-    "sourcesAdded": 5,
+    "articlesFetched": 12,
+    "longlistAdded": 19,
+    "sourcesAdded": 6,
     "promotionsToGraph": 1,
     "proposalsQueued": 5,
     "auditFlags": 0,
@@ -34,6 +34,41 @@
       ],
       "gapCount": 0,
       "gap": "meets credibility bar"
+    },
+    {
+      "id": "google-antigravity",
+      "label": "Google Antigravity",
+      "fullName": null,
+      "clusters": [
+        "tools",
+        "agentic"
+      ],
+      "sourceCount": 3,
+      "independentSources": 2,
+      "daysOnLonglist": 0,
+      "domains": [
+        "blog.google",
+        "normaltech.ai"
+      ],
+      "gapCount": 1,
+      "gap": "3 more days on longlist"
+    },
+    {
+      "id": "run-rate-revenue",
+      "label": "Run-Rate Revenue",
+      "fullName": "Run-Rate Revenue (ARR Projection)",
+      "clusters": [
+        "business"
+      ],
+      "sourceCount": 2,
+      "independentSources": 2,
+      "daysOnLonglist": 0,
+      "domains": [
+        "simonwillison.net",
+        "anthropic.com"
+      ],
+      "gapCount": 1,
+      "gap": "3 more days on longlist"
     },
     {
       "id": "terafab",
@@ -153,63 +188,29 @@
       ],
       "gapCount": 1,
       "gap": "needs 1 more independent source"
-    },
-    {
-      "id": "deployment-company",
-      "label": "Deployment Company",
-      "fullName": "AI Deployment Company",
-      "clusters": [
-        "business",
-        "companies"
-      ],
-      "sourceCount": 2,
-      "independentSources": 1,
-      "daysOnLonglist": 13,
-      "domains": [
-        "stratechery.com"
-      ],
-      "gapCount": 1,
-      "gap": "needs 1 more independent source"
-    },
-    {
-      "id": "ai-training-chip",
-      "label": "AI Training Chip",
-      "fullName": null,
-      "clusters": [
-        "technical",
-        "models"
-      ],
-      "sourceCount": 1,
-      "independentSources": 1,
-      "daysOnLonglist": 32,
-      "domains": [
-        "blog.google"
-      ],
-      "gapCount": 2,
-      "gap": "needs 1 more source; needs 1 more independent source"
     }
   ],
   "sources": {
     "byDomain": [
       {
         "domain": "openai.com",
-        "count": 32
+        "count": 33
       },
       {
         "domain": "simonwillison.net",
-        "count": 16
+        "count": 17
       },
       {
         "domain": "stratechery.com",
-        "count": 14
+        "count": 15
       },
       {
         "domain": "blog.google",
-        "count": 12
+        "count": 13
       },
       {
         "domain": "anthropic.com",
-        "count": 12
+        "count": 13
       },
       {
         "domain": "huggingface.co",
@@ -225,7 +226,7 @@
       },
       {
         "domain": "normaltech.ai",
-        "count": 4
+        "count": 5
       },
       {
         "domain": "hbr.org",
@@ -365,13 +366,13 @@
         "id": "technical",
         "label": "Technical",
         "hex": "#D0D040",
-        "count": 43
+        "count": 46
       },
       {
         "id": "agentic",
         "label": "Agentic Systems",
         "hex": "#FF9040",
-        "count": 30
+        "count": 33
       },
       {
         "id": "tools",
@@ -386,27 +387,27 @@
         "count": 27
       },
       {
+        "id": "business",
+        "label": "Business Reality",
+        "hex": "#48C888",
+        "count": 24
+      },
+      {
         "id": "landscape",
         "label": "Model Landscape",
         "hex": "#D0A050",
-        "count": 21
+        "count": 22
       },
       {
         "id": "critical",
         "label": "Critical / Hype",
         "hex": "#FF5555",
-        "count": 21
+        "count": 22
       },
       {
         "id": "safety",
         "label": "Safety",
         "hex": "#FF6090",
-        "count": 20
-      },
-      {
-        "id": "business",
-        "label": "Business Reality",
-        "hex": "#48C888",
         "count": 20
       },
       {
@@ -425,7 +426,7 @@
         "id": "companies",
         "label": "Companies",
         "hex": "#9090A8",
-        "count": 10
+        "count": 12
       },
       {
         "id": "human",

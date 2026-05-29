@@ -1,188 +1,170 @@
 {
-  "generatedAt": "2026-05-29T20:24:10.894Z",
+  "generatedAt": "2026-05-29T20:29:06.123Z",
   "model": "claude-sonnet-4-6",
   "sourcesConfigured": 15,
   "articlesConsidered": [
     {
-      "id": "a43d4ed6f1c0f659",
+      "id": "19dc6fb920a7ae06",
       "source": "Stratechery",
-      "title": "The SpaceX IPO and Data Centers in Space",
-      "url": "https://stratechery.com/2026/the-spacex-ipo-and-data-centers-in-space/",
-      "publishedAt": "Wed, 27 May 2026 10:00:00 +0000"
+      "title": "An Interview with Eric Seufert About Models and Ads, and AI’s Upside for Humanity",
+      "url": "https://stratechery.com/2026/an-interview-with-eric-seufert-about-models-and-ads-and-ais-upside-for-humanity/",
+      "publishedAt": "Thu, 28 May 2026 10:00:00 +0000"
     },
     {
-      "id": "52646498064ef276",
+      "id": "944dd86b3cacec94",
       "source": "Google AI Blog",
-      "title": "Catch up on 12 major I/O 2026 moments",
-      "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-keynote-moment-videos/",
-      "publishedAt": "Thu, 28 May 2026 15:00:00 +0000"
+      "title": "Take our I/O 2026 quiz, vibe coded in Google AI Studio.",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-vibe-coded-quiz/",
+      "publishedAt": "Fri, 29 May 2026 19:00:00 +0000"
     },
     {
-      "id": "ca121378dca67030",
-      "source": "AI Snake Oil",
-      "title": "Do AI Risks Require Extraordinary Government Intervention?",
-      "url": "https://www.normaltech.ai/p/do-ai-risks-require-extraordinary",
-      "publishedAt": "Thu, 21 May 2026 13:19:41 GMT"
-    },
-    {
-      "id": "e63fa88b5624cf9a",
+      "id": "507ec0fdf6297e19",
       "source": "OpenAI News",
-      "title": "Boston Children’s uses AI to unlock new diagnoses",
-      "url": "https://openai.com/index/boston-childrens-hospital",
+      "title": "How Braintrust turns customer requests into code with Codex",
+      "url": "https://openai.com/index/braintrust",
       "publishedAt": "Fri, 29 May 2026 12:00:00 GMT"
     },
     {
-      "id": "15c7430ebf78a447",
-      "source": "Simon Willison's Weblog",
-      "title": "Release: datasette 1.0a31",
-      "url": "https://simonwillison.net/2026/May/29/datasette/#atom-everything",
-      "publishedAt": "2026-05-29T03:32:02+00:00"
+      "id": "faf376f098ef681c",
+      "source": "AI Snake Oil",
+      "title": "Did Google’s AI agents really build an operating system for $916?",
+      "url": "https://www.normaltech.ai/p/did-googles-ai-agents-really-build",
+      "publishedAt": "Fri, 22 May 2026 22:24:18 GMT"
     },
     {
-      "id": "918121c45d596b70",
+      "id": "57e343324007784f",
+      "source": "Simon Willison's Weblog",
+      "title": "Anthropic's run-rate revenue hits $47 billion",
+      "url": "https://simonwillison.net/2026/May/29/anthropic/#atom-everything",
+      "publishedAt": "2026-05-29T01:23:08+00:00"
+    },
+    {
+      "id": "a3d8c6fadccfee2b",
       "source": "Anthropic Newsroom",
-      "title": "Introducing Claude Opus 4.8",
-      "url": "https://www.anthropic.com/news/claude-opus-4-8",
+      "title": "Anthropic raises $65B in Series H funding at $965B post-money valuation",
+      "url": "https://www.anthropic.com/news/series-h",
       "publishedAt": null
     }
   ],
   "harvestedTerms": [
     {
       "article": {
-        "title": "The SpaceX IPO and Data Centers in Space",
-        "url": "https://stratechery.com/2026/the-spacex-ipo-and-data-centers-in-space/"
+        "title": "An Interview with Eric Seufert About Models and Ads, and AI’s Upside for Humanity",
+        "url": "https://stratechery.com/2026/an-interview-with-eric-seufert-about-models-and-ads-and-ais-upside-for-humanity/"
       },
-      "summary": "Ben Thompson's Stratechery analysis of the SpaceX IPO explores the company's valuation, Starlink's business model, and SpaceX's ambitious framing of a $26.5 trillion AI total addressable market. The article touches on orbital infrastructure, satellite-based connectivity at scale, and SpaceX's pivot toward AI compute in space — with some skepticism about the TAM figures and the S-1's framing.",
+      "summary": "A paywalled Stratechery interview with Eric Seufert covering generative AI model-building, Meta's foundational models, and advertising economics as a lens for AI optimism. The article excerpt is almost entirely a subscription prompt — no substantive content is extractable for terminology analysis.",
       "longlistAdditions": [
         {
-          "id": "total-addressable-market",
-          "label": "Total Addressable Market (TAM)"
+          "id": "agentic-web",
+          "label": "Agentic Web"
+        }
+      ],
+      "longlistUpdates": [],
+      "rejections": [],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "Take our I/O 2026 quiz, vibe coded in Google AI Studio.",
+        "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-vibe-coded-quiz/"
+      },
+      "summary": "A brief Google blog post promoting an I/O 2026 quiz built using vibe coding in Google AI Studio, powered by the Antigravity coding agent. The piece is light on substance — primarily a product showcase/marketing piece demonstrating that a non-developer editor built a quiz using Gemini and Google AI Studio.",
+      "longlistAdditions": [],
+      "longlistUpdates": [
+        {
+          "id": "google-antigravity",
+          "label": "Google Antigravity",
+          "sourceAdded": true,
+          "sourceCount": 2,
+          "independentSourceCount": 1
+        }
+      ],
+      "rejections": [],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "Did Google’s AI agents really build an operating system for $916?",
+        "url": "https://www.normaltech.ai/p/did-googles-ai-agents-really-build"
+      },
+      "summary": "Kapoor, Narayanan et al. (AI Snake Oil) critique Google's Antigravity 2.0 / Gemini 3.5 Flash 'OS-building agent' demo, focusing on methodological gaps: the 'single prompt' was thousands of lines, no dry-run reporting, no similarity analysis, no logs released. They introduce 'open-world evaluations' as a named paradigm and call for independent evaluation norms for long-horizon agentic tasks.",
+      "longlistAdditions": [
+        {
+          "id": "open-world-evaluation",
+          "label": "Open-World Evaluation"
+        },
+        {
+          "id": "scaffold",
+          "label": "Scaffold"
         }
       ],
       "longlistUpdates": [
         {
-          "id": "orbital-ai-compute",
-          "label": "Orbital AI Compute",
-          "sourceAdded": true,
-          "sourceCount": 2,
-          "independentSourceCount": 2
-        },
-        {
-          "id": "stargate-project",
-          "label": "Stargate",
-          "sourceAdded": true,
-          "sourceCount": 2,
-          "independentSourceCount": 2
-        },
-        {
-          "id": "hyperscale-data-center",
-          "label": "Hyperscale Data Center",
+          "id": "google-antigravity",
+          "label": "Google Antigravity",
           "sourceAdded": true,
           "sourceCount": 3,
           "independentSourceCount": 2
+        },
+        {
+          "id": "agentic-era",
+          "label": "Agentic Era",
+          "sourceAdded": true,
+          "sourceCount": 4,
+          "independentSourceCount": 4
         }
       ],
-      "rejections": [],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "Catch up on 12 major I/O 2026 moments",
-        "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-keynote-moment-videos/"
-      },
-      "summary": "Google I/O 2026 keynote recap covering major announcements: Gemini Omni (multimodal video generation model), Gemini 3.5 Flash (frontier agent/coding model), Search agents (information agents), Google Antigravity (agentic coding in Search), and mini-app generation. Primarily a product roundup with several named systems worth tracking.",
-      "longlistAdditions": [
-        {
-          "id": "gemini-omni",
-          "label": "Gemini Omni"
-        },
-        {
-          "id": "gemini-35-flash",
-          "label": "Gemini 3.5 Flash"
-        },
-        {
-          "id": "information-agents-search",
-          "label": "Information Agents"
-        },
-        {
-          "id": "google-antigravity",
-          "label": "Google Antigravity"
-        }
-      ],
-      "longlistUpdates": [],
-      "rejections": [],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "Do AI Risks Require Extraordinary Government Intervention?",
-        "url": "https://www.normaltech.ai/p/do-ai-risks-require-extraordinary"
-      },
-      "summary": "Kapoor and Narayanan (AI Snake Oil) argue against extraordinary government intervention in AI governance, contending that societal resilience-building is preferable to precautionary restrictions. The piece introduces and applies several framing concepts: the offense-defense balance, AI nonproliferation as analogy, and AI as Normal Technology (AINT). It engages substantively with emergent capabilities, dual-use risks, and the spectrum of regulatory responses.",
-      "longlistAdditions": [
-        {
-          "id": "aint",
-          "label": "AI as Normal Technology"
-        },
-        {
-          "id": "offense-defense-balance",
-          "label": "Offense-Defense Balance"
-        },
-        {
-          "id": "societal-resilience",
-          "label": "Societal Resilience"
-        },
-        {
-          "id": "ai-nonproliferation",
-          "label": "AI Nonproliferation"
-        }
-      ],
-      "longlistUpdates": [],
       "rejections": [],
       "proposalsQueued": [],
       "mustReadFlagged": {
-        "priority": 2,
-        "reason": "Kapoor and Narayanan offer one of the cleaner analytical frameworks for thinking about *when* AI warrants extraordinary government action versus improved ordinary governance — distinguishing precautionary restrictions, dual-use liberty burdens, and democratic bypass as the three axes of 'extraordinariness.' A useful counterweight to both dismissive and alarmist framings, and one of the few pieces that tries to argue the policy question rigorously rather than rhetorically."
+        "priority": 1,
+        "reason": "Kapoor, Narayanan et al. do something rare here: they take a headline AI demo seriously enough to dissect its methodology rather than dismiss or celebrate it. In doing so, they introduce 'open-world evaluation' as a named paradigm with its own methodological requirements — a genuine conceptual contribution that belongs in any serious vocabulary of AI assessment. Essential reading for anyone thinking about how to evaluate long-horizon agentic claims."
       }
     },
     {
       "article": {
-        "title": "Release: datasette 1.0a31",
-        "url": "https://simonwillison.net/2026/May/29/datasette/#atom-everything"
+        "title": "Anthropic's run-rate revenue hits $47 billion",
+        "url": "https://simonwillison.net/2026/May/29/anthropic/#atom-everything"
       },
-      "summary": "A brief release note for Datasette 1.0a31, an open-source data exploration tool. The article announces two new features — SQL write queries and stored queries — with no substantive AI terminology content beyond a sponsor mention. No new AI concepts are introduced.",
-      "longlistAdditions": [],
+      "summary": "Simon Willison's brief commentary on Anthropic's $65B Series H fundraise and the 'run-rate revenue' figure ($47B annualized), with a chart of Anthropic's revenue growth and a note on investor trust. Short news item with minimal conceptual depth.",
+      "longlistAdditions": [
+        {
+          "id": "run-rate-revenue",
+          "label": "Run-Rate Revenue"
+        },
+        {
+          "id": "product-market-fit",
+          "label": "Product-Market Fit"
+        }
+      ],
       "longlistUpdates": [],
       "rejections": [],
       "proposalsQueued": []
     },
     {
       "article": {
-        "title": "Introducing Claude Opus 4.8",
-        "url": "https://www.anthropic.com/news/claude-opus-4-8"
+        "title": "Anthropic raises $65B in Series H funding at $965B post-money valuation",
+        "url": "https://www.anthropic.com/news/series-h"
       },
-      "summary": "Anthropic announces Claude Opus 4.8 with improvements in honesty/self-flagging, agentic task reliability, and new features including Dynamic Workflows (parallel subagents), effort control for claude.ai, and mid-task system-prompt updates via the Messages API. The release includes a System Card with alignment assessment.",
+      "summary": "Anthropic announces a $65B Series H funding round at a $965B valuation, citing growing enterprise adoption of Claude, $47B run-rate revenue, and major compute expansion deals with Amazon, Google, Broadcom, and SpaceX. The round includes strategic partnerships with memory/chip manufacturers Micron, Samsung, and SK hynix.",
       "longlistAdditions": [
         {
-          "id": "dynamic-workflows",
-          "label": "Dynamic Workflows"
+          "id": "colossus",
+          "label": "Colossus"
         },
         {
-          "id": "effort-control",
-          "label": "Effort Control"
+          "id": "series-h-anthropic",
+          "label": "Series H"
+        },
+        {
+          "id": "hyperscaler",
+          "label": "Hyperscaler"
         }
       ],
       "longlistUpdates": [
         {
-          "id": "system-card",
-          "label": "System Card",
-          "sourceAdded": true,
-          "sourceCount": 5,
-          "independentSourceCount": 2
-        },
-        {
-          "id": "adjustable-reasoning-effort",
-          "label": "Adjustable Reasoning Effort",
+          "id": "run-rate-revenue",
+          "label": "Run-Rate Revenue",
           "sourceAdded": true,
           "sourceCount": 2,
           "independentSourceCount": 2
@@ -194,55 +176,54 @@
   ],
   "definitionReviews": [
     {
-      "id": "agent-washing",
+      "id": "api",
       "status": "keep",
-      "reason": "No source material addresses agent-washing. Definition stands."
+      "reason": "No source material touches on APIs, MCP, or Claude Code tool-calling mechanics. Definition stands."
     },
     {
-      "id": "agentic-engineering",
+      "id": "artifact",
       "status": "keep",
-      "reason": "No source confirms or contradicts the Karpathy coinage claim or the definition's framing. Definition stands pending better evidence."
+      "reason": "No source material addresses the concept of AI artifacts or agentic outputs. Definition stands."
     },
     {
-      "id": "agentic-harness",
+      "id": "asl-4",
       "status": "keep",
-      "reason": "The Anthropic source confirms Claude Code exists and has new 'dynamic workflows' for large-scale agentic tasks, consistent with the definition. No source contradicts or materially updates the agentic-harness definition."
+      "reason": "The Simon Willison post mentions 'Claude Opus 4.8' in the context of revenue announcements but provides no information about ASL thresholds, safety levels, or engineer surveys. The definition references 'Claude Opus 4.6' at ASL-4 thresholds; the sources neither confirm nor deny this. Insufficient new evidence to trigger a refresh."
     },
     {
-      "id": "ai-accelerator",
+      "id": "attention-budget",
       "status": "keep",
-      "reason": "No relevant source material. Definition stands."
+      "reason": "No source material covers attention mechanisms or context engineering. Definition stands."
     },
     {
-      "id": "ai-assistant",
+      "id": "attention-dilution",
       "status": "keep",
-      "reason": "No relevant source material. Definition stands."
+      "reason": "No source material covers transformer attention or context window mechanics. Definition stands."
     },
     {
-      "id": "ai-inference-chip",
+      "id": "attention-sink",
       "status": "keep",
-      "reason": "No relevant source material. Definition stands."
+      "reason": "No source material covers attention sink phenomena or context compression. Definition stands."
     },
     {
-      "id": "ai-red-teaming",
+      "id": "autodream",
       "status": "keep",
-      "reason": "No relevant source material. Definition stands."
+      "reason": "No source material references autoDream or Claude Code memory consolidation. Definition stands."
     },
     {
-      "id": "ai-washing",
+      "id": "autonomous-agent",
       "status": "keep",
-      "reason": "No relevant source material. Definition stands."
+      "reason": "The Google AI agent OS story touches loosely on autonomous agents but adds no definitional nuance beyond what is already captured. Definition stands."
     },
     {
-      "id": "alignment",
+      "id": "autonomous-goal-extension",
       "status": "keep",
-      "reason": "The AI governance piece touches on AI risks and resilience but does not materially update the alignment definition."
+      "reason": "No source material references Mythos testing or autonomous goal extension behavior. Definition stands."
     },
     {
-      "id": "anthropic-co",
-      "status": "refresh",
-      "def": "AI safety company founded 2021 by former OpenAI researchers. Constitutional AI approach, safety-first research, Claude model family. Creator of claude.ai, Claude Code, and MCP. As of May 2026, Anthropic's latest flagship model is Claude Opus 4.8, which introduces agentic improvements including dynamic workflows in Claude Code and fast-mode inference.",
-      "reason": "The Anthropic Newsroom source (May 28, 2026) confirms a new flagship model — Claude Opus 4.8 — with notable agentic capabilities and Claude Code enhancements. The existing definition references 'Claude model family' generically; a brief update noting the current flagship is warranted to keep the definition current and credible."
+      "id": "autonomy-spectrum",
+      "status": "keep",
+      "reason": "No source material addresses the human-in/on/out-of-the-loop autonomy spectrum framework. Definition stands."
     }
   ],
   "notes": []
