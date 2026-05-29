@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-05-29T20:14:31.216Z",
+    "generatedAt": "2026-05-29T20:24:10.894Z",
     "unreadCount": 0,
     "totalCount": 148,
     "note": "Notes for Nicole — Lexi's manager channel (spec §6). Mandatory entry types fire when their triggering condition is met; discretionary entries are observations Lexi thinks Nicole should see. Set status to 'read', 'actioned', or 'dismissed' as appropriate."

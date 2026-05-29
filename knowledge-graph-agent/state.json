@@ -1,6 +1,6 @@
 {
-  "lastRunAt": "2026-05-28T20:21:22.605Z",
-  "reviewCursor": 4,
+  "lastRunAt": "2026-05-29T20:24:10.894Z",
+  "reviewCursor": 14,
   "seenArticles": {
     "93a049d060bc295b": {
       "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/tpus-8t-8i-cloud-next/",
@@ -679,6 +679,42 @@
       "title": "Anthropic acquires Stainless",
       "publishedAt": null,
       "seenAt": "2026-05-18T19:43:41.150Z"
+    },
+    "a43d4ed6f1c0f659": {
+      "url": "https://stratechery.com/2026/the-spacex-ipo-and-data-centers-in-space/",
+      "title": "The SpaceX IPO and Data Centers in Space",
+      "publishedAt": "Wed, 27 May 2026 10:00:00 +0000",
+      "seenAt": "2026-05-29T20:24:10.894Z"
+    },
+    "52646498064ef276": {
+      "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-keynote-moment-videos/",
+      "title": "Catch up on 12 major I/O 2026 moments",
+      "publishedAt": "Thu, 28 May 2026 15:00:00 +0000",
+      "seenAt": "2026-05-29T20:24:10.894Z"
+    },
+    "ca121378dca67030": {
+      "url": "https://www.normaltech.ai/p/do-ai-risks-require-extraordinary",
+      "title": "Do AI Risks Require Extraordinary Government Intervention?",
+      "publishedAt": "Thu, 21 May 2026 13:19:41 GMT",
+      "seenAt": "2026-05-29T20:24:10.894Z"
+    },
+    "e63fa88b5624cf9a": {
+      "url": "https://openai.com/index/boston-childrens-hospital",
+      "title": "Boston Children’s uses AI to unlock new diagnoses",
+      "publishedAt": "Fri, 29 May 2026 12:00:00 GMT",
+      "seenAt": "2026-05-29T20:24:10.894Z"
+    },
+    "15c7430ebf78a447": {
+      "url": "https://simonwillison.net/2026/May/29/datasette/#atom-everything",
+      "title": "Release: datasette 1.0a31",
+      "publishedAt": "2026-05-29T03:32:02+00:00",
+      "seenAt": "2026-05-29T20:24:10.894Z"
+    },
+    "918121c45d596b70": {
+      "url": "https://www.anthropic.com/news/claude-opus-4-8",
+      "title": "Introducing Claude Opus 4.8",
+      "publishedAt": null,
+      "seenAt": "2026-05-29T20:24:10.894Z"
     }
   },
   "nodeReviews": {
@@ -703,44 +739,44 @@
       "reason": "Definition is consistent with EU AI Act rollout timeline facts. No source material contradicts or updates it."
     },
     "agent-washing": {
-      "lastReviewedAt": "2026-04-27T01:07:31.335Z",
+      "lastReviewedAt": "2026-05-29T20:24:10.894Z",
       "status": "keep",
-      "reason": "No source material addresses agent-washing or changes the illustrative examples. Definition stands."
+      "reason": "No source material addresses agent-washing. Definition stands."
     },
     "agentic-engineering": {
-      "lastReviewedAt": "2026-04-27T01:07:31.335Z",
+      "lastReviewedAt": "2026-05-29T20:24:10.894Z",
       "status": "keep",
-      "reason": "No source material references Karpathy's coinage or the substance of agentic engineering. Definition stands."
+      "reason": "No source confirms or contradicts the Karpathy coinage claim or the definition's framing. Definition stands pending better evidence."
     },
     "agentic-harness": {
-      "lastReviewedAt": "2026-04-27T01:07:31.335Z",
+      "lastReviewedAt": "2026-05-29T20:24:10.894Z",
       "status": "keep",
-      "reason": "No source material addresses agentic harnesses or the Claude Code leak. Definition stands."
+      "reason": "The Anthropic source confirms Claude Code exists and has new 'dynamic workflows' for large-scale agentic tasks, consistent with the definition. No source contradicts or materially updates the agentic-harness definition."
     },
     "ai-assistant": {
-      "lastReviewedAt": "2026-04-27T01:07:31.335Z",
+      "lastReviewedAt": "2026-05-29T20:24:10.894Z",
       "status": "keep",
-      "reason": "No source material updates this framing note. Definition stands."
+      "reason": "No relevant source material. Definition stands."
     },
     "ai-red-teaming": {
-      "lastReviewedAt": "2026-04-27T01:07:31.335Z",
+      "lastReviewedAt": "2026-05-29T20:24:10.894Z",
       "status": "keep",
-      "reason": "The Anthropic Opus 4.7 excerpt mentions a Cyber Verification Program for legitimate red-teaming uses, but this is a product policy detail that confirms rather than changes the definition. Definition stands."
+      "reason": "No relevant source material. Definition stands."
     },
     "ai-washing": {
-      "lastReviewedAt": "2026-04-27T01:07:31.335Z",
+      "lastReviewedAt": "2026-05-29T20:24:10.894Z",
       "status": "keep",
-      "reason": "No source material addresses AI-washing or enforcement actions. Definition stands."
+      "reason": "No relevant source material. Definition stands."
     },
     "alignment": {
-      "lastReviewedAt": "2026-04-27T01:58:08.607Z",
+      "lastReviewedAt": "2026-05-29T20:24:10.894Z",
       "status": "keep",
-      "reason": "No source material addresses alignment research. Definition remains accurate and no update is warranted."
+      "reason": "The AI governance piece touches on AI risks and resilience but does not materially update the alignment definition."
     },
     "anthropic-co": {
-      "lastReviewedAt": "2026-04-27T01:58:08.607Z",
-      "status": "keep",
-      "reason": "Sources confirm Anthropic's identity and safety focus. The election safeguards and ad-free policy excerpts are consistent with the definition. No material changes needed."
+      "lastReviewedAt": "2026-05-29T20:24:10.894Z",
+      "status": "refresh",
+      "reason": "The Anthropic Newsroom source (May 28, 2026) confirms a new flagship model — Claude Opus 4.8 — with notable agentic capabilities and Claude Code enhancements. The existing definition references 'Claude model family' generically; a brief update noting the current flagship is warranted to keep the definition current and credible."
     },
     "api": {
       "lastReviewedAt": "2026-04-27T01:58:08.607Z",
@@ -1691,6 +1727,16 @@
       "lastReviewedAt": "2026-05-18T19:43:41.150Z",
       "status": "insufficient_evidence",
       "reason": "No source material addresses Claude Mythos Preview or its zero-day findings. The specific claims cannot be verified or updated from the provided excerpts."
+    },
+    "ai-accelerator": {
+      "lastReviewedAt": "2026-05-29T20:24:10.894Z",
+      "status": "keep",
+      "reason": "No relevant source material. Definition stands."
+    },
+    "ai-inference-chip": {
+      "lastReviewedAt": "2026-05-29T20:24:10.894Z",
+      "status": "keep",
+      "reason": "No relevant source material. Definition stands."
     }
   }
 }

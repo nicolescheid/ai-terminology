@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-05-28T20:21:23.144Z",
+  "generatedAt": "2026-05-29T20:26:12.886Z",
   "firstRunAt": "2026-04-27T01:07:31.335Z",
   "phase": 1,
   "headline": {
-    "articlesRead": 113,
-    "daysRunning": 32,
-    "longlistSize": 122,
-    "graphSize": 206
+    "articlesRead": 119,
+    "daysRunning": 33,
+    "longlistSize": 132,
+    "graphSize": 207
   },
   "thisWeek": {
-    "articlesFetched": 0,
-    "longlistAdded": 0,
-    "sourcesAdded": 0,
-    "promotionsToGraph": 0,
-    "proposalsQueued": 0,
+    "articlesFetched": 6,
+    "longlistAdded": 11,
+    "sourcesAdded": 5,
+    "promotionsToGraph": 1,
+    "proposalsQueued": 5,
     "auditFlags": 0,
-    "notesAdded": 7
+    "notesAdded": 6
   },
   "almostThere": [
     {
@@ -27,30 +27,13 @@
       ],
       "sourceCount": 3,
       "independentSources": 2,
-      "daysOnLonglist": 24,
+      "daysOnLonglist": 25,
       "domains": [
         "openai.com",
         "simonwillison.net"
       ],
       "gapCount": 0,
       "gap": "meets credibility bar"
-    },
-    {
-      "id": "system-card",
-      "label": "System Card",
-      "fullName": null,
-      "clusters": [
-        "safety",
-        "lifecycle"
-      ],
-      "sourceCount": 4,
-      "independentSources": 1,
-      "daysOnLonglist": 31,
-      "domains": [
-        "openai.com"
-      ],
-      "gapCount": 1,
-      "gap": "needs 1 more independent source"
     },
     {
       "id": "terafab",
@@ -62,7 +45,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 28,
+      "daysOnLonglist": 29,
       "domains": [
         "stratechery.com"
       ],
@@ -79,7 +62,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 28,
+      "daysOnLonglist": 29,
       "domains": [
         "stratechery.com"
       ],
@@ -96,7 +79,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 28,
+      "daysOnLonglist": 29,
       "domains": [
         "normaltech.ai"
       ],
@@ -113,7 +96,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 19,
+      "daysOnLonglist": 20,
       "domains": [
         "blog.google"
       ],
@@ -130,7 +113,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 19,
+      "daysOnLonglist": 20,
       "domains": [
         "blog.google"
       ],
@@ -147,7 +130,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 17,
+      "daysOnLonglist": 18,
       "domains": [
         "stratechery.com"
       ],
@@ -164,7 +147,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 15,
+      "daysOnLonglist": 16,
       "domains": [
         "theverge.com"
       ],
@@ -181,35 +164,52 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 12,
+      "daysOnLonglist": 13,
       "domains": [
         "stratechery.com"
       ],
       "gapCount": 1,
       "gap": "needs 1 more independent source"
+    },
+    {
+      "id": "ai-training-chip",
+      "label": "AI Training Chip",
+      "fullName": null,
+      "clusters": [
+        "technical",
+        "models"
+      ],
+      "sourceCount": 1,
+      "independentSources": 1,
+      "daysOnLonglist": 32,
+      "domains": [
+        "blog.google"
+      ],
+      "gapCount": 2,
+      "gap": "needs 1 more source; needs 1 more independent source"
     }
   ],
   "sources": {
     "byDomain": [
       {
         "domain": "openai.com",
-        "count": 31
+        "count": 32
       },
       {
         "domain": "simonwillison.net",
-        "count": 15
+        "count": 16
       },
       {
         "domain": "stratechery.com",
-        "count": 13
+        "count": 14
       },
       {
         "domain": "blog.google",
-        "count": 11
+        "count": 12
       },
       {
         "domain": "anthropic.com",
-        "count": 11
+        "count": 12
       },
       {
         "domain": "huggingface.co",
@@ -224,12 +224,12 @@
         "count": 5
       },
       {
-        "domain": "hbr.org",
+        "domain": "normaltech.ai",
         "count": 4
       },
       {
-        "domain": "normaltech.ai",
-        "count": 3
+        "domain": "hbr.org",
+        "count": 4
       },
       {
         "domain": "sloanreview.mit.edu",
@@ -368,39 +368,51 @@
         "count": 43
       },
       {
-        "id": "models",
-        "label": "Models",
-        "hex": "#FFB060",
-        "count": 26
-      },
-      {
         "id": "agentic",
         "label": "Agentic Systems",
         "hex": "#FF9040",
-        "count": 25
+        "count": 30
       },
       {
         "id": "tools",
         "label": "Tools & Platforms",
         "hex": "#70C8F8",
-        "count": 23
+        "count": 28
+      },
+      {
+        "id": "models",
+        "label": "Models",
+        "hex": "#FFB060",
+        "count": 27
       },
       {
         "id": "landscape",
         "label": "Model Landscape",
         "hex": "#D0A050",
-        "count": 19
+        "count": 21
       },
       {
-        "id": "work",
-        "label": "Work & Output",
-        "hex": "#E8A838",
-        "count": 19
+        "id": "critical",
+        "label": "Critical / Hype",
+        "hex": "#FF5555",
+        "count": 21
+      },
+      {
+        "id": "safety",
+        "label": "Safety",
+        "hex": "#FF6090",
+        "count": 20
       },
       {
         "id": "business",
         "label": "Business Reality",
         "hex": "#48C888",
+        "count": 20
+      },
+      {
+        "id": "work",
+        "label": "Work & Output",
+        "hex": "#E8A838",
         "count": 19
       },
       {
@@ -410,22 +422,10 @@
         "count": 18
       },
       {
-        "id": "safety",
-        "label": "Safety",
-        "hex": "#FF6090",
-        "count": 17
-      },
-      {
-        "id": "critical",
-        "label": "Critical / Hype",
-        "hex": "#FF5555",
-        "count": 17
-      },
-      {
         "id": "companies",
         "label": "Companies",
         "hex": "#9090A8",
-        "count": 11
+        "count": 10
       },
       {
         "id": "human",
@@ -454,14 +454,14 @@
     ]
   },
   "velocity": {
-    "humanGated": 12,
+    "humanGated": 13,
     "autonomous": 0,
     "note": "All graph promotions and substantive edits are currently human-gated. Lexi proposes; Nicole approves."
   },
   "proposalsByStatus": {
-    "pending": 10,
+    "pending": 14,
     "approved": 0,
-    "applied": 12,
+    "applied": 13,
     "rejected": 1
   },
   "decisionsByCluster": {
@@ -494,11 +494,11 @@
       "rejected": 0
     },
     "companies": {
-      "approved": 1,
+      "approved": 2,
       "rejected": 0
     },
     "models": {
-      "approved": 1,
+      "approved": 2,
       "rejected": 0
     }
   },

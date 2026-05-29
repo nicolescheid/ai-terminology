@@ -1,11 +1,249 @@
 {
-  "generatedAt": "2026-05-28T20:21:22.605Z",
+  "generatedAt": "2026-05-29T20:24:10.894Z",
   "model": "claude-sonnet-4-6",
-  "sourcesConfigured": 14,
-  "articlesConsidered": [],
-  "harvestedTerms": [],
-  "definitionReviews": [],
-  "notes": [
-    "Run paused (unread_notes_over_7d). No articles fetched, no candidates routed, no proposals queued."
-  ]
+  "sourcesConfigured": 15,
+  "articlesConsidered": [
+    {
+      "id": "a43d4ed6f1c0f659",
+      "source": "Stratechery",
+      "title": "The SpaceX IPO and Data Centers in Space",
+      "url": "https://stratechery.com/2026/the-spacex-ipo-and-data-centers-in-space/",
+      "publishedAt": "Wed, 27 May 2026 10:00:00 +0000"
+    },
+    {
+      "id": "52646498064ef276",
+      "source": "Google AI Blog",
+      "title": "Catch up on 12 major I/O 2026 moments",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-keynote-moment-videos/",
+      "publishedAt": "Thu, 28 May 2026 15:00:00 +0000"
+    },
+    {
+      "id": "ca121378dca67030",
+      "source": "AI Snake Oil",
+      "title": "Do AI Risks Require Extraordinary Government Intervention?",
+      "url": "https://www.normaltech.ai/p/do-ai-risks-require-extraordinary",
+      "publishedAt": "Thu, 21 May 2026 13:19:41 GMT"
+    },
+    {
+      "id": "e63fa88b5624cf9a",
+      "source": "OpenAI News",
+      "title": "Boston Children’s uses AI to unlock new diagnoses",
+      "url": "https://openai.com/index/boston-childrens-hospital",
+      "publishedAt": "Fri, 29 May 2026 12:00:00 GMT"
+    },
+    {
+      "id": "15c7430ebf78a447",
+      "source": "Simon Willison's Weblog",
+      "title": "Release: datasette 1.0a31",
+      "url": "https://simonwillison.net/2026/May/29/datasette/#atom-everything",
+      "publishedAt": "2026-05-29T03:32:02+00:00"
+    },
+    {
+      "id": "918121c45d596b70",
+      "source": "Anthropic Newsroom",
+      "title": "Introducing Claude Opus 4.8",
+      "url": "https://www.anthropic.com/news/claude-opus-4-8",
+      "publishedAt": null
+    }
+  ],
+  "harvestedTerms": [
+    {
+      "article": {
+        "title": "The SpaceX IPO and Data Centers in Space",
+        "url": "https://stratechery.com/2026/the-spacex-ipo-and-data-centers-in-space/"
+      },
+      "summary": "Ben Thompson's Stratechery analysis of the SpaceX IPO explores the company's valuation, Starlink's business model, and SpaceX's ambitious framing of a $26.5 trillion AI total addressable market. The article touches on orbital infrastructure, satellite-based connectivity at scale, and SpaceX's pivot toward AI compute in space — with some skepticism about the TAM figures and the S-1's framing.",
+      "longlistAdditions": [
+        {
+          "id": "total-addressable-market",
+          "label": "Total Addressable Market (TAM)"
+        }
+      ],
+      "longlistUpdates": [
+        {
+          "id": "orbital-ai-compute",
+          "label": "Orbital AI Compute",
+          "sourceAdded": true,
+          "sourceCount": 2,
+          "independentSourceCount": 2
+        },
+        {
+          "id": "stargate-project",
+          "label": "Stargate",
+          "sourceAdded": true,
+          "sourceCount": 2,
+          "independentSourceCount": 2
+        },
+        {
+          "id": "hyperscale-data-center",
+          "label": "Hyperscale Data Center",
+          "sourceAdded": true,
+          "sourceCount": 3,
+          "independentSourceCount": 2
+        }
+      ],
+      "rejections": [],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "Catch up on 12 major I/O 2026 moments",
+        "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-keynote-moment-videos/"
+      },
+      "summary": "Google I/O 2026 keynote recap covering major announcements: Gemini Omni (multimodal video generation model), Gemini 3.5 Flash (frontier agent/coding model), Search agents (information agents), Google Antigravity (agentic coding in Search), and mini-app generation. Primarily a product roundup with several named systems worth tracking.",
+      "longlistAdditions": [
+        {
+          "id": "gemini-omni",
+          "label": "Gemini Omni"
+        },
+        {
+          "id": "gemini-35-flash",
+          "label": "Gemini 3.5 Flash"
+        },
+        {
+          "id": "information-agents-search",
+          "label": "Information Agents"
+        },
+        {
+          "id": "google-antigravity",
+          "label": "Google Antigravity"
+        }
+      ],
+      "longlistUpdates": [],
+      "rejections": [],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "Do AI Risks Require Extraordinary Government Intervention?",
+        "url": "https://www.normaltech.ai/p/do-ai-risks-require-extraordinary"
+      },
+      "summary": "Kapoor and Narayanan (AI Snake Oil) argue against extraordinary government intervention in AI governance, contending that societal resilience-building is preferable to precautionary restrictions. The piece introduces and applies several framing concepts: the offense-defense balance, AI nonproliferation as analogy, and AI as Normal Technology (AINT). It engages substantively with emergent capabilities, dual-use risks, and the spectrum of regulatory responses.",
+      "longlistAdditions": [
+        {
+          "id": "aint",
+          "label": "AI as Normal Technology"
+        },
+        {
+          "id": "offense-defense-balance",
+          "label": "Offense-Defense Balance"
+        },
+        {
+          "id": "societal-resilience",
+          "label": "Societal Resilience"
+        },
+        {
+          "id": "ai-nonproliferation",
+          "label": "AI Nonproliferation"
+        }
+      ],
+      "longlistUpdates": [],
+      "rejections": [],
+      "proposalsQueued": [],
+      "mustReadFlagged": {
+        "priority": 2,
+        "reason": "Kapoor and Narayanan offer one of the cleaner analytical frameworks for thinking about *when* AI warrants extraordinary government action versus improved ordinary governance — distinguishing precautionary restrictions, dual-use liberty burdens, and democratic bypass as the three axes of 'extraordinariness.' A useful counterweight to both dismissive and alarmist framings, and one of the few pieces that tries to argue the policy question rigorously rather than rhetorically."
+      }
+    },
+    {
+      "article": {
+        "title": "Release: datasette 1.0a31",
+        "url": "https://simonwillison.net/2026/May/29/datasette/#atom-everything"
+      },
+      "summary": "A brief release note for Datasette 1.0a31, an open-source data exploration tool. The article announces two new features — SQL write queries and stored queries — with no substantive AI terminology content beyond a sponsor mention. No new AI concepts are introduced.",
+      "longlistAdditions": [],
+      "longlistUpdates": [],
+      "rejections": [],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "Introducing Claude Opus 4.8",
+        "url": "https://www.anthropic.com/news/claude-opus-4-8"
+      },
+      "summary": "Anthropic announces Claude Opus 4.8 with improvements in honesty/self-flagging, agentic task reliability, and new features including Dynamic Workflows (parallel subagents), effort control for claude.ai, and mid-task system-prompt updates via the Messages API. The release includes a System Card with alignment assessment.",
+      "longlistAdditions": [
+        {
+          "id": "dynamic-workflows",
+          "label": "Dynamic Workflows"
+        },
+        {
+          "id": "effort-control",
+          "label": "Effort Control"
+        }
+      ],
+      "longlistUpdates": [
+        {
+          "id": "system-card",
+          "label": "System Card",
+          "sourceAdded": true,
+          "sourceCount": 5,
+          "independentSourceCount": 2
+        },
+        {
+          "id": "adjustable-reasoning-effort",
+          "label": "Adjustable Reasoning Effort",
+          "sourceAdded": true,
+          "sourceCount": 2,
+          "independentSourceCount": 2
+        }
+      ],
+      "rejections": [],
+      "proposalsQueued": []
+    }
+  ],
+  "definitionReviews": [
+    {
+      "id": "agent-washing",
+      "status": "keep",
+      "reason": "No source material addresses agent-washing. Definition stands."
+    },
+    {
+      "id": "agentic-engineering",
+      "status": "keep",
+      "reason": "No source confirms or contradicts the Karpathy coinage claim or the definition's framing. Definition stands pending better evidence."
+    },
+    {
+      "id": "agentic-harness",
+      "status": "keep",
+      "reason": "The Anthropic source confirms Claude Code exists and has new 'dynamic workflows' for large-scale agentic tasks, consistent with the definition. No source contradicts or materially updates the agentic-harness definition."
+    },
+    {
+      "id": "ai-accelerator",
+      "status": "keep",
+      "reason": "No relevant source material. Definition stands."
+    },
+    {
+      "id": "ai-assistant",
+      "status": "keep",
+      "reason": "No relevant source material. Definition stands."
+    },
+    {
+      "id": "ai-inference-chip",
+      "status": "keep",
+      "reason": "No relevant source material. Definition stands."
+    },
+    {
+      "id": "ai-red-teaming",
+      "status": "keep",
+      "reason": "No relevant source material. Definition stands."
+    },
+    {
+      "id": "ai-washing",
+      "status": "keep",
+      "reason": "No relevant source material. Definition stands."
+    },
+    {
+      "id": "alignment",
+      "status": "keep",
+      "reason": "The AI governance piece touches on AI risks and resilience but does not materially update the alignment definition."
+    },
+    {
+      "id": "anthropic-co",
+      "status": "refresh",
+      "def": "AI safety company founded 2021 by former OpenAI researchers. Constitutional AI approach, safety-first research, Claude model family. Creator of claude.ai, Claude Code, and MCP. As of May 2026, Anthropic's latest flagship model is Claude Opus 4.8, which introduces agentic improvements including dynamic workflows in Claude Code and fast-mode inference.",
+      "reason": "The Anthropic Newsroom source (May 28, 2026) confirms a new flagship model — Claude Opus 4.8 — with notable agentic capabilities and Claude Code enhancements. The existing definition references 'Claude model family' generically; a brief update noting the current flagship is warranted to keep the definition current and credible."
+    }
+  ],
+  "notes": []
 }

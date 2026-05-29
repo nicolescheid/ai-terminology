@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-05-29T19:36:44.408Z",
-    "pendingCount": 9,
+    "generatedAt": "2026-05-29T20:26:12.473Z",
+    "pendingCount": 14,
     "appliedCount": 13,
     "rejectedCount": 1,
     "note": "Lexi proposals queue. Actions gated as PROPOSE land here as status: 'pending'. Edit a proposal's status to 'approved' or 'rejected' and run the apply step (TBD) to commit."
@@ -1105,6 +1105,220 @@
       },
       "reason": "2 sources, 2 independent (theverge.com + stratechery.com), 7d on longlist. Trusted: stratechery.com.",
       "runId": "9d0530c4-0a08-493f-bf56-193c87bb546a"
+    },
+    {
+      "id": "46079002512c872c",
+      "action": "edit_graph_def_substantive",
+      "gate": "propose",
+      "proposedAt": "2026-05-29T20:24:10.894Z",
+      "status": "pending",
+      "source": "definition-review",
+      "target": {
+        "kind": "graph_node",
+        "id": "anthropic-co"
+      },
+      "payload": {
+        "def": "AI safety company founded 2021 by former OpenAI researchers. Constitutional AI approach, safety-first research, Claude model family. Creator of claude.ai, Claude Code, and MCP. As of May 2026, Anthropic's latest flagship model is Claude Opus 4.8, which introduces agentic improvements including dynamic workflows in Claude Code and fast-mode inference.",
+        "refs": [
+          {
+            "n": 1,
+            "src": "Stratechery, Wed, 27 May 2026 10:00:00 +0000",
+            "q": "The SpaceX IPO and Data Centers in Space Stratechery"
+          },
+          {
+            "n": 2,
+            "src": "Google AI Blog, Thu, 28 May 2026 15:00:00 +0000",
+            "q": "Catch up on 12 major I/O 2026 moments Google AI Blog"
+          }
+        ]
+      },
+      "reason": "The Anthropic Newsroom source (May 28, 2026) confirms a new flagship model — Claude Opus 4.8 — with notable agentic capabilities and Claude Code enhancements. The existing definition references 'Claude model family' generically; a brief update noting the current flagship is warranted to keep the definition current and credible."
+    },
+    {
+      "id": "874cfa6c75ef4ed2",
+      "action": "promote_to_graph",
+      "gate": "propose",
+      "proposedAt": "2026-05-29T20:26:12.473Z",
+      "status": "pending",
+      "source": "promote-eligibility-scan",
+      "target": {
+        "kind": "longlist_entry",
+        "id": "system-card"
+      },
+      "payload": {
+        "graphNode": {
+          "id": "system-card",
+          "label": "System Card",
+          "clusters": [
+            "safety",
+            "lifecycle"
+          ],
+          "sz": 14,
+          "def": "A structured documentation artifact published alongside an AI model release that details its capabilities, limitations, safety evaluations, red-teaming results, and deployment guidelines.",
+          "rels": [
+            "frontier-model",
+            "evals",
+            "red-teaming",
+            "responsible-scaling-policy",
+            "openai-co",
+            "alignment",
+            "guardrails"
+          ],
+          "refs": [
+            {
+              "n": 1,
+              "src": "OpenAI News, Thu, 23 Apr 2026 11:00:00 GMT",
+              "q": "GPT-5.5 System Card OpenAI News"
+            },
+            {
+              "n": 2,
+              "src": "OpenAI News, Sun, 26 Apr 2026 16:00:00 GMT",
+              "q": "Our principles OpenAI News"
+            },
+            {
+              "n": 3,
+              "src": "OpenAI Research",
+              "q": "OpenAI Research OpenAI Research"
+            }
+          ]
+        }
+      },
+      "reason": "5 sources, 2 independent (openai.com + anthropic.com), 32d on longlist.",
+      "runId": "a27c7a9e-7179-4f18-b34e-430c66150098"
+    },
+    {
+      "id": "4d89a72adea77d8f",
+      "action": "promote_to_graph",
+      "gate": "propose",
+      "proposedAt": "2026-05-29T20:26:12.473Z",
+      "status": "pending",
+      "source": "promote-eligibility-scan",
+      "target": {
+        "kind": "longlist_entry",
+        "id": "orbital-ai-compute"
+      },
+      "payload": {
+        "graphNode": {
+          "id": "orbital-ai-compute",
+          "label": "Orbital AI Compute",
+          "clusters": [
+            "technical"
+          ],
+          "sz": 14,
+          "def": "AI compute infrastructure deployed in orbital/space-based data centers, as distinct from terrestrial cloud infrastructure. Referenced here as a future development Anthropic is exploring with SpaceX.",
+          "rels": [
+            "purpose-built-ai-infrastructure",
+            "ai-accelerator",
+            "infrastructure"
+          ],
+          "refs": [
+            {
+              "n": 1,
+              "src": "Anthropic Newsroom",
+              "q": "Higher usage limits for Claude and a compute deal with SpaceX Anthropic Newsroom"
+            },
+            {
+              "n": 2,
+              "src": "Stratechery, Wed, 27 May 2026 10:00:00 +0000",
+              "q": "The SpaceX IPO and Data Centers in Space Stratechery"
+            }
+          ]
+        }
+      },
+      "reason": "2 sources, 2 independent (anthropic.com + stratechery.com), 20d on longlist. Trusted: stratechery.com.",
+      "runId": "a27c7a9e-7179-4f18-b34e-430c66150098"
+    },
+    {
+      "id": "a8eadd10cb568b40",
+      "action": "promote_to_graph",
+      "gate": "propose",
+      "proposedAt": "2026-05-29T20:26:12.473Z",
+      "status": "pending",
+      "source": "promote-eligibility-scan",
+      "target": {
+        "kind": "longlist_entry",
+        "id": "adjustable-reasoning-effort"
+      },
+      "payload": {
+        "graphNode": {
+          "id": "adjustable-reasoning-effort",
+          "label": "Adjustable Reasoning Effort",
+          "clusters": [
+            "models",
+            "technical"
+          ],
+          "sz": 14,
+          "def": "A developer-facing inference control that lets callers select the computational reasoning depth applied to a given request — ranging from minimal to xhigh — to trade off response latency against reasoning quality. Introduced in GPT-Realtime-2 as a mechanism to balance responsiveness in simple voice interactions with deliberate reasoning for complex tasks.",
+          "rels": [
+            "reasoning-models",
+            "latency",
+            "inference",
+            "cost"
+          ],
+          "refs": [
+            {
+              "n": 1,
+              "src": "OpenAI News, Thu, 07 May 2026 10:00:00 GMT",
+              "q": "Advancing voice intelligence with new models in the API OpenAI News"
+            },
+            {
+              "n": 2,
+              "src": "Anthropic Newsroom",
+              "q": "Introducing Claude Opus 4.8 Anthropic Newsroom"
+            }
+          ],
+          "fullName": "Adjustable Reasoning Effort (LLM Inference Control)"
+        }
+      },
+      "reason": "2 sources, 2 independent (openai.com + anthropic.com), 19d on longlist.",
+      "runId": "a27c7a9e-7179-4f18-b34e-430c66150098"
+    },
+    {
+      "id": "6c353dc2d726ee81",
+      "action": "promote_to_graph",
+      "gate": "propose",
+      "proposedAt": "2026-05-29T20:26:12.473Z",
+      "status": "pending",
+      "source": "promote-eligibility-scan",
+      "target": {
+        "kind": "longlist_entry",
+        "id": "stargate-project"
+      },
+      "payload": {
+        "graphNode": {
+          "id": "stargate-project",
+          "label": "Stargate",
+          "clusters": [
+            "companies",
+            "landscape"
+          ],
+          "sz": 14,
+          "def": "OpenAI's $500 billion AI infrastructure initiative, involving partnerships with Oracle, Nvidia, Cisco, and SoftBank, to build large-scale data center capacity globally — including a $30 billion facility in Abu Dhabi. The project is cited in geopolitical, environmental, and policy contexts as an emblematic instance of frontier AI infrastructure at nation-state scale. The name 'Stargate' is used both for the overarching investment program and for specific facilities under construction.",
+          "rels": [
+            "openai-co",
+            "purpose-built-ai-infrastructure",
+            "infrastructure",
+            "nvidia-co",
+            "frontier-model"
+          ],
+          "refs": [
+            {
+              "n": 1,
+              "src": "The Verge — AI, 2026-05-08T14:45:08-04:00",
+              "q": "All the latest updates on AI data centers The Verge — AI"
+            },
+            {
+              "n": 2,
+              "src": "Stratechery, Wed, 27 May 2026 10:00:00 +0000",
+              "q": "The SpaceX IPO and Data Centers in Space Stratechery"
+            }
+          ],
+          "fullName": "Stargate (OpenAI AI Infrastructure Project)",
+          "nodeType": "product"
+        }
+      },
+      "reason": "2 sources, 2 independent (theverge.com + stratechery.com), 18d on longlist. Trusted: stratechery.com.",
+      "runId": "a27c7a9e-7179-4f18-b34e-430c66150098"
     }
   ]
 }

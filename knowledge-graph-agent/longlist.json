@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-05-28T20:21:22.605Z",
-    "entryCount": 133,
+    "generatedAt": "2026-05-29T20:24:10.894Z",
+    "entryCount": 144,
     "note": "Lexi-managed Tier 2 longlist — terms under observation, awaiting evidence to support promotion to the graph (Tier 1)."
   },
   "entries": [
@@ -400,12 +400,20 @@
           "sourceLabel": "OpenAI Research",
           "publishedAt": null,
           "firstSeen": "2026-05-04T19:27:54.284Z"
+        },
+        {
+          "url": "https://www.anthropic.com/news/claude-opus-4-8",
+          "domain": "anthropic.com",
+          "title": "Introducing Claude Opus 4.8",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-05-29T20:24:10.894Z"
         }
       ],
-      "sourceCount": 4,
-      "independentSourceCount": 1,
+      "sourceCount": 5,
+      "independentSourceCount": 2,
       "dateFirstSeen": "2026-04-26T22:40:25.832Z",
-      "dateLastSeen": "2026-05-04T19:27:54.284Z",
+      "dateLastSeen": "2026-05-29T20:24:10.894Z",
       "sz": 14,
       "proposalReason": "'System Card' is a widely used and consequential term in AI safety and model release governance, not yet in the graph or longlist. This article is a primary example of the artifact."
     },
@@ -2087,12 +2095,20 @@
           "sourceLabel": "Anthropic Newsroom",
           "publishedAt": null,
           "firstSeen": "2026-05-09T07:44:17.196Z"
+        },
+        {
+          "url": "https://stratechery.com/2026/the-spacex-ipo-and-data-centers-in-space/",
+          "domain": "stratechery.com",
+          "title": "The SpaceX IPO and Data Centers in Space",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Wed, 27 May 2026 10:00:00 +0000",
+          "firstSeen": "2026-05-29T20:24:10.894Z"
         }
       ],
-      "sourceCount": 1,
-      "independentSourceCount": 1,
+      "sourceCount": 2,
+      "independentSourceCount": 2,
       "dateFirstSeen": "2026-05-09T07:44:17.196Z",
-      "dateLastSeen": "2026-05-09T07:44:17.196Z",
+      "dateLastSeen": "2026-05-29T20:24:10.894Z",
       "sz": 14,
       "proposalReason": "The article introduces 'orbital AI compute capacity' as a concrete near-term interest, representing a genuinely novel infrastructure category worth tracking as it moves from concept to implementation."
     },
@@ -2423,12 +2439,20 @@
           "sourceLabel": "OpenAI News",
           "publishedAt": "Thu, 07 May 2026 10:00:00 GMT",
           "firstSeen": "2026-05-10T19:02:19.492Z"
+        },
+        {
+          "url": "https://www.anthropic.com/news/claude-opus-4-8",
+          "domain": "anthropic.com",
+          "title": "Introducing Claude Opus 4.8",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-05-29T20:24:10.894Z"
         }
       ],
-      "sourceCount": 1,
-      "independentSourceCount": 1,
+      "sourceCount": 2,
+      "independentSourceCount": 2,
       "dateFirstSeen": "2026-05-10T19:02:19.492Z",
-      "dateLastSeen": "2026-05-10T19:02:19.492Z",
+      "dateLastSeen": "2026-05-29T20:24:10.894Z",
       "sz": 14,
       "fullName": "Adjustable Reasoning Effort (LLM Inference Control)",
       "proposalReason": "A technically specific and reusable framing for a capability increasingly appearing across model APIs; distinct from existing graph terms and likely to recur."
@@ -2892,12 +2916,20 @@
           "sourceLabel": "Stratechery",
           "publishedAt": "Mon, 18 May 2026 10:00:00 +0000",
           "firstSeen": "2026-05-18T19:43:41.150Z"
+        },
+        {
+          "url": "https://stratechery.com/2026/the-spacex-ipo-and-data-centers-in-space/",
+          "domain": "stratechery.com",
+          "title": "The SpaceX IPO and Data Centers in Space",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Wed, 27 May 2026 10:00:00 +0000",
+          "firstSeen": "2026-05-29T20:24:10.894Z"
         }
       ],
-      "sourceCount": 2,
+      "sourceCount": 3,
       "independentSourceCount": 2,
       "dateFirstSeen": "2026-05-11T07:07:01.775Z",
-      "dateLastSeen": "2026-05-18T19:43:41.150Z",
+      "dateLastSeen": "2026-05-29T20:24:10.894Z",
       "sz": 14,
       "proposalReason": "The article materially uses 'hyperscale data center' (e.g., 'planned hyperscale data center in Box Elder County') as a distinct category of AI infrastructure with policy and environmental stakes — a term with lasting relevance to AI infrastructure discourse."
     },
@@ -3004,12 +3036,20 @@
           "sourceLabel": "The Verge — AI",
           "publishedAt": "2026-05-08T14:45:08-04:00",
           "firstSeen": "2026-05-11T07:07:01.775Z"
+        },
+        {
+          "url": "https://stratechery.com/2026/the-spacex-ipo-and-data-centers-in-space/",
+          "domain": "stratechery.com",
+          "title": "The SpaceX IPO and Data Centers in Space",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Wed, 27 May 2026 10:00:00 +0000",
+          "firstSeen": "2026-05-29T20:24:10.894Z"
         }
       ],
-      "sourceCount": 1,
-      "independentSourceCount": 1,
+      "sourceCount": 2,
+      "independentSourceCount": 2,
       "dateFirstSeen": "2026-05-11T07:07:01.775Z",
-      "dateLastSeen": "2026-05-11T07:07:01.775Z",
+      "dateLastSeen": "2026-05-29T20:24:10.894Z",
       "sz": 14,
       "fullName": "Stargate (OpenAI AI Infrastructure Project)",
       "nodeType": "product",
@@ -4733,6 +4773,366 @@
       "fullName": "Claude for Small Business (Anthropic)",
       "nodeType": "product",
       "proposalReason": "Named product from Anthropic with a distinct SMB positioning; worth tracking as a market-segment entry alongside the enterprise and individual tiers already in the graph."
+    },
+    {
+      "id": "total-addressable-market",
+      "label": "Total Addressable Market (TAM)",
+      "workingDef": "A market-sizing construct used in S-1 filings and investor materials to frame the maximum revenue potential of a business. In AI contexts, TAM figures have become increasingly contested: SpaceX's S-1 claims a $26.5 trillion AI TAM — over 13x its space and connectivity opportunity combined — illustrating how labs and adjacent tech companies use expansive TAM framing to justify outsized valuations. Critics note that AI TAM figures routinely aggregate overlapping categories (infrastructure, subscriptions, enterprise software) in ways that obscure rather than clarify addressable opportunity.",
+      "clusters": [
+        "business",
+        "landscape"
+      ],
+      "suggestedRels": [
+        "agentic-business-model",
+        "infrastructure",
+        "vertical-ai"
+      ],
+      "sources": [
+        {
+          "url": "https://stratechery.com/2026/the-spacex-ipo-and-data-centers-in-space/",
+          "domain": "stratechery.com",
+          "title": "The SpaceX IPO and Data Centers in Space",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Wed, 27 May 2026 10:00:00 +0000",
+          "firstSeen": "2026-05-29T20:24:10.894Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-29T20:24:10.894Z",
+      "dateLastSeen": "2026-05-29T20:24:10.894Z",
+      "sz": 14,
+      "fullName": "Total Addressable Market (TAM) in AI Framing",
+      "proposalReason": "Relevant as a framing concept for understanding how AI companies justify valuations; the SpaceX S-1 example is a vivid case study in AI TAM inflation."
+    },
+    {
+      "id": "gemini-omni",
+      "label": "Gemini Omni",
+      "workingDef": "A new model family from Google announced at I/O 2026 that accepts any modality as input (images, audio, video, text) and generates high-quality video output grounded in real-world knowledge, with conversational editing. The first release is Gemini Omni Flash, available via the Gemini app, Google Flow, YouTube Shorts, and YouTube Create.",
+      "clusters": [
+        "models",
+        "tools"
+      ],
+      "suggestedRels": [
+        "gemini",
+        "google-co",
+        "google-flow",
+        "multimodal"
+      ],
+      "sources": [
+        {
+          "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-keynote-moment-videos/",
+          "domain": "blog.google",
+          "title": "Catch up on 12 major I/O 2026 moments",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Thu, 28 May 2026 15:00:00 +0000",
+          "firstSeen": "2026-05-29T20:24:10.894Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-29T20:24:10.894Z",
+      "dateLastSeen": "2026-05-29T20:24:10.894Z",
+      "sz": 14,
+      "fullName": "Gemini Omni (Google)",
+      "nodeType": "product",
+      "proposalReason": "New named model product from Google; worth tracking as a distinct entry in the Gemini family focused on any-to-video generation."
+    },
+    {
+      "id": "gemini-35-flash",
+      "label": "Gemini 3.5 Flash",
+      "workingDef": "The first release in Google's Gemini 3.5 model family, announced at I/O 2026. Positioned as combining frontier intelligence with agentic action, optimised for complex long-horizon tasks, coding, and agent workflows. Available via Google AI Studio, Android Studio, Gemini Enterprise Agent Platform, and AI Mode in Search.",
+      "clusters": [
+        "models",
+        "agentic"
+      ],
+      "suggestedRels": [
+        "gemini",
+        "google-co",
+        "long-horizon-autonomy",
+        "gemini-enterprise-agent-platform"
+      ],
+      "sources": [
+        {
+          "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-keynote-moment-videos/",
+          "domain": "blog.google",
+          "title": "Catch up on 12 major I/O 2026 moments",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Thu, 28 May 2026 15:00:00 +0000",
+          "firstSeen": "2026-05-29T20:24:10.894Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-29T20:24:10.894Z",
+      "dateLastSeen": "2026-05-29T20:24:10.894Z",
+      "sz": 14,
+      "fullName": "Gemini 3.5 Flash (Google DeepMind)",
+      "nodeType": "product",
+      "proposalReason": "New named model release worth tracking as a distinct Gemini family member with explicit agentic positioning."
+    },
+    {
+      "id": "information-agents-search",
+      "label": "Information Agents",
+      "workingDef": "A category of AI agents introduced in Google Search at I/O 2026 that operate continuously in the background to monitor and reason across web sources (blogs, news, social, finance, sports data) and proactively deliver comprehensive updates to users. Created via natural language commands ('keep me updated') and managed through AI Mode's side panel.",
+      "clusters": [
+        "agentic",
+        "tools"
+      ],
+      "suggestedRels": [
+        "agent",
+        "proactive-agent",
+        "ai-mode",
+        "agentic-era",
+        "google-co"
+      ],
+      "sources": [
+        {
+          "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-keynote-moment-videos/",
+          "domain": "blog.google",
+          "title": "Catch up on 12 major I/O 2026 moments",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Thu, 28 May 2026 15:00:00 +0000",
+          "firstSeen": "2026-05-29T20:24:10.894Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-29T20:24:10.894Z",
+      "dateLastSeen": "2026-05-29T20:24:10.894Z",
+      "sz": 14,
+      "fullName": "Information Agents (Google Search)",
+      "nodeType": "product",
+      "proposalReason": "Represents a named, distinct agentic product pattern — persistent background monitoring agents embedded in search — worth tracking as it materialises the proactive-agent concept in a mass-market product."
+    },
+    {
+      "id": "google-antigravity",
+      "label": "Google Antigravity",
+      "workingDef": "A Google platform announced at I/O 2026 that brings agentic coding capabilities into Search and other products, enabling on-the-fly generation of custom UI layouts, interactive experiences, dashboards, and mini-apps from user queries. Positioned as enabling personal software creation within Search.",
+      "clusters": [
+        "tools",
+        "agentic"
+      ],
+      "suggestedRels": [
+        "google-co",
+        "micro-app",
+        "personal-software",
+        "canvas-ai-mode",
+        "agentic-era"
+      ],
+      "sources": [
+        {
+          "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-keynote-moment-videos/",
+          "domain": "blog.google",
+          "title": "Catch up on 12 major I/O 2026 moments",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Thu, 28 May 2026 15:00:00 +0000",
+          "firstSeen": "2026-05-29T20:24:10.894Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-29T20:24:10.894Z",
+      "dateLastSeen": "2026-05-29T20:24:10.894Z",
+      "sz": 14,
+      "nodeType": "product",
+      "proposalReason": "New named Google platform enabling in-Search code generation and mini-app creation; relates to the emerging personal-software and micro-app concepts on the longlist."
+    },
+    {
+      "id": "aint",
+      "label": "AI as Normal Technology",
+      "workingDef": "A framework advanced by Sayash Kapoor and Arvind Narayanan (AI Snake Oil) arguing that AI's economic and social impacts follow the diffusion patterns of prior general-purpose technologies — subject to speed limits such as organisational adoption, workflow change, and regulation — rather than constituting a categorically unprecedented disruption. Used to argue against extraordinary government intervention and rapid job-displacement claims. The framework is contested: critics (including Derek Thompson and others in the AI risk tradition) argue that AI's emergent capabilities and unknown-unknown risk profile make the 'normal technology' analogy insufficient for safety policy, even if it holds for labour market analysis.",
+      "clusters": [
+        "critical",
+        "landscape"
+      ],
+      "suggestedRels": [
+        "emergent-capability",
+        "agent-washing",
+        "benchmark-gaming",
+        "distribution-shift"
+      ],
+      "sources": [
+        {
+          "url": "https://www.normaltech.ai/p/do-ai-risks-require-extraordinary",
+          "domain": "normaltech.ai",
+          "title": "Do AI Risks Require Extraordinary Government Intervention?",
+          "sourceLabel": "AI Snake Oil",
+          "publishedAt": "Thu, 21 May 2026 13:19:41 GMT",
+          "firstSeen": "2026-05-29T20:24:10.894Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-29T20:24:10.894Z",
+      "dateLastSeen": "2026-05-29T20:24:10.894Z",
+      "sz": 14,
+      "fullName": "AI as Normal Technology (AINT)",
+      "proposalReason": "New candidate term for a recurring framework in AI policy discourse — worth tracking as it anchors an influential counter-narrative to AI exceptionalism."
+    },
+    {
+      "id": "offense-defense-balance",
+      "label": "Offense-Defense Balance",
+      "workingDef": "A framing borrowed from strategic studies and applied by Kapoor and Narayanan to AI misuse risk: the question of whether a given AI capability advantages attackers or defenders more, and whether defensive investments (resilience) can outpace offensive use. Used to argue that extraordinary pre-deployment restrictions are less effective than building societal resilience, since attackers can exploit capabilities without going through slow organisational adoption. The balance shifts depending on domain (e.g., cyber vs. bio), capability type, and the speed of defensive tooling development.",
+      "clusters": [
+        "safety",
+        "critical"
+      ],
+      "suggestedRels": [
+        "guardrails",
+        "sandboxing",
+        "blast-radius",
+        "ai-speed-cyber-defense"
+      ],
+      "sources": [
+        {
+          "url": "https://www.normaltech.ai/p/do-ai-risks-require-extraordinary",
+          "domain": "normaltech.ai",
+          "title": "Do AI Risks Require Extraordinary Government Intervention?",
+          "sourceLabel": "AI Snake Oil",
+          "publishedAt": "Thu, 21 May 2026 13:19:41 GMT",
+          "firstSeen": "2026-05-29T20:24:10.894Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-29T20:24:10.894Z",
+      "dateLastSeen": "2026-05-29T20:24:10.894Z",
+      "sz": 14,
+      "fullName": "Offense-Defense Balance (AI Misuse Risk)",
+      "proposalReason": "New candidate concept that recurs in AI security and governance literature — a useful analytical lens distinct from existing graph terms."
+    },
+    {
+      "id": "societal-resilience",
+      "label": "Societal Resilience",
+      "workingDef": "A governance approach — advocated by Kapoor and Narayanan as an alternative to extraordinary pre-deployment restrictions — that distributes AI risk defenses across society rather than concentrating them at a single chokepoint (e.g., model release controls). Encompasses investments in cybersecurity infrastructure, bio-defence, regulatory capacity, and institutional readiness to respond to AI-enabled misuse. Contrasted with nonproliferation-style interventions, which the authors argue are brittle because they depend on physical or legal bottlenecks that AI erodes.",
+      "clusters": [
+        "safety",
+        "critical"
+      ],
+      "suggestedRels": [
+        "agent-governance",
+        "guardrails",
+        "responsible-scaling-policy",
+        "alignment"
+      ],
+      "sources": [
+        {
+          "url": "https://www.normaltech.ai/p/do-ai-risks-require-extraordinary",
+          "domain": "normaltech.ai",
+          "title": "Do AI Risks Require Extraordinary Government Intervention?",
+          "sourceLabel": "AI Snake Oil",
+          "publishedAt": "Thu, 21 May 2026 13:19:41 GMT",
+          "firstSeen": "2026-05-29T20:24:10.894Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-29T20:24:10.894Z",
+      "dateLastSeen": "2026-05-29T20:24:10.894Z",
+      "sz": 14,
+      "fullName": "Societal Resilience (AI Risk Governance)",
+      "proposalReason": "New candidate term naming a policy framing that appears repeatedly in AI governance debates and is distinct from existing safety/governance nodes."
+    },
+    {
+      "id": "ai-nonproliferation",
+      "label": "AI Nonproliferation",
+      "workingDef": "An analogy — drawn from nuclear nonproliferation regimes — applied to proposals that would restrict AI companies from releasing models or capabilities deemed too dangerous for broad access. Proponents argue the nuclear precedent justifies pre-deployment controls on frontier AI; critics (including Kapoor and Narayanan) argue the analogy is structurally weak because AI lacks a physical bottleneck equivalent to enriched uranium, open-weight models erode any chokepoint within months, and the governance costs (treaties, enforcement, diplomacy, military confrontation) are enormous relative to the achievable delay.",
+      "clusters": [
+        "safety",
+        "critical"
+      ],
+      "suggestedRels": [
+        "open-weight",
+        "frontier-model",
+        "responsible-scaling-policy",
+        "agent-governance",
+        "emergent-capability"
+      ],
+      "sources": [
+        {
+          "url": "https://www.normaltech.ai/p/do-ai-risks-require-extraordinary",
+          "domain": "normaltech.ai",
+          "title": "Do AI Risks Require Extraordinary Government Intervention?",
+          "sourceLabel": "AI Snake Oil",
+          "publishedAt": "Thu, 21 May 2026 13:19:41 GMT",
+          "firstSeen": "2026-05-29T20:24:10.894Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-29T20:24:10.894Z",
+      "dateLastSeen": "2026-05-29T20:24:10.894Z",
+      "sz": 14,
+      "proposalReason": "New candidate concept naming an increasingly prominent policy proposal and its discontents — worth tracking as it surfaces in frontier model governance debates."
+    },
+    {
+      "id": "dynamic-workflows",
+      "label": "Dynamic Workflows",
+      "workingDef": "A feature launched in research preview for Claude Code that enables a single session to plan work and then spawn and run hundreds of parallel subagents, verifying outputs before returning results to the user. Positioned by Anthropic as enabling 'codebase-scale' tasks such as large migrations carried out end-to-end. Related to but distinct from multi-agent orchestration patterns in that the parallelism and verification loop are managed internally within a single Claude Code session.",
+      "clusters": [
+        "agentic",
+        "tools"
+      ],
+      "suggestedRels": [
+        "claude-code",
+        "multi-agent",
+        "orchestrator",
+        "planner-worker",
+        "long-horizon-autonomy"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/claude-opus-4-8",
+          "domain": "anthropic.com",
+          "title": "Introducing Claude Opus 4.8",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-05-29T20:24:10.894Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-29T20:24:10.894Z",
+      "dateLastSeen": "2026-05-29T20:24:10.894Z",
+      "sz": 14,
+      "fullName": "Dynamic Workflows (Claude Code)",
+      "nodeType": "product",
+      "proposalReason": "New named feature from Anthropic introducing a distinct architectural pattern: a single session orchestrating hundreds of parallel subagents with internal verification. Worth tracking as a concrete product instantiation of long-horizon autonomy and planner-worker patterns."
+    },
+    {
+      "id": "effort-control",
+      "label": "Effort Control",
+      "workingDef": "A user-facing and API-level control introduced by Anthropic alongside Claude Opus 4.8, allowing users or developers to set the amount of reasoning effort Claude applies to a response. Higher effort settings trigger more frequent and deeper thinking; lower settings increase response speed and reduce rate-limit consumption. Closely related to the longlist term 'Adjustable Reasoning Effort.'",
+      "clusters": [
+        "agentic",
+        "tools"
+      ],
+      "suggestedRels": [
+        "adjustable-reasoning-effort",
+        "reasoning-models",
+        "latency",
+        "cost",
+        "claude-ai"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/claude-opus-4-8",
+          "domain": "anthropic.com",
+          "title": "Introducing Claude Opus 4.8",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-05-29T20:24:10.894Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-29T20:24:10.894Z",
+      "dateLastSeen": "2026-05-29T20:24:10.894Z",
+      "sz": 14,
+      "fullName": "Effort Control (Claude.ai / API)",
+      "nodeType": "product",
+      "proposalReason": "Concrete product instantiation of the adjustable-reasoning-effort pattern; worth tracking as a named, shipping control that exposes inference-time compute trade-offs directly to end users."
     }
   ]
 }

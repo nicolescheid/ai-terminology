@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generatedAt": "2026-05-28T20:21:22.605Z",
-    "unreadCount": 12,
-    "totalCount": 12,
+    "generatedAt": "2026-05-29T20:24:10.894Z",
+    "unreadCount": 13,
+    "totalCount": 13,
     "note": "Lexi's must-reads — articles she flags as worth Nicole reading in full. Editorial signal, not news feed. Set status to 'read' or 'dismissed' via mark-must-reads.mjs."
   },
   "entries": [
@@ -207,6 +207,23 @@
       ],
       "novelTermsInArticle": 3,
       "flaggedAt": "2026-05-18T19:43:41.150Z",
+      "status": "unread"
+    },
+    {
+      "id": "ca121378dca67030",
+      "title": "Do AI Risks Require Extraordinary Government Intervention?",
+      "url": "https://www.normaltech.ai/p/do-ai-risks-require-extraordinary",
+      "source": "AI Snake Oil",
+      "publishedAt": "Thu, 21 May 2026 13:19:41 GMT",
+      "summary": "Kapoor and Narayanan (AI Snake Oil) argue against extraordinary government intervention in AI governance, contending that societal resilience-building is preferable to precautionary restrictions. The piece introduces and applies several framing concepts: the offense-defense balance, AI nonproliferation as analogy, and AI as Normal Technology (AINT). It engages substantively with emergent capabilities, dual-use risks, and the spectrum of regulatory responses.",
+      "priority": 2,
+      "reason": "Kapoor and Narayanan offer one of the cleaner analytical frameworks for thinking about *when* AI warrants extraordinary government action versus improved ordinary governance — distinguishing precautionary restrictions, dual-use liberty burdens, and democratic bypass as the three axes of 'extraordinariness.' A useful counterweight to both dismissive and alarmist framings, and one of the few pieces that tries to argue the policy question rigorously rather than rhetorically.",
+      "clusters": [
+        "critical",
+        "safety"
+      ],
+      "novelTermsInArticle": 4,
+      "flaggedAt": "2026-05-29T20:24:10.894Z",
       "status": "unread"
     }
   ]
