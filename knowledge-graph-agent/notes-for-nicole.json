@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-05-29T20:11:31.955Z",
-    "unreadCount": 4,
+    "generatedAt": "2026-05-29T20:11:34.968Z",
+    "unreadCount": 3,
     "totalCount": 148,
     "note": "Notes for Nicole — Lexi's manager channel (spec §6). Mandatory entry types fire when their triggering condition is met; discretionary entries are observations Lexi thinks Nicole should see. Set status to 'read', 'actioned', or 'dismissed' as appropriate."
   },
@@ -3318,7 +3318,7 @@
       "writtenAt": "2026-05-11T20:47:45.482Z",
       "runId": "8968ddf4-d9e0-4869-9485-c6a044db3876",
       "phase": 1,
-      "status": "unread",
+      "status": "actioned",
       "subject": "Adoption velocity: 'AI-Speed Cyber Defense' hit 2 sources in 1d",
       "details": "This entry accumulated 2 sources within 1 day(s) of first sighting. Often legitimate for product launches, but rapid multi-sourcing from a tight source pool can also signal coordinated promotion. Source labels involved: Harvard Business Review, The Verge — AI.",
       "evidence": {
@@ -3335,7 +3335,8 @@
         "lastSourceTs": "2026-05-11T19:45:39.014Z"
       },
       "suggestedAction": "Cross-check the sources for shared authors or cross-citation. If sources are tightly coupled (same publication network, same author byline), treat as one source for promotion-eligibility purposes.",
-      "source": "auditor"
+      "source": "auditor",
+      "readAt": "2026-05-29T20:11:34.968Z"
     },
     {
       "id": "fe4586afab44074b",
