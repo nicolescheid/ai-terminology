@@ -125,8 +125,11 @@ async function handleMarkProposal(request, env) {
   if (!VALID_PROPOSAL_STATUSES.has(status)) {
     return jsonError(400, `status must be one of: ${[...VALID_PROPOSAL_STATUSES].join(", ")}`);
   }
-  if (reason !== undefined && typeof reason !== "string") {
-    return jsonError(400, "reason, if provided, must be a string");
+  // Accept null as equivalent to undefined ("no reason given"). The dashboard
+  // sends reason: null both for approvals (no reason field exists) and for
+  // rejects when the prompt was left blank — without this, both flows 400'd.
+  if (reason !== undefined && reason !== null && typeof reason !== "string") {
+    return jsonError(400, "reason, if provided, must be a string or null");
   }
 
   return commitJsonChange(env, {
