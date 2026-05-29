@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-05-29T20:11:18.298Z",
-    "unreadCount": 8,
+    "generatedAt": "2026-05-29T20:11:22.212Z",
+    "unreadCount": 7,
     "totalCount": 148,
     "note": "Notes for Nicole — Lexi's manager channel (spec §6). Mandatory entry types fire when their triggering condition is met; discretionary entries are observations Lexi thinks Nicole should see. Set status to 'read', 'actioned', or 'dismissed' as appropriate."
   },
@@ -3361,7 +3361,7 @@
       "writtenAt": "2026-05-14T19:44:37.204Z",
       "runId": "a52018c1-fa21-4b86-9c3e-94ba3c83359a",
       "phase": 1,
-      "status": "unread",
+      "status": "actioned",
       "subject": "Throughput cap hit: longlistAdditionsPer7d (limit 75, current 75)",
       "details": "Would exceed cap of 75 longlist additions per 7-day window (current: 75).",
       "evidence": {
@@ -3378,7 +3378,8 @@
         "suppressedReason": "A useful conceptual counterpoint to the custom sandbox design; names a real OS design pattern relevant to the broader question of how agentic tools are constrained.",
         "source": "extract-flow"
       },
-      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted."
+      "suggestedAction": "Either accept the throttle (Lexi slows down for the week) or raise config.throughputCaps.longlistAdditionsPer7d if the cadence has materially shifted.",
+      "readAt": "2026-05-29T20:11:22.212Z"
     },
     {
       "id": "4212be43d7c9a416",
