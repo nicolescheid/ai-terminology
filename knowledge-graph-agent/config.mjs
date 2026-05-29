@@ -126,6 +126,14 @@ export default {
     // Anthropic co-founder, now-independent voice). Synthesizes ~30 papers/
     // week with editorial framing. Substack default RSS at /feed. Trusted-
     // listed as importai.substack.com in trusted-sources.json (added 2026-05-10).
-    { type: "rss", label: "Import AI", url: "https://importai.substack.com/feed", limit: 3 }
+    { type: "rss", label: "Import AI", url: "https://importai.substack.com/feed", limit: 3 },
+    // One-off article injection (type: "article" — single URL, no feed crawl).
+    // Added 2026-05-30 to seed inference-economics terminology. NVIDIA is not
+    // trusted-listed; the article runs through the normal extract flow and
+    // any candidates need the usual 2-independent-source credibility bar
+    // before promotion. Remove this entry once the article has been seen
+    // (state.seenArticles dedup will skip it on re-runs, but keeping the
+    // entry indefinitely pollutes the sources config).
+    { type: "article", label: "NVIDIA Blog — AI Inference Economics", url: "https://blogs.nvidia.com/blog/ai-inference-economics/" }
   ]
 };
