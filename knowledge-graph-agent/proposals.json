@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generatedAt": "2026-05-28T20:21:23.032Z",
-    "pendingCount": 10,
-    "appliedCount": 12,
+    "generatedAt": "2026-05-29T19:36:44.408Z",
+    "pendingCount": 9,
+    "appliedCount": 13,
     "rejectedCount": 1,
     "note": "Lexi proposals queue. Actions gated as PROPOSE land here as status: 'pending'. Edit a proposal's status to 'approved' or 'rejected' and run the apply step (TBD) to commit."
   },
@@ -645,7 +645,7 @@
       "action": "promote_to_graph",
       "gate": "propose",
       "proposedAt": "2026-05-10T19:04:00.858Z",
-      "status": "pending",
+      "status": "applied",
       "source": "promote-eligibility-scan",
       "target": {
         "kind": "longlist_entry",
@@ -689,7 +689,9 @@
         }
       },
       "reason": "8 sources, 2 independent (openai.com + lastweekin.ai), 13d on longlist.",
-      "runId": "ff116973-9272-442b-929d-21bca2f6d67e"
+      "runId": "ff116973-9272-442b-929d-21bca2f6d67e",
+      "approvedAt": "2026-05-29T19:32:08.644Z",
+      "appliedAt": "2026-05-29T19:36:44.408Z"
     },
     {
       "id": "f84d66e1f196fcd0",

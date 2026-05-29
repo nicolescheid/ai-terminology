@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-05-28T20:21:22.605Z",
+    "generatedAt": "2026-05-29T19:36:44.408Z",
     "sourceCount": 0,
     "note": "Agent-managed overlay. Graph-affecting changes are routed through the permissions matrix (actions.mjs) — see proposals.json for pending items."
   },
@@ -352,6 +352,41 @@
           "q": "A quote from Luke Curley Simon Willison's Weblog"
         }
       ]
+    },
+    {
+      "id": "gpt55",
+      "label": "GPT-5.5",
+      "clusters": [
+        "models",
+        "companies"
+      ],
+      "sz": 14,
+      "def": "A frontier language model released by OpenAI, successor in the GPT-5 family following GPT-5.4.",
+      "rels": [
+        "openai-co",
+        "frontier-model",
+        "proprietary-model",
+        "gpt54"
+      ],
+      "refs": [
+        {
+          "n": 1,
+          "src": "OpenAI News, Thu, 23 Apr 2026 11:00:00 GMT",
+          "q": "Introducing GPT-5.5 OpenAI News"
+        },
+        {
+          "n": 2,
+          "src": "OpenAI News, Thu, 23 Apr 2026 11:00:00 GMT",
+          "q": "GPT-5.5 System Card OpenAI News"
+        },
+        {
+          "n": 3,
+          "src": "OpenAI News, Tue, 28 Apr 2026 00:00:00 GMT",
+          "q": "OpenAI models, Codex, and Managed Agents come to AWS OpenAI News"
+        }
+      ],
+      "fullName": "GPT-5.5 (OpenAI)",
+      "nodeType": "product"
     }
   ],
   "definitionOverrides": [
