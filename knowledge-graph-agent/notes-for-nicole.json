@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-05-29T20:14:27.009Z",
-    "unreadCount": 1,
+    "generatedAt": "2026-05-29T20:14:31.216Z",
+    "unreadCount": 0,
     "totalCount": 148,
     "note": "Notes for Nicole — Lexi's manager channel (spec §6). Mandatory entry types fire when their triggering condition is met; discretionary entries are observations Lexi thinks Nicole should see. Set status to 'read', 'actioned', or 'dismissed' as appropriate."
   },
@@ -3084,7 +3084,7 @@
       "writtenAt": "2026-05-11T20:47:45.482Z",
       "runId": "8968ddf4-d9e0-4869-9485-c6a044db3876",
       "phase": 1,
-      "status": "unread",
+      "status": "actioned",
       "subject": "Source pattern: domain 'lastweekin.ai' appears in 7 recent longlist entries",
       "details": "In the past 30 days, 7 longlist entries have at least one source from lastweekin.ai. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
       "evidence": {
@@ -3103,7 +3103,8 @@
         "recentEntryCount": 96
       },
       "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
-      "source": "auditor"
+      "source": "auditor",
+      "readAt": "2026-05-29T20:14:31.216Z"
     },
     {
       "id": "b4a554444079cec5",
