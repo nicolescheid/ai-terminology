@@ -1,229 +1,258 @@
 {
-  "generatedAt": "2026-05-29T20:29:06.123Z",
+  "generatedAt": "2026-05-30T19:13:38.586Z",
   "model": "claude-sonnet-4-6",
   "sourcesConfigured": 15,
   "articlesConsidered": [
     {
-      "id": "19dc6fb920a7ae06",
-      "source": "Stratechery",
-      "title": "An Interview with Eric Seufert About Models and Ads, and AI’s Upside for Humanity",
-      "url": "https://stratechery.com/2026/an-interview-with-eric-seufert-about-models-and-ads-and-ais-upside-for-humanity/",
-      "publishedAt": "Thu, 28 May 2026 10:00:00 +0000"
+      "id": "885b9f75e7143a8b",
+      "source": "Hugging Face Blog",
+      "title": "ITBench-AA: Frontier Models Score Below 50% on the First Benchmark for Agentic Enterprise IT Tasks — by Artificial Analysis and IBM",
+      "url": "https://huggingface.co/blog/ibm-research/itbench-aa",
+      "publishedAt": "Wed, 27 May 2026 17:20:29 GMT"
     },
     {
-      "id": "944dd86b3cacec94",
+      "id": "92d1db8e488cc9d7",
+      "source": "Last Week in AI",
+      "title": "Last Week in AI #341 - Musk loses to OpenAI, Google's IO updates, OpenAI solves Erdős",
+      "url": "https://lastweekin.ai/p/last-week-in-ai-341-musk-loses-to",
+      "publishedAt": "Wed, 27 May 2026 07:50:58 GMT"
+    },
+    {
+      "id": "bf7abda633b2cc92",
       "source": "Google AI Blog",
-      "title": "Take our I/O 2026 quiz, vibe coded in Google AI Studio.",
-      "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-vibe-coded-quiz/",
-      "publishedAt": "Fri, 29 May 2026 19:00:00 +0000"
+      "title": "9 demos of Gemini Omni and Gemini 3.5 in action",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-3-5-videos/",
+      "publishedAt": "Fri, 29 May 2026 17:30:00 +0000"
     },
     {
-      "id": "507ec0fdf6297e19",
+      "id": "da6428d823f19f4b",
+      "source": "Stratechery",
+      "title": "2026.22: Luceing Their Mind",
+      "url": "https://stratechery.com/2026/luceing-their-mind/",
+      "publishedAt": "Fri, 29 May 2026 17:00:00 +0000"
+    },
+    {
+      "id": "8337eeb248ea1830",
       "source": "OpenAI News",
-      "title": "How Braintrust turns customer requests into code with Codex",
-      "url": "https://openai.com/index/braintrust",
-      "publishedAt": "Fri, 29 May 2026 12:00:00 GMT"
+      "title": "Strengthening societal resilience with Rosalind Biodefense",
+      "url": "https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense",
+      "publishedAt": "Fri, 29 May 2026 03:00:00 GMT"
     },
     {
-      "id": "faf376f098ef681c",
-      "source": "AI Snake Oil",
-      "title": "Did Google’s AI agents really build an operating system for $916?",
-      "url": "https://www.normaltech.ai/p/did-googles-ai-agents-really-build",
-      "publishedAt": "Fri, 22 May 2026 22:24:18 GMT"
-    },
-    {
-      "id": "57e343324007784f",
+      "id": "11bd223a066222da",
       "source": "Simon Willison's Weblog",
-      "title": "Anthropic's run-rate revenue hits $47 billion",
-      "url": "https://simonwillison.net/2026/May/29/anthropic/#atom-everything",
-      "publishedAt": "2026-05-29T01:23:08+00:00"
-    },
-    {
-      "id": "a3d8c6fadccfee2b",
-      "source": "Anthropic Newsroom",
-      "title": "Anthropic raises $65B in Series H funding at $965B post-money valuation",
-      "url": "https://www.anthropic.com/news/series-h",
-      "publishedAt": null
+      "title": "A quote from Daniel Jalkut",
+      "url": "https://simonwillison.net/2026/May/30/daniel-jalkut/#atom-everything",
+      "publishedAt": "2026-05-30T17:29:55+00:00"
     }
   ],
   "harvestedTerms": [
     {
       "article": {
-        "title": "An Interview with Eric Seufert About Models and Ads, and AI’s Upside for Humanity",
-        "url": "https://stratechery.com/2026/an-interview-with-eric-seufert-about-models-and-ads-and-ais-upside-for-humanity/"
+        "title": "ITBench-AA: Frontier Models Score Below 50% on the First Benchmark for Agentic Enterprise IT Tasks — by Artificial Analysis and IBM",
+        "url": "https://huggingface.co/blog/ibm-research/itbench-aa"
       },
-      "summary": "A paywalled Stratechery interview with Eric Seufert covering generative AI model-building, Meta's foundational models, and advertising economics as a lens for AI optimism. The article excerpt is almost entirely a subscription prompt — no substantive content is extractable for terminology analysis.",
+      "summary": "IBM and Artificial Analysis launch ITBench-AA, a benchmark evaluating frontier models on agentic enterprise IT tasks (SRE, FinOps, CISO). All frontier models score below 50%, with Claude Opus 4.7 leading at 47%. The benchmark uses Kubernetes incident response tasks, scored via recall-gated precision, and surfaces meaningful findings about turn-count efficiency and cost-performance tradeoffs across open-weight and proprietary models.",
       "longlistAdditions": [
         {
-          "id": "agentic-web",
-          "label": "Agentic Web"
-        }
-      ],
-      "longlistUpdates": [],
-      "rejections": [],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "Take our I/O 2026 quiz, vibe coded in Google AI Studio.",
-        "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-vibe-coded-quiz/"
-      },
-      "summary": "A brief Google blog post promoting an I/O 2026 quiz built using vibe coding in Google AI Studio, powered by the Antigravity coding agent. The piece is light on substance — primarily a product showcase/marketing piece demonstrating that a non-developer editor built a quiz using Gemini and Google AI Studio.",
-      "longlistAdditions": [],
-      "longlistUpdates": [
-        {
-          "id": "google-antigravity",
-          "label": "Google Antigravity",
-          "sourceAdded": true,
-          "sourceCount": 2,
-          "independentSourceCount": 1
-        }
-      ],
-      "rejections": [],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "Did Google’s AI agents really build an operating system for $916?",
-        "url": "https://www.normaltech.ai/p/did-googles-ai-agents-really-build"
-      },
-      "summary": "Kapoor, Narayanan et al. (AI Snake Oil) critique Google's Antigravity 2.0 / Gemini 3.5 Flash 'OS-building agent' demo, focusing on methodological gaps: the 'single prompt' was thousands of lines, no dry-run reporting, no similarity analysis, no logs released. They introduce 'open-world evaluations' as a named paradigm and call for independent evaluation norms for long-horizon agentic tasks.",
-      "longlistAdditions": [
-        {
-          "id": "open-world-evaluation",
-          "label": "Open-World Evaluation"
+          "id": "itbench-aa",
+          "label": "ITBench-AA"
         },
         {
-          "id": "scaffold",
-          "label": "Scaffold"
+          "id": "recall-gated-precision",
+          "label": "Recall-Gated Precision"
+        },
+        {
+          "id": "sre-tasks",
+          "label": "Site Reliability Engineering Tasks"
         }
       ],
       "longlistUpdates": [
         {
-          "id": "google-antigravity",
-          "label": "Google Antigravity",
+          "id": "capability-reliability-gap",
+          "label": "Capability-Reliability Gap",
           "sourceAdded": true,
           "sourceCount": 3,
           "independentSourceCount": 2
-        },
-        {
-          "id": "agentic-era",
-          "label": "Agentic Era",
-          "sourceAdded": true,
-          "sourceCount": 4,
-          "independentSourceCount": 4
         }
       ],
       "rejections": [],
       "proposalsQueued": [],
       "mustReadFlagged": {
-        "priority": 1,
-        "reason": "Kapoor, Narayanan et al. do something rare here: they take a headline AI demo seriously enough to dissect its methodology rather than dismiss or celebrate it. In doing so, they introduce 'open-world evaluation' as a named paradigm with its own methodological requirements — a genuine conceptual contribution that belongs in any serious vocabulary of AI assessment. Essential reading for anyone thinking about how to evaluate long-horizon agentic claims."
+        "priority": 2,
+        "reason": "A primary-source benchmark paper with real numbers: all frontier models below 50% on agentic enterprise IT tasks, plus a nuanced finding that longer trajectories do not improve accuracy and may hurt it. Useful for anyone calibrating claims about AI readiness for autonomous enterprise work."
       }
     },
     {
       "article": {
-        "title": "Anthropic's run-rate revenue hits $47 billion",
-        "url": "https://simonwillison.net/2026/May/29/anthropic/#atom-everything"
+        "title": "Last Week in AI #341 - Musk loses to OpenAI, Google's IO updates, OpenAI solves Erdős",
+        "url": "https://lastweekin.ai/p/last-week-in-ai-341-musk-loses-to"
       },
-      "summary": "Simon Willison's brief commentary on Anthropic's $65B Series H fundraise and the 'run-rate revenue' figure ($47B annualized), with a chart of Anthropic's revenue growth and a note on investor trust. Short news item with minimal conceptual depth.",
+      "summary": "A roundup covering OpenAI's IPO preparation following Musk's failed lawsuit, Google I/O 2026 product launches (Gemini Spark, Gemini Omni, Antigravity 2.0, AlphaProof Nexus), and OpenAI's disproof of an Erdős conjecture. The article is a broad news digest with several named products and one genuinely novel framing around AI-assisted formal mathematics.",
       "longlistAdditions": [
         {
-          "id": "run-rate-revenue",
-          "label": "Run-Rate Revenue"
+          "id": "gemini-spark",
+          "label": "Gemini Spark"
         },
         {
-          "id": "product-market-fit",
-          "label": "Product-Market Fit"
-        }
-      ],
-      "longlistUpdates": [],
-      "rejections": [],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "Anthropic raises $65B in Series H funding at $965B post-money valuation",
-        "url": "https://www.anthropic.com/news/series-h"
-      },
-      "summary": "Anthropic announces a $65B Series H funding round at a $965B valuation, citing growing enterprise adoption of Claude, $47B run-rate revenue, and major compute expansion deals with Amazon, Google, Broadcom, and SpaceX. The round includes strategic partnerships with memory/chip manufacturers Micron, Samsung, and SK hynix.",
-      "longlistAdditions": [
-        {
-          "id": "colossus",
-          "label": "Colossus"
-        },
-        {
-          "id": "series-h-anthropic",
-          "label": "Series H"
-        },
-        {
-          "id": "hyperscaler",
-          "label": "Hyperscaler"
+          "id": "alphaproof-nexus",
+          "label": "AlphaProof Nexus"
         }
       ],
       "longlistUpdates": [
         {
-          "id": "run-rate-revenue",
-          "label": "Run-Rate Revenue",
+          "id": "gemini-omni",
+          "label": "Gemini Omni",
+          "sourceAdded": true,
+          "sourceCount": 2,
+          "independentSourceCount": 2
+        },
+        {
+          "id": "gemini-35-flash",
+          "label": "Gemini 3.5 Flash",
           "sourceAdded": true,
           "sourceCount": 2,
           "independentSourceCount": 2
         }
       ],
+      "rejections": [],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "9 demos of Gemini Omni and Gemini 3.5 in action",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-3-5-videos/"
+      },
+      "summary": "Google I/O 2026 demo article showcasing Gemini Omni (video-generation/editing model) and Gemini 3.5 Flash (agentic/coding model), with brief mentions of the Antigravity harness and long-horizon agentic tasks. Primarily a product demonstration piece with limited terminological novelty.",
+      "longlistAdditions": [
+        {
+          "id": "conversational-video-editing",
+          "label": "Conversational Video Editing"
+        }
+      ],
+      "longlistUpdates": [
+        {
+          "id": "gemini-omni",
+          "label": "Gemini Omni",
+          "sourceAdded": true,
+          "sourceCount": 3,
+          "independentSourceCount": 2
+        },
+        {
+          "id": "gemini-35-flash",
+          "label": "Gemini 3.5 Flash",
+          "sourceAdded": true,
+          "sourceCount": 3,
+          "independentSourceCount": 2
+        },
+        {
+          "id": "google-antigravity",
+          "label": "Google Antigravity",
+          "sourceAdded": true,
+          "sourceCount": 4,
+          "independentSourceCount": 2
+        }
+      ],
+      "rejections": [],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "2026.22: Luceing Their Mind",
+        "url": "https://stratechery.com/2026/luceing-their-mind/"
+      },
+      "summary": "A Stratechery weekly roundup covering Nvidia's reporting restructure, SpaceX data centers in space, AI monetization via ads, and a re-sighting of 'The Inference Shift' — a Stratechery-coined framing for the structural shift from training to inference compute demand. Mostly a table-of-contents article with thin AI-specific depth.",
+      "longlistAdditions": [],
+      "longlistUpdates": [
+        {
+          "id": "inference-shift",
+          "label": "Inference Shift",
+          "sourceAdded": true,
+          "sourceCount": 3,
+          "independentSourceCount": 1
+        },
+        {
+          "id": "agentic-web",
+          "label": "Agentic Web",
+          "sourceAdded": true,
+          "sourceCount": 2,
+          "independentSourceCount": 1
+        },
+        {
+          "id": "hyperscaler",
+          "label": "Hyperscaler",
+          "sourceAdded": true,
+          "sourceCount": 2,
+          "independentSourceCount": 2
+        }
+      ],
+      "rejections": [],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "A quote from Daniel Jalkut",
+        "url": "https://simonwillison.net/2026/May/30/daniel-jalkut/#atom-everything"
+      },
+      "summary": "A single-sentence quote from Daniel Jalkut (via John Gruber) posted on Simon Willison's blog: 'My take on AI is, essentially, everybody who's against it is too against it and everybody who's for it is too for it.' No substantive technical content; pure editorial commentary.",
+      "longlistAdditions": [],
+      "longlistUpdates": [],
       "rejections": [],
       "proposalsQueued": []
     }
   ],
   "definitionReviews": [
     {
-      "id": "api",
+      "id": "behavioral-audit",
       "status": "keep",
-      "reason": "No source material touches on APIs, MCP, or Claude Code tool-calling mechanics. Definition stands."
+      "reason": "No source material addresses behavioral audits. Definition remains accurate and unsupported by new evidence requiring change."
     },
     {
-      "id": "artifact",
+      "id": "benchmark-gaming",
       "status": "keep",
-      "reason": "No source material addresses the concept of AI artifacts or agentic outputs. Definition stands."
+      "reason": "The ITBench-AA article implicitly illustrates why real-world agentic benchmarks matter over gamed ones, but contains nothing that materially changes or contradicts the existing definition. Keep as-is."
     },
     {
-      "id": "asl-4",
-      "status": "keep",
-      "reason": "The Simon Willison post mentions 'Claude Opus 4.8' in the context of revenue announcements but provides no information about ASL thresholds, safety levels, or engineer surveys. The definition references 'Claude Opus 4.6' at ASL-4 thresholds; the sources neither confirm nor deny this. Insufficient new evidence to trigger a refresh."
+      "id": "benchmark-saturation",
+      "status": "refresh",
+      "def": "The point at which AI models perform so well on existing evaluation benchmarks that those benchmarks can no longer meaningfully differentiate capabilities or track real-world performance. ITBench-AA (May 2026) illustrates the inverse: its SRE tasks remain one of the least saturated agentic benchmarks precisely because all frontier models score below 50%, in contrast to benchmarks like Terminal-Bench where models score considerably higher. Saturation is an active concern driving the creation of harder, domain-specific, agentic evaluations.",
+      "reason": "The ITBench-AA source explicitly discusses benchmark saturation in the context of agentic enterprise IT tasks, noting that scoring below 50% makes it 'one of the least saturated agentic benchmarks' — directly illustrating the concept with current empirical data and adding nuance about agentic benchmarks as the new frontier for avoiding saturation. The existing definition's Mythos/Anthropic example is now supplemented by richer, more current evidence that warrants a refresh."
     },
     {
-      "id": "attention-budget",
+      "id": "blast-radius",
       "status": "keep",
-      "reason": "No source material covers attention mechanisms or context engineering. Definition stands."
+      "reason": "No source material addresses blast radius or agent containment concepts. Definition remains sound."
     },
     {
-      "id": "attention-dilution",
+      "id": "blue-team",
       "status": "keep",
-      "reason": "No source material covers transformer attention or context window mechanics. Definition stands."
+      "reason": "No source material addresses blue-team security concepts. Definition remains sound."
     },
     {
-      "id": "attention-sink",
+      "id": "capability-overhang",
       "status": "keep",
-      "reason": "No source material covers attention sink phenomena or context compression. Definition stands."
+      "reason": "No source directly contradicts or materially updates this definition. The ITBench-AA finding that frontier models score below 50% on real enterprise tasks could be seen as evidence of a gap between perceived and actual capability, but does not clearly update the definition as written."
     },
     {
-      "id": "autodream",
+      "id": "chatbot",
       "status": "keep",
-      "reason": "No source material references autoDream or Claude Code memory consolidation. Definition stands."
+      "reason": "No source material updates the chatbot definition."
     },
     {
-      "id": "autonomous-agent",
+      "id": "chatgpt",
       "status": "keep",
-      "reason": "The Google AI agent OS story touches loosely on autonomous agents but adds no definitional nuance beyond what is already captured. Definition stands."
+      "reason": "The Last Week in AI excerpt mentions OpenAI's IPO plans and the Musk lawsuit outcome but contains nothing that materially changes the ChatGPT product definition."
     },
     {
-      "id": "autonomous-goal-extension",
-      "status": "keep",
-      "reason": "No source material references Mythos testing or autonomous goal extension behavior. Definition stands."
+      "id": "claude",
+      "status": "refresh",
+      "def": "Anthropic's model family. Recent versions referenced include Claude Opus 4.7 (noted in ITBench-AA evaluations, May 2026) and Claude Opus 4.8 (described as 'a modest but tangible improvement', released May 2026), alongside Sonnet and Haiku variants for balanced performance and speed respectively. Named after Claude Shannon, father of information theory. Known for safety, long-context coherence, and coding ability.",
+      "reason": "Two sources reference Claude model versions beyond what the current definition states (Claude 4.6). Simon Willison's blog references 'Claude Opus 4.8' as of May 28, 2026, and the ITBench-AA benchmark references 'Claude Opus 4.7' — both supersede the current definition's claim of Claude 4.6 as the current version. The version numbers in the definition need updating."
     },
     {
-      "id": "autonomy-spectrum",
+      "id": "claude-ai",
       "status": "keep",
-      "reason": "No source material addresses the human-in/on/out-of-the-loop autonomy spectrum framework. Definition stands."
+      "reason": "No source material provides new information about the Claude.ai interface specifically."
     }
   ],
   "notes": []

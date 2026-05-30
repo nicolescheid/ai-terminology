@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generatedAt": "2026-05-29T20:29:06.123Z",
-    "unreadCount": 14,
-    "totalCount": 14,
+    "generatedAt": "2026-05-30T19:13:38.586Z",
+    "unreadCount": 15,
+    "totalCount": 15,
     "note": "Lexi's must-reads — articles she flags as worth Nicole reading in full. Editorial signal, not news feed. Set status to 'read' or 'dismissed' via mark-must-reads.mjs."
   },
   "entries": [
@@ -241,6 +241,23 @@
       ],
       "novelTermsInArticle": 2,
       "flaggedAt": "2026-05-29T20:29:06.123Z",
+      "status": "unread"
+    },
+    {
+      "id": "885b9f75e7143a8b",
+      "title": "ITBench-AA: Frontier Models Score Below 50% on the First Benchmark for Agentic Enterprise IT Tasks — by Artificial Analysis and IBM",
+      "url": "https://huggingface.co/blog/ibm-research/itbench-aa",
+      "source": "Hugging Face Blog",
+      "publishedAt": "Wed, 27 May 2026 17:20:29 GMT",
+      "summary": "IBM and Artificial Analysis launch ITBench-AA, a benchmark evaluating frontier models on agentic enterprise IT tasks (SRE, FinOps, CISO). All frontier models score below 50%, with Claude Opus 4.7 leading at 47%. The benchmark uses Kubernetes incident response tasks, scored via recall-gated precision, and surfaces meaningful findings about turn-count efficiency and cost-performance tradeoffs across open-weight and proprietary models.",
+      "priority": 2,
+      "reason": "A primary-source benchmark paper with real numbers: all frontier models below 50% on agentic enterprise IT tasks, plus a nuanced finding that longer trajectories do not improve accuracy and may hurt it. Useful for anyone calibrating claims about AI readiness for autonomous enterprise work.",
+      "clusters": [
+        "agentic",
+        "technical"
+      ],
+      "novelTermsInArticle": 3,
+      "flaggedAt": "2026-05-30T19:13:38.586Z",
       "status": "unread"
     }
   ]

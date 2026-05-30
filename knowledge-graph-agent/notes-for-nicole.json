@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generatedAt": "2026-05-29T20:29:06.123Z",
-    "unreadCount": 0,
-    "totalCount": 148,
+    "generatedAt": "2026-05-30T19:13:38.586Z",
+    "unreadCount": 4,
+    "totalCount": 152,
     "note": "Notes for Nicole — Lexi's manager channel (spec §6). Mandatory entry types fire when their triggering condition is met; discretionary entries are observations Lexi thinks Nicole should see. Set status to 'read', 'actioned', or 'dismissed' as appropriate."
   },
   "entries": [
@@ -3940,6 +3940,91 @@
       },
       "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
       "readAt": "2026-05-29T20:10:55.056Z"
+    },
+    {
+      "id": "95bda829f3132d6e",
+      "type": "contested_cluster_omission",
+      "writtenAt": "2026-05-30T19:13:38.586Z",
+      "runId": "da59feca-2103-47fd-82ec-1aca587198b6",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Contested cluster term added without naming the contestation: 'ITBench-AA'",
+      "details": "The term 'ITBench-AA' matches the contested-cluster pattern 'agentic' (per spec §10), but the working definition does not appear to acknowledge that the term is contested or that different camps use it differently. Per spec §6 entry type 5, this requires review before any move toward graph promotion.",
+      "evidence": {
+        "entryId": "itbench-aa",
+        "label": "ITBench-AA",
+        "fullName": "ITBench-AA (Agentic Enterprise IT Benchmark)",
+        "matchedContestedTerm": "agentic",
+        "workingDef": "A benchmark developed by Artificial Analysis and IBM, evaluating frontier AI models on agentic enterprise IT operations tasks — beginning with Site Reliability Engineering (SRE) and expanding to Financial Operations (FinOps) and CISO tasks. Tasks require agents to diagnose live Kubernetes incidents by reading logs, tracing dependencies, and identifying root-cause entities, scored via recall-gated precision. As of launch, all frontier models score below 50%, making it one of the least saturated agentic benchmarks available.",
+        "sourceUrl": "https://huggingface.co/blog/ibm-research/itbench-aa",
+        "sourceLabel": "Hugging Face Blog"
+      },
+      "suggestedAction": "Either revise the working definition to name the contestation (who uses it to mean what), or confirm this term doesn't warrant the contested treatment in this case."
+    },
+    {
+      "id": "eb315db29699b860",
+      "type": "contested_cluster_omission",
+      "writtenAt": "2026-05-30T19:13:38.586Z",
+      "runId": "da59feca-2103-47fd-82ec-1aca587198b6",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Contested cluster term added without naming the contestation: 'Recall-Gated Precision'",
+      "details": "The term 'Recall-Gated Precision' matches the contested-cluster pattern 'agentic' (per spec §10), but the working definition does not appear to acknowledge that the term is contested or that different camps use it differently. Per spec §6 entry type 5, this requires review before any move toward graph promotion.",
+      "evidence": {
+        "entryId": "recall-gated-precision",
+        "label": "Recall-Gated Precision",
+        "fullName": "Recall-Gated Precision (Agentic Benchmark Scoring)",
+        "matchedContestedTerm": "agentic",
+        "workingDef": "A scoring methodology used in agentic benchmarks (notably ITBench-AA) where a model receives zero credit unless it identifies all ground-truth root causes (full recall), after which its score equals the precision of its submitted answer set. This penalises over-investigation — submitting additional plausible but incorrect entities — and rewards minimal, accurate diagnosis over expansive exploration.",
+        "sourceUrl": "https://huggingface.co/blog/ibm-research/itbench-aa",
+        "sourceLabel": "Hugging Face Blog"
+      },
+      "suggestedAction": "Either revise the working definition to name the contestation (who uses it to mean what), or confirm this term doesn't warrant the contested treatment in this case."
+    },
+    {
+      "id": "1f453075bf327ba9",
+      "type": "contested_cluster_omission",
+      "writtenAt": "2026-05-30T19:13:38.586Z",
+      "runId": "da59feca-2103-47fd-82ec-1aca587198b6",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Contested cluster term added without naming the contestation: 'Site Reliability Engineering Tasks'",
+      "details": "The term 'Site Reliability Engineering Tasks' matches the contested-cluster pattern 'agentic' (per spec §10), but the working definition does not appear to acknowledge that the term is contested or that different camps use it differently. Per spec §6 entry type 5, this requires review before any move toward graph promotion.",
+      "evidence": {
+        "entryId": "sre-tasks",
+        "label": "Site Reliability Engineering Tasks",
+        "fullName": "Site Reliability Engineering Tasks (Agentic AI Evaluation)",
+        "matchedContestedTerm": "agentic",
+        "workingDef": "A class of agentic benchmark tasks modelled on SRE workflows — specifically Kubernetes incident response — requiring AI agents to diagnose system failures by inspecting alerts, logs, traces, and topology, then identifying minimal root-cause entities. Used in ITBench-AA as a domain where real-world enterprise complexity meets agentic AI evaluation.",
+        "sourceUrl": "https://huggingface.co/blog/ibm-research/itbench-aa",
+        "sourceLabel": "Hugging Face Blog"
+      },
+      "suggestedAction": "Either revise the working definition to name the contestation (who uses it to mean what), or confirm this term doesn't warrant the contested treatment in this case."
+    },
+    {
+      "id": "7a0d5a2c5b670bcb",
+      "type": "throughput_cap_hit",
+      "writtenAt": "2026-05-30T19:13:38.586Z",
+      "runId": "da59feca-2103-47fd-82ec-1aca587198b6",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Throughput cap hit: pendingProposalsBeforePause (limit 10, current 14)",
+      "details": "Would exceed cap of 10 pending proposals (current: 14). Approve or reject pending items in proposals.json before Lexi queues more.",
+      "evidence": {
+        "action": "edit_graph_def_substantive",
+        "target": {
+          "kind": "graph_node",
+          "id": "benchmark-saturation"
+        },
+        "gate": "propose",
+        "cap": "pendingProposalsBeforePause",
+        "limit": 10,
+        "current": 14,
+        "details": "Would exceed cap of 10 pending proposals (current: 14). Approve or reject pending items in proposals.json before Lexi queues more.",
+        "suppressedReason": "The ITBench-AA source explicitly discusses benchmark saturation in the context of agentic enterprise IT tasks, noting that scoring below 50% makes it 'one of the least saturated agentic benchmarks' — directly illustrating the concept with current empirical data and adding nuance about agentic benchmarks as the new frontier for avoiding saturation. The existing definition's Mythos/Anthropic example is now supplemented by richer, more current evidence that warrants a refresh.",
+        "source": "definition-review"
+      },
+      "suggestedAction": "Approve or reject the oldest pending proposals so Lexi can resume queueing new ones."
     }
   ]
 }

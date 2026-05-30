@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-05-29T20:29:06.123Z",
-    "entryCount": 152,
+    "generatedAt": "2026-05-30T19:13:38.586Z",
+    "entryCount": 158,
     "note": "Lexi-managed Tier 2 longlist — terms under observation, awaiting evidence to support promotion to the graph (Tier 1)."
   },
   "entries": [
@@ -1111,12 +1111,20 @@
           "sourceLabel": "AI Snake Oil",
           "publishedAt": "Thu, 16 Apr 2026 17:47:29 GMT",
           "firstSeen": "2026-05-01T19:10:07.910Z"
+        },
+        {
+          "url": "https://huggingface.co/blog/ibm-research/itbench-aa",
+          "domain": "huggingface.co",
+          "title": "ITBench-AA: Frontier Models Score Below 50% on the First Benchmark for Agentic Enterprise IT Tasks — by Artificial Analysis and IBM",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Wed, 27 May 2026 17:20:29 GMT",
+          "firstSeen": "2026-05-30T19:13:38.586Z"
         }
       ],
-      "sourceCount": 2,
-      "independentSourceCount": 1,
+      "sourceCount": 3,
+      "independentSourceCount": 2,
       "dateFirstSeen": "2026-04-30T19:20:00.611Z",
-      "dateLastSeen": "2026-05-01T19:10:07.910Z",
+      "dateLastSeen": "2026-05-30T19:13:38.586Z",
       "sz": 14,
       "proposalReason": "Central framing concept of the paper; likely to recur as agents are evaluated for deployment readiness. Not currently in Tier 1 or Tier 2."
     },
@@ -3388,12 +3396,20 @@
           "sourceLabel": "Stratechery",
           "publishedAt": "Fri, 15 May 2026 17:00:00 +0000",
           "firstSeen": "2026-05-16T19:02:56.992Z"
+        },
+        {
+          "url": "https://stratechery.com/2026/luceing-their-mind/",
+          "domain": "stratechery.com",
+          "title": "2026.22: Luceing Their Mind",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Fri, 29 May 2026 17:00:00 +0000",
+          "firstSeen": "2026-05-30T19:13:38.586Z"
         }
       ],
-      "sourceCount": 2,
+      "sourceCount": 3,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-05-11T19:45:39.014Z",
-      "dateLastSeen": "2026-05-16T19:02:56.992Z",
+      "dateLastSeen": "2026-05-30T19:13:38.586Z",
       "sz": 14,
       "fullName": "The Inference Shift",
       "proposalReason": "The article's own coinage and central thesis — worth tracking to see if it gains independent adoption as a framing term in the infrastructure and AI policy discourse."
@@ -4835,12 +4851,28 @@
           "sourceLabel": "Google AI Blog",
           "publishedAt": "Thu, 28 May 2026 15:00:00 +0000",
           "firstSeen": "2026-05-29T20:24:10.894Z"
+        },
+        {
+          "url": "https://lastweekin.ai/p/last-week-in-ai-341-musk-loses-to",
+          "domain": "lastweekin.ai",
+          "title": "Last Week in AI #341 - Musk loses to OpenAI, Google's IO updates, OpenAI solves Erdős",
+          "sourceLabel": "Last Week in AI",
+          "publishedAt": "Wed, 27 May 2026 07:50:58 GMT",
+          "firstSeen": "2026-05-30T19:13:38.586Z"
+        },
+        {
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-3-5-videos/",
+          "domain": "blog.google",
+          "title": "9 demos of Gemini Omni and Gemini 3.5 in action",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Fri, 29 May 2026 17:30:00 +0000",
+          "firstSeen": "2026-05-30T19:13:38.586Z"
         }
       ],
-      "sourceCount": 1,
-      "independentSourceCount": 1,
+      "sourceCount": 3,
+      "independentSourceCount": 2,
       "dateFirstSeen": "2026-05-29T20:24:10.894Z",
-      "dateLastSeen": "2026-05-29T20:24:10.894Z",
+      "dateLastSeen": "2026-05-30T19:13:38.586Z",
       "sz": 14,
       "fullName": "Gemini Omni (Google)",
       "nodeType": "product",
@@ -4868,12 +4900,28 @@
           "sourceLabel": "Google AI Blog",
           "publishedAt": "Thu, 28 May 2026 15:00:00 +0000",
           "firstSeen": "2026-05-29T20:24:10.894Z"
+        },
+        {
+          "url": "https://lastweekin.ai/p/last-week-in-ai-341-musk-loses-to",
+          "domain": "lastweekin.ai",
+          "title": "Last Week in AI #341 - Musk loses to OpenAI, Google's IO updates, OpenAI solves Erdős",
+          "sourceLabel": "Last Week in AI",
+          "publishedAt": "Wed, 27 May 2026 07:50:58 GMT",
+          "firstSeen": "2026-05-30T19:13:38.586Z"
+        },
+        {
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-3-5-videos/",
+          "domain": "blog.google",
+          "title": "9 demos of Gemini Omni and Gemini 3.5 in action",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Fri, 29 May 2026 17:30:00 +0000",
+          "firstSeen": "2026-05-30T19:13:38.586Z"
         }
       ],
-      "sourceCount": 1,
-      "independentSourceCount": 1,
+      "sourceCount": 3,
+      "independentSourceCount": 2,
       "dateFirstSeen": "2026-05-29T20:24:10.894Z",
-      "dateLastSeen": "2026-05-29T20:24:10.894Z",
+      "dateLastSeen": "2026-05-30T19:13:38.586Z",
       "sz": 14,
       "fullName": "Gemini 3.5 Flash (Google DeepMind)",
       "nodeType": "product",
@@ -4952,12 +5000,20 @@
           "sourceLabel": "AI Snake Oil",
           "publishedAt": "Fri, 22 May 2026 22:24:18 GMT",
           "firstSeen": "2026-05-29T20:29:06.123Z"
+        },
+        {
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-3-5-videos/",
+          "domain": "blog.google",
+          "title": "9 demos of Gemini Omni and Gemini 3.5 in action",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Fri, 29 May 2026 17:30:00 +0000",
+          "firstSeen": "2026-05-30T19:13:38.586Z"
         }
       ],
-      "sourceCount": 3,
+      "sourceCount": 4,
       "independentSourceCount": 2,
       "dateFirstSeen": "2026-05-29T20:24:10.894Z",
-      "dateLastSeen": "2026-05-29T20:29:06.123Z",
+      "dateLastSeen": "2026-05-30T19:13:38.586Z",
       "sz": 14,
       "nodeType": "product",
       "proposalReason": "New named Google platform enabling in-Search code generation and mini-app creation; relates to the emerging personal-software and micro-app concepts on the longlist."
@@ -5180,12 +5236,20 @@
           "sourceLabel": "Stratechery",
           "publishedAt": "Thu, 28 May 2026 10:00:00 +0000",
           "firstSeen": "2026-05-29T20:29:06.123Z"
+        },
+        {
+          "url": "https://stratechery.com/2026/luceing-their-mind/",
+          "domain": "stratechery.com",
+          "title": "2026.22: Luceing Their Mind",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Fri, 29 May 2026 17:00:00 +0000",
+          "firstSeen": "2026-05-30T19:13:38.586Z"
         }
       ],
-      "sourceCount": 1,
+      "sourceCount": 2,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-05-29T20:29:06.123Z",
-      "dateLastSeen": "2026-05-29T20:29:06.123Z",
+      "dateLastSeen": "2026-05-30T19:13:38.586Z",
       "sz": 14,
       "fullName": "The Agentic Web",
       "proposalReason": "NEW term implied by adjacent Stratechery interview title; captures an emerging framing about how AI agents transform content and advertising economics on the web."
@@ -5409,15 +5473,220 @@
           "sourceLabel": "Anthropic Newsroom",
           "publishedAt": null,
           "firstSeen": "2026-05-29T20:29:06.123Z"
+        },
+        {
+          "url": "https://stratechery.com/2026/luceing-their-mind/",
+          "domain": "stratechery.com",
+          "title": "2026.22: Luceing Their Mind",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Fri, 29 May 2026 17:00:00 +0000",
+          "firstSeen": "2026-05-30T19:13:38.586Z"
+        }
+      ],
+      "sourceCount": 2,
+      "independentSourceCount": 2,
+      "dateFirstSeen": "2026-05-29T20:29:06.123Z",
+      "dateLastSeen": "2026-05-30T19:13:38.586Z",
+      "sz": 14,
+      "fullName": "Hyperscaler (Cloud Provider in AI Context)",
+      "proposalReason": "The term is used with increasing precision in AI financing and infrastructure discourse to denote a specific tier of compute provider; worth tracking as it accumulates a distinct meaning beyond generic 'cloud.'"
+    },
+    {
+      "id": "itbench-aa",
+      "label": "ITBench-AA",
+      "workingDef": "A benchmark developed by Artificial Analysis and IBM, evaluating frontier AI models on agentic enterprise IT operations tasks — beginning with Site Reliability Engineering (SRE) and expanding to Financial Operations (FinOps) and CISO tasks. Tasks require agents to diagnose live Kubernetes incidents by reading logs, tracing dependencies, and identifying root-cause entities, scored via recall-gated precision. As of launch, all frontier models score below 50%, making it one of the least saturated agentic benchmarks available.",
+      "clusters": [
+        "technical",
+        "agentic"
+      ],
+      "suggestedRels": [
+        "evals",
+        "agentic-harness",
+        "benchmark-saturation",
+        "capability-reliability-gap"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/ibm-research/itbench-aa",
+          "domain": "huggingface.co",
+          "title": "ITBench-AA: Frontier Models Score Below 50% on the First Benchmark for Agentic Enterprise IT Tasks — by Artificial Analysis and IBM",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Wed, 27 May 2026 17:20:29 GMT",
+          "firstSeen": "2026-05-30T19:13:38.586Z"
         }
       ],
       "sourceCount": 1,
       "independentSourceCount": 1,
-      "dateFirstSeen": "2026-05-29T20:29:06.123Z",
-      "dateLastSeen": "2026-05-29T20:29:06.123Z",
+      "dateFirstSeen": "2026-05-30T19:13:38.586Z",
+      "dateLastSeen": "2026-05-30T19:13:38.586Z",
       "sz": 14,
-      "fullName": "Hyperscaler (Cloud Provider in AI Context)",
-      "proposalReason": "The term is used with increasing precision in AI financing and infrastructure discourse to denote a specific tier of compute provider; worth tracking as it accumulates a distinct meaning beyond generic 'cloud.'"
+      "fullName": "ITBench-AA (Agentic Enterprise IT Benchmark)",
+      "nodeType": "product",
+      "proposalReason": "First benchmark of its kind targeting enterprise IT operations with agentic agents; low saturation scores make it a primary source on the current capability-reliability gap in real-world agentic tasks."
+    },
+    {
+      "id": "recall-gated-precision",
+      "label": "Recall-Gated Precision",
+      "workingDef": "A scoring methodology used in agentic benchmarks (notably ITBench-AA) where a model receives zero credit unless it identifies all ground-truth root causes (full recall), after which its score equals the precision of its submitted answer set. This penalises over-investigation — submitting additional plausible but incorrect entities — and rewards minimal, accurate diagnosis over expansive exploration.",
+      "clusters": [
+        "technical",
+        "agentic"
+      ],
+      "suggestedRels": [
+        "evals",
+        "hallucination",
+        "silent-failure"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/ibm-research/itbench-aa",
+          "domain": "huggingface.co",
+          "title": "ITBench-AA: Frontier Models Score Below 50% on the First Benchmark for Agentic Enterprise IT Tasks — by Artificial Analysis and IBM",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Wed, 27 May 2026 17:20:29 GMT",
+          "firstSeen": "2026-05-30T19:13:38.586Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-30T19:13:38.586Z",
+      "dateLastSeen": "2026-05-30T19:13:38.586Z",
+      "sz": 14,
+      "fullName": "Recall-Gated Precision (Agentic Benchmark Scoring)",
+      "proposalReason": "A distinct and transferable evaluation design pattern for agentic tasks where over-investigation is penalised; relevant beyond this specific benchmark."
+    },
+    {
+      "id": "sre-tasks",
+      "label": "Site Reliability Engineering Tasks",
+      "workingDef": "A class of agentic benchmark tasks modelled on SRE workflows — specifically Kubernetes incident response — requiring AI agents to diagnose system failures by inspecting alerts, logs, traces, and topology, then identifying minimal root-cause entities. Used in ITBench-AA as a domain where real-world enterprise complexity meets agentic AI evaluation.",
+      "clusters": [
+        "agentic",
+        "work"
+      ],
+      "suggestedRels": [
+        "evals",
+        "itbench-aa",
+        "long-horizon-autonomy",
+        "tool-use"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/ibm-research/itbench-aa",
+          "domain": "huggingface.co",
+          "title": "ITBench-AA: Frontier Models Score Below 50% on the First Benchmark for Agentic Enterprise IT Tasks — by Artificial Analysis and IBM",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Wed, 27 May 2026 17:20:29 GMT",
+          "firstSeen": "2026-05-30T19:13:38.586Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-30T19:13:38.586Z",
+      "dateLastSeen": "2026-05-30T19:13:38.586Z",
+      "sz": 14,
+      "fullName": "Site Reliability Engineering Tasks (Agentic AI Evaluation)",
+      "proposalReason": "Establishes SRE as a named evaluation domain for agentic AI, with methodological implications for how enterprise-readiness benchmarks are structured."
+    },
+    {
+      "id": "gemini-spark",
+      "label": "Gemini Spark",
+      "workingDef": "A 24/7 cloud-based personal AI agent launched by Google at I/O 2026, built on Gemini base models and the Antigravity agentic harness. Runs on dedicated virtual machines so it continues operating when the user's device is locked, integrates natively with Gmail, Google Docs, and Workspace via MCP, and can be emailed directly via a dedicated Gmail address.",
+      "clusters": [
+        "agentic",
+        "tools"
+      ],
+      "suggestedRels": [
+        "google-co",
+        "gemini",
+        "google-antigravity",
+        "mcp",
+        "agentic-harness",
+        "proactive-agent"
+      ],
+      "sources": [
+        {
+          "url": "https://lastweekin.ai/p/last-week-in-ai-341-musk-loses-to",
+          "domain": "lastweekin.ai",
+          "title": "Last Week in AI #341 - Musk loses to OpenAI, Google's IO updates, OpenAI solves Erdős",
+          "sourceLabel": "Last Week in AI",
+          "publishedAt": "Wed, 27 May 2026 07:50:58 GMT",
+          "firstSeen": "2026-05-30T19:13:38.586Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-30T19:13:38.586Z",
+      "dateLastSeen": "2026-05-30T19:13:38.586Z",
+      "sz": 14,
+      "fullName": "Gemini Spark (Google)",
+      "nodeType": "product",
+      "proposalReason": "New named product that instantiates several canonical graph concepts — agentic harness, persistent agent, MCP integration — in a single consumer product."
+    },
+    {
+      "id": "alphaproof-nexus",
+      "label": "AlphaProof Nexus",
+      "workingDef": "A formal-mathematics reasoning framework released by Google DeepMind that combines Gemini 3.1 Pro with Lean formal verification, feeding compiler error messages back into successive proof attempts in a loop. Demonstrated autonomous solution of open Erdős problems and OEIS conjectures at inference costs of a few hundred dollars per problem.",
+      "clusters": [
+        "models",
+        "technical"
+      ],
+      "suggestedRels": [
+        "google-co",
+        "gemini",
+        "reasoning-models",
+        "loop",
+        "tool-use",
+        "inference"
+      ],
+      "sources": [
+        {
+          "url": "https://lastweekin.ai/p/last-week-in-ai-341-musk-loses-to",
+          "domain": "lastweekin.ai",
+          "title": "Last Week in AI #341 - Musk loses to OpenAI, Google's IO updates, OpenAI solves Erdős",
+          "sourceLabel": "Last Week in AI",
+          "publishedAt": "Wed, 27 May 2026 07:50:58 GMT",
+          "firstSeen": "2026-05-30T19:13:38.586Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-30T19:13:38.586Z",
+      "dateLastSeen": "2026-05-30T19:13:38.586Z",
+      "sz": 14,
+      "fullName": "AlphaProof Nexus (Google DeepMind)",
+      "nodeType": "product",
+      "proposalReason": "A named system with a distinct hybrid architecture (LLM + symbolic verifier loop) relevant to AI-assisted mathematics and formal reasoning tracking."
+    },
+    {
+      "id": "conversational-video-editing",
+      "label": "Conversational Video Editing",
+      "workingDef": "An interaction paradigm in which users edit video through successive natural-language instructions rather than timeline-based or effects-panel interfaces, with each instruction building on previous ones while maintaining scene consistency and character continuity. Introduced in this context via Gemini Omni at Google I/O 2026. Related to but distinct from broader prompt-based image editing — the distinguishing feature is multi-turn conversational persistence across a video canvas.",
+      "clusters": [
+        "tools",
+        "models"
+      ],
+      "suggestedRels": [
+        "gemini-omni",
+        "multimodal",
+        "prompt"
+      ],
+      "sources": [
+        {
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-3-5-videos/",
+          "domain": "blog.google",
+          "title": "9 demos of Gemini Omni and Gemini 3.5 in action",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Fri, 29 May 2026 17:30:00 +0000",
+          "firstSeen": "2026-05-30T19:13:38.586Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-30T19:13:38.586Z",
+      "dateLastSeen": "2026-05-30T19:13:38.586Z",
+      "sz": 14,
+      "fullName": "Conversational Video Editing (AI-Native)",
+      "proposalReason": "New term introduced in primary Google source; names a specific interaction paradigm distinct from existing graph terms."
     }
   ]
 }

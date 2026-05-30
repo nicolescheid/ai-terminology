@@ -1,6 +1,6 @@
 {
-  "lastRunAt": "2026-05-29T20:29:06.123Z",
-  "reviewCursor": 24,
+  "lastRunAt": "2026-05-30T19:13:38.586Z",
+  "reviewCursor": 34,
   "seenArticles": {
     "93a049d060bc295b": {
       "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/tpus-8t-8i-cloud-next/",
@@ -751,6 +751,42 @@
       "title": "Anthropic raises $65B in Series H funding at $965B post-money valuation",
       "publishedAt": null,
       "seenAt": "2026-05-29T20:29:06.123Z"
+    },
+    "885b9f75e7143a8b": {
+      "url": "https://huggingface.co/blog/ibm-research/itbench-aa",
+      "title": "ITBench-AA: Frontier Models Score Below 50% on the First Benchmark for Agentic Enterprise IT Tasks — by Artificial Analysis and IBM",
+      "publishedAt": "Wed, 27 May 2026 17:20:29 GMT",
+      "seenAt": "2026-05-30T19:13:38.586Z"
+    },
+    "92d1db8e488cc9d7": {
+      "url": "https://lastweekin.ai/p/last-week-in-ai-341-musk-loses-to",
+      "title": "Last Week in AI #341 - Musk loses to OpenAI, Google's IO updates, OpenAI solves Erdős",
+      "publishedAt": "Wed, 27 May 2026 07:50:58 GMT",
+      "seenAt": "2026-05-30T19:13:38.586Z"
+    },
+    "bf7abda633b2cc92": {
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-3-5-videos/",
+      "title": "9 demos of Gemini Omni and Gemini 3.5 in action",
+      "publishedAt": "Fri, 29 May 2026 17:30:00 +0000",
+      "seenAt": "2026-05-30T19:13:38.586Z"
+    },
+    "da6428d823f19f4b": {
+      "url": "https://stratechery.com/2026/luceing-their-mind/",
+      "title": "2026.22: Luceing Their Mind",
+      "publishedAt": "Fri, 29 May 2026 17:00:00 +0000",
+      "seenAt": "2026-05-30T19:13:38.586Z"
+    },
+    "8337eeb248ea1830": {
+      "url": "https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense",
+      "title": "Strengthening societal resilience with Rosalind Biodefense",
+      "publishedAt": "Fri, 29 May 2026 03:00:00 GMT",
+      "seenAt": "2026-05-30T19:13:38.586Z"
+    },
+    "11bd223a066222da": {
+      "url": "https://simonwillison.net/2026/May/30/daniel-jalkut/#atom-everything",
+      "title": "A quote from Daniel Jalkut",
+      "publishedAt": "2026-05-30T17:29:55+00:00",
+      "seenAt": "2026-05-30T19:13:38.586Z"
     }
   },
   "nodeReviews": {
@@ -865,49 +901,49 @@
       "reason": "No source material addresses the human-in/on/out-of-the-loop autonomy spectrum framework. Definition stands."
     },
     "benchmark-gaming": {
-      "lastReviewedAt": "2026-04-27T05:42:44.833Z",
+      "lastReviewedAt": "2026-05-30T19:13:38.586Z",
       "status": "keep",
-      "reason": "Standard, well-established concept. Definition is accurate and concise. No source content to suggest any update is needed."
+      "reason": "The ITBench-AA article implicitly illustrates why real-world agentic benchmarks matter over gamed ones, but contains nothing that materially changes or contradicts the existing definition. Keep as-is."
     },
     "benchmark-saturation": {
-      "lastReviewedAt": "2026-04-27T05:42:44.833Z",
-      "status": "insufficient_evidence",
-      "reason": "Definition makes specific claims about 'Mythos' and an Anthropic quote about 'mostly saturated' evaluations. The source provides no content to verify these claims. The factual basis remains unconfirmed by the provided material."
+      "lastReviewedAt": "2026-05-30T19:13:38.586Z",
+      "status": "refresh",
+      "reason": "The ITBench-AA source explicitly discusses benchmark saturation in the context of agentic enterprise IT tasks, noting that scoring below 50% makes it 'one of the least saturated agentic benchmarks' — directly illustrating the concept with current empirical data and adding nuance about agentic benchmarks as the new frontier for avoiding saturation. The existing definition's Mythos/Anthropic example is now supplemented by richer, more current evidence that warrants a refresh."
     },
     "blast-radius": {
-      "lastReviewedAt": "2026-04-27T05:42:44.833Z",
+      "lastReviewedAt": "2026-05-30T19:13:38.586Z",
       "status": "keep",
-      "reason": "Clear, accurate definition of an established AI safety and engineering concept. No source content contradicts or materially adds to it."
+      "reason": "No source material addresses blast radius or agent containment concepts. Definition remains sound."
     },
     "blue-team": {
-      "lastReviewedAt": "2026-04-27T05:42:44.833Z",
+      "lastReviewedAt": "2026-05-30T19:13:38.586Z",
       "status": "keep",
-      "reason": "Accurate and stable definition of a standard security concept with appropriate AI-era framing. No source content suggests revision."
+      "reason": "No source material addresses blue-team security concepts. Definition remains sound."
     },
     "capability-overhang": {
-      "lastReviewedAt": "2026-04-27T05:42:44.833Z",
-      "status": "insufficient_evidence",
-      "reason": "Definition attributes a specific April 2026 quote to OpenAI. The provided source URL is from OpenAI but the excerpt is empty, so the quote and framing cannot be verified or updated against fresh material."
+      "lastReviewedAt": "2026-05-30T19:13:38.586Z",
+      "status": "keep",
+      "reason": "No source directly contradicts or materially updates this definition. The ITBench-AA finding that frontier models score below 50% on real enterprise tasks could be seen as evidence of a gap between perceived and actual capability, but does not clearly update the definition as written."
     },
     "chatbot": {
-      "lastReviewedAt": "2026-04-27T05:42:44.833Z",
+      "lastReviewedAt": "2026-05-30T19:13:38.586Z",
       "status": "keep",
-      "reason": "Broad, accurate definitional note on chatbot evolution. No source content to prompt revision."
+      "reason": "No source material updates the chatbot definition."
     },
     "chatgpt": {
-      "lastReviewedAt": "2026-04-27T05:42:44.833Z",
+      "lastReviewedAt": "2026-05-30T19:13:38.586Z",
       "status": "keep",
-      "reason": "General description of ChatGPT's origin and current direction. The empty source excerpt provides no new information to update version details or feature claims."
+      "reason": "The Last Week in AI excerpt mentions OpenAI's IPO plans and the Musk lawsuit outcome but contains nothing that materially changes the ChatGPT product definition."
     },
     "claude": {
-      "lastReviewedAt": "2026-04-27T05:42:44.833Z",
-      "status": "insufficient_evidence",
-      "reason": "Definition specifies current model versions (Claude 4.6, Opus 4.6, Sonnet 4.6, Haiku) and attributes the name to Claude Shannon. Version numbers change frequently and cannot be confirmed as current without live source material. The provided source offers no content to verify."
+      "lastReviewedAt": "2026-05-30T19:13:38.586Z",
+      "status": "refresh",
+      "reason": "Two sources reference Claude model versions beyond what the current definition states (Claude 4.6). Simon Willison's blog references 'Claude Opus 4.8' as of May 28, 2026, and the ITBench-AA benchmark references 'Claude Opus 4.7' — both supersede the current definition's claim of Claude 4.6 as the current version. The version numbers in the definition need updating."
     },
     "claude-ai": {
-      "lastReviewedAt": "2026-04-27T19:20:08.906Z",
-      "status": "insufficient_evidence",
-      "reason": "No source material addresses Claude.ai features, availability, or positioning."
+      "lastReviewedAt": "2026-05-30T19:13:38.586Z",
+      "status": "keep",
+      "reason": "No source material provides new information about the Claude.ai interface specifically."
     },
     "claude-code": {
       "lastReviewedAt": "2026-04-27T19:20:08.906Z",
@@ -1773,6 +1809,11 @@
       "lastReviewedAt": "2026-05-29T20:24:10.894Z",
       "status": "keep",
       "reason": "No relevant source material. Definition stands."
+    },
+    "behavioral-audit": {
+      "lastReviewedAt": "2026-05-30T19:13:38.586Z",
+      "status": "keep",
+      "reason": "No source material addresses behavioral audits. Definition remains accurate and unsupported by new evidence requiring change."
     }
   }
 }

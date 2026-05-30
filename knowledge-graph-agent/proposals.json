@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-05-29T20:30:35.956Z",
-    "pendingCount": 14,
+    "generatedAt": "2026-05-30T19:15:15.957Z",
+    "pendingCount": 15,
     "appliedCount": 13,
     "rejectedCount": 1,
     "note": "Lexi proposals queue. Actions gated as PROPOSE land here as status: 'pending'. Edit a proposal's status to 'approved' or 'rejected' and run the apply step (TBD) to commit."
@@ -1319,6 +1319,58 @@
       },
       "reason": "2 sources, 2 independent (theverge.com + stratechery.com), 18d on longlist. Trusted: stratechery.com.",
       "runId": "a27c7a9e-7179-4f18-b34e-430c66150098"
+    },
+    {
+      "id": "11ff7dea6aa201c3",
+      "action": "promote_to_graph",
+      "gate": "propose",
+      "proposedAt": "2026-05-30T19:15:15.957Z",
+      "status": "pending",
+      "source": "promote-eligibility-scan",
+      "target": {
+        "kind": "longlist_entry",
+        "id": "capability-reliability-gap"
+      },
+      "payload": {
+        "graphNode": {
+          "id": "capability-reliability-gap",
+          "label": "Capability-Reliability Gap",
+          "clusters": [
+            "agentic",
+            "safety"
+          ],
+          "sz": 14,
+          "def": "The observed divergence between rapid improvement in AI agent task accuracy/capability benchmarks and the much slower improvement in reliability dimensions such as consistency, robustness, calibration, and bounded failure severity.",
+          "rels": [
+            "agent",
+            "evals",
+            "benchmark-saturation",
+            "hallucination",
+            "silent-failure",
+            "autonomy-spectrum",
+            "guardrails"
+          ],
+          "refs": [
+            {
+              "n": 1,
+              "src": "AI Snake Oil, Tue, 24 Feb 2026 13:07:19 GMT",
+              "q": "New Paper: Towards a science of AI agent reliability AI Snake Oil"
+            },
+            {
+              "n": 2,
+              "src": "AI Snake Oil, Thu, 16 Apr 2026 17:47:29 GMT",
+              "q": "Open-world evaluations for measuring frontier AI capabilities AI Snake Oil"
+            },
+            {
+              "n": 3,
+              "src": "Hugging Face Blog, Wed, 27 May 2026 17:20:29 GMT",
+              "q": "ITBench-AA: Frontier Models Score Below 50% on the First Benchmark for Agentic Enterprise IT Tasks — by Artificial Analysis and IBM Hugging Face Blog"
+            }
+          ]
+        }
+      },
+      "reason": "3 sources, 2 independent (normaltech.ai + huggingface.co), 29d on longlist. Trusted: normaltech.ai.",
+      "runId": "ec30d024-df3c-4661-b31e-aea6f9edddda"
     }
   ]
 }
