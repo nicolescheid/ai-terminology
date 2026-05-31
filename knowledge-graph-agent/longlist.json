@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-05-30T19:13:38.586Z",
-    "entryCount": 158,
+    "generatedAt": "2026-05-31T19:15:39.230Z",
+    "entryCount": 169,
     "note": "Lexi-managed Tier 2 longlist — terms under observation, awaiting evidence to support promotion to the graph (Tier 1)."
   },
   "entries": [
@@ -2568,12 +2568,20 @@
           "sourceLabel": "Hugging Face Blog",
           "publishedAt": "Sun, 10 May 2026 18:44:11 GMT",
           "firstSeen": "2026-05-10T19:02:19.492Z"
+        },
+        {
+          "url": "https://huggingface.co/blog/local-reachy-mini-conversation",
+          "domain": "huggingface.co",
+          "title": "Reachy Mini goes fully local",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Wed, 27 May 2026 00:00:00 GMT",
+          "firstSeen": "2026-05-31T19:15:39.230Z"
         }
       ],
-      "sourceCount": 1,
+      "sourceCount": 2,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-05-10T19:02:19.492Z",
-      "dateLastSeen": "2026-05-10T19:02:19.492Z",
+      "dateLastSeen": "2026-05-31T19:15:39.230Z",
       "sz": 14,
       "fullName": "vLLM (Open-Source LLM Inference Server)",
       "nodeType": "product",
@@ -5378,12 +5386,20 @@
           "sourceLabel": "Simon Willison's Weblog",
           "publishedAt": "2026-05-29T01:23:08+00:00",
           "firstSeen": "2026-05-29T20:29:06.123Z"
+        },
+        {
+          "url": "https://simonwillison.net/2026/May/31/the-solution-might-be-cancelling-my-ai-subscription/#atom-everything",
+          "domain": "simonwillison.net",
+          "title": "The solution might be cancelling my AI subscription",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-05-31T16:31:32+00:00",
+          "firstSeen": "2026-05-31T19:15:39.230Z"
         }
       ],
-      "sourceCount": 1,
+      "sourceCount": 2,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-05-29T20:29:06.123Z",
-      "dateLastSeen": "2026-05-29T20:29:06.123Z",
+      "dateLastSeen": "2026-05-31T19:15:39.230Z",
       "sz": 14,
       "fullName": "Product-Market Fit (AI)",
       "proposalReason": "The linked article (referenced in the excerpt: 'I think Anthropic and OpenAI have found product-market fit') deploys this concept directly in relation to frontier AI companies; worth tracking as a framing term in the AI business cluster."
@@ -5687,6 +5703,349 @@
       "sz": 14,
       "fullName": "Conversational Video Editing (AI-Native)",
       "proposalReason": "New term introduced in primary Google source; names a specific interaction paradigm distinct from existing graph terms."
+    },
+    {
+      "id": "cascaded-voice-pipeline",
+      "label": "Cascaded Voice Pipeline",
+      "workingDef": "A modular speech AI architecture that chains discrete, swappable stages — Voice Activity Detection (VAD), Speech-to-Text (STT), a language model (LLM), and Text-to-Speech (TTS) — in sequence. Each stage is independently replaceable, allowing practitioners to optimise for latency, quality, language coverage, or cost. Contrasted with end-to-end neural approaches that learn the full audio-to-audio mapping in a single model.",
+      "clusters": [
+        "technical",
+        "tools"
+      ],
+      "suggestedRels": [
+        "voice-ai",
+        "real-time-audio-pipeline",
+        "inference",
+        "latency"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/local-reachy-mini-conversation",
+          "domain": "huggingface.co",
+          "title": "Reachy Mini goes fully local",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Wed, 27 May 2026 00:00:00 GMT",
+          "firstSeen": "2026-05-31T19:15:39.230Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-31T19:15:39.230Z",
+      "dateLastSeen": "2026-05-31T19:15:39.230Z",
+      "sz": 14,
+      "fullName": "Cascaded Voice Pipeline (VAD → STT → LLM → TTS)",
+      "proposalReason": "A named architectural pattern for real-time voice AI that appears across multiple open-source robotics and voice-agent projects; worth tracking as voice AI deployment patterns mature."
+    },
+    {
+      "id": "multi-token-prediction",
+      "label": "Multi-Token Prediction",
+      "workingDef": "An inference-time speculative decoding technique in which a model predicts multiple future tokens simultaneously rather than one at a time, reducing round-trip latency. Used here via vLLM's --speculative-config with Qwen3's MTP head to reduce silence gaps in real-time voice interactions.",
+      "clusters": [
+        "technical",
+        "models"
+      ],
+      "suggestedRels": [
+        "inference",
+        "latency",
+        "vllm",
+        "streaming-inference"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/local-reachy-mini-conversation",
+          "domain": "huggingface.co",
+          "title": "Reachy Mini goes fully local",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Wed, 27 May 2026 00:00:00 GMT",
+          "firstSeen": "2026-05-31T19:15:39.230Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-31T19:15:39.230Z",
+      "dateLastSeen": "2026-05-31T19:15:39.230Z",
+      "sz": 14,
+      "fullName": "Multi-Token Prediction (MTP)",
+      "proposalReason": "An emerging inference optimisation technique appearing in production pipelines for latency-critical applications like real-time voice; worth tracking alongside speculative decoding concepts."
+    },
+    {
+      "id": "responses-api",
+      "label": "Responses API",
+      "workingDef": "An HTTP/WebSocket protocol, originated by OpenAI, for decoupling an LLM inference backend from an application layer. Implementations (llama.cpp, vLLM, HF Inference Endpoints) expose a compatible endpoint so that client applications can swap inference providers without code changes. Used here to separate the voice loop from LLM serving.",
+      "clusters": [
+        "technical",
+        "tools"
+      ],
+      "suggestedRels": [
+        "api",
+        "inference",
+        "vllm",
+        "streaming-inference",
+        "tool-use"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/local-reachy-mini-conversation",
+          "domain": "huggingface.co",
+          "title": "Reachy Mini goes fully local",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Wed, 27 May 2026 00:00:00 GMT",
+          "firstSeen": "2026-05-31T19:15:39.230Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-31T19:15:39.230Z",
+      "dateLastSeen": "2026-05-31T19:15:39.230Z",
+      "sz": 14,
+      "fullName": "Responses API (OpenAI-compatible LLM Server Protocol)",
+      "proposalReason": "A de-facto interoperability standard for LLM serving that enables modular AI system design; worth tracking as it becomes a portability layer across open-source and proprietary stacks."
+    },
+    {
+      "id": "claude-for-legal",
+      "label": "Claude for Legal",
+      "workingDef": "Anthropic's vertical AI product aimed at the legal sector, launched to provide Claude-powered capabilities tailored for legal workflows and research. Represents Anthropic's push into domain-specific application layers, contributing to ecosystem tension between platform model providers and application-layer legal tech companies.",
+      "clusters": [
+        "business"
+      ],
+      "suggestedRels": [
+        "claude",
+        "vertical-ai",
+        "anthropic-co"
+      ],
+      "sources": [
+        {
+          "url": "https://lastweekin.ai/p/lwiai-podcast-245-tml-interaction",
+          "domain": "lastweekin.ai",
+          "title": "LWiAI Podcast #245 - TML-Interaction, Claude For Legal, Sam Altman on Stand",
+          "sourceLabel": "Last Week in AI",
+          "publishedAt": "Wed, 20 May 2026 07:45:49 GMT",
+          "firstSeen": "2026-05-31T19:15:39.230Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-31T19:15:39.230Z",
+      "dateLastSeen": "2026-05-31T19:15:39.230Z",
+      "sz": 14,
+      "fullName": "Claude for Legal (Anthropic)",
+      "nodeType": "product",
+      "proposalReason": "A new vertical product entry worth tracking as Anthropic expands from API provider into domain-specific applications."
+    },
+    {
+      "id": "full-duplex-conversational-ai",
+      "label": "Full-Duplex Conversational AI",
+      "workingDef": "A conversational AI architecture that supports simultaneous two-way audio interaction — unlike half-duplex systems that alternate between listening and speaking — enabling more humanlike real-time dialogue. Thinking Machines' preview describes a two-model architecture with a custom inference stack optimised for low latency and interactivity. Distinct from standard turn-taking voice AI in that it allows interruption and overlap handling.",
+      "clusters": [
+        "technical",
+        "agentic"
+      ],
+      "suggestedRels": [
+        "voice-ai",
+        "real-time-audio-pipeline",
+        "latency"
+      ],
+      "sources": [
+        {
+          "url": "https://lastweekin.ai/p/lwiai-podcast-245-tml-interaction",
+          "domain": "lastweekin.ai",
+          "title": "LWiAI Podcast #245 - TML-Interaction, Claude For Legal, Sam Altman on Stand",
+          "sourceLabel": "Last Week in AI",
+          "publishedAt": "Wed, 20 May 2026 07:45:49 GMT",
+          "firstSeen": "2026-05-31T19:15:39.230Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-31T19:15:39.230Z",
+      "dateLastSeen": "2026-05-31T19:15:39.230Z",
+      "sz": 14,
+      "fullName": "Full-Duplex Conversational AI (Two-Model Architecture)",
+      "proposalReason": "Emerging architectural pattern in voice AI worth distinguishing from single-model or half-duplex approaches."
+    },
+    {
+      "id": "cot-grading-contamination",
+      "label": "CoT Grading Contamination",
+      "workingDef": "A failure mode in reinforcement learning training pipelines where the model's chain-of-thought reasoning trace is accidentally used as part of the reward or grading signal, rather than only the final output. OpenAI investigated the consequences of this occurring unintentionally, raising concerns about whether the model learns to game its own reasoning process rather than solve the underlying task.",
+      "clusters": [
+        "safety",
+        "models"
+      ],
+      "suggestedRels": [
+        "rlhf",
+        "reasoning-models",
+        "cot-faithfulness",
+        "evals"
+      ],
+      "sources": [
+        {
+          "url": "https://lastweekin.ai/p/lwiai-podcast-245-tml-interaction",
+          "domain": "lastweekin.ai",
+          "title": "LWiAI Podcast #245 - TML-Interaction, Claude For Legal, Sam Altman on Stand",
+          "sourceLabel": "Last Week in AI",
+          "publishedAt": "Wed, 20 May 2026 07:45:49 GMT",
+          "firstSeen": "2026-05-31T19:15:39.230Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-31T19:15:39.230Z",
+      "dateLastSeen": "2026-05-31T19:15:39.230Z",
+      "sz": 14,
+      "fullName": "CoT Grading Contamination (Accidental Chain-of-Thought Grading in RL)",
+      "proposalReason": "A specific and technically important training failure mode at the intersection of CoT faithfulness and RL reward signal integrity."
+    },
+    {
+      "id": "human-consent-standard",
+      "label": "Human Consent Standard",
+      "workingDef": "An industry/advocacy framing — backed by prominent performers including George Clooney, Tom Hanks, and Meryl Streep — for a licensing standard requiring explicit human consent before a person's likeness, voice, or creative work is used to train AI systems or generate synthetic media. Represents a push by creative communities to assert rights over AI training data and synthetic reproductions of their identities.",
+      "clusters": [
+        "critical",
+        "safety"
+      ],
+      "suggestedRels": [
+        "alignment",
+        "guardrails"
+      ],
+      "sources": [
+        {
+          "url": "https://lastweekin.ai/p/lwiai-podcast-245-tml-interaction",
+          "domain": "lastweekin.ai",
+          "title": "LWiAI Podcast #245 - TML-Interaction, Claude For Legal, Sam Altman on Stand",
+          "sourceLabel": "Last Week in AI",
+          "publishedAt": "Wed, 20 May 2026 07:45:49 GMT",
+          "firstSeen": "2026-05-31T19:15:39.230Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-31T19:15:39.230Z",
+      "dateLastSeen": "2026-05-31T19:15:39.230Z",
+      "sz": 14,
+      "fullName": "Human Consent Standard (AI Licensing)",
+      "proposalReason": "A named policy/advocacy concept emerging from the creative industries' response to AI synthetic media, worth tracking as a distinct framing in the AI licensing landscape."
+    },
+    {
+      "id": "ai-tutoring",
+      "label": "AI Tutoring",
+      "workingDef": "AI systems designed to deliver personalized instruction, feedback, or skill practice to learners — typically through adaptive content generation, real-time performance assessment, or conversational interaction. Distinct from AI assistants in that the primary design goal is pedagogical outcome rather than task completion.",
+      "clusters": [
+        "human",
+        "tools"
+      ],
+      "suggestedRels": [
+        "ai-assistant",
+        "human-in-the-loop",
+        "multimodal"
+      ],
+      "sources": [
+        {
+          "url": "https://blog.google/innovation-and-ai/technology/ai/university-waterloo-labs/",
+          "domain": "blog.google",
+          "title": "Check out real-life AI prototypes from the Futures Lab.",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Fri, 29 May 2026 12:00:00 +0000",
+          "firstSeen": "2026-05-31T19:15:39.230Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-31T19:15:39.230Z",
+      "dateLastSeen": "2026-05-31T19:15:39.230Z",
+      "sz": 14,
+      "fullName": "AI Tutoring (AI-Powered Personalized Instruction)",
+      "proposalReason": "Proposed as a trackable concept distinct from general AI assistants; emerges from real-time feedback tools like SignFluent and MuscleMemory."
+    },
+    {
+      "id": "real-time-feedback-ai",
+      "label": "Real-Time Feedback AI",
+      "workingDef": "AI systems that provide immediate, in-the-moment corrective or evaluative signals to users performing physical or linguistic tasks — e.g., sign language form correction or exercise posture coaching via computer vision. Characterized by low-latency response and tight action-feedback loops intended to accelerate skill acquisition.",
+      "clusters": [
+        "human",
+        "tools"
+      ],
+      "suggestedRels": [
+        "computer-use",
+        "latency",
+        "multimodal"
+      ],
+      "sources": [
+        {
+          "url": "https://blog.google/innovation-and-ai/technology/ai/university-waterloo-labs/",
+          "domain": "blog.google",
+          "title": "Check out real-life AI prototypes from the Futures Lab.",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Fri, 29 May 2026 12:00:00 +0000",
+          "firstSeen": "2026-05-31T19:15:39.230Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-31T19:15:39.230Z",
+      "dateLastSeen": "2026-05-31T19:15:39.230Z",
+      "sz": 14,
+      "fullName": "Real-Time Feedback AI (AI-Powered Formative Assessment)",
+      "proposalReason": "Distinct pattern across multiple prototypes (SignFluent, MuscleMemory) worth tracking as a category of applied AI in education and training."
+    },
+    {
+      "id": "attention-fragmentation-ai",
+      "label": "Attention Fragmentation (AI)",
+      "workingDef": "The phenomenon in which low-friction AI tooling — particularly coding agents — pulls users from task to task by making it trivially cheap to start new projects, leading to a proliferation of unfinished or instantly-abandoned work. Distinct from ordinary distraction in that the AI generates a 'cheap reward with minimal input and no friction,' as described by critics of the pattern. Related to but distinct from ADHD; the effect has been observed in people without attention disorders and produces debate about whether it represents productivity gain or net waste.",
+      "clusters": [
+        "human",
+        "work"
+      ],
+      "suggestedRels": [
+        "vibe-coding",
+        "agentic-engineering",
+        "product-market-fit"
+      ],
+      "sources": [
+        {
+          "url": "https://simonwillison.net/2026/May/31/the-solution-might-be-cancelling-my-ai-subscription/#atom-everything",
+          "domain": "simonwillison.net",
+          "title": "The solution might be cancelling my AI subscription",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-05-31T16:31:32+00:00",
+          "firstSeen": "2026-05-31T19:15:39.230Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-31T19:15:39.230Z",
+      "dateLastSeen": "2026-05-31T19:15:39.230Z",
+      "sz": 14,
+      "proposalReason": "An emerging behavioural framing for a side-effect pattern of coding-agent use that differs from classic procrastination or distraction — worth tracking as human-AI work research accumulates."
+    },
+    {
+      "id": "project-proliferation",
+      "label": "Project Proliferation",
+      "workingDef": "The tendency for AI-assisted coding sessions to generate far more initiated projects than a user can realistically maintain, arising because the cost of starting a project has dropped to near zero. Observed as a downstream effect of low-friction coding agents: users spin up 16+ projects in parallel with little intention of seeing them through. Framed by critics as a liability and by proponents as a feature enabling the completion of previously impossible personal software.",
+      "clusters": [
+        "human",
+        "work"
+      ],
+      "suggestedRels": [
+        "vibe-coding",
+        "personal-software",
+        "agentic-engineering"
+      ],
+      "sources": [
+        {
+          "url": "https://simonwillison.net/2026/May/31/the-solution-might-be-cancelling-my-ai-subscription/#atom-everything",
+          "domain": "simonwillison.net",
+          "title": "The solution might be cancelling my AI subscription",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-05-31T16:31:32+00:00",
+          "firstSeen": "2026-05-31T19:15:39.230Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-31T19:15:39.230Z",
+      "dateLastSeen": "2026-05-31T19:15:39.230Z",
+      "sz": 14,
+      "proposalReason": "A concrete behavioural pattern distinct enough from 'AI productivity' to merit its own term; has a specific structural cause (near-zero start cost) and is generating genuine community debate."
     }
   ]
 }

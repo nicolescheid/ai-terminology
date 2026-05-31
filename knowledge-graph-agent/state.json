@@ -1,6 +1,6 @@
 {
-  "lastRunAt": "2026-05-30T19:13:38.586Z",
-  "reviewCursor": 34,
+  "lastRunAt": "2026-05-31T19:15:39.230Z",
+  "reviewCursor": 44,
   "seenArticles": {
     "93a049d060bc295b": {
       "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/tpus-8t-8i-cloud-next/",
@@ -787,6 +787,42 @@
       "title": "A quote from Daniel Jalkut",
       "publishedAt": "2026-05-30T17:29:55+00:00",
       "seenAt": "2026-05-30T19:13:38.586Z"
+    },
+    "5b218fefef6f1e06": {
+      "url": "https://huggingface.co/blog/local-reachy-mini-conversation",
+      "title": "Reachy Mini goes fully local",
+      "publishedAt": "Wed, 27 May 2026 00:00:00 GMT",
+      "seenAt": "2026-05-31T19:15:39.230Z"
+    },
+    "f9f8186c37561458": {
+      "url": "https://lastweekin.ai/p/lwiai-podcast-245-tml-interaction",
+      "title": "LWiAI Podcast #245 - TML-Interaction, Claude For Legal, Sam Altman on Stand",
+      "publishedAt": "Wed, 20 May 2026 07:45:49 GMT",
+      "seenAt": "2026-05-31T19:15:39.230Z"
+    },
+    "daac52c1ca428b8c": {
+      "url": "https://blog.google/innovation-and-ai/technology/ai/university-waterloo-labs/",
+      "title": "Check out real-life AI prototypes from the Futures Lab.",
+      "publishedAt": "Fri, 29 May 2026 12:00:00 +0000",
+      "seenAt": "2026-05-31T19:15:39.230Z"
+    },
+    "33e1df4abe4ea5f3": {
+      "url": "https://openai.com/index/trustworthy-third-party-evaluations-foundations",
+      "title": "A shared playbook for trustworthy third party evaluations",
+      "publishedAt": "Fri, 29 May 2026 00:00:00 GMT",
+      "seenAt": "2026-05-31T19:15:39.230Z"
+    },
+    "d66cbd6490f7bc62": {
+      "url": "https://simonwillison.net/2026/May/31/the-solution-might-be-cancelling-my-ai-subscription/#atom-everything",
+      "title": "The solution might be cancelling my AI subscription",
+      "publishedAt": "2026-05-31T16:31:32+00:00",
+      "seenAt": "2026-05-31T19:15:39.230Z"
+    },
+    "2fb8fa2bf4321072": {
+      "url": "https://www.theverge.com/ai-artificial-intelligence/933916/ai-powered-crypto-cannabis-vape",
+      "title": "I went looking for the AI weed vape that gives you Bitcoin for smoking",
+      "publishedAt": "2026-05-31T09:00:00-04:00",
+      "seenAt": "2026-05-31T19:15:39.230Z"
     }
   },
   "nodeReviews": {
@@ -946,19 +982,19 @@
       "reason": "No source material provides new information about the Claude.ai interface specifically."
     },
     "claude-code": {
-      "lastReviewedAt": "2026-04-27T19:20:08.906Z",
+      "lastReviewedAt": "2026-05-31T19:15:39.230Z",
       "status": "insufficient_evidence",
-      "reason": "No source material references Claude Code. The $1B ARR claim and other specifics cannot be verified or updated from these excerpts."
+      "reason": "No source material addresses Claude Code, its revenue figures, or its agentic capabilities."
     },
     "claude-cowork": {
-      "lastReviewedAt": "2026-04-27T19:20:08.906Z",
+      "lastReviewedAt": "2026-05-31T19:15:39.230Z",
       "status": "insufficient_evidence",
-      "reason": "No source material references Claude Cowork or any Anthropic outcome-delegation product. The Microsoft partnership article discusses OpenAI, not Anthropic, and makes no mention of a Copilot Cowork product built on Claude."
+      "reason": "No source material references Claude Cowork or any related Anthropic outcome-delegation product."
     },
     "claude-mythos": {
-      "lastReviewedAt": "2026-04-27T19:20:08.906Z",
+      "lastReviewedAt": "2026-05-31T19:15:39.230Z",
       "status": "insufficient_evidence",
-      "reason": "No source material references Claude Mythos or any Anthropic model announcement matching this description."
+      "reason": "No source material references Claude Mythos or any withheld Anthropic model."
     },
     "co-channeling": {
       "lastReviewedAt": "2026-04-27T19:20:08.906Z",
@@ -966,34 +1002,34 @@
       "reason": "No source material addresses this concept."
     },
     "codex-model": {
-      "lastReviewedAt": "2026-04-27T19:20:08.906Z",
+      "lastReviewedAt": "2026-05-31T19:15:39.230Z",
       "status": "keep",
-      "reason": "The Symphony post confirms Codex remains an active, production-scale OpenAI coding agent being used to orchestrate engineering workflows, consistent with the existing definition describing it as OpenAI's coding model family that established AI-assisted coding. No contradictions or significant gaps identified."
+      "reason": "No source material contradicts or updates the existing definition of Codex as OpenAI's coding model family that powered GitHub Copilot."
     },
     "computer-use": {
-      "lastReviewedAt": "2026-04-27T19:20:08.906Z",
-      "status": "insufficient_evidence",
-      "reason": "No source material addresses the computer-use agent pattern."
+      "lastReviewedAt": "2026-05-31T19:15:39.230Z",
+      "status": "keep",
+      "reason": "No source material addresses the computer-use agent pattern. Definition remains accurate as stated."
     },
     "connectors": {
-      "lastReviewedAt": "2026-04-27T19:20:08.906Z",
-      "status": "insufficient_evidence",
-      "reason": "No source material addresses pre-built MCP connectors or the connectors layer."
+      "lastReviewedAt": "2026-05-31T19:15:39.230Z",
+      "status": "keep",
+      "reason": "No source material addresses connectors or MCP integrations. Definition remains accurate as stated."
     },
     "constitutional-ai": {
-      "lastReviewedAt": "2026-04-27T19:20:08.906Z",
-      "status": "insufficient_evidence",
-      "reason": "No source material addresses Anthropic's Constitutional AI approach."
+      "lastReviewedAt": "2026-05-31T19:15:39.230Z",
+      "status": "keep",
+      "reason": "The LWiAI podcast mentions Anthropic work on 'training ethical why reasoning' to reduce agent misalignment, which is loosely consistent with Constitutional AI principles but does not provide enough detail to justify a rewrite. The existing definition remains accurate."
     },
     "context-compaction": {
-      "lastReviewedAt": "2026-04-27T19:20:08.906Z",
-      "status": "insufficient_evidence",
-      "reason": "No source material addresses context compaction or related techniques."
+      "lastReviewedAt": "2026-05-31T19:15:39.230Z",
+      "status": "keep",
+      "reason": "No source material addresses context compaction. Definition remains accurate as stated."
     },
     "context-drift": {
-      "lastReviewedAt": "2026-04-28T19:40:36.332Z",
+      "lastReviewedAt": "2026-05-31T19:15:39.230Z",
       "status": "keep",
-      "reason": "No source material addresses context drift, attention de-prioritisation, or the cited 65% enterprise failure statistic. Definition stands unchanged."
+      "reason": "No source material addresses context drift. Definition remains accurate as stated."
     },
     "context-economy": {
       "lastReviewedAt": "2026-04-28T19:40:36.332Z",
@@ -1814,6 +1850,11 @@
       "lastReviewedAt": "2026-05-30T19:13:38.586Z",
       "status": "keep",
       "reason": "No source material addresses behavioral audits. Definition remains accurate and unsupported by new evidence requiring change."
+    },
+    "claude-design": {
+      "lastReviewedAt": "2026-05-31T19:15:39.230Z",
+      "status": "insufficient_evidence",
+      "reason": "No source material references Claude Design or any Anthropic Labs visual design product."
     }
   }
 }
