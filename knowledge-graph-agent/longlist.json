@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-05-31T19:15:39.230Z",
-    "entryCount": 169,
+    "generatedAt": "2026-06-01T21:31:49.667Z",
+    "entryCount": 173,
     "note": "Lexi-managed Tier 2 longlist — terms under observation, awaiting evidence to support promotion to the graph (Tier 1)."
   },
   "entries": [
@@ -2318,12 +2318,20 @@
           "sourceLabel": "Google AI Blog",
           "publishedAt": "Fri, 08 May 2026 15:00:00 +0000",
           "firstSeen": "2026-05-10T19:02:19.492Z"
+        },
+        {
+          "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-google-ai/",
+          "domain": "blog.google",
+          "title": "How we used Gemini to build Google I/O 2026",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Mon, 01 Jun 2026 16:00:00 +0000",
+          "firstSeen": "2026-06-01T21:31:49.667Z"
         }
       ],
-      "sourceCount": 2,
+      "sourceCount": 3,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-05-09T19:00:00.611Z",
-      "dateLastSeen": "2026-05-10T19:02:19.492Z",
+      "dateLastSeen": "2026-06-01T21:31:49.667Z",
       "sz": 14,
       "fullName": "Google Flow (AI Filmmaking Tool)",
       "nodeType": "product",
@@ -2358,12 +2366,20 @@
           "sourceLabel": "Google AI Blog",
           "publishedAt": "Fri, 08 May 2026 15:00:00 +0000",
           "firstSeen": "2026-05-10T19:02:19.492Z"
+        },
+        {
+          "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-google-ai/",
+          "domain": "blog.google",
+          "title": "How we used Gemini to build Google I/O 2026",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Mon, 01 Jun 2026 16:00:00 +0000",
+          "firstSeen": "2026-06-01T21:31:49.667Z"
         }
       ],
-      "sourceCount": 2,
+      "sourceCount": 3,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-05-09T19:00:00.611Z",
-      "dateLastSeen": "2026-05-10T19:02:19.492Z",
+      "dateLastSeen": "2026-06-01T21:31:49.667Z",
       "sz": 14,
       "proposalReason": "A framing concept for how AI is changing creative production pipelines; relevant as more AI tools target media creation."
     },
@@ -4875,12 +4891,20 @@
           "sourceLabel": "Google AI Blog",
           "publishedAt": "Fri, 29 May 2026 17:30:00 +0000",
           "firstSeen": "2026-05-30T19:13:38.586Z"
+        },
+        {
+          "url": "https://lastweekin.ai/p/lwiai-podcast-246-gemini-35-omni",
+          "domain": "lastweekin.ai",
+          "title": "LWiAI Podcast #246 - Gemini 3.5 + Omni, Musk Loses, OpenAI vs Erdős ",
+          "sourceLabel": "Last Week in AI",
+          "publishedAt": "Tue, 26 May 2026 05:10:23 GMT",
+          "firstSeen": "2026-06-01T21:31:49.667Z"
         }
       ],
-      "sourceCount": 3,
+      "sourceCount": 4,
       "independentSourceCount": 2,
       "dateFirstSeen": "2026-05-29T20:24:10.894Z",
-      "dateLastSeen": "2026-05-30T19:13:38.586Z",
+      "dateLastSeen": "2026-06-01T21:31:49.667Z",
       "sz": 14,
       "fullName": "Gemini Omni (Google)",
       "nodeType": "product",
@@ -4924,12 +4948,20 @@
           "sourceLabel": "Google AI Blog",
           "publishedAt": "Fri, 29 May 2026 17:30:00 +0000",
           "firstSeen": "2026-05-30T19:13:38.586Z"
+        },
+        {
+          "url": "https://lastweekin.ai/p/lwiai-podcast-246-gemini-35-omni",
+          "domain": "lastweekin.ai",
+          "title": "LWiAI Podcast #246 - Gemini 3.5 + Omni, Musk Loses, OpenAI vs Erdős ",
+          "sourceLabel": "Last Week in AI",
+          "publishedAt": "Tue, 26 May 2026 05:10:23 GMT",
+          "firstSeen": "2026-06-01T21:31:49.667Z"
         }
       ],
-      "sourceCount": 3,
+      "sourceCount": 4,
       "independentSourceCount": 2,
       "dateFirstSeen": "2026-05-29T20:24:10.894Z",
-      "dateLastSeen": "2026-05-30T19:13:38.586Z",
+      "dateLastSeen": "2026-06-01T21:31:49.667Z",
       "sz": 14,
       "fullName": "Gemini 3.5 Flash (Google DeepMind)",
       "nodeType": "product",
@@ -5016,12 +5048,20 @@
           "sourceLabel": "Google AI Blog",
           "publishedAt": "Fri, 29 May 2026 17:30:00 +0000",
           "firstSeen": "2026-05-30T19:13:38.586Z"
+        },
+        {
+          "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-google-ai/",
+          "domain": "blog.google",
+          "title": "How we used Gemini to build Google I/O 2026",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Mon, 01 Jun 2026 16:00:00 +0000",
+          "firstSeen": "2026-06-01T21:31:49.667Z"
         }
       ],
-      "sourceCount": 4,
+      "sourceCount": 5,
       "independentSourceCount": 2,
       "dateFirstSeen": "2026-05-29T20:24:10.894Z",
-      "dateLastSeen": "2026-05-30T19:13:38.586Z",
+      "dateLastSeen": "2026-06-01T21:31:49.667Z",
       "sz": 14,
       "nodeType": "product",
       "proposalReason": "New named Google platform enabling in-Search code generation and mini-app creation; relates to the emerging personal-software and micro-app concepts on the longlist."
@@ -5252,12 +5292,20 @@
           "sourceLabel": "Stratechery",
           "publishedAt": "Fri, 29 May 2026 17:00:00 +0000",
           "firstSeen": "2026-05-30T19:13:38.586Z"
+        },
+        {
+          "url": "https://stratechery.com/2026/youtubers-win-the-box-office-goodbye-gatekeepers-the-youtube-bar/",
+          "domain": "stratechery.com",
+          "title": "YouTubers Win the Box Office, Goodbye Gatekeepers, The YouTube Bar",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Mon, 01 Jun 2026 10:00:00 +0000",
+          "firstSeen": "2026-06-01T21:31:49.667Z"
         }
       ],
-      "sourceCount": 2,
+      "sourceCount": 3,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-05-29T20:29:06.123Z",
-      "dateLastSeen": "2026-05-30T19:13:38.586Z",
+      "dateLastSeen": "2026-06-01T21:31:49.667Z",
       "sz": 14,
       "fullName": "The Agentic Web",
       "proposalReason": "NEW term implied by adjacent Stratechery interview title; captures an emerging framing about how AI agents transform content and advertising economics on the web."
@@ -5457,12 +5505,20 @@
           "sourceLabel": "Anthropic Newsroom",
           "publishedAt": null,
           "firstSeen": "2026-05-29T20:29:06.123Z"
+        },
+        {
+          "url": "https://www.anthropic.com/news/confidential-draft-s1-sec",
+          "domain": "anthropic.com",
+          "title": "Anthropic confidentially submits draft S-1 to the SEC",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-06-01T21:31:49.667Z"
         }
       ],
-      "sourceCount": 1,
+      "sourceCount": 2,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-05-29T20:29:06.123Z",
-      "dateLastSeen": "2026-05-29T20:29:06.123Z",
+      "dateLastSeen": "2026-06-01T21:31:49.667Z",
       "sz": 14,
       "fullName": "Anthropic Series H Funding Round",
       "proposalReason": "A valuation milestone and structural financing model (compute deals bundled with equity rounds) that is worth tracking as a business-model term in the AI infrastructure landscape."
@@ -5627,12 +5683,20 @@
           "sourceLabel": "Last Week in AI",
           "publishedAt": "Wed, 27 May 2026 07:50:58 GMT",
           "firstSeen": "2026-05-30T19:13:38.586Z"
+        },
+        {
+          "url": "https://lastweekin.ai/p/lwiai-podcast-246-gemini-35-omni",
+          "domain": "lastweekin.ai",
+          "title": "LWiAI Podcast #246 - Gemini 3.5 + Omni, Musk Loses, OpenAI vs Erdős ",
+          "sourceLabel": "Last Week in AI",
+          "publishedAt": "Tue, 26 May 2026 05:10:23 GMT",
+          "firstSeen": "2026-06-01T21:31:49.667Z"
         }
       ],
-      "sourceCount": 1,
+      "sourceCount": 2,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-05-30T19:13:38.586Z",
-      "dateLastSeen": "2026-05-30T19:13:38.586Z",
+      "dateLastSeen": "2026-06-01T21:31:49.667Z",
       "sz": 14,
       "fullName": "Gemini Spark (Google)",
       "nodeType": "product",
@@ -6046,6 +6110,135 @@
       "dateLastSeen": "2026-05-31T19:15:39.230Z",
       "sz": 14,
       "proposalReason": "A concrete behavioural pattern distinct enough from 'AI productivity' to merit its own term; has a specific structural cause (near-zero start cost) and is generating genuine community debate."
+    },
+    {
+      "id": "negation-neglect",
+      "label": "Negation Neglect",
+      "workingDef": "A training failure mode in which language models systematically fail to correctly learn or apply negation during training — producing outputs that behave as if negating instructions or statements were not present. Identified in a research paper discussed in this episode.",
+      "clusters": [
+        "models",
+        "safety"
+      ],
+      "suggestedRels": [
+        "training",
+        "hallucination",
+        "evals"
+      ],
+      "sources": [
+        {
+          "url": "https://lastweekin.ai/p/lwiai-podcast-246-gemini-35-omni",
+          "domain": "lastweekin.ai",
+          "title": "LWiAI Podcast #246 - Gemini 3.5 + Omni, Musk Loses, OpenAI vs Erdős ",
+          "sourceLabel": "Last Week in AI",
+          "publishedAt": "Tue, 26 May 2026 05:10:23 GMT",
+          "firstSeen": "2026-06-01T21:31:49.667Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-01T21:31:49.667Z",
+      "dateLastSeen": "2026-06-01T21:31:49.667Z",
+      "sz": 14,
+      "fullName": "Negation Neglect (LLM Training Failure Mode)",
+      "proposalReason": "A concise name for a specific, named failure mode in LLM training surfaced by new research — worth tracking as a distinct concept in model behaviour."
+    },
+    {
+      "id": "nano-banana",
+      "label": "Nano Banana",
+      "workingDef": "An experimental Google model or pipeline referenced in the I/O 2026 production workflow for generating and stylizing video frames — used for first-frame generation from raw footage and icon-style exploration. Appears to be an internal or early-access generative video/image tool within Google's DeepMind/Labs ecosystem, not yet publicly documented outside this production context.",
+      "clusters": [
+        "tools",
+        "models"
+      ],
+      "suggestedRels": [
+        "gemini",
+        "google-co",
+        "google-flow",
+        "ai-assisted-filmmaking"
+      ],
+      "sources": [
+        {
+          "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-google-ai/",
+          "domain": "blog.google",
+          "title": "How we used Gemini to build Google I/O 2026",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Mon, 01 Jun 2026 16:00:00 +0000",
+          "firstSeen": "2026-06-01T21:31:49.667Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-01T21:31:49.667Z",
+      "dateLastSeen": "2026-06-01T21:31:49.667Z",
+      "sz": 14,
+      "fullName": "Nano Banana (Google)",
+      "nodeType": "product",
+      "proposalReason": "A newly surfaced Google experimental model name appearing in a first-party production context; worth tracking for future public documentation."
+    },
+    {
+      "id": "ai-support-bot-takeover",
+      "label": "Account Takeover via AI Support Bot",
+      "workingDef": "A class of AI deployment failure in which a customer-facing AI support agent is granted direct authority to execute high-privilege account actions (e.g., account recovery, email reassignment), allowing social engineering attacks that bypass normal verification. The Meta/Instagram incident (2026) is the canonical example: a hacker's natural-language request to a support chatbot was sufficient to re-link a target account to the attacker's email. Distinct from prompt injection in that no adversarial payload manipulation was required — the flaw was architectural over-privilege, not model manipulation.",
+      "clusters": [
+        "security",
+        "agentic"
+      ],
+      "suggestedRels": [
+        "prompt-injection",
+        "guardrails",
+        "blast-radius",
+        "tool-misuse",
+        "agent"
+      ],
+      "sources": [
+        {
+          "url": "https://simonwillison.net/2026/Jun/1/hackers-simply-asked-meta-ai/#atom-everything",
+          "domain": "simonwillison.net",
+          "title": "Hackers Simply Asked Meta AI to Give Them Access to High-Profile Instagram Accounts. It Worked",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-06-01T21:14:47+00:00",
+          "firstSeen": "2026-06-01T21:31:49.667Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-01T21:31:49.667Z",
+      "dateLastSeen": "2026-06-01T21:31:49.667Z",
+      "sz": 14,
+      "proposalReason": "A vivid real-world case illustrating the blast-radius and permission-creep risks of deploying agentic support bots with irreversible account-management capabilities. Worth tracking as a named failure class."
+    },
+    {
+      "id": "one-shot-account-recovery",
+      "label": "One-Shot Account Recovery",
+      "workingDef": "An attack pattern in which a single conversational exchange with an AI support agent is sufficient to complete an otherwise multi-step privileged action — such as account recovery or credential reassignment — by exploiting over-permissioned agentic tool access. Willison uses the term 'one-shot account takeover' to describe the Meta/Instagram incident, distinguishing it from multi-turn prompt injection attacks. The failure mode arises when an AI system collapses a multi-checkpoint security workflow into a single LLM-mediated turn.",
+      "clusters": [
+        "security",
+        "agentic"
+      ],
+      "suggestedRels": [
+        "prompt-injection",
+        "tool-misuse",
+        "blast-radius",
+        "guardrails",
+        "permission-creep"
+      ],
+      "sources": [
+        {
+          "url": "https://simonwillison.net/2026/Jun/1/hackers-simply-asked-meta-ai/#atom-everything",
+          "domain": "simonwillison.net",
+          "title": "Hackers Simply Asked Meta AI to Give Them Access to High-Profile Instagram Accounts. It Worked",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-06-01T21:14:47+00:00",
+          "firstSeen": "2026-06-01T21:31:49.667Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-01T21:31:49.667Z",
+      "dateLastSeen": "2026-06-01T21:31:49.667Z",
+      "sz": 14,
+      "fullName": "One-Shot Account Recovery (AI Support Exploit)",
+      "proposalReason": "A precise framing for a newly documented attack pattern distinct from prompt injection — worth tracking separately as agentic support deployments proliferate."
     }
   ]
 }

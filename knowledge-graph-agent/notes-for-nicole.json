@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generatedAt": "2026-05-31T19:15:39.230Z",
-    "unreadCount": 4,
-    "totalCount": 152,
+    "generatedAt": "2026-06-01T21:31:49.667Z",
+    "unreadCount": 5,
+    "totalCount": 153,
     "note": "Notes for Nicole — Lexi's manager channel (spec §6). Mandatory entry types fire when their triggering condition is met; discretionary entries are observations Lexi thinks Nicole should see. Set status to 'read', 'actioned', or 'dismissed' as appropriate."
   },
   "entries": [
@@ -4025,6 +4025,26 @@
         "source": "definition-review"
       },
       "suggestedAction": "Approve or reject the oldest pending proposals so Lexi can resume queueing new ones."
+    },
+    {
+      "id": "ae62bc18ee7a1fa7",
+      "type": "contested_cluster_omission",
+      "writtenAt": "2026-06-01T21:31:49.667Z",
+      "runId": "f448cd9d-8100-4fac-8484-7d70580257a6",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Contested cluster term added without naming the contestation: 'Negation Neglect'",
+      "details": "The term 'Negation Neglect' matches the contested-cluster pattern 'responsible AI' (per spec §10), but the working definition does not appear to acknowledge that the term is contested or that different camps use it differently. Per spec §6 entry type 5, this requires review before any move toward graph promotion.",
+      "evidence": {
+        "entryId": "negation-neglect",
+        "label": "Negation Neglect",
+        "fullName": "Negation Neglect (LLM Training Failure Mode)",
+        "matchedContestedTerm": "responsible AI",
+        "workingDef": "A training failure mode in which language models systematically fail to correctly learn or apply negation during training — producing outputs that behave as if negating instructions or statements were not present. Identified in a research paper discussed in this episode.",
+        "sourceUrl": "https://lastweekin.ai/p/lwiai-podcast-246-gemini-35-omni",
+        "sourceLabel": "Last Week in AI"
+      },
+      "suggestedAction": "Either revise the working definition to name the contestation (who uses it to mean what), or confirm this term doesn't warrant the contested treatment in this case."
     }
   ]
 }

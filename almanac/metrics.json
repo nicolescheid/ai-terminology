@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-05-31T19:17:22.993Z",
+  "generatedAt": "2026-06-01T21:33:16.613Z",
   "firstRunAt": "2026-04-27T01:07:31.335Z",
   "phase": 1,
   "headline": {
-    "articlesRead": 137,
-    "daysRunning": 35,
-    "longlistSize": 157,
+    "articlesRead": 143,
+    "daysRunning": 36,
+    "longlistSize": 161,
     "graphSize": 207
   },
   "thisWeek": {
-    "articlesFetched": 24,
-    "longlistAdded": 36,
-    "sourcesAdded": 9,
+    "articlesFetched": 30,
+    "longlistAdded": 40,
+    "sourcesAdded": 11,
     "promotionsToGraph": 1,
-    "proposalsQueued": 6,
+    "proposalsQueued": 11,
     "auditFlags": 0,
     "notesAdded": 8
   },
@@ -27,102 +27,13 @@
       ],
       "sourceCount": 3,
       "independentSources": 2,
-      "daysOnLonglist": 26,
+      "daysOnLonglist": 28,
       "domains": [
         "openai.com",
         "simonwillison.net"
       ],
       "gapCount": 0,
       "gap": "meets credibility bar"
-    },
-    {
-      "id": "google-antigravity",
-      "label": "Google Antigravity",
-      "fullName": null,
-      "clusters": [
-        "tools",
-        "agentic"
-      ],
-      "sourceCount": 4,
-      "independentSources": 2,
-      "daysOnLonglist": 1,
-      "domains": [
-        "blog.google",
-        "normaltech.ai"
-      ],
-      "gapCount": 1,
-      "gap": "2 more days on longlist"
-    },
-    {
-      "id": "gemini-omni",
-      "label": "Gemini Omni",
-      "fullName": "Gemini Omni (Google)",
-      "clusters": [
-        "models",
-        "tools"
-      ],
-      "sourceCount": 3,
-      "independentSources": 2,
-      "daysOnLonglist": 1,
-      "domains": [
-        "blog.google",
-        "lastweekin.ai"
-      ],
-      "gapCount": 1,
-      "gap": "2 more days on longlist"
-    },
-    {
-      "id": "gemini-35-flash",
-      "label": "Gemini 3.5 Flash",
-      "fullName": "Gemini 3.5 Flash (Google DeepMind)",
-      "clusters": [
-        "models",
-        "agentic"
-      ],
-      "sourceCount": 3,
-      "independentSources": 2,
-      "daysOnLonglist": 1,
-      "domains": [
-        "blog.google",
-        "lastweekin.ai"
-      ],
-      "gapCount": 1,
-      "gap": "2 more days on longlist"
-    },
-    {
-      "id": "run-rate-revenue",
-      "label": "Run-Rate Revenue",
-      "fullName": "Run-Rate Revenue (ARR Projection)",
-      "clusters": [
-        "business"
-      ],
-      "sourceCount": 2,
-      "independentSources": 2,
-      "daysOnLonglist": 1,
-      "domains": [
-        "simonwillison.net",
-        "anthropic.com"
-      ],
-      "gapCount": 1,
-      "gap": "2 more days on longlist"
-    },
-    {
-      "id": "hyperscaler",
-      "label": "Hyperscaler",
-      "fullName": "Hyperscaler (Cloud Provider in AI Context)",
-      "clusters": [
-        "business",
-        "technical"
-      ],
-      "sourceCount": 2,
-      "independentSources": 2,
-      "daysOnLonglist": 1,
-      "domains": [
-        "anthropic.com",
-        "stratechery.com"
-      ],
-      "gapCount": 1,
-      "gap": "2 more days on longlist"
     },
     {
       "id": "terafab",
@@ -134,9 +45,43 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 30,
+      "daysOnLonglist": 32,
       "domains": [
         "stratechery.com"
+      ],
+      "gapCount": 1,
+      "gap": "needs 1 more independent source"
+    },
+    {
+      "id": "google-flow",
+      "label": "Google Flow",
+      "fullName": "Google Flow (AI Filmmaking Tool)",
+      "clusters": [
+        "tools",
+        "companies"
+      ],
+      "sourceCount": 3,
+      "independentSources": 1,
+      "daysOnLonglist": 23,
+      "domains": [
+        "blog.google"
+      ],
+      "gapCount": 1,
+      "gap": "needs 1 more independent source"
+    },
+    {
+      "id": "ai-assisted-filmmaking",
+      "label": "AI-Assisted Filmmaking",
+      "fullName": null,
+      "clusters": [
+        "tools",
+        "human"
+      ],
+      "sourceCount": 3,
+      "independentSources": 1,
+      "daysOnLonglist": 23,
+      "domains": [
+        "blog.google"
       ],
       "gapCount": 1,
       "gap": "needs 1 more independent source"
@@ -151,7 +96,24 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 19,
+      "daysOnLonglist": 21,
+      "domains": [
+        "stratechery.com"
+      ],
+      "gapCount": 1,
+      "gap": "needs 1 more independent source"
+    },
+    {
+      "id": "agentic-web",
+      "label": "Agentic Web",
+      "fullName": "The Agentic Web",
+      "clusters": [
+        "agentic",
+        "landscape"
+      ],
+      "sourceCount": 3,
+      "independentSources": 1,
+      "daysOnLonglist": 3,
       "domains": [
         "stratechery.com"
       ],
@@ -168,7 +130,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 30,
+      "daysOnLonglist": 32,
       "domains": [
         "stratechery.com"
       ],
@@ -176,18 +138,52 @@
       "gap": "needs 1 more independent source"
     },
     {
-      "id": "google-flow",
-      "label": "Google Flow",
-      "fullName": "Google Flow (AI Filmmaking Tool)",
+      "id": "vllm",
+      "label": "vLLM",
+      "fullName": "vLLM (Open-Source LLM Inference Server)",
       "clusters": [
-        "tools",
-        "companies"
+        "technical",
+        "tools"
       ],
       "sourceCount": 2,
       "independentSources": 1,
       "daysOnLonglist": 22,
       "domains": [
-        "blog.google"
+        "huggingface.co"
+      ],
+      "gapCount": 1,
+      "gap": "needs 1 more independent source"
+    },
+    {
+      "id": "ephemeral-ai-chat",
+      "label": "Ephemeral AI Chat",
+      "fullName": null,
+      "clusters": [
+        "security",
+        "tools"
+      ],
+      "sourceCount": 2,
+      "independentSources": 1,
+      "daysOnLonglist": 19,
+      "domains": [
+        "theverge.com"
+      ],
+      "gapCount": 1,
+      "gap": "needs 1 more independent source"
+    },
+    {
+      "id": "deployment-company",
+      "label": "Deployment Company",
+      "fullName": "AI Deployment Company",
+      "clusters": [
+        "business",
+        "companies"
+      ],
+      "sourceCount": 2,
+      "independentSources": 1,
+      "daysOnLonglist": 16,
+      "domains": [
+        "stratechery.com"
       ],
       "gapCount": 1,
       "gap": "needs 1 more independent source"
@@ -197,23 +193,23 @@
     "byDomain": [
       {
         "domain": "openai.com",
-        "count": 35
+        "count": 36
       },
       {
         "domain": "simonwillison.net",
-        "count": 19
+        "count": 20
       },
       {
         "domain": "stratechery.com",
-        "count": 16
+        "count": 17
       },
       {
         "domain": "blog.google",
-        "count": 15
+        "count": 16
       },
       {
         "domain": "anthropic.com",
-        "count": 13
+        "count": 14
       },
       {
         "domain": "huggingface.co",
@@ -225,7 +221,7 @@
       },
       {
         "domain": "lastweekin.ai",
-        "count": 7
+        "count": 8
       },
       {
         "domain": "normaltech.ai",
@@ -355,19 +351,19 @@
         "id": "agentic",
         "label": "Agentic Systems",
         "hex": "#FF9040",
-        "count": 38
+        "count": 40
       },
       {
         "id": "tools",
         "label": "Tools & Platforms",
         "hex": "#70C8F8",
-        "count": 34
+        "count": 35
       },
       {
         "id": "models",
         "label": "Models",
         "hex": "#FFB060",
-        "count": 31
+        "count": 33
       },
       {
         "id": "business",
@@ -376,16 +372,16 @@
         "count": 25
       },
       {
+        "id": "safety",
+        "label": "Safety",
+        "hex": "#FF6090",
+        "count": 23
+      },
+      {
         "id": "critical",
         "label": "Critical / Hype",
         "hex": "#FF5555",
         "count": 23
-      },
-      {
-        "id": "safety",
-        "label": "Safety",
-        "hex": "#FF6090",
-        "count": 22
       },
       {
         "id": "landscape",
@@ -403,7 +399,7 @@
         "id": "security",
         "label": "AI Security",
         "hex": "#E05050",
-        "count": 18
+        "count": 20
       },
       {
         "id": "companies",
@@ -443,7 +439,7 @@
     "note": "All graph promotions and substantive edits are currently human-gated. Lexi proposes; Nicole approves."
   },
   "proposalsByStatus": {
-    "pending": 15,
+    "pending": 20,
     "approved": 0,
     "applied": 13,
     "rejected": 1

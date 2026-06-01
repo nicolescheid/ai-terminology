@@ -1,76 +1,82 @@
 {
-  "generatedAt": "2026-05-31T19:15:39.230Z",
+  "generatedAt": "2026-06-01T21:31:49.667Z",
   "model": "claude-sonnet-4-6",
   "sourcesConfigured": 15,
   "articlesConsidered": [
     {
-      "id": "5b218fefef6f1e06",
-      "source": "Hugging Face Blog",
-      "title": "Reachy Mini goes fully local",
-      "url": "https://huggingface.co/blog/local-reachy-mini-conversation",
-      "publishedAt": "Wed, 27 May 2026 00:00:00 GMT"
-    },
-    {
-      "id": "f9f8186c37561458",
+      "id": "059eb5fa54e5178a",
       "source": "Last Week in AI",
-      "title": "LWiAI Podcast #245 - TML-Interaction, Claude For Legal, Sam Altman on Stand",
-      "url": "https://lastweekin.ai/p/lwiai-podcast-245-tml-interaction",
-      "publishedAt": "Wed, 20 May 2026 07:45:49 GMT"
+      "title": "LWiAI Podcast #246 - Gemini 3.5 + Omni, Musk Loses, OpenAI vs Erdős ",
+      "url": "https://lastweekin.ai/p/lwiai-podcast-246-gemini-35-omni",
+      "publishedAt": "Tue, 26 May 2026 05:10:23 GMT"
     },
     {
-      "id": "daac52c1ca428b8c",
+      "id": "4e4360776d53ebd5",
       "source": "Google AI Blog",
-      "title": "Check out real-life AI prototypes from the Futures Lab.",
-      "url": "https://blog.google/innovation-and-ai/technology/ai/university-waterloo-labs/",
-      "publishedAt": "Fri, 29 May 2026 12:00:00 +0000"
+      "title": "How we used Gemini to build Google I/O 2026",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-google-ai/",
+      "publishedAt": "Mon, 01 Jun 2026 16:00:00 +0000"
     },
     {
-      "id": "33e1df4abe4ea5f3",
+      "id": "dadd123def02abdb",
       "source": "OpenAI News",
-      "title": "A shared playbook for trustworthy third party evaluations",
-      "url": "https://openai.com/index/trustworthy-third-party-evaluations-foundations",
-      "publishedAt": "Fri, 29 May 2026 00:00:00 GMT"
+      "title": "Building the infrastructure for the Intelligence Age in Michigan",
+      "url": "https://openai.com/index/stargate-michigan-data-center",
+      "publishedAt": "Mon, 01 Jun 2026 12:00:00 GMT"
     },
     {
-      "id": "d66cbd6490f7bc62",
+      "id": "088bc86a00b02984",
+      "source": "Stratechery",
+      "title": "YouTubers Win the Box Office, Goodbye Gatekeepers, The YouTube Bar",
+      "url": "https://stratechery.com/2026/youtubers-win-the-box-office-goodbye-gatekeepers-the-youtube-bar/",
+      "publishedAt": "Mon, 01 Jun 2026 10:00:00 +0000"
+    },
+    {
+      "id": "56e85ad23e0aaf9d",
       "source": "Simon Willison's Weblog",
-      "title": "The solution might be cancelling my AI subscription",
-      "url": "https://simonwillison.net/2026/May/31/the-solution-might-be-cancelling-my-ai-subscription/#atom-everything",
-      "publishedAt": "2026-05-31T16:31:32+00:00"
+      "title": "Hackers Simply Asked Meta AI to Give Them Access to High-Profile Instagram Accounts. It Worked",
+      "url": "https://simonwillison.net/2026/Jun/1/hackers-simply-asked-meta-ai/#atom-everything",
+      "publishedAt": "2026-06-01T21:14:47+00:00"
     },
     {
-      "id": "2fb8fa2bf4321072",
-      "source": "The Verge — AI",
-      "title": "I went looking for the AI weed vape that gives you Bitcoin for smoking",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/933916/ai-powered-crypto-cannabis-vape",
-      "publishedAt": "2026-05-31T09:00:00-04:00"
+      "id": "ea58427a703f714f",
+      "source": "Anthropic Newsroom",
+      "title": "Anthropic confidentially submits draft S-1 to the SEC",
+      "url": "https://www.anthropic.com/news/confidential-draft-s1-sec",
+      "publishedAt": null
     }
   ],
   "harvestedTerms": [
     {
       "article": {
-        "title": "Reachy Mini goes fully local",
-        "url": "https://huggingface.co/blog/local-reachy-mini-conversation"
+        "title": "LWiAI Podcast #246 - Gemini 3.5 + Omni, Musk Loses, OpenAI vs Erdős ",
+        "url": "https://lastweekin.ai/p/lwiai-podcast-246-gemini-35-omni"
       },
-      "summary": "A Hugging Face tutorial walking through deploying a fully local speech-to-speech pipeline on a Reachy Mini robot — covering VAD, STT, LLM serving (llama.cpp/vLLM), and TTS components. The article is primarily technical/instructional and introduces several pipeline-specific implementation patterns.",
+      "summary": "Podcast episode covering Google I/O highlights (Gemini 3.5, Gemini Spark, Gemini Omni), coding agent competition (Cursor Composer 2.5, Grok Build), business news (Anthropic funding, Musk lawsuit), and research/safety topics including negation neglect, circuit redundancy, autonomous hacking, and AI mathematical proofs.",
       "longlistAdditions": [
         {
-          "id": "cascaded-voice-pipeline",
-          "label": "Cascaded Voice Pipeline"
-        },
-        {
-          "id": "multi-token-prediction",
-          "label": "Multi-Token Prediction"
-        },
-        {
-          "id": "responses-api",
-          "label": "Responses API"
+          "id": "negation-neglect",
+          "label": "Negation Neglect"
         }
       ],
       "longlistUpdates": [
         {
-          "id": "vllm",
-          "label": "vLLM",
+          "id": "gemini-omni",
+          "label": "Gemini Omni",
+          "sourceAdded": true,
+          "sourceCount": 4,
+          "independentSourceCount": 2
+        },
+        {
+          "id": "gemini-35-flash",
+          "label": "Gemini 3.5 Flash",
+          "sourceAdded": true,
+          "sourceCount": 4,
+          "independentSourceCount": 2
+        },
+        {
+          "id": "gemini-spark",
+          "label": "Gemini Spark",
           "sourceAdded": true,
           "sourceCount": 2,
           "independentSourceCount": 1
@@ -81,74 +87,36 @@
     },
     {
       "article": {
-        "title": "LWiAI Podcast #245 - TML-Interaction, Claude For Legal, Sam Altman on Stand",
-        "url": "https://lastweekin.ai/p/lwiai-podcast-245-tml-interaction"
+        "title": "How we used Gemini to build Google I/O 2026",
+        "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-google-ai/"
       },
-      "summary": "Podcast roundup covering OpenAI's new voice API features, Thinking Machines' low-latency conversational model, Claude for Legal, AWS-Anthropic partnership expansion, safety research on CoT grading in RL, and METR's evaluation of Claude Mythos. Primarily a news digest episode touching on multiple fronts.",
+      "summary": "Google's I/O 2026 behind-the-scenes post describes using Gemini, Nano Banana, Google Antigravity, and other experimental AI tools to produce films, brand identity, and immersive experiences for the event. The article is primarily a marketing/use-case showcase but surfaces several product names worth tracking.",
       "longlistAdditions": [
         {
-          "id": "claude-for-legal",
-          "label": "Claude for Legal"
-        },
-        {
-          "id": "full-duplex-conversational-ai",
-          "label": "Full-Duplex Conversational AI"
-        },
-        {
-          "id": "cot-grading-contamination",
-          "label": "CoT Grading Contamination"
-        },
-        {
-          "id": "human-consent-standard",
-          "label": "Human Consent Standard"
-        }
-      ],
-      "longlistUpdates": [],
-      "rejections": [],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "Check out real-life AI prototypes from the Futures Lab.",
-        "url": "https://blog.google/innovation-and-ai/technology/ai/university-waterloo-labs/"
-      },
-      "summary": "Google blog post about the Futures Lab partnership with University of Waterloo, where students build AI-powered learning prototypes over eight-week workshops. Highlights include Kanji Garden (AI-generated language stories), SignFluent (real-time ASL feedback), and MuscleMemory (AI camera-assisted exercise coaching). Light on terminology, heavy on product showcase.",
-      "longlistAdditions": [
-        {
-          "id": "ai-tutoring",
-          "label": "AI Tutoring"
-        },
-        {
-          "id": "real-time-feedback-ai",
-          "label": "Real-Time Feedback AI"
-        }
-      ],
-      "longlistUpdates": [],
-      "rejections": [],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "The solution might be cancelling my AI subscription",
-        "url": "https://simonwillison.net/2026/May/31/the-solution-might-be-cancelling-my-ai-subscription/#atom-everything"
-      },
-      "summary": "A link post by Simon Willison pointing to David Wilson's reflection on AI-assisted coding leading to runaway project proliferation. The piece explores the attention-fragmenting side effects of low-friction AI tooling — particularly coding agents — and the divergent experiences of neurotypical vs. ADHD users. No major new technical concepts; the value is a human-pattern observation about AI tool use and discipline.",
-      "longlistAdditions": [
-        {
-          "id": "attention-fragmentation-ai",
-          "label": "Attention Fragmentation (AI)"
-        },
-        {
-          "id": "project-proliferation",
-          "label": "Project Proliferation"
+          "id": "nano-banana",
+          "label": "Nano Banana"
         }
       ],
       "longlistUpdates": [
         {
-          "id": "product-market-fit",
-          "label": "Product-Market Fit",
+          "id": "google-antigravity",
+          "label": "Google Antigravity",
           "sourceAdded": true,
-          "sourceCount": 2,
+          "sourceCount": 5,
+          "independentSourceCount": 2
+        },
+        {
+          "id": "ai-assisted-filmmaking",
+          "label": "AI-Assisted Filmmaking",
+          "sourceAdded": true,
+          "sourceCount": 3,
+          "independentSourceCount": 1
+        },
+        {
+          "id": "google-flow",
+          "label": "Google Flow",
+          "sourceAdded": true,
+          "sourceCount": 3,
           "independentSourceCount": 1
         }
       ],
@@ -157,75 +125,113 @@
     },
     {
       "article": {
-        "title": "I went looking for the AI weed vape that gives you Bitcoin for smoking",
-        "url": "https://www.theverge.com/ai-artificial-intelligence/933916/ai-powered-crypto-cannabis-vape"
+        "title": "YouTubers Win the Box Office, Goodbye Gatekeepers, The YouTube Bar",
+        "url": "https://stratechery.com/2026/youtubers-win-the-box-office-goodbye-gatekeepers-the-youtube-bar/"
       },
-      "summary": "The Verge investigates Gudtrip, a cannabis vape device marketed as 'the first agentic cannabis device' combining AI, blockchain rewards, and cannabis. The article is primarily a journalist's investigation into a dubious product's claims, exposing the gap between marketing buzzwords and reality. Limited substantive AI terminology is present; the main interest is the misuse of 'agentic' as marketing language.",
+      "summary": "Paywalled Stratechery article about YouTubers succeeding at the box office and the erosion of Hollywood gatekeepers. The excerpt is almost entirely subscription/navigation boilerplate — the actual article content is inaccessible. No substantive AI terminology appears in the readable portion. One adjacent reference to 'the Agentic Web' appears in a linked interview title ('An Interview with Parallel Founder Parag Agarwal About Valuing Content on the Agentic Web').",
       "longlistAdditions": [],
-      "longlistUpdates": [],
-      "rejections": [
+      "longlistUpdates": [
         {
-          "label": "Agent Washing",
-          "reason": "already in graph (id match)"
-        },
-        {
-          "label": "AI Washing",
-          "reason": "already in graph (id match)"
+          "id": "agentic-web",
+          "label": "Agentic Web",
+          "sourceAdded": true,
+          "sourceCount": 3,
+          "independentSourceCount": 1
         }
       ],
+      "rejections": [],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "Hackers Simply Asked Meta AI to Give Them Access to High-Profile Instagram Accounts. It Worked",
+        "url": "https://simonwillison.net/2026/Jun/1/hackers-simply-asked-meta-ai/#atom-everything"
+      },
+      "summary": "Simon Willison covers a reported security incident where hackers exploited Meta's AI support chatbot to hijack high-profile Instagram accounts by simply asking it to transfer account ownership — no sophisticated prompt injection required. The post highlights a catastrophic AI deployment failure: wiring an agentic support bot to execute irreversible account recovery actions without adequate verification.",
+      "longlistAdditions": [
+        {
+          "id": "ai-support-bot-takeover",
+          "label": "Account Takeover via AI Support Bot"
+        },
+        {
+          "id": "one-shot-account-recovery",
+          "label": "One-Shot Account Recovery"
+        }
+      ],
+      "longlistUpdates": [],
+      "rejections": [],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "Anthropic confidentially submits draft S-1 to the SEC",
+        "url": "https://www.anthropic.com/news/confidential-draft-s1-sec"
+      },
+      "summary": "Anthropic has confidentially submitted a draft S-1 registration statement to the SEC for a proposed IPO of its common stock. The announcement is a brief regulatory notice with no substantive AI terminology or conceptual framing — it references the Series H funding round and mentions Claude product lines in site navigation but introduces no new concepts.",
+      "longlistAdditions": [],
+      "longlistUpdates": [
+        {
+          "id": "series-h-anthropic",
+          "label": "Series H",
+          "sourceAdded": true,
+          "sourceCount": 2,
+          "independentSourceCount": 1
+        }
+      ],
+      "rejections": [],
       "proposalsQueued": []
     }
   ],
   "definitionReviews": [
     {
-      "id": "claude-code",
+      "id": "context-economy",
       "status": "insufficient_evidence",
-      "reason": "No source material addresses Claude Code, its revenue figures, or its agentic capabilities."
+      "reason": "No source material addresses context economy, prompt compression, or related context design disciplines."
     },
     {
-      "id": "claude-cowork",
+      "id": "context-engineering",
       "status": "insufficient_evidence",
-      "reason": "No source material references Claude Cowork or any related Anthropic outcome-delegation product."
+      "reason": "No source material addresses context engineering as a discipline or its evolution relative to prompt engineering."
     },
     {
-      "id": "claude-design",
+      "id": "context-entropy",
       "status": "insufficient_evidence",
-      "reason": "No source material references Claude Design or any Anthropic Labs visual design product."
+      "reason": "No source material addresses context entropy or agentic session quality degradation."
     },
     {
-      "id": "claude-mythos",
+      "id": "context-folding",
       "status": "insufficient_evidence",
-      "reason": "No source material references Claude Mythos or any withheld Anthropic model."
+      "reason": "No source material addresses context folding or related architectural approaches to context management."
     },
     {
-      "id": "codex-model",
-      "status": "keep",
-      "reason": "No source material contradicts or updates the existing definition of Codex as OpenAI's coding model family that powered GitHub Copilot."
+      "id": "context-pollution",
+      "status": "insufficient_evidence",
+      "reason": "No source material addresses context pollution, signal-to-noise ratio in agent contexts, or related concepts."
     },
     {
-      "id": "computer-use",
-      "status": "keep",
-      "reason": "No source material addresses the computer-use agent pattern. Definition remains accurate as stated."
+      "id": "context-rot",
+      "status": "insufficient_evidence",
+      "reason": "No source material addresses context rot or the Chroma 2025 research cited in the definition."
     },
     {
-      "id": "connectors",
-      "status": "keep",
-      "reason": "No source material addresses connectors or MCP integrations. Definition remains accurate as stated."
+      "id": "context-window",
+      "status": "insufficient_evidence",
+      "reason": "No source material provides new information about context window sizes, token limits, or related architectural properties."
     },
     {
-      "id": "constitutional-ai",
-      "status": "keep",
-      "reason": "The LWiAI podcast mentions Anthropic work on 'training ethical why reasoning' to reduce agent misalignment, which is loosely consistent with Constitutional AI principles but does not provide enough detail to justify a rewrite. The existing definition remains accurate."
+      "id": "coordinated-disclosure",
+      "status": "insufficient_evidence",
+      "reason": "The Anthropic source confirms Mythos exists as a product but provides no information about coordinated disclosure commitments, the 135-day timeline, or vulnerability patch rates referenced in the definition."
     },
     {
-      "id": "context-compaction",
-      "status": "keep",
-      "reason": "No source material addresses context compaction. Definition remains accurate as stated."
+      "id": "coordinator-mode",
+      "status": "insufficient_evidence",
+      "reason": "No source material addresses Claude Code's coordinator mode or multi-agent orchestration implementation details."
     },
     {
-      "id": "context-drift",
-      "status": "keep",
-      "reason": "No source material addresses context drift. Definition remains accurate as stated."
+      "id": "copilot",
+      "status": "insufficient_evidence",
+      "reason": "No source material addresses the copilot pattern or autonomy spectrum concepts defined here."
     }
   ],
   "notes": []

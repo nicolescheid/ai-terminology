@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-05-31T19:17:22.877Z",
-    "pendingCount": 15,
+    "generatedAt": "2026-06-01T21:33:16.291Z",
+    "pendingCount": 20,
     "appliedCount": 13,
     "rejectedCount": 1,
     "note": "Lexi proposals queue. Actions gated as PROPOSE land here as status: 'pending'. Edit a proposal's status to 'approved' or 'rejected' and run the apply step (TBD) to commit."
@@ -1371,6 +1371,245 @@
       },
       "reason": "3 sources, 2 independent (normaltech.ai + huggingface.co), 29d on longlist. Trusted: normaltech.ai.",
       "runId": "ec30d024-df3c-4661-b31e-aea6f9edddda"
+    },
+    {
+      "id": "8d6ba3c9d65dc9fe",
+      "action": "promote_to_graph",
+      "gate": "propose",
+      "proposedAt": "2026-06-01T21:33:16.291Z",
+      "status": "pending",
+      "source": "promote-eligibility-scan",
+      "target": {
+        "kind": "longlist_entry",
+        "id": "gemini-omni"
+      },
+      "payload": {
+        "graphNode": {
+          "id": "gemini-omni",
+          "label": "Gemini Omni",
+          "clusters": [
+            "models",
+            "tools"
+          ],
+          "sz": 14,
+          "def": "A new model family from Google announced at I/O 2026 that accepts any modality as input (images, audio, video, text) and generates high-quality video output grounded in real-world knowledge, with conversational editing. The first release is Gemini Omni Flash, available via the Gemini app, Google Flow, YouTube Shorts, and YouTube Create.",
+          "rels": [
+            "gemini",
+            "google-co",
+            "google-flow",
+            "multimodal"
+          ],
+          "refs": [
+            {
+              "n": 1,
+              "src": "Google AI Blog, Thu, 28 May 2026 15:00:00 +0000",
+              "q": "Catch up on 12 major I/O 2026 moments Google AI Blog"
+            },
+            {
+              "n": 2,
+              "src": "Last Week in AI, Wed, 27 May 2026 07:50:58 GMT",
+              "q": "Last Week in AI #341 - Musk loses to OpenAI, Google's IO updates, OpenAI solves Erdős Last Week in AI"
+            },
+            {
+              "n": 3,
+              "src": "Google AI Blog, Fri, 29 May 2026 17:30:00 +0000",
+              "q": "9 demos of Gemini Omni and Gemini 3.5 in action Google AI Blog"
+            }
+          ],
+          "fullName": "Gemini Omni (Google)",
+          "nodeType": "product"
+        }
+      },
+      "reason": "4 sources, 2 independent (blog.google + lastweekin.ai), 3d on longlist.",
+      "runId": "73f4c757-95a8-4d58-9066-7dbfa2d77873"
+    },
+    {
+      "id": "8614a08bc2109d78",
+      "action": "promote_to_graph",
+      "gate": "propose",
+      "proposedAt": "2026-06-01T21:33:16.291Z",
+      "status": "pending",
+      "source": "promote-eligibility-scan",
+      "target": {
+        "kind": "longlist_entry",
+        "id": "gemini-35-flash"
+      },
+      "payload": {
+        "graphNode": {
+          "id": "gemini-35-flash",
+          "label": "Gemini 3.5 Flash",
+          "clusters": [
+            "models",
+            "agentic"
+          ],
+          "sz": 14,
+          "def": "The first release in Google's Gemini 3.5 model family, announced at I/O 2026. Positioned as combining frontier intelligence with agentic action, optimised for complex long-horizon tasks, coding, and agent workflows. Available via Google AI Studio, Android Studio, Gemini Enterprise Agent Platform, and AI Mode in Search.",
+          "rels": [
+            "gemini",
+            "google-co",
+            "long-horizon-autonomy",
+            "gemini-enterprise-agent-platform"
+          ],
+          "refs": [
+            {
+              "n": 1,
+              "src": "Google AI Blog, Thu, 28 May 2026 15:00:00 +0000",
+              "q": "Catch up on 12 major I/O 2026 moments Google AI Blog"
+            },
+            {
+              "n": 2,
+              "src": "Last Week in AI, Wed, 27 May 2026 07:50:58 GMT",
+              "q": "Last Week in AI #341 - Musk loses to OpenAI, Google's IO updates, OpenAI solves Erdős Last Week in AI"
+            },
+            {
+              "n": 3,
+              "src": "Google AI Blog, Fri, 29 May 2026 17:30:00 +0000",
+              "q": "9 demos of Gemini Omni and Gemini 3.5 in action Google AI Blog"
+            }
+          ],
+          "fullName": "Gemini 3.5 Flash (Google DeepMind)",
+          "nodeType": "product"
+        }
+      },
+      "reason": "4 sources, 2 independent (blog.google + lastweekin.ai), 3d on longlist.",
+      "runId": "73f4c757-95a8-4d58-9066-7dbfa2d77873"
+    },
+    {
+      "id": "9b7e59697b4b464d",
+      "action": "promote_to_graph",
+      "gate": "propose",
+      "proposedAt": "2026-06-01T21:33:16.291Z",
+      "status": "pending",
+      "source": "promote-eligibility-scan",
+      "target": {
+        "kind": "longlist_entry",
+        "id": "google-antigravity"
+      },
+      "payload": {
+        "graphNode": {
+          "id": "google-antigravity",
+          "label": "Google Antigravity",
+          "clusters": [
+            "tools",
+            "agentic"
+          ],
+          "sz": 14,
+          "def": "A Google platform announced at I/O 2026 that brings agentic coding capabilities into Search and other products, enabling on-the-fly generation of custom UI layouts, interactive experiences, dashboards, and mini-apps from user queries. Positioned as enabling personal software creation within Search.",
+          "rels": [
+            "google-co",
+            "micro-app",
+            "personal-software",
+            "canvas-ai-mode",
+            "agentic-era"
+          ],
+          "refs": [
+            {
+              "n": 1,
+              "src": "Google AI Blog, Thu, 28 May 2026 15:00:00 +0000",
+              "q": "Catch up on 12 major I/O 2026 moments Google AI Blog"
+            },
+            {
+              "n": 2,
+              "src": "Google AI Blog, Fri, 29 May 2026 19:00:00 +0000",
+              "q": "Take our I/O 2026 quiz, vibe coded in Google AI Studio. Google AI Blog"
+            },
+            {
+              "n": 3,
+              "src": "AI Snake Oil, Fri, 22 May 2026 22:24:18 GMT",
+              "q": "Did Google’s AI agents really build an operating system for $916? AI Snake Oil"
+            }
+          ],
+          "nodeType": "product"
+        }
+      },
+      "reason": "5 sources, 2 independent (blog.google + normaltech.ai), 3d on longlist. Trusted: normaltech.ai.",
+      "runId": "73f4c757-95a8-4d58-9066-7dbfa2d77873"
+    },
+    {
+      "id": "00b6252bb2b636c9",
+      "action": "promote_to_graph",
+      "gate": "propose",
+      "proposedAt": "2026-06-01T21:33:16.291Z",
+      "status": "pending",
+      "source": "promote-eligibility-scan",
+      "target": {
+        "kind": "longlist_entry",
+        "id": "run-rate-revenue"
+      },
+      "payload": {
+        "graphNode": {
+          "id": "run-rate-revenue",
+          "label": "Run-Rate Revenue",
+          "clusters": [
+            "business"
+          ],
+          "sz": 14,
+          "def": "A financial reporting practice in which a company annualizes its most recent period's revenue (typically by multiplying a single month's figure by 12) to project a forward-looking revenue figure. Used by Anthropic in successive fundraise announcements to communicate growth trajectory to investors. The term is standard in startup finance but has attracted scrutiny in AI contexts because it can reflect a single high-momentum month rather than a sustained run, and companies have incentive to time announcements to favorable periods.",
+          "rels": [
+            "anthropic-co"
+          ],
+          "refs": [
+            {
+              "n": 1,
+              "src": "Simon Willison's Weblog, 2026-05-29T01:23:08+00:00",
+              "q": "Anthropic's run-rate revenue hits $47 billion Simon Willison's Weblog"
+            },
+            {
+              "n": 2,
+              "src": "Anthropic Newsroom",
+              "q": "Anthropic raises $65B in Series H funding at $965B post-money valuation Anthropic Newsroom"
+            }
+          ],
+          "fullName": "Run-Rate Revenue (ARR Projection)"
+        }
+      },
+      "reason": "2 sources, 2 independent (simonwillison.net + anthropic.com), 3d on longlist. Trusted: simonwillison.net.",
+      "runId": "73f4c757-95a8-4d58-9066-7dbfa2d77873"
+    },
+    {
+      "id": "5c229c6654312bfc",
+      "action": "promote_to_graph",
+      "gate": "propose",
+      "proposedAt": "2026-06-01T21:33:16.291Z",
+      "status": "pending",
+      "source": "promote-eligibility-scan",
+      "target": {
+        "kind": "longlist_entry",
+        "id": "hyperscaler"
+      },
+      "payload": {
+        "graphNode": {
+          "id": "hyperscaler",
+          "label": "Hyperscaler",
+          "clusters": [
+            "business",
+            "technical"
+          ],
+          "sz": 14,
+          "def": "A shorthand for large-scale cloud platform providers — specifically Amazon Web Services, Google Cloud, and Microsoft Azure in this context — whose infrastructure underpins AI model training and deployment. Used here to distinguish the $15B in previously committed hyperscaler investment from new investors, and to note Anthropic's position as the first frontier model available across all three.",
+          "rels": [
+            "anthropic-co",
+            "purpose-built-ai-infrastructure",
+            "claude",
+            "trainium"
+          ],
+          "refs": [
+            {
+              "n": 1,
+              "src": "Anthropic Newsroom",
+              "q": "Anthropic raises $65B in Series H funding at $965B post-money valuation Anthropic Newsroom"
+            },
+            {
+              "n": 2,
+              "src": "Stratechery, Fri, 29 May 2026 17:00:00 +0000",
+              "q": "2026.22: Luceing Their Mind Stratechery"
+            }
+          ],
+          "fullName": "Hyperscaler (Cloud Provider in AI Context)"
+        }
+      },
+      "reason": "2 sources, 2 independent (anthropic.com + stratechery.com), 3d on longlist. Trusted: stratechery.com.",
+      "runId": "73f4c757-95a8-4d58-9066-7dbfa2d77873"
     }
   ]
 }
