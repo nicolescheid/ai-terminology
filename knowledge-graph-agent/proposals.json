@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-06-01T21:33:16.291Z",
-    "pendingCount": 20,
+    "generatedAt": "2026-06-02T20:49:35.126Z",
+    "pendingCount": 21,
     "appliedCount": 13,
     "rejectedCount": 1,
     "note": "Lexi proposals queue. Actions gated as PROPOSE land here as status: 'pending'. Edit a proposal's status to 'approved' or 'rejected' and run the apply step (TBD) to commit."
@@ -1610,6 +1610,51 @@
       },
       "reason": "2 sources, 2 independent (anthropic.com + stratechery.com), 3d on longlist. Trusted: stratechery.com.",
       "runId": "73f4c757-95a8-4d58-9066-7dbfa2d77873"
+    },
+    {
+      "id": "7152b5ae20f474ef",
+      "action": "promote_to_graph",
+      "gate": "propose",
+      "proposedAt": "2026-06-02T20:49:35.126Z",
+      "status": "pending",
+      "source": "promote-eligibility-scan",
+      "target": {
+        "kind": "longlist_entry",
+        "id": "offense-defense-balance"
+      },
+      "payload": {
+        "graphNode": {
+          "id": "offense-defense-balance",
+          "label": "Offense-Defense Balance",
+          "clusters": [
+            "safety",
+            "critical"
+          ],
+          "sz": 14,
+          "def": "A framing borrowed from strategic studies and applied by Kapoor and Narayanan to AI misuse risk: the question of whether a given AI capability advantages attackers or defenders more, and whether defensive investments (resilience) can outpace offensive use. Used to argue that extraordinary pre-deployment restrictions are less effective than building societal resilience, since attackers can exploit capabilities without going through slow organisational adoption. The balance shifts depending on domain (e.g., cyber vs. bio), capability type, and the speed of defensive tooling development.",
+          "rels": [
+            "guardrails",
+            "sandboxing",
+            "blast-radius",
+            "ai-speed-cyber-defense"
+          ],
+          "refs": [
+            {
+              "n": 1,
+              "src": "AI Snake Oil, Thu, 21 May 2026 13:19:41 GMT",
+              "q": "Do AI Risks Require Extraordinary Government Intervention? AI Snake Oil"
+            },
+            {
+              "n": 2,
+              "src": "Anthropic Newsroom",
+              "q": "Expanding Project Glasswing Anthropic Newsroom"
+            }
+          ],
+          "fullName": "Offense-Defense Balance (AI Misuse Risk)"
+        }
+      },
+      "reason": "2 sources, 2 independent (normaltech.ai + anthropic.com), 4d on longlist. Trusted: normaltech.ai.",
+      "runId": "a46b5394-483e-41a9-867c-2f7cb9441962"
     }
   ]
 }

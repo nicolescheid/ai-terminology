@@ -1,6 +1,6 @@
 {
-  "lastRunAt": "2026-06-01T21:31:49.667Z",
-  "reviewCursor": 54,
+  "lastRunAt": "2026-06-02T20:47:42.877Z",
+  "reviewCursor": 64,
   "seenArticles": {
     "93a049d060bc295b": {
       "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/tpus-8t-8i-cloud-next/",
@@ -859,6 +859,42 @@
       "title": "Anthropic confidentially submits draft S-1 to the SEC",
       "publishedAt": null,
       "seenAt": "2026-06-01T21:31:49.667Z"
+    },
+    "440b7646f5767e29": {
+      "url": "https://huggingface.co/blog/Hcompany/holo31",
+      "title": "Holo3.1: Fast & Local Computer Use Agents",
+      "publishedAt": "Tue, 02 Jun 2026 14:13:23 GMT",
+      "seenAt": "2026-06-02T20:47:42.877Z"
+    },
+    "6421a7340260ea9b": {
+      "url": "https://openai.com/index/travelers",
+      "title": "Travelers deploys AI-powered claims countrywide with OpenAI",
+      "publishedAt": "Tue, 02 Jun 2026 12:00:00 GMT",
+      "seenAt": "2026-06-02T20:47:42.877Z"
+    },
+    "c7abbefb63875599": {
+      "url": "https://stratechery.com/2026/the-google-capital-company/",
+      "title": "The Google Capital Company",
+      "publishedAt": "Tue, 02 Jun 2026 10:00:00 +0000",
+      "seenAt": "2026-06-02T20:47:42.877Z"
+    },
+    "1317a58a147d30dd": {
+      "url": "https://www.theverge.com/tech/941738/microsoft-build-2026-biggest-announcements",
+      "title": "Microsoft Build 2026: The 7 biggest announcements",
+      "publishedAt": "2026-06-02T15:23:52-04:00",
+      "seenAt": "2026-06-02T20:47:42.877Z"
+    },
+    "7f29975fce02aec6": {
+      "url": "https://simonwillison.net/2026/Jun/2/pasted-file-editor/#atom-everything",
+      "title": "Tool: Pasted File Editor",
+      "publishedAt": "2026-06-02T04:13:36+00:00",
+      "seenAt": "2026-06-02T20:47:42.877Z"
+    },
+    "67b62c8d9d322bbe": {
+      "url": "https://www.anthropic.com/news/expanding-project-glasswing",
+      "title": "Expanding Project Glasswing",
+      "publishedAt": null,
+      "seenAt": "2026-06-02T20:47:42.877Z"
     }
   },
   "nodeReviews": {
@@ -1118,54 +1154,54 @@
       "reason": "No source material addresses the copilot pattern or autonomy spectrum concepts defined here."
     },
     "copilot-cowork": {
-      "lastReviewedAt": "2026-04-29T19:24:05.664Z",
-      "status": "keep",
-      "reason": "No source material references Microsoft Copilot Cowork or Wave 3 of Microsoft 365 Copilot."
+      "lastReviewedAt": "2026-06-02T20:47:42.877Z",
+      "status": "insufficient_evidence",
+      "reason": "The Verge article on Microsoft Build 2026 is referenced but its body content is not available in the excerpts, providing no verifiable details to confirm, refute, or update the definition's claims about an Anthropic partnership, March 2026 launch, or 'Wave 3' framing."
     },
     "cost": {
-      "lastReviewedAt": "2026-04-29T19:24:05.664Z",
+      "lastReviewedAt": "2026-06-02T20:47:42.877Z",
       "status": "keep",
-      "reason": "No source material addresses AI token-based cost economics."
+      "reason": "The Holo3.1 article briefly mentions cost-performance tradeoffs as a production concern, which is consistent with the definition. No source materially changes it."
     },
     "cost-runaway": {
-      "lastReviewedAt": "2026-04-29T19:24:05.664Z",
+      "lastReviewedAt": "2026-06-02T20:47:42.877Z",
       "status": "keep",
-      "reason": "No source material references agentic cost runaway or related failure modes."
+      "reason": "No source addresses this term. Definition remains accurate and unchallenged."
     },
     "cowork": {
-      "lastReviewedAt": "2026-04-29T19:24:05.664Z",
-      "status": "keep",
-      "reason": "No source material references the Cowork collaboration model or Anthropic's implementation."
+      "lastReviewedAt": "2026-06-02T20:47:42.877Z",
+      "status": "insufficient_evidence",
+      "reason": "No source directly addresses or updates the Cowork definition. The Microsoft Build 2026 article body is unavailable, so no new evidence exists to confirm or update claims about Copilot Cowork or the January 2026 Anthropic Cowork launch."
     },
     "critical-thinking": {
-      "lastReviewedAt": "2026-04-29T19:24:05.664Z",
+      "lastReviewedAt": "2026-06-02T20:47:42.877Z",
       "status": "keep",
-      "reason": "No source material bears on the definition of critical thinking as an AI literacy skill."
+      "reason": "No source addresses this term. Definition is conceptual and remains valid."
     },
     "cron-scheduling": {
-      "lastReviewedAt": "2026-04-29T19:24:05.664Z",
+      "lastReviewedAt": "2026-06-02T20:47:42.877Z",
       "status": "keep",
-      "reason": "No source material references cron scheduling or Claude Code features."
+      "reason": "No source addresses this term. Definition remains accurate and unchallenged."
     },
     "cursor": {
-      "lastReviewedAt": "2026-04-29T19:24:05.664Z",
+      "lastReviewedAt": "2026-06-02T20:47:42.877Z",
       "status": "keep",
-      "reason": "No source material references Cursor or AI-first IDEs."
+      "reason": "No source addresses this term. Definition remains accurate and unchallenged."
     },
     "cve": {
-      "lastReviewedAt": "2026-04-29T19:24:05.664Z",
+      "lastReviewedAt": "2026-06-02T20:47:42.877Z",
       "status": "keep",
-      "reason": "The OpenAI cybersecurity piece discusses cyber defense generally but contains no information that would alter or enrich the CVE definition, which correctly describes the standard vulnerability cataloguing system."
+      "reason": "The Anthropic Glasswing article confirms the real-world context of Claude Mythos finding vulnerabilities in codebases, consistent with the CVE definition's example. The definition accurately describes the CVE cataloguing system and its use."
     },
     "daemon": {
-      "lastReviewedAt": "2026-04-29T19:24:05.664Z",
+      "lastReviewedAt": "2026-06-02T20:47:42.877Z",
       "status": "keep",
-      "reason": "No source material references daemon processes or KAIROS architecture."
+      "reason": "No source addresses this term. Definition remains accurate and unchallenged."
     },
     "data-sovereignty": {
-      "lastReviewedAt": "2026-04-30T19:20:00.611Z",
+      "lastReviewedAt": "2026-06-02T20:47:42.877Z",
       "status": "keep",
-      "reason": "No source material addresses data sovereignty. Definition remains accurate and no update is warranted."
+      "reason": "The Holo3.1 article's emphasis on local inference and deployment flexibility (cloud to fully local on end-user devices) is consistent with the data-sovereignty definition's emphasis on local open-weight models, but does not require any change to the definition."
     },
     "deep-research": {
       "lastReviewedAt": "2026-04-30T19:20:00.611Z",

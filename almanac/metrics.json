@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-06-01T22:12:45.200Z",
+  "generatedAt": "2026-06-02T20:49:35.483Z",
   "firstRunAt": "2026-04-27T01:07:31.335Z",
   "phase": 1,
   "headline": {
-    "articlesRead": 143,
-    "daysRunning": 36,
-    "longlistSize": 161,
+    "articlesRead": 149,
+    "daysRunning": 37,
+    "longlistSize": 173,
     "graphSize": 207
   },
   "thisWeek": {
-    "articlesFetched": 30,
-    "longlistAdded": 40,
-    "sourcesAdded": 11,
+    "articlesFetched": 36,
+    "longlistAdded": 52,
+    "sourcesAdded": 12,
     "promotionsToGraph": 1,
-    "proposalsQueued": 11,
+    "proposalsQueued": 12,
     "auditFlags": 12,
-    "notesAdded": 20
+    "notesAdded": 19
   },
   "almostThere": [
     {
@@ -27,7 +27,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 2,
-      "daysOnLonglist": 28,
+      "daysOnLonglist": 29,
       "domains": [
         "openai.com",
         "simonwillison.net"
@@ -45,7 +45,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 32,
+      "daysOnLonglist": 33,
       "domains": [
         "stratechery.com"
       ],
@@ -62,7 +62,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 23,
+      "daysOnLonglist": 24,
       "domains": [
         "blog.google"
       ],
@@ -79,9 +79,26 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 23,
+      "daysOnLonglist": 24,
       "domains": [
         "blog.google"
+      ],
+      "gapCount": 1,
+      "gap": "needs 1 more independent source"
+    },
+    {
+      "id": "vllm",
+      "label": "vLLM",
+      "fullName": "vLLM (Open-Source LLM Inference Server)",
+      "clusters": [
+        "technical",
+        "tools"
+      ],
+      "sourceCount": 3,
+      "independentSources": 1,
+      "daysOnLonglist": 23,
+      "domains": [
+        "huggingface.co"
       ],
       "gapCount": 1,
       "gap": "needs 1 more independent source"
@@ -96,7 +113,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 21,
+      "daysOnLonglist": 22,
       "domains": [
         "stratechery.com"
       ],
@@ -113,9 +130,43 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 3,
+      "daysOnLonglist": 4,
       "domains": [
         "stratechery.com"
+      ],
+      "gapCount": 1,
+      "gap": "needs 1 more independent source"
+    },
+    {
+      "id": "product-market-fit",
+      "label": "Product-Market Fit",
+      "fullName": "Product-Market Fit (AI)",
+      "clusters": [
+        "business"
+      ],
+      "sourceCount": 3,
+      "independentSources": 1,
+      "daysOnLonglist": 4,
+      "domains": [
+        "simonwillison.net"
+      ],
+      "gapCount": 1,
+      "gap": "needs 1 more independent source"
+    },
+    {
+      "id": "cyber-verification-program",
+      "label": "Cyber Verification Program",
+      "fullName": "Cyber Verification Program (Anthropic)",
+      "clusters": [
+        "security",
+        "safety",
+        "landscape"
+      ],
+      "sourceCount": 2,
+      "independentSources": 1,
+      "daysOnLonglist": 36,
+      "domains": [
+        "anthropic.com"
       ],
       "gapCount": 1,
       "gap": "needs 1 more independent source"
@@ -130,58 +181,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 32,
-      "domains": [
-        "stratechery.com"
-      ],
-      "gapCount": 1,
-      "gap": "needs 1 more independent source"
-    },
-    {
-      "id": "vllm",
-      "label": "vLLM",
-      "fullName": "vLLM (Open-Source LLM Inference Server)",
-      "clusters": [
-        "technical",
-        "tools"
-      ],
-      "sourceCount": 2,
-      "independentSources": 1,
-      "daysOnLonglist": 22,
-      "domains": [
-        "huggingface.co"
-      ],
-      "gapCount": 1,
-      "gap": "needs 1 more independent source"
-    },
-    {
-      "id": "ephemeral-ai-chat",
-      "label": "Ephemeral AI Chat",
-      "fullName": null,
-      "clusters": [
-        "security",
-        "tools"
-      ],
-      "sourceCount": 2,
-      "independentSources": 1,
-      "daysOnLonglist": 19,
-      "domains": [
-        "theverge.com"
-      ],
-      "gapCount": 1,
-      "gap": "needs 1 more independent source"
-    },
-    {
-      "id": "deployment-company",
-      "label": "Deployment Company",
-      "fullName": "AI Deployment Company",
-      "clusters": [
-        "business",
-        "companies"
-      ],
-      "sourceCount": 2,
-      "independentSources": 1,
-      "daysOnLonglist": 16,
+      "daysOnLonglist": 33,
       "domains": [
         "stratechery.com"
       ],
@@ -193,15 +193,15 @@
     "byDomain": [
       {
         "domain": "openai.com",
-        "count": 36
+        "count": 37
       },
       {
         "domain": "simonwillison.net",
-        "count": 20
+        "count": 21
       },
       {
         "domain": "stratechery.com",
-        "count": 17
+        "count": 18
       },
       {
         "domain": "blog.google",
@@ -209,15 +209,15 @@
       },
       {
         "domain": "anthropic.com",
-        "count": 14
+        "count": 15
       },
       {
         "domain": "huggingface.co",
-        "count": 12
+        "count": 13
       },
       {
         "domain": "theverge.com",
-        "count": 9
+        "count": 10
       },
       {
         "domain": "lastweekin.ai",
@@ -345,49 +345,49 @@
         "id": "technical",
         "label": "Technical",
         "hex": "#D0D040",
-        "count": 53
+        "count": 55
       },
       {
         "id": "agentic",
         "label": "Agentic Systems",
         "hex": "#FF9040",
-        "count": 40
+        "count": 45
       },
       {
         "id": "tools",
         "label": "Tools & Platforms",
         "hex": "#70C8F8",
-        "count": 35
+        "count": 39
       },
       {
         "id": "models",
         "label": "Models",
         "hex": "#FFB060",
-        "count": 33
+        "count": 35
       },
       {
         "id": "business",
         "label": "Business Reality",
         "hex": "#48C888",
+        "count": 28
+      },
+      {
+        "id": "landscape",
+        "label": "Model Landscape",
+        "hex": "#D0A050",
         "count": 25
       },
       {
         "id": "safety",
         "label": "Safety",
         "hex": "#FF6090",
-        "count": 23
+        "count": 24
       },
       {
         "id": "critical",
         "label": "Critical / Hype",
         "hex": "#FF5555",
         "count": 23
-      },
-      {
-        "id": "landscape",
-        "label": "Model Landscape",
-        "hex": "#D0A050",
-        "count": 22
       },
       {
         "id": "work",
@@ -399,19 +399,25 @@
         "id": "security",
         "label": "AI Security",
         "hex": "#E05050",
-        "count": 20
+        "count": 21
       },
       {
         "id": "companies",
         "label": "Companies",
         "hex": "#9090A8",
-        "count": 12
+        "count": 13
       },
       {
         "id": "human",
         "label": "Human Skills",
         "hex": "#40D080",
         "count": 11
+      },
+      {
+        "id": "autonomy",
+        "label": "Autonomy Spectrum",
+        "hex": "#58B8E8",
+        "count": 3
       },
       {
         "id": "lifecycle",
@@ -424,12 +430,6 @@
         "label": "Context Health",
         "hex": "#A0D060",
         "count": 2
-      },
-      {
-        "id": "autonomy",
-        "label": "Autonomy Spectrum",
-        "hex": "#58B8E8",
-        "count": 1
       }
     ]
   },
@@ -439,7 +439,7 @@
     "note": "All graph promotions and substantive edits are currently human-gated. Lexi proposes; Nicole approves."
   },
   "proposalsByStatus": {
-    "pending": 20,
+    "pending": 21,
     "approved": 0,
     "applied": 13,
     "rejected": 1

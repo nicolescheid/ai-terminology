@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-06-01T21:31:49.667Z",
-    "entryCount": 173,
+    "generatedAt": "2026-06-02T20:47:42.877Z",
+    "entryCount": 185,
     "note": "Lexi-managed Tier 2 longlist — terms under observation, awaiting evidence to support promotion to the graph (Tier 1)."
   },
   "entries": [
@@ -476,12 +476,20 @@
           "sourceLabel": "Anthropic Newsroom",
           "publishedAt": null,
           "firstSeen": "2026-04-26T22:40:25.832Z"
+        },
+        {
+          "url": "https://www.anthropic.com/news/expanding-project-glasswing",
+          "domain": "anthropic.com",
+          "title": "Expanding Project Glasswing",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-06-02T20:47:42.877Z"
         }
       ],
-      "sourceCount": 1,
+      "sourceCount": 2,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-04-26T22:40:25.832Z",
-      "dateLastSeen": "2026-04-27T01:07:31.335Z",
+      "dateLastSeen": "2026-06-02T20:47:42.877Z",
       "sz": 14,
       "fullName": "Cyber Verification Program (Anthropic)",
       "nodeType": "initiative",
@@ -2592,12 +2600,20 @@
           "sourceLabel": "Hugging Face Blog",
           "publishedAt": "Wed, 27 May 2026 00:00:00 GMT",
           "firstSeen": "2026-05-31T19:15:39.230Z"
+        },
+        {
+          "url": "https://huggingface.co/blog/Hcompany/holo31",
+          "domain": "huggingface.co",
+          "title": "Holo3.1: Fast & Local Computer Use Agents",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Tue, 02 Jun 2026 14:13:23 GMT",
+          "firstSeen": "2026-06-02T20:47:42.877Z"
         }
       ],
-      "sourceCount": 2,
+      "sourceCount": 3,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-05-10T19:02:19.492Z",
-      "dateLastSeen": "2026-05-31T19:15:39.230Z",
+      "dateLastSeen": "2026-06-02T20:47:42.877Z",
       "sz": 14,
       "fullName": "vLLM (Open-Source LLM Inference Server)",
       "nodeType": "product",
@@ -5120,12 +5136,20 @@
           "sourceLabel": "AI Snake Oil",
           "publishedAt": "Thu, 21 May 2026 13:19:41 GMT",
           "firstSeen": "2026-05-29T20:24:10.894Z"
+        },
+        {
+          "url": "https://www.anthropic.com/news/expanding-project-glasswing",
+          "domain": "anthropic.com",
+          "title": "Expanding Project Glasswing",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-06-02T20:47:42.877Z"
         }
       ],
-      "sourceCount": 1,
-      "independentSourceCount": 1,
+      "sourceCount": 2,
+      "independentSourceCount": 2,
       "dateFirstSeen": "2026-05-29T20:24:10.894Z",
-      "dateLastSeen": "2026-05-29T20:24:10.894Z",
+      "dateLastSeen": "2026-06-02T20:47:42.877Z",
       "sz": 14,
       "fullName": "Offense-Defense Balance (AI Misuse Risk)",
       "proposalReason": "New candidate concept that recurs in AI security and governance literature — a useful analytical lens distinct from existing graph terms."
@@ -5442,12 +5466,20 @@
           "sourceLabel": "Simon Willison's Weblog",
           "publishedAt": "2026-05-31T16:31:32+00:00",
           "firstSeen": "2026-05-31T19:15:39.230Z"
+        },
+        {
+          "url": "https://simonwillison.net/2026/Jun/2/pasted-file-editor/#atom-everything",
+          "domain": "simonwillison.net",
+          "title": "Tool: Pasted File Editor",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-06-02T04:13:36+00:00",
+          "firstSeen": "2026-06-02T20:47:42.877Z"
         }
       ],
-      "sourceCount": 2,
+      "sourceCount": 3,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-05-29T20:29:06.123Z",
-      "dateLastSeen": "2026-05-31T19:15:39.230Z",
+      "dateLastSeen": "2026-06-02T20:47:42.877Z",
       "sz": 14,
       "fullName": "Product-Market Fit (AI)",
       "proposalReason": "The linked article (referenced in the excerpt: 'I think Anthropic and OpenAI have found product-market fit') deploys this concept directly in relation to frontier AI companies; worth tracking as a framing term in the AI business cluster."
@@ -5553,12 +5585,20 @@
           "sourceLabel": "Stratechery",
           "publishedAt": "Fri, 29 May 2026 17:00:00 +0000",
           "firstSeen": "2026-05-30T19:13:38.586Z"
+        },
+        {
+          "url": "https://stratechery.com/2026/the-google-capital-company/",
+          "domain": "stratechery.com",
+          "title": "The Google Capital Company",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Tue, 02 Jun 2026 10:00:00 +0000",
+          "firstSeen": "2026-06-02T20:47:42.877Z"
         }
       ],
-      "sourceCount": 2,
+      "sourceCount": 3,
       "independentSourceCount": 2,
       "dateFirstSeen": "2026-05-29T20:29:06.123Z",
-      "dateLastSeen": "2026-05-30T19:13:38.586Z",
+      "dateLastSeen": "2026-06-02T20:47:42.877Z",
       "sz": 14,
       "fullName": "Hyperscaler (Cloud Provider in AI Context)",
       "proposalReason": "The term is used with increasing precision in AI financing and infrastructure discourse to denote a specific tier of compute provider; worth tracking as it accumulates a distinct meaning beyond generic 'cloud.'"
@@ -6239,6 +6279,400 @@
       "sz": 14,
       "fullName": "One-Shot Account Recovery (AI Support Exploit)",
       "proposalReason": "A precise framing for a newly documented attack pattern distinct from prompt injection — worth tracking separately as agentic support deployments proliferate."
+    },
+    {
+      "id": "cross-harness-compatibility",
+      "label": "Cross-Harness Compatibility",
+      "workingDef": "The property of a computer-use model or agent that allows it to perform comparably across different agent execution frameworks and third-party orchestration stacks — including function-calling protocols and native execution modes — without significant performance degradation. Hcompany's Holo3.1 release uses the term to describe model robustness across harness variants as a distinct production requirement beyond raw benchmark performance.",
+      "clusters": [
+        "agentic",
+        "technical"
+      ],
+      "suggestedRels": [
+        "computer-use",
+        "agentic-harness",
+        "harness",
+        "tool-use"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/Hcompany/holo31",
+          "domain": "huggingface.co",
+          "title": "Holo3.1: Fast & Local Computer Use Agents",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Tue, 02 Jun 2026 14:13:23 GMT",
+          "firstSeen": "2026-06-02T20:47:42.877Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-02T20:47:42.877Z",
+      "dateLastSeen": "2026-06-02T20:47:42.877Z",
+      "sz": 14,
+      "fullName": "Cross-Harness Compatibility (Computer Use Agents)",
+      "proposalReason": "New term surfacing a real production concern in computer-use deployment: model performance does not transfer automatically across orchestration frameworks, and cross-harness robustness is becoming a distinct engineering target."
+    },
+    {
+      "id": "universal-computer-use-agent",
+      "label": "Universal Computer-Use Agent",
+      "workingDef": "A framing, used by Hcompany in the Holo3.1 release, for a computer-use agent capable of operating across all major GUI environments (web, desktop, mobile), integrating into any agent framework, and running in any deployment target (cloud or fully local). Positions environmental and harness universality — rather than single-benchmark performance — as the defining goal of production-grade computer-use systems.",
+      "clusters": [
+        "agentic",
+        "autonomy"
+      ],
+      "suggestedRels": [
+        "computer-use",
+        "autonomous-agent",
+        "edge-ai",
+        "agentic-harness"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/Hcompany/holo31",
+          "domain": "huggingface.co",
+          "title": "Holo3.1: Fast & Local Computer Use Agents",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Tue, 02 Jun 2026 14:13:23 GMT",
+          "firstSeen": "2026-06-02T20:47:42.877Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-02T20:47:42.877Z",
+      "dateLastSeen": "2026-06-02T20:47:42.877Z",
+      "sz": 14,
+      "proposalReason": "Emerging product-category framing that extends 'computer use' toward a universality claim worth tracking as the space matures."
+    },
+    {
+      "id": "on-device-computer-use",
+      "label": "On-Device Computer Use",
+      "workingDef": "The deployment pattern in which a computer-use agent model runs entirely on end-user consumer hardware (e.g., Apple Silicon Mac, Windows PC) via quantized checkpoints, with no data leaving the local network. Distinct from cloud-hosted computer-use in that it trades some model performance for privacy, reduced latency, and offline operation. Hcompany's Holo3.1 Q4 GGUF release is an early commercial example.",
+      "clusters": [
+        "technical",
+        "autonomy"
+      ],
+      "suggestedRels": [
+        "computer-use",
+        "edge-ai",
+        "quantization",
+        "privacy-by-design"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/Hcompany/holo31",
+          "domain": "huggingface.co",
+          "title": "Holo3.1: Fast & Local Computer Use Agents",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Tue, 02 Jun 2026 14:13:23 GMT",
+          "firstSeen": "2026-06-02T20:47:42.877Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-02T20:47:42.877Z",
+      "dateLastSeen": "2026-06-02T20:47:42.877Z",
+      "sz": 14,
+      "fullName": "On-Device Computer Use (Local GUI Agent Execution)",
+      "proposalReason": "A materially distinct deployment pattern for computer-use agents, combining local inference, quantization, and privacy guarantees — worth tracking as it diverges from cloud-first assumptions."
+    },
+    {
+      "id": "aggregator-theory",
+      "label": "Aggregator Theory",
+      "workingDef": "A framework coined by Ben Thompson (Stratechery) describing internet platforms — such as Google, Facebook, and Amazon — that intermediate between suppliers and users by controlling demand aggregation. Aggregators operate at near-zero marginal cost on the supply side, benefit from network effects on the user side, and extract value from suppliers who compete to reach the aggregator's audience. Distinct from traditional media or marketplace businesses in that the aggregator does not own or create supply. Used in this article to contrast Google's original high-margin advertising model with its emerging capital-intensive AI infrastructure posture.",
+      "clusters": [
+        "business",
+        "landscape"
+      ],
+      "suggestedRels": [
+        "saas",
+        "vertical-ai",
+        "infrastructure",
+        "hyperscaler"
+      ],
+      "sources": [
+        {
+          "url": "https://stratechery.com/2026/the-google-capital-company/",
+          "domain": "stratechery.com",
+          "title": "The Google Capital Company",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Tue, 02 Jun 2026 10:00:00 +0000",
+          "firstSeen": "2026-06-02T20:47:42.877Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-02T20:47:42.877Z",
+      "dateLastSeen": "2026-06-02T20:47:42.877Z",
+      "sz": 14,
+      "fullName": "Aggregator Theory (Stratechery)",
+      "proposalReason": "A named analytic framework with significant ongoing use in AI business-model discussions; not yet in the graph and surfaces repeatedly in AI-era platform-strategy writing."
+    },
+    {
+      "id": "productive-capital-business",
+      "label": "Productive Capital Business",
+      "workingDef": "A framing — used in this article by Ben Thompson, drawing on Warren Buffett's Berkshire Hathaway framework — that contrasts 'asset-light' platform businesses (high margins, low capital requirements) with capital-intensive businesses that generate high absolute returns by deploying and continuously reinvesting large amounts of physical infrastructure. Applied to Google Cloud and AI compute: the argument is that hyperscalers investing in data centres, TPUs, and AI infrastructure are transitioning from asset-light aggregators into productive-capital businesses whose value is driven by absolute return on deployed capital rather than marginal-cost economics.",
+      "clusters": [
+        "business",
+        "landscape"
+      ],
+      "suggestedRels": [
+        "hyperscaler",
+        "infrastructure",
+        "purpose-built-ai-infrastructure",
+        "hyperscale-data-center",
+        "tpu"
+      ],
+      "sources": [
+        {
+          "url": "https://stratechery.com/2026/the-google-capital-company/",
+          "domain": "stratechery.com",
+          "title": "The Google Capital Company",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Tue, 02 Jun 2026 10:00:00 +0000",
+          "firstSeen": "2026-06-02T20:47:42.877Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-02T20:47:42.877Z",
+      "dateLastSeen": "2026-06-02T20:47:42.877Z",
+      "sz": 14,
+      "fullName": "Productive Capital Business (AI Infrastructure Framing)",
+      "proposalReason": "A useful analytic concept for understanding the structural shift in AI company economics; distinct from existing graph terms and relevant to how infrastructure investment is being reframed."
+    },
+    {
+      "id": "asset-light-model",
+      "label": "Asset-Light Model",
+      "workingDef": "An economic framing for technology platform companies that generate high returns on minimal physical capital — maximising zero marginal costs on the supply side, collecting a skim on transactions or attention, and avoiding ownership of the underlying assets. Contrasted in AI-era discourse with capital-intensive infrastructure investment strategies: critics and analysts (including Ben Thompson in this article) argue that AI compute demands are forcing formerly asset-light companies like Google and Microsoft to take on BNSF-like capital structures, fundamentally changing their margin profiles and investor narratives.",
+      "clusters": [
+        "business",
+        "landscape"
+      ],
+      "suggestedRels": [
+        "saas",
+        "infrastructure",
+        "cost",
+        "hyperscaler"
+      ],
+      "sources": [
+        {
+          "url": "https://stratechery.com/2026/the-google-capital-company/",
+          "domain": "stratechery.com",
+          "title": "The Google Capital Company",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Tue, 02 Jun 2026 10:00:00 +0000",
+          "firstSeen": "2026-06-02T20:47:42.877Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-02T20:47:42.877Z",
+      "dateLastSeen": "2026-06-02T20:47:42.877Z",
+      "sz": 14,
+      "fullName": "Asset-Light Business Model (Platform Economics)",
+      "proposalReason": "A named economic framing that recurs in AI business-model analysis and is directly contrasted with the productive-capital shift in this article; useful for tracking the evolving discourse around platform economics in the AI era."
+    },
+    {
+      "id": "project-solara",
+      "label": "Project Solara",
+      "workingDef": "An Android-based operating system developed by Microsoft in partnership with Qualcomm and MediaTek, designed to run AI agents across a variety of devices and enable cross-device task handoff. Announced at Build 2026 with prototype form factors including a desktop hub and digital badge.",
+      "clusters": [
+        "agentic",
+        "tools"
+      ],
+      "suggestedRels": [
+        "agent",
+        "handoff",
+        "a2a",
+        "agent-os"
+      ],
+      "sources": [
+        {
+          "url": "https://www.theverge.com/tech/941738/microsoft-build-2026-biggest-announcements",
+          "domain": "theverge.com",
+          "title": "Microsoft Build 2026: The 7 biggest announcements",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-06-02T15:23:52-04:00",
+          "firstSeen": "2026-06-02T20:47:42.877Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-02T20:47:42.877Z",
+      "dateLastSeen": "2026-06-02T20:47:42.877Z",
+      "sz": 14,
+      "fullName": "Project Solara (Microsoft Agent OS)",
+      "nodeType": "product",
+      "proposalReason": "First sighting of Microsoft's agent-native OS play — worth tracking as a named product with cross-device agent coordination ambitions distinct from existing Windows AI initiatives."
+    },
+    {
+      "id": "microsoft-execution-containers",
+      "label": "Microsoft Execution Containers",
+      "workingDef": "A sandboxing mechanism announced by Microsoft at Build 2026 that allows developers to set guardrails controlling what AI agents — including OpenClaw-based agents — can access on a device. Agents run in isolated environments to constrain blast radius.",
+      "clusters": [
+        "safety",
+        "agentic"
+      ],
+      "suggestedRels": [
+        "sandboxing",
+        "guardrails",
+        "blast-radius",
+        "agent-governance",
+        "openclaw"
+      ],
+      "sources": [
+        {
+          "url": "https://www.theverge.com/tech/941738/microsoft-build-2026-biggest-announcements",
+          "domain": "theverge.com",
+          "title": "Microsoft Build 2026: The 7 biggest announcements",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-06-02T15:23:52-04:00",
+          "firstSeen": "2026-06-02T20:47:42.877Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-02T20:47:42.877Z",
+      "dateLastSeen": "2026-06-02T20:47:42.877Z",
+      "sz": 14,
+      "fullName": "Microsoft Execution Containers (MXC)",
+      "nodeType": "product",
+      "proposalReason": "A concrete, named implementation of agent sandboxing from a major platform vendor — useful as an anchor term for the pattern of OS-level agent containment."
+    },
+    {
+      "id": "mai-thinking-1",
+      "label": "MAI-Thinking-1",
+      "workingDef": "Microsoft's first in-house reasoning model, announced at Build 2026. Features 35 billion active parameters and a 128K context window, designed for complex multi-step instructions, long-context reasoning, and code generation. Part of a broader push by Microsoft to reduce reliance on OpenAI models.",
+      "clusters": [
+        "models",
+        "companies"
+      ],
+      "suggestedRels": [
+        "reasoning-models",
+        "microsoft-co",
+        "context-window",
+        "parameters"
+      ],
+      "sources": [
+        {
+          "url": "https://www.theverge.com/tech/941738/microsoft-build-2026-biggest-announcements",
+          "domain": "theverge.com",
+          "title": "Microsoft Build 2026: The 7 biggest announcements",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-06-02T15:23:52-04:00",
+          "firstSeen": "2026-06-02T20:47:42.877Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-02T20:47:42.877Z",
+      "dateLastSeen": "2026-06-02T20:47:42.877Z",
+      "sz": 14,
+      "fullName": "MAI-Thinking-1 (Microsoft In-House Reasoning Model)",
+      "nodeType": "product",
+      "proposalReason": "First sighting of Microsoft's own reasoning model — marks a significant strategic shift in Microsoft's AI model dependency posture."
+    },
+    {
+      "id": "scout-microsoft",
+      "label": "Scout",
+      "workingDef": "An always-on background assistant launched by Microsoft at Build 2026, built on the OpenClaw open-source AI platform. Integrated with Microsoft 365 apps, Scout operates autonomously to manage tasks like calendar organization, expense reporting, and email drafting. Part of a broader 'Autopilot' agent family, each with distinct identities.",
+      "clusters": [
+        "agentic",
+        "tools"
+      ],
+      "suggestedRels": [
+        "openclaw",
+        "autonomous-agent",
+        "proactive-agent",
+        "microsoft-co",
+        "copilot"
+      ],
+      "sources": [
+        {
+          "url": "https://www.theverge.com/tech/941738/microsoft-build-2026-biggest-announcements",
+          "domain": "theverge.com",
+          "title": "Microsoft Build 2026: The 7 biggest announcements",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-06-02T15:23:52-04:00",
+          "firstSeen": "2026-06-02T20:47:42.877Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-02T20:47:42.877Z",
+      "dateLastSeen": "2026-06-02T20:47:42.877Z",
+      "sz": 14,
+      "fullName": "Scout (Microsoft Always-On Assistant)",
+      "nodeType": "product",
+      "proposalReason": "First sighting of Microsoft's named always-on agent product built on OpenClaw — a concrete instance of the agentic assistant category with enterprise positioning."
+    },
+    {
+      "id": "claude-security",
+      "label": "Claude Security",
+      "workingDef": "A product from Anthropic that uses frontier Claude models (e.g., Claude Opus 4.8) to scan codebases for vulnerabilities and suggest patches. Positioned as the publicly available counterpart to the restricted Project Glasswing program, making AI-assisted vulnerability detection accessible to security teams beyond the curated partner network.",
+      "clusters": [
+        "security",
+        "tools"
+      ],
+      "suggestedRels": [
+        "claude-mythos",
+        "project-glasswing",
+        "anthropic-co",
+        "penetration-testing",
+        "ai-red-teaming"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/expanding-project-glasswing",
+          "domain": "anthropic.com",
+          "title": "Expanding Project Glasswing",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-06-02T20:47:42.877Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-02T20:47:42.877Z",
+      "dateLastSeen": "2026-06-02T20:47:42.877Z",
+      "sz": 14,
+      "fullName": "Claude Security (Anthropic)",
+      "nodeType": "product",
+      "proposalReason": "New Anthropic product materialized in this announcement; distinct from the Claude model line and worth tracking as a named security offering."
+    },
+    {
+      "id": "claude-opus-48",
+      "label": "Claude Opus 4.8",
+      "workingDef": "An upgrade to Anthropic's Opus model class, described as offering stronger performance across coding, agentic tasks, and professional work, with improved consistency for long-running tasks. Named as the model underlying the publicly available Claude Security product, distinct from the restricted Mythos Preview used in Project Glasswing.",
+      "clusters": [
+        "models",
+        "tools"
+      ],
+      "suggestedRels": [
+        "claude",
+        "anthropic-co",
+        "claude-security",
+        "frontier-model",
+        "agentic-engineering"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/expanding-project-glasswing",
+          "domain": "anthropic.com",
+          "title": "Expanding Project Glasswing",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-06-02T20:47:42.877Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-02T20:47:42.877Z",
+      "dateLastSeen": "2026-06-02T20:47:42.877Z",
+      "sz": 14,
+      "fullName": "Claude Opus 4.8 (Anthropic)",
+      "nodeType": "product",
+      "proposalReason": "New named model version introduced in this announcement; distinct from previously tracked Claude model entries and serves as the public frontier baseline for Claude Security."
     }
   ]
 }

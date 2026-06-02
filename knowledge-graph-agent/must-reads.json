@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generatedAt": "2026-06-01T21:31:49.667Z",
-    "unreadCount": 15,
-    "totalCount": 15,
+    "generatedAt": "2026-06-02T20:47:42.877Z",
+    "unreadCount": 17,
+    "totalCount": 17,
     "note": "Lexi's must-reads — articles she flags as worth Nicole reading in full. Editorial signal, not news feed. Set status to 'read' or 'dismissed' via mark-must-reads.mjs."
   },
   "entries": [
@@ -258,6 +258,40 @@
       ],
       "novelTermsInArticle": 3,
       "flaggedAt": "2026-05-30T19:13:38.586Z",
+      "status": "unread"
+    },
+    {
+      "id": "c7abbefb63875599",
+      "title": "The Google Capital Company",
+      "url": "https://stratechery.com/2026/the-google-capital-company/",
+      "source": "Stratechery",
+      "publishedAt": "Tue, 02 Jun 2026 10:00:00 +0000",
+      "summary": "Ben Thompson's Stratechery analysis frames Google's strategic transformation from an asset-light advertising aggregator into a capital-intensive cloud and AI infrastructure company, drawing on Buffett/Berkshire Hathaway comparisons (See's Candies vs. BNSF Railway) to argue that Google is becoming a productive-capital business — investing heavily in compute to capture AI-era infrastructure returns. The article is primarily a business-strategy and financial-framing piece with limited new AI terminology.",
+      "priority": 2,
+      "reason": "Thompson's Buffett-framed analysis of Google's transition from zero-marginal-cost aggregator to capital-intensive AI infrastructure company offers a durable analytic lens for understanding how hyperscaler economics are being restructured by AI compute demands. The See's Candies vs. BNSF Railway analogy is a genuinely useful framework for thinking about the AI infrastructure investment cycle.",
+      "clusters": [
+        "business",
+        "landscape"
+      ],
+      "novelTermsInArticle": 3,
+      "flaggedAt": "2026-06-02T20:47:42.877Z",
+      "status": "unread"
+    },
+    {
+      "id": "67b62c8d9d322bbe",
+      "title": "Expanding Project Glasswing",
+      "url": "https://www.anthropic.com/news/expanding-project-glasswing",
+      "source": "Anthropic Newsroom",
+      "publishedAt": null,
+      "summary": "Anthropic's announcement expands Project Glasswing — its controlled-access cybersecurity program using Claude Mythos Preview — from ~50 to ~200 partner organizations across critical infrastructure sectors globally. The piece introduces Claude Security as a public product, discusses the Cyber Verification Program, and frames the initiative around the coming proliferation of Mythos-class models from other labs without equivalent safeguards.",
+      "priority": 2,
+      "reason": "A rare primary-source dispatch from a lab actively navigating the dual-use frontier: Anthropic describes in concrete operational terms how it is managing the controlled release of models it considers capable of large-scale cyberattack. The framing — defenders must institutionalise new norms before other labs release equivalent models without safeguards — is a genuine policy argument worth understanding, not just a product announcement.",
+      "clusters": [
+        "security",
+        "critical"
+      ],
+      "novelTermsInArticle": 2,
+      "flaggedAt": "2026-06-02T20:47:42.877Z",
       "status": "unread"
     }
   ]

@@ -1,120 +1,76 @@
 {
-  "generatedAt": "2026-06-01T21:31:49.667Z",
+  "generatedAt": "2026-06-02T20:47:42.877Z",
   "model": "claude-sonnet-4-6",
   "sourcesConfigured": 15,
   "articlesConsidered": [
     {
-      "id": "059eb5fa54e5178a",
-      "source": "Last Week in AI",
-      "title": "LWiAI Podcast #246 - Gemini 3.5 + Omni, Musk Loses, OpenAI vs Erdős ",
-      "url": "https://lastweekin.ai/p/lwiai-podcast-246-gemini-35-omni",
-      "publishedAt": "Tue, 26 May 2026 05:10:23 GMT"
+      "id": "440b7646f5767e29",
+      "source": "Hugging Face Blog",
+      "title": "Holo3.1: Fast & Local Computer Use Agents",
+      "url": "https://huggingface.co/blog/Hcompany/holo31",
+      "publishedAt": "Tue, 02 Jun 2026 14:13:23 GMT"
     },
     {
-      "id": "4e4360776d53ebd5",
-      "source": "Google AI Blog",
-      "title": "How we used Gemini to build Google I/O 2026",
-      "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-google-ai/",
-      "publishedAt": "Mon, 01 Jun 2026 16:00:00 +0000"
-    },
-    {
-      "id": "dadd123def02abdb",
+      "id": "6421a7340260ea9b",
       "source": "OpenAI News",
-      "title": "Building the infrastructure for the Intelligence Age in Michigan",
-      "url": "https://openai.com/index/stargate-michigan-data-center",
-      "publishedAt": "Mon, 01 Jun 2026 12:00:00 GMT"
+      "title": "Travelers deploys AI-powered claims countrywide with OpenAI",
+      "url": "https://openai.com/index/travelers",
+      "publishedAt": "Tue, 02 Jun 2026 12:00:00 GMT"
     },
     {
-      "id": "088bc86a00b02984",
+      "id": "c7abbefb63875599",
       "source": "Stratechery",
-      "title": "YouTubers Win the Box Office, Goodbye Gatekeepers, The YouTube Bar",
-      "url": "https://stratechery.com/2026/youtubers-win-the-box-office-goodbye-gatekeepers-the-youtube-bar/",
-      "publishedAt": "Mon, 01 Jun 2026 10:00:00 +0000"
+      "title": "The Google Capital Company",
+      "url": "https://stratechery.com/2026/the-google-capital-company/",
+      "publishedAt": "Tue, 02 Jun 2026 10:00:00 +0000"
     },
     {
-      "id": "56e85ad23e0aaf9d",
+      "id": "1317a58a147d30dd",
+      "source": "The Verge — AI",
+      "title": "Microsoft Build 2026: The 7 biggest announcements",
+      "url": "https://www.theverge.com/tech/941738/microsoft-build-2026-biggest-announcements",
+      "publishedAt": "2026-06-02T15:23:52-04:00"
+    },
+    {
+      "id": "7f29975fce02aec6",
       "source": "Simon Willison's Weblog",
-      "title": "Hackers Simply Asked Meta AI to Give Them Access to High-Profile Instagram Accounts. It Worked",
-      "url": "https://simonwillison.net/2026/Jun/1/hackers-simply-asked-meta-ai/#atom-everything",
-      "publishedAt": "2026-06-01T21:14:47+00:00"
+      "title": "Tool: Pasted File Editor",
+      "url": "https://simonwillison.net/2026/Jun/2/pasted-file-editor/#atom-everything",
+      "publishedAt": "2026-06-02T04:13:36+00:00"
     },
     {
-      "id": "ea58427a703f714f",
+      "id": "67b62c8d9d322bbe",
       "source": "Anthropic Newsroom",
-      "title": "Anthropic confidentially submits draft S-1 to the SEC",
-      "url": "https://www.anthropic.com/news/confidential-draft-s1-sec",
+      "title": "Expanding Project Glasswing",
+      "url": "https://www.anthropic.com/news/expanding-project-glasswing",
       "publishedAt": null
     }
   ],
   "harvestedTerms": [
     {
       "article": {
-        "title": "LWiAI Podcast #246 - Gemini 3.5 + Omni, Musk Loses, OpenAI vs Erdős ",
-        "url": "https://lastweekin.ai/p/lwiai-podcast-246-gemini-35-omni"
+        "title": "Holo3.1: Fast & Local Computer Use Agents",
+        "url": "https://huggingface.co/blog/Hcompany/holo31"
       },
-      "summary": "Podcast episode covering Google I/O highlights (Gemini 3.5, Gemini Spark, Gemini Omni), coding agent competition (Cursor Composer 2.5, Grok Build), business news (Anthropic funding, Musk lawsuit), and research/safety topics including negation neglect, circuit redundancy, autonomous hacking, and AI mathematical proofs.",
+      "summary": "Hcompany releases Holo3.1, a family of computer-use models (0.8B–35B-A3B) optimised for cross-environment GUI automation (web, desktop, mobile), multiple agent harnesses, and local/edge deployment via quantized checkpoints (FP8, NVFP4, Q4 GGUF). The article is primarily a product release announcement with technical depth around quantization, cross-harness compatibility, and on-device inference for computer-use agents.",
       "longlistAdditions": [
         {
-          "id": "negation-neglect",
-          "label": "Negation Neglect"
+          "id": "cross-harness-compatibility",
+          "label": "Cross-Harness Compatibility"
+        },
+        {
+          "id": "universal-computer-use-agent",
+          "label": "Universal Computer-Use Agent"
+        },
+        {
+          "id": "on-device-computer-use",
+          "label": "On-Device Computer Use"
         }
       ],
       "longlistUpdates": [
         {
-          "id": "gemini-omni",
-          "label": "Gemini Omni",
-          "sourceAdded": true,
-          "sourceCount": 4,
-          "independentSourceCount": 2
-        },
-        {
-          "id": "gemini-35-flash",
-          "label": "Gemini 3.5 Flash",
-          "sourceAdded": true,
-          "sourceCount": 4,
-          "independentSourceCount": 2
-        },
-        {
-          "id": "gemini-spark",
-          "label": "Gemini Spark",
-          "sourceAdded": true,
-          "sourceCount": 2,
-          "independentSourceCount": 1
-        }
-      ],
-      "rejections": [],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "How we used Gemini to build Google I/O 2026",
-        "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-google-ai/"
-      },
-      "summary": "Google's I/O 2026 behind-the-scenes post describes using Gemini, Nano Banana, Google Antigravity, and other experimental AI tools to produce films, brand identity, and immersive experiences for the event. The article is primarily a marketing/use-case showcase but surfaces several product names worth tracking.",
-      "longlistAdditions": [
-        {
-          "id": "nano-banana",
-          "label": "Nano Banana"
-        }
-      ],
-      "longlistUpdates": [
-        {
-          "id": "google-antigravity",
-          "label": "Google Antigravity",
-          "sourceAdded": true,
-          "sourceCount": 5,
-          "independentSourceCount": 2
-        },
-        {
-          "id": "ai-assisted-filmmaking",
-          "label": "AI-Assisted Filmmaking",
-          "sourceAdded": true,
-          "sourceCount": 3,
-          "independentSourceCount": 1
-        },
-        {
-          "id": "google-flow",
-          "label": "Google Flow",
+          "id": "vllm",
+          "label": "vLLM",
           "sourceAdded": true,
           "sourceCount": 3,
           "independentSourceCount": 1
@@ -125,37 +81,62 @@
     },
     {
       "article": {
-        "title": "YouTubers Win the Box Office, Goodbye Gatekeepers, The YouTube Bar",
-        "url": "https://stratechery.com/2026/youtubers-win-the-box-office-goodbye-gatekeepers-the-youtube-bar/"
+        "title": "The Google Capital Company",
+        "url": "https://stratechery.com/2026/the-google-capital-company/"
       },
-      "summary": "Paywalled Stratechery article about YouTubers succeeding at the box office and the erosion of Hollywood gatekeepers. The excerpt is almost entirely subscription/navigation boilerplate — the actual article content is inaccessible. No substantive AI terminology appears in the readable portion. One adjacent reference to 'the Agentic Web' appears in a linked interview title ('An Interview with Parallel Founder Parag Agarwal About Valuing Content on the Agentic Web').",
-      "longlistAdditions": [],
+      "summary": "Ben Thompson's Stratechery analysis frames Google's strategic transformation from an asset-light advertising aggregator into a capital-intensive cloud and AI infrastructure company, drawing on Buffett/Berkshire Hathaway comparisons (See's Candies vs. BNSF Railway) to argue that Google is becoming a productive-capital business — investing heavily in compute to capture AI-era infrastructure returns. The article is primarily a business-strategy and financial-framing piece with limited new AI terminology.",
+      "longlistAdditions": [
+        {
+          "id": "aggregator-theory",
+          "label": "Aggregator Theory"
+        },
+        {
+          "id": "productive-capital-business",
+          "label": "Productive Capital Business"
+        },
+        {
+          "id": "asset-light-model",
+          "label": "Asset-Light Model"
+        }
+      ],
       "longlistUpdates": [
         {
-          "id": "agentic-web",
-          "label": "Agentic Web",
+          "id": "hyperscaler",
+          "label": "Hyperscaler",
           "sourceAdded": true,
           "sourceCount": 3,
-          "independentSourceCount": 1
+          "independentSourceCount": 2
         }
       ],
       "rejections": [],
-      "proposalsQueued": []
+      "proposalsQueued": [],
+      "mustReadFlagged": {
+        "priority": 2,
+        "reason": "Thompson's Buffett-framed analysis of Google's transition from zero-marginal-cost aggregator to capital-intensive AI infrastructure company offers a durable analytic lens for understanding how hyperscaler economics are being restructured by AI compute demands. The See's Candies vs. BNSF Railway analogy is a genuinely useful framework for thinking about the AI infrastructure investment cycle."
+      }
     },
     {
       "article": {
-        "title": "Hackers Simply Asked Meta AI to Give Them Access to High-Profile Instagram Accounts. It Worked",
-        "url": "https://simonwillison.net/2026/Jun/1/hackers-simply-asked-meta-ai/#atom-everything"
+        "title": "Microsoft Build 2026: The 7 biggest announcements",
+        "url": "https://www.theverge.com/tech/941738/microsoft-build-2026-biggest-announcements"
       },
-      "summary": "Simon Willison covers a reported security incident where hackers exploited Meta's AI support chatbot to hijack high-profile Instagram accounts by simply asking it to transfer account ownership — no sophisticated prompt injection required. The post highlights a catastrophic AI deployment failure: wiring an agentic support bot to execute irreversible account recovery actions without adequate verification.",
+      "summary": "Microsoft Build 2026 roundup covering Surface RTX Spark Dev Box, Project Solara (agent OS), Scout assistant built on OpenClaw, MAI-Thinking-1 reasoning model, Microsoft Execution Containers (MXC) for agent sandboxing, and Majorana 2 quantum chip.",
       "longlistAdditions": [
         {
-          "id": "ai-support-bot-takeover",
-          "label": "Account Takeover via AI Support Bot"
+          "id": "project-solara",
+          "label": "Project Solara"
         },
         {
-          "id": "one-shot-account-recovery",
-          "label": "One-Shot Account Recovery"
+          "id": "microsoft-execution-containers",
+          "label": "Microsoft Execution Containers"
+        },
+        {
+          "id": "mai-thinking-1",
+          "label": "MAI-Thinking-1"
+        },
+        {
+          "id": "scout-microsoft",
+          "label": "Scout"
         }
       ],
       "longlistUpdates": [],
@@ -164,74 +145,118 @@
     },
     {
       "article": {
-        "title": "Anthropic confidentially submits draft S-1 to the SEC",
-        "url": "https://www.anthropic.com/news/confidential-draft-s1-sec"
+        "title": "Tool: Pasted File Editor",
+        "url": "https://simonwillison.net/2026/Jun/2/pasted-file-editor/#atom-everything"
       },
-      "summary": "Anthropic has confidentially submitted a draft S-1 registration statement to the SEC for a proposed IPO of its common stock. The announcement is a brief regulatory notice with no substantive AI terminology or conceptual framing — it references the Series H funding round and mentions Claude product lines in site navigation but introduces no new concepts.",
+      "summary": "Simon Willison describes a small prototype tool built with Codex desktop that replicates Claude.ai's large-paste-to-file-attachment UX behavior. The post is brief and primarily a personal tool note with minimal novel terminology.",
       "longlistAdditions": [],
       "longlistUpdates": [
         {
-          "id": "series-h-anthropic",
-          "label": "Series H",
+          "id": "product-market-fit",
+          "label": "Product-Market Fit",
           "sourceAdded": true,
-          "sourceCount": 2,
+          "sourceCount": 3,
           "independentSourceCount": 1
         }
       ],
-      "rejections": [],
+      "rejections": [
+        {
+          "label": "Codex Desktop",
+          "reason": "could not generate id"
+        }
+      ],
       "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "Expanding Project Glasswing",
+        "url": "https://www.anthropic.com/news/expanding-project-glasswing"
+      },
+      "summary": "Anthropic's announcement expands Project Glasswing — its controlled-access cybersecurity program using Claude Mythos Preview — from ~50 to ~200 partner organizations across critical infrastructure sectors globally. The piece introduces Claude Security as a public product, discusses the Cyber Verification Program, and frames the initiative around the coming proliferation of Mythos-class models from other labs without equivalent safeguards.",
+      "longlistAdditions": [
+        {
+          "id": "claude-security",
+          "label": "Claude Security"
+        },
+        {
+          "id": "claude-opus-48",
+          "label": "Claude Opus 4.8"
+        }
+      ],
+      "longlistUpdates": [
+        {
+          "id": "cyber-verification-program",
+          "label": "Cyber Verification Program",
+          "sourceAdded": true,
+          "sourceCount": 2,
+          "independentSourceCount": 1
+        },
+        {
+          "id": "offense-defense-balance",
+          "label": "Offense-Defense Balance",
+          "sourceAdded": true,
+          "sourceCount": 2,
+          "independentSourceCount": 2
+        }
+      ],
+      "rejections": [],
+      "proposalsQueued": [],
+      "mustReadFlagged": {
+        "priority": 2,
+        "reason": "A rare primary-source dispatch from a lab actively navigating the dual-use frontier: Anthropic describes in concrete operational terms how it is managing the controlled release of models it considers capable of large-scale cyberattack. The framing — defenders must institutionalise new norms before other labs release equivalent models without safeguards — is a genuine policy argument worth understanding, not just a product announcement."
+      }
     }
   ],
   "definitionReviews": [
     {
-      "id": "context-economy",
+      "id": "copilot-cowork",
       "status": "insufficient_evidence",
-      "reason": "No source material addresses context economy, prompt compression, or related context design disciplines."
+      "reason": "The Verge article on Microsoft Build 2026 is referenced but its body content is not available in the excerpts, providing no verifiable details to confirm, refute, or update the definition's claims about an Anthropic partnership, March 2026 launch, or 'Wave 3' framing."
     },
     {
-      "id": "context-engineering",
-      "status": "insufficient_evidence",
-      "reason": "No source material addresses context engineering as a discipline or its evolution relative to prompt engineering."
+      "id": "cost",
+      "status": "keep",
+      "reason": "The Holo3.1 article briefly mentions cost-performance tradeoffs as a production concern, which is consistent with the definition. No source materially changes it."
     },
     {
-      "id": "context-entropy",
-      "status": "insufficient_evidence",
-      "reason": "No source material addresses context entropy or agentic session quality degradation."
+      "id": "cost-runaway",
+      "status": "keep",
+      "reason": "No source addresses this term. Definition remains accurate and unchallenged."
     },
     {
-      "id": "context-folding",
+      "id": "cowork",
       "status": "insufficient_evidence",
-      "reason": "No source material addresses context folding or related architectural approaches to context management."
+      "reason": "No source directly addresses or updates the Cowork definition. The Microsoft Build 2026 article body is unavailable, so no new evidence exists to confirm or update claims about Copilot Cowork or the January 2026 Anthropic Cowork launch."
     },
     {
-      "id": "context-pollution",
-      "status": "insufficient_evidence",
-      "reason": "No source material addresses context pollution, signal-to-noise ratio in agent contexts, or related concepts."
+      "id": "critical-thinking",
+      "status": "keep",
+      "reason": "No source addresses this term. Definition is conceptual and remains valid."
     },
     {
-      "id": "context-rot",
-      "status": "insufficient_evidence",
-      "reason": "No source material addresses context rot or the Chroma 2025 research cited in the definition."
+      "id": "cron-scheduling",
+      "status": "keep",
+      "reason": "No source addresses this term. Definition remains accurate and unchallenged."
     },
     {
-      "id": "context-window",
-      "status": "insufficient_evidence",
-      "reason": "No source material provides new information about context window sizes, token limits, or related architectural properties."
+      "id": "cursor",
+      "status": "keep",
+      "reason": "No source addresses this term. Definition remains accurate and unchallenged."
     },
     {
-      "id": "coordinated-disclosure",
-      "status": "insufficient_evidence",
-      "reason": "The Anthropic source confirms Mythos exists as a product but provides no information about coordinated disclosure commitments, the 135-day timeline, or vulnerability patch rates referenced in the definition."
+      "id": "cve",
+      "status": "keep",
+      "reason": "The Anthropic Glasswing article confirms the real-world context of Claude Mythos finding vulnerabilities in codebases, consistent with the CVE definition's example. The definition accurately describes the CVE cataloguing system and its use."
     },
     {
-      "id": "coordinator-mode",
-      "status": "insufficient_evidence",
-      "reason": "No source material addresses Claude Code's coordinator mode or multi-agent orchestration implementation details."
+      "id": "daemon",
+      "status": "keep",
+      "reason": "No source addresses this term. Definition remains accurate and unchallenged."
     },
     {
-      "id": "copilot",
-      "status": "insufficient_evidence",
-      "reason": "No source material addresses the copilot pattern or autonomy spectrum concepts defined here."
+      "id": "data-sovereignty",
+      "status": "keep",
+      "reason": "The Holo3.1 article's emphasis on local inference and deployment flexibility (cloud to fully local on end-user devices) is consistent with the data-sovereignty definition's emphasis on local open-weight models, but does not require any change to the definition."
     }
   ],
   "notes": []
