@@ -1,142 +1,66 @@
 {
-  "generatedAt": "2026-06-02T20:47:42.877Z",
+  "generatedAt": "2026-06-03T20:54:34.002Z",
   "model": "claude-sonnet-4-6",
   "sourcesConfigured": 15,
   "articlesConsidered": [
     {
-      "id": "440b7646f5767e29",
-      "source": "Hugging Face Blog",
-      "title": "Holo3.1: Fast & Local Computer Use Agents",
-      "url": "https://huggingface.co/blog/Hcompany/holo31",
-      "publishedAt": "Tue, 02 Jun 2026 14:13:23 GMT"
-    },
-    {
-      "id": "6421a7340260ea9b",
+      "id": "bfb45dcad644b624",
       "source": "OpenAI News",
-      "title": "Travelers deploys AI-powered claims countrywide with OpenAI",
-      "url": "https://openai.com/index/travelers",
-      "publishedAt": "Tue, 02 Jun 2026 12:00:00 GMT"
+      "title": "Introducing new capabilities to GPT-Rosalind",
+      "url": "https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind",
+      "publishedAt": "Wed, 03 Jun 2026 13:15:00 GMT"
     },
     {
-      "id": "c7abbefb63875599",
+      "id": "76912b853c1db4a9",
+      "source": "Google AI Blog",
+      "title": "5 ways Google Search can level up your thrift and vintage shopping",
+      "url": "https://blog.google/products-and-platforms/products/search/thrifting-tips/",
+      "publishedAt": "Wed, 03 Jun 2026 13:00:00 +0000"
+    },
+    {
+      "id": "bc0be78cdc6b163d",
+      "source": "Hugging Face Blog",
+      "title": "Direct Preference Optimization Beyond Chatbots",
+      "url": "https://huggingface.co/blog/Dharma-AI/direct-preference-optimization-beyond-chatbots",
+      "publishedAt": "Wed, 03 Jun 2026 12:55:11 GMT"
+    },
+    {
+      "id": "08d03e5410e959c8",
       "source": "Stratechery",
-      "title": "The Google Capital Company",
-      "url": "https://stratechery.com/2026/the-google-capital-company/",
-      "publishedAt": "Tue, 02 Jun 2026 10:00:00 +0000"
+      "title": "The Nvidia AI PC, Project Solara, Microsoft AI",
+      "url": "https://stratechery.com/2026/the-nvidia-ai-pc-project-solara-microsoft-ai/",
+      "publishedAt": "Wed, 03 Jun 2026 10:00:00 +0000"
     },
     {
-      "id": "1317a58a147d30dd",
-      "source": "The Verge — AI",
-      "title": "Microsoft Build 2026: The 7 biggest announcements",
-      "url": "https://www.theverge.com/tech/941738/microsoft-build-2026-biggest-announcements",
-      "publishedAt": "2026-06-02T15:23:52-04:00"
-    },
-    {
-      "id": "7f29975fce02aec6",
+      "id": "29c7b211e523b246",
       "source": "Simon Willison's Weblog",
-      "title": "Tool: Pasted File Editor",
-      "url": "https://simonwillison.net/2026/Jun/2/pasted-file-editor/#atom-everything",
-      "publishedAt": "2026-06-02T04:13:36+00:00"
+      "title": "Uber Caps Usage of AI Tools Like Claude Code to Manage Costs",
+      "url": "https://simonwillison.net/2026/Jun/3/uber-caps-usage/#atom-everything",
+      "publishedAt": "2026-06-03T12:01:27+00:00"
     },
     {
-      "id": "67b62c8d9d322bbe",
+      "id": "49f44c80e766fb4b",
       "source": "Anthropic Newsroom",
-      "title": "Expanding Project Glasswing",
-      "url": "https://www.anthropic.com/news/expanding-project-glasswing",
+      "title": "Introducing the Services Track and Partner Hub of the Claude Partner Network",
+      "url": "https://www.anthropic.com/news/services-track-partner-hub",
       "publishedAt": null
     }
   ],
   "harvestedTerms": [
     {
       "article": {
-        "title": "Holo3.1: Fast & Local Computer Use Agents",
-        "url": "https://huggingface.co/blog/Hcompany/holo31"
+        "title": "5 ways Google Search can level up your thrift and vintage shopping",
+        "url": "https://blog.google/products-and-platforms/products/search/thrifting-tips/"
       },
-      "summary": "Hcompany releases Holo3.1, a family of computer-use models (0.8B–35B-A3B) optimised for cross-environment GUI automation (web, desktop, mobile), multiple agent harnesses, and local/edge deployment via quantized checkpoints (FP8, NVFP4, Q4 GGUF). The article is primarily a product release announcement with technical depth around quantization, cross-harness compatibility, and on-device inference for computer-use agents.",
+      "summary": "A Google blog post showcasing five AI-powered shopping features in Google Search for thrift and vintage shoppers: AI Mode, Google Lens, Circle to Search, Virtual Try-On, and Lens-based resale pricing. Primarily a consumer tips listicle with no substantive new terminology or framing.",
       "longlistAdditions": [
         {
-          "id": "cross-harness-compatibility",
-          "label": "Cross-Harness Compatibility"
+          "id": "circle-to-search",
+          "label": "Circle to Search"
         },
         {
-          "id": "universal-computer-use-agent",
-          "label": "Universal Computer-Use Agent"
-        },
-        {
-          "id": "on-device-computer-use",
-          "label": "On-Device Computer Use"
-        }
-      ],
-      "longlistUpdates": [
-        {
-          "id": "vllm",
-          "label": "vLLM",
-          "sourceAdded": true,
-          "sourceCount": 3,
-          "independentSourceCount": 1
-        }
-      ],
-      "rejections": [],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "The Google Capital Company",
-        "url": "https://stratechery.com/2026/the-google-capital-company/"
-      },
-      "summary": "Ben Thompson's Stratechery analysis frames Google's strategic transformation from an asset-light advertising aggregator into a capital-intensive cloud and AI infrastructure company, drawing on Buffett/Berkshire Hathaway comparisons (See's Candies vs. BNSF Railway) to argue that Google is becoming a productive-capital business — investing heavily in compute to capture AI-era infrastructure returns. The article is primarily a business-strategy and financial-framing piece with limited new AI terminology.",
-      "longlistAdditions": [
-        {
-          "id": "aggregator-theory",
-          "label": "Aggregator Theory"
-        },
-        {
-          "id": "productive-capital-business",
-          "label": "Productive Capital Business"
-        },
-        {
-          "id": "asset-light-model",
-          "label": "Asset-Light Model"
-        }
-      ],
-      "longlistUpdates": [
-        {
-          "id": "hyperscaler",
-          "label": "Hyperscaler",
-          "sourceAdded": true,
-          "sourceCount": 3,
-          "independentSourceCount": 2
-        }
-      ],
-      "rejections": [],
-      "proposalsQueued": [],
-      "mustReadFlagged": {
-        "priority": 2,
-        "reason": "Thompson's Buffett-framed analysis of Google's transition from zero-marginal-cost aggregator to capital-intensive AI infrastructure company offers a durable analytic lens for understanding how hyperscaler economics are being restructured by AI compute demands. The See's Candies vs. BNSF Railway analogy is a genuinely useful framework for thinking about the AI infrastructure investment cycle."
-      }
-    },
-    {
-      "article": {
-        "title": "Microsoft Build 2026: The 7 biggest announcements",
-        "url": "https://www.theverge.com/tech/941738/microsoft-build-2026-biggest-announcements"
-      },
-      "summary": "Microsoft Build 2026 roundup covering Surface RTX Spark Dev Box, Project Solara (agent OS), Scout assistant built on OpenClaw, MAI-Thinking-1 reasoning model, Microsoft Execution Containers (MXC) for agent sandboxing, and Majorana 2 quantum chip.",
-      "longlistAdditions": [
-        {
-          "id": "project-solara",
-          "label": "Project Solara"
-        },
-        {
-          "id": "microsoft-execution-containers",
-          "label": "Microsoft Execution Containers"
-        },
-        {
-          "id": "mai-thinking-1",
-          "label": "MAI-Thinking-1"
-        },
-        {
-          "id": "scout-microsoft",
-          "label": "Scout"
+          "id": "virtual-try-on",
+          "label": "Virtual Try-On"
         }
       ],
       "longlistUpdates": [],
@@ -145,118 +69,193 @@
     },
     {
       "article": {
-        "title": "Tool: Pasted File Editor",
-        "url": "https://simonwillison.net/2026/Jun/2/pasted-file-editor/#atom-everything"
+        "title": "Direct Preference Optimization Beyond Chatbots",
+        "url": "https://huggingface.co/blog/Dharma-AI/direct-preference-optimization-beyond-chatbots"
       },
-      "summary": "Simon Willison describes a small prototype tool built with Codex desktop that replicates Claude.ai's large-paste-to-file-attachment UX behavior. The post is brief and primarily a personal tool note with minimal novel terminology.",
-      "longlistAdditions": [],
-      "longlistUpdates": [
+      "summary": "A technical blog post from Dharma-AI describing how Direct Preference Optimization (DPO) can be applied beyond chat alignment to fix a specific structural failure mode — text degeneration loops — in a structured OCR task. The article demonstrates that DPO using a model's own degenerate outputs as rejection pairs consistently reduces degeneration rates across five model families, where SFT alone cannot. Key conceptual contributions include the 'distribution attractor' explanation of degeneration, the ceiling effect of SFT on failure modes, and a methodology for constructing preference pairs without human annotation.",
+      "longlistAdditions": [
         {
-          "id": "product-market-fit",
-          "label": "Product-Market Fit",
-          "sourceAdded": true,
-          "sourceCount": 3,
-          "independentSourceCount": 1
+          "id": "dpo",
+          "label": "Direct Preference Optimization"
+        },
+        {
+          "id": "text-degeneration",
+          "label": "Text Degeneration"
+        },
+        {
+          "id": "self-generated-rejection-pairs",
+          "label": "Self-Generated Rejection Pairs"
+        },
+        {
+          "id": "sft-ceiling",
+          "label": "SFT Ceiling"
         }
       ],
-      "rejections": [
-        {
-          "label": "Codex Desktop",
-          "reason": "could not generate id"
-        }
-      ],
-      "proposalsQueued": []
+      "longlistUpdates": [],
+      "rejections": [],
+      "proposalsQueued": [],
+      "mustReadFlagged": {
+        "priority": 2,
+        "reason": "A technically careful, concept-rich article that reframes DPO as a general-purpose failure-mode correction tool, not just a chat-alignment technique. The mechanistic explanation of text degeneration as distributional attractor geometry — and the demonstration that SFT has a structural ceiling on fixing it — is the kind of precise conceptual contribution that reshapes how practitioners think about training pipelines."
+      }
     },
     {
       "article": {
-        "title": "Expanding Project Glasswing",
-        "url": "https://www.anthropic.com/news/expanding-project-glasswing"
+        "title": "The Nvidia AI PC, Project Solara, Microsoft AI",
+        "url": "https://stratechery.com/2026/the-nvidia-ai-pc-project-solara-microsoft-ai/"
       },
-      "summary": "Anthropic's announcement expands Project Glasswing — its controlled-access cybersecurity program using Claude Mythos Preview — from ~50 to ~200 partner organizations across critical infrastructure sectors globally. The piece introduces Claude Security as a public product, discusses the Cyber Verification Program, and frames the initiative around the coming proliferation of Mythos-class models from other labs without equivalent safeguards.",
+      "summary": "Ben Thompson's Stratechery analysis of Microsoft Build covers three interrelated developments: the Nvidia RTX Spark AI PC chip, Project Solara (Microsoft's Android-based agent-native device platform), and Nadella's broader AI strategy. Thompson argues the RTX Spark is misaligned with the agentic era's actual compute needs (strong CPU + cloud inference), while Project Solara represents a more interesting bet on purpose-built agent hardware. The piece is primarily strategic framing and industry analysis rather than technical deep-dive.",
       "longlistAdditions": [
         {
-          "id": "claude-security",
-          "label": "Claude Security"
+          "id": "rtx-spark",
+          "label": "RTX Spark"
         },
         {
-          "id": "claude-opus-48",
-          "label": "Claude Opus 4.8"
+          "id": "unmetered-intelligence",
+          "label": "Unmetered Intelligence"
         }
       ],
       "longlistUpdates": [
         {
-          "id": "cyber-verification-program",
-          "label": "Cyber Verification Program",
-          "sourceAdded": true,
-          "sourceCount": 2,
-          "independentSourceCount": 1
-        },
-        {
-          "id": "offense-defense-balance",
-          "label": "Offense-Defense Balance",
+          "id": "project-solara",
+          "label": "Project Solara",
           "sourceAdded": true,
           "sourceCount": 2,
           "independentSourceCount": 2
+        },
+        {
+          "id": "agentic-era",
+          "label": "Agentic Era",
+          "sourceAdded": true,
+          "sourceCount": 5,
+          "independentSourceCount": 4
         }
       ],
       "rejections": [],
       "proposalsQueued": [],
       "mustReadFlagged": {
         "priority": 2,
-        "reason": "A rare primary-source dispatch from a lab actively navigating the dual-use frontier: Anthropic describes in concrete operational terms how it is managing the controlled release of models it considers capable of large-scale cyberattack. The framing — defenders must institutionalise new norms before other labs release equivalent models without safeguards — is a genuine policy argument worth understanding, not just a product announcement."
+        "reason": "Thompson's analysis offers a clean, contrarian periodization argument: that the 'agentic era' exposes a mismatch in how AI PC hardware is being designed, and that Microsoft's most interesting device bet runs on Android, not Windows. The piece is a good example of strategic tech analysis using terminology debates (ChatGPT era → reasoning era → agentic era) as genuine analytical tools rather than marketing."
       }
+    },
+    {
+      "article": {
+        "title": "Uber Caps Usage of AI Tools Like Claude Code to Manage Costs",
+        "url": "https://simonwillison.net/2026/Jun/3/uber-caps-usage/#atom-everything"
+      },
+      "summary": "Simon Willison comments on Uber capping employee AI tool spending at $1,500/month per coding agent, contextualising the cost policy against engineer compensation and his own token usage patterns. The piece is a short link-blog post with light editorial commentary.",
+      "longlistAdditions": [
+        {
+          "id": "token-spending-cap",
+          "label": "Token Spending Cap"
+        },
+        {
+          "id": "tokenmaxxing",
+          "label": "Tokenmaxxing"
+        },
+        {
+          "id": "coding-agent",
+          "label": "Coding Agent"
+        }
+      ],
+      "longlistUpdates": [
+        {
+          "id": "product-market-fit",
+          "label": "Product-Market Fit",
+          "sourceAdded": true,
+          "sourceCount": 4,
+          "independentSourceCount": 1
+        }
+      ],
+      "rejections": [],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "Introducing the Services Track and Partner Hub of the Claude Partner Network",
+        "url": "https://www.anthropic.com/news/services-track-partner-hub"
+      },
+      "summary": "Anthropic announces the Services Track and Partner Hub as expansions to the Claude Partner Network, formalising a tiered partner certification program for enterprise AI integrators. The article describes a structured ecosystem for professional services firms deploying Claude, including tier requirements, a partner directory, and MCP integration. The content is primarily a product/program announcement with ecosystem-building implications.",
+      "longlistAdditions": [
+        {
+          "id": "services-track-anthropic",
+          "label": "Services Track"
+        },
+        {
+          "id": "claude-certification",
+          "label": "Claude Certification"
+        }
+      ],
+      "longlistUpdates": [
+        {
+          "id": "claude-partner-network",
+          "label": "Claude Partner Network",
+          "sourceAdded": true,
+          "sourceCount": 2,
+          "independentSourceCount": 1
+        },
+        {
+          "id": "deployment-company",
+          "label": "Deployment Company",
+          "sourceAdded": true,
+          "sourceCount": 3,
+          "independentSourceCount": 2
+        }
+      ],
+      "rejections": [],
+      "proposalsQueued": []
     }
   ],
   "definitionReviews": [
     {
-      "id": "copilot-cowork",
+      "id": "deep-research",
       "status": "insufficient_evidence",
-      "reason": "The Verge article on Microsoft Build 2026 is referenced but its body content is not available in the excerpts, providing no verifiable details to confirm, refute, or update the definition's claims about an Anthropic partnership, March 2026 launch, or 'Wave 3' framing."
+      "reason": "No sources address deep research agentic modes. Definition stands as written."
     },
     {
-      "id": "cost",
-      "status": "keep",
-      "reason": "The Holo3.1 article briefly mentions cost-performance tradeoffs as a production concern, which is consistent with the definition. No source materially changes it."
-    },
-    {
-      "id": "cost-runaway",
-      "status": "keep",
-      "reason": "No source addresses this term. Definition remains accurate and unchallenged."
-    },
-    {
-      "id": "cowork",
+      "id": "deepseek",
       "status": "insufficient_evidence",
-      "reason": "No source directly addresses or updates the Cowork definition. The Microsoft Build 2026 article body is unavailable, so no new evidence exists to confirm or update claims about Copilot Cowork or the January 2026 Anthropic Cowork launch."
+      "reason": "No sources mention DeepSeek or provide updated information about the lab or its models."
     },
     {
-      "id": "critical-thinking",
-      "status": "keep",
-      "reason": "No source addresses this term. Definition is conceptual and remains valid."
+      "id": "delegation",
+      "status": "insufficient_evidence",
+      "reason": "No sources address the delegation paradigm for AI agents in a way that would update this definition."
     },
     {
-      "id": "cron-scheduling",
-      "status": "keep",
-      "reason": "No source addresses this term. Definition remains accurate and unchallenged."
+      "id": "deprecated",
+      "status": "insufficient_evidence",
+      "reason": "No sources discuss deprecation of AI models or APIs."
     },
     {
-      "id": "cursor",
-      "status": "keep",
-      "reason": "No source addresses this term. Definition remains accurate and unchallenged."
+      "id": "devin",
+      "status": "insufficient_evidence",
+      "reason": "The Uber/Claude Code source touches on agentic coding tools but does not provide new information about Devin specifically."
     },
     {
-      "id": "cve",
-      "status": "keep",
-      "reason": "The Anthropic Glasswing article confirms the real-world context of Claude Mythos finding vulnerabilities in codebases, consistent with the CVE definition's example. The definition accurately describes the CVE cataloguing system and its use."
+      "id": "distribution-shift",
+      "status": "insufficient_evidence",
+      "reason": "No sources address distribution shift or related ML reliability concepts."
     },
     {
-      "id": "daemon",
+      "id": "edge-ai",
       "status": "keep",
-      "reason": "No source addresses this term. Definition remains accurate and unchallenged."
+      "reason": "The Stratechery source confirms Nvidia's RTX Spark chip (N1X) with 128GB RAM is arriving for PCs in fall 2026, consistent with the edge-AI trend described. However, the definition already captures this trend and the existing Gemma 4 smartphone example is sufficient. No material update warranted."
     },
     {
-      "id": "data-sovereignty",
-      "status": "keep",
-      "reason": "The Holo3.1 article's emphasis on local inference and deployment flexibility (cloud to fully local on end-user devices) is consistent with the data-sovereignty definition's emphasis on local open-weight models, but does not require any change to the definition."
+      "id": "embeddings",
+      "status": "insufficient_evidence",
+      "reason": "No sources address embeddings or vector representations."
+    },
+    {
+      "id": "emergent-capability",
+      "status": "insufficient_evidence",
+      "reason": "No sources discuss emergent capabilities or the cited Anthropic/Mythos Preview example."
+    },
+    {
+      "id": "evals",
+      "status": "insufficient_evidence",
+      "reason": "No sources address evaluation methodology for AI systems."
     }
   ],
   "notes": []

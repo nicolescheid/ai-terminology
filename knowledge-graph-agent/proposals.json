@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-06-02T20:49:35.126Z",
-    "pendingCount": 21,
+    "generatedAt": "2026-06-03T20:56:47.629Z",
+    "pendingCount": 22,
     "appliedCount": 13,
     "rejectedCount": 1,
     "note": "Lexi proposals queue. Actions gated as PROPOSE land here as status: 'pending'. Edit a proposal's status to 'approved' or 'rejected' and run the apply step (TBD) to commit."
@@ -1655,6 +1655,56 @@
       },
       "reason": "2 sources, 2 independent (normaltech.ai + anthropic.com), 4d on longlist. Trusted: normaltech.ai.",
       "runId": "a46b5394-483e-41a9-867c-2f7cb9441962"
+    },
+    {
+      "id": "c497b745e10bc623",
+      "action": "promote_to_graph",
+      "gate": "propose",
+      "proposedAt": "2026-06-03T20:56:47.629Z",
+      "status": "pending",
+      "source": "promote-eligibility-scan",
+      "target": {
+        "kind": "longlist_entry",
+        "id": "deployment-company"
+      },
+      "payload": {
+        "graphNode": {
+          "id": "deployment-company",
+          "label": "Deployment Company",
+          "clusters": [
+            "business",
+            "companies"
+          ],
+          "sz": 14,
+          "def": "A framing used in Stratechery (Thompson, 2026) for a new organizational form — separate from the AI lab itself — dedicated to deploying AI into enterprises and workflows at scale. Thompson notes OpenAI is forming such a company, and argues other labs are likely to follow, with the thesis that AI's real impact requires 'top-down implementation' distinct from platform-layer model development.",
+          "rels": [
+            "vertical-ai",
+            "infrastructure",
+            "saas",
+            "stack"
+          ],
+          "refs": [
+            {
+              "n": 1,
+              "src": "Stratechery, Fri, 15 May 2026 17:00:00 +0000",
+              "q": "2026.20: Shifting Alliances in a Changing World Stratechery"
+            },
+            {
+              "n": 2,
+              "src": "Stratechery, Mon, 18 May 2026 10:00:00 +0000",
+              "q": "Data Center Discontent, Understanding the Opposition, Fixing the Problem Stratechery"
+            },
+            {
+              "n": 3,
+              "src": "Anthropic Newsroom",
+              "q": "Introducing the Services Track and Partner Hub of the Claude Partner Network Anthropic Newsroom"
+            }
+          ],
+          "fullName": "AI Deployment Company"
+        }
+      },
+      "reason": "3 sources, 2 independent (stratechery.com + anthropic.com), 18d on longlist. Trusted: stratechery.com.",
+      "runId": "d0f3120e-0db5-436d-a059-5bed21f196d0"
     }
   ]
 }

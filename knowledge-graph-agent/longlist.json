@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-06-02T20:47:42.877Z",
-    "entryCount": 185,
+    "generatedAt": "2026-06-03T20:54:34.002Z",
+    "entryCount": 198,
     "note": "Lexi-managed Tier 2 longlist — terms under observation, awaiting evidence to support promotion to the graph (Tier 1)."
   },
   "entries": [
@@ -1447,12 +1447,20 @@
           "sourceLabel": "AI Snake Oil",
           "publishedAt": "Fri, 22 May 2026 22:24:18 GMT",
           "firstSeen": "2026-05-29T20:29:06.123Z"
+        },
+        {
+          "url": "https://stratechery.com/2026/the-nvidia-ai-pc-project-solara-microsoft-ai/",
+          "domain": "stratechery.com",
+          "title": "The Nvidia AI PC, Project Solara, Microsoft AI",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Wed, 03 Jun 2026 10:00:00 +0000",
+          "firstSeen": "2026-06-03T20:54:34.002Z"
         }
       ],
-      "sourceCount": 4,
+      "sourceCount": 5,
       "independentSourceCount": 4,
       "dateFirstSeen": "2026-05-04T19:27:54.284Z",
-      "dateLastSeen": "2026-05-29T20:29:06.123Z",
+      "dateLastSeen": "2026-06-03T20:54:34.002Z",
       "sz": 14,
       "fullName": "The Agentic Era",
       "proposalReason": "Used repeatedly and centrally by Google to frame their entire April 2026 strategy; worth tracking as a competing periodization framing alongside similar terms."
@@ -1670,12 +1678,20 @@
           "sourceLabel": "Anthropic Newsroom",
           "publishedAt": null,
           "firstSeen": "2026-05-04T19:27:54.284Z"
+        },
+        {
+          "url": "https://www.anthropic.com/news/services-track-partner-hub",
+          "domain": "anthropic.com",
+          "title": "Introducing the Services Track and Partner Hub of the Claude Partner Network",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-06-03T20:54:34.002Z"
         }
       ],
-      "sourceCount": 1,
+      "sourceCount": 2,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-05-04T19:27:54.284Z",
-      "dateLastSeen": "2026-05-04T19:27:54.284Z",
+      "dateLastSeen": "2026-06-03T20:54:34.002Z",
       "sz": 14,
       "fullName": "Claude Partner Network (Anthropic)",
       "nodeType": "initiative",
@@ -4507,12 +4523,20 @@
           "sourceLabel": "Stratechery",
           "publishedAt": "Mon, 18 May 2026 10:00:00 +0000",
           "firstSeen": "2026-05-18T19:43:41.150Z"
+        },
+        {
+          "url": "https://www.anthropic.com/news/services-track-partner-hub",
+          "domain": "anthropic.com",
+          "title": "Introducing the Services Track and Partner Hub of the Claude Partner Network",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-06-03T20:54:34.002Z"
         }
       ],
-      "sourceCount": 2,
-      "independentSourceCount": 1,
+      "sourceCount": 3,
+      "independentSourceCount": 2,
       "dateFirstSeen": "2026-05-16T19:02:56.992Z",
-      "dateLastSeen": "2026-05-18T19:43:41.150Z",
+      "dateLastSeen": "2026-06-03T20:54:34.002Z",
       "sz": 14,
       "fullName": "AI Deployment Company",
       "proposalReason": "New candidate: names an emerging organizational pattern distinct from 'lab' or 'product company' — worth tracking as the AI industry structure evolves."
@@ -5474,12 +5498,20 @@
           "sourceLabel": "Simon Willison's Weblog",
           "publishedAt": "2026-06-02T04:13:36+00:00",
           "firstSeen": "2026-06-02T20:47:42.877Z"
+        },
+        {
+          "url": "https://simonwillison.net/2026/Jun/3/uber-caps-usage/#atom-everything",
+          "domain": "simonwillison.net",
+          "title": "Uber Caps Usage of AI Tools Like Claude Code to Manage Costs",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-06-03T12:01:27+00:00",
+          "firstSeen": "2026-06-03T20:54:34.002Z"
         }
       ],
-      "sourceCount": 3,
+      "sourceCount": 4,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-05-29T20:29:06.123Z",
-      "dateLastSeen": "2026-06-02T20:47:42.877Z",
+      "dateLastSeen": "2026-06-03T20:54:34.002Z",
       "sz": 14,
       "fullName": "Product-Market Fit (AI)",
       "proposalReason": "The linked article (referenced in the excerpt: 'I think Anthropic and OpenAI have found product-market fit') deploys this concept directly in relation to frontier AI companies; worth tracking as a framing term in the AI business cluster."
@@ -6494,12 +6526,20 @@
           "sourceLabel": "The Verge — AI",
           "publishedAt": "2026-06-02T15:23:52-04:00",
           "firstSeen": "2026-06-02T20:47:42.877Z"
+        },
+        {
+          "url": "https://stratechery.com/2026/the-nvidia-ai-pc-project-solara-microsoft-ai/",
+          "domain": "stratechery.com",
+          "title": "The Nvidia AI PC, Project Solara, Microsoft AI",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Wed, 03 Jun 2026 10:00:00 +0000",
+          "firstSeen": "2026-06-03T20:54:34.002Z"
         }
       ],
-      "sourceCount": 1,
-      "independentSourceCount": 1,
+      "sourceCount": 2,
+      "independentSourceCount": 2,
       "dateFirstSeen": "2026-06-02T20:47:42.877Z",
-      "dateLastSeen": "2026-06-02T20:47:42.877Z",
+      "dateLastSeen": "2026-06-03T20:54:34.002Z",
       "sz": 14,
       "fullName": "Project Solara (Microsoft Agent OS)",
       "nodeType": "product",
@@ -6673,6 +6713,423 @@
       "fullName": "Claude Opus 4.8 (Anthropic)",
       "nodeType": "product",
       "proposalReason": "New named model version introduced in this announcement; distinct from previously tracked Claude model entries and serves as the public frontier baseline for Claude Security."
+    },
+    {
+      "id": "circle-to-search",
+      "label": "Circle to Search",
+      "workingDef": "A Google Android feature that allows users to circle, highlight, or tap any on-screen content to trigger a Google Search without switching apps. Used for visual shopping discovery, enabling quick price comparisons and style matching.",
+      "clusters": [
+        "tools",
+        "landscape"
+      ],
+      "suggestedRels": [
+        "ai-mode",
+        "grounding"
+      ],
+      "sources": [
+        {
+          "url": "https://blog.google/products-and-platforms/products/search/thrifting-tips/",
+          "domain": "blog.google",
+          "title": "5 ways Google Search can level up your thrift and vintage shopping",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Wed, 03 Jun 2026 13:00:00 +0000",
+          "firstSeen": "2026-06-03T20:54:34.002Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-03T20:54:34.002Z",
+      "dateLastSeen": "2026-06-03T20:54:34.002Z",
+      "sz": 14,
+      "fullName": "Circle to Search (Google)",
+      "nodeType": "product",
+      "proposalReason": "A distinct named Google product appearing in consumer AI search context; worth tracking as a UI pattern for visual search and agentic shopping flows."
+    },
+    {
+      "id": "virtual-try-on",
+      "label": "Virtual Try-On",
+      "workingDef": "A Google Shopping feature that lets users upload a photo of themselves and see how clothing items would look on their body, using generative AI to composite garments onto personal images.",
+      "clusters": [
+        "tools",
+        "landscape"
+      ],
+      "suggestedRels": [
+        "multimodal",
+        "grounding"
+      ],
+      "sources": [
+        {
+          "url": "https://blog.google/products-and-platforms/products/search/thrifting-tips/",
+          "domain": "blog.google",
+          "title": "5 ways Google Search can level up your thrift and vintage shopping",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Wed, 03 Jun 2026 13:00:00 +0000",
+          "firstSeen": "2026-06-03T20:54:34.002Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-03T20:54:34.002Z",
+      "dateLastSeen": "2026-06-03T20:54:34.002Z",
+      "sz": 14,
+      "fullName": "Virtual Try-On (Google Shopping)",
+      "nodeType": "product",
+      "proposalReason": "A distinct named AI-assisted consumer product with lasting relevance as a pattern in multimodal, vision-grounded shopping assistance."
+    },
+    {
+      "id": "dpo",
+      "label": "Direct Preference Optimization",
+      "workingDef": "A training method introduced by Rafailov et al. (2023) that optimizes a language model toward preferred outputs by directly maximizing the likelihood ratio of chosen over rejected completions, without requiring a separately trained reward model. Unlike RLHF, DPO incorporates the preference signal into the supervised loss. The term is most commonly encountered in chat alignment — tuning models to be more helpful, harmless, or accurate — but this article demonstrates it applies equally to objective, non-conversational structured generation tasks, where model-generated failure outputs serve as rejection pairs.",
+      "clusters": [
+        "technical",
+        "models"
+      ],
+      "suggestedRels": [
+        "rlhf",
+        "fine-tuning",
+        "training",
+        "hallucination"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/Dharma-AI/direct-preference-optimization-beyond-chatbots",
+          "domain": "huggingface.co",
+          "title": "Direct Preference Optimization Beyond Chatbots",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Wed, 03 Jun 2026 12:55:11 GMT",
+          "firstSeen": "2026-06-03T20:54:34.002Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-03T20:54:34.002Z",
+      "dateLastSeen": "2026-06-03T20:54:34.002Z",
+      "sz": 14,
+      "fullName": "Direct Preference Optimization (DPO)",
+      "proposalReason": "A new term with growing usage across the field; this article also usefully extends the concept beyond its canonical chat-alignment framing into objective structured tasks."
+    },
+    {
+      "id": "text-degeneration",
+      "label": "Text Degeneration",
+      "workingDef": "A failure mode in autoregressive language models where the model enters a self-reinforcing repetition loop during inference, repeatedly generating the same token or phrase until the sequence reaches the maximum token limit. The article explains this as a distributional geometry problem: once a token dominates its own conditional distribution, each sampling step deepens the attractor, making exit without external intervention structurally improbable. Distinct from hallucination — the model is not fabricating content but stuck in a probability attractor — and not fully addressable by inference-layer interventions (repetition penalties, temperature) or by SFT alone, which has no training term that explicitly penalises completion-level repetition.",
+      "clusters": [
+        "technical",
+        "models"
+      ],
+      "suggestedRels": [
+        "hallucination",
+        "silent-failure",
+        "fine-tuning",
+        "training"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/Dharma-AI/direct-preference-optimization-beyond-chatbots",
+          "domain": "huggingface.co",
+          "title": "Direct Preference Optimization Beyond Chatbots",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Wed, 03 Jun 2026 12:55:11 GMT",
+          "firstSeen": "2026-06-03T20:54:34.002Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-03T20:54:34.002Z",
+      "dateLastSeen": "2026-06-03T20:54:34.002Z",
+      "sz": 14,
+      "fullName": "Text Degeneration (Repetition Loop)",
+      "proposalReason": "A well-defined, recurring failure mode in generative models that deserves a canonical entry; the article provides the clearest mechanistic explanation of it as a distributional geometry problem rather than a decoding artifact."
+    },
+    {
+      "id": "self-generated-rejection-pairs",
+      "label": "Self-Generated Rejection Pairs",
+      "workingDef": "A methodology for constructing DPO training data without human preference labels, by using a model's own characteristic failure outputs as the 'rejected' examples in preference pairs. The approach exploits the observation that a model capable of performing a structured task also fails in predictable, characteristic ways — those failures are treated as negative training signals rather than discarded noise. Proposed by DharmaOCR as a way to apply DPO to objective, non-conversational tasks where human preference rankings are not available or meaningful.",
+      "clusters": [
+        "technical",
+        "models"
+      ],
+      "suggestedRels": [
+        "dpo",
+        "fine-tuning",
+        "evals",
+        "behavioral-audit"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/Dharma-AI/direct-preference-optimization-beyond-chatbots",
+          "domain": "huggingface.co",
+          "title": "Direct Preference Optimization Beyond Chatbots",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Wed, 03 Jun 2026 12:55:11 GMT",
+          "firstSeen": "2026-06-03T20:54:34.002Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-03T20:54:34.002Z",
+      "dateLastSeen": "2026-06-03T20:54:34.002Z",
+      "sz": 14,
+      "fullName": "Self-Generated Rejection Pairs (DPO without Human Annotation)",
+      "proposalReason": "A novel methodological concept that generalises DPO beyond chat alignment; potentially useful across any structured generation domain where failure modes are identifiable."
+    },
+    {
+      "id": "sft-ceiling",
+      "label": "SFT Ceiling",
+      "workingDef": "The observed empirical limit on how much supervised fine-tuning alone can reduce certain structural failure modes — particularly text degeneration — in language models. The conjecture is that SFT's token-level loss objective has no term penalising completion-level failures; it optimises proximity to a task domain but cannot reshape the attractor geometry that produces repetition loops. Distinct from capability ceiling: SFT and degeneration resistance can move independently, meaning a model can gain task fluency while its degeneration rate worsens. First clearly articulated in the DharmaOCR benchmark analysis.",
+      "clusters": [
+        "technical",
+        "models"
+      ],
+      "suggestedRels": [
+        "fine-tuning",
+        "training",
+        "capability-reliability-gap",
+        "text-degeneration"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/Dharma-AI/direct-preference-optimization-beyond-chatbots",
+          "domain": "huggingface.co",
+          "title": "Direct Preference Optimization Beyond Chatbots",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Wed, 03 Jun 2026 12:55:11 GMT",
+          "firstSeen": "2026-06-03T20:54:34.002Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-03T20:54:34.002Z",
+      "dateLastSeen": "2026-06-03T20:54:34.002Z",
+      "sz": 14,
+      "fullName": "SFT Ceiling (Supervised Fine-Tuning Failure Mode Ceiling)",
+      "proposalReason": "A crisp, useful framing of a structural limitation of SFT that practitioners repeatedly encounter but rarely have a name for."
+    },
+    {
+      "id": "rtx-spark",
+      "label": "RTX Spark",
+      "workingDef": "An AI PC superchip (also referred to as N1X) unveiled by Nvidia CEO Jensen Huang at Computex 2026, developed in partnership with Microsoft. Features up to 20 Arm CPU cores, a Blackwell GPU with 6,144 CUDA cores, 128GB LPDDR5X RAM connected via NVLink C2C, and up to 300 GB/s memory bandwidth. Designed to run AI agents and large language models (up to 120B parameters) locally with long context windows. Debuting in fall 2026 on Windows PCs from Dell, HP, ASUS, Lenovo, and MSI. Thompson argues the chip's heavy GPU die allocation comes at the expense of CPU performance, making it poorly suited for the agentic era's actual compute profile.",
+      "clusters": [
+        "tools",
+        "technical"
+      ],
+      "suggestedRels": [
+        "edge-ai",
+        "inference",
+        "ai-accelerator",
+        "on-device-computer-use",
+        "microsoft-co",
+        "nvidia-co"
+      ],
+      "sources": [
+        {
+          "url": "https://stratechery.com/2026/the-nvidia-ai-pc-project-solara-microsoft-ai/",
+          "domain": "stratechery.com",
+          "title": "The Nvidia AI PC, Project Solara, Microsoft AI",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Wed, 03 Jun 2026 10:00:00 +0000",
+          "firstSeen": "2026-06-03T20:54:34.002Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-03T20:54:34.002Z",
+      "dateLastSeen": "2026-06-03T20:54:34.002Z",
+      "sz": 14,
+      "fullName": "RTX Spark (Nvidia AI PC Superchip)",
+      "nodeType": "product",
+      "proposalReason": "New candidate: a named product that Thompson uses as a substantive framing device to argue about what AI PC hardware gets wrong about the agentic era's compute requirements."
+    },
+    {
+      "id": "unmetered-intelligence",
+      "label": "Unmetered Intelligence",
+      "workingDef": "A framing used by Microsoft CEO Satya Nadella at Build 2026 to describe the appeal of abundant, always-available AI compute running locally at the edge — as opposed to metered cloud inference billed by token or call. Positioned as a renewed rationale for AI PCs and on-device AI in the context of agent workloads. The term echoes earlier industry framings around 'unlimited' or 'ambient' compute, and sits in tension with Thompson's argument that cloud inference remains superior for agentic tasks despite the appeal of local availability.",
+      "clusters": [
+        "agentic",
+        "technical"
+      ],
+      "suggestedRels": [
+        "edge-ai",
+        "inference",
+        "latency",
+        "cost",
+        "on-device-computer-use",
+        "agentic-era"
+      ],
+      "sources": [
+        {
+          "url": "https://stratechery.com/2026/the-nvidia-ai-pc-project-solara-microsoft-ai/",
+          "domain": "stratechery.com",
+          "title": "The Nvidia AI PC, Project Solara, Microsoft AI",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Wed, 03 Jun 2026 10:00:00 +0000",
+          "firstSeen": "2026-06-03T20:54:34.002Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-03T20:54:34.002Z",
+      "dateLastSeen": "2026-06-03T20:54:34.002Z",
+      "sz": 14,
+      "fullName": "Unmetered Intelligence (Edge AI Framing)",
+      "proposalReason": "New candidate: a named framing term from a CEO keynote that captures a specific argument about the value proposition of local AI compute — worth tracking as it may recur in AI PC marketing and edge-inference debates."
+    },
+    {
+      "id": "token-spending-cap",
+      "label": "Token Spending Cap",
+      "workingDef": "An organizational policy that limits the amount employees can spend on AI tool token consumption within a given period — typically monthly — to prevent budget overruns. Distinct from blocking access entirely, a per-tool cap attempts to balance AI productivity benefits against runaway infrastructure cost, particularly for agentic coding tools that can burn tokens at high rates in long loops.",
+      "clusters": [
+        "work"
+      ],
+      "suggestedRels": [
+        "cost",
+        "cost-runaway",
+        "claude-code",
+        "cursor"
+      ],
+      "sources": [
+        {
+          "url": "https://simonwillison.net/2026/Jun/3/uber-caps-usage/#atom-everything",
+          "domain": "simonwillison.net",
+          "title": "Uber Caps Usage of AI Tools Like Claude Code to Manage Costs",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-06-03T12:01:27+00:00",
+          "firstSeen": "2026-06-03T20:54:34.002Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-03T20:54:34.002Z",
+      "dateLastSeen": "2026-06-03T20:54:34.002Z",
+      "sz": 14,
+      "proposalReason": "A newly emergent enterprise cost-governance concept specific to AI tooling. As token-burning agentic coding agents proliferate, per-employee token spending caps are becoming a real organizational response — worth tracking as a workplace AI policy pattern."
+    },
+    {
+      "id": "tokenmaxxing",
+      "label": "Tokenmaxxing",
+      "workingDef": "Informal term for the practice of maximizing token consumption — whether through individual heavy usage or via competitive leaderboards or incentive structures that reward employees for burning the most tokens with AI tools. Framed by critics (including Willison in this context) as a counterproductive incentive design that inflates AI spend without proportional productivity return.",
+      "clusters": [
+        "work"
+      ],
+      "suggestedRels": [
+        "cost",
+        "cost-runaway",
+        "token"
+      ],
+      "sources": [
+        {
+          "url": "https://simonwillison.net/2026/Jun/3/uber-caps-usage/#atom-everything",
+          "domain": "simonwillison.net",
+          "title": "Uber Caps Usage of AI Tools Like Claude Code to Manage Costs",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-06-03T12:01:27+00:00",
+          "firstSeen": "2026-06-03T20:54:34.002Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-03T20:54:34.002Z",
+      "dateLastSeen": "2026-06-03T20:54:34.002Z",
+      "sz": 14,
+      "proposalReason": "A pithy, memorable term for a specific dysfunctional incentive pattern emerging in enterprise AI adoption — the competitive over-use of AI tools encouraged by usage leaderboards."
+    },
+    {
+      "id": "coding-agent",
+      "label": "Coding Agent",
+      "workingDef": "A category of agentic AI software specifically designed to assist or autonomously perform software development tasks — writing, editing, reviewing, and executing code — within an IDE or terminal environment. Exemplified by tools such as Cursor and Claude Code. Distinct from general-purpose AI assistants in that coding agents operate in longer agentic loops, consume significantly more tokens per session, and are subject to emerging enterprise cost-governance policies specifically targeting their token burn rates.",
+      "clusters": [
+        "agentic",
+        "tools"
+      ],
+      "suggestedRels": [
+        "agent",
+        "claude-code",
+        "cursor",
+        "vibe-coding",
+        "agentic-engineering",
+        "tool-use"
+      ],
+      "sources": [
+        {
+          "url": "https://simonwillison.net/2026/Jun/3/uber-caps-usage/#atom-everything",
+          "domain": "simonwillison.net",
+          "title": "Uber Caps Usage of AI Tools Like Claude Code to Manage Costs",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-06-03T12:01:27+00:00",
+          "firstSeen": "2026-06-03T20:54:34.002Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-03T20:54:34.002Z",
+      "dateLastSeen": "2026-06-03T20:54:34.002Z",
+      "sz": 14,
+      "proposalReason": "While 'coding agent' is closely related to existing graph nodes, it represents a distinct product category that is increasingly the subject of enterprise procurement, cost-capping, and policy discussion."
+    },
+    {
+      "id": "services-track-anthropic",
+      "label": "Services Track",
+      "workingDef": "The tiered qualification structure within Anthropic's Claude Partner Network that reflects the depth of a firm's Claude practice. Three tiers — Select, Preferred, and Global Premier — are determined by counts of certified practitioners, production customer deployments, and published customer endorsements, with requirements identical regardless of firm size. Tier standing is verified quarterly and published in the Partner Hub.",
+      "clusters": [
+        "business",
+        "companies"
+      ],
+      "suggestedRels": [
+        "claude-partner-network",
+        "anthropic-co",
+        "claude-ai",
+        "deployment-company"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/services-track-partner-hub",
+          "domain": "anthropic.com",
+          "title": "Introducing the Services Track and Partner Hub of the Claude Partner Network",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-06-03T20:54:34.002Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-03T20:54:34.002Z",
+      "dateLastSeen": "2026-06-03T20:54:34.002Z",
+      "sz": 14,
+      "fullName": "Services Track (Claude Partner Network)",
+      "nodeType": "product",
+      "proposalReason": "New term naming a specific program structure introduced in this announcement; distinct enough from the parent program to warrant its own entry as an institutional mechanism."
+    },
+    {
+      "id": "claude-certification",
+      "label": "Claude Certification",
+      "workingDef": "An individual-held credential issued by Anthropic's Partner Academy, earned through exams, that signals the holder has been trained to build and deploy Claude in production. Certifications belong to individuals, not firms, and require active use of Claude within the past 90 days to count toward a partner firm's tier standing. Over 10,000 consultants had earned the certification as of June 2026.",
+      "clusters": [
+        "business",
+        "work"
+      ],
+      "suggestedRels": [
+        "claude-partner-network",
+        "anthropic-co",
+        "services-track-anthropic",
+        "applied-ai-engineering"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/services-track-partner-hub",
+          "domain": "anthropic.com",
+          "title": "Introducing the Services Track and Partner Hub of the Claude Partner Network",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-06-03T20:54:34.002Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-03T20:54:34.002Z",
+      "dateLastSeen": "2026-06-03T20:54:34.002Z",
+      "sz": 14,
+      "fullName": "Claude Certification (Anthropic Partner Academy)",
+      "nodeType": "product",
+      "proposalReason": "New term describing a specific credentialling mechanism with lasting relevance to how enterprise AI deployment expertise is formally recognised and measured."
     }
   ]
 }

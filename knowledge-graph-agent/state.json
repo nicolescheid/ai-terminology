@@ -1,6 +1,6 @@
 {
-  "lastRunAt": "2026-06-02T20:47:42.877Z",
-  "reviewCursor": 64,
+  "lastRunAt": "2026-06-03T20:54:34.002Z",
+  "reviewCursor": 74,
   "seenArticles": {
     "93a049d060bc295b": {
       "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/tpus-8t-8i-cloud-next/",
@@ -895,6 +895,42 @@
       "title": "Expanding Project Glasswing",
       "publishedAt": null,
       "seenAt": "2026-06-02T20:47:42.877Z"
+    },
+    "bfb45dcad644b624": {
+      "url": "https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind",
+      "title": "Introducing new capabilities to GPT-Rosalind",
+      "publishedAt": "Wed, 03 Jun 2026 13:15:00 GMT",
+      "seenAt": "2026-06-03T20:54:34.002Z"
+    },
+    "76912b853c1db4a9": {
+      "url": "https://blog.google/products-and-platforms/products/search/thrifting-tips/",
+      "title": "5 ways Google Search can level up your thrift and vintage shopping",
+      "publishedAt": "Wed, 03 Jun 2026 13:00:00 +0000",
+      "seenAt": "2026-06-03T20:54:34.002Z"
+    },
+    "bc0be78cdc6b163d": {
+      "url": "https://huggingface.co/blog/Dharma-AI/direct-preference-optimization-beyond-chatbots",
+      "title": "Direct Preference Optimization Beyond Chatbots",
+      "publishedAt": "Wed, 03 Jun 2026 12:55:11 GMT",
+      "seenAt": "2026-06-03T20:54:34.002Z"
+    },
+    "08d03e5410e959c8": {
+      "url": "https://stratechery.com/2026/the-nvidia-ai-pc-project-solara-microsoft-ai/",
+      "title": "The Nvidia AI PC, Project Solara, Microsoft AI",
+      "publishedAt": "Wed, 03 Jun 2026 10:00:00 +0000",
+      "seenAt": "2026-06-03T20:54:34.002Z"
+    },
+    "29c7b211e523b246": {
+      "url": "https://simonwillison.net/2026/Jun/3/uber-caps-usage/#atom-everything",
+      "title": "Uber Caps Usage of AI Tools Like Claude Code to Manage Costs",
+      "publishedAt": "2026-06-03T12:01:27+00:00",
+      "seenAt": "2026-06-03T20:54:34.002Z"
+    },
+    "49f44c80e766fb4b": {
+      "url": "https://www.anthropic.com/news/services-track-partner-hub",
+      "title": "Introducing the Services Track and Partner Hub of the Claude Partner Network",
+      "publishedAt": null,
+      "seenAt": "2026-06-03T20:54:34.002Z"
     }
   },
   "nodeReviews": {
@@ -1204,54 +1240,54 @@
       "reason": "The Holo3.1 article's emphasis on local inference and deployment flexibility (cloud to fully local on end-user devices) is consistent with the data-sovereignty definition's emphasis on local open-weight models, but does not require any change to the definition."
     },
     "deep-research": {
-      "lastReviewedAt": "2026-04-30T19:20:00.611Z",
-      "status": "keep",
-      "reason": "No source material addresses the deep research agentic mode. Definition remains accurate."
+      "lastReviewedAt": "2026-06-03T20:54:34.002Z",
+      "status": "insufficient_evidence",
+      "reason": "No sources address deep research agentic modes. Definition stands as written."
     },
     "deepseek": {
-      "lastReviewedAt": "2026-04-30T19:20:00.611Z",
-      "status": "keep",
-      "reason": "One source briefly mentions DeepSeek V4 as 'almost on the frontier, a fraction of the price,' which is consistent with the existing definition. No material change is justified."
+      "lastReviewedAt": "2026-06-03T20:54:34.002Z",
+      "status": "insufficient_evidence",
+      "reason": "No sources mention DeepSeek or provide updated information about the lab or its models."
     },
     "delegation": {
-      "lastReviewedAt": "2026-04-30T19:20:00.611Z",
-      "status": "keep",
-      "reason": "No source material addresses delegation as an AI interaction paradigm. Definition remains accurate."
+      "lastReviewedAt": "2026-06-03T20:54:34.002Z",
+      "status": "insufficient_evidence",
+      "reason": "No sources address the delegation paradigm for AI agents in a way that would update this definition."
     },
     "deprecated": {
-      "lastReviewedAt": "2026-04-30T19:20:00.611Z",
-      "status": "keep",
-      "reason": "No source material addresses deprecation cycles. Definition remains accurate."
+      "lastReviewedAt": "2026-06-03T20:54:34.002Z",
+      "status": "insufficient_evidence",
+      "reason": "No sources discuss deprecation of AI models or APIs."
     },
     "devin": {
-      "lastReviewedAt": "2026-04-30T19:20:00.611Z",
-      "status": "keep",
-      "reason": "No source material addresses Devin or Cognition. Definition remains accurate."
+      "lastReviewedAt": "2026-06-03T20:54:34.002Z",
+      "status": "insufficient_evidence",
+      "reason": "The Uber/Claude Code source touches on agentic coding tools but does not provide new information about Devin specifically."
     },
     "distribution-shift": {
-      "lastReviewedAt": "2026-04-30T19:20:00.611Z",
-      "status": "keep",
-      "reason": "No source material addresses distribution shift. Definition remains accurate."
+      "lastReviewedAt": "2026-06-03T20:54:34.002Z",
+      "status": "insufficient_evidence",
+      "reason": "No sources address distribution shift or related ML reliability concepts."
     },
     "edge-ai": {
-      "lastReviewedAt": "2026-04-30T19:20:00.611Z",
+      "lastReviewedAt": "2026-06-03T20:54:34.002Z",
       "status": "keep",
-      "reason": "No source material addresses edge AI or Gemma 4. Definition remains accurate based on available evidence."
+      "reason": "The Stratechery source confirms Nvidia's RTX Spark chip (N1X) with 128GB RAM is arriving for PCs in fall 2026, consistent with the edge-AI trend described. However, the definition already captures this trend and the existing Gemma 4 smartphone example is sufficient. No material update warranted."
     },
     "embeddings": {
-      "lastReviewedAt": "2026-04-30T19:20:00.611Z",
-      "status": "keep",
-      "reason": "No source material addresses embeddings. Definition remains accurate."
+      "lastReviewedAt": "2026-06-03T20:54:34.002Z",
+      "status": "insufficient_evidence",
+      "reason": "No sources address embeddings or vector representations."
     },
     "emergent-capability": {
-      "lastReviewedAt": "2026-04-30T19:20:00.611Z",
+      "lastReviewedAt": "2026-06-03T20:54:34.002Z",
       "status": "insufficient_evidence",
-      "reason": "The definition makes a specific claim attributing a quote about cybersecurity abilities to Anthropic regarding 'Mythos Preview,' a model not verifiable from any of the provided sources. No source here corroborates or refutes this claim, so the specific example cannot be validated, but there is insufficient evidence to rewrite the definition."
+      "reason": "No sources discuss emergent capabilities or the cited Anthropic/Mythos Preview example."
     },
     "evals": {
-      "lastReviewedAt": "2026-05-01T19:10:07.910Z",
-      "status": "keep",
-      "reason": "The CRUX paper on open-world evaluations reinforces the existing definition's point that building good evals is hard and that benchmark saturation is a real problem. The new material (open-world evals, CRUX project) extends the concept but doesn't contradict or materially update the core definition enough to require a rewrite."
+      "lastReviewedAt": "2026-06-03T20:54:34.002Z",
+      "status": "insufficient_evidence",
+      "reason": "No sources address evaluation methodology for AI systems."
     },
     "evaluation-gaming": {
       "lastReviewedAt": "2026-05-01T19:10:07.910Z",

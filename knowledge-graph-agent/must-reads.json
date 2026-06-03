@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generatedAt": "2026-06-02T20:47:42.877Z",
-    "unreadCount": 17,
-    "totalCount": 17,
+    "generatedAt": "2026-06-03T20:54:34.002Z",
+    "unreadCount": 19,
+    "totalCount": 19,
     "note": "Lexi's must-reads — articles she flags as worth Nicole reading in full. Editorial signal, not news feed. Set status to 'read' or 'dismissed' via mark-must-reads.mjs."
   },
   "entries": [
@@ -292,6 +292,40 @@
       ],
       "novelTermsInArticle": 2,
       "flaggedAt": "2026-06-02T20:47:42.877Z",
+      "status": "unread"
+    },
+    {
+      "id": "bc0be78cdc6b163d",
+      "title": "Direct Preference Optimization Beyond Chatbots",
+      "url": "https://huggingface.co/blog/Dharma-AI/direct-preference-optimization-beyond-chatbots",
+      "source": "Hugging Face Blog",
+      "publishedAt": "Wed, 03 Jun 2026 12:55:11 GMT",
+      "summary": "A technical blog post from Dharma-AI describing how Direct Preference Optimization (DPO) can be applied beyond chat alignment to fix a specific structural failure mode — text degeneration loops — in a structured OCR task. The article demonstrates that DPO using a model's own degenerate outputs as rejection pairs consistently reduces degeneration rates across five model families, where SFT alone cannot. Key conceptual contributions include the 'distribution attractor' explanation of degeneration, the ceiling effect of SFT on failure modes, and a methodology for constructing preference pairs without human annotation.",
+      "priority": 2,
+      "reason": "A technically careful, concept-rich article that reframes DPO as a general-purpose failure-mode correction tool, not just a chat-alignment technique. The mechanistic explanation of text degeneration as distributional attractor geometry — and the demonstration that SFT has a structural ceiling on fixing it — is the kind of precise conceptual contribution that reshapes how practitioners think about training pipelines.",
+      "clusters": [
+        "technical",
+        "models"
+      ],
+      "novelTermsInArticle": 4,
+      "flaggedAt": "2026-06-03T20:54:34.002Z",
+      "status": "unread"
+    },
+    {
+      "id": "08d03e5410e959c8",
+      "title": "The Nvidia AI PC, Project Solara, Microsoft AI",
+      "url": "https://stratechery.com/2026/the-nvidia-ai-pc-project-solara-microsoft-ai/",
+      "source": "Stratechery",
+      "publishedAt": "Wed, 03 Jun 2026 10:00:00 +0000",
+      "summary": "Ben Thompson's Stratechery analysis of Microsoft Build covers three interrelated developments: the Nvidia RTX Spark AI PC chip, Project Solara (Microsoft's Android-based agent-native device platform), and Nadella's broader AI strategy. Thompson argues the RTX Spark is misaligned with the agentic era's actual compute needs (strong CPU + cloud inference), while Project Solara represents a more interesting bet on purpose-built agent hardware. The piece is primarily strategic framing and industry analysis rather than technical deep-dive.",
+      "priority": 2,
+      "reason": "Thompson's analysis offers a clean, contrarian periodization argument: that the 'agentic era' exposes a mismatch in how AI PC hardware is being designed, and that Microsoft's most interesting device bet runs on Android, not Windows. The piece is a good example of strategic tech analysis using terminology debates (ChatGPT era → reasoning era → agentic era) as genuine analytical tools rather than marketing.",
+      "clusters": [
+        "agentic",
+        "landscape"
+      ],
+      "novelTermsInArticle": 2,
+      "flaggedAt": "2026-06-03T20:54:34.002Z",
       "status": "unread"
     }
   ]

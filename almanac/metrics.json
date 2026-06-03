@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-06-02T20:49:35.483Z",
+  "generatedAt": "2026-06-03T20:56:48.138Z",
   "firstRunAt": "2026-04-27T01:07:31.335Z",
   "phase": 1,
   "headline": {
-    "articlesRead": 149,
-    "daysRunning": 37,
-    "longlistSize": 173,
+    "articlesRead": 155,
+    "daysRunning": 38,
+    "longlistSize": 186,
     "graphSize": 207
   },
   "thisWeek": {
-    "articlesFetched": 36,
-    "longlistAdded": 52,
-    "sourcesAdded": 12,
+    "articlesFetched": 42,
+    "longlistAdded": 65,
+    "sourcesAdded": 14,
     "promotionsToGraph": 1,
-    "proposalsQueued": 12,
+    "proposalsQueued": 13,
     "auditFlags": 12,
-    "notesAdded": 19
+    "notesAdded": 18
   },
   "almostThere": [
     {
@@ -27,13 +27,47 @@
       ],
       "sourceCount": 3,
       "independentSources": 2,
-      "daysOnLonglist": 29,
+      "daysOnLonglist": 30,
       "domains": [
         "openai.com",
         "simonwillison.net"
       ],
       "gapCount": 0,
       "gap": "meets credibility bar"
+    },
+    {
+      "id": "project-solara",
+      "label": "Project Solara",
+      "fullName": "Project Solara (Microsoft Agent OS)",
+      "clusters": [
+        "agentic",
+        "tools"
+      ],
+      "sourceCount": 2,
+      "independentSources": 2,
+      "daysOnLonglist": 1,
+      "domains": [
+        "theverge.com",
+        "stratechery.com"
+      ],
+      "gapCount": 1,
+      "gap": "2 more days on longlist"
+    },
+    {
+      "id": "product-market-fit",
+      "label": "Product-Market Fit",
+      "fullName": "Product-Market Fit (AI)",
+      "clusters": [
+        "business"
+      ],
+      "sourceCount": 4,
+      "independentSources": 1,
+      "daysOnLonglist": 5,
+      "domains": [
+        "simonwillison.net"
+      ],
+      "gapCount": 1,
+      "gap": "needs 1 more independent source"
     },
     {
       "id": "terafab",
@@ -45,7 +79,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 33,
+      "daysOnLonglist": 34,
       "domains": [
         "stratechery.com"
       ],
@@ -62,7 +96,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 24,
+      "daysOnLonglist": 25,
       "domains": [
         "blog.google"
       ],
@@ -79,7 +113,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 24,
+      "daysOnLonglist": 25,
       "domains": [
         "blog.google"
       ],
@@ -96,7 +130,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 23,
+      "daysOnLonglist": 24,
       "domains": [
         "huggingface.co"
       ],
@@ -113,7 +147,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 22,
+      "daysOnLonglist": 23,
       "domains": [
         "stratechery.com"
       ],
@@ -130,25 +164,9 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 4,
+      "daysOnLonglist": 5,
       "domains": [
         "stratechery.com"
-      ],
-      "gapCount": 1,
-      "gap": "needs 1 more independent source"
-    },
-    {
-      "id": "product-market-fit",
-      "label": "Product-Market Fit",
-      "fullName": "Product-Market Fit (AI)",
-      "clusters": [
-        "business"
-      ],
-      "sourceCount": 3,
-      "independentSources": 1,
-      "daysOnLonglist": 4,
-      "domains": [
-        "simonwillison.net"
       ],
       "gapCount": 1,
       "gap": "needs 1 more independent source"
@@ -164,26 +182,9 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 36,
+      "daysOnLonglist": 37,
       "domains": [
         "anthropic.com"
-      ],
-      "gapCount": 1,
-      "gap": "needs 1 more independent source"
-    },
-    {
-      "id": "ai-driven-cpu-demand",
-      "label": "AI-Driven CPU Demand",
-      "fullName": "AI-Driven CPU Demand (Structural Shift)",
-      "clusters": [
-        "landscape",
-        "business"
-      ],
-      "sourceCount": 2,
-      "independentSources": 1,
-      "daysOnLonglist": 33,
-      "domains": [
-        "stratechery.com"
       ],
       "gapCount": 1,
       "gap": "needs 1 more independent source"
@@ -193,27 +194,27 @@
     "byDomain": [
       {
         "domain": "openai.com",
-        "count": 37
+        "count": 38
       },
       {
         "domain": "simonwillison.net",
-        "count": 21
+        "count": 22
       },
       {
         "domain": "stratechery.com",
-        "count": 18
+        "count": 19
       },
       {
         "domain": "blog.google",
-        "count": 16
+        "count": 17
       },
       {
         "domain": "anthropic.com",
-        "count": 15
+        "count": 16
       },
       {
         "domain": "huggingface.co",
-        "count": 13
+        "count": 14
       },
       {
         "domain": "theverge.com",
@@ -345,36 +346,42 @@
         "id": "technical",
         "label": "Technical",
         "hex": "#D0D040",
-        "count": 55
+        "count": 61
       },
       {
         "id": "agentic",
         "label": "Agentic Systems",
         "hex": "#FF9040",
-        "count": 45
+        "count": 47
       },
       {
         "id": "tools",
         "label": "Tools & Platforms",
         "hex": "#70C8F8",
-        "count": 39
+        "count": 43
       },
       {
         "id": "models",
         "label": "Models",
         "hex": "#FFB060",
-        "count": 35
+        "count": 39
       },
       {
         "id": "business",
         "label": "Business Reality",
         "hex": "#48C888",
-        "count": 28
+        "count": 30
       },
       {
         "id": "landscape",
         "label": "Model Landscape",
         "hex": "#D0A050",
+        "count": 27
+      },
+      {
+        "id": "work",
+        "label": "Work & Output",
+        "hex": "#E8A838",
         "count": 25
       },
       {
@@ -390,12 +397,6 @@
         "count": 23
       },
       {
-        "id": "work",
-        "label": "Work & Output",
-        "hex": "#E8A838",
-        "count": 22
-      },
-      {
         "id": "security",
         "label": "AI Security",
         "hex": "#E05050",
@@ -405,7 +406,7 @@
         "id": "companies",
         "label": "Companies",
         "hex": "#9090A8",
-        "count": 13
+        "count": 14
       },
       {
         "id": "human",
@@ -439,7 +440,7 @@
     "note": "All graph promotions and substantive edits are currently human-gated. Lexi proposes; Nicole approves."
   },
   "proposalsByStatus": {
-    "pending": 21,
+    "pending": 22,
     "approved": 0,
     "applied": 13,
     "rejected": 1
