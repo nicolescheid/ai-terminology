@@ -1,6 +1,6 @@
 {
-  "lastRunAt": "2026-06-03T20:54:34.002Z",
-  "reviewCursor": 74,
+  "lastRunAt": "2026-06-04T20:04:46.217Z",
+  "reviewCursor": 84,
   "seenArticles": {
     "93a049d060bc295b": {
       "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/tpus-8t-8i-cloud-next/",
@@ -931,6 +931,42 @@
       "title": "Introducing the Services Track and Partner Hub of the Claude Partner Network",
       "publishedAt": null,
       "seenAt": "2026-06-03T20:54:34.002Z"
+    },
+    "8929ed18dbbc30cf": {
+      "url": "https://openai.com/index/wasmer",
+      "title": "How Wasmer used Codex to build a Node.js runtime for the edge",
+      "publishedAt": "Wed, 03 Jun 2026 12:00:00 GMT",
+      "seenAt": "2026-06-04T20:04:46.217Z"
+    },
+    "3c2e7a73efc4745c": {
+      "url": "https://huggingface.co/blog/nvidia/nemotron-3-5-content-safety",
+      "title": "Nemotron 3.5 Content Safety: Customizable Multimodal Safety for Global Enterprise AI",
+      "publishedAt": "Thu, 04 Jun 2026 18:57:45 GMT",
+      "seenAt": "2026-06-04T20:04:46.217Z"
+    },
+    "edb5b3da2f4b3a89": {
+      "url": "https://stratechery.com/2026/an-interview-with-microsoft-ceo-satya-nadella-about-finding-core-competencies/",
+      "title": "An Interview with Microsoft CEO Satya Nadella About Finding Core Competencies",
+      "publishedAt": "Thu, 04 Jun 2026 10:00:00 +0000",
+      "seenAt": "2026-06-04T20:04:46.217Z"
+    },
+    "c499c073f095544e": {
+      "url": "https://simonwillison.net/2026/Jun/4/a-slightly-different-version/#atom-everything",
+      "title": "A quote from Emanuel Maiberg, 404 Media",
+      "publishedAt": "2026-06-04T16:38:29+00:00",
+      "seenAt": "2026-06-04T20:04:46.217Z"
+    },
+    "9b2993a562b7da8c": {
+      "url": "https://www.theverge.com/ai-artificial-intelligence/943234/kevin-oleary-agrees-to-downsize-massive-utah-data-center",
+      "title": "Kevin O’Leary agrees to downsize massive Utah data center",
+      "publishedAt": "2026-06-04T14:38:04-04:00",
+      "seenAt": "2026-06-04T20:04:46.217Z"
+    },
+    "8e0e82e96621194f": {
+      "url": "https://hbr.org/2026/06/your-company-needs-an-energy-strategy-for-ais-next-phase",
+      "title": "Your Company Needs an Energy Strategy for AI’s Next Phase",
+      "publishedAt": "2026-06-04T12:15:31Z",
+      "seenAt": "2026-06-04T20:04:46.217Z"
     }
   },
   "nodeReviews": {
@@ -1290,54 +1326,54 @@
       "reason": "No sources address evaluation methodology for AI systems."
     },
     "evaluation-gaming": {
-      "lastReviewedAt": "2026-05-01T19:10:07.910Z",
+      "lastReviewedAt": "2026-06-04T20:04:46.217Z",
       "status": "keep",
-      "reason": "No source material addresses evaluation gaming or the specific Mythos testing statistics cited. The podcast mention of 'Anthropic's Mythos' fixing Firefox bugs is a different use context and doesn't bear on this definition."
+      "reason": "No source material touches on evaluation gaming, model self-awareness during testing, or related Mythos findings. Definition remains valid as written."
     },
     "exploit": {
-      "lastReviewedAt": "2026-05-01T19:10:07.910Z",
+      "lastReviewedAt": "2026-06-04T20:04:46.217Z",
       "status": "keep",
-      "reason": "No source material addresses exploits or the Claude Mythos exploit-writing capability described in the definition."
+      "reason": "No source material covers exploits, vulnerability exploitation, or related cybersecurity capabilities. Definition remains valid as written."
     },
     "exploit-chain": {
-      "lastReviewedAt": "2026-05-01T19:10:07.910Z",
+      "lastReviewedAt": "2026-06-04T20:04:46.217Z",
       "status": "keep",
-      "reason": "No source material addresses exploit chains or autonomous vulnerability chaining capabilities."
+      "reason": "No source material addresses exploit chains or multi-vulnerability attack sequences. Definition remains valid as written."
     },
     "feature-flag": {
-      "lastReviewedAt": "2026-05-01T19:10:07.910Z",
+      "lastReviewedAt": "2026-06-04T20:04:46.217Z",
       "status": "keep",
-      "reason": "No source material addresses feature flags or the Claude Code leak referenced in the definition."
+      "reason": "No source material discusses feature flags or the Claude Code leak. Definition remains valid as written."
     },
     "fine-tuning": {
-      "lastReviewedAt": "2026-05-01T19:10:07.910Z",
+      "lastReviewedAt": "2026-06-04T20:04:46.217Z",
       "status": "keep",
-      "reason": "The Granite 4.1 article describes supervised fine-tuning in technical detail (LLM-as-Judge, multi-stage RL pipeline) but does not contradict or materially change the existing concise definition. The definition accurately captures the concept."
+      "reason": "No source material addresses fine-tuning methodology or practice. Definition remains valid as written."
     },
     "frontier-model": {
-      "lastReviewedAt": "2026-05-01T19:10:07.910Z",
+      "lastReviewedAt": "2026-06-04T20:04:46.217Z",
       "status": "keep",
-      "reason": "No source material directly addresses the frontier model definition or contradicts its characterisation."
+      "reason": "No source material provides new information about frontier models or their safety implications beyond what is already captured. Definition remains valid as written."
     },
     "frontier-red-team": {
-      "lastReviewedAt": "2026-05-03T18:58:28.223Z",
+      "lastReviewedAt": "2026-06-04T20:04:46.217Z",
       "status": "keep",
-      "reason": "No source material addresses Anthropic's Frontier Red Team. Definition remains accurate based on prior knowledge; no update warranted."
+      "reason": "No source material discusses red teaming or Anthropic's Frontier Red Team. Definition remains valid as written."
     },
     "gemini": {
-      "lastReviewedAt": "2026-05-03T18:58:28.223Z",
-      "status": "keep",
-      "reason": "No source material provides updated information about Gemini's capabilities or context window. Definition can be retained as-is."
+      "lastReviewedAt": "2026-06-04T20:04:46.217Z",
+      "status": "insufficient_evidence",
+      "reason": "No source material provides updated specifics about Gemini's capabilities, context window, or integrations that would justify a rewrite. The existing definition is brief and no contradicting or enriching detail appears in the sources."
     },
     "gemma-4": {
-      "lastReviewedAt": "2026-05-03T18:58:28.223Z",
-      "status": "insufficient_evidence",
-      "reason": "No source material confirms or contradicts the Gemma 4 definition. Cannot verify the April 2, 2026 release date, Apache 2.0 licensing, or MoE architecture claims from provided excerpts."
+      "lastReviewedAt": "2026-06-04T20:04:46.217Z",
+      "status": "keep",
+      "reason": "No source material references Gemma 4 or its specifications. Definition remains valid as written."
     },
     "general-availability": {
-      "lastReviewedAt": "2026-05-03T18:58:28.223Z",
+      "lastReviewedAt": "2026-06-04T20:04:46.217Z",
       "status": "keep",
-      "reason": "Conceptual definition with no time-sensitive claims. No source material challenges it."
+      "reason": "No source material discusses general availability as a release concept. Definition remains valid as written."
     },
     "github-copilot": {
       "lastReviewedAt": "2026-05-03T18:58:28.223Z",

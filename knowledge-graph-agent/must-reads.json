@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generatedAt": "2026-06-03T20:54:34.002Z",
-    "unreadCount": 19,
-    "totalCount": 19,
+    "generatedAt": "2026-06-04T20:04:46.217Z",
+    "unreadCount": 20,
+    "totalCount": 20,
     "note": "Lexi's must-reads — articles she flags as worth Nicole reading in full. Editorial signal, not news feed. Set status to 'read' or 'dismissed' via mark-must-reads.mjs."
   },
   "entries": [
@@ -326,6 +326,23 @@
       ],
       "novelTermsInArticle": 2,
       "flaggedAt": "2026-06-03T20:54:34.002Z",
+      "status": "unread"
+    },
+    {
+      "id": "edb5b3da2f4b3a89",
+      "title": "An Interview with Microsoft CEO Satya Nadella About Finding Core Competencies",
+      "url": "https://stratechery.com/2026/an-interview-with-microsoft-ceo-satya-nadella-about-finding-core-competencies/",
+      "source": "Stratechery",
+      "publishedAt": "Thu, 04 Jun 2026 10:00:00 +0000",
+      "summary": "A Stratechery interview with Microsoft CEO Satya Nadella covering Microsoft's competitive repositioning, the MAI model line, the OpenAI partnership, Project Solara, and the conceptual framing of AI as a 'learning machine' and 'hill-climbing machine' enabling firms to build their own token capital infrastructure. Key novel framings: the multi-tenant learning system, token capital as a new firm resource, and clean-lineage model development.",
+      "priority": 2,
+      "reason": "A rare primary-source interview in which a major AI platform CEO articulates a new conceptual model — 'token capital,' 'hill-climbing machines,' clean-lineage models — for how firms should think about AI as a factor of production. More substantive than a product-launch interview; Nadella is visibly working out a new strategic framework in real time.",
+      "clusters": [
+        "business",
+        "models"
+      ],
+      "novelTermsInArticle": 3,
+      "flaggedAt": "2026-06-04T20:04:46.217Z",
       "status": "unread"
     }
   ]

@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generatedAt": "2026-06-03T20:54:34.002Z",
-    "unreadCount": 17,
-    "totalCount": 165,
+    "generatedAt": "2026-06-04T20:04:46.217Z",
+    "unreadCount": 18,
+    "totalCount": 166,
     "note": "Notes for Nicole — Lexi's manager channel (spec §6). Mandatory entry types fire when their triggering condition is met; discretionary entries are observations Lexi thinks Nicole should see. Set status to 'read', 'actioned', or 'dismissed' as appropriate."
   },
   "entries": [
@@ -4444,6 +4444,26 @@
       },
       "suggestedAction": "Cross-check the sources for shared authors or cross-citation. If sources are tightly coupled (same publication network, same author byline), treat as one source for promotion-eligibility purposes.",
       "source": "auditor"
+    },
+    {
+      "id": "2063900eed69c289",
+      "type": "contested_cluster_omission",
+      "writtenAt": "2026-06-04T20:04:46.217Z",
+      "runId": "5728ccbd-aa5e-48ed-bfd7-98a167b07960",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Contested cluster term added without naming the contestation: 'Clean Lineage'",
+      "details": "The term 'Clean Lineage' matches the contested-cluster pattern 'responsible AI' (per spec §10), but the working definition does not appear to acknowledge that the term is contested or that different camps use it differently. Per spec §6 entry type 5, this requires review before any move toward graph promotion.",
+      "evidence": {
+        "entryId": "clean-lineage",
+        "label": "Clean Lineage",
+        "fullName": "Clean Lineage (Model Training Provenance)",
+        "matchedContestedTerm": "responsible AI",
+        "workingDef": "A term used in the Nadella interview to describe MAI models built from scratch without distillation from other frontier models or use of other models as teachers — establishing clear, unencumbered provenance for training data and methodology. The concept is linked to IP defensibility and the desire to operate independently of external model providers. Distinct from 'open-weight' concerns; about training-process independence rather than weight availability.",
+        "sourceUrl": "https://stratechery.com/2026/an-interview-with-microsoft-ceo-satya-nadella-about-finding-core-competencies/",
+        "sourceLabel": "Stratechery"
+      },
+      "suggestedAction": "Either revise the working definition to name the contestation (who uses it to mean what), or confirm this term doesn't warrant the contested treatment in this case."
     }
   ]
 }

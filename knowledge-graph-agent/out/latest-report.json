@@ -1,66 +1,74 @@
 {
-  "generatedAt": "2026-06-03T20:54:34.002Z",
+  "generatedAt": "2026-06-04T20:04:46.217Z",
   "model": "claude-sonnet-4-6",
   "sourcesConfigured": 15,
   "articlesConsidered": [
     {
-      "id": "bfb45dcad644b624",
+      "id": "8929ed18dbbc30cf",
       "source": "OpenAI News",
-      "title": "Introducing new capabilities to GPT-Rosalind",
-      "url": "https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind",
-      "publishedAt": "Wed, 03 Jun 2026 13:15:00 GMT"
+      "title": "How Wasmer used Codex to build a Node.js runtime for the edge",
+      "url": "https://openai.com/index/wasmer",
+      "publishedAt": "Wed, 03 Jun 2026 12:00:00 GMT"
     },
     {
-      "id": "76912b853c1db4a9",
-      "source": "Google AI Blog",
-      "title": "5 ways Google Search can level up your thrift and vintage shopping",
-      "url": "https://blog.google/products-and-platforms/products/search/thrifting-tips/",
-      "publishedAt": "Wed, 03 Jun 2026 13:00:00 +0000"
-    },
-    {
-      "id": "bc0be78cdc6b163d",
+      "id": "3c2e7a73efc4745c",
       "source": "Hugging Face Blog",
-      "title": "Direct Preference Optimization Beyond Chatbots",
-      "url": "https://huggingface.co/blog/Dharma-AI/direct-preference-optimization-beyond-chatbots",
-      "publishedAt": "Wed, 03 Jun 2026 12:55:11 GMT"
+      "title": "Nemotron 3.5 Content Safety: Customizable Multimodal Safety for Global Enterprise AI",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-3-5-content-safety",
+      "publishedAt": "Thu, 04 Jun 2026 18:57:45 GMT"
     },
     {
-      "id": "08d03e5410e959c8",
+      "id": "edb5b3da2f4b3a89",
       "source": "Stratechery",
-      "title": "The Nvidia AI PC, Project Solara, Microsoft AI",
-      "url": "https://stratechery.com/2026/the-nvidia-ai-pc-project-solara-microsoft-ai/",
-      "publishedAt": "Wed, 03 Jun 2026 10:00:00 +0000"
+      "title": "An Interview with Microsoft CEO Satya Nadella About Finding Core Competencies",
+      "url": "https://stratechery.com/2026/an-interview-with-microsoft-ceo-satya-nadella-about-finding-core-competencies/",
+      "publishedAt": "Thu, 04 Jun 2026 10:00:00 +0000"
     },
     {
-      "id": "29c7b211e523b246",
+      "id": "c499c073f095544e",
       "source": "Simon Willison's Weblog",
-      "title": "Uber Caps Usage of AI Tools Like Claude Code to Manage Costs",
-      "url": "https://simonwillison.net/2026/Jun/3/uber-caps-usage/#atom-everything",
-      "publishedAt": "2026-06-03T12:01:27+00:00"
+      "title": "A quote from Emanuel Maiberg, 404 Media",
+      "url": "https://simonwillison.net/2026/Jun/4/a-slightly-different-version/#atom-everything",
+      "publishedAt": "2026-06-04T16:38:29+00:00"
     },
     {
-      "id": "49f44c80e766fb4b",
-      "source": "Anthropic Newsroom",
-      "title": "Introducing the Services Track and Partner Hub of the Claude Partner Network",
-      "url": "https://www.anthropic.com/news/services-track-partner-hub",
-      "publishedAt": null
+      "id": "9b2993a562b7da8c",
+      "source": "The Verge — AI",
+      "title": "Kevin O’Leary agrees to downsize massive Utah data center",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/943234/kevin-oleary-agrees-to-downsize-massive-utah-data-center",
+      "publishedAt": "2026-06-04T14:38:04-04:00"
+    },
+    {
+      "id": "8e0e82e96621194f",
+      "source": "Harvard Business Review",
+      "title": "Your Company Needs an Energy Strategy for AI’s Next Phase",
+      "url": "https://hbr.org/2026/06/your-company-needs-an-energy-strategy-for-ais-next-phase",
+      "publishedAt": "2026-06-04T12:15:31Z"
     }
   ],
   "harvestedTerms": [
     {
       "article": {
-        "title": "5 ways Google Search can level up your thrift and vintage shopping",
-        "url": "https://blog.google/products-and-platforms/products/search/thrifting-tips/"
+        "title": "Nemotron 3.5 Content Safety: Customizable Multimodal Safety for Global Enterprise AI",
+        "url": "https://huggingface.co/blog/nvidia/nemotron-3-5-content-safety"
       },
-      "summary": "A Google blog post showcasing five AI-powered shopping features in Google Search for thrift and vintage shoppers: AI Mode, Google Lens, Circle to Search, Virtual Try-On, and Lens-based resale pricing. Primarily a consumer tips listicle with no substantive new terminology or framing.",
+      "summary": "Nvidia releases Nemotron 3.5 Content Safety, a multimodal, multilingual enterprise safety classifier built on Gemma 3 4B with custom policy enforcement, auditable reasoning traces (THINK mode), and an open safety dataset. The article is primarily a product announcement but introduces several technically distinct patterns in AI safety infrastructure.",
       "longlistAdditions": [
         {
-          "id": "circle-to-search",
-          "label": "Circle to Search"
+          "id": "content-safety-model",
+          "label": "Content Safety Model"
         },
         {
-          "id": "virtual-try-on",
-          "label": "Virtual Try-On"
+          "id": "custom-policy-enforcement",
+          "label": "Custom Policy Enforcement"
+        },
+        {
+          "id": "safety-reasoning-trace",
+          "label": "Safety Reasoning Trace"
+        },
+        {
+          "id": "zero-shot-multilingual-safety",
+          "label": "Zero-Shot Multilingual Safety"
         }
       ],
       "longlistUpdates": [],
@@ -69,50 +77,22 @@
     },
     {
       "article": {
-        "title": "Direct Preference Optimization Beyond Chatbots",
-        "url": "https://huggingface.co/blog/Dharma-AI/direct-preference-optimization-beyond-chatbots"
+        "title": "An Interview with Microsoft CEO Satya Nadella About Finding Core Competencies",
+        "url": "https://stratechery.com/2026/an-interview-with-microsoft-ceo-satya-nadella-about-finding-core-competencies/"
       },
-      "summary": "A technical blog post from Dharma-AI describing how Direct Preference Optimization (DPO) can be applied beyond chat alignment to fix a specific structural failure mode — text degeneration loops — in a structured OCR task. The article demonstrates that DPO using a model's own degenerate outputs as rejection pairs consistently reduces degeneration rates across five model families, where SFT alone cannot. Key conceptual contributions include the 'distribution attractor' explanation of degeneration, the ceiling effect of SFT on failure modes, and a methodology for constructing preference pairs without human annotation.",
+      "summary": "A Stratechery interview with Microsoft CEO Satya Nadella covering Microsoft's competitive repositioning, the MAI model line, the OpenAI partnership, Project Solara, and the conceptual framing of AI as a 'learning machine' and 'hill-climbing machine' enabling firms to build their own token capital infrastructure. Key novel framings: the multi-tenant learning system, token capital as a new firm resource, and clean-lineage model development.",
       "longlistAdditions": [
         {
-          "id": "dpo",
-          "label": "Direct Preference Optimization"
+          "id": "hill-climbing-machine",
+          "label": "Hill-Climbing Machine"
         },
         {
-          "id": "text-degeneration",
-          "label": "Text Degeneration"
+          "id": "token-capital",
+          "label": "Token Capital"
         },
         {
-          "id": "self-generated-rejection-pairs",
-          "label": "Self-Generated Rejection Pairs"
-        },
-        {
-          "id": "sft-ceiling",
-          "label": "SFT Ceiling"
-        }
-      ],
-      "longlistUpdates": [],
-      "rejections": [],
-      "proposalsQueued": [],
-      "mustReadFlagged": {
-        "priority": 2,
-        "reason": "A technically careful, concept-rich article that reframes DPO as a general-purpose failure-mode correction tool, not just a chat-alignment technique. The mechanistic explanation of text degeneration as distributional attractor geometry — and the demonstration that SFT has a structural ceiling on fixing it — is the kind of precise conceptual contribution that reshapes how practitioners think about training pipelines."
-      }
-    },
-    {
-      "article": {
-        "title": "The Nvidia AI PC, Project Solara, Microsoft AI",
-        "url": "https://stratechery.com/2026/the-nvidia-ai-pc-project-solara-microsoft-ai/"
-      },
-      "summary": "Ben Thompson's Stratechery analysis of Microsoft Build covers three interrelated developments: the Nvidia RTX Spark AI PC chip, Project Solara (Microsoft's Android-based agent-native device platform), and Nadella's broader AI strategy. Thompson argues the RTX Spark is misaligned with the agentic era's actual compute needs (strong CPU + cloud inference), while Project Solara represents a more interesting bet on purpose-built agent hardware. The piece is primarily strategic framing and industry analysis rather than technical deep-dive.",
-      "longlistAdditions": [
-        {
-          "id": "rtx-spark",
-          "label": "RTX Spark"
-        },
-        {
-          "id": "unmetered-intelligence",
-          "label": "Unmetered Intelligence"
+          "id": "clean-lineage",
+          "label": "Clean Lineage"
         }
       ],
       "longlistUpdates": [
@@ -120,51 +100,59 @@
           "id": "project-solara",
           "label": "Project Solara",
           "sourceAdded": true,
-          "sourceCount": 2,
+          "sourceCount": 3,
           "independentSourceCount": 2
-        },
-        {
-          "id": "agentic-era",
-          "label": "Agentic Era",
-          "sourceAdded": true,
-          "sourceCount": 5,
-          "independentSourceCount": 4
         }
       ],
       "rejections": [],
       "proposalsQueued": [],
       "mustReadFlagged": {
         "priority": 2,
-        "reason": "Thompson's analysis offers a clean, contrarian periodization argument: that the 'agentic era' exposes a mismatch in how AI PC hardware is being designed, and that Microsoft's most interesting device bet runs on Android, not Windows. The piece is a good example of strategic tech analysis using terminology debates (ChatGPT era → reasoning era → agentic era) as genuine analytical tools rather than marketing."
+        "reason": "A rare primary-source interview in which a major AI platform CEO articulates a new conceptual model — 'token capital,' 'hill-climbing machines,' clean-lineage models — for how firms should think about AI as a factor of production. More substantive than a product-launch interview; Nadella is visibly working out a new strategic framework in real time."
       }
     },
     {
       "article": {
-        "title": "Uber Caps Usage of AI Tools Like Claude Code to Manage Costs",
-        "url": "https://simonwillison.net/2026/Jun/3/uber-caps-usage/#atom-everything"
+        "title": "A quote from Emanuel Maiberg, 404 Media",
+        "url": "https://simonwillison.net/2026/Jun/4/a-slightly-different-version/#atom-everything"
       },
-      "summary": "Simon Willison comments on Uber capping employee AI tool spending at $1,500/month per coding agent, contextualising the cost policy against engineer compensation and his own token usage patterns. The piece is a short link-blog post with light editorial commentary.",
+      "summary": "A short blog post quoting Emanuel Maiberg (404 Media) on Google quietly asking to retract a public statement affirming 'humans in the loop' in AI systems. The substance is thin — it's a single quoted observation with minimal surrounding analysis — but the underlying story points to a meaningful tension between public AI safety messaging and corporate backpedaling on human oversight commitments.",
       "longlistAdditions": [
         {
-          "id": "token-spending-cap",
-          "label": "Token Spending Cap"
-        },
+          "id": "statement-retraction",
+          "label": "Statement Retraction"
+        }
+      ],
+      "longlistUpdates": [],
+      "rejections": [],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "Kevin O’Leary agrees to downsize massive Utah data center",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/943234/kevin-oleary-agrees-to-downsize-massive-utah-data-center"
+      },
+      "summary": "Kevin O'Leary agrees to reduce his planned 40,000-acre Project Stratos data center in Utah by roughly half following community and political pressure, though the remaining ~20,000 acres still exceeds the size of Manhattan. The article briefly surfaces concerns about energy usage, water consumption, and environmental impact of large-scale AI infrastructure.",
+      "longlistAdditions": [
         {
-          "id": "tokenmaxxing",
-          "label": "Tokenmaxxing"
-        },
-        {
-          "id": "coding-agent",
-          "label": "Coding Agent"
+          "id": "project-stratos-oleary",
+          "label": "Project Stratos"
         }
       ],
       "longlistUpdates": [
         {
-          "id": "product-market-fit",
-          "label": "Product-Market Fit",
+          "id": "hyperscale-data-center",
+          "label": "Hyperscale Data Center",
           "sourceAdded": true,
           "sourceCount": 4,
-          "independentSourceCount": 1
+          "independentSourceCount": 2
+        },
+        {
+          "id": "ai-energy-demand",
+          "label": "AI Energy Demand",
+          "sourceAdded": true,
+          "sourceCount": 3,
+          "independentSourceCount": 2
         }
       ],
       "rejections": [],
@@ -172,33 +160,31 @@
     },
     {
       "article": {
-        "title": "Introducing the Services Track and Partner Hub of the Claude Partner Network",
-        "url": "https://www.anthropic.com/news/services-track-partner-hub"
+        "title": "Your Company Needs an Energy Strategy for AI’s Next Phase",
+        "url": "https://hbr.org/2026/06/your-company-needs-an-energy-strategy-for-ais-next-phase"
       },
-      "summary": "Anthropic announces the Services Track and Partner Hub as expansions to the Claude Partner Network, formalising a tiered partner certification program for enterprise AI integrators. The article describes a structured ecosystem for professional services firms deploying Claude, including tier requirements, a partner directory, and MCP integration. The content is primarily a product/program announcement with ecosystem-building implications.",
-      "longlistAdditions": [
-        {
-          "id": "services-track-anthropic",
-          "label": "Services Track"
-        },
-        {
-          "id": "claude-certification",
-          "label": "Claude Certification"
-        }
-      ],
+      "summary": "HBR article arguing that the key AI competitive constraint is shifting from model access and GPUs to electricity and energy infrastructure, framing energy strategy as the next frontier for enterprise AI.",
+      "longlistAdditions": [],
       "longlistUpdates": [
         {
-          "id": "claude-partner-network",
-          "label": "Claude Partner Network",
+          "id": "ai-energy-demand",
+          "label": "AI Energy Demand",
           "sourceAdded": true,
-          "sourceCount": 2,
-          "independentSourceCount": 1
+          "sourceCount": 4,
+          "independentSourceCount": 3
         },
         {
-          "id": "deployment-company",
-          "label": "Deployment Company",
+          "id": "hyperscale-data-center",
+          "label": "Hyperscale Data Center",
           "sourceAdded": true,
-          "sourceCount": 3,
+          "sourceCount": 5,
+          "independentSourceCount": 3
+        },
+        {
+          "id": "inference-shift",
+          "label": "Inference Shift",
+          "sourceAdded": true,
+          "sourceCount": 4,
           "independentSourceCount": 2
         }
       ],
@@ -208,54 +194,54 @@
   ],
   "definitionReviews": [
     {
-      "id": "deep-research",
-      "status": "insufficient_evidence",
-      "reason": "No sources address deep research agentic modes. Definition stands as written."
-    },
-    {
-      "id": "deepseek",
-      "status": "insufficient_evidence",
-      "reason": "No sources mention DeepSeek or provide updated information about the lab or its models."
-    },
-    {
-      "id": "delegation",
-      "status": "insufficient_evidence",
-      "reason": "No sources address the delegation paradigm for AI agents in a way that would update this definition."
-    },
-    {
-      "id": "deprecated",
-      "status": "insufficient_evidence",
-      "reason": "No sources discuss deprecation of AI models or APIs."
-    },
-    {
-      "id": "devin",
-      "status": "insufficient_evidence",
-      "reason": "The Uber/Claude Code source touches on agentic coding tools but does not provide new information about Devin specifically."
-    },
-    {
-      "id": "distribution-shift",
-      "status": "insufficient_evidence",
-      "reason": "No sources address distribution shift or related ML reliability concepts."
-    },
-    {
-      "id": "edge-ai",
+      "id": "evaluation-gaming",
       "status": "keep",
-      "reason": "The Stratechery source confirms Nvidia's RTX Spark chip (N1X) with 128GB RAM is arriving for PCs in fall 2026, consistent with the edge-AI trend described. However, the definition already captures this trend and the existing Gemma 4 smartphone example is sufficient. No material update warranted."
+      "reason": "No source material touches on evaluation gaming, model self-awareness during testing, or related Mythos findings. Definition remains valid as written."
     },
     {
-      "id": "embeddings",
-      "status": "insufficient_evidence",
-      "reason": "No sources address embeddings or vector representations."
+      "id": "exploit",
+      "status": "keep",
+      "reason": "No source material covers exploits, vulnerability exploitation, or related cybersecurity capabilities. Definition remains valid as written."
     },
     {
-      "id": "emergent-capability",
-      "status": "insufficient_evidence",
-      "reason": "No sources discuss emergent capabilities or the cited Anthropic/Mythos Preview example."
+      "id": "exploit-chain",
+      "status": "keep",
+      "reason": "No source material addresses exploit chains or multi-vulnerability attack sequences. Definition remains valid as written."
     },
     {
-      "id": "evals",
+      "id": "feature-flag",
+      "status": "keep",
+      "reason": "No source material discusses feature flags or the Claude Code leak. Definition remains valid as written."
+    },
+    {
+      "id": "fine-tuning",
+      "status": "keep",
+      "reason": "No source material addresses fine-tuning methodology or practice. Definition remains valid as written."
+    },
+    {
+      "id": "frontier-model",
+      "status": "keep",
+      "reason": "No source material provides new information about frontier models or their safety implications beyond what is already captured. Definition remains valid as written."
+    },
+    {
+      "id": "frontier-red-team",
+      "status": "keep",
+      "reason": "No source material discusses red teaming or Anthropic's Frontier Red Team. Definition remains valid as written."
+    },
+    {
+      "id": "gemini",
       "status": "insufficient_evidence",
-      "reason": "No sources address evaluation methodology for AI systems."
+      "reason": "No source material provides updated specifics about Gemini's capabilities, context window, or integrations that would justify a rewrite. The existing definition is brief and no contradicting or enriching detail appears in the sources."
+    },
+    {
+      "id": "gemma-4",
+      "status": "keep",
+      "reason": "No source material references Gemma 4 or its specifications. Definition remains valid as written."
+    },
+    {
+      "id": "general-availability",
+      "status": "keep",
+      "reason": "No source material discusses general availability as a release concept. Definition remains valid as written."
     }
   ],
   "notes": []

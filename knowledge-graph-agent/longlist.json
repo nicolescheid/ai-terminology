@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-06-03T20:54:34.002Z",
-    "entryCount": 198,
+    "generatedAt": "2026-06-04T20:04:46.217Z",
+    "entryCount": 207,
     "note": "Lexi-managed Tier 2 longlist — terms under observation, awaiting evidence to support promotion to the graph (Tier 1)."
   },
   "entries": [
@@ -2996,12 +2996,28 @@
           "sourceLabel": "Stratechery",
           "publishedAt": "Wed, 27 May 2026 10:00:00 +0000",
           "firstSeen": "2026-05-29T20:24:10.894Z"
+        },
+        {
+          "url": "https://www.theverge.com/ai-artificial-intelligence/943234/kevin-oleary-agrees-to-downsize-massive-utah-data-center",
+          "domain": "theverge.com",
+          "title": "Kevin O’Leary agrees to downsize massive Utah data center",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-06-04T14:38:04-04:00",
+          "firstSeen": "2026-06-04T20:04:46.217Z"
+        },
+        {
+          "url": "https://hbr.org/2026/06/your-company-needs-an-energy-strategy-for-ais-next-phase",
+          "domain": "hbr.org",
+          "title": "Your Company Needs an Energy Strategy for AI’s Next Phase",
+          "sourceLabel": "Harvard Business Review",
+          "publishedAt": "2026-06-04T12:15:31Z",
+          "firstSeen": "2026-06-04T20:04:46.217Z"
         }
       ],
-      "sourceCount": 3,
-      "independentSourceCount": 2,
+      "sourceCount": 5,
+      "independentSourceCount": 3,
       "dateFirstSeen": "2026-05-11T07:07:01.775Z",
-      "dateLastSeen": "2026-05-29T20:24:10.894Z",
+      "dateLastSeen": "2026-06-04T20:04:46.217Z",
       "sz": 14,
       "proposalReason": "The article materially uses 'hyperscale data center' (e.g., 'planned hyperscale data center in Box Elder County') as a distinct category of AI infrastructure with policy and environmental stakes — a term with lasting relevance to AI infrastructure discourse."
     },
@@ -3036,12 +3052,28 @@
           "sourceLabel": "Stratechery",
           "publishedAt": "Mon, 18 May 2026 10:00:00 +0000",
           "firstSeen": "2026-05-18T19:43:41.150Z"
+        },
+        {
+          "url": "https://www.theverge.com/ai-artificial-intelligence/943234/kevin-oleary-agrees-to-downsize-massive-utah-data-center",
+          "domain": "theverge.com",
+          "title": "Kevin O’Leary agrees to downsize massive Utah data center",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-06-04T14:38:04-04:00",
+          "firstSeen": "2026-06-04T20:04:46.217Z"
+        },
+        {
+          "url": "https://hbr.org/2026/06/your-company-needs-an-energy-strategy-for-ais-next-phase",
+          "domain": "hbr.org",
+          "title": "Your Company Needs an Energy Strategy for AI’s Next Phase",
+          "sourceLabel": "Harvard Business Review",
+          "publishedAt": "2026-06-04T12:15:31Z",
+          "firstSeen": "2026-06-04T20:04:46.217Z"
         }
       ],
-      "sourceCount": 2,
-      "independentSourceCount": 2,
+      "sourceCount": 4,
+      "independentSourceCount": 3,
       "dateFirstSeen": "2026-05-11T07:07:01.775Z",
-      "dateLastSeen": "2026-05-18T19:43:41.150Z",
+      "dateLastSeen": "2026-06-04T20:04:46.217Z",
       "sz": 14,
       "fullName": "AI Energy Demand (Data Center Power Consumption)",
       "proposalReason": "The article's central throughline — from Pew survey data to Senate letters to the EIA to a 9-gigawatt Utah approval — consistently names AI energy demand as the organising policy and community concern."
@@ -3460,12 +3492,20 @@
           "sourceLabel": "Stratechery",
           "publishedAt": "Fri, 29 May 2026 17:00:00 +0000",
           "firstSeen": "2026-05-30T19:13:38.586Z"
+        },
+        {
+          "url": "https://hbr.org/2026/06/your-company-needs-an-energy-strategy-for-ais-next-phase",
+          "domain": "hbr.org",
+          "title": "Your Company Needs an Energy Strategy for AI’s Next Phase",
+          "sourceLabel": "Harvard Business Review",
+          "publishedAt": "2026-06-04T12:15:31Z",
+          "firstSeen": "2026-06-04T20:04:46.217Z"
         }
       ],
-      "sourceCount": 3,
-      "independentSourceCount": 1,
+      "sourceCount": 4,
+      "independentSourceCount": 2,
       "dateFirstSeen": "2026-05-11T19:45:39.014Z",
-      "dateLastSeen": "2026-05-30T19:13:38.586Z",
+      "dateLastSeen": "2026-06-04T20:04:46.217Z",
       "sz": 14,
       "fullName": "The Inference Shift",
       "proposalReason": "The article's own coinage and central thesis — worth tracking to see if it gains independent adoption as a framing term in the infrastructure and AI policy discourse."
@@ -6534,12 +6574,20 @@
           "sourceLabel": "Stratechery",
           "publishedAt": "Wed, 03 Jun 2026 10:00:00 +0000",
           "firstSeen": "2026-06-03T20:54:34.002Z"
+        },
+        {
+          "url": "https://stratechery.com/2026/an-interview-with-microsoft-ceo-satya-nadella-about-finding-core-competencies/",
+          "domain": "stratechery.com",
+          "title": "An Interview with Microsoft CEO Satya Nadella About Finding Core Competencies",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Thu, 04 Jun 2026 10:00:00 +0000",
+          "firstSeen": "2026-06-04T20:04:46.217Z"
         }
       ],
-      "sourceCount": 2,
+      "sourceCount": 3,
       "independentSourceCount": 2,
       "dateFirstSeen": "2026-06-02T20:47:42.877Z",
-      "dateLastSeen": "2026-06-03T20:54:34.002Z",
+      "dateLastSeen": "2026-06-04T20:04:46.217Z",
       "sz": 14,
       "fullName": "Project Solara (Microsoft Agent OS)",
       "nodeType": "product",
@@ -7130,6 +7178,293 @@
       "fullName": "Claude Certification (Anthropic Partner Academy)",
       "nodeType": "product",
       "proposalReason": "New term describing a specific credentialling mechanism with lasting relevance to how enterprise AI deployment expertise is formally recognised and measured."
+    },
+    {
+      "id": "content-safety-model",
+      "label": "Content Safety Model",
+      "workingDef": "A dedicated model or model family fine-tuned specifically to classify AI inputs and outputs against a safety taxonomy, producing verdicts such as safe/unsafe along with optional category labels and reasoning traces. Deployed inline in production AI pipelines as a guardrail layer distinct from the primary generation model. Nemotron 3.5 Content Safety (Nvidia, 2026) exemplifies the pattern: a 4B-parameter LoRA-adapted classifier that accepts multimodal, multilingual inputs and returns binary or categorical safety verdicts with optional chain-of-thought reasoning.",
+      "clusters": [
+        "safety",
+        "technical"
+      ],
+      "suggestedRels": [
+        "guardrails",
+        "multimodal",
+        "safety",
+        "structured-output",
+        "evals"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/nvidia/nemotron-3-5-content-safety",
+          "domain": "huggingface.co",
+          "title": "Nemotron 3.5 Content Safety: Customizable Multimodal Safety for Global Enterprise AI",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Thu, 04 Jun 2026 18:57:45 GMT",
+          "firstSeen": "2026-06-04T20:04:46.217Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-04T20:04:46.217Z",
+      "dateLastSeen": "2026-06-04T20:04:46.217Z",
+      "sz": 14,
+      "fullName": "Content Safety Model (LLM Guard / Classifier)",
+      "proposalReason": "A new term not in the graph; the article materially defines this architectural pattern as a distinct product category."
+    },
+    {
+      "id": "custom-policy-enforcement",
+      "label": "Custom Policy Enforcement",
+      "workingDef": "A safety classification capability in which a model accepts a domain-specific policy specification at inference time — expressed in natural language — and reasons over that policy when producing its verdict, rather than applying a fixed universal taxonomy. Enables organisations to suppress irrelevant categories, inject proprietary risk categories, and adapt safety classification to vertical-specific regulatory contexts without retraining.",
+      "clusters": [
+        "safety",
+        "business"
+      ],
+      "suggestedRels": [
+        "guardrails",
+        "structured-output",
+        "operator",
+        "inference",
+        "behavioral-audit"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/nvidia/nemotron-3-5-content-safety",
+          "domain": "huggingface.co",
+          "title": "Nemotron 3.5 Content Safety: Customizable Multimodal Safety for Global Enterprise AI",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Thu, 04 Jun 2026 18:57:45 GMT",
+          "firstSeen": "2026-06-04T20:04:46.217Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-04T20:04:46.217Z",
+      "dateLastSeen": "2026-06-04T20:04:46.217Z",
+      "sz": 14,
+      "fullName": "Custom Policy Enforcement (Runtime Safety Policy)",
+      "proposalReason": "A new and architecturally significant pattern: policy-as-input rather than policy-as-training-data. Tracks how enterprise safety systems are shifting toward runtime configurability."
+    },
+    {
+      "id": "safety-reasoning-trace",
+      "label": "Safety Reasoning Trace",
+      "workingDef": "A step-by-step chain-of-thought output produced by a content safety classifier alongside its verdict, documenting which policy categories were triggered and why. Serves compliance, audit logging, and human review purposes. Distinct from general chain-of-thought reasoning in that it is purpose-built for accountability in content moderation workflows, where regulated industries require documented justification for decisions. In Nemotron 3.5, exposed via an optional THINK mode that can be disabled when latency constraints are primary.",
+      "clusters": [
+        "safety",
+        "technical"
+      ],
+      "suggestedRels": [
+        "guardrails",
+        "interpretability",
+        "human-in-the-loop",
+        "behavioral-audit",
+        "structured-output"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/nvidia/nemotron-3-5-content-safety",
+          "domain": "huggingface.co",
+          "title": "Nemotron 3.5 Content Safety: Customizable Multimodal Safety for Global Enterprise AI",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Thu, 04 Jun 2026 18:57:45 GMT",
+          "firstSeen": "2026-06-04T20:04:46.217Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-04T20:04:46.217Z",
+      "dateLastSeen": "2026-06-04T20:04:46.217Z",
+      "sz": 14,
+      "fullName": "Safety Reasoning Trace (Auditable Safety Verdict)",
+      "proposalReason": "A new term capturing an emerging pattern — reasoning-as-accountability for safety systems — that is architecturally distinct from reasoning for capability."
+    },
+    {
+      "id": "zero-shot-multilingual-safety",
+      "label": "Zero-Shot Multilingual Safety",
+      "workingDef": "The use of a multilingual base model's inherent cross-lingual generalisation to extend safety classification to languages not explicitly present in the safety fine-tuning dataset. Contrasted with per-language fine-tuning: the safety adapter is trained on a finite set of languages, while zero-shot coverage of remaining languages relies on the base model's latent multilingual representations. Nemotron 3.5 Content Safety (2026) explicitly describes coverage of ~140 languages via zero-shot transfer from Gemma 3, beyond its 12 explicitly trained languages.",
+      "clusters": [
+        "safety",
+        "technical"
+      ],
+      "suggestedRels": [
+        "guardrails",
+        "multimodal",
+        "fine-tuning",
+        "open-weight",
+        "grounding"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/nvidia/nemotron-3-5-content-safety",
+          "domain": "huggingface.co",
+          "title": "Nemotron 3.5 Content Safety: Customizable Multimodal Safety for Global Enterprise AI",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Thu, 04 Jun 2026 18:57:45 GMT",
+          "firstSeen": "2026-06-04T20:04:46.217Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-04T20:04:46.217Z",
+      "dateLastSeen": "2026-06-04T20:04:46.217Z",
+      "sz": 14,
+      "fullName": "Zero-Shot Multilingual Safety (Base-Model Transfer for Safety Coverage)",
+      "proposalReason": "A new term capturing a deployment pattern with real enterprise implications — and a distinct limitation — for global AI safety coverage."
+    },
+    {
+      "id": "hill-climbing-machine",
+      "label": "Hill-Climbing Machine",
+      "workingDef": "A framing introduced by Microsoft CEO Satya Nadella at Build 2026 for the kind of AI capability a company needs to build internally — a system that continuously optimises ('hill-climbs') on the firm's own data and goals. Nadella positions Microsoft's platform ambition as enabling every enterprise to have its own hill-climbing machine, analogous to how the cloud let every firm run its own compute. The concept is closely tied to his notion of 'token capital' as a new factor of production alongside human capital.",
+      "clusters": [
+        "business",
+        "models"
+      ],
+      "suggestedRels": [
+        "microsoft-co",
+        "project-solara",
+        "mai-thinking-1"
+      ],
+      "sources": [
+        {
+          "url": "https://stratechery.com/2026/an-interview-with-microsoft-ceo-satya-nadella-about-finding-core-competencies/",
+          "domain": "stratechery.com",
+          "title": "An Interview with Microsoft CEO Satya Nadella About Finding Core Competencies",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Thu, 04 Jun 2026 10:00:00 +0000",
+          "firstSeen": "2026-06-04T20:04:46.217Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-04T20:04:46.217Z",
+      "dateLastSeen": "2026-06-04T20:04:46.217Z",
+      "sz": 14,
+      "fullName": "Hill-Climbing Machine (Nadella/Microsoft Framing)",
+      "proposalReason": "Novel strategic framing from a primary source interview; worth tracking as Nadella articulates it as a core competitive concept for Microsoft's AI platform play."
+    },
+    {
+      "id": "token-capital",
+      "label": "Token Capital",
+      "workingDef": "A term introduced by Satya Nadella in this interview to describe AI inference and model-use capacity as a new factor of production alongside human capital. In this framing, firms in the AI era must manage and invest in 'token capital' — their accumulated capacity to run, fine-tune, and improve AI systems — as a distinct strategic asset. The concept extends resource-based views of the firm into the AI era but is so far a single-source, single-speaker coinage.",
+      "clusters": [
+        "business",
+        "core"
+      ],
+      "suggestedRels": [
+        "microsoft-co",
+        "inference",
+        "cost"
+      ],
+      "sources": [
+        {
+          "url": "https://stratechery.com/2026/an-interview-with-microsoft-ceo-satya-nadella-about-finding-core-competencies/",
+          "domain": "stratechery.com",
+          "title": "An Interview with Microsoft CEO Satya Nadella About Finding Core Competencies",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Thu, 04 Jun 2026 10:00:00 +0000",
+          "firstSeen": "2026-06-04T20:04:46.217Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-04T20:04:46.217Z",
+      "dateLastSeen": "2026-06-04T20:04:46.217Z",
+      "sz": 14,
+      "fullName": "Token Capital (AI Era Factor of Production)",
+      "proposalReason": "A potentially durable conceptual coinage from a CEO-level primary source; if adopted broadly, it could become a canonical framing term for AI business strategy."
+    },
+    {
+      "id": "clean-lineage",
+      "label": "Clean Lineage",
+      "workingDef": "A term used in the Nadella interview to describe MAI models built from scratch without distillation from other frontier models or use of other models as teachers — establishing clear, unencumbered provenance for training data and methodology. The concept is linked to IP defensibility and the desire to operate independently of external model providers. Distinct from 'open-weight' concerns; about training-process independence rather than weight availability.",
+      "clusters": [
+        "models",
+        "technical"
+      ],
+      "suggestedRels": [
+        "mai-thinking-1",
+        "microsoft-co",
+        "training",
+        "proprietary-model"
+      ],
+      "sources": [
+        {
+          "url": "https://stratechery.com/2026/an-interview-with-microsoft-ceo-satya-nadella-about-finding-core-competencies/",
+          "domain": "stratechery.com",
+          "title": "An Interview with Microsoft CEO Satya Nadella About Finding Core Competencies",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Thu, 04 Jun 2026 10:00:00 +0000",
+          "firstSeen": "2026-06-04T20:04:46.217Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-04T20:04:46.217Z",
+      "dateLastSeen": "2026-06-04T20:04:46.217Z",
+      "sz": 14,
+      "fullName": "Clean Lineage (Model Training Provenance)",
+      "proposalReason": "Emerging term for a real and consequential distinction in how labs characterise model provenance and independence; worth watching as IP and model-lineage disputes intensify."
+    },
+    {
+      "id": "statement-retraction",
+      "label": "Statement Retraction",
+      "workingDef": "The act of a company or spokesperson asking a journalist to replace a published statement with a revised version after publication, typically to soften or remove a commitment. In AI contexts, this pattern has emerged when organisations walk back safety-adjacent language — such as commitments to human-in-the-loop oversight — under apparent strategic or commercial pressure. The practice raises questions about the gap between publicly stated AI governance principles and actual corporate intent.",
+      "clusters": [
+        "critical",
+        "safety"
+      ],
+      "suggestedRels": [
+        "human-in-the-loop",
+        "agent-governance",
+        "ai-washing"
+      ],
+      "sources": [
+        {
+          "url": "https://simonwillison.net/2026/Jun/4/a-slightly-different-version/#atom-everything",
+          "domain": "simonwillison.net",
+          "title": "A quote from Emanuel Maiberg, 404 Media",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-06-04T16:38:29+00:00",
+          "firstSeen": "2026-06-04T20:04:46.217Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-04T20:04:46.217Z",
+      "dateLastSeen": "2026-06-04T20:04:46.217Z",
+      "sz": 14,
+      "proposalReason": "A new framing term for a notable editorial/governance pattern — companies quietly retracting safety-language statements post-publication."
+    },
+    {
+      "id": "project-stratos-oleary",
+      "label": "Project Stratos",
+      "workingDef": "A proposed hyperscale data center complex planned by Kevin O'Leary in Utah, originally spanning approximately 40,000 acres near the Locomotive Springs Waterfowl Management Area. Following community opposition and political pressure, O'Leary agreed to reduce the footprint to roughly 20,000 acres — still an area larger than Manhattan. The project has drawn scrutiny over water consumption, energy demand, and environmental impact, making it a high-profile instance of the land-use and resource tensions surrounding large-scale AI infrastructure buildout.",
+      "clusters": [
+        "landscape",
+        "business"
+      ],
+      "suggestedRels": [
+        "hyperscale-data-center",
+        "ai-energy-demand"
+      ],
+      "sources": [
+        {
+          "url": "https://www.theverge.com/ai-artificial-intelligence/943234/kevin-oleary-agrees-to-downsize-massive-utah-data-center",
+          "domain": "theverge.com",
+          "title": "Kevin O’Leary agrees to downsize massive Utah data center",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-06-04T14:38:04-04:00",
+          "firstSeen": "2026-06-04T20:04:46.217Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-04T20:04:46.217Z",
+      "dateLastSeen": "2026-06-04T20:04:46.217Z",
+      "sz": 14,
+      "fullName": "Project Stratos (O'Leary AI Data Center, Utah)",
+      "nodeType": "product",
+      "proposalReason": "New term — a named, large-scale AI infrastructure project with documented political and environmental controversy, worth tracking as a case study in AI data center land-use disputes."
     }
   ]
 }

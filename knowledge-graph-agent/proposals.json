@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-06-03T20:56:47.629Z",
-    "pendingCount": 22,
+    "generatedAt": "2026-06-04T20:06:36.274Z",
+    "pendingCount": 23,
     "appliedCount": 13,
     "rejectedCount": 1,
     "note": "Lexi proposals queue. Actions gated as PROPOSE land here as status: 'pending'. Edit a proposal's status to 'approved' or 'rejected' and run the apply step (TBD) to commit."
@@ -1705,6 +1705,57 @@
       },
       "reason": "3 sources, 2 independent (stratechery.com + anthropic.com), 18d on longlist. Trusted: stratechery.com.",
       "runId": "d0f3120e-0db5-436d-a059-5bed21f196d0"
+    },
+    {
+      "id": "09769fdadab63ebb",
+      "action": "promote_to_graph",
+      "gate": "propose",
+      "proposedAt": "2026-06-04T20:06:36.274Z",
+      "status": "pending",
+      "source": "promote-eligibility-scan",
+      "target": {
+        "kind": "longlist_entry",
+        "id": "inference-shift"
+      },
+      "payload": {
+        "graphNode": {
+          "id": "inference-shift",
+          "label": "Inference Shift",
+          "clusters": [
+            "landscape",
+            "technical"
+          ],
+          "sz": 14,
+          "def": "A periodization framing — introduced and elaborated by Ben Thompson in this Stratechery piece — for the structural transition in AI compute demand from training-dominated GPU workloads to inference-dominated, increasingly heterogeneous hardware deployments. The framing argues that as agent usage scales, inference becomes the primary driver of compute spend, creating market conditions for specialised inference silicon distinct from Nvidia's GPU-centric stack. As a named framing by a single analyst, its adoption and durability as industry terminology remains to be seen.",
+          "rels": [
+            "inference",
+            "ai-accelerator",
+            "purpose-built-ai-infrastructure",
+            "ai-inference-chip",
+            "agentic-era"
+          ],
+          "refs": [
+            {
+              "n": 1,
+              "src": "Stratechery, Mon, 11 May 2026 10:00:00 +0000",
+              "q": "The Inference Shift Stratechery"
+            },
+            {
+              "n": 2,
+              "src": "Stratechery, Fri, 15 May 2026 17:00:00 +0000",
+              "q": "2026.20: Shifting Alliances in a Changing World Stratechery"
+            },
+            {
+              "n": 3,
+              "src": "Stratechery, Fri, 29 May 2026 17:00:00 +0000",
+              "q": "2026.22: Luceing Their Mind Stratechery"
+            }
+          ],
+          "fullName": "The Inference Shift"
+        }
+      },
+      "reason": "4 sources, 2 independent (stratechery.com + hbr.org), 24d on longlist. Trusted: stratechery.com, hbr.org.",
+      "runId": "283cd85a-a101-496d-b9b3-d29c5323783a"
     }
   ]
 }
