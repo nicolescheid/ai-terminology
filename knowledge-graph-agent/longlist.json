@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-06-04T20:04:46.217Z",
-    "entryCount": 207,
+    "generatedAt": "2026-06-05T19:53:16.670Z",
+    "entryCount": 217,
     "note": "Lexi-managed Tier 2 longlist — terms under observation, awaiting evidence to support promotion to the graph (Tier 1)."
   },
   "entries": [
@@ -4979,12 +4979,20 @@
           "sourceLabel": "Last Week in AI",
           "publishedAt": "Tue, 26 May 2026 05:10:23 GMT",
           "firstSeen": "2026-06-01T21:31:49.667Z"
+        },
+        {
+          "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-may-2026/",
+          "domain": "blog.google",
+          "title": "The latest AI news we announced in May 2026",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Fri, 05 Jun 2026 14:45:00 +0000",
+          "firstSeen": "2026-06-05T19:53:16.670Z"
         }
       ],
-      "sourceCount": 4,
+      "sourceCount": 5,
       "independentSourceCount": 2,
       "dateFirstSeen": "2026-05-29T20:24:10.894Z",
-      "dateLastSeen": "2026-06-01T21:31:49.667Z",
+      "dateLastSeen": "2026-06-05T19:53:16.670Z",
       "sz": 14,
       "fullName": "Gemini Omni (Google)",
       "nodeType": "product",
@@ -5036,12 +5044,20 @@
           "sourceLabel": "Last Week in AI",
           "publishedAt": "Tue, 26 May 2026 05:10:23 GMT",
           "firstSeen": "2026-06-01T21:31:49.667Z"
+        },
+        {
+          "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-may-2026/",
+          "domain": "blog.google",
+          "title": "The latest AI news we announced in May 2026",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Fri, 05 Jun 2026 14:45:00 +0000",
+          "firstSeen": "2026-06-05T19:53:16.670Z"
         }
       ],
-      "sourceCount": 4,
+      "sourceCount": 5,
       "independentSourceCount": 2,
       "dateFirstSeen": "2026-05-29T20:24:10.894Z",
-      "dateLastSeen": "2026-06-01T21:31:49.667Z",
+      "dateLastSeen": "2026-06-05T19:53:16.670Z",
       "sz": 14,
       "fullName": "Gemini 3.5 Flash (Google DeepMind)",
       "nodeType": "product",
@@ -5070,12 +5086,20 @@
           "sourceLabel": "Google AI Blog",
           "publishedAt": "Thu, 28 May 2026 15:00:00 +0000",
           "firstSeen": "2026-05-29T20:24:10.894Z"
+        },
+        {
+          "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-may-2026/",
+          "domain": "blog.google",
+          "title": "The latest AI news we announced in May 2026",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Fri, 05 Jun 2026 14:45:00 +0000",
+          "firstSeen": "2026-06-05T19:53:16.670Z"
         }
       ],
-      "sourceCount": 1,
+      "sourceCount": 2,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-05-29T20:24:10.894Z",
-      "dateLastSeen": "2026-05-29T20:24:10.894Z",
+      "dateLastSeen": "2026-06-05T19:53:16.670Z",
       "sz": 14,
       "fullName": "Information Agents (Google Search)",
       "nodeType": "product",
@@ -5168,12 +5192,20 @@
           "sourceLabel": "AI Snake Oil",
           "publishedAt": "Thu, 21 May 2026 13:19:41 GMT",
           "firstSeen": "2026-05-29T20:24:10.894Z"
+        },
+        {
+          "url": "https://www.anthropic.com/news/chris-olah-pope-leo-encyclical",
+          "domain": "anthropic.com",
+          "title": "Anthropic co-founder Chris Olah's remarks on Pope Leo XIV's encyclical \"Magnifica humanitas\"",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-06-05T19:53:16.670Z"
         }
       ],
-      "sourceCount": 1,
-      "independentSourceCount": 1,
+      "sourceCount": 2,
+      "independentSourceCount": 2,
       "dateFirstSeen": "2026-05-29T20:24:10.894Z",
-      "dateLastSeen": "2026-05-29T20:24:10.894Z",
+      "dateLastSeen": "2026-06-05T19:53:16.670Z",
       "sz": 14,
       "fullName": "AI as Normal Technology (AINT)",
       "proposalReason": "New candidate term for a recurring framework in AI policy discourse — worth tracking as it anchors an influential counter-narrative to AI exceptionalism."
@@ -5388,12 +5420,20 @@
           "sourceLabel": "Stratechery",
           "publishedAt": "Mon, 01 Jun 2026 10:00:00 +0000",
           "firstSeen": "2026-06-01T21:31:49.667Z"
+        },
+        {
+          "url": "https://stratechery.com/2026/power-shifts/",
+          "domain": "stratechery.com",
+          "title": "2026.23: Power Shifts",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Fri, 05 Jun 2026 17:00:00 +0000",
+          "firstSeen": "2026-06-05T19:53:16.670Z"
         }
       ],
-      "sourceCount": 3,
+      "sourceCount": 4,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-05-29T20:29:06.123Z",
-      "dateLastSeen": "2026-06-01T21:31:49.667Z",
+      "dateLastSeen": "2026-06-05T19:53:16.670Z",
       "sz": 14,
       "fullName": "The Agentic Web",
       "proposalReason": "NEW term implied by adjacent Stratechery interview title; captures an emerging framing about how AI agents transform content and advertising economics on the web."
@@ -5546,12 +5586,20 @@
           "sourceLabel": "Simon Willison's Weblog",
           "publishedAt": "2026-06-03T12:01:27+00:00",
           "firstSeen": "2026-06-03T20:54:34.002Z"
+        },
+        {
+          "url": "https://simonwillison.net/2026/Jun/5/andreas-kling/#atom-everything",
+          "domain": "simonwillison.net",
+          "title": "A quote from Andreas Kling",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-06-05T11:10:05+00:00",
+          "firstSeen": "2026-06-05T19:53:16.670Z"
         }
       ],
-      "sourceCount": 4,
+      "sourceCount": 5,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-05-29T20:29:06.123Z",
-      "dateLastSeen": "2026-06-03T20:54:34.002Z",
+      "dateLastSeen": "2026-06-05T19:53:16.670Z",
       "sz": 14,
       "fullName": "Product-Market Fit (AI)",
       "proposalReason": "The linked article (referenced in the excerpt: 'I think Anthropic and OpenAI have found product-market fit') deploys this concept directly in relation to frontier AI companies; worth tracking as a framing term in the AI business cluster."
@@ -5803,12 +5851,20 @@
           "sourceLabel": "Last Week in AI",
           "publishedAt": "Tue, 26 May 2026 05:10:23 GMT",
           "firstSeen": "2026-06-01T21:31:49.667Z"
+        },
+        {
+          "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-may-2026/",
+          "domain": "blog.google",
+          "title": "The latest AI news we announced in May 2026",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Fri, 05 Jun 2026 14:45:00 +0000",
+          "firstSeen": "2026-06-05T19:53:16.670Z"
         }
       ],
-      "sourceCount": 2,
-      "independentSourceCount": 1,
+      "sourceCount": 3,
+      "independentSourceCount": 2,
       "dateFirstSeen": "2026-05-30T19:13:38.586Z",
-      "dateLastSeen": "2026-06-01T21:31:49.667Z",
+      "dateLastSeen": "2026-06-05T19:53:16.670Z",
       "sz": 14,
       "fullName": "Gemini Spark (Google)",
       "nodeType": "product",
@@ -6582,12 +6638,20 @@
           "sourceLabel": "Stratechery",
           "publishedAt": "Thu, 04 Jun 2026 10:00:00 +0000",
           "firstSeen": "2026-06-04T20:04:46.217Z"
+        },
+        {
+          "url": "https://stratechery.com/2026/power-shifts/",
+          "domain": "stratechery.com",
+          "title": "2026.23: Power Shifts",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Fri, 05 Jun 2026 17:00:00 +0000",
+          "firstSeen": "2026-06-05T19:53:16.670Z"
         }
       ],
-      "sourceCount": 3,
+      "sourceCount": 4,
       "independentSourceCount": 2,
       "dateFirstSeen": "2026-06-02T20:47:42.877Z",
-      "dateLastSeen": "2026-06-04T20:04:46.217Z",
+      "dateLastSeen": "2026-06-05T19:53:16.670Z",
       "sz": 14,
       "fullName": "Project Solara (Microsoft Agent OS)",
       "nodeType": "product",
@@ -7465,6 +7529,323 @@
       "fullName": "Project Stratos (O'Leary AI Data Center, Utah)",
       "nodeType": "product",
       "proposalReason": "New term — a named, large-scale AI infrastructure project with documented political and environmental controversy, worth tracking as a case study in AI data center land-use disputes."
+    },
+    {
+      "id": "eva-bench",
+      "label": "EVA-Bench",
+      "workingDef": "A benchmark suite developed by ServiceNow AI for evaluating enterprise voice agents across realistic multi-domain scenarios. Version 2.0 covers 213 evaluation scenarios across 121 tools in three enterprise domains (airline customer service, IT service management, and healthcare HR service delivery), testing agent capabilities including authentication, multi-intent handling, adversarial caller behaviour, and unsatisfiable goal detection.",
+      "clusters": [
+        "tools",
+        "agentic"
+      ],
+      "suggestedRels": [
+        "evals",
+        "voice-ai",
+        "agent",
+        "tool-use"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/ServiceNow-AI/eva-bench-data",
+          "domain": "huggingface.co",
+          "title": "EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Thu, 04 Jun 2026 12:24:58 GMT",
+          "firstSeen": "2026-06-05T19:53:16.670Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-05T19:53:16.670Z",
+      "dateLastSeen": "2026-06-05T19:53:16.670Z",
+      "sz": 14,
+      "fullName": "EVA-Bench (Enterprise Voice Agent Benchmark)",
+      "nodeType": "product",
+      "proposalReason": "New benchmark not yet in the graph; materialised as the article's primary subject."
+    },
+    {
+      "id": "sygra",
+      "label": "SyGra",
+      "workingDef": "A graph-based synthetic data generation pipeline developed by ServiceNow AI for producing jointly consistent benchmark scenarios. SyGra generates user goals (as decision trees), initial scenario databases, and expected final database states together in a single pass to prevent silent inconsistencies between components — a design choice motivated by reproducibility requirements in agentic evaluation.",
+      "clusters": [
+        "technical",
+        "tools"
+      ],
+      "suggestedRels": [
+        "evals",
+        "structured-output",
+        "agent"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/ServiceNow-AI/eva-bench-data",
+          "domain": "huggingface.co",
+          "title": "EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Thu, 04 Jun 2026 12:24:58 GMT",
+          "firstSeen": "2026-06-05T19:53:16.670Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-05T19:53:16.670Z",
+      "dateLastSeen": "2026-06-05T19:53:16.670Z",
+      "sz": 14,
+      "fullName": "SyGra (Graph-Based Synthetic Data Generation Pipeline)",
+      "nodeType": "product",
+      "proposalReason": "New named system for synthetic benchmark data generation with a distinctive joint-generation architecture worth tracking."
+    },
+    {
+      "id": "unsatisfiable-goal-scenario",
+      "label": "Unsatisfiable Goal Scenario",
+      "workingDef": "An evaluation pattern in which the user's stated objective cannot be fulfilled given the constraints of the scenario — included in benchmarks like EVA-Bench because production call volume is not all 'happy-path' and models reportedly perform worse on goals that cannot be resolved than on successful interactions. Distinct from adversarial scenarios (where the caller attempts to bypass rules) in that the failure is structural rather than intentional.",
+      "clusters": [
+        "agentic",
+        "technical"
+      ],
+      "suggestedRels": [
+        "evals",
+        "agent",
+        "capability-reliability-gap",
+        "silent-failure"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/ServiceNow-AI/eva-bench-data",
+          "domain": "huggingface.co",
+          "title": "EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Thu, 04 Jun 2026 12:24:58 GMT",
+          "firstSeen": "2026-06-05T19:53:16.670Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-05T19:53:16.670Z",
+      "dateLastSeen": "2026-06-05T19:53:16.670Z",
+      "sz": 14,
+      "fullName": "Unsatisfiable Goal Scenario (Agent Evaluation)",
+      "proposalReason": "A specific evaluation concept with practical relevance to agent reliability; not yet in the graph or longlist."
+    },
+    {
+      "id": "multi-intent-call",
+      "label": "Multi-Intent Call",
+      "workingDef": "A voice agent evaluation scenario type in which a single conversation contains multiple sequential user goals (up to four in EVA-Bench), testing an agent's ability to track state, switch contexts, and complete distinct tasks within one interaction. Contrasted with single-intent calls and adversarial calls as a distinct axis of difficulty in enterprise voice benchmarks.",
+      "clusters": [
+        "agentic",
+        "technical"
+      ],
+      "suggestedRels": [
+        "evals",
+        "voice-ai",
+        "agent",
+        "state",
+        "task-decomposition"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/ServiceNow-AI/eva-bench-data",
+          "domain": "huggingface.co",
+          "title": "EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Thu, 04 Jun 2026 12:24:58 GMT",
+          "firstSeen": "2026-06-05T19:53:16.670Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-05T19:53:16.670Z",
+      "dateLastSeen": "2026-06-05T19:53:16.670Z",
+      "sz": 14,
+      "fullName": "Multi-Intent Call (Voice Agent Evaluation)",
+      "proposalReason": "A named scenario taxonomy from a published benchmark; relevant to how voice agents are evaluated on complex, realistic call patterns."
+    },
+    {
+      "id": "code-provenance",
+      "label": "Code Provenance",
+      "workingDef": "The question of who is responsible for a piece of code and where it originated — gaining new salience in the AI era as AI-generated contributions break the traditional assumption that substantial code implies substantial human effort and good faith. Framed by open-source maintainers like Andreas Kling (Ladybird project) as distinct from the question of authorship: what matters is not whether code was typed by hand, but who accepts accountability for it entering a codebase.",
+      "clusters": [
+        "critical",
+        "work"
+      ],
+      "suggestedRels": [
+        "vibe-coding",
+        "agentic-engineering",
+        "human-in-the-loop",
+        "ai-washing"
+      ],
+      "sources": [
+        {
+          "url": "https://simonwillison.net/2026/Jun/5/andreas-kling/#atom-everything",
+          "domain": "simonwillison.net",
+          "title": "A quote from Andreas Kling",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-06-05T11:10:05+00:00",
+          "firstSeen": "2026-06-05T19:53:16.670Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-05T19:53:16.670Z",
+      "dateLastSeen": "2026-06-05T19:53:16.670Z",
+      "sz": 14,
+      "fullName": "Code Provenance (AI-Era)",
+      "proposalReason": "The Ladybird project's decision to close public PRs names a novel framing: AI generation severs the effort-as-good-faith heuristic that open-source has always relied on. 'Code provenance' captures this gap between origin and accountability."
+    },
+    {
+      "id": "effort-proxy-collapse",
+      "label": "Effort-as-Proxy Collapse",
+      "workingDef": "The breakdown of the longstanding heuristic in open-source development that a substantial code contribution implies substantial author effort, and that effort is a reasonable proxy for good faith. Named implicitly by Andreas Kling in the Ladybird project's policy change: AI code generation allows high-volume, low-effort submissions that are indistinguishable in size from carefully crafted work, invalidating the heuristic maintainers have relied on for triage and trust.",
+      "clusters": [
+        "critical",
+        "work"
+      ],
+      "suggestedRels": [
+        "vibe-coding",
+        "human-in-the-loop",
+        "ai-washing",
+        "hallucination"
+      ],
+      "sources": [
+        {
+          "url": "https://simonwillison.net/2026/Jun/5/andreas-kling/#atom-everything",
+          "domain": "simonwillison.net",
+          "title": "A quote from Andreas Kling",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-06-05T11:10:05+00:00",
+          "firstSeen": "2026-06-05T19:53:16.670Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-05T19:53:16.670Z",
+      "dateLastSeen": "2026-06-05T19:53:16.670Z",
+      "sz": 14,
+      "fullName": "Effort-as-Proxy Collapse (Open Source Good Faith)",
+      "proposalReason": "A precise failure-mode concept for the open-source contribution model under AI-generated code. Different from 'AI washing' — this is about the collapse of a specific epistemic signal maintainers use, not about mislabelling products."
+    },
+    {
+      "id": "maintainer-accountability",
+      "label": "Maintainer Accountability",
+      "workingDef": "The principle, foregrounded by open-source projects responding to AI-generated contributions, that the person introducing a change to a codebase must be the person who vouches for it and answers for its consequences — independent of whether they wrote it. Andreas Kling's Ladybird policy articulates this as the operative standard replacing effort-based proxies: responsibility, not authorship, is what qualifies a contribution.",
+      "clusters": [
+        "critical",
+        "human"
+      ],
+      "suggestedRels": [
+        "human-in-the-loop",
+        "agent-governance",
+        "delegation",
+        "guardrails"
+      ],
+      "sources": [
+        {
+          "url": "https://simonwillison.net/2026/Jun/5/andreas-kling/#atom-everything",
+          "domain": "simonwillison.net",
+          "title": "A quote from Andreas Kling",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-06-05T11:10:05+00:00",
+          "firstSeen": "2026-06-05T19:53:16.670Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-05T19:53:16.670Z",
+      "dateLastSeen": "2026-06-05T19:53:16.670Z",
+      "sz": 14,
+      "fullName": "Maintainer Accountability (AI-Era Open Source)",
+      "proposalReason": "A distinct normative concept emerging from the AI-code-in-open-source debate — accountability decoupled from authorship. Likely to appear in more open-source governance discussions as AI contributions scale."
+    },
+    {
+      "id": "papal-ai-encyclical",
+      "label": "Papal AI Encyclical",
+      "workingDef": "A formal doctrinal letter issued by a Pope addressing the ethical, spiritual, and societal dimensions of artificial intelligence. Pope Leo XIV's 'Magnifica humanitas: On safeguarding the human person in the time of artificial intelligence' (May 2026) is the first such encyclical, representing the Catholic Church's entry into AI governance discourse as an external moral authority. The encyclical frames AI as raising questions for theology, philosophy, and the humanities — not merely computer science — and calls for 'discernment' on AI's nature and societal impact.",
+      "clusters": [
+        "safety",
+        "critical"
+      ],
+      "suggestedRels": [
+        "agent-governance",
+        "alignment",
+        "ai-washing"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/chris-olah-pope-leo-encyclical",
+          "domain": "anthropic.com",
+          "title": "Anthropic co-founder Chris Olah's remarks on Pope Leo XIV's encyclical \"Magnifica humanitas\"",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-06-05T19:53:16.670Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-05T19:53:16.670Z",
+      "dateLastSeen": "2026-06-05T19:53:16.670Z",
+      "sz": 16,
+      "proposalReason": "A genuinely new category of governance artefact — a papal encyclical on AI — that warrants tracking as the Church formally enters the AI governance landscape."
+    },
+    {
+      "id": "global-ai-equity",
+      "label": "Global AI Equity",
+      "workingDef": "The framing — used by Olah in his Vatican remarks and echoed in broader policy discourse — that AI development concentrated in a handful of wealthy nations risks exacerbating global inequality if the gains of AI are not distributed across all populations, including the global poor. Proponents argue this is an unsolved structural problem requiring institutional mechanisms and moral pressure. Critics within the AI industry tend to frame AI access as a market outcome. The term overlaps with 'AI ethics' and 'responsible AI' debates but specifically foregrounds geopolitical and North/South distribution of AI benefit.",
+      "clusters": [
+        "critical",
+        "safety"
+      ],
+      "suggestedRels": [
+        "alignment",
+        "agent-governance",
+        "responsible-scaling-policy"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/chris-olah-pope-leo-encyclical",
+          "domain": "anthropic.com",
+          "title": "Anthropic co-founder Chris Olah's remarks on Pope Leo XIV's encyclical \"Magnifica humanitas\"",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-06-05T19:53:16.670Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-05T19:53:16.670Z",
+      "dateLastSeen": "2026-06-05T19:53:16.670Z",
+      "sz": 16,
+      "proposalReason": "Olah names global AI equity as an unsolved structural problem requiring non-lab moral voices — a framing distinct from standard 'AI ethics' discourse and worth tracking as it emerges in governance conversations."
+    },
+    {
+      "id": "ai-discernment",
+      "label": "AI Discernment",
+      "workingDef": "A term drawn from theological and philosophical tradition, used in 'Magnifica humanitas' and Olah's Vatican remarks to describe the deliberative process by which religious communities, civil society, and other non-technical actors evaluate the moral, spiritual, and social dimensions of AI systems. The framing positions discernment — patient, multi-stakeholder moral reasoning — as a necessary complement to technical AI development, and implicitly critiques purely technocratic governance. The term is used by Olah to invite external moral authority into AI governance, while remaining distinct from the technical 'alignment' framing used within AI safety research.",
+      "clusters": [
+        "critical",
+        "human"
+      ],
+      "suggestedRels": [
+        "alignment",
+        "agent-governance",
+        "human-in-the-loop",
+        "interpretability"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/chris-olah-pope-leo-encyclical",
+          "domain": "anthropic.com",
+          "title": "Anthropic co-founder Chris Olah's remarks on Pope Leo XIV's encyclical \"Magnifica humanitas\"",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-06-05T19:53:16.670Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-05T19:53:16.670Z",
+      "dateLastSeen": "2026-06-05T19:53:16.670Z",
+      "sz": 16,
+      "proposalReason": "A newly prominent governance framing borrowed from theology, used by Olah to name the kind of moral reasoning he believes labs cannot do from the inside — a substantive conceptual contribution to AI governance vocabulary."
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
-  "lastRunAt": "2026-06-04T20:04:46.217Z",
-  "reviewCursor": 84,
+  "lastRunAt": "2026-06-05T19:53:16.670Z",
+  "reviewCursor": 94,
   "seenArticles": {
     "93a049d060bc295b": {
       "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/tpus-8t-8i-cloud-next/",
@@ -967,6 +967,42 @@
       "title": "Your Company Needs an Energy Strategy for AI’s Next Phase",
       "publishedAt": "2026-06-04T12:15:31Z",
       "seenAt": "2026-06-04T20:04:46.217Z"
+    },
+    "d9c42ca0bc6490ff": {
+      "url": "https://huggingface.co/blog/ServiceNow-AI/eva-bench-data",
+      "title": "EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios",
+      "publishedAt": "Thu, 04 Jun 2026 12:24:58 GMT",
+      "seenAt": "2026-06-05T19:53:16.670Z"
+    },
+    "d0841d29a3627d47": {
+      "url": "https://openai.com/index/endava-frontiers",
+      "title": "How Endava is redesigning software delivery around AI agents",
+      "publishedAt": "Thu, 04 Jun 2026 12:00:00 GMT",
+      "seenAt": "2026-06-05T19:53:16.670Z"
+    },
+    "5f4e0052543c68b3": {
+      "url": "https://stratechery.com/2026/power-shifts/",
+      "title": "2026.23: Power Shifts",
+      "publishedAt": "Fri, 05 Jun 2026 17:00:00 +0000",
+      "seenAt": "2026-06-05T19:53:16.670Z"
+    },
+    "7707fdb288e4dff5": {
+      "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-may-2026/",
+      "title": "The latest AI news we announced in May 2026",
+      "publishedAt": "Fri, 05 Jun 2026 14:45:00 +0000",
+      "seenAt": "2026-06-05T19:53:16.670Z"
+    },
+    "b41fa7b3947adc4e": {
+      "url": "https://simonwillison.net/2026/Jun/5/andreas-kling/#atom-everything",
+      "title": "A quote from Andreas Kling",
+      "publishedAt": "2026-06-05T11:10:05+00:00",
+      "seenAt": "2026-06-05T19:53:16.670Z"
+    },
+    "aaee48ad131bf7f1": {
+      "url": "https://www.anthropic.com/news/chris-olah-pope-leo-encyclical",
+      "title": "Anthropic co-founder Chris Olah's remarks on Pope Leo XIV's encyclical \"Magnifica humanitas\"",
+      "publishedAt": null,
+      "seenAt": "2026-06-05T19:53:16.670Z"
     }
   },
   "nodeReviews": {
@@ -1376,49 +1412,49 @@
       "reason": "No source material discusses general availability as a release concept. Definition remains valid as written."
     },
     "github-copilot": {
-      "lastReviewedAt": "2026-05-03T18:58:28.223Z",
+      "lastReviewedAt": "2026-06-05T19:53:16.670Z",
       "status": "keep",
-      "reason": "No source material addresses GitHub Copilot. Historical facts in the definition remain accurate."
+      "reason": "No source material addresses GitHub Copilot. Existing definition is stable and accurate."
     },
     "goal-drift": {
-      "lastReviewedAt": "2026-05-03T18:58:28.223Z",
+      "lastReviewedAt": "2026-06-05T19:53:16.670Z",
       "status": "keep",
-      "reason": "Conceptual definition. No source material addresses or contradicts it."
+      "reason": "No source material addresses goal drift. Conceptual definition remains sound."
     },
     "google-co": {
-      "lastReviewedAt": "2026-05-03T18:58:28.223Z",
+      "lastReviewedAt": "2026-06-05T19:53:16.670Z",
       "status": "keep",
-      "reason": "No source material contradicts the Google/DeepMind definition. Facts stated are stable."
+      "reason": "The Google AI Blog source confirms Google DeepMind and Gemini products remain active, consistent with the existing definition. No material updates required."
     },
     "gpt54": {
-      "lastReviewedAt": "2026-05-03T18:58:28.223Z",
-      "status": "refresh",
-      "reason": "OpenAI Research confirms GPT-5.5 was introduced April 23, 2026 as their 'smartest model yet,' directly contradicting the definition's claim that GPT-5.4 is the 'current flagship model as of March 2026.' The definition requires updating to reflect GPT-5.4's superseded status."
+      "lastReviewedAt": "2026-06-05T19:53:16.670Z",
+      "status": "keep",
+      "reason": "The EVA-Bench source explicitly lists 'OpenAI GPT-5.4' as one of three frontier models used for benchmark validation, corroborating its existence. The existing definition is consistent with this evidence."
     },
     "grok": {
-      "lastReviewedAt": "2026-05-03T18:58:28.223Z",
+      "lastReviewedAt": "2026-06-05T19:53:16.670Z",
       "status": "insufficient_evidence",
-      "reason": "No source material confirms or contradicts the current Grok version number or architectural claims. Cannot verify 'Grok 4.20' or the four-agent parallel processing claim from provided excerpts."
+      "reason": "No source material corroborates 'Grok 4.20' or the four-agent parallel processing architecture described. The version number appears unverified and the definition cannot be confirmed or updated from these sources."
     },
     "grounding": {
-      "lastReviewedAt": "2026-05-03T18:58:28.223Z",
+      "lastReviewedAt": "2026-06-05T19:53:16.670Z",
       "status": "keep",
-      "reason": "Conceptual definition. No source material challenges the explanation of grounding or RAG."
+      "reason": "No source material challenges or materially updates the grounding definition. It remains accurate."
     },
     "guardrails": {
-      "lastReviewedAt": "2026-05-04T19:27:54.284Z",
+      "lastReviewedAt": "2026-06-05T19:53:16.670Z",
       "status": "keep",
-      "reason": "No source material addresses guardrails in a way that contradicts or materially extends the existing definition. Definition remains accurate."
+      "reason": "No source material addresses guardrails. Definition remains sound."
     },
     "hallucination": {
-      "lastReviewedAt": "2026-05-04T19:27:54.284Z",
+      "lastReviewedAt": "2026-06-05T19:53:16.670Z",
       "status": "keep",
-      "reason": "No source material covers hallucination conceptually. Definition remains accurate."
+      "reason": "No source material challenges or updates the hallucination definition."
     },
     "hallucination-cascade": {
-      "lastReviewedAt": "2026-05-04T19:27:54.284Z",
+      "lastReviewedAt": "2026-06-05T19:53:16.670Z",
       "status": "keep",
-      "reason": "No source material addresses hallucination cascades. Definition remains accurate."
+      "reason": "No source material addresses hallucination cascade. Definition remains sound."
     },
     "handoff": {
       "lastReviewedAt": "2026-05-04T19:27:54.284Z",
@@ -1999,6 +2035,11 @@
       "lastReviewedAt": "2026-05-31T19:15:39.230Z",
       "status": "insufficient_evidence",
       "reason": "No source material references Claude Design or any Anthropic Labs visual design product."
+    },
+    "gpt55": {
+      "lastReviewedAt": "2026-06-05T19:53:16.670Z",
+      "status": "insufficient_evidence",
+      "reason": "No source material substantiates details about GPT-5.5 beyond what is already in the sparse existing definition. Cannot justify a rewrite or keep with confidence."
     }
   }
 }

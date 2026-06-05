@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-06-04T20:06:36.274Z",
-    "pendingCount": 23,
+    "generatedAt": "2026-06-05T19:55:05.967Z",
+    "pendingCount": 25,
     "appliedCount": 13,
     "rejectedCount": 1,
     "note": "Lexi proposals queue. Actions gated as PROPOSE land here as status: 'pending'. Edit a proposal's status to 'approved' or 'rejected' and run the apply step (TBD) to commit."
@@ -1756,6 +1756,104 @@
       },
       "reason": "4 sources, 2 independent (stratechery.com + hbr.org), 24d on longlist. Trusted: stratechery.com, hbr.org.",
       "runId": "283cd85a-a101-496d-b9b3-d29c5323783a"
+    },
+    {
+      "id": "e44bcc1cbeb1947f",
+      "action": "promote_to_graph",
+      "gate": "propose",
+      "proposedAt": "2026-06-05T19:55:05.967Z",
+      "status": "pending",
+      "source": "promote-eligibility-scan",
+      "target": {
+        "kind": "longlist_entry",
+        "id": "aint"
+      },
+      "payload": {
+        "graphNode": {
+          "id": "aint",
+          "label": "AI as Normal Technology",
+          "clusters": [
+            "critical",
+            "landscape"
+          ],
+          "sz": 14,
+          "def": "A framework advanced by Sayash Kapoor and Arvind Narayanan (AI Snake Oil) arguing that AI's economic and social impacts follow the diffusion patterns of prior general-purpose technologies — subject to speed limits such as organisational adoption, workflow change, and regulation — rather than constituting a categorically unprecedented disruption. Used to argue against extraordinary government intervention and rapid job-displacement claims. The framework is contested: critics (including Derek Thompson and others in the AI risk tradition) argue that AI's emergent capabilities and unknown-unknown risk profile make the 'normal technology' analogy insufficient for safety policy, even if it holds for labour market analysis.",
+          "rels": [
+            "emergent-capability",
+            "agent-washing",
+            "benchmark-gaming",
+            "distribution-shift"
+          ],
+          "refs": [
+            {
+              "n": 1,
+              "src": "AI Snake Oil, Thu, 21 May 2026 13:19:41 GMT",
+              "q": "Do AI Risks Require Extraordinary Government Intervention? AI Snake Oil"
+            },
+            {
+              "n": 2,
+              "src": "Anthropic Newsroom",
+              "q": "Anthropic co-founder Chris Olah's remarks on Pope Leo XIV's encyclical \"Magnifica humanitas\" Anthropic Newsroom"
+            }
+          ],
+          "fullName": "AI as Normal Technology (AINT)"
+        }
+      },
+      "reason": "2 sources, 2 independent (normaltech.ai + anthropic.com), 6d on longlist. Trusted: normaltech.ai.",
+      "runId": "3facfd3c-de9b-4e00-b38f-3d0d11341110"
+    },
+    {
+      "id": "fde4a87c0b60688f",
+      "action": "promote_to_graph",
+      "gate": "propose",
+      "proposedAt": "2026-06-05T19:55:05.967Z",
+      "status": "pending",
+      "source": "promote-eligibility-scan",
+      "target": {
+        "kind": "longlist_entry",
+        "id": "gemini-spark"
+      },
+      "payload": {
+        "graphNode": {
+          "id": "gemini-spark",
+          "label": "Gemini Spark",
+          "clusters": [
+            "agentic",
+            "tools"
+          ],
+          "sz": 14,
+          "def": "A 24/7 cloud-based personal AI agent launched by Google at I/O 2026, built on Gemini base models and the Antigravity agentic harness. Runs on dedicated virtual machines so it continues operating when the user's device is locked, integrates natively with Gmail, Google Docs, and Workspace via MCP, and can be emailed directly via a dedicated Gmail address.",
+          "rels": [
+            "google-co",
+            "gemini",
+            "google-antigravity",
+            "mcp",
+            "agentic-harness",
+            "proactive-agent"
+          ],
+          "refs": [
+            {
+              "n": 1,
+              "src": "Last Week in AI, Wed, 27 May 2026 07:50:58 GMT",
+              "q": "Last Week in AI #341 - Musk loses to OpenAI, Google's IO updates, OpenAI solves Erdős Last Week in AI"
+            },
+            {
+              "n": 2,
+              "src": "Last Week in AI, Tue, 26 May 2026 05:10:23 GMT",
+              "q": "LWiAI Podcast #246 - Gemini 3.5 + Omni, Musk Loses, OpenAI vs Erdős  Last Week in AI"
+            },
+            {
+              "n": 3,
+              "src": "Google AI Blog, Fri, 05 Jun 2026 14:45:00 +0000",
+              "q": "The latest AI news we announced in May 2026 Google AI Blog"
+            }
+          ],
+          "fullName": "Gemini Spark (Google)",
+          "nodeType": "product"
+        }
+      },
+      "reason": "3 sources, 2 independent (lastweekin.ai + blog.google), 6d on longlist.",
+      "runId": "3facfd3c-de9b-4e00-b38f-3d0d11341110"
     }
   ]
 }

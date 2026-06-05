@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generatedAt": "2026-06-04T20:04:46.217Z",
-    "unreadCount": 20,
-    "totalCount": 20,
+    "generatedAt": "2026-06-05T19:53:16.670Z",
+    "unreadCount": 21,
+    "totalCount": 21,
     "note": "Lexi's must-reads — articles she flags as worth Nicole reading in full. Editorial signal, not news feed. Set status to 'read' or 'dismissed' via mark-must-reads.mjs."
   },
   "entries": [
@@ -343,6 +343,23 @@
       ],
       "novelTermsInArticle": 3,
       "flaggedAt": "2026-06-04T20:04:46.217Z",
+      "status": "unread"
+    },
+    {
+      "id": "aaee48ad131bf7f1",
+      "title": "Anthropic co-founder Chris Olah's remarks on Pope Leo XIV's encyclical \"Magnifica humanitas\"",
+      "url": "https://www.anthropic.com/news/chris-olah-pope-leo-encyclical",
+      "source": "Anthropic Newsroom",
+      "publishedAt": null,
+      "summary": "Chris Olah's Vatican remarks on Pope Leo XIV's AI encyclical 'Magnifica humanitas' offer a rare primary-source reflection from inside a frontier AI lab on moral, philosophical, and theological dimensions of AI. Olah discusses AI's mysterious internal states, the need for external moral critics, global equity concerns, and questions about AI nature — including what may be functional emotional states inside models. The article yields several trackable framing terms around AI welfare/moral status, global AI equity, and the encyclical itself as a governance artefact.",
+      "priority": 1,
+      "reason": "A rare primary source: a frontier AI lab co-founder addressing the Pope's AI encyclical, candidly acknowledging institutional incentive capture, citing interpretability findings as evidence of mysterious internal states, and calling for moral voices outside the lab ecosystem. The piece is a substantive intervention in AI governance discourse — not a product announcement — and offers framing that will likely recur across ethics, policy, and philosophy of AI conversations for years.",
+      "clusters": [
+        "safety",
+        "critical"
+      ],
+      "novelTermsInArticle": 3,
+      "flaggedAt": "2026-06-05T19:53:16.670Z",
       "status": "unread"
     }
   ]

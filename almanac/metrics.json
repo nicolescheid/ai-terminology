@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-06-04T20:06:36.752Z",
+  "generatedAt": "2026-06-05T19:55:06.364Z",
   "firstRunAt": "2026-04-27T01:07:31.335Z",
   "phase": 1,
   "headline": {
-    "articlesRead": 161,
-    "daysRunning": 39,
-    "longlistSize": 195,
+    "articlesRead": 167,
+    "daysRunning": 40,
+    "longlistSize": 205,
     "graphSize": 207
   },
   "thisWeek": {
-    "articlesFetched": 48,
-    "longlistAdded": 74,
+    "articlesFetched": 54,
+    "longlistAdded": 84,
     "sourcesAdded": 15,
-    "promotionsToGraph": 1,
-    "proposalsQueued": 14,
+    "promotionsToGraph": 0,
+    "proposalsQueued": 16,
     "auditFlags": 12,
-    "notesAdded": 19
+    "notesAdded": 18
   },
   "almostThere": [
     {
@@ -27,7 +27,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 2,
-      "daysOnLonglist": 31,
+      "daysOnLonglist": 32,
       "domains": [
         "openai.com",
         "simonwillison.net"
@@ -43,15 +43,15 @@
         "agentic",
         "tools"
       ],
-      "sourceCount": 3,
+      "sourceCount": 4,
       "independentSources": 2,
-      "daysOnLonglist": 1,
+      "daysOnLonglist": 2,
       "domains": [
         "theverge.com",
         "stratechery.com"
       ],
       "gapCount": 1,
-      "gap": "2 more days on longlist"
+      "gap": "1 more day on longlist"
     },
     {
       "id": "product-market-fit",
@@ -60,11 +60,28 @@
       "clusters": [
         "business"
       ],
-      "sourceCount": 4,
+      "sourceCount": 5,
       "independentSources": 1,
-      "daysOnLonglist": 5,
+      "daysOnLonglist": 6,
       "domains": [
         "simonwillison.net"
+      ],
+      "gapCount": 1,
+      "gap": "needs 1 more independent source"
+    },
+    {
+      "id": "agentic-web",
+      "label": "Agentic Web",
+      "fullName": "The Agentic Web",
+      "clusters": [
+        "agentic",
+        "landscape"
+      ],
+      "sourceCount": 4,
+      "independentSources": 1,
+      "daysOnLonglist": 6,
+      "domains": [
+        "stratechery.com"
       ],
       "gapCount": 1,
       "gap": "needs 1 more independent source"
@@ -79,7 +96,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 35,
+      "daysOnLonglist": 36,
       "domains": [
         "stratechery.com"
       ],
@@ -96,7 +113,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 26,
+      "daysOnLonglist": 27,
       "domains": [
         "blog.google"
       ],
@@ -113,7 +130,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 26,
+      "daysOnLonglist": 27,
       "domains": [
         "blog.google"
       ],
@@ -130,26 +147,9 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 25,
+      "daysOnLonglist": 26,
       "domains": [
         "huggingface.co"
-      ],
-      "gapCount": 1,
-      "gap": "needs 1 more independent source"
-    },
-    {
-      "id": "agentic-web",
-      "label": "Agentic Web",
-      "fullName": "The Agentic Web",
-      "clusters": [
-        "agentic",
-        "landscape"
-      ],
-      "sourceCount": 3,
-      "independentSources": 1,
-      "daysOnLonglist": 5,
-      "domains": [
-        "stratechery.com"
       ],
       "gapCount": 1,
       "gap": "needs 1 more independent source"
@@ -165,7 +165,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 38,
+      "daysOnLonglist": 39,
       "domains": [
         "anthropic.com"
       ],
@@ -182,7 +182,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 35,
+      "daysOnLonglist": 36,
       "domains": [
         "stratechery.com"
       ],
@@ -194,27 +194,27 @@
     "byDomain": [
       {
         "domain": "openai.com",
-        "count": 39
+        "count": 40
       },
       {
         "domain": "simonwillison.net",
-        "count": 23
+        "count": 24
       },
       {
         "domain": "stratechery.com",
-        "count": 20
+        "count": 21
       },
       {
         "domain": "blog.google",
-        "count": 17
+        "count": 18
       },
       {
         "domain": "anthropic.com",
-        "count": 16
+        "count": 17
       },
       {
         "domain": "huggingface.co",
-        "count": 15
+        "count": 16
       },
       {
         "domain": "theverge.com",
@@ -346,19 +346,19 @@
         "id": "technical",
         "label": "Technical",
         "hex": "#D0D040",
-        "count": 65
+        "count": 68
       },
       {
         "id": "agentic",
         "label": "Agentic Systems",
         "hex": "#FF9040",
-        "count": 47
+        "count": 50
       },
       {
         "id": "tools",
         "label": "Tools & Platforms",
         "hex": "#70C8F8",
-        "count": 43
+        "count": 45
       },
       {
         "id": "models",
@@ -376,7 +376,13 @@
         "id": "safety",
         "label": "Safety",
         "hex": "#FF6090",
-        "count": 29
+        "count": 31
+      },
+      {
+        "id": "critical",
+        "label": "Critical / Hype",
+        "hex": "#FF5555",
+        "count": 30
       },
       {
         "id": "landscape",
@@ -388,13 +394,7 @@
         "id": "work",
         "label": "Work & Output",
         "hex": "#E8A838",
-        "count": 25
-      },
-      {
-        "id": "critical",
-        "label": "Critical / Hype",
-        "hex": "#FF5555",
-        "count": 24
+        "count": 27
       },
       {
         "id": "security",
@@ -412,7 +412,7 @@
         "id": "human",
         "label": "Human Skills",
         "hex": "#40D080",
-        "count": 11
+        "count": 13
       },
       {
         "id": "autonomy",
@@ -446,7 +446,7 @@
     "note": "All graph promotions and substantive edits are currently human-gated. Lexi proposes; Nicole approves."
   },
   "proposalsByStatus": {
-    "pending": 23,
+    "pending": 25,
     "approved": 0,
     "applied": 13,
     "rejected": 1
