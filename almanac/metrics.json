@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-06-05T19:55:06.364Z",
+  "generatedAt": "2026-06-06T19:20:46.712Z",
   "firstRunAt": "2026-04-27T01:07:31.335Z",
   "phase": 1,
   "headline": {
     "articlesRead": 167,
-    "daysRunning": 40,
+    "daysRunning": 41,
     "longlistSize": 205,
     "graphSize": 207
   },
   "thisWeek": {
-    "articlesFetched": 54,
-    "longlistAdded": 84,
-    "sourcesAdded": 15,
+    "articlesFetched": 36,
+    "longlistAdded": 59,
+    "sourcesAdded": 21,
     "promotionsToGraph": 0,
-    "proposalsQueued": 16,
+    "proposalsQueued": 11,
     "auditFlags": 12,
-    "notesAdded": 18
+    "notesAdded": 15
   },
   "almostThere": [
     {
@@ -36,24 +36,6 @@
       "gap": "meets credibility bar"
     },
     {
-      "id": "project-solara",
-      "label": "Project Solara",
-      "fullName": "Project Solara (Microsoft Agent OS)",
-      "clusters": [
-        "agentic",
-        "tools"
-      ],
-      "sourceCount": 4,
-      "independentSources": 2,
-      "daysOnLonglist": 2,
-      "domains": [
-        "theverge.com",
-        "stratechery.com"
-      ],
-      "gapCount": 1,
-      "gap": "1 more day on longlist"
-    },
-    {
       "id": "product-market-fit",
       "label": "Product-Market Fit",
       "fullName": "Product-Market Fit (AI)",
@@ -62,7 +44,7 @@
       ],
       "sourceCount": 5,
       "independentSources": 1,
-      "daysOnLonglist": 6,
+      "daysOnLonglist": 7,
       "domains": [
         "simonwillison.net"
       ],
@@ -79,7 +61,7 @@
       ],
       "sourceCount": 4,
       "independentSources": 1,
-      "daysOnLonglist": 6,
+      "daysOnLonglist": 7,
       "domains": [
         "stratechery.com"
       ],
@@ -96,7 +78,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 36,
+      "daysOnLonglist": 37,
       "domains": [
         "stratechery.com"
       ],
@@ -113,7 +95,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 27,
+      "daysOnLonglist": 28,
       "domains": [
         "blog.google"
       ],
@@ -130,7 +112,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 27,
+      "daysOnLonglist": 28,
       "domains": [
         "blog.google"
       ],
@@ -147,7 +129,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 26,
+      "daysOnLonglist": 27,
       "domains": [
         "huggingface.co"
       ],
@@ -165,7 +147,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 39,
+      "daysOnLonglist": 40,
       "domains": [
         "anthropic.com"
       ],
@@ -182,9 +164,26 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 36,
+      "daysOnLonglist": 37,
       "domains": [
         "stratechery.com"
+      ],
+      "gapCount": 1,
+      "gap": "needs 1 more independent source"
+    },
+    {
+      "id": "claude-partner-network",
+      "label": "Claude Partner Network",
+      "fullName": "Claude Partner Network (Anthropic)",
+      "clusters": [
+        "companies",
+        "business"
+      ],
+      "sourceCount": 2,
+      "independentSources": 1,
+      "daysOnLonglist": 32,
+      "domains": [
+        "anthropic.com"
       ],
       "gapCount": 1,
       "gap": "needs 1 more independent source"
@@ -446,7 +445,7 @@
     "note": "All graph promotions and substantive edits are currently human-gated. Lexi proposes; Nicole approves."
   },
   "proposalsByStatus": {
-    "pending": 25,
+    "pending": 26,
     "approved": 0,
     "applied": 13,
     "rejected": 1

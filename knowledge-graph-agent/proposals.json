@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-06-05T19:55:05.967Z",
-    "pendingCount": 25,
+    "generatedAt": "2026-06-06T19:20:46.345Z",
+    "pendingCount": 26,
     "appliedCount": 13,
     "rejectedCount": 1,
     "note": "Lexi proposals queue. Actions gated as PROPOSE land here as status: 'pending'. Edit a proposal's status to 'approved' or 'rejected' and run the apply step (TBD) to commit."
@@ -1854,6 +1854,57 @@
       },
       "reason": "3 sources, 2 independent (lastweekin.ai + blog.google), 6d on longlist.",
       "runId": "3facfd3c-de9b-4e00-b38f-3d0d11341110"
+    },
+    {
+      "id": "bbf1c6b4431c3ea7",
+      "action": "promote_to_graph",
+      "gate": "propose",
+      "proposedAt": "2026-06-06T19:20:46.345Z",
+      "status": "pending",
+      "source": "promote-eligibility-scan",
+      "target": {
+        "kind": "longlist_entry",
+        "id": "project-solara"
+      },
+      "payload": {
+        "graphNode": {
+          "id": "project-solara",
+          "label": "Project Solara",
+          "clusters": [
+            "agentic",
+            "tools"
+          ],
+          "sz": 14,
+          "def": "An Android-based operating system developed by Microsoft in partnership with Qualcomm and MediaTek, designed to run AI agents across a variety of devices and enable cross-device task handoff. Announced at Build 2026 with prototype form factors including a desktop hub and digital badge.",
+          "rels": [
+            "agent",
+            "handoff",
+            "a2a",
+            "agent-os"
+          ],
+          "refs": [
+            {
+              "n": 1,
+              "src": "The Verge — AI, 2026-06-02T15:23:52-04:00",
+              "q": "Microsoft Build 2026: The 7 biggest announcements The Verge — AI"
+            },
+            {
+              "n": 2,
+              "src": "Stratechery, Wed, 03 Jun 2026 10:00:00 +0000",
+              "q": "The Nvidia AI PC, Project Solara, Microsoft AI Stratechery"
+            },
+            {
+              "n": 3,
+              "src": "Stratechery, Thu, 04 Jun 2026 10:00:00 +0000",
+              "q": "An Interview with Microsoft CEO Satya Nadella About Finding Core Competencies Stratechery"
+            }
+          ],
+          "fullName": "Project Solara (Microsoft Agent OS)",
+          "nodeType": "product"
+        }
+      },
+      "reason": "4 sources, 2 independent (theverge.com + stratechery.com), 3d on longlist. Trusted: stratechery.com.",
+      "runId": "b79d7750-733f-4471-be00-ac647e325400"
     }
   ]
 }
