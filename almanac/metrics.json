@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-06-08T21:11:52.847Z",
+  "generatedAt": "2026-06-09T20:05:43.728Z",
   "firstRunAt": "2026-04-27T01:07:31.335Z",
   "phase": 1,
   "headline": {
     "articlesRead": 167,
-    "daysRunning": 43,
+    "daysRunning": 44,
     "longlistSize": 205,
     "graphSize": 207
   },
   "thisWeek": {
-    "articlesFetched": 30,
-    "longlistAdded": 48,
-    "sourcesAdded": 21,
+    "articlesFetched": 24,
+    "longlistAdded": 44,
+    "sourcesAdded": 17,
     "promotionsToGraph": 0,
-    "proposalsQueued": 11,
-    "auditFlags": 22,
-    "notesAdded": 27
+    "proposalsQueued": 6,
+    "auditFlags": 10,
+    "notesAdded": 15
   },
   "almostThere": [
     {
@@ -27,7 +27,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 2,
-      "daysOnLonglist": 35,
+      "daysOnLonglist": 36,
       "domains": [
         "openai.com",
         "simonwillison.net"
@@ -78,7 +78,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 39,
+      "daysOnLonglist": 40,
       "domains": [
         "stratechery.com"
       ],
@@ -95,7 +95,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 30,
+      "daysOnLonglist": 31,
       "domains": [
         "blog.google"
       ],
@@ -112,7 +112,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 30,
+      "daysOnLonglist": 31,
       "domains": [
         "blog.google"
       ],
@@ -129,7 +129,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 29,
+      "daysOnLonglist": 30,
       "domains": [
         "huggingface.co"
       ],
@@ -147,7 +147,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 42,
+      "daysOnLonglist": 43,
       "domains": [
         "anthropic.com"
       ],
@@ -164,7 +164,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 39,
+      "daysOnLonglist": 40,
       "domains": [
         "stratechery.com"
       ],
@@ -181,7 +181,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 35,
+      "daysOnLonglist": 36,
       "domains": [
         "anthropic.com"
       ],
