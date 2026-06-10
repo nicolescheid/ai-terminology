@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-06-09T20:05:43.728Z",
+  "generatedAt": "2026-06-10T20:28:35.272Z",
   "firstRunAt": "2026-04-27T01:07:31.335Z",
   "phase": 1,
   "headline": {
     "articlesRead": 167,
-    "daysRunning": 44,
+    "daysRunning": 45,
     "longlistSize": 205,
     "graphSize": 207
   },
   "thisWeek": {
-    "articlesFetched": 24,
-    "longlistAdded": 44,
-    "sourcesAdded": 17,
+    "articlesFetched": 18,
+    "longlistAdded": 32,
+    "sourcesAdded": 14,
     "promotionsToGraph": 0,
-    "proposalsQueued": 6,
+    "proposalsQueued": 5,
     "auditFlags": 10,
-    "notesAdded": 15
+    "notesAdded": 16
   },
   "almostThere": [
     {
@@ -27,7 +27,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 2,
-      "daysOnLonglist": 36,
+      "daysOnLonglist": 37,
       "domains": [
         "openai.com",
         "simonwillison.net"
@@ -44,7 +44,7 @@
       ],
       "sourceCount": 5,
       "independentSources": 1,
-      "daysOnLonglist": 10,
+      "daysOnLonglist": 11,
       "domains": [
         "simonwillison.net"
       ],
@@ -61,7 +61,7 @@
       ],
       "sourceCount": 4,
       "independentSources": 1,
-      "daysOnLonglist": 10,
+      "daysOnLonglist": 11,
       "domains": [
         "stratechery.com"
       ],
@@ -78,7 +78,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 40,
+      "daysOnLonglist": 41,
       "domains": [
         "stratechery.com"
       ],
@@ -95,7 +95,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 31,
+      "daysOnLonglist": 32,
       "domains": [
         "blog.google"
       ],
@@ -112,7 +112,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 31,
+      "daysOnLonglist": 32,
       "domains": [
         "blog.google"
       ],
@@ -129,7 +129,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 30,
+      "daysOnLonglist": 31,
       "domains": [
         "huggingface.co"
       ],
@@ -147,7 +147,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 43,
+      "daysOnLonglist": 44,
       "domains": [
         "anthropic.com"
       ],
@@ -164,7 +164,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 40,
+      "daysOnLonglist": 41,
       "domains": [
         "stratechery.com"
       ],
@@ -181,7 +181,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 36,
+      "daysOnLonglist": 37,
       "domains": [
         "anthropic.com"
       ],
@@ -241,14 +241,6 @@
       {
         "domain": "sloanreview.mit.edu",
         "firstSeen": "2026-05-16T19:02:56.992Z"
-      },
-      {
-        "domain": "theverge.com",
-        "firstSeen": "2026-05-11T07:07:01.775Z"
-      },
-      {
-        "domain": "hbr.org",
-        "firstSeen": "2026-05-11T07:07:01.775Z"
       }
     ]
   },
