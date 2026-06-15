@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-14T19:25:04.265Z",
+  "generatedAt": "2026-06-15T20:53:49.782Z",
   "firstRunAt": "2026-04-27T01:07:31.335Z",
   "phase": 1,
   "headline": {
     "articlesRead": 167,
-    "daysRunning": 49,
+    "daysRunning": 50,
     "longlistSize": 205,
     "graphSize": 207
   },
@@ -27,7 +27,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 2,
-      "daysOnLonglist": 40,
+      "daysOnLonglist": 42,
       "domains": [
         "openai.com",
         "simonwillison.net"
@@ -44,7 +44,7 @@
       ],
       "sourceCount": 5,
       "independentSources": 1,
-      "daysOnLonglist": 15,
+      "daysOnLonglist": 17,
       "domains": [
         "simonwillison.net"
       ],
@@ -61,7 +61,7 @@
       ],
       "sourceCount": 4,
       "independentSources": 1,
-      "daysOnLonglist": 15,
+      "daysOnLonglist": 17,
       "domains": [
         "stratechery.com"
       ],
@@ -78,7 +78,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 45,
+      "daysOnLonglist": 46,
       "domains": [
         "stratechery.com"
       ],
@@ -95,7 +95,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 36,
+      "daysOnLonglist": 37,
       "domains": [
         "blog.google"
       ],
@@ -112,7 +112,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 36,
+      "daysOnLonglist": 37,
       "domains": [
         "blog.google"
       ],
@@ -129,7 +129,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 35,
+      "daysOnLonglist": 36,
       "domains": [
         "huggingface.co"
       ],
@@ -147,7 +147,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 48,
+      "daysOnLonglist": 49,
       "domains": [
         "anthropic.com"
       ],
@@ -164,7 +164,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 45,
+      "daysOnLonglist": 46,
       "domains": [
         "stratechery.com"
       ],
@@ -181,7 +181,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 40,
+      "daysOnLonglist": 42,
       "domains": [
         "anthropic.com"
       ],
@@ -237,12 +237,7 @@
       }
     ],
     "totalUniqueDomains": 11,
-    "newDomainsLast30d": [
-      {
-        "domain": "sloanreview.mit.edu",
-        "firstSeen": "2026-05-16T19:02:56.992Z"
-      }
-    ]
+    "newDomainsLast30d": []
   },
   "clusters": {
     "palette": [
