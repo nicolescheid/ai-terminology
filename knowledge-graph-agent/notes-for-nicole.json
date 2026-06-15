@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generatedAt": "2026-06-15T20:53:49.310Z",
-    "unreadCount": 38,
-    "totalCount": 186,
+    "generatedAt": "2026-06-15T21:46:25.028Z",
+    "unreadCount": 45,
+    "totalCount": 193,
     "note": "Notes for Nicole — Lexi's manager channel (spec §6). Mandatory entry types fire when their triggering condition is met; discretionary entries are observations Lexi thinks Nicole should see. Set status to 'read', 'actioned', or 'dismissed' as appropriate."
   },
   "entries": [
@@ -5050,6 +5050,233 @@
         ]
       },
       "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+    },
+    {
+      "id": "a2d89ac5490fabb7",
+      "type": "source_pattern",
+      "writtenAt": "2026-06-15T21:46:25.028Z",
+      "runId": "4c6f9a55-798f-4c9c-81c7-084aaa7d4883",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Source pattern: domain 'sloanreview.mit.edu' appears in 2 recent longlist entries",
+      "details": "In the past 30 days, 2 longlist entries have at least one source from sloanreview.mit.edu. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
+      "evidence": {
+        "check": "cross_temporal_domain_share",
+        "domain": "sloanreview.mit.edu",
+        "entryIds": [
+          "curb-cut-effect",
+          "job-design"
+        ],
+        "windowDays": 30,
+        "recentEntryCount": 93
+      },
+      "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
+      "source": "auditor"
+    },
+    {
+      "id": "78d7d75e02cf3f57",
+      "type": "source_pattern",
+      "writtenAt": "2026-06-15T21:46:25.028Z",
+      "runId": "4c6f9a55-798f-4c9c-81c7-084aaa7d4883",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Source pattern: domain 'simonwillison.net' appears in 14 recent longlist entries",
+      "details": "In the past 30 days, 14 longlist entries have at least one source from simonwillison.net. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
+      "evidence": {
+        "check": "cross_temporal_domain_share",
+        "domain": "simonwillison.net",
+        "entryIds": [
+          "open-by-default",
+          "run-rate-revenue",
+          "product-market-fit",
+          "attention-fragmentation-ai",
+          "project-proliferation",
+          "ai-support-bot-takeover",
+          "one-shot-account-recovery",
+          "token-spending-cap",
+          "tokenmaxxing",
+          "coding-agent",
+          "statement-retraction",
+          "code-provenance",
+          "effort-proxy-collapse",
+          "maintainer-accountability"
+        ],
+        "windowDays": 30,
+        "recentEntryCount": 93
+      },
+      "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
+      "source": "auditor"
+    },
+    {
+      "id": "dd92476ab8564494",
+      "type": "source_pattern",
+      "writtenAt": "2026-06-15T21:46:25.028Z",
+      "runId": "4c6f9a55-798f-4c9c-81c7-084aaa7d4883",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Source pattern: domain 'anthropic.com' appears in 18 recent longlist entries",
+      "details": "In the past 30 days, 18 longlist entries have at least one source from anthropic.com. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
+      "evidence": {
+        "check": "cross_temporal_domain_share",
+        "domain": "anthropic.com",
+        "entryIds": [
+          "sdk-generation",
+          "agent-connectivity",
+          "claude-small-business",
+          "aint",
+          "offense-defense-balance",
+          "dynamic-workflows",
+          "effort-control",
+          "run-rate-revenue",
+          "colossus",
+          "series-h-anthropic",
+          "hyperscaler",
+          "claude-security",
+          "claude-opus-48",
+          "services-track-anthropic",
+          "claude-certification",
+          "papal-ai-encyclical",
+          "global-ai-equity",
+          "ai-discernment"
+        ],
+        "windowDays": 30,
+        "recentEntryCount": 93
+      },
+      "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
+      "source": "auditor"
+    },
+    {
+      "id": "da9c3e1be1a39596",
+      "type": "source_pattern",
+      "writtenAt": "2026-06-15T21:46:25.028Z",
+      "runId": "4c6f9a55-798f-4c9c-81c7-084aaa7d4883",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Source pattern: domain 'stratechery.com' appears in 12 recent longlist entries",
+      "details": "In the past 30 days, 12 longlist entries have at least one source from stratechery.com. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
+      "evidence": {
+        "check": "cross_temporal_domain_share",
+        "domain": "stratechery.com",
+        "entryIds": [
+          "total-addressable-market",
+          "agentic-web",
+          "hyperscaler",
+          "aggregator-theory",
+          "productive-capital-business",
+          "asset-light-model",
+          "project-solara",
+          "rtx-spark",
+          "unmetered-intelligence",
+          "hill-climbing-machine",
+          "token-capital",
+          "clean-lineage"
+        ],
+        "windowDays": 30,
+        "recentEntryCount": 93
+      },
+      "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
+      "source": "auditor"
+    },
+    {
+      "id": "dbb388f986d9f842",
+      "type": "source_pattern",
+      "writtenAt": "2026-06-15T21:46:25.028Z",
+      "runId": "4c6f9a55-798f-4c9c-81c7-084aaa7d4883",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Source pattern: domain 'blog.google' appears in 11 recent longlist entries",
+      "details": "In the past 30 days, 11 longlist entries have at least one source from blog.google. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
+      "evidence": {
+        "check": "cross_temporal_domain_share",
+        "domain": "blog.google",
+        "entryIds": [
+          "gemini-omni",
+          "gemini-35-flash",
+          "information-agents-search",
+          "google-antigravity",
+          "gemini-spark",
+          "conversational-video-editing",
+          "ai-tutoring",
+          "real-time-feedback-ai",
+          "nano-banana",
+          "circle-to-search",
+          "virtual-try-on"
+        ],
+        "windowDays": 30,
+        "recentEntryCount": 93
+      },
+      "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
+      "source": "auditor"
+    },
+    {
+      "id": "05f783a530a4a944",
+      "type": "source_pattern",
+      "writtenAt": "2026-06-15T21:46:25.028Z",
+      "runId": "4c6f9a55-798f-4c9c-81c7-084aaa7d4883",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Source pattern: domain 'lastweekin.ai' appears in 9 recent longlist entries",
+      "details": "In the past 30 days, 9 longlist entries have at least one source from lastweekin.ai. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
+      "evidence": {
+        "check": "cross_temporal_domain_share",
+        "domain": "lastweekin.ai",
+        "entryIds": [
+          "gemini-omni",
+          "gemini-35-flash",
+          "gemini-spark",
+          "alphaproof-nexus",
+          "claude-for-legal",
+          "full-duplex-conversational-ai",
+          "cot-grading-contamination",
+          "human-consent-standard",
+          "negation-neglect"
+        ],
+        "windowDays": 30,
+        "recentEntryCount": 93
+      },
+      "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
+      "source": "auditor"
+    },
+    {
+      "id": "e113c194fd55ed74",
+      "type": "source_pattern",
+      "writtenAt": "2026-06-15T21:46:25.028Z",
+      "runId": "4c6f9a55-798f-4c9c-81c7-084aaa7d4883",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Source pattern: domain 'huggingface.co' appears in 21 recent longlist entries",
+      "details": "In the past 30 days, 21 longlist entries have at least one source from huggingface.co. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
+      "evidence": {
+        "check": "cross_temporal_domain_share",
+        "domain": "huggingface.co",
+        "entryIds": [
+          "itbench-aa",
+          "recall-gated-precision",
+          "sre-tasks",
+          "cascaded-voice-pipeline",
+          "multi-token-prediction",
+          "responses-api",
+          "cross-harness-compatibility",
+          "universal-computer-use-agent",
+          "on-device-computer-use",
+          "dpo",
+          "text-degeneration",
+          "self-generated-rejection-pairs",
+          "sft-ceiling",
+          "content-safety-model",
+          "custom-policy-enforcement",
+          "safety-reasoning-trace",
+          "zero-shot-multilingual-safety",
+          "eva-bench",
+          "sygra",
+          "unsatisfiable-goal-scenario",
+          "multi-intent-call"
+        ],
+        "windowDays": 30,
+        "recentEntryCount": 93
+      },
+      "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
+      "source": "auditor"
     }
   ]
 }
