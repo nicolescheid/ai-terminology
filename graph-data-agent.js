@@ -1,6 +1,6 @@
 window.AGENT_GRAPH_PATCH = {
   "meta": {
-    "generatedAt": "2026-06-20T19:24:26.407Z",
+    "generatedAt": "2026-06-21T19:27:48.113Z",
     "sourceCount": 0,
     "note": "Agent-managed overlay. Graph-affecting changes are routed through the permissions matrix (actions.mjs) — see proposals.json for pending items."
   },
