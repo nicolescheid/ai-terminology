@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generatedAt": "2026-06-22T20:46:40.775Z",
-    "unreadCount": 52,
-    "totalCount": 200,
+    "generatedAt": "2026-06-22T21:32:23.672Z",
+    "unreadCount": 55,
+    "totalCount": 203,
     "note": "Notes for Nicole — Lexi's manager channel (spec §6). Mandatory entry types fire when their triggering condition is met; discretionary entries are observations Lexi thinks Nicole should see. Set status to 'read', 'actioned', or 'dismissed' as appropriate."
   },
   "entries": [
@@ -5431,6 +5431,99 @@
         ]
       },
       "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+    },
+    {
+      "id": "e8d54e9b71564d5f",
+      "type": "source_pattern",
+      "writtenAt": "2026-06-22T21:32:23.672Z",
+      "runId": "7c7137e4-5c0f-4b99-a534-f1f1101b6c27",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Source pattern: domain 'anthropic.com' appears in 15 recent longlist entries",
+      "details": "In the past 30 days, 15 longlist entries have at least one source from anthropic.com. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
+      "evidence": {
+        "check": "cross_temporal_domain_share",
+        "domain": "anthropic.com",
+        "entryIds": [
+          "aint",
+          "offense-defense-balance",
+          "dynamic-workflows",
+          "effort-control",
+          "run-rate-revenue",
+          "colossus",
+          "series-h-anthropic",
+          "hyperscaler",
+          "claude-security",
+          "claude-opus-48",
+          "services-track-anthropic",
+          "claude-certification",
+          "papal-ai-encyclical",
+          "global-ai-equity",
+          "ai-discernment"
+        ],
+        "windowDays": 30,
+        "recentEntryCount": 84
+      },
+      "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
+      "source": "auditor"
+    },
+    {
+      "id": "3afa0ee350a697cd",
+      "type": "source_pattern",
+      "writtenAt": "2026-06-22T21:32:23.672Z",
+      "runId": "7c7137e4-5c0f-4b99-a534-f1f1101b6c27",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Source pattern: domain 'simonwillison.net' appears in 13 recent longlist entries",
+      "details": "In the past 30 days, 13 longlist entries have at least one source from simonwillison.net. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
+      "evidence": {
+        "check": "cross_temporal_domain_share",
+        "domain": "simonwillison.net",
+        "entryIds": [
+          "run-rate-revenue",
+          "product-market-fit",
+          "attention-fragmentation-ai",
+          "project-proliferation",
+          "ai-support-bot-takeover",
+          "one-shot-account-recovery",
+          "token-spending-cap",
+          "tokenmaxxing",
+          "coding-agent",
+          "statement-retraction",
+          "code-provenance",
+          "effort-proxy-collapse",
+          "maintainer-accountability"
+        ],
+        "windowDays": 30,
+        "recentEntryCount": 84
+      },
+      "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
+      "source": "auditor"
+    },
+    {
+      "id": "85b32de148ae932d",
+      "type": "source_pattern",
+      "writtenAt": "2026-06-22T21:32:23.672Z",
+      "runId": "7c7137e4-5c0f-4b99-a534-f1f1101b6c27",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Source pattern: domain 'theverge.com' appears in 5 recent longlist entries",
+      "details": "In the past 30 days, 5 longlist entries have at least one source from theverge.com. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
+      "evidence": {
+        "check": "cross_temporal_domain_share",
+        "domain": "theverge.com",
+        "entryIds": [
+          "project-solara",
+          "microsoft-execution-containers",
+          "mai-thinking-1",
+          "scout-microsoft",
+          "project-stratos-oleary"
+        ],
+        "windowDays": 30,
+        "recentEntryCount": 84
+      },
+      "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
+      "source": "auditor"
     }
   ]
 }
