@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generatedAt": "2026-06-29T19:55:35.015Z",
-    "unreadCount": 62,
-    "totalCount": 210,
+    "generatedAt": "2026-06-29T20:49:50.081Z",
+    "unreadCount": 66,
+    "totalCount": 214,
     "note": "Notes for Nicole — Lexi's manager channel (spec §6). Mandatory entry types fire when their triggering condition is met; discretionary entries are observations Lexi thinks Nicole should see. Set status to 'read', 'actioned', or 'dismissed' as appropriate."
   },
   "entries": [
@@ -5678,6 +5678,125 @@
         ]
       },
       "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+    },
+    {
+      "id": "d471e209f79a457b",
+      "type": "source_pattern",
+      "writtenAt": "2026-06-29T20:49:50.081Z",
+      "runId": "4e9f5c04-85db-4cfc-b6a3-28e7982bca2b",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Source pattern: domain 'huggingface.co' appears in 18 recent longlist entries",
+      "details": "In the past 30 days, 18 longlist entries have at least one source from huggingface.co. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
+      "evidence": {
+        "check": "cross_temporal_domain_share",
+        "domain": "huggingface.co",
+        "entryIds": [
+          "cascaded-voice-pipeline",
+          "multi-token-prediction",
+          "responses-api",
+          "cross-harness-compatibility",
+          "universal-computer-use-agent",
+          "on-device-computer-use",
+          "dpo",
+          "text-degeneration",
+          "self-generated-rejection-pairs",
+          "sft-ceiling",
+          "content-safety-model",
+          "custom-policy-enforcement",
+          "safety-reasoning-trace",
+          "zero-shot-multilingual-safety",
+          "eva-bench",
+          "sygra",
+          "unsatisfiable-goal-scenario",
+          "multi-intent-call"
+        ],
+        "windowDays": 30,
+        "recentEntryCount": 59
+      },
+      "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
+      "source": "auditor"
+    },
+    {
+      "id": "621ec2317fa75223",
+      "type": "source_pattern",
+      "writtenAt": "2026-06-29T20:49:50.081Z",
+      "runId": "4e9f5c04-85db-4cfc-b6a3-28e7982bca2b",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Source pattern: domain 'lastweekin.ai' appears in 5 recent longlist entries",
+      "details": "In the past 30 days, 5 longlist entries have at least one source from lastweekin.ai. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
+      "evidence": {
+        "check": "cross_temporal_domain_share",
+        "domain": "lastweekin.ai",
+        "entryIds": [
+          "claude-for-legal",
+          "full-duplex-conversational-ai",
+          "cot-grading-contamination",
+          "human-consent-standard",
+          "negation-neglect"
+        ],
+        "windowDays": 30,
+        "recentEntryCount": 59
+      },
+      "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
+      "source": "auditor"
+    },
+    {
+      "id": "6c9e6d930a56e5a3",
+      "type": "source_pattern",
+      "writtenAt": "2026-06-29T20:49:50.081Z",
+      "runId": "4e9f5c04-85db-4cfc-b6a3-28e7982bca2b",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Source pattern: domain 'stratechery.com' appears in 9 recent longlist entries",
+      "details": "In the past 30 days, 9 longlist entries have at least one source from stratechery.com. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
+      "evidence": {
+        "check": "cross_temporal_domain_share",
+        "domain": "stratechery.com",
+        "entryIds": [
+          "aggregator-theory",
+          "productive-capital-business",
+          "asset-light-model",
+          "project-solara",
+          "rtx-spark",
+          "unmetered-intelligence",
+          "hill-climbing-machine",
+          "token-capital",
+          "clean-lineage"
+        ],
+        "windowDays": 30,
+        "recentEntryCount": 59
+      },
+      "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
+      "source": "auditor"
+    },
+    {
+      "id": "11bf7af0b5fd128b",
+      "type": "source_pattern",
+      "writtenAt": "2026-06-29T20:49:50.081Z",
+      "runId": "4e9f5c04-85db-4cfc-b6a3-28e7982bca2b",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Source pattern: domain 'anthropic.com' appears in 7 recent longlist entries",
+      "details": "In the past 30 days, 7 longlist entries have at least one source from anthropic.com. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
+      "evidence": {
+        "check": "cross_temporal_domain_share",
+        "domain": "anthropic.com",
+        "entryIds": [
+          "claude-security",
+          "claude-opus-48",
+          "services-track-anthropic",
+          "claude-certification",
+          "papal-ai-encyclical",
+          "global-ai-equity",
+          "ai-discernment"
+        ],
+        "windowDays": 30,
+        "recentEntryCount": 59
+      },
+      "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
+      "source": "auditor"
     }
   ]
 }
