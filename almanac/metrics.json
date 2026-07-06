@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-06T19:53:50.173Z",
+  "generatedAt": "2026-07-06T20:53:29.085Z",
   "firstRunAt": "2026-04-27T01:07:31.335Z",
   "phase": 1,
   "headline": {
@@ -14,8 +14,8 @@
     "sourcesAdded": 0,
     "promotionsToGraph": 0,
     "proposalsQueued": 0,
-    "auditFlags": 4,
-    "notesAdded": 12
+    "auditFlags": 0,
+    "notesAdded": 7
   },
   "almostThere": [
     {
@@ -44,7 +44,7 @@
       ],
       "sourceCount": 5,
       "independentSources": 1,
-      "daysOnLonglist": 37,
+      "daysOnLonglist": 38,
       "domains": [
         "simonwillison.net"
       ],
@@ -61,7 +61,7 @@
       ],
       "sourceCount": 4,
       "independentSources": 1,
-      "daysOnLonglist": 37,
+      "daysOnLonglist": 38,
       "domains": [
         "stratechery.com"
       ],
