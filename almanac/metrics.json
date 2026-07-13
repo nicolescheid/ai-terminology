@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-13T19:20:59.606Z",
+  "generatedAt": "2026-07-13T20:17:59.304Z",
   "firstRunAt": "2026-04-27T01:07:31.335Z",
   "phase": 1,
   "headline": {
@@ -15,7 +15,7 @@
     "promotionsToGraph": 0,
     "proposalsQueued": 0,
     "auditFlags": 0,
-    "notesAdded": 8
+    "notesAdded": 7
   },
   "almostThere": [
     {
@@ -27,7 +27,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 2,
-      "daysOnLonglist": 69,
+      "daysOnLonglist": 70,
       "domains": [
         "openai.com",
         "simonwillison.net"
@@ -181,7 +181,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 69,
+      "daysOnLonglist": 70,
       "domains": [
         "anthropic.com"
       ],
