@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-07-21T19:19:01.822Z",
+    "generatedAt": "2026-07-22T19:15:08.685Z",
     "sourceCount": 0,
     "note": "Agent-managed overlay. Graph-affecting changes are routed through the permissions matrix (actions.mjs) — see proposals.json for pending items."
   },
