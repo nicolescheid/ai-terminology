@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-03T19:27:23.428Z",
+  "generatedAt": "2026-08-03T20:27:29.526Z",
   "firstRunAt": "2026-04-27T01:07:31.335Z",
   "phase": 1,
   "headline": {
@@ -27,7 +27,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 2,
-      "daysOnLonglist": 90,
+      "daysOnLonglist": 91,
       "domains": [
         "openai.com",
         "simonwillison.net"
@@ -147,7 +147,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 90,
+      "daysOnLonglist": 91,
       "domains": [
         "anthropic.com"
       ],
@@ -164,7 +164,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 81,
+      "daysOnLonglist": 82,
       "domains": [
         "theverge.com"
       ],
@@ -181,7 +181,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 65,
+      "daysOnLonglist": 66,
       "domains": [
         "blog.google"
       ],
