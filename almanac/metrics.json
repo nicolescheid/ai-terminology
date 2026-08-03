@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-02T19:07:07.771Z",
+  "generatedAt": "2026-08-03T19:27:23.428Z",
   "firstRunAt": "2026-04-27T01:07:31.335Z",
   "phase": 1,
   "headline": {
     "articlesRead": 167,
-    "daysRunning": 98,
+    "daysRunning": 99,
     "longlistSize": 205,
     "graphSize": 207
   },
@@ -15,7 +15,7 @@
     "promotionsToGraph": 0,
     "proposalsQueued": 0,
     "auditFlags": 0,
-    "notesAdded": 8
+    "notesAdded": 7
   },
   "almostThere": [
     {
@@ -27,7 +27,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 2,
-      "daysOnLonglist": 89,
+      "daysOnLonglist": 90,
       "domains": [
         "openai.com",
         "simonwillison.net"
@@ -44,7 +44,7 @@
       ],
       "sourceCount": 5,
       "independentSources": 1,
-      "daysOnLonglist": 64,
+      "daysOnLonglist": 65,
       "domains": [
         "simonwillison.net"
       ],
@@ -61,24 +61,7 @@
       ],
       "sourceCount": 4,
       "independentSources": 1,
-      "daysOnLonglist": 64,
-      "domains": [
-        "stratechery.com"
-      ],
-      "gapCount": 1,
-      "gap": "needs 1 more independent source"
-    },
-    {
-      "id": "terafab",
-      "label": "Terafab",
-      "fullName": "Terafab (Intel AI Fab Initiative)",
-      "clusters": [
-        "landscape",
-        "companies"
-      ],
-      "sourceCount": 3,
-      "independentSources": 1,
-      "daysOnLonglist": 93,
+      "daysOnLonglist": 65,
       "domains": [
         "stratechery.com"
       ],
@@ -95,7 +78,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 85,
+      "daysOnLonglist": 86,
       "domains": [
         "blog.google"
       ],
@@ -112,7 +95,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 85,
+      "daysOnLonglist": 86,
       "domains": [
         "blog.google"
       ],
@@ -129,7 +112,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 84,
+      "daysOnLonglist": 85,
       "domains": [
         "huggingface.co"
       ],
@@ -147,7 +130,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 97,
+      "daysOnLonglist": 98,
       "domains": [
         "anthropic.com"
       ],
@@ -164,7 +147,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 89,
+      "daysOnLonglist": 90,
       "domains": [
         "anthropic.com"
       ],
@@ -181,9 +164,26 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 80,
+      "daysOnLonglist": 81,
       "domains": [
         "theverge.com"
+      ],
+      "gapCount": 1,
+      "gap": "needs 1 more independent source"
+    },
+    {
+      "id": "information-agents-search",
+      "label": "Information Agents",
+      "fullName": "Information Agents (Google Search)",
+      "clusters": [
+        "agentic",
+        "tools"
+      ],
+      "sourceCount": 2,
+      "independentSources": 1,
+      "daysOnLonglist": 65,
+      "domains": [
+        "blog.google"
       ],
       "gapCount": 1,
       "gap": "needs 1 more independent source"
