@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-04T19:29:35.926Z",
+  "generatedAt": "2026-08-05T19:26:47.491Z",
   "firstRunAt": "2026-04-27T01:07:31.335Z",
   "phase": 1,
   "headline": {
     "articlesRead": 167,
-    "daysRunning": 100,
+    "daysRunning": 101,
     "longlistSize": 205,
     "graphSize": 207
   },
@@ -44,7 +44,7 @@
       ],
       "sourceCount": 5,
       "independentSources": 1,
-      "daysOnLonglist": 66,
+      "daysOnLonglist": 67,
       "domains": [
         "simonwillison.net"
       ],
@@ -61,7 +61,7 @@
       ],
       "sourceCount": 4,
       "independentSources": 1,
-      "daysOnLonglist": 66,
+      "daysOnLonglist": 67,
       "domains": [
         "stratechery.com"
       ],
@@ -78,7 +78,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 87,
+      "daysOnLonglist": 88,
       "domains": [
         "blog.google"
       ],
@@ -95,7 +95,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 87,
+      "daysOnLonglist": 88,
       "domains": [
         "blog.google"
       ],
@@ -112,7 +112,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 86,
+      "daysOnLonglist": 87,
       "domains": [
         "huggingface.co"
       ],
@@ -130,7 +130,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 99,
+      "daysOnLonglist": 100,
       "domains": [
         "anthropic.com"
       ],
@@ -164,7 +164,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 82,
+      "daysOnLonglist": 83,
       "domains": [
         "theverge.com"
       ],
@@ -181,7 +181,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 66,
+      "daysOnLonglist": 67,
       "domains": [
         "blog.google"
       ],
