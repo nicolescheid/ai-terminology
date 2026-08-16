@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-15T18:26:04.509Z",
+  "generatedAt": "2026-08-16T18:25:38.412Z",
   "firstRunAt": "2026-04-27T01:07:31.335Z",
   "phase": 1,
   "headline": {
     "articlesRead": 167,
-    "daysRunning": 111,
+    "daysRunning": 112,
     "longlistSize": 205,
     "graphSize": 207
   },
@@ -27,7 +27,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 2,
-      "daysOnLonglist": 102,
+      "daysOnLonglist": 103,
       "domains": [
         "openai.com",
         "simonwillison.net"
@@ -44,7 +44,7 @@
       ],
       "sourceCount": 5,
       "independentSources": 1,
-      "daysOnLonglist": 77,
+      "daysOnLonglist": 78,
       "domains": [
         "simonwillison.net"
       ],
@@ -61,7 +61,7 @@
       ],
       "sourceCount": 4,
       "independentSources": 1,
-      "daysOnLonglist": 77,
+      "daysOnLonglist": 78,
       "domains": [
         "stratechery.com"
       ],
@@ -78,7 +78,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 97,
+      "daysOnLonglist": 98,
       "domains": [
         "blog.google"
       ],
@@ -95,7 +95,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 97,
+      "daysOnLonglist": 98,
       "domains": [
         "blog.google"
       ],
@@ -112,7 +112,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 96,
+      "daysOnLonglist": 97,
       "domains": [
         "huggingface.co"
       ],
@@ -130,7 +130,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 110,
+      "daysOnLonglist": 111,
       "domains": [
         "anthropic.com"
       ],
@@ -147,26 +147,9 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 102,
+      "daysOnLonglist": 103,
       "domains": [
         "anthropic.com"
-      ],
-      "gapCount": 1,
-      "gap": "needs 1 more independent source"
-    },
-    {
-      "id": "ephemeral-ai-chat",
-      "label": "Ephemeral AI Chat",
-      "fullName": null,
-      "clusters": [
-        "security",
-        "tools"
-      ],
-      "sourceCount": 2,
-      "independentSources": 1,
-      "daysOnLonglist": 93,
-      "domains": [
-        "theverge.com"
       ],
       "gapCount": 1,
       "gap": "needs 1 more independent source"
@@ -181,9 +164,26 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 77,
+      "daysOnLonglist": 78,
       "domains": [
         "blog.google"
+      ],
+      "gapCount": 1,
+      "gap": "needs 1 more independent source"
+    },
+    {
+      "id": "series-h-anthropic",
+      "label": "Series H",
+      "fullName": "Anthropic Series H Funding Round",
+      "clusters": [
+        "business",
+        "companies"
+      ],
+      "sourceCount": 2,
+      "independentSources": 1,
+      "daysOnLonglist": 78,
+      "domains": [
+        "anthropic.com"
       ],
       "gapCount": 1,
       "gap": "needs 1 more independent source"
