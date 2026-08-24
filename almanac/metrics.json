@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T18:36:59.004Z",
+  "generatedAt": "2026-08-24T19:31:53.752Z",
   "firstRunAt": "2026-04-27T01:07:31.335Z",
   "phase": 1,
   "headline": {
@@ -27,7 +27,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 2,
-      "daysOnLonglist": 111,
+      "daysOnLonglist": 112,
       "domains": [
         "openai.com",
         "simonwillison.net"
@@ -78,7 +78,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 106,
+      "daysOnLonglist": 107,
       "domains": [
         "blog.google"
       ],
@@ -95,7 +95,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 106,
+      "daysOnLonglist": 107,
       "domains": [
         "blog.google"
       ],
@@ -112,7 +112,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 105,
+      "daysOnLonglist": 106,
       "domains": [
         "huggingface.co"
       ],
@@ -147,7 +147,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 111,
+      "daysOnLonglist": 112,
       "domains": [
         "anthropic.com"
       ],
