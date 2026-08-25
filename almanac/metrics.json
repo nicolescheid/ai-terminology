@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-24T19:31:53.752Z",
+  "generatedAt": "2026-08-25T18:36:28.538Z",
   "firstRunAt": "2026-04-27T01:07:31.335Z",
   "phase": 1,
   "headline": {
     "articlesRead": 167,
-    "daysRunning": 120,
+    "daysRunning": 121,
     "longlistSize": 205,
     "graphSize": 207
   },
@@ -44,7 +44,7 @@
       ],
       "sourceCount": 5,
       "independentSources": 1,
-      "daysOnLonglist": 86,
+      "daysOnLonglist": 87,
       "domains": [
         "simonwillison.net"
       ],
@@ -61,7 +61,7 @@
       ],
       "sourceCount": 4,
       "independentSources": 1,
-      "daysOnLonglist": 86,
+      "daysOnLonglist": 87,
       "domains": [
         "stratechery.com"
       ],
@@ -130,7 +130,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 119,
+      "daysOnLonglist": 120,
       "domains": [
         "anthropic.com"
       ],
@@ -164,7 +164,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 86,
+      "daysOnLonglist": 87,
       "domains": [
         "blog.google"
       ],
@@ -181,7 +181,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 86,
+      "daysOnLonglist": 87,
       "domains": [
         "anthropic.com"
       ],
