@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-08-26T19:45:34.079Z",
-    "unreadCount": 124,
+    "generatedAt": "2026-08-27T21:05:34.178Z",
+    "unreadCount": 1,
     "totalCount": 272,
     "note": "Notes for Nicole — Lexi's manager channel (spec §6). Mandatory entry types fire when their triggering condition is met; discretionary entries are observations Lexi thinks Nicole should see. Set status to 'read', 'actioned', or 'dismissed' as appropriate."
   },
@@ -3947,7 +3947,7 @@
       "writtenAt": "2026-05-30T19:13:38.586Z",
       "runId": "da59feca-2103-47fd-82ec-1aca587198b6",
       "phase": 1,
-      "status": "unread",
+      "status": "actioned",
       "subject": "Contested cluster term added without naming the contestation: 'ITBench-AA'",
       "details": "The term 'ITBench-AA' matches the contested-cluster pattern 'agentic' (per spec §10), but the working definition does not appear to acknowledge that the term is contested or that different camps use it differently. Per spec §6 entry type 5, this requires review before any move toward graph promotion.",
       "evidence": {
@@ -3959,7 +3959,8 @@
         "sourceUrl": "https://huggingface.co/blog/ibm-research/itbench-aa",
         "sourceLabel": "Hugging Face Blog"
       },
-      "suggestedAction": "Either revise the working definition to name the contestation (who uses it to mean what), or confirm this term doesn't warrant the contested treatment in this case."
+      "suggestedAction": "Either revise the working definition to name the contestation (who uses it to mean what), or confirm this term doesn't warrant the contested treatment in this case.",
+      "readAt": "2026-08-27T21:05:33.901Z"
     },
     {
       "id": "eb315db29699b860",
@@ -3967,7 +3968,7 @@
       "writtenAt": "2026-05-30T19:13:38.586Z",
       "runId": "da59feca-2103-47fd-82ec-1aca587198b6",
       "phase": 1,
-      "status": "unread",
+      "status": "actioned",
       "subject": "Contested cluster term added without naming the contestation: 'Recall-Gated Precision'",
       "details": "The term 'Recall-Gated Precision' matches the contested-cluster pattern 'agentic' (per spec §10), but the working definition does not appear to acknowledge that the term is contested or that different camps use it differently. Per spec §6 entry type 5, this requires review before any move toward graph promotion.",
       "evidence": {
@@ -3979,7 +3980,8 @@
         "sourceUrl": "https://huggingface.co/blog/ibm-research/itbench-aa",
         "sourceLabel": "Hugging Face Blog"
       },
-      "suggestedAction": "Either revise the working definition to name the contestation (who uses it to mean what), or confirm this term doesn't warrant the contested treatment in this case."
+      "suggestedAction": "Either revise the working definition to name the contestation (who uses it to mean what), or confirm this term doesn't warrant the contested treatment in this case.",
+      "readAt": "2026-08-27T21:05:33.978Z"
     },
     {
       "id": "1f453075bf327ba9",
@@ -3987,7 +3989,7 @@
       "writtenAt": "2026-05-30T19:13:38.586Z",
       "runId": "da59feca-2103-47fd-82ec-1aca587198b6",
       "phase": 1,
-      "status": "unread",
+      "status": "actioned",
       "subject": "Contested cluster term added without naming the contestation: 'Site Reliability Engineering Tasks'",
       "details": "The term 'Site Reliability Engineering Tasks' matches the contested-cluster pattern 'agentic' (per spec §10), but the working definition does not appear to acknowledge that the term is contested or that different camps use it differently. Per spec §6 entry type 5, this requires review before any move toward graph promotion.",
       "evidence": {
@@ -3999,7 +4001,8 @@
         "sourceUrl": "https://huggingface.co/blog/ibm-research/itbench-aa",
         "sourceLabel": "Hugging Face Blog"
       },
-      "suggestedAction": "Either revise the working definition to name the contestation (who uses it to mean what), or confirm this term doesn't warrant the contested treatment in this case."
+      "suggestedAction": "Either revise the working definition to name the contestation (who uses it to mean what), or confirm this term doesn't warrant the contested treatment in this case.",
+      "readAt": "2026-08-27T21:05:34.046Z"
     },
     {
       "id": "7a0d5a2c5b670bcb",
@@ -4032,7 +4035,7 @@
       "writtenAt": "2026-06-01T21:31:49.667Z",
       "runId": "f448cd9d-8100-4fac-8484-7d70580257a6",
       "phase": 1,
-      "status": "unread",
+      "status": "actioned",
       "subject": "Contested cluster term added without naming the contestation: 'Negation Neglect'",
       "details": "The term 'Negation Neglect' matches the contested-cluster pattern 'responsible AI' (per spec §10), but the working definition does not appear to acknowledge that the term is contested or that different camps use it differently. Per spec §6 entry type 5, this requires review before any move toward graph promotion.",
       "evidence": {
@@ -4044,7 +4047,8 @@
         "sourceUrl": "https://lastweekin.ai/p/lwiai-podcast-246-gemini-35-omni",
         "sourceLabel": "Last Week in AI"
       },
-      "suggestedAction": "Either revise the working definition to name the contestation (who uses it to mean what), or confirm this term doesn't warrant the contested treatment in this case."
+      "suggestedAction": "Either revise the working definition to name the contestation (who uses it to mean what), or confirm this term doesn't warrant the contested treatment in this case.",
+      "readAt": "2026-08-27T21:05:34.115Z"
     },
     {
       "id": "dd4e62548b6927f8",
@@ -4052,7 +4056,7 @@
       "writtenAt": "2026-06-01T22:12:44.920Z",
       "runId": "15a5b3f6-21ae-48c0-b95e-1872d6e4c041",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Source pattern: domain 'blog.google' appears in 18 recent longlist entries",
       "details": "In the past 30 days, 18 longlist entries have at least one source from blog.google. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
       "evidence": {
@@ -4082,7 +4086,8 @@
         "recentEntryCount": 143
       },
       "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
-      "source": "auditor"
+      "source": "auditor",
+      "readAt": "2026-08-27T21:02:34.707Z"
     },
     {
       "id": "f5c447c67934d50d",
@@ -4090,7 +4095,7 @@
       "writtenAt": "2026-06-01T22:12:44.920Z",
       "runId": "15a5b3f6-21ae-48c0-b95e-1872d6e4c041",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Source pattern: domain 'stratechery.com' appears in 21 recent longlist entries",
       "details": "In the past 30 days, 21 longlist entries have at least one source from stratechery.com. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
       "evidence": {
@@ -4123,7 +4128,8 @@
         "recentEntryCount": 143
       },
       "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
-      "source": "auditor"
+      "source": "auditor",
+      "readAt": "2026-08-27T21:02:34.707Z"
     },
     {
       "id": "7fa62810591d2a26",
@@ -4131,7 +4137,7 @@
       "writtenAt": "2026-06-01T22:12:44.920Z",
       "runId": "15a5b3f6-21ae-48c0-b95e-1872d6e4c041",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Source pattern: domain 'normaltech.ai' appears in 8 recent longlist entries",
       "details": "In the past 30 days, 8 longlist entries have at least one source from normaltech.ai. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
       "evidence": {
@@ -4151,7 +4157,8 @@
         "recentEntryCount": 143
       },
       "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
-      "source": "auditor"
+      "source": "auditor",
+      "readAt": "2026-08-27T21:02:34.707Z"
     },
     {
       "id": "128c26971f62092b",
@@ -4159,7 +4166,7 @@
       "writtenAt": "2026-06-01T22:12:44.920Z",
       "runId": "15a5b3f6-21ae-48c0-b95e-1872d6e4c041",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Source pattern: domain 'anthropic.com' appears in 20 recent longlist entries",
       "details": "In the past 30 days, 20 longlist entries have at least one source from anthropic.com. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
       "evidence": {
@@ -4191,7 +4198,8 @@
         "recentEntryCount": 143
       },
       "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
-      "source": "auditor"
+      "source": "auditor",
+      "readAt": "2026-08-27T21:02:34.707Z"
     },
     {
       "id": "fda48416c5295b9d",
@@ -4199,7 +4207,7 @@
       "writtenAt": "2026-06-01T22:12:44.920Z",
       "runId": "15a5b3f6-21ae-48c0-b95e-1872d6e4c041",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Source pattern: domain 'openai.com' appears in 20 recent longlist entries",
       "details": "In the past 30 days, 20 longlist entries have at least one source from openai.com. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
       "evidence": {
@@ -4231,7 +4239,8 @@
         "recentEntryCount": 143
       },
       "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
-      "source": "auditor"
+      "source": "auditor",
+      "readAt": "2026-08-27T21:02:34.707Z"
     },
     {
       "id": "24100076cbc58500",
@@ -4239,7 +4248,7 @@
       "writtenAt": "2026-06-01T22:12:44.920Z",
       "runId": "15a5b3f6-21ae-48c0-b95e-1872d6e4c041",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Source pattern: domain 'simonwillison.net' appears in 17 recent longlist entries",
       "details": "In the past 30 days, 17 longlist entries have at least one source from simonwillison.net. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
       "evidence": {
@@ -4268,7 +4277,8 @@
         "recentEntryCount": 143
       },
       "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
-      "source": "auditor"
+      "source": "auditor",
+      "readAt": "2026-08-27T21:02:34.707Z"
     },
     {
       "id": "ce6091cf70897413",
@@ -4276,7 +4286,7 @@
       "writtenAt": "2026-06-01T22:12:44.920Z",
       "runId": "15a5b3f6-21ae-48c0-b95e-1872d6e4c041",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Source pattern: domain 'huggingface.co' appears in 25 recent longlist entries",
       "details": "In the past 30 days, 25 longlist entries have at least one source from huggingface.co. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
       "evidence": {
@@ -4313,7 +4323,8 @@
         "recentEntryCount": 143
       },
       "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
-      "source": "auditor"
+      "source": "auditor",
+      "readAt": "2026-08-27T21:02:34.707Z"
     },
     {
       "id": "283ddde0ddc8d2c2",
@@ -4321,7 +4332,7 @@
       "writtenAt": "2026-06-01T22:12:44.920Z",
       "runId": "15a5b3f6-21ae-48c0-b95e-1872d6e4c041",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Source pattern: domain 'lastweekin.ai' appears in 12 recent longlist entries",
       "details": "In the past 30 days, 12 longlist entries have at least one source from lastweekin.ai. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
       "evidence": {
@@ -4345,7 +4356,8 @@
         "recentEntryCount": 143
       },
       "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
-      "source": "auditor"
+      "source": "auditor",
+      "readAt": "2026-08-27T21:02:34.707Z"
     },
     {
       "id": "34bb293f4ee494eb",
@@ -4353,7 +4365,7 @@
       "writtenAt": "2026-06-01T22:12:44.920Z",
       "runId": "15a5b3f6-21ae-48c0-b95e-1872d6e4c041",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Adoption velocity: 'Run-Rate Revenue' hit 2 sources in 1d",
       "details": "This entry accumulated 2 sources within 1 day(s) of first sighting. Often legitimate for product launches, but rapid multi-sourcing from a tight source pool can also signal coordinated promotion. Source labels involved: Simon Willison's Weblog, Anthropic Newsroom.",
       "evidence": {
@@ -4370,7 +4382,8 @@
         "lastSourceTs": "2026-05-29T20:29:06.123Z"
       },
       "suggestedAction": "Cross-check the sources for shared authors or cross-citation. If sources are tightly coupled (same publication network, same author byline), treat as one source for promotion-eligibility purposes.",
-      "source": "auditor"
+      "source": "auditor",
+      "readAt": "2026-08-27T21:02:34.707Z"
     },
     {
       "id": "c74128f4a94c8f29",
@@ -4378,7 +4391,7 @@
       "writtenAt": "2026-06-01T22:12:44.920Z",
       "runId": "15a5b3f6-21ae-48c0-b95e-1872d6e4c041",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Adoption velocity: 'Product-Market Fit' hit 2 sources in 2d",
       "details": "This entry accumulated 2 sources within 2 day(s) of first sighting. Often legitimate for product launches, but rapid multi-sourcing from a tight source pool can also signal coordinated promotion. Source labels involved: Simon Willison's Weblog.",
       "evidence": {
@@ -4394,7 +4407,8 @@
         "lastSourceTs": "2026-05-31T19:15:39.230Z"
       },
       "suggestedAction": "Cross-check the sources for shared authors or cross-citation. If sources are tightly coupled (same publication network, same author byline), treat as one source for promotion-eligibility purposes.",
-      "source": "auditor"
+      "source": "auditor",
+      "readAt": "2026-08-27T21:02:34.707Z"
     },
     {
       "id": "366b0ffb7ead762b",
@@ -4402,7 +4416,7 @@
       "writtenAt": "2026-06-01T22:12:44.920Z",
       "runId": "15a5b3f6-21ae-48c0-b95e-1872d6e4c041",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Adoption velocity: 'Hyperscaler' hit 2 sources in 1d",
       "details": "This entry accumulated 2 sources within 1 day(s) of first sighting. Often legitimate for product launches, but rapid multi-sourcing from a tight source pool can also signal coordinated promotion. Source labels involved: Anthropic Newsroom, Stratechery.",
       "evidence": {
@@ -4419,7 +4433,8 @@
         "lastSourceTs": "2026-05-30T19:13:38.586Z"
       },
       "suggestedAction": "Cross-check the sources for shared authors or cross-citation. If sources are tightly coupled (same publication network, same author byline), treat as one source for promotion-eligibility purposes.",
-      "source": "auditor"
+      "source": "auditor",
+      "readAt": "2026-08-27T21:02:34.707Z"
     },
     {
       "id": "d3c1df1f805170c4",
@@ -4427,7 +4442,7 @@
       "writtenAt": "2026-06-01T22:12:44.920Z",
       "runId": "15a5b3f6-21ae-48c0-b95e-1872d6e4c041",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Adoption velocity: 'Gemini Spark' hit 2 sources in 2d",
       "details": "This entry accumulated 2 sources within 2 day(s) of first sighting. Often legitimate for product launches, but rapid multi-sourcing from a tight source pool can also signal coordinated promotion. Source labels involved: Last Week in AI.",
       "evidence": {
@@ -4443,7 +4458,8 @@
         "lastSourceTs": "2026-06-01T21:31:49.667Z"
       },
       "suggestedAction": "Cross-check the sources for shared authors or cross-citation. If sources are tightly coupled (same publication network, same author byline), treat as one source for promotion-eligibility purposes.",
-      "source": "auditor"
+      "source": "auditor",
+      "readAt": "2026-08-27T21:02:34.707Z"
     },
     {
       "id": "2063900eed69c289",
@@ -4451,7 +4467,7 @@
       "writtenAt": "2026-06-04T20:04:46.217Z",
       "runId": "5728ccbd-aa5e-48ed-bfd7-98a167b07960",
       "phase": 1,
-      "status": "unread",
+      "status": "actioned",
       "subject": "Contested cluster term added without naming the contestation: 'Clean Lineage'",
       "details": "The term 'Clean Lineage' matches the contested-cluster pattern 'responsible AI' (per spec §10), but the working definition does not appear to acknowledge that the term is contested or that different camps use it differently. Per spec §6 entry type 5, this requires review before any move toward graph promotion.",
       "evidence": {
@@ -4463,7 +4479,8 @@
         "sourceUrl": "https://stratechery.com/2026/an-interview-with-microsoft-ceo-satya-nadella-about-finding-core-competencies/",
         "sourceLabel": "Stratechery"
       },
-      "suggestedAction": "Either revise the working definition to name the contestation (who uses it to mean what), or confirm this term doesn't warrant the contested treatment in this case."
+      "suggestedAction": "Either revise the working definition to name the contestation (who uses it to mean what), or confirm this term doesn't warrant the contested treatment in this case.",
+      "readAt": "2026-08-27T21:05:34.178Z"
     },
     {
       "id": "7a6ec087138f4416",
@@ -4471,7 +4488,7 @@
       "writtenAt": "2026-06-06T19:20:46.063Z",
       "runId": "516957fb-3589-4110-b016-723a5f1373d7",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "4 Note(s) for Nicole have been unread for more than 7 days (oldest: 7d). Read or action them to resume publication.",
       "evidence": {
@@ -4485,7 +4502,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "f546cd4961c82144",
@@ -4493,7 +4511,7 @@
       "writtenAt": "2026-06-07T19:20:17.095Z",
       "runId": "3afc12f4-eba1-4ef4-b47e-f425b318358a",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "4 Note(s) for Nicole have been unread for more than 7 days (oldest: 8d). Read or action them to resume publication.",
       "evidence": {
@@ -4507,7 +4525,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "d747f2a2ab844ab6",
@@ -4515,7 +4534,7 @@
       "writtenAt": "2026-06-08T20:13:56.151Z",
       "runId": "8b281a1a-464e-4461-96b1-b4eabd5623d0",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "4 Note(s) for Nicole have been unread for more than 7 days (oldest: 9d). Read or action them to resume publication.",
       "evidence": {
@@ -4529,7 +4548,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "d19aac1278cff908",
@@ -4537,7 +4557,7 @@
       "writtenAt": "2026-06-08T21:11:52.503Z",
       "runId": "06fd31bf-b5df-42ce-9548-4354d545d156",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Source pattern: domain 'openai.com' appears in 11 recent longlist entries",
       "details": "In the past 30 days, 11 longlist entries have at least one source from openai.com. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
       "evidence": {
@@ -4560,7 +4580,8 @@
         "recentEntryCount": 157
       },
       "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
-      "source": "auditor"
+      "source": "auditor",
+      "readAt": "2026-08-27T21:02:34.707Z"
     },
     {
       "id": "7abaca9c7816db6f",
@@ -4568,7 +4589,7 @@
       "writtenAt": "2026-06-08T21:11:52.503Z",
       "runId": "06fd31bf-b5df-42ce-9548-4354d545d156",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Source pattern: domain 'anthropic.com' appears in 23 recent longlist entries",
       "details": "In the past 30 days, 23 longlist entries have at least one source from anthropic.com. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
       "evidence": {
@@ -4603,7 +4624,8 @@
         "recentEntryCount": 157
       },
       "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
-      "source": "auditor"
+      "source": "auditor",
+      "readAt": "2026-08-27T21:02:34.707Z"
     },
     {
       "id": "aecdf323982a9c5c",
@@ -4611,7 +4633,7 @@
       "writtenAt": "2026-06-08T21:11:52.503Z",
       "runId": "06fd31bf-b5df-42ce-9548-4354d545d156",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Source pattern: domain 'huggingface.co' appears in 36 recent longlist entries",
       "details": "In the past 30 days, 36 longlist entries have at least one source from huggingface.co. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
       "evidence": {
@@ -4659,7 +4681,8 @@
         "recentEntryCount": 157
       },
       "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
-      "source": "auditor"
+      "source": "auditor",
+      "readAt": "2026-08-27T21:02:34.707Z"
     },
     {
       "id": "033ba21d68c2c1c2",
@@ -4667,7 +4690,7 @@
       "writtenAt": "2026-06-08T21:11:52.503Z",
       "runId": "06fd31bf-b5df-42ce-9548-4354d545d156",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Source pattern: domain 'theverge.com' appears in 21 recent longlist entries",
       "details": "In the past 30 days, 21 longlist entries have at least one source from theverge.com. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
       "evidence": {
@@ -4700,7 +4723,8 @@
         "recentEntryCount": 157
       },
       "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
-      "source": "auditor"
+      "source": "auditor",
+      "readAt": "2026-08-27T21:02:34.707Z"
     },
     {
       "id": "c2223aec1b9e79dd",
@@ -4708,7 +4732,7 @@
       "writtenAt": "2026-06-08T21:11:52.503Z",
       "runId": "06fd31bf-b5df-42ce-9548-4354d545d156",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Source pattern: domain 'blog.google' appears in 13 recent longlist entries",
       "details": "In the past 30 days, 13 longlist entries have at least one source from blog.google. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
       "evidence": {
@@ -4733,7 +4757,8 @@
         "recentEntryCount": 157
       },
       "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
-      "source": "auditor"
+      "source": "auditor",
+      "readAt": "2026-08-27T21:02:34.707Z"
     },
     {
       "id": "c8c67b6bceb8026b",
@@ -4741,7 +4766,7 @@
       "writtenAt": "2026-06-08T21:11:52.503Z",
       "runId": "06fd31bf-b5df-42ce-9548-4354d545d156",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Source pattern: domain 'simonwillison.net' appears in 20 recent longlist entries",
       "details": "In the past 30 days, 20 longlist entries have at least one source from simonwillison.net. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
       "evidence": {
@@ -4773,7 +4798,8 @@
         "recentEntryCount": 157
       },
       "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
-      "source": "auditor"
+      "source": "auditor",
+      "readAt": "2026-08-27T21:02:34.707Z"
     },
     {
       "id": "0d87d8afa99b4bb6",
@@ -4781,7 +4807,7 @@
       "writtenAt": "2026-06-08T21:11:52.503Z",
       "runId": "06fd31bf-b5df-42ce-9548-4354d545d156",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Source pattern: domain 'stratechery.com' appears in 26 recent longlist entries",
       "details": "In the past 30 days, 26 longlist entries have at least one source from stratechery.com. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
       "evidence": {
@@ -4819,7 +4845,8 @@
         "recentEntryCount": 157
       },
       "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
-      "source": "auditor"
+      "source": "auditor",
+      "readAt": "2026-08-27T21:02:34.707Z"
     },
     {
       "id": "9336a2b75c4994e6",
@@ -4827,7 +4854,7 @@
       "writtenAt": "2026-06-08T21:11:52.503Z",
       "runId": "06fd31bf-b5df-42ce-9548-4354d545d156",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Source pattern: domain 'hbr.org' appears in 4 recent longlist entries",
       "details": "In the past 30 days, 4 longlist entries have at least one source from hbr.org. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
       "evidence": {
@@ -4843,7 +4870,8 @@
         "recentEntryCount": 157
       },
       "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
-      "source": "auditor"
+      "source": "auditor",
+      "readAt": "2026-08-27T21:02:34.707Z"
     },
     {
       "id": "ec566a8d68547024",
@@ -4851,7 +4879,7 @@
       "writtenAt": "2026-06-08T21:11:52.503Z",
       "runId": "06fd31bf-b5df-42ce-9548-4354d545d156",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Source pattern: domain 'normaltech.ai' appears in 7 recent longlist entries",
       "details": "In the past 30 days, 7 longlist entries have at least one source from normaltech.ai. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
       "evidence": {
@@ -4870,7 +4898,8 @@
         "recentEntryCount": 157
       },
       "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
-      "source": "auditor"
+      "source": "auditor",
+      "readAt": "2026-08-27T21:02:34.707Z"
     },
     {
       "id": "9076cf863d33a031",
@@ -4878,7 +4907,7 @@
       "writtenAt": "2026-06-08T21:11:52.503Z",
       "runId": "06fd31bf-b5df-42ce-9548-4354d545d156",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Adoption velocity: 'Project Solara' hit 4 sources in 3d",
       "details": "This entry accumulated 4 sources within 3 day(s) of first sighting. Often legitimate for product launches, but rapid multi-sourcing from a tight source pool can also signal coordinated promotion. Source labels involved: The Verge — AI, Stratechery.",
       "evidence": {
@@ -4895,7 +4924,8 @@
         "lastSourceTs": "2026-06-05T19:53:16.670Z"
       },
       "suggestedAction": "Cross-check the sources for shared authors or cross-citation. If sources are tightly coupled (same publication network, same author byline), treat as one source for promotion-eligibility purposes.",
-      "source": "auditor"
+      "source": "auditor",
+      "readAt": "2026-08-27T21:02:34.707Z"
     },
     {
       "id": "f6e51eded6c94972",
@@ -4903,7 +4933,7 @@
       "writtenAt": "2026-06-09T20:05:43.297Z",
       "runId": "2f1315c1-abcb-444a-80ac-bbf5a71cce3c",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "17 Note(s) for Nicole have been unread for more than 7 days (oldest: 10d). Read or action them to resume publication.",
       "evidence": {
@@ -4917,7 +4947,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "37937c9d0c5acb77",
@@ -4925,7 +4956,7 @@
       "writtenAt": "2026-06-10T20:28:34.765Z",
       "runId": "88db19e4-382d-4842-8ed9-d49bc8b225f4",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "17 Note(s) for Nicole have been unread for more than 7 days (oldest: 11d). Read or action them to resume publication.",
       "evidence": {
@@ -4939,7 +4970,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "19959e0946a4e9d4",
@@ -4947,7 +4979,7 @@
       "writtenAt": "2026-06-11T20:20:20.610Z",
       "runId": "513a250b-57f9-44aa-82f3-d758d15e19bc",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "18 Note(s) for Nicole have been unread for more than 7 days (oldest: 12d). Read or action them to resume publication.",
       "evidence": {
@@ -4961,7 +4993,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "2aa6b52b4560aa8d",
@@ -4969,7 +5002,7 @@
       "writtenAt": "2026-06-12T20:09:14.503Z",
       "runId": "49b185fb-cb97-4f8b-9b7c-7b3f90049f0a",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "18 Note(s) for Nicole have been unread for more than 7 days (oldest: 13d). Read or action them to resume publication.",
       "evidence": {
@@ -4983,7 +5016,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "768a32941e4ac06e",
@@ -4991,7 +5025,7 @@
       "writtenAt": "2026-06-13T19:23:54.370Z",
       "runId": "74ae355d-c0f8-4077-830b-3515698a151e",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "19 Note(s) for Nicole have been unread for more than 7 days (oldest: 14d). Read or action them to resume publication.",
       "evidence": {
@@ -5005,7 +5039,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "a91d2f86f3f3ae8a",
@@ -5013,7 +5048,7 @@
       "writtenAt": "2026-06-14T19:25:03.814Z",
       "runId": "3d7deb5c-3646-4ab3-9fe0-a85b6f8eb6dc",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "20 Note(s) for Nicole have been unread for more than 7 days (oldest: 15d). Read or action them to resume publication.",
       "evidence": {
@@ -5027,7 +5062,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "11cbf20dca244012",
@@ -5035,7 +5071,7 @@
       "writtenAt": "2026-06-15T20:53:49.310Z",
       "runId": "912bafd4-3c59-4b37-9cdf-65699f5ee2e1",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "21 Note(s) for Nicole have been unread for more than 7 days (oldest: 16d). Read or action them to resume publication.",
       "evidence": {
@@ -5049,7 +5085,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "a2d89ac5490fabb7",
@@ -5057,7 +5094,7 @@
       "writtenAt": "2026-06-15T21:46:25.028Z",
       "runId": "4c6f9a55-798f-4c9c-81c7-084aaa7d4883",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Source pattern: domain 'sloanreview.mit.edu' appears in 2 recent longlist entries",
       "details": "In the past 30 days, 2 longlist entries have at least one source from sloanreview.mit.edu. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
       "evidence": {
@@ -5071,7 +5108,8 @@
         "recentEntryCount": 93
       },
       "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
-      "source": "auditor"
+      "source": "auditor",
+      "readAt": "2026-08-27T21:02:34.707Z"
     },
     {
       "id": "78d7d75e02cf3f57",
@@ -5079,7 +5117,7 @@
       "writtenAt": "2026-06-15T21:46:25.028Z",
       "runId": "4c6f9a55-798f-4c9c-81c7-084aaa7d4883",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Source pattern: domain 'simonwillison.net' appears in 14 recent longlist entries",
       "details": "In the past 30 days, 14 longlist entries have at least one source from simonwillison.net. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
       "evidence": {
@@ -5105,7 +5143,8 @@
         "recentEntryCount": 93
       },
       "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
-      "source": "auditor"
+      "source": "auditor",
+      "readAt": "2026-08-27T21:02:34.707Z"
     },
     {
       "id": "dd92476ab8564494",
@@ -5113,7 +5152,7 @@
       "writtenAt": "2026-06-15T21:46:25.028Z",
       "runId": "4c6f9a55-798f-4c9c-81c7-084aaa7d4883",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Source pattern: domain 'anthropic.com' appears in 18 recent longlist entries",
       "details": "In the past 30 days, 18 longlist entries have at least one source from anthropic.com. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
       "evidence": {
@@ -5143,7 +5182,8 @@
         "recentEntryCount": 93
       },
       "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
-      "source": "auditor"
+      "source": "auditor",
+      "readAt": "2026-08-27T21:02:34.707Z"
     },
     {
       "id": "da9c3e1be1a39596",
@@ -5151,7 +5191,7 @@
       "writtenAt": "2026-06-15T21:46:25.028Z",
       "runId": "4c6f9a55-798f-4c9c-81c7-084aaa7d4883",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Source pattern: domain 'stratechery.com' appears in 12 recent longlist entries",
       "details": "In the past 30 days, 12 longlist entries have at least one source from stratechery.com. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
       "evidence": {
@@ -5175,7 +5215,8 @@
         "recentEntryCount": 93
       },
       "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
-      "source": "auditor"
+      "source": "auditor",
+      "readAt": "2026-08-27T21:02:34.707Z"
     },
     {
       "id": "dbb388f986d9f842",
@@ -5183,7 +5224,7 @@
       "writtenAt": "2026-06-15T21:46:25.028Z",
       "runId": "4c6f9a55-798f-4c9c-81c7-084aaa7d4883",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Source pattern: domain 'blog.google' appears in 11 recent longlist entries",
       "details": "In the past 30 days, 11 longlist entries have at least one source from blog.google. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
       "evidence": {
@@ -5206,7 +5247,8 @@
         "recentEntryCount": 93
       },
       "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
-      "source": "auditor"
+      "source": "auditor",
+      "readAt": "2026-08-27T21:02:34.707Z"
     },
     {
       "id": "05f783a530a4a944",
@@ -5214,7 +5256,7 @@
       "writtenAt": "2026-06-15T21:46:25.028Z",
       "runId": "4c6f9a55-798f-4c9c-81c7-084aaa7d4883",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Source pattern: domain 'lastweekin.ai' appears in 9 recent longlist entries",
       "details": "In the past 30 days, 9 longlist entries have at least one source from lastweekin.ai. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
       "evidence": {
@@ -5235,7 +5277,8 @@
         "recentEntryCount": 93
       },
       "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
-      "source": "auditor"
+      "source": "auditor",
+      "readAt": "2026-08-27T21:02:34.707Z"
     },
     {
       "id": "e113c194fd55ed74",
@@ -5243,7 +5286,7 @@
       "writtenAt": "2026-06-15T21:46:25.028Z",
       "runId": "4c6f9a55-798f-4c9c-81c7-084aaa7d4883",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Source pattern: domain 'huggingface.co' appears in 21 recent longlist entries",
       "details": "In the past 30 days, 21 longlist entries have at least one source from huggingface.co. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
       "evidence": {
@@ -5276,7 +5319,8 @@
         "recentEntryCount": 93
       },
       "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
-      "source": "auditor"
+      "source": "auditor",
+      "readAt": "2026-08-27T21:02:34.707Z"
     },
     {
       "id": "5e70d5b9ddc963dd",
@@ -5284,7 +5328,7 @@
       "writtenAt": "2026-06-16T20:49:15.619Z",
       "runId": "8ec7a5f1-7774-4221-ab78-41cf901ce05c",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "32 Note(s) for Nicole have been unread for more than 7 days (oldest: 17d). Read or action them to resume publication.",
       "evidence": {
@@ -5298,7 +5342,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "8559ecdd3dea9989",
@@ -5306,7 +5351,7 @@
       "writtenAt": "2026-06-17T20:10:35.566Z",
       "runId": "43d116ec-d9e4-4dec-840c-f8362e649947",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "32 Note(s) for Nicole have been unread for more than 7 days (oldest: 18d). Read or action them to resume publication.",
       "evidence": {
@@ -5320,7 +5365,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "dd9f0928abe97001",
@@ -5328,7 +5374,7 @@
       "writtenAt": "2026-06-18T20:24:05.826Z",
       "runId": "2bee0c30-a24a-4686-9baf-9b19f926c73f",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "34 Note(s) for Nicole have been unread for more than 7 days (oldest: 19d). Read or action them to resume publication.",
       "evidence": {
@@ -5342,7 +5388,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "6dc508e00c044e0f",
@@ -5350,7 +5397,7 @@
       "writtenAt": "2026-06-19T19:48:11.882Z",
       "runId": "a040e711-a1cd-43f3-af96-087db60c2ba9",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "34 Note(s) for Nicole have been unread for more than 7 days (oldest: 20d). Read or action them to resume publication.",
       "evidence": {
@@ -5364,7 +5411,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "087722c7047277b1",
@@ -5372,7 +5420,7 @@
       "writtenAt": "2026-06-20T19:24:26.407Z",
       "runId": "0f9ca672-6973-4173-8499-2d7002bd3e5e",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "36 Note(s) for Nicole have been unread for more than 7 days (oldest: 21d). Read or action them to resume publication.",
       "evidence": {
@@ -5386,7 +5434,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "a268f8e34cca6f07",
@@ -5394,7 +5443,7 @@
       "writtenAt": "2026-06-21T19:27:48.113Z",
       "runId": "d03d19b7-2484-45f5-b626-08982096eee2",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "37 Note(s) for Nicole have been unread for more than 7 days (oldest: 22d). Read or action them to resume publication.",
       "evidence": {
@@ -5408,7 +5457,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "c731755deff1dacf",
@@ -5416,7 +5466,7 @@
       "writtenAt": "2026-06-22T20:46:40.775Z",
       "runId": "2944c34c-1f3e-4a09-a126-45f259b8c049",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "37 Note(s) for Nicole have been unread for more than 7 days (oldest: 23d). Read or action them to resume publication.",
       "evidence": {
@@ -5430,7 +5480,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "e8d54e9b71564d5f",
@@ -5438,7 +5489,7 @@
       "writtenAt": "2026-06-22T21:32:23.672Z",
       "runId": "7c7137e4-5c0f-4b99-a534-f1f1101b6c27",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Source pattern: domain 'anthropic.com' appears in 15 recent longlist entries",
       "details": "In the past 30 days, 15 longlist entries have at least one source from anthropic.com. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
       "evidence": {
@@ -5465,7 +5516,8 @@
         "recentEntryCount": 84
       },
       "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
-      "source": "auditor"
+      "source": "auditor",
+      "readAt": "2026-08-27T21:02:34.707Z"
     },
     {
       "id": "3afa0ee350a697cd",
@@ -5473,7 +5525,7 @@
       "writtenAt": "2026-06-22T21:32:23.672Z",
       "runId": "7c7137e4-5c0f-4b99-a534-f1f1101b6c27",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Source pattern: domain 'simonwillison.net' appears in 13 recent longlist entries",
       "details": "In the past 30 days, 13 longlist entries have at least one source from simonwillison.net. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
       "evidence": {
@@ -5498,7 +5550,8 @@
         "recentEntryCount": 84
       },
       "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
-      "source": "auditor"
+      "source": "auditor",
+      "readAt": "2026-08-27T21:02:34.707Z"
     },
     {
       "id": "85b32de148ae932d",
@@ -5506,7 +5559,7 @@
       "writtenAt": "2026-06-22T21:32:23.672Z",
       "runId": "7c7137e4-5c0f-4b99-a534-f1f1101b6c27",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Source pattern: domain 'theverge.com' appears in 5 recent longlist entries",
       "details": "In the past 30 days, 5 longlist entries have at least one source from theverge.com. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
       "evidence": {
@@ -5523,7 +5576,8 @@
         "recentEntryCount": 84
       },
       "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
-      "source": "auditor"
+      "source": "auditor",
+      "readAt": "2026-08-27T21:02:34.707Z"
     },
     {
       "id": "03661fee873dc1a5",
@@ -5531,7 +5585,7 @@
       "writtenAt": "2026-06-23T20:02:17.689Z",
       "runId": "1df1067c-82ec-4c47-b1b6-d8aefa437000",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "45 Note(s) for Nicole have been unread for more than 7 days (oldest: 24d). Read or action them to resume publication.",
       "evidence": {
@@ -5545,7 +5599,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "d9ba5894d334bbc3",
@@ -5553,7 +5608,7 @@
       "writtenAt": "2026-06-24T19:44:09.903Z",
       "runId": "dee7fd84-ac06-4e6f-8b59-d5323c204c3e",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "46 Note(s) for Nicole have been unread for more than 7 days (oldest: 25d). Read or action them to resume publication.",
       "evidence": {
@@ -5567,7 +5622,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "0eb61019ec3ad037",
@@ -5575,7 +5631,7 @@
       "writtenAt": "2026-06-25T19:58:51.547Z",
       "runId": "55582f0b-d5a8-4914-ba0a-861e823b8876",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "47 Note(s) for Nicole have been unread for more than 7 days (oldest: 26d). Read or action them to resume publication.",
       "evidence": {
@@ -5589,7 +5645,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "371f0fc5d7744027",
@@ -5597,7 +5654,7 @@
       "writtenAt": "2026-06-26T19:45:06.490Z",
       "runId": "45519467-1106-4490-8dd4-0d5585a1f5fe",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "48 Note(s) for Nicole have been unread for more than 7 days (oldest: 27d). Read or action them to resume publication.",
       "evidence": {
@@ -5611,7 +5668,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "b86c4cab951a926b",
@@ -5619,7 +5677,7 @@
       "writtenAt": "2026-06-27T19:18:34.818Z",
       "runId": "293572eb-523d-4cf6-a83b-fd528d9da45e",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "49 Note(s) for Nicole have been unread for more than 7 days (oldest: 28d). Read or action them to resume publication.",
       "evidence": {
@@ -5633,7 +5691,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "bfd9b0ce22f2adc6",
@@ -5641,7 +5700,7 @@
       "writtenAt": "2026-06-28T19:17:49.855Z",
       "runId": "640a02c4-a658-4c6d-918d-79a4cbbefd2f",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "50 Note(s) for Nicole have been unread for more than 7 days (oldest: 29d). Read or action them to resume publication.",
       "evidence": {
@@ -5655,7 +5714,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "6c1a0b30b59214c0",
@@ -5663,7 +5723,7 @@
       "writtenAt": "2026-06-29T19:55:35.015Z",
       "runId": "50a64e4b-2805-4fd4-9bc7-7e433181ecc9",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "51 Note(s) for Nicole have been unread for more than 7 days (oldest: 30d). Read or action them to resume publication.",
       "evidence": {
@@ -5677,7 +5737,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "d471e209f79a457b",
@@ -5685,7 +5746,7 @@
       "writtenAt": "2026-06-29T20:49:50.081Z",
       "runId": "4e9f5c04-85db-4cfc-b6a3-28e7982bca2b",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Source pattern: domain 'huggingface.co' appears in 18 recent longlist entries",
       "details": "In the past 30 days, 18 longlist entries have at least one source from huggingface.co. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
       "evidence": {
@@ -5715,7 +5776,8 @@
         "recentEntryCount": 59
       },
       "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
-      "source": "auditor"
+      "source": "auditor",
+      "readAt": "2026-08-27T21:02:34.707Z"
     },
     {
       "id": "621ec2317fa75223",
@@ -5723,7 +5785,7 @@
       "writtenAt": "2026-06-29T20:49:50.081Z",
       "runId": "4e9f5c04-85db-4cfc-b6a3-28e7982bca2b",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Source pattern: domain 'lastweekin.ai' appears in 5 recent longlist entries",
       "details": "In the past 30 days, 5 longlist entries have at least one source from lastweekin.ai. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
       "evidence": {
@@ -5740,7 +5802,8 @@
         "recentEntryCount": 59
       },
       "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
-      "source": "auditor"
+      "source": "auditor",
+      "readAt": "2026-08-27T21:02:34.707Z"
     },
     {
       "id": "6c9e6d930a56e5a3",
@@ -5748,7 +5811,7 @@
       "writtenAt": "2026-06-29T20:49:50.081Z",
       "runId": "4e9f5c04-85db-4cfc-b6a3-28e7982bca2b",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Source pattern: domain 'stratechery.com' appears in 9 recent longlist entries",
       "details": "In the past 30 days, 9 longlist entries have at least one source from stratechery.com. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
       "evidence": {
@@ -5769,7 +5832,8 @@
         "recentEntryCount": 59
       },
       "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
-      "source": "auditor"
+      "source": "auditor",
+      "readAt": "2026-08-27T21:02:34.707Z"
     },
     {
       "id": "11bf7af0b5fd128b",
@@ -5777,7 +5841,7 @@
       "writtenAt": "2026-06-29T20:49:50.081Z",
       "runId": "4e9f5c04-85db-4cfc-b6a3-28e7982bca2b",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Source pattern: domain 'anthropic.com' appears in 7 recent longlist entries",
       "details": "In the past 30 days, 7 longlist entries have at least one source from anthropic.com. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
       "evidence": {
@@ -5796,7 +5860,8 @@
         "recentEntryCount": 59
       },
       "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
-      "source": "auditor"
+      "source": "auditor",
+      "readAt": "2026-08-27T21:02:34.707Z"
     },
     {
       "id": "259b5a52d785e7ef",
@@ -5804,7 +5869,7 @@
       "writtenAt": "2026-06-30T19:54:30.173Z",
       "runId": "73872a27-8f3a-4d62-b746-f97fa599171d",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "55 Note(s) for Nicole have been unread for more than 7 days (oldest: 31d). Read or action them to resume publication.",
       "evidence": {
@@ -5818,7 +5883,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "cf8ed753f58ff90c",
@@ -5826,7 +5892,7 @@
       "writtenAt": "2026-07-01T19:52:41.955Z",
       "runId": "ad15dbd0-42ef-4290-8bb3-9566b7ad9a9f",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "57 Note(s) for Nicole have been unread for more than 7 days (oldest: 32d). Read or action them to resume publication.",
       "evidence": {
@@ -5840,7 +5906,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "5c6084ca2c703371",
@@ -5848,7 +5915,7 @@
       "writtenAt": "2026-07-02T19:22:08.501Z",
       "runId": "43871fcf-f430-45ad-b511-e4417cb7c9f0",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "57 Note(s) for Nicole have been unread for more than 7 days (oldest: 33d). Read or action them to resume publication.",
       "evidence": {
@@ -5862,7 +5929,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "8f27bdd0381905a5",
@@ -5870,7 +5938,7 @@
       "writtenAt": "2026-07-03T19:19:35.886Z",
       "runId": "3c7ca1d9-a414-49bc-9c48-71a90a139b47",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "58 Note(s) for Nicole have been unread for more than 7 days (oldest: 34d). Read or action them to resume publication.",
       "evidence": {
@@ -5884,7 +5952,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "61e6b0c30ae83ba9",
@@ -5892,7 +5961,7 @@
       "writtenAt": "2026-07-04T19:09:37.114Z",
       "runId": "6a85f8bb-220a-4b22-bc1b-f9a79b6ac979",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "59 Note(s) for Nicole have been unread for more than 7 days (oldest: 34d). Read or action them to resume publication.",
       "evidence": {
@@ -5906,7 +5975,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "00a09ef4842d6deb",
@@ -5914,7 +5984,7 @@
       "writtenAt": "2026-07-05T19:15:26.445Z",
       "runId": "072dc776-ff7a-447b-a216-52870dd9bca4",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "60 Note(s) for Nicole have been unread for more than 7 days (oldest: 36d). Read or action them to resume publication.",
       "evidence": {
@@ -5928,7 +5998,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "54371dd4d63d9251",
@@ -5936,7 +6007,7 @@
       "writtenAt": "2026-07-06T19:53:49.642Z",
       "runId": "ea1fe16e-2849-4fdb-9c83-965ab89aa1c3",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "61 Note(s) for Nicole have been unread for more than 7 days (oldest: 37d). Read or action them to resume publication.",
       "evidence": {
@@ -5950,7 +6021,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "319b3375ca89d426",
@@ -5958,7 +6030,7 @@
       "writtenAt": "2026-07-07T19:52:56.891Z",
       "runId": "66c95475-9b3b-4da0-966e-19055a0682cc",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "66 Note(s) for Nicole have been unread for more than 7 days (oldest: 38d). Read or action them to resume publication.",
       "evidence": {
@@ -5972,7 +6044,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "1321b8ad63877088",
@@ -5980,7 +6053,7 @@
       "writtenAt": "2026-07-08T19:22:38.512Z",
       "runId": "e994a448-5649-47e7-a463-b43b920667fd",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "67 Note(s) for Nicole have been unread for more than 7 days (oldest: 39d). Read or action them to resume publication.",
       "evidence": {
@@ -5994,7 +6067,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "1b82070bfceca344",
@@ -6002,7 +6076,7 @@
       "writtenAt": "2026-07-09T19:43:40.047Z",
       "runId": "9e4a8fea-c941-45c3-a484-f261ba1db01d",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "69 Note(s) for Nicole have been unread for more than 7 days (oldest: 40d). Read or action them to resume publication.",
       "evidence": {
@@ -6016,7 +6090,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "bcbd109c761fed40",
@@ -6024,7 +6099,7 @@
       "writtenAt": "2026-07-10T19:25:12.085Z",
       "runId": "dc8fa5be-b956-43fc-aaef-9b3c448f24ca",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "70 Note(s) for Nicole have been unread for more than 7 days (oldest: 41d). Read or action them to resume publication.",
       "evidence": {
@@ -6038,7 +6113,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "41dd21cf32337887",
@@ -6046,7 +6122,7 @@
       "writtenAt": "2026-07-11T19:00:50.857Z",
       "runId": "0870e765-fa50-4d3a-8bd6-1b66e68e644c",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "70 Note(s) for Nicole have been unread for more than 7 days (oldest: 41d). Read or action them to resume publication.",
       "evidence": {
@@ -6060,7 +6136,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "8314a1b41cfbf1d7",
@@ -6068,7 +6145,7 @@
       "writtenAt": "2026-07-12T19:03:25.093Z",
       "runId": "72c5c909-08fe-4bfd-b2ca-9f532fad66e2",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "71 Note(s) for Nicole have been unread for more than 7 days (oldest: 42d). Read or action them to resume publication.",
       "evidence": {
@@ -6082,7 +6159,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "f148fae1a3d50336",
@@ -6090,7 +6168,7 @@
       "writtenAt": "2026-07-13T19:20:59.216Z",
       "runId": "759fa813-2fe6-479e-badd-e912567c8130",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "72 Note(s) for Nicole have been unread for more than 7 days (oldest: 44d). Read or action them to resume publication.",
       "evidence": {
@@ -6104,7 +6182,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "bcd187dce4d47074",
@@ -6112,7 +6191,7 @@
       "writtenAt": "2026-07-14T19:16:59.474Z",
       "runId": "eb70d1d9-15de-4715-93d0-0794b97b2986",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "73 Note(s) for Nicole have been unread for more than 7 days (oldest: 45d). Read or action them to resume publication.",
       "evidence": {
@@ -6126,7 +6205,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "3c65dbbec0fcd345",
@@ -6134,7 +6214,7 @@
       "writtenAt": "2026-07-15T19:07:56.255Z",
       "runId": "be8a3f0c-967a-4955-a211-79fc03e4308e",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "74 Note(s) for Nicole have been unread for more than 7 days (oldest: 45d). Read or action them to resume publication.",
       "evidence": {
@@ -6148,7 +6228,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "0b36e24b960d895a",
@@ -6156,7 +6237,7 @@
       "writtenAt": "2026-07-16T19:07:00.507Z",
       "runId": "0df05fb7-34cc-4f50-a3d4-b2c82be2ab0d",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "75 Note(s) for Nicole have been unread for more than 7 days (oldest: 46d). Read or action them to resume publication.",
       "evidence": {
@@ -6170,7 +6251,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "11a5dc14af0e7698",
@@ -6178,7 +6260,7 @@
       "writtenAt": "2026-07-17T19:04:58.557Z",
       "runId": "99327b0c-7be0-4109-a861-fd7ad759c23b",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "76 Note(s) for Nicole have been unread for more than 7 days (oldest: 47d). Read or action them to resume publication.",
       "evidence": {
@@ -6192,7 +6274,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "8ad1933e16cb3051",
@@ -6200,7 +6283,7 @@
       "writtenAt": "2026-07-18T19:01:20.381Z",
       "runId": "72f223b6-8066-4141-8665-8c035277900f",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "78 Note(s) for Nicole have been unread for more than 7 days (oldest: 48d). Read or action them to resume publication.",
       "evidence": {
@@ -6214,7 +6297,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "7716b340554eccc3",
@@ -6222,7 +6306,7 @@
       "writtenAt": "2026-07-19T19:03:23.895Z",
       "runId": "279bbae5-f40d-45ef-9ad3-70365fb1295d",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "78 Note(s) for Nicole have been unread for more than 7 days (oldest: 49d). Read or action them to resume publication.",
       "evidence": {
@@ -6236,7 +6320,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "690b2b0870992362",
@@ -6244,7 +6329,7 @@
       "writtenAt": "2026-07-20T19:41:41.577Z",
       "runId": "b1de0b67-8875-4d87-9834-d178b0d4fa5b",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "80 Note(s) for Nicole have been unread for more than 7 days (oldest: 51d). Read or action them to resume publication.",
       "evidence": {
@@ -6258,7 +6343,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "ae18de061e84c0d4",
@@ -6266,7 +6352,7 @@
       "writtenAt": "2026-07-21T19:19:01.822Z",
       "runId": "d55ea27a-513e-4d2a-bb16-eba64ca6910e",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "81 Note(s) for Nicole have been unread for more than 7 days (oldest: 52d). Read or action them to resume publication.",
       "evidence": {
@@ -6280,7 +6366,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "010636f28cb73003",
@@ -6288,7 +6375,7 @@
       "writtenAt": "2026-07-22T19:15:08.685Z",
       "runId": "8cc426be-1291-4e28-b4bf-e462c1b2cc0d",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "82 Note(s) for Nicole have been unread for more than 7 days (oldest: 53d). Read or action them to resume publication.",
       "evidence": {
@@ -6302,7 +6389,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "02fb2011b2b267ad",
@@ -6310,7 +6398,7 @@
       "writtenAt": "2026-07-23T19:13:56.271Z",
       "runId": "bd814362-8119-4336-9654-671165625e95",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "83 Note(s) for Nicole have been unread for more than 7 days (oldest: 54d). Read or action them to resume publication.",
       "evidence": {
@@ -6324,7 +6412,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "0055ace98046d0fb",
@@ -6332,7 +6421,7 @@
       "writtenAt": "2026-07-24T19:22:41.930Z",
       "runId": "468eed8f-42e9-469c-b8af-a715b763bd74",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "84 Note(s) for Nicole have been unread for more than 7 days (oldest: 55d). Read or action them to resume publication.",
       "evidence": {
@@ -6346,7 +6435,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "1a45f9c69e79f6bf",
@@ -6354,7 +6444,7 @@
       "writtenAt": "2026-07-25T19:04:37.328Z",
       "runId": "071426ff-fff6-4cbf-bdc4-9198bbedba8d",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "85 Note(s) for Nicole have been unread for more than 7 days (oldest: 55d). Read or action them to resume publication.",
       "evidence": {
@@ -6368,7 +6458,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "509b854cb1fd66f7",
@@ -6376,7 +6467,7 @@
       "writtenAt": "2026-07-26T19:07:21.039Z",
       "runId": "3115c889-8c1b-4af9-a39c-e2d56c6c3e59",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "86 Note(s) for Nicole have been unread for more than 7 days (oldest: 56d). Read or action them to resume publication.",
       "evidence": {
@@ -6390,7 +6481,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "e9292f0a9afdc103",
@@ -6398,7 +6490,7 @@
       "writtenAt": "2026-07-27T19:24:37.260Z",
       "runId": "905617b8-1e3f-42a8-854a-e9602268993b",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "86 Note(s) for Nicole have been unread for more than 7 days (oldest: 58d). Read or action them to resume publication.",
       "evidence": {
@@ -6412,7 +6504,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "f131b6bca58f240b",
@@ -6420,7 +6513,7 @@
       "writtenAt": "2026-07-28T19:20:03.499Z",
       "runId": "2ba947df-cb72-42bd-bc71-69b2cd519eb8",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "88 Note(s) for Nicole have been unread for more than 7 days (oldest: 59d). Read or action them to resume publication.",
       "evidence": {
@@ -6434,7 +6527,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "5aee5ca8f96a2e6d",
@@ -6442,7 +6536,7 @@
       "writtenAt": "2026-07-29T19:13:18.932Z",
       "runId": "bd8d3390-5719-43bf-b965-9f21623b7369",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "88 Note(s) for Nicole have been unread for more than 7 days (oldest: 59d). Read or action them to resume publication.",
       "evidence": {
@@ -6456,7 +6550,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "05ca4e7c8da19fcc",
@@ -6464,7 +6559,7 @@
       "writtenAt": "2026-07-30T19:23:12.795Z",
       "runId": "dc9f2706-fd3d-4e3a-aa5e-86a8d3d207d6",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "90 Note(s) for Nicole have been unread for more than 7 days (oldest: 61d). Read or action them to resume publication.",
       "evidence": {
@@ -6478,7 +6573,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "0862e0669edd730a",
@@ -6486,7 +6582,7 @@
       "writtenAt": "2026-07-31T19:21:57.466Z",
       "runId": "b12d7acd-4864-4845-9188-721ac48cb490",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "90 Note(s) for Nicole have been unread for more than 7 days (oldest: 62d). Read or action them to resume publication.",
       "evidence": {
@@ -6500,7 +6596,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "82dedd884b754de4",
@@ -6508,7 +6605,7 @@
       "writtenAt": "2026-08-01T19:05:17.433Z",
       "runId": "64fca36f-97e5-44c9-a195-4c97b9f51cb7",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "92 Note(s) for Nicole have been unread for more than 7 days (oldest: 62d). Read or action them to resume publication.",
       "evidence": {
@@ -6522,7 +6619,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "185d400714df651d",
@@ -6530,7 +6628,7 @@
       "writtenAt": "2026-08-02T19:07:07.005Z",
       "runId": "2da2ca28-65df-4207-91e5-1753e5869826",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "92 Note(s) for Nicole have been unread for more than 7 days (oldest: 63d). Read or action them to resume publication.",
       "evidence": {
@@ -6544,7 +6642,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "b6eb986565afdc57",
@@ -6552,7 +6651,7 @@
       "writtenAt": "2026-08-03T19:27:22.908Z",
       "runId": "7e780de1-3666-453b-ac39-9de16f548bb0",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "94 Note(s) for Nicole have been unread for more than 7 days (oldest: 65d). Read or action them to resume publication.",
       "evidence": {
@@ -6566,7 +6665,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "3148a3d55ed646f7",
@@ -6574,7 +6674,7 @@
       "writtenAt": "2026-08-04T19:29:35.397Z",
       "runId": "209d31e7-5a55-47fa-b5f8-e44ff709511a",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "95 Note(s) for Nicole have been unread for more than 7 days (oldest: 66d). Read or action them to resume publication.",
       "evidence": {
@@ -6588,7 +6688,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "8655d150823eab77",
@@ -6596,7 +6697,7 @@
       "writtenAt": "2026-08-05T19:26:46.933Z",
       "runId": "9f863877-8bbc-45a3-8b0f-8a523fe30fa3",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "96 Note(s) for Nicole have been unread for more than 7 days (oldest: 67d). Read or action them to resume publication.",
       "evidence": {
@@ -6610,7 +6711,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "e2c11a5052aa6ae8",
@@ -6618,7 +6720,7 @@
       "writtenAt": "2026-08-06T23:56:11.886Z",
       "runId": "ad51dc1e-c805-48ef-9ca6-48b7fd40f793",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "97 Note(s) for Nicole have been unread for more than 7 days (oldest: 68d). Read or action them to resume publication.",
       "evidence": {
@@ -6632,7 +6734,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "2319d0a09b52354c",
@@ -6640,7 +6743,7 @@
       "writtenAt": "2026-08-07T18:53:31.974Z",
       "runId": "9b7573ec-c517-4f0e-aa48-a9cf5043bc57",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "97 Note(s) for Nicole have been unread for more than 7 days (oldest: 68d). Read or action them to resume publication.",
       "evidence": {
@@ -6654,7 +6757,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "c113c4b129b1c190",
@@ -6662,7 +6766,7 @@
       "writtenAt": "2026-08-08T18:34:46.839Z",
       "runId": "7cbb9d1e-45bb-4b8e-8197-dcdb4f34d965",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "98 Note(s) for Nicole have been unread for more than 7 days (oldest: 69d). Read or action them to resume publication.",
       "evidence": {
@@ -6676,7 +6780,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "4af774d611b17380",
@@ -6684,7 +6789,7 @@
       "writtenAt": "2026-08-09T18:37:21.496Z",
       "runId": "bd2efcf3-a401-46d7-9c37-f9bf33b7b666",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "99 Note(s) for Nicole have been unread for more than 7 days (oldest: 70d). Read or action them to resume publication.",
       "evidence": {
@@ -6698,7 +6803,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "3b946b2825cb8b4d",
@@ -6706,7 +6812,7 @@
       "writtenAt": "2026-08-10T18:54:35.659Z",
       "runId": "f91b8f08-101c-4d79-bee1-190a0b1cd772",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "100 Note(s) for Nicole have been unread for more than 7 days (oldest: 71d). Read or action them to resume publication.",
       "evidence": {
@@ -6720,7 +6826,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "8f5502201e13e3a2",
@@ -6728,7 +6835,7 @@
       "writtenAt": "2026-08-11T18:59:15.981Z",
       "runId": "5a014ccf-c5c6-4b46-8a39-8e95a0e4c9b0",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "101 Note(s) for Nicole have been unread for more than 7 days (oldest: 72d). Read or action them to resume publication.",
       "evidence": {
@@ -6742,7 +6849,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "48aa3a27db18ffaa",
@@ -6750,7 +6858,7 @@
       "writtenAt": "2026-08-12T18:58:59.763Z",
       "runId": "8391f49f-a8cd-4b0e-8645-209a10a79f87",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "102 Note(s) for Nicole have been unread for more than 7 days (oldest: 73d). Read or action them to resume publication.",
       "evidence": {
@@ -6764,7 +6872,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "13caf05ae33114a2",
@@ -6772,7 +6881,7 @@
       "writtenAt": "2026-08-13T18:59:47.331Z",
       "runId": "b4f5e10e-caee-49e7-9fa4-b8de72993410",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "103 Note(s) for Nicole have been unread for more than 7 days (oldest: 74d). Read or action them to resume publication.",
       "evidence": {
@@ -6786,7 +6895,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "7bf25a7604a74c2b",
@@ -6794,7 +6904,7 @@
       "writtenAt": "2026-08-14T18:51:15.093Z",
       "runId": "4596f1e3-20f3-4143-b129-913028bed1e5",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "104 Note(s) for Nicole have been unread for more than 7 days (oldest: 75d). Read or action them to resume publication.",
       "evidence": {
@@ -6808,7 +6918,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "a2c11a8aebbf83e3",
@@ -6816,7 +6927,7 @@
       "writtenAt": "2026-08-15T18:26:03.904Z",
       "runId": "18bdd4a4-d415-4f55-a1a4-b2d888364c46",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "105 Note(s) for Nicole have been unread for more than 7 days (oldest: 76d). Read or action them to resume publication.",
       "evidence": {
@@ -6830,7 +6941,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "35a37d91053d7e45",
@@ -6838,7 +6950,7 @@
       "writtenAt": "2026-08-16T18:25:37.921Z",
       "runId": "303736ce-bbe3-4734-8e04-81a13b07b02b",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "106 Note(s) for Nicole have been unread for more than 7 days (oldest: 77d). Read or action them to resume publication.",
       "evidence": {
@@ -6852,7 +6964,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "9f5e178a46ff713d",
@@ -6860,7 +6973,7 @@
       "writtenAt": "2026-08-17T18:36:21.676Z",
       "runId": "deb0da44-0ae3-469d-9f63-b959dd62b365",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "107 Note(s) for Nicole have been unread for more than 7 days (oldest: 78d). Read or action them to resume publication.",
       "evidence": {
@@ -6874,7 +6987,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "9745c26bd86ba70e",
@@ -6882,7 +6996,7 @@
       "writtenAt": "2026-08-18T18:34:54.112Z",
       "runId": "b24460d5-5752-4fec-95e2-047c641d40cb",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "108 Note(s) for Nicole have been unread for more than 7 days (oldest: 79d). Read or action them to resume publication.",
       "evidence": {
@@ -6896,7 +7010,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "7e989876f3494bde",
@@ -6904,7 +7019,7 @@
       "writtenAt": "2026-08-19T18:32:06.576Z",
       "runId": "92d061f5-aa96-4606-8c24-50598219dda1",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "109 Note(s) for Nicole have been unread for more than 7 days (oldest: 80d). Read or action them to resume publication.",
       "evidence": {
@@ -6918,7 +7033,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "dc1273922280a53f",
@@ -6926,7 +7042,7 @@
       "writtenAt": "2026-08-20T18:35:47.284Z",
       "runId": "d6335e07-05c1-4814-9e55-decdb49c7251",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "110 Note(s) for Nicole have been unread for more than 7 days (oldest: 81d). Read or action them to resume publication.",
       "evidence": {
@@ -6940,7 +7056,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "7a5f100f90d8aa2c",
@@ -6948,7 +7065,7 @@
       "writtenAt": "2026-08-21T18:33:49.371Z",
       "runId": "70554efd-8f57-47ee-b01a-91e86b541696",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "111 Note(s) for Nicole have been unread for more than 7 days (oldest: 82d). Read or action them to resume publication.",
       "evidence": {
@@ -6962,7 +7079,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "c0cd7b0714227c83",
@@ -6970,7 +7088,7 @@
       "writtenAt": "2026-08-22T18:27:09.299Z",
       "runId": "bb180ad0-ed53-4899-af36-782a4e62b90b",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "113 Note(s) for Nicole have been unread for more than 7 days (oldest: 83d). Read or action them to resume publication.",
       "evidence": {
@@ -6984,7 +7102,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "ca01d6c1e019e3a3",
@@ -6992,7 +7111,7 @@
       "writtenAt": "2026-08-23T18:25:51.360Z",
       "runId": "d391dded-af54-4e6e-910f-b0990413fd4b",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "114 Note(s) for Nicole have been unread for more than 7 days (oldest: 84d). Read or action them to resume publication.",
       "evidence": {
@@ -7006,7 +7125,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "2f6fe1c9bfefd7ae",
@@ -7014,7 +7134,7 @@
       "writtenAt": "2026-08-24T18:36:58.499Z",
       "runId": "fc3a6b85-9182-420c-bf50-0f8cf995a19b",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "115 Note(s) for Nicole have been unread for more than 7 days (oldest: 85d). Read or action them to resume publication.",
       "evidence": {
@@ -7028,7 +7148,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "65d33176c45c8b5a",
@@ -7036,7 +7157,7 @@
       "writtenAt": "2026-08-25T18:36:28.007Z",
       "runId": "102b4c57-a020-42dc-92ad-8b206ef54f86",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "116 Note(s) for Nicole have been unread for more than 7 days (oldest: 86d). Read or action them to resume publication.",
       "evidence": {
@@ -7050,7 +7171,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     },
     {
       "id": "8b0cea25a8043f54",
@@ -7058,7 +7180,7 @@
       "writtenAt": "2026-08-26T19:45:34.079Z",
       "runId": "5fb0d7ea-4326-4e29-befe-253927b3a402",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "117 Note(s) for Nicole have been unread for more than 7 days (oldest: 88d). Read or action them to resume publication.",
       "evidence": {
@@ -7072,7 +7194,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "readAt": "2026-08-27T21:02:31.440Z"
     }
   ]
 }

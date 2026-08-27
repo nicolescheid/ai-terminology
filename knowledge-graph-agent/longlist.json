@@ -415,7 +415,10 @@
       "dateFirstSeen": "2026-04-26T22:40:25.832Z",
       "dateLastSeen": "2026-05-29T20:24:10.894Z",
       "sz": 14,
-      "proposalReason": "'System Card' is a widely used and consequential term in AI safety and model release governance, not yet in the graph or longlist. This article is a primary example of the artifact."
+      "proposalReason": "'System Card' is a widely used and consequential term in AI safety and model release governance, not yet in the graph or longlist. This article is a primary example of the artifact.",
+      "status": "promoted",
+      "promotedAt": "2026-08-27T21:16:47.981Z",
+      "promotedToGraphNodeId": "system-card"
     },
     {
       "id": "self-verification",
@@ -1134,7 +1137,10 @@
       "dateFirstSeen": "2026-04-30T19:20:00.611Z",
       "dateLastSeen": "2026-05-30T19:13:38.586Z",
       "sz": 14,
-      "proposalReason": "Central framing concept of the paper; likely to recur as agents are evaluated for deployment readiness. Not currently in Tier 1 or Tier 2."
+      "proposalReason": "Central framing concept of the paper; likely to recur as agents are evaluated for deployment readiness. Not currently in Tier 1 or Tier 2.",
+      "status": "promoted",
+      "promotedAt": "2026-08-27T21:16:47.981Z",
+      "promotedToGraphNodeId": "capability-reliability-gap"
     },
     {
       "id": "agent-reliability",
@@ -1463,7 +1469,10 @@
       "dateLastSeen": "2026-06-03T20:54:34.002Z",
       "sz": 14,
       "fullName": "The Agentic Era",
-      "proposalReason": "Used repeatedly and centrally by Google to frame their entire April 2026 strategy; worth tracking as a competing periodization framing alongside similar terms."
+      "proposalReason": "Used repeatedly and centrally by Google to frame their entire April 2026 strategy; worth tracking as a competing periodization framing alongside similar terms.",
+      "status": "promoted",
+      "promotedAt": "2026-08-27T21:16:47.981Z",
+      "promotedToGraphNodeId": "agentic-era"
     },
     {
       "id": "trainium",
@@ -1887,7 +1896,10 @@
       "dateFirstSeen": "2026-05-09T07:44:17.196Z",
       "dateLastSeen": "2026-05-15T19:28:01.171Z",
       "sz": 16,
-      "proposalReason": "The headline explicitly frames Microsoft's earnings around an 'agentic business model' shift — a distinct framing of how agentic AI is reshaping commercial structures, not just product features."
+      "proposalReason": "The headline explicitly frames Microsoft's earnings around an 'agentic business model' shift — a distinct framing of how agentic AI is reshaping commercial structures, not just product features.",
+      "status": "promoted",
+      "promotedAt": "2026-08-27T21:16:47.981Z",
+      "promotedToGraphNodeId": "agentic-business-model"
     },
     {
       "id": "trusted-access-cyber",
@@ -2150,7 +2162,10 @@
       "dateFirstSeen": "2026-05-09T07:44:17.196Z",
       "dateLastSeen": "2026-05-29T20:24:10.894Z",
       "sz": 14,
-      "proposalReason": "The article introduces 'orbital AI compute capacity' as a concrete near-term interest, representing a genuinely novel infrastructure category worth tracking as it moves from concept to implementation."
+      "proposalReason": "The article introduces 'orbital AI compute capacity' as a concrete near-term interest, representing a genuinely novel infrastructure category worth tracking as it moves from concept to implementation.",
+      "status": "promoted",
+      "promotedAt": "2026-08-27T21:16:47.981Z",
+      "promotedToGraphNodeId": "orbital-ai-compute"
     },
     {
       "id": "data-residency",
@@ -2188,7 +2203,10 @@
       "dateFirstSeen": "2026-05-09T07:44:17.196Z",
       "dateLastSeen": "2026-05-13T19:53:32.068Z",
       "sz": 14,
-      "proposalReason": "Appears as a driving business requirement for Anthropic's international infrastructure expansion, distinct from but related to data-sovereignty; worth tracking as a compliance-driven concept shaping AI deployment patterns."
+      "proposalReason": "Appears as a driving business requirement for Anthropic's international infrastructure expansion, distinct from but related to data-sovereignty; worth tracking as a compliance-driven concept shaping AI deployment patterns.",
+      "status": "promoted",
+      "promotedAt": "2026-08-27T21:16:47.981Z",
+      "promotedToGraphNodeId": "data-residency"
     },
     {
       "id": "train-inference-mismatch",
@@ -2511,7 +2529,10 @@
       "dateLastSeen": "2026-05-29T20:24:10.894Z",
       "sz": 14,
       "fullName": "Adjustable Reasoning Effort (LLM Inference Control)",
-      "proposalReason": "A technically specific and reusable framing for a capability increasingly appearing across model APIs; distinct from existing graph terms and likely to recur."
+      "proposalReason": "A technically specific and reusable framing for a capability increasingly appearing across model APIs; distinct from existing graph terms and likely to recur.",
+      "status": "promoted",
+      "promotedAt": "2026-08-27T21:16:47.981Z",
+      "promotedToGraphNodeId": "adjustable-reasoning-effort"
     },
     {
       "id": "hybrid-agent-pipeline",
@@ -2584,7 +2605,10 @@
       "dateLastSeen": "2026-05-17T19:07:50.069Z",
       "sz": 14,
       "fullName": "Privacy by Design (On-Premise AI Deployment)",
-      "proposalReason": "The article uses privacy by design as a first-class architectural motivator for on-premise LLM deployment, framing it as a requirement rather than a preference — a distinction worth tracking in enterprise AI contexts."
+      "proposalReason": "The article uses privacy by design as a first-class architectural motivator for on-premise LLM deployment, framing it as a requirement rather than a preference — a distinction worth tracking in enterprise AI contexts.",
+      "status": "promoted",
+      "promotedAt": "2026-08-27T21:16:47.981Z",
+      "promotedToGraphNodeId": "privacy-by-design"
     },
     {
       "id": "vllm",
@@ -3019,7 +3043,10 @@
       "dateFirstSeen": "2026-05-11T07:07:01.775Z",
       "dateLastSeen": "2026-06-04T20:04:46.217Z",
       "sz": 14,
-      "proposalReason": "The article materially uses 'hyperscale data center' (e.g., 'planned hyperscale data center in Box Elder County') as a distinct category of AI infrastructure with policy and environmental stakes — a term with lasting relevance to AI infrastructure discourse."
+      "proposalReason": "The article materially uses 'hyperscale data center' (e.g., 'planned hyperscale data center in Box Elder County') as a distinct category of AI infrastructure with policy and environmental stakes — a term with lasting relevance to AI infrastructure discourse.",
+      "status": "promoted",
+      "promotedAt": "2026-08-27T21:16:47.981Z",
+      "promotedToGraphNodeId": "hyperscale-data-center"
     },
     {
       "id": "ai-energy-demand",
@@ -3076,7 +3103,10 @@
       "dateLastSeen": "2026-06-04T20:04:46.217Z",
       "sz": 14,
       "fullName": "AI Energy Demand (Data Center Power Consumption)",
-      "proposalReason": "The article's central throughline — from Pew survey data to Senate letters to the EIA to a 9-gigawatt Utah approval — consistently names AI energy demand as the organising policy and community concern."
+      "proposalReason": "The article's central throughline — from Pew survey data to Senate letters to the EIA to a 9-gigawatt Utah approval — consistently names AI energy demand as the organising policy and community concern.",
+      "status": "promoted",
+      "promotedAt": "2026-08-27T21:16:47.981Z",
+      "promotedToGraphNodeId": "ai-energy-demand"
     },
     {
       "id": "ratepayer-protection-pledge",
@@ -3115,7 +3145,10 @@
       "dateLastSeen": "2026-05-18T19:43:41.150Z",
       "sz": 14,
       "fullName": "Ratepayer Protection Pledge (Tech Industry Energy Commitment)",
-      "proposalReason": "Named explicitly in the article as the mechanism motivating bipartisan Senate pressure for mandatory data center energy disclosures — a policy-layer term with relevance to AI infrastructure governance."
+      "proposalReason": "Named explicitly in the article as the mechanism motivating bipartisan Senate pressure for mandatory data center energy disclosures — a policy-layer term with relevance to AI infrastructure governance.",
+      "status": "promoted",
+      "promotedAt": "2026-08-27T21:16:47.981Z",
+      "promotedToGraphNodeId": "ratepayer-protection-pledge"
     },
     {
       "id": "stargate-project",
@@ -3157,7 +3190,10 @@
       "sz": 14,
       "fullName": "Stargate (OpenAI AI Infrastructure Project)",
       "nodeType": "product",
-      "proposalReason": "The article references Stargate directly in the context of geopolitical threats from Iran's IRGC — a concrete instance of AI infrastructure entering international security discourse, making the term worth tracking."
+      "proposalReason": "The article references Stargate directly in the context of geopolitical threats from Iran's IRGC — a concrete instance of AI infrastructure entering international security discourse, making the term worth tracking.",
+      "status": "promoted",
+      "promotedAt": "2026-08-27T21:16:47.981Z",
+      "promotedToGraphNodeId": "stargate-project"
     },
     {
       "id": "ai-speed-cyber-defense",
@@ -3197,7 +3233,10 @@
       "dateFirstSeen": "2026-05-11T07:07:01.775Z",
       "dateLastSeen": "2026-05-11T19:45:39.014Z",
       "sz": 16,
-      "proposalReason": "A nascent framing term appearing in executive discourse; worth tracking as 'AI-speed' becomes a recurring rhetorical device for justifying AI adoption in security operations."
+      "proposalReason": "A nascent framing term appearing in executive discourse; worth tracking as 'AI-speed' becomes a recurring rhetorical device for justifying AI adoption in security operations.",
+      "status": "promoted",
+      "promotedAt": "2026-08-27T21:16:47.981Z",
+      "promotedToGraphNodeId": "ai-speed-cyber-defense"
     },
     {
       "id": "benchmaxxing",
@@ -3508,7 +3547,10 @@
       "dateLastSeen": "2026-06-04T20:04:46.217Z",
       "sz": 14,
       "fullName": "The Inference Shift",
-      "proposalReason": "The article's own coinage and central thesis — worth tracking to see if it gains independent adoption as a framing term in the infrastructure and AI policy discourse."
+      "proposalReason": "The article's own coinage and central thesis — worth tracking to see if it gains independent adoption as a framing term in the infrastructure and AI policy discourse.",
+      "status": "promoted",
+      "promotedAt": "2026-08-27T21:16:47.981Z",
+      "promotedToGraphNodeId": "inference-shift"
     },
     {
       "id": "zombie-internet",
@@ -4058,7 +4100,10 @@
       "dateFirstSeen": "2026-05-13T19:53:32.068Z",
       "dateLastSeen": "2026-05-17T19:07:50.069Z",
       "sz": 14,
-      "proposalReason": "Surfaces as a named architectural layer in distributed ML systems, distinct from model evals; worth tracking as the term acquires more precise meaning in the MLOps and agentic infrastructure literature."
+      "proposalReason": "Surfaces as a named architectural layer in distributed ML systems, distinct from model evals; worth tracking as the term acquires more precise meaning in the MLOps and agentic infrastructure literature.",
+      "status": "promoted",
+      "promotedAt": "2026-08-27T21:16:47.981Z",
+      "promotedToGraphNodeId": "ml-observability"
     },
     {
       "id": "agent-count-fallacy",
@@ -4579,7 +4624,10 @@
       "dateLastSeen": "2026-06-03T20:54:34.002Z",
       "sz": 14,
       "fullName": "AI Deployment Company",
-      "proposalReason": "New candidate: names an emerging organizational pattern distinct from 'lab' or 'product company' — worth tracking as the AI industry structure evolves."
+      "proposalReason": "New candidate: names an emerging organizational pattern distinct from 'lab' or 'product company' — worth tracking as the AI industry structure evolves.",
+      "status": "promoted",
+      "promotedAt": "2026-08-27T21:16:47.981Z",
+      "promotedToGraphNodeId": "deployment-company"
     },
     {
       "id": "ai-camera-assistant",
@@ -4996,7 +5044,10 @@
       "sz": 14,
       "fullName": "Gemini Omni (Google)",
       "nodeType": "product",
-      "proposalReason": "New named model product from Google; worth tracking as a distinct entry in the Gemini family focused on any-to-video generation."
+      "proposalReason": "New named model product from Google; worth tracking as a distinct entry in the Gemini family focused on any-to-video generation.",
+      "status": "promoted",
+      "promotedAt": "2026-08-27T21:16:47.981Z",
+      "promotedToGraphNodeId": "gemini-omni"
     },
     {
       "id": "gemini-35-flash",
@@ -5061,7 +5112,10 @@
       "sz": 14,
       "fullName": "Gemini 3.5 Flash (Google DeepMind)",
       "nodeType": "product",
-      "proposalReason": "New named model release worth tracking as a distinct Gemini family member with explicit agentic positioning."
+      "proposalReason": "New named model release worth tracking as a distinct Gemini family member with explicit agentic positioning.",
+      "status": "promoted",
+      "promotedAt": "2026-08-27T21:16:47.981Z",
+      "promotedToGraphNodeId": "gemini-35-flash"
     },
     {
       "id": "information-agents-search",
@@ -5168,7 +5222,10 @@
       "dateLastSeen": "2026-06-01T21:31:49.667Z",
       "sz": 14,
       "nodeType": "product",
-      "proposalReason": "New named Google platform enabling in-Search code generation and mini-app creation; relates to the emerging personal-software and micro-app concepts on the longlist."
+      "proposalReason": "New named Google platform enabling in-Search code generation and mini-app creation; relates to the emerging personal-software and micro-app concepts on the longlist.",
+      "status": "promoted",
+      "promotedAt": "2026-08-27T21:16:47.981Z",
+      "promotedToGraphNodeId": "google-antigravity"
     },
     {
       "id": "aint",
@@ -5208,7 +5265,10 @@
       "dateLastSeen": "2026-06-05T19:53:16.670Z",
       "sz": 14,
       "fullName": "AI as Normal Technology (AINT)",
-      "proposalReason": "New candidate term for a recurring framework in AI policy discourse — worth tracking as it anchors an influential counter-narrative to AI exceptionalism."
+      "proposalReason": "New candidate term for a recurring framework in AI policy discourse — worth tracking as it anchors an influential counter-narrative to AI exceptionalism.",
+      "status": "promoted",
+      "promotedAt": "2026-08-27T21:16:47.981Z",
+      "promotedToGraphNodeId": "aint"
     },
     {
       "id": "offense-defense-balance",
@@ -5248,7 +5308,10 @@
       "dateLastSeen": "2026-06-02T20:47:42.877Z",
       "sz": 14,
       "fullName": "Offense-Defense Balance (AI Misuse Risk)",
-      "proposalReason": "New candidate concept that recurs in AI security and governance literature — a useful analytical lens distinct from existing graph terms."
+      "proposalReason": "New candidate concept that recurs in AI security and governance literature — a useful analytical lens distinct from existing graph terms.",
+      "status": "promoted",
+      "promotedAt": "2026-08-27T21:16:47.981Z",
+      "promotedToGraphNodeId": "offense-defense-balance"
     },
     {
       "id": "societal-resilience",
@@ -5541,7 +5604,10 @@
       "dateLastSeen": "2026-05-29T20:29:06.123Z",
       "sz": 14,
       "fullName": "Run-Rate Revenue (ARR Projection)",
-      "proposalReason": "Anthropic has used this metric repeatedly in major fundraise announcements; tracking it establishes a useful context node for the graph's business cluster."
+      "proposalReason": "Anthropic has used this metric repeatedly in major fundraise announcements; tracking it establishes a useful context node for the graph's business cluster.",
+      "status": "promoted",
+      "promotedAt": "2026-08-27T21:16:47.981Z",
+      "promotedToGraphNodeId": "run-rate-revenue"
     },
     {
       "id": "product-market-fit",
@@ -5721,7 +5787,10 @@
       "dateLastSeen": "2026-06-02T20:47:42.877Z",
       "sz": 14,
       "fullName": "Hyperscaler (Cloud Provider in AI Context)",
-      "proposalReason": "The term is used with increasing precision in AI financing and infrastructure discourse to denote a specific tier of compute provider; worth tracking as it accumulates a distinct meaning beyond generic 'cloud.'"
+      "proposalReason": "The term is used with increasing precision in AI financing and infrastructure discourse to denote a specific tier of compute provider; worth tracking as it accumulates a distinct meaning beyond generic 'cloud.'",
+      "status": "promoted",
+      "promotedAt": "2026-08-27T21:16:47.981Z",
+      "promotedToGraphNodeId": "hyperscaler"
     },
     {
       "id": "itbench-aa",
@@ -5868,7 +5937,10 @@
       "sz": 14,
       "fullName": "Gemini Spark (Google)",
       "nodeType": "product",
-      "proposalReason": "New named product that instantiates several canonical graph concepts — agentic harness, persistent agent, MCP integration — in a single consumer product."
+      "proposalReason": "New named product that instantiates several canonical graph concepts — agentic harness, persistent agent, MCP integration — in a single consumer product.",
+      "status": "promoted",
+      "promotedAt": "2026-08-27T21:16:47.981Z",
+      "promotedToGraphNodeId": "gemini-spark"
     },
     {
       "id": "alphaproof-nexus",
@@ -6655,7 +6727,10 @@
       "sz": 14,
       "fullName": "Project Solara (Microsoft Agent OS)",
       "nodeType": "product",
-      "proposalReason": "First sighting of Microsoft's agent-native OS play — worth tracking as a named product with cross-device agent coordination ambitions distinct from existing Windows AI initiatives."
+      "proposalReason": "First sighting of Microsoft's agent-native OS play — worth tracking as a named product with cross-device agent coordination ambitions distinct from existing Windows AI initiatives.",
+      "status": "promoted",
+      "promotedAt": "2026-08-27T21:16:47.981Z",
+      "promotedToGraphNodeId": "project-solara"
     },
     {
       "id": "microsoft-execution-containers",

@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generatedAt": "2026-08-26T19:45:34.443Z",
-    "pendingCount": 26,
-    "appliedCount": 13,
+    "generatedAt": "2026-08-27T21:16:47.981Z",
+    "pendingCount": 1,
+    "appliedCount": 38,
     "rejectedCount": 1,
     "note": "Lexi proposals queue. Actions gated as PROPOSE land here as status: 'pending'. Edit a proposal's status to 'approved' or 'rejected' and run the apply step (TBD) to commit."
   },
@@ -698,7 +698,7 @@
       "action": "promote_to_graph",
       "gate": "propose",
       "proposedAt": "2026-05-13T19:55:47.342Z",
-      "status": "pending",
+      "status": "applied",
       "source": "promote-eligibility-scan",
       "target": {
         "kind": "longlist_entry",
@@ -741,14 +741,17 @@
         }
       },
       "reason": "4 sources, 2 independent (stratechery.com + anthropic.com), 4d on longlist. Trusted: stratechery.com.",
-      "runId": "6497c953-05e0-42ca-92c8-5a900398723a"
+      "runId": "6497c953-05e0-42ca-92c8-5a900398723a",
+      "approvedAt": "2026-08-27T21:16:45.423Z",
+      "approvedBy": "nicole",
+      "appliedAt": "2026-08-27T21:16:47.981Z"
     },
     {
       "id": "75aaea8dfbbf8a5f",
       "action": "promote_to_graph",
       "gate": "propose",
       "proposedAt": "2026-05-13T19:55:47.342Z",
-      "status": "pending",
+      "status": "applied",
       "source": "promote-eligibility-scan",
       "target": {
         "kind": "longlist_entry",
@@ -784,14 +787,17 @@
         }
       },
       "reason": "2 sources, 2 independent (anthropic.com + theverge.com), 4d on longlist.",
-      "runId": "6497c953-05e0-42ca-92c8-5a900398723a"
+      "runId": "6497c953-05e0-42ca-92c8-5a900398723a",
+      "approvedAt": "2026-08-27T21:16:45.423Z",
+      "approvedBy": "nicole",
+      "appliedAt": "2026-08-27T21:16:47.981Z"
     },
     {
       "id": "6c8073ca62415f45",
       "action": "promote_to_graph",
       "gate": "propose",
       "proposedAt": "2026-05-14T19:46:45.141Z",
-      "status": "pending",
+      "status": "applied",
       "source": "promote-eligibility-scan",
       "target": {
         "kind": "longlist_entry",
@@ -829,14 +835,17 @@
         }
       },
       "reason": "2 sources, 2 independent (hbr.org + theverge.com), 3d on longlist. Trusted: hbr.org.",
-      "runId": "271c6753-5b8e-4b07-aae3-58ca61cc994d"
+      "runId": "271c6753-5b8e-4b07-aae3-58ca61cc994d",
+      "approvedAt": "2026-08-27T21:16:45.423Z",
+      "approvedBy": "nicole",
+      "appliedAt": "2026-08-27T21:16:47.981Z"
     },
     {
       "id": "a37fae161ae4ff60",
       "action": "promote_to_graph",
       "gate": "propose",
       "proposedAt": "2026-05-15T19:30:15.909Z",
-      "status": "pending",
+      "status": "applied",
       "source": "promote-eligibility-scan",
       "target": {
         "kind": "longlist_entry",
@@ -880,14 +889,17 @@
         }
       },
       "reason": "3 sources, 3 independent (blog.google + stratechery.com + theverge.com), 11d on longlist. Trusted: stratechery.com.",
-      "runId": "22ece666-f33a-496c-b2ef-6428ce2d75db"
+      "runId": "22ece666-f33a-496c-b2ef-6428ce2d75db",
+      "approvedAt": "2026-08-27T21:16:45.423Z",
+      "approvedBy": "nicole",
+      "appliedAt": "2026-08-27T21:16:47.981Z"
     },
     {
       "id": "1efe7f3ee6133ec5",
       "action": "promote_to_graph",
       "gate": "propose",
       "proposedAt": "2026-05-17T19:08:54.339Z",
-      "status": "pending",
+      "status": "applied",
       "source": "promote-eligibility-scan",
       "target": {
         "kind": "longlist_entry",
@@ -925,14 +937,17 @@
         }
       },
       "reason": "2 sources, 2 independent (huggingface.co + theverge.com), 7d on longlist.",
-      "runId": "b2b2efee-2efc-4cda-8d6d-eb0f336c96f2"
+      "runId": "b2b2efee-2efc-4cda-8d6d-eb0f336c96f2",
+      "approvedAt": "2026-08-27T21:16:45.423Z",
+      "approvedBy": "nicole",
+      "appliedAt": "2026-08-27T21:16:47.981Z"
     },
     {
       "id": "e40405a51d9212ca",
       "action": "promote_to_graph",
       "gate": "propose",
       "proposedAt": "2026-05-17T19:08:54.339Z",
-      "status": "pending",
+      "status": "applied",
       "source": "promote-eligibility-scan",
       "target": {
         "kind": "longlist_entry",
@@ -969,14 +984,17 @@
         }
       },
       "reason": "2 sources, 2 independent (huggingface.co + simonwillison.net), 3d on longlist. Trusted: simonwillison.net.",
-      "runId": "b2b2efee-2efc-4cda-8d6d-eb0f336c96f2"
+      "runId": "b2b2efee-2efc-4cda-8d6d-eb0f336c96f2",
+      "approvedAt": "2026-08-27T21:16:45.423Z",
+      "approvedBy": "nicole",
+      "appliedAt": "2026-08-27T21:16:47.981Z"
     },
     {
       "id": "223c2a66c1076e0d",
       "action": "promote_to_graph",
       "gate": "propose",
       "proposedAt": "2026-05-18T19:45:25.653Z",
-      "status": "pending",
+      "status": "applied",
       "source": "promote-eligibility-scan",
       "target": {
         "kind": "longlist_entry",
@@ -1014,14 +1032,17 @@
         }
       },
       "reason": "2 sources, 2 independent (theverge.com + stratechery.com), 7d on longlist. Trusted: stratechery.com.",
-      "runId": "9d0530c4-0a08-493f-bf56-193c87bb546a"
+      "runId": "9d0530c4-0a08-493f-bf56-193c87bb546a",
+      "approvedAt": "2026-08-27T21:16:45.423Z",
+      "approvedBy": "nicole",
+      "appliedAt": "2026-08-27T21:16:47.981Z"
     },
     {
       "id": "47c491ecf82f584b",
       "action": "promote_to_graph",
       "gate": "propose",
       "proposedAt": "2026-05-18T19:45:25.653Z",
-      "status": "pending",
+      "status": "applied",
       "source": "promote-eligibility-scan",
       "target": {
         "kind": "longlist_entry",
@@ -1060,14 +1081,17 @@
         }
       },
       "reason": "2 sources, 2 independent (theverge.com + stratechery.com), 7d on longlist. Trusted: stratechery.com.",
-      "runId": "9d0530c4-0a08-493f-bf56-193c87bb546a"
+      "runId": "9d0530c4-0a08-493f-bf56-193c87bb546a",
+      "approvedAt": "2026-08-27T21:16:45.423Z",
+      "approvedBy": "nicole",
+      "appliedAt": "2026-08-27T21:16:47.981Z"
     },
     {
       "id": "1635c071e4075d8e",
       "action": "promote_to_graph",
       "gate": "propose",
       "proposedAt": "2026-05-18T19:45:25.653Z",
-      "status": "pending",
+      "status": "applied",
       "source": "promote-eligibility-scan",
       "target": {
         "kind": "longlist_entry",
@@ -1104,7 +1128,10 @@
         }
       },
       "reason": "2 sources, 2 independent (theverge.com + stratechery.com), 7d on longlist. Trusted: stratechery.com.",
-      "runId": "9d0530c4-0a08-493f-bf56-193c87bb546a"
+      "runId": "9d0530c4-0a08-493f-bf56-193c87bb546a",
+      "approvedAt": "2026-08-27T21:16:45.423Z",
+      "approvedBy": "nicole",
+      "appliedAt": "2026-08-27T21:16:47.981Z"
     },
     {
       "id": "46079002512c872c",
@@ -1139,7 +1166,7 @@
       "action": "promote_to_graph",
       "gate": "propose",
       "proposedAt": "2026-05-29T20:26:12.473Z",
-      "status": "pending",
+      "status": "applied",
       "source": "promote-eligibility-scan",
       "target": {
         "kind": "longlist_entry",
@@ -1184,14 +1211,17 @@
         }
       },
       "reason": "5 sources, 2 independent (openai.com + anthropic.com), 32d on longlist.",
-      "runId": "a27c7a9e-7179-4f18-b34e-430c66150098"
+      "runId": "a27c7a9e-7179-4f18-b34e-430c66150098",
+      "approvedAt": "2026-08-27T21:16:45.423Z",
+      "approvedBy": "nicole",
+      "appliedAt": "2026-08-27T21:16:47.981Z"
     },
     {
       "id": "4d89a72adea77d8f",
       "action": "promote_to_graph",
       "gate": "propose",
       "proposedAt": "2026-05-29T20:26:12.473Z",
-      "status": "pending",
+      "status": "applied",
       "source": "promote-eligibility-scan",
       "target": {
         "kind": "longlist_entry",
@@ -1226,14 +1256,17 @@
         }
       },
       "reason": "2 sources, 2 independent (anthropic.com + stratechery.com), 20d on longlist. Trusted: stratechery.com.",
-      "runId": "a27c7a9e-7179-4f18-b34e-430c66150098"
+      "runId": "a27c7a9e-7179-4f18-b34e-430c66150098",
+      "approvedAt": "2026-08-27T21:16:45.423Z",
+      "approvedBy": "nicole",
+      "appliedAt": "2026-08-27T21:16:47.981Z"
     },
     {
       "id": "a8eadd10cb568b40",
       "action": "promote_to_graph",
       "gate": "propose",
       "proposedAt": "2026-05-29T20:26:12.473Z",
-      "status": "pending",
+      "status": "applied",
       "source": "promote-eligibility-scan",
       "target": {
         "kind": "longlist_entry",
@@ -1271,14 +1304,17 @@
         }
       },
       "reason": "2 sources, 2 independent (openai.com + anthropic.com), 19d on longlist.",
-      "runId": "a27c7a9e-7179-4f18-b34e-430c66150098"
+      "runId": "a27c7a9e-7179-4f18-b34e-430c66150098",
+      "approvedAt": "2026-08-27T21:16:45.423Z",
+      "approvedBy": "nicole",
+      "appliedAt": "2026-08-27T21:16:47.981Z"
     },
     {
       "id": "6c353dc2d726ee81",
       "action": "promote_to_graph",
       "gate": "propose",
       "proposedAt": "2026-05-29T20:26:12.473Z",
-      "status": "pending",
+      "status": "applied",
       "source": "promote-eligibility-scan",
       "target": {
         "kind": "longlist_entry",
@@ -1318,14 +1354,17 @@
         }
       },
       "reason": "2 sources, 2 independent (theverge.com + stratechery.com), 18d on longlist. Trusted: stratechery.com.",
-      "runId": "a27c7a9e-7179-4f18-b34e-430c66150098"
+      "runId": "a27c7a9e-7179-4f18-b34e-430c66150098",
+      "approvedAt": "2026-08-27T21:16:45.423Z",
+      "approvedBy": "nicole",
+      "appliedAt": "2026-08-27T21:16:47.981Z"
     },
     {
       "id": "11ff7dea6aa201c3",
       "action": "promote_to_graph",
       "gate": "propose",
       "proposedAt": "2026-05-30T19:15:15.957Z",
-      "status": "pending",
+      "status": "applied",
       "source": "promote-eligibility-scan",
       "target": {
         "kind": "longlist_entry",
@@ -1370,14 +1409,17 @@
         }
       },
       "reason": "3 sources, 2 independent (normaltech.ai + huggingface.co), 29d on longlist. Trusted: normaltech.ai.",
-      "runId": "ec30d024-df3c-4661-b31e-aea6f9edddda"
+      "runId": "ec30d024-df3c-4661-b31e-aea6f9edddda",
+      "approvedAt": "2026-08-27T21:16:45.423Z",
+      "approvedBy": "nicole",
+      "appliedAt": "2026-08-27T21:16:47.981Z"
     },
     {
       "id": "8d6ba3c9d65dc9fe",
       "action": "promote_to_graph",
       "gate": "propose",
       "proposedAt": "2026-06-01T21:33:16.291Z",
-      "status": "pending",
+      "status": "applied",
       "source": "promote-eligibility-scan",
       "target": {
         "kind": "longlist_entry",
@@ -1421,14 +1463,17 @@
         }
       },
       "reason": "4 sources, 2 independent (blog.google + lastweekin.ai), 3d on longlist.",
-      "runId": "73f4c757-95a8-4d58-9066-7dbfa2d77873"
+      "runId": "73f4c757-95a8-4d58-9066-7dbfa2d77873",
+      "approvedAt": "2026-08-27T21:16:45.423Z",
+      "approvedBy": "nicole",
+      "appliedAt": "2026-08-27T21:16:47.981Z"
     },
     {
       "id": "8614a08bc2109d78",
       "action": "promote_to_graph",
       "gate": "propose",
       "proposedAt": "2026-06-01T21:33:16.291Z",
-      "status": "pending",
+      "status": "applied",
       "source": "promote-eligibility-scan",
       "target": {
         "kind": "longlist_entry",
@@ -1472,14 +1517,17 @@
         }
       },
       "reason": "4 sources, 2 independent (blog.google + lastweekin.ai), 3d on longlist.",
-      "runId": "73f4c757-95a8-4d58-9066-7dbfa2d77873"
+      "runId": "73f4c757-95a8-4d58-9066-7dbfa2d77873",
+      "approvedAt": "2026-08-27T21:16:45.423Z",
+      "approvedBy": "nicole",
+      "appliedAt": "2026-08-27T21:16:47.981Z"
     },
     {
       "id": "9b7e59697b4b464d",
       "action": "promote_to_graph",
       "gate": "propose",
       "proposedAt": "2026-06-01T21:33:16.291Z",
-      "status": "pending",
+      "status": "applied",
       "source": "promote-eligibility-scan",
       "target": {
         "kind": "longlist_entry",
@@ -1523,14 +1571,17 @@
         }
       },
       "reason": "5 sources, 2 independent (blog.google + normaltech.ai), 3d on longlist. Trusted: normaltech.ai.",
-      "runId": "73f4c757-95a8-4d58-9066-7dbfa2d77873"
+      "runId": "73f4c757-95a8-4d58-9066-7dbfa2d77873",
+      "approvedAt": "2026-08-27T21:16:45.423Z",
+      "approvedBy": "nicole",
+      "appliedAt": "2026-08-27T21:16:47.981Z"
     },
     {
       "id": "00b6252bb2b636c9",
       "action": "promote_to_graph",
       "gate": "propose",
       "proposedAt": "2026-06-01T21:33:16.291Z",
-      "status": "pending",
+      "status": "applied",
       "source": "promote-eligibility-scan",
       "target": {
         "kind": "longlist_entry",
@@ -1564,14 +1615,17 @@
         }
       },
       "reason": "2 sources, 2 independent (simonwillison.net + anthropic.com), 3d on longlist. Trusted: simonwillison.net.",
-      "runId": "73f4c757-95a8-4d58-9066-7dbfa2d77873"
+      "runId": "73f4c757-95a8-4d58-9066-7dbfa2d77873",
+      "approvedAt": "2026-08-27T21:16:45.423Z",
+      "approvedBy": "nicole",
+      "appliedAt": "2026-08-27T21:16:47.981Z"
     },
     {
       "id": "5c229c6654312bfc",
       "action": "promote_to_graph",
       "gate": "propose",
       "proposedAt": "2026-06-01T21:33:16.291Z",
-      "status": "pending",
+      "status": "applied",
       "source": "promote-eligibility-scan",
       "target": {
         "kind": "longlist_entry",
@@ -1609,14 +1663,17 @@
         }
       },
       "reason": "2 sources, 2 independent (anthropic.com + stratechery.com), 3d on longlist. Trusted: stratechery.com.",
-      "runId": "73f4c757-95a8-4d58-9066-7dbfa2d77873"
+      "runId": "73f4c757-95a8-4d58-9066-7dbfa2d77873",
+      "approvedAt": "2026-08-27T21:16:45.423Z",
+      "approvedBy": "nicole",
+      "appliedAt": "2026-08-27T21:16:47.981Z"
     },
     {
       "id": "7152b5ae20f474ef",
       "action": "promote_to_graph",
       "gate": "propose",
       "proposedAt": "2026-06-02T20:49:35.126Z",
-      "status": "pending",
+      "status": "applied",
       "source": "promote-eligibility-scan",
       "target": {
         "kind": "longlist_entry",
@@ -1654,14 +1711,17 @@
         }
       },
       "reason": "2 sources, 2 independent (normaltech.ai + anthropic.com), 4d on longlist. Trusted: normaltech.ai.",
-      "runId": "a46b5394-483e-41a9-867c-2f7cb9441962"
+      "runId": "a46b5394-483e-41a9-867c-2f7cb9441962",
+      "approvedAt": "2026-08-27T21:16:45.423Z",
+      "approvedBy": "nicole",
+      "appliedAt": "2026-08-27T21:16:47.981Z"
     },
     {
       "id": "c497b745e10bc623",
       "action": "promote_to_graph",
       "gate": "propose",
       "proposedAt": "2026-06-03T20:56:47.629Z",
-      "status": "pending",
+      "status": "applied",
       "source": "promote-eligibility-scan",
       "target": {
         "kind": "longlist_entry",
@@ -1704,14 +1764,17 @@
         }
       },
       "reason": "3 sources, 2 independent (stratechery.com + anthropic.com), 18d on longlist. Trusted: stratechery.com.",
-      "runId": "d0f3120e-0db5-436d-a059-5bed21f196d0"
+      "runId": "d0f3120e-0db5-436d-a059-5bed21f196d0",
+      "approvedAt": "2026-08-27T21:16:45.423Z",
+      "approvedBy": "nicole",
+      "appliedAt": "2026-08-27T21:16:47.981Z"
     },
     {
       "id": "09769fdadab63ebb",
       "action": "promote_to_graph",
       "gate": "propose",
       "proposedAt": "2026-06-04T20:06:36.274Z",
-      "status": "pending",
+      "status": "applied",
       "source": "promote-eligibility-scan",
       "target": {
         "kind": "longlist_entry",
@@ -1755,14 +1818,17 @@
         }
       },
       "reason": "4 sources, 2 independent (stratechery.com + hbr.org), 24d on longlist. Trusted: stratechery.com, hbr.org.",
-      "runId": "283cd85a-a101-496d-b9b3-d29c5323783a"
+      "runId": "283cd85a-a101-496d-b9b3-d29c5323783a",
+      "approvedAt": "2026-08-27T21:16:45.423Z",
+      "approvedBy": "nicole",
+      "appliedAt": "2026-08-27T21:16:47.981Z"
     },
     {
       "id": "e44bcc1cbeb1947f",
       "action": "promote_to_graph",
       "gate": "propose",
       "proposedAt": "2026-06-05T19:55:05.967Z",
-      "status": "pending",
+      "status": "applied",
       "source": "promote-eligibility-scan",
       "target": {
         "kind": "longlist_entry",
@@ -1800,14 +1866,17 @@
         }
       },
       "reason": "2 sources, 2 independent (normaltech.ai + anthropic.com), 6d on longlist. Trusted: normaltech.ai.",
-      "runId": "3facfd3c-de9b-4e00-b38f-3d0d11341110"
+      "runId": "3facfd3c-de9b-4e00-b38f-3d0d11341110",
+      "approvedAt": "2026-08-27T21:16:45.423Z",
+      "approvedBy": "nicole",
+      "appliedAt": "2026-08-27T21:16:47.981Z"
     },
     {
       "id": "fde4a87c0b60688f",
       "action": "promote_to_graph",
       "gate": "propose",
       "proposedAt": "2026-06-05T19:55:05.967Z",
-      "status": "pending",
+      "status": "applied",
       "source": "promote-eligibility-scan",
       "target": {
         "kind": "longlist_entry",
@@ -1853,14 +1922,17 @@
         }
       },
       "reason": "3 sources, 2 independent (lastweekin.ai + blog.google), 6d on longlist.",
-      "runId": "3facfd3c-de9b-4e00-b38f-3d0d11341110"
+      "runId": "3facfd3c-de9b-4e00-b38f-3d0d11341110",
+      "approvedAt": "2026-08-27T21:16:45.423Z",
+      "approvedBy": "nicole",
+      "appliedAt": "2026-08-27T21:16:47.981Z"
     },
     {
       "id": "bbf1c6b4431c3ea7",
       "action": "promote_to_graph",
       "gate": "propose",
       "proposedAt": "2026-06-06T19:20:46.345Z",
-      "status": "pending",
+      "status": "applied",
       "source": "promote-eligibility-scan",
       "target": {
         "kind": "longlist_entry",
@@ -1904,7 +1976,10 @@
         }
       },
       "reason": "4 sources, 2 independent (theverge.com + stratechery.com), 3d on longlist. Trusted: stratechery.com.",
-      "runId": "b79d7750-733f-4471-be00-ac647e325400"
+      "runId": "b79d7750-733f-4471-be00-ac647e325400",
+      "approvedAt": "2026-08-27T21:16:45.423Z",
+      "approvedBy": "nicole",
+      "appliedAt": "2026-08-27T21:16:47.981Z"
     }
   ]
 }
