@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-08-26T19:45:34.567Z",
+  "generatedAt": "2026-08-28T02:02:09.939Z",
   "firstRunAt": "2026-04-27T01:07:31.335Z",
   "phase": 1,
   "headline": {
     "articlesRead": 167,
-    "daysRunning": 122,
-    "longlistSize": 205,
-    "graphSize": 207
+    "daysRunning": 124,
+    "longlistSize": 180,
+    "graphSize": 232
   },
   "thisWeek": {
     "articlesFetched": 0,
     "longlistAdded": 0,
     "sourcesAdded": 0,
-    "promotionsToGraph": 0,
+    "promotionsToGraph": 25,
     "proposalsQueued": 0,
     "auditFlags": 0,
     "notesAdded": 7
@@ -27,7 +27,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 2,
-      "daysOnLonglist": 114,
+      "daysOnLonglist": 115,
       "domains": [
         "openai.com",
         "simonwillison.net"
@@ -44,7 +44,7 @@
       ],
       "sourceCount": 5,
       "independentSources": 1,
-      "daysOnLonglist": 88,
+      "daysOnLonglist": 90,
       "domains": [
         "simonwillison.net"
       ],
@@ -61,7 +61,7 @@
       ],
       "sourceCount": 4,
       "independentSources": 1,
-      "daysOnLonglist": 88,
+      "daysOnLonglist": 90,
       "domains": [
         "stratechery.com"
       ],
@@ -78,7 +78,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 109,
+      "daysOnLonglist": 110,
       "domains": [
         "blog.google"
       ],
@@ -95,7 +95,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 109,
+      "daysOnLonglist": 110,
       "domains": [
         "blog.google"
       ],
@@ -112,7 +112,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 108,
+      "daysOnLonglist": 109,
       "domains": [
         "huggingface.co"
       ],
@@ -130,7 +130,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 121,
+      "daysOnLonglist": 123,
       "domains": [
         "anthropic.com"
       ],
@@ -147,7 +147,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 114,
+      "daysOnLonglist": 115,
       "domains": [
         "anthropic.com"
       ],
@@ -164,7 +164,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 88,
+      "daysOnLonglist": 90,
       "domains": [
         "blog.google"
       ],
@@ -181,7 +181,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 88,
+      "daysOnLonglist": 90,
       "domains": [
         "anthropic.com"
       ],
@@ -332,48 +332,30 @@
         "id": "technical",
         "label": "Technical",
         "hex": "#D0D040",
-        "count": 68
+        "count": 61
       },
       {
         "id": "agentic",
         "label": "Agentic Systems",
         "hex": "#FF9040",
-        "count": 50
+        "count": 43
       },
       {
         "id": "tools",
         "label": "Tools & Platforms",
         "hex": "#70C8F8",
-        "count": 45
+        "count": 41
       },
       {
         "id": "models",
         "label": "Models",
         "hex": "#FFB060",
-        "count": 41
-      },
-      {
-        "id": "business",
-        "label": "Business Reality",
-        "hex": "#48C888",
-        "count": 34
+        "count": 38
       },
       {
         "id": "safety",
         "label": "Safety",
         "hex": "#FF6090",
-        "count": 31
-      },
-      {
-        "id": "critical",
-        "label": "Critical / Hype",
-        "hex": "#FF5555",
-        "count": 30
-      },
-      {
-        "id": "landscape",
-        "label": "Model Landscape",
-        "hex": "#D0A050",
         "count": 28
       },
       {
@@ -383,16 +365,28 @@
         "count": 27
       },
       {
-        "id": "security",
-        "label": "AI Security",
-        "hex": "#E05050",
+        "id": "business",
+        "label": "Business Reality",
+        "hex": "#48C888",
+        "count": 27
+      },
+      {
+        "id": "critical",
+        "label": "Critical / Hype",
+        "hex": "#FF5555",
+        "count": 26
+      },
+      {
+        "id": "landscape",
+        "label": "Model Landscape",
+        "hex": "#D0A050",
         "count": 21
       },
       {
-        "id": "companies",
-        "label": "Companies",
-        "hex": "#9090A8",
-        "count": 14
+        "id": "security",
+        "label": "AI Security",
+        "hex": "#E05050",
+        "count": 19
       },
       {
         "id": "human",
@@ -401,16 +395,16 @@
         "count": 13
       },
       {
+        "id": "companies",
+        "label": "Companies",
+        "hex": "#9090A8",
+        "count": 12
+      },
+      {
         "id": "autonomy",
         "label": "Autonomy Spectrum",
         "hex": "#58B8E8",
         "count": 3
-      },
-      {
-        "id": "lifecycle",
-        "label": "Product Lifecycle",
-        "hex": "#B888D8",
-        "count": 2
       },
       {
         "id": "context",
@@ -427,23 +421,23 @@
     ]
   },
   "velocity": {
-    "humanGated": 13,
+    "humanGated": 38,
     "autonomous": 0,
     "note": "All graph promotions and substantive edits are currently human-gated. Lexi proposes; Nicole approves."
   },
   "proposalsByStatus": {
-    "pending": 26,
+    "pending": 1,
     "approved": 0,
-    "applied": 13,
+    "applied": 38,
     "rejected": 1
   },
   "decisionsByCluster": {
     "technical": {
-      "approved": 7,
+      "approved": 14,
       "rejected": 1
     },
     "agentic": {
-      "approved": 7,
+      "approved": 14,
       "rejected": 0
     },
     "autonomy": {
@@ -451,7 +445,7 @@
       "rejected": 0
     },
     "tools": {
-      "approved": 3,
+      "approved": 7,
       "rejected": 0
     },
     "work": {
@@ -459,19 +453,35 @@
       "rejected": 0
     },
     "lifecycle": {
-      "approved": 1,
+      "approved": 3,
       "rejected": 0
     },
     "safety": {
-      "approved": 1,
+      "approved": 4,
       "rejected": 0
     },
     "companies": {
-      "approved": 2,
+      "approved": 4,
       "rejected": 0
     },
     "models": {
+      "approved": 5,
+      "rejected": 0
+    },
+    "business": {
+      "approved": 7,
+      "rejected": 0
+    },
+    "security": {
       "approved": 2,
+      "rejected": 0
+    },
+    "critical": {
+      "approved": 4,
+      "rejected": 0
+    },
+    "landscape": {
+      "approved": 7,
       "rejected": 0
     }
   },
