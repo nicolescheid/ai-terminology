@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-28T02:02:09.939Z",
+  "generatedAt": "2026-08-29T01:28:15.126Z",
   "firstRunAt": "2026-04-27T01:07:31.335Z",
   "phase": 1,
   "headline": {
     "articlesRead": 167,
-    "daysRunning": 124,
+    "daysRunning": 125,
     "longlistSize": 180,
     "graphSize": 232
   },
@@ -27,7 +27,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 2,
-      "daysOnLonglist": 115,
+      "daysOnLonglist": 116,
       "domains": [
         "openai.com",
         "simonwillison.net"
@@ -44,7 +44,7 @@
       ],
       "sourceCount": 5,
       "independentSources": 1,
-      "daysOnLonglist": 90,
+      "daysOnLonglist": 91,
       "domains": [
         "simonwillison.net"
       ],
@@ -61,7 +61,7 @@
       ],
       "sourceCount": 4,
       "independentSources": 1,
-      "daysOnLonglist": 90,
+      "daysOnLonglist": 91,
       "domains": [
         "stratechery.com"
       ],
@@ -78,7 +78,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 110,
+      "daysOnLonglist": 111,
       "domains": [
         "blog.google"
       ],
@@ -95,7 +95,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 110,
+      "daysOnLonglist": 111,
       "domains": [
         "blog.google"
       ],
@@ -112,7 +112,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 109,
+      "daysOnLonglist": 110,
       "domains": [
         "huggingface.co"
       ],
@@ -130,7 +130,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 123,
+      "daysOnLonglist": 124,
       "domains": [
         "anthropic.com"
       ],
@@ -147,7 +147,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 115,
+      "daysOnLonglist": 116,
       "domains": [
         "anthropic.com"
       ],
@@ -164,7 +164,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 90,
+      "daysOnLonglist": 91,
       "domains": [
         "blog.google"
       ],
@@ -181,7 +181,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 90,
+      "daysOnLonglist": 91,
       "domains": [
         "anthropic.com"
       ],
