@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T22:28:14.614Z",
+  "generatedAt": "2026-08-31T23:09:01.896Z",
   "firstRunAt": "2026-04-27T01:07:31.335Z",
   "phase": 1,
   "headline": {
@@ -181,7 +181,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 126,
+      "daysOnLonglist": 127,
       "domains": [
         "anthropic.com"
       ],
