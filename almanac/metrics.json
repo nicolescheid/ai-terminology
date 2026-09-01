@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-31T23:09:01.896Z",
+  "generatedAt": "2026-09-01T20:34:40.380Z",
   "firstRunAt": "2026-04-27T01:07:31.335Z",
   "phase": 1,
   "headline": {
     "articlesRead": 167,
-    "daysRunning": 127,
+    "daysRunning": 128,
     "longlistSize": 180,
     "graphSize": 232
   },
@@ -27,7 +27,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 2,
-      "daysOnLonglist": 119,
+      "daysOnLonglist": 120,
       "domains": [
         "openai.com",
         "simonwillison.net"
@@ -44,7 +44,7 @@
       ],
       "sourceCount": 5,
       "independentSources": 1,
-      "daysOnLonglist": 94,
+      "daysOnLonglist": 95,
       "domains": [
         "simonwillison.net"
       ],
@@ -61,7 +61,7 @@
       ],
       "sourceCount": 4,
       "independentSources": 1,
-      "daysOnLonglist": 94,
+      "daysOnLonglist": 95,
       "domains": [
         "stratechery.com"
       ],
@@ -78,7 +78,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 119,
+      "daysOnLonglist": 120,
       "domains": [
         "anthropic.com"
       ],
@@ -95,7 +95,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 94,
+      "daysOnLonglist": 95,
       "domains": [
         "blog.google"
       ],
@@ -112,7 +112,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 123,
+      "daysOnLonglist": 124,
       "domains": [
         "stratechery.com"
       ],
@@ -129,7 +129,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 114,
+      "daysOnLonglist": 115,
       "domains": [
         "blog.google"
       ],
@@ -146,7 +146,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 114,
+      "daysOnLonglist": 115,
       "domains": [
         "blog.google"
       ],
@@ -163,7 +163,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 113,
+      "daysOnLonglist": 114,
       "domains": [
         "huggingface.co"
       ],
