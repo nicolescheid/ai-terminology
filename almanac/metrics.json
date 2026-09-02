@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-01T20:34:40.380Z",
+  "generatedAt": "2026-09-02T20:30:51.356Z",
   "firstRunAt": "2026-04-27T01:07:31.335Z",
   "phase": 1,
   "headline": {
     "articlesRead": 167,
-    "daysRunning": 128,
+    "daysRunning": 129,
     "longlistSize": 180,
     "graphSize": 232
   },
@@ -27,7 +27,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 2,
-      "daysOnLonglist": 120,
+      "daysOnLonglist": 121,
       "domains": [
         "openai.com",
         "simonwillison.net"
@@ -44,7 +44,7 @@
       ],
       "sourceCount": 5,
       "independentSources": 1,
-      "daysOnLonglist": 95,
+      "daysOnLonglist": 96,
       "domains": [
         "simonwillison.net"
       ],
@@ -61,26 +61,9 @@
       ],
       "sourceCount": 4,
       "independentSources": 1,
-      "daysOnLonglist": 95,
+      "daysOnLonglist": 96,
       "domains": [
         "stratechery.com"
-      ],
-      "gapCount": 1,
-      "gap": "needs 1 more independent source"
-    },
-    {
-      "id": "claude-partner-network",
-      "label": "Claude Partner Network",
-      "fullName": "Claude Partner Network (Anthropic)",
-      "clusters": [
-        "companies",
-        "business"
-      ],
-      "sourceCount": 2,
-      "independentSources": 1,
-      "daysOnLonglist": 120,
-      "domains": [
-        "anthropic.com"
       ],
       "gapCount": 1,
       "gap": "needs 1 more independent source"
@@ -95,7 +78,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 95,
+      "daysOnLonglist": 96,
       "domains": [
         "blog.google"
       ],
@@ -112,7 +95,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 124,
+      "daysOnLonglist": 125,
       "domains": [
         "stratechery.com"
       ],
@@ -129,7 +112,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 115,
+      "daysOnLonglist": 116,
       "domains": [
         "blog.google"
       ],
@@ -146,7 +129,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 115,
+      "daysOnLonglist": 116,
       "domains": [
         "blog.google"
       ],
@@ -163,7 +146,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 114,
+      "daysOnLonglist": 115,
       "domains": [
         "huggingface.co"
       ],
@@ -181,9 +164,26 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 127,
+      "daysOnLonglist": 128,
       "domains": [
         "anthropic.com"
+      ],
+      "gapCount": 2,
+      "gap": "needs 1 more independent source; no source seen in past 90d"
+    },
+    {
+      "id": "ai-driven-cpu-demand",
+      "label": "AI-Driven CPU Demand",
+      "fullName": "AI-Driven CPU Demand (Structural Shift)",
+      "clusters": [
+        "landscape",
+        "business"
+      ],
+      "sourceCount": 2,
+      "independentSources": 1,
+      "daysOnLonglist": 125,
+      "domains": [
+        "stratechery.com"
       ],
       "gapCount": 2,
       "gap": "needs 1 more independent source; no source seen in past 90d"
