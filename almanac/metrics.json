@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-03T20:31:16.834Z",
+  "generatedAt": "2026-09-04T20:17:28.933Z",
   "firstRunAt": "2026-04-27T01:07:31.335Z",
   "phase": 1,
   "headline": {
     "articlesRead": 167,
-    "daysRunning": 130,
+    "daysRunning": 131,
     "longlistSize": 180,
     "graphSize": 232
   },
@@ -12,7 +12,7 @@
     "articlesFetched": 0,
     "longlistAdded": 0,
     "sourcesAdded": 0,
-    "promotionsToGraph": 25,
+    "promotionsToGraph": 0,
     "proposalsQueued": 0,
     "auditFlags": 0,
     "notesAdded": 8
@@ -27,7 +27,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 2,
-      "daysOnLonglist": 122,
+      "daysOnLonglist": 123,
       "domains": [
         "openai.com",
         "simonwillison.net"
@@ -78,7 +78,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 126,
+      "daysOnLonglist": 127,
       "domains": [
         "stratechery.com"
       ],
@@ -95,7 +95,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 117,
+      "daysOnLonglist": 118,
       "domains": [
         "blog.google"
       ],
@@ -112,7 +112,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 117,
+      "daysOnLonglist": 118,
       "domains": [
         "blog.google"
       ],
@@ -129,7 +129,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 116,
+      "daysOnLonglist": 117,
       "domains": [
         "huggingface.co"
       ],
@@ -147,7 +147,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 129,
+      "daysOnLonglist": 130,
       "domains": [
         "anthropic.com"
       ],
@@ -164,7 +164,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 126,
+      "daysOnLonglist": 127,
       "domains": [
         "stratechery.com"
       ],
@@ -181,7 +181,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 122,
+      "daysOnLonglist": 123,
       "domains": [
         "anthropic.com"
       ],
