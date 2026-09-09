@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-08T20:44:20.001Z",
+  "generatedAt": "2026-09-09T20:26:08.101Z",
   "firstRunAt": "2026-04-27T01:07:31.335Z",
   "phase": 1,
   "headline": {
     "articlesRead": 167,
-    "daysRunning": 135,
+    "daysRunning": 136,
     "longlistSize": 180,
     "graphSize": 232
   },
@@ -15,7 +15,7 @@
     "promotionsToGraph": 0,
     "proposalsQueued": 0,
     "auditFlags": 0,
-    "notesAdded": 7
+    "notesAdded": 8
   },
   "almostThere": [
     {
@@ -27,7 +27,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 2,
-      "daysOnLonglist": 127,
+      "daysOnLonglist": 128,
       "domains": [
         "openai.com",
         "simonwillison.net"
@@ -78,7 +78,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 131,
+      "daysOnLonglist": 132,
       "domains": [
         "stratechery.com"
       ],
@@ -95,7 +95,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 122,
+      "daysOnLonglist": 123,
       "domains": [
         "blog.google"
       ],
@@ -112,7 +112,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 122,
+      "daysOnLonglist": 123,
       "domains": [
         "blog.google"
       ],
@@ -129,7 +129,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 121,
+      "daysOnLonglist": 122,
       "domains": [
         "huggingface.co"
       ],
@@ -147,7 +147,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 134,
+      "daysOnLonglist": 135,
       "domains": [
         "anthropic.com"
       ],
@@ -164,7 +164,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 131,
+      "daysOnLonglist": 132,
       "domains": [
         "stratechery.com"
       ],
@@ -181,7 +181,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 127,
+      "daysOnLonglist": 128,
       "domains": [
         "anthropic.com"
       ],
