@@ -241,17 +241,32 @@ You answer questions about terms. You do not answer questions about model
 recommendations, vendors, AI policy, code, or your own feelings. You decline
 those gracefully and redirect to a term the reader might want to discuss.`;
 
+const MAX_LEXI_TURNS = 20;
+const MAX_LEXI_CHARS = 2000;
+
 async function handleAskLexi(request, env) {
-  // Public endpoint per Nicole 2026-05-10 — site traffic is low enough
-  // that the cost-runaway risk from skipping rate limits is acceptable
-  // for now; the Anthropic org-level spend limit is the backstop. The
-  // spec §8.1 IP-based rate limits (20/hour, 100/day) remain a real
-  // followup if traffic grows or anyone scripts against the endpoint.
-  // The persona-section system prompt + max_tokens 350 + transcript
-  // truncation cap per-call cost; the unbounded surface is "how many
-  // calls per visitor" and that's the open risk.
+  // Public endpoint per Nicole 2026-05-10. Originally shipped without rate
+  // limits; bot traffic in 2026-10 prompted the origin check + per-IP cap
+  // below (spec §8.1). The Anthropic org-level spend limit is still the
+  // backstop; persona prompt + max_tokens 350 + transcript cap bound
+  // per-call cost.
   if (!env.ANTHROPIC_API_KEY) {
     return new Response("Server misconfigured: ANTHROPIC_API_KEY secret not set", { status: 500 });
+  }
+
+  // Bot/cost gates (added 2026-10 after bot traffic showed up). Only the
+  // site's own pages may call this: browsers always send Origin on a POST,
+  // scripts calling the endpoint directly usually don't. Then a per-IP cap
+  // via the Workers rate-limit binding ("ratelimits" in wrangler.jsonc);
+  // skipped if the binding is absent (e.g. local dev without it).
+  const origin = request.headers.get("origin");
+  if (origin !== new URL(request.url).origin) {
+    return jsonError(403, "Forbidden");
+  }
+  if (env.LEXI_LIMITER) {
+    const ip = request.headers.get("cf-connecting-ip") || "unknown";
+    const { success } = await env.LEXI_LIMITER.limit({ key: ip });
+    if (!success) return jsonError(429, "Lexi needs a breather. Try again in a minute.");
   }
 
   let body;
@@ -268,6 +283,15 @@ async function handleAskLexi(request, env) {
       return jsonError(400, "each transcript entry must be { role: 'user'|'assistant', content: string }");
     }
   }
+
+  // Bound per-call cost: only the most recent turns, each length-capped.
+  const recent = transcript.slice(-MAX_LEXI_TURNS).map(t => ({
+    role: t.role,
+    content: t.content.slice(0, MAX_LEXI_CHARS)
+  }));
+  // Anthropic requires the first message to be from the user.
+  while (recent.length && recent[0].role !== "user") recent.shift();
+  if (recent.length === 0) return jsonError(400, "transcript must contain a user message");
 
   // Build the system prompt: persona + active-term context. Term is
   // optional — persona-anchored conversations (no term in context) are
@@ -298,7 +322,7 @@ async function handleAskLexi(request, env) {
       max_tokens: 350,
       stream: true,
       system: systemPrompt,
-      messages: transcript
+      messages: recent
     })
   });
 

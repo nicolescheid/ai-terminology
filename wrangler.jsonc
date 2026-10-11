@@ -12,5 +12,10 @@
   },
   "compatibility_flags": [
     "nodejs_compat"
+  ],
+  // Per-IP cap on the public /api/ask-lexi endpoint (free, built into Workers).
+  // period must be 10 or 60 seconds. namespace_id is any account-unique number.
+  "ratelimits": [
+    { "name": "LEXI_LIMITER", "namespace_id": "1002", "simple": { "limit": 8, "period": 60 } }
   ]
 }
