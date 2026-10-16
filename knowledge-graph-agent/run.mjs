@@ -163,6 +163,15 @@ async function runMain(args, config, logger) {
   if (paused) {
     const summary = pauseReasons.map(r => r.type).join(", ");
     report.notes.push(`Run paused (${summary}). No articles fetched, no candidates routed, no proposals queued.`);
+    // Only the latest RUN_PAUSED note stays unread: earlier ones say the same
+    // thing and would otherwise pile up one per day for as long as the pause
+    // lasts. They're dismissed (not deleted) so the history stays auditable.
+    for (const n of notes.entries || []) {
+      if (n.type === ENTRY_TYPES.RUN_PAUSED && n.status === "unread") {
+        n.status = "dismissed";
+        n.supersededByRunId = logger.runId;
+      }
+    }
     pushNote(notes, buildNote({
       type: ENTRY_TYPES.RUN_PAUSED,
       runId: logger.runId,
