@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-10-16T07:18:12.092Z",
-    "entryCount": 128,
+    "generatedAt": "2026-10-16T07:47:38.193Z",
+    "entryCount": 139,
     "note": "Lexi-managed Tier 2 longlist — terms under observation, awaiting evidence to support promotion to the graph (Tier 1)."
   },
   "entries": [
@@ -5707,6 +5707,369 @@
       "dateLastSeen": "2026-06-05T19:53:16.670Z",
       "sz": 16,
       "proposalReason": "A newly prominent governance framing borrowed from theology, used by Olah to name the kind of moral reasoning he believes labs cannot do from the inside — a substantive conceptual contribution to AI governance vocabulary."
+    },
+    {
+      "id": "apple-homeview",
+      "label": "Apple HomeView",
+      "workingDef": "A home-display or smart-home device product announced by Apple in 2026 (October). Referenced by Ben Thompson with the framing question of how large the addressable market is for expensive consumer hardware running AI that is characterised as 'subpar,' situating it in a broader debate about Apple's AI competitiveness.",
+      "clusters": [
+        "companies",
+        "landscape"
+      ],
+      "suggestedRels": [
+        "ai-assistant",
+        "agentic-ai",
+        "vertical-ai",
+        "chatbot"
+      ],
+      "sources": [
+        {
+          "url": "https://stratechery.com/2026/apple-homeview-the-new-apple-tv-the-app-story/",
+          "domain": "stratechery.com",
+          "title": "Apple HomeView, The New Apple TV, The App Story",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Wed, 14 Oct 2026 10:00:00 +0000",
+          "firstSeen": "2026-10-16T07:47:38.193Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-16T07:47:38.193Z",
+      "dateLastSeen": "2026-10-16T07:47:38.193Z",
+      "sz": 14,
+      "nodeType": "product",
+      "proposalReason": "First sighting of Apple HomeView in the knowledge graph — worth tracking as Apple's entry into AI-native home hardware."
+    },
+    {
+      "id": "text-to-game",
+      "label": "Text-to-Game",
+      "workingDef": "A class of generative AI application in which users describe a desired game — its rules, characters, environments, or mechanics — using natural-language prompts, and the system generates a playable interactive artifact without requiring the user to write code. Exemplified by Google's Playground platform, which positions text-to-game generation as a natural extension of text-to-image and text-to-code paradigms. Sits at the intersection of generative UI, vibe coding, and AI-assisted creative tooling.",
+      "clusters": [
+        "tools",
+        "agentic"
+      ],
+      "suggestedRels": [
+        "vibe-coding",
+        "generative-ui",
+        "prompt-engineering",
+        "agentic-engineering",
+        "personal-software"
+      ],
+      "sources": [
+        {
+          "url": "https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform/",
+          "domain": "blog.google",
+          "title": "Introducing Playground: Create and play custom games",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Wed, 07 Oct 2026 12:00:00 +0000",
+          "firstSeen": "2026-10-16T07:47:38.193Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-16T07:47:38.193Z",
+      "dateLastSeen": "2026-10-16T07:47:38.193Z",
+      "sz": 14,
+      "fullName": "Text-to-Game (AI-Driven Game Generation)",
+      "proposalReason": "A new term not yet in the graph. Google's Playground makes text-to-game a concrete product category worth tracking as generative UI expands into interactive media."
+    },
+    {
+      "id": "no-code-ai-creation",
+      "label": "No-Code AI Creation",
+      "workingDef": "A design paradigm for AI-powered tools in which users direct complex creative or technical outputs — games, apps, websites, workflows — through natural language or visual interfaces alone, without writing procedural code. Platforms such as Google Playground, and analogues in web and app generation, exemplify the category. The term is adjacent to vibe coding but emphasises the explicit elimination of coding as a barrier to creation rather than the mood or speed of the development experience.",
+      "clusters": [
+        "tools",
+        "work"
+      ],
+      "suggestedRels": [
+        "vibe-coding",
+        "personal-software",
+        "micro-app",
+        "generative-ui",
+        "prompt-engineering"
+      ],
+      "sources": [
+        {
+          "url": "https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform/",
+          "domain": "blog.google",
+          "title": "Introducing Playground: Create and play custom games",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Wed, 07 Oct 2026 12:00:00 +0000",
+          "firstSeen": "2026-10-16T07:47:38.193Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-16T07:47:38.193Z",
+      "dateLastSeen": "2026-10-16T07:47:38.193Z",
+      "sz": 14,
+      "proposalReason": "A product-category framing that recurs across multiple AI platforms and is distinct enough from vibe-coding to warrant its own longlist entry."
+    },
+    {
+      "id": "claude-opus-55",
+      "label": "Claude Opus 5.5",
+      "workingDef": "A model variant referenced by Simon Willison in a vibe-coding experiment, used via Claude Code. The 'Extra' designation suggests an extended-capability or extended-context tier. No formal announcement or system card cited in this source.",
+      "clusters": [
+        "models",
+        "companies"
+      ],
+      "suggestedRels": [
+        "claude",
+        "claude-code",
+        "vibe-coding"
+      ],
+      "sources": [
+        {
+          "url": "https://simonwillison.net/2026/Oct/15/chirp-pong/",
+          "domain": "simonwillison.net",
+          "title": "Tool: Chirp Pong",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-10-15T19:47:52+00:00",
+          "firstSeen": "2026-10-16T07:47:38.193Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-16T07:47:38.193Z",
+      "dateLastSeen": "2026-10-16T07:47:38.193Z",
+      "sz": 14,
+      "fullName": "Claude Opus 5.5 Extra (Anthropic)",
+      "nodeType": "product",
+      "proposalReason": "New model name sighting — Claude Opus 5.5 Extra — not yet in the graph or longlist. Worth logging for provenance even though the article itself is thin."
+    },
+    {
+      "id": "gpt61-sol",
+      "label": "GPT-6.1 Sol",
+      "workingDef": "An OpenAI model released as an upgrade to GPT-6 Sol, positioned between GPT-6 Luna and GPT-6 Astra in the capability-cost hierarchy. Priced at $2 per million input tokens and $0.10 per million cached input tokens — roughly one-fifth of Astra's pricing — it targets agentic coding, computer use, and professional workflows where cost efficiency is a priority.",
+      "clusters": [
+        "models",
+        "companies"
+      ],
+      "suggestedRels": [
+        "openai-co",
+        "gpt55",
+        "coding-agent",
+        "computer-use",
+        "agentic-inference",
+        "adjustable-reasoning-effort"
+      ],
+      "sources": [
+        {
+          "url": "https://openai.com/index/introducing-gpt-6-1-sol/",
+          "domain": "openai.com",
+          "title": "Introducing GPT-6.1 Sol",
+          "sourceLabel": "OpenAI Research",
+          "publishedAt": null,
+          "firstSeen": "2026-10-16T07:47:38.193Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-16T07:47:38.193Z",
+      "dateLastSeen": "2026-10-16T07:47:38.193Z",
+      "sz": 14,
+      "fullName": "GPT-6.1 Sol (OpenAI)",
+      "nodeType": "product",
+      "proposalReason": "New named model in the GPT-6 family; worth tracking as a distinct product node alongside the broader GPT-6 tier."
+    },
+    {
+      "id": "automationbench",
+      "label": "AutomationBench",
+      "workingDef": "A benchmark introduced by OpenAI (version 1.0.6 cited in this article) that evaluates AI agents on end-to-end multi-step business workflows using 47 tools across sales, marketing, operations, support, finance, and HR. Used to compare model performance on realistic agentic task completion.",
+      "clusters": [
+        "agentic",
+        "technical"
+      ],
+      "suggestedRels": [
+        "evals",
+        "workflow",
+        "agent",
+        "agentic-inference",
+        "coding-agent"
+      ],
+      "sources": [
+        {
+          "url": "https://openai.com/index/introducing-gpt-6-1-sol/",
+          "domain": "openai.com",
+          "title": "Introducing GPT-6.1 Sol",
+          "sourceLabel": "OpenAI Research",
+          "publishedAt": null,
+          "firstSeen": "2026-10-16T07:47:38.193Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-16T07:47:38.193Z",
+      "dateLastSeen": "2026-10-16T07:47:38.193Z",
+      "sz": 14,
+      "fullName": "AutomationBench (OpenAI Benchmark)",
+      "proposalReason": "New named benchmark for agentic multi-step business workflow evaluation; worth tracking as evaluation tooling for the agentic space accumulates."
+    },
+    {
+      "id": "terminal-bench-science",
+      "label": "Terminal-Bench Science",
+      "workingDef": "A benchmark (version 0.1 cited here) that evaluates AI agents on scientific research workflows conducted via code and terminal tools, including data analysis, simulation, and theorem proving. Used by OpenAI to compare model performance on long-horizon scientific tasks.",
+      "clusters": [
+        "technical",
+        "models"
+      ],
+      "suggestedRels": [
+        "evals",
+        "agent",
+        "long-horizon-autonomy",
+        "coding-agent"
+      ],
+      "sources": [
+        {
+          "url": "https://openai.com/index/introducing-gpt-6-1-sol/",
+          "domain": "openai.com",
+          "title": "Introducing GPT-6.1 Sol",
+          "sourceLabel": "OpenAI Research",
+          "publishedAt": null,
+          "firstSeen": "2026-10-16T07:47:38.193Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-16T07:47:38.193Z",
+      "dateLastSeen": "2026-10-16T07:47:38.193Z",
+      "sz": 14,
+      "fullName": "Terminal-Bench Science (OpenAI Scientific Benchmark)",
+      "proposalReason": "New named scientific-domain benchmark for agentic capability assessment; distinct from software-engineering benchmarks and worth tracking as the scientific-AI evaluation space develops."
+    },
+    {
+      "id": "gdp-pdf",
+      "label": "GDP.pdf",
+      "workingDef": "A benchmark measuring how accurately AI models answer professional questions using complex PDF documents — including tables, charts, diagrams, and fine-print — drawn from domains including finance, healthcare, and legal. Used by OpenAI as a cost-adjusted measure of professional document comprehension.",
+      "clusters": [
+        "technical",
+        "models"
+      ],
+      "suggestedRels": [
+        "evals",
+        "grounding",
+        "structured-output"
+      ],
+      "sources": [
+        {
+          "url": "https://openai.com/index/introducing-gpt-6-1-sol/",
+          "domain": "openai.com",
+          "title": "Introducing GPT-6.1 Sol",
+          "sourceLabel": "OpenAI Research",
+          "publishedAt": null,
+          "firstSeen": "2026-10-16T07:47:38.193Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-16T07:47:38.193Z",
+      "dateLastSeen": "2026-10-16T07:47:38.193Z",
+      "sz": 14,
+      "fullName": "GDP.pdf (Professional Document QA Benchmark)",
+      "proposalReason": "New named benchmark for professional document understanding under real-world conditions; worth tracking as document QA evaluation methodology gains traction."
+    },
+    {
+      "id": "cyber-verification-program",
+      "label": "Cyber Verification Program",
+      "workingDef": "Anthropic's tiered access program that makes advanced cyber capabilities and reduced classifier blocking available to vetted security professionals. The CVP defines three tiers — Defense Access, Red Team Access, and Specialized Access — each with different verification requirements, security controls, and permitted use cases. Introduced to reconcile the dual-use nature of AI cybersecurity capabilities: conservative defaults for general availability, but expanded access for defenders and authorized testers.",
+      "clusters": [
+        "security",
+        "agentic"
+      ],
+      "suggestedRels": [
+        "project-glasswing",
+        "claude",
+        "offense-defense-balance",
+        "red-teaming",
+        "ai-red-teaming",
+        "penetration-testing",
+        "guardrails"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/cyber-verification-program",
+          "domain": "anthropic.com",
+          "title": "Expanding the Cyber Verification Program",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-10-16T07:47:38.193Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-16T07:47:38.193Z",
+      "dateLastSeen": "2026-10-16T07:47:38.193Z",
+      "sz": 14,
+      "fullName": "Cyber Verification Program (CVP)",
+      "nodeType": "product",
+      "proposalReason": "A new term introduced by Anthropic as the canonical name for its tiered cyber-access framework, materially distinct from Project Glasswing. Likely to appear in future policy, security, and governance discussions."
+    },
+    {
+      "id": "cyscenariobench",
+      "label": "CyScenarioBench",
+      "workingDef": "An evaluation benchmark designed to measure whether AI models can plan and execute multi-stage cyber operations under realistic constraints. Used by Anthropic to assess the efficacy of CVP safeguard tiers by testing whether classifier blocks occur at appropriate points in complex, interactive offensive scenarios. Named and first publicly disclosed in this CVP announcement.",
+      "clusters": [
+        "safety",
+        "security"
+      ],
+      "suggestedRels": [
+        "evals",
+        "benchmark-gaming",
+        "penetration-testing",
+        "behavioral-audit",
+        "offense-defense-balance"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/cyber-verification-program",
+          "domain": "anthropic.com",
+          "title": "Expanding the Cyber Verification Program",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-10-16T07:47:38.193Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-16T07:47:38.193Z",
+      "dateLastSeen": "2026-10-16T07:47:38.193Z",
+      "sz": 14,
+      "nodeType": "product",
+      "proposalReason": "A named evaluation instrument for offensive cyber capability assessment. Relevant to the growing body of AI evals targeting agentic and security-relevant capabilities."
+    },
+    {
+      "id": "enterprise-frontier-safeguards",
+      "label": "Enterprise Frontier Safeguards",
+      "workingDef": "An Anthropic data-handling solution described as combining zero data retention with robust safeguards, allowing CVP-enrolled organizations to store data in cloud infrastructure they control rather than Anthropic's systems. Positioned as a privacy-by-design alternative to standard data retention requirements. Announced as forthcoming at time of publication.",
+      "clusters": [
+        "security",
+        "business"
+      ],
+      "suggestedRels": [
+        "privacy-by-design",
+        "data-residency",
+        "sandboxing",
+        "guardrails",
+        "project-glasswing"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/cyber-verification-program",
+          "domain": "anthropic.com",
+          "title": "Expanding the Cyber Verification Program",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-10-16T07:47:38.193Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-16T07:47:38.193Z",
+      "dateLastSeen": "2026-10-16T07:47:38.193Z",
+      "sz": 14,
+      "fullName": "Enterprise Frontier Safeguards (EFS)",
+      "nodeType": "product",
+      "proposalReason": "A named product concept addressing the tension between mandatory data retention for misuse monitoring and enterprise privacy requirements — a structurally interesting tradeoff worth tracking as AI security programs mature."
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
-  "lastRunAt": "2026-10-15T20:56:31.224Z",
-  "reviewCursor": 94,
+  "lastRunAt": "2026-10-16T07:47:38.193Z",
+  "reviewCursor": 104,
   "seenArticles": {
     "93a049d060bc295b": {
       "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/tpus-8t-8i-cloud-next/",
@@ -1003,6 +1003,42 @@
       "title": "Anthropic co-founder Chris Olah's remarks on Pope Leo XIV's encyclical \"Magnifica humanitas\"",
       "publishedAt": null,
       "seenAt": "2026-06-05T19:53:16.670Z"
+    },
+    "a0e0fec2c2b5f568": {
+      "url": "https://openai.com/index/amp-beyond-coding",
+      "title": "Amp puts AI agents to work beyond code with OpenAI models",
+      "publishedAt": "Wed, 14 Oct 2026 12:00:00 GMT",
+      "seenAt": "2026-10-16T07:47:38.193Z"
+    },
+    "190277f965bb8b29": {
+      "url": "https://stratechery.com/2026/apple-homeview-the-new-apple-tv-the-app-story/",
+      "title": "Apple HomeView, The New Apple TV, The App Story",
+      "publishedAt": "Wed, 14 Oct 2026 10:00:00 +0000",
+      "seenAt": "2026-10-16T07:47:38.193Z"
+    },
+    "22643d6fcb195220": {
+      "url": "https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform/",
+      "title": "Introducing Playground: Create and play custom games",
+      "publishedAt": "Wed, 07 Oct 2026 12:00:00 +0000",
+      "seenAt": "2026-10-16T07:47:38.193Z"
+    },
+    "08c79764230e6e3c": {
+      "url": "https://simonwillison.net/2026/Oct/15/chirp-pong/",
+      "title": "Tool: Chirp Pong",
+      "publishedAt": "2026-10-15T19:47:52+00:00",
+      "seenAt": "2026-10-16T07:47:38.193Z"
+    },
+    "f8bd68ff7b9a2503": {
+      "url": "https://openai.com/index/introducing-gpt-6-1-sol/",
+      "title": "Introducing GPT-6.1 Sol",
+      "publishedAt": null,
+      "seenAt": "2026-10-16T07:47:38.193Z"
+    },
+    "a22a6ca92e5c69fd": {
+      "url": "https://www.anthropic.com/news/cyber-verification-program",
+      "title": "Expanding the Cyber Verification Program",
+      "publishedAt": null,
+      "seenAt": "2026-10-16T07:47:38.193Z"
     }
   },
   "nodeReviews": {
@@ -1152,29 +1188,29 @@
       "reason": "The Last Week in AI excerpt mentions OpenAI's IPO plans and the Musk lawsuit outcome but contains nothing that materially changes the ChatGPT product definition."
     },
     "claude": {
-      "lastReviewedAt": "2026-05-30T19:13:38.586Z",
+      "lastReviewedAt": "2026-10-16T07:47:38.193Z",
       "status": "refresh",
-      "reason": "Two sources reference Claude model versions beyond what the current definition states (Claude 4.6). Simon Willison's blog references 'Claude Opus 4.8' as of May 28, 2026, and the ITBench-AA benchmark references 'Claude Opus 4.7' — both supersede the current definition's claim of Claude 4.6 as the current version. The version numbers in the definition need updating."
+      "reason": "Multiple fresh sources (Anthropic CVP page, Simon Willison's blog) confirm the current model generation uses 5.x versioning (Opus 5.5, Sonnet 5.5, Haiku 5.5, Fable 5.1), making the existing '4.6' version numbers outdated. The model tier descriptions should be updated accordingly."
     },
     "claude-ai": {
-      "lastReviewedAt": "2026-05-30T19:13:38.586Z",
-      "status": "keep",
-      "reason": "No source material provides new information about the Claude.ai interface specifically."
+      "lastReviewedAt": "2026-10-16T07:47:38.193Z",
+      "status": "insufficient_evidence",
+      "reason": "No source material directly addresses Claude.ai features or availability. Cannot confirm or deny updates."
     },
     "claude-code": {
-      "lastReviewedAt": "2026-05-31T19:15:39.230Z",
-      "status": "insufficient_evidence",
-      "reason": "No source material addresses Claude Code, its revenue figures, or its agentic capabilities."
+      "lastReviewedAt": "2026-10-16T07:47:38.193Z",
+      "status": "keep",
+      "reason": "Simon Willison's source confirms Claude Code is actively used in production (referencing 'Claude Opus 5.5 Extra in Claude Code'), consistent with the existing definition. No material contradictions or updates warranted beyond model versioning already captured in the 'claude' entry."
     },
     "claude-cowork": {
-      "lastReviewedAt": "2026-05-31T19:15:39.230Z",
+      "lastReviewedAt": "2026-10-16T07:47:38.193Z",
       "status": "insufficient_evidence",
-      "reason": "No source material references Claude Cowork or any related Anthropic outcome-delegation product."
+      "reason": "No source material references Claude Cowork or any Anthropic outcome-delegation product. Cannot verify or update this definition."
     },
     "claude-mythos": {
-      "lastReviewedAt": "2026-05-31T19:15:39.230Z",
-      "status": "insufficient_evidence",
-      "reason": "No source material references Claude Mythos or any withheld Anthropic model."
+      "lastReviewedAt": "2026-10-16T07:47:38.193Z",
+      "status": "refresh",
+      "reason": "The Anthropic CVP source (Oct 6, 2026) reveals Mythos is now versioned as 'Claude Mythos 5.1', and that access has expanded significantly beyond Project Glasswing into a three-tier Cyber Verification Program open to a wider range of security organizations. The original definition's claim that access is restricted solely to Glasswing partners is now outdated."
     },
     "co-channeling": {
       "lastReviewedAt": "2026-04-27T19:20:08.906Z",
@@ -1182,9 +1218,9 @@
       "reason": "No source material addresses this concept."
     },
     "codex-model": {
-      "lastReviewedAt": "2026-05-31T19:15:39.230Z",
+      "lastReviewedAt": "2026-10-16T07:47:38.193Z",
       "status": "keep",
-      "reason": "No source material contradicts or updates the existing definition of Codex as OpenAI's coding model family that powered GitHub Copilot."
+      "reason": "No source material addresses the Codex model family. Definition stands."
     },
     "computer-use": {
       "lastReviewedAt": "2026-05-31T19:15:39.230Z",
@@ -2032,14 +2068,29 @@
       "reason": "No source material addresses behavioral audits. Definition remains accurate and unsupported by new evidence requiring change."
     },
     "claude-design": {
-      "lastReviewedAt": "2026-05-31T19:15:39.230Z",
+      "lastReviewedAt": "2026-10-16T07:47:38.193Z",
       "status": "insufficient_evidence",
-      "reason": "No source material references Claude Design or any Anthropic Labs visual design product."
+      "reason": "No source material references Claude Design or Anthropic Labs design products. Cannot verify or update this definition."
     },
     "gpt55": {
       "lastReviewedAt": "2026-06-05T19:53:16.670Z",
       "status": "insufficient_evidence",
       "reason": "No source material substantiates details about GPT-5.5 beyond what is already in the sparse existing definition. Cannot justify a rewrite or keep with confidence."
+    },
+    "circular-deals": {
+      "lastReviewedAt": "2026-10-16T07:47:38.193Z",
+      "status": "keep",
+      "reason": "No source material addresses circular deals or related AI investment patterns. Definition stands as-is."
+    },
+    "clanker": {
+      "lastReviewedAt": "2026-10-16T07:47:38.193Z",
+      "status": "keep",
+      "reason": "No source material references this slang term. Definition stands."
+    },
+    "code-mode": {
+      "lastReviewedAt": "2026-10-16T07:47:38.193Z",
+      "status": "keep",
+      "reason": "No source material addresses code mode or agentic tool-calling patterns. Definition stands."
     }
   }
 }

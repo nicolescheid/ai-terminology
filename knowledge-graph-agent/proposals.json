@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-10-15T20:56:31.685Z",
-    "pendingCount": 1,
+    "generatedAt": "2026-10-16T07:49:17.841Z",
+    "pendingCount": 3,
     "appliedCount": 38,
     "rejectedCount": 1,
     "note": "Lexi proposals queue. Actions gated as PROPOSE land here as status: 'pending'. Edit a proposal's status to 'approved' or 'rejected' and run the apply step (TBD) to commit."
@@ -1159,7 +1159,36 @@
           }
         ]
       },
-      "reason": "The Anthropic Newsroom source (May 28, 2026) confirms a new flagship model — Claude Opus 4.8 — with notable agentic capabilities and Claude Code enhancements. The existing definition references 'Claude model family' generically; a brief update noting the current flagship is warranted to keep the definition current and credible."
+      "reason": "The Anthropic Newsroom source (May 28, 2026) confirms a new flagship model — Claude Opus 4.8 — with notable agentic capabilities and Claude Code enhancements. The existing definition references 'Claude model family' generically; a brief update noting the current flagship is warranted to keep the definition current and credible.",
+      "review": {
+        "verdict": "flag",
+        "summary": "The listed sources (Stratechery on a SpaceX IPO, Google I/O recap) are not about Anthropic, and no excerpts were fetchable. The cited 'Anthropic Newsroom' source is not among them, so the Claude Opus 4.8 claim is unverified. The addition is also dated by design ('As of May 2026', 'latest flagship'). It also conflicts with the claude-mythos node, which says Mythos is Anthropic's most capable model, and with the claude node, which still lists 4.6. The change also lowercases 'claude.ai' against the existing node label.",
+        "sources_support": "unverifiable",
+        "duplicate_of": "",
+        "nearest_node_id": "anthropic-co",
+        "nearest_relation": "same node being edited",
+        "is_fad": false,
+        "contested_framing": "not_applicable",
+        "edit_size": "substantive",
+        "flags": [
+          "sources_do_not_support",
+          "stale_or_dated",
+          "other"
+        ],
+        "nearest": {
+          "id": "anthropic-co",
+          "label": "Anthropic",
+          "relation": "same node being edited"
+        },
+        "model": "claude-opus-5-5",
+        "promptVersion": "reviewer-v1",
+        "reviewedAt": "2026-10-16T07:49:25.437Z",
+        "sourcesChecked": 0
+      },
+      "tier": "nicole",
+      "tierReason": "reviewer flagged it: sources do not support, stale or dated, other",
+      "digestId": "D-20261016-abed",
+      "digestN": 1
     },
     {
       "id": "874cfa6c75ef4ed2",
@@ -1980,6 +2009,117 @@
       "approvedAt": "2026-08-27T21:16:45.423Z",
       "approvedBy": "nicole",
       "appliedAt": "2026-08-27T21:16:47.981Z"
+    },
+    {
+      "id": "4d0a6dd10ab0b912",
+      "action": "edit_graph_def_substantive",
+      "gate": "propose",
+      "proposedAt": "2026-10-16T07:47:38.193Z",
+      "status": "pending",
+      "source": "definition-review",
+      "target": {
+        "kind": "graph_node",
+        "id": "claude"
+      },
+      "payload": {
+        "def": "Anthropic's model family — currently including Claude Opus 5.5, Claude Sonnet 5.5, Claude Haiku 5.5, and Claude Fable 5.1. Named after Claude Shannon, father of information theory. Known for safety, long-context coherence, and coding ability.",
+        "refs": [
+          {
+            "n": 1,
+            "src": "OpenAI News, Wed, 14 Oct 2026 12:00:00 GMT",
+            "q": "Amp puts AI agents to work beyond code with OpenAI models OpenAI News"
+          },
+          {
+            "n": 2,
+            "src": "Stratechery, Wed, 14 Oct 2026 10:00:00 +0000",
+            "q": "Apple HomeView, The New Apple TV, The App Story Stratechery"
+          }
+        ]
+      },
+      "reason": "Multiple fresh sources (Anthropic CVP page, Simon Willison's blog) confirm the current model generation uses 5.x versioning (Opus 5.5, Sonnet 5.5, Haiku 5.5, Fable 5.1), making the existing '4.6' version numbers outdated. The model tier descriptions should be updated accordingly.",
+      "review": {
+        "verdict": "flag",
+        "summary": "The cited sources (an OpenAI News item about Amp and a Stratechery piece on Apple) have no excerpts and have nothing to do with Claude versioning. The Anthropic and Simon Willison pages named in Lexi's rationale are not among the listed sources, so the new model names, including the unfamiliar 'Claude Fable 5.1', are unverified. The edit also drops the tier descriptions and is inconsistent with sibling nodes that cite Opus 4.7 and Mythos.",
+        "sources_support": "does_not_support",
+        "duplicate_of": "",
+        "nearest_node_id": "claude",
+        "nearest_relation": "same node (edit target)",
+        "is_fad": false,
+        "contested_framing": "not_applicable",
+        "edit_size": "substantive",
+        "flags": [
+          "sources_do_not_support",
+          "other"
+        ],
+        "nearest": {
+          "id": "claude",
+          "label": "Claude",
+          "relation": "same node (edit target)"
+        },
+        "model": "claude-opus-5-5",
+        "promptVersion": "reviewer-v1",
+        "reviewedAt": "2026-10-16T07:49:33.143Z",
+        "sourcesChecked": 0
+      },
+      "tier": "nicole",
+      "tierReason": "reviewer flagged it: sources do not support, other",
+      "digestId": "D-20261016-abed",
+      "digestN": 2
+    },
+    {
+      "id": "54ab276f254e0dc2",
+      "action": "edit_graph_def_substantive",
+      "gate": "propose",
+      "proposedAt": "2026-10-16T07:47:38.193Z",
+      "status": "pending",
+      "source": "definition-review",
+      "target": {
+        "kind": "graph_node",
+        "id": "claude-mythos"
+      },
+      "payload": {
+        "def": "Anthropic's highly restricted model — now versioned as Claude Mythos 5.1. Originally withheld from general availability on safety grounds due to capabilities including autonomous discovery and exploitation of zero-day vulnerabilities, sandbox escape, and autonomous goal extension. Access has expanded from the original Project Glasswing program to a broader, tiered Cyber Verification Program (CVP) launched October 2026, which integrates Glasswing and gives qualifying security organizations structured access based on the scope of their cyber work.",
+        "refs": [
+          {
+            "n": 1,
+            "src": "OpenAI News, Wed, 14 Oct 2026 12:00:00 GMT",
+            "q": "Amp puts AI agents to work beyond code with OpenAI models OpenAI News"
+          },
+          {
+            "n": 2,
+            "src": "Stratechery, Wed, 14 Oct 2026 10:00:00 +0000",
+            "q": "Apple HomeView, The New Apple TV, The App Story Stratechery"
+          }
+        ]
+      },
+      "reason": "The Anthropic CVP source (Oct 6, 2026) reveals Mythos is now versioned as 'Claude Mythos 5.1', and that access has expanded significantly beyond Project Glasswing into a three-tier Cyber Verification Program open to a wider range of security organizations. The original definition's claim that access is restricted solely to Glasswing partners is now outdated.",
+      "review": {
+        "verdict": "flag",
+        "summary": "Substantive edit (new version name 'Claude Mythos 5.1', CVP launch Oct 2026, expanded access) but the cited sources are an OpenAI/Amp post and a Stratechery Apple piece, neither relevant, with no fetchable excerpts. The Anthropic CVP source Lexi's rationale cites isn't provided, so the new claims can't be verified.",
+        "sources_support": "does_not_support",
+        "duplicate_of": "",
+        "nearest_node_id": "claude-mythos",
+        "nearest_relation": "same node (edit target)",
+        "is_fad": false,
+        "contested_framing": "not_applicable",
+        "edit_size": "substantive",
+        "flags": [
+          "sources_do_not_support"
+        ],
+        "nearest": {
+          "id": "claude-mythos",
+          "label": "Claude Mythos",
+          "relation": "same node (edit target)"
+        },
+        "model": "claude-opus-5-5",
+        "promptVersion": "reviewer-v1",
+        "reviewedAt": "2026-10-16T07:49:37.685Z",
+        "sourcesChecked": 0
+      },
+      "tier": "nicole",
+      "tierReason": "reviewer flagged it: sources do not support",
+      "digestId": "D-20261016-abed",
+      "digestN": 3
     }
   ]
 }

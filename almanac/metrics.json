@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-10-15T20:56:31.813Z",
+  "generatedAt": "2026-10-16T07:49:37.824Z",
   "firstRunAt": "2026-04-27T01:07:31.335Z",
   "phase": 1,
   "headline": {
-    "articlesRead": 167,
-    "daysRunning": 172,
-    "longlistSize": 180,
-    "graphSize": 232
+    "articlesRead": 173,
+    "daysRunning": 173,
+    "longlistSize": 60,
+    "graphSize": 435
   },
   "thisWeek": {
-    "articlesFetched": 0,
-    "longlistAdded": 0,
+    "articlesFetched": 6,
+    "longlistAdded": 11,
     "sourcesAdded": 0,
     "promotionsToGraph": 0,
-    "proposalsQueued": 0,
+    "proposalsQueued": 2,
     "auditFlags": 0,
-    "notesAdded": 8
+    "notesAdded": 7
   },
   "almostThere": [
     {
@@ -36,73 +36,6 @@
       "gap": "no source seen in past 90d"
     },
     {
-      "id": "product-market-fit",
-      "label": "Product-Market Fit",
-      "fullName": "Product-Market Fit (AI)",
-      "clusters": [
-        "business"
-      ],
-      "sourceCount": 5,
-      "independentSources": 1,
-      "daysOnLonglist": 139,
-      "domains": [
-        "simonwillison.net"
-      ],
-      "gapCount": 2,
-      "gap": "needs 1 more independent source; no source seen in past 90d"
-    },
-    {
-      "id": "agentic-web",
-      "label": "Agentic Web",
-      "fullName": "The Agentic Web",
-      "clusters": [
-        "agentic",
-        "landscape"
-      ],
-      "sourceCount": 4,
-      "independentSources": 1,
-      "daysOnLonglist": 139,
-      "domains": [
-        "stratechery.com"
-      ],
-      "gapCount": 2,
-      "gap": "needs 1 more independent source; no source seen in past 90d"
-    },
-    {
-      "id": "terafab",
-      "label": "Terafab",
-      "fullName": "Terafab (Intel AI Fab Initiative)",
-      "clusters": [
-        "landscape",
-        "companies"
-      ],
-      "sourceCount": 3,
-      "independentSources": 1,
-      "daysOnLonglist": 168,
-      "domains": [
-        "stratechery.com"
-      ],
-      "gapCount": 2,
-      "gap": "needs 1 more independent source; no source seen in past 90d"
-    },
-    {
-      "id": "google-flow",
-      "label": "Google Flow",
-      "fullName": "Google Flow (AI Filmmaking Tool)",
-      "clusters": [
-        "tools",
-        "companies"
-      ],
-      "sourceCount": 3,
-      "independentSources": 1,
-      "daysOnLonglist": 159,
-      "domains": [
-        "blog.google"
-      ],
-      "gapCount": 2,
-      "gap": "needs 1 more independent source; no source seen in past 90d"
-    },
-    {
       "id": "ai-assisted-filmmaking",
       "label": "AI-Assisted Filmmaking",
       "fullName": null,
@@ -120,96 +53,167 @@
       "gap": "needs 1 more independent source; no source seen in past 90d"
     },
     {
-      "id": "vllm",
-      "label": "vLLM",
-      "fullName": "vLLM (Open-Source LLM Inference Server)",
+      "id": "ephemeral-ai-chat",
+      "label": "Ephemeral AI Chat",
+      "fullName": null,
       "clusters": [
-        "technical",
+        "security",
         "tools"
       ],
-      "sourceCount": 3,
+      "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 158,
+      "daysOnLonglist": 155,
       "domains": [
-        "huggingface.co"
+        "theverge.com"
       ],
       "gapCount": 2,
       "gap": "needs 1 more independent source; no source seen in past 90d"
     },
     {
-      "id": "cyber-verification-program",
-      "label": "Cyber Verification Program",
-      "fullName": "Cyber Verification Program (Anthropic)",
+      "id": "information-agents-search",
+      "label": "Information Agents",
+      "fullName": "Information Agents (Google Search)",
       "clusters": [
-        "security",
-        "safety",
-        "landscape"
+        "agentic",
+        "tools"
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 171,
+      "daysOnLonglist": 139,
+      "domains": [
+        "blog.google"
+      ],
+      "gapCount": 2,
+      "gap": "needs 1 more independent source; no source seen in past 90d"
+    },
+    {
+      "id": "self-verification",
+      "label": "Self-Verification",
+      "fullName": "Self-Verification (Model Output Verification)",
+      "clusters": [
+        "agentic",
+        "safety",
+        "technical"
+      ],
+      "sourceCount": 1,
+      "independentSources": 1,
+      "daysOnLonglist": 172,
       "domains": [
         "anthropic.com"
       ],
-      "gapCount": 2,
-      "gap": "needs 1 more independent source; no source seen in past 90d"
+      "gapCount": 3,
+      "gap": "needs 1 more source; needs 1 more independent source; no source seen in past 90d"
     },
     {
-      "id": "ai-driven-cpu-demand",
-      "label": "AI-Driven CPU Demand",
-      "fullName": "AI-Driven CPU Demand (Structural Shift)",
+      "id": "differential-capability-reduction",
+      "label": "Differential Capability Reduction",
+      "fullName": null,
       "clusters": [
-        "landscape",
-        "business"
+        "safety",
+        "technical",
+        "models"
       ],
-      "sourceCount": 2,
+      "sourceCount": 1,
+      "independentSources": 1,
+      "daysOnLonglist": 172,
+      "domains": [
+        "anthropic.com"
+      ],
+      "gapCount": 3,
+      "gap": "needs 1 more source; needs 1 more independent source; no source seen in past 90d"
+    },
+    {
+      "id": "reward-signal-leakage",
+      "label": "Reward Signal Leakage",
+      "fullName": null,
+      "clusters": [
+        "safety",
+        "models",
+        "technical"
+      ],
+      "sourceCount": 1,
       "independentSources": 1,
       "daysOnLonglist": 168,
       "domains": [
-        "stratechery.com"
+        "openai.com"
       ],
-      "gapCount": 2,
-      "gap": "needs 1 more independent source; no source seen in past 90d"
+      "gapCount": 3,
+      "gap": "needs 1 more source; needs 1 more independent source; no source seen in past 90d"
     },
     {
-      "id": "claude-partner-network",
-      "label": "Claude Partner Network",
-      "fullName": "Claude Partner Network (Anthropic)",
+      "id": "sft-data-contamination",
+      "label": "SFT Data Contamination",
+      "fullName": "Supervised Fine-Tuning Data Contamination",
       "clusters": [
-        "companies",
-        "business"
+        "technical",
+        "models",
+        "safety"
       ],
-      "sourceCount": 2,
+      "sourceCount": 1,
+      "independentSources": 1,
+      "daysOnLonglist": 168,
+      "domains": [
+        "openai.com"
+      ],
+      "gapCount": 3,
+      "gap": "needs 1 more source; needs 1 more independent source; no source seen in past 90d"
+    },
+    {
+      "id": "agent-os",
+      "label": "Agent Operating System",
+      "fullName": "Agent Operating System (Agent OS)",
+      "clusters": [
+        "agentic",
+        "tools"
+      ],
+      "sourceCount": 1,
+      "independentSources": 1,
+      "daysOnLonglist": 168,
+      "domains": [
+        "lastweekin.ai"
+      ],
+      "gapCount": 3,
+      "gap": "needs 1 more source; needs 1 more independent source; no source seen in past 90d"
+    },
+    {
+      "id": "streaming-inference",
+      "label": "Streaming Inference",
+      "fullName": null,
+      "clusters": [
+        "technical",
+        "models"
+      ],
+      "sourceCount": 1,
       "independentSources": 1,
       "daysOnLonglist": 164,
       "domains": [
-        "anthropic.com"
+        "openai.com"
       ],
-      "gapCount": 2,
-      "gap": "needs 1 more independent source; no source seen in past 90d"
+      "gapCount": 3,
+      "gap": "needs 1 more source; needs 1 more independent source; no source seen in past 90d"
     }
   ],
   "sources": {
     "byDomain": [
       {
         "domain": "openai.com",
-        "count": 40
+        "count": 42
       },
       {
         "domain": "simonwillison.net",
-        "count": 24
+        "count": 25
       },
       {
         "domain": "stratechery.com",
-        "count": 21
+        "count": 22
       },
       {
         "domain": "blog.google",
-        "count": 18
+        "count": 19
       },
       {
         "domain": "anthropic.com",
-        "count": 17
+        "count": 18
       },
       {
         "domain": "huggingface.co",
@@ -329,94 +333,82 @@
     ],
     "distribution": [
       {
+        "id": "safety",
+        "label": "Safety",
+        "hex": "#FF6090",
+        "count": 18
+      },
+      {
         "id": "technical",
         "label": "Technical",
         "hex": "#D0D040",
-        "count": 61
+        "count": 18
       },
       {
         "id": "agentic",
         "label": "Agentic Systems",
         "hex": "#FF9040",
-        "count": 43
-      },
-      {
-        "id": "tools",
-        "label": "Tools & Platforms",
-        "hex": "#70C8F8",
-        "count": 41
-      },
-      {
-        "id": "models",
-        "label": "Models",
-        "hex": "#FFB060",
-        "count": 38
-      },
-      {
-        "id": "safety",
-        "label": "Safety",
-        "hex": "#FF6090",
-        "count": 28
-      },
-      {
-        "id": "work",
-        "label": "Work & Output",
-        "hex": "#E8A838",
-        "count": 27
-      },
-      {
-        "id": "business",
-        "label": "Business Reality",
-        "hex": "#48C888",
-        "count": 27
+        "count": 17
       },
       {
         "id": "critical",
         "label": "Critical / Hype",
         "hex": "#FF5555",
-        "count": 26
+        "count": 14
       },
       {
-        "id": "landscape",
-        "label": "Model Landscape",
-        "hex": "#D0A050",
-        "count": 21
+        "id": "models",
+        "label": "Models",
+        "hex": "#FFB060",
+        "count": 13
+      },
+      {
+        "id": "tools",
+        "label": "Tools & Platforms",
+        "hex": "#70C8F8",
+        "count": 10
       },
       {
         "id": "security",
         "label": "AI Security",
         "hex": "#E05050",
-        "count": 19
+        "count": 8
       },
       {
         "id": "human",
         "label": "Human Skills",
         "hex": "#40D080",
-        "count": 13
+        "count": 7
+      },
+      {
+        "id": "work",
+        "label": "Work & Output",
+        "hex": "#E8A838",
+        "count": 5
+      },
+      {
+        "id": "landscape",
+        "label": "Model Landscape",
+        "hex": "#D0A050",
+        "count": 4
+      },
+      {
+        "id": "business",
+        "label": "Business Reality",
+        "hex": "#48C888",
+        "count": 3
       },
       {
         "id": "companies",
         "label": "Companies",
         "hex": "#9090A8",
-        "count": 12
+        "count": 3
       },
       {
         "id": "autonomy",
         "label": "Autonomy Spectrum",
         "hex": "#58B8E8",
-        "count": 3
-      },
-      {
-        "id": "context",
-        "label": "Context Health",
-        "hex": "#A0D060",
         "count": 2
-      },
-      {
-        "id": "core",
-        "label": "Core",
-        "hex": "#C070FF",
-        "count": 1
       }
     ]
   },
@@ -426,7 +418,7 @@
     "note": "All graph promotions and substantive edits are currently human-gated. Lexi proposes; Nicole approves."
   },
   "proposalsByStatus": {
-    "pending": 1,
+    "pending": 3,
     "approved": 0,
     "applied": 38,
     "rejected": 1

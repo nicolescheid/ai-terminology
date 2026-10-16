@@ -1,11 +1,215 @@
 {
-  "generatedAt": "2026-10-15T20:56:31.224Z",
+  "generatedAt": "2026-10-16T07:47:38.193Z",
   "model": "claude-sonnet-4-6",
   "sourcesConfigured": 15,
-  "articlesConsidered": [],
-  "harvestedTerms": [],
-  "definitionReviews": [],
-  "notes": [
-    "Run paused (unread_notes_over_7d). No articles fetched, no candidates routed, no proposals queued."
-  ]
+  "articlesConsidered": [
+    {
+      "id": "a0e0fec2c2b5f568",
+      "source": "OpenAI News",
+      "title": "Amp puts AI agents to work beyond code with OpenAI models",
+      "url": "https://openai.com/index/amp-beyond-coding",
+      "publishedAt": "Wed, 14 Oct 2026 12:00:00 GMT"
+    },
+    {
+      "id": "190277f965bb8b29",
+      "source": "Stratechery",
+      "title": "Apple HomeView, The New Apple TV, The App Story",
+      "url": "https://stratechery.com/2026/apple-homeview-the-new-apple-tv-the-app-story/",
+      "publishedAt": "Wed, 14 Oct 2026 10:00:00 +0000"
+    },
+    {
+      "id": "22643d6fcb195220",
+      "source": "Google AI Blog",
+      "title": "Introducing Playground: Create and play custom games",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform/",
+      "publishedAt": "Wed, 07 Oct 2026 12:00:00 +0000"
+    },
+    {
+      "id": "08c79764230e6e3c",
+      "source": "Simon Willison's Weblog",
+      "title": "Tool: Chirp Pong",
+      "url": "https://simonwillison.net/2026/Oct/15/chirp-pong/",
+      "publishedAt": "2026-10-15T19:47:52+00:00"
+    },
+    {
+      "id": "f8bd68ff7b9a2503",
+      "source": "OpenAI Research",
+      "title": "Introducing GPT-6.1 Sol",
+      "url": "https://openai.com/index/introducing-gpt-6-1-sol/",
+      "publishedAt": null
+    },
+    {
+      "id": "a22a6ca92e5c69fd",
+      "source": "Anthropic Newsroom",
+      "title": "Expanding the Cyber Verification Program",
+      "url": "https://www.anthropic.com/news/cyber-verification-program",
+      "publishedAt": null
+    }
+  ],
+  "harvestedTerms": [
+    {
+      "article": {
+        "title": "Apple HomeView, The New Apple TV, The App Story",
+        "url": "https://stratechery.com/2026/apple-homeview-the-new-apple-tv-the-app-story/"
+      },
+      "summary": "Paywalled Stratechery piece by Ben Thompson on the Apple HomeView product launch, framing it around market size for expensive devices running 'subpar AI.' Almost no substantive content is visible beyond the title and subscription prompt — the excerpt is essentially a paywall landing page.",
+      "longlistAdditions": [
+        {
+          "id": "apple-homeview",
+          "label": "Apple HomeView"
+        }
+      ],
+      "longlistUpdates": [],
+      "rejections": [],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "Introducing Playground: Create and play custom games",
+        "url": "https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform/"
+      },
+      "summary": "Google has launched Playground, a browser-based experimental gaming platform that lets users create, play, and share custom games using text prompts — no coding required. The platform features community galleries, multiplayer support, leaderboards, and a forthcoming integration with Unity Spark for professional-level game development. The article is primarily a product announcement with minimal AI terminology novelty.",
+      "longlistAdditions": [
+        {
+          "id": "text-to-game",
+          "label": "Text-to-Game"
+        },
+        {
+          "id": "no-code-ai-creation",
+          "label": "No-Code AI Creation"
+        }
+      ],
+      "longlistUpdates": [],
+      "rejections": [],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "Tool: Chirp Pong",
+        "url": "https://simonwillison.net/2026/Oct/15/chirp-pong/"
+      },
+      "summary": "A brief post by Simon Willison documenting a small creative coding experiment — a two-player Pong variant that uses audio chirps (via the Web Microphone API) for networking, built with Claude Opus 5.5 Extra in Claude Code. Primarily a personal project note with minimal conceptual substance.",
+      "longlistAdditions": [
+        {
+          "id": "claude-opus-55",
+          "label": "Claude Opus 5.5"
+        }
+      ],
+      "longlistUpdates": [],
+      "rejections": [],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "Introducing GPT-6.1 Sol",
+        "url": "https://openai.com/index/introducing-gpt-6-1-sol/"
+      },
+      "summary": "OpenAI announces GPT-6.1 Sol, an upgrade to GPT-6 Sol offering near-Astra-level performance at one-fifth the cost. The announcement introduces several named benchmarks (DeepSWE, GDP.pdf, AutomationBench, OSWorld 2.0, Terminal-Bench Science) and a new speed tier (Sol Ultrafast). The article is primarily a product launch with pricing details and benchmark comparisons across coding, computer use, scientific research, and factuality.",
+      "longlistAdditions": [
+        {
+          "id": "gpt61-sol",
+          "label": "GPT-6.1 Sol"
+        },
+        {
+          "id": "automationbench",
+          "label": "AutomationBench"
+        },
+        {
+          "id": "terminal-bench-science",
+          "label": "Terminal-Bench Science"
+        },
+        {
+          "id": "gdp-pdf",
+          "label": "GDP.pdf"
+        }
+      ],
+      "longlistUpdates": [],
+      "rejections": [],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "Expanding the Cyber Verification Program",
+        "url": "https://www.anthropic.com/news/cyber-verification-program"
+      },
+      "summary": "Anthropic announces an expanded Cyber Verification Program (CVP) with three tiered access levels (Defense, Red Team, Specialized) giving vetted security professionals reduced classifier blocking on Claude models. The article introduces a new benchmark (CyScenarioBench), a new privacy-preserving data solution (Enterprise Frontier Safeguards), and shares vulnerability-discovery metrics from Project Glasswing. Primary focus is on the offense-defense balance in dual-use AI cybersecurity tooling.",
+      "longlistAdditions": [
+        {
+          "id": "cyber-verification-program",
+          "label": "Cyber Verification Program"
+        },
+        {
+          "id": "cyscenariobench",
+          "label": "CyScenarioBench"
+        },
+        {
+          "id": "enterprise-frontier-safeguards",
+          "label": "Enterprise Frontier Safeguards"
+        }
+      ],
+      "longlistUpdates": [],
+      "rejections": [
+        {
+          "label": "offense-defense-balance",
+          "reason": "already in graph (id match)"
+        }
+      ],
+      "proposalsQueued": []
+    }
+  ],
+  "definitionReviews": [
+    {
+      "id": "circular-deals",
+      "status": "keep",
+      "reason": "No source material addresses circular deals or related AI investment patterns. Definition stands as-is."
+    },
+    {
+      "id": "clanker",
+      "status": "keep",
+      "reason": "No source material references this slang term. Definition stands."
+    },
+    {
+      "id": "claude",
+      "status": "refresh",
+      "def": "Anthropic's model family — currently including Claude Opus 5.5, Claude Sonnet 5.5, Claude Haiku 5.5, and Claude Fable 5.1. Named after Claude Shannon, father of information theory. Known for safety, long-context coherence, and coding ability.",
+      "reason": "Multiple fresh sources (Anthropic CVP page, Simon Willison's blog) confirm the current model generation uses 5.x versioning (Opus 5.5, Sonnet 5.5, Haiku 5.5, Fable 5.1), making the existing '4.6' version numbers outdated. The model tier descriptions should be updated accordingly."
+    },
+    {
+      "id": "claude-ai",
+      "status": "insufficient_evidence",
+      "reason": "No source material directly addresses Claude.ai features or availability. Cannot confirm or deny updates."
+    },
+    {
+      "id": "claude-code",
+      "status": "keep",
+      "reason": "Simon Willison's source confirms Claude Code is actively used in production (referencing 'Claude Opus 5.5 Extra in Claude Code'), consistent with the existing definition. No material contradictions or updates warranted beyond model versioning already captured in the 'claude' entry."
+    },
+    {
+      "id": "claude-cowork",
+      "status": "insufficient_evidence",
+      "reason": "No source material references Claude Cowork or any Anthropic outcome-delegation product. Cannot verify or update this definition."
+    },
+    {
+      "id": "claude-design",
+      "status": "insufficient_evidence",
+      "reason": "No source material references Claude Design or Anthropic Labs design products. Cannot verify or update this definition."
+    },
+    {
+      "id": "claude-mythos",
+      "status": "refresh",
+      "def": "Anthropic's highly restricted model — now versioned as Claude Mythos 5.1. Originally withheld from general availability on safety grounds due to capabilities including autonomous discovery and exploitation of zero-day vulnerabilities, sandbox escape, and autonomous goal extension. Access has expanded from the original Project Glasswing program to a broader, tiered Cyber Verification Program (CVP) launched October 2026, which integrates Glasswing and gives qualifying security organizations structured access based on the scope of their cyber work.",
+      "reason": "The Anthropic CVP source (Oct 6, 2026) reveals Mythos is now versioned as 'Claude Mythos 5.1', and that access has expanded significantly beyond Project Glasswing into a three-tier Cyber Verification Program open to a wider range of security organizations. The original definition's claim that access is restricted solely to Glasswing partners is now outdated."
+    },
+    {
+      "id": "code-mode",
+      "status": "keep",
+      "reason": "No source material addresses code mode or agentic tool-calling patterns. Definition stands."
+    },
+    {
+      "id": "codex-model",
+      "status": "keep",
+      "reason": "No source material addresses the Codex model family. Definition stands."
+    }
+  ],
+  "notes": []
 }
