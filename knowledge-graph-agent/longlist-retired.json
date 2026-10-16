@@ -2,7 +2,7 @@
   "meta": {
     "note": "Tier 3 archive (spec §3): longlist entries retired by review. Kept for audit; Lexi treats a later re-sighting as a new candidate.",
     "entryCount": 89,
-    "updatedAt": "2026-10-16T07:07:24.303Z"
+    "updatedAt": "2026-10-16T07:18:12.092Z"
   },
   "entries": [
     {
@@ -49,7 +49,7 @@
       "nodeType": "initiative",
       "proposalReason": "A novel, named program introduced in this article representing a new access-control mechanism for sensitive AI capabilities — distinct from existing graph terms and worth observing.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Company programme or launch framing (single company, single source).",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -87,7 +87,7 @@
       "fullName": "Design System Integration (AI-native)",
       "proposalReason": "Recurring framing concept in the article describing how AI design tools ingest and respect organizational design systems; relevant beyond this single product.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Company programme or launch framing (single company, single source).",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -125,7 +125,7 @@
       "fullName": "Personality Customization (LLM)",
       "proposalReason": "The article centers on the 'Nerdy' personality customization feature as the root cause of the goblin phenomenon; personality customization as a product-level concept with training implications is worth tracking.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Company programme or launch framing (single company, single source).",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -176,7 +176,7 @@
       "fullName": "Terafab (Intel AI Fab Initiative)",
       "proposalReason": "The article headline explicitly names 'Terafab' as a distinct topic worth analysis alongside Intel earnings and AI differentiation — a new named concept not yet in the graph or longlist.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "News item or one interview's phrasing — an event, deal or general business term rather than AI vocabulary.",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -220,7 +220,7 @@
       "fullName": "AI-Driven CPU Demand (Structural Shift)",
       "proposalReason": "The article explicitly cites 'a structural shift in demand for CPUs for AI' as the chief driver of Intel's earnings — a framing concept distinct from GPU/accelerator demand narratives and worth tracking.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "News item or one interview's phrasing — an event, deal or general business term rather than AI vocabulary.",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -258,7 +258,7 @@
       "nodeType": "product",
       "proposalReason": "Newly announced enterprise agent platform from Google Cloud, relevant as a named product in the agentic AI landscape.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Product or feature name from a single launch; not lexicon vocabulary on its own.",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -294,7 +294,7 @@
       "nodeType": "product",
       "proposalReason": "A named product extension of Deep Research, worth tracking as Google expands its research-agent product line.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Product or feature name from a single launch; not lexicon vocabulary on its own.",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -330,7 +330,7 @@
       "nodeType": "product",
       "proposalReason": "Represents AI-as-tutor pattern embedded in a developer tool; potentially interesting for tracking AI-assisted learning product patterns.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Product or feature name from a single launch; not lexicon vocabulary on its own.",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -365,7 +365,7 @@
       "fullName": "Regular Expression Denial-of-Service (ReDoS)",
       "proposalReason": "ReDoS is a named security vulnerability class with lasting relevance to both traditional and AI-assisted software development contexts, distinct from existing security terms in the graph.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Systems/security term that isn't AI-specific (Windows internals, networking, regex).",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -410,7 +410,7 @@
       "nodeType": "initiative",
       "proposalReason": "First primary-source mention of this named partner program from Anthropic's own newsroom; worth tracking as a named distribution initiative.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Company programme or launch framing (single company, single source).",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -446,7 +446,7 @@
       "fullName": "Applied AI Engineering (Anthropic)",
       "proposalReason": "Emerging term for a distinct go-to-market and delivery pattern that differs from self-serve API or SI-led work; likely to recur as hyperscalers and labs build professional-services arms.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Company programme or launch framing (single company, single source).",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -482,7 +482,7 @@
       "sz": 14,
       "proposalReason": "The article repeatedly distinguishes this role from pure software licensing; tracking it captures an important structural concept in how AI reaches enterprises.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Company programme or launch framing (single company, single source).",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -518,7 +518,7 @@
       "nodeType": "product",
       "proposalReason": "Canvas is a named sub-feature of AI Mode distinct enough from generic structured output tools to track separately, particularly as document-generation UI patterns proliferate across AI products.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Product or feature name from a single launch; not lexicon vocabulary on its own.",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -558,7 +558,7 @@
       "nodeType": "initiative",
       "proposalReason": "Core subject of the article; a novel access-governance concept that sits at the intersection of model safety and security practitioner enablement.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Company programme or launch framing (single company, single source).",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -596,7 +596,7 @@
       "nodeType": "product",
       "proposalReason": "Named product introduced in this article for the first time, targeting a distinct open-source/defender audience segment distinct from the TAC tiers.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Product or feature name from a single launch; not lexicon vocabulary on its own.",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -631,7 +631,7 @@
       "fullName": "WebRTC (Web Real-Time Communication)",
       "proposalReason": "The article's core technical subject: WebRTC's packet-dropping behavior and why it creates problems for voice AI delivery at scale.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Systems/security term that isn't AI-specific (Windows internals, networking, regex).",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -665,7 +665,7 @@
       "sz": 16,
       "proposalReason": "A newly named tool-use benchmark appearing in GPT-5.4's launch; worth tracking as a recurring reference point for agentic tool-use evaluation.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Single benchmark or its internal jargon; promote only if it becomes a reference point (GDPval is the one recommended).",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -700,7 +700,7 @@
       "sz": 14,
       "proposalReason": "Rollout logprobs are treated as a distinct correctness surface throughout the article, separate from training-side logprobs, and the term is operationally precise enough to warrant tracking in the context of agentic and RL systems.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Implementation detail from one paper or blog post; too specialist for the lexicon.",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -735,7 +735,7 @@
       "sz": 14,
       "proposalReason": "The article gives a precise account of how inflight weight updates interact with prefix caching and scheduling defaults, surfacing a concrete failure mode relevant to any team running online RL at scale.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Implementation detail from one paper or blog post; too specialist for the lexicon.",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -770,7 +770,7 @@
       "sz": 14,
       "proposalReason": "Cited independently in both the MiniMax-M1 technical report and the ScaleRL paper as a necessary RL recipe ingredient; the article ablates it explicitly, giving the concept cross-source evidence as a precision-correctness design choice.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Implementation detail from one paper or blog post; too specialist for the lexicon.",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -821,7 +821,7 @@
       "nodeType": "product",
       "proposalReason": "Newly named Google product for AI-assisted filmmaking; worth tracking as AI creative tools expand into long-form video production.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Product or feature name from a single launch; not lexicon vocabulary on its own.",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -859,7 +859,7 @@
       "nodeType": "product",
       "proposalReason": "A new product node under OpenAI; distinct from the existing voice-ai concept as a named, versioned model with specific agentic and reasoning capabilities.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Product or feature name from a single launch; not lexicon vocabulary on its own.",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -897,7 +897,7 @@
       "nodeType": "product",
       "proposalReason": "New named benchmark specifically targeting multi-turn, multi-day agentic performance — a distinct evaluation framing worth tracking as agent benchmarking matures.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Single benchmark or its internal jargon; promote only if it becomes a reference point (GDPval is the one recommended).",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -934,7 +934,7 @@
       "fullName": "Document Delegation Corruption (LLM)",
       "proposalReason": "New candidate: identifies a concrete, named failure mode for delegated document handling in agentic pipelines — complements existing context-degradation and silent-failure concepts.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Implementation detail from one paper or blog post; too specialist for the lexicon.",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -971,7 +971,7 @@
       "nodeType": "product",
       "proposalReason": "New product-specific instantiation of AI-powered deep search within a financial vertical; worth tracking as a named feature with potential lasting usage.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Product or feature name from a single launch; not lexicon vocabulary on its own.",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -1008,7 +1008,7 @@
       "nodeType": "product",
       "proposalReason": "Represents a named pattern of real-time AI summarisation over live audio events in a high-stakes financial context; may be indicative of a broader product category.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Product or feature name from a single launch; not lexicon vocabulary on its own.",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -1043,7 +1043,7 @@
       "fullName": "Document-Boundary Routing (MoE Training Signal)",
       "proposalReason": "A novel routing mechanism with a distinct conceptual identity — using document boundaries as a routing constraint is a concrete methodological contribution not yet tracked in the graph.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Implementation detail from one paper or blog post; too specialist for the lexicon.",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -1079,7 +1079,7 @@
       "fullName": "Selective Expert Use (MoE Inference)",
       "proposalReason": "Distinct operational concept for composable deployment of large sparse models — relevant to cost, latency, and infrastructure planning as MoE models scale.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Implementation detail from one paper or blog post; too specialist for the lexicon.",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -1114,7 +1114,7 @@
       "fullName": "Expert Subset Specialization (MoE Domain Alignment)",
       "proposalReason": "Captures a meaningful distinction — domain-level vs. lexical-level expert specialisation — that has implications for interpretability and composable deployment patterns.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Implementation detail from one paper or blog post; too specialist for the lexicon.",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -1149,7 +1149,7 @@
       "nodeType": "initiative",
       "proposalReason": "New initiative name worth tracking as a longlist entry; represents OpenAI's institutional outreach strategy toward academic communities.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Company programme or launch framing (single company, single source).",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -1185,7 +1185,7 @@
       "fullName": "Hallucinated CVSS Score (LLM Forensic Artefact in Exploit Code)",
       "proposalReason": "Introduces a concrete forensic signal — hallucinated metadata in exploit code — that may become a standard attribution indicator for AI-assisted attacks.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Single threat-intel detail.",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -1223,7 +1223,7 @@
       "fullName": "Enterprise Philosophy (AI Deployment Paradigm)",
       "proposalReason": "A durable analytical frame for understanding enterprise AI adoption logic — distinct from the copilot/assistant paradigm — worth tracking as a vocabulary term in the AI deployment landscape.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "News item or one interview's phrasing — an event, deal or general business term rather than AI vocabulary.",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -1261,7 +1261,7 @@
       "fullName": "Ontology-Powered Operating System (Enterprise Data Layer)",
       "proposalReason": "A substantive framing term for the enterprise data-layer problem — the argument that ontology (not just RAG or embeddings) is the foundation for agentic enterprise deployment.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "News item or one interview's phrasing — an event, deal or general business term rather than AI vocabulary.",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -1296,7 +1296,7 @@
       "sz": 14,
       "proposalReason": "A domain-specific analytical artefact term appearing in AI-assisted finance workflows; worth tracking as vertical-AI use cases codify finance-specific output patterns.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Off-topic: picked up from a non-AI article (airline ops, finance reporting, public-sector policy).",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -1332,7 +1332,7 @@
       "fullName": "Management Business Review (MBR)",
       "proposalReason": "Emerges as a named target workflow category in vertical AI deployment for finance; worth observing as labs define domain-specific agentic use cases.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Off-topic: picked up from a non-AI article (airline ops, finance reporting, public-sector policy).",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -1368,7 +1368,7 @@
       "fullName": "QA Memo (Finance Model Quality Assurance Memo)",
       "proposalReason": "A named artefact pattern in AI-assisted finance workflows; the dual-output model (cleaned file + QA memo) is a recurring design pattern worth tracking as agentic tools formalise review workflows.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Off-topic: picked up from a non-AI article (airline ops, finance reporting, public-sector policy).",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -1404,7 +1404,7 @@
       "sz": 14,
       "proposalReason": "The article is essentially a vertical-use-case catalogue; tracking this framing helps capture how labs are positioning general tools as domain-specific solutions.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Off-topic: picked up from a non-AI article (airline ops, finance reporting, public-sector policy).",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -1439,7 +1439,7 @@
       "nodeType": "product",
       "proposalReason": "A specific AWS infrastructure term that recurs across foundation model training discussions; worth tracking as a named component in the distributed training stack.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Systems/security term that isn't AI-specific (Windows internals, networking, regex).",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -1477,7 +1477,7 @@
       "nodeType": "product",
       "proposalReason": "New named product from Meta introducing a specific privacy architecture for AI chat; worth tracking as a product category term.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Product or feature name from a single launch; not lexicon vocabulary on its own.",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -1512,7 +1512,7 @@
       "fullName": "Private Processing (Meta)",
       "proposalReason": "Technical infrastructure term with potential cross-product relevance; named primitive in Meta's AI privacy stack.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Product or feature name from a single launch; not lexicon vocabulary on its own.",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -1548,7 +1548,7 @@
       "sz": 14,
       "proposalReason": "A distinct productization layer sitting between raw agent infrastructure and bespoke automation — worth tracking as labs increasingly compete on workflow libraries rather than model capability alone.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Company programme or launch framing (single company, single source).",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -1583,7 +1583,7 @@
       "sz": 14,
       "proposalReason": "A named market framing that may recur as labs compete for the SMB segment and as adoption research develops around this demographic.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Company programme or launch framing (single company, single source).",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -1618,7 +1618,7 @@
       "fullName": "Unelevated Sandbox (Codex Windows)",
       "proposalReason": "A new candidate term representing a distinct sandboxing design pattern with lasting relevance to agentic coding tools deployed on user machines.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Systems/security term that isn't AI-specific (Windows internals, networking, regex).",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -1653,7 +1653,7 @@
       "fullName": "Write-Restricted Token (Windows Process Isolation)",
       "proposalReason": "A precise OS-level mechanism central to the sandbox design described; likely to recur in discussions of agent sandboxing on Windows.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Systems/security term that isn't AI-specific (Windows internals, networking, regex).",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -1688,7 +1688,7 @@
       "fullName": "Process Token (Windows Security Object)",
       "proposalReason": "A foundational OS concept that becomes terminologically relevant when agentic tools must reason about their own execution permissions at the operating-system level.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Systems/security term that isn't AI-specific (Windows internals, networking, regex).",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -1721,7 +1721,7 @@
       "sz": 14,
       "proposalReason": "A specific, nameable instance of metric-gaming behaviour with clear analogues in AI benchmarking and evaluation contexts; worth tracking as a cross-domain example of how organisations optimise reported metrics rather than underlying outcomes.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Off-topic: picked up from a non-AI article (airline ops, finance reporting, public-sector policy).",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -1754,7 +1754,7 @@
       "sz": 14,
       "proposalReason": "A framing concept relevant to AI evaluation design: the argument that proxy metrics diverge from actual user outcomes parallels debates in AI evals about benchmark saturation and whether benchmarks track real capability or user value.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Off-topic: picked up from a non-AI article (airline ops, finance reporting, public-sector policy).",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -1788,7 +1788,7 @@
       "sz": 14,
       "proposalReason": "A cross-domain framing concept with relevance to AI system design: the efficiency-resilience tradeoff maps onto agentic system design questions around retry/recovery, latency budgets, and the costs of over-optimised pipelines.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Off-topic: picked up from a non-AI article (airline ops, finance reporting, public-sector policy).",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -1824,7 +1824,7 @@
       "nodeType": "product",
       "proposalReason": "New consumer AI product term with potential tracking value as a named AI-in-camera feature category, though evidence is thin at one source.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Product or feature name from a single launch; not lexicon vocabulary on its own.",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -1859,7 +1859,7 @@
       "fullName": "Curb Cut Effect (Universal Design Spillover)",
       "proposalReason": "A recurring framing concept in discussions about accessibility-driven technology innovation; worth tracking as it appears in AI product and UX discourse as justification for accessibility-first feature development.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Off-topic: picked up from a non-AI article (airline ops, finance reporting, public-sector policy).",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -1895,7 +1895,7 @@
       "fullName": "Job Design (Work Redesign for AI Integration)",
       "proposalReason": "Emerging as a relevant framing as AI deployment forces organisations to reconsider which tasks humans do, how roles are structured, and what 'optimal' work design looks like — directly intersecting with delegation and workflow concepts in the graph.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Off-topic: picked up from a non-AI article (airline ops, finance reporting, public-sector policy).",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -1930,7 +1930,7 @@
       "fullName": "Open by Default (Public Sector Code Policy)",
       "proposalReason": "The GDS guidance formalises a contested posture around code openness in public institutions — a framing with lasting relevance to how governments manage AI and software risk.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Off-topic: picked up from a non-AI article (airline ops, finance reporting, public-sector policy).",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -1966,7 +1966,7 @@
       "fullName": "SDK Generation (Automated SDK Generation from API Spec)",
       "proposalReason": "Novel infrastructure concept with direct relevance to the agent connectivity layer; not currently tracked in the graph.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Company programme or launch framing (single company, single source).",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -2003,7 +2003,7 @@
       "nodeType": "product",
       "proposalReason": "Named product from Anthropic with a distinct SMB positioning; worth tracking as a market-segment entry alongside the enterprise and individual tiers already in the graph.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Product or feature name from a single launch; not lexicon vocabulary on its own.",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -2038,7 +2038,7 @@
       "fullName": "Total Addressable Market (TAM) in AI Framing",
       "proposalReason": "Relevant as a framing concept for understanding how AI companies justify valuations; the SpaceX S-1 example is a vivid case study in AI TAM inflation.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "News item or one interview's phrasing — an event, deal or general business term rather than AI vocabulary.",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -2076,7 +2076,7 @@
       "nodeType": "product",
       "proposalReason": "New named feature from Anthropic introducing a distinct architectural pattern: a single session orchestrating hundreds of parallel subagents with internal verification. Worth tracking as a concrete product instantiation of long-horizon autonomy and planner-worker patterns.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Company programme or launch framing (single company, single source).",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -2141,7 +2141,7 @@
       "fullName": "Product-Market Fit (AI)",
       "proposalReason": "The linked article (referenced in the excerpt: 'I think Anthropic and OpenAI have found product-market fit') deploys this concept directly in relation to frontier AI companies; worth tracking as a framing term in the AI business cluster.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "News item or one interview's phrasing — an event, deal or general business term rather than AI vocabulary.",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -2177,7 +2177,7 @@
       "nodeType": "product",
       "proposalReason": "First documented sighting of Colossus as a named compute facility accessed by a major AI lab outside SpaceX/xAI; worth tracking as AI compute geography expands beyond hyperscaler data centers.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "News item or one interview's phrasing — an event, deal or general business term rather than AI vocabulary.",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -2220,7 +2220,7 @@
       "fullName": "Anthropic Series H Funding Round",
       "proposalReason": "A valuation milestone and structural financing model (compute deals bundled with equity rounds) that is worth tracking as a business-model term in the AI infrastructure landscape.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "News item or one interview's phrasing — an event, deal or general business term rather than AI vocabulary.",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -2257,7 +2257,7 @@
       "nodeType": "product",
       "proposalReason": "First benchmark of its kind targeting enterprise IT operations with agentic agents; low saturation scores make it a primary source on the current capability-reliability gap in real-world agentic tasks.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Single benchmark or its internal jargon; promote only if it becomes a reference point (GDPval is the one recommended).",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -2292,7 +2292,7 @@
       "fullName": "Recall-Gated Precision (Agentic Benchmark Scoring)",
       "proposalReason": "A distinct and transferable evaluation design pattern for agentic tasks where over-investigation is penalised; relevant beyond this specific benchmark.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Single benchmark or its internal jargon; promote only if it becomes a reference point (GDPval is the one recommended).",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -2328,7 +2328,7 @@
       "fullName": "Site Reliability Engineering Tasks (Agentic AI Evaluation)",
       "proposalReason": "Establishes SRE as a named evaluation domain for agentic AI, with methodological implications for how enterprise-readiness benchmarks are structured.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Single benchmark or its internal jargon; promote only if it becomes a reference point (GDPval is the one recommended).",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -2367,7 +2367,7 @@
       "nodeType": "product",
       "proposalReason": "A named system with a distinct hybrid architecture (LLM + symbolic verifier loop) relevant to AI-assisted mathematics and formal reasoning tracking.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Single benchmark or its internal jargon; promote only if it becomes a reference point (GDPval is the one recommended).",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -2404,7 +2404,7 @@
       "fullName": "Responses API (OpenAI-compatible LLM Server Protocol)",
       "proposalReason": "A de-facto interoperability standard for LLM serving that enables modular AI system design; worth tracking as it becomes a portability layer across open-source and proprietary stacks.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Product or feature name from a single launch; not lexicon vocabulary on its own.",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -2439,7 +2439,7 @@
       "nodeType": "product",
       "proposalReason": "A new vertical product entry worth tracking as Anthropic expands from API provider into domain-specific applications.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Product or feature name from a single launch; not lexicon vocabulary on its own.",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -2476,7 +2476,7 @@
       "fullName": "Productive Capital Business (AI Infrastructure Framing)",
       "proposalReason": "A useful analytic concept for understanding the structural shift in AI company economics; distinct from existing graph terms and relevant to how infrastructure investment is being reframed.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "News item or one interview's phrasing — an event, deal or general business term rather than AI vocabulary.",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -2512,7 +2512,7 @@
       "fullName": "Asset-Light Business Model (Platform Economics)",
       "proposalReason": "A named economic framing that recurs in AI business-model analysis and is directly contrasted with the productive-capital shift in this article; useful for tracking the evolving discourse around platform economics in the AI era.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "News item or one interview's phrasing — an event, deal or general business term rather than AI vocabulary.",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -2550,7 +2550,7 @@
       "nodeType": "product",
       "proposalReason": "A concrete, named implementation of agent sandboxing from a major platform vendor — useful as an anchor term for the pattern of OS-level agent containment.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Product or feature name from a single launch; not lexicon vocabulary on its own.",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -2587,7 +2587,7 @@
       "nodeType": "product",
       "proposalReason": "First sighting of Microsoft's own reasoning model — marks a significant strategic shift in Microsoft's AI model dependency posture.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Product or feature name from a single launch; not lexicon vocabulary on its own.",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -2625,7 +2625,7 @@
       "nodeType": "product",
       "proposalReason": "First sighting of Microsoft's named always-on agent product built on OpenClaw — a concrete instance of the agentic assistant category with enterprise positioning.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Product or feature name from a single launch; not lexicon vocabulary on its own.",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -2663,7 +2663,7 @@
       "nodeType": "product",
       "proposalReason": "New Anthropic product materialized in this announcement; distinct from the Claude model line and worth tracking as a named security offering.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Product or feature name from a single launch; not lexicon vocabulary on its own.",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -2701,7 +2701,7 @@
       "nodeType": "product",
       "proposalReason": "New named model version introduced in this announcement; distinct from previously tracked Claude model entries and serves as the public frontier baseline for Claude Security.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Product or feature name from a single launch; not lexicon vocabulary on its own.",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -2736,7 +2736,7 @@
       "nodeType": "product",
       "proposalReason": "A distinct named Google product appearing in consumer AI search context; worth tracking as a UI pattern for visual search and agentic shopping flows.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Product or feature name from a single launch; not lexicon vocabulary on its own.",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -2771,7 +2771,7 @@
       "nodeType": "product",
       "proposalReason": "A distinct named AI-assisted consumer product with lasting relevance as a pattern in multimodal, vision-grounded shopping assistance.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Product or feature name from a single launch; not lexicon vocabulary on its own.",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -2807,7 +2807,7 @@
       "fullName": "Self-Generated Rejection Pairs (DPO without Human Annotation)",
       "proposalReason": "A novel methodological concept that generalises DPO beyond chat alignment; potentially useful across any structured generation domain where failure modes are identifiable.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Implementation detail from one paper or blog post; too specialist for the lexicon.",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -2843,7 +2843,7 @@
       "fullName": "SFT Ceiling (Supervised Fine-Tuning Failure Mode Ceiling)",
       "proposalReason": "A crisp, useful framing of a structural limitation of SFT that practitioners repeatedly encounter but rarely have a name for.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Implementation detail from one paper or blog post; too specialist for the lexicon.",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -2882,7 +2882,7 @@
       "nodeType": "product",
       "proposalReason": "New candidate: a named product that Thompson uses as a substantive framing device to argue about what AI PC hardware gets wrong about the agentic era's compute requirements.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Product or feature name from a single launch; not lexicon vocabulary on its own.",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -2920,7 +2920,7 @@
       "fullName": "Unmetered Intelligence (Edge AI Framing)",
       "proposalReason": "New candidate: a named framing term from a CEO keynote that captures a specific argument about the value proposition of local AI compute — worth tracking as it may recur in AI PC marketing and edge-inference debates.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "News item or one interview's phrasing — an event, deal or general business term rather than AI vocabulary.",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -2957,7 +2957,7 @@
       "nodeType": "product",
       "proposalReason": "New term naming a specific program structure introduced in this announcement; distinct enough from the parent program to warrant its own entry as an institutional mechanism.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Company programme or launch framing (single company, single source).",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -2994,7 +2994,7 @@
       "nodeType": "product",
       "proposalReason": "New term describing a specific credentialling mechanism with lasting relevance to how enterprise AI deployment expertise is formally recognised and measured.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Company programme or launch framing (single company, single source).",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -3029,7 +3029,7 @@
       "fullName": "Hill-Climbing Machine (Nadella/Microsoft Framing)",
       "proposalReason": "Novel strategic framing from a primary source interview; worth tracking as Nadella articulates it as a core competitive concept for Microsoft's AI platform play.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "News item or one interview's phrasing — an event, deal or general business term rather than AI vocabulary.",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -3064,7 +3064,7 @@
       "fullName": "Token Capital (AI Era Factor of Production)",
       "proposalReason": "A potentially durable conceptual coinage from a CEO-level primary source; if adopted broadly, it could become a canonical framing term for AI business strategy.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "News item or one interview's phrasing — an event, deal or general business term rather than AI vocabulary.",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -3100,7 +3100,7 @@
       "fullName": "Clean Lineage (Model Training Provenance)",
       "proposalReason": "Emerging term for a real and consequential distinction in how labs characterise model provenance and independence; worth watching as IP and model-lineage disputes intensify.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "News item or one interview's phrasing — an event, deal or general business term rather than AI vocabulary.",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -3134,7 +3134,7 @@
       "sz": 14,
       "proposalReason": "A new framing term for a notable editorial/governance pattern — companies quietly retracting safety-language statements post-publication.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "News item or one interview's phrasing — an event, deal or general business term rather than AI vocabulary.",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -3169,7 +3169,7 @@
       "nodeType": "product",
       "proposalReason": "New term — a named, large-scale AI infrastructure project with documented political and environmental controversy, worth tracking as a case study in AI data center land-use disputes.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "News item or one interview's phrasing — an event, deal or general business term rather than AI vocabulary.",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -3206,7 +3206,7 @@
       "nodeType": "product",
       "proposalReason": "New benchmark not yet in the graph; materialised as the article's primary subject.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Single benchmark or its internal jargon; promote only if it becomes a reference point (GDPval is the one recommended).",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -3242,7 +3242,7 @@
       "nodeType": "product",
       "proposalReason": "New named system for synthetic benchmark data generation with a distinctive joint-generation architecture worth tracking.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Single benchmark or its internal jargon; promote only if it becomes a reference point (GDPval is the one recommended).",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -3278,7 +3278,7 @@
       "fullName": "Unsatisfiable Goal Scenario (Agent Evaluation)",
       "proposalReason": "A specific evaluation concept with practical relevance to agent reliability; not yet in the graph or longlist.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Single benchmark or its internal jargon; promote only if it becomes a reference point (GDPval is the one recommended).",
       "retiredBy": "nicole-review-2026-10-16"
     },
@@ -3315,7 +3315,7 @@
       "fullName": "Multi-Intent Call (Voice Agent Evaluation)",
       "proposalReason": "A named scenario taxonomy from a published benchmark; relevant to how voice agents are evaluated on complex, realistic call patterns.",
       "status": "retired",
-      "retiredAt": "2026-10-16T07:07:24.303Z",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
       "retiredReason": "Single benchmark or its internal jargon; promote only if it becomes a reference point (GDPval is the one recommended).",
       "retiredBy": "nicole-review-2026-10-16"
     }

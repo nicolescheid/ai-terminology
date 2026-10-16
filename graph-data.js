@@ -2052,4 +2052,40 @@ const NODES = [
  rels:['personal-software'],
  refs:[{n:1,src:'Simon Willison\'s Weblog, 2026-04',q:'Micro-App Simon Willison\'s Weblog',url:'https://simonwillison.net/2026/Apr/30/rss-vibe-coded-apps/#atom-everything'}]},
 
+{id:'post-training-scaling',label:'Post-Training Scaling',clusters:['technical'],sz:14,
+ synonymOf:'post-training',
+ def:'Capability gains from spending more compute after pretraining — more fine-tuning, reinforcement learning, and synthetic data — treated as a scaling regime alongside pretraining scaling.',
+ rels:['post-training'],
+ refs:[{n:1,src:'Hugging Face Blog, 2026-05',q:'Post-Training Scaling Hugging Face Blog',url:'https://huggingface.co/blog/amazon/foundation-model-building-blocks'}]},
+
+{id:'agentic-inference',label:'Agentic Inference',clusters:['technical','agentic'],sz:14,
+ synonymOf:'inference-shift',
+ def:'Ben Thompson\'s term for inference with no human waiting on each answer — agents working autonomously, where throughput and cost matter more than latency. One half of the Inference Shift.',
+ rels:['inference-shift'],
+ refs:[{n:1,src:'Stratechery, 2026-05',q:'Agentic Inference Stratechery',url:'https://stratechery.com/2026/shifting-alliances-in-a-changing-world/'}]},
+
+{id:'answer-inference',label:'Answer Inference',clusters:['technical'],sz:14,
+ synonymOf:'inference-shift',
+ def:'Ben Thompson\'s term for the familiar mode of inference in which a person asks and waits for a reply, making latency the priority. Contrasted with agentic inference in the Inference Shift.',
+ rels:['inference-shift'],
+ refs:[{n:1,src:'Stratechery, 2026-05',q:'Answer Inference Stratechery',url:'https://stratechery.com/2026/shifting-alliances-in-a-changing-world/'}]},
+
+{id:'ai-training-chip',label:'AI Training Chip',clusters:['technical','landscape'],sz:14,
+ synonymOf:'ai-accelerator',
+ def:'An AI accelerator optimised for training large models — prioritising large unified memory and fast interconnect — as distinct from chips tuned for inference.',
+ rels:['ai-accelerator'],
+ refs:[{n:1,src:'Google AI Blog, 2026-04',q:'AI Training Chip Google AI Blog',url:'https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/tpus-8t-8i-cloud-next/'}]},
+
+{id:'private-eval-dataset',label:'Private Evaluation Dataset',clusters:['technical'],sz:14,
+ synonymOf:'data-contamination',
+ def:'A benchmark whose test items are withheld from model developers and the public, so scores cannot be inflated by training on them — the main defence against data contamination.',
+ rels:['data-contamination'],
+ refs:[{n:1,src:'Hugging Face Blog, 2026-05',q:'Private Evaluation Dataset Hugging Face Blog',url:'https://huggingface.co/blog/open-asr-leaderboard-private-data'}]},
+
+{id:'persona-driven-jailbreaking',label:'Persona-Driven Jailbreaking',clusters:['security'],sz:14,
+ synonymOf:'jailbreak',
+ def:'A jailbreak technique in which the attacker asks the model to adopt a persona — an expert, an unrestricted character — to elicit responses it would otherwise refuse.',
+ rels:['jailbreak'],
+ refs:[{n:1,src:'The Verge — AI, 2026-05',q:'Persona-Driven Jailbreaking The Verge — AI',url:'https://www.theverge.com/tech/928007/google-ai-zero-day-exploit-stopped'}]},
+
 ];

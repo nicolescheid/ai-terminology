@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-16T07:07:24.303Z",
+    "generatedAt": "2026-10-16T07:18:12.092Z",
     "entryCount": 128,
     "note": "Lexi-managed Tier 2 longlist — terms under observation, awaiting evidence to support promotion to the graph (Tier 1)."
   },
@@ -140,10 +140,9 @@
       "sz": 14,
       "proposalReason": "TPU 8t is described as optimized for training even the most complex models on a single massive memory pool, representing a distinct and trackable hardware category alongside inference chips.",
       "status": "promoted",
-      "promotedAt": "2026-10-16T07:07:24.303Z",
-      "promotedToGraphNodeId": "ai-accelerator",
-      "mergedInto": "ai-accelerator",
-      "promotedVia": "merged into existing node (longlist review 2026-10-16)"
+      "promotedAt": "2026-10-16T07:18:12.092Z",
+      "promotedToGraphNodeId": "ai-training-chip",
+      "promotedVia": "alias (longlist review 2026-10-16)"
     },
     {
       "id": "purpose-built-ai-infrastructure",
@@ -826,7 +825,7 @@
           "title": "Zolkowski et al., ICLR 2026",
           "sourceLabel": "Zolkowski et al., ICLR 2026",
           "publishedAt": "2026",
-          "firstSeen": "2026-10-16T07:07:24.303Z",
+          "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
         },
         {
@@ -835,7 +834,7 @@
           "title": "Anwar, Krueger et al., arXiv",
           "sourceLabel": "Anwar, Krueger et al., arXiv",
           "publishedAt": "2026-02",
-          "firstSeen": "2026-10-16T07:07:24.303Z",
+          "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
         }
       ],
@@ -847,7 +846,7 @@
       "fullName": "LLM Steganography (Hidden Signal in Model Output)",
       "proposalReason": "Article references a safety paper on decision-theoretic formalization of steganography with applications to LLM monitoring — a distinct safety/security concept not yet in the graph or longlist.",
       "status": "promoted",
-      "promotedAt": "2026-10-16T07:07:24.303Z",
+      "promotedAt": "2026-10-16T07:18:12.092Z",
       "promotedToGraphNodeId": "llm-steganography",
       "promotedVia": "direct-curation (longlist review 2026-10-16)"
     },
@@ -881,7 +880,7 @@
           "title": "Anthropic",
           "sourceLabel": "Anthropic",
           "publishedAt": "2025-04",
-          "firstSeen": "2026-10-16T07:07:24.303Z",
+          "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
         },
         {
@@ -890,7 +889,7 @@
           "title": "Arcuschin et al., arXiv",
           "sourceLabel": "Arcuschin et al., arXiv",
           "publishedAt": "2025-03",
-          "firstSeen": "2026-10-16T07:07:24.303Z",
+          "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
         }
       ],
@@ -902,7 +901,7 @@
       "fullName": "Chain-of-Thought Faithfulness (Reasoning Theater)",
       "proposalReason": "Article cites a paper titled 'Reasoning Theater: Disentangling Model Beliefs from Chain-of-Thought' — a distinct and recurring concept in AI safety/interpretability not yet tracked.",
       "status": "promoted",
-      "promotedAt": "2026-10-16T07:07:24.303Z",
+      "promotedAt": "2026-10-16T07:18:12.092Z",
       "promotedToGraphNodeId": "cot-faithfulness",
       "promotedVia": "direct-curation (longlist review 2026-10-16)"
     },
@@ -1025,7 +1024,7 @@
           "title": "Fortune",
           "sourceLabel": "Fortune",
           "publishedAt": "2026-03",
-          "firstSeen": "2026-10-16T07:07:24.303Z",
+          "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
         },
         {
@@ -1034,7 +1033,7 @@
           "title": "ReliabilityBench, arXiv",
           "sourceLabel": "ReliabilityBench, arXiv",
           "publishedAt": "2026-01",
-          "firstSeen": "2026-10-16T07:07:24.303Z",
+          "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
         }
       ],
@@ -1046,7 +1045,7 @@
       "fullName": "AI Agent Reliability",
       "proposalReason": "The paper's primary subject; introduces a structured, engineering-grounded definition of reliability as distinct from accuracy. High recurrence potential as agent deployment scales.",
       "status": "promoted",
-      "promotedAt": "2026-10-16T07:07:24.303Z",
+      "promotedAt": "2026-10-16T07:18:12.092Z",
       "promotedToGraphNodeId": "agent-reliability",
       "promotedVia": "direct-curation (longlist review 2026-10-16)"
     },
@@ -1080,7 +1079,7 @@
           "title": "Anthropic (Kadavath et al.)",
           "sourceLabel": "Anthropic (Kadavath et al.)",
           "publishedAt": "2022-07",
-          "firstSeen": "2026-10-16T07:07:24.303Z",
+          "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
         },
         {
@@ -1089,7 +1088,7 @@
           "title": "Guo et al., ICML",
           "sourceLabel": "Guo et al., ICML",
           "publishedAt": "2017",
-          "firstSeen": "2026-10-16T07:07:24.303Z",
+          "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
         }
       ],
@@ -1101,7 +1100,7 @@
       "fullName": "Model Calibration (Confidence Calibration)",
       "proposalReason": "Explicitly identified as one of the four core reliability dimensions in the paper and measured empirically across 14 models. Not currently in either tier.",
       "status": "promoted",
-      "promotedAt": "2026-10-16T07:07:24.303Z",
+      "promotedAt": "2026-10-16T07:18:12.092Z",
       "promotedToGraphNodeId": "calibration",
       "promotedVia": "direct-curation (longlist review 2026-10-16)"
     },
@@ -1136,7 +1135,7 @@
           "title": "Dwarkesh Podcast (Karpathy)",
           "sourceLabel": "Dwarkesh Podcast (Karpathy)",
           "publishedAt": "2025-10",
-          "firstSeen": "2026-10-16T07:07:24.303Z",
+          "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
         },
         {
@@ -1145,7 +1144,7 @@
           "title": "Foundation Capital",
           "sourceLabel": "Foundation Capital",
           "publishedAt": "2026-10",
-          "firstSeen": "2026-10-16T07:07:24.303Z",
+          "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
         }
       ],
@@ -1157,7 +1156,7 @@
       "fullName": "Nines of Reliability (High-Availability Threshold)",
       "proposalReason": "Introduced in the article as a concrete threshold framing for when agent reliability is sufficient for autonomous deployment; captures a specific and reusable engineering lens for AI agent standards.",
       "status": "promoted",
-      "promotedAt": "2026-10-16T07:07:24.303Z",
+      "promotedAt": "2026-10-16T07:18:12.092Z",
       "promotedToGraphNodeId": "nines-of-reliability",
       "promotedVia": "direct-curation (longlist review 2026-10-16)"
     },
@@ -1193,7 +1192,7 @@
       "sz": 14,
       "proposalReason": "The article explicitly introduces 'micro-app' as a distinct framing — tools shipped so frequently and personally that the publishing cadence resembles blogging. Worth tracking as vibe-coding matures and produces an ecology of small tools.",
       "status": "promoted",
-      "promotedAt": "2026-10-16T07:07:24.303Z",
+      "promotedAt": "2026-10-16T07:18:12.092Z",
       "promotedToGraphNodeId": "micro-app",
       "promotedVia": "alias (longlist review 2026-10-16)"
     },
@@ -1226,7 +1225,7 @@
           "title": "Nicolas Deville",
           "sourceLabel": "Nicolas Deville",
           "publishedAt": "2026-10",
-          "firstSeen": "2026-10-16T07:07:24.303Z",
+          "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
         },
         {
@@ -1235,7 +1234,7 @@
           "title": "Addy Osmani",
           "sourceLabel": "Addy Osmani",
           "publishedAt": null,
-          "firstSeen": "2026-10-16T07:07:24.303Z",
+          "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
         }
       ],
@@ -1246,7 +1245,7 @@
       "sz": 14,
       "proposalReason": "The article frames vibe-coding as making apps 'more personal, more situated' — a meaningful conceptual shift in who software is for and how it is distributed, worth observing as a recurring idea.",
       "status": "promoted",
-      "promotedAt": "2026-10-16T07:07:24.303Z",
+      "promotedAt": "2026-10-16T07:18:12.092Z",
       "promotedToGraphNodeId": "personal-software",
       "promotedVia": "direct-curation (longlist review 2026-10-16)"
     },
@@ -1506,7 +1505,7 @@
           "title": "Adweek",
           "sourceLabel": "Adweek",
           "publishedAt": "2025-07",
-          "firstSeen": "2026-10-16T07:07:24.303Z",
+          "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
         },
         {
@@ -1515,7 +1514,7 @@
           "title": "Search Engine Journal",
           "sourceLabel": "Search Engine Journal",
           "publishedAt": "2025-07",
-          "firstSeen": "2026-10-16T07:07:24.303Z",
+          "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
         }
       ],
@@ -1528,7 +1527,7 @@
       "nodeType": "product",
       "proposalReason": "AI Mode appears as a named Google Search product feature with enough specificity to warrant tracking as a distinct product entry.",
       "status": "promoted",
-      "promotedAt": "2026-10-16T07:07:24.303Z",
+      "promotedAt": "2026-10-16T07:18:12.092Z",
       "promotedToGraphNodeId": "google-ai-mode",
       "promotedVia": "direct-curation (longlist review 2026-10-16)"
     },
@@ -1660,7 +1659,7 @@
           "title": "Patwardhan et al., ICLR 2026",
           "sourceLabel": "Patwardhan et al., ICLR 2026",
           "publishedAt": "2026",
-          "firstSeen": "2026-10-16T07:07:24.303Z",
+          "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
         },
         {
@@ -1669,7 +1668,7 @@
           "title": "Artificial Analysis",
           "sourceLabel": "Artificial Analysis",
           "publishedAt": "2026",
-          "firstSeen": "2026-10-16T07:07:24.303Z",
+          "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
         }
       ],
@@ -1680,7 +1679,7 @@
       "sz": 16,
       "proposalReason": "A newly named professional-work benchmark from OpenAI that spans 44 occupations; distinct from existing coding or reasoning evals and likely to appear in future model comparisons.",
       "status": "promoted",
-      "promotedAt": "2026-10-16T07:07:24.303Z",
+      "promotedAt": "2026-10-16T07:18:12.092Z",
       "promotedToGraphNodeId": "gdpval",
       "promotedVia": "direct-curation (longlist review 2026-10-16)"
     },
@@ -2070,7 +2069,7 @@
           "title": "Kwon et al., arXiv/SOSP",
           "sourceLabel": "Kwon et al., arXiv/SOSP",
           "publishedAt": "2023-09",
-          "firstSeen": "2026-10-16T07:07:24.303Z",
+          "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
         },
         {
@@ -2079,7 +2078,7 @@
           "title": "vLLM docs",
           "sourceLabel": "vLLM docs",
           "publishedAt": "2026",
-          "firstSeen": "2026-10-16T07:07:24.303Z",
+          "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
         }
       ],
@@ -2092,7 +2091,7 @@
       "nodeType": "product",
       "proposalReason": "vLLM appears as the core inference runtime in this and many other self-hosted LLM deployment articles; it is a widely referenced piece of AI infrastructure worth tracking as a named tool.",
       "status": "promoted",
-      "promotedAt": "2026-10-16T07:07:24.303Z",
+      "promotedAt": "2026-10-16T07:18:12.092Z",
       "promotedToGraphNodeId": "vllm",
       "promotedVia": "direct-curation (longlist review 2026-10-16)"
     },
@@ -2480,7 +2479,7 @@
       "fullName": "Benchmaxxing (Benchmark-Specific Optimization)",
       "proposalReason": "A new, memorable coinage for an important and recurring failure mode in AI evaluation — more specific and more vivid than the existing 'benchmark gaming' framing. Worth tracking as it may propagate.",
       "status": "promoted",
-      "promotedAt": "2026-10-16T07:07:24.303Z",
+      "promotedAt": "2026-10-16T07:18:12.092Z",
       "promotedToGraphNodeId": "benchmaxxing",
       "promotedVia": "alias (longlist review 2026-10-16)"
     },
@@ -2513,7 +2512,7 @@
           "title": "Xu et al., arXiv (survey)",
           "sourceLabel": "Xu et al., arXiv (survey)",
           "publishedAt": "2024-06",
-          "firstSeen": "2026-10-16T07:07:24.303Z",
+          "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
         },
         {
@@ -2522,7 +2521,7 @@
           "title": "Sainz et al., EMNLP Findings",
           "sourceLabel": "Sainz et al., EMNLP Findings",
           "publishedAt": "2023-12",
-          "firstSeen": "2026-10-16T07:07:24.303Z",
+          "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
         }
       ],
@@ -2533,7 +2532,7 @@
       "sz": 14,
       "proposalReason": "A foundational concept in evaluation integrity that is increasingly central to leaderboard design decisions — the article treats it as the primary threat motivating private dataset adoption.",
       "status": "promoted",
-      "promotedAt": "2026-10-16T07:07:24.303Z",
+      "promotedAt": "2026-10-16T07:18:12.092Z",
       "promotedToGraphNodeId": "data-contamination",
       "promotedVia": "direct-curation (longlist review 2026-10-16)"
     },
@@ -2569,10 +2568,9 @@
       "fullName": "Private Evaluation Dataset (Hidden Test Set)",
       "proposalReason": "A concrete methodological response to benchmaxxing and contamination — worth tracking as a countermeasure pattern in evaluation infrastructure.",
       "status": "promoted",
-      "promotedAt": "2026-10-16T07:07:24.303Z",
-      "promotedToGraphNodeId": "data-contamination",
-      "mergedInto": "data-contamination",
-      "promotedVia": "merged into existing node (longlist review 2026-10-16)"
+      "promotedAt": "2026-10-16T07:18:12.092Z",
+      "promotedToGraphNodeId": "private-eval-dataset",
+      "promotedVia": "alias (longlist review 2026-10-16)"
     },
     {
       "id": "word-error-rate",
@@ -2602,7 +2600,7 @@
           "title": "Kensho",
           "sourceLabel": "Kensho",
           "publishedAt": null,
-          "firstSeen": "2026-10-16T07:07:24.303Z",
+          "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
         },
         {
@@ -2611,7 +2609,7 @@
           "title": "ISIP, Mississippi State Univ.",
           "sourceLabel": "ISIP, Mississippi State Univ.",
           "publishedAt": null,
-          "firstSeen": "2026-10-16T07:07:24.303Z",
+          "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
         }
       ],
@@ -2623,7 +2621,7 @@
       "fullName": "Word Error Rate (WER)",
       "proposalReason": "The primary evaluation metric for the ASR domain; relevant as the graph expands to cover speech and audio AI capabilities alongside text-based model evaluation.",
       "status": "promoted",
-      "promotedAt": "2026-10-16T07:07:24.303Z",
+      "promotedAt": "2026-10-16T07:18:12.092Z",
       "promotedToGraphNodeId": "word-error-rate",
       "promotedVia": "direct-curation (longlist review 2026-10-16)"
     },
@@ -2656,7 +2654,7 @@
           "title": "SemiAnalysis",
           "sourceLabel": "SemiAnalysis",
           "publishedAt": "2026-05",
-          "firstSeen": "2026-10-16T07:07:24.303Z",
+          "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
         },
         {
@@ -2665,7 +2663,7 @@
           "title": "The Register",
           "sourceLabel": "The Register",
           "publishedAt": "2026-08",
-          "firstSeen": "2026-10-16T07:07:24.303Z",
+          "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
         }
       ],
@@ -2678,7 +2676,7 @@
       "nodeType": "product",
       "proposalReason": "A new product category concept — the wafer-scale chip — that is central to the article's thesis about hardware heterogeneity in AI inference. Distinct enough from generic 'AI accelerator' framing to merit its own entry.",
       "status": "promoted",
-      "promotedAt": "2026-10-16T07:07:24.303Z",
+      "promotedAt": "2026-10-16T07:18:12.092Z",
       "promotedToGraphNodeId": "wafer-scale-engine",
       "promotedVia": "direct-curation (longlist review 2026-10-16)"
     },
@@ -2711,7 +2709,7 @@
           "title": "Microsoft Research (Splitwise)",
           "sourceLabel": "Microsoft Research (Splitwise)",
           "publishedAt": "2024-01",
-          "firstSeen": "2026-10-16T07:07:24.303Z",
+          "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
         },
         {
@@ -2720,7 +2718,7 @@
           "title": "DistServe, arXiv/OSDI",
           "sourceLabel": "DistServe, arXiv/OSDI",
           "publishedAt": "2024-01",
-          "firstSeen": "2026-10-16T07:07:24.303Z",
+          "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
         }
       ],
@@ -2732,7 +2730,7 @@
       "fullName": "Prefill–Decode Split (Inference Pipeline Decomposition)",
       "proposalReason": "A technically precise concept the article defines in detail. Directly relevant to understanding why inference and training require different hardware, and foundational to any serious treatment of AI compute architecture.",
       "status": "promoted",
-      "promotedAt": "2026-10-16T07:07:24.303Z",
+      "promotedAt": "2026-10-16T07:18:12.092Z",
       "promotedToGraphNodeId": "prefill-decode-disaggregation",
       "promotedVia": "direct-curation (longlist review 2026-10-16)"
     },
@@ -2857,7 +2855,7 @@
           "title": "404 Media (Jason Koebler)",
           "sourceLabel": "404 Media (Jason Koebler)",
           "publishedAt": "2024-05",
-          "firstSeen": "2026-10-16T07:07:24.303Z",
+          "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
         },
         {
@@ -2866,7 +2864,7 @@
           "title": "Fast Company ME",
           "sourceLabel": "Fast Company ME",
           "publishedAt": "2026-02",
-          "firstSeen": "2026-10-16T07:07:24.303Z",
+          "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
         }
       ],
@@ -2877,7 +2875,7 @@
       "sz": 14,
       "proposalReason": "A vivid and precise framing term for a real phenomenon — the hybrid authenticity crisis of AI-saturated online spaces. Strong candidate for lasting terminological relevance.",
       "status": "promoted",
-      "promotedAt": "2026-10-16T07:07:24.303Z",
+      "promotedAt": "2026-10-16T07:18:12.092Z",
       "promotedToGraphNodeId": "zombie-internet",
       "promotedVia": "direct-curation (longlist review 2026-10-16)"
     },
@@ -2909,7 +2907,7 @@
           "title": "Wikipedia",
           "sourceLabel": "Wikipedia",
           "publishedAt": null,
-          "firstSeen": "2026-10-16T07:07:24.303Z",
+          "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
         },
         {
@@ -2918,7 +2916,7 @@
           "title": "Forbes Australia",
           "sourceLabel": "Forbes Australia",
           "publishedAt": "2025-10",
-          "firstSeen": "2026-10-16T07:07:24.303Z",
+          "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
         }
       ],
@@ -2929,7 +2927,7 @@
       "sz": 14,
       "proposalReason": "Foundational foil concept for the 'Zombie Internet' framing; useful to track as a paired term.",
       "status": "promoted",
-      "promotedAt": "2026-10-16T07:07:24.303Z",
+      "promotedAt": "2026-10-16T07:18:12.092Z",
       "promotedToGraphNodeId": "dead-internet-theory",
       "promotedVia": "direct-curation (longlist review 2026-10-16)"
     },
@@ -2962,7 +2960,7 @@
           "title": "TechCrunch (Merriam-Webster WOTY)",
           "sourceLabel": "TechCrunch (Merriam-Webster WOTY)",
           "publishedAt": "2025-12",
-          "firstSeen": "2026-10-16T07:07:24.303Z",
+          "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
         },
         {
@@ -2971,7 +2969,7 @@
           "title": "Fast Company ME",
           "sourceLabel": "Fast Company ME",
           "publishedAt": "2026-02",
-          "firstSeen": "2026-10-16T07:07:24.303Z",
+          "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
         }
       ],
@@ -2982,7 +2980,7 @@
       "sz": 14,
       "proposalReason": "Willison's own tagging of this post with 'slop' signals it as an established term in his vocabulary; the Koebler piece it links to is centrally about this phenomenon.",
       "status": "promoted",
-      "promotedAt": "2026-10-16T07:07:24.303Z",
+      "promotedAt": "2026-10-16T07:18:12.092Z",
       "promotedToGraphNodeId": "ai-slop",
       "promotedVia": "direct-curation (longlist review 2026-10-16)"
     },
@@ -3050,10 +3048,9 @@
       "fullName": "Persona-Driven Jailbreaking (Attacker Jailbreak Technique)",
       "proposalReason": "A named attacker technique distinct from generic jailbreaking, materialising in active threat-intelligence reports.",
       "status": "promoted",
-      "promotedAt": "2026-10-16T07:07:24.303Z",
-      "promotedToGraphNodeId": "jailbreak",
-      "mergedInto": "jailbreak",
-      "promotedVia": "merged into existing node (longlist review 2026-10-16)"
+      "promotedAt": "2026-10-16T07:18:12.092Z",
+      "promotedToGraphNodeId": "persona-driven-jailbreaking",
+      "promotedVia": "alias (longlist review 2026-10-16)"
     },
     {
       "id": "forward-deployed-engineers",
@@ -3085,7 +3082,7 @@
           "title": "a16z",
           "sourceLabel": "a16z",
           "publishedAt": "2026-01",
-          "firstSeen": "2026-10-16T07:07:24.303Z",
+          "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
         },
         {
@@ -3094,7 +3091,7 @@
           "title": "Fortune",
           "sourceLabel": "Fortune",
           "publishedAt": "2026-09",
-          "firstSeen": "2026-10-16T07:07:24.303Z",
+          "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
         }
       ],
@@ -3106,7 +3103,7 @@
       "fullName": "Forward Deployed Engineers (AI Deployment Specialists)",
       "proposalReason": "A product-deployment pattern with lasting industry significance: the term marks a structural shift in how AI vendors go to market — not as self-serve SaaS but as embedded implementation teams.",
       "status": "promoted",
-      "promotedAt": "2026-10-16T07:07:24.303Z",
+      "promotedAt": "2026-10-16T07:18:12.092Z",
       "promotedToGraphNodeId": "forward-deployed-engineer",
       "promotedVia": "direct-curation (longlist review 2026-10-16)"
     },
@@ -3142,10 +3139,9 @@
       "sz": 14,
       "proposalReason": "Materially introduced as a distinct scaling regime; the 'three scaling laws' framing elevates post-training to a first-class axis alongside pre-training compute, making this worth tracking as the term stabilises.",
       "status": "promoted",
-      "promotedAt": "2026-10-16T07:07:24.303Z",
-      "promotedToGraphNodeId": "post-training",
-      "mergedInto": "post-training",
-      "promotedVia": "merged into existing node (longlist review 2026-10-16)"
+      "promotedAt": "2026-10-16T07:18:12.092Z",
+      "promotedToGraphNodeId": "post-training-scaling",
+      "promotedVia": "alias (longlist review 2026-10-16)"
     },
     {
       "id": "test-time-compute-scaling",
@@ -3177,7 +3173,7 @@
           "title": "Snell et al., arXiv",
           "sourceLabel": "Snell et al., arXiv",
           "publishedAt": "2024-08",
-          "firstSeen": "2026-10-16T07:07:24.303Z",
+          "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
         },
         {
@@ -3186,7 +3182,7 @@
           "title": "NVIDIA Blog",
           "sourceLabel": "NVIDIA Blog",
           "publishedAt": "2025-02",
-          "firstSeen": "2026-10-16T07:07:24.303Z",
+          "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
         }
       ],
@@ -3197,7 +3193,7 @@
       "sz": 14,
       "proposalReason": "Distinct from training-time scaling and increasingly foregrounded in infrastructure planning; the article treats it as a first-class scaling axis deserving dedicated infrastructure investment.",
       "status": "promoted",
-      "promotedAt": "2026-10-16T07:07:24.303Z",
+      "promotedAt": "2026-10-16T07:18:12.092Z",
       "promotedToGraphNodeId": "test-time-compute-scaling",
       "promotedVia": "direct-curation (longlist review 2026-10-16)"
     },
@@ -3343,7 +3339,7 @@
           "title": "National Forum for Teaching & Learning (Ireland)",
           "sourceLabel": "National Forum for Teaching & Learning (Ireland)",
           "publishedAt": "2025-06",
-          "firstSeen": "2026-10-16T07:07:24.303Z",
+          "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
         },
         {
@@ -3352,7 +3348,7 @@
           "title": "UT Austin Office of the Provost",
           "sourceLabel": "UT Austin Office of the Provost",
           "publishedAt": "2026",
-          "firstSeen": "2026-10-16T07:07:24.303Z",
+          "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
         }
       ],
@@ -3363,7 +3359,7 @@
       "sz": 14,
       "proposalReason": "A new named literacy construct with potential staying power as AI adoption training becomes its own category of product and discourse.",
       "status": "promoted",
-      "promotedAt": "2026-10-16T07:07:24.303Z",
+      "promotedAt": "2026-10-16T07:18:12.092Z",
       "promotedToGraphNodeId": "ai-fluency",
       "promotedVia": "direct-curation (longlist review 2026-10-16)"
     },
@@ -3399,10 +3395,9 @@
       "sz": 14,
       "proposalReason": "New candidate: the article introduces a specific sub-category of inference with architectural implications distinct from the general inference term already in the graph.",
       "status": "promoted",
-      "promotedAt": "2026-10-16T07:07:24.303Z",
-      "promotedToGraphNodeId": "inference-shift",
-      "mergedInto": "inference-shift",
-      "promotedVia": "merged into existing node (longlist review 2026-10-16)"
+      "promotedAt": "2026-10-16T07:18:12.092Z",
+      "promotedToGraphNodeId": "agentic-inference",
+      "promotedVia": "alias (longlist review 2026-10-16)"
     },
     {
       "id": "answer-inference",
@@ -3434,10 +3429,9 @@
       "sz": 14,
       "proposalReason": "New candidate: a named sub-category of inference introduced alongside Agentic Inference; useful as a paired concept for the architectural distinction Thompson is drawing.",
       "status": "promoted",
-      "promotedAt": "2026-10-16T07:07:24.303Z",
-      "promotedToGraphNodeId": "inference-shift",
-      "mergedInto": "inference-shift",
-      "promotedVia": "merged into existing node (longlist review 2026-10-16)"
+      "promotedAt": "2026-10-16T07:18:12.092Z",
+      "promotedToGraphNodeId": "answer-inference",
+      "promotedVia": "alias (longlist review 2026-10-16)"
     },
     {
       "id": "deployment-company",
@@ -3520,7 +3514,7 @@
           "title": "Morris et al. (Google DeepMind), Levels of AGI",
           "sourceLabel": "Morris et al. (Google DeepMind), Levels of AGI",
           "publishedAt": "2023-11",
-          "firstSeen": "2026-10-16T07:07:24.303Z",
+          "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
         },
         {
@@ -3529,7 +3523,7 @@
           "title": "Center for AI Safety, A Definition of AGI",
           "sourceLabel": "Center for AI Safety, A Definition of AGI",
           "publishedAt": "2025-10",
-          "firstSeen": "2026-10-16T07:07:24.303Z",
+          "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
         }
       ],
@@ -3541,7 +3535,7 @@
       "fullName": "Artificial General Intelligence (AGI)",
       "proposalReason": "The trial placed AGI at the centre of OpenAI's founding rationale and control disputes, making this a primary-source moment for how the term functions as a political and motivational instrument among AI's most powerful actors.",
       "status": "promoted",
-      "promotedAt": "2026-10-16T07:07:24.303Z",
+      "promotedAt": "2026-10-16T07:18:12.092Z",
       "promotedToGraphNodeId": "agi",
       "promotedVia": "direct-curation (longlist review 2026-10-16)"
     },
@@ -4072,7 +4066,7 @@
       "nodeType": "product",
       "proposalReason": "Concrete product instantiation of the adjustable-reasoning-effort pattern; worth tracking as a named, shipping control that exposes inference-time compute trade-offs directly to end users.",
       "status": "promoted",
-      "promotedAt": "2026-10-16T07:07:24.303Z",
+      "promotedAt": "2026-10-16T07:18:12.092Z",
       "promotedToGraphNodeId": "effort-control",
       "promotedVia": "alias (longlist review 2026-10-16)"
     },
@@ -4129,7 +4123,7 @@
           "title": "Yang et al., arXiv",
           "sourceLabel": "Yang et al., arXiv",
           "publishedAt": "2025-07",
-          "firstSeen": "2026-10-16T07:07:24.303Z",
+          "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
         },
         {
@@ -4138,7 +4132,7 @@
           "title": "Digiday",
           "sourceLabel": "Digiday",
           "publishedAt": "2026-07",
-          "firstSeen": "2026-10-16T07:07:24.303Z",
+          "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
         }
       ],
@@ -4150,7 +4144,7 @@
       "fullName": "The Agentic Web",
       "proposalReason": "NEW term implied by adjacent Stratechery interview title; captures an emerging framing about how AI agents transform content and advertising economics on the web.",
       "status": "promoted",
-      "promotedAt": "2026-10-16T07:07:24.303Z",
+      "promotedAt": "2026-10-16T07:18:12.092Z",
       "promotedToGraphNodeId": "agentic-web",
       "promotedVia": "direct-curation (longlist review 2026-10-16)"
     },
@@ -4223,7 +4217,7 @@
       "fullName": "Agent Scaffold",
       "proposalReason": "Explicitly defined in a footnote in this article and used as a central analytical concept throughout the critique.",
       "status": "promoted",
-      "promotedAt": "2026-10-16T07:07:24.303Z",
+      "promotedAt": "2026-10-16T07:18:12.092Z",
       "promotedToGraphNodeId": "scaffold",
       "promotedVia": "alias (longlist review 2026-10-16)"
     },
@@ -4431,7 +4425,7 @@
           "title": "arXiv (enterprise realtime voice agents)",
           "sourceLabel": "arXiv (enterprise realtime voice agents)",
           "publishedAt": "2026-03",
-          "firstSeen": "2026-10-16T07:07:24.303Z",
+          "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
         },
         {
@@ -4440,7 +4434,7 @@
           "title": "Gradium (vendor)",
           "sourceLabel": "Gradium (vendor)",
           "publishedAt": "2026-09",
-          "firstSeen": "2026-10-16T07:07:24.303Z",
+          "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
         }
       ],
@@ -4452,7 +4446,7 @@
       "fullName": "Cascaded Voice Pipeline (VAD → STT → LLM → TTS)",
       "proposalReason": "A named architectural pattern for real-time voice AI that appears across multiple open-source robotics and voice-agent projects; worth tracking as voice AI deployment patterns mature.",
       "status": "promoted",
-      "promotedAt": "2026-10-16T07:07:24.303Z",
+      "promotedAt": "2026-10-16T07:18:12.092Z",
       "promotedToGraphNodeId": "cascaded-voice-pipeline",
       "promotedVia": "direct-curation (longlist review 2026-10-16)"
     },
@@ -4485,7 +4479,7 @@
           "title": "Gloeckle et al. (Meta FAIR), arXiv",
           "sourceLabel": "Gloeckle et al. (Meta FAIR), arXiv",
           "publishedAt": "2024-04",
-          "firstSeen": "2026-10-16T07:07:24.303Z",
+          "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
         },
         {
@@ -4494,7 +4488,7 @@
           "title": "vLLM docs",
           "sourceLabel": "vLLM docs",
           "publishedAt": "2026",
-          "firstSeen": "2026-10-16T07:07:24.303Z",
+          "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
         }
       ],
@@ -4506,7 +4500,7 @@
       "fullName": "Multi-Token Prediction (MTP)",
       "proposalReason": "An emerging inference optimisation technique appearing in production pipelines for latency-critical applications like real-time voice; worth tracking alongside speculative decoding concepts.",
       "status": "promoted",
-      "promotedAt": "2026-10-16T07:07:24.303Z",
+      "promotedAt": "2026-10-16T07:18:12.092Z",
       "promotedToGraphNodeId": "multi-token-prediction",
       "promotedVia": "direct-curation (longlist review 2026-10-16)"
     },
@@ -4538,7 +4532,7 @@
           "title": "Kyutai (Moshi), arXiv",
           "sourceLabel": "Kyutai (Moshi), arXiv",
           "publishedAt": "2024-09",
-          "firstSeen": "2026-10-16T07:07:24.303Z",
+          "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
         },
         {
@@ -4547,7 +4541,7 @@
           "title": "Thinking Machines Lab",
           "sourceLabel": "Thinking Machines Lab",
           "publishedAt": "2026-05",
-          "firstSeen": "2026-10-16T07:07:24.303Z",
+          "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
         }
       ],
@@ -4559,7 +4553,7 @@
       "fullName": "Full-Duplex Conversational AI (Two-Model Architecture)",
       "proposalReason": "Emerging architectural pattern in voice AI worth distinguishing from single-model or half-duplex approaches.",
       "status": "promoted",
-      "promotedAt": "2026-10-16T07:07:24.303Z",
+      "promotedAt": "2026-10-16T07:18:12.092Z",
       "promotedToGraphNodeId": "full-duplex-voice-ai",
       "promotedVia": "direct-curation (longlist review 2026-10-16)"
     },
@@ -4653,7 +4647,7 @@
           "title": "EdWorkingPapers (Khanmigo RCT)",
           "sourceLabel": "EdWorkingPapers (Khanmigo RCT)",
           "publishedAt": "2026-08",
-          "firstSeen": "2026-10-16T07:07:24.303Z",
+          "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
         },
         {
@@ -4662,7 +4656,7 @@
           "title": "Harvard Gazette",
           "sourceLabel": "Harvard Gazette",
           "publishedAt": "2024-09",
-          "firstSeen": "2026-10-16T07:07:24.303Z",
+          "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
         }
       ],
@@ -4674,7 +4668,7 @@
       "fullName": "AI Tutoring (AI-Powered Personalized Instruction)",
       "proposalReason": "Proposed as a trackable concept distinct from general AI assistants; emerges from real-time feedback tools like SignFluent and MuscleMemory.",
       "status": "promoted",
-      "promotedAt": "2026-10-16T07:07:24.303Z",
+      "promotedAt": "2026-10-16T07:18:12.092Z",
       "promotedToGraphNodeId": "ai-tutoring",
       "promotedVia": "direct-curation (longlist review 2026-10-16)"
     },
@@ -4829,7 +4823,7 @@
           "title": "Google Developers Blog",
           "sourceLabel": "Google Developers Blog",
           "publishedAt": "2025-08",
-          "firstSeen": "2026-10-16T07:07:24.303Z",
+          "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
         },
         {
@@ -4838,7 +4832,7 @@
           "title": "The Batch (DeepLearning.AI)",
           "sourceLabel": "The Batch (DeepLearning.AI)",
           "publishedAt": "2026-03",
-          "firstSeen": "2026-10-16T07:07:24.303Z",
+          "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
         }
       ],
@@ -4851,7 +4845,7 @@
       "nodeType": "product",
       "proposalReason": "A newly surfaced Google experimental model name appearing in a first-party production context; worth tracking for future public documentation.",
       "status": "promoted",
-      "promotedAt": "2026-10-16T07:07:24.303Z",
+      "promotedAt": "2026-10-16T07:18:12.092Z",
       "promotedToGraphNodeId": "nano-banana",
       "promotedVia": "direct-curation (longlist review 2026-10-16)"
     },
@@ -5136,7 +5130,7 @@
           "title": "Rafailov et al., arXiv / NeurIPS 2023",
           "sourceLabel": "Rafailov et al., arXiv / NeurIPS 2023",
           "publishedAt": "2023-05",
-          "firstSeen": "2026-10-16T07:07:24.303Z",
+          "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
         },
         {
@@ -5145,7 +5139,7 @@
           "title": "RLHF Book (Nathan Lambert)",
           "sourceLabel": "RLHF Book (Nathan Lambert)",
           "publishedAt": "2026",
-          "firstSeen": "2026-10-16T07:07:24.303Z",
+          "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
         }
       ],
@@ -5157,7 +5151,7 @@
       "fullName": "Direct Preference Optimization (DPO)",
       "proposalReason": "A new term with growing usage across the field; this article also usefully extends the concept beyond its canonical chat-alignment framing into objective structured tasks.",
       "status": "promoted",
-      "promotedAt": "2026-10-16T07:07:24.303Z",
+      "promotedAt": "2026-10-16T07:18:12.092Z",
       "promotedToGraphNodeId": "dpo",
       "promotedVia": "direct-curation (longlist review 2026-10-16)"
     },
@@ -5190,7 +5184,7 @@
           "title": "Holtzman et al., arXiv / ICLR 2020",
           "sourceLabel": "Holtzman et al., arXiv / ICLR 2020",
           "publishedAt": "2019-04",
-          "firstSeen": "2026-10-16T07:07:24.303Z",
+          "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
         },
         {
@@ -5199,7 +5193,7 @@
           "title": "Apple ML Research",
           "sourceLabel": "Apple ML Research",
           "publishedAt": "2022-11",
-          "firstSeen": "2026-10-16T07:07:24.303Z",
+          "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
         }
       ],
@@ -5211,7 +5205,7 @@
       "fullName": "Text Degeneration (Repetition Loop)",
       "proposalReason": "A well-defined, recurring failure mode in generative models that deserves a canonical entry; the article provides the clearest mechanistic explanation of it as a distributional geometry problem rather than a decoding artifact.",
       "status": "promoted",
-      "promotedAt": "2026-10-16T07:07:24.303Z",
+      "promotedAt": "2026-10-16T07:18:12.092Z",
       "promotedToGraphNodeId": "text-degeneration",
       "promotedVia": "direct-curation (longlist review 2026-10-16)"
     },
@@ -5272,7 +5266,7 @@
           "title": "Wikipedia",
           "sourceLabel": "Wikipedia",
           "publishedAt": "2026",
-          "firstSeen": "2026-10-16T07:07:24.303Z",
+          "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
         },
         {
@@ -5281,7 +5275,7 @@
           "title": "Thoughtworks Decoder",
           "sourceLabel": "Thoughtworks Decoder",
           "publishedAt": "2026",
-          "firstSeen": "2026-10-16T07:07:24.303Z",
+          "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
         }
       ],
@@ -5292,7 +5286,7 @@
       "sz": 14,
       "proposalReason": "A pithy, memorable term for a specific dysfunctional incentive pattern emerging in enterprise AI adoption — the competitive over-use of AI tools encouraged by usage leaderboards.",
       "status": "promoted",
-      "promotedAt": "2026-10-16T07:07:24.303Z",
+      "promotedAt": "2026-10-16T07:18:12.092Z",
       "promotedToGraphNodeId": "tokenmaxxing",
       "promotedVia": "direct-curation (longlist review 2026-10-16)"
     },
@@ -5327,7 +5321,7 @@
           "title": "GitHub Changelog",
           "sourceLabel": "GitHub Changelog",
           "publishedAt": "2025-09",
-          "firstSeen": "2026-10-16T07:07:24.303Z",
+          "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
         },
         {
@@ -5336,7 +5330,7 @@
           "title": "Claude Code docs",
           "sourceLabel": "Claude Code docs",
           "publishedAt": "2026",
-          "firstSeen": "2026-10-16T07:07:24.303Z",
+          "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
         }
       ],
@@ -5347,7 +5341,7 @@
       "sz": 14,
       "proposalReason": "While 'coding agent' is closely related to existing graph nodes, it represents a distinct product category that is increasingly the subject of enterprise procurement, cost-capping, and policy discussion.",
       "status": "promoted",
-      "promotedAt": "2026-10-16T07:07:24.303Z",
+      "promotedAt": "2026-10-16T07:18:12.092Z",
       "promotedToGraphNodeId": "coding-agent",
       "promotedVia": "direct-curation (longlist review 2026-10-16)"
     },
@@ -5381,7 +5375,7 @@
           "title": "Meta (Llama Guard), arXiv",
           "sourceLabel": "Meta (Llama Guard), arXiv",
           "publishedAt": "2023-12",
-          "firstSeen": "2026-10-16T07:07:24.303Z",
+          "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
         },
         {
@@ -5390,7 +5384,7 @@
           "title": "Google (ShieldGemma)",
           "sourceLabel": "Google (ShieldGemma)",
           "publishedAt": "2026-01",
-          "firstSeen": "2026-10-16T07:07:24.303Z",
+          "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
         }
       ],
@@ -5402,7 +5396,7 @@
       "fullName": "Content Safety Model (LLM Guard / Classifier)",
       "proposalReason": "A new term not in the graph; the article materially defines this architectural pattern as a distinct product category.",
       "status": "promoted",
-      "promotedAt": "2026-10-16T07:07:24.303Z",
+      "promotedAt": "2026-10-16T07:18:12.092Z",
       "promotedToGraphNodeId": "guard-model",
       "promotedVia": "direct-curation (longlist review 2026-10-16)"
     },
@@ -5534,7 +5528,7 @@
           "title": "Matteo Collina",
           "sourceLabel": "Matteo Collina",
           "publishedAt": "2026-03",
-          "firstSeen": "2026-10-16T07:07:24.303Z",
+          "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
         },
         {
@@ -5543,7 +5537,7 @@
           "title": "Linux kernel docs",
           "sourceLabel": "Linux kernel docs",
           "publishedAt": "2025-12",
-          "firstSeen": "2026-10-16T07:07:24.303Z",
+          "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
         }
       ],
@@ -5555,7 +5549,7 @@
       "fullName": "Code Provenance (AI-Era)",
       "proposalReason": "The Ladybird project's decision to close public PRs names a novel framing: AI generation severs the effort-as-good-faith heuristic that open-source has always relied on. 'Code provenance' captures this gap between origin and accountability.",
       "status": "promoted",
-      "promotedAt": "2026-10-16T07:07:24.303Z",
+      "promotedAt": "2026-10-16T07:18:12.092Z",
       "promotedToGraphNodeId": "ai-code-provenance",
       "promotedVia": "direct-curation (longlist review 2026-10-16)"
     },
