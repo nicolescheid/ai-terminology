@@ -1,0 +1,39 @@
+{
+  "meta": {
+    "note": "Hand-written Curator's Notes entries for changes made outside Lexi's proposal pipeline (direct curation, maintenance). Merged into curators-notes.json by knowledge-graph-agent/build-curators-notes.mjs on every build. Editable by Nicole. Fields mirror generated entries; action is 'curated' or 'maintenance'."
+  },
+  "entries": [
+    {
+      "id": "manual-2026-10-16-lexi-resumes",
+      "action": "maintenance",
+      "term": "Lexi resumes after a pause",
+      "date": "2026-10-16",
+      "datetime": "2026-10-16T06:55:12Z",
+      "rationale": "From late June to mid-October 2026, Lexi did not observe any new sources. A safeguard pauses her whenever a note to her curator goes unread for more than a week, and it was counting its own pause notices as unread, so the pause kept renewing itself. The check now ignores those notices, and her daily runs resume.",
+      "decidedBy": "nicole",
+      "graphLink": null
+    },
+    {
+      "id": "manual-2026-10-16-gap-backfill",
+      "action": "curated",
+      "term": "161 terms added in a gap review",
+      "date": "2026-10-16",
+      "datetime": "2026-10-16T06:52:40Z",
+      "rationale": "A review against recent research papers, lab publications, policy and standards documents, and the AI press found core vocabulary missing from the graph, from Large Language Model, Generative AI and Chain-of-Thought to Sycophancy, Reward Hacking, Lethal Trifecta and Workslop. 161 terms were added by direct curation. Each cites at least two sources that were checked to load and to use the term, and contested terms name the camps that use them differently.",
+      "decidedBy": "nicole",
+      "sourceCount": null,
+      "graphLink": "/?term=llm"
+    },
+    {
+      "id": "manual-2026-10-16-longlist-review",
+      "action": "curated",
+      "term": "Watchlist review: 32 promoted, 10 aliased, 89 retired",
+      "date": "2026-10-16",
+      "datetime": "2026-10-16T07:40:00Z",
+      "rationale": "Every term Lexi had been observing was reviewed. 32 had gathered enough independent evidence to join the graph, including AI Slop, AGI, Calibration, Test-Time Compute Scaling and Coding Agent. Their definitions were rewritten where Lexi's working version leaned on a single article. 10 were kept as aliases of the terms that supersede them, such as Benchmaxxing → Benchmark Gaming and Scaffold → Harness. 89 product names, one-off phrasings and off-topic pickups were retired. 49 terms remain under observation.",
+      "decidedBy": "nicole",
+      "sourceCount": null,
+      "graphLink": "/observing/"
+    }
+  ]
+}

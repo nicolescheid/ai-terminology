@@ -304,6 +304,7 @@ node "C:\dev\ai-terminology\knowledge-graph-agent\run.mjs"
 State surfaces — written by Lexi, read by the public-facing pages:
 
 - **Tier 2 longlist**: [`longlist.json`](./longlist.json) — terms under observation, with sources, source counts, timestamps. Promoted entries are kept here with `status: "promoted"` for audit trail; readers filter them out via `status !== "promoted"`.
+- **Tier 3 archive**: [`longlist-retired.json`](./longlist-retired.json) — entries retired from the longlist in review, with `retiredReason` and `retiredAt`. Retiring means *moving* an entry here: because readers treat any status other than `"promoted"` as watching, a `retired` status left in `longlist.json` would keep it on `/observing`. Nothing reads this file at runtime, so Lexi treats a re-sighting as a new candidate.
 - **Tier 1 graph overlay**: [`agent-patch.json`](./agent-patch.json) + [`graph-data-agent.js`](</C:/dev/ai-terminology/graph-data-agent.js>) — agent-promoted nodes + definition overrides, layered on top of the curator-edited [`graph-data.js`](</C:/dev/ai-terminology/graph-data.js>) base. 11 nodes + 1 def override as of 2026-05-10.
 - **Proposals queue**: [`proposals.json`](./proposals.json) — every `PROPOSE`-gated action lands here pending Nicole's review.
 - **Notes for Nicole**: [`notes-for-nicole.json`](./notes-for-nicole.json) — manager channel (spec §6).
@@ -349,6 +350,8 @@ node apply-proposals.mjs
 ```
 
 Both also run automatically as steps of `.github/workflows/lexi-run.yml`.
+
+**Direct curation (outside the pipeline):** large batches, such as the 2026-10-16 longlist review, can be curated straight into `graph-data.js` instead of going through proposals, since the pending-proposal cap is 10. When you do this, mark the longlist entry `status: "promoted"` with `promotedToGraphNodeId`, `promotedAt` and `promotedVia`. Terms folded into another term become `synonymOf` alias nodes rather than disappearing. Then add a hand-written entry to [`../curators-notes/manual-entries.json`](../curators-notes/manual-entries.json) so the change appears on Curator's Notes (`build-curators-notes.mjs` merges it in).
 
 ## Trusted source list
 

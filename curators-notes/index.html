@@ -81,6 +81,10 @@ body{background:#f7f5f0;font-family:'IBM Plex Sans',sans-serif;font-weight:300;c
 .action-rejected .term{opacity:.7}
 .action-rejected .term::before{content:"✕ ";color:#d09c9c;font-family:'IBM Plex Mono',monospace}
 .action-deprecated .action-col{color:#666}
+.action-curated .action-col{color:#5a3f7a}
+.action-curated .term::before{content:"✎ ";color:#c4b3d9;font-family:'IBM Plex Mono',monospace}
+.action-maintenance .action-col{color:#666}
+.action-maintenance .term::before{content:"· ";color:#bbb;font-family:'IBM Plex Mono',monospace}
 
 .empty{font-size:14px;color:#888;font-style:italic;padding:32px 0;text-align:center}
 .error{background:#f9e3e3;border:1px solid #d09c9c;color:#7a2222;padding:14px 18px;border-radius:8px;font-size:13px}
@@ -111,7 +115,7 @@ body{background:#f7f5f0;font-family:'IBM Plex Sans',sans-serif;font-weight:300;c
 <div class="page-head">
   <div>
     <div class="intro">
-      <em>Release notes for the graph.</em> What Lexi has promoted, demoted, refreshed, or rejected — when, and why. The graph at <a href="/" style="color:#5a6b8f">/</a> shows the current state; this page shows how it got there. Per <a href="https://github.com/nicolescheid/ai-terminology/blob/main/lexi-spec.md" style="color:#5a6b8f">spec §14</a>, the rationale per entry is the proposal's own reasoning, in Lexi's voice as impartial curator.
+      <em>Release notes for the graph.</em> What Lexi has promoted, demoted, refreshed, or rejected — when, and why — plus changes Nicole curated directly. The graph at <a href="/" style="color:#5a6b8f">/</a> shows the current state; this page shows how it got there. Per <a href="https://github.com/nicolescheid/ai-terminology/blob/main/lexi-spec.md" style="color:#5a6b8f">spec §14</a>, the rationale per entry is the proposal's own reasoning, in Lexi's voice as impartial curator.
     </div>
   </div>
   <img class="page-head-character" src="/assets/lexi-celebrating.webp" alt="Lexi celebrating each release that lands on the graph" />
@@ -123,6 +127,7 @@ body{background:#f7f5f0;font-family:'IBM Plex Sans',sans-serif;font-weight:300;c
   <button class="chip" data-filter="refreshed" type="button">Refreshed</button>
   <button class="chip" data-filter="demoted" type="button">Demoted</button>
   <button class="chip" data-filter="rejected" type="button">Rejected</button>
+  <button class="chip" data-filter="curated" type="button">Curated</button>
   <span class="summary" id="summary">—</span>
 </div>
 
