@@ -20,7 +20,7 @@ permissions:
   contents: write
   # Required so the workflow can push the agent's output files
   # (longlist.json, proposals.json, notes-for-nicole.json, state.json, etc.)
-  # back to main, which triggers Cloudflare Pages to redeploy the dashboard.
+  # back to main. The `deploy` job at the bottom then ships them live.
 
 concurrency:
   group: lexi-run
@@ -32,6 +32,8 @@ concurrency:
 jobs:
   run:
     runs-on: ubuntu-latest
+    outputs:
+      pushed: ${{ steps.push.outputs.pushed }}
     timeout-minutes: 15
     steps:
       - name: Check out repo
@@ -80,6 +82,7 @@ jobs:
         run: node build-curators-notes.mjs
 
       - name: Commit + push state changes
+        id: push
         run: |
           git config user.name 'lexi-bot'
           git config user.email 'lexi-bot@users.noreply.github.com'
@@ -100,14 +103,10 @@ jobs:
           if git diff --staged --quiet; then
             echo "No state changes to commit."
           else
-            # Intentionally NO [skip ci]: this workflow only triggers on
-            # `schedule` and `workflow_dispatch`, not `push`, so its own
-            # commit cannot re-trigger it (no loop risk). Cloudflare Workers
-            # Static Assets, on the other hand, DOES respect [skip ci] in
-            # commit messages — and skipping the deploy means every Lexi
-            # run leaves new state in main that never reaches the live
-            # site until a manual commit comes along to flush. Plain commit
-            # message lets CF deploy normally.
+            # No [skip ci]: this workflow only triggers on `schedule` and
+            # `workflow_dispatch`, so its own commit can't loop. The push
+            # itself deploys nothing (GITHUB_TOKEN pushes trigger no other
+            # workflows); the `deploy` job below does that.
             git commit -m "Lexi run $(date -u +%Y-%m-%d)" \
               -m "Auto-committed by .github/workflows/lexi-run.yml"
             # Defensive: remote may have moved during the run (manual pushes,
@@ -116,6 +115,7 @@ jobs:
             # replayed, i.e., this workflow's commit). Then push.
             git pull --rebase --strategy-option=theirs origin main
             git push
+            echo "pushed=true" >> "$GITHUB_OUTPUT"
           fi
 
       - name: Notify Slack on failure
@@ -131,3 +131,11 @@ jobs:
             curl -sS -X POST -H 'Content-Type: application/json' \
               -d "$payload" "$LEXI_SLACK_WEBHOOK" || true
           fi
+
+  # GITHUB_TOKEN pushes don't trigger push workflows (so build-stamp won't
+  # run), so deploy explicitly when this run committed something.
+  deploy:
+    needs: run
+    if: needs.run.outputs.pushed == 'true'
+    uses: ./.github/workflows/deploy.yml
+    secrets: inherit

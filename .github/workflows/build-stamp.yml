@@ -8,6 +8,10 @@ name: Build stamp
 # Loop avoidance: paths-ignore on build.json itself means the workflow's own
 # commit doesn't re-trigger it. Belt + suspenders: the commit is also tagged
 # [skip ci] so the Lexi cron workflows ignore it.
+#
+# Deploy: after stamping, this calls deploy.yml, so every push to main ends
+# with a `wrangler deploy` of main (including the fresh build.json). Pushing
+# alone deploys nothing; see deploy.yml.
 
 on:
   push:
@@ -59,3 +63,8 @@ jobs:
             git pull --rebase --strategy-option=theirs origin main
             git push
           fi
+
+  deploy:
+    needs: stamp
+    uses: ./.github/workflows/deploy.yml
+    secrets: inherit

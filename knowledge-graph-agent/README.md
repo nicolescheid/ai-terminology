@@ -204,7 +204,7 @@ Two `POST` endpoints live alongside the static assets, gated by HTTP Basic Auth 
 | `/api/mark-note` | `notes-for-nicole.json` | `{ id, status }` where status ∈ `read \| actioned \| dismissed` |
 | `/api/mark-proposal` | `proposals.json` | `{ id, status, reason? }` where status ∈ `approved \| rejected` |
 
-Each click commits a state change to `main` via the GitHub Contents API (committed as `lexi-bot`), no `[skip ci]` so Cloudflare redeploys within ~30s. `mark-proposal` also fires `workflow_dispatch` on `lexi-run.yml` after a successful approve, so `apply-proposals.mjs` runs within ~5 min instead of waiting up to 24h for the next cron.
+Each click commits a state change to `main` via the GitHub Contents API (committed as `lexi-bot`), no `[skip ci]`, so the push runs `build-stamp.yml`, which deploys within ~2 min. `mark-proposal` also fires `workflow_dispatch` on `lexi-run.yml` after a successful approve, so `apply-proposals.mjs` runs within ~5 min instead of waiting up to 24h for the next cron.
 
 Two secrets required (set once via `npx wrangler secret put <NAME>`):
 

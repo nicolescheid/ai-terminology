@@ -31,6 +31,12 @@ _build
 out
 log
 
+# Wrangler local dev state and local secrets. The assets directory is the
+# repo root, so anything `wrangler dev` leaves behind (or a .dev.vars file
+# holding real keys) would otherwise be uploaded and served publicly.
+.wrangler
+.dev.vars*
+
 # Worker source — bundled separately as the Worker entrypoint via the
 # `main` field in wrangler.jsonc. Serving it again as a static asset at
 # /src/worker.js would expose the source unnecessarily.
