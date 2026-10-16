@@ -1,0 +1,53 @@
+name: Deploy
+
+# Deploys the Worker + static assets to Cloudflare (`wrangler deploy`).
+#
+# Pushing to main does NOT deploy on its own — there is no Cloudflare git
+# integration on this Worker (it was a Pages project once; Workers Static
+# Assets has no auto-deploy unless Workers Builds is connected, and it
+# isn't). This workflow is the deploy path. It is called from:
+#
+#   - build-stamp.yml, after it commits build.json — covers every push to
+#     main by a human or by the Worker's Contents-API commits, and means the
+#     live /build.json shortSha matches the commit that triggered it.
+#   - lexi-run.yml / lexi-audit.yml, after they push — their commits are
+#     made with GITHUB_TOKEN, which never triggers other workflows' `push`
+#     events, so they have to call this explicitly.
+#
+# It always deploys the tip of main (not the caller's SHA), so a deploy
+# queued behind another one still ships the latest state.
+#
+# Requires the CLOUDFLARE_API_TOKEN repo secret ("Edit Cloudflare Workers"
+# token template, scoped to the account in wrangler.jsonc).
+
+on:
+  workflow_call:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: wrangler deploy
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: |
+          echo "Deploying $(git rev-parse --short HEAD): $(git log -1 --format=%s)"
+          npx --yes wrangler@4 deploy

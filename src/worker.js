@@ -405,8 +405,8 @@ or add it to the longlist.`;
  *                          the response body
  *   refreshMeta:       (json, now) => void. Called between mutate and PUT.
  *   commitMessage:     () => string. Called to build the GitHub commit message.
- *                      Intentionally NO [skip ci] — Cloudflare honours it
- *                      and we want each write to redeploy.
+ *                      Intentionally NO [skip ci]: GitHub would then skip
+ *                      build-stamp.yml, which is what deploys the write.
  *   onSuccess:         Optional. async (env, payload) => any. Called after
  *                      successful commit. Return value is added to the
  *                      response under `dispatch` (used by mark-proposal for

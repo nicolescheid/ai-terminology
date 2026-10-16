@@ -2,7 +2,7 @@
 
 The home of the **AI Terminology Knowledge Graph** and **Lexi** — the AI lexicographer that curates it.
 
-Public site: https://ai-terminology.com (deployed via Cloudflare Pages)
+Public site: https://ai-terminology.com (a Cloudflare Worker, deployed from GitHub Actions; see Deployment)
 
 ## Repo layout
 
@@ -32,7 +32,14 @@ See [knowledge-graph-agent/README.md](./knowledge-graph-agent/README.md) for wha
 
 ## Deployment
 
-Cloudflare Pages auto-deploys on push to the `main` branch. The site root is the repo root; no build step is required.
+The site is a Cloudflare Worker with static assets (`wrangler.jsonc`). The assets directory is the repo root, filtered by `.assetsignore`. There is no Cloudflare git integration. Deploys run from GitHub Actions: `.github/workflows/deploy.yml` runs `wrangler deploy` on the tip of `main`.
+
+- Every push to `main` runs `build-stamp.yml`, which writes `build.json` and then calls the deploy. `https://ai-terminology.com/build.json` shows the live commit.
+- Lexi's scheduled runs (`lexi-run.yml`, `lexi-audit.yml`) call the deploy themselves after they push, because pushes made with `GITHUB_TOKEN` don't trigger other workflows.
+- To redeploy without a commit: `gh workflow run deploy.yml` (or `npx wrangler deploy` from a local checkout).
+- Needs the `CLOUDFLARE_API_TOKEN` repository secret.
+
+CI runs no build step. The compiled `variations/*.js` files are committed (see `_build/build.mjs`).
 
 ## Project history
 

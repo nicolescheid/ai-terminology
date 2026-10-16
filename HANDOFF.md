@@ -41,16 +41,31 @@ Nicole is the curator/owner. Future Claude is her engineering partner.
 
 ```
 node _build/build.mjs        # compiles JSX → JS, optimises PNGs → WebP
-npx wrangler deploy          # deploys Worker + static assets to Cloudflare
+git push                     # deploys via GitHub Actions (see below)
+gh workflow run deploy.yml   # redeploy main without a commit
+npx wrangler deploy          # manual deploy from a local checkout
 ```
 
+- **A push doesn't deploy by itself.** There is no Cloudflare git integration
+  (no Workers Builds). `.github/workflows/deploy.yml` runs `wrangler deploy` on
+  the tip of `main` using the `CLOUDFLARE_API_TOKEN` repo secret. It's called
+  by `build-stamp.yml` (every push to main, after `build.json` is written) and
+  by `lexi-run.yml` / `lexi-audit.yml` after they push. Pushes made with
+  GITHUB_TOKEN never trigger other workflows, so those two call it directly.
+  From 2026-08-27 to 2026-10-16 nothing deployed because we assumed a push did.
+- Check what's live: `https://ai-terminology.com/build.json` (`shortSha`) or
+  `npx wrangler deployments list`.
 - `graph-data.js` is loaded directly by the browser — no build step needed for
   data-only changes.
 - `variations/*.jsx` are pre-compiled to `variations/*.js` by `_build/build.mjs`.
   In production, **no Babel runs in the browser**; ship the compiled `.js`.
-- **NEVER use `[skip ci]` in commit messages.** Cloudflare honours it and skips
-  the deploy. We removed it from all workflows + the Worker's own commit
-  messages; don't reintroduce.
+  CI doesn't run the build, so commit the compiled output.
+- The assets directory is the repo root. Anything not listed in `.assetsignore`
+  is served publicly, including local leftovers like `.wrangler/` and
+  `.dev.vars` (both ignored now). Add any new local-only paths there.
+- **Don't put `[skip ci]` on commits you want deployed.** GitHub then skips
+  `build-stamp.yml`, so the deploy doesn't run either. Only the build-stamp
+  bot commit uses it.
 
 ### Lexi's daily run
 

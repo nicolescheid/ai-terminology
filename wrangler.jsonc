@@ -1,6 +1,7 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "ai-terminology",
+  "account_id": "413cb81347f3e89932f12e3ed9a6d062", // Nicole's Cloudflare account
   "compatibility_date": "2026-05-03",
   "main": "src/worker.js",
   "observability": {
