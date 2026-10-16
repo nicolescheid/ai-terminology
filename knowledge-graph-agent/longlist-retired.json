@@ -1,0 +1,3323 @@
+{
+  "meta": {
+    "note": "Tier 3 archive (spec §3): longlist entries retired by review. Kept for audit; Lexi treats a later re-sighting as a new candidate.",
+    "entryCount": 89,
+    "updatedAt": "2026-10-16T07:18:12.092Z"
+  },
+  "entries": [
+    {
+      "id": "cyber-verification-program",
+      "label": "Cyber Verification Program",
+      "workingDef": "Anthropic's credentialing program allowing vetted security professionals to access models with elevated cyber capabilities for legitimate purposes such as vulnerability research, penetration testing, and red teaming.",
+      "clusters": [
+        "security",
+        "safety",
+        "landscape"
+      ],
+      "suggestedRels": [
+        "penetration-testing",
+        "red-teaming",
+        "ai-red-teaming",
+        "guardrails",
+        "anthropic-co",
+        "responsible-scaling-policy"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/claude-opus-4-7",
+          "domain": "anthropic.com",
+          "title": "Introducing Claude Opus 4.7",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-04-26T22:40:25.832Z"
+        },
+        {
+          "url": "https://www.anthropic.com/news/expanding-project-glasswing",
+          "domain": "anthropic.com",
+          "title": "Expanding Project Glasswing",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-06-02T20:47:42.877Z"
+        }
+      ],
+      "sourceCount": 2,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-04-26T22:40:25.832Z",
+      "dateLastSeen": "2026-06-02T20:47:42.877Z",
+      "sz": 14,
+      "fullName": "Cyber Verification Program (Anthropic)",
+      "nodeType": "initiative",
+      "proposalReason": "A novel, named program introduced in this article representing a new access-control mechanism for sensitive AI capabilities — distinct from existing graph terms and worth observing.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Company programme or launch framing (single company, single source).",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "design-system-integration",
+      "label": "Design System Integration",
+      "workingDef": "The capability of an AI tool to automatically read and apply a team's existing design system—including colors, typography, and components—from codebases and design files to ensure brand-consistent output across all generated artifacts.",
+      "clusters": [
+        "work",
+        "agentic",
+        "context"
+      ],
+      "suggestedRels": [
+        "claude-design",
+        "grounding",
+        "context-engineering",
+        "artifact",
+        "workflow"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/claude-design-anthropic-labs",
+          "domain": "anthropic.com",
+          "title": "Introducing Claude Design by Anthropic Labs",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-04-26T22:40:25.832Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-04-26T22:40:25.832Z",
+      "dateLastSeen": "2026-04-27T01:07:31.335Z",
+      "sz": 14,
+      "fullName": "Design System Integration (AI-native)",
+      "proposalReason": "Recurring framing concept in the article describing how AI design tools ingest and respect organizational design systems; relevant beyond this single product.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Company programme or launch framing (single company, single source).",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "personality-customization",
+      "label": "Personality Customization",
+      "workingDef": "A feature allowing users or operators to select or configure distinct stylistic personas for an AI model (e.g., 'Nerdy,' 'Playful'), implemented via system prompts and reward-trained behavioral profiles.",
+      "clusters": [
+        "models",
+        "context",
+        "human"
+      ],
+      "suggestedRels": [
+        "system-prompt",
+        "prompt-engineering",
+        "operator",
+        "fine-tuning",
+        "rlhf"
+      ],
+      "sources": [
+        {
+          "url": "https://openai.com/index/where-the-goblins-came-from",
+          "domain": "openai.com",
+          "title": "Where the goblins came from",
+          "sourceLabel": "OpenAI News",
+          "publishedAt": "Wed, 29 Apr 2026 20:00:00 GMT",
+          "firstSeen": "2026-04-30T19:20:00.611Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-04-30T19:20:00.611Z",
+      "dateLastSeen": "2026-04-30T19:20:00.611Z",
+      "sz": 14,
+      "fullName": "Personality Customization (LLM)",
+      "proposalReason": "The article centers on the 'Nerdy' personality customization feature as the root cause of the goblin phenomenon; personality customization as a product-level concept with training implications is worth tracking.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Company programme or launch framing (single company, single source).",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "terafab",
+      "label": "Terafab",
+      "workingDef": "A reported Intel initiative or concept related to AI-oriented semiconductor manufacturing or fabrication capacity, referenced in context of Intel's strategic differentiation in the AI infrastructure market.",
+      "clusters": [
+        "landscape",
+        "companies"
+      ],
+      "suggestedRels": [
+        "nvidia-co",
+        "infrastructure",
+        "edge-ai"
+      ],
+      "sources": [
+        {
+          "url": "https://stratechery.com/2026/intel-earnings-intels-differentiation-whither-terafab/",
+          "domain": "stratechery.com",
+          "title": "Intel Earnings, Intel’s Differentiation?, Whither Terafab",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Wed, 29 Apr 2026 10:00:00 +0000",
+          "firstSeen": "2026-04-30T19:20:00.611Z"
+        },
+        {
+          "url": "https://stratechery.com/2026/long-term-peripheral-myopic-visions/",
+          "domain": "stratechery.com",
+          "title": "2026.18: Long-term, Peripheral & Myopic Visions",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Fri, 01 May 2026 17:00:00 +0000",
+          "firstSeen": "2026-05-03T18:58:28.223Z"
+        },
+        {
+          "url": "https://stratechery.com/2026/google-earnings-meta-earnings/",
+          "domain": "stratechery.com",
+          "title": "Google Earnings, Meta Earnings",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Mon, 04 May 2026 10:00:00 +0000",
+          "firstSeen": "2026-05-04T19:27:54.284Z"
+        }
+      ],
+      "sourceCount": 3,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-04-30T19:20:00.611Z",
+      "dateLastSeen": "2026-05-04T19:27:54.284Z",
+      "sz": 14,
+      "fullName": "Terafab (Intel AI Fab Initiative)",
+      "proposalReason": "The article headline explicitly names 'Terafab' as a distinct topic worth analysis alongside Intel earnings and AI differentiation — a new named concept not yet in the graph or longlist.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "News item or one interview's phrasing — an event, deal or general business term rather than AI vocabulary.",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "ai-driven-cpu-demand",
+      "label": "AI-Driven CPU Demand",
+      "workingDef": "The structural shift in demand for central processing units (CPUs) driven by AI workloads, distinct from traditional compute demand cycles, noted as a primary driver of Intel's earnings performance.",
+      "clusters": [
+        "landscape",
+        "business"
+      ],
+      "suggestedRels": [
+        "inference",
+        "ai-accelerator",
+        "purpose-built-ai-infrastructure",
+        "edge-ai"
+      ],
+      "sources": [
+        {
+          "url": "https://stratechery.com/2026/intel-earnings-intels-differentiation-whither-terafab/",
+          "domain": "stratechery.com",
+          "title": "Intel Earnings, Intel’s Differentiation?, Whither Terafab",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Wed, 29 Apr 2026 10:00:00 +0000",
+          "firstSeen": "2026-04-30T19:20:00.611Z"
+        },
+        {
+          "url": "https://stratechery.com/2026/long-term-peripheral-myopic-visions/",
+          "domain": "stratechery.com",
+          "title": "2026.18: Long-term, Peripheral & Myopic Visions",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Fri, 01 May 2026 17:00:00 +0000",
+          "firstSeen": "2026-05-03T18:58:28.223Z"
+        }
+      ],
+      "sourceCount": 2,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-04-30T19:20:00.611Z",
+      "dateLastSeen": "2026-05-03T18:58:28.223Z",
+      "sz": 14,
+      "fullName": "AI-Driven CPU Demand (Structural Shift)",
+      "proposalReason": "The article explicitly cites 'a structural shift in demand for CPUs for AI' as the chief driver of Intel's earnings — a framing concept distinct from GPU/accelerator demand narratives and worth tracking.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "News item or one interview's phrasing — an event, deal or general business term rather than AI vocabulary.",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "gemini-enterprise-agent-platform",
+      "label": "Gemini Enterprise Agent Platform",
+      "workingDef": "Google Cloud's platform for building, governing, and managing autonomous AI agents capable of handling complex, multi-step business processes in enterprise environments.",
+      "clusters": [
+        "agentic",
+        "companies"
+      ],
+      "suggestedRels": [
+        "gemini",
+        "multi-agent",
+        "orchestrator",
+        "agent-governance",
+        "workflow"
+      ],
+      "sources": [
+        {
+          "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-april-2026/",
+          "domain": "blog.google",
+          "title": "The latest AI news we announced in April 2026",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Mon, 04 May 2026 17:00:00 +0000",
+          "firstSeen": "2026-05-04T19:27:54.284Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-04T19:27:54.284Z",
+      "dateLastSeen": "2026-05-04T19:27:54.284Z",
+      "sz": 14,
+      "fullName": "Gemini Enterprise Agent Platform (Google Cloud)",
+      "nodeType": "product",
+      "proposalReason": "Newly announced enterprise agent platform from Google Cloud, relevant as a named product in the agentic AI landscape.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Product or feature name from a single launch; not lexicon vocabulary on its own.",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "deep-research-max",
+      "label": "Deep Research Max",
+      "workingDef": "An advanced data analysis and research capability from Google, positioned as an enhanced tier of the Deep Research feature with greater analytical depth.",
+      "clusters": [
+        "tools",
+        "agentic"
+      ],
+      "suggestedRels": [
+        "deep-research",
+        "gemini",
+        "rag"
+      ],
+      "sources": [
+        {
+          "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-april-2026/",
+          "domain": "blog.google",
+          "title": "The latest AI news we announced in April 2026",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Mon, 04 May 2026 17:00:00 +0000",
+          "firstSeen": "2026-05-04T19:27:54.284Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-04T19:27:54.284Z",
+      "dateLastSeen": "2026-05-04T19:27:54.284Z",
+      "sz": 14,
+      "fullName": "Deep Research Max (Google)",
+      "nodeType": "product",
+      "proposalReason": "A named product extension of Deep Research, worth tracking as Google expands its research-agent product line.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Product or feature name from a single launch; not lexicon vocabulary on its own.",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "learn-mode-colab",
+      "label": "Learn Mode (Colab)",
+      "workingDef": "A Gemini-powered interactive coding tutor mode within Google Colab that provides personalized programming guidance to learners.",
+      "clusters": [
+        "tools",
+        "human"
+      ],
+      "suggestedRels": [
+        "gemini",
+        "socratic-dialogue",
+        "cowork"
+      ],
+      "sources": [
+        {
+          "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-april-2026/",
+          "domain": "blog.google",
+          "title": "The latest AI news we announced in April 2026",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Mon, 04 May 2026 17:00:00 +0000",
+          "firstSeen": "2026-05-04T19:27:54.284Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-04T19:27:54.284Z",
+      "dateLastSeen": "2026-05-04T19:27:54.284Z",
+      "sz": 14,
+      "fullName": "Learn Mode in Google Colab",
+      "nodeType": "product",
+      "proposalReason": "Represents AI-as-tutor pattern embedded in a developer tool; potentially interesting for tracking AI-assisted learning product patterns.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Product or feature name from a single launch; not lexicon vocabulary on its own.",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "redos",
+      "label": "ReDoS",
+      "workingDef": "A class of denial-of-service attack that exploits pathological backtracking in regex engines, causing exponential time complexity on specially crafted inputs.",
+      "clusters": [
+        "security",
+        "technical"
+      ],
+      "suggestedRels": [
+        "sandboxing",
+        "blast-radius",
+        "exploit"
+      ],
+      "sources": [
+        {
+          "url": "https://simonwillison.net/2026/May/4/tre-python-binding/#atom-everything",
+          "domain": "simonwillison.net",
+          "title": "Research: TRE Python binding — ReDoS robustness demo",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-05-04T17:52:00+00:00",
+          "firstSeen": "2026-05-04T19:27:54.284Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-04T19:27:54.284Z",
+      "dateLastSeen": "2026-05-04T19:27:54.284Z",
+      "sz": 14,
+      "fullName": "Regular Expression Denial-of-Service (ReDoS)",
+      "proposalReason": "ReDoS is a named security vulnerability class with lasting relevance to both traditional and AI-assisted software development contexts, distinct from existing security terms in the graph.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Systems/security term that isn't AI-specific (Windows internals, networking, regex).",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "claude-partner-network",
+      "label": "Claude Partner Network",
+      "workingDef": "Anthropic's ecosystem of consulting and systems integration firms — including Accenture, Deloitte, and PwC — authorized to deploy and build on Claude for enterprise customers, supported by Anthropic programs, funding, and dedicated teams.",
+      "clusters": [
+        "companies",
+        "business"
+      ],
+      "suggestedRels": [
+        "anthropic-co",
+        "claude",
+        "vertical-ai",
+        "wrapper"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/enterprise-ai-services-company",
+          "domain": "anthropic.com",
+          "title": "Building a new enterprise AI services company with Blackstone, Hellman & Friedman, and Goldman Sachs ",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-05-04T19:27:54.284Z"
+        },
+        {
+          "url": "https://www.anthropic.com/news/services-track-partner-hub",
+          "domain": "anthropic.com",
+          "title": "Introducing the Services Track and Partner Hub of the Claude Partner Network",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-06-03T20:54:34.002Z"
+        }
+      ],
+      "sourceCount": 2,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-04T19:27:54.284Z",
+      "dateLastSeen": "2026-06-03T20:54:34.002Z",
+      "sz": 14,
+      "fullName": "Claude Partner Network (Anthropic)",
+      "nodeType": "initiative",
+      "proposalReason": "First primary-source mention of this named partner program from Anthropic's own newsroom; worth tracking as a named distribution initiative.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Company programme or launch framing (single company, single source).",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "applied-ai-engineering",
+      "label": "Applied AI Engineering",
+      "workingDef": "A staffing and delivery model in which AI-provider engineers (here, Anthropic Applied AI staff) embed alongside a client's own engineering team to identify high-impact use cases, build custom systems, and provide long-term operational support — distinct from pure product or API access.",
+      "clusters": [
+        "work",
+        "business"
+      ],
+      "suggestedRels": [
+        "anthropic-co",
+        "claude",
+        "vertical-ai",
+        "outcome-focused-work"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/enterprise-ai-services-company",
+          "domain": "anthropic.com",
+          "title": "Building a new enterprise AI services company with Blackstone, Hellman & Friedman, and Goldman Sachs ",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-05-04T19:27:54.284Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-04T19:27:54.284Z",
+      "dateLastSeen": "2026-05-04T19:27:54.284Z",
+      "sz": 14,
+      "fullName": "Applied AI Engineering (Anthropic)",
+      "proposalReason": "Emerging term for a distinct go-to-market and delivery pattern that differs from self-serve API or SI-led work; likely to recur as hyperscalers and labs build professional-services arms.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Company programme or launch framing (single company, single source).",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "ai-systems-integrator",
+      "label": "AI Systems Integrator",
+      "workingDef": "A consulting or engineering firm that leads the end-to-end deployment of AI models into enterprise operations — analogous to traditional IT systems integrators but specializing in frontier AI integration, workflow embedding, and long-term support.",
+      "clusters": [
+        "business",
+        "companies"
+      ],
+      "suggestedRels": [
+        "vertical-ai",
+        "wrapper",
+        "infrastructure",
+        "stack",
+        "claude-partner-network"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/enterprise-ai-services-company",
+          "domain": "anthropic.com",
+          "title": "Building a new enterprise AI services company with Blackstone, Hellman & Friedman, and Goldman Sachs ",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-05-04T19:27:54.284Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-04T19:27:54.284Z",
+      "dateLastSeen": "2026-05-04T19:27:54.284Z",
+      "sz": 14,
+      "proposalReason": "The article repeatedly distinguishes this role from pure software licensing; tracking it captures an important structural concept in how AI reaches enterprises.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Company programme or launch framing (single company, single source).",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "canvas-ai-mode",
+      "label": "Canvas (AI Mode)",
+      "workingDef": "A side-panel document-building tool within Google Search's AI Mode that enables users to generate, structure, and iteratively refine long-form plans and formatted documents through conversational prompting.",
+      "clusters": [
+        "tools",
+        "work"
+      ],
+      "suggestedRels": [
+        "ai-mode",
+        "structured-output",
+        "recursive-refinement"
+      ],
+      "sources": [
+        {
+          "url": "https://blog.google/products-and-platforms/products/search/gardening-tips/",
+          "domain": "blog.google",
+          "title": "5 gardening tips you can try right in Search",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Wed, 06 May 2026 16:00:00 +0000",
+          "firstSeen": "2026-05-09T07:44:17.196Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-09T07:44:17.196Z",
+      "dateLastSeen": "2026-05-09T07:44:17.196Z",
+      "sz": 14,
+      "fullName": "Canvas Tool in AI Mode (Google Search)",
+      "nodeType": "product",
+      "proposalReason": "Canvas is a named sub-feature of AI Mode distinct enough from generic structured output tools to track separately, particularly as document-generation UI patterns proliferate across AI products.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Product or feature name from a single launch; not lexicon vocabulary on its own.",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "trusted-access-cyber",
+      "label": "Trusted Access for Cyber",
+      "workingDef": "An identity and trust-based access framework from OpenAI that grants verified cybersecurity defenders tiered, more permissive model behaviors for authorized defensive workflows, while maintaining safeguards against malicious use.",
+      "clusters": [
+        "security",
+        "autonomy"
+      ],
+      "suggestedRels": [
+        "gpt55",
+        "penetration-testing",
+        "red-teaming",
+        "ai-red-teaming",
+        "guardrails",
+        "jailbreak",
+        "cve"
+      ],
+      "sources": [
+        {
+          "url": "https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber",
+          "domain": "openai.com",
+          "title": "Scaling Trusted Access for Cyber with GPT-5.5 and GPT-5.5-Cyber",
+          "sourceLabel": "OpenAI News",
+          "publishedAt": "Thu, 07 May 2026 13:00:00 GMT",
+          "firstSeen": "2026-05-09T07:44:17.196Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-09T07:44:17.196Z",
+      "dateLastSeen": "2026-05-09T07:44:17.196Z",
+      "sz": 14,
+      "fullName": "Trusted Access for Cyber (TAC) (OpenAI)",
+      "nodeType": "initiative",
+      "proposalReason": "Core subject of the article; a novel access-governance concept that sits at the intersection of model safety and security practitioner enablement.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Company programme or launch framing (single company, single source).",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "codex-security",
+      "label": "Codex Security",
+      "workingDef": "An OpenAI offering extending Codex capabilities specifically toward open-source and defensive security use cases, aimed at broadening access to AI-powered vulnerability analysis for the defender community.",
+      "clusters": [
+        "security",
+        "tools"
+      ],
+      "suggestedRels": [
+        "codex-model",
+        "openai-co",
+        "penetration-testing",
+        "cve",
+        "exploit"
+      ],
+      "sources": [
+        {
+          "url": "https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber",
+          "domain": "openai.com",
+          "title": "Scaling Trusted Access for Cyber with GPT-5.5 and GPT-5.5-Cyber",
+          "sourceLabel": "OpenAI News",
+          "publishedAt": "Thu, 07 May 2026 13:00:00 GMT",
+          "firstSeen": "2026-05-09T07:44:17.196Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-09T07:44:17.196Z",
+      "dateLastSeen": "2026-05-09T07:44:17.196Z",
+      "sz": 14,
+      "fullName": "Codex Security (OpenAI)",
+      "nodeType": "product",
+      "proposalReason": "Named product introduced in this article for the first time, targeting a distinct open-source/defender audience segment distinct from the TAC tiers.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Product or feature name from a single launch; not lexicon vocabulary on its own.",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "webrtc",
+      "label": "WebRTC",
+      "workingDef": "A browser protocol for real-time peer-to-peer audio, video, and data communication that aggressively drops packets to minimize latency — a design tradeoff that conflicts with voice AI use cases where prompt accuracy matters more than speed.",
+      "clusters": [
+        "technical",
+        "tools"
+      ],
+      "suggestedRels": [
+        "voice-ai",
+        "real-time-audio-pipeline",
+        "latency"
+      ],
+      "sources": [
+        {
+          "url": "https://simonwillison.net/2026/May/9/luke-curley/#atom-everything",
+          "domain": "simonwillison.net",
+          "title": "A quote from Luke Curley",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-05-09T01:03:58+00:00",
+          "firstSeen": "2026-05-09T07:44:17.196Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-09T07:44:17.196Z",
+      "dateLastSeen": "2026-05-09T07:44:17.196Z",
+      "sz": 14,
+      "fullName": "WebRTC (Web Real-Time Communication)",
+      "proposalReason": "The article's core technical subject: WebRTC's packet-dropping behavior and why it creates problems for voice AI delivery at scale.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Systems/security term that isn't AI-specific (Windows internals, networking, regex).",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "toolathlon",
+      "label": "Toolathlon",
+      "workingDef": "A benchmark measuring AI model performance across a diverse suite of tool-use tasks, testing how effectively models can select and invoke tools in realistic agentic workflows.",
+      "clusters": [
+        "agentic"
+      ],
+      "suggestedRels": [
+        "evals",
+        "tool-use",
+        "agent",
+        "benchmark-saturation"
+      ],
+      "sources": [
+        {
+          "url": "https://openai.com/index/introducing-gpt-5-4/",
+          "domain": "openai.com",
+          "title": "Introducing GPT-5.4",
+          "sourceLabel": "OpenAI Research",
+          "publishedAt": null,
+          "firstSeen": "2026-05-09T07:44:17.196Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-09T07:44:17.196Z",
+      "dateLastSeen": "2026-05-09T07:44:17.196Z",
+      "sz": 16,
+      "proposalReason": "A newly named tool-use benchmark appearing in GPT-5.4's launch; worth tracking as a recurring reference point for agentic tool-use evaluation.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Single benchmark or its internal jargon; promote only if it becomes a reference point (GDPval is the one recommended).",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "rollout-logprobs",
+      "label": "Rollout Logprobs",
+      "workingDef": "The per-token log-probabilities produced by an inference engine during the rollout (sampling) phase of online RL training, used by the trainer to compute policy ratios, KL divergence, clip rate, and entropy. Their correctness is a prerequisite for stable RL optimization.",
+      "clusters": [
+        "technical",
+        "models"
+      ],
+      "suggestedRels": [
+        "inference",
+        "training",
+        "rlhf",
+        "structured-output"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections",
+          "domain": "huggingface.co",
+          "title": "vLLM V0 to V1: Correctness Before Corrections in RL",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Wed, 06 May 2026 19:06:55 GMT",
+          "firstSeen": "2026-05-09T19:00:00.611Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-09T19:00:00.611Z",
+      "dateLastSeen": "2026-05-09T19:00:00.611Z",
+      "sz": 14,
+      "proposalReason": "Rollout logprobs are treated as a distinct correctness surface throughout the article, separate from training-side logprobs, and the term is operationally precise enough to warrant tracking in the context of agentic and RL systems.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Implementation detail from one paper or blog post; too specialist for the lexicon.",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "inflight-weight-update",
+      "label": "Inflight Weight Update",
+      "workingDef": "A mechanism in online RL inference pipelines where model weights are updated in the rollout server while inference requests are in flight, requiring careful synchronization to avoid stale-weight cache hits and policy-ratio drift.",
+      "clusters": [
+        "technical",
+        "models"
+      ],
+      "suggestedRels": [
+        "inference",
+        "training",
+        "rlhf",
+        "kv-cache"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections",
+          "domain": "huggingface.co",
+          "title": "vLLM V0 to V1: Correctness Before Corrections in RL",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Wed, 06 May 2026 19:06:55 GMT",
+          "firstSeen": "2026-05-09T19:00:00.611Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-09T19:00:00.611Z",
+      "dateLastSeen": "2026-05-09T19:00:00.611Z",
+      "sz": 14,
+      "proposalReason": "The article gives a precise account of how inflight weight updates interact with prefix caching and scheduling defaults, surfacing a concrete failure mode relevant to any team running online RL at scale.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Implementation detail from one paper or blog post; too specialist for the lexicon.",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "fp32-lm-head",
+      "label": "fp32 lm_head",
+      "workingDef": "The practice of computing the final language-model output projection (lm_head) in 32-bit floating point rather than lower precision, used to ensure numerical consistency between training and inference logits in RL pipelines where small logit differences compound into policy-ratio and KL errors.",
+      "clusters": [
+        "technical",
+        "models"
+      ],
+      "suggestedRels": [
+        "inference",
+        "training",
+        "rlhf",
+        "quantization"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections",
+          "domain": "huggingface.co",
+          "title": "vLLM V0 to V1: Correctness Before Corrections in RL",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Wed, 06 May 2026 19:06:55 GMT",
+          "firstSeen": "2026-05-09T19:00:00.611Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-09T19:00:00.611Z",
+      "dateLastSeen": "2026-05-09T19:00:00.611Z",
+      "sz": 14,
+      "proposalReason": "Cited independently in both the MiniMax-M1 technical report and the ScaleRL paper as a necessary RL recipe ingredient; the article ablates it explicitly, giving the concept cross-source evidence as a precision-correctness design choice.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Implementation detail from one paper or blog post; too specialist for the lexicon.",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "google-flow",
+      "label": "Google Flow",
+      "workingDef": "An AI-powered creative tool from Google designed to assist filmmakers with production workflows, referenced here as a tool available to competition entrants for generating or augmenting film content.",
+      "clusters": [
+        "tools",
+        "companies"
+      ],
+      "suggestedRels": [
+        "google-co",
+        "multimodal"
+      ],
+      "sources": [
+        {
+          "url": "https://blog.google/innovation-and-ai/technology/ai/future-vision-film-competition-xprize/",
+          "domain": "blog.google",
+          "title": "Google is partnering with XPRIZE and Range Media Partners on the $3.5 million Future Vision film competition.",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Tue, 05 May 2026 16:00:00 +0000",
+          "firstSeen": "2026-05-09T19:00:00.611Z"
+        },
+        {
+          "url": "https://blog.google/company-news/inside-google/company-announcements/the-small-brief/",
+          "domain": "blog.google",
+          "title": "See what happens when creative legends use AI to make ads for small businesses.",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Fri, 08 May 2026 15:00:00 +0000",
+          "firstSeen": "2026-05-10T19:02:19.492Z"
+        },
+        {
+          "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-google-ai/",
+          "domain": "blog.google",
+          "title": "How we used Gemini to build Google I/O 2026",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Mon, 01 Jun 2026 16:00:00 +0000",
+          "firstSeen": "2026-06-01T21:31:49.667Z"
+        }
+      ],
+      "sourceCount": 3,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-09T19:00:00.611Z",
+      "dateLastSeen": "2026-06-01T21:31:49.667Z",
+      "sz": 14,
+      "fullName": "Google Flow (AI Filmmaking Tool)",
+      "nodeType": "product",
+      "proposalReason": "Newly named Google product for AI-assisted filmmaking; worth tracking as AI creative tools expand into long-form video production.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Product or feature name from a single launch; not lexicon vocabulary on its own.",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "gpt-realtime-2",
+      "label": "GPT-Realtime-2",
+      "workingDef": "OpenAI's first realtime voice model with GPT-5-class reasoning, designed for live voice interactions where the model reasons through requests, calls tools in parallel, handles interruptions, and maintains a 128K context window. Supports adjustable reasoning effort levels and tone control for production voice agent deployments.",
+      "clusters": [
+        "tools",
+        "agentic"
+      ],
+      "suggestedRels": [
+        "voice-ai",
+        "real-time-audio-pipeline",
+        "reasoning-models",
+        "tool-use",
+        "openai-co"
+      ],
+      "sources": [
+        {
+          "url": "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api",
+          "domain": "openai.com",
+          "title": "Advancing voice intelligence with new models in the API",
+          "sourceLabel": "OpenAI News",
+          "publishedAt": "Thu, 07 May 2026 10:00:00 GMT",
+          "firstSeen": "2026-05-10T19:02:19.492Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-10T19:02:19.492Z",
+      "dateLastSeen": "2026-05-10T19:02:19.492Z",
+      "sz": 14,
+      "fullName": "GPT-Realtime-2 (OpenAI)",
+      "nodeType": "product",
+      "proposalReason": "A new product node under OpenAI; distinct from the existing voice-ai concept as a named, versioned model with specific agentic and reasoning capabilities.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Product or feature name from a single launch; not lexicon vocabulary on its own.",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "clawmark",
+      "label": "Clawmark",
+      "workingDef": "A living-world benchmark designed to evaluate multi-turn, multi-day, multimodal coworker agents on long-horizon tasks. Results from its initial deployment reportedly show low task success rates, contributing to the capability-reliability gap literature on agentic systems.",
+      "clusters": [
+        "agentic",
+        "models"
+      ],
+      "suggestedRels": [
+        "long-horizon-autonomy",
+        "evals",
+        "benchmark-gaming",
+        "capability-reliability-gap",
+        "multi-agent"
+      ],
+      "sources": [
+        {
+          "url": "https://lastweekin.ai/p/lwiai-podcast-243-gpt-55-deepseek",
+          "domain": "lastweekin.ai",
+          "title": "LWiAI Podcast #243 - GPT 5.5, DeepSeek V4, AI safety sabotage",
+          "sourceLabel": "Last Week in AI",
+          "publishedAt": "Mon, 04 May 2026 07:54:06 GMT",
+          "firstSeen": "2026-05-10T19:02:19.492Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-10T19:02:19.492Z",
+      "dateLastSeen": "2026-05-10T19:02:19.492Z",
+      "sz": 14,
+      "fullName": "Clawmark (Long-Horizon Agent Benchmark)",
+      "nodeType": "product",
+      "proposalReason": "New named benchmark specifically targeting multi-turn, multi-day agentic performance — a distinct evaluation framing worth tracking as agent benchmarking matures.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Single benchmark or its internal jargon; promote only if it becomes a reference point (GDPval is the one recommended).",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "document-delegation-corruption",
+      "label": "Document Delegation Corruption",
+      "workingDef": "A failure mode identified in research showing that LLMs corrupt or degrade document content when tasks are delegated across model interactions, raising concerns about information fidelity in agentic workflows where documents pass through multiple model-mediated steps.",
+      "clusters": [
+        "safety",
+        "agentic"
+      ],
+      "suggestedRels": [
+        "delegation",
+        "hallucination",
+        "silent-failure",
+        "goal-drift",
+        "context-entropy"
+      ],
+      "sources": [
+        {
+          "url": "https://lastweekin.ai/p/lwiai-podcast-243-gpt-55-deepseek",
+          "domain": "lastweekin.ai",
+          "title": "LWiAI Podcast #243 - GPT 5.5, DeepSeek V4, AI safety sabotage",
+          "sourceLabel": "Last Week in AI",
+          "publishedAt": "Mon, 04 May 2026 07:54:06 GMT",
+          "firstSeen": "2026-05-10T19:02:19.492Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-10T19:02:19.492Z",
+      "dateLastSeen": "2026-05-10T19:02:19.492Z",
+      "sz": 14,
+      "fullName": "Document Delegation Corruption (LLM)",
+      "proposalReason": "New candidate: identifies a concrete, named failure mode for delegated document handling in agentic pipelines — complements existing context-degradation and silent-failure concepts.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Implementation detail from one paper or blog post; too specialist for the lexicon.",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "deep-search-finance",
+      "label": "Deep Search",
+      "workingDef": "A feature within Google Finance (and Google Search more broadly) that handles complex financial and market questions by generating comprehensive AI-synthesised responses with sourced links. Distinct from Deep Research as a product name but represents a similar pattern of AI-mediated multi-step information synthesis applied to a specific vertical domain.",
+      "clusters": [
+        "tools",
+        "landscape"
+      ],
+      "suggestedRels": [
+        "deep-research",
+        "gemini",
+        "grounding",
+        "rag"
+      ],
+      "sources": [
+        {
+          "url": "https://blog.google/products-and-platforms/products/search/ai-powered-google-finance-in-europe/",
+          "domain": "blog.google",
+          "title": "The new AI-powered Google Finance is expanding to Europe.",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Mon, 11 May 2026 06:00:00 +0000",
+          "firstSeen": "2026-05-11T07:07:01.775Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-11T07:07:01.775Z",
+      "dateLastSeen": "2026-05-11T07:07:01.775Z",
+      "sz": 14,
+      "fullName": "Deep Search (Google Finance)",
+      "nodeType": "product",
+      "proposalReason": "New product-specific instantiation of AI-powered deep search within a financial vertical; worth tracking as a named feature with potential lasting usage.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Product or feature name from a single launch; not lexicon vocabulary on its own.",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "live-earnings-ai",
+      "label": "Live Earnings AI",
+      "workingDef": "A Google Finance feature that pairs live corporate earnings call audio with synchronised transcripts and AI-generated insights, including annotated highlights. Represents a class of real-time AI summarisation applied to time-sensitive financial events.",
+      "clusters": [
+        "tools",
+        "work"
+      ],
+      "suggestedRels": [
+        "voice-ai",
+        "grounding",
+        "gemini",
+        "multimodal"
+      ],
+      "sources": [
+        {
+          "url": "https://blog.google/products-and-platforms/products/search/ai-powered-google-finance-in-europe/",
+          "domain": "blog.google",
+          "title": "The new AI-powered Google Finance is expanding to Europe.",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Mon, 11 May 2026 06:00:00 +0000",
+          "firstSeen": "2026-05-11T07:07:01.775Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-11T07:07:01.775Z",
+      "dateLastSeen": "2026-05-11T07:07:01.775Z",
+      "sz": 14,
+      "fullName": "Live Earnings AI (Google Finance)",
+      "nodeType": "product",
+      "proposalReason": "Represents a named pattern of real-time AI summarisation over live audio events in a high-stakes financial context; may be indicative of a broader product category.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Product or feature name from a single launch; not lexicon vocabulary on its own.",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "document-boundary-routing",
+      "label": "Document-Boundary Routing",
+      "workingDef": "A training technique introduced in EMO (Allen AI, 2026) in which all tokens within a single document are constrained to activate experts drawn from a shared, document-level expert pool. The pool is selected by averaging per-token router preferences across the document. This uses document boundaries as a weak, unlabelled supervisory signal to encourage higher-level domain specialisation in MoE experts, avoiding the need for explicit domain labels on the pretraining corpus.",
+      "clusters": [
+        "technical",
+        "models"
+      ],
+      "suggestedRels": [
+        "mixture-of-experts",
+        "training",
+        "structured-output"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/allenai/emo",
+          "domain": "huggingface.co",
+          "title": "EMO: Pretraining mixture of experts for emergent modularity",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Fri, 08 May 2026 16:03:50 GMT",
+          "firstSeen": "2026-05-11T07:07:01.775Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-11T07:07:01.775Z",
+      "dateLastSeen": "2026-05-11T07:07:01.775Z",
+      "sz": 14,
+      "fullName": "Document-Boundary Routing (MoE Training Signal)",
+      "proposalReason": "A novel routing mechanism with a distinct conceptual identity — using document boundaries as a routing constraint is a concrete methodological contribution not yet tracked in the graph.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Implementation detail from one paper or blog post; too specialist for the lexicon.",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "selective-expert-use",
+      "label": "Selective Expert Use",
+      "workingDef": "An inference-time capability of certain Mixture-of-Experts models (notably EMO, Allen AI 2026) whereby only a small, task-relevant subset of total experts is loaded and activated, while the remaining experts are discarded. Subset selection is guided by routing-usage statistics on a small validation sample. Enables improved memory and compute efficiency for specific tasks without separate fine-tuned models. Contrasts with standard MoE behaviour where full expert access is required to avoid significant performance degradation.",
+      "clusters": [
+        "technical",
+        "models"
+      ],
+      "suggestedRels": [
+        "mixture-of-experts",
+        "inference",
+        "latency",
+        "cost"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/allenai/emo",
+          "domain": "huggingface.co",
+          "title": "EMO: Pretraining mixture of experts for emergent modularity",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Fri, 08 May 2026 16:03:50 GMT",
+          "firstSeen": "2026-05-11T07:07:01.775Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-11T07:07:01.775Z",
+      "dateLastSeen": "2026-05-11T07:07:01.775Z",
+      "sz": 14,
+      "fullName": "Selective Expert Use (MoE Inference)",
+      "proposalReason": "Distinct operational concept for composable deployment of large sparse models — relevant to cost, latency, and infrastructure planning as MoE models scale.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Implementation detail from one paper or blog post; too specialist for the lexicon.",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "expert-subset-specialization",
+      "label": "Expert Subset Specialization",
+      "workingDef": "The observed phenomenon in MoE models where identifiable groups of experts cluster around higher-level semantic domains (e.g., mathematics, code, biomedical text) rather than low-level lexical patterns such as punctuation or prepositions. Standard MoE training tends to produce the latter; EMO's document-boundary routing is designed to produce the former. Linked to the broader goal of composable and interpretable model architectures.",
+      "clusters": [
+        "technical",
+        "models"
+      ],
+      "suggestedRels": [
+        "mixture-of-experts",
+        "interpretability",
+        "training"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/allenai/emo",
+          "domain": "huggingface.co",
+          "title": "EMO: Pretraining mixture of experts for emergent modularity",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Fri, 08 May 2026 16:03:50 GMT",
+          "firstSeen": "2026-05-11T07:07:01.775Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-11T07:07:01.775Z",
+      "dateLastSeen": "2026-05-11T07:07:01.775Z",
+      "sz": 14,
+      "fullName": "Expert Subset Specialization (MoE Domain Alignment)",
+      "proposalReason": "Captures a meaningful distinction — domain-level vs. lexical-level expert specialisation — that has implications for interpretability and composable deployment patterns.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Implementation detail from one paper or blog post; too specialist for the lexicon.",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "openai-campus-network",
+      "label": "OpenAI Campus Network",
+      "workingDef": "An OpenAI initiative partnering with university student clubs worldwide to facilitate hands-on AI learning, workshops, hackathons, and early access to OpenAI tools and programs. Positioned as a community-building and talent-pipeline effort targeting student leaders across disciplines.",
+      "clusters": [
+        "companies",
+        "landscape"
+      ],
+      "suggestedRels": [
+        "openai-co",
+        "chatgpt",
+        "codex-model"
+      ],
+      "sources": [
+        {
+          "url": "https://openai.com/index/openai-campus-network-student-club-interest-form",
+          "domain": "openai.com",
+          "title": "OpenAI Campus Network: Student club interest form",
+          "sourceLabel": "OpenAI News",
+          "publishedAt": "Mon, 11 May 2026 10:00:00 GMT",
+          "firstSeen": "2026-05-11T19:45:39.014Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-11T19:45:39.014Z",
+      "dateLastSeen": "2026-05-11T19:45:39.014Z",
+      "sz": 14,
+      "nodeType": "initiative",
+      "proposalReason": "New initiative name worth tracking as a longlist entry; represents OpenAI's institutional outreach strategy toward academic communities.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Company programme or launch framing (single company, single source).",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "hallucinated-cvss-score",
+      "label": "Hallucinated CVSS Score",
+      "workingDef": "A Common Vulnerability Scoring System (CVSS) score embedded in attacker-authored exploit code that is factually incorrect or fabricated — identified by Google GTIG as a forensic signal indicating the code was produced with LLM assistance. The hallucinated score is a characteristic LLM output artefact: the model generates plausible-looking metadata without verifying its accuracy. Its presence in a malicious script provides defenders with a new category of attribution evidence for AI-assisted attacks.",
+      "clusters": [
+        "security",
+        "critical"
+      ],
+      "suggestedRels": [
+        "hallucination",
+        "zero-day",
+        "exploit",
+        "cve"
+      ],
+      "sources": [
+        {
+          "url": "https://www.theverge.com/tech/928007/google-ai-zero-day-exploit-stopped",
+          "domain": "theverge.com",
+          "title": "Google stopped a zero-day hack that it says was developed with AI",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-05-11T12:09:42-04:00",
+          "firstSeen": "2026-05-11T19:45:39.014Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-11T19:45:39.014Z",
+      "dateLastSeen": "2026-05-11T19:45:39.014Z",
+      "sz": 14,
+      "fullName": "Hallucinated CVSS Score (LLM Forensic Artefact in Exploit Code)",
+      "proposalReason": "Introduces a concrete forensic signal — hallucinated metadata in exploit code — that may become a standard attribution indicator for AI-assisted attacks.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Single threat-intel detail.",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "enterprise-philosophy",
+      "label": "Enterprise Philosophy",
+      "workingDef": "Ben Thompson's framing (Stratechery, 2024–2026) for the third wave of technology business logic, distinct from the consumer and productivity-copilot philosophies. Under this framing, the buyer — not the end user — drives adoption; the motivation is bottom-line improvement through cost reduction and revenue growth; and AI systems act as worker replacements rather than worker augmentations. Thompson argues the correct historical analogy is the 1970s mainframe wave (accounting/ERP software eliminating back-office roles), not SaaS or the consumer internet.",
+      "clusters": [
+        "business",
+        "work"
+      ],
+      "suggestedRels": [
+        "saas",
+        "saaspocalypse",
+        "pilot-purgatory",
+        "outcome-focused-work",
+        "agentic-business-model",
+        "vertical-ai"
+      ],
+      "sources": [
+        {
+          "url": "https://stratechery.com/2026/the-deployment-company-back-to-the-70s-apple-and-intel/",
+          "domain": "stratechery.com",
+          "title": "The Deployment Company, Back to the 70s, Apple and Intel",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Wed, 13 May 2026 10:00:00 +0000",
+          "firstSeen": "2026-05-13T19:53:32.068Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-13T19:53:32.068Z",
+      "dateLastSeen": "2026-05-13T19:53:32.068Z",
+      "sz": 14,
+      "fullName": "Enterprise Philosophy (AI Deployment Paradigm)",
+      "proposalReason": "A durable analytical frame for understanding enterprise AI adoption logic — distinct from the copilot/assistant paradigm — worth tracking as a vocabulary term in the AI deployment landscape.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "News item or one interview's phrasing — an event, deal or general business term rather than AI vocabulary.",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "ontology-powered-os",
+      "label": "Ontology-Powered Operating System",
+      "workingDef": "Palantir's term for Foundry, its enterprise data integration platform that constructs a unified ontology — a structured semantic representation of an organization's operations, entities, and relationships — as the substrate for AI reasoning and agentic workflows. The framing positions structured enterprise data as a prerequisite for reliable agent-as-worker-replacement, contrasting with the 'unstructured data handling' capability of LLMs alone. Thompson cites the concept to argue that data integration depth, not model capability alone, determines which enterprises can realize AI-driven productivity gains.",
+      "clusters": [
+        "business",
+        "technical"
+      ],
+      "suggestedRels": [
+        "rag",
+        "grounding",
+        "memory",
+        "workflow",
+        "state",
+        "infrastructure"
+      ],
+      "sources": [
+        {
+          "url": "https://stratechery.com/2026/the-deployment-company-back-to-the-70s-apple-and-intel/",
+          "domain": "stratechery.com",
+          "title": "The Deployment Company, Back to the 70s, Apple and Intel",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Wed, 13 May 2026 10:00:00 +0000",
+          "firstSeen": "2026-05-13T19:53:32.068Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-13T19:53:32.068Z",
+      "dateLastSeen": "2026-05-13T19:53:32.068Z",
+      "sz": 14,
+      "fullName": "Ontology-Powered Operating System (Enterprise Data Layer)",
+      "proposalReason": "A substantive framing term for the enterprise data-layer problem — the argument that ontology (not just RAG or embeddings) is the foundation for agentic enterprise deployment.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "News item or one interview's phrasing — an event, deal or general business term rather than AI vocabulary.",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "variance-driver-bridge",
+      "label": "Variance Driver Bridge",
+      "workingDef": "A structured analytical output — popularised in finance reporting workflows — that decomposes the movement between budget, forecast, and actuals into labelled causal drivers across revenue, margin, operating expenses, and cash flow. In the context of LLM-assisted finance work, Codex and similar tools are prompted to auto-generate these bridges from close workbooks and dashboards, reducing manual assembly time.",
+      "clusters": [
+        "work",
+        "tools"
+      ],
+      "suggestedRels": [
+        "codex-model",
+        "workflow",
+        "artifact",
+        "output"
+      ],
+      "sources": [
+        {
+          "url": "https://openai.com/academy/how-finance-teams-use-codex",
+          "domain": "openai.com",
+          "title": "How finance teams use Codex",
+          "sourceLabel": "OpenAI News",
+          "publishedAt": "Tue, 12 May 2026 15:00:00 GMT",
+          "firstSeen": "2026-05-13T19:53:32.068Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-13T19:53:32.068Z",
+      "dateLastSeen": "2026-05-13T19:53:32.068Z",
+      "sz": 14,
+      "proposalReason": "A domain-specific analytical artefact term appearing in AI-assisted finance workflows; worth tracking as vertical-AI use cases codify finance-specific output patterns.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Off-topic: picked up from a non-AI article (airline ops, finance reporting, public-sector policy).",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "management-business-review",
+      "label": "Management Business Review",
+      "workingDef": "A recurring executive reporting cadence — typically monthly — in which finance teams consolidate close outputs, forecast updates, and owner commentary into a structured narrative for senior leadership review. Increasingly targeted as a primary AI-automation use case, where models like Codex are used to generate a 'first-pass' narrative from raw source materials before human editorial shaping.",
+      "clusters": [
+        "work",
+        "business"
+      ],
+      "suggestedRels": [
+        "codex-model",
+        "workflow",
+        "outcome-focused-work",
+        "artifact"
+      ],
+      "sources": [
+        {
+          "url": "https://openai.com/academy/how-finance-teams-use-codex",
+          "domain": "openai.com",
+          "title": "How finance teams use Codex",
+          "sourceLabel": "OpenAI News",
+          "publishedAt": "Tue, 12 May 2026 15:00:00 GMT",
+          "firstSeen": "2026-05-13T19:53:32.068Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-13T19:53:32.068Z",
+      "dateLastSeen": "2026-05-13T19:53:32.068Z",
+      "sz": 14,
+      "fullName": "Management Business Review (MBR)",
+      "proposalReason": "Emerges as a named target workflow category in vertical AI deployment for finance; worth observing as labs define domain-specific agentic use cases.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Off-topic: picked up from a non-AI article (airline ops, finance reporting, public-sector policy).",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "qa-memo",
+      "label": "QA Memo",
+      "workingDef": "A structured document output produced during AI-assisted finance model review, summarising high-risk issues found, cleanup changes made, outstanding business assumptions, and items requiring human owner review. Codex is prompted to generate severity-ranked QA memos alongside cleaned model files as part of a dual-output pattern.",
+      "clusters": [
+        "work",
+        "tools"
+      ],
+      "suggestedRels": [
+        "codex-model",
+        "artifact",
+        "output",
+        "human-in-the-loop"
+      ],
+      "sources": [
+        {
+          "url": "https://openai.com/academy/how-finance-teams-use-codex",
+          "domain": "openai.com",
+          "title": "How finance teams use Codex",
+          "sourceLabel": "OpenAI News",
+          "publishedAt": "Tue, 12 May 2026 15:00:00 GMT",
+          "firstSeen": "2026-05-13T19:53:32.068Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-13T19:53:32.068Z",
+      "dateLastSeen": "2026-05-13T19:53:32.068Z",
+      "sz": 14,
+      "fullName": "QA Memo (Finance Model Quality Assurance Memo)",
+      "proposalReason": "A named artefact pattern in AI-assisted finance workflows; the dual-output model (cleaned file + QA memo) is a recurring design pattern worth tracking as agentic tools formalise review workflows.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Off-topic: picked up from a non-AI article (airline ops, finance reporting, public-sector policy).",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "vertical-ai-use-case",
+      "label": "Vertical AI Use Case",
+      "workingDef": "A named, domain-specific application pattern for a general-purpose AI tool — such as 'variance driver bridge' or 'CFO reporting pack refresh' for finance teams — that translates broad model capability into a workflow-specific prompt, plugin configuration, and output template. Labs and enterprise vendors increasingly publish catalogues of vertical use cases to drive adoption in specific functions (finance, legal, HR) without requiring custom model training.",
+      "clusters": [
+        "business",
+        "work"
+      ],
+      "suggestedRels": [
+        "vertical-ai",
+        "codex-model",
+        "workflow",
+        "copilot",
+        "outcome-focused-work"
+      ],
+      "sources": [
+        {
+          "url": "https://openai.com/academy/how-finance-teams-use-codex",
+          "domain": "openai.com",
+          "title": "How finance teams use Codex",
+          "sourceLabel": "OpenAI News",
+          "publishedAt": "Tue, 12 May 2026 15:00:00 GMT",
+          "firstSeen": "2026-05-13T19:53:32.068Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-13T19:53:32.068Z",
+      "dateLastSeen": "2026-05-13T19:53:32.068Z",
+      "sz": 14,
+      "proposalReason": "The article is essentially a vertical-use-case catalogue; tracking this framing helps capture how labs are positioning general tools as domain-specific solutions.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Off-topic: picked up from a non-AI article (airline ops, finance reporting, public-sector policy).",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "elastic-fabric-adapter",
+      "label": "Elastic Fabric Adapter",
+      "workingDef": "AWS's OS-bypass networking technology (EFA) used for high-bandwidth, low-latency inter-node communication in large GPU clusters. A core scale-out building block in Amazon EC2 UltraClusters, enabling collective communication operations (all-reduce, all-gather) to span thousands of instances without traversing the standard host networking stack.",
+      "clusters": [
+        "technical"
+      ],
+      "suggestedRels": [
+        "purpose-built-ai-infrastructure",
+        "ai-accelerator",
+        "trainium",
+        "infrastructure"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/amazon/foundation-model-building-blocks",
+          "domain": "huggingface.co",
+          "title": "Building Blocks for Foundation Model Training and Inference on AWS",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Mon, 11 May 2026 23:18:26 GMT",
+          "firstSeen": "2026-05-13T19:53:32.068Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-13T19:53:32.068Z",
+      "dateLastSeen": "2026-05-13T19:53:32.068Z",
+      "sz": 14,
+      "nodeType": "product",
+      "proposalReason": "A specific AWS infrastructure term that recurs across foundation model training discussions; worth tracking as a named component in the distributed training stack.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Systems/security term that isn't AI-specific (Windows internals, networking, regex).",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "incognito-chat",
+      "label": "Incognito Chat",
+      "workingDef": "A chat mode in Meta AI (and WhatsApp) that combines no server-side conversation logging with end-to-end encryption, so that messages are not retained after a session ends and cannot be read by Meta. Meta positions it as distinct from other AI incognito or temporary-chat modes, which may still transmit cleartext to the provider's servers even if logs are deleted on a schedule.",
+      "clusters": [
+        "security",
+        "tools"
+      ],
+      "suggestedRels": [
+        "chatgpt",
+        "gemini",
+        "claude-ai",
+        "privacy-by-design",
+        "data-sovereignty"
+      ],
+      "sources": [
+        {
+          "url": "https://www.theverge.com/tech/929791/meta-ai-incognito-chats",
+          "domain": "theverge.com",
+          "title": "Mark Zuckerberg announces ‘completely private’ encrypted Meta AI chat",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-05-13T12:45:43-04:00",
+          "firstSeen": "2026-05-13T19:53:32.068Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-13T19:53:32.068Z",
+      "dateLastSeen": "2026-05-13T19:53:32.068Z",
+      "sz": 14,
+      "fullName": "Incognito Chat (Meta AI)",
+      "nodeType": "product",
+      "proposalReason": "New named product from Meta introducing a specific privacy architecture for AI chat; worth tracking as a product category term.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Product or feature name from a single launch; not lexicon vocabulary on its own.",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "private-processing",
+      "label": "Private Processing",
+      "workingDef": "A server-side privacy architecture developed by Meta for processing sensitive user data — initially deployed for WhatsApp — that underpins Meta's Incognito Chat feature. Positioned by Meta as enabling computation on user messages without exposing plaintext to Meta's infrastructure.",
+      "clusters": [
+        "security",
+        "technical"
+      ],
+      "suggestedRels": [
+        "incognito-chat",
+        "sandboxing",
+        "data-sovereignty"
+      ],
+      "sources": [
+        {
+          "url": "https://www.theverge.com/tech/929791/meta-ai-incognito-chats",
+          "domain": "theverge.com",
+          "title": "Mark Zuckerberg announces ‘completely private’ encrypted Meta AI chat",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-05-13T12:45:43-04:00",
+          "firstSeen": "2026-05-13T19:53:32.068Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-13T19:53:32.068Z",
+      "dateLastSeen": "2026-05-13T19:53:32.068Z",
+      "sz": 14,
+      "fullName": "Private Processing (Meta)",
+      "proposalReason": "Technical infrastructure term with potential cross-product relevance; named primitive in Meta's AI privacy stack.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Product or feature name from a single launch; not lexicon vocabulary on its own.",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "ready-to-run-workflow",
+      "label": "Ready-to-Run Workflow",
+      "workingDef": "Pre-configured agentic task sequences that can be activated without custom development — as used by Anthropic in Claude for Small Business to describe the 15 packaged workflows covering finance, operations, sales, marketing, HR, and customer service. Represents a productization pattern in which agentic capability is delivered as a curated, domain-specific template rather than a composable primitive.",
+      "clusters": [
+        "work",
+        "agentic"
+      ],
+      "suggestedRels": [
+        "workflow",
+        "connectors",
+        "agentic-harness",
+        "skills",
+        "task-decomposition"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/claude-for-small-business",
+          "domain": "anthropic.com",
+          "title": "Introducing Claude for Small Business",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-05-13T19:53:32.068Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-13T19:53:32.068Z",
+      "dateLastSeen": "2026-05-13T19:53:32.068Z",
+      "sz": 14,
+      "proposalReason": "A distinct productization layer sitting between raw agent infrastructure and bespoke automation — worth tracking as labs increasingly compete on workflow libraries rather than model capability alone.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Company programme or launch framing (single company, single source).",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "smb-ai-adoption-gap",
+      "label": "SMB AI Adoption Gap",
+      "workingDef": "The observed disparity in AI tool adoption between small-to-medium businesses and larger enterprises, attributed to lack of tailored tooling, training, and integration with existing SMB software stacks. Used by Anthropic as a strategic and public-benefit framing to justify the Claude for Small Business launch.",
+      "clusters": [
+        "business",
+        "landscape"
+      ],
+      "suggestedRels": [
+        "pilot-purgatory",
+        "vertical-ai",
+        "connectors",
+        "agentic-business-model"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/claude-for-small-business",
+          "domain": "anthropic.com",
+          "title": "Introducing Claude for Small Business",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-05-13T19:53:32.068Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-13T19:53:32.068Z",
+      "dateLastSeen": "2026-05-13T19:53:32.068Z",
+      "sz": 14,
+      "proposalReason": "A named market framing that may recur as labs compete for the SMB segment and as adoption research develops around this demographic.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Company programme or launch framing (single company, single source).",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "unelevated-sandbox",
+      "label": "Unelevated Sandbox",
+      "workingDef": "A sandbox design pattern — specifically described in OpenAI's Codex Windows implementation — in which isolation constraints (file-write limits, network restrictions) are enforced without requiring the user to grant administrator (elevated) privileges. Contrasted with approaches that prompt for privilege escalation, the unelevated approach uses OS primitives such as write-restricted tokens and synthetic SIDs to enforce boundaries within the normal user permission level.",
+      "clusters": [
+        "security",
+        "technical"
+      ],
+      "suggestedRels": [
+        "sandboxing",
+        "codex-model",
+        "sandbox-escape"
+      ],
+      "sources": [
+        {
+          "url": "https://openai.com/index/building-codex-windows-sandbox",
+          "domain": "openai.com",
+          "title": "Building a safe, effective sandbox to enable Codex on Windows",
+          "sourceLabel": "OpenAI News",
+          "publishedAt": "Wed, 13 May 2026 11:00:00 GMT",
+          "firstSeen": "2026-05-14T19:44:37.204Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-14T19:44:37.204Z",
+      "dateLastSeen": "2026-05-14T19:44:37.204Z",
+      "sz": 14,
+      "fullName": "Unelevated Sandbox (Codex Windows)",
+      "proposalReason": "A new candidate term representing a distinct sandboxing design pattern with lasting relevance to agentic coding tools deployed on user machines.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Systems/security term that isn't AI-specific (Windows internals, networking, regex).",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "write-restricted-token",
+      "label": "Write-Restricted Token",
+      "workingDef": "A Windows process token variant that causes the operating system to perform an additional access check on write operations before allowing them to proceed. Used in sandbox implementations (such as OpenAI's Codex Windows sandbox) to limit which filesystem locations a sandboxed process can modify, without requiring elevated privileges or changes to the host filesystem's integrity labels.",
+      "clusters": [
+        "security",
+        "technical"
+      ],
+      "suggestedRels": [
+        "sandboxing",
+        "codex-model",
+        "blast-radius"
+      ],
+      "sources": [
+        {
+          "url": "https://openai.com/index/building-codex-windows-sandbox",
+          "domain": "openai.com",
+          "title": "Building a safe, effective sandbox to enable Codex on Windows",
+          "sourceLabel": "OpenAI News",
+          "publishedAt": "Wed, 13 May 2026 11:00:00 GMT",
+          "firstSeen": "2026-05-14T19:44:37.204Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-14T19:44:37.204Z",
+      "dateLastSeen": "2026-05-14T19:44:37.204Z",
+      "sz": 14,
+      "fullName": "Write-Restricted Token (Windows Process Isolation)",
+      "proposalReason": "A precise OS-level mechanism central to the sandbox design described; likely to recur in discussions of agent sandboxing on Windows.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Systems/security term that isn't AI-specific (Windows internals, networking, regex).",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "process-token",
+      "label": "Process Token",
+      "workingDef": "A Windows security object associated with a running process that defines that process's identity, group memberships, and privileges. Process tokens determine what system resources and actions a process may access. In agentic coding contexts (e.g., Codex on Windows), process tokens are manipulated to create constrained execution environments without elevating or modifying host-filesystem metadata.",
+      "clusters": [
+        "security",
+        "technical"
+      ],
+      "suggestedRels": [
+        "sandboxing",
+        "codex-model",
+        "blast-radius"
+      ],
+      "sources": [
+        {
+          "url": "https://openai.com/index/building-codex-windows-sandbox",
+          "domain": "openai.com",
+          "title": "Building a safe, effective sandbox to enable Codex on Windows",
+          "sourceLabel": "OpenAI News",
+          "publishedAt": "Wed, 13 May 2026 11:00:00 GMT",
+          "firstSeen": "2026-05-14T19:44:37.204Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-14T19:44:37.204Z",
+      "dateLastSeen": "2026-05-14T19:44:37.204Z",
+      "sz": 14,
+      "fullName": "Process Token (Windows Security Object)",
+      "proposalReason": "A foundational OS concept that becomes terminologically relevant when agentic tools must reason about their own execution permissions at the operating-system level.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Systems/security term that isn't AI-specific (Windows internals, networking, regex).",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "schedule-padding",
+      "label": "Schedule Padding",
+      "workingDef": "The practice of deliberately adding extra time to published flight schedules to improve on-time performance (OTP) statistics without materially improving operational reliability. A form of metric gaming in which reported performance diverges from actual customer experience — airlines inflate scheduled durations so flights arrive 'on time' by the official definition even when nothing operationally improved.",
+      "clusters": [
+        "work",
+        "business"
+      ],
+      "suggestedRels": [
+        "benchmark-gaming",
+        "evals"
+      ],
+      "sources": [
+        {
+          "url": "https://sloanreview.mit.edu/article/resolve-the-conflict-between-efficiency-and-resilience/",
+          "domain": "sloanreview.mit.edu",
+          "title": "  Resolve the Conflict Between Efficiency and Resilience",
+          "sourceLabel": "MIT Sloan Management Review",
+          "publishedAt": "Wed, 13 May 2026 11:00:40 +0000",
+          "firstSeen": "2026-05-16T19:02:56.992Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-16T19:02:56.992Z",
+      "dateLastSeen": "2026-05-16T19:02:56.992Z",
+      "sz": 14,
+      "proposalReason": "A specific, nameable instance of metric-gaming behaviour with clear analogues in AI benchmarking and evaluation contexts; worth tracking as a cross-domain example of how organisations optimise reported metrics rather than underlying outcomes.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Off-topic: picked up from a non-AI article (airline ops, finance reporting, public-sector policy).",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "customer-centric-metrics",
+      "label": "Customer-Centric Metrics",
+      "workingDef": "Performance measurement frameworks that align KPIs with actual customer outcomes rather than operational proxies. Contrasted with traditional operational metrics (e.g., on-time performance based on 15-minute cutoffs) that can be gamed or that fail to capture experience for heterogeneous customer segments — e.g., connecting passengers vs. non-stop passengers in the airline context.",
+      "clusters": [
+        "business",
+        "work"
+      ],
+      "suggestedRels": [
+        "evals",
+        "outcome-focused-work"
+      ],
+      "sources": [
+        {
+          "url": "https://sloanreview.mit.edu/article/resolve-the-conflict-between-efficiency-and-resilience/",
+          "domain": "sloanreview.mit.edu",
+          "title": "  Resolve the Conflict Between Efficiency and Resilience",
+          "sourceLabel": "MIT Sloan Management Review",
+          "publishedAt": "Wed, 13 May 2026 11:00:40 +0000",
+          "firstSeen": "2026-05-16T19:02:56.992Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-16T19:02:56.992Z",
+      "dateLastSeen": "2026-05-16T19:02:56.992Z",
+      "sz": 14,
+      "proposalReason": "A framing concept relevant to AI evaluation design: the argument that proxy metrics diverge from actual user outcomes parallels debates in AI evals about benchmark saturation and whether benchmarks track real capability or user value.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Off-topic: picked up from a non-AI article (airline ops, finance reporting, public-sector policy).",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "operational-resilience",
+      "label": "Operational Resilience",
+      "workingDef": "The capacity of an operational system to absorb disruptions, recover quickly, and protect end-user outcomes without disproportionate cost. In the article's framing, resilience is positioned as compatible with — rather than opposed to — efficiency, when buffers are allocated predictively and metrics are designed around customer outcomes rather than operational proxies.",
+      "clusters": [
+        "business",
+        "work"
+      ],
+      "suggestedRels": [
+        "workflow",
+        "cost",
+        "outcome-focused-work"
+      ],
+      "sources": [
+        {
+          "url": "https://sloanreview.mit.edu/article/resolve-the-conflict-between-efficiency-and-resilience/",
+          "domain": "sloanreview.mit.edu",
+          "title": "  Resolve the Conflict Between Efficiency and Resilience",
+          "sourceLabel": "MIT Sloan Management Review",
+          "publishedAt": "Wed, 13 May 2026 11:00:40 +0000",
+          "firstSeen": "2026-05-16T19:02:56.992Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-16T19:02:56.992Z",
+      "dateLastSeen": "2026-05-16T19:02:56.992Z",
+      "sz": 14,
+      "proposalReason": "A cross-domain framing concept with relevance to AI system design: the efficiency-resilience tradeoff maps onto agentic system design questions around retry/recovery, latency budgets, and the costs of over-optimised pipelines.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Off-topic: picked up from a non-AI article (airline ops, finance reporting, public-sector policy).",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "ai-camera-assistant",
+      "label": "AI Camera Assistant",
+      "workingDef": "A Sony product feature, debuted on the Xperia 1 XIII, that analyses a camera viewfinder in real time and suggests adjustments to exposure, colour grading, and background blur. Distinct from generative editing — Sony positions it as a suggestion layer, not a post-processing tool. Noted in coverage primarily as an example of AI feature integration in consumer hardware whose output quality fell short of marketing claims.",
+      "clusters": [
+        "tools",
+        "landscape"
+      ],
+      "suggestedRels": [
+        "ai-assistant",
+        "multimodal",
+        "computer-use"
+      ],
+      "sources": [
+        {
+          "url": "https://www.theverge.com/tech/932133/sony-xperia-1-xiii-ai-camera-assistant",
+          "domain": "theverge.com",
+          "title": "Sony tries to explain that its AI Camera Assistant doesn’t suck",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-05-16T11:37:05-04:00",
+          "firstSeen": "2026-05-16T19:02:56.992Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-16T19:02:56.992Z",
+      "dateLastSeen": "2026-05-16T19:02:56.992Z",
+      "sz": 14,
+      "fullName": "AI Camera Assistant (Sony Xperia)",
+      "nodeType": "product",
+      "proposalReason": "New consumer AI product term with potential tracking value as a named AI-in-camera feature category, though evidence is thin at one source.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Product or feature name from a single launch; not lexicon vocabulary on its own.",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "curb-cut-effect",
+      "label": "Curb Cut Effect",
+      "workingDef": "The phenomenon — originating in disability studies and universal design literature — whereby accommodations designed for people with disabilities (e.g., curb cuts for wheelchair users) prove broadly beneficial to the general population. Increasingly cited in technology and AI product design discourse to argue that accessibility-first design generates features with wide adoption, such as voice recognition, caption tools, and ergonomic interfaces.",
+      "clusters": [
+        "human",
+        "work"
+      ],
+      "suggestedRels": [
+        "human-in-the-loop",
+        "workflow",
+        "outcome-focused-work"
+      ],
+      "sources": [
+        {
+          "url": "https://sloanreview.mit.edu/article/how-job-design-for-disability-improves-work-for-everyone/",
+          "domain": "sloanreview.mit.edu",
+          "title": "  How Job Design for Disability Improves Work for Everyone",
+          "sourceLabel": "MIT Sloan Management Review",
+          "publishedAt": "Thu, 14 May 2026 11:00:09 +0000",
+          "firstSeen": "2026-05-17T19:07:50.069Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-17T19:07:50.069Z",
+      "dateLastSeen": "2026-05-17T19:07:50.069Z",
+      "sz": 14,
+      "fullName": "Curb Cut Effect (Universal Design Spillover)",
+      "proposalReason": "A recurring framing concept in discussions about accessibility-driven technology innovation; worth tracking as it appears in AI product and UX discourse as justification for accessibility-first feature development.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Off-topic: picked up from a non-AI article (airline ops, finance reporting, public-sector policy).",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "job-design",
+      "label": "Job Design",
+      "workingDef": "The deliberate structuring of tasks, responsibilities, and workflows within a role or team. Increasingly relevant in AI contexts as organisations reassess task allocation between humans and AI systems, and as accommodation-driven redesign reveals suboptimal assumptions baked into legacy work processes.",
+      "clusters": [
+        "work",
+        "human"
+      ],
+      "suggestedRels": [
+        "workflow",
+        "task-decomposition",
+        "outcome-focused-work",
+        "delegation"
+      ],
+      "sources": [
+        {
+          "url": "https://sloanreview.mit.edu/article/how-job-design-for-disability-improves-work-for-everyone/",
+          "domain": "sloanreview.mit.edu",
+          "title": "  How Job Design for Disability Improves Work for Everyone",
+          "sourceLabel": "MIT Sloan Management Review",
+          "publishedAt": "Thu, 14 May 2026 11:00:09 +0000",
+          "firstSeen": "2026-05-17T19:07:50.069Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-17T19:07:50.069Z",
+      "dateLastSeen": "2026-05-17T19:07:50.069Z",
+      "sz": 14,
+      "fullName": "Job Design (Work Redesign for AI Integration)",
+      "proposalReason": "Emerging as a relevant framing as AI deployment forces organisations to reconsider which tasks humans do, how roles are structured, and what 'optimal' work design looks like — directly intersecting with delegation and workflow concepts in the graph.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Off-topic: picked up from a non-AI article (airline ops, finance reporting, public-sector policy).",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "open-by-default",
+      "label": "Open by Default",
+      "workingDef": "A policy posture, advocated in contexts such as the UK Government Digital Service's 2026 guidance, holding that public sector code repositories should be publicly accessible unless there is a specific, deliberate reason to restrict them. Proponents argue openness enables reuse, scrutiny, and accountability; critics or cautious practitioners point to vulnerability exposure as a reason to restrict access, as illustrated by the NHS's decision to close repositories following disclosures via Project Glasswing.",
+      "clusters": [
+        "security",
+        "critical"
+      ],
+      "suggestedRels": [
+        "project-glasswing",
+        "coordinated-disclosure",
+        "open-weight"
+      ],
+      "sources": [
+        {
+          "url": "https://simonwillison.net/2026/May/17/gds-weighs-in/#atom-everything",
+          "domain": "simonwillison.net",
+          "title": "GDS weighs in on the NHS’s decision to retreat from Open Source",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-05-17T15:59:41+00:00",
+          "firstSeen": "2026-05-17T19:07:50.069Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-17T19:07:50.069Z",
+      "dateLastSeen": "2026-05-17T19:07:50.069Z",
+      "sz": 14,
+      "fullName": "Open by Default (Public Sector Code Policy)",
+      "proposalReason": "The GDS guidance formalises a contested posture around code openness in public institutions — a framing with lasting relevance to how governments manage AI and software risk.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Off-topic: picked up from a non-AI article (airline ops, finance reporting, public-sector policy).",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "sdk-generation",
+      "label": "SDK Generation",
+      "workingDef": "The automated process of producing Software Development Kits — language-idiomatic client libraries, CLIs, and connectors — from an API specification. Stainless, acquired by Anthropic in 2026, pioneered this approach, generating official Anthropic SDKs across TypeScript, Python, Go, Java, Kotlin, and more from a single spec source. In the agentic context, SDK generation is framed as infrastructure-layer work: agents are only as capable as the APIs they can reliably reach, making high-quality, automatically-maintained SDKs a prerequisite for robust agent connectivity.",
+      "clusters": [
+        "tools",
+        "technical"
+      ],
+      "suggestedRels": [
+        "mcp",
+        "api",
+        "connectors",
+        "agent"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/anthropic-acquires-stainless",
+          "domain": "anthropic.com",
+          "title": "Anthropic acquires Stainless",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-05-18T19:43:41.150Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-18T19:43:41.150Z",
+      "dateLastSeen": "2026-05-18T19:43:41.150Z",
+      "sz": 14,
+      "fullName": "SDK Generation (Automated SDK Generation from API Spec)",
+      "proposalReason": "Novel infrastructure concept with direct relevance to the agent connectivity layer; not currently tracked in the graph.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Company programme or launch framing (single company, single source).",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "claude-small-business",
+      "label": "Claude for Small Business",
+      "workingDef": "A product tier from Anthropic targeting small businesses, bundling connectors and ready-to-run workflows designed to embed Claude inside the tools small businesses use routinely. Mentioned in the article's related content section as a concurrent launch alongside the Stainless acquisition.",
+      "clusters": [
+        "companies",
+        "business"
+      ],
+      "suggestedRels": [
+        "claude",
+        "connectors",
+        "ready-to-run-workflow",
+        "smb-ai-adoption-gap"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/anthropic-acquires-stainless",
+          "domain": "anthropic.com",
+          "title": "Anthropic acquires Stainless",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-05-18T19:43:41.150Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-18T19:43:41.150Z",
+      "dateLastSeen": "2026-05-18T19:43:41.150Z",
+      "sz": 14,
+      "fullName": "Claude for Small Business (Anthropic)",
+      "nodeType": "product",
+      "proposalReason": "Named product from Anthropic with a distinct SMB positioning; worth tracking as a market-segment entry alongside the enterprise and individual tiers already in the graph.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Product or feature name from a single launch; not lexicon vocabulary on its own.",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "total-addressable-market",
+      "label": "Total Addressable Market (TAM)",
+      "workingDef": "A market-sizing construct used in S-1 filings and investor materials to frame the maximum revenue potential of a business. In AI contexts, TAM figures have become increasingly contested: SpaceX's S-1 claims a $26.5 trillion AI TAM — over 13x its space and connectivity opportunity combined — illustrating how labs and adjacent tech companies use expansive TAM framing to justify outsized valuations. Critics note that AI TAM figures routinely aggregate overlapping categories (infrastructure, subscriptions, enterprise software) in ways that obscure rather than clarify addressable opportunity.",
+      "clusters": [
+        "business",
+        "landscape"
+      ],
+      "suggestedRels": [
+        "agentic-business-model",
+        "infrastructure",
+        "vertical-ai"
+      ],
+      "sources": [
+        {
+          "url": "https://stratechery.com/2026/the-spacex-ipo-and-data-centers-in-space/",
+          "domain": "stratechery.com",
+          "title": "The SpaceX IPO and Data Centers in Space",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Wed, 27 May 2026 10:00:00 +0000",
+          "firstSeen": "2026-05-29T20:24:10.894Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-29T20:24:10.894Z",
+      "dateLastSeen": "2026-05-29T20:24:10.894Z",
+      "sz": 14,
+      "fullName": "Total Addressable Market (TAM) in AI Framing",
+      "proposalReason": "Relevant as a framing concept for understanding how AI companies justify valuations; the SpaceX S-1 example is a vivid case study in AI TAM inflation.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "News item or one interview's phrasing — an event, deal or general business term rather than AI vocabulary.",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "dynamic-workflows",
+      "label": "Dynamic Workflows",
+      "workingDef": "A feature launched in research preview for Claude Code that enables a single session to plan work and then spawn and run hundreds of parallel subagents, verifying outputs before returning results to the user. Positioned by Anthropic as enabling 'codebase-scale' tasks such as large migrations carried out end-to-end. Related to but distinct from multi-agent orchestration patterns in that the parallelism and verification loop are managed internally within a single Claude Code session.",
+      "clusters": [
+        "agentic",
+        "tools"
+      ],
+      "suggestedRels": [
+        "claude-code",
+        "multi-agent",
+        "orchestrator",
+        "planner-worker",
+        "long-horizon-autonomy"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/claude-opus-4-8",
+          "domain": "anthropic.com",
+          "title": "Introducing Claude Opus 4.8",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-05-29T20:24:10.894Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-29T20:24:10.894Z",
+      "dateLastSeen": "2026-05-29T20:24:10.894Z",
+      "sz": 14,
+      "fullName": "Dynamic Workflows (Claude Code)",
+      "nodeType": "product",
+      "proposalReason": "New named feature from Anthropic introducing a distinct architectural pattern: a single session orchestrating hundreds of parallel subagents with internal verification. Worth tracking as a concrete product instantiation of long-horizon autonomy and planner-worker patterns.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Company programme or launch framing (single company, single source).",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "product-market-fit",
+      "label": "Product-Market Fit",
+      "workingDef": "A startup framing — originating with Marc Andreessen — for the state in which a product satisfies strong market demand, evidenced by organic, accelerating uptake. In AI industry discourse, commentators (including Simon Willison) have recently applied the label to Anthropic and OpenAI specifically to distinguish their current revenue growth from earlier hype-cycle adoption. The term carries analytical weight in business contexts but is inherently retrospective and self-affirming: 'product-market fit' is typically declared after sustained revenue growth rather than measured independently.",
+      "clusters": [
+        "business"
+      ],
+      "suggestedRels": [
+        "anthropic-co",
+        "openai-co"
+      ],
+      "sources": [
+        {
+          "url": "https://simonwillison.net/2026/May/29/anthropic/#atom-everything",
+          "domain": "simonwillison.net",
+          "title": "Anthropic's run-rate revenue hits $47 billion",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-05-29T01:23:08+00:00",
+          "firstSeen": "2026-05-29T20:29:06.123Z"
+        },
+        {
+          "url": "https://simonwillison.net/2026/May/31/the-solution-might-be-cancelling-my-ai-subscription/#atom-everything",
+          "domain": "simonwillison.net",
+          "title": "The solution might be cancelling my AI subscription",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-05-31T16:31:32+00:00",
+          "firstSeen": "2026-05-31T19:15:39.230Z"
+        },
+        {
+          "url": "https://simonwillison.net/2026/Jun/2/pasted-file-editor/#atom-everything",
+          "domain": "simonwillison.net",
+          "title": "Tool: Pasted File Editor",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-06-02T04:13:36+00:00",
+          "firstSeen": "2026-06-02T20:47:42.877Z"
+        },
+        {
+          "url": "https://simonwillison.net/2026/Jun/3/uber-caps-usage/#atom-everything",
+          "domain": "simonwillison.net",
+          "title": "Uber Caps Usage of AI Tools Like Claude Code to Manage Costs",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-06-03T12:01:27+00:00",
+          "firstSeen": "2026-06-03T20:54:34.002Z"
+        },
+        {
+          "url": "https://simonwillison.net/2026/Jun/5/andreas-kling/#atom-everything",
+          "domain": "simonwillison.net",
+          "title": "A quote from Andreas Kling",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-06-05T11:10:05+00:00",
+          "firstSeen": "2026-06-05T19:53:16.670Z"
+        }
+      ],
+      "sourceCount": 5,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-29T20:29:06.123Z",
+      "dateLastSeen": "2026-06-05T19:53:16.670Z",
+      "sz": 14,
+      "fullName": "Product-Market Fit (AI)",
+      "proposalReason": "The linked article (referenced in the excerpt: 'I think Anthropic and OpenAI have found product-market fit') deploys this concept directly in relation to frontier AI companies; worth tracking as a framing term in the AI business cluster.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "News item or one interview's phrasing — an event, deal or general business term rather than AI vocabulary.",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "colossus",
+      "label": "Colossus",
+      "workingDef": "A GPU compute cluster operated by SpaceX, referenced here as Colossus 1 and Colossus 2. Anthropic has signed an agreement with SpaceX for access to GPU capacity within this infrastructure as part of its compute expansion strategy.",
+      "clusters": [
+        "technical",
+        "companies"
+      ],
+      "suggestedRels": [
+        "anthropic-co",
+        "tpu",
+        "purpose-built-ai-infrastructure"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/series-h",
+          "domain": "anthropic.com",
+          "title": "Anthropic raises $65B in Series H funding at $965B post-money valuation",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-05-29T20:29:06.123Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-29T20:29:06.123Z",
+      "dateLastSeen": "2026-05-29T20:29:06.123Z",
+      "sz": 14,
+      "fullName": "Colossus (SpaceX GPU Cluster)",
+      "nodeType": "product",
+      "proposalReason": "First documented sighting of Colossus as a named compute facility accessed by a major AI lab outside SpaceX/xAI; worth tracking as AI compute geography expands beyond hyperscaler data centers.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "News item or one interview's phrasing — an event, deal or general business term rather than AI vocabulary.",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "series-h-anthropic",
+      "label": "Series H",
+      "workingDef": "Anthropic's eighth disclosed funding round, raising $65B at a $965B post-money valuation (May 2026). Notable for its scale, the inclusion of strategic infrastructure partners (Micron, Samsung, SK hynix), and compute-capacity agreements embedded within the financing structure alongside traditional equity investors.",
+      "clusters": [
+        "business",
+        "companies"
+      ],
+      "suggestedRels": [
+        "anthropic-co",
+        "claude",
+        "stargate-project"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/series-h",
+          "domain": "anthropic.com",
+          "title": "Anthropic raises $65B in Series H funding at $965B post-money valuation",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-05-29T20:29:06.123Z"
+        },
+        {
+          "url": "https://www.anthropic.com/news/confidential-draft-s1-sec",
+          "domain": "anthropic.com",
+          "title": "Anthropic confidentially submits draft S-1 to the SEC",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-06-01T21:31:49.667Z"
+        }
+      ],
+      "sourceCount": 2,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-29T20:29:06.123Z",
+      "dateLastSeen": "2026-06-01T21:31:49.667Z",
+      "sz": 14,
+      "fullName": "Anthropic Series H Funding Round",
+      "proposalReason": "A valuation milestone and structural financing model (compute deals bundled with equity rounds) that is worth tracking as a business-model term in the AI infrastructure landscape.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "News item or one interview's phrasing — an event, deal or general business term rather than AI vocabulary.",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "itbench-aa",
+      "label": "ITBench-AA",
+      "workingDef": "A benchmark developed by Artificial Analysis and IBM, evaluating frontier AI models on agentic enterprise IT operations tasks — beginning with Site Reliability Engineering (SRE) and expanding to Financial Operations (FinOps) and CISO tasks. Tasks require agents to diagnose live Kubernetes incidents by reading logs, tracing dependencies, and identifying root-cause entities, scored via recall-gated precision. As of launch, all frontier models score below 50%, making it one of the least saturated agentic benchmarks available.",
+      "clusters": [
+        "technical",
+        "agentic"
+      ],
+      "suggestedRels": [
+        "evals",
+        "agentic-harness",
+        "benchmark-saturation",
+        "capability-reliability-gap"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/ibm-research/itbench-aa",
+          "domain": "huggingface.co",
+          "title": "ITBench-AA: Frontier Models Score Below 50% on the First Benchmark for Agentic Enterprise IT Tasks — by Artificial Analysis and IBM",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Wed, 27 May 2026 17:20:29 GMT",
+          "firstSeen": "2026-05-30T19:13:38.586Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-30T19:13:38.586Z",
+      "dateLastSeen": "2026-05-30T19:13:38.586Z",
+      "sz": 14,
+      "fullName": "ITBench-AA (Agentic Enterprise IT Benchmark)",
+      "nodeType": "product",
+      "proposalReason": "First benchmark of its kind targeting enterprise IT operations with agentic agents; low saturation scores make it a primary source on the current capability-reliability gap in real-world agentic tasks.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Single benchmark or its internal jargon; promote only if it becomes a reference point (GDPval is the one recommended).",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "recall-gated-precision",
+      "label": "Recall-Gated Precision",
+      "workingDef": "A scoring methodology used in agentic benchmarks (notably ITBench-AA) where a model receives zero credit unless it identifies all ground-truth root causes (full recall), after which its score equals the precision of its submitted answer set. This penalises over-investigation — submitting additional plausible but incorrect entities — and rewards minimal, accurate diagnosis over expansive exploration.",
+      "clusters": [
+        "technical",
+        "agentic"
+      ],
+      "suggestedRels": [
+        "evals",
+        "hallucination",
+        "silent-failure"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/ibm-research/itbench-aa",
+          "domain": "huggingface.co",
+          "title": "ITBench-AA: Frontier Models Score Below 50% on the First Benchmark for Agentic Enterprise IT Tasks — by Artificial Analysis and IBM",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Wed, 27 May 2026 17:20:29 GMT",
+          "firstSeen": "2026-05-30T19:13:38.586Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-30T19:13:38.586Z",
+      "dateLastSeen": "2026-05-30T19:13:38.586Z",
+      "sz": 14,
+      "fullName": "Recall-Gated Precision (Agentic Benchmark Scoring)",
+      "proposalReason": "A distinct and transferable evaluation design pattern for agentic tasks where over-investigation is penalised; relevant beyond this specific benchmark.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Single benchmark or its internal jargon; promote only if it becomes a reference point (GDPval is the one recommended).",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "sre-tasks",
+      "label": "Site Reliability Engineering Tasks",
+      "workingDef": "A class of agentic benchmark tasks modelled on SRE workflows — specifically Kubernetes incident response — requiring AI agents to diagnose system failures by inspecting alerts, logs, traces, and topology, then identifying minimal root-cause entities. Used in ITBench-AA as a domain where real-world enterprise complexity meets agentic AI evaluation.",
+      "clusters": [
+        "agentic",
+        "work"
+      ],
+      "suggestedRels": [
+        "evals",
+        "itbench-aa",
+        "long-horizon-autonomy",
+        "tool-use"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/ibm-research/itbench-aa",
+          "domain": "huggingface.co",
+          "title": "ITBench-AA: Frontier Models Score Below 50% on the First Benchmark for Agentic Enterprise IT Tasks — by Artificial Analysis and IBM",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Wed, 27 May 2026 17:20:29 GMT",
+          "firstSeen": "2026-05-30T19:13:38.586Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-30T19:13:38.586Z",
+      "dateLastSeen": "2026-05-30T19:13:38.586Z",
+      "sz": 14,
+      "fullName": "Site Reliability Engineering Tasks (Agentic AI Evaluation)",
+      "proposalReason": "Establishes SRE as a named evaluation domain for agentic AI, with methodological implications for how enterprise-readiness benchmarks are structured.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Single benchmark or its internal jargon; promote only if it becomes a reference point (GDPval is the one recommended).",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "alphaproof-nexus",
+      "label": "AlphaProof Nexus",
+      "workingDef": "A formal-mathematics reasoning framework released by Google DeepMind that combines Gemini 3.1 Pro with Lean formal verification, feeding compiler error messages back into successive proof attempts in a loop. Demonstrated autonomous solution of open Erdős problems and OEIS conjectures at inference costs of a few hundred dollars per problem.",
+      "clusters": [
+        "models",
+        "technical"
+      ],
+      "suggestedRels": [
+        "google-co",
+        "gemini",
+        "reasoning-models",
+        "loop",
+        "tool-use",
+        "inference"
+      ],
+      "sources": [
+        {
+          "url": "https://lastweekin.ai/p/last-week-in-ai-341-musk-loses-to",
+          "domain": "lastweekin.ai",
+          "title": "Last Week in AI #341 - Musk loses to OpenAI, Google's IO updates, OpenAI solves Erdős",
+          "sourceLabel": "Last Week in AI",
+          "publishedAt": "Wed, 27 May 2026 07:50:58 GMT",
+          "firstSeen": "2026-05-30T19:13:38.586Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-30T19:13:38.586Z",
+      "dateLastSeen": "2026-05-30T19:13:38.586Z",
+      "sz": 14,
+      "fullName": "AlphaProof Nexus (Google DeepMind)",
+      "nodeType": "product",
+      "proposalReason": "A named system with a distinct hybrid architecture (LLM + symbolic verifier loop) relevant to AI-assisted mathematics and formal reasoning tracking.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Single benchmark or its internal jargon; promote only if it becomes a reference point (GDPval is the one recommended).",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "responses-api",
+      "label": "Responses API",
+      "workingDef": "An HTTP/WebSocket protocol, originated by OpenAI, for decoupling an LLM inference backend from an application layer. Implementations (llama.cpp, vLLM, HF Inference Endpoints) expose a compatible endpoint so that client applications can swap inference providers without code changes. Used here to separate the voice loop from LLM serving.",
+      "clusters": [
+        "technical",
+        "tools"
+      ],
+      "suggestedRels": [
+        "api",
+        "inference",
+        "vllm",
+        "streaming-inference",
+        "tool-use"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/local-reachy-mini-conversation",
+          "domain": "huggingface.co",
+          "title": "Reachy Mini goes fully local",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Wed, 27 May 2026 00:00:00 GMT",
+          "firstSeen": "2026-05-31T19:15:39.230Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-31T19:15:39.230Z",
+      "dateLastSeen": "2026-05-31T19:15:39.230Z",
+      "sz": 14,
+      "fullName": "Responses API (OpenAI-compatible LLM Server Protocol)",
+      "proposalReason": "A de-facto interoperability standard for LLM serving that enables modular AI system design; worth tracking as it becomes a portability layer across open-source and proprietary stacks.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Product or feature name from a single launch; not lexicon vocabulary on its own.",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "claude-for-legal",
+      "label": "Claude for Legal",
+      "workingDef": "Anthropic's vertical AI product aimed at the legal sector, launched to provide Claude-powered capabilities tailored for legal workflows and research. Represents Anthropic's push into domain-specific application layers, contributing to ecosystem tension between platform model providers and application-layer legal tech companies.",
+      "clusters": [
+        "business"
+      ],
+      "suggestedRels": [
+        "claude",
+        "vertical-ai",
+        "anthropic-co"
+      ],
+      "sources": [
+        {
+          "url": "https://lastweekin.ai/p/lwiai-podcast-245-tml-interaction",
+          "domain": "lastweekin.ai",
+          "title": "LWiAI Podcast #245 - TML-Interaction, Claude For Legal, Sam Altman on Stand",
+          "sourceLabel": "Last Week in AI",
+          "publishedAt": "Wed, 20 May 2026 07:45:49 GMT",
+          "firstSeen": "2026-05-31T19:15:39.230Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-05-31T19:15:39.230Z",
+      "dateLastSeen": "2026-05-31T19:15:39.230Z",
+      "sz": 14,
+      "fullName": "Claude for Legal (Anthropic)",
+      "nodeType": "product",
+      "proposalReason": "A new vertical product entry worth tracking as Anthropic expands from API provider into domain-specific applications.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Product or feature name from a single launch; not lexicon vocabulary on its own.",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "productive-capital-business",
+      "label": "Productive Capital Business",
+      "workingDef": "A framing — used in this article by Ben Thompson, drawing on Warren Buffett's Berkshire Hathaway framework — that contrasts 'asset-light' platform businesses (high margins, low capital requirements) with capital-intensive businesses that generate high absolute returns by deploying and continuously reinvesting large amounts of physical infrastructure. Applied to Google Cloud and AI compute: the argument is that hyperscalers investing in data centres, TPUs, and AI infrastructure are transitioning from asset-light aggregators into productive-capital businesses whose value is driven by absolute return on deployed capital rather than marginal-cost economics.",
+      "clusters": [
+        "business",
+        "landscape"
+      ],
+      "suggestedRels": [
+        "hyperscaler",
+        "infrastructure",
+        "purpose-built-ai-infrastructure",
+        "hyperscale-data-center",
+        "tpu"
+      ],
+      "sources": [
+        {
+          "url": "https://stratechery.com/2026/the-google-capital-company/",
+          "domain": "stratechery.com",
+          "title": "The Google Capital Company",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Tue, 02 Jun 2026 10:00:00 +0000",
+          "firstSeen": "2026-06-02T20:47:42.877Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-02T20:47:42.877Z",
+      "dateLastSeen": "2026-06-02T20:47:42.877Z",
+      "sz": 14,
+      "fullName": "Productive Capital Business (AI Infrastructure Framing)",
+      "proposalReason": "A useful analytic concept for understanding the structural shift in AI company economics; distinct from existing graph terms and relevant to how infrastructure investment is being reframed.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "News item or one interview's phrasing — an event, deal or general business term rather than AI vocabulary.",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "asset-light-model",
+      "label": "Asset-Light Model",
+      "workingDef": "An economic framing for technology platform companies that generate high returns on minimal physical capital — maximising zero marginal costs on the supply side, collecting a skim on transactions or attention, and avoiding ownership of the underlying assets. Contrasted in AI-era discourse with capital-intensive infrastructure investment strategies: critics and analysts (including Ben Thompson in this article) argue that AI compute demands are forcing formerly asset-light companies like Google and Microsoft to take on BNSF-like capital structures, fundamentally changing their margin profiles and investor narratives.",
+      "clusters": [
+        "business",
+        "landscape"
+      ],
+      "suggestedRels": [
+        "saas",
+        "infrastructure",
+        "cost",
+        "hyperscaler"
+      ],
+      "sources": [
+        {
+          "url": "https://stratechery.com/2026/the-google-capital-company/",
+          "domain": "stratechery.com",
+          "title": "The Google Capital Company",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Tue, 02 Jun 2026 10:00:00 +0000",
+          "firstSeen": "2026-06-02T20:47:42.877Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-02T20:47:42.877Z",
+      "dateLastSeen": "2026-06-02T20:47:42.877Z",
+      "sz": 14,
+      "fullName": "Asset-Light Business Model (Platform Economics)",
+      "proposalReason": "A named economic framing that recurs in AI business-model analysis and is directly contrasted with the productive-capital shift in this article; useful for tracking the evolving discourse around platform economics in the AI era.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "News item or one interview's phrasing — an event, deal or general business term rather than AI vocabulary.",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "microsoft-execution-containers",
+      "label": "Microsoft Execution Containers",
+      "workingDef": "A sandboxing mechanism announced by Microsoft at Build 2026 that allows developers to set guardrails controlling what AI agents — including OpenClaw-based agents — can access on a device. Agents run in isolated environments to constrain blast radius.",
+      "clusters": [
+        "safety",
+        "agentic"
+      ],
+      "suggestedRels": [
+        "sandboxing",
+        "guardrails",
+        "blast-radius",
+        "agent-governance",
+        "openclaw"
+      ],
+      "sources": [
+        {
+          "url": "https://www.theverge.com/tech/941738/microsoft-build-2026-biggest-announcements",
+          "domain": "theverge.com",
+          "title": "Microsoft Build 2026: The 7 biggest announcements",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-06-02T15:23:52-04:00",
+          "firstSeen": "2026-06-02T20:47:42.877Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-02T20:47:42.877Z",
+      "dateLastSeen": "2026-06-02T20:47:42.877Z",
+      "sz": 14,
+      "fullName": "Microsoft Execution Containers (MXC)",
+      "nodeType": "product",
+      "proposalReason": "A concrete, named implementation of agent sandboxing from a major platform vendor — useful as an anchor term for the pattern of OS-level agent containment.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Product or feature name from a single launch; not lexicon vocabulary on its own.",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "mai-thinking-1",
+      "label": "MAI-Thinking-1",
+      "workingDef": "Microsoft's first in-house reasoning model, announced at Build 2026. Features 35 billion active parameters and a 128K context window, designed for complex multi-step instructions, long-context reasoning, and code generation. Part of a broader push by Microsoft to reduce reliance on OpenAI models.",
+      "clusters": [
+        "models",
+        "companies"
+      ],
+      "suggestedRels": [
+        "reasoning-models",
+        "microsoft-co",
+        "context-window",
+        "parameters"
+      ],
+      "sources": [
+        {
+          "url": "https://www.theverge.com/tech/941738/microsoft-build-2026-biggest-announcements",
+          "domain": "theverge.com",
+          "title": "Microsoft Build 2026: The 7 biggest announcements",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-06-02T15:23:52-04:00",
+          "firstSeen": "2026-06-02T20:47:42.877Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-02T20:47:42.877Z",
+      "dateLastSeen": "2026-06-02T20:47:42.877Z",
+      "sz": 14,
+      "fullName": "MAI-Thinking-1 (Microsoft In-House Reasoning Model)",
+      "nodeType": "product",
+      "proposalReason": "First sighting of Microsoft's own reasoning model — marks a significant strategic shift in Microsoft's AI model dependency posture.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Product or feature name from a single launch; not lexicon vocabulary on its own.",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "scout-microsoft",
+      "label": "Scout",
+      "workingDef": "An always-on background assistant launched by Microsoft at Build 2026, built on the OpenClaw open-source AI platform. Integrated with Microsoft 365 apps, Scout operates autonomously to manage tasks like calendar organization, expense reporting, and email drafting. Part of a broader 'Autopilot' agent family, each with distinct identities.",
+      "clusters": [
+        "agentic",
+        "tools"
+      ],
+      "suggestedRels": [
+        "openclaw",
+        "autonomous-agent",
+        "proactive-agent",
+        "microsoft-co",
+        "copilot"
+      ],
+      "sources": [
+        {
+          "url": "https://www.theverge.com/tech/941738/microsoft-build-2026-biggest-announcements",
+          "domain": "theverge.com",
+          "title": "Microsoft Build 2026: The 7 biggest announcements",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-06-02T15:23:52-04:00",
+          "firstSeen": "2026-06-02T20:47:42.877Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-02T20:47:42.877Z",
+      "dateLastSeen": "2026-06-02T20:47:42.877Z",
+      "sz": 14,
+      "fullName": "Scout (Microsoft Always-On Assistant)",
+      "nodeType": "product",
+      "proposalReason": "First sighting of Microsoft's named always-on agent product built on OpenClaw — a concrete instance of the agentic assistant category with enterprise positioning.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Product or feature name from a single launch; not lexicon vocabulary on its own.",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "claude-security",
+      "label": "Claude Security",
+      "workingDef": "A product from Anthropic that uses frontier Claude models (e.g., Claude Opus 4.8) to scan codebases for vulnerabilities and suggest patches. Positioned as the publicly available counterpart to the restricted Project Glasswing program, making AI-assisted vulnerability detection accessible to security teams beyond the curated partner network.",
+      "clusters": [
+        "security",
+        "tools"
+      ],
+      "suggestedRels": [
+        "claude-mythos",
+        "project-glasswing",
+        "anthropic-co",
+        "penetration-testing",
+        "ai-red-teaming"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/expanding-project-glasswing",
+          "domain": "anthropic.com",
+          "title": "Expanding Project Glasswing",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-06-02T20:47:42.877Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-02T20:47:42.877Z",
+      "dateLastSeen": "2026-06-02T20:47:42.877Z",
+      "sz": 14,
+      "fullName": "Claude Security (Anthropic)",
+      "nodeType": "product",
+      "proposalReason": "New Anthropic product materialized in this announcement; distinct from the Claude model line and worth tracking as a named security offering.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Product or feature name from a single launch; not lexicon vocabulary on its own.",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "claude-opus-48",
+      "label": "Claude Opus 4.8",
+      "workingDef": "An upgrade to Anthropic's Opus model class, described as offering stronger performance across coding, agentic tasks, and professional work, with improved consistency for long-running tasks. Named as the model underlying the publicly available Claude Security product, distinct from the restricted Mythos Preview used in Project Glasswing.",
+      "clusters": [
+        "models",
+        "tools"
+      ],
+      "suggestedRels": [
+        "claude",
+        "anthropic-co",
+        "claude-security",
+        "frontier-model",
+        "agentic-engineering"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/expanding-project-glasswing",
+          "domain": "anthropic.com",
+          "title": "Expanding Project Glasswing",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-06-02T20:47:42.877Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-02T20:47:42.877Z",
+      "dateLastSeen": "2026-06-02T20:47:42.877Z",
+      "sz": 14,
+      "fullName": "Claude Opus 4.8 (Anthropic)",
+      "nodeType": "product",
+      "proposalReason": "New named model version introduced in this announcement; distinct from previously tracked Claude model entries and serves as the public frontier baseline for Claude Security.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Product or feature name from a single launch; not lexicon vocabulary on its own.",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "circle-to-search",
+      "label": "Circle to Search",
+      "workingDef": "A Google Android feature that allows users to circle, highlight, or tap any on-screen content to trigger a Google Search without switching apps. Used for visual shopping discovery, enabling quick price comparisons and style matching.",
+      "clusters": [
+        "tools",
+        "landscape"
+      ],
+      "suggestedRels": [
+        "ai-mode",
+        "grounding"
+      ],
+      "sources": [
+        {
+          "url": "https://blog.google/products-and-platforms/products/search/thrifting-tips/",
+          "domain": "blog.google",
+          "title": "5 ways Google Search can level up your thrift and vintage shopping",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Wed, 03 Jun 2026 13:00:00 +0000",
+          "firstSeen": "2026-06-03T20:54:34.002Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-03T20:54:34.002Z",
+      "dateLastSeen": "2026-06-03T20:54:34.002Z",
+      "sz": 14,
+      "fullName": "Circle to Search (Google)",
+      "nodeType": "product",
+      "proposalReason": "A distinct named Google product appearing in consumer AI search context; worth tracking as a UI pattern for visual search and agentic shopping flows.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Product or feature name from a single launch; not lexicon vocabulary on its own.",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "virtual-try-on",
+      "label": "Virtual Try-On",
+      "workingDef": "A Google Shopping feature that lets users upload a photo of themselves and see how clothing items would look on their body, using generative AI to composite garments onto personal images.",
+      "clusters": [
+        "tools",
+        "landscape"
+      ],
+      "suggestedRels": [
+        "multimodal",
+        "grounding"
+      ],
+      "sources": [
+        {
+          "url": "https://blog.google/products-and-platforms/products/search/thrifting-tips/",
+          "domain": "blog.google",
+          "title": "5 ways Google Search can level up your thrift and vintage shopping",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Wed, 03 Jun 2026 13:00:00 +0000",
+          "firstSeen": "2026-06-03T20:54:34.002Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-03T20:54:34.002Z",
+      "dateLastSeen": "2026-06-03T20:54:34.002Z",
+      "sz": 14,
+      "fullName": "Virtual Try-On (Google Shopping)",
+      "nodeType": "product",
+      "proposalReason": "A distinct named AI-assisted consumer product with lasting relevance as a pattern in multimodal, vision-grounded shopping assistance.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Product or feature name from a single launch; not lexicon vocabulary on its own.",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "self-generated-rejection-pairs",
+      "label": "Self-Generated Rejection Pairs",
+      "workingDef": "A methodology for constructing DPO training data without human preference labels, by using a model's own characteristic failure outputs as the 'rejected' examples in preference pairs. The approach exploits the observation that a model capable of performing a structured task also fails in predictable, characteristic ways — those failures are treated as negative training signals rather than discarded noise. Proposed by DharmaOCR as a way to apply DPO to objective, non-conversational tasks where human preference rankings are not available or meaningful.",
+      "clusters": [
+        "technical",
+        "models"
+      ],
+      "suggestedRels": [
+        "dpo",
+        "fine-tuning",
+        "evals",
+        "behavioral-audit"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/Dharma-AI/direct-preference-optimization-beyond-chatbots",
+          "domain": "huggingface.co",
+          "title": "Direct Preference Optimization Beyond Chatbots",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Wed, 03 Jun 2026 12:55:11 GMT",
+          "firstSeen": "2026-06-03T20:54:34.002Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-03T20:54:34.002Z",
+      "dateLastSeen": "2026-06-03T20:54:34.002Z",
+      "sz": 14,
+      "fullName": "Self-Generated Rejection Pairs (DPO without Human Annotation)",
+      "proposalReason": "A novel methodological concept that generalises DPO beyond chat alignment; potentially useful across any structured generation domain where failure modes are identifiable.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Implementation detail from one paper or blog post; too specialist for the lexicon.",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "sft-ceiling",
+      "label": "SFT Ceiling",
+      "workingDef": "The observed empirical limit on how much supervised fine-tuning alone can reduce certain structural failure modes — particularly text degeneration — in language models. The conjecture is that SFT's token-level loss objective has no term penalising completion-level failures; it optimises proximity to a task domain but cannot reshape the attractor geometry that produces repetition loops. Distinct from capability ceiling: SFT and degeneration resistance can move independently, meaning a model can gain task fluency while its degeneration rate worsens. First clearly articulated in the DharmaOCR benchmark analysis.",
+      "clusters": [
+        "technical",
+        "models"
+      ],
+      "suggestedRels": [
+        "fine-tuning",
+        "training",
+        "capability-reliability-gap",
+        "text-degeneration"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/Dharma-AI/direct-preference-optimization-beyond-chatbots",
+          "domain": "huggingface.co",
+          "title": "Direct Preference Optimization Beyond Chatbots",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Wed, 03 Jun 2026 12:55:11 GMT",
+          "firstSeen": "2026-06-03T20:54:34.002Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-03T20:54:34.002Z",
+      "dateLastSeen": "2026-06-03T20:54:34.002Z",
+      "sz": 14,
+      "fullName": "SFT Ceiling (Supervised Fine-Tuning Failure Mode Ceiling)",
+      "proposalReason": "A crisp, useful framing of a structural limitation of SFT that practitioners repeatedly encounter but rarely have a name for.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Implementation detail from one paper or blog post; too specialist for the lexicon.",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "rtx-spark",
+      "label": "RTX Spark",
+      "workingDef": "An AI PC superchip (also referred to as N1X) unveiled by Nvidia CEO Jensen Huang at Computex 2026, developed in partnership with Microsoft. Features up to 20 Arm CPU cores, a Blackwell GPU with 6,144 CUDA cores, 128GB LPDDR5X RAM connected via NVLink C2C, and up to 300 GB/s memory bandwidth. Designed to run AI agents and large language models (up to 120B parameters) locally with long context windows. Debuting in fall 2026 on Windows PCs from Dell, HP, ASUS, Lenovo, and MSI. Thompson argues the chip's heavy GPU die allocation comes at the expense of CPU performance, making it poorly suited for the agentic era's actual compute profile.",
+      "clusters": [
+        "tools",
+        "technical"
+      ],
+      "suggestedRels": [
+        "edge-ai",
+        "inference",
+        "ai-accelerator",
+        "on-device-computer-use",
+        "microsoft-co",
+        "nvidia-co"
+      ],
+      "sources": [
+        {
+          "url": "https://stratechery.com/2026/the-nvidia-ai-pc-project-solara-microsoft-ai/",
+          "domain": "stratechery.com",
+          "title": "The Nvidia AI PC, Project Solara, Microsoft AI",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Wed, 03 Jun 2026 10:00:00 +0000",
+          "firstSeen": "2026-06-03T20:54:34.002Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-03T20:54:34.002Z",
+      "dateLastSeen": "2026-06-03T20:54:34.002Z",
+      "sz": 14,
+      "fullName": "RTX Spark (Nvidia AI PC Superchip)",
+      "nodeType": "product",
+      "proposalReason": "New candidate: a named product that Thompson uses as a substantive framing device to argue about what AI PC hardware gets wrong about the agentic era's compute requirements.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Product or feature name from a single launch; not lexicon vocabulary on its own.",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "unmetered-intelligence",
+      "label": "Unmetered Intelligence",
+      "workingDef": "A framing used by Microsoft CEO Satya Nadella at Build 2026 to describe the appeal of abundant, always-available AI compute running locally at the edge — as opposed to metered cloud inference billed by token or call. Positioned as a renewed rationale for AI PCs and on-device AI in the context of agent workloads. The term echoes earlier industry framings around 'unlimited' or 'ambient' compute, and sits in tension with Thompson's argument that cloud inference remains superior for agentic tasks despite the appeal of local availability.",
+      "clusters": [
+        "agentic",
+        "technical"
+      ],
+      "suggestedRels": [
+        "edge-ai",
+        "inference",
+        "latency",
+        "cost",
+        "on-device-computer-use",
+        "agentic-era"
+      ],
+      "sources": [
+        {
+          "url": "https://stratechery.com/2026/the-nvidia-ai-pc-project-solara-microsoft-ai/",
+          "domain": "stratechery.com",
+          "title": "The Nvidia AI PC, Project Solara, Microsoft AI",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Wed, 03 Jun 2026 10:00:00 +0000",
+          "firstSeen": "2026-06-03T20:54:34.002Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-03T20:54:34.002Z",
+      "dateLastSeen": "2026-06-03T20:54:34.002Z",
+      "sz": 14,
+      "fullName": "Unmetered Intelligence (Edge AI Framing)",
+      "proposalReason": "New candidate: a named framing term from a CEO keynote that captures a specific argument about the value proposition of local AI compute — worth tracking as it may recur in AI PC marketing and edge-inference debates.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "News item or one interview's phrasing — an event, deal or general business term rather than AI vocabulary.",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "services-track-anthropic",
+      "label": "Services Track",
+      "workingDef": "The tiered qualification structure within Anthropic's Claude Partner Network that reflects the depth of a firm's Claude practice. Three tiers — Select, Preferred, and Global Premier — are determined by counts of certified practitioners, production customer deployments, and published customer endorsements, with requirements identical regardless of firm size. Tier standing is verified quarterly and published in the Partner Hub.",
+      "clusters": [
+        "business",
+        "companies"
+      ],
+      "suggestedRels": [
+        "claude-partner-network",
+        "anthropic-co",
+        "claude-ai",
+        "deployment-company"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/services-track-partner-hub",
+          "domain": "anthropic.com",
+          "title": "Introducing the Services Track and Partner Hub of the Claude Partner Network",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-06-03T20:54:34.002Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-03T20:54:34.002Z",
+      "dateLastSeen": "2026-06-03T20:54:34.002Z",
+      "sz": 14,
+      "fullName": "Services Track (Claude Partner Network)",
+      "nodeType": "product",
+      "proposalReason": "New term naming a specific program structure introduced in this announcement; distinct enough from the parent program to warrant its own entry as an institutional mechanism.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Company programme or launch framing (single company, single source).",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "claude-certification",
+      "label": "Claude Certification",
+      "workingDef": "An individual-held credential issued by Anthropic's Partner Academy, earned through exams, that signals the holder has been trained to build and deploy Claude in production. Certifications belong to individuals, not firms, and require active use of Claude within the past 90 days to count toward a partner firm's tier standing. Over 10,000 consultants had earned the certification as of June 2026.",
+      "clusters": [
+        "business",
+        "work"
+      ],
+      "suggestedRels": [
+        "claude-partner-network",
+        "anthropic-co",
+        "services-track-anthropic",
+        "applied-ai-engineering"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/services-track-partner-hub",
+          "domain": "anthropic.com",
+          "title": "Introducing the Services Track and Partner Hub of the Claude Partner Network",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-06-03T20:54:34.002Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-03T20:54:34.002Z",
+      "dateLastSeen": "2026-06-03T20:54:34.002Z",
+      "sz": 14,
+      "fullName": "Claude Certification (Anthropic Partner Academy)",
+      "nodeType": "product",
+      "proposalReason": "New term describing a specific credentialling mechanism with lasting relevance to how enterprise AI deployment expertise is formally recognised and measured.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Company programme or launch framing (single company, single source).",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "hill-climbing-machine",
+      "label": "Hill-Climbing Machine",
+      "workingDef": "A framing introduced by Microsoft CEO Satya Nadella at Build 2026 for the kind of AI capability a company needs to build internally — a system that continuously optimises ('hill-climbs') on the firm's own data and goals. Nadella positions Microsoft's platform ambition as enabling every enterprise to have its own hill-climbing machine, analogous to how the cloud let every firm run its own compute. The concept is closely tied to his notion of 'token capital' as a new factor of production alongside human capital.",
+      "clusters": [
+        "business",
+        "models"
+      ],
+      "suggestedRels": [
+        "microsoft-co",
+        "project-solara",
+        "mai-thinking-1"
+      ],
+      "sources": [
+        {
+          "url": "https://stratechery.com/2026/an-interview-with-microsoft-ceo-satya-nadella-about-finding-core-competencies/",
+          "domain": "stratechery.com",
+          "title": "An Interview with Microsoft CEO Satya Nadella About Finding Core Competencies",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Thu, 04 Jun 2026 10:00:00 +0000",
+          "firstSeen": "2026-06-04T20:04:46.217Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-04T20:04:46.217Z",
+      "dateLastSeen": "2026-06-04T20:04:46.217Z",
+      "sz": 14,
+      "fullName": "Hill-Climbing Machine (Nadella/Microsoft Framing)",
+      "proposalReason": "Novel strategic framing from a primary source interview; worth tracking as Nadella articulates it as a core competitive concept for Microsoft's AI platform play.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "News item or one interview's phrasing — an event, deal or general business term rather than AI vocabulary.",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "token-capital",
+      "label": "Token Capital",
+      "workingDef": "A term introduced by Satya Nadella in this interview to describe AI inference and model-use capacity as a new factor of production alongside human capital. In this framing, firms in the AI era must manage and invest in 'token capital' — their accumulated capacity to run, fine-tune, and improve AI systems — as a distinct strategic asset. The concept extends resource-based views of the firm into the AI era but is so far a single-source, single-speaker coinage.",
+      "clusters": [
+        "business",
+        "core"
+      ],
+      "suggestedRels": [
+        "microsoft-co",
+        "inference",
+        "cost"
+      ],
+      "sources": [
+        {
+          "url": "https://stratechery.com/2026/an-interview-with-microsoft-ceo-satya-nadella-about-finding-core-competencies/",
+          "domain": "stratechery.com",
+          "title": "An Interview with Microsoft CEO Satya Nadella About Finding Core Competencies",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Thu, 04 Jun 2026 10:00:00 +0000",
+          "firstSeen": "2026-06-04T20:04:46.217Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-04T20:04:46.217Z",
+      "dateLastSeen": "2026-06-04T20:04:46.217Z",
+      "sz": 14,
+      "fullName": "Token Capital (AI Era Factor of Production)",
+      "proposalReason": "A potentially durable conceptual coinage from a CEO-level primary source; if adopted broadly, it could become a canonical framing term for AI business strategy.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "News item or one interview's phrasing — an event, deal or general business term rather than AI vocabulary.",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "clean-lineage",
+      "label": "Clean Lineage",
+      "workingDef": "A term used in the Nadella interview to describe MAI models built from scratch without distillation from other frontier models or use of other models as teachers — establishing clear, unencumbered provenance for training data and methodology. The concept is linked to IP defensibility and the desire to operate independently of external model providers. Distinct from 'open-weight' concerns; about training-process independence rather than weight availability.",
+      "clusters": [
+        "models",
+        "technical"
+      ],
+      "suggestedRels": [
+        "mai-thinking-1",
+        "microsoft-co",
+        "training",
+        "proprietary-model"
+      ],
+      "sources": [
+        {
+          "url": "https://stratechery.com/2026/an-interview-with-microsoft-ceo-satya-nadella-about-finding-core-competencies/",
+          "domain": "stratechery.com",
+          "title": "An Interview with Microsoft CEO Satya Nadella About Finding Core Competencies",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Thu, 04 Jun 2026 10:00:00 +0000",
+          "firstSeen": "2026-06-04T20:04:46.217Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-04T20:04:46.217Z",
+      "dateLastSeen": "2026-06-04T20:04:46.217Z",
+      "sz": 14,
+      "fullName": "Clean Lineage (Model Training Provenance)",
+      "proposalReason": "Emerging term for a real and consequential distinction in how labs characterise model provenance and independence; worth watching as IP and model-lineage disputes intensify.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "News item or one interview's phrasing — an event, deal or general business term rather than AI vocabulary.",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "statement-retraction",
+      "label": "Statement Retraction",
+      "workingDef": "The act of a company or spokesperson asking a journalist to replace a published statement with a revised version after publication, typically to soften or remove a commitment. In AI contexts, this pattern has emerged when organisations walk back safety-adjacent language — such as commitments to human-in-the-loop oversight — under apparent strategic or commercial pressure. The practice raises questions about the gap between publicly stated AI governance principles and actual corporate intent.",
+      "clusters": [
+        "critical",
+        "safety"
+      ],
+      "suggestedRels": [
+        "human-in-the-loop",
+        "agent-governance",
+        "ai-washing"
+      ],
+      "sources": [
+        {
+          "url": "https://simonwillison.net/2026/Jun/4/a-slightly-different-version/#atom-everything",
+          "domain": "simonwillison.net",
+          "title": "A quote from Emanuel Maiberg, 404 Media",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-06-04T16:38:29+00:00",
+          "firstSeen": "2026-06-04T20:04:46.217Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-04T20:04:46.217Z",
+      "dateLastSeen": "2026-06-04T20:04:46.217Z",
+      "sz": 14,
+      "proposalReason": "A new framing term for a notable editorial/governance pattern — companies quietly retracting safety-language statements post-publication.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "News item or one interview's phrasing — an event, deal or general business term rather than AI vocabulary.",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "project-stratos-oleary",
+      "label": "Project Stratos",
+      "workingDef": "A proposed hyperscale data center complex planned by Kevin O'Leary in Utah, originally spanning approximately 40,000 acres near the Locomotive Springs Waterfowl Management Area. Following community opposition and political pressure, O'Leary agreed to reduce the footprint to roughly 20,000 acres — still an area larger than Manhattan. The project has drawn scrutiny over water consumption, energy demand, and environmental impact, making it a high-profile instance of the land-use and resource tensions surrounding large-scale AI infrastructure buildout.",
+      "clusters": [
+        "landscape",
+        "business"
+      ],
+      "suggestedRels": [
+        "hyperscale-data-center",
+        "ai-energy-demand"
+      ],
+      "sources": [
+        {
+          "url": "https://www.theverge.com/ai-artificial-intelligence/943234/kevin-oleary-agrees-to-downsize-massive-utah-data-center",
+          "domain": "theverge.com",
+          "title": "Kevin O’Leary agrees to downsize massive Utah data center",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-06-04T14:38:04-04:00",
+          "firstSeen": "2026-06-04T20:04:46.217Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-04T20:04:46.217Z",
+      "dateLastSeen": "2026-06-04T20:04:46.217Z",
+      "sz": 14,
+      "fullName": "Project Stratos (O'Leary AI Data Center, Utah)",
+      "nodeType": "product",
+      "proposalReason": "New term — a named, large-scale AI infrastructure project with documented political and environmental controversy, worth tracking as a case study in AI data center land-use disputes.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "News item or one interview's phrasing — an event, deal or general business term rather than AI vocabulary.",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "eva-bench",
+      "label": "EVA-Bench",
+      "workingDef": "A benchmark suite developed by ServiceNow AI for evaluating enterprise voice agents across realistic multi-domain scenarios. Version 2.0 covers 213 evaluation scenarios across 121 tools in three enterprise domains (airline customer service, IT service management, and healthcare HR service delivery), testing agent capabilities including authentication, multi-intent handling, adversarial caller behaviour, and unsatisfiable goal detection.",
+      "clusters": [
+        "tools",
+        "agentic"
+      ],
+      "suggestedRels": [
+        "evals",
+        "voice-ai",
+        "agent",
+        "tool-use"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/ServiceNow-AI/eva-bench-data",
+          "domain": "huggingface.co",
+          "title": "EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Thu, 04 Jun 2026 12:24:58 GMT",
+          "firstSeen": "2026-06-05T19:53:16.670Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-05T19:53:16.670Z",
+      "dateLastSeen": "2026-06-05T19:53:16.670Z",
+      "sz": 14,
+      "fullName": "EVA-Bench (Enterprise Voice Agent Benchmark)",
+      "nodeType": "product",
+      "proposalReason": "New benchmark not yet in the graph; materialised as the article's primary subject.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Single benchmark or its internal jargon; promote only if it becomes a reference point (GDPval is the one recommended).",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "sygra",
+      "label": "SyGra",
+      "workingDef": "A graph-based synthetic data generation pipeline developed by ServiceNow AI for producing jointly consistent benchmark scenarios. SyGra generates user goals (as decision trees), initial scenario databases, and expected final database states together in a single pass to prevent silent inconsistencies between components — a design choice motivated by reproducibility requirements in agentic evaluation.",
+      "clusters": [
+        "technical",
+        "tools"
+      ],
+      "suggestedRels": [
+        "evals",
+        "structured-output",
+        "agent"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/ServiceNow-AI/eva-bench-data",
+          "domain": "huggingface.co",
+          "title": "EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Thu, 04 Jun 2026 12:24:58 GMT",
+          "firstSeen": "2026-06-05T19:53:16.670Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-05T19:53:16.670Z",
+      "dateLastSeen": "2026-06-05T19:53:16.670Z",
+      "sz": 14,
+      "fullName": "SyGra (Graph-Based Synthetic Data Generation Pipeline)",
+      "nodeType": "product",
+      "proposalReason": "New named system for synthetic benchmark data generation with a distinctive joint-generation architecture worth tracking.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Single benchmark or its internal jargon; promote only if it becomes a reference point (GDPval is the one recommended).",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "unsatisfiable-goal-scenario",
+      "label": "Unsatisfiable Goal Scenario",
+      "workingDef": "An evaluation pattern in which the user's stated objective cannot be fulfilled given the constraints of the scenario — included in benchmarks like EVA-Bench because production call volume is not all 'happy-path' and models reportedly perform worse on goals that cannot be resolved than on successful interactions. Distinct from adversarial scenarios (where the caller attempts to bypass rules) in that the failure is structural rather than intentional.",
+      "clusters": [
+        "agentic",
+        "technical"
+      ],
+      "suggestedRels": [
+        "evals",
+        "agent",
+        "capability-reliability-gap",
+        "silent-failure"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/ServiceNow-AI/eva-bench-data",
+          "domain": "huggingface.co",
+          "title": "EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Thu, 04 Jun 2026 12:24:58 GMT",
+          "firstSeen": "2026-06-05T19:53:16.670Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-05T19:53:16.670Z",
+      "dateLastSeen": "2026-06-05T19:53:16.670Z",
+      "sz": 14,
+      "fullName": "Unsatisfiable Goal Scenario (Agent Evaluation)",
+      "proposalReason": "A specific evaluation concept with practical relevance to agent reliability; not yet in the graph or longlist.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Single benchmark or its internal jargon; promote only if it becomes a reference point (GDPval is the one recommended).",
+      "retiredBy": "nicole-review-2026-10-16"
+    },
+    {
+      "id": "multi-intent-call",
+      "label": "Multi-Intent Call",
+      "workingDef": "A voice agent evaluation scenario type in which a single conversation contains multiple sequential user goals (up to four in EVA-Bench), testing an agent's ability to track state, switch contexts, and complete distinct tasks within one interaction. Contrasted with single-intent calls and adversarial calls as a distinct axis of difficulty in enterprise voice benchmarks.",
+      "clusters": [
+        "agentic",
+        "technical"
+      ],
+      "suggestedRels": [
+        "evals",
+        "voice-ai",
+        "agent",
+        "state",
+        "task-decomposition"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/ServiceNow-AI/eva-bench-data",
+          "domain": "huggingface.co",
+          "title": "EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Thu, 04 Jun 2026 12:24:58 GMT",
+          "firstSeen": "2026-06-05T19:53:16.670Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-06-05T19:53:16.670Z",
+      "dateLastSeen": "2026-06-05T19:53:16.670Z",
+      "sz": 14,
+      "fullName": "Multi-Intent Call (Voice Agent Evaluation)",
+      "proposalReason": "A named scenario taxonomy from a published benchmark; relevant to how voice agents are evaluated on complex, realistic call patterns.",
+      "status": "retired",
+      "retiredAt": "2026-10-16T07:18:12.092Z",
+      "retiredReason": "Single benchmark or its internal jargon; promote only if it becomes a reference point (GDPval is the one recommended).",
+      "retiredBy": "nicole-review-2026-10-16"
+    }
+  ]
+}

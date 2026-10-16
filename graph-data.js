@@ -733,7 +733,7 @@ const NODES = [
  rels:['constitutional-ai','alignment','training','model-concept','guardrails','fine-tuning'],refs:[]},
 
 {id:'jailbreak',label:'Jailbreak',clusters:['security','safety'],sz:17,
- def:'A deliberately crafted prompt that tricks an AI model into bypassing its safety constraints — producing outputs it was trained to refuse. Distinct from prompt injection (where an attacker embeds hidden instructions in external content): a jailbreak is a direct, intentional attempt by the user to override the model\'s guardrails. Jailbreaks exploit the tension between a model\'s instruction-following capability and its safety training. New jailbreaks are discovered and shared; models are updated to resist them; new jailbreaks are found. An ongoing adversarial cycle.',
+ def:'A deliberately crafted prompt that tricks an AI model into bypassing its safety constraints — producing outputs it was trained to refuse. Distinct from prompt injection (where an attacker embeds hidden instructions in external content): a jailbreak is a direct, intentional attempt by the user to override the model\'s guardrails. Jailbreaks exploit the tension between a model\'s instruction-following capability and its safety training. New jailbreaks are discovered and shared; models are updated to resist them; new jailbreaks are found. An ongoing adversarial cycle. Common techniques include persona-driven prompts that ask the model to role-play as an expert or an unrestricted character.',
  rels:['prompt-injection','guardrails','ai-red-teaming','alignment','constitutional-ai','system-prompt'],refs:[]},
 
 {id:'hugging-face',label:'Hugging Face',clusters:['companies','tools'],sz:18,
@@ -1056,7 +1056,7 @@ const NODES = [
  refs:[{n:1,src:'MLOps Community',q:'Pretraining MLOps Community',url:'https://mlops.community/pretraining-breaking-down-the-modern-llm-training-pipeline/'},{n:2,src:'Comet',q:'Pretraining Comet',url:'https://www.comet.com/site/blog/pretraining/'}]},
 
 {id:'post-training',label:'Post-Training',clusters:['technical','lifecycle'],sz:18,
- def:'Everything done to a model after pretraining — supervised fine-tuning, RLHF, reinforcement learning on verifiable tasks, safety tuning — to turn a raw base model into a helpful, steerable assistant. Since 2024 an increasing share of capability gains, especially in reasoning, has come from post-training rather than bigger pretraining runs.',
+ def:'Everything done to a model after pretraining — supervised fine-tuning, RLHF, reinforcement learning on verifiable tasks, safety tuning — to turn a raw base model into a helpful, steerable assistant. Since 2024 an increasing share of capability gains, especially in reasoning, has come from post-training rather than bigger pretraining runs. Researchers now speak of post-training scaling: capability gains from spending more compute after pretraining.',
  rels:['pretraining','training','rlhf','reinforcement-learning','rlvr','fine-tuning','constitutional-ai','reasoning-models','distillation'],
  refs:[{n:1,src:'Raschka',q:'Post-Training Raschka',url:'https://magazine.sebastianraschka.com/p/new-llm-pre-training-and-post-training'},{n:2,src:'MLOps Community',q:'Post-Training MLOps Community',url:'https://mlops.community/pretraining-breaking-down-the-modern-llm-training-pipeline/'}]},
 
@@ -1847,5 +1847,245 @@ const NODES = [
  def:'The umbrella label for AI systems that act — planning, using tools, and taking multi-step actions toward a goal — rather than only responding. Used so broadly in marketing that it is often agent-washing; see Agent and Autonomy Spectrum.',
  rels:['agent','agentic-era','agent-washing','autonomy-spectrum'],
  refs:[{n:1,src:'Simon Willison, 2025-09',q:'Agentic AI Simon Willison',url:'https://feeds.simonwillison.net/2025/Sep/18/agents/'},{n:2,src:'Wikipedia',q:'Agentic AI Wikipedia',url:'https://en.wikipedia.org/wiki/Agentic_AI'}]},
+
+
+// ── LONGLIST PROMOTIONS (October 2026 review) ──────────────────
+// Promoted from Lexi's longlist by Nicole's review on 2026-10-16. Lexi's original
+// sighting is ref 1; the rest were added and verified during the review.
+
+{id:'ai-slop',label:'AI Slop',clusters:['critical'],sz:19,
+ def:'Low-quality content produced in bulk with AI, usually to capture attention or ad revenue rather than to inform — spam sites, fake images, auto-generated videos. Merriam-Webster made "slop" its 2025 Word of the Year and Macquarie Dictionary chose "AI slop".',
+ rels:['workslop','slopaganda','botshit','model-collapse','zombie-internet','dead-internet-theory','generative-ai','deepfake'],
+ refs:[{n:1,src:'Simon Willison\'s Weblog, 2026-05',q:'AI Slop Simon Willison\'s Weblog',url:'https://simonwillison.net/2026/May/11/zombie-internet/#atom-everything'},{n:2,src:'TechCrunch (Merriam-Webster WOTY), 2025-12',q:'AI Slop TechCrunch (Merriam-Webster WOTY)',url:'https://techcrunch.com/2025/12/15/merriam-webster-names-slop-the-word-of-the-year/'},{n:3,src:'Fast Company ME, 2026-02',q:'AI Slop Fast Company ME',url:'https://fastcompanyme.com/technology/the-zombie-internet-has-arrived-and-it-has-devastating-consequences-for-advertising-social-media-and-the-human-web/'}]},
+
+{id:'agi',label:'AGI',clusters:['critical','core'],sz:21,
+ fullName:'Artificial General Intelligence (AGI)',
+ def:'AI that matches or exceeds human ability across most cognitive tasks — but the definition itself is the battleground. Industry framings (notably OpenAI\'s) tie it to outperforming humans at most economically valuable work; researchers have proposed operational ladders (Google DeepMind\'s "Levels of AGI") and test batteries (the Center for AI Safety\'s definition, co-authored with critics including Gary Marcus); sceptics argue the term has no stable referent and shifts with commercial incentives.',
+ rels:['superintelligence','frontier-model','recursive-self-improvement','scaling-laws','openai-co','jagged-frontier','alignment'],
+ refs:[{n:1,src:'The Verge — AI, 2026-05',q:'AGI The Verge — AI',url:'https://www.theverge.com/ai-artificial-intelligence/932464/musk-v-altman-proved-that-ai-is-led-by-the-wrong-people'},{n:2,src:'Morris et al. (Google DeepMind), Levels of AGI, 2023-11',q:'AGI Morris et al. (Google DeepMind), Levels of AGI',url:'https://arxiv.org/abs/2311.02462'},{n:3,src:'Center for AI Safety, A Definition of AGI, 2025-10',q:'AGI Center for AI Safety, A Definition of AGI',url:'https://agidefinition.safe.ai/'}]},
+
+{id:'calibration',label:'Calibration',clusters:['technical','safety'],sz:17,
+ def:'How well a model\'s expressed confidence matches how often it is actually right. A well-calibrated model that says it is 80% sure is correct about 80% of the time — the basis for knowing when to trust, check, or defer.',
+ rels:['hallucination','capability-reliability-gap','agent-reliability','automation-bias','evals'],
+ refs:[{n:1,src:'AI Snake Oil, 2026-02',q:'Calibration AI Snake Oil',url:'https://www.normaltech.ai/p/new-paper-towards-a-science-of-ai'},{n:2,src:'Anthropic (Kadavath et al.), 2022-07',q:'Calibration Anthropic (Kadavath et al.)',url:'https://www.anthropic.com/research/language-models-mostly-know-what-they-know'},{n:3,src:'Guo et al., ICML, 2017',q:'Calibration Guo et al., ICML',url:'https://proceedings.mlr.press/v70/guo17a.html'}]},
+
+{id:'agent-reliability',label:'Agent Reliability',clusters:['agentic','safety'],sz:18,
+ def:'Whether an agent performs consistently and robustly across repeated runs and changing conditions — distinct from whether it can succeed once. Frameworks break it into dimensions such as consistency, robustness, predictability, and safety; reliability has lagged well behind raw capability.',
+ rels:['capability-reliability-gap','nines-of-reliability','calibration','silent-failure','evals','aint'],
+ refs:[{n:1,src:'AI Snake Oil, 2026-02',q:'Agent Reliability AI Snake Oil',url:'https://www.normaltech.ai/p/new-paper-towards-a-science-of-ai'},{n:2,src:'Fortune, 2026-03',q:'Agent Reliability Fortune',url:'https://fortune.com/2026/03/24/ai-agents-are-getting-more-capable-but-reliability-is-lagging-narayanan-kapoor/'},{n:3,src:'ReliabilityBench, arXiv, 2026-01',q:'Agent Reliability ReliabilityBench, arXiv',url:'https://arxiv.org/abs/2601.06112'}]},
+
+{id:'nines-of-reliability',label:'Nines of Reliability',clusters:['agentic','critical'],sz:16,
+ fullName:'Nines of Reliability ("March of Nines")',
+ def:'Describing AI reliability in high-availability engineering terms — 99.9% is "three nines" — to stress that each additional nine takes as much work as the last, and that small per-step error rates compound over long agent tasks. Andrej Karpathy calls the slog from demo to dependable product "the march of nines".',
+ rels:['agent-reliability','capability-reliability-gap','long-horizon-autonomy','pilot-purgatory','hallucination-cascade'],
+ refs:[{n:1,src:'AI Snake Oil, 2026-02',q:'Nines of Reliability AI Snake Oil',url:'https://www.normaltech.ai/p/new-paper-towards-a-science-of-ai'},{n:2,src:'Dwarkesh Podcast (Karpathy), 2025-10',q:'Nines of Reliability Dwarkesh Podcast (Karpathy)',url:'https://www.dwarkesh.com/p/andrej-karpathy'},{n:3,src:'Foundation Capital, 2026-10',q:'Nines of Reliability Foundation Capital',url:'https://foundationcapital.com/what-it-takes-to-build-ai-agents-that-actually-work/'}]},
+
+{id:'cot-faithfulness',label:'Chain-of-Thought Faithfulness',clusters:['safety','technical'],sz:16,
+ def:'Whether a model\'s written reasoning reflects the factors that actually drove its answer, or is a plausible after-the-fact rationalisation. Research shows reasoning models often omit influences on their answers, which limits what chain-of-thought monitoring can catch.',
+ rels:['chain-of-thought','cot-monitoring','reasoning-models','interpretability','latent-reasoning','llm-steganography'],
+ refs:[{n:1,src:'Last Week in AI, 2026-04',q:'Chain-of-Thought Faithfulness Last Week in AI',url:'https://lastweekin.ai/p/lwiai-podcast-238-gpt-54-mini-openai'},{n:2,src:'Anthropic, 2025-04',q:'Chain-of-Thought Faithfulness Anthropic',url:'https://www.anthropic.com/research/reasoning-models-dont-say-think'},{n:3,src:'Arcuschin et al., arXiv, 2025-03',q:'Chain-of-Thought Faithfulness Arcuschin et al., arXiv',url:'https://arxiv.org/abs/2503.08679'}]},
+
+{id:'test-time-compute-scaling',label:'Test-Time Compute Scaling',clusters:['technical'],sz:18,
+ fullName:'Test-Time Compute Scaling (Test-Time Scaling)',
+ def:'Improving a model\'s answers by spending more computation at inference — longer reasoning, sampling and checking multiple attempts, search — rather than by training a bigger model. The scaling regime behind reasoning models.',
+ rels:['reasoning-models','scaling-laws','inference','adjustable-reasoning-effort','chain-of-thought','overthinking','inference-shift'],
+ refs:[{n:1,src:'Hugging Face Blog, 2026-05',q:'Test-Time Compute Scaling Hugging Face Blog',url:'https://huggingface.co/blog/amazon/foundation-model-building-blocks'},{n:2,src:'Snell et al., arXiv, 2024-08',q:'Test-Time Compute Scaling Snell et al., arXiv',url:'https://arxiv.org/abs/2408.03314'},{n:3,src:'NVIDIA Blog, 2025-02',q:'Test-Time Compute Scaling NVIDIA Blog',url:'https://blogs.nvidia.com/blog/ai-scaling-laws/'}]},
+
+{id:'data-contamination',label:'Data Contamination',clusters:['technical','critical'],sz:16,
+ fullName:'Data Contamination (Test-Set / Benchmark Contamination)',
+ def:'When benchmark test data, or close copies of it, leaks into a model\'s training data, inflating scores relative to real-world ability. Private or freshly created evaluation sets are the main defence.',
+ rels:['benchmark-gaming','evals','benchmark-saturation','training','pretraining'],
+ refs:[{n:1,src:'Hugging Face Blog, 2026-05',q:'Data Contamination Hugging Face Blog',url:'https://huggingface.co/blog/open-asr-leaderboard-private-data'},{n:2,src:'Xu et al., arXiv (survey), 2024-06',q:'Data Contamination Xu et al., arXiv (survey)',url:'https://arxiv.org/abs/2406.04244'},{n:3,src:'Sainz et al., EMNLP Findings, 2023-12',q:'Data Contamination Sainz et al., EMNLP Findings',url:'https://aclanthology.org/2023.findings-emnlp.722/'}]},
+
+{id:'dpo',label:'Direct Preference Optimization',clusters:['technical'],sz:16,
+ fullName:'Direct Preference Optimization (DPO)',
+ def:'A post-training method (Rafailov et al., 2023) that trains a model directly on pairs of preferred and rejected responses, without the separate reward model and reinforcement-learning loop of classic RLHF. Simpler and cheaper, it became a standard alignment step for open models.',
+ rels:['rlhf','post-training','grpo','reinforcement-learning','fine-tuning'],
+ refs:[{n:1,src:'Hugging Face Blog, 2026-06',q:'Direct Preference Optimization Hugging Face Blog',url:'https://huggingface.co/blog/Dharma-AI/direct-preference-optimization-beyond-chatbots'},{n:2,src:'Rafailov et al., arXiv / NeurIPS 2023, 2023-05',q:'Direct Preference Optimization Rafailov et al., arXiv / NeurIPS 2023',url:'https://arxiv.org/abs/2305.18290'},{n:3,src:'RLHF Book (Nathan Lambert), 2026',q:'Direct Preference Optimization RLHF Book (Nathan Lambert)',url:'https://rlhfbook.com/c/08-direct-alignment'}]},
+
+{id:'multi-token-prediction',label:'Multi-Token Prediction',clusters:['technical'],sz:15,
+ fullName:'Multi-Token Prediction (MTP)',
+ def:'A training objective in which a model learns to predict several future tokens at each position rather than just the next one (Meta, 2024; used in DeepSeek-V3 and others). The extra prediction heads can then act as a built-in draft model for speculative decoding, speeding up inference.',
+ rels:['speculative-decoding','training','inference','latency','deepseek'],
+ refs:[{n:1,src:'Hugging Face Blog, 2026-05',q:'Multi-Token Prediction Hugging Face Blog',url:'https://huggingface.co/blog/local-reachy-mini-conversation'},{n:2,src:'Gloeckle et al. (Meta FAIR), arXiv, 2024-04',q:'Multi-Token Prediction Gloeckle et al. (Meta FAIR), arXiv',url:'https://arxiv.org/abs/2404.19737'},{n:3,src:'vLLM docs, 2026',q:'Multi-Token Prediction vLLM docs',url:'https://docs.vllm.ai/en/latest/features/speculative_decoding/'}]},
+
+{id:'text-degeneration',label:'Text Degeneration',clusters:['technical'],sz:15,
+ def:'Output that turns bland, incoherent, or stuck in repetitive loops when a model decodes by always choosing the most likely next words. Named in a 2019 paper that introduced nucleus (top-p) sampling as a fix.',
+ rels:['temperature','inference','token','llm'],
+ refs:[{n:1,src:'Hugging Face Blog, 2026-06',q:'Text Degeneration Hugging Face Blog',url:'https://huggingface.co/blog/Dharma-AI/direct-preference-optimization-beyond-chatbots'},{n:2,src:'Holtzman et al., arXiv / ICLR 2020, 2019-04',q:'Text Degeneration Holtzman et al., arXiv / ICLR 2020',url:'https://arxiv.org/abs/1904.09751'},{n:3,src:'Apple ML Research, 2022-11',q:'Text Degeneration Apple ML Research',url:'https://machinelearning.apple.com/research/analyzing-mitigating-repetitions'}]},
+
+{id:'guard-model',label:'Guard Model',clusters:['safety','tools'],sz:16,
+ fullName:'Guard Model (Safety Classifier Model)',
+ def:'A model dedicated to classifying prompts and responses against a safety taxonomy or a custom policy — Meta\'s Llama Guard, Google\'s ShieldGemma, IBM\'s Granite Guardian — deployed alongside the main model as a guardrail.',
+ rels:['guardrails','jailbreak','prompt-injection','constitutional-ai','llama'],
+ refs:[{n:1,src:'Hugging Face Blog, 2026-06',q:'Guard Model Hugging Face Blog',url:'https://huggingface.co/blog/nvidia/nemotron-3-5-content-safety'},{n:2,src:'Meta (Llama Guard), arXiv, 2023-12',q:'Guard Model Meta (Llama Guard), arXiv',url:'https://arxiv.org/abs/2312.06674'},{n:3,src:'Google (ShieldGemma), 2026-01',q:'Guard Model Google (ShieldGemma)',url:'https://ai.google.dev/gemma/docs/shieldgemma'}]},
+
+{id:'prefill-decode-disaggregation',label:'Prefill–Decode Disaggregation',clusters:['technical','landscape'],sz:15,
+ def:'Running the two phases of LLM inference on separate hardware: prefill, which processes the whole prompt at once and is compute-heavy, and decode, which generates tokens one by one and is memory-bandwidth-heavy. Splitting them lets each be optimised and scaled independently.',
+ rels:['inference','kv-cache','latency','ai-inference-chip','infrastructure','inference-shift'],
+ refs:[{n:1,src:'Stratechery, 2026-05',q:'Prefill–Decode Disaggregation Stratechery',url:'https://stratechery.com/2026/the-inference-shift/'},{n:2,src:'Microsoft Research (Splitwise), 2024-01',q:'Prefill–Decode Disaggregation Microsoft Research (Splitwise)',url:'https://www.microsoft.com/en-us/research/blog/splitwise-improves-gpu-usage-by-splitting-llm-inference-phases/'},{n:3,src:'DistServe, arXiv/OSDI, 2024-01',q:'Prefill–Decode Disaggregation DistServe, arXiv/OSDI',url:'https://arxiv.org/abs/2401.09670'}]},
+
+{id:'wafer-scale-engine',label:'Wafer-Scale Engine',clusters:['landscape','technical'],sz:14,
+ fullName:'Wafer-Scale Engine (Cerebras WSE)',
+ nodeType:'product',
+ def:'Cerebras\'s chip design that uses an entire silicon wafer as a single processor, with huge on-chip memory bandwidth — making it unusually fast at generating tokens, at the cost of limited memory and off-wafer bandwidth.',
+ rels:['ai-accelerator','ai-inference-chip','tpu','latency','nvidia-co'],
+ refs:[{n:1,src:'Stratechery, 2026-05',q:'Wafer-Scale Engine Stratechery',url:'https://stratechery.com/2026/the-inference-shift/'},{n:2,src:'SemiAnalysis, 2026-05',q:'Wafer-Scale Engine SemiAnalysis',url:'https://newsletter.semianalysis.com/p/cerebras-faster-tokens-please'},{n:3,src:'The Register, 2026-08',q:'Wafer-Scale Engine The Register',url:'https://www.theregister.com/a/5289286'}]},
+
+{id:'zombie-internet',label:'Zombie Internet',clusters:['critical'],sz:16,
+ def:'Jason Koebler\'s 2024 term (404 Media) for a web that is neither fully bot-run nor authentically human, but a mix of people, bots, and AI-generated content interacting with each other. Increasingly applied to agents producing content for other agents.',
+ rels:['dead-internet-theory','ai-slop','agentic-web','moltbook','slopaganda'],
+ refs:[{n:1,src:'Simon Willison\'s Weblog, 2026-05',q:'Zombie Internet Simon Willison\'s Weblog',url:'https://simonwillison.net/2026/May/11/zombie-internet/#atom-everything'},{n:2,src:'404 Media (Jason Koebler), 2024-05',q:'Zombie Internet 404 Media (Jason Koebler)',url:'https://www.404media.co/facebooks-ai-spam-isnt-the-dead-internet-its-the-zombie-internet/'},{n:3,src:'Fast Company ME, 2026-02',q:'Zombie Internet Fast Company ME',url:'https://fastcompanyme.com/technology/the-zombie-internet-has-arrived-and-it-has-devastating-consequences-for-advertising-social-media-and-the-human-web/'}]},
+
+{id:'dead-internet-theory',label:'Dead Internet Theory',clusters:['critical'],sz:16,
+ def:'A conspiracy theory that took shape around 2021 claiming most online activity is generated by bots rather than people. Now invoked more loosely — and less conspiratorially — to describe generative AI\'s effect on the web.',
+ rels:['zombie-internet','ai-slop','generative-ai'],
+ refs:[{n:1,src:'Simon Willison\'s Weblog, 2026-05',q:'Dead Internet Theory Simon Willison\'s Weblog',url:'https://simonwillison.net/2026/May/11/zombie-internet/#atom-everything'},{n:2,src:'Wikipedia',q:'Dead Internet Theory Wikipedia',url:'https://en.wikipedia.org/wiki/Dead_Internet_theory'},{n:3,src:'Forbes Australia, 2025-10',q:'Dead Internet Theory Forbes Australia',url:'https://www.forbes.com.au/?p=160882'}]},
+
+{id:'forward-deployed-engineer',label:'Forward Deployed Engineer',clusters:['business','work'],sz:17,
+ fullName:'Forward Deployed Engineer (FDE)',
+ def:'An engineer embedded with a customer to integrate a vendor\'s product into the customer\'s real workflows. A role pioneered by Palantir that became one of the defining jobs of 2025–26 AI companies, as labs found that deployment, not model access, was the bottleneck.',
+ rels:['deployment-company','pilot-purgatory','vertical-ai','agentic-business-model','openai-co','anthropic-co'],
+ refs:[{n:1,src:'Stratechery, 2026-05',q:'Forward Deployed Engineer Stratechery',url:'https://stratechery.com/2026/the-deployment-company-back-to-the-70s-apple-and-intel/'},{n:2,src:'a16z, 2026-01',q:'Forward Deployed Engineer a16z',url:'https://a16z.com/the-palantirization-of-everything/'},{n:3,src:'Fortune, 2026-09',q:'Forward Deployed Engineer Fortune',url:'https://fortune.com/2026/09/03/forward-deployed-engineers-fast-growing-six-figure-silicon-valley-job-integrate-ai-with-customers-tech-careers-palantir/'}]},
+
+{id:'personal-software',label:'Personal Software',clusters:['evolved','work'],sz:16,
+ def:'Small, bespoke software built for one person or a small group — often in an afternoon with AI coding tools — rather than for a market. Also called "software for one" or "home-cooked software"; micro-apps are a common form.',
+ rels:['vibe-coding','coding-agent','software-3','claude-code'],
+ refs:[{n:1,src:'Simon Willison\'s Weblog, 2026-04',q:'Personal Software Simon Willison\'s Weblog',url:'https://simonwillison.net/2026/Apr/30/rss-vibe-coded-apps/#atom-everything'},{n:2,src:'Nicolas Deville, 2026-10',q:'Personal Software Nicolas Deville',url:'https://notes.nicolasdeville.com/ai/personal-software'},{n:3,src:'Addy Osmani',q:'Personal Software Addy Osmani',url:'https://addyosmani.com/blog/personal-software/'}]},
+
+{id:'coding-agent',label:'Coding Agent',clusters:['agentic','tools'],sz:19,
+ def:'An AI agent that writes, edits, runs, and tests code with some autonomy — working in an editor or terminal (Claude Code, Cursor) or asynchronously in a cloud sandbox and returning a pull request (Copilot coding agent, Codex).',
+ rels:['background-agents','claude-code','codex-model','cursor','devin','github-copilot','agents-md','vibe-coding','agentic-engineering','yolo-mode'],
+ refs:[{n:1,src:'Simon Willison\'s Weblog, 2026-06',q:'Coding Agent Simon Willison\'s Weblog',url:'https://simonwillison.net/2026/Jun/3/uber-caps-usage/#atom-everything'},{n:2,src:'GitHub Changelog, 2025-09',q:'Coding Agent GitHub Changelog',url:'https://github.blog/changelog/2025-09-25-copilot-coding-agent-is-now-generally-available/'},{n:3,src:'Claude Code docs, 2026',q:'Coding Agent Claude Code docs',url:'https://code.claude.com/docs/en/overview'}]},
+
+{id:'tokenmaxxing',label:'Tokenmaxxing',clusters:['critical','work'],sz:15,
+ def:'Maximising AI token consumption — individually, or because employers rank and reward staff by AI usage — treating token spend as a proxy for productivity. Spread widely in spring 2026; critics see it as Goodhart\'s law in action.',
+ rels:['cost','cost-runaway','benchmark-gaming','token','ai-first-company'],
+ refs:[{n:1,src:'Simon Willison\'s Weblog, 2026-06',q:'Tokenmaxxing Simon Willison\'s Weblog',url:'https://simonwillison.net/2026/Jun/3/uber-caps-usage/#atom-everything'},{n:2,src:'Wikipedia, 2026',q:'Tokenmaxxing Wikipedia',url:'https://en.wikipedia.org/wiki/Token_maxxing'},{n:3,src:'Thoughtworks Decoder, 2026',q:'Tokenmaxxing Thoughtworks Decoder',url:'https://www.thoughtworks.com/insights/decoder/t/token-maxxing'}]},
+
+{id:'agentic-web',label:'Agentic Web',clusters:['agentic','landscape'],sz:17,
+ def:'An emerging web in which AI agents, rather than people, are the main readers and actors — browsing, transacting, and talking to other agents on users\' behalf. Pushed by Microsoft ("open agentic web", 2025) and others; it raises questions about how content is valued when humans no longer click.',
+ rels:['agentic-browser','agent-experience','llms-txt','agentic-commerce','a2a','mcp','zombie-internet','ai-content-licensing'],
+ refs:[{n:1,src:'Stratechery, 2026-05',q:'Agentic Web Stratechery',url:'https://stratechery.com/2026/an-interview-with-eric-seufert-about-models-and-ads-and-ais-upside-for-humanity/'},{n:2,src:'Yang et al., arXiv, 2025-07',q:'Agentic Web Yang et al., arXiv',url:'https://arxiv.org/abs/2507.21206'},{n:3,src:'Digiday, 2026-07',q:'Agentic Web Digiday',url:'https://digiday.com/media/in-graphic-detail-ai-visibility-is-no-longer-about-referral-traffic/'}]},
+
+{id:'ai-code-provenance',label:'AI Code Provenance',clusters:['work','security'],sz:15,
+ def:'Who wrote a piece of code, with what AI assistance, and who answers for it. Projects such as the Linux kernel now require AI assistance to be disclosed and a human to take full responsibility; distinct from software supply-chain provenance (SLSA, signing).',
+ rels:['comprehension-debt','vibe-coding','coding-agent','slopsquatting'],
+ refs:[{n:1,src:'Simon Willison\'s Weblog, 2026-06',q:'AI Code Provenance Simon Willison\'s Weblog',url:'https://simonwillison.net/2026/Jun/5/andreas-kling/#atom-everything'},{n:2,src:'Matteo Collina, 2026-03',q:'AI Code Provenance Matteo Collina',url:'https://adventures.nodeland.dev/archive/who-is-responsible-for-ai-generated-code'},{n:3,src:'Linux kernel docs, 2025-12',q:'AI Code Provenance Linux kernel docs',url:'https://docs.kernel.org/process/coding-assistants.html'}]},
+
+{id:'word-error-rate',label:'Word Error Rate',clusters:['technical'],sz:14,
+ fullName:'Word Error Rate (WER)',
+ def:'The standard accuracy metric for speech recognition: substitutions, deletions, and insertions divided by the number of words actually spoken. Lower is better; it can exceed 100% when a system inserts many words.',
+ rels:['voice-ai','evals','cascaded-voice-pipeline'],
+ refs:[{n:1,src:'Hugging Face Blog, 2026-05',q:'Word Error Rate Hugging Face Blog',url:'https://huggingface.co/blog/open-asr-leaderboard-private-data'},{n:2,src:'Kensho',q:'Word Error Rate Kensho',url:'https://kensho.com/news/word-error-rate-primer'},{n:3,src:'ISIP, Mississippi State Univ.',q:'Word Error Rate ISIP, Mississippi State Univ.',url:'https://www.isip.piconepress.com/projects/speech/software/tutorials/production/fundamentals/v1.0/section_04/s04_03_p01.html'}]},
+
+{id:'cascaded-voice-pipeline',label:'Cascaded Voice Pipeline',clusters:['technical','agentic'],sz:15,
+ def:'The modular way to build a voice agent: speech-to-text, then a language model, then text-to-speech (often with voice-activity detection in front). Easy to swap parts and inspect; slower and less natural than speech-to-speech models.',
+ rels:['voice-ai','full-duplex-voice-ai','latency','word-error-rate'],
+ refs:[{n:1,src:'Hugging Face Blog, 2026-05',q:'Cascaded Voice Pipeline Hugging Face Blog',url:'https://huggingface.co/blog/local-reachy-mini-conversation'},{n:2,src:'arXiv (enterprise realtime voice agents), 2026-03',q:'Cascaded Voice Pipeline arXiv (enterprise realtime voice agents)',url:'https://arxiv.org/abs/2603.05413'},{n:3,src:'Gradium (vendor), 2026-09',q:'Cascaded Voice Pipeline Gradium (vendor)',url:'https://gradium.ai/content/cascaded-voice-agent-vs-speech-to-speech-2026'}]},
+
+{id:'full-duplex-voice-ai',label:'Full-Duplex Voice AI',clusters:['technical','models'],sz:15,
+ def:'Speech models that listen and talk at the same time, as people do — handling interruptions, overlaps, and back-channel "mm-hmm"s — instead of taking strict turns. Kyutai\'s Moshi (2024) was an early open example.',
+ rels:['voice-ai','cascaded-voice-pipeline','multimodal','latency'],
+ refs:[{n:1,src:'Last Week in AI, 2026-05',q:'Full-Duplex Voice AI Last Week in AI',url:'https://lastweekin.ai/p/lwiai-podcast-245-tml-interaction'},{n:2,src:'Kyutai (Moshi), arXiv, 2024-09',q:'Full-Duplex Voice AI Kyutai (Moshi), arXiv',url:'https://arxiv.org/abs/2410.00037'},{n:3,src:'Thinking Machines Lab, 2026-05',q:'Full-Duplex Voice AI Thinking Machines Lab',url:'https://thinkingmachines.ai/blog/interaction-models/'}]},
+
+{id:'llm-steganography',label:'LLM Steganography',clusters:['safety','security'],sz:15,
+ def:'Language models hiding information or reasoning inside outputs that look innocuous — encoded messages or encoded reasoning — especially in ways that evade chain-of-thought or output monitors; also the research on detecting it.',
+ rels:['cot-monitoring','cot-faithfulness','scheming','ai-control','latent-reasoning'],
+ refs:[{n:1,src:'Last Week in AI, 2026-04',q:'LLM Steganography Last Week in AI',url:'https://lastweekin.ai/p/lwiai-podcast-238-gpt-54-mini-openai'},{n:2,src:'Zolkowski et al., ICLR 2026, 2026',q:'LLM Steganography Zolkowski et al., ICLR 2026',url:'https://iclr.cc/virtual/2026/poster/10007285'},{n:3,src:'Anwar, Krueger et al., arXiv, 2026-02',q:'LLM Steganography Anwar, Krueger et al., arXiv',url:'https://arxiv.org/abs/2602.23163'}]},
+
+{id:'gdpval',label:'GDPval',clusters:['work','tools'],sz:16,
+ nodeType:'product',
+ def:'OpenAI\'s benchmark (2025) measuring AI on real work products from 44 occupations in the industries that contribute most to US GDP, judged by blinded expert comparison against professionals\' work. Widely cited in debates about AI and jobs.',
+ rels:['evals','ai-exposure','benchmark-saturation','openai-co','outcome-focused-work'],
+ refs:[{n:1,src:'OpenAI Research, 2026-05',q:'GDPval OpenAI Research',url:'https://openai.com/index/introducing-gpt-5-4/'},{n:2,src:'Patwardhan et al., ICLR 2026, 2026',q:'GDPval Patwardhan et al., ICLR 2026',url:'https://proceedings.iclr.cc/paper_files/paper/2026/hash/290c2430f91912204f30bbcc990fff1d-Abstract-Conference.html'},{n:3,src:'Artificial Analysis, 2026',q:'GDPval Artificial Analysis',url:'https://artificialanalysis.ai/evaluations/gdpval-aa'}]},
+
+{id:'vllm',label:'vLLM',clusters:['tools'],sz:15,
+ nodeType:'product',
+ def:'The most widely used open-source engine for serving LLMs, built around PagedAttention — paging the KV cache like virtual memory to serve many requests efficiently. Started at UC Berkeley.',
+ rels:['inference','kv-cache','open-weight','hugging-face','prefill-decode-disaggregation'],
+ refs:[{n:1,src:'Hugging Face Blog, 2026-05',q:'vLLM Hugging Face Blog',url:'https://huggingface.co/blog/lablab-ai-amd-developer-hackathon/machinacheck'},{n:2,src:'Kwon et al., arXiv/SOSP, 2023-09',q:'vLLM Kwon et al., arXiv/SOSP',url:'https://arxiv.org/abs/2309.06180'},{n:3,src:'vLLM docs, 2026',q:'vLLM vLLM docs',url:'https://docs.vllm.ai/en/latest/'}]},
+
+{id:'ai-fluency',label:'AI Fluency',clusters:['human'],sz:17,
+ def:'The ability to work with AI effectively, efficiently, ethically, and safely — framed in Dakan and Feller\'s "4D" framework (Delegation, Description, Discernment, Diligence), developed with Anthropic and now used in university and workplace courses. Broader in emphasis than AI literacy.',
+ rels:['ai-literacy','delegation','critical-thinking','information-literacy','metacognition'],
+ refs:[{n:1,src:'Anthropic Newsroom, 2026-05',q:'AI Fluency Anthropic Newsroom',url:'https://www.anthropic.com/news/claude-for-small-business'},{n:2,src:'National Forum for Teaching & Learning (Ireland), 2025-06',q:'AI Fluency National Forum for Teaching & Learning (Ireland)',url:'https://www.teachingandlearning.ie/2025/06/19/launch-of-new-open-course-ai-fluency-framework-and-foundations/'},{n:3,src:'UT Austin Office of the Provost, 2026',q:'AI Fluency UT Austin Office of the Provost',url:'https://provost.utexas.edu/?p=20515'}]},
+
+{id:'ai-tutoring',label:'AI Tutoring',clusters:['human'],sz:16,
+ def:'AI systems that give learners personalised instruction, practice, and feedback. Results so far are mixed: some course-specific tutors show strong gains, while a large 2026 trial of Khanmigo found modest effects and low engagement.',
+ rels:['ai-assistant','socratic-dialogue','cognitive-offloading','deskilling','chatbot'],
+ refs:[{n:1,src:'Google AI Blog, 2026-05',q:'AI Tutoring Google AI Blog',url:'https://blog.google/innovation-and-ai/technology/ai/university-waterloo-labs/'},{n:2,src:'EdWorkingPapers (Khanmigo RCT), 2026-08',q:'AI Tutoring EdWorkingPapers (Khanmigo RCT)',url:'https://edworkingpapers.com/ai26-1551'},{n:3,src:'Harvard Gazette, 2024-09',q:'AI Tutoring Harvard Gazette',url:'https://news.harvard.edu/gazette/story/2024/09/professor-tailored-ai-tutor-to-physics-course-engagement-doubled/'}]},
+
+{id:'nano-banana',label:'Nano Banana',clusters:['models','landscape'],sz:16,
+ nodeType:'product',
+ def:'The public nickname for Google\'s Gemini image generation and editing models — Gemini 2.5 Flash Image (August 2025), Nano Banana Pro and Nano Banana 2 — which went viral for consistent, conversational photo editing.',
+ rels:['gemini','google-co','diffusion-model','generative-ai','deepfake'],
+ refs:[{n:1,src:'Google AI Blog, 2026-06',q:'Nano Banana Google AI Blog',url:'https://blog.google/innovation-and-ai/technology/ai/io-2026-google-ai/'},{n:2,src:'Google Developers Blog, 2025-08',q:'Nano Banana Google Developers Blog',url:'https://developers.googleblog.com/en/introducing-gemini-2-5-flash-image/'},{n:3,src:'The Batch (DeepLearning.AI), 2026-03',q:'Nano Banana The Batch (DeepLearning.AI)',url:'https://charonhub.deeplearning.ai/nano-banana-2-aka-gemini-3-1-flash-image-makes-edits-easier-and-faster/'}]},
+
+{id:'google-ai-mode',label:'Google AI Mode',clusters:['tools','landscape'],sz:16,
+ nodeType:'product',
+ def:'Google Search\'s conversational, Gemini-powered search mode for multi-step and multimodal questions — answering directly rather than returning a list of links, with large consequences for publisher traffic.',
+ rels:['gemini','google-co','deep-research','ai-content-licensing','agentic-web','perplexity'],
+ refs:[{n:1,src:'Google AI Blog, 2026-05',q:'Google AI Mode Google AI Blog',url:'https://blog.google/products-and-platforms/products/search/gardening-tips/'},{n:2,src:'Adweek, 2025-07',q:'Google AI Mode Adweek',url:'https://www.adweek.com/media/google-ai-search-image-pdf-uploads-canvas-desktop/'},{n:3,src:'Search Engine Journal, 2025-07',q:'Google AI Mode Search Engine Journal',url:'https://www.searchenginejournal.com/google-ai-mode-update-file-uploads-live-video-search-more/552414/'}]},
+
+{id:'benchmaxxing',label:'Benchmaxxing',clusters:['critical'],sz:14,
+ synonymOf:'benchmark-gaming',
+ def:'Slang for benchmark gaming: tuning a model to top a known leaderboard without matching real-world gains.',
+ rels:['benchmark-gaming'],
+ refs:[{n:1,src:'Hugging Face Blog, 2026-05',q:'Benchmaxxing Hugging Face Blog',url:'https://huggingface.co/blog/open-asr-leaderboard-private-data'}]},
+
+{id:'scaffold',label:'Scaffold',clusters:['agentic'],sz:14,
+ synonymOf:'harness',
+ def:'The research community\'s usual word for the harness around a model — the code, prompts, and tools that turn it into an agent. Agent evaluations often compare the same model in different scaffolds.',
+ rels:['harness'],
+ refs:[{n:1,src:'AI Snake Oil, 2026-05',q:'Scaffold AI Snake Oil',url:'https://www.normaltech.ai/p/did-googles-ai-agents-really-build'}]},
+
+{id:'effort-control',label:'Effort Control',clusters:['technical'],sz:14,
+ synonymOf:'adjustable-reasoning-effort',
+ def:'Anthropic\'s name for its adjustable reasoning-effort setting, letting users and developers trade answer depth against speed and cost.',
+ rels:['adjustable-reasoning-effort'],
+ refs:[{n:1,src:'Anthropic Newsroom, 2026-05',q:'Effort Control Anthropic Newsroom',url:'https://www.anthropic.com/news/claude-opus-4-8'}]},
+
+{id:'micro-app',label:'Micro-App',clusters:['evolved'],sz:14,
+ synonymOf:'personal-software',
+ def:'A small, single-purpose app built and shipped quickly — often in one sitting with AI coding tools. A common form of personal software.',
+ rels:['personal-software'],
+ refs:[{n:1,src:'Simon Willison\'s Weblog, 2026-04',q:'Micro-App Simon Willison\'s Weblog',url:'https://simonwillison.net/2026/Apr/30/rss-vibe-coded-apps/#atom-everything'}]},
+
+{id:'post-training-scaling',label:'Post-Training Scaling',clusters:['technical'],sz:14,
+ synonymOf:'post-training',
+ def:'Capability gains from spending more compute after pretraining — more fine-tuning, reinforcement learning, and synthetic data — treated as a scaling regime alongside pretraining scaling.',
+ rels:['post-training'],
+ refs:[{n:1,src:'Hugging Face Blog, 2026-05',q:'Post-Training Scaling Hugging Face Blog',url:'https://huggingface.co/blog/amazon/foundation-model-building-blocks'}]},
+
+{id:'agentic-inference',label:'Agentic Inference',clusters:['technical','agentic'],sz:14,
+ synonymOf:'inference-shift',
+ def:'Ben Thompson\'s term for inference with no human waiting on each answer — agents working autonomously, where throughput and cost matter more than latency. One half of the Inference Shift.',
+ rels:['inference-shift'],
+ refs:[{n:1,src:'Stratechery, 2026-05',q:'Agentic Inference Stratechery',url:'https://stratechery.com/2026/shifting-alliances-in-a-changing-world/'}]},
+
+{id:'answer-inference',label:'Answer Inference',clusters:['technical'],sz:14,
+ synonymOf:'inference-shift',
+ def:'Ben Thompson\'s term for the familiar mode of inference in which a person asks and waits for a reply, making latency the priority. Contrasted with agentic inference in the Inference Shift.',
+ rels:['inference-shift'],
+ refs:[{n:1,src:'Stratechery, 2026-05',q:'Answer Inference Stratechery',url:'https://stratechery.com/2026/shifting-alliances-in-a-changing-world/'}]},
+
+{id:'ai-training-chip',label:'AI Training Chip',clusters:['technical','landscape'],sz:14,
+ synonymOf:'ai-accelerator',
+ def:'An AI accelerator optimised for training large models — prioritising large unified memory and fast interconnect — as distinct from chips tuned for inference.',
+ rels:['ai-accelerator'],
+ refs:[{n:1,src:'Google AI Blog, 2026-04',q:'AI Training Chip Google AI Blog',url:'https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/tpus-8t-8i-cloud-next/'}]},
+
+{id:'private-eval-dataset',label:'Private Evaluation Dataset',clusters:['technical'],sz:14,
+ synonymOf:'data-contamination',
+ def:'A benchmark whose test items are withheld from model developers and the public, so scores cannot be inflated by training on them — the main defence against data contamination.',
+ rels:['data-contamination'],
+ refs:[{n:1,src:'Hugging Face Blog, 2026-05',q:'Private Evaluation Dataset Hugging Face Blog',url:'https://huggingface.co/blog/open-asr-leaderboard-private-data'}]},
+
+{id:'persona-driven-jailbreaking',label:'Persona-Driven Jailbreaking',clusters:['security'],sz:14,
+ synonymOf:'jailbreak',
+ def:'A jailbreak technique in which the attacker asks the model to adopt a persona — an expert, an unrestricted character — to elicit responses it would otherwise refuse.',
+ rels:['jailbreak'],
+ refs:[{n:1,src:'The Verge — AI, 2026-05',q:'Persona-Driven Jailbreaking The Verge — AI',url:'https://www.theverge.com/tech/928007/google-ai-zero-day-exploit-stopped'}]},
 
 ];
