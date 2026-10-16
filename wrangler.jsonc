@@ -18,5 +18,11 @@
   // period must be 10 or 60 seconds. namespace_id is any account-unique number.
   "ratelimits": [
     { "name": "LEXI_LIMITER", "namespace_id": "1002", "simple": { "limit": 8, "period": 60 } }
+  ],
+  // Lexi email channel (src/lexi-mail/). Sender restricted to lexi@; the domain
+  // is onboarded to Cloudflare Email Sending. Inbound mail to lexi@ arrives via
+  // an Email Routing rule that targets this Worker (email() in src/worker.js).
+  "send_email": [
+    { "name": "EMAIL", "allowed_sender_addresses": ["lexi@ai-terminology.com"] }
   ]
 }

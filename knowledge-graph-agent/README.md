@@ -50,7 +50,7 @@ The matrix is derived directly from [`lexi-spec.md` §5](</C:/dev/ai-terminology
 }
 ```
 
-To approve a proposal: edit its `status` to `"approved"`. To reject: set to `"rejected"`. The apply step that commits approvals is forthcoming (Phase D work).
+New pending proposals are checked by the automated reviewer, given a risk tier, and sent to Nicole in the daily digest email, where she approves, rejects or holds them (see "Email channel" below). Low-risk ones auto-apply 72h after the digest if she leaves them. `/manager` and hand-editing `status` still work. `apply-proposals.mjs` commits approvals on every run.
 
 ## The deterministic log
 
@@ -197,7 +197,7 @@ Surfaces:
 
 ### Worker write endpoints (`src/worker.js`)
 
-Two `POST` endpoints live alongside the static assets, gated by HTTP Basic Auth (any username; only the password matters):
+Two `POST` endpoints for the dashboard live alongside the static assets, gated by HTTP Basic Auth (any username; only the password matters). The email channel adds `/api/lexi/notify` (bearer `LEXI_NOTIFY_TOKEN`) and `/lexi/act` (signed links); see "Email channel" below.
 
 | Endpoint | Mutates | Body |
 |---|---|---|
@@ -243,29 +243,44 @@ The auditor logs its own activity to the deterministic log with `audit_start`, `
 - Fresh-source-pool detection (would false-positive heavily during early-days when the source pool itself is brand new)
 - Cross-author detection (requires article-author parsing, not yet captured during fetch)
 
-## Slack notifications
+## Email channel (Lexi ↔ Nicole)
 
-Optional manager-channel notifications via Slack incoming webhook. Implemented in [`notify.mjs`](./notify.mjs); wired into both `run.mjs` and `audit.mjs`. **No-ops cleanly when `LEXI_SLACK_WEBHOOK` is unset** — local runs without the secret stay silent rather than erroring.
+Email is Lexi's only channel to Nicole (it replaced Slack on 2026-10-16). Lexi writes from `lexi@ai-terminology.com` (display name "Lexi") to `nicole.scheid@gmail.com`. The GitHub Actions scripts never send mail themselves: [`notify.mjs`](./notify.mjs) POSTs to the Worker's authenticated `/api/lexi/notify` endpoint, and the Worker sends through Cloudflare Email Service (`send_email` binding `EMAIL`, sender restricted to `lexi@`). Worker code lives in [`src/lexi-mail/`](../src/lexi-mail/).
 
-The agent posts to Slack only when there's news:
+**What Nicole gets, and when**
 
-| Surface | Posts when... |
-|---|---|
-| `run.mjs` | New notes were added this run, OR the run was paused. Quiet on no-op runs. |
-| `audit.mjs` | New audit findings landed (re-runs over unchanged data are silent via dedup). |
-| GitHub Actions workflows | Workflow itself failed (caught in workflow YAML, posts directly via curl). |
+| Email | When | From |
+|---|---|---|
+| Alert | Straight away: a workflow failed; a run wrote new Notes for Nicole (flags, issues, Lexi's questions); a run paused; the audit found something. Carries a signed "Mark these notes read" link. | `run.mjs`, `audit.mjs`, workflow failure steps |
+| Digest | Daily, only after a run that produced something new to review. No email on quiet days. | `build-digest.mjs` → `send-digest.mjs` |
+| What went live | Weekly (Monday audit), only if something was applied. Signed undo link per item. | `weekly-summary.mjs` |
 
-**Setup** (one-time):
+**Daily pipeline** (`lexi-run.yml`): `run.mjs` → `promote.mjs` → `review-proposals.mjs` (reviewer + tiers) → `apply-proposals.mjs` (approvals, plus auto-apply of matured items) → `build-digest.mjs` → push → `send-digest.mjs` (the Worker renders the digest from `main`, sends it, and commits `sentAt`) → deploy.
 
-1. Create a Slack app in the workspace (api.slack.com/apps → Create New App → From scratch)
-2. Add **Incoming Webhooks** feature, activate, add a webhook to a channel
-3. Copy the webhook URL (looks like `https://hooks.slack.com/services/T.../B.../...`)
-4. Test locally: set `LEXI_SLACK_WEBHOOK` env var, run `node test-notify.mjs`. Should post a hello message and print `{ ok: true }`.
-5. Add the same value as a GitHub repository secret named `LEXI_SLACK_WEBHOOK`. Workflows pick it up automatically.
+**Automated reviewer** ([`review-proposals.mjs`](./review-proposals.mjs), `claude-opus-5-5`): one call per new pending proposal, before it goes in a digest. It fetches up to three sources and checks they support the definition, looks for a duplicate or alias among the 12 lexically nearest nodes (and names the nearest), flags fads, checks contested framing, and for edits classifies minor vs substantive. The verdict is stored on the proposal as `review`. No API key or a failed call leaves the proposal unreviewed, which means it waits for Nicole.
 
-The webhook URL is treated as a write-only credential (anyone with it can post to that channel; can't read or admin) — never logged, never echoed. Still, treat it like a secret.
+**Risk tiers** ([`review-tiers.mjs`](./review-tiers.mjs)), stored as `tier` + `tierReason`:
 
-**Public content stays on the website.** Slack is the *manager* notification channel; it does not republish Word of the Day or Curator's Notes. Those live at [/word-of-the-day/](https://ai-terminology.com/word-of-the-day/) and (eventually) `/curators-notes/`.
+- `auto`: applies 72 hours after its digest was sent unless Nicole acts. New terms with ≥2 independent sources, not contested, reviewer passed (sources support it, no duplicate, not a fad). Minor edits to existing definitions (refs-only, or a typo-sized change with no number or date changed).
+- `nicole`: always waits. Contested-cluster terms (spec §10, `contested-terms.json`), substantive definition edits, anything the reviewer flagged or didn't run on, and every other action type.
+
+Auto-apply happens in `apply-proposals.mjs`: a pending `auto` item is approved as `approvedBy: "auto-72h"` once its `autoApplyAt` has passed, provided its digest was actually sent, it isn't on hold, and auto-apply isn't paused (`proposals.json` → `controls.autoApplyPausedUntil`). The run is daily, so in practice it lands 72–96h after the digest. For testing, `LEXI_AUTO_APPLY_HOURS` (or the `auto_apply_hours` input on a manual `lexi-run.yml` dispatch) shortens the window for that run's digest.
+
+**Digest links.** Each item has Approve / Reject / Hold; the footer has Approve all (skips held items) and Pause auto-apply for 1, 2 or 4 weeks (or Resume). Links are HMAC-SHA256 signed with the Worker-only `LEXI_LINK_SECRET`, expire (7 days; undo and mark-read links 14), and work once: the nonce is recorded in the target file's `usedLinks` map in the same commit as the change. A link opens a confirm page at `/lexi/act`; only the page's button (a POST) changes anything, so mail scanners that prefetch links are harmless. Approvals and undos dispatch `lexi-run.yml` so they land within minutes. Hold keeps an item pending and out of auto-apply.
+
+**Replying.** Nicole can reply to any Lexi email (or write to `lexi@ai-terminology.com`). Email Routing delivers it to the Worker's `email()` handler, which accepts it only if the envelope sender and From header are `nicole.scheid@gmail.com` and the topmost `Authentication-Results` header (Cloudflare's) shows `dkim=pass` for `gmail.com` and `dmarc=pass`. Everything else is rejected. (gmail.com publishes DMARC `p=none`, so this check is what stops a spoof.) Claude (`claude-opus-5-5`) reads the reply against the matched digest's items and can approve, reject, hold or release by number; redraft a definition (stored on the proposal as `redraft`, held until she says yes); accept a redraft; record a duplicate/alias of an existing node (rejects the promotion, sets `aliasOf`); web-search and fetch for more sources and attach them (`extraSources`); search the graph; pause or resume auto-apply; and answer questions. Changes are replayed onto a fresh `proposals.json` and committed through the Contents API path; the exchange is appended to the digest's `thread` in `digests.json`; Lexi replies in the same thread.
+
+**State files**: `digests.json` (new; one record per digest with its numbered items, `autoApplyAt`, `sentAt`, `messageId`, reply `thread`). Proposal fields added: `review`, `tier`, `tierReason`, `digestId`, `digestN`, `autoApplyAt`, `heldAt`, `redraft`, `aliasOf`, `extraSources`, `decidedVia`, `previousOverride` (for undo).
+
+**Setup**
+
+- Cloudflare (ai-terminology.com zone): Email Sending onboarded (SPF/DKIM records), Email Routing enabled (MX records) with a rule `lexi@ai-terminology.com` → Worker `ai-terminology`.
+- Worker secrets: `LEXI_NOTIFY_TOKEN`, `LEXI_LINK_SECRET` (plus the existing `GITHUB_TOKEN`, `ANTHROPIC_API_KEY`).
+- GitHub repo secret: `LEXI_NOTIFY_TOKEN` (same value as the Worker secret). `LEXI_SLACK_WEBHOOK` is no longer used and can be deleted.
+- Smoke test: `LEXI_NOTIFY_TOKEN=... node test-notify.mjs` sends a hello alert.
+- Everything no-ops cleanly when `LEXI_NOTIFY_TOKEN` is unset, so local runs stay silent.
+
+**Public content stays on the website.** Email is the *manager* channel; it does not republish Word of the Day or Curator's Notes.
 
 ## What it does on each run
 
@@ -331,9 +346,9 @@ Per the spec's credibility bar, a longlist entry is eligible for promotion when:
 4. **Definition consistency** across sources.
 5. **Concept reality check** — names a concept not already covered by an existing graph node.
 
-[`promote.mjs`](./promote.mjs) runs the heuristic-checkable parts of this bar (1–3) on every longlist entry and writes a `PROMOTE_TO_GRAPH` proposal for each eligible term to [`proposals.json`](./proposals.json). Sources from `trusted-sources.json` are annotated in the proposal `reason` for confidence-weighting at review time (per spec §7). Definition consistency (4) and concept reality (5) are deferred — they need LLM-based checks; intended for a later session.
+[`promote.mjs`](./promote.mjs) runs the heuristic-checkable parts of this bar (1–3) on every longlist entry and writes a `PROMOTE_TO_GRAPH` proposal for each eligible term to [`proposals.json`](./proposals.json). Sources from `trusted-sources.json` are annotated in the proposal `reason` for confidence-weighting at review time (per spec §7). Definition consistency (4) and concept reality (5) are checked by the automated reviewer (`review-proposals.mjs`: do the sources support the definition, is it a duplicate or alias of an existing node).
 
-**Approving:** click `[approve]` on `/manager` (preferred — fires `apply-proposals` via workflow_dispatch within ~5 min) OR edit the proposal's `status` to `"approved"` directly (waits up to 24h for the next scheduled cron). **Rejecting:** click `[reject]` on `/manager` (with optional rationale prompt) OR set status to `"rejected"`. Both `apply-proposals.mjs` and `promote.mjs` are idempotent — re-running over already-applied or already-rejected proposals is a clean no-op.
+**Approving:** use the digest email (Approve link, or reply "approve 2"), or click `[approve]` on `/manager` (preferred — fires `apply-proposals` via workflow_dispatch within ~5 min) OR edit the proposal's `status` to `"approved"` directly (waits up to 24h for the next scheduled cron). **Rejecting:** click `[reject]` on `/manager` (with optional rationale prompt) OR set status to `"rejected"`. Both `apply-proposals.mjs` and `promote.mjs` are idempotent — re-running over already-applied or already-rejected proposals is a clean no-op.
 
 **Demoting (the reverse direction):** [`demote.mjs`](./demote.mjs) creates a `DEMOTE_TO_LONGLIST` proposal for an overlay node; once approved + applied, the node is removed from the overlay and the longlist entry's status flips back to `"watching"` with a `demotedAt` timestamp. Only handles agent-overlay nodes (base-graph nodes need curator action).
 

@@ -113,18 +113,18 @@ async function main() {
   console.log(`Flags raised: ${flags.length} (${added} new notes, ${dedupSkipped} deduped).`);
   console.log(`Total unread notes: ${notes.meta.unreadCount}.`);
 
-  // Slack notification — only fires when new findings landed.
-  const notifier = createNotifier({ webhookUrl: process.env.LEXI_SLACK_WEBHOOK });
+  // Email Nicole (via the Worker) — only fires when new findings landed.
+  const notifier = createNotifier();
   if (notifier.enabled) {
     const dateStr = writtenAt.slice(0, 16).replace("T", " ") + " UTC";
-    await notifier.sendAuditSummary({
+    const sent = await notifier.sendAuditSummary({
       runId,
       runLabel: `Lexi audit · ${dateStr}`,
       notes,
       flagsRaised: flags.length,
-      dedupSkipped,
-      dashboardUrl: "https://ai-terminology.com/manager/"
+      dedupSkipped
     });
+    if (sent.ok === false) console.warn(`Audit email failed: ${sent.error}`);
   }
 }
 

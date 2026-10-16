@@ -156,10 +156,10 @@ The principle: **the more downstream effects an action has, the higher the gate.
 | Update longlist working definition | Autonomous if minor; proposes if substantive | "Substantive" = changes the extension of the term |
 | Retire from longlist | Autonomous; logged | Cannot be undone autonomously |
 | Reject a candidate (never enters longlist) | Autonomous; logged | Always logged with reason |
-| Promote longlist → graph | **Proposes only**; Nicole approves | Highest single-action stakes |
+| Promote longlist → graph | **Proposes only**; Nicole approves, or tiered auto-approval (below) | Highest single-action stakes |
 | Demote graph → longlist | **Proposes only**; Nicole approves | Equivalent stakes |
 | Edit existing graph definition (typo / clarification) | Autonomous; logged | Minor only |
-| Edit existing graph definition (substantive) | **Proposes only**; Nicole approves | Substantive = changes how readers interpret the term |
+| Edit existing graph definition (substantive) | **Proposes only**; Nicole approves | Substantive = changes how readers interpret the term. Never auto-approved |
 | Deprecate / re-frame existing graph node | **Proposes only**; Nicole approves | Affects neighbouring nodes |
 | Conflate two graph nodes | **Proposes only**; Nicole approves | |
 | Split a graph node into two | **Proposes only**; Nicole approves | |
@@ -168,6 +168,18 @@ The principle: **the more downstream effects an action has, the higher the gate.
 | Word of the Day publication | **Human-in-the-loop**; Nicole reads pre-publication | Scheduled queue; see section 8 |
 | Curator's Notes entry | Autonomous; post-hoc visible | Lexi's release notes for readers |
 | Notes for Nicole entry | Autonomous; private | Lexi's manager channel |
+
+### Review channel and tiered auto-approval (added 2026-10-16)
+
+Nicole was the bottleneck: proposals sat unread and Lexi paused herself for months. So proposals now reach her by email, a second-opinion reviewer runs first, and low-risk proposals apply on their own if she leaves them.
+
+- **Email is Lexi's only channel to Nicole** (replaces Slack). Alerts (run failures, flags, issues, Lexi's questions) go out straight away. A daily digest goes out only when a run has produced something to review. A weekly "what went live" summary carries undo links.
+- **Automated reviewer.** Before a proposal enters a digest, a Claude pass checks that its sources support the definition, looks for duplicates and aliases of existing nodes, flags fads, and checks contested framing (§10). Its verdict is recorded on the proposal and shown in the digest.
+- **Auto-approve if untouched for 72h after the digest:** new terms with ≥2 independent sources that are not in a contested cluster and that the reviewer passed; minor edits to existing definitions (typos, an added source or ref).
+- **Always wait for Nicole:** contested-cluster terms (§10, `contested-terms.json`), substantive definition edits, anything the reviewer flags or could not review, and every other proposal type in the matrix above.
+- **Nicole's controls:** per-item Approve / Reject / Hold links and Approve all (signed, expiring, single-use, behind a confirm page); pause auto-apply for N weeks (proposals keep queuing; nothing applies without her); reply to any Lexi email to act by number, ask questions, request sources, merge or alias terms, or have Lexi redraft a definition and send it back for a yes.
+
+Implementation: `knowledge-graph-agent/README.md` → "Email channel".
 
 ### Default-deny clause
 
@@ -347,6 +359,8 @@ The auditor's responsibilities:
 
 A weekly digest is generated **from the deterministic log, not from Lexi's self-reports**. It summarises additions, rejections, near-misses on the credibility bar, auditor flags, and pattern alerts. This digest is the primary surface for Nicole's weekly review (see section 12).
 
+*As built (2026-10-16):* the review surface is email (§5, "Review channel"): a daily proposals digest when there is something to review, immediate alerts for auditor flags and other notes, and a weekly "what went live" summary with undo links. The automated reviewer in §5 is a first instance of the second-opinion pass described above, run on every proposal rather than a sample.
+
 ---
 
 ## 12. Operator drift defences (forcing functions)
@@ -358,7 +372,7 @@ The most-likely-to-occur failure mode for this project is not a Lexi malfunction
 The system protects Nicole from herself:
 
 1. **Lexi pauses publication automatically if Notes for Nicole has unread entries older than 7 days.** Pause = no new additions to longlist, no Word of the Day, no Curator's Notes. Reads of Notes for Nicole resume the queue.
-2. **The weekly digest is sent as an email that requires a click-through acknowledgement.** Passive opens don't count; an explicit "I've reviewed this week" click is required.
+2. **The weekly digest is sent as an email that requires a click-through acknowledgement.** Passive opens don't count; an explicit "I've reviewed this week" click is required. *As built:* review happens by email (§5), and every action in it is an explicit click through a confirm page or a reply. Low-risk proposals auto-apply after 72h by design, so disengagement no longer stalls the graph; high-stakes ones (contested, substantive, flagged) still wait for an explicit decision. Nicole can pause auto-apply for N weeks, which is the email-era form of manager-absent mode for proposals.
 3. **A monthly "manager review" prompt** asks Nicole specific questions about Lexi's recent decisions (e.g., "Show me the longlist additions you most disagreed with this month — how would you have handled them differently?"). Surfaces drift in approval standards.
 4. **Throughput caps are enforced in code:**
    - Maximum N longlist additions per week (initial value: 7; tunable).

@@ -9,6 +9,9 @@ export default {
   patchJsonPath: path.resolve(__dirname, "./agent-patch.json"),
   longlistPath: path.resolve(__dirname, "./longlist.json"),
   proposalsPath: path.resolve(__dirname, "./proposals.json"),
+  // Email digests to Nicole (build-digest.mjs writes; the Worker records sends
+  // and reply threads). See src/lexi-mail/ in the repo root.
+  digestsPath: path.resolve(__dirname, "./digests.json"),
   notesForNicolePath: path.resolve(__dirname, "./notes-for-nicole.json"),
   mustReadsPath: path.resolve(__dirname, "./must-reads.json"),
   trustedSourcesPath: path.resolve(__dirname, "./trusted-sources.json"),

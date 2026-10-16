@@ -1,0 +1,16 @@
+{
+  "name": "ai-terminology-worker",
+  "private": true,
+  "type": "module",
+  "description": "Cloudflare Worker for ai-terminology.com (src/worker.js). The Lexi agent has its own package in knowledge-graph-agent/.",
+  "scripts": {
+    "check": "wrangler deploy --dry-run --outdir .wrangler/check"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.135.0",
+    "postal-mime": "^4.0.7"
+  },
+  "devDependencies": {
+    "wrangler": "^4.151.0"
+  }
+}

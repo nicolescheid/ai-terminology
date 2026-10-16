@@ -14,7 +14,13 @@ on:
     - cron: '0 18 * * *'
   workflow_dispatch:
     # Allows manual run from the Actions tab — used for testing the
-    # workflow before relying on the schedule, and for ad-hoc runs.
+    # workflow before relying on the schedule, and for ad-hoc runs. The
+    # Worker also dispatches it (no inputs) when Nicole approves by email.
+    inputs:
+      auto_apply_hours:
+        description: "Auto-apply window for this run's digest, in hours (default 72; small values are for testing)"
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -34,7 +40,9 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       pushed: ${{ steps.push.outputs.pushed }}
-    timeout-minutes: 15
+    # Raised from 15 when the reviewer pass (one Claude call per new
+    # proposal) was added.
+    timeout-minutes: 25
     steps:
       - name: Check out repo
         uses: actions/checkout@v4
@@ -55,23 +63,36 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           LEXI_PHASE: '1'
-          # Optional. If unset, the agent skips Slack posts cleanly. The
-          # agent itself only posts a Slack message when there's news
-          # (new notes, or a pause) — quiet on no-op runs.
-          LEXI_SLACK_WEBHOOK: ${{ secrets.LEXI_SLACK_WEBHOOK }}
+          # Optional. If unset, the agent skips emails cleanly. run.mjs only
+          # emails Nicole when there's news (new notes, or a pause).
+          LEXI_NOTIFY_TOKEN: ${{ secrets.LEXI_NOTIFY_TOKEN }}
         run: node run.mjs
 
       - name: Scan longlist for promotion-eligible terms
         working-directory: knowledge-graph-agent
-        env:
-          LEXI_SLACK_WEBHOOK: ${{ secrets.LEXI_SLACK_WEBHOOK }}
         run: node promote.mjs
 
-      - name: Apply approved proposals
+      # Claude second-opinion pass over new pending proposals; sets each
+      # one's review verdict and risk tier (auto / waits for Nicole).
+      - name: Review proposals
         working-directory: knowledge-graph-agent
         env:
-          LEXI_SLACK_WEBHOOK: ${{ secrets.LEXI_SLACK_WEBHOOK }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node review-proposals.mjs
+
+      # Applies approvals, and first approves "auto" items whose 72h window
+      # since their digest has passed (unless held or auto-apply is paused).
+      - name: Apply approved proposals
+        working-directory: knowledge-graph-agent
         run: node apply-proposals.mjs
+
+      # Writes a digest to digests.json only if there's something new to
+      # review. It's emailed after the push (Send digest step).
+      - name: Build digest
+        working-directory: knowledge-graph-agent
+        env:
+          LEXI_AUTO_APPLY_HOURS: ${{ inputs.auto_apply_hours }}
+        run: node build-digest.mjs
 
       - name: Rebuild Almanac metrics
         working-directory: knowledge-graph-agent
@@ -91,6 +112,7 @@ jobs:
           # reason (e.g., never been written before this run).
           git add knowledge-graph-agent/longlist.json \
                   knowledge-graph-agent/proposals.json \
+                  knowledge-graph-agent/digests.json \
                   knowledge-graph-agent/notes-for-nicole.json \
                   knowledge-graph-agent/must-reads.json \
                   knowledge-graph-agent/state.json \
@@ -118,24 +140,34 @@ jobs:
             echo "pushed=true" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Notify Slack on failure
+      # After the push: the Worker renders the digest from main, emails it,
+      # and records sentAt (the auto-apply clock only counts sent digests).
+      - name: Send digest
+        working-directory: knowledge-graph-agent
+        env:
+          LEXI_NOTIFY_TOKEN: ${{ secrets.LEXI_NOTIFY_TOKEN }}
+        run: node send-digest.mjs
+
+      - name: Email Nicole on failure
         if: failure()
         env:
-          LEXI_SLACK_WEBHOOK: ${{ secrets.LEXI_SLACK_WEBHOOK }}
+          LEXI_NOTIFY_TOKEN: ${{ secrets.LEXI_NOTIFY_TOKEN }}
         run: |
-          if [ -n "$LEXI_SLACK_WEBHOOK" ]; then
-            payload=$(cat <<JSON
-          {"text":":rotating_light: *Lexi run FAILED*\nWorkflow: ${{ github.workflow }}\nRun: <https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}|#${{ github.run_id }}>"}
-          JSON
-          )
+          if [ -n "$LEXI_NOTIFY_TOKEN" ]; then
+            run_url="https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+            payload=$(jq -n --arg url "$run_url" --arg wf "${{ github.workflow }}" \
+              '{kind:"alert", subject:"Lexi run FAILED", intro:("Workflow \"" + $wf + "\" failed. Nothing after the failing step ran."), link:{href:$url, label:"Open the run log"}}')
             curl -sS -X POST -H 'Content-Type: application/json' \
-              -d "$payload" "$LEXI_SLACK_WEBHOOK" || true
+              -H "Authorization: Bearer $LEXI_NOTIFY_TOKEN" \
+              -d "$payload" https://ai-terminology.com/api/lexi/notify || true
           fi
 
   # GITHUB_TOKEN pushes don't trigger push workflows (so build-stamp won't
   # run), so deploy explicitly when this run committed something.
+  # always(): a failed digest send (after the push) must not leave pushed
+  # state undeployed.
   deploy:
     needs: run
-    if: needs.run.outputs.pushed == 'true'
+    if: always() && needs.run.outputs.pushed == 'true'
     uses: ./.github/workflows/deploy.yml
     secrets: inherit

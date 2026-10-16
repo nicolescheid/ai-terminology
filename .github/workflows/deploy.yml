@@ -45,9 +45,13 @@ jobs:
         with:
           node-version: '22'
 
+      # The Worker bundles postal-mime and @anthropic-ai/sdk (email channel).
+      - name: Install Worker dependencies
+        run: npm ci
+
       - name: wrangler deploy
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
         run: |
           echo "Deploying $(git rev-parse --short HEAD): $(git log -1 --format=%s)"
-          npx --yes wrangler@4 deploy
+          npx wrangler deploy

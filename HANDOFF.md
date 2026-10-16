@@ -71,7 +71,9 @@ npx wrangler deploy          # manual deploy from a local checkout
 
 - **Cron:** `0 18 * * *` UTC = **06:00 NZST** (gives Nicole a fresh state when
   she starts her morning)
-- **Manual trigger:** `gh workflow run lexi-run.yml`
+- **Manual trigger:** `gh workflow run lexi-run.yml` (optional `-f auto_apply_hours=N` for testing)
+- **Pipeline:** run → promote → review (Claude) → apply (incl. auto-apply) →
+  build digest → push → send digest (email) → deploy
 - **Watch:** `gh run watch <run-id>` (or `gh run list --workflow=lexi-run.yml`)
 - **Pull commits afterward:** `git pull --rebase`
 - **Throughput cap:** 75 longlist additions per 7d (bumped from 30 after evidence
@@ -81,6 +83,33 @@ npx wrangler deploy          # manual deploy from a local checkout
 - **Single source of truth for contested terms:** `contested-terms.json` (drives
   both the extract prompt AND the post-hoc detector — was duplicated in
   `notes.mjs`, now consolidated)
+
+### Lexi's email channel (since 2026-10-16)
+
+- **Email is Lexi's only channel to Nicole.** Slack is gone. Lexi sends from
+  `lexi@ai-terminology.com` via the Worker (`src/lexi-mail/`, Cloudflare
+  Email Service `EMAIL` binding). The Actions scripts POST to
+  `/api/lexi/notify` with the `LEXI_NOTIFY_TOKEN` secret.
+- **Daily digest**, only when there's something new: each item has term,
+  definition, sources, nearest node, Lexi's rationale and the reviewer's
+  verdict, plus Approve / Reject / Hold links. Untouched low-risk items
+  auto-apply 72h after the digest. Contested, substantive, or reviewer-flagged
+  items always wait. Details: `knowledge-graph-agent/README.md` → "Email channel".
+- **Links** open a confirm page at `/lexi/act`; the button POSTs. Signed with
+  the Worker-only `LEXI_LINK_SECRET`, expiring, single-use (nonce ledger in
+  `usedLinks` inside the file it changes).
+- **Replies** to `lexi@` go to the Worker's `email()` handler (Email Routing
+  rule). Accepted only from `nicole.scheid@gmail.com` with DKIM + DMARC pass
+  in Cloudflare's Authentication-Results. Claude acts on them (approve by
+  number, redraft, alias, find sources, pause) and replies in-thread.
+- **State:** `knowledge-graph-agent/digests.json` (digests + reply threads),
+  new fields on proposals (`review`, `tier`, `autoApplyAt`, `heldAt`...),
+  `proposals.json` → `controls.autoApplyPausedUntil`.
+- **Test auto-apply quickly:** `gh workflow run lexi-run.yml -f auto_apply_hours=0.05`,
+  then dispatch again after a few minutes.
+- The Worker now has npm dependencies (root `package.json`: postal-mime,
+  @anthropic-ai/sdk). `deploy.yml` runs `npm ci` first; for a manual deploy run
+  `npm ci` at the repo root before `npx wrangler deploy`.
 
 ### PowerShell survival kit
 
