@@ -163,7 +163,7 @@
             <div style={{ fontFamily:"'JetBrains Mono',ui-monospace,monospace",
               fontSize: 9, letterSpacing:'0.18em', textTransform:'uppercase',
               color:'#7a7568', paddingTop: 4 }}>
-              ATLAS &nbsp;·&nbsp; Q1 2026 &nbsp;·&nbsp; v2.0
+              ATLAS &nbsp;·&nbsp; {window.GRAPH_META?.snapshot} &nbsp;·&nbsp; v{window.GRAPH_META?.version}
             </div>
           </div>
 

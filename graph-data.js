@@ -1,13 +1,13 @@
 // ═══════════════════════════════════════════════════════════════
-// AI Terminology Universe — Q1 2026 Update (v2.0)
+// AI Terminology Universe — Q4 2026 Update (v2.1)
 // Data file for ai-knowledge-graph.html
 // ═══════════════════════════════════════════════════════════════
 
 const GRAPH_META = {
-  version: '2.0',
-  snapshot: 'Q1 2026',
-  lastUpdated: '2026-04-05',
-  prevSnapshot: 'March 2026'
+  version: '2.1',
+  snapshot: 'Q4 2026',
+  lastUpdated: '2026-10-16',
+  prevSnapshot: 'Q1 2026'
 };
 
 // ═══════════════════════════════════════════════════════════════
