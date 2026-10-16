@@ -2,8 +2,9 @@
 //
 // Scans the longlist for terms that meet spec §7's credibility bar and
 // writes a PROMOTE_TO_GRAPH proposal for each eligible term. The proposals
-// land in proposals.json with status: "pending" — Nicole reviews them in
-// her dashboard / JSON file and sets status to "approved" or "rejected".
+// land in proposals.json with status: "pending". The reviewer
+// (review-proposals.mjs) checks and tiers them, and they reach Nicole in the
+// daily digest email, where she approves/rejects/holds (or /manager).
 // The apply-proposals.mjs script then commits approvals into the agent-
 // managed overlay (agent-patch.json + graph-data-agent.js).
 //
@@ -34,7 +35,6 @@ import crypto from "node:crypto";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { ACTIONS, GATES } from "./actions.mjs";
 import { createLogger } from "./logger.mjs";
-import { createNotifier } from "./notify.mjs";
 import { loadJson, writeJson } from "./state-io.mjs";
 
 const DAY_MS = 24 * 60 * 60 * 1000;
@@ -125,18 +125,8 @@ async function main() {
     for (const p of newProposals) console.log(`  - ${p.target.id}: ${p.reason}`);
   }
 
-  // Slack notify on new proposals (so Nicole sees them and can approve).
-  const notifier = createNotifier({ webhookUrl: process.env.LEXI_SLACK_WEBHOOK });
-  if (notifier.enabled && newProposals.length > 0) {
-    const lines = [`🎓 *Lexi promotion scan · ${writtenAt.slice(0, 16).replace("T", " ")} UTC*`];
-    lines.push("", `*${newProposals.length} term(s) hit the credibility bar* — pending your approval:`);
-    for (const p of newProposals.slice(0, 8)) {
-      lines.push(`• *${p.target.id}* — ${p.reason}`);
-    }
-    if (newProposals.length > 8) lines.push(`_…and ${newProposals.length - 8} more in proposals.json_`);
-    lines.push("", `<https://ai-terminology.com/manager/|→ Manager dashboard>`);
-    await notifier.send({ text: lines.join("\n") });
-  }
+  // No notification here: new proposals go to the reviewer
+  // (review-proposals.mjs) and then out in the daily digest email.
 }
 
 // Spec §7 credibility bar — heuristic checks (data only, no LLM).

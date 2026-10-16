@@ -4,37 +4,51 @@
 //   POST /api/mark-note     → handleMarkNote     (Basic Auth + GitHub commit)
 //   POST /api/mark-proposal → handleMarkProposal (Basic Auth + GitHub commit + workflow_dispatch on approve)
 //   POST /api/ask-lexi      → handleAskLexi      (PUBLIC; streamed Anthropic response, persona = lexi-interlocutor-spec §2.7)
+//   POST /api/lexi/notify   → handleNotify       (Bearer LEXI_NOTIFY_TOKEN; GitHub Actions → email to Nicole)
+//   GET  /lexi/act          → confirm page for a signed email link (no state change)
+//   POST /lexi/act          → performs the signed link's action (single-use)
 //   /api/*                  → 404
 //   everything else         → static assets (env.ASSETS.fetch)
+//   email()                 → replies to lexi@ai-terminology.com (src/lexi-mail/inbound.js)
 //
-// Two secrets required (set via `npx wrangler secret put <NAME>`):
-//   MARK_NOTE_PASSWORD — shared password the dashboard prompts for (gates ALL write endpoints)
+// Secrets (set via `npx wrangler secret put <NAME>`):
+//   MARK_NOTE_PASSWORD — shared password the dashboard prompts for (gates the /api/mark-* endpoints)
 //   GITHUB_TOKEN       — fine-grained PAT scoped to nicolescheid/ai-terminology with
 //                        contents:write (for the JSON commits) AND actions:write (for
 //                        the apply-on-approve workflow_dispatch)
-//   ANTHROPIC_API_KEY  — Anthropic API key for the /api/ask-lexi streaming endpoint
-//                        (Phase 2-A interlocutor mode). Same key used by the GH
-//                        Actions workflow; can be the same secret value.
+//   ANTHROPIC_API_KEY  — Anthropic API key for /api/ask-lexi and the email reply handler.
+//   LEXI_NOTIFY_TOKEN  — shared bearer token; same value as the GitHub repo secret of
+//                        the same name. Gates /api/lexi/notify.
+//   LEXI_LINK_SECRET   — HMAC key for the signed links in Lexi's emails. Worker-only.
+//
+// Bindings: EMAIL (send_email, sender restricted to lexi@ai-terminology.com).
 //
 // Threat model: the manager dashboard and the underlying JSON files are
 // readable by anyone (the repo is public on GitHub; static assets are open).
 // Auth here protects WRITES only — without it, any visitor could POST and
 // silently mark notes/proposals on Nicole's behalf, defeating the spec
 // §12.1 pause-on-unread forcing function and the §5 propose-only gate.
+// Email links carry their own authority (HMAC-signed, expiring, single-use);
+// email replies are accepted only from Nicole's address with passing
+// DKIM/DMARC (see src/lexi-mail/inbound.js).
 //
 // Refactor history: handleMarkNote and handleMarkProposal originally
 // duplicated ~70% of their code (auth, GitHub round-trip, retry-on-409,
 // commit shape). Extracted into commitJsonChange + tryCommitOnce when
-// the second endpoint landed (rule of three triggered when prompt-engineering
-// became the 12th contested term and a third write endpoint felt nearby —
-// this consolidation is the prep). Handlers are now thin: they validate
-// the body and supply mutate / refreshMeta / commitMessage / onSuccess /
-// buildNote callbacks.
+// the second endpoint landed, then moved to src/github.js when the email
+// channel became a second caller. Handlers are thin: they validate the body
+// and supply mutate / refreshMeta / commitMessage / onSuccess / buildNote
+// callbacks.
 
-const REPO_OWNER  = "nicolescheid";
-const REPO_NAME   = "ai-terminology";
-const NOTES_PATH      = "knowledge-graph-agent/notes-for-nicole.json";
-const PROPOSALS_PATH  = "knowledge-graph-agent/proposals.json";
+import {
+  NOTES_PATH, PROPOSALS_PATH,
+  commitJsonChange, refreshProposalsMeta, triggerLexiRunWorkflow,
+  jsonError
+} from "./github.js";
+import { handleNotify } from "./lexi-mail/notify.js";
+import { handleActGet, handleActPost } from "./lexi-mail/act.js";
+import { handleInboundEmail } from "./lexi-mail/inbound.js";
+
 const VALID_NOTE_STATUSES     = new Set(["read", "actioned", "dismissed"]);
 const VALID_PROPOSAL_STATUSES = new Set(["approved", "rejected"]);
 
@@ -60,12 +74,28 @@ export default {
       }
       return handleAskLexi(request, env);
     }
+    if (url.pathname === "/api/lexi/notify") {
+      if (request.method !== "POST") {
+        return new Response("Method not allowed", { status: 405, headers: { Allow: "POST" } });
+      }
+      return handleNotify(request, env);
+    }
+    if (url.pathname === "/lexi/act") {
+      if (request.method === "GET" || request.method === "HEAD") return handleActGet(request, env);
+      if (request.method === "POST") return handleActPost(request, env);
+      return new Response("Method not allowed", { status: 405, headers: { Allow: "GET, POST" } });
+    }
     if (url.pathname.startsWith("/api/")) {
       return new Response("Not found", { status: 404 });
     }
 
     // Static assets (HTML, CSS, JSON, images, etc.)
     return env.ASSETS.fetch(request);
+  },
+
+  // Email Routing: lexi@ai-terminology.com → this Worker.
+  async email(message, env, ctx) {
+    await handleInboundEmail(message, env, ctx);
   }
 };
 
@@ -173,17 +203,7 @@ async function handleMarkProposal(request, env) {
         }
       };
     },
-    refreshMeta: (json, now) => {
-      const all = json.proposals || [];
-      json.meta = {
-        generatedAt: now,
-        pendingCount:  all.filter(p => p.status === "pending").length,
-        approvedCount: all.filter(p => p.status === "approved").length,
-        appliedCount:  all.filter(p => p.status === "applied").length,
-        rejectedCount: all.filter(p => p.status === "rejected").length,
-        note: json.meta?.note ?? "Lexi proposals queue."
-      };
-    },
+    refreshMeta: refreshProposalsMeta,
     commitMessage: () => `Mark proposal ${id.slice(0, 8)}… as ${status}\n\nVia /api/mark-proposal from /manager dashboard.`,
     // Apply-on-approve: trigger the lexi-run workflow so apply-proposals.mjs
     // runs within ~5 min instead of waiting up to 24h for the next cron.
@@ -383,166 +403,8 @@ or add it to the longlist.`;
 }
 
 // ─────────────────────────────────────────────────────────────────────
-// Shared write-endpoint plumbing.
+// Small helpers. Commit plumbing lives in src/github.js.
 // ─────────────────────────────────────────────────────────────────────
-
-/**
- * Auth-gates, fetches the target JSON file via GitHub Contents API, runs
- * the caller's mutate function, refreshes meta, commits via PUT, retries
- * once on 409 sha conflict. Returns either a success Response (with the
- * assembled payload) or an error Response (with the appropriate status).
- *
- * Options:
- *   path:              GitHub repo-relative path of the file to mutate.
- *   workerLabel:       User-Agent for GitHub API calls (per-endpoint label
- *                      for forensic clarity in GitHub's audit log).
- *   parseErrorContext: human-readable file descriptor for parse errors.
- *   mutate:            (json) => { ok, noChange?, status?, error?, payload? }
- *                        - ok:false → helper returns jsonError(status, error)
- *                        - ok:true + noChange:true → helper returns the
- *                          payload as-is without performing a PUT
- *                        - ok:true → mutation is committed; payload becomes
- *                          the response body
- *   refreshMeta:       (json, now) => void. Called between mutate and PUT.
- *   commitMessage:     () => string. Called to build the GitHub commit message.
- *                      Intentionally NO [skip ci]: GitHub would then skip
- *                      build-stamp.yml, which is what deploys the write.
- *   onSuccess:         Optional. async (env, payload) => any. Called after
- *                      successful commit. Return value is added to the
- *                      response under `dispatch` (used by mark-proposal for
- *                      the workflow_dispatch side effect).
- *   buildNote:         Optional. (payload, sideEffect) => string. Builds the
- *                      human-readable summary the manager UI surfaces in its
- *                      confirmation indicator.
- */
-async function commitJsonChange(env, opts) {
-  // Auth + token presence are caller's responsibility (via requireAuth)
-  // so 401/500 take precedence over body-validation 400s. By the time we
-  // reach here the call is authenticated and the GITHUB_TOKEN is set.
-
-  // Try once; retry once on 409 sha conflict.
-  for (let attempt = 1; attempt <= 2; attempt++) {
-    const result = await tryCommitOnce(env, opts);
-    if (result.ok) {
-      // No-change short-circuit: caller returned noChange, no PUT happened,
-      // no side effect should fire (nothing changed).
-      if (result.noChange) {
-        return jsonResponse(200, { ok: true, noChange: true, ...result.payload });
-      }
-      // Successful commit. Run the optional side effect (e.g. workflow_dispatch).
-      const sideEffect = opts.onSuccess
-        ? await opts.onSuccess(env, result.payload)
-        : null;
-      const note = opts.buildNote ? opts.buildNote(result.payload, sideEffect) : undefined;
-      return jsonResponse(200, {
-        ok: true,
-        ...result.payload,
-        ...(result.commitSha ? { commitSha: result.commitSha } : {}),
-        ...(sideEffect !== null && sideEffect !== undefined ? { dispatch: sideEffect } : {}),
-        ...(note ? { note } : {})
-      });
-    }
-    if (result.status !== 409 || attempt === 2) {
-      return jsonError(result.status || 502, result.error || "Failed");
-    }
-  }
-}
-
-async function tryCommitOnce(env, opts) {
-  const ghHeaders = {
-    "Authorization":         `Bearer ${env.GITHUB_TOKEN}`,
-    "Accept":                "application/vnd.github+json",
-    "X-GitHub-Api-Version":  "2022-11-28",
-    "User-Agent":            opts.workerLabel
-  };
-  const apiUrl = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${opts.path}`;
-
-  // GET current file + sha.
-  const getResp = await fetch(apiUrl, { headers: ghHeaders });
-  if (!getResp.ok) {
-    return { ok: false, status: 502, error: `GitHub fetch failed: ${getResp.status}` };
-  }
-  const fileMeta = await getResp.json();
-  if (!fileMeta.content || !fileMeta.sha) {
-    return { ok: false, status: 502, error: "GitHub response missing content/sha" };
-  }
-
-  let json;
-  try {
-    json = JSON.parse(base64ToUtf8(fileMeta.content.replace(/\n/g, "")));
-  } catch (e) {
-    return { ok: false, status: 502, error: `Could not parse ${opts.parseErrorContext}: ${e.message}` };
-  }
-
-  // Run caller's mutate. The mutate function may set noChange (skip PUT)
-  // or return ok:false with a status/error (validation failure).
-  const mutResult = opts.mutate(json);
-  if (!mutResult.ok) {
-    return { ok: false, status: mutResult.status || 400, error: mutResult.error };
-  }
-  if (mutResult.noChange) {
-    return { ok: true, noChange: true, payload: mutResult.payload };
-  }
-
-  // Refresh meta + serialize.
-  const now = new Date().toISOString();
-  if (opts.refreshMeta) opts.refreshMeta(json, now);
-  const newContent    = JSON.stringify(json, null, 2) + "\n";
-  const newContentB64 = utf8ToBase64(newContent);
-
-  // PUT.
-  const putResp = await fetch(apiUrl, {
-    method: "PUT",
-    headers: { ...ghHeaders, "content-type": "application/json" },
-    body: JSON.stringify({
-      message: opts.commitMessage(),
-      content: newContentB64,
-      sha: fileMeta.sha,
-      branch: "main",
-      committer: { name: "lexi-bot", email: "lexi-bot@users.noreply.github.com" }
-    })
-  });
-  if (putResp.status === 409) {
-    return { ok: false, status: 409, error: "sha conflict (will retry)" };
-  }
-  if (!putResp.ok) {
-    const errText = await putResp.text();
-    return { ok: false, status: 502, error: `GitHub commit failed (${putResp.status}): ${errText.slice(0, 200)}` };
-  }
-  const commitResult = await putResp.json();
-  return {
-    ok: true,
-    payload: mutResult.payload,
-    commitSha: commitResult.commit?.sha
-  };
-}
-
-// ─────────────────────────────────────────────────────────────────────
-// Side effects + small helpers.
-// ─────────────────────────────────────────────────────────────────────
-
-// POST /repos/{owner}/{repo}/actions/workflows/{workflow}/dispatches
-// Returns 204 on success, 403 if the PAT lacks actions:write, 404 if the
-// workflow doesn't exist on `main`. Caller treats failure as a soft fall
-// through to the next-cron apply path.
-async function triggerLexiRunWorkflow(env) {
-  const apiUrl = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/actions/workflows/lexi-run.yml/dispatches`;
-  const resp = await fetch(apiUrl, {
-    method: "POST",
-    headers: {
-      "Authorization":         `Bearer ${env.GITHUB_TOKEN}`,
-      "Accept":                "application/vnd.github+json",
-      "X-GitHub-Api-Version":  "2022-11-28",
-      "User-Agent":            "ai-terminology-mark-proposal-worker",
-      "content-type":          "application/json"
-    },
-    body: JSON.stringify({ ref: "main" })
-  });
-  if (resp.ok) return { triggered: true, httpStatus: resp.status };
-  let errBody = null;
-  try { errBody = (await resp.text()).slice(0, 200); } catch { /* ignore */ }
-  return { triggered: false, httpStatus: resp.status, error: errBody };
-}
 
 function buildProposalNote(status, dispatchResult) {
   if (status === "rejected") {
@@ -598,27 +460,3 @@ function countUnread(notesJson) {
   return (notesJson.entries || []).filter(e => e.status === "unread").length;
 }
 
-function utf8ToBase64(str) {
-  const bytes = new TextEncoder().encode(str);
-  let binary = "";
-  for (const b of bytes) binary += String.fromCharCode(b);
-  return btoa(binary);
-}
-
-function base64ToUtf8(b64) {
-  const binary = atob(b64);
-  const bytes = new Uint8Array(binary.length);
-  for (let i = 0; i < binary.length; i++) bytes[i] = binary.charCodeAt(i);
-  return new TextDecoder().decode(bytes);
-}
-
-function jsonResponse(status, payload) {
-  return new Response(JSON.stringify(payload), {
-    status,
-    headers: { "content-type": "application/json" }
-  });
-}
-
-function jsonError(status, message) {
-  return jsonResponse(status, { error: message });
-}

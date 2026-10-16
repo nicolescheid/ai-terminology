@@ -15,8 +15,16 @@
 //     "promoted" back to "watching" with a demotedAt timestamp. Only
 //     handles overlay nodes — base-graph nodes (graph-data.js) need
 //     curator action and return a clear error pointing there.
-//   - EDIT_GRAPH_DEF_SUBSTANTIVE: adds payload to definitionOverrides.
+//   - EDIT_GRAPH_DEF_SUBSTANTIVE: adds payload to definitionOverrides,
+//     recording the override it replaced (previousOverride, null if none) so
+//     the weekly email's undo link can restore it. payload.remove (written by
+//     an undo) deletes the override instead.
 //   - Other actions: logged + skipped (no apply path defined yet).
+//
+// Auto-apply (email channel, see build-digest.mjs): before applying, any
+// pending proposal with tier "auto" whose digest was sent and whose
+// autoApplyAt has passed is approved as approvedBy "auto-72h", unless it is
+// on hold or proposals.json controls.autoApplyPausedUntil is in the future.
 //
 // On success, the proposal's status flips to "applied" with an appliedAt
 // timestamp, and an action event lands in the deterministic log.
@@ -33,7 +41,6 @@ import crypto from "node:crypto";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { ACTIONS } from "./actions.mjs";
 import { createLogger } from "./logger.mjs";
-import { createNotifier } from "./notify.mjs";
 import { loadJson, writeJson } from "./state-io.mjs";
 
 main().catch(err => {
@@ -54,9 +61,18 @@ async function main() {
   });
   const longlist = await loadJson(config.longlistPath, { meta: {}, entries: [] });
   let longlistMutated = false;
+  const digests = await loadJson(config.digestsPath, { digests: [] });
 
   const runId = crypto.randomUUID();
   const logger = createLogger({ runId, phase: config.phase, logPath: config.logPath });
+
+  const autoApproved = autoApproveMatured(proposals, digests, new Date());
+  for (const p of autoApproved) {
+    await logger.event("auto_approved_after_window", { proposalId: p.id, digestId: p.digestId, autoApplyAt: p.autoApplyAt });
+    console.log(`Auto-approved ${p.id} (${p.target?.id}): untouched since digest ${p.digestId}, window passed ${p.autoApplyAt}.`);
+  }
+  const paused = proposals.controls?.autoApplyPausedUntil;
+  if (paused && new Date(paused) > new Date()) console.log(`Auto-apply paused until ${paused}.`);
 
   const approved = (proposals.proposals || []).filter(p => p.status === "approved");
   await logger.event("apply_proposals_start", {
@@ -106,6 +122,7 @@ async function main() {
   proposals.meta = {
     generatedAt: appliedAt,
     pendingCount: proposals.proposals.filter(p => p.status === "pending").length,
+    approvedCount: proposals.proposals.filter(p => p.status === "approved").length,
     appliedCount: proposals.proposals.filter(p => p.status === "applied").length,
     rejectedCount: proposals.proposals.filter(p => p.status === "rejected").length,
     note: proposals.meta?.note ?? "Lexi proposals queue."
@@ -134,19 +151,6 @@ async function main() {
   console.log(`  Applied: ${applied}`);
   console.log(`  Skipped (apply path not defined): ${skipped}`);
   console.log(`  Graph overlay nodes: ${patch.nodes.length}`);
-
-  // Slack notify when terms get promoted to the graph.
-  const notifier = createNotifier({ webhookUrl: process.env.LEXI_SLACK_WEBHOOK });
-  if (notifier.enabled && applied > 0) {
-    const lines = [`🎓 *Lexi promotion applied · ${appliedAt.slice(0, 16).replace("T", " ")} UTC*`];
-    lines.push("", `*${applied} approved proposal(s)* committed to the graph:`);
-    for (const label of appliedTermLabels.slice(0, 8)) {
-      lines.push(`• ${label}`);
-    }
-    if (appliedTermLabels.length > 8) lines.push(`_…and ${appliedTermLabels.length - 8} more_`);
-    lines.push("", `<https://ai-terminology.com/|→ See on the graph>`);
-    await notifier.send({ text: lines.join("\n") });
-  }
 }
 
 // Apply a single approved proposal. Mutates patch (always) and longlist
@@ -234,9 +238,16 @@ function applyOne(proposal, patch, longlist, appliedAt) {
       // gpt54 stale-flagship-def refresh wouldn't apply on 2026-05-10.
       const targetId = proposal.target?.id;
       const override = proposal.payload;
-      if (!targetId || !override?.def) return { ok: false, why: "missing target.id or payload.def" };
-      const newOverride = { id: targetId, def: override.def, refs: override.refs || [] };
+      if (!targetId) return { ok: false, why: "missing target.id" };
+      if (!override?.remove && !override?.def) return { ok: false, why: "missing payload.def" };
       const existing = patch.definitionOverrides.findIndex(o => o.id === targetId);
+      // Record what this replaces, so an undo can put it back.
+      proposal.previousOverride = existing >= 0 ? structuredClone(patch.definitionOverrides[existing]) : null;
+      if (override.remove) {
+        if (existing >= 0) patch.definitionOverrides.splice(existing, 1);
+        return { ok: true, label: targetId };
+      }
+      const newOverride = { id: targetId, def: override.def, refs: override.refs || [] };
       if (existing >= 0) patch.definitionOverrides[existing] = newOverride;
       else patch.definitionOverrides.push(newOverride);
       return { ok: true, label: targetId };
@@ -246,3 +257,25 @@ function applyOne(proposal, patch, longlist, appliedAt) {
   }
 }
 
+
+// Approve "auto"-tier proposals whose window has passed. All required: still
+// pending, not held, the digest that carried it was actually sent (sentAt is
+// recorded by the Worker), autoApplyAt has passed, and auto-apply isn't
+// paused. Returns the proposals it approved.
+export function autoApproveMatured(proposals, digests, now) {
+  const pausedUntil = proposals.controls?.autoApplyPausedUntil;
+  if (pausedUntil && new Date(pausedUntil) > now) return [];
+  const sent = new Set((digests.digests || []).filter(d => d.sentAt).map(d => d.id));
+  const out = [];
+  for (const p of proposals.proposals || []) {
+    if (p.status !== "pending" || p.tier !== "auto" || p.heldAt || !p.autoApplyAt) continue;
+    if (!sent.has(p.digestId)) continue;
+    if (new Date(p.autoApplyAt) > now) continue;
+    p.status = "approved";
+    p.approvedAt = now.toISOString();
+    p.approvedBy = "auto-72h";
+    p.decidedVia = "auto-apply";
+    out.push(p);
+  }
+  return out;
+}

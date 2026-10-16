@@ -1,0 +1,8 @@
+{
+  "meta": {
+    "generatedAt": null,
+    "count": 0,
+    "note": "Lexi's email digests to Nicole. Written by build-digest.mjs; sentAt/messageId/thread written by the Worker (src/lexi-mail)."
+  },
+  "digests": []
+}

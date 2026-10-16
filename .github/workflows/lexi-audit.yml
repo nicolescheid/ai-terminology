@@ -45,10 +45,18 @@ jobs:
       - name: Run auditor
         working-directory: knowledge-graph-agent
         env:
-          # Optional. The auditor only posts to Slack when new findings land
+          # Optional. The auditor only emails Nicole when new findings land
           # (re-runs over unchanged data are silent via dedup).
-          LEXI_SLACK_WEBHOOK: ${{ secrets.LEXI_SLACK_WEBHOOK }}
+          LEXI_NOTIFY_TOKEN: ${{ secrets.LEXI_NOTIFY_TOKEN }}
         run: node audit.mjs
+
+      # "What went live this week", with an undo link per item. No email
+      # if nothing was applied in the last 7 days.
+      - name: Weekly what-went-live summary
+        working-directory: knowledge-graph-agent
+        env:
+          LEXI_NOTIFY_TOKEN: ${{ secrets.LEXI_NOTIFY_TOKEN }}
+        run: node weekly-summary.mjs
 
       - name: Rebuild Almanac metrics
         working-directory: knowledge-graph-agent
@@ -75,18 +83,18 @@ jobs:
             echo "pushed=true" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Notify Slack on failure
+      - name: Email Nicole on failure
         if: failure()
         env:
-          LEXI_SLACK_WEBHOOK: ${{ secrets.LEXI_SLACK_WEBHOOK }}
+          LEXI_NOTIFY_TOKEN: ${{ secrets.LEXI_NOTIFY_TOKEN }}
         run: |
-          if [ -n "$LEXI_SLACK_WEBHOOK" ]; then
-            payload=$(cat <<JSON
-          {"text":":rotating_light: *Lexi audit FAILED*\nWorkflow: ${{ github.workflow }}\nRun: <https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}|#${{ github.run_id }}>"}
-          JSON
-          )
+          if [ -n "$LEXI_NOTIFY_TOKEN" ]; then
+            run_url="https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+            payload=$(jq -n --arg url "$run_url" --arg wf "${{ github.workflow }}" \
+              '{kind:"alert", subject:"Lexi audit FAILED", intro:("Workflow \"" + $wf + "\" failed. Nothing after the failing step ran."), link:{href:$url, label:"Open the run log"}}')
             curl -sS -X POST -H 'Content-Type: application/json' \
-              -d "$payload" "$LEXI_SLACK_WEBHOOK" || true
+              -H "Authorization: Bearer $LEXI_NOTIFY_TOKEN" \
+              -d "$payload" https://ai-terminology.com/api/lexi/notify || true
           fi
 
   # GITHUB_TOKEN pushes don't trigger push workflows (so build-stamp won't

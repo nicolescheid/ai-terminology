@@ -2,7 +2,7 @@
 //   1. Load state, graph, longlist, proposals, notes
 //   2. Check spec §12 forcing functions (pause if needed)
 //   3. Fetch articles → call Claude (extract + review) → route via permissions
-//   4. Persist all updated state files + emit deterministic log + Slack ping
+//   4. Persist all updated state files + emit deterministic log + email Nicole if there's news
 //
 // Pure orchestration; the actual logic lives in the extracted modules below.
 
@@ -593,21 +593,23 @@ async function runMain(args, config, logger) {
     notesUnreadTotal: notesUnread
   });
 
-  // Slack notification (optional — no-ops if LEXI_SLACK_WEBHOOK is unset).
+  // Email Nicole via the Worker (no-ops if LEXI_NOTIFY_TOKEN is unset).
   // Quiet by design: only fires when there's news (new notes OR a pause).
-  const notifier = createNotifier({ webhookUrl: process.env.LEXI_SLACK_WEBHOOK });
+  // New proposals are not announced here; they go out in the digest
+  // (review-proposals.mjs → build-digest.mjs → send-digest.mjs).
+  const notifier = createNotifier();
   if (notifier.enabled) {
     const dateStr = report.generatedAt.slice(0, 16).replace("T", " ") + " UTC";
-    await notifier.sendRunSummary({
+    const sent = await notifier.sendRunSummary({
       runId: logger.runId,
       runLabel: `Lexi run · ${dateStr}`,
       notes,
       longlist,
       proposals,
       paused,
-      pauseReasons,
-      dashboardUrl: "https://ai-terminology.com/manager/"
+      pauseReasons
     });
+    if (sent.ok === false) console.warn(`Run-summary email failed: ${sent.error}`);
   }
 }
 
