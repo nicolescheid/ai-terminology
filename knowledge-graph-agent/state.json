@@ -1,6 +1,6 @@
 {
-  "lastRunAt": "2026-10-16T07:47:38.193Z",
-  "reviewCursor": 104,
+  "lastRunAt": "2026-10-16T20:31:05.113Z",
+  "reviewCursor": 114,
   "seenArticles": {
     "93a049d060bc295b": {
       "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/tpus-8t-8i-cloud-next/",
@@ -1039,6 +1039,42 @@
       "title": "Expanding the Cyber Verification Program",
       "publishedAt": null,
       "seenAt": "2026-10-16T07:47:38.193Z"
+    },
+    "c1e94fc831365c13": {
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
+      "title": "Gemini 4 Argon: Built to solve your hardest problems",
+      "publishedAt": "Tue, 13 Oct 2026 16:00:00 +0000",
+      "seenAt": "2026-10-16T20:31:05.113Z"
+    },
+    "a72d1e4da6b0e106": {
+      "url": "https://openai.com/index/introducing-the-rosalind-academic-plan",
+      "title": "Bringing GPT-Rosalind to academic research labs",
+      "publishedAt": "Thu, 15 Oct 2026 19:00:00 GMT",
+      "seenAt": "2026-10-16T20:31:05.113Z"
+    },
+    "7a37a0ad6c391dad": {
+      "url": "https://stratechery.com/2026/a-conversation-with-ari-emanuel-about-entertainment-and-ai/",
+      "title": "A Conversation With Ari Emanuel About Entertainment and AI",
+      "publishedAt": "Thu, 15 Oct 2026 10:00:00 +0000",
+      "seenAt": "2026-10-16T20:31:05.113Z"
+    },
+    "6702d1aaf0afce3a": {
+      "url": "https://simonwillison.net/2026/Oct/15/anthropic-tells-investors/",
+      "title": "Anthropic tells investors quarterly revenue up nearly 50% to $16.8bn ahead of IPO",
+      "publishedAt": "2026-10-15T13:04:03+00:00",
+      "seenAt": "2026-10-16T20:31:05.113Z"
+    },
+    "c59c597501ce523e": {
+      "url": "https://openai.com/index/gpt-6-astra/",
+      "title": "GPT-6 Astra: A new generation of intelligence",
+      "publishedAt": null,
+      "seenAt": "2026-10-16T20:31:05.113Z"
+    },
+    "dc9ed14da7f573e5": {
+      "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+      "title": "Anthropic update on independent evaluators",
+      "publishedAt": null,
+      "seenAt": "2026-10-16T20:31:05.113Z"
     }
   },
   "nodeReviews": {
@@ -1223,19 +1259,19 @@
       "reason": "No source material addresses the Codex model family. Definition stands."
     },
     "computer-use": {
-      "lastReviewedAt": "2026-05-31T19:15:39.230Z",
-      "status": "keep",
-      "reason": "No source material addresses the computer-use agent pattern. Definition remains accurate as stated."
+      "lastReviewedAt": "2026-10-16T20:31:05.113Z",
+      "status": "insufficient_evidence",
+      "reason": "GPT-6 Astra is noted as state-of-the-art on computer use, which is consistent with the existing definition, but the excerpt provides no detail that would materially refine or expand the definition."
     },
     "connectors": {
-      "lastReviewedAt": "2026-05-31T19:15:39.230Z",
+      "lastReviewedAt": "2026-10-16T20:31:05.113Z",
       "status": "keep",
-      "reason": "No source material addresses connectors or MCP integrations. Definition remains accurate as stated."
+      "reason": "No source material addresses MCP connectors or pre-built agent integrations."
     },
     "constitutional-ai": {
-      "lastReviewedAt": "2026-05-31T19:15:39.230Z",
+      "lastReviewedAt": "2026-10-16T20:31:05.113Z",
       "status": "keep",
-      "reason": "The LWiAI podcast mentions Anthropic work on 'training ethical why reasoning' to reduce agent misalignment, which is loosely consistent with Constitutional AI principles but does not provide enough detail to justify a rewrite. The existing definition remains accurate."
+      "reason": "The Anthropic independent evaluators update mentions alignment and safety evaluation processes but does not introduce new information that changes the substance of the Constitutional AI definition."
     },
     "context-compaction": {
       "lastReviewedAt": "2026-05-31T19:15:39.230Z",
@@ -2091,6 +2127,41 @@
       "lastReviewedAt": "2026-10-16T07:47:38.193Z",
       "status": "keep",
       "reason": "No source material addresses code mode or agentic tool-calling patterns. Definition stands."
+    },
+    "coding-agent": {
+      "lastReviewedAt": "2026-10-16T20:31:05.113Z",
+      "status": "keep",
+      "reason": "No source material addresses coding agents specifically. The existing definition accurately covers the concept with current examples."
+    },
+    "cognitive-debt": {
+      "lastReviewedAt": "2026-10-16T20:31:05.113Z",
+      "status": "keep",
+      "reason": "No source material references the MIT Media Lab cognitive debt study or updates its framing."
+    },
+    "cognitive-offloading": {
+      "lastReviewedAt": "2026-10-16T20:31:05.113Z",
+      "status": "keep",
+      "reason": "No source material addresses cognitive offloading or related research."
+    },
+    "cognitive-surrender": {
+      "lastReviewedAt": "2026-10-16T20:31:05.113Z",
+      "status": "keep",
+      "reason": "No source material references the Wharton cognitive surrender research or updates it."
+    },
+    "comprehension-debt": {
+      "lastReviewedAt": "2026-10-16T20:31:05.113Z",
+      "status": "keep",
+      "reason": "No source material addresses comprehension debt or AI-generated code comprehension issues."
+    },
+    "compute-threshold": {
+      "lastReviewedAt": "2026-10-16T20:31:05.113Z",
+      "status": "keep",
+      "reason": "No source material updates compute threshold regulatory thresholds or the debate around them."
+    },
+    "confabulation": {
+      "lastReviewedAt": "2026-10-16T20:31:05.113Z",
+      "status": "keep",
+      "reason": "No source material addresses confabulation or hallucination terminology."
     }
   }
 }

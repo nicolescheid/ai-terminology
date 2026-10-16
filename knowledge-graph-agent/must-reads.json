@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generatedAt": "2026-10-16T07:47:38.193Z",
-    "unreadCount": 21,
-    "totalCount": 21,
+    "generatedAt": "2026-10-16T20:31:05.113Z",
+    "unreadCount": 23,
+    "totalCount": 23,
     "note": "Lexi's must-reads — articles she flags as worth Nicole reading in full. Editorial signal, not news feed. Set status to 'read' or 'dismissed' via mark-must-reads.mjs."
   },
   "entries": [
@@ -360,6 +360,40 @@
       ],
       "novelTermsInArticle": 3,
       "flaggedAt": "2026-06-05T19:53:16.670Z",
+      "status": "unread"
+    },
+    {
+      "id": "7a37a0ad6c391dad",
+      "title": "A Conversation With Ari Emanuel About Entertainment and AI",
+      "url": "https://stratechery.com/2026/a-conversation-with-ari-emanuel-about-entertainment-and-ai/",
+      "source": "Stratechery",
+      "publishedAt": "Thu, 15 Oct 2026 10:00:00 +0000",
+      "summary": "Ben Thompson's Stratechery conversation with Ari Emanuel (WME, TKO, MARI) covers AI's disruption of advertising, live entertainment's resilience, and how agentic AI threatens search-based ad models. Key framings: the 'human in the loop' as the pivot point for Google's vulnerability, personalized ad prediction inside private VMs, and live events as the non-disintermediable surface in a post-AI economy.",
+      "priority": 2,
+      "reason": "A rare cross-domain conversation in which Thompson and Emanuel work through the economic logic of AI disruption to advertising and live entertainment in real time — the 'human in the loop as Google's last defense' framing is crisp and the generation-of-human-desire concept is genuinely generative for thinking about post-agentic business models.",
+      "clusters": [
+        "business",
+        "landscape"
+      ],
+      "novelTermsInArticle": 3,
+      "flaggedAt": "2026-10-16T20:31:05.113Z",
+      "status": "unread"
+    },
+    {
+      "id": "dc9ed14da7f573e5",
+      "title": "Anthropic update on independent evaluators",
+      "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+      "source": "Anthropic Newsroom",
+      "publishedAt": null,
+      "summary": "Anthropic announces a tiered independent evaluator program, giving METR 'employee-like access' to assess frontier model risks, with SecureBio, Accenture, and Hugging Face in various partnership stages. The piece introduces concrete mechanisms for third-party AI oversight, including access tiers, publication rights, and redaction protocols — drawing an analogy to bank supervision.",
+      "priority": 2,
+      "reason": "A primary source announcement that introduces a concrete, named architecture for frontier AI oversight — tiered access, embedded evaluators with bank-examiner logic, and enforceable publication rights. The piece is short but substantive: it moves the conversation from 'labs should be audited' to 'here is what audit access actually looks like in practice,' which is a useful definitional intervention for anyone working in AI governance or safety terminology.",
+      "clusters": [
+        "safety",
+        "critical"
+      ],
+      "novelTermsInArticle": 4,
+      "flaggedAt": "2026-10-16T20:31:05.113Z",
       "status": "unread"
     }
   ]

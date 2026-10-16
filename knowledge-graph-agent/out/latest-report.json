@@ -1,214 +1,248 @@
 {
-  "generatedAt": "2026-10-16T07:47:38.193Z",
+  "generatedAt": "2026-10-16T20:31:05.113Z",
   "model": "claude-sonnet-4-6",
   "sourcesConfigured": 15,
   "articlesConsidered": [
     {
-      "id": "a0e0fec2c2b5f568",
-      "source": "OpenAI News",
-      "title": "Amp puts AI agents to work beyond code with OpenAI models",
-      "url": "https://openai.com/index/amp-beyond-coding",
-      "publishedAt": "Wed, 14 Oct 2026 12:00:00 GMT"
-    },
-    {
-      "id": "190277f965bb8b29",
-      "source": "Stratechery",
-      "title": "Apple HomeView, The New Apple TV, The App Story",
-      "url": "https://stratechery.com/2026/apple-homeview-the-new-apple-tv-the-app-story/",
-      "publishedAt": "Wed, 14 Oct 2026 10:00:00 +0000"
-    },
-    {
-      "id": "22643d6fcb195220",
+      "id": "c1e94fc831365c13",
       "source": "Google AI Blog",
-      "title": "Introducing Playground: Create and play custom games",
-      "url": "https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform/",
-      "publishedAt": "Wed, 07 Oct 2026 12:00:00 +0000"
+      "title": "Gemini 4 Argon: Built to solve your hardest problems",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
+      "publishedAt": "Tue, 13 Oct 2026 16:00:00 +0000"
     },
     {
-      "id": "08c79764230e6e3c",
+      "id": "a72d1e4da6b0e106",
+      "source": "OpenAI News",
+      "title": "Bringing GPT-Rosalind to academic research labs",
+      "url": "https://openai.com/index/introducing-the-rosalind-academic-plan",
+      "publishedAt": "Thu, 15 Oct 2026 19:00:00 GMT"
+    },
+    {
+      "id": "7a37a0ad6c391dad",
+      "source": "Stratechery",
+      "title": "A Conversation With Ari Emanuel About Entertainment and AI",
+      "url": "https://stratechery.com/2026/a-conversation-with-ari-emanuel-about-entertainment-and-ai/",
+      "publishedAt": "Thu, 15 Oct 2026 10:00:00 +0000"
+    },
+    {
+      "id": "6702d1aaf0afce3a",
       "source": "Simon Willison's Weblog",
-      "title": "Tool: Chirp Pong",
-      "url": "https://simonwillison.net/2026/Oct/15/chirp-pong/",
-      "publishedAt": "2026-10-15T19:47:52+00:00"
+      "title": "Anthropic tells investors quarterly revenue up nearly 50% to $16.8bn ahead of IPO",
+      "url": "https://simonwillison.net/2026/Oct/15/anthropic-tells-investors/",
+      "publishedAt": "2026-10-15T13:04:03+00:00"
     },
     {
-      "id": "f8bd68ff7b9a2503",
+      "id": "c59c597501ce523e",
       "source": "OpenAI Research",
-      "title": "Introducing GPT-6.1 Sol",
-      "url": "https://openai.com/index/introducing-gpt-6-1-sol/",
+      "title": "GPT-6 Astra: A new generation of intelligence",
+      "url": "https://openai.com/index/gpt-6-astra/",
       "publishedAt": null
     },
     {
-      "id": "a22a6ca92e5c69fd",
+      "id": "dc9ed14da7f573e5",
       "source": "Anthropic Newsroom",
-      "title": "Expanding the Cyber Verification Program",
-      "url": "https://www.anthropic.com/news/cyber-verification-program",
+      "title": "Anthropic update on independent evaluators",
+      "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
       "publishedAt": null
     }
   ],
   "harvestedTerms": [
     {
       "article": {
-        "title": "Apple HomeView, The New Apple TV, The App Story",
-        "url": "https://stratechery.com/2026/apple-homeview-the-new-apple-tv-the-app-story/"
+        "title": "Gemini 4 Argon: Built to solve your hardest problems",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/"
       },
-      "summary": "Paywalled Stratechery piece by Ben Thompson on the Apple HomeView product launch, framing it around market size for expensive devices running 'subpar AI.' Almost no substantive content is visible beyond the title and subscription prompt — the excerpt is essentially a paywall landing page.",
+      "summary": "Google DeepMind announces Gemini 4 Argon, a new frontier model positioned for deep, multi-step work across coding, finance, legal, cybersecurity, and science. The article documents internal use cases at Google — Chrome refactoring, Python codebase optimization, quantum chemistry speedups, and inference acceleration — framing Argon as a long-context, agentic-capable model ranking #1 on the Vals Index. The piece is primarily a product launch with supporting engineering case studies.",
       "longlistAdditions": [
         {
-          "id": "apple-homeview",
-          "label": "Apple HomeView"
-        }
-      ],
-      "longlistUpdates": [],
-      "rejections": [],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "Introducing Playground: Create and play custom games",
-        "url": "https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform/"
-      },
-      "summary": "Google has launched Playground, a browser-based experimental gaming platform that lets users create, play, and share custom games using text prompts — no coding required. The platform features community galleries, multiplayer support, leaderboards, and a forthcoming integration with Unity Spark for professional-level game development. The article is primarily a product announcement with minimal AI terminology novelty.",
-      "longlistAdditions": [
-        {
-          "id": "text-to-game",
-          "label": "Text-to-Game"
+          "id": "vals-index",
+          "label": "Vals Index"
         },
         {
-          "id": "no-code-ai-creation",
-          "label": "No-Code AI Creation"
-        }
-      ],
-      "longlistUpdates": [],
-      "rejections": [],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "Tool: Chirp Pong",
-        "url": "https://simonwillison.net/2026/Oct/15/chirp-pong/"
-      },
-      "summary": "A brief post by Simon Willison documenting a small creative coding experiment — a two-player Pong variant that uses audio chirps (via the Web Microphone API) for networking, built with Claude Opus 5.5 Extra in Claude Code. Primarily a personal project note with minimal conceptual substance.",
-      "longlistAdditions": [
-        {
-          "id": "claude-opus-55",
-          "label": "Claude Opus 5.5"
-        }
-      ],
-      "longlistUpdates": [],
-      "rejections": [],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "Introducing GPT-6.1 Sol",
-        "url": "https://openai.com/index/introducing-gpt-6-1-sol/"
-      },
-      "summary": "OpenAI announces GPT-6.1 Sol, an upgrade to GPT-6 Sol offering near-Astra-level performance at one-fifth the cost. The announcement introduces several named benchmarks (DeepSWE, GDP.pdf, AutomationBench, OSWorld 2.0, Terminal-Bench Science) and a new speed tier (Sol Ultrafast). The article is primarily a product launch with pricing details and benchmark comparisons across coding, computer use, scientific research, and factuality.",
-      "longlistAdditions": [
-        {
-          "id": "gpt61-sol",
-          "label": "GPT-6.1 Sol"
-        },
-        {
-          "id": "automationbench",
-          "label": "AutomationBench"
-        },
-        {
-          "id": "terminal-bench-science",
-          "label": "Terminal-Bench Science"
-        },
-        {
-          "id": "gdp-pdf",
-          "label": "GDP.pdf"
-        }
-      ],
-      "longlistUpdates": [],
-      "rejections": [],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "Expanding the Cyber Verification Program",
-        "url": "https://www.anthropic.com/news/cyber-verification-program"
-      },
-      "summary": "Anthropic announces an expanded Cyber Verification Program (CVP) with three tiered access levels (Defense, Red Team, Specialized) giving vetted security professionals reduced classifier blocking on Claude models. The article introduces a new benchmark (CyScenarioBench), a new privacy-preserving data solution (Enterprise Frontier Safeguards), and shares vulnerability-discovery metrics from Project Glasswing. Primary focus is on the offense-defense balance in dual-use AI cybersecurity tooling.",
-      "longlistAdditions": [
-        {
-          "id": "cyber-verification-program",
-          "label": "Cyber Verification Program"
-        },
-        {
-          "id": "cyscenariobench",
-          "label": "CyScenarioBench"
-        },
-        {
-          "id": "enterprise-frontier-safeguards",
-          "label": "Enterprise Frontier Safeguards"
+          "id": "multi-agent-visual-critique-loop",
+          "label": "Multi-Agent Visual Critique Loop"
         }
       ],
       "longlistUpdates": [],
       "rejections": [
         {
-          "label": "offense-defense-balance",
-          "reason": "already in graph (id match)"
+          "label": "vLLM",
+          "reason": "already in graph (label match)"
+        },
+        {
+          "label": "Google Antigravity",
+          "reason": "already in graph (label match)"
         }
       ],
       "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "A Conversation With Ari Emanuel About Entertainment and AI",
+        "url": "https://stratechery.com/2026/a-conversation-with-ari-emanuel-about-entertainment-and-ai/"
+      },
+      "summary": "Ben Thompson's Stratechery conversation with Ari Emanuel (WME, TKO, MARI) covers AI's disruption of advertising, live entertainment's resilience, and how agentic AI threatens search-based ad models. Key framings: the 'human in the loop' as the pivot point for Google's vulnerability, personalized ad prediction inside private VMs, and live events as the non-disintermediable surface in a post-AI economy.",
+      "longlistAdditions": [
+        {
+          "id": "two-towers-advertising",
+          "label": "Two-Towers Approach"
+        },
+        {
+          "id": "generation-of-human-desire",
+          "label": "Generation of Human Desire"
+        },
+        {
+          "id": "personalized-ad-predictor",
+          "label": "Personalized Ad Predictor"
+        }
+      ],
+      "longlistUpdates": [
+        {
+          "id": "aggregator-theory",
+          "label": "Aggregator Theory",
+          "sourceAdded": true,
+          "sourceCount": 2,
+          "independentSourceCount": 1
+        }
+      ],
+      "rejections": [],
+      "proposalsQueued": [],
+      "mustReadFlagged": {
+        "priority": 2,
+        "reason": "A rare cross-domain conversation in which Thompson and Emanuel work through the economic logic of AI disruption to advertising and live entertainment in real time — the 'human in the loop as Google's last defense' framing is crisp and the generation-of-human-desire concept is genuinely generative for thinking about post-agentic business models."
+      }
+    },
+    {
+      "article": {
+        "title": "Anthropic tells investors quarterly revenue up nearly 50% to $16.8bn ahead of IPO",
+        "url": "https://simonwillison.net/2026/Oct/15/anthropic-tells-investors/"
+      },
+      "summary": "Simon Willison's link-blog post summarises an FT report on Anthropic's investor day, revealing Q1–Q3 2026 revenue figures ($4.8bn → $11.5bn → $16.8bn), operating margins, compute cost ratios, and a notable disclosure that Anthropic has materially cut back on revenue from rival labs distilling its models — previously 5–7% of revenue. The post also flags Anthropic's apparent shift away from annualized run-rate revenue as a communications metric.",
+      "longlistAdditions": [],
+      "longlistUpdates": [],
+      "rejections": [
+        {
+          "label": "Run-Rate Revenue",
+          "reason": "already in graph (label match)"
+        },
+        {
+          "label": "Distillation",
+          "reason": "already in graph (label match)"
+        }
+      ],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "GPT-6 Astra: A new generation of intelligence",
+        "url": "https://openai.com/index/gpt-6-astra/"
+      },
+      "summary": "OpenAI announces GPT-6 Astra, positioning it as a step-change in frontier model capability across computer use, professional work, software engineering, and alignment. The article introduces benchmark results on ARC-AGI-3, FrontierMath Tier 4, ExploitBench, AutomationBench, and Terminal-Bench Science, and describes alignment improvements including a new evaluation modelled on the Hugging Face incident. The model is notable for its computer-use efficiency gains and its claimed ability to stay on-task and respect intended scope boundaries.",
+      "longlistAdditions": [
+        {
+          "id": "gpt6-astra",
+          "label": "GPT-6 Astra"
+        },
+        {
+          "id": "arc-agi-3",
+          "label": "ARC-AGI-3"
+        },
+        {
+          "id": "scope-adherence-eval",
+          "label": "Scope Adherence Evaluation"
+        },
+        {
+          "id": "exploitbench",
+          "label": "ExploitBench"
+        }
+      ],
+      "longlistUpdates": [],
+      "rejections": [],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "Anthropic update on independent evaluators",
+        "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators"
+      },
+      "summary": "Anthropic announces a tiered independent evaluator program, giving METR 'employee-like access' to assess frontier model risks, with SecureBio, Accenture, and Hugging Face in various partnership stages. The piece introduces concrete mechanisms for third-party AI oversight, including access tiers, publication rights, and redaction protocols — drawing an analogy to bank supervision.",
+      "longlistAdditions": [
+        {
+          "id": "independent-model-evaluation",
+          "label": "Independent Model Evaluation"
+        },
+        {
+          "id": "embedded-evaluator",
+          "label": "Embedded Evaluator"
+        },
+        {
+          "id": "tiered-evaluator-access",
+          "label": "Tiered Evaluator Access"
+        },
+        {
+          "id": "white-house-accord-superintelligence",
+          "label": "White House Accord on Superintelligence"
+        }
+      ],
+      "longlistUpdates": [],
+      "rejections": [],
+      "proposalsQueued": [],
+      "mustReadFlagged": {
+        "priority": 2,
+        "reason": "A primary source announcement that introduces a concrete, named architecture for frontier AI oversight — tiered access, embedded evaluators with bank-examiner logic, and enforceable publication rights. The piece is short but substantive: it moves the conversation from 'labs should be audited' to 'here is what audit access actually looks like in practice,' which is a useful definitional intervention for anyone working in AI governance or safety terminology."
+      }
     }
   ],
   "definitionReviews": [
     {
-      "id": "circular-deals",
+      "id": "coding-agent",
       "status": "keep",
-      "reason": "No source material addresses circular deals or related AI investment patterns. Definition stands as-is."
+      "reason": "No source material addresses coding agents specifically. The existing definition accurately covers the concept with current examples."
     },
     {
-      "id": "clanker",
+      "id": "cognitive-debt",
       "status": "keep",
-      "reason": "No source material references this slang term. Definition stands."
+      "reason": "No source material references the MIT Media Lab cognitive debt study or updates its framing."
     },
     {
-      "id": "claude",
-      "status": "refresh",
-      "def": "Anthropic's model family — currently including Claude Opus 5.5, Claude Sonnet 5.5, Claude Haiku 5.5, and Claude Fable 5.1. Named after Claude Shannon, father of information theory. Known for safety, long-context coherence, and coding ability.",
-      "reason": "Multiple fresh sources (Anthropic CVP page, Simon Willison's blog) confirm the current model generation uses 5.x versioning (Opus 5.5, Sonnet 5.5, Haiku 5.5, Fable 5.1), making the existing '4.6' version numbers outdated. The model tier descriptions should be updated accordingly."
+      "id": "cognitive-offloading",
+      "status": "keep",
+      "reason": "No source material addresses cognitive offloading or related research."
     },
     {
-      "id": "claude-ai",
+      "id": "cognitive-surrender",
+      "status": "keep",
+      "reason": "No source material references the Wharton cognitive surrender research or updates it."
+    },
+    {
+      "id": "comprehension-debt",
+      "status": "keep",
+      "reason": "No source material addresses comprehension debt or AI-generated code comprehension issues."
+    },
+    {
+      "id": "compute-threshold",
+      "status": "keep",
+      "reason": "No source material updates compute threshold regulatory thresholds or the debate around them."
+    },
+    {
+      "id": "computer-use",
       "status": "insufficient_evidence",
-      "reason": "No source material directly addresses Claude.ai features or availability. Cannot confirm or deny updates."
+      "reason": "GPT-6 Astra is noted as state-of-the-art on computer use, which is consistent with the existing definition, but the excerpt provides no detail that would materially refine or expand the definition."
     },
     {
-      "id": "claude-code",
+      "id": "confabulation",
       "status": "keep",
-      "reason": "Simon Willison's source confirms Claude Code is actively used in production (referencing 'Claude Opus 5.5 Extra in Claude Code'), consistent with the existing definition. No material contradictions or updates warranted beyond model versioning already captured in the 'claude' entry."
+      "reason": "No source material addresses confabulation or hallucination terminology."
     },
     {
-      "id": "claude-cowork",
-      "status": "insufficient_evidence",
-      "reason": "No source material references Claude Cowork or any Anthropic outcome-delegation product. Cannot verify or update this definition."
-    },
-    {
-      "id": "claude-design",
-      "status": "insufficient_evidence",
-      "reason": "No source material references Claude Design or Anthropic Labs design products. Cannot verify or update this definition."
-    },
-    {
-      "id": "claude-mythos",
-      "status": "refresh",
-      "def": "Anthropic's highly restricted model — now versioned as Claude Mythos 5.1. Originally withheld from general availability on safety grounds due to capabilities including autonomous discovery and exploitation of zero-day vulnerabilities, sandbox escape, and autonomous goal extension. Access has expanded from the original Project Glasswing program to a broader, tiered Cyber Verification Program (CVP) launched October 2026, which integrates Glasswing and gives qualifying security organizations structured access based on the scope of their cyber work.",
-      "reason": "The Anthropic CVP source (Oct 6, 2026) reveals Mythos is now versioned as 'Claude Mythos 5.1', and that access has expanded significantly beyond Project Glasswing into a three-tier Cyber Verification Program open to a wider range of security organizations. The original definition's claim that access is restricted solely to Glasswing partners is now outdated."
-    },
-    {
-      "id": "code-mode",
+      "id": "connectors",
       "status": "keep",
-      "reason": "No source material addresses code mode or agentic tool-calling patterns. Definition stands."
+      "reason": "No source material addresses MCP connectors or pre-built agent integrations."
     },
     {
-      "id": "codex-model",
+      "id": "constitutional-ai",
       "status": "keep",
-      "reason": "No source material addresses the Codex model family. Definition stands."
+      "reason": "The Anthropic independent evaluators update mentions alignment and safety evaluation processes but does not introduce new information that changes the substance of the Constitutional AI definition."
     }
   ],
   "notes": []

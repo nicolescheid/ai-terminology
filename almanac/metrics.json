@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-10-16T07:49:37.824Z",
+  "generatedAt": "2026-10-16T20:33:16.166Z",
   "firstRunAt": "2026-04-27T01:07:31.335Z",
   "phase": 1,
   "headline": {
-    "articlesRead": 173,
+    "articlesRead": 179,
     "daysRunning": 173,
-    "longlistSize": 60,
+    "longlistSize": 73,
     "graphSize": 435
   },
   "thisWeek": {
-    "articlesFetched": 6,
-    "longlistAdded": 11,
-    "sourcesAdded": 0,
+    "articlesFetched": 12,
+    "longlistAdded": 24,
+    "sourcesAdded": 1,
     "promotionsToGraph": 0,
     "proposalsQueued": 2,
     "auditFlags": 0,
-    "notesAdded": 7
+    "notesAdded": 14
   },
   "almostThere": [
     {
@@ -27,13 +27,30 @@
       ],
       "sourceCount": 3,
       "independentSources": 2,
-      "daysOnLonglist": 164,
+      "daysOnLonglist": 165,
       "domains": [
         "openai.com",
         "simonwillison.net"
       ],
       "gapCount": 1,
       "gap": "no source seen in past 90d"
+    },
+    {
+      "id": "aggregator-theory",
+      "label": "Aggregator Theory",
+      "fullName": "Aggregator Theory (Stratechery)",
+      "clusters": [
+        "business",
+        "landscape"
+      ],
+      "sourceCount": 2,
+      "independentSources": 1,
+      "daysOnLonglist": 135,
+      "domains": [
+        "stratechery.com"
+      ],
+      "gapCount": 1,
+      "gap": "needs 1 more independent source"
     },
     {
       "id": "ai-assisted-filmmaking",
@@ -45,7 +62,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 159,
+      "daysOnLonglist": 160,
       "domains": [
         "blog.google"
       ],
@@ -62,7 +79,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 155,
+      "daysOnLonglist": 156,
       "domains": [
         "theverge.com"
       ],
@@ -79,7 +96,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 139,
+      "daysOnLonglist": 140,
       "domains": [
         "blog.google"
       ],
@@ -133,7 +150,7 @@
       ],
       "sourceCount": 1,
       "independentSources": 1,
-      "daysOnLonglist": 168,
+      "daysOnLonglist": 169,
       "domains": [
         "openai.com"
       ],
@@ -151,7 +168,7 @@
       ],
       "sourceCount": 1,
       "independentSources": 1,
-      "daysOnLonglist": 168,
+      "daysOnLonglist": 169,
       "domains": [
         "openai.com"
       ],
@@ -168,26 +185,9 @@
       ],
       "sourceCount": 1,
       "independentSources": 1,
-      "daysOnLonglist": 168,
+      "daysOnLonglist": 169,
       "domains": [
         "lastweekin.ai"
-      ],
-      "gapCount": 3,
-      "gap": "needs 1 more source; needs 1 more independent source; no source seen in past 90d"
-    },
-    {
-      "id": "streaming-inference",
-      "label": "Streaming Inference",
-      "fullName": null,
-      "clusters": [
-        "technical",
-        "models"
-      ],
-      "sourceCount": 1,
-      "independentSources": 1,
-      "daysOnLonglist": 164,
-      "domains": [
-        "openai.com"
       ],
       "gapCount": 3,
       "gap": "needs 1 more source; needs 1 more independent source; no source seen in past 90d"
@@ -197,23 +197,23 @@
     "byDomain": [
       {
         "domain": "openai.com",
-        "count": 42
+        "count": 44
       },
       {
         "domain": "simonwillison.net",
-        "count": 25
+        "count": 26
       },
       {
         "domain": "stratechery.com",
-        "count": 22
+        "count": 23
       },
       {
         "domain": "blog.google",
-        "count": 19
+        "count": 20
       },
       {
         "domain": "anthropic.com",
-        "count": 18
+        "count": 19
       },
       {
         "domain": "huggingface.co",
@@ -336,31 +336,31 @@
         "id": "safety",
         "label": "Safety",
         "hex": "#FF6090",
-        "count": 18
+        "count": 23
       },
       {
         "id": "technical",
         "label": "Technical",
         "hex": "#D0D040",
-        "count": 18
+        "count": 23
       },
       {
         "id": "agentic",
         "label": "Agentic Systems",
         "hex": "#FF9040",
-        "count": 17
-      },
-      {
-        "id": "critical",
-        "label": "Critical / Hype",
-        "hex": "#FF5555",
-        "count": 14
+        "count": 19
       },
       {
         "id": "models",
         "label": "Models",
         "hex": "#FFB060",
-        "count": 13
+        "count": 16
+      },
+      {
+        "id": "critical",
+        "label": "Critical / Hype",
+        "hex": "#FF5555",
+        "count": 16
       },
       {
         "id": "tools",
@@ -372,12 +372,24 @@
         "id": "security",
         "label": "AI Security",
         "hex": "#E05050",
-        "count": 8
+        "count": 9
+      },
+      {
+        "id": "landscape",
+        "label": "Model Landscape",
+        "hex": "#D0A050",
+        "count": 7
       },
       {
         "id": "human",
         "label": "Human Skills",
         "hex": "#40D080",
+        "count": 7
+      },
+      {
+        "id": "business",
+        "label": "Business Reality",
+        "hex": "#48C888",
         "count": 7
       },
       {
@@ -387,22 +399,10 @@
         "count": 5
       },
       {
-        "id": "landscape",
-        "label": "Model Landscape",
-        "hex": "#D0A050",
-        "count": 4
-      },
-      {
-        "id": "business",
-        "label": "Business Reality",
-        "hex": "#48C888",
-        "count": 3
-      },
-      {
         "id": "companies",
         "label": "Companies",
         "hex": "#9090A8",
-        "count": 3
+        "count": 4
       },
       {
         "id": "autonomy",

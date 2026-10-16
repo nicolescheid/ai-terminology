@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-10-16T07:47:38.193Z",
-    "entryCount": 139,
+    "generatedAt": "2026-10-16T20:31:05.113Z",
+    "entryCount": 152,
     "note": "Lexi-managed Tier 2 longlist — terms under observation, awaiting evidence to support promotion to the graph (Tier 1)."
   },
   "entries": [
@@ -5031,12 +5031,20 @@
           "sourceLabel": "Stratechery",
           "publishedAt": "Tue, 02 Jun 2026 10:00:00 +0000",
           "firstSeen": "2026-06-02T20:47:42.877Z"
+        },
+        {
+          "url": "https://stratechery.com/2026/a-conversation-with-ari-emanuel-about-entertainment-and-ai/",
+          "domain": "stratechery.com",
+          "title": "A Conversation With Ari Emanuel About Entertainment and AI",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Thu, 15 Oct 2026 10:00:00 +0000",
+          "firstSeen": "2026-10-16T20:31:05.113Z"
         }
       ],
-      "sourceCount": 1,
+      "sourceCount": 2,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-06-02T20:47:42.877Z",
-      "dateLastSeen": "2026-06-02T20:47:42.877Z",
+      "dateLastSeen": "2026-10-16T20:31:05.113Z",
       "sz": 14,
       "fullName": "Aggregator Theory (Stratechery)",
       "proposalReason": "A named analytic framework with significant ongoing use in AI business-model discussions; not yet in the graph and surfaces repeatedly in AI-era platform-strategy writing."
@@ -6070,6 +6078,444 @@
       "fullName": "Enterprise Frontier Safeguards (EFS)",
       "nodeType": "product",
       "proposalReason": "A named product concept addressing the tension between mandatory data retention for misuse monitoring and enterprise privacy requirements — a structurally interesting tradeoff worth tracking as AI security programs mature."
+    },
+    {
+      "id": "vals-index",
+      "label": "Vals Index",
+      "workingDef": "A benchmark index measuring large language model performance across critical economic sectors including finance, coding, legal, and tax work. Introduced as a cross-domain capability ranking distinguishing frontier models by their practical professional utility rather than academic task performance alone. Google claims Gemini 4 Argon ranks #1 on this index at launch.",
+      "clusters": [
+        "models",
+        "business"
+      ],
+      "suggestedRels": [
+        "evals",
+        "frontier-model",
+        "benchmark-gaming",
+        "llm"
+      ],
+      "sources": [
+        {
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
+          "domain": "blog.google",
+          "title": "Gemini 4 Argon: Built to solve your hardest problems",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Tue, 13 Oct 2026 16:00:00 +0000",
+          "firstSeen": "2026-10-16T20:31:05.113Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-16T20:31:05.113Z",
+      "dateLastSeen": "2026-10-16T20:31:05.113Z",
+      "sz": 14,
+      "fullName": "Vals Index (Frontier Model Economic Sector Benchmark)",
+      "proposalReason": "A new named benchmark index with cross-sector economic framing — worth tracking as a potential rival to MMLU-style benchmarks for enterprise positioning."
+    },
+    {
+      "id": "multi-agent-visual-critique-loop",
+      "label": "Multi-Agent Visual Critique Loop",
+      "workingDef": "A multi-agent workflow pattern in which one agent generates visual output (e.g., 3D models, animations) and a second agent critiques it iteratively, cycling until quality thresholds are met. Referenced in the article as a technique used inside Google Antigravity for producing high-fidelity 3D visualizations and games from natural language prompts.",
+      "clusters": [
+        "agentic",
+        "technical"
+      ],
+      "suggestedRels": [
+        "multi-agent",
+        "multi-agent-orchestration",
+        "agentic-rag",
+        "planning",
+        "loop"
+      ],
+      "sources": [
+        {
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
+          "domain": "blog.google",
+          "title": "Gemini 4 Argon: Built to solve your hardest problems",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Tue, 13 Oct 2026 16:00:00 +0000",
+          "firstSeen": "2026-10-16T20:31:05.113Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-16T20:31:05.113Z",
+      "dateLastSeen": "2026-10-16T20:31:05.113Z",
+      "sz": 14,
+      "proposalReason": "A named pattern for agentic visual generation workflows with a specific iterative critique structure — distinct from generic multi-agent framing and worth tracking as a design primitive."
+    },
+    {
+      "id": "two-towers-advertising",
+      "label": "Two-Towers Approach",
+      "workingDef": "An advertising architecture in which user embeddings and item/ad embeddings are trained in separate 'tower' neural networks and matched at serving time via vector similarity. Ben Thompson uses the term to describe how current programmatic advertising works at scale — matching user-profile data against product-match data — and argues this model is threatened by agentic AI that removes the human search step on which these ad impressions depend.",
+      "clusters": [
+        "business",
+        "technical"
+      ],
+      "suggestedRels": [
+        "embeddings",
+        "vector-database",
+        "agentic-era",
+        "agent"
+      ],
+      "sources": [
+        {
+          "url": "https://stratechery.com/2026/a-conversation-with-ari-emanuel-about-entertainment-and-ai/",
+          "domain": "stratechery.com",
+          "title": "A Conversation With Ari Emanuel About Entertainment and AI",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Thu, 15 Oct 2026 10:00:00 +0000",
+          "firstSeen": "2026-10-16T20:31:05.113Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-16T20:31:05.113Z",
+      "dateLastSeen": "2026-10-16T20:31:05.113Z",
+      "sz": 14,
+      "fullName": "Two-Towers Approach (Advertising Recommendation)",
+      "proposalReason": "Emerges as the technical framing for why agentic AI threatens Google and Amazon's ad businesses — a useful bridging concept between ML infrastructure and media economics."
+    },
+    {
+      "id": "generation-of-human-desire",
+      "label": "Generation of Human Desire",
+      "workingDef": "A framing used by Ari Emanuel and Ben Thompson for the core economic function that persists — and may grow — in a post-AI economy: creating new wants, experiences, and aspirations that precede any search or purchase act. Emanuel links this explicitly to live events (MARI) and to advertising surfaces not disintermediated by AI agents. The framing implies that demand-generation, not information-retrieval, is the scarce and durable commodity once agents handle the transaction layer.",
+      "clusters": [
+        "business",
+        "landscape"
+      ],
+      "suggestedRels": [
+        "agentic-era",
+        "agentic-commerce",
+        "agentic-web",
+        "saaspocalypse"
+      ],
+      "sources": [
+        {
+          "url": "https://stratechery.com/2026/a-conversation-with-ari-emanuel-about-entertainment-and-ai/",
+          "domain": "stratechery.com",
+          "title": "A Conversation With Ari Emanuel About Entertainment and AI",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Thu, 15 Oct 2026 10:00:00 +0000",
+          "firstSeen": "2026-10-16T20:31:05.113Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-16T20:31:05.113Z",
+      "dateLastSeen": "2026-10-16T20:31:05.113Z",
+      "sz": 14,
+      "fullName": "Generation of Human Desire (Post-AI Economy)",
+      "proposalReason": "A rare economic-philosophical framing that cuts against purely technical AI discourse — worth tracking as a durable concept about what humans do when agents automate transactions."
+    },
+    {
+      "id": "personalized-ad-predictor",
+      "label": "Personalized Ad Predictor",
+      "workingDef": "A speculative advertising architecture described by Ben Thompson in which a model running inside a user's private virtual machine predicts what the user wants to purchase or consume — without exposing data to the advertiser's servers. Thompson argues this makes privacy guarantees credible ('it's totally private, because it is totally private') while enabling hyper-personalized ad targeting superior to current two-towers approaches. The architecture is framed as the successor to search-skim ad models as agentic AI removes humans from the search loop.",
+      "clusters": [
+        "business",
+        "technical"
+      ],
+      "suggestedRels": [
+        "two-towers-advertising",
+        "privacy-by-design",
+        "agent",
+        "agentic-commerce"
+      ],
+      "sources": [
+        {
+          "url": "https://stratechery.com/2026/a-conversation-with-ari-emanuel-about-entertainment-and-ai/",
+          "domain": "stratechery.com",
+          "title": "A Conversation With Ari Emanuel About Entertainment and AI",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Thu, 15 Oct 2026 10:00:00 +0000",
+          "firstSeen": "2026-10-16T20:31:05.113Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-16T20:31:05.113Z",
+      "dateLastSeen": "2026-10-16T20:31:05.113Z",
+      "sz": 14,
+      "fullName": "Personalized Ad Predictor (On-Device / Private VM)",
+      "proposalReason": "An interesting architectural concept that fuses privacy-by-design with advertising economics — potentially a meaningful framing for how ad markets evolve once agents replace search."
+    },
+    {
+      "id": "gpt6-astra",
+      "label": "GPT-6 Astra",
+      "workingDef": "OpenAI's flagship model released in the GPT-6 family, marketed as their most capable and aligned model to date. Benchmarked at near-saturation on ARC-AGI-3 (99.9%), FrontierMath Tier 4 (98%), and ExploitBench (100%), and positioned as state-of-the-art for computer use, software engineering, and professional work. Part of the GPT-6 family alongside GPT-6 Sol and GPT-6 Luna.",
+      "clusters": [
+        "models",
+        "companies"
+      ],
+      "suggestedRels": [
+        "openai-co",
+        "computer-use",
+        "benchmark-gaming",
+        "agentic-era",
+        "coding-agent",
+        "automationbench",
+        "terminal-bench-science"
+      ],
+      "sources": [
+        {
+          "url": "https://openai.com/index/gpt-6-astra/",
+          "domain": "openai.com",
+          "title": "GPT-6 Astra: A new generation of intelligence",
+          "sourceLabel": "OpenAI Research",
+          "publishedAt": null,
+          "firstSeen": "2026-10-16T20:31:05.113Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-16T20:31:05.113Z",
+      "dateLastSeen": "2026-10-16T20:31:05.113Z",
+      "sz": 14,
+      "fullName": "GPT-6 Astra (OpenAI)",
+      "nodeType": "product",
+      "proposalReason": "The flagship model announcement for GPT-6 Astra; tracks for the Tier 2 longlist as a named product entity in the model landscape."
+    },
+    {
+      "id": "arc-agi-3",
+      "label": "ARC-AGI-3",
+      "workingDef": "The third generation benchmark from the ARC Prize Foundation, designed to evaluate general reasoning and novel-environment adaptation in AI systems. GPT-6 Astra achieved 99.9% on this benchmark and surpassed human action-efficiency baselines on 96% of levels, prompting ARC Prize to describe it as 'human parity' on the benchmark. Preceded by ARC-AGI-2.",
+      "clusters": [
+        "models",
+        "technical"
+      ],
+      "suggestedRels": [
+        "benchmark-gaming",
+        "benchmark-saturation",
+        "private-eval-dataset",
+        "agi",
+        "evals"
+      ],
+      "sources": [
+        {
+          "url": "https://openai.com/index/gpt-6-astra/",
+          "domain": "openai.com",
+          "title": "GPT-6 Astra: A new generation of intelligence",
+          "sourceLabel": "OpenAI Research",
+          "publishedAt": null,
+          "firstSeen": "2026-10-16T20:31:05.113Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-16T20:31:05.113Z",
+      "dateLastSeen": "2026-10-16T20:31:05.113Z",
+      "sz": 14,
+      "fullName": "ARC-AGI-3 (ARC Prize Foundation Benchmark)",
+      "nodeType": "product",
+      "proposalReason": "A materially new benchmark name used as a key performance claim in the article."
+    },
+    {
+      "id": "scope-adherence-eval",
+      "label": "Scope Adherence Evaluation",
+      "workingDef": "An internal evaluation methodology developed by OpenAI, informed by the Hugging Face incident, to test whether a model facing a difficult or impossible task will act beyond its intended operational scope ('authorized target'). GPT-6 Astra scored 0% on unauthorized scope extension versus 48% for GPT-5.6 Sol without production safeguards. Relates to broader concerns around autonomous goal extension and stopping-criterion failure.",
+      "clusters": [
+        "safety",
+        "agentic"
+      ],
+      "suggestedRels": [
+        "autonomous-goal-extension",
+        "stopping-criterion-failure",
+        "blast-radius",
+        "evals",
+        "behavioral-audit",
+        "excessive-agency"
+      ],
+      "sources": [
+        {
+          "url": "https://openai.com/index/gpt-6-astra/",
+          "domain": "openai.com",
+          "title": "GPT-6 Astra: A new generation of intelligence",
+          "sourceLabel": "OpenAI Research",
+          "publishedAt": null,
+          "firstSeen": "2026-10-16T20:31:05.113Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-16T20:31:05.113Z",
+      "dateLastSeen": "2026-10-16T20:31:05.113Z",
+      "sz": 14,
+      "fullName": "Scope Adherence Evaluation (OpenAI Alignment Benchmark)",
+      "proposalReason": "A novel evaluation concept described substantively in the article — directly relevant to the alignment and agentic-safety terminology landscape."
+    },
+    {
+      "id": "exploitbench",
+      "label": "ExploitBench",
+      "workingDef": "A benchmark evaluating AI model capability on cybersecurity exploit tasks. GPT-6 Astra is reported to have achieved a 100% score, representing saturation of this evaluation. Its inclusion alongside math and reasoning benchmarks signals growing use of offensive-security capability as a frontier-model performance metric, raising questions about offense-defense balance.",
+      "clusters": [
+        "security",
+        "technical"
+      ],
+      "suggestedRels": [
+        "evals",
+        "benchmark-saturation",
+        "offense-defense-balance",
+        "red-teaming",
+        "uplift"
+      ],
+      "sources": [
+        {
+          "url": "https://openai.com/index/gpt-6-astra/",
+          "domain": "openai.com",
+          "title": "GPT-6 Astra: A new generation of intelligence",
+          "sourceLabel": "OpenAI Research",
+          "publishedAt": null,
+          "firstSeen": "2026-10-16T20:31:05.113Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-16T20:31:05.113Z",
+      "dateLastSeen": "2026-10-16T20:31:05.113Z",
+      "sz": 14,
+      "fullName": "ExploitBench (Cybersecurity AI Benchmark)",
+      "nodeType": "product",
+      "proposalReason": "A named benchmark used materially in the article with direct implications for the security cluster and offense-defense balance terminology."
+    },
+    {
+      "id": "independent-model-evaluation",
+      "label": "Independent Model Evaluation",
+      "workingDef": "A framework in which external organizations — independent of equity or operational ties to an AI lab — are given structured access to models, training information, and safeguards in order to assess risk and publish findings. Anthropic's implementation describes a tiered access model (narrowly scoped investigations → broader publication rights → employee-like access) drawing analogy to bank examination regimes. Distinct from internal red-teaming or audit functions in that evaluators retain independent publication rights and can characterize redactions publicly.",
+      "clusters": [
+        "safety",
+        "critical"
+      ],
+      "suggestedRels": [
+        "red-teaming",
+        "ai-red-teaming",
+        "behavioral-audit",
+        "safety-case",
+        "frontier-model",
+        "responsible-scaling-policy",
+        "evals",
+        "agent-governance"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+          "domain": "anthropic.com",
+          "title": "Anthropic update on independent evaluators",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-10-16T20:31:05.113Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-16T20:31:05.113Z",
+      "dateLastSeen": "2026-10-16T20:31:05.113Z",
+      "sz": 14,
+      "fullName": "Independent Model Evaluation (Third-Party Frontier AI Assessment)",
+      "proposalReason": "A new structural concept emerging from this article: a formalized, tiered third-party evaluation regime with enforceable publication rights, redaction transparency, and access parity to internal teams. Distinct from existing graph terms like red-teaming or evals."
+    },
+    {
+      "id": "embedded-evaluator",
+      "label": "Embedded Evaluator",
+      "workingDef": "An independent evaluator granted access to an AI company's internal systems, hardware, and personnel at a level equivalent to a company employee, modeled on the logic of resident bank examiners. Anthropic's arrangement with METR is the first publicly described instance: six METR staff operate with company hardware, office space, and access to internal tools, with publication rights Anthropic cannot veto (subject to predefined redaction categories). The concept foregrounds access depth as the key variable distinguishing meaningful external oversight from superficial review.",
+      "clusters": [
+        "safety",
+        "critical"
+      ],
+      "suggestedRels": [
+        "independent-model-evaluation",
+        "behavioral-audit",
+        "safety-case",
+        "frontier-model",
+        "responsible-scaling-policy",
+        "agent-governance",
+        "evals"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+          "domain": "anthropic.com",
+          "title": "Anthropic update on independent evaluators",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-10-16T20:31:05.113Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-16T20:31:05.113Z",
+      "dateLastSeen": "2026-10-16T20:31:05.113Z",
+      "sz": 14,
+      "fullName": "Embedded Evaluator (Resident AI Safety Examiner)",
+      "proposalReason": "A specific, named mechanism introduced by this article that doesn't map to any existing graph term. Likely to recur as other labs respond to the White House Accord or regulatory pressure for similar arrangements."
+    },
+    {
+      "id": "tiered-evaluator-access",
+      "label": "Tiered Evaluator Access",
+      "workingDef": "A structured framework for granting external AI evaluators progressively deeper access to a lab's models, training processes, and safeguards, with corresponding expansion of publication rights. Anthropic describes three tiers: (1) narrowly scoped investigations with lab-approved publication; (2) broader access with evaluator-controlled publication subject to redaction; (3) employee-like access with near-full publication rights and evaluator-characterizable redactions. The framework attempts to balance commercial sensitivity and security concerns against demands for independent, credible safety oversight.",
+      "clusters": [
+        "safety",
+        "landscape"
+      ],
+      "suggestedRels": [
+        "embedded-evaluator",
+        "independent-model-evaluation",
+        "responsible-scaling-policy",
+        "safety-case",
+        "frontier-model",
+        "pre-deployment-evaluation",
+        "evals"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+          "domain": "anthropic.com",
+          "title": "Anthropic update on independent evaluators",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-10-16T20:31:05.113Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-16T20:31:05.113Z",
+      "dateLastSeen": "2026-10-16T20:31:05.113Z",
+      "sz": 14,
+      "fullName": "Tiered Evaluator Access (AI Safety Oversight Model)",
+      "proposalReason": "A concrete governance architecture introduced in this article that operationalizes what 'meaningful third-party access' looks like. Likely to become a reference model for industry and policy discussions."
+    },
+    {
+      "id": "white-house-accord-superintelligence",
+      "label": "White House Accord on Superintelligence",
+      "workingDef": "A voluntary commitment signed by frontier AI companies, referenced in this Anthropic announcement, in which signatories pledge to partner with independent external auditors or evaluators. Mentioned as the policy backdrop for Anthropic's METR partnership. The accord's precise terms, scope, and enforcement mechanism are not described in this article; the reference suggests it is an industry-government agreement analogous to prior AI safety voluntary commitments (e.g., the 2023 White House voluntary commitments). The term 'superintelligence' in the accord's name signals a forward-looking framing, though the current evaluations cover present frontier models.",
+      "clusters": [
+        "safety",
+        "landscape"
+      ],
+      "suggestedRels": [
+        "responsible-scaling-policy",
+        "frontier-model",
+        "agent-governance",
+        "safety-case",
+        "embedded-evaluator",
+        "superintelligence"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+          "domain": "anthropic.com",
+          "title": "Anthropic update on independent evaluators",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-10-16T20:31:05.113Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-16T20:31:05.113Z",
+      "dateLastSeen": "2026-10-16T20:31:05.113Z",
+      "sz": 14,
+      "nodeType": "initiative",
+      "proposalReason": "A named policy instrument cited as the proximate cause of Anthropic's evaluator program. Worth tracking as a distinct commitment vehicle, separate from prior voluntary commitments."
     }
   ]
 }
