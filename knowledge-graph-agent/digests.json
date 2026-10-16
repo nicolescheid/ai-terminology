@@ -10,8 +10,8 @@
       "createdAt": "2026-10-16T07:49:37.774Z",
       "autoApplyHours": 72,
       "autoApplyAt": "2026-10-19T07:49:37.774Z",
-      "sentAt": null,
-      "messageId": null,
+      "sentAt": "2026-10-16T07:49:41.565Z",
+      "messageId": "<RVMy32AhNvhFj21qZoPn89xXepvVnPO5eFXl@ai-terminology.com>",
       "items": [
         {
           "n": 1,
@@ -123,7 +123,8 @@
         }
       ],
       "waitingEarlier": 0,
-      "thread": []
+      "thread": [],
+      "subject": "3 items to review [Lexi D-20261016-abed]"
     }
   ]
 }
