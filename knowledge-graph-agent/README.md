@@ -157,11 +157,11 @@ Per spec §12, the system protects Nicole from gradual disengagement — the mos
 
 ### Global pause (skips the whole run)
 
-Two conditions cause the agent to skip the entire candidate-processing block — no article fetching, no API calls, no longlist mutations. A `RUN_PAUSED` note is written so the cause is visible in `notes-for-nicole.json`.
+Two conditions cause the agent to skip the entire candidate-processing block — no article fetching, no API calls, no longlist mutations. A `RUN_PAUSED` note is written so the cause is visible in `notes-for-nicole.json`. Only the latest `RUN_PAUSED` note stays unread; earlier ones are set to `dismissed` (with `supersededByRunId`) when a new one is written.
 
 | Trigger | Cleared by |
 |---|---|
-| Any Note for Nicole with `status: "unread"` and `writtenAt > 7 days ago` (spec §12.1) | Edit those notes' status to `read` / `actioned` / `dismissed` |
+| Any Note for Nicole (other than `run_paused`) with `status: "unread"` and `writtenAt > 7 days ago` (spec §12.1) | Edit those notes' status to `read` / `actioned` / `dismissed` |
 | Manager-absent mode: `LEXI_MANAGER_ABSENT=1` env var or `config.managerAbsent: true` | Unset the env var or flag |
 
 ### Throughput caps (per-action suppression)

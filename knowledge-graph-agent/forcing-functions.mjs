@@ -19,6 +19,8 @@
 //   - Auto-trigger of manager-absent mode after 14 days of no Notes reads —
 //     requires read-timestamp tracking, not yet schema'd on note entries.
 
+import { ENTRY_TYPES } from "./notes.mjs";
+
 const SEVEN_DAYS_MS = 7 * 24 * 60 * 60 * 1000;
 
 // Inspect the notes channel + config and return an array of pause reasons.
@@ -28,7 +30,11 @@ export function detectGlobalPauseReasons(notes, config) {
   const now = Date.now();
 
   // §12.1: pause if any unread Note for Nicole is older than 7 days.
+  // RUN_PAUSED notes are excluded: they are informational echoes of the pause
+  // itself, so counting them made the pause self-renewing (each paused run
+  // wrote a new unread note that kept the next run paused, indefinitely).
   const oldUnread = (notes.entries || []).filter(n =>
+    n.type !== ENTRY_TYPES.RUN_PAUSED &&
     n.status === "unread" && new Date(n.writtenAt).getTime() < (now - SEVEN_DAYS_MS)
   );
   if (oldUnread.length > 0) {
