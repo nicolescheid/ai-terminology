@@ -9,7 +9,7 @@ recent. Then you're ready.
 This file is gitignored from the production deploy via `.assetsignore` — it
 will not appear at ai-terminology.com/HANDOFF.md.
 
-Last updated: 2026-05-11.
+Last updated: 2026-10-16 (see the 2026-10-16 section below).
 
 ---
 
@@ -95,6 +95,77 @@ Future Claude (and Past Claude) — internalise them:
   it as a command and throw `CommandNotFoundException`.
 - Editing a PAT's scopes on GitHub silently invalidates the token value.
   **Generate a fresh PAT with all scopes from the start.**
+
+---
+
+## 2026-10-16: Lexicon catch-up (pause bug, backfill, longlist review)
+
+### The issue
+- **Lexi observed nothing from late June to 2026-10-16.** The pause-on-unread
+  forcing function (spec §12.1) pauses a run when any Note for Nicole has been
+  unread for more than 7 days. But each paused run wrote a new *unread*
+  `run_paused` note, and those notes counted toward the same check. Once
+  paused, Lexi could never resume. This produced 146 `run_paused` notes.
+  The longlist has no additions after June, and every observing entry stuck
+  at a single source.
+- **Separate source problems** (diagnosed, not yet fixed):
+  - `roundRobinTake` always starts at source 1 with `maxArticlesPerRun: 6`,
+    so Import AI (source 14 of 15) never gets read.
+  - DeepMind's index page now links out to blog.google, which `sameHostOnly`
+    filters, so it returns 0 items.
+  - The HBR Feedburner feed uses namespaced `<ns6:entry>` tags, which
+    `matchBlocks` misses.
+  - OpenAI Research picks up its own index page as an article.
+
+### The fixes (all merged and deployed 2026-10-16)
+- **PR #6:** `forcing-functions.mjs` excludes `run_paused` notes from the
+  unread check. `run.mjs` dismisses older unread `run_paused` notes (tagged
+  `supersededByRunId`) when it writes a new one.
+- **PR #7:** 161 curated nodes added to `graph-data.js` from a gap report
+  (section `Q4 2026 GAP BACKFILL`). These are foundational, safety, policy,
+  agentic and work terms. Each has 2–3 refs that were fetched and checked to
+  use the term. Contested terms follow §10.
+- **PR #8:** longlist review by direct curation (route B):
+  - 32 longlist entries promoted to nodes (section `LONGLIST PROMOTIONS`).
+  - 10 fold-ins kept as `synonymOf` alias nodes. **Nicole's rule: terms are
+    never silently merged away. They become aliases of the term that
+    supersedes them.**
+  - 89 entries retired.
+  - 49 left watching.
+  - The 2026-05-30 note that was holding the pause was marked read.
+- **This PR:** Curator's Notes support hand-written entries, and this section
+  was added.
+
+### Conventions introduced (follow these)
+- **Refs may carry `url`:** `{n, src, q, url}`. The renderer ignores it, but
+  it is the provenance.
+- **Direct-curation promotions:** set the longlist entry to
+  `status: "promoted"` with `promotedToGraphNodeId`, `promotedAt`, and
+  `promotedVia` describing the route. Sources added during review carry
+  `addedBy`.
+- **Retiring means moving, not re-labelling.** Every consumer (`/observing`,
+  almanac, `promote.mjs`) treats any status other than `"promoted"` as
+  watching. Retired entries therefore move from `longlist.json` to
+  `knowledge-graph-agent/longlist-retired.json` (Tier 3 archive, with
+  `retiredReason`). Lexi treats a later re-sighting as a new candidate.
+- **Curator's Notes for changes outside the proposal pipeline:** add an entry
+  to `curators-notes/manual-entries.json` (action `curated` or
+  `maintenance`). `build-curators-notes.mjs` merges it in on every run;
+  editing `curators-notes.json` directly gets overwritten.
+- **Bump `graph-data.js?v=N` in `index.html`** whenever graph data changes, so
+  returning visitors don't get a cached copy. It is `v=4` as of this date.
+- **Large batches go through direct curation.** Lexi's proposal pipeline caps
+  pending proposals at 10 (`pendingProposalsBeforePause`). Offer Nicole both
+  routes.
+- **Check every source:** fetch it and confirm it uses the term before
+  citing it. Agent-found URLs were often 404s or didn't contain the term.
+
+### Open follow-ups
+- Fix the four source problems listed under "The issue".
+- Lexi still runs on `claude-sonnet-4-6` (`config.mjs`). Update the model.
+- `rels` on three agent-patch nodes point at retired ids (`google-flow`,
+  `gemini-enterprise-agent-platform`, `canvas-ai-mode`). This is harmless
+  because the renderer skips unknown ids, but it's untidy.
 
 ---
 
