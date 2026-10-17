@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generatedAt": "2026-10-16T20:31:05.113Z",
-    "unreadCount": 23,
-    "totalCount": 23,
+    "generatedAt": "2026-10-17T20:08:54.682Z",
+    "unreadCount": 24,
+    "totalCount": 24,
     "note": "Lexi's must-reads — articles she flags as worth Nicole reading in full. Editorial signal, not news feed. Set status to 'read' or 'dismissed' via mark-must-reads.mjs."
   },
   "entries": [
@@ -394,6 +394,23 @@
       ],
       "novelTermsInArticle": 4,
       "flaggedAt": "2026-10-16T20:31:05.113Z",
+      "status": "unread"
+    },
+    {
+      "id": "5ec807ee08146d34",
+      "title": "Steering AI Beyond Automation",
+      "url": "https://www.normaltech.ai/p/steering-ai-beyond-automation",
+      "source": "AI Snake Oil",
+      "publishedAt": "Wed, 14 Oct 2026 19:56:44 GMT",
+      "summary": "Narayanan and Unger's essay presents a research agenda for reorienting AI away from the automation paradigm toward human-AI collaboration. They introduce four technical directions: white-box agents (epistemically legible intermediate processes), low-latency real-time interaction, and implicitly others. The piece is substantively contrarian, rooting its argument in HCI history and economic evidence, and explicitly challenging the AGI-as-full-automation telos dominant in Silicon Valley.",
+      "priority": 1,
+      "reason": "A rare thing: a serious, positive research agenda — not just critique — for a genuinely different direction in AI development. Narayanan and Unger name concrete technical problems (process traces, white-box agents, real-time interaction) that the automation paradigm systematically ignores. Essential reading for anyone who wants to understand what a substantive alternative to the AGI-as-automation consensus actually looks like in practice.",
+      "clusters": [
+        "human",
+        "critical"
+      ],
+      "novelTermsInArticle": 4,
+      "flaggedAt": "2026-10-17T20:08:54.682Z",
       "status": "unread"
     }
   ]

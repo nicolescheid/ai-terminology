@@ -1,6 +1,6 @@
 {
-  "lastRunAt": "2026-10-16T20:31:05.113Z",
-  "reviewCursor": 114,
+  "lastRunAt": "2026-10-17T20:08:54.682Z",
+  "reviewCursor": 124,
   "seenArticles": {
     "93a049d060bc295b": {
       "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/tpus-8t-8i-cloud-next/",
@@ -1075,6 +1075,42 @@
       "title": "Anthropic update on independent evaluators",
       "publishedAt": null,
       "seenAt": "2026-10-16T20:31:05.113Z"
+    },
+    "5ec807ee08146d34": {
+      "url": "https://www.normaltech.ai/p/steering-ai-beyond-automation",
+      "title": "Steering AI Beyond Automation",
+      "publishedAt": "Wed, 14 Oct 2026 19:56:44 GMT",
+      "seenAt": "2026-10-17T20:08:54.682Z"
+    },
+    "1eadd5627184a89f": {
+      "url": "https://blog.google/innovation-and-ai/technology/ai/winner-future-vision-xprize/",
+      "title": "Watch the winning trailer from the Future Vision XPRIZE, The Gifted.",
+      "publishedAt": "Mon, 28 Sep 2026 19:00:00 +0000",
+      "seenAt": "2026-10-17T20:08:54.682Z"
+    },
+    "65442e708214c10b": {
+      "url": "https://openai.com/index/itau-generative-ai",
+      "title": "How Itaú is building generative AI for its entire customer base",
+      "publishedAt": "Fri, 16 Oct 2026 19:00:00 GMT",
+      "seenAt": "2026-10-17T20:08:54.682Z"
+    },
+    "fd28bb513aca5fee": {
+      "url": "https://stratechery.com/2026/home-at-last/",
+      "title": "2026.42: Home At Last",
+      "publishedAt": "Fri, 16 Oct 2026 17:42:42 +0000",
+      "seenAt": "2026-10-17T20:08:54.682Z"
+    },
+    "e946af68fd7dbe0e": {
+      "url": "https://simonwillison.net/2026/Oct/16/code-review/",
+      "title": "A quote from Addy Osmani, Morgan Westlee Lunt, and Qing Wang",
+      "publishedAt": "2026-10-16T22:06:37+00:00",
+      "seenAt": "2026-10-17T20:08:54.682Z"
+    },
+    "c9ddbc2bb8934c94": {
+      "url": "https://www.anthropic.com/news/2026-us-midterms",
+      "title": "Preparing for the 2026 US midterms",
+      "publishedAt": null,
+      "seenAt": "2026-10-17T20:08:54.682Z"
     }
   },
   "nodeReviews": {
@@ -1274,49 +1310,49 @@
       "reason": "The Anthropic independent evaluators update mentions alignment and safety evaluation processes but does not introduce new information that changes the substance of the Constitutional AI definition."
     },
     "context-compaction": {
-      "lastReviewedAt": "2026-05-31T19:15:39.230Z",
+      "lastReviewedAt": "2026-10-17T20:08:54.682Z",
       "status": "keep",
-      "reason": "No source material addresses context compaction. Definition remains accurate as stated."
+      "reason": "No source material addresses context compaction. The definition's claim about Claude Code auto-compacting at 95% utilisation is specific and plausible but unverified by these excerpts; however, no source contradicts it either. Definition remains accurate as written."
     },
     "context-drift": {
-      "lastReviewedAt": "2026-05-31T19:15:39.230Z",
-      "status": "keep",
-      "reason": "No source material addresses context drift. Definition remains accurate as stated."
+      "lastReviewedAt": "2026-10-17T20:08:54.682Z",
+      "status": "insufficient_evidence",
+      "reason": "The definition cites a specific statistic — approximately 65% of enterprise AI failures in 2025 attributed to context drift or memory loss — which is a strong empirical claim. None of the fresh sources corroborate or refute this figure. The claim should be flagged for source verification, but these excerpts provide no basis to rewrite the definition."
     },
     "context-economy": {
-      "lastReviewedAt": "2026-06-01T21:31:49.667Z",
-      "status": "insufficient_evidence",
-      "reason": "No source material addresses context economy, prompt compression, or related context design disciplines."
+      "lastReviewedAt": "2026-10-17T20:08:54.682Z",
+      "status": "keep",
+      "reason": "No source material touches on context economy or Anthropic's context engineering documentation. Definition is unchanged by these excerpts."
     },
     "context-engineering": {
-      "lastReviewedAt": "2026-06-01T21:31:49.667Z",
-      "status": "insufficient_evidence",
-      "reason": "No source material addresses context engineering as a discipline or its evolution relative to prompt engineering."
+      "lastReviewedAt": "2026-10-17T20:08:54.682Z",
+      "status": "keep",
+      "reason": "No source directly addresses context engineering as a discipline. The definition's framing is consistent with the general direction of AI practice visible in the Claude Code excerpt (continuous, structured AI involvement), but no rewrite is warranted."
     },
     "context-entropy": {
-      "lastReviewedAt": "2026-06-01T21:31:49.667Z",
-      "status": "insufficient_evidence",
-      "reason": "No source material addresses context entropy or agentic session quality degradation."
+      "lastReviewedAt": "2026-10-17T20:08:54.682Z",
+      "status": "keep",
+      "reason": "No source material addresses context entropy. Definition stands unchanged."
     },
     "context-folding": {
-      "lastReviewedAt": "2026-06-01T21:31:49.667Z",
-      "status": "insufficient_evidence",
-      "reason": "No source material addresses context folding or related architectural approaches to context management."
+      "lastReviewedAt": "2026-10-17T20:08:54.682Z",
+      "status": "keep",
+      "reason": "No source material addresses context folding. Definition stands unchanged."
     },
     "context-pollution": {
-      "lastReviewedAt": "2026-06-01T21:31:49.667Z",
-      "status": "insufficient_evidence",
-      "reason": "No source material addresses context pollution, signal-to-noise ratio in agent contexts, or related concepts."
+      "lastReviewedAt": "2026-10-17T20:08:54.682Z",
+      "status": "keep",
+      "reason": "No source material addresses context pollution. Definition stands unchanged."
     },
     "context-rot": {
-      "lastReviewedAt": "2026-06-01T21:31:49.667Z",
-      "status": "insufficient_evidence",
-      "reason": "No source material addresses context rot or the Chroma 2025 research cited in the definition."
+      "lastReviewedAt": "2026-10-17T20:08:54.682Z",
+      "status": "keep",
+      "reason": "No source material addresses context rot or the Chroma 2025 research cited. Definition stands unchanged."
     },
     "context-window": {
-      "lastReviewedAt": "2026-06-01T21:31:49.667Z",
-      "status": "insufficient_evidence",
-      "reason": "No source material provides new information about context window sizes, token limits, or related architectural properties."
+      "lastReviewedAt": "2026-10-17T20:08:54.682Z",
+      "status": "keep",
+      "reason": "No source material addresses context windows. Definition stands unchanged."
     },
     "coordinated-disclosure": {
       "lastReviewedAt": "2026-06-01T21:31:49.667Z",
@@ -2162,6 +2198,11 @@
       "lastReviewedAt": "2026-10-16T20:31:05.113Z",
       "status": "keep",
       "reason": "No source material addresses confabulation or hallucination terminology."
+    },
+    "context-graph": {
+      "lastReviewedAt": "2026-10-17T20:08:54.682Z",
+      "status": "keep",
+      "reason": "No source material addresses context graphs. Definition stands unchanged."
     }
   }
 }

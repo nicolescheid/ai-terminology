@@ -1,159 +1,144 @@
 {
-  "generatedAt": "2026-10-16T20:31:05.113Z",
+  "generatedAt": "2026-10-17T20:08:54.682Z",
   "model": "claude-sonnet-4-6",
   "sourcesConfigured": 15,
   "articlesConsidered": [
     {
-      "id": "c1e94fc831365c13",
+      "id": "5ec807ee08146d34",
+      "source": "AI Snake Oil",
+      "title": "Steering AI Beyond Automation",
+      "url": "https://www.normaltech.ai/p/steering-ai-beyond-automation",
+      "publishedAt": "Wed, 14 Oct 2026 19:56:44 GMT"
+    },
+    {
+      "id": "1eadd5627184a89f",
       "source": "Google AI Blog",
-      "title": "Gemini 4 Argon: Built to solve your hardest problems",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
-      "publishedAt": "Tue, 13 Oct 2026 16:00:00 +0000"
+      "title": "Watch the winning trailer from the Future Vision XPRIZE, The Gifted.",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/winner-future-vision-xprize/",
+      "publishedAt": "Mon, 28 Sep 2026 19:00:00 +0000"
     },
     {
-      "id": "a72d1e4da6b0e106",
+      "id": "65442e708214c10b",
       "source": "OpenAI News",
-      "title": "Bringing GPT-Rosalind to academic research labs",
-      "url": "https://openai.com/index/introducing-the-rosalind-academic-plan",
-      "publishedAt": "Thu, 15 Oct 2026 19:00:00 GMT"
+      "title": "How Itaú is building generative AI for its entire customer base",
+      "url": "https://openai.com/index/itau-generative-ai",
+      "publishedAt": "Fri, 16 Oct 2026 19:00:00 GMT"
     },
     {
-      "id": "7a37a0ad6c391dad",
+      "id": "fd28bb513aca5fee",
       "source": "Stratechery",
-      "title": "A Conversation With Ari Emanuel About Entertainment and AI",
-      "url": "https://stratechery.com/2026/a-conversation-with-ari-emanuel-about-entertainment-and-ai/",
-      "publishedAt": "Thu, 15 Oct 2026 10:00:00 +0000"
+      "title": "2026.42: Home At Last",
+      "url": "https://stratechery.com/2026/home-at-last/",
+      "publishedAt": "Fri, 16 Oct 2026 17:42:42 +0000"
     },
     {
-      "id": "6702d1aaf0afce3a",
+      "id": "e946af68fd7dbe0e",
       "source": "Simon Willison's Weblog",
-      "title": "Anthropic tells investors quarterly revenue up nearly 50% to $16.8bn ahead of IPO",
-      "url": "https://simonwillison.net/2026/Oct/15/anthropic-tells-investors/",
-      "publishedAt": "2026-10-15T13:04:03+00:00"
+      "title": "A quote from Addy Osmani, Morgan Westlee Lunt, and Qing Wang",
+      "url": "https://simonwillison.net/2026/Oct/16/code-review/",
+      "publishedAt": "2026-10-16T22:06:37+00:00"
     },
     {
-      "id": "c59c597501ce523e",
-      "source": "OpenAI Research",
-      "title": "GPT-6 Astra: A new generation of intelligence",
-      "url": "https://openai.com/index/gpt-6-astra/",
-      "publishedAt": null
-    },
-    {
-      "id": "dc9ed14da7f573e5",
+      "id": "c9ddbc2bb8934c94",
       "source": "Anthropic Newsroom",
-      "title": "Anthropic update on independent evaluators",
-      "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+      "title": "Preparing for the 2026 US midterms",
+      "url": "https://www.anthropic.com/news/2026-us-midterms",
       "publishedAt": null
     }
   ],
   "harvestedTerms": [
     {
       "article": {
-        "title": "Gemini 4 Argon: Built to solve your hardest problems",
-        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/"
+        "title": "Steering AI Beyond Automation",
+        "url": "https://www.normaltech.ai/p/steering-ai-beyond-automation"
       },
-      "summary": "Google DeepMind announces Gemini 4 Argon, a new frontier model positioned for deep, multi-step work across coding, finance, legal, cybersecurity, and science. The article documents internal use cases at Google — Chrome refactoring, Python codebase optimization, quantum chemistry speedups, and inference acceleration — framing Argon as a long-context, agentic-capable model ranking #1 on the Vals Index. The piece is primarily a product launch with supporting engineering case studies.",
+      "summary": "Narayanan and Unger's essay presents a research agenda for reorienting AI away from the automation paradigm toward human-AI collaboration. They introduce four technical directions: white-box agents (epistemically legible intermediate processes), low-latency real-time interaction, and implicitly others. The piece is substantively contrarian, rooting its argument in HCI history and economic evidence, and explicitly challenging the AGI-as-full-automation telos dominant in Silicon Valley.",
       "longlistAdditions": [
         {
-          "id": "vals-index",
-          "label": "Vals Index"
+          "id": "white-box-agent",
+          "label": "White-Box Agent"
         },
         {
-          "id": "multi-agent-visual-critique-loop",
-          "label": "Multi-Agent Visual Critique Loop"
+          "id": "process-trace",
+          "label": "Process Trace"
+        },
+        {
+          "id": "automation-agenda",
+          "label": "Automation Agenda"
+        },
+        {
+          "id": "human-ai-collaboration",
+          "label": "Human-AI Collaboration"
         }
       ],
       "longlistUpdates": [],
-      "rejections": [
+      "rejections": [],
+      "proposalsQueued": [],
+      "mustReadFlagged": {
+        "priority": 1,
+        "reason": "A rare thing: a serious, positive research agenda — not just critique — for a genuinely different direction in AI development. Narayanan and Unger name concrete technical problems (process traces, white-box agents, real-time interaction) that the automation paradigm systematically ignores. Essential reading for anyone who wants to understand what a substantive alternative to the AGI-as-automation consensus actually looks like in practice."
+      }
+    },
+    {
+      "article": {
+        "title": "Watch the winning trailer from the Future Vision XPRIZE, The Gifted.",
+        "url": "https://blog.google/innovation-and-ai/technology/ai/winner-future-vision-xprize/"
+      },
+      "summary": "Google's blog post announces the winner of the Future Vision XPRIZE — a competition for hopeful AI-enabled films co-run with Range Media Partners. The winning short film 'The Gifted' depicts an 11-year-old recreating his late mother's voice using AI to quietly serve his community. The post is primarily a press/outreach announcement with minimal terminological substance.",
+      "longlistAdditions": [
         {
-          "label": "vLLM",
-          "reason": "already in graph (label match)"
+          "id": "ai-voice-resurrection",
+          "label": "AI Voice Resurrection"
         },
         {
-          "label": "Google Antigravity",
-          "reason": "already in graph (label match)"
+          "id": "ai-filmmaking-competition",
+          "label": "AI Filmmaking Competition"
         }
       ],
+      "longlistUpdates": [],
+      "rejections": [],
       "proposalsQueued": []
     },
     {
       "article": {
-        "title": "A Conversation With Ari Emanuel About Entertainment and AI",
-        "url": "https://stratechery.com/2026/a-conversation-with-ari-emanuel-about-entertainment-and-ai/"
+        "title": "2026.42: Home At Last",
+        "url": "https://stratechery.com/2026/home-at-last/"
       },
-      "summary": "Ben Thompson's Stratechery conversation with Ari Emanuel (WME, TKO, MARI) covers AI's disruption of advertising, live entertainment's resilience, and how agentic AI threatens search-based ad models. Key framings: the 'human in the loop' as the pivot point for Google's vulnerability, personalized ad prediction inside private VMs, and live events as the non-disintermediable surface in a post-AI economy.",
-      "longlistAdditions": [
-        {
-          "id": "two-towers-advertising",
-          "label": "Two-Towers Approach"
-        },
-        {
-          "id": "generation-of-human-desire",
-          "label": "Generation of Human Desire"
-        },
-        {
-          "id": "personalized-ad-predictor",
-          "label": "Personalized Ad Predictor"
-        }
-      ],
+      "summary": "A Stratechery weekly digest covering Apple HomeView, SpaceX spectrum strategy, an interview with Ari Emanuel on AI and Hollywood, and NBA season previews. The article is primarily a content roundup with minimal substantive AI analysis.",
+      "longlistAdditions": [],
       "longlistUpdates": [
+        {
+          "id": "apple-homeview",
+          "label": "Apple HomeView",
+          "sourceAdded": true,
+          "sourceCount": 2,
+          "independentSourceCount": 1
+        },
         {
           "id": "aggregator-theory",
           "label": "Aggregator Theory",
           "sourceAdded": true,
-          "sourceCount": 2,
+          "sourceCount": 3,
           "independentSourceCount": 1
         }
       ],
       "rejections": [],
-      "proposalsQueued": [],
-      "mustReadFlagged": {
-        "priority": 2,
-        "reason": "A rare cross-domain conversation in which Thompson and Emanuel work through the economic logic of AI disruption to advertising and live entertainment in real time — the 'human in the loop as Google's last defense' framing is crisp and the generation-of-human-desire concept is genuinely generative for thinking about post-agentic business models."
-      }
-    },
-    {
-      "article": {
-        "title": "Anthropic tells investors quarterly revenue up nearly 50% to $16.8bn ahead of IPO",
-        "url": "https://simonwillison.net/2026/Oct/15/anthropic-tells-investors/"
-      },
-      "summary": "Simon Willison's link-blog post summarises an FT report on Anthropic's investor day, revealing Q1–Q3 2026 revenue figures ($4.8bn → $11.5bn → $16.8bn), operating margins, compute cost ratios, and a notable disclosure that Anthropic has materially cut back on revenue from rival labs distilling its models — previously 5–7% of revenue. The post also flags Anthropic's apparent shift away from annualized run-rate revenue as a communications metric.",
-      "longlistAdditions": [],
-      "longlistUpdates": [],
-      "rejections": [
-        {
-          "label": "Run-Rate Revenue",
-          "reason": "already in graph (label match)"
-        },
-        {
-          "label": "Distillation",
-          "reason": "already in graph (label match)"
-        }
-      ],
       "proposalsQueued": []
     },
     {
       "article": {
-        "title": "GPT-6 Astra: A new generation of intelligence",
-        "url": "https://openai.com/index/gpt-6-astra/"
+        "title": "A quote from Addy Osmani, Morgan Westlee Lunt, and Qing Wang",
+        "url": "https://simonwillison.net/2026/Oct/16/code-review/"
       },
-      "summary": "OpenAI announces GPT-6 Astra, positioning it as a step-change in frontier model capability across computer use, professional work, software engineering, and alignment. The article introduces benchmark results on ARC-AGI-3, FrontierMath Tier 4, ExploitBench, AutomationBench, and Terminal-Bench Science, and describes alignment improvements including a new evaluation modelled on the Hugging Face incident. The model is notable for its computer-use efficiency gains and its claimed ability to stay on-task and respect intended scope boundaries.",
+      "summary": "A brief Simon Willison quote-post collecting a passage from Addy Osmani, Morgan Westlee Lunt, and Qing Wang on how the Claude Code team has restructured code review — shifting from a gate at the end of the PR process to continuous AI-assisted review running inline while code is written. The key framing is that 'did a human read the code?' is an imprecise proxy for the real question of what checks best catch what risks.",
       "longlistAdditions": [
         {
-          "id": "gpt6-astra",
-          "label": "GPT-6 Astra"
+          "id": "continuous-code-review",
+          "label": "Continuous Code Review"
         },
         {
-          "id": "arc-agi-3",
-          "label": "ARC-AGI-3"
-        },
-        {
-          "id": "scope-adherence-eval",
-          "label": "Scope Adherence Evaluation"
-        },
-        {
-          "id": "exploitbench",
-          "label": "ExploitBench"
+          "id": "review-gate-dissolution",
+          "label": "Review-Gate Dissolution"
         }
       ],
       "longlistUpdates": [],
@@ -162,87 +147,83 @@
     },
     {
       "article": {
-        "title": "Anthropic update on independent evaluators",
-        "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators"
+        "title": "Preparing for the 2026 US midterms",
+        "url": "https://www.anthropic.com/news/2026-us-midterms"
       },
-      "summary": "Anthropic announces a tiered independent evaluator program, giving METR 'employee-like access' to assess frontier model risks, with SecureBio, Accenture, and Hugging Face in various partnership stages. The piece introduces concrete mechanisms for third-party AI oversight, including access tiers, publication rights, and redaction protocols — drawing an analogy to bank supervision.",
+      "summary": "Anthropic's detailed account of election safeguards for the 2026 US midterms, covering conversation analysis methodology, political bias evaluation, trusted-source integrations, and misuse policy enforcement. Introduces several election-integrity-specific practices including multi-group independent bias audits, a political evenhandedness evaluation metric, and a TurboVote/Democracy Works integration. Most content is operational and policy-specific rather than terminologically generative.",
       "longlistAdditions": [
         {
-          "id": "independent-model-evaluation",
-          "label": "Independent Model Evaluation"
+          "id": "political-evenhandedness-eval",
+          "label": "Political Evenhandedness Evaluation"
         },
         {
-          "id": "embedded-evaluator",
-          "label": "Embedded Evaluator"
+          "id": "election-integrity-policy",
+          "label": "Election Integrity Policy"
         },
         {
-          "id": "tiered-evaluator-access",
-          "label": "Tiered Evaluator Access"
+          "id": "anthropic-insights",
+          "label": "Anthropic Insights"
         },
         {
-          "id": "white-house-accord-superintelligence",
-          "label": "White House Accord on Superintelligence"
+          "id": "unsolicited-caveat-insertion",
+          "label": "Unsolicited Caveat Insertion"
         }
       ],
       "longlistUpdates": [],
       "rejections": [],
-      "proposalsQueued": [],
-      "mustReadFlagged": {
-        "priority": 2,
-        "reason": "A primary source announcement that introduces a concrete, named architecture for frontier AI oversight — tiered access, embedded evaluators with bank-examiner logic, and enforceable publication rights. The piece is short but substantive: it moves the conversation from 'labs should be audited' to 'here is what audit access actually looks like in practice,' which is a useful definitional intervention for anyone working in AI governance or safety terminology."
-      }
+      "proposalsQueued": []
     }
   ],
   "definitionReviews": [
     {
-      "id": "coding-agent",
+      "id": "context-compaction",
       "status": "keep",
-      "reason": "No source material addresses coding agents specifically. The existing definition accurately covers the concept with current examples."
+      "reason": "No source material addresses context compaction. The definition's claim about Claude Code auto-compacting at 95% utilisation is specific and plausible but unverified by these excerpts; however, no source contradicts it either. Definition remains accurate as written."
     },
     {
-      "id": "cognitive-debt",
-      "status": "keep",
-      "reason": "No source material references the MIT Media Lab cognitive debt study or updates its framing."
-    },
-    {
-      "id": "cognitive-offloading",
-      "status": "keep",
-      "reason": "No source material addresses cognitive offloading or related research."
-    },
-    {
-      "id": "cognitive-surrender",
-      "status": "keep",
-      "reason": "No source material references the Wharton cognitive surrender research or updates it."
-    },
-    {
-      "id": "comprehension-debt",
-      "status": "keep",
-      "reason": "No source material addresses comprehension debt or AI-generated code comprehension issues."
-    },
-    {
-      "id": "compute-threshold",
-      "status": "keep",
-      "reason": "No source material updates compute threshold regulatory thresholds or the debate around them."
-    },
-    {
-      "id": "computer-use",
+      "id": "context-drift",
       "status": "insufficient_evidence",
-      "reason": "GPT-6 Astra is noted as state-of-the-art on computer use, which is consistent with the existing definition, but the excerpt provides no detail that would materially refine or expand the definition."
+      "reason": "The definition cites a specific statistic — approximately 65% of enterprise AI failures in 2025 attributed to context drift or memory loss — which is a strong empirical claim. None of the fresh sources corroborate or refute this figure. The claim should be flagged for source verification, but these excerpts provide no basis to rewrite the definition."
     },
     {
-      "id": "confabulation",
+      "id": "context-economy",
       "status": "keep",
-      "reason": "No source material addresses confabulation or hallucination terminology."
+      "reason": "No source material touches on context economy or Anthropic's context engineering documentation. Definition is unchanged by these excerpts."
     },
     {
-      "id": "connectors",
+      "id": "context-engineering",
       "status": "keep",
-      "reason": "No source material addresses MCP connectors or pre-built agent integrations."
+      "reason": "No source directly addresses context engineering as a discipline. The definition's framing is consistent with the general direction of AI practice visible in the Claude Code excerpt (continuous, structured AI involvement), but no rewrite is warranted."
     },
     {
-      "id": "constitutional-ai",
+      "id": "context-entropy",
       "status": "keep",
-      "reason": "The Anthropic independent evaluators update mentions alignment and safety evaluation processes but does not introduce new information that changes the substance of the Constitutional AI definition."
+      "reason": "No source material addresses context entropy. Definition stands unchanged."
+    },
+    {
+      "id": "context-folding",
+      "status": "keep",
+      "reason": "No source material addresses context folding. Definition stands unchanged."
+    },
+    {
+      "id": "context-graph",
+      "status": "keep",
+      "reason": "No source material addresses context graphs. Definition stands unchanged."
+    },
+    {
+      "id": "context-pollution",
+      "status": "keep",
+      "reason": "No source material addresses context pollution. Definition stands unchanged."
+    },
+    {
+      "id": "context-rot",
+      "status": "keep",
+      "reason": "No source material addresses context rot or the Chroma 2025 research cited. Definition stands unchanged."
+    },
+    {
+      "id": "context-window",
+      "status": "keep",
+      "reason": "No source material addresses context windows. Definition stands unchanged."
     }
   ],
   "notes": []

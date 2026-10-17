@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generatedAt": "2026-10-17T03:37:05.523Z",
-    "unreadCount": 50,
-    "totalCount": 329,
+    "generatedAt": "2026-10-17T20:08:54.682Z",
+    "unreadCount": 51,
+    "totalCount": 330,
     "note": "Notes for Nicole — Lexi's manager channel (spec §6). Mandatory entry types fire when their triggering condition is met; discretionary entries are observations Lexi thinks Nicole should see. Set status to 'read', 'actioned', or 'dismissed' as appropriate."
   },
   "entries": [
@@ -8444,6 +8444,26 @@
       },
       "suggestedAction": "Either revise the working definition to name the contestation (who uses it to mean what), or confirm this term doesn't warrant the contested treatment in this case.",
       "readAt": "2026-10-17T03:37:05.523Z"
+    },
+    {
+      "id": "26450d51a9e9fa4d",
+      "type": "contested_cluster_omission",
+      "writtenAt": "2026-10-17T20:08:54.682Z",
+      "runId": "ee8f0a43-fef5-4dee-87ba-a1eaabc34821",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Contested cluster term added without naming the contestation: 'Process Trace'",
+      "details": "The term 'Process Trace' matches the contested-cluster pattern 'responsible AI' (per spec §10), but the working definition does not appear to acknowledge that the term is contested or that different camps use it differently. Per spec §6 entry type 5, this requires review before any move toward graph promotion.",
+      "evidence": {
+        "entryId": "process-trace",
+        "label": "Process Trace",
+        "fullName": "Process Trace (AI Training Data for Intermediate Steps)",
+        "matchedContestedTerm": "responsible AI",
+        "workingDef": "Structured records of the intermediate steps, revisions, and decisions involved in producing a work product — used as training data to enable AI models to reproduce or make legible the process of a task, not just its final output. Narayanan and Unger argue that the outsized AI progress in software coding is partly explained by the incidental availability of process traces in open-source repositories (commits, diffs, review threads), and that the absence of equivalent data for law, medicine, and science is a structural obstacle to developing white-box agents in those domains. The term surfaces a data-infrastructure gap at the heart of the collaborative-AI agenda.",
+        "sourceUrl": "https://www.normaltech.ai/p/steering-ai-beyond-automation",
+        "sourceLabel": "AI Snake Oil"
+      },
+      "suggestedAction": "Either revise the working definition to name the contestation (who uses it to mean what), or confirm this term doesn't warrant the contested treatment in this case."
     }
   ],
   "usedLinks": {

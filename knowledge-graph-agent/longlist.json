@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-10-16T20:31:05.113Z",
-    "entryCount": 152,
+    "generatedAt": "2026-10-17T20:08:54.682Z",
+    "entryCount": 164,
     "note": "Lexi-managed Tier 2 longlist — terms under observation, awaiting evidence to support promotion to the graph (Tier 1)."
   },
   "entries": [
@@ -5039,12 +5039,20 @@
           "sourceLabel": "Stratechery",
           "publishedAt": "Thu, 15 Oct 2026 10:00:00 +0000",
           "firstSeen": "2026-10-16T20:31:05.113Z"
+        },
+        {
+          "url": "https://stratechery.com/2026/home-at-last/",
+          "domain": "stratechery.com",
+          "title": "2026.42: Home At Last",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Fri, 16 Oct 2026 17:42:42 +0000",
+          "firstSeen": "2026-10-17T20:08:54.682Z"
         }
       ],
-      "sourceCount": 2,
+      "sourceCount": 3,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-06-02T20:47:42.877Z",
-      "dateLastSeen": "2026-10-16T20:31:05.113Z",
+      "dateLastSeen": "2026-10-17T20:08:54.682Z",
       "sz": 14,
       "fullName": "Aggregator Theory (Stratechery)",
       "proposalReason": "A named analytic framework with significant ongoing use in AI business-model discussions; not yet in the graph and surfaces repeatedly in AI-era platform-strategy writing."
@@ -5738,12 +5746,20 @@
           "sourceLabel": "Stratechery",
           "publishedAt": "Wed, 14 Oct 2026 10:00:00 +0000",
           "firstSeen": "2026-10-16T07:47:38.193Z"
+        },
+        {
+          "url": "https://stratechery.com/2026/home-at-last/",
+          "domain": "stratechery.com",
+          "title": "2026.42: Home At Last",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Fri, 16 Oct 2026 17:42:42 +0000",
+          "firstSeen": "2026-10-17T20:08:54.682Z"
         }
       ],
-      "sourceCount": 1,
+      "sourceCount": 2,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-10-16T07:47:38.193Z",
-      "dateLastSeen": "2026-10-16T07:47:38.193Z",
+      "dateLastSeen": "2026-10-17T20:08:54.682Z",
       "sz": 14,
       "nodeType": "product",
       "proposalReason": "First sighting of Apple HomeView in the knowledge graph — worth tracking as Apple's entry into AI-native home hardware."
@@ -6516,6 +6532,394 @@
       "sz": 14,
       "nodeType": "initiative",
       "proposalReason": "A named policy instrument cited as the proximate cause of Anthropic's evaluator program. Worth tracking as a distinct commitment vehicle, separate from prior voluntary commitments."
+    },
+    {
+      "id": "white-box-agent",
+      "label": "White-Box Agent",
+      "workingDef": "A proposed class of AI agents — articulated by Narayanan and Unger in their collaborative-AI research agenda — that explicitly reveal intermediate processes (sources, assumptions, methods, uncertainties, process artefacts) to human users, contrasted with the dominant 'black-box' paradigm where only final output is exposed. White-box agents are positioned as a technical prerequisite for meaningful human-AI collaboration: if intermediate steps are visible, humans can directly interact with and steer them rather than merely delegate to the system. Requires new training infrastructure, notably process-trace data for professional domains (law, medicine, science) analogous to what open-source code repositories provided for software.",
+      "clusters": [
+        "agentic",
+        "human"
+      ],
+      "suggestedRels": [
+        "agent",
+        "human-in-the-loop",
+        "centaurs-and-cyborgs",
+        "interpretability",
+        "cognitive-offloading"
+      ],
+      "sources": [
+        {
+          "url": "https://www.normaltech.ai/p/steering-ai-beyond-automation",
+          "domain": "normaltech.ai",
+          "title": "Steering AI Beyond Automation",
+          "sourceLabel": "AI Snake Oil",
+          "publishedAt": "Wed, 14 Oct 2026 19:56:44 GMT",
+          "firstSeen": "2026-10-17T20:08:54.682Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-17T20:08:54.682Z",
+      "dateLastSeen": "2026-10-17T20:08:54.682Z",
+      "sz": 14,
+      "fullName": "White-Box Agent (Epistemically Legible AI Agent)",
+      "proposalReason": "Introduces a crisp, technically-grounded framing that contrasts with the black-box norm — worth tracking as a potential design vocabulary term if the collaborative-AI research agenda gains traction."
+    },
+    {
+      "id": "process-trace",
+      "label": "Process Trace",
+      "workingDef": "Structured records of the intermediate steps, revisions, and decisions involved in producing a work product — used as training data to enable AI models to reproduce or make legible the process of a task, not just its final output. Narayanan and Unger argue that the outsized AI progress in software coding is partly explained by the incidental availability of process traces in open-source repositories (commits, diffs, review threads), and that the absence of equivalent data for law, medicine, and science is a structural obstacle to developing white-box agents in those domains. The term surfaces a data-infrastructure gap at the heart of the collaborative-AI agenda.",
+      "clusters": [
+        "technical",
+        "human"
+      ],
+      "suggestedRels": [
+        "training",
+        "synthetic-data",
+        "white-box-agent",
+        "chain-of-thought",
+        "task-decomposition"
+      ],
+      "sources": [
+        {
+          "url": "https://www.normaltech.ai/p/steering-ai-beyond-automation",
+          "domain": "normaltech.ai",
+          "title": "Steering AI Beyond Automation",
+          "sourceLabel": "AI Snake Oil",
+          "publishedAt": "Wed, 14 Oct 2026 19:56:44 GMT",
+          "firstSeen": "2026-10-17T20:08:54.682Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-17T20:08:54.682Z",
+      "dateLastSeen": "2026-10-17T20:08:54.682Z",
+      "sz": 14,
+      "fullName": "Process Trace (AI Training Data for Intermediate Steps)",
+      "proposalReason": "Names a concrete data-infrastructure concept that explains why coding agents advanced faster than agents in other professions — useful framing for anyone thinking about AI training data strategy."
+    },
+    {
+      "id": "automation-agenda",
+      "label": "Automation Agenda",
+      "workingDef": "A framing used by Narayanan and Unger to describe what they characterise as the dominant Silicon Valley research program: the assumption that AI's primary — and near-total — purpose is the replacement of human labour with autonomous systems, culminating in AGI as a machine capable of doing everything a human can do. The automation agenda is contrasted with a human-augmentation or collaborative-AI alternative. The authors argue the bias toward automation is not purely economic but is embedded in CS culture and curricula. The term functions as critical shorthand for a contested set of priorities, not a neutral description — automation proponents would dispute that 'agenda' accurately characterises what is a natural direction of capability development.",
+      "clusters": [
+        "critical",
+        "work"
+      ],
+      "suggestedRels": [
+        "agi",
+        "digital-labor",
+        "ai-exposure",
+        "dark-factory",
+        "autonomous-agent",
+        "reverse-centaur"
+      ],
+      "sources": [
+        {
+          "url": "https://www.normaltech.ai/p/steering-ai-beyond-automation",
+          "domain": "normaltech.ai",
+          "title": "Steering AI Beyond Automation",
+          "sourceLabel": "AI Snake Oil",
+          "publishedAt": "Wed, 14 Oct 2026 19:56:44 GMT",
+          "firstSeen": "2026-10-17T20:08:54.682Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-17T20:08:54.682Z",
+      "dateLastSeen": "2026-10-17T20:08:54.682Z",
+      "sz": 14,
+      "fullName": "Automation Agenda (Silicon Valley AI Program)",
+      "proposalReason": "Gives a name to the often-unnamed set of assumptions driving mainstream AI research priorities — useful vocabulary for anyone trying to articulate what exactly the critics of full automation are pushing back against."
+    },
+    {
+      "id": "human-ai-collaboration",
+      "label": "Human-AI Collaboration",
+      "workingDef": "A research orientation and design philosophy — contrasted with the automation paradigm — in which AI systems are built to amplify and work alongside human workers rather than replace them. Rooted in the HCI tradition and advocated here by Narayanan and Unger as an underinvested alternative to the AGI-as-full-automation telos. Proponents argue it is not merely an ethical preference but that maximalist automation is technically and economically unpromising for many domains. The framing is contested: automation proponents argue that sufficiently capable systems make the augmentation/automation distinction dissolve (anything a human can delegate is automation), while HCI-rooted researchers argue the distinction is real and design-consequential, shaping which technical problems get prioritised.",
+      "clusters": [
+        "human",
+        "work"
+      ],
+      "suggestedRels": [
+        "centaurs-and-cyborgs",
+        "human-in-the-loop",
+        "cognitive-offloading",
+        "superagency",
+        "jagged-frontier",
+        "deskilling"
+      ],
+      "sources": [
+        {
+          "url": "https://www.normaltech.ai/p/steering-ai-beyond-automation",
+          "domain": "normaltech.ai",
+          "title": "Steering AI Beyond Automation",
+          "sourceLabel": "AI Snake Oil",
+          "publishedAt": "Wed, 14 Oct 2026 19:56:44 GMT",
+          "firstSeen": "2026-10-17T20:08:54.682Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-17T20:08:54.682Z",
+      "dateLastSeen": "2026-10-17T20:08:54.682Z",
+      "sz": 14,
+      "fullName": "Human-AI Collaboration (Augmentation-Oriented AI Design)",
+      "proposalReason": "The canonical framing term for the alternative-to-automation position — worth tracking as a counter-concept to agentic autonomy discourse."
+    },
+    {
+      "id": "ai-voice-resurrection",
+      "label": "AI Voice Resurrection",
+      "workingDef": "The use of AI voice synthesis and persona modelling to reconstruct the voice, manner, or apparent presence of a deceased person. Appears in creative and memorial contexts — as in 'The Gifted,' where a child recreates a dead parent's voice — as well as commercial grief-tech products. The practice raises unresolved consent, ethics, and identity questions: critics flag the absence of the deceased's consent and risks of emotional manipulation, while proponents frame it as a natural extension of memorial and archival practice.",
+      "clusters": [
+        "human",
+        "critical"
+      ],
+      "suggestedRels": [
+        "voice-ai",
+        "deepfake",
+        "ai-companion",
+        "eliza-effect",
+        "memory"
+      ],
+      "sources": [
+        {
+          "url": "https://blog.google/innovation-and-ai/technology/ai/winner-future-vision-xprize/",
+          "domain": "blog.google",
+          "title": "Watch the winning trailer from the Future Vision XPRIZE, The Gifted.",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Mon, 28 Sep 2026 19:00:00 +0000",
+          "firstSeen": "2026-10-17T20:08:54.682Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-17T20:08:54.682Z",
+      "dateLastSeen": "2026-10-17T20:08:54.682Z",
+      "sz": 16,
+      "proposalReason": "A genuinely fraught concept at the intersection of AI voice synthesis, grief, consent, and identity — worth tracking as it appears increasingly in both creative and commercial contexts."
+    },
+    {
+      "id": "ai-filmmaking-competition",
+      "label": "AI Filmmaking Competition",
+      "workingDef": "A structured contest format, typically run by an organisation or sponsor, calling for short films that envision AI-enabled futures. Examples include the Future Vision XPRIZE (Google / Range Media Partners, 2026). Distinct from AI-assisted filmmaking tools; the format functions as a form of AI narrative agenda-setting, selecting and amplifying particular visions of technology's social role.",
+      "clusters": [
+        "landscape",
+        "human"
+      ],
+      "suggestedRels": [
+        "ai-assisted-filmmaking",
+        "generative-ai"
+      ],
+      "sources": [
+        {
+          "url": "https://blog.google/innovation-and-ai/technology/ai/winner-future-vision-xprize/",
+          "domain": "blog.google",
+          "title": "Watch the winning trailer from the Future Vision XPRIZE, The Gifted.",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Mon, 28 Sep 2026 19:00:00 +0000",
+          "firstSeen": "2026-10-17T20:08:54.682Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-17T20:08:54.682Z",
+      "dateLastSeen": "2026-10-17T20:08:54.682Z",
+      "sz": 16,
+      "proposalReason": "Tracks the growing use of prize competitions to shape public AI narratives — a soft-power mechanism worth observing as labs invest in cultural framing."
+    },
+    {
+      "id": "continuous-code-review",
+      "label": "Continuous Code Review",
+      "workingDef": "A code-review pattern in which AI (typically a coding agent like Claude Code) reviews and flags issues continuously as code is written, rather than at a discrete gate (e.g., pull-request open). Framed by the Claude Code team as replacing the 'did a human read it?' proxy with a more precise question: which check — automated or human — is best suited to catch which risk? Under this model, most routine mistakes are caught before human review, which is then reserved for higher-level judgment. Closely related to continuous integration and shift-left testing, but distinct in using LLM inference rather than deterministic static analysis.",
+      "clusters": [
+        "agentic",
+        "work"
+      ],
+      "suggestedRels": [
+        "claude-code",
+        "coding-agent",
+        "agentic-engineering",
+        "continuous-ai",
+        "human-in-the-loop"
+      ],
+      "sources": [
+        {
+          "url": "https://simonwillison.net/2026/Oct/16/code-review/",
+          "domain": "simonwillison.net",
+          "title": "A quote from Addy Osmani, Morgan Westlee Lunt, and Qing Wang",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-10-16T22:06:37+00:00",
+          "firstSeen": "2026-10-17T20:08:54.682Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-17T20:08:54.682Z",
+      "dateLastSeen": "2026-10-17T20:08:54.682Z",
+      "sz": 14,
+      "fullName": "Continuous Code Review (AI-Assisted)",
+      "proposalReason": "Genuinely novel framing for a familiar practice — reframes code review not as human-gate vs. AI-gate but as a question of which check is right for which risk, and repositions human attention as a scarce resource to be allocated rather than a mandatory step."
+    },
+    {
+      "id": "review-gate-dissolution",
+      "label": "Review-Gate Dissolution",
+      "workingDef": "The structural shift in software development workflows in which pull-request-style end-of-cycle code review (the 'gate at the end of the road') is dissolved or substantially reduced as AI coding agents provide inline, continuous review before human review is invoked. Observed in AI-native development teams (e.g., the Claude Code team at Anthropic) and related to broader patterns of agentic engineering changing when and how human oversight is applied.",
+      "clusters": [
+        "work",
+        "agentic"
+      ],
+      "suggestedRels": [
+        "continuous-ai",
+        "agentic-engineering",
+        "claude-code",
+        "human-in-the-loop",
+        "coding-agent"
+      ],
+      "sources": [
+        {
+          "url": "https://simonwillison.net/2026/Oct/16/code-review/",
+          "domain": "simonwillison.net",
+          "title": "A quote from Addy Osmani, Morgan Westlee Lunt, and Qing Wang",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-10-16T22:06:37+00:00",
+          "firstSeen": "2026-10-17T20:08:54.682Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-17T20:08:54.682Z",
+      "dateLastSeen": "2026-10-17T20:08:54.682Z",
+      "sz": 14,
+      "fullName": "Review-Gate Dissolution (AI Code Review)",
+      "proposalReason": "A concise label for a workflow-structural shift that is distinct from just 'AI code review' — it names the architectural change to when review happens, not merely who does it."
+    },
+    {
+      "id": "political-evenhandedness-eval",
+      "label": "Political Evenhandedness Evaluation",
+      "workingDef": "A structured evaluation methodology used to measure whether a language model responds to political topics without favoring any particular political viewpoint. As described by Anthropic, it involves matched-prompt testing from left- and right-leaning perspectives, uneven-hedging detection, and independent third-party review groups using different methodologies. Distinct from general safety evals in its focus on partisan symmetry and free-expression norms in political discourse.",
+      "clusters": [
+        "safety"
+      ],
+      "suggestedRels": [
+        "evals",
+        "guardrails",
+        "behavioral-audit",
+        "llm-as-a-judge"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/2026-us-midterms",
+          "domain": "anthropic.com",
+          "title": "Preparing for the 2026 US midterms",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-10-17T20:08:54.682Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-17T20:08:54.682Z",
+      "dateLastSeen": "2026-10-17T20:08:54.682Z",
+      "sz": 14,
+      "fullName": "Political Evenhandedness Evaluation (AI Model Political Bias Assessment)",
+      "proposalReason": "A reusable, named methodology class for assessing political bias in LLMs — distinct from general safety evals and increasingly relevant as AI systems are used in electoral contexts."
+    },
+    {
+      "id": "election-integrity-policy",
+      "label": "Election Integrity Policy",
+      "workingDef": "A category of usage policy specific to AI platforms governing how models may be used in electoral contexts. As articulated by Anthropic, such policies prohibit uses like spreading false candidate information, impersonating election officials, suppressing voter turnout, creating fake social media profiles, or mass-producing artificial engagement — while permitting legitimate campaign uses such as drafting communications and analyzing turnout data. Represents an emerging genre of AI governance instrument tied to democratic-process risk.",
+      "clusters": [
+        "safety",
+        "critical"
+      ],
+      "suggestedRels": [
+        "agent-governance",
+        "guardrails",
+        "shadow-ai",
+        "ai-washing"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/2026-us-midterms",
+          "domain": "anthropic.com",
+          "title": "Preparing for the 2026 US midterms",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-10-17T20:08:54.682Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-17T20:08:54.682Z",
+      "dateLastSeen": "2026-10-17T20:08:54.682Z",
+      "sz": 14,
+      "fullName": "Election Integrity Policy (AI Platform)",
+      "proposalReason": "A distinct governance instrument class worth tracking as AI platforms formalize their election-specific rules separate from general usage policies."
+    },
+    {
+      "id": "anthropic-insights",
+      "label": "Anthropic Insights",
+      "workingDef": "An internal analysis capability developed by Anthropic to conduct privacy-preserving analysis of large samples of Claude conversations. Used to surface usage patterns, classify conversation topics in a bottom-up manner, and identify clusters of user intent — as demonstrated in its application to 250,000 US Claude.ai conversations to understand political and election-related usage. Functions as an observability and policy-research tool rather than a user-facing product.",
+      "clusters": [
+        "tools",
+        "safety"
+      ],
+      "suggestedRels": [
+        "ml-observability",
+        "evals",
+        "claude-ai"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/2026-us-midterms",
+          "domain": "anthropic.com",
+          "title": "Preparing for the 2026 US midterms",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-10-17T20:08:54.682Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-17T20:08:54.682Z",
+      "dateLastSeen": "2026-10-17T20:08:54.682Z",
+      "sz": 14,
+      "fullName": "Anthropic Insights (Conversation Analysis Tool)",
+      "nodeType": "product",
+      "proposalReason": "A named internal tooling concept that functions as an ML observability and policy-research instrument — worth tracking as AI labs increasingly rely on such systems for governance and audit purposes."
+    },
+    {
+      "id": "unsolicited-caveat-insertion",
+      "label": "Unsolicited Caveat Insertion",
+      "workingDef": "A model behavior failure mode in which an AI system adds unprompted caveats, counterarguments, or balancing language to responses on political or advocacy topics — even when the user did not request balance. Identified by Anthropic's independent evaluators (Future of Free Speech, Collective Intelligence Project) as a recurring issue where Claude inserted opposing viewpoints into advocacy emails or added hedges to direct yes/no questions. Related to sycophancy and over-refusal patterns, but distinct in that the model responds but editorializes rather than refusing.",
+      "clusters": [
+        "critical",
+        "safety"
+      ],
+      "suggestedRels": [
+        "sycophancy",
+        "guardrails",
+        "political-evenhandedness-eval",
+        "evals"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/2026-us-midterms",
+          "domain": "anthropic.com",
+          "title": "Preparing for the 2026 US midterms",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-10-17T20:08:54.682Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-17T20:08:54.682Z",
+      "dateLastSeen": "2026-10-17T20:08:54.682Z",
+      "sz": 14,
+      "fullName": "Unsolicited Caveat Insertion (AI Political Response Failure Mode)",
+      "proposalReason": "A crisp, named failure mode distinct from hallucination, refusal, or sycophancy — captures a specific way that AI political responses can be paternalistic rather than neutral."
     }
   ]
 }
