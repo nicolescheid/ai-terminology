@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-10-17T20:10:48.765Z",
+  "generatedAt": "2026-10-18T20:09:12.610Z",
   "firstRunAt": "2026-04-27T01:07:31.335Z",
   "phase": 1,
   "headline": {
-    "articlesRead": 185,
-    "daysRunning": 174,
-    "longlistSize": 85,
+    "articlesRead": 191,
+    "daysRunning": 175,
+    "longlistSize": 98,
     "graphSize": 435
   },
   "thisWeek": {
-    "articlesFetched": 18,
-    "longlistAdded": 36,
-    "sourcesAdded": 1,
+    "articlesFetched": 24,
+    "longlistAdded": 49,
+    "sourcesAdded": 2,
     "promotionsToGraph": 0,
     "proposalsQueued": 2,
     "auditFlags": 0,
-    "notesAdded": 14
+    "notesAdded": 16
   },
   "almostThere": [
     {
@@ -27,7 +27,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 2,
-      "daysOnLonglist": 166,
+      "daysOnLonglist": 167,
       "domains": [
         "openai.com",
         "simonwillison.net"
@@ -45,9 +45,26 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 136,
+      "daysOnLonglist": 137,
       "domains": [
         "stratechery.com"
+      ],
+      "gapCount": 1,
+      "gap": "needs 1 more independent source"
+    },
+    {
+      "id": "societal-resilience",
+      "label": "Societal Resilience",
+      "fullName": "Societal Resilience (AI Risk Governance)",
+      "clusters": [
+        "safety",
+        "critical"
+      ],
+      "sourceCount": 2,
+      "independentSources": 1,
+      "daysOnLonglist": 141,
+      "domains": [
+        "normaltech.ai"
       ],
       "gapCount": 1,
       "gap": "needs 1 more independent source"
@@ -62,7 +79,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 161,
+      "daysOnLonglist": 162,
       "domains": [
         "blog.google"
       ],
@@ -79,7 +96,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 157,
+      "daysOnLonglist": 158,
       "domains": [
         "theverge.com"
       ],
@@ -96,7 +113,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 140,
+      "daysOnLonglist": 141,
       "domains": [
         "blog.google"
       ],
@@ -113,12 +130,12 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 1,
+      "daysOnLonglist": 2,
       "domains": [
         "stratechery.com"
       ],
       "gapCount": 2,
-      "gap": "needs 1 more independent source; 2 more days on longlist"
+      "gap": "needs 1 more independent source; 1 more day on longlist"
     },
     {
       "id": "self-verification",
@@ -131,7 +148,7 @@
       ],
       "sourceCount": 1,
       "independentSources": 1,
-      "daysOnLonglist": 173,
+      "daysOnLonglist": 174,
       "domains": [
         "anthropic.com"
       ],
@@ -149,7 +166,7 @@
       ],
       "sourceCount": 1,
       "independentSources": 1,
-      "daysOnLonglist": 173,
+      "daysOnLonglist": 174,
       "domains": [
         "anthropic.com"
       ],
@@ -167,25 +184,7 @@
       ],
       "sourceCount": 1,
       "independentSources": 1,
-      "daysOnLonglist": 170,
-      "domains": [
-        "openai.com"
-      ],
-      "gapCount": 3,
-      "gap": "needs 1 more source; needs 1 more independent source; no source seen in past 90d"
-    },
-    {
-      "id": "sft-data-contamination",
-      "label": "SFT Data Contamination",
-      "fullName": "Supervised Fine-Tuning Data Contamination",
-      "clusters": [
-        "technical",
-        "models",
-        "safety"
-      ],
-      "sourceCount": 1,
-      "independentSources": 1,
-      "daysOnLonglist": 170,
+      "daysOnLonglist": 171,
       "domains": [
         "openai.com"
       ],
@@ -197,11 +196,11 @@
     "byDomain": [
       {
         "domain": "openai.com",
-        "count": 45
+        "count": 46
       },
       {
         "domain": "simonwillison.net",
-        "count": 27
+        "count": 28
       },
       {
         "domain": "stratechery.com",
@@ -209,11 +208,11 @@
       },
       {
         "domain": "blog.google",
-        "count": 21
+        "count": 22
       },
       {
         "domain": "anthropic.com",
-        "count": 20
+        "count": 21
       },
       {
         "domain": "huggingface.co",
@@ -225,11 +224,11 @@
       },
       {
         "domain": "lastweekin.ai",
-        "count": 8
+        "count": 9
       },
       {
         "domain": "normaltech.ai",
-        "count": 6
+        "count": 7
       },
       {
         "domain": "hbr.org",
@@ -336,31 +335,31 @@
         "id": "safety",
         "label": "Safety",
         "hex": "#FF6090",
-        "count": 27
+        "count": 33
       },
       {
         "id": "technical",
         "label": "Technical",
         "hex": "#D0D040",
-        "count": 24
+        "count": 26
       },
       {
         "id": "agentic",
         "label": "Agentic Systems",
         "hex": "#FF9040",
-        "count": 22
+        "count": 24
       },
       {
         "id": "critical",
         "label": "Critical / Hype",
         "hex": "#FF5555",
-        "count": 20
+        "count": 22
       },
       {
         "id": "models",
         "label": "Models",
         "hex": "#FFB060",
-        "count": 16
+        "count": 18
       },
       {
         "id": "human",
@@ -378,7 +377,19 @@
         "id": "security",
         "label": "AI Security",
         "hex": "#E05050",
-        "count": 9
+        "count": 10
+      },
+      {
+        "id": "landscape",
+        "label": "Model Landscape",
+        "hex": "#D0A050",
+        "count": 10
+      },
+      {
+        "id": "business",
+        "label": "Business Reality",
+        "hex": "#48C888",
+        "count": 10
       },
       {
         "id": "work",
@@ -387,28 +398,16 @@
         "count": 9
       },
       {
-        "id": "landscape",
-        "label": "Model Landscape",
-        "hex": "#D0A050",
-        "count": 8
-      },
-      {
-        "id": "business",
-        "label": "Business Reality",
-        "hex": "#48C888",
-        "count": 7
-      },
-      {
         "id": "companies",
         "label": "Companies",
         "hex": "#9090A8",
-        "count": 4
+        "count": 9
       },
       {
         "id": "autonomy",
         "label": "Autonomy Spectrum",
         "hex": "#58B8E8",
-        "count": 2
+        "count": 3
       }
     ]
   },

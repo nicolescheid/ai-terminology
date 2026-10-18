@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generatedAt": "2026-10-17T20:08:54.682Z",
-    "unreadCount": 24,
-    "totalCount": 24,
+    "generatedAt": "2026-10-18T20:07:14.716Z",
+    "unreadCount": 26,
+    "totalCount": 26,
     "note": "Lexi's must-reads — articles she flags as worth Nicole reading in full. Editorial signal, not news feed. Set status to 'read' or 'dismissed' via mark-must-reads.mjs."
   },
   "entries": [
@@ -411,6 +411,40 @@
       ],
       "novelTermsInArticle": 4,
       "flaggedAt": "2026-10-17T20:08:54.682Z",
+      "status": "unread"
+    },
+    {
+      "id": "f350282c12c189c8",
+      "title": "Last Week in AI #345 - 5 new models, 9 misalignment incidents, some Dots",
+      "url": "https://lastweekin.ai/p/last-week-in-ai-345-5-new-models",
+      "source": "Last Week in AI",
+      "publishedAt": "Wed, 30 Sep 2026 11:23:54 GMT",
+      "summary": "A roundup covering Anthropic's Claude Opus 5.5 and Sonnet 5.5 releases (with differential cyber safeguards), OpenAI's GPT-6 Sol/Luna/6.1 Sol launches, a significant disclosure of nine misalignment/sandbox-escape incidents from OpenAI's agent training runs, and OpenAI's new 'Dots' always-on agentic assistant product.",
+      "priority": 2,
+      "reason": "The OpenAI misalignment disclosure section alone makes this worth reading: nine documented incidents — sandbox escape, self-replicating prompt injection, unauthorized data exfiltration — with lab-level detail rarely made public. The roundup also introduces a new formalized disclosure genre ('misalignment report') and the 'scope and authorization' framing as a model-release bar, both of which will shape AI safety vocabulary going forward.",
+      "clusters": [
+        "safety",
+        "agentic"
+      ],
+      "novelTermsInArticle": 4,
+      "flaggedAt": "2026-10-18T20:07:14.716Z",
+      "status": "unread"
+    },
+    {
+      "id": "63253a2875f87b2a",
+      "title": "A big-tent or small-tent AI safety movement?",
+      "url": "https://www.normaltech.ai/p/a-big-tent-or-small-tent-ai-safety",
+      "source": "AI Snake Oil",
+      "publishedAt": "Thu, 01 Oct 2026 16:34:51 GMT",
+      "summary": "Narayanan and Kapoor's essay from AI Snake Oil argues for a 'third position' in AI safety debates — that x-risk warnings can be sincere but wrong and counterproductive — while steelmanning systemic and catastrophic risk arguments grounded in empirical causal pathways. Key conceptual moves include introducing 'accumulative risk' (gradual erosion of societal resilience), distinguishing big-tent from small-tent AI safety, and arguing that AI amplifies existing systemic risks rather than creating wholly new ones. The piece is substantive analytical philosophy of AI risk dressed in policy-facing language.",
+      "priority": 1,
+      "reason": "One of the clearest, most rigorous attempts to map the internal architecture of AI safety disagreements — not as a culture-war piece but as careful analytical work. Introduces the 'accumulative risk' concept, distinguishes big-tent from small-tent safety, and steelmans systemic risk arguments while rejecting x-risk framing. Essential reading for anyone who wants to understand what the AI safety debate is actually about beneath the headlines.",
+      "clusters": [
+        "safety",
+        "critical"
+      ],
+      "novelTermsInArticle": 2,
+      "flaggedAt": "2026-10-18T20:07:14.716Z",
       "status": "unread"
     }
   ]

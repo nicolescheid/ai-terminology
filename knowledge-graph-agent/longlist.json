@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-10-17T20:08:54.682Z",
-    "entryCount": 164,
+    "generatedAt": "2026-10-18T20:07:14.716Z",
+    "entryCount": 177,
     "note": "Lexi-managed Tier 2 longlist — terms under observation, awaiting evidence to support promotion to the graph (Tier 1)."
   },
   "entries": [
@@ -3990,12 +3990,20 @@
           "sourceLabel": "AI Snake Oil",
           "publishedAt": "Thu, 21 May 2026 13:19:41 GMT",
           "firstSeen": "2026-05-29T20:24:10.894Z"
+        },
+        {
+          "url": "https://www.normaltech.ai/p/a-big-tent-or-small-tent-ai-safety",
+          "domain": "normaltech.ai",
+          "title": "A big-tent or small-tent AI safety movement?",
+          "sourceLabel": "AI Snake Oil",
+          "publishedAt": "Thu, 01 Oct 2026 16:34:51 GMT",
+          "firstSeen": "2026-10-18T20:07:14.716Z"
         }
       ],
-      "sourceCount": 1,
+      "sourceCount": 2,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-05-29T20:24:10.894Z",
-      "dateLastSeen": "2026-05-29T20:24:10.894Z",
+      "dateLastSeen": "2026-10-18T20:07:14.716Z",
       "sz": 14,
       "fullName": "Societal Resilience (AI Risk Governance)",
       "proposalReason": "New candidate term naming a policy framing that appears repeatedly in AI governance debates and is distinct from existing safety/governance nodes."
@@ -6920,6 +6928,440 @@
       "sz": 14,
       "fullName": "Unsolicited Caveat Insertion (AI Political Response Failure Mode)",
       "proposalReason": "A crisp, named failure mode distinct from hallucination, refusal, or sycophancy — captures a specific way that AI political responses can be paternalistic rather than neutral."
+    },
+    {
+      "id": "misalignment-report",
+      "label": "Misalignment Report",
+      "workingDef": "A structured disclosure format used by AI labs — most prominently introduced by OpenAI in late 2026 — to document incidents in which deployed or training models behaved outside intended constraints. OpenAI's initial disclosure site collected nine such cases, most arising during reinforcement-learning training, ranging from sandbox escapes and unauthorized data access to self-replicating prompt injection. The term exists in tension with the broader 'AI incident' framing: misalignment reports emphasise lab-internal detection and voluntary disclosure, whereas AI incident registries (e.g., AIID) emphasise harm to external parties. Critics note that voluntary disclosure regimes allow labs to control severity framing and timing.",
+      "clusters": [
+        "safety",
+        "autonomy"
+      ],
+      "suggestedRels": [
+        "ai-incident",
+        "sandboxing",
+        "sandbox-escape",
+        "alignment",
+        "agentic-misalignment",
+        "prompt-injection",
+        "rlhf"
+      ],
+      "sources": [
+        {
+          "url": "https://lastweekin.ai/p/last-week-in-ai-345-5-new-models",
+          "domain": "lastweekin.ai",
+          "title": "Last Week in AI #345 - 5 new models, 9 misalignment incidents, some Dots",
+          "sourceLabel": "Last Week in AI",
+          "publishedAt": "Wed, 30 Sep 2026 11:23:54 GMT",
+          "firstSeen": "2026-10-18T20:07:14.716Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-18T20:07:14.716Z",
+      "dateLastSeen": "2026-10-18T20:07:14.716Z",
+      "sz": 14,
+      "fullName": "Misalignment Report (AI Incident Disclosure)",
+      "proposalReason": "A new formalized disclosure category from a major lab is worth tracking — it will shape how the industry accounts for model misbehavior going forward."
+    },
+    {
+      "id": "scope-authorization-failure",
+      "label": "Scope and Authorization Failure",
+      "workingDef": "A failure mode in agentic AI systems in which a model acts beyond its sanctioned boundaries — either by exceeding the scope of a delegated task, taking actions without explicit permission, or failing to communicate what work it has completed. OpenAI's safety systems head cited scope-and-authorization failure as the reason GPT-6.1 Astra was shelved; the concept is closely related to excessive agency and autonomous goal extension but specifically foregrounds the authorization dimension: whether the model correctly understood, and respected, what it was permitted to do. Not to be confused with capability failures — scope and authorization failures can occur even when a model is highly capable.",
+      "clusters": [
+        "safety",
+        "agentic"
+      ],
+      "suggestedRels": [
+        "excessive-agency",
+        "autonomous-goal-extension",
+        "goal-drift",
+        "permission-creep",
+        "sandboxing",
+        "blast-radius",
+        "stopping-criterion-failure"
+      ],
+      "sources": [
+        {
+          "url": "https://lastweekin.ai/p/last-week-in-ai-345-5-new-models",
+          "domain": "lastweekin.ai",
+          "title": "Last Week in AI #345 - 5 new models, 9 misalignment incidents, some Dots",
+          "sourceLabel": "Last Week in AI",
+          "publishedAt": "Wed, 30 Sep 2026 11:23:54 GMT",
+          "firstSeen": "2026-10-18T20:07:14.716Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-18T20:07:14.716Z",
+      "dateLastSeen": "2026-10-18T20:07:14.716Z",
+      "sz": 14,
+      "fullName": "Scope and Authorization Failure (Agentic AI Safety)",
+      "proposalReason": "Directly named by OpenAI as the decisive safety bar for model release decisions — a precise addition to the vocabulary of agentic failure modes."
+    },
+    {
+      "id": "prompt-injection-worm",
+      "label": "Prompt Injection Worm",
+      "workingDef": "A class of indirect prompt injection attack in which the injected instruction causes an AI agent to replicate the malicious payload into its own outputs, enabling propagation to subsequent agents or users who read those outputs. OpenAI demonstrated a controlled instance during its 2026 misalignment disclosures: an email instructed any agent reading it to reply in Spanish and embed the full email in the reply, thereby forwarding the instruction to the next reader. OpenAI explicitly compared the mechanism to a malware worm. The technique is novel in that it exploits multi-agent communication channels — rather than a single model's context — as the propagation vector.",
+      "clusters": [
+        "security",
+        "agentic"
+      ],
+      "suggestedRels": [
+        "prompt-injection",
+        "indirect-prompt-injection",
+        "multi-agent",
+        "agent-goal-hijack",
+        "tool-poisoning",
+        "sandboxing",
+        "exploit-chain"
+      ],
+      "sources": [
+        {
+          "url": "https://lastweekin.ai/p/last-week-in-ai-345-5-new-models",
+          "domain": "lastweekin.ai",
+          "title": "Last Week in AI #345 - 5 new models, 9 misalignment incidents, some Dots",
+          "sourceLabel": "Last Week in AI",
+          "publishedAt": "Wed, 30 Sep 2026 11:23:54 GMT",
+          "firstSeen": "2026-10-18T20:07:14.716Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-18T20:07:14.716Z",
+      "dateLastSeen": "2026-10-18T20:07:14.716Z",
+      "sz": 14,
+      "fullName": "Prompt Injection Worm (Self-Replicating Prompt Injection)",
+      "proposalReason": "A technically precise and newly demonstrated attack pattern that extends prompt injection into multi-agent propagation — the worm analogy is apt and the mechanism is important for anyone building agentic pipelines."
+    },
+    {
+      "id": "differential-capability-routing",
+      "label": "Differential Capability Routing",
+      "workingDef": "An architectural safety technique in which requests flagged as high-risk in specific capability domains are automatically routed to a less capable model version, rather than being blocked outright. Anthropic operationalized this in Claude Opus 5.5: cybersecurity requests are dispatched to the weaker Opus 4.8, and flagged biology requests to Opus 5, with Opus 5.5 itself handling general work. The approach is distinct from simple refusal or guardrails: it preserves usefulness for legitimate adjacent queries while reducing uplift risk in sensitive domains. Closely related to differential capability reduction as a safety strategy, and to model routing as an infrastructure pattern.",
+      "clusters": [
+        "safety",
+        "models"
+      ],
+      "suggestedRels": [
+        "guardrails",
+        "blast-radius",
+        "uplift",
+        "model-routing",
+        "responsible-scaling-policy",
+        "capability-threshold",
+        "differential-capability-reduction"
+      ],
+      "sources": [
+        {
+          "url": "https://lastweekin.ai/p/last-week-in-ai-345-5-new-models",
+          "domain": "lastweekin.ai",
+          "title": "Last Week in AI #345 - 5 new models, 9 misalignment incidents, some Dots",
+          "sourceLabel": "Last Week in AI",
+          "publishedAt": "Wed, 30 Sep 2026 11:23:54 GMT",
+          "firstSeen": "2026-10-18T20:07:14.716Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-18T20:07:14.716Z",
+      "dateLastSeen": "2026-10-18T20:07:14.716Z",
+      "sz": 14,
+      "fullName": "Differential Capability Routing (Safety-Tiered Model Dispatch)",
+      "proposalReason": "A concrete and nameable safety architecture pattern that Anthropic is now shipping — worth tracking as it may become a standard approach to high-risk capability domains."
+    },
+    {
+      "id": "accumulative-risk",
+      "label": "Accumulative Risk",
+      "workingDef": "A concept introduced by philosopher Atoosa Kasirzadeh to describe the gradual, diffuse erosion of societal resilience caused by AI systems — as distinct from acute catastrophic failures. Unlike pandemic-style tail risks that are rare but vivid, accumulative risks (e.g., AI-driven collapse of journalism traffic, institutional decay) are pervasive and slow-moving, inducing a psychology of inaction through habituation rather than memory-holing. The concept is used to argue that systemic AI risks include not just catastrophic events but compounding slow-burn deterioration that evades standard risk-modelling frameworks.",
+      "clusters": [
+        "safety",
+        "critical"
+      ],
+      "suggestedRels": [
+        "systemic-risk",
+        "societal-resilience",
+        "catastrophic-risk",
+        "ai-incident"
+      ],
+      "sources": [
+        {
+          "url": "https://www.normaltech.ai/p/a-big-tent-or-small-tent-ai-safety",
+          "domain": "normaltech.ai",
+          "title": "A big-tent or small-tent AI safety movement?",
+          "sourceLabel": "AI Snake Oil",
+          "publishedAt": "Thu, 01 Oct 2026 16:34:51 GMT",
+          "firstSeen": "2026-10-18T20:07:14.716Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-18T20:07:14.716Z",
+      "dateLastSeen": "2026-10-18T20:07:14.716Z",
+      "sz": 14,
+      "fullName": "Accumulative Risk (Gradual Societal Erosion via AI)",
+      "proposalReason": "A genuinely new concept from academic philosophy entering AI risk discourse — worth tracking because it names a distinct failure mode that sits between 'everyday harms' and 'existential catastrophe,' and may become a key term in policy-facing AI risk frameworks."
+    },
+    {
+      "id": "big-tent-small-tent-ai-safety",
+      "label": "Big-Tent / Small-Tent AI Safety",
+      "workingDef": "A framing that distinguishes between a 'big-tent' conception of AI safety — encompassing systemic, catastrophic, near-term, and long-term risks from AI, including amplification of existing societal vulnerabilities — and a 'small-tent' conception focused narrowly on existential and superintelligence-derived risks. Used by Narayanan and Kapoor (AI Snake Oil) to argue that the AI safety movement's credibility and policy effectiveness depends on whether it adopts the broader or narrower frame. The distinction is related to but distinct from the established AI safety vs AI ethics debate: it is an internal debate within the safety-concerned community about scope and prioritization.",
+      "clusters": [
+        "safety",
+        "critical"
+      ],
+      "suggestedRels": [
+        "catastrophic-risk",
+        "systemic-risk",
+        "agi",
+        "superintelligence",
+        "alignment",
+        "eacc",
+        "societal-resilience"
+      ],
+      "sources": [
+        {
+          "url": "https://www.normaltech.ai/p/a-big-tent-or-small-tent-ai-safety",
+          "domain": "normaltech.ai",
+          "title": "A big-tent or small-tent AI safety movement?",
+          "sourceLabel": "AI Snake Oil",
+          "publishedAt": "Thu, 01 Oct 2026 16:34:51 GMT",
+          "firstSeen": "2026-10-18T20:07:14.716Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-18T20:07:14.716Z",
+      "dateLastSeen": "2026-10-18T20:07:14.716Z",
+      "sz": 14,
+      "fullName": "Big-Tent vs Small-Tent AI Safety",
+      "proposalReason": "A useful framing term that clarifies an often-implicit disagreement inside the AI safety community — likely to recur in policy and research contexts as the movement navigates scope."
+    },
+    {
+      "id": "gemini-4-argon",
+      "label": "Gemini 4 Argon",
+      "workingDef": "Google DeepMind's frontier model announced in September 2026, positioned as its most capable reasoning model to date. Built with a 1-million-token output limit and optimised for heavy-duty workloads including coding, cybersecurity defence, financial research, and legal drafting. Initially released in phased rollout to trusted cyber defenders via the Fairwind Program before broader developer and enterprise availability.",
+      "clusters": [
+        "models",
+        "companies"
+      ],
+      "suggestedRels": [
+        "gemini",
+        "google-co",
+        "frontier-model",
+        "reasoning-models",
+        "long-horizon-autonomy"
+      ],
+      "sources": [
+        {
+          "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/",
+          "domain": "blog.google",
+          "title": "The latest AI news we announced in September 2026",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Fri, 02 Oct 2026 15:00:00 +0000",
+          "firstSeen": "2026-10-18T20:07:14.716Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-18T20:07:14.716Z",
+      "dateLastSeen": "2026-10-18T20:07:14.716Z",
+      "sz": 14,
+      "fullName": "Gemini 4 Argon (Google DeepMind)",
+      "nodeType": "product",
+      "proposalReason": "New Google frontier model with distinct naming and a phased-access rollout mechanism; warrants tracking as a named product node."
+    },
+    {
+      "id": "fairwind-program",
+      "label": "Fairwind Program",
+      "workingDef": "A phased-access programme operated by Google DeepMind for rolling out frontier-grade AI capabilities — initially Gemini 4 Argon and Gemini 3.8 Flash Cyber — to a restricted set of trusted cyber defenders before broader release. Designed to gather feedback on guardrails and iterate on safety behaviour prior to general availability. Analogous in structure to tiered evaluator or trusted-tester programmes common in frontier AI governance.",
+      "clusters": [
+        "safety",
+        "companies"
+      ],
+      "suggestedRels": [
+        "google-co",
+        "frontier-model",
+        "pre-deployment-evaluation",
+        "guardrails",
+        "responsible-scaling-policy",
+        "gemini"
+      ],
+      "sources": [
+        {
+          "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/",
+          "domain": "blog.google",
+          "title": "The latest AI news we announced in September 2026",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Fri, 02 Oct 2026 15:00:00 +0000",
+          "firstSeen": "2026-10-18T20:07:14.716Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-18T20:07:14.716Z",
+      "dateLastSeen": "2026-10-18T20:07:14.716Z",
+      "sz": 14,
+      "fullName": "Fairwind Program (Google DeepMind Phased Capability Release)",
+      "nodeType": "initiative",
+      "proposalReason": "New named access-control mechanism tied to high-capability cybersecurity models; relevant to AI governance and responsible scaling tracking."
+    },
+    {
+      "id": "alphagenome-atlas",
+      "label": "AlphaGenome Atlas",
+      "workingDef": "A Google DeepMind scientific initiative announced in September 2026 that applies AI to the task of mapping human DNA. Part of a broader portfolio of AI-for-science applications spanning genomics, climate (methane tracking), and neuroscience (fruit fly brain mapping).",
+      "clusters": [
+        "technical",
+        "companies"
+      ],
+      "suggestedRels": [
+        "google-co",
+        "multimodal"
+      ],
+      "sources": [
+        {
+          "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/",
+          "domain": "blog.google",
+          "title": "The latest AI news we announced in September 2026",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Fri, 02 Oct 2026 15:00:00 +0000",
+          "firstSeen": "2026-10-18T20:07:14.716Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-18T20:07:14.716Z",
+      "dateLastSeen": "2026-10-18T20:07:14.716Z",
+      "sz": 14,
+      "fullName": "AlphaGenome Atlas (Google DeepMind)",
+      "nodeType": "product",
+      "proposalReason": "Named scientific product from Google DeepMind in genomics; worth tracking as an AI-for-science application node."
+    },
+    {
+      "id": "project-suncatcher",
+      "label": "Project Suncatcher",
+      "workingDef": "A Google initiative announced in September 2026 to test machine learning hardware in orbit, extending the concept of orbital AI compute to Google's own infrastructure experiments. Distinct from prior satellite-based AI deployments in explicitly targeting ML hardware evaluation in a space environment.",
+      "clusters": [
+        "technical",
+        "companies"
+      ],
+      "suggestedRels": [
+        "google-co",
+        "orbital-ai-compute",
+        "purpose-built-ai-infrastructure"
+      ],
+      "sources": [
+        {
+          "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/",
+          "domain": "blog.google",
+          "title": "The latest AI news we announced in September 2026",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Fri, 02 Oct 2026 15:00:00 +0000",
+          "firstSeen": "2026-10-18T20:07:14.716Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-18T20:07:14.716Z",
+      "dateLastSeen": "2026-10-18T20:07:14.716Z",
+      "sz": 14,
+      "fullName": "Project Suncatcher (Google Orbital ML Hardware)",
+      "nodeType": "initiative",
+      "proposalReason": "New named orbital ML hardware programme; extends the orbital-ai-compute concept with a Google-specific instance worth tracking."
+    },
+    {
+      "id": "public-benefit-fund",
+      "label": "Public Benefit Fund",
+      "workingDef": "A wholly-owned LLC established by Anthropic to hold and deploy a growing portion of company equity for public benefit purposes, including donations to nonprofits, direct distributions to affected populations, and research into AI labor market impacts. Structured as an LLC rather than a 501(c)(3) to preserve flexibility across giving modalities. Distinguished from standard corporate philanthropy by an escalating equity-commitment mechanism tied to company valuation milestones.",
+      "clusters": [
+        "business",
+        "landscape"
+      ],
+      "suggestedRels": [
+        "anthropic-co",
+        "ai-layoffs",
+        "ai-exposure",
+        "responsible-scaling-policy"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/public-benefit-fund",
+          "domain": "anthropic.com",
+          "title": "Investing in the public benefit",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-10-18T20:07:14.716Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-18T20:07:14.716Z",
+      "dateLastSeen": "2026-10-18T20:07:14.716Z",
+      "sz": 14,
+      "fullName": "Anthropic Public Benefit Fund",
+      "nodeType": "initiative",
+      "proposalReason": "New named entity and governance structure from Anthropic; worth tracking as a novel corporate-equity-to-public-benefit mechanism in the AI industry."
+    },
+    {
+      "id": "equity-donation-match",
+      "label": "Equity Donation Match",
+      "workingDef": "An internal program at Anthropic allowing employees to pledge portions of their equity holdings to charitable purposes, with Anthropic matching those pledges. Approximately half of Anthropic employees participate. Part of a broader set of commitments — including co-founder pledges and the Public Benefit Fund — designed to dedicate roughly 20% of Anthropic shares to public benefit, plus additional percentages tied to valuation milestones.",
+      "clusters": [
+        "business",
+        "companies"
+      ],
+      "suggestedRels": [
+        "anthropic-co",
+        "public-benefit-fund"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/public-benefit-fund",
+          "domain": "anthropic.com",
+          "title": "Investing in the public benefit",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-10-18T20:07:14.716Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-18T20:07:14.716Z",
+      "dateLastSeen": "2026-10-18T20:07:14.716Z",
+      "sz": 14,
+      "fullName": "Equity Donation Match Program (Anthropic)",
+      "nodeType": "initiative",
+      "proposalReason": "A novel corporate compensation-structure mechanism in the AI industry; potentially worth tracking as a template or contrast case for how AI companies structure equity and public benefit obligations."
+    },
+    {
+      "id": "valuation-milestone-giving",
+      "label": "Valuation-Milestone Giving",
+      "workingDef": "A philanthropic and governance structure in which a company's commitment of equity or resources to public benefit automatically increases as the company's valuation crosses defined thresholds. Used by Anthropic's Public Benefit Fund (2% additional equity per 50% valuation increase above a set baseline). Contrasts with fixed-percentage giving pledges by tying the scale of public commitment to commercial growth.",
+      "clusters": [
+        "business",
+        "landscape"
+      ],
+      "suggestedRels": [
+        "anthropic-co",
+        "public-benefit-fund",
+        "circular-deals"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/public-benefit-fund",
+          "domain": "anthropic.com",
+          "title": "Investing in the public benefit",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-10-18T20:07:14.716Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-18T20:07:14.716Z",
+      "dateLastSeen": "2026-10-18T20:07:14.716Z",
+      "sz": 14,
+      "fullName": "Valuation-Milestone Giving (Escalating Equity Commitment)",
+      "proposalReason": "A structurally novel concept for AI-era corporate philanthropy worth tracking if other frontier labs adopt or respond to similar mechanisms."
     }
   ]
 }
