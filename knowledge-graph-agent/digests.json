@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-10-16T07:49:37.774Z",
-    "count": 1,
+    "generatedAt": "2026-10-19T22:02:34.458Z",
+    "count": 2,
     "note": "Lexi's email digests to Nicole. Written by build-digest.mjs; sentAt/messageId/thread written by the Worker (src/lexi-mail)."
   },
   "digests": [
@@ -125,6 +125,91 @@
       "waitingEarlier": 0,
       "thread": [],
       "subject": "3 items to review [Lexi D-20261016-abed]"
+    },
+    {
+      "id": "D-20261019-4e5b",
+      "createdAt": "2026-10-19T22:02:34.458Z",
+      "autoApplyHours": 72,
+      "autoApplyAt": "2026-10-22T22:02:34.458Z",
+      "sentAt": null,
+      "messageId": null,
+      "items": [
+        {
+          "n": 1,
+          "proposalId": "58ddd016441369d9",
+          "action": "promote_to_graph",
+          "kind": "new_term",
+          "term": "Claude Opus 5.5",
+          "termId": "claude-opus-55",
+          "definition": "A model variant referenced by Simon Willison in a vibe-coding experiment, used via Claude Code. The 'Extra' designation suggests an extended-capability or extended-context tier. No formal announcement or system card cited in this source.",
+          "previousDefinition": null,
+          "sources": [
+            {
+              "label": "Simon Willison's Weblog: Tool: Chirp Pong",
+              "url": "https://simonwillison.net/2026/Oct/15/chirp-pong/"
+            },
+            {
+              "label": "Last Week in AI: LWiAI Podcast #258 - Opus 5.5, Sol and Luna, Muse, DeepSeek-V4.1-Flash, Xi",
+              "url": "https://lastweekin.ai/p/lwiai-podcast-258-opus-55-sol-and"
+            }
+          ],
+          "nearest": {
+            "id": "claude",
+            "label": "Claude",
+            "relation": "narrower term (specific model version/variant)"
+          },
+          "rationale": "2 sources, 2 independent (simonwillison.net + lastweekin.ai), 3d on longlist. Trusted: simonwillison.net.",
+          "review": {
+            "verdict": "flag",
+            "summary": "Only Willison's excerpt uses 'Opus 5.5 Extra'; LWiAI covers Opus 5.5 but never 'Extra'. The definition's guess about what 'Extra' means is unsupported, and its claim that there is no announcement or system card contradicts LWiAI, which reports the Opus 5.5 release with a system card. It is better handled as an update to the 'claude' node than as a standalone node.",
+            "flags": [
+              "sources_do_not_support",
+              "factual_error",
+              "other"
+            ]
+          },
+          "tier": "nicole",
+          "tierReason": "reviewer flagged it: sources do not support, factual error, other"
+        },
+        {
+          "n": 2,
+          "proposalId": "76e8368823665e33",
+          "action": "promote_to_graph",
+          "kind": "new_term",
+          "term": "Independent Model Evaluation",
+          "termId": "independent-model-evaluation",
+          "definition": "A framework in which external organizations — independent of equity or operational ties to an AI lab — are given structured access to models, training information, and safeguards in order to assess risk and publish findings. Anthropic's implementation describes a tiered access model (narrowly scoped investigations → broader publication rights → employee-like access) drawing analogy to bank examination regimes. Distinct from internal red-teaming or audit functions in that evaluators retain independent publication rights and can characterize redactions publicly.",
+          "previousDefinition": null,
+          "sources": [
+            {
+              "label": "Anthropic Newsroom: Anthropic update on independent evaluators",
+              "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators"
+            },
+            {
+              "label": "AI Snake Oil: Emerging trends in AI agent evaluation",
+              "url": "https://www.normaltech.ai/p/new-paper-emerging-trends-in-ai-agent"
+            }
+          ],
+          "nearest": {
+            "id": "behavioral-audit",
+            "label": "Behavioral Audit",
+            "relation": "related (external vs internal assessment)"
+          },
+          "rationale": "2 sources, 2 independent (anthropic.com + normaltech.ai), 3d on longlist. Trusted: normaltech.ai.",
+          "review": {
+            "verdict": "flag",
+            "summary": "Only the Anthropic post describes this framework. The normaltech.ai excerpt mentions 'independent and embedded AI evaluation' just once, in passing, in a paper about agent evaluation. The visible excerpts also never show the 'tiered access model' or the claim that evaluators 'can characterize redactions publicly' (the Anthropic text cuts off at 'require them to redac'). As written, the definition is mostly a description of one vendor's programme.",
+            "flags": [
+              "sources_do_not_support",
+              "other"
+            ]
+          },
+          "tier": "nicole",
+          "tierReason": "contested cluster (§10: frontier model)"
+        }
+      ],
+      "waitingEarlier": 3,
+      "thread": []
     }
   ]
 }

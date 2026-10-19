@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-10-18T20:07:14.716Z",
-    "entryCount": 177,
+    "generatedAt": "2026-10-19T22:00:12.148Z",
+    "entryCount": 186,
     "note": "Lexi-managed Tier 2 longlist — terms under observation, awaiting evidence to support promotion to the graph (Tier 1)."
   },
   "entries": [
@@ -4179,12 +4179,20 @@
           "sourceLabel": "AI Snake Oil",
           "publishedAt": "Fri, 22 May 2026 22:24:18 GMT",
           "firstSeen": "2026-05-29T20:29:06.123Z"
+        },
+        {
+          "url": "https://www.normaltech.ai/p/new-paper-emerging-trends-in-ai-agent",
+          "domain": "normaltech.ai",
+          "title": "Emerging trends in AI agent evaluation",
+          "sourceLabel": "AI Snake Oil",
+          "publishedAt": "Mon, 19 Oct 2026 20:11:55 GMT",
+          "firstSeen": "2026-10-19T22:00:12.148Z"
         }
       ],
-      "sourceCount": 1,
+      "sourceCount": 2,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-05-29T20:29:06.123Z",
-      "dateLastSeen": "2026-05-29T20:29:06.123Z",
+      "dateLastSeen": "2026-10-19T22:00:12.148Z",
       "sz": 14,
       "fullName": "Open-World Evaluation (Long-Horizon Real-World Agent Task Assessment)",
       "proposalReason": "Materially named and defined in this article as an emerging evaluation paradigm by the paper's authors."
@@ -5055,12 +5063,20 @@
           "sourceLabel": "Stratechery",
           "publishedAt": "Fri, 16 Oct 2026 17:42:42 +0000",
           "firstSeen": "2026-10-17T20:08:54.682Z"
+        },
+        {
+          "url": "https://stratechery.com/2026/do-you-trust-apple/",
+          "domain": "stratechery.com",
+          "title": "Do You Trust Apple?",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Mon, 19 Oct 2026 10:00:00 +0000",
+          "firstSeen": "2026-10-19T22:00:12.148Z"
         }
       ],
-      "sourceCount": 3,
+      "sourceCount": 4,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-06-02T20:47:42.877Z",
-      "dateLastSeen": "2026-10-17T20:08:54.682Z",
+      "dateLastSeen": "2026-10-19T22:00:12.148Z",
       "sz": 14,
       "fullName": "Aggregator Theory (Stratechery)",
       "proposalReason": "A named analytic framework with significant ongoing use in AI business-model discussions; not yet in the graph and surfaces repeatedly in AI-era platform-strategy writing."
@@ -5762,12 +5778,20 @@
           "sourceLabel": "Stratechery",
           "publishedAt": "Fri, 16 Oct 2026 17:42:42 +0000",
           "firstSeen": "2026-10-17T20:08:54.682Z"
+        },
+        {
+          "url": "https://stratechery.com/2026/do-you-trust-apple/",
+          "domain": "stratechery.com",
+          "title": "Do You Trust Apple?",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Mon, 19 Oct 2026 10:00:00 +0000",
+          "firstSeen": "2026-10-19T22:00:12.148Z"
         }
       ],
-      "sourceCount": 2,
+      "sourceCount": 3,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-10-16T07:47:38.193Z",
-      "dateLastSeen": "2026-10-17T20:08:54.682Z",
+      "dateLastSeen": "2026-10-19T22:00:12.148Z",
       "sz": 14,
       "nodeType": "product",
       "proposalReason": "First sighting of Apple HomeView in the knowledge graph — worth tracking as Apple's entry into AI-native home hardware."
@@ -5858,12 +5882,20 @@
           "sourceLabel": "Simon Willison's Weblog",
           "publishedAt": "2026-10-15T19:47:52+00:00",
           "firstSeen": "2026-10-16T07:47:38.193Z"
+        },
+        {
+          "url": "https://lastweekin.ai/p/lwiai-podcast-258-opus-55-sol-and",
+          "domain": "lastweekin.ai",
+          "title": "LWiAI Podcast #258 - Opus 5.5, Sol and Luna, Muse, DeepSeek-V4.1-Flash, Xi",
+          "sourceLabel": "Last Week in AI",
+          "publishedAt": "Sat, 03 Oct 2026 07:32:03 GMT",
+          "firstSeen": "2026-10-19T22:00:12.148Z"
         }
       ],
-      "sourceCount": 1,
-      "independentSourceCount": 1,
+      "sourceCount": 2,
+      "independentSourceCount": 2,
       "dateFirstSeen": "2026-10-16T07:47:38.193Z",
-      "dateLastSeen": "2026-10-16T07:47:38.193Z",
+      "dateLastSeen": "2026-10-19T22:00:12.148Z",
       "sz": 14,
       "fullName": "Claude Opus 5.5 Extra (Anthropic)",
       "nodeType": "product",
@@ -6427,12 +6459,20 @@
           "sourceLabel": "Anthropic Newsroom",
           "publishedAt": null,
           "firstSeen": "2026-10-16T20:31:05.113Z"
+        },
+        {
+          "url": "https://www.normaltech.ai/p/new-paper-emerging-trends-in-ai-agent",
+          "domain": "normaltech.ai",
+          "title": "Emerging trends in AI agent evaluation",
+          "sourceLabel": "AI Snake Oil",
+          "publishedAt": "Mon, 19 Oct 2026 20:11:55 GMT",
+          "firstSeen": "2026-10-19T22:00:12.148Z"
         }
       ],
-      "sourceCount": 1,
-      "independentSourceCount": 1,
+      "sourceCount": 2,
+      "independentSourceCount": 2,
       "dateFirstSeen": "2026-10-16T20:31:05.113Z",
-      "dateLastSeen": "2026-10-16T20:31:05.113Z",
+      "dateLastSeen": "2026-10-19T22:00:12.148Z",
       "sz": 14,
       "fullName": "Independent Model Evaluation (Third-Party Frontier AI Assessment)",
       "proposalReason": "A new structural concept emerging from this article: a formalized, tiered third-party evaluation regime with enforceable publication rights, redaction transparency, and access parity to internal teams. Distinct from existing graph terms like red-teaming or evals."
@@ -7362,6 +7402,303 @@
       "sz": 14,
       "fullName": "Valuation-Milestone Giving (Escalating Equity Commitment)",
       "proposalReason": "A structurally novel concept for AI-era corporate philanthropy worth tracking if other frontier labs adopt or respond to similar mechanisms."
+    },
+    {
+      "id": "gpt6-sol",
+      "label": "GPT-6 Sol",
+      "workingDef": "A lower-cost tier of OpenAI's GPT-6 model family (alongside Luna), launched with claims of fewer mistakes but accompanied by concerns about reduced interpretability and limited external evaluation visibility.",
+      "clusters": [
+        "models",
+        "companies"
+      ],
+      "suggestedRels": [
+        "openai-co",
+        "interpretability",
+        "independent-model-evaluation",
+        "gpt6-astra"
+      ],
+      "sources": [
+        {
+          "url": "https://lastweekin.ai/p/lwiai-podcast-258-opus-55-sol-and",
+          "domain": "lastweekin.ai",
+          "title": "LWiAI Podcast #258 - Opus 5.5, Sol and Luna, Muse, DeepSeek-V4.1-Flash, Xi",
+          "sourceLabel": "Last Week in AI",
+          "publishedAt": "Sat, 03 Oct 2026 07:32:03 GMT",
+          "firstSeen": "2026-10-19T22:00:12.148Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-19T22:00:12.148Z",
+      "dateLastSeen": "2026-10-19T22:00:12.148Z",
+      "sz": 14,
+      "fullName": "GPT-6 Sol (OpenAI)",
+      "nodeType": "product",
+      "proposalReason": "New candidate; GPT-6 Sol appears as a distinct named product tier warranting tracking alongside the broader GPT-6 Astra entry already on the longlist."
+    },
+    {
+      "id": "bonsai-227b",
+      "label": "Bonsai 2 27B",
+      "workingDef": "A highly compressed 227-billion-parameter ternary model from Prism, described as achieving near-lossless compression in a 9x smaller footprint. Represents an approach to extreme model quantization using ternary (3-value) weight representation.",
+      "clusters": [
+        "models",
+        "technical"
+      ],
+      "suggestedRels": [
+        "quantization",
+        "small-language-model",
+        "distillation",
+        "parameters"
+      ],
+      "sources": [
+        {
+          "url": "https://lastweekin.ai/p/lwiai-podcast-258-opus-55-sol-and",
+          "domain": "lastweekin.ai",
+          "title": "LWiAI Podcast #258 - Opus 5.5, Sol and Luna, Muse, DeepSeek-V4.1-Flash, Xi",
+          "sourceLabel": "Last Week in AI",
+          "publishedAt": "Sat, 03 Oct 2026 07:32:03 GMT",
+          "firstSeen": "2026-10-19T22:00:12.148Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-19T22:00:12.148Z",
+      "dateLastSeen": "2026-10-19T22:00:12.148Z",
+      "sz": 14,
+      "fullName": "Bonsai 2 27B (Prism Ternary Model)",
+      "nodeType": "product",
+      "proposalReason": "New candidate; a named compressed model using ternary weights at scale, relevant to the growing cluster of quantization and compression techniques."
+    },
+    {
+      "id": "rrsi",
+      "label": "Regularized Recursive Self-Improvement",
+      "workingDef": "A research approach to recursive self-improvement of agent harnesses that incorporates regularization to constrain the improvement process, referenced in the context of a paper on scaling agent harness capabilities while managing drift or instability.",
+      "clusters": [
+        "agentic",
+        "technical"
+      ],
+      "suggestedRels": [
+        "agentic-harness",
+        "recursive-self-improvement",
+        "harness",
+        "scaffold"
+      ],
+      "sources": [
+        {
+          "url": "https://lastweekin.ai/p/lwiai-podcast-258-opus-55-sol-and",
+          "domain": "lastweekin.ai",
+          "title": "LWiAI Podcast #258 - Opus 5.5, Sol and Luna, Muse, DeepSeek-V4.1-Flash, Xi",
+          "sourceLabel": "Last Week in AI",
+          "publishedAt": "Sat, 03 Oct 2026 07:32:03 GMT",
+          "firstSeen": "2026-10-19T22:00:12.148Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-19T22:00:12.148Z",
+      "dateLastSeen": "2026-10-19T22:00:12.148Z",
+      "sz": 14,
+      "fullName": "RRSI (Regularized Recursive Self-Improvement of Agent Harnesses)",
+      "proposalReason": "New candidate; a named technique for regularized recursive harness self-improvement, distinct from unconstrained recursive self-improvement and worth tracking as agentic systems research matures."
+    },
+    {
+      "id": "trajectory-evaluation",
+      "label": "Trajectory Evaluation",
+      "workingDef": "An evaluation methodology for AI agents that requires scrutinising the full sequence of actions, tool uses, and intermediate states an agent takes to reach an outcome — not just the final result. Necessary for detecting shortcut-taking, tool misuse, and attribution failures in multi-step agent tasks. Contrasted with outcome-only model evaluation, which is insufficient when agents have access to environments and can game metrics by taking unintended paths.",
+      "clusters": [
+        "agentic",
+        "technical"
+      ],
+      "suggestedRels": [
+        "evals",
+        "agent",
+        "tool-use",
+        "open-world-evaluation",
+        "agent-reliability"
+      ],
+      "sources": [
+        {
+          "url": "https://www.normaltech.ai/p/new-paper-emerging-trends-in-ai-agent",
+          "domain": "normaltech.ai",
+          "title": "Emerging trends in AI agent evaluation",
+          "sourceLabel": "AI Snake Oil",
+          "publishedAt": "Mon, 19 Oct 2026 20:11:55 GMT",
+          "firstSeen": "2026-10-19T22:00:12.148Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-19T22:00:12.148Z",
+      "dateLastSeen": "2026-10-19T22:00:12.148Z",
+      "sz": 14,
+      "fullName": "Trajectory Evaluation (Agent Trace Inspection)",
+      "proposalReason": "A new candidate term grounding a methodological distinction that matters for the whole agent evaluation field."
+    },
+    {
+      "id": "sociotechnical-evaluation",
+      "label": "Sociotechnical Evaluation",
+      "workingDef": "An evaluation approach that assesses AI agents not only for isolated technical capability but for their effects on human workflows, institutional incentive structures, and social context. Distinguished from purely technical evaluation by requiring interdisciplinary methods and studying agents embedded in real-world settings — including how agent use affects human performance (e.g., METR's RCT finding that agent tools increased task completion time). Proposed by evaluation researchers (Kapoor, Narayanan et al.) as a necessary complement to benchmark-based capability assessment.",
+      "clusters": [
+        "agentic",
+        "human"
+      ],
+      "suggestedRels": [
+        "evals",
+        "agent",
+        "human-in-the-loop",
+        "agent-reliability",
+        "jagged-frontier"
+      ],
+      "sources": [
+        {
+          "url": "https://www.normaltech.ai/p/new-paper-emerging-trends-in-ai-agent",
+          "domain": "normaltech.ai",
+          "title": "Emerging trends in AI agent evaluation",
+          "sourceLabel": "AI Snake Oil",
+          "publishedAt": "Mon, 19 Oct 2026 20:11:55 GMT",
+          "firstSeen": "2026-10-19T22:00:12.148Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-19T22:00:12.148Z",
+      "dateLastSeen": "2026-10-19T22:00:12.148Z",
+      "sz": 14,
+      "fullName": "Sociotechnical Evaluation (Agent-in-Context Assessment)",
+      "proposalReason": "A term introduced or heavily foregrounded in the paper as a distinct evaluation frame, warranting tracking as the evaluation field professionalises."
+    },
+    {
+      "id": "torchneuron",
+      "label": "TorchNeuron",
+      "workingDef": "A PyTorch plugin released as public beta in October 2026 that exposes AWS Trainium and Inferentia chips as native PyTorch devices, supporting eager execution, torch.compile, and distributed primitives (FSDP2, DTensor, tensor parallelism) without the prior XLA-based lazy-tensor model. Distinct from the older torch-neuronx package it supersedes.",
+      "clusters": [
+        "technical",
+        "tools"
+      ],
+      "suggestedRels": [
+        "trainium",
+        "hugging-face",
+        "fine-tuning",
+        "training",
+        "ai-training-chip",
+        "purpose-built-ai-infrastructure"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/hf-torchneuron",
+          "domain": "huggingface.co",
+          "title": "TorchNeuron: running HF models on AWS Trainium is easier than ever",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Mon, 19 Oct 2026 00:00:00 GMT",
+          "firstSeen": "2026-10-19T22:00:12.148Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-19T22:00:12.148Z",
+      "dateLastSeen": "2026-10-19T22:00:12.148Z",
+      "sz": 14,
+      "fullName": "TorchNeuron (AWS/PyTorch Neuron Backend)",
+      "nodeType": "product",
+      "proposalReason": "New named system with a clear definition and primary source announcement; warrants longlist observation as a named tooling layer in the AI hardware stack."
+    },
+    {
+      "id": "tensor-parallelism",
+      "label": "Tensor Parallelism",
+      "workingDef": "A distributed training and inference technique that shards individual model weight tensors across multiple accelerator devices, allowing models too large for a single device's memory to run across a cluster. Used in TorchNeuron via DistributedConfig with tp_size to shard models across Trainium cores at weight-load time.",
+      "clusters": [
+        "technical"
+      ],
+      "suggestedRels": [
+        "training",
+        "inference",
+        "mixture-of-experts",
+        "parameters",
+        "ai-training-chip",
+        "trainium"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/hf-torchneuron",
+          "domain": "huggingface.co",
+          "title": "TorchNeuron: running HF models on AWS Trainium is easier than ever",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Mon, 19 Oct 2026 00:00:00 GMT",
+          "firstSeen": "2026-10-19T22:00:12.148Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-19T22:00:12.148Z",
+      "dateLastSeen": "2026-10-19T22:00:12.148Z",
+      "sz": 14,
+      "fullName": "Tensor Parallelism (Distributed Model Sharding)",
+      "proposalReason": "Foundational infrastructure concept appearing materially in the article's code examples; not yet in the graph and distinct from generic distributed training."
+    },
+    {
+      "id": "static-shape-compilation",
+      "label": "Static Shape Compilation",
+      "workingDef": "A constraint imposed by many custom AI accelerators (including AWS Trainium/Neuron) whereby the compiler requires fixed tensor shapes at compile time; dynamic shapes trigger recompilation, causing latency penalties. Workflows on such hardware use static caches, padded batches, and disabled dynamic-shape inference to prevent graph breaks and recompilation overhead.",
+      "clusters": [
+        "technical"
+      ],
+      "suggestedRels": [
+        "trainium",
+        "inference",
+        "latency",
+        "quantization",
+        "ai-training-chip",
+        "purpose-built-ai-infrastructure"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/hf-torchneuron",
+          "domain": "huggingface.co",
+          "title": "TorchNeuron: running HF models on AWS Trainium is easier than ever",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Mon, 19 Oct 2026 00:00:00 GMT",
+          "firstSeen": "2026-10-19T22:00:12.148Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-19T22:00:12.148Z",
+      "dateLastSeen": "2026-10-19T22:00:12.148Z",
+      "sz": 14,
+      "fullName": "Static Shape Compilation (AI Accelerator Constraint)",
+      "proposalReason": "A recurring, named constraint that shapes how models are deployed on custom silicon; surfaces in this article with enough specificity to merit longlist tracking."
+    },
+    {
+      "id": "datasette",
+      "label": "Datasette",
+      "workingDef": "An open-source data exploration tool by Simon Willison. In the LLM ecosystem, it is exposed to language models as a callable tool via the llm-tools-datasette plugin, allowing agents to query Datasette instances directly. The plugin pattern illustrates how existing data infrastructure can be wrapped as LLM-accessible tools.",
+      "clusters": [
+        "tools",
+        "technical"
+      ],
+      "suggestedRels": [
+        "tool-use",
+        "api",
+        "mcp"
+      ],
+      "sources": [
+        {
+          "url": "https://simonwillison.net/2026/Oct/18/llm-tools-datasette/",
+          "domain": "simonwillison.net",
+          "title": "Release: llm-tools-datasette 0.1.1",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-10-18T23:43:09+00:00",
+          "firstSeen": "2026-10-19T22:00:12.148Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-19T22:00:12.148Z",
+      "dateLastSeen": "2026-10-19T22:00:12.148Z",
+      "sz": 14,
+      "fullName": "Datasette (LLM Tool Plugin)",
+      "nodeType": "product",
+      "proposalReason": "New product/tool name appearing in a plugin ecosystem context; worth tracking as an example of data tooling integrated into LLM tool-use patterns."
     }
   ]
 }

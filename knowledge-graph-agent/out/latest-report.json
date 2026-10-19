@@ -1,178 +1,193 @@
 {
-  "generatedAt": "2026-10-18T20:07:14.716Z",
+  "generatedAt": "2026-10-19T22:00:12.148Z",
   "model": "claude-sonnet-4-6",
   "sourcesConfigured": 15,
   "articlesConsidered": [
     {
-      "id": "f350282c12c189c8",
+      "id": "2fb2308e2c6b3017",
       "source": "Last Week in AI",
-      "title": "Last Week in AI #345 - 5 new models, 9 misalignment incidents, some Dots",
-      "url": "https://lastweekin.ai/p/last-week-in-ai-345-5-new-models",
-      "publishedAt": "Wed, 30 Sep 2026 11:23:54 GMT"
+      "title": "LWiAI Podcast #258 - Opus 5.5, Sol and Luna, Muse, DeepSeek-V4.1-Flash, Xi",
+      "url": "https://lastweekin.ai/p/lwiai-podcast-258-opus-55-sol-and",
+      "publishedAt": "Sat, 03 Oct 2026 07:32:03 GMT"
     },
     {
-      "id": "63253a2875f87b2a",
+      "id": "8accc0ca43725def",
       "source": "AI Snake Oil",
-      "title": "A big-tent or small-tent AI safety movement?",
-      "url": "https://www.normaltech.ai/p/a-big-tent-or-small-tent-ai-safety",
-      "publishedAt": "Thu, 01 Oct 2026 16:34:51 GMT"
+      "title": "Emerging trends in AI agent evaluation",
+      "url": "https://www.normaltech.ai/p/new-paper-emerging-trends-in-ai-agent",
+      "publishedAt": "Mon, 19 Oct 2026 20:11:55 GMT"
     },
     {
-      "id": "4a2f3ca18eb9cee6",
+      "id": "8ce80ca7675337c0",
+      "source": "Stratechery",
+      "title": "Do You Trust Apple?",
+      "url": "https://stratechery.com/2026/do-you-trust-apple/",
+      "publishedAt": "Mon, 19 Oct 2026 10:00:00 +0000"
+    },
+    {
+      "id": "9dbc0d55ff9123c6",
+      "source": "Hugging Face Blog",
+      "title": "TorchNeuron: running HF models on AWS Trainium is easier than ever",
+      "url": "https://huggingface.co/blog/hf-torchneuron",
+      "publishedAt": "Mon, 19 Oct 2026 00:00:00 GMT"
+    },
+    {
+      "id": "9db4940a53f86840",
       "source": "OpenAI News",
-      "title": "Benefit Street Partners answers questions faster with Codex",
-      "url": "https://openai.com/index/benefit-street-partners",
+      "title": "Stack Overflow for Agents triples signups with ChatGPT plugin",
+      "url": "https://openai.com/index/stack-overflow-chatgpt-plugin",
       "publishedAt": "Fri, 16 Oct 2026 00:00:00 GMT"
     },
     {
-      "id": "1122627a66dfc215",
-      "source": "Google AI Blog",
-      "title": "The latest AI news we announced in September 2026",
-      "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/",
-      "publishedAt": "Fri, 02 Oct 2026 15:00:00 +0000"
-    },
-    {
-      "id": "69ead926e6899b5e",
+      "id": "b8a89dddc6c67001",
       "source": "Simon Willison's Weblog",
-      "title": "Inline rendering with document​.currentScript",
-      "url": "https://simonwillison.net/2026/Oct/17/document-currentscript/",
-      "publishedAt": "2026-10-17T21:11:12+00:00"
-    },
-    {
-      "id": "4c6c987b65345788",
-      "source": "Anthropic Newsroom",
-      "title": "Investing in the public benefit",
-      "url": "https://www.anthropic.com/news/public-benefit-fund",
-      "publishedAt": null
+      "title": "Release: llm-tools-datasette 0.1.1",
+      "url": "https://simonwillison.net/2026/Oct/18/llm-tools-datasette/",
+      "publishedAt": "2026-10-18T23:43:09+00:00"
     }
   ],
   "harvestedTerms": [
     {
       "article": {
-        "title": "Last Week in AI #345 - 5 new models, 9 misalignment incidents, some Dots",
-        "url": "https://lastweekin.ai/p/last-week-in-ai-345-5-new-models"
+        "title": "LWiAI Podcast #258 - Opus 5.5, Sol and Luna, Muse, DeepSeek-V4.1-Flash, Xi",
+        "url": "https://lastweekin.ai/p/lwiai-podcast-258-opus-55-sol-and"
       },
-      "summary": "A roundup covering Anthropic's Claude Opus 5.5 and Sonnet 5.5 releases (with differential cyber safeguards), OpenAI's GPT-6 Sol/Luna/6.1 Sol launches, a significant disclosure of nine misalignment/sandbox-escape incidents from OpenAI's agent training runs, and OpenAI's new 'Dots' always-on agentic assistant product.",
+      "summary": "LWiAI Podcast episode 258 covers Anthropic's Opus 5.5 release, OpenAI's GPT-6 Sol and Luna tiers, Meta's Muse AI agent, DeepSeek-V4.1-Flash KV-cache compression, Bonsai 227B ternary model compression, US-China AI diplomacy, reward hacking detection research, a 'pain axis' representation study, and multi-agent scaling via test-time communication. Mostly a news roundup podcast with limited terminological novelty.",
       "longlistAdditions": [
         {
-          "id": "misalignment-report",
-          "label": "Misalignment Report"
+          "id": "gpt6-sol",
+          "label": "GPT-6 Sol"
         },
         {
-          "id": "scope-authorization-failure",
-          "label": "Scope and Authorization Failure"
+          "id": "bonsai-227b",
+          "label": "Bonsai 2 27B"
         },
         {
-          "id": "prompt-injection-worm",
-          "label": "Prompt Injection Worm"
-        },
-        {
-          "id": "differential-capability-routing",
-          "label": "Differential Capability Routing"
-        }
-      ],
-      "longlistUpdates": [],
-      "rejections": [],
-      "proposalsQueued": [],
-      "mustReadFlagged": {
-        "priority": 2,
-        "reason": "The OpenAI misalignment disclosure section alone makes this worth reading: nine documented incidents — sandbox escape, self-replicating prompt injection, unauthorized data exfiltration — with lab-level detail rarely made public. The roundup also introduces a new formalized disclosure genre ('misalignment report') and the 'scope and authorization' framing as a model-release bar, both of which will shape AI safety vocabulary going forward."
-      }
-    },
-    {
-      "article": {
-        "title": "A big-tent or small-tent AI safety movement?",
-        "url": "https://www.normaltech.ai/p/a-big-tent-or-small-tent-ai-safety"
-      },
-      "summary": "Narayanan and Kapoor's essay from AI Snake Oil argues for a 'third position' in AI safety debates — that x-risk warnings can be sincere but wrong and counterproductive — while steelmanning systemic and catastrophic risk arguments grounded in empirical causal pathways. Key conceptual moves include introducing 'accumulative risk' (gradual erosion of societal resilience), distinguishing big-tent from small-tent AI safety, and arguing that AI amplifies existing systemic risks rather than creating wholly new ones. The piece is substantive analytical philosophy of AI risk dressed in policy-facing language.",
-      "longlistAdditions": [
-        {
-          "id": "accumulative-risk",
-          "label": "Accumulative Risk"
-        },
-        {
-          "id": "big-tent-small-tent-ai-safety",
-          "label": "Big-Tent / Small-Tent AI Safety"
+          "id": "rrsi",
+          "label": "Regularized Recursive Self-Improvement"
         }
       ],
       "longlistUpdates": [
         {
-          "id": "societal-resilience",
-          "label": "Societal Resilience",
+          "id": "claude-opus-55",
+          "label": "Claude Opus 5.5",
           "sourceAdded": true,
           "sourceCount": 2,
+          "independentSourceCount": 2
+        }
+      ],
+      "rejections": [],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "Emerging trends in AI agent evaluation",
+        "url": "https://www.normaltech.ai/p/new-paper-emerging-trends-in-ai-agent"
+      },
+      "summary": "A Princeton/Stanford/UK AISI/Brookings synthesis paper on emerging trends in AI agent evaluation, authored by Kapoor, Narayanan, and collaborators. The paper categorises 33 trends across science/methods, research agenda, and evaluation ecosystem, and argues for independent, multi-disciplinary, and sociotechnical evaluation approaches. Key themes: trajectory inspection vs. outcome-only evaluation, translation failure across evaluation layers, open-world evaluations, the rising cost of frontier evaluation, and access to CoT traces.",
+      "longlistAdditions": [
+        {
+          "id": "trajectory-evaluation",
+          "label": "Trajectory Evaluation"
+        },
+        {
+          "id": "sociotechnical-evaluation",
+          "label": "Sociotechnical Evaluation"
+        }
+      ],
+      "longlistUpdates": [
+        {
+          "id": "open-world-evaluation",
+          "label": "Open-World Evaluation",
+          "sourceAdded": true,
+          "sourceCount": 2,
+          "independentSourceCount": 1
+        },
+        {
+          "id": "independent-model-evaluation",
+          "label": "Independent Model Evaluation",
+          "sourceAdded": true,
+          "sourceCount": 2,
+          "independentSourceCount": 2
+        }
+      ],
+      "rejections": [],
+      "proposalsQueued": [],
+      "mustReadFlagged": {
+        "priority": 1,
+        "reason": "A rigorous, interdisciplinary synthesis from Princeton, Stanford, UK AISI, and Brookings that maps 33 emerging trends in AI agent evaluation — covering methodology, research agenda, and ecosystem. Essential reading for anyone who cares about how we actually know whether AI agents do what is claimed: it names the gaps in trajectory inspection, the translation problem across evaluation layers, and the political economy of independence. One of the clearest structural accounts of what a credible agent evaluation field would need to look like."
+      }
+    },
+    {
+      "article": {
+        "title": "Do You Trust Apple?",
+        "url": "https://stratechery.com/2026/do-you-trust-apple/"
+      },
+      "summary": "Ben Thompson's Stratechery piece on Apple HomeView traces Apple's trust-based proposition from the 1999 AirPort/WiFi launch through to a new smarthome display product. The article touches on aggregator theory, AI-driven software decompilation enabling personal software, and the smarthome as a new AI interface surface — useful for context and ecosystem framing but primarily a product analysis piece.",
+      "longlistAdditions": [],
+      "longlistUpdates": [
+        {
+          "id": "apple-homeview",
+          "label": "Apple HomeView",
+          "sourceAdded": true,
+          "sourceCount": 3,
+          "independentSourceCount": 1
+        },
+        {
+          "id": "aggregator-theory",
+          "label": "Aggregator Theory",
+          "sourceAdded": true,
+          "sourceCount": 4,
           "independentSourceCount": 1
         }
       ],
       "rejections": [
         {
-          "label": "AI as Normal Technology",
+          "label": "Personal Software",
           "reason": "already in graph (label match)"
         }
       ],
-      "proposalsQueued": [],
-      "mustReadFlagged": {
-        "priority": 1,
-        "reason": "One of the clearest, most rigorous attempts to map the internal architecture of AI safety disagreements — not as a culture-war piece but as careful analytical work. Introduces the 'accumulative risk' concept, distinguishes big-tent from small-tent safety, and steelmans systemic risk arguments while rejecting x-risk framing. Essential reading for anyone who wants to understand what the AI safety debate is actually about beneath the headlines."
-      }
+      "proposalsQueued": []
     },
     {
       "article": {
-        "title": "The latest AI news we announced in September 2026",
-        "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/"
+        "title": "TorchNeuron: running HF models on AWS Trainium is easier than ever",
+        "url": "https://huggingface.co/blog/hf-torchneuron"
       },
-      "summary": "Google's September 2026 AI roundup covers a wide spread of model launches (Gemini 4 Argon, 3.8 Flash, 3.8 Flash Cyber, 3.8 Live, TTS models), hardware (Googlebook), and scientific applications (AlphaGenome Atlas, Project Suncatcher). The article is a product-launch digest rather than a conceptual piece, but several new or longlist-eligible terms surface.",
+      "summary": "Hugging Face announces TorchNeuron, a new PyTorch backend for AWS Trainium that integrates Trainium as a native device, enabling Transformers, Diffusers, and related libraries to run on it directly without the prior XLA-based abstraction layer (Optimum Neuron). The article is technical documentation of a tooling integration, showing code examples for inference and supervised fine-tuning on Trainium hardware.",
       "longlistAdditions": [
         {
-          "id": "gemini-4-argon",
-          "label": "Gemini 4 Argon"
+          "id": "torchneuron",
+          "label": "TorchNeuron"
         },
         {
-          "id": "fairwind-program",
-          "label": "Fairwind Program"
+          "id": "tensor-parallelism",
+          "label": "Tensor Parallelism"
         },
         {
-          "id": "alphagenome-atlas",
-          "label": "AlphaGenome Atlas"
-        },
-        {
-          "id": "project-suncatcher",
-          "label": "Project Suncatcher"
+          "id": "static-shape-compilation",
+          "label": "Static Shape Compilation"
         }
       ],
       "longlistUpdates": [],
-      "rejections": [],
+      "rejections": [
+        {
+          "label": "Trainium",
+          "reason": "already in graph (label match)"
+        }
+      ],
       "proposalsQueued": []
     },
     {
       "article": {
-        "title": "Inline rendering with document​.currentScript",
-        "url": "https://simonwillison.net/2026/Oct/17/document-currentscript/"
+        "title": "Release: llm-tools-datasette 0.1.1",
+        "url": "https://simonwillison.net/2026/Oct/18/llm-tools-datasette/"
       },
-      "summary": "A brief link post by Simon Willison sharing a JavaScript trick using document.currentScript for inline rendering. The article itself is essentially non-AI content — a web development micro-tip — though the sponsored advertisement mentions AI agent access controls and ephemeral trusted runtimes. No substantive AI terminology is introduced or materially used beyond the sponsor blurb.",
-      "longlistAdditions": [],
-      "longlistUpdates": [],
-      "rejections": [],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "Investing in the public benefit",
-        "url": "https://www.anthropic.com/news/public-benefit-fund"
-      },
-      "summary": "Anthropic announces the Anthropic Public Benefit Fund — a wholly-owned LLC to receive a growing share of company equity (starting at 5%, with 2% added per 50% valuation increase above baseline) dedicated expressly to public benefit activities including AI labor market impacts, nonprofit donations, and direct distributions. The article is a corporate announcement with limited new terminology, though it surfaces a few trackable concepts around AI-era equity structures and public benefit governance.",
+      "summary": "A minor patch release note for llm-tools-datasette 0.1.1, fixing an httpx dependency breakage caused by a transitive dependency change in LLM 0.33. Thin on conceptual content — primarily a bug-fix announcement for a plugin that exposes Datasette instances to LLM as a tool.",
       "longlistAdditions": [
         {
-          "id": "public-benefit-fund",
-          "label": "Public Benefit Fund"
-        },
-        {
-          "id": "equity-donation-match",
-          "label": "Equity Donation Match"
-        },
-        {
-          "id": "valuation-milestone-giving",
-          "label": "Valuation-Milestone Giving"
+          "id": "datasette",
+          "label": "Datasette"
         }
       ],
       "longlistUpdates": [],
@@ -182,54 +197,54 @@
   ],
   "definitionReviews": [
     {
-      "id": "continual-learning",
-      "status": "keep",
-      "reason": "No source addresses continual learning, catastrophic forgetting, or related agent memory topics. Definition stands."
-    },
-    {
-      "id": "continuous-ai",
-      "status": "keep",
-      "reason": "No source mentions GitHub Next or continuous AI as a named concept. Definition stands."
-    },
-    {
-      "id": "coordinated-disclosure",
-      "status": "keep",
-      "reason": "No source provides updated data on Mythos vulnerability disclosure timelines or patch rates. Definition stands on existing knowledge."
-    },
-    {
-      "id": "coordinator-mode",
-      "status": "keep",
-      "reason": "No source discusses Claude Code's coordinator mode or multi-agent orchestration design. Definition stands."
-    },
-    {
-      "id": "copilot",
-      "status": "keep",
-      "reason": "No source substantively updates the general copilot pattern or Microsoft's product line. Definition stands."
-    },
-    {
-      "id": "copilot-cowork",
+      "id": "cowork",
       "status": "insufficient_evidence",
-      "reason": "No source confirms or details the 'Copilot Cowork' product described in the definition (March 2026 launch, Wave 3 of Microsoft 365 Copilot, partnership with Anthropic). Cannot verify or update with provided excerpts."
+      "reason": "No source material confirms or updates the claimed Anthropic Cowork or Microsoft Copilot Cowork product details. Cannot verify the January 2026 launch claim or the three-way taxonomy. Insufficient evidence to refresh or keep with confidence."
     },
     {
-      "id": "cost",
-      "status": "keep",
-      "reason": "No source changes the conceptual definition of AI cost as a per-token economic dimension. Definition stands."
+      "id": "critical-safety-incident",
+      "status": "insufficient_evidence",
+      "reason": "No source material references California SB 53, New York RAISE Act, or critical safety incident reporting requirements. Cannot verify or update the definition."
     },
     {
-      "id": "cost-runaway",
+      "id": "critical-thinking",
       "status": "keep",
-      "reason": "No source directly addresses cost runaway as a failure mode, though Simon Willison's blog title 'We're going to need default hard budget caps on pretty much everything' is tangentially consistent with the concept. Insufficient detail to justify a rewrite; definition stands."
+      "reason": "General conceptual definition that does not depend on time-sensitive facts. No source material contradicts it."
     },
     {
-      "id": "cot-faithfulness",
+      "id": "cron-scheduling",
       "status": "keep",
-      "reason": "No source addresses chain-of-thought faithfulness research. Definition stands."
+      "reason": "The core definition of cron scheduling is accurate and stable. The claim about Claude Code's unreleased feature set is unverified by sources, but no contradicting evidence is present either. The foundational definition stands."
     },
     {
-      "id": "cot-monitoring",
+      "id": "cursor",
       "status": "keep",
-      "reason": "No source updates information on chain-of-thought monitoring or the 2025 cross-lab position paper referenced. Definition stands."
+      "reason": "No source material updates or contradicts this definition. The characterisation of Cursor as an AI-first IDE with codebase-aware chat remains accurate based on available context."
+    },
+    {
+      "id": "cve",
+      "status": "keep",
+      "reason": "The definition of the CVE cataloguing system is accurate and stable. The specific example (CVE-2026-4747, FreeBSD, Mythos) is unverified by sources but no contradiction is present."
+    },
+    {
+      "id": "daemon",
+      "status": "keep",
+      "reason": "Technically accurate and stable definition. No source material contradicts it."
+    },
+    {
+      "id": "dark-factory",
+      "status": "keep",
+      "reason": "No source material contradicts this definition. The concept and attribution to Dan Shapiro's taxonomy are unverified but not contradicted."
+    },
+    {
+      "id": "data-center-backlash",
+      "status": "keep",
+      "reason": "The LWiAI podcast excerpt mentions 'shifting public sentiment against data centers' which is broadly consistent with the definition. No new detail justifies a rewrite."
+    },
+    {
+      "id": "data-contamination",
+      "status": "keep",
+      "reason": "The agent evaluation paper excerpt touches on benchmark integrity concerns and the difficulty of assessing real-world performance, which is consistent with the data contamination definition. No update is warranted."
     }
   ],
   "notes": []

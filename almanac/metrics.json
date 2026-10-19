@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-10-18T20:09:12.610Z",
+  "generatedAt": "2026-10-19T22:02:34.543Z",
   "firstRunAt": "2026-04-27T01:07:31.335Z",
   "phase": 1,
   "headline": {
-    "articlesRead": 191,
-    "daysRunning": 175,
-    "longlistSize": 98,
+    "articlesRead": 197,
+    "daysRunning": 176,
+    "longlistSize": 107,
     "graphSize": 435
   },
   "thisWeek": {
-    "articlesFetched": 24,
-    "longlistAdded": 49,
-    "sourcesAdded": 2,
+    "articlesFetched": 30,
+    "longlistAdded": 58,
+    "sourcesAdded": 3,
     "promotionsToGraph": 0,
-    "proposalsQueued": 2,
+    "proposalsQueued": 4,
     "auditFlags": 0,
     "notesAdded": 16
   },
@@ -27,7 +27,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 2,
-      "daysOnLonglist": 167,
+      "daysOnLonglist": 168,
       "domains": [
         "openai.com",
         "simonwillison.net"
@@ -43,9 +43,26 @@
         "business",
         "landscape"
       ],
+      "sourceCount": 4,
+      "independentSources": 1,
+      "daysOnLonglist": 139,
+      "domains": [
+        "stratechery.com"
+      ],
+      "gapCount": 1,
+      "gap": "needs 1 more independent source"
+    },
+    {
+      "id": "apple-homeview",
+      "label": "Apple HomeView",
+      "fullName": null,
+      "clusters": [
+        "companies",
+        "landscape"
+      ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 137,
+      "daysOnLonglist": 3,
       "domains": [
         "stratechery.com"
       ],
@@ -62,7 +79,24 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 141,
+      "daysOnLonglist": 143,
+      "domains": [
+        "normaltech.ai"
+      ],
+      "gapCount": 1,
+      "gap": "needs 1 more independent source"
+    },
+    {
+      "id": "open-world-evaluation",
+      "label": "Open-World Evaluation",
+      "fullName": "Open-World Evaluation (Long-Horizon Real-World Agent Task Assessment)",
+      "clusters": [
+        "critical",
+        "agentic"
+      ],
+      "sourceCount": 2,
+      "independentSources": 1,
+      "daysOnLonglist": 143,
       "domains": [
         "normaltech.ai"
       ],
@@ -79,7 +113,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 162,
+      "daysOnLonglist": 163,
       "domains": [
         "blog.google"
       ],
@@ -96,7 +130,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 158,
+      "daysOnLonglist": 159,
       "domains": [
         "theverge.com"
       ],
@@ -113,7 +147,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 141,
+      "daysOnLonglist": 143,
       "domains": [
         "blog.google"
       ],
@@ -121,90 +155,53 @@
       "gap": "needs 1 more independent source; no source seen in past 90d"
     },
     {
-      "id": "apple-homeview",
-      "label": "Apple HomeView",
-      "fullName": null,
+      "id": "text-to-game",
+      "label": "Text-to-Game",
+      "fullName": "Text-to-Game (AI-Driven Game Generation)",
       "clusters": [
-        "companies",
-        "landscape"
+        "tools",
+        "agentic"
       ],
-      "sourceCount": 2,
+      "sourceCount": 1,
       "independentSources": 1,
-      "daysOnLonglist": 2,
+      "daysOnLonglist": 3,
       "domains": [
-        "stratechery.com"
+        "blog.google"
       ],
       "gapCount": 2,
-      "gap": "needs 1 more independent source; 1 more day on longlist"
+      "gap": "needs 1 more source; needs 1 more independent source"
     },
     {
-      "id": "self-verification",
-      "label": "Self-Verification",
-      "fullName": "Self-Verification (Model Output Verification)",
-      "clusters": [
-        "agentic",
-        "safety",
-        "technical"
-      ],
-      "sourceCount": 1,
-      "independentSources": 1,
-      "daysOnLonglist": 174,
-      "domains": [
-        "anthropic.com"
-      ],
-      "gapCount": 3,
-      "gap": "needs 1 more source; needs 1 more independent source; no source seen in past 90d"
-    },
-    {
-      "id": "differential-capability-reduction",
-      "label": "Differential Capability Reduction",
+      "id": "no-code-ai-creation",
+      "label": "No-Code AI Creation",
       "fullName": null,
       "clusters": [
-        "safety",
-        "technical",
-        "models"
+        "tools",
+        "work"
       ],
       "sourceCount": 1,
       "independentSources": 1,
-      "daysOnLonglist": 174,
+      "daysOnLonglist": 3,
       "domains": [
-        "anthropic.com"
+        "blog.google"
       ],
-      "gapCount": 3,
-      "gap": "needs 1 more source; needs 1 more independent source; no source seen in past 90d"
-    },
-    {
-      "id": "reward-signal-leakage",
-      "label": "Reward Signal Leakage",
-      "fullName": null,
-      "clusters": [
-        "safety",
-        "models",
-        "technical"
-      ],
-      "sourceCount": 1,
-      "independentSources": 1,
-      "daysOnLonglist": 171,
-      "domains": [
-        "openai.com"
-      ],
-      "gapCount": 3,
-      "gap": "needs 1 more source; needs 1 more independent source; no source seen in past 90d"
+      "gapCount": 2,
+      "gap": "needs 1 more source; needs 1 more independent source"
     }
   ],
   "sources": {
     "byDomain": [
       {
         "domain": "openai.com",
-        "count": 46
+        "count": 47
       },
       {
         "domain": "simonwillison.net",
-        "count": 28
+        "count": 29
       },
       {
         "domain": "stratechery.com",
-        "count": 24
+        "count": 25
       },
       {
         "domain": "blog.google",
@@ -216,7 +213,7 @@
       },
       {
         "domain": "huggingface.co",
-        "count": 16
+        "count": 17
       },
       {
         "domain": "theverge.com",
@@ -224,11 +221,11 @@
       },
       {
         "domain": "lastweekin.ai",
-        "count": 9
+        "count": 10
       },
       {
         "domain": "normaltech.ai",
-        "count": 7
+        "count": 8
       },
       {
         "domain": "hbr.org",
@@ -341,13 +338,13 @@
         "id": "technical",
         "label": "Technical",
         "hex": "#D0D040",
-        "count": 26
+        "count": 33
       },
       {
         "id": "agentic",
         "label": "Agentic Systems",
         "hex": "#FF9040",
-        "count": 24
+        "count": 27
       },
       {
         "id": "critical",
@@ -359,19 +356,19 @@
         "id": "models",
         "label": "Models",
         "hex": "#FFB060",
-        "count": 18
-      },
-      {
-        "id": "human",
-        "label": "Human Skills",
-        "hex": "#40D080",
-        "count": 12
+        "count": 20
       },
       {
         "id": "tools",
         "label": "Tools & Platforms",
         "hex": "#70C8F8",
-        "count": 11
+        "count": 13
+      },
+      {
+        "id": "human",
+        "label": "Human Skills",
+        "hex": "#40D080",
+        "count": 13
       },
       {
         "id": "security",
@@ -392,15 +389,15 @@
         "count": 10
       },
       {
-        "id": "work",
-        "label": "Work & Output",
-        "hex": "#E8A838",
-        "count": 9
-      },
-      {
         "id": "companies",
         "label": "Companies",
         "hex": "#9090A8",
+        "count": 10
+      },
+      {
+        "id": "work",
+        "label": "Work & Output",
+        "hex": "#E8A838",
         "count": 9
       },
       {
@@ -417,7 +414,7 @@
     "note": "All graph promotions and substantive edits are currently human-gated. Lexi proposes; Nicole approves."
   },
   "proposalsByStatus": {
-    "pending": 3,
+    "pending": 5,
     "approved": 0,
     "applied": 38,
     "rejected": 1

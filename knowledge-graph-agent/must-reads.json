@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generatedAt": "2026-10-18T20:07:14.716Z",
-    "unreadCount": 26,
-    "totalCount": 26,
+    "generatedAt": "2026-10-19T22:00:12.148Z",
+    "unreadCount": 27,
+    "totalCount": 27,
     "note": "Lexi's must-reads — articles she flags as worth Nicole reading in full. Editorial signal, not news feed. Set status to 'read' or 'dismissed' via mark-must-reads.mjs."
   },
   "entries": [
@@ -445,6 +445,23 @@
       ],
       "novelTermsInArticle": 2,
       "flaggedAt": "2026-10-18T20:07:14.716Z",
+      "status": "unread"
+    },
+    {
+      "id": "8accc0ca43725def",
+      "title": "Emerging trends in AI agent evaluation",
+      "url": "https://www.normaltech.ai/p/new-paper-emerging-trends-in-ai-agent",
+      "source": "AI Snake Oil",
+      "publishedAt": "Mon, 19 Oct 2026 20:11:55 GMT",
+      "summary": "A Princeton/Stanford/UK AISI/Brookings synthesis paper on emerging trends in AI agent evaluation, authored by Kapoor, Narayanan, and collaborators. The paper categorises 33 trends across science/methods, research agenda, and evaluation ecosystem, and argues for independent, multi-disciplinary, and sociotechnical evaluation approaches. Key themes: trajectory inspection vs. outcome-only evaluation, translation failure across evaluation layers, open-world evaluations, the rising cost of frontier evaluation, and access to CoT traces.",
+      "priority": 1,
+      "reason": "A rigorous, interdisciplinary synthesis from Princeton, Stanford, UK AISI, and Brookings that maps 33 emerging trends in AI agent evaluation — covering methodology, research agenda, and ecosystem. Essential reading for anyone who cares about how we actually know whether AI agents do what is claimed: it names the gaps in trajectory inspection, the translation problem across evaluation layers, and the political economy of independence. One of the clearest structural accounts of what a credible agent evaluation field would need to look like.",
+      "clusters": [
+        "agentic",
+        "safety"
+      ],
+      "novelTermsInArticle": 2,
+      "flaggedAt": "2026-10-19T22:00:12.148Z",
       "status": "unread"
     }
   ]

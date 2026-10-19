@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-10-18T20:09:12.163Z",
-    "pendingCount": 3,
+    "generatedAt": "2026-10-19T22:02:18.685Z",
+    "pendingCount": 5,
     "appliedCount": 38,
     "rejectedCount": 1,
     "note": "Lexi proposals queue. Actions gated as PROPOSE land here as status: 'pending'. Edit a proposal's status to 'approved' or 'rejected' and run the apply step (TBD) to commit."
@@ -2120,6 +2120,157 @@
       "tierReason": "reviewer flagged it: sources do not support",
       "digestId": "D-20261016-abed",
       "digestN": 3
+    },
+    {
+      "id": "58ddd016441369d9",
+      "action": "promote_to_graph",
+      "gate": "propose",
+      "proposedAt": "2026-10-19T22:02:18.685Z",
+      "status": "pending",
+      "source": "promote-eligibility-scan",
+      "target": {
+        "kind": "longlist_entry",
+        "id": "claude-opus-55"
+      },
+      "payload": {
+        "graphNode": {
+          "id": "claude-opus-55",
+          "label": "Claude Opus 5.5",
+          "clusters": [
+            "models",
+            "companies"
+          ],
+          "sz": 14,
+          "def": "A model variant referenced by Simon Willison in a vibe-coding experiment, used via Claude Code. The 'Extra' designation suggests an extended-capability or extended-context tier. No formal announcement or system card cited in this source.",
+          "rels": [
+            "claude",
+            "claude-code",
+            "vibe-coding"
+          ],
+          "refs": [
+            {
+              "n": 1,
+              "src": "Simon Willison's Weblog, 2026-10-15T19:47:52+00:00",
+              "q": "Tool: Chirp Pong Simon Willison's Weblog"
+            },
+            {
+              "n": 2,
+              "src": "Last Week in AI, Sat, 03 Oct 2026 07:32:03 GMT",
+              "q": "LWiAI Podcast #258 - Opus 5.5, Sol and Luna, Muse, DeepSeek-V4.1-Flash, Xi Last Week in AI"
+            }
+          ],
+          "fullName": "Claude Opus 5.5 Extra (Anthropic)",
+          "nodeType": "product"
+        }
+      },
+      "reason": "2 sources, 2 independent (simonwillison.net + lastweekin.ai), 3d on longlist. Trusted: simonwillison.net.",
+      "runId": "80e87b3a-a518-47d7-9bc2-3284a25de8d4",
+      "review": {
+        "verdict": "flag",
+        "summary": "Only Willison's excerpt uses 'Opus 5.5 Extra'; LWiAI covers Opus 5.5 but never 'Extra'. The definition's guess about what 'Extra' means is unsupported, and its claim that there is no announcement or system card contradicts LWiAI, which reports the Opus 5.5 release with a system card. It is better handled as an update to the 'claude' node than as a standalone node.",
+        "sources_support": "partially_supports",
+        "duplicate_of": "",
+        "nearest_node_id": "claude",
+        "nearest_relation": "narrower term (specific model version/variant)",
+        "is_fad": false,
+        "contested_framing": "not_applicable",
+        "edit_size": "not_applicable",
+        "flags": [
+          "sources_do_not_support",
+          "factual_error",
+          "other"
+        ],
+        "nearest": {
+          "id": "claude",
+          "label": "Claude",
+          "relation": "narrower term (specific model version/variant)"
+        },
+        "model": "claude-opus-5-5",
+        "promptVersion": "reviewer-v1",
+        "reviewedAt": "2026-10-19T22:02:26.710Z",
+        "sourcesChecked": 2
+      },
+      "tier": "nicole",
+      "tierReason": "reviewer flagged it: sources do not support, factual error, other",
+      "digestId": "D-20261019-4e5b",
+      "digestN": 1
+    },
+    {
+      "id": "76e8368823665e33",
+      "action": "promote_to_graph",
+      "gate": "propose",
+      "proposedAt": "2026-10-19T22:02:18.685Z",
+      "status": "pending",
+      "source": "promote-eligibility-scan",
+      "target": {
+        "kind": "longlist_entry",
+        "id": "independent-model-evaluation"
+      },
+      "payload": {
+        "graphNode": {
+          "id": "independent-model-evaluation",
+          "label": "Independent Model Evaluation",
+          "clusters": [
+            "safety",
+            "critical"
+          ],
+          "sz": 14,
+          "def": "A framework in which external organizations — independent of equity or operational ties to an AI lab — are given structured access to models, training information, and safeguards in order to assess risk and publish findings. Anthropic's implementation describes a tiered access model (narrowly scoped investigations → broader publication rights → employee-like access) drawing analogy to bank examination regimes. Distinct from internal red-teaming or audit functions in that evaluators retain independent publication rights and can characterize redactions publicly.",
+          "rels": [
+            "red-teaming",
+            "ai-red-teaming",
+            "behavioral-audit",
+            "safety-case",
+            "frontier-model",
+            "responsible-scaling-policy",
+            "evals",
+            "agent-governance"
+          ],
+          "refs": [
+            {
+              "n": 1,
+              "src": "Anthropic Newsroom",
+              "q": "Anthropic update on independent evaluators Anthropic Newsroom"
+            },
+            {
+              "n": 2,
+              "src": "AI Snake Oil, Mon, 19 Oct 2026 20:11:55 GMT",
+              "q": "Emerging trends in AI agent evaluation AI Snake Oil"
+            }
+          ],
+          "fullName": "Independent Model Evaluation (Third-Party Frontier AI Assessment)"
+        }
+      },
+      "reason": "2 sources, 2 independent (anthropic.com + normaltech.ai), 3d on longlist. Trusted: normaltech.ai.",
+      "runId": "80e87b3a-a518-47d7-9bc2-3284a25de8d4",
+      "review": {
+        "verdict": "flag",
+        "summary": "Only the Anthropic post describes this framework. The normaltech.ai excerpt mentions 'independent and embedded AI evaluation' just once, in passing, in a paper about agent evaluation. The visible excerpts also never show the 'tiered access model' or the claim that evaluators 'can characterize redactions publicly' (the Anthropic text cuts off at 'require them to redac'). As written, the definition is mostly a description of one vendor's programme.",
+        "sources_support": "partially_supports",
+        "duplicate_of": "",
+        "nearest_node_id": "behavioral-audit",
+        "nearest_relation": "related (external vs internal assessment)",
+        "is_fad": false,
+        "contested_framing": "not_applicable",
+        "edit_size": "not_applicable",
+        "flags": [
+          "sources_do_not_support",
+          "other"
+        ],
+        "nearest": {
+          "id": "behavioral-audit",
+          "label": "Behavioral Audit",
+          "relation": "related (external vs internal assessment)"
+        },
+        "model": "claude-opus-5-5",
+        "promptVersion": "reviewer-v1",
+        "reviewedAt": "2026-10-19T22:02:34.316Z",
+        "sourcesChecked": 2
+      },
+      "tier": "nicole",
+      "tierReason": "contested cluster (§10: frontier model)",
+      "digestId": "D-20261019-4e5b",
+      "digestN": 2
     }
   ]
 }

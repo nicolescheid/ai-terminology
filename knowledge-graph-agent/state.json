@@ -1,6 +1,6 @@
 {
-  "lastRunAt": "2026-10-18T20:07:14.716Z",
-  "reviewCursor": 134,
+  "lastRunAt": "2026-10-19T22:00:12.148Z",
+  "reviewCursor": 144,
   "seenArticles": {
     "93a049d060bc295b": {
       "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/tpus-8t-8i-cloud-next/",
@@ -1147,6 +1147,42 @@
       "title": "Investing in the public benefit",
       "publishedAt": null,
       "seenAt": "2026-10-18T20:07:14.716Z"
+    },
+    "2fb2308e2c6b3017": {
+      "url": "https://lastweekin.ai/p/lwiai-podcast-258-opus-55-sol-and",
+      "title": "LWiAI Podcast #258 - Opus 5.5, Sol and Luna, Muse, DeepSeek-V4.1-Flash, Xi",
+      "publishedAt": "Sat, 03 Oct 2026 07:32:03 GMT",
+      "seenAt": "2026-10-19T22:00:12.148Z"
+    },
+    "8accc0ca43725def": {
+      "url": "https://www.normaltech.ai/p/new-paper-emerging-trends-in-ai-agent",
+      "title": "Emerging trends in AI agent evaluation",
+      "publishedAt": "Mon, 19 Oct 2026 20:11:55 GMT",
+      "seenAt": "2026-10-19T22:00:12.148Z"
+    },
+    "8ce80ca7675337c0": {
+      "url": "https://stratechery.com/2026/do-you-trust-apple/",
+      "title": "Do You Trust Apple?",
+      "publishedAt": "Mon, 19 Oct 2026 10:00:00 +0000",
+      "seenAt": "2026-10-19T22:00:12.148Z"
+    },
+    "9dbc0d55ff9123c6": {
+      "url": "https://huggingface.co/blog/hf-torchneuron",
+      "title": "TorchNeuron: running HF models on AWS Trainium is easier than ever",
+      "publishedAt": "Mon, 19 Oct 2026 00:00:00 GMT",
+      "seenAt": "2026-10-19T22:00:12.148Z"
+    },
+    "9db4940a53f86840": {
+      "url": "https://openai.com/index/stack-overflow-chatgpt-plugin",
+      "title": "Stack Overflow for Agents triples signups with ChatGPT plugin",
+      "publishedAt": "Fri, 16 Oct 2026 00:00:00 GMT",
+      "seenAt": "2026-10-19T22:00:12.148Z"
+    },
+    "b8a89dddc6c67001": {
+      "url": "https://simonwillison.net/2026/Oct/18/llm-tools-datasette/",
+      "title": "Release: llm-tools-datasette 0.1.1",
+      "publishedAt": "2026-10-18T23:43:09+00:00",
+      "seenAt": "2026-10-19T22:00:12.148Z"
     }
   },
   "nodeReviews": {
@@ -1421,34 +1457,34 @@
       "reason": "No source directly addresses cost runaway as a failure mode, though Simon Willison's blog title 'We're going to need default hard budget caps on pretty much everything' is tangentially consistent with the concept. Insufficient detail to justify a rewrite; definition stands."
     },
     "cowork": {
-      "lastReviewedAt": "2026-06-02T20:47:42.877Z",
+      "lastReviewedAt": "2026-10-19T22:00:12.148Z",
       "status": "insufficient_evidence",
-      "reason": "No source directly addresses or updates the Cowork definition. The Microsoft Build 2026 article body is unavailable, so no new evidence exists to confirm or update claims about Copilot Cowork or the January 2026 Anthropic Cowork launch."
+      "reason": "No source material confirms or updates the claimed Anthropic Cowork or Microsoft Copilot Cowork product details. Cannot verify the January 2026 launch claim or the three-way taxonomy. Insufficient evidence to refresh or keep with confidence."
     },
     "critical-thinking": {
-      "lastReviewedAt": "2026-06-02T20:47:42.877Z",
+      "lastReviewedAt": "2026-10-19T22:00:12.148Z",
       "status": "keep",
-      "reason": "No source addresses this term. Definition is conceptual and remains valid."
+      "reason": "General conceptual definition that does not depend on time-sensitive facts. No source material contradicts it."
     },
     "cron-scheduling": {
-      "lastReviewedAt": "2026-06-02T20:47:42.877Z",
+      "lastReviewedAt": "2026-10-19T22:00:12.148Z",
       "status": "keep",
-      "reason": "No source addresses this term. Definition remains accurate and unchallenged."
+      "reason": "The core definition of cron scheduling is accurate and stable. The claim about Claude Code's unreleased feature set is unverified by sources, but no contradicting evidence is present either. The foundational definition stands."
     },
     "cursor": {
-      "lastReviewedAt": "2026-06-02T20:47:42.877Z",
+      "lastReviewedAt": "2026-10-19T22:00:12.148Z",
       "status": "keep",
-      "reason": "No source addresses this term. Definition remains accurate and unchallenged."
+      "reason": "No source material updates or contradicts this definition. The characterisation of Cursor as an AI-first IDE with codebase-aware chat remains accurate based on available context."
     },
     "cve": {
-      "lastReviewedAt": "2026-06-02T20:47:42.877Z",
+      "lastReviewedAt": "2026-10-19T22:00:12.148Z",
       "status": "keep",
-      "reason": "The Anthropic Glasswing article confirms the real-world context of Claude Mythos finding vulnerabilities in codebases, consistent with the CVE definition's example. The definition accurately describes the CVE cataloguing system and its use."
+      "reason": "The definition of the CVE cataloguing system is accurate and stable. The specific example (CVE-2026-4747, FreeBSD, Mythos) is unverified by sources but no contradiction is present."
     },
     "daemon": {
-      "lastReviewedAt": "2026-06-02T20:47:42.877Z",
+      "lastReviewedAt": "2026-10-19T22:00:12.148Z",
       "status": "keep",
-      "reason": "No source addresses this term. Definition remains accurate and unchallenged."
+      "reason": "Technically accurate and stable definition. No source material contradicts it."
     },
     "data-sovereignty": {
       "lastReviewedAt": "2026-06-02T20:47:42.877Z",
@@ -2259,6 +2295,26 @@
       "lastReviewedAt": "2026-10-18T20:07:14.716Z",
       "status": "keep",
       "reason": "No source updates information on chain-of-thought monitoring or the 2025 cross-lab position paper referenced. Definition stands."
+    },
+    "critical-safety-incident": {
+      "lastReviewedAt": "2026-10-19T22:00:12.148Z",
+      "status": "insufficient_evidence",
+      "reason": "No source material references California SB 53, New York RAISE Act, or critical safety incident reporting requirements. Cannot verify or update the definition."
+    },
+    "dark-factory": {
+      "lastReviewedAt": "2026-10-19T22:00:12.148Z",
+      "status": "keep",
+      "reason": "No source material contradicts this definition. The concept and attribution to Dan Shapiro's taxonomy are unverified but not contradicted."
+    },
+    "data-center-backlash": {
+      "lastReviewedAt": "2026-10-19T22:00:12.148Z",
+      "status": "keep",
+      "reason": "The LWiAI podcast excerpt mentions 'shifting public sentiment against data centers' which is broadly consistent with the definition. No new detail justifies a rewrite."
+    },
+    "data-contamination": {
+      "lastReviewedAt": "2026-10-19T22:00:12.148Z",
+      "status": "keep",
+      "reason": "The agent evaluation paper excerpt touches on benchmark integrity concerns and the difficulty of assessing real-world performance, which is consistent with the data contamination definition. No update is warranted."
     }
   }
 }
