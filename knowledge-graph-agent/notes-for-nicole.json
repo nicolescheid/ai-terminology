@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-10-19T22:50:58.878Z",
-    "unreadCount": 56,
+    "generatedAt": "2026-10-20T06:14:07.194Z",
+    "unreadCount": 50,
     "totalCount": 340,
     "note": "Notes for Nicole — Lexi's manager channel (spec §6). Mandatory entry types fire when their triggering condition is met; discretionary entries are observations Lexi thinks Nicole should see. Set status to 'read', 'actioned', or 'dismissed' as appropriate."
   },
@@ -8556,7 +8556,7 @@
       "writtenAt": "2026-10-19T22:49:42.312Z",
       "runId": "e87d984f-638f-4499-b4e3-797a7fc4e231",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Source pattern: domain 'stratechery.com' appears in 4 recent longlist entries",
       "details": "In the past 30 days, 4 longlist entries have at least one source from stratechery.com. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
       "evidence": {
@@ -8572,7 +8572,8 @@
         "recentEntryCount": 58
       },
       "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
-      "source": "auditor"
+      "source": "auditor",
+      "readAt": "2026-10-20T06:14:07.194Z"
     },
     {
       "id": "8b4632878358d9b5",
@@ -8580,7 +8581,7 @@
       "writtenAt": "2026-10-19T22:49:42.312Z",
       "runId": "e87d984f-638f-4499-b4e3-797a7fc4e231",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Source pattern: domain 'blog.google' appears in 10 recent longlist entries",
       "details": "In the past 30 days, 10 longlist entries have at least one source from blog.google. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
       "evidence": {
@@ -8602,7 +8603,8 @@
         "recentEntryCount": 58
       },
       "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
-      "source": "auditor"
+      "source": "auditor",
+      "readAt": "2026-10-20T06:14:07.194Z"
     },
     {
       "id": "9102a23457d36916",
@@ -8610,7 +8612,7 @@
       "writtenAt": "2026-10-19T22:49:42.312Z",
       "runId": "e87d984f-638f-4499-b4e3-797a7fc4e231",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Source pattern: domain 'lastweekin.ai' appears in 8 recent longlist entries",
       "details": "In the past 30 days, 8 longlist entries have at least one source from lastweekin.ai. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
       "evidence": {
@@ -8630,7 +8632,8 @@
         "recentEntryCount": 58
       },
       "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
-      "source": "auditor"
+      "source": "auditor",
+      "readAt": "2026-10-20T06:14:07.194Z"
     },
     {
       "id": "a995e5a3eeceb7ee",
@@ -8638,7 +8641,7 @@
       "writtenAt": "2026-10-19T22:49:42.312Z",
       "runId": "e87d984f-638f-4499-b4e3-797a7fc4e231",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Source pattern: domain 'openai.com' appears in 8 recent longlist entries",
       "details": "In the past 30 days, 8 longlist entries have at least one source from openai.com. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
       "evidence": {
@@ -8658,7 +8661,8 @@
         "recentEntryCount": 58
       },
       "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
-      "source": "auditor"
+      "source": "auditor",
+      "readAt": "2026-10-20T06:14:07.194Z"
     },
     {
       "id": "6eb743849ac7efaa",
@@ -8666,7 +8670,7 @@
       "writtenAt": "2026-10-19T22:49:42.312Z",
       "runId": "e87d984f-638f-4499-b4e3-797a7fc4e231",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Source pattern: domain 'normaltech.ai' appears in 9 recent longlist entries",
       "details": "In the past 30 days, 9 longlist entries have at least one source from normaltech.ai. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
       "evidence": {
@@ -8687,7 +8691,8 @@
         "recentEntryCount": 58
       },
       "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
-      "source": "auditor"
+      "source": "auditor",
+      "readAt": "2026-10-20T06:14:07.194Z"
     },
     {
       "id": "528f18e11061a784",
@@ -8695,7 +8700,7 @@
       "writtenAt": "2026-10-19T22:49:42.312Z",
       "runId": "e87d984f-638f-4499-b4e3-797a7fc4e231",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Source pattern: domain 'huggingface.co' appears in 3 recent longlist entries",
       "details": "In the past 30 days, 3 longlist entries have at least one source from huggingface.co. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
       "evidence": {
@@ -8710,13 +8715,15 @@
         "recentEntryCount": 58
       },
       "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
-      "source": "auditor"
+      "source": "auditor",
+      "readAt": "2026-10-20T06:14:07.194Z"
     }
   ],
   "usedLinks": {
     "xUcGjGA8MWoX3w2N": "2026-10-17T03:37:05.523Z",
     "QGS7nJf0kxo6km4Y": "2026-10-17T20:54:11.831Z",
     "47h4QXe8ZI3BrDpb": "2026-10-19T03:51:23.943Z",
-    "y4ECWNCo_ZXGw8HF": "2026-10-19T22:50:58.878Z"
+    "y4ECWNCo_ZXGw8HF": "2026-10-19T22:50:58.878Z",
+    "KU29P4lkS3punBbZ": "2026-10-20T06:14:07.194Z"
   }
 }
