@@ -1,9 +1,9 @@
 {
   "meta": {
-    "generatedAt": "2026-10-19T22:49:25.586Z",
-    "pendingCount": 4,
-    "approvedCount": 1,
-    "appliedCount": 38,
+    "generatedAt": "2026-10-20T21:17:49.757Z",
+    "pendingCount": 5,
+    "approvedCount": 0,
+    "appliedCount": 39,
     "rejectedCount": 1,
     "note": "Lexi proposals queue. Actions gated as PROPOSE land here as status: 'pending'. Edit a proposal's status to 'approved' or 'rejected' and run the apply step (TBD) to commit."
   },
@@ -2127,7 +2127,7 @@
       "action": "promote_to_graph",
       "gate": "propose",
       "proposedAt": "2026-10-19T22:02:18.685Z",
-      "status": "approved",
+      "status": "applied",
       "source": "promote-eligibility-scan",
       "target": {
         "kind": "longlist_entry",
@@ -2197,7 +2197,8 @@
       "digestN": 1,
       "approvedAt": "2026-10-19T22:49:25.586Z",
       "approvedBy": "nicole",
-      "decidedVia": "email-link"
+      "decidedVia": "email-link",
+      "appliedAt": "2026-10-20T21:17:49.757Z"
     },
     {
       "id": "76e8368823665e33",
@@ -2275,6 +2276,76 @@
       "tierReason": "contested cluster (§10: frontier model)",
       "digestId": "D-20261019-4e5b",
       "digestN": 2
+    },
+    {
+      "id": "4e844bec05e4b1d7",
+      "action": "promote_to_graph",
+      "gate": "propose",
+      "proposedAt": "2026-10-20T21:17:42.243Z",
+      "status": "pending",
+      "source": "promote-eligibility-scan",
+      "target": {
+        "kind": "longlist_entry",
+        "id": "streaming-inference"
+      },
+      "payload": {
+        "graphNode": {
+          "id": "streaming-inference",
+          "label": "Streaming Inference",
+          "clusters": [
+            "technical",
+            "models"
+          ],
+          "sz": 16,
+          "def": "A mode of model inference in which outputs are generated and transmitted incrementally in real time rather than waiting for full completion, essential for low-latency voice and conversational AI applications.",
+          "rels": [
+            "inference",
+            "latency",
+            "api"
+          ],
+          "refs": [
+            {
+              "n": 1,
+              "src": "OpenAI News, Mon, 04 May 2026 00:00:00 GMT",
+              "q": "How OpenAI delivers low-latency voice AI at scale OpenAI News"
+            },
+            {
+              "n": 2,
+              "src": "Hugging Face Blog, Tue, 20 Oct 2026 18:17:47 GMT",
+              "q": "NVIDIA Cosmos3-H-Dreams: Bringing Clinical Surgery to Life Through Generative Simulation Hugging Face Blog"
+            }
+          ]
+        }
+      },
+      "reason": "2 sources, 2 independent (openai.com + huggingface.co), 169d on longlist.",
+      "runId": "48c7f64f-0caa-4f4b-9e90-6633645f4eaa",
+      "review": {
+        "verdict": "flag",
+        "summary": "Only one excerpt is readable: the OpenAI page returned a 403. The Hugging Face excerpt uses 'streaming inference' for block-wise autoregressive video generation in a surgical simulator, not voice or conversational AI, so the definition's 'essential for low-latency voice and conversational AI' framing is unsupported and too narrow. Consider broadening the definition and finding a second fetchable source.",
+        "sources_support": "partially_supports",
+        "duplicate_of": "",
+        "nearest_node_id": "inference",
+        "nearest_relation": "narrower term",
+        "is_fad": false,
+        "contested_framing": "not_applicable",
+        "edit_size": "not_applicable",
+        "flags": [
+          "sources_do_not_support"
+        ],
+        "nearest": {
+          "id": "inference",
+          "label": "Inference",
+          "relation": "narrower term"
+        },
+        "model": "claude-opus-5-5",
+        "promptVersion": "reviewer-v1",
+        "reviewedAt": "2026-10-20T21:17:49.696Z",
+        "sourcesChecked": 2
+      },
+      "tier": "nicole",
+      "tierReason": "reviewer flagged it: sources do not support",
+      "digestId": "D-20261020-a551",
+      "digestN": 1
     }
   ],
   "usedLinks": {

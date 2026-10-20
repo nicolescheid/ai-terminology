@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-19T22:00:12.148Z",
+    "generatedAt": "2026-10-20T21:17:49.757Z",
     "sourceCount": 6,
     "note": "Agent-managed overlay. Graph-affecting changes are routed through the permissions matrix (actions.mjs) — see proposals.json for pending items."
   },
@@ -1171,6 +1171,35 @@
         }
       ],
       "fullName": "Project Solara (Microsoft Agent OS)",
+      "nodeType": "product"
+    },
+    {
+      "id": "claude-opus-55",
+      "label": "Claude Opus 5.5",
+      "clusters": [
+        "models",
+        "companies"
+      ],
+      "sz": 14,
+      "def": "A model variant referenced by Simon Willison in a vibe-coding experiment, used via Claude Code. The 'Extra' designation suggests an extended-capability or extended-context tier. No formal announcement or system card cited in this source.",
+      "rels": [
+        "claude",
+        "claude-code",
+        "vibe-coding"
+      ],
+      "refs": [
+        {
+          "n": 1,
+          "src": "Simon Willison's Weblog, 2026-10-15T19:47:52+00:00",
+          "q": "Tool: Chirp Pong Simon Willison's Weblog"
+        },
+        {
+          "n": 2,
+          "src": "Last Week in AI, Sat, 03 Oct 2026 07:32:03 GMT",
+          "q": "LWiAI Podcast #258 - Opus 5.5, Sol and Luna, Muse, DeepSeek-V4.1-Flash, Xi Last Week in AI"
+        }
+      ],
+      "fullName": "Claude Opus 5.5 Extra (Anthropic)",
       "nodeType": "product"
     }
   ],

@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-10-19T22:02:34.458Z",
-    "count": 2,
+    "generatedAt": "2026-10-20T21:17:49.830Z",
+    "count": 3,
     "note": "Lexi's email digests to Nicole. Written by build-digest.mjs; sentAt/messageId/thread written by the Worker (src/lexi-mail)."
   },
   "digests": [
@@ -211,6 +211,53 @@
       "waitingEarlier": 3,
       "thread": [],
       "subject": "2 items to review [Lexi D-20261019-4e5b]"
+    },
+    {
+      "id": "D-20261020-a551",
+      "createdAt": "2026-10-20T21:17:49.830Z",
+      "autoApplyHours": 72,
+      "autoApplyAt": "2026-10-23T21:17:49.830Z",
+      "sentAt": null,
+      "messageId": null,
+      "items": [
+        {
+          "n": 1,
+          "proposalId": "4e844bec05e4b1d7",
+          "action": "promote_to_graph",
+          "kind": "new_term",
+          "term": "Streaming Inference",
+          "termId": "streaming-inference",
+          "definition": "A mode of model inference in which outputs are generated and transmitted incrementally in real time rather than waiting for full completion, essential for low-latency voice and conversational AI applications.",
+          "previousDefinition": null,
+          "sources": [
+            {
+              "label": "OpenAI News: How OpenAI delivers low-latency voice AI at scale",
+              "url": "https://openai.com/index/delivering-low-latency-voice-ai-at-scale"
+            },
+            {
+              "label": "Hugging Face Blog: NVIDIA Cosmos3-H-Dreams: Bringing Clinical Surgery to Life Through Generative Simulation",
+              "url": "https://huggingface.co/blog/nvidia/cosmos3-h-dreams"
+            }
+          ],
+          "nearest": {
+            "id": "inference",
+            "label": "Inference",
+            "relation": "narrower term"
+          },
+          "rationale": "2 sources, 2 independent (openai.com + huggingface.co), 169d on longlist.",
+          "review": {
+            "verdict": "flag",
+            "summary": "Only one excerpt is readable: the OpenAI page returned a 403. The Hugging Face excerpt uses 'streaming inference' for block-wise autoregressive video generation in a surgical simulator, not voice or conversational AI, so the definition's 'essential for low-latency voice and conversational AI' framing is unsupported and too narrow. Consider broadening the definition and finding a second fetchable source.",
+            "flags": [
+              "sources_do_not_support"
+            ]
+          },
+          "tier": "nicole",
+          "tierReason": "reviewer flagged it: sources do not support"
+        }
+      ],
+      "waitingEarlier": 4,
+      "thread": []
     }
   ]
 }

@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-10-19T22:49:44.019Z",
+  "generatedAt": "2026-10-20T21:17:49.901Z",
   "firstRunAt": "2026-04-27T01:07:31.335Z",
   "phase": 1,
   "headline": {
-    "articlesRead": 197,
-    "daysRunning": 176,
-    "longlistSize": 107,
-    "graphSize": 435
+    "articlesRead": 203,
+    "daysRunning": 177,
+    "longlistSize": 120,
+    "graphSize": 436
   },
   "thisWeek": {
-    "articlesFetched": 30,
-    "longlistAdded": 58,
-    "sourcesAdded": 3,
-    "promotionsToGraph": 0,
-    "proposalsQueued": 4,
+    "articlesFetched": 36,
+    "longlistAdded": 72,
+    "sourcesAdded": 4,
+    "promotionsToGraph": 1,
+    "proposalsQueued": 5,
     "auditFlags": 6,
-    "notesAdded": 22
+    "notesAdded": 21
   },
   "almostThere": [
     {
@@ -27,7 +27,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 2,
-      "daysOnLonglist": 168,
+      "daysOnLonglist": 169,
       "domains": [
         "openai.com",
         "simonwillison.net"
@@ -45,7 +45,7 @@
       ],
       "sourceCount": 4,
       "independentSources": 1,
-      "daysOnLonglist": 139,
+      "daysOnLonglist": 140,
       "domains": [
         "stratechery.com"
       ],
@@ -62,7 +62,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 3,
+      "daysOnLonglist": 4,
       "domains": [
         "stratechery.com"
       ],
@@ -79,7 +79,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 143,
+      "daysOnLonglist": 144,
       "domains": [
         "normaltech.ai"
       ],
@@ -96,7 +96,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 143,
+      "daysOnLonglist": 144,
       "domains": [
         "normaltech.ai"
       ],
@@ -113,7 +113,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 163,
+      "daysOnLonglist": 164,
       "domains": [
         "blog.google"
       ],
@@ -130,7 +130,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 159,
+      "daysOnLonglist": 160,
       "domains": [
         "theverge.com"
       ],
@@ -147,7 +147,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 143,
+      "daysOnLonglist": 144,
       "domains": [
         "blog.google"
       ],
@@ -164,7 +164,7 @@
       ],
       "sourceCount": 1,
       "independentSources": 1,
-      "daysOnLonglist": 3,
+      "daysOnLonglist": 4,
       "domains": [
         "blog.google"
       ],
@@ -181,7 +181,7 @@
       ],
       "sourceCount": 1,
       "independentSources": 1,
-      "daysOnLonglist": 3,
+      "daysOnLonglist": 4,
       "domains": [
         "blog.google"
       ],
@@ -193,15 +193,15 @@
     "byDomain": [
       {
         "domain": "openai.com",
-        "count": 47
+        "count": 48
       },
       {
         "domain": "simonwillison.net",
-        "count": 29
+        "count": 30
       },
       {
         "domain": "stratechery.com",
-        "count": 25
+        "count": 26
       },
       {
         "domain": "blog.google",
@@ -209,19 +209,19 @@
       },
       {
         "domain": "anthropic.com",
-        "count": 21
+        "count": 22
       },
       {
         "domain": "huggingface.co",
-        "count": 17
+        "count": 18
+      },
+      {
+        "domain": "lastweekin.ai",
+        "count": 11
       },
       {
         "domain": "theverge.com",
         "count": 11
-      },
-      {
-        "domain": "lastweekin.ai",
-        "count": 10
       },
       {
         "domain": "normaltech.ai",
@@ -329,45 +329,51 @@
     ],
     "distribution": [
       {
-        "id": "safety",
-        "label": "Safety",
-        "hex": "#FF6090",
-        "count": 33
-      },
-      {
         "id": "technical",
         "label": "Technical",
         "hex": "#D0D040",
-        "count": 33
+        "count": 39
+      },
+      {
+        "id": "safety",
+        "label": "Safety",
+        "hex": "#FF6090",
+        "count": 37
       },
       {
         "id": "agentic",
         "label": "Agentic Systems",
         "hex": "#FF9040",
-        "count": 27
-      },
-      {
-        "id": "critical",
-        "label": "Critical / Hype",
-        "hex": "#FF5555",
-        "count": 22
+        "count": 30
       },
       {
         "id": "models",
         "label": "Models",
         "hex": "#FFB060",
-        "count": 20
+        "count": 24
+      },
+      {
+        "id": "critical",
+        "label": "Critical / Hype",
+        "hex": "#FF5555",
+        "count": 24
       },
       {
         "id": "tools",
         "label": "Tools & Platforms",
         "hex": "#70C8F8",
-        "count": 13
+        "count": 15
       },
       {
         "id": "human",
         "label": "Human Skills",
         "hex": "#40D080",
+        "count": 13
+      },
+      {
+        "id": "companies",
+        "label": "Companies",
+        "hex": "#9090A8",
         "count": 13
       },
       {
@@ -383,40 +389,34 @@
         "count": 10
       },
       {
+        "id": "work",
+        "label": "Work & Output",
+        "hex": "#E8A838",
+        "count": 10
+      },
+      {
         "id": "business",
         "label": "Business Reality",
         "hex": "#48C888",
         "count": 10
       },
       {
-        "id": "companies",
-        "label": "Companies",
-        "hex": "#9090A8",
-        "count": 10
-      },
-      {
-        "id": "work",
-        "label": "Work & Output",
-        "hex": "#E8A838",
-        "count": 9
-      },
-      {
         "id": "autonomy",
         "label": "Autonomy Spectrum",
         "hex": "#58B8E8",
-        "count": 3
+        "count": 4
       }
     ]
   },
   "velocity": {
-    "humanGated": 38,
+    "humanGated": 39,
     "autonomous": 0,
     "note": "All graph promotions and substantive edits are currently human-gated. Lexi proposes; Nicole approves."
   },
   "proposalsByStatus": {
     "pending": 5,
     "approved": 0,
-    "applied": 38,
+    "applied": 39,
     "rejected": 1
   },
   "decisionsByCluster": {
@@ -449,11 +449,11 @@
       "rejected": 0
     },
     "companies": {
-      "approved": 4,
+      "approved": 5,
       "rejected": 0
     },
     "models": {
-      "approved": 5,
+      "approved": 6,
       "rejected": 0
     },
     "business": {

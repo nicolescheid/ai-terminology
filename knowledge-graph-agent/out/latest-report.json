@@ -1,70 +1,170 @@
 {
-  "generatedAt": "2026-10-19T22:00:12.148Z",
+  "generatedAt": "2026-10-20T21:15:51.629Z",
   "model": "claude-sonnet-4-6",
   "sourcesConfigured": 15,
   "articlesConsidered": [
     {
-      "id": "2fb2308e2c6b3017",
-      "source": "Last Week in AI",
-      "title": "LWiAI Podcast #258 - Opus 5.5, Sol and Luna, Muse, DeepSeek-V4.1-Flash, Xi",
-      "url": "https://lastweekin.ai/p/lwiai-podcast-258-opus-55-sol-and",
-      "publishedAt": "Sat, 03 Oct 2026 07:32:03 GMT"
-    },
-    {
-      "id": "8accc0ca43725def",
-      "source": "AI Snake Oil",
-      "title": "Emerging trends in AI agent evaluation",
-      "url": "https://www.normaltech.ai/p/new-paper-emerging-trends-in-ai-agent",
-      "publishedAt": "Mon, 19 Oct 2026 20:11:55 GMT"
-    },
-    {
-      "id": "8ce80ca7675337c0",
-      "source": "Stratechery",
-      "title": "Do You Trust Apple?",
-      "url": "https://stratechery.com/2026/do-you-trust-apple/",
-      "publishedAt": "Mon, 19 Oct 2026 10:00:00 +0000"
-    },
-    {
-      "id": "9dbc0d55ff9123c6",
+      "id": "4eb9f7080b11166e",
       "source": "Hugging Face Blog",
-      "title": "TorchNeuron: running HF models on AWS Trainium is easier than ever",
-      "url": "https://huggingface.co/blog/hf-torchneuron",
-      "publishedAt": "Mon, 19 Oct 2026 00:00:00 GMT"
+      "title": "NVIDIA Cosmos3-H-Dreams: Bringing Clinical Surgery to Life Through Generative Simulation",
+      "url": "https://huggingface.co/blog/nvidia/cosmos3-h-dreams",
+      "publishedAt": "Tue, 20 Oct 2026 18:17:47 GMT"
     },
     {
-      "id": "9db4940a53f86840",
+      "id": "b3fcb2e42d321123",
       "source": "OpenAI News",
-      "title": "Stack Overflow for Agents triples signups with ChatGPT plugin",
-      "url": "https://openai.com/index/stack-overflow-chatgpt-plugin",
-      "publishedAt": "Fri, 16 Oct 2026 00:00:00 GMT"
+      "title": "Franchisee reconciles cash in 94% less time with ChatGPT Work",
+      "url": "https://openai.com/index/ted-taylor-restaurant",
+      "publishedAt": "Tue, 20 Oct 2026 10:00:00 GMT"
     },
     {
-      "id": "b8a89dddc6c67001",
+      "id": "f691b33b16339eed",
+      "source": "Stratechery",
+      "title": "Muse Spark Open, Meta + Apple, Thin and Thick",
+      "url": "https://stratechery.com/2026/muse-spark-open-meta-apple-thin-and-thick/",
+      "publishedAt": "Tue, 20 Oct 2026 10:00:00 +0000"
+    },
+    {
+      "id": "c01e31c5a3a42d55",
+      "source": "Last Week in AI",
+      "title": "Last Week in AI #346 - 719 math manuscripts, 2 Western open models, 1 more safety resignation",
+      "url": "https://lastweekin.ai/p/last-week-in-ai-346-719-math-manuscripts",
+      "publishedAt": "Fri, 09 Oct 2026 05:06:58 GMT"
+    },
+    {
+      "id": "3b5ce86c8c402c8d",
       "source": "Simon Willison's Weblog",
-      "title": "Release: llm-tools-datasette 0.1.1",
-      "url": "https://simonwillison.net/2026/Oct/18/llm-tools-datasette/",
-      "publishedAt": "2026-10-18T23:43:09+00:00"
+      "title": "Battle Drones—a vibe coded RTS with audio-based multiplayer",
+      "url": "https://simonwillison.net/2026/Oct/20/battledrones/",
+      "publishedAt": "2026-10-20T19:34:19+00:00"
+    },
+    {
+      "id": "10310c209328b333",
+      "source": "Anthropic Newsroom",
+      "title": "Announcements",
+      "url": "https://www.anthropic.com/news/announcements",
+      "publishedAt": null
     }
   ],
   "harvestedTerms": [
     {
       "article": {
-        "title": "LWiAI Podcast #258 - Opus 5.5, Sol and Luna, Muse, DeepSeek-V4.1-Flash, Xi",
-        "url": "https://lastweekin.ai/p/lwiai-podcast-258-opus-55-sol-and"
+        "title": "NVIDIA Cosmos3-H-Dreams: Bringing Clinical Surgery to Life Through Generative Simulation",
+        "url": "https://huggingface.co/blog/nvidia/cosmos3-h-dreams"
       },
-      "summary": "LWiAI Podcast episode 258 covers Anthropic's Opus 5.5 release, OpenAI's GPT-6 Sol and Luna tiers, Meta's Muse AI agent, DeepSeek-V4.1-Flash KV-cache compression, Bonsai 227B ternary model compression, US-China AI diplomacy, reward hacking detection research, a 'pain axis' representation study, and multi-agent scaling via test-time communication. Mostly a news roundup podcast with limited terminological novelty.",
+      "summary": "NVIDIA introduces Cosmos3-H-Dreams, a real-time generative surgical simulator trained on clinical cholecystectomy recordings that uses world foundation model technology, Self-Forcing distillation, and a streaming inference library (FlashDreams) to enable interactive kinematic control of surgical scenes. The article is technically dense, covering teacher-to-student distillation, causal video generation, KV cache consolidation for long rollouts, and action-conditioned world models for surgical robotics.",
       "longlistAdditions": [
         {
-          "id": "gpt6-sol",
-          "label": "GPT-6 Sol"
+          "id": "world-foundation-model",
+          "label": "World Foundation Model"
         },
         {
-          "id": "bonsai-227b",
-          "label": "Bonsai 2 27B"
+          "id": "self-forcing-distillation",
+          "label": "Self-Forcing Distillation"
         },
         {
-          "id": "rrsi",
-          "label": "Regularized Recursive Self-Improvement"
+          "id": "action-conditioned-generation",
+          "label": "Action-Conditioned Generation"
+        }
+      ],
+      "longlistUpdates": [
+        {
+          "id": "streaming-inference",
+          "label": "Streaming Inference",
+          "sourceAdded": true,
+          "sourceCount": 2,
+          "independentSourceCount": 2
+        }
+      ],
+      "rejections": [],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "Muse Spark Open, Meta + Apple, Thin and Thick",
+        "url": "https://stratechery.com/2026/muse-spark-open-meta-apple-thin-and-thick/"
+      },
+      "summary": "Stratechery paywalled article about Meta releasing an open-source model ('Muse Spark Open') and a surprise partnership with Apple to enable local on-device deployment. The excerpt is almost entirely behind the paywall — only the title, teaser line, and subscription page are visible. No substantive analytical content is accessible.",
+      "longlistAdditions": [
+        {
+          "id": "muse-spark-open",
+          "label": "Muse Spark Open"
+        }
+      ],
+      "longlistUpdates": [],
+      "rejections": [],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "Last Week in AI #346 - 719 math manuscripts, 2 Western open models, 1 more safety resignation",
+        "url": "https://lastweekin.ai/p/last-week-in-ai-346-719-math-manuscripts"
+      },
+      "summary": "A news roundup covering: OpenAI releasing 719 math manuscripts from an unreleased frontier model (with governance debate); Mistral and Reflection AI launching large open-weight models pitched as Western rivals to Chinese models; OpenAI safety researcher David Robinson's resignation essay criticizing trial-and-error release culture; and Google opening SynthID Detector publicly while OpenAI adds EU text watermarking.",
+      "longlistAdditions": [
+        {
+          "id": "synthid",
+          "label": "SynthID"
+        },
+        {
+          "id": "preparedness-framework",
+          "label": "Preparedness Framework"
+        },
+        {
+          "id": "ai-mathematics",
+          "label": "AI Mathematics"
+        },
+        {
+          "id": "trial-error-release-culture",
+          "label": "Trial-and-Error Release Culture"
+        }
+      ],
+      "longlistUpdates": [],
+      "rejections": [],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "Battle Drones—a vibe coded RTS with audio-based multiplayer",
+        "url": "https://simonwillison.net/2026/Oct/20/battledrones/"
+      },
+      "summary": "Simon Willison documents the iterative development of Battle Drones, a browser-based RTS game built almost entirely through vibe coding with Claude Code over 12 major versions. The article showcases audio-based multiplayer (synchronizing game state via sound), Ultracode dynamic workflows that orchestrated subagents for game balancing, and an agent-vs-agent play mode where two LLMs compete. It's primarily a personal project writeup with some interesting embedded concepts around multi-agent simulation and audio data encoding.",
+      "longlistAdditions": [
+        {
+          "id": "ultracode-mode",
+          "label": "Ultracode Mode"
+        },
+        {
+          "id": "audio-state-sync",
+          "label": "Audio-Based State Synchronization"
+        },
+        {
+          "id": "ai-vs-ai-mode",
+          "label": "AI vs. AI Mode"
+        }
+      ],
+      "longlistUpdates": [],
+      "rejections": [],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "Announcements",
+        "url": "https://www.anthropic.com/news/announcements"
+      },
+      "summary": "Anthropic announcements page covering October–July 2026: new model releases (Claude Haiku 5.5, Sonnet 5.5, Opus 5.5, Mythos, Fable 5.1), expansion of verification programs (Cyber, Life Sciences), the Claude Frontier Academy initiative, Model Hardware Standard preview, and various philanthropic/research funding commitments. Primarily a product/news digest with limited terminological novelty.",
+      "longlistAdditions": [
+        {
+          "id": "life-sciences-verification-program",
+          "label": "Life Sciences Verification Program"
+        },
+        {
+          "id": "claude-frontier-academy",
+          "label": "Claude Frontier Academy"
+        },
+        {
+          "id": "model-hardware-standard",
+          "label": "Model Hardware Standard"
         }
       ],
       "longlistUpdates": [
@@ -72,179 +172,64 @@
           "id": "claude-opus-55",
           "label": "Claude Opus 5.5",
           "sourceAdded": true,
-          "sourceCount": 2,
-          "independentSourceCount": 2
-        }
-      ],
-      "rejections": [],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "Emerging trends in AI agent evaluation",
-        "url": "https://www.normaltech.ai/p/new-paper-emerging-trends-in-ai-agent"
-      },
-      "summary": "A Princeton/Stanford/UK AISI/Brookings synthesis paper on emerging trends in AI agent evaluation, authored by Kapoor, Narayanan, and collaborators. The paper categorises 33 trends across science/methods, research agenda, and evaluation ecosystem, and argues for independent, multi-disciplinary, and sociotechnical evaluation approaches. Key themes: trajectory inspection vs. outcome-only evaluation, translation failure across evaluation layers, open-world evaluations, the rising cost of frontier evaluation, and access to CoT traces.",
-      "longlistAdditions": [
-        {
-          "id": "trajectory-evaluation",
-          "label": "Trajectory Evaluation"
-        },
-        {
-          "id": "sociotechnical-evaluation",
-          "label": "Sociotechnical Evaluation"
-        }
-      ],
-      "longlistUpdates": [
-        {
-          "id": "open-world-evaluation",
-          "label": "Open-World Evaluation",
-          "sourceAdded": true,
-          "sourceCount": 2,
-          "independentSourceCount": 1
-        },
-        {
-          "id": "independent-model-evaluation",
-          "label": "Independent Model Evaluation",
-          "sourceAdded": true,
-          "sourceCount": 2,
-          "independentSourceCount": 2
-        }
-      ],
-      "rejections": [],
-      "proposalsQueued": [],
-      "mustReadFlagged": {
-        "priority": 1,
-        "reason": "A rigorous, interdisciplinary synthesis from Princeton, Stanford, UK AISI, and Brookings that maps 33 emerging trends in AI agent evaluation — covering methodology, research agenda, and ecosystem. Essential reading for anyone who cares about how we actually know whether AI agents do what is claimed: it names the gaps in trajectory inspection, the translation problem across evaluation layers, and the political economy of independence. One of the clearest structural accounts of what a credible agent evaluation field would need to look like."
-      }
-    },
-    {
-      "article": {
-        "title": "Do You Trust Apple?",
-        "url": "https://stratechery.com/2026/do-you-trust-apple/"
-      },
-      "summary": "Ben Thompson's Stratechery piece on Apple HomeView traces Apple's trust-based proposition from the 1999 AirPort/WiFi launch through to a new smarthome display product. The article touches on aggregator theory, AI-driven software decompilation enabling personal software, and the smarthome as a new AI interface surface — useful for context and ecosystem framing but primarily a product analysis piece.",
-      "longlistAdditions": [],
-      "longlistUpdates": [
-        {
-          "id": "apple-homeview",
-          "label": "Apple HomeView",
-          "sourceAdded": true,
           "sourceCount": 3,
-          "independentSourceCount": 1
-        },
-        {
-          "id": "aggregator-theory",
-          "label": "Aggregator Theory",
-          "sourceAdded": true,
-          "sourceCount": 4,
-          "independentSourceCount": 1
+          "independentSourceCount": 3
         }
       ],
-      "rejections": [
-        {
-          "label": "Personal Software",
-          "reason": "already in graph (label match)"
-        }
-      ],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "TorchNeuron: running HF models on AWS Trainium is easier than ever",
-        "url": "https://huggingface.co/blog/hf-torchneuron"
-      },
-      "summary": "Hugging Face announces TorchNeuron, a new PyTorch backend for AWS Trainium that integrates Trainium as a native device, enabling Transformers, Diffusers, and related libraries to run on it directly without the prior XLA-based abstraction layer (Optimum Neuron). The article is technical documentation of a tooling integration, showing code examples for inference and supervised fine-tuning on Trainium hardware.",
-      "longlistAdditions": [
-        {
-          "id": "torchneuron",
-          "label": "TorchNeuron"
-        },
-        {
-          "id": "tensor-parallelism",
-          "label": "Tensor Parallelism"
-        },
-        {
-          "id": "static-shape-compilation",
-          "label": "Static Shape Compilation"
-        }
-      ],
-      "longlistUpdates": [],
-      "rejections": [
-        {
-          "label": "Trainium",
-          "reason": "already in graph (label match)"
-        }
-      ],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "Release: llm-tools-datasette 0.1.1",
-        "url": "https://simonwillison.net/2026/Oct/18/llm-tools-datasette/"
-      },
-      "summary": "A minor patch release note for llm-tools-datasette 0.1.1, fixing an httpx dependency breakage caused by a transitive dependency change in LLM 0.33. Thin on conceptual content — primarily a bug-fix announcement for a plugin that exposes Datasette instances to LLM as a tool.",
-      "longlistAdditions": [
-        {
-          "id": "datasette",
-          "label": "Datasette"
-        }
-      ],
-      "longlistUpdates": [],
       "rejections": [],
       "proposalsQueued": []
     }
   ],
   "definitionReviews": [
     {
-      "id": "cowork",
-      "status": "insufficient_evidence",
-      "reason": "No source material confirms or updates the claimed Anthropic Cowork or Microsoft Copilot Cowork product details. Cannot verify the January 2026 launch claim or the three-way taxonomy. Insufficient evidence to refresh or keep with confidence."
-    },
-    {
-      "id": "critical-safety-incident",
-      "status": "insufficient_evidence",
-      "reason": "No source material references California SB 53, New York RAISE Act, or critical safety incident reporting requirements. Cannot verify or update the definition."
-    },
-    {
-      "id": "critical-thinking",
+      "id": "data-poisoning",
       "status": "keep",
-      "reason": "General conceptual definition that does not depend on time-sensitive facts. No source material contradicts it."
+      "reason": "No source material addresses data poisoning, the referenced study, or its findings. Definition stands."
     },
     {
-      "id": "cron-scheduling",
+      "id": "data-residency",
       "status": "keep",
-      "reason": "The core definition of cron scheduling is accurate and stable. The claim about Claude Code's unreleased feature set is unverified by sources, but no contradicting evidence is present either. The foundational definition stands."
+      "reason": "No source material addresses data residency requirements or regulations. Definition stands."
     },
     {
-      "id": "cursor",
+      "id": "data-sovereignty",
       "status": "keep",
-      "reason": "No source material updates or contradicts this definition. The characterisation of Cursor as an AI-first IDE with codebase-aware chat remains accurate based on available context."
+      "reason": "No source material addresses data sovereignty concepts or open-weight local deployment. Definition stands."
     },
     {
-      "id": "cve",
+      "id": "dead-internet-theory",
       "status": "keep",
-      "reason": "The definition of the CVE cataloguing system is accurate and stable. The specific example (CVE-2026-4747, FreeBSD, Mythos) is unverified by sources but no contradiction is present."
+      "reason": "No source material addresses the dead internet theory or bot-generated web content. Definition stands."
     },
     {
-      "id": "daemon",
+      "id": "deceptive-alignment",
       "status": "keep",
-      "reason": "Technically accurate and stable definition. No source material contradicts it."
+      "reason": "No source material addresses deceptive alignment, scheming, or alignment faking research. Definition stands."
     },
     {
-      "id": "dark-factory",
+      "id": "deep-learning",
       "status": "keep",
-      "reason": "No source material contradicts this definition. The concept and attribution to Dan Shapiro's taxonomy are unverified but not contradicted."
+      "reason": "No source material challenges or updates the definition of deep learning. Definition stands."
     },
     {
-      "id": "data-center-backlash",
+      "id": "deep-research",
       "status": "keep",
-      "reason": "The LWiAI podcast excerpt mentions 'shifting public sentiment against data centers' which is broadly consistent with the definition. No new detail justifies a rewrite."
+      "reason": "No source material addresses the deep research agentic mode concept. Definition stands."
     },
     {
-      "id": "data-contamination",
+      "id": "deepfake",
       "status": "keep",
-      "reason": "The agent evaluation paper excerpt touches on benchmark integrity concerns and the difficulty of assessing real-world performance, which is consistent with the data contamination definition. No update is warranted."
+      "reason": "No source material addresses deepfakes, the TAKE IT DOWN Act, or EU AI Act labelling requirements. Definition stands."
+    },
+    {
+      "id": "deepseek",
+      "status": "keep",
+      "reason": "No source material updates or contradicts the January 2025 DeepSeek description. Definition stands."
+    },
+    {
+      "id": "delegation",
+      "status": "keep",
+      "reason": "No source material addresses the delegation interaction paradigm concept. Definition stands."
     }
   ],
   "notes": []

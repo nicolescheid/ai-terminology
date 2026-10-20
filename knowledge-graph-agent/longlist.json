@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-10-19T22:00:12.148Z",
-    "entryCount": 186,
+    "generatedAt": "2026-10-20T21:15:51.629Z",
+    "entryCount": 200,
     "note": "Lexi-managed Tier 2 longlist — terms under observation, awaiting evidence to support promotion to the graph (Tier 1)."
   },
   "entries": [
@@ -1381,12 +1381,20 @@
           "sourceLabel": "OpenAI News",
           "publishedAt": "Mon, 04 May 2026 00:00:00 GMT",
           "firstSeen": "2026-05-04T19:27:54.284Z"
+        },
+        {
+          "url": "https://huggingface.co/blog/nvidia/cosmos3-h-dreams",
+          "domain": "huggingface.co",
+          "title": "NVIDIA Cosmos3-H-Dreams: Bringing Clinical Surgery to Life Through Generative Simulation",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Tue, 20 Oct 2026 18:17:47 GMT",
+          "firstSeen": "2026-10-20T21:15:51.629Z"
         }
       ],
-      "sourceCount": 1,
-      "independentSourceCount": 1,
+      "sourceCount": 2,
+      "independentSourceCount": 2,
       "dateFirstSeen": "2026-05-04T19:27:54.284Z",
-      "dateLastSeen": "2026-05-04T19:27:54.284Z",
+      "dateLastSeen": "2026-10-20T21:15:51.629Z",
       "sz": 16,
       "proposalReason": "Streaming inference is a distinct operational pattern from standard batch or request-response inference, and is central to voice AI delivery at scale — worth tracking as a durable technical term."
     },
@@ -5890,16 +5898,27 @@
           "sourceLabel": "Last Week in AI",
           "publishedAt": "Sat, 03 Oct 2026 07:32:03 GMT",
           "firstSeen": "2026-10-19T22:00:12.148Z"
+        },
+        {
+          "url": "https://www.anthropic.com/news/announcements",
+          "domain": "anthropic.com",
+          "title": "Announcements",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-10-20T21:15:51.629Z"
         }
       ],
-      "sourceCount": 2,
-      "independentSourceCount": 2,
+      "sourceCount": 3,
+      "independentSourceCount": 3,
       "dateFirstSeen": "2026-10-16T07:47:38.193Z",
-      "dateLastSeen": "2026-10-19T22:00:12.148Z",
+      "dateLastSeen": "2026-10-20T21:15:51.629Z",
       "sz": 14,
       "fullName": "Claude Opus 5.5 Extra (Anthropic)",
       "nodeType": "product",
-      "proposalReason": "New model name sighting — Claude Opus 5.5 Extra — not yet in the graph or longlist. Worth logging for provenance even though the article itself is thin."
+      "proposalReason": "New model name sighting — Claude Opus 5.5 Extra — not yet in the graph or longlist. Worth logging for provenance even though the article itself is thin.",
+      "status": "promoted",
+      "promotedAt": "2026-10-20T21:17:49.757Z",
+      "promotedToGraphNodeId": "claude-opus-55"
     },
     {
       "id": "gpt61-sol",
@@ -7699,6 +7718,464 @@
       "fullName": "Datasette (LLM Tool Plugin)",
       "nodeType": "product",
       "proposalReason": "New product/tool name appearing in a plugin ecosystem context; worth tracking as an example of data tooling integrated into LLM tool-use patterns."
+    },
+    {
+      "id": "world-foundation-model",
+      "label": "World Foundation Model",
+      "workingDef": "A large generative model trained to simulate the visual and physical dynamics of real-world environments — predicting future frames conditioned on initial observations and action inputs — rather than modelling scene geometry or physics explicitly. NVIDIA's Cosmos series uses the term to describe models that learn interactive world dynamics directly from synchronized video and robot kinematics, positioning them as an alternative to numerical simulation for robotics and embodied AI research.",
+      "clusters": [
+        "models",
+        "technical"
+      ],
+      "suggestedRels": [
+        "world-models",
+        "vla-model",
+        "inference",
+        "synthetic-data"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/nvidia/cosmos3-h-dreams",
+          "domain": "huggingface.co",
+          "title": "NVIDIA Cosmos3-H-Dreams: Bringing Clinical Surgery to Life Through Generative Simulation",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Tue, 20 Oct 2026 18:17:47 GMT",
+          "firstSeen": "2026-10-20T21:15:51.629Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-20T21:15:51.629Z",
+      "dateLastSeen": "2026-10-20T21:15:51.629Z",
+      "sz": 14,
+      "fullName": "World Foundation Model (WFM)",
+      "proposalReason": "The term 'World Foundation Model' (WFM) is used as a named product category by NVIDIA and appears to be gaining traction in robotics/embodied AI contexts as distinct from general foundation models. Worth tracking as a potential emerging sub-category."
+    },
+    {
+      "id": "self-forcing-distillation",
+      "label": "Self-Forcing Distillation",
+      "workingDef": "A training technique for causal video generation models in which a student model is trained on its own previously generated frames as context — rather than ground-truth frames — guided by a teacher model and a learned critic. Developed to address error accumulation in long autoregressive rollouts where compounding errors from sequential generation degrade output quality over time. Used in NVIDIA's Cosmos3-H-Dreams to enable interactive real-time surgical simulation.",
+      "clusters": [
+        "technical",
+        "models"
+      ],
+      "suggestedRels": [
+        "distillation",
+        "on-policy-distillation",
+        "synthetic-data",
+        "world-models"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/nvidia/cosmos3-h-dreams",
+          "domain": "huggingface.co",
+          "title": "NVIDIA Cosmos3-H-Dreams: Bringing Clinical Surgery to Life Through Generative Simulation",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Tue, 20 Oct 2026 18:17:47 GMT",
+          "firstSeen": "2026-10-20T21:15:51.629Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-20T21:15:51.629Z",
+      "dateLastSeen": "2026-10-20T21:15:51.629Z",
+      "sz": 14,
+      "fullName": "Self-Forcing Distillation (Autoregressive Video Generation)",
+      "proposalReason": "Self-Forcing is a specific and named training methodology with technical novelty distinct from standard distillation — addresses the error-accumulation problem in autoregressive generation. Plausible candidate for tracking as the technique appears in robotics and video generation contexts."
+    },
+    {
+      "id": "action-conditioned-generation",
+      "label": "Action-Conditioned Generation",
+      "workingDef": "A generative modelling paradigm in which video or scene outputs are conditioned on structured action inputs — such as robot kinematics, pose commands, or gripper states — enabling a model to simulate the visual consequences of taken actions in an interactive loop. Distinct from unconditional or text-conditioned generation; used in embodied AI, surgical simulation, and robotics research to create interactive environments without explicit physics engines.",
+      "clusters": [
+        "technical",
+        "models"
+      ],
+      "suggestedRels": [
+        "world-models",
+        "vla-model",
+        "planning",
+        "rl-environments"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/nvidia/cosmos3-h-dreams",
+          "domain": "huggingface.co",
+          "title": "NVIDIA Cosmos3-H-Dreams: Bringing Clinical Surgery to Life Through Generative Simulation",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Tue, 20 Oct 2026 18:17:47 GMT",
+          "firstSeen": "2026-10-20T21:15:51.629Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-20T21:15:51.629Z",
+      "dateLastSeen": "2026-10-20T21:15:51.629Z",
+      "sz": 14,
+      "fullName": "Action-Conditioned Video Generation (Embodied World Model)",
+      "proposalReason": "Action-conditioned generation is a recurring framing in embodied AI and robotics literature that names a specific and technically meaningful paradigm distinct from other generative approaches. Tracking-worthy as world models expand into robotics domains."
+    },
+    {
+      "id": "muse-spark-open",
+      "label": "Muse Spark Open",
+      "workingDef": "A Meta open-source model release referenced in a Stratechery headline (October 2026), apparently notable for a partnership with Apple to enable local on-device execution. Insufficient public detail is available from the excerpt to characterise capabilities or architecture.",
+      "clusters": [
+        "models",
+        "companies"
+      ],
+      "suggestedRels": [
+        "meta-co",
+        "open-weight",
+        "edge-ai"
+      ],
+      "sources": [
+        {
+          "url": "https://stratechery.com/2026/muse-spark-open-meta-apple-thin-and-thick/",
+          "domain": "stratechery.com",
+          "title": "Muse Spark Open, Meta + Apple, Thin and Thick",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Tue, 20 Oct 2026 10:00:00 +0000",
+          "firstSeen": "2026-10-20T21:15:51.629Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-20T21:15:51.629Z",
+      "dateLastSeen": "2026-10-20T21:15:51.629Z",
+      "sz": 16,
+      "proposalReason": "First sighting of this model name; worth tracking as a named open-weight release from Meta with apparent on-device deployment significance."
+    },
+    {
+      "id": "synthid",
+      "label": "SynthID",
+      "workingDef": "Google's watermarking system, introduced in 2023, that embeds invisible signals in AI-generated content — including text, images, audio, and video — to enable downstream verification of AI provenance. Used in outputs from Gemini, Nano Banana, Veo, Lyria, and others. SynthID has been adopted by OpenAI, Nvidia, and Kakao, and Google has opened a public SynthID Detector tool for anyone to check whether a file was AI-generated. Distinct from, though overlapping with, the broader watermarking and content credentials space (C2PA), and from competing standards maintained separately by Microsoft and Meta.",
+      "clusters": [
+        "safety",
+        "technical"
+      ],
+      "suggestedRels": [
+        "watermarking",
+        "ai-content-labelling",
+        "nano-banana",
+        "gemini"
+      ],
+      "sources": [
+        {
+          "url": "https://lastweekin.ai/p/last-week-in-ai-346-719-math-manuscripts",
+          "domain": "lastweekin.ai",
+          "title": "Last Week in AI #346 - 719 math manuscripts, 2 Western open models, 1 more safety resignation",
+          "sourceLabel": "Last Week in AI",
+          "publishedAt": "Fri, 09 Oct 2026 05:06:58 GMT",
+          "firstSeen": "2026-10-20T21:15:51.629Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-20T21:15:51.629Z",
+      "dateLastSeen": "2026-10-20T21:15:51.629Z",
+      "sz": 14,
+      "fullName": "SynthID (Google AI Watermarking System)",
+      "nodeType": "product",
+      "proposalReason": "Materially featured: the article covers both the public launch of SynthID Detector and OpenAI's EU text watermarking move, making this a timely primary source for the term."
+    },
+    {
+      "id": "preparedness-framework",
+      "label": "Preparedness Framework",
+      "workingDef": "OpenAI's internal framework governing how the company evaluates and manages risks from increasingly capable frontier models prior to deployment. Described by resigning safety researcher David Robinson — who led its drafting — as the company's primary structured safety mechanism. Robinson's resignation essay argues the framework is insufficient because it operates within a broader trial-and-error release culture that guarantees periodic failures whose scale grows with model capability. The framework is distinct from external regulatory requirements and from Anthropic's Responsible Scaling Policy, though both are examples of lab-authored pre-deployment safety governance.",
+      "clusters": [
+        "safety",
+        "companies"
+      ],
+      "suggestedRels": [
+        "responsible-scaling-policy",
+        "pre-deployment-evaluation",
+        "system-card",
+        "frontier-model",
+        "safety-case"
+      ],
+      "sources": [
+        {
+          "url": "https://lastweekin.ai/p/last-week-in-ai-346-719-math-manuscripts",
+          "domain": "lastweekin.ai",
+          "title": "Last Week in AI #346 - 719 math manuscripts, 2 Western open models, 1 more safety resignation",
+          "sourceLabel": "Last Week in AI",
+          "publishedAt": "Fri, 09 Oct 2026 05:06:58 GMT",
+          "firstSeen": "2026-10-20T21:15:51.629Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-20T21:15:51.629Z",
+      "dateLastSeen": "2026-10-20T21:15:51.629Z",
+      "sz": 14,
+      "fullName": "Preparedness Framework (OpenAI)",
+      "nodeType": "product",
+      "proposalReason": "Named directly and substantively in Robinson's resignation account; useful canonical term for lab-authored internal safety governance distinct from RSP."
+    },
+    {
+      "id": "ai-mathematics",
+      "label": "AI Mathematics",
+      "workingDef": "The use of frontier AI models to generate novel mathematical results — including formal proofs, conjectures, and derivations — at a scale and pace that outpaces traditional human mathematical research workflows. Exemplified by OpenAI's October 2026 release of 719 manuscripts produced by an unreleased internal model, including a claimed solution to the Navier-Stokes Millennium Prize Problem. Raises contested questions about credit attribution, reproducibility, peer review, and whether AI-generated proofs constitute mathematical knowledge in the same sense as human-authored ones. The Advisory Group on Mathematics and Artificial Intelligence (AGMAI) at the Institute for Advanced Study has called for disclosure of model names, prompts, and compute costs, and has objected to treating mathematical results as marketing vehicles.",
+      "clusters": [
+        "models",
+        "critical"
+      ],
+      "suggestedRels": [
+        "frontier-model",
+        "benchmark-gaming",
+        "evals",
+        "structured-output"
+      ],
+      "sources": [
+        {
+          "url": "https://lastweekin.ai/p/last-week-in-ai-346-719-math-manuscripts",
+          "domain": "lastweekin.ai",
+          "title": "Last Week in AI #346 - 719 math manuscripts, 2 Western open models, 1 more safety resignation",
+          "sourceLabel": "Last Week in AI",
+          "publishedAt": "Fri, 09 Oct 2026 05:06:58 GMT",
+          "firstSeen": "2026-10-20T21:15:51.629Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-20T21:15:51.629Z",
+      "dateLastSeen": "2026-10-20T21:15:51.629Z",
+      "sz": 14,
+      "fullName": "AI-Generated Mathematical Research",
+      "proposalReason": "Substantive and novel framing emerging from the OpenAI math manuscripts story; the AGMAI governance tension around AI-generated proofs makes this a lasting conceptual term worth tracking."
+    },
+    {
+      "id": "trial-error-release-culture",
+      "label": "Trial-and-Error Release Culture",
+      "workingDef": "A critique, articulated most prominently by departing OpenAI safety researcher David Robinson, that frontier AI labs operate by shipping systems, observing failures, and iterating guardrails reactively — rather than through prospective, redundant safety engineering analogous to nuclear power or aviation. Robinson argues this approach 'guarantees periodic failures whose scale grows as systems get more capable.' The framing is contested: proponents of iterative deployment argue it is the only practical path to learning about real-world model behavior; critics argue the approach is structurally inadequate when systems become capable enough that individual failures could be catastrophic. Related to but distinct from the specific Preparedness Framework debate.",
+      "clusters": [
+        "safety",
+        "critical"
+      ],
+      "suggestedRels": [
+        "responsible-scaling-policy",
+        "safety-case",
+        "blast-radius",
+        "ai-incident",
+        "capability-threshold",
+        "guardrails"
+      ],
+      "sources": [
+        {
+          "url": "https://lastweekin.ai/p/last-week-in-ai-346-719-math-manuscripts",
+          "domain": "lastweekin.ai",
+          "title": "Last Week in AI #346 - 719 math manuscripts, 2 Western open models, 1 more safety resignation",
+          "sourceLabel": "Last Week in AI",
+          "publishedAt": "Fri, 09 Oct 2026 05:06:58 GMT",
+          "firstSeen": "2026-10-20T21:15:51.629Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-20T21:15:51.629Z",
+      "dateLastSeen": "2026-10-20T21:15:51.629Z",
+      "sz": 14,
+      "fullName": "Trial-and-Error Release Culture (AI Lab Safety Critique)",
+      "proposalReason": "Coined substantively in Robinson's Atlantic essay and central to the article's safety resignation story; captures a recurring critique of lab release philosophy that is likely to recur in terminology."
+    },
+    {
+      "id": "ultracode-mode",
+      "label": "Ultracode Mode",
+      "workingDef": "A Claude Code execution mode described by Anthropic as running 'dynamic workflows' — JavaScript scripts that orchestrate many subagents simultaneously. In Willison's account, activating Ultracode to execute the prompt 'Make it a LOT more fun' triggered many hours of autonomous multi-subagent work including simulated playtesting (over 1,000 AI-vs-AI matches), game rebalancing, and feature addition — returning results only the following morning. Distinct from standard Claude Code sessions in that it explicitly coordinates concurrent subagent activity rather than single-threaded code generation.",
+      "clusters": [
+        "agentic",
+        "tools"
+      ],
+      "suggestedRels": [
+        "agentic-harness",
+        "multi-agent",
+        "subagents",
+        "vibe-coding",
+        "claude-code"
+      ],
+      "sources": [
+        {
+          "url": "https://simonwillison.net/2026/Oct/20/battledrones/",
+          "domain": "simonwillison.net",
+          "title": "Battle Drones—a vibe coded RTS with audio-based multiplayer",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-10-20T19:34:19+00:00",
+          "firstSeen": "2026-10-20T21:15:51.629Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-20T21:15:51.629Z",
+      "dateLastSeen": "2026-10-20T21:15:51.629Z",
+      "sz": 14,
+      "fullName": "Ultracode Mode (Claude Code Dynamic Workflows)",
+      "proposalReason": "A named Claude Code execution mode with concrete documented behaviour; the vibe-coded project provides a vivid primary source illustrating what 'dynamic workflows' means in practice."
+    },
+    {
+      "id": "audio-state-sync",
+      "label": "Audio-Based State Synchronization",
+      "workingDef": "A multiplayer communication technique in which game (or application) state is encoded into audio signals and transmitted acoustically between nearby devices via microphone and speaker, rather than via network sockets or a server. Willison's Battle Drones implements this as an extension of his earlier 'Chirp Pong' experiment, enabling two phones within microphone range to synchronize real-time strategy game state without any internet connection or shared network infrastructure. Related to broader patterns of using physical-layer signals (ultrasound, audible tones) for local device-to-device data transfer.",
+      "clusters": [
+        "technical",
+        "tools"
+      ],
+      "suggestedRels": [
+        "multi-agent",
+        "structured-output",
+        "tool-use"
+      ],
+      "sources": [
+        {
+          "url": "https://simonwillison.net/2026/Oct/20/battledrones/",
+          "domain": "simonwillison.net",
+          "title": "Battle Drones—a vibe coded RTS with audio-based multiplayer",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-10-20T19:34:19+00:00",
+          "firstSeen": "2026-10-20T21:15:51.629Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-20T21:15:51.629Z",
+      "dateLastSeen": "2026-10-20T21:15:51.629Z",
+      "sz": 14,
+      "fullName": "Audio-Based Game State Synchronization (Multiplayer via Sound)",
+      "proposalReason": "A novel and concrete technique worth tracking as agentic and local-first applications explore alternatives to cloud-brokered communication channels."
+    },
+    {
+      "id": "ai-vs-ai-mode",
+      "label": "AI vs. AI Mode",
+      "workingDef": "A game or simulation mode in which two AI agents (or LLM instances) compete against each other autonomously without human players, enabling observation of emergent strategy and automated balancing. In Battle Drones, this encompasses both a built-in game-AI personality mode and a more advanced 'Agent vs. Agent' mode where two LLMs play the full game against each other. The mode was also used instrumentally — running over 1,000 automated playtest sessions to rebalance units and gameplay parameters. Closely related to RL environment concepts but here deployed in a vibe-coded consumer game context.",
+      "clusters": [
+        "agentic",
+        "autonomy"
+      ],
+      "suggestedRels": [
+        "autonomous-agent",
+        "multi-agent",
+        "rl-environments",
+        "agentic-harness",
+        "evals"
+      ],
+      "sources": [
+        {
+          "url": "https://simonwillison.net/2026/Oct/20/battledrones/",
+          "domain": "simonwillison.net",
+          "title": "Battle Drones—a vibe coded RTS with audio-based multiplayer",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-10-20T19:34:19+00:00",
+          "firstSeen": "2026-10-20T21:15:51.629Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-20T21:15:51.629Z",
+      "dateLastSeen": "2026-10-20T21:15:51.629Z",
+      "sz": 14,
+      "fullName": "AI vs. AI Mode (Agent Battle Mode)",
+      "proposalReason": "Worth tracking as a concept bridging autonomous agent evaluation and game design — the use of agent-vs-agent simulation as an automatic playtesting and balancing methodology is a transferable pattern."
+    },
+    {
+      "id": "life-sciences-verification-program",
+      "label": "Life Sciences Verification Program",
+      "workingDef": "Anthropic's tiered-access program giving verified life science professionals access to Claude Mythos, Opus, and Sonnet models under a modified safeguard profile that is more permissive for biology-related queries than the standard deployment policy. Operates alongside the Cyber Verification Program as part of Anthropic's broader domain-specific access model, in which professional credential verification unlocks reduced content restrictions for legitimate specialist use cases.",
+      "clusters": [
+        "safety",
+        "companies"
+      ],
+      "suggestedRels": [
+        "anthropic-co",
+        "claude",
+        "guardrails",
+        "cyber-verification-program",
+        "responsible-scaling-policy"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/announcements",
+          "domain": "anthropic.com",
+          "title": "Announcements",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-10-20T21:15:51.629Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-20T21:15:51.629Z",
+      "dateLastSeen": "2026-10-20T21:15:51.629Z",
+      "sz": 14,
+      "fullName": "Life Sciences Verification Program (LSVP)",
+      "nodeType": "product",
+      "proposalReason": "A new Anthropic-specific institutional term naming a credential-gated access tier worth tracking as domain-specific verification programs proliferate."
+    },
+    {
+      "id": "claude-frontier-academy",
+      "label": "Claude Frontier Academy",
+      "workingDef": "A $100 million Anthropic initiative announced October 2026 to train 10,000 'Frontier Deployed Engineers' by end of 2027, in partnership with professional services firms including Accenture, Bain, Deloitte, McKinsey, and Morgan Stanley. Positions domain-specific AI deployment expertise as a scarce resource requiring structured credentialling at scale.",
+      "clusters": [
+        "companies",
+        "work"
+      ],
+      "suggestedRels": [
+        "anthropic-co",
+        "forward-deployed-engineer",
+        "ai-fluency",
+        "agentic-engineering"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/announcements",
+          "domain": "anthropic.com",
+          "title": "Announcements",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-10-20T21:15:51.629Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-20T21:15:51.629Z",
+      "dateLastSeen": "2026-10-20T21:15:51.629Z",
+      "sz": 14,
+      "fullName": "Claude Frontier Academy (Anthropic)",
+      "nodeType": "initiative",
+      "proposalReason": "Names a new institutional category — Anthropic-certified deployment engineers — that may become a reference point as lab-run training programs expand across the industry."
+    },
+    {
+      "id": "model-hardware-standard",
+      "label": "Model Hardware Standard",
+      "workingDef": "A shared specification previewed by Anthropic in August 2026 that defines how AI agents can safely operate physical devices, initially opened to scientific research labs and advanced manufacturers. Represents an early attempt to standardise the interface layer between AI software agents and physical hardware, analogous to how MCP standardises tool-use interfaces in software contexts.",
+      "clusters": [
+        "agentic",
+        "technical"
+      ],
+      "suggestedRels": [
+        "anthropic-co",
+        "computer-use",
+        "agent",
+        "tool-use",
+        "mcp",
+        "sandboxing"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/announcements",
+          "domain": "anthropic.com",
+          "title": "Announcements",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-10-20T21:15:51.629Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-20T21:15:51.629Z",
+      "dateLastSeen": "2026-10-20T21:15:51.629Z",
+      "sz": 14,
+      "fullName": "Model Hardware Standard (MHS)",
+      "nodeType": "initiative",
+      "proposalReason": "A nascent but potentially significant standard for physical-world agent interaction — worth tracking as the boundary between agentic software and hardware control becomes a governance frontier."
     }
   ]
 }

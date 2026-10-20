@@ -1,6 +1,6 @@
 {
-  "lastRunAt": "2026-10-19T22:00:12.148Z",
-  "reviewCursor": 144,
+  "lastRunAt": "2026-10-20T21:15:51.629Z",
+  "reviewCursor": 154,
   "seenArticles": {
     "93a049d060bc295b": {
       "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/tpus-8t-8i-cloud-next/",
@@ -1183,6 +1183,42 @@
       "title": "Release: llm-tools-datasette 0.1.1",
       "publishedAt": "2026-10-18T23:43:09+00:00",
       "seenAt": "2026-10-19T22:00:12.148Z"
+    },
+    "4eb9f7080b11166e": {
+      "url": "https://huggingface.co/blog/nvidia/cosmos3-h-dreams",
+      "title": "NVIDIA Cosmos3-H-Dreams: Bringing Clinical Surgery to Life Through Generative Simulation",
+      "publishedAt": "Tue, 20 Oct 2026 18:17:47 GMT",
+      "seenAt": "2026-10-20T21:15:51.629Z"
+    },
+    "b3fcb2e42d321123": {
+      "url": "https://openai.com/index/ted-taylor-restaurant",
+      "title": "Franchisee reconciles cash in 94% less time with ChatGPT Work",
+      "publishedAt": "Tue, 20 Oct 2026 10:00:00 GMT",
+      "seenAt": "2026-10-20T21:15:51.629Z"
+    },
+    "f691b33b16339eed": {
+      "url": "https://stratechery.com/2026/muse-spark-open-meta-apple-thin-and-thick/",
+      "title": "Muse Spark Open, Meta + Apple, Thin and Thick",
+      "publishedAt": "Tue, 20 Oct 2026 10:00:00 +0000",
+      "seenAt": "2026-10-20T21:15:51.629Z"
+    },
+    "c01e31c5a3a42d55": {
+      "url": "https://lastweekin.ai/p/last-week-in-ai-346-719-math-manuscripts",
+      "title": "Last Week in AI #346 - 719 math manuscripts, 2 Western open models, 1 more safety resignation",
+      "publishedAt": "Fri, 09 Oct 2026 05:06:58 GMT",
+      "seenAt": "2026-10-20T21:15:51.629Z"
+    },
+    "3b5ce86c8c402c8d": {
+      "url": "https://simonwillison.net/2026/Oct/20/battledrones/",
+      "title": "Battle Drones—a vibe coded RTS with audio-based multiplayer",
+      "publishedAt": "2026-10-20T19:34:19+00:00",
+      "seenAt": "2026-10-20T21:15:51.629Z"
+    },
+    "10310c209328b333": {
+      "url": "https://www.anthropic.com/news/announcements",
+      "title": "Announcements",
+      "publishedAt": null,
+      "seenAt": "2026-10-20T21:15:51.629Z"
     }
   },
   "nodeReviews": {
@@ -1487,24 +1523,24 @@
       "reason": "Technically accurate and stable definition. No source material contradicts it."
     },
     "data-sovereignty": {
-      "lastReviewedAt": "2026-06-02T20:47:42.877Z",
+      "lastReviewedAt": "2026-10-20T21:15:51.629Z",
       "status": "keep",
-      "reason": "The Holo3.1 article's emphasis on local inference and deployment flexibility (cloud to fully local on end-user devices) is consistent with the data-sovereignty definition's emphasis on local open-weight models, but does not require any change to the definition."
+      "reason": "No source material addresses data sovereignty concepts or open-weight local deployment. Definition stands."
     },
     "deep-research": {
-      "lastReviewedAt": "2026-06-03T20:54:34.002Z",
-      "status": "insufficient_evidence",
-      "reason": "No sources address deep research agentic modes. Definition stands as written."
+      "lastReviewedAt": "2026-10-20T21:15:51.629Z",
+      "status": "keep",
+      "reason": "No source material addresses the deep research agentic mode concept. Definition stands."
     },
     "deepseek": {
-      "lastReviewedAt": "2026-06-03T20:54:34.002Z",
-      "status": "insufficient_evidence",
-      "reason": "No sources mention DeepSeek or provide updated information about the lab or its models."
+      "lastReviewedAt": "2026-10-20T21:15:51.629Z",
+      "status": "keep",
+      "reason": "No source material updates or contradicts the January 2025 DeepSeek description. Definition stands."
     },
     "delegation": {
-      "lastReviewedAt": "2026-06-03T20:54:34.002Z",
-      "status": "insufficient_evidence",
-      "reason": "No sources address the delegation paradigm for AI agents in a way that would update this definition."
+      "lastReviewedAt": "2026-10-20T21:15:51.629Z",
+      "status": "keep",
+      "reason": "No source material addresses the delegation interaction paradigm concept. Definition stands."
     },
     "deprecated": {
       "lastReviewedAt": "2026-06-03T20:54:34.002Z",
@@ -2315,6 +2351,36 @@
       "lastReviewedAt": "2026-10-19T22:00:12.148Z",
       "status": "keep",
       "reason": "The agent evaluation paper excerpt touches on benchmark integrity concerns and the difficulty of assessing real-world performance, which is consistent with the data contamination definition. No update is warranted."
+    },
+    "data-poisoning": {
+      "lastReviewedAt": "2026-10-20T21:15:51.629Z",
+      "status": "keep",
+      "reason": "No source material addresses data poisoning, the referenced study, or its findings. Definition stands."
+    },
+    "data-residency": {
+      "lastReviewedAt": "2026-10-20T21:15:51.629Z",
+      "status": "keep",
+      "reason": "No source material addresses data residency requirements or regulations. Definition stands."
+    },
+    "dead-internet-theory": {
+      "lastReviewedAt": "2026-10-20T21:15:51.629Z",
+      "status": "keep",
+      "reason": "No source material addresses the dead internet theory or bot-generated web content. Definition stands."
+    },
+    "deceptive-alignment": {
+      "lastReviewedAt": "2026-10-20T21:15:51.629Z",
+      "status": "keep",
+      "reason": "No source material addresses deceptive alignment, scheming, or alignment faking research. Definition stands."
+    },
+    "deep-learning": {
+      "lastReviewedAt": "2026-10-20T21:15:51.629Z",
+      "status": "keep",
+      "reason": "No source material challenges or updates the definition of deep learning. Definition stands."
+    },
+    "deepfake": {
+      "lastReviewedAt": "2026-10-20T21:15:51.629Z",
+      "status": "keep",
+      "reason": "No source material addresses deepfakes, the TAKE IT DOWN Act, or EU AI Act labelling requirements. Definition stands."
     }
   }
 }
