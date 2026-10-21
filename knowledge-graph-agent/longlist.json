@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-10-20T21:15:51.629Z",
-    "entryCount": 200,
+    "generatedAt": "2026-10-21T21:16:07.143Z",
+    "entryCount": 206,
     "note": "Lexi-managed Tier 2 longlist — terms under observation, awaiting evidence to support promotion to the graph (Tier 1)."
   },
   "entries": [
@@ -1396,7 +1396,10 @@
       "dateFirstSeen": "2026-05-04T19:27:54.284Z",
       "dateLastSeen": "2026-10-20T21:15:51.629Z",
       "sz": 16,
-      "proposalReason": "Streaming inference is a distinct operational pattern from standard batch or request-response inference, and is central to voice AI delivery at scale — worth tracking as a durable technical term."
+      "proposalReason": "Streaming inference is a distinct operational pattern from standard batch or request-response inference, and is central to voice AI delivery at scale — worth tracking as a durable technical term.",
+      "status": "promoted",
+      "promotedAt": "2026-10-21T21:18:06.219Z",
+      "promotedToGraphNodeId": "streaming-inference"
     },
     {
       "id": "voice-ai",
@@ -3014,12 +3017,20 @@
           "sourceLabel": "The Verge — AI",
           "publishedAt": "2026-05-11T12:09:42-04:00",
           "firstSeen": "2026-05-11T19:45:39.014Z"
+        },
+        {
+          "url": "https://simonwillison.net/2026/Oct/21/php-security-release/",
+          "domain": "simonwillison.net",
+          "title": "Today’s PHP Security Release, and How We’re Strengthening PHP Security",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-10-21T18:41:53+00:00",
+          "firstSeen": "2026-10-21T21:16:07.143Z"
         }
       ],
-      "sourceCount": 1,
-      "independentSourceCount": 1,
+      "sourceCount": 2,
+      "independentSourceCount": 2,
       "dateFirstSeen": "2026-05-11T19:45:39.014Z",
-      "dateLastSeen": "2026-05-11T19:45:39.014Z",
+      "dateLastSeen": "2026-10-21T21:16:07.143Z",
       "sz": 14,
       "fullName": "AI-Generated Exploit (AI-Assisted Cyberattack Payload)",
       "proposalReason": "First confirmed real-world case of an AI-assisted zero-day exploit, establishing a new forensic category for threat intelligence."
@@ -5079,12 +5090,20 @@
           "sourceLabel": "Stratechery",
           "publishedAt": "Mon, 19 Oct 2026 10:00:00 +0000",
           "firstSeen": "2026-10-19T22:00:12.148Z"
+        },
+        {
+          "url": "https://stratechery.com/2026/presented-by-stripe/",
+          "domain": "stratechery.com",
+          "title": "Presented by Stripe",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Wed, 21 Oct 2026 17:35:31 +0000",
+          "firstSeen": "2026-10-21T21:16:07.143Z"
         }
       ],
-      "sourceCount": 4,
+      "sourceCount": 5,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-06-02T20:47:42.877Z",
-      "dateLastSeen": "2026-10-19T22:00:12.148Z",
+      "dateLastSeen": "2026-10-21T21:16:07.143Z",
       "sz": 14,
       "fullName": "Aggregator Theory (Stratechery)",
       "proposalReason": "A named analytic framework with significant ongoing use in AI business-model discussions; not yet in the graph and surfaces repeatedly in AI-era platform-strategy writing."
@@ -7218,12 +7237,20 @@
           "sourceLabel": "Google AI Blog",
           "publishedAt": "Fri, 02 Oct 2026 15:00:00 +0000",
           "firstSeen": "2026-10-18T20:07:14.716Z"
+        },
+        {
+          "url": "https://simonwillison.net/2026/Oct/21/php-security-release/",
+          "domain": "simonwillison.net",
+          "title": "Today’s PHP Security Release, and How We’re Strengthening PHP Security",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-10-21T18:41:53+00:00",
+          "firstSeen": "2026-10-21T21:16:07.143Z"
         }
       ],
-      "sourceCount": 1,
-      "independentSourceCount": 1,
+      "sourceCount": 2,
+      "independentSourceCount": 2,
       "dateFirstSeen": "2026-10-18T20:07:14.716Z",
-      "dateLastSeen": "2026-10-18T20:07:14.716Z",
+      "dateLastSeen": "2026-10-21T21:16:07.143Z",
       "sz": 14,
       "fullName": "Gemini 4 Argon (Google DeepMind)",
       "nodeType": "product",
@@ -7444,12 +7471,20 @@
           "sourceLabel": "Last Week in AI",
           "publishedAt": "Sat, 03 Oct 2026 07:32:03 GMT",
           "firstSeen": "2026-10-19T22:00:12.148Z"
+        },
+        {
+          "url": "https://simonwillison.net/2026/Oct/21/php-security-release/",
+          "domain": "simonwillison.net",
+          "title": "Today’s PHP Security Release, and How We’re Strengthening PHP Security",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-10-21T18:41:53+00:00",
+          "firstSeen": "2026-10-21T21:16:07.143Z"
         }
       ],
-      "sourceCount": 1,
-      "independentSourceCount": 1,
+      "sourceCount": 2,
+      "independentSourceCount": 2,
       "dateFirstSeen": "2026-10-19T22:00:12.148Z",
-      "dateLastSeen": "2026-10-19T22:00:12.148Z",
+      "dateLastSeen": "2026-10-21T21:16:07.143Z",
       "sz": 14,
       "fullName": "GPT-6 Sol (OpenAI)",
       "nodeType": "product",
@@ -8176,6 +8211,191 @@
       "fullName": "Model Hardware Standard (MHS)",
       "nodeType": "initiative",
       "proposalReason": "A nascent but potentially significant standard for physical-world agent interaction — worth tracking as the boundary between agentic software and hardware control becomes a governance frontier."
+    },
+    {
+      "id": "relational-foundation-model",
+      "label": "Relational Foundation Model",
+      "workingDef": "A class of pre-trained foundation models designed to operate directly on relational databases — respecting multi-table structure, foreign-key relationships, and temporal ordering — rather than on flattened single-table inputs. Analogous to how LLMs replaced task-specific NLP pipelines, relational foundation models aim to replace feature engineering and task-specific supervised ML on structured data. NVIDIA Kumo Relational is the first publicly benchmarked example, performing few-shot prediction across 41 tasks on 15 databases without task-specific training.",
+      "clusters": [
+        "models",
+        "technical"
+      ],
+      "suggestedRels": [
+        "foundation-model",
+        "synthetic-data",
+        "in-context-learning"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/nvidia/kumo-relational",
+          "domain": "huggingface.co",
+          "title": "NVIDIA Kumo Relational Outperforms Supervised Machine Learning on Relational Data, No Training Required",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Wed, 21 Oct 2026 18:26:30 GMT",
+          "firstSeen": "2026-10-21T21:16:07.143Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-21T21:16:07.143Z",
+      "dateLastSeen": "2026-10-21T21:16:07.143Z",
+      "sz": 14,
+      "fullName": "Relational Foundation Model (RFM)",
+      "proposalReason": "A genuinely novel model category — analogous to the LLM paradigm shift but applied to enterprise relational data. First benchmarked example now public."
+    },
+    {
+      "id": "predictive-query-language",
+      "label": "Predictive Query Language",
+      "workingDef": "A declarative interface, introduced by NVIDIA Kumo Relational, for specifying what to predict from a relational database without specifying how. PQL separates the statement of a predictive task (e.g., 'which customers will churn?') from the ML machinery required to answer it, enabling both humans and agents to pose predictive questions against enterprise databases without feature engineering or model training.",
+      "clusters": [
+        "technical",
+        "tools"
+      ],
+      "suggestedRels": [
+        "structured-output",
+        "tool-use",
+        "agent"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/nvidia/kumo-relational",
+          "domain": "huggingface.co",
+          "title": "NVIDIA Kumo Relational Outperforms Supervised Machine Learning on Relational Data, No Training Required",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Wed, 21 Oct 2026 18:26:30 GMT",
+          "firstSeen": "2026-10-21T21:16:07.143Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-21T21:16:07.143Z",
+      "dateLastSeen": "2026-10-21T21:16:07.143Z",
+      "sz": 14,
+      "fullName": "Predictive Query Language (PQL)",
+      "proposalReason": "A novel abstraction layer between natural language intent and structured-data ML — worth tracking as agent-database interfaces mature."
+    },
+    {
+      "id": "in-context-learning-structured",
+      "label": "In-Context Learning (Structured Data)",
+      "workingDef": "The application of in-context learning — using examples provided at inference time rather than gradient-based task-specific training — to structured relational data. Kumo Relational instantiates this by sampling up to 10,000 historical entity-subgraph examples as context at inference time, extending the LLM few-shot paradigm to tabular and relational settings. Distinct from standard in-context learning in LLMs because the 'context' is a graph-structured database snapshot rather than text.",
+      "clusters": [
+        "technical",
+        "models"
+      ],
+      "suggestedRels": [
+        "context-window",
+        "foundation-model",
+        "rag"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/nvidia/kumo-relational",
+          "domain": "huggingface.co",
+          "title": "NVIDIA Kumo Relational Outperforms Supervised Machine Learning on Relational Data, No Training Required",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Wed, 21 Oct 2026 18:26:30 GMT",
+          "firstSeen": "2026-10-21T21:16:07.143Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-21T21:16:07.143Z",
+      "dateLastSeen": "2026-10-21T21:16:07.143Z",
+      "sz": 14,
+      "fullName": "In-Context Learning on Structured / Relational Data",
+      "proposalReason": "An important extension of a well-known LLM mechanism into a new domain; worth tracking as structured-data AI matures."
+    },
+    {
+      "id": "structured-data-foundation-model",
+      "label": "Structured Data Foundation Model",
+      "workingDef": "A foundation model category targeting structured (tabular or relational) data rather than text or images. Proponents (including NVIDIA in the Kumo Relational paper) argue these models will displace supervised ML pipelines — XGBoost, gradient-boosted trees, AutoML ensembles — for enterprise prediction tasks, following the same trajectory as LLMs displacing NLP task-specific models. The term encompasses both single-table tabular models and multi-table relational variants.",
+      "clusters": [
+        "models",
+        "technical"
+      ],
+      "suggestedRels": [
+        "foundation-model",
+        "relational-foundation-model",
+        "synthetic-data"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/nvidia/kumo-relational",
+          "domain": "huggingface.co",
+          "title": "NVIDIA Kumo Relational Outperforms Supervised Machine Learning on Relational Data, No Training Required",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Wed, 21 Oct 2026 18:26:30 GMT",
+          "firstSeen": "2026-10-21T21:16:07.143Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-21T21:16:07.143Z",
+      "dateLastSeen": "2026-10-21T21:16:07.143Z",
+      "sz": 14,
+      "proposalReason": "The central framing term of this article and an emerging paradigm claim worth tracking as evidence accumulates across vendors."
+    },
+    {
+      "id": "unified-content-business-model",
+      "label": "Unified Content Business Model",
+      "workingDef": "Ben Thompson's term for a media business that combines subscription revenue and advertising — used to describe Stratechery's hybrid monetisation approach. The framing argues subscriptions and advertising are complementary rather than contradictory, with subscriptions building an audience quality that makes advertising valuable.",
+      "clusters": [
+        "business",
+        "landscape"
+      ],
+      "suggestedRels": [
+        "saas",
+        "outcome-based-pricing",
+        "agentic-business-model"
+      ],
+      "sources": [
+        {
+          "url": "https://stratechery.com/2026/presented-by-stripe/",
+          "domain": "stratechery.com",
+          "title": "Presented by Stripe",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Wed, 21 Oct 2026 17:35:31 +0000",
+          "firstSeen": "2026-10-21T21:16:07.143Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-21T21:16:07.143Z",
+      "dateLastSeen": "2026-10-21T21:16:07.143Z",
+      "sz": 16,
+      "proposalReason": "A Stratechery-native framing with potential relevance to how AI-era content businesses structure themselves, but primarily a media business concept rather than an AI term."
+    },
+    {
+      "id": "tokens-economic-benchmark",
+      "label": "Tokens as Economic Benchmark",
+      "workingDef": "A framing — used in the e-Conomy SEA 2026 report by Google, Temasek, and Bain — in which AI token consumption volume replaces traditional economic metrics (GMV, DAU) as the primary unit for measuring AI economy scale and growth. Positions the token as the new 'barrel of oil' or 'click' for the AI era, projecting regional AI usage in token terms to capture the shift from transactional to inference-driven economic activity.",
+      "clusters": [
+        "business",
+        "models"
+      ],
+      "suggestedRels": [
+        "token",
+        "inference",
+        "agentic-commerce",
+        "cost"
+      ],
+      "sources": [
+        {
+          "url": "https://blog.google/company-news/inside-google/around-the-globe/google-asia/e-conomy-sea-report-2026/",
+          "domain": "blog.google",
+          "title": "Southeast Asia’s digital economy to hit $368 billion",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Wed, 21 Oct 2026 04:00:00 +0000",
+          "firstSeen": "2026-10-21T21:16:07.143Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-21T21:16:07.143Z",
+      "dateLastSeen": "2026-10-21T21:16:07.143Z",
+      "sz": 14,
+      "fullName": "Tokens as Economic Benchmark (AI Economy Metric)",
+      "proposalReason": "A small but potentially durable framing concept: if token consumption becomes a standard economic reporting metric, this terminological move matters for how the AI economy is measured and compared."
     }
   ]
 }

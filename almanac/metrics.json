@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-10-20T21:17:49.901Z",
+  "generatedAt": "2026-10-21T21:18:06.340Z",
   "firstRunAt": "2026-04-27T01:07:31.335Z",
   "phase": 1,
   "headline": {
-    "articlesRead": 203,
-    "daysRunning": 177,
-    "longlistSize": 120,
-    "graphSize": 436
+    "articlesRead": 209,
+    "daysRunning": 178,
+    "longlistSize": 125,
+    "graphSize": 437
   },
   "thisWeek": {
-    "articlesFetched": 36,
-    "longlistAdded": 72,
-    "sourcesAdded": 4,
-    "promotionsToGraph": 1,
-    "proposalsQueued": 5,
+    "articlesFetched": 42,
+    "longlistAdded": 78,
+    "sourcesAdded": 5,
+    "promotionsToGraph": 2,
+    "proposalsQueued": 7,
     "auditFlags": 6,
-    "notesAdded": 21
+    "notesAdded": 19
   },
   "almostThere": [
     {
@@ -27,13 +27,31 @@
       ],
       "sourceCount": 3,
       "independentSources": 2,
-      "daysOnLonglist": 169,
+      "daysOnLonglist": 170,
       "domains": [
         "openai.com",
         "simonwillison.net"
       ],
       "gapCount": 1,
       "gap": "no source seen in past 90d"
+    },
+    {
+      "id": "gpt6-sol",
+      "label": "GPT-6 Sol",
+      "fullName": "GPT-6 Sol (OpenAI)",
+      "clusters": [
+        "models",
+        "companies"
+      ],
+      "sourceCount": 2,
+      "independentSources": 2,
+      "daysOnLonglist": 1,
+      "domains": [
+        "lastweekin.ai",
+        "simonwillison.net"
+      ],
+      "gapCount": 1,
+      "gap": "2 more days on longlist"
     },
     {
       "id": "aggregator-theory",
@@ -43,9 +61,9 @@
         "business",
         "landscape"
       ],
-      "sourceCount": 4,
+      "sourceCount": 5,
       "independentSources": 1,
-      "daysOnLonglist": 140,
+      "daysOnLonglist": 141,
       "domains": [
         "stratechery.com"
       ],
@@ -62,7 +80,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 4,
+      "daysOnLonglist": 5,
       "domains": [
         "stratechery.com"
       ],
@@ -79,7 +97,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 144,
+      "daysOnLonglist": 145,
       "domains": [
         "normaltech.ai"
       ],
@@ -96,7 +114,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 144,
+      "daysOnLonglist": 145,
       "domains": [
         "normaltech.ai"
       ],
@@ -113,7 +131,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 164,
+      "daysOnLonglist": 165,
       "domains": [
         "blog.google"
       ],
@@ -130,7 +148,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 160,
+      "daysOnLonglist": 161,
       "domains": [
         "theverge.com"
       ],
@@ -147,7 +165,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 144,
+      "daysOnLonglist": 145,
       "domains": [
         "blog.google"
       ],
@@ -164,24 +182,7 @@
       ],
       "sourceCount": 1,
       "independentSources": 1,
-      "daysOnLonglist": 4,
-      "domains": [
-        "blog.google"
-      ],
-      "gapCount": 2,
-      "gap": "needs 1 more source; needs 1 more independent source"
-    },
-    {
-      "id": "no-code-ai-creation",
-      "label": "No-Code AI Creation",
-      "fullName": null,
-      "clusters": [
-        "tools",
-        "work"
-      ],
-      "sourceCount": 1,
-      "independentSources": 1,
-      "daysOnLonglist": 4,
+      "daysOnLonglist": 5,
       "domains": [
         "blog.google"
       ],
@@ -193,27 +194,27 @@
     "byDomain": [
       {
         "domain": "openai.com",
-        "count": 48
+        "count": 49
       },
       {
         "domain": "simonwillison.net",
-        "count": 30
+        "count": 31
       },
       {
         "domain": "stratechery.com",
-        "count": 26
+        "count": 27
       },
       {
         "domain": "blog.google",
-        "count": 22
+        "count": 23
       },
       {
         "domain": "anthropic.com",
-        "count": 22
+        "count": 23
       },
       {
         "domain": "huggingface.co",
-        "count": 18
+        "count": 19
       },
       {
         "domain": "lastweekin.ai",
@@ -332,7 +333,7 @@
         "id": "technical",
         "label": "Technical",
         "hex": "#D0D040",
-        "count": 39
+        "count": 42
       },
       {
         "id": "safety",
@@ -350,7 +351,7 @@
         "id": "models",
         "label": "Models",
         "hex": "#FFB060",
-        "count": 24
+        "count": 27
       },
       {
         "id": "critical",
@@ -362,7 +363,7 @@
         "id": "tools",
         "label": "Tools & Platforms",
         "hex": "#70C8F8",
-        "count": 15
+        "count": 16
       },
       {
         "id": "human",
@@ -377,27 +378,27 @@
         "count": 13
       },
       {
+        "id": "business",
+        "label": "Business Reality",
+        "hex": "#48C888",
+        "count": 12
+      },
+      {
+        "id": "landscape",
+        "label": "Model Landscape",
+        "hex": "#D0A050",
+        "count": 11
+      },
+      {
         "id": "security",
         "label": "AI Security",
         "hex": "#E05050",
         "count": 10
       },
       {
-        "id": "landscape",
-        "label": "Model Landscape",
-        "hex": "#D0A050",
-        "count": 10
-      },
-      {
         "id": "work",
         "label": "Work & Output",
         "hex": "#E8A838",
-        "count": 10
-      },
-      {
-        "id": "business",
-        "label": "Business Reality",
-        "hex": "#48C888",
         "count": 10
       },
       {
@@ -409,19 +410,19 @@
     ]
   },
   "velocity": {
-    "humanGated": 39,
+    "humanGated": 40,
     "autonomous": 0,
     "note": "All graph promotions and substantive edits are currently human-gated. Lexi proposes; Nicole approves."
   },
   "proposalsByStatus": {
-    "pending": 5,
+    "pending": 6,
     "approved": 0,
-    "applied": 39,
+    "applied": 40,
     "rejected": 1
   },
   "decisionsByCluster": {
     "technical": {
-      "approved": 14,
+      "approved": 15,
       "rejected": 1
     },
     "agentic": {
@@ -453,7 +454,7 @@
       "rejected": 0
     },
     "models": {
-      "approved": 6,
+      "approved": 7,
       "rejected": 0
     },
     "business": {

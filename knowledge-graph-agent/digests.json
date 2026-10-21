@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-10-20T21:17:49.830Z",
-    "count": 3,
+    "generatedAt": "2026-10-21T21:18:06.279Z",
+    "count": 4,
     "note": "Lexi's email digests to Nicole. Written by build-digest.mjs; sentAt/messageId/thread written by the Worker (src/lexi-mail)."
   },
   "digests": [
@@ -259,6 +259,89 @@
       "waitingEarlier": 4,
       "thread": [],
       "subject": "1 item to review [Lexi D-20261020-a551]"
+    },
+    {
+      "id": "D-20261021-68be",
+      "createdAt": "2026-10-21T21:18:06.279Z",
+      "autoApplyHours": 72,
+      "autoApplyAt": "2026-10-24T21:18:06.279Z",
+      "sentAt": null,
+      "messageId": null,
+      "items": [
+        {
+          "n": 1,
+          "proposalId": "dc413f7ee1d5ebbe",
+          "action": "promote_to_graph",
+          "kind": "new_term",
+          "term": "AI-Generated Exploit",
+          "termId": "ai-generated-exploit",
+          "definition": "An exploit or malicious payload whose code shows evidence of having been drafted or refined using a large language model — for example, hallucinated CVSS scores, structured 'textbook' formatting consistent with LLM training data, or AI-optimised payload tuning. Google Threat Intelligence Group's May 2026 report is the first public instance of a major threat-intelligence organisation attributing a zero-day exploit to AI-assisted development. The category is distinct from AI-discovered vulnerabilities (where AI finds flaws in legitimate code); here AI is used by the attacker to construct the offensive payload. Forensic identification relies partly on LLM output artefacts embedded in the code.",
+          "previousDefinition": null,
+          "sources": [
+            {
+              "label": "The Verge — AI: Google stopped a zero-day hack that it says was developed with AI",
+              "url": "https://www.theverge.com/tech/928007/google-ai-zero-day-exploit-stopped"
+            },
+            {
+              "label": "Simon Willison's Weblog: Today’s PHP Security Release, and How We’re Strengthening PHP Security",
+              "url": "https://simonwillison.net/2026/Oct/21/php-security-release/"
+            }
+          ],
+          "nearest": {
+            "id": "exploit",
+            "label": "Exploit",
+            "relation": "narrower term"
+          },
+          "rationale": "2 sources, 2 independent (theverge.com + simonwillison.net), 163d on longlist. Trusted: simonwillison.net.",
+          "review": {
+            "verdict": "flag",
+            "summary": "Only The Verge excerpt describes an AI-developed exploit. The Simon Willison post covers AI-discovered PHP vulnerabilities (Wiz using Gemini/GPT), which is the category the definition explicitly excludes. The definition also overstates the source: The Verge says this is Google's first such detection, not the first by any major threat-intelligence organisation.",
+            "flags": [
+              "sources_do_not_support",
+              "factual_error"
+            ]
+          },
+          "tier": "nicole",
+          "tierReason": "reviewer flagged it: sources do not support, factual error"
+        },
+        {
+          "n": 2,
+          "proposalId": "12d5c61bcf7451e1",
+          "action": "promote_to_graph",
+          "kind": "new_term",
+          "term": "Gemini 4 Argon",
+          "termId": "gemini-4-argon",
+          "definition": "Google DeepMind's frontier model announced in September 2026, positioned as its most capable reasoning model to date. Built with a 1-million-token output limit and optimised for heavy-duty workloads including coding, cybersecurity defence, financial research, and legal drafting. Initially released in phased rollout to trusted cyber defenders via the Fairwind Program before broader developer and enterprise availability.",
+          "previousDefinition": null,
+          "sources": [
+            {
+              "label": "Google AI Blog: The latest AI news we announced in September 2026",
+              "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/"
+            },
+            {
+              "label": "Simon Willison's Weblog: Today’s PHP Security Release, and How We’re Strengthening PHP Security",
+              "url": "https://simonwillison.net/2026/Oct/21/php-security-release/"
+            }
+          ],
+          "nearest": {
+            "id": "gemini",
+            "label": "Gemini",
+            "relation": "narrower term (specific model in family)"
+          },
+          "rationale": "2 sources, 2 independent (blog.google + simonwillison.net), 3d on longlist. Trusted: simonwillison.net.",
+          "review": {
+            "verdict": "flag",
+            "summary": "Only the Google blog supports the core claims (frontier model, advanced reasoning, 1M-token output limit, cyber-defence focus). Neither excerpt supports the Fairwind Program phased rollout, the finance and legal-drafting use cases, or 'most capable reasoning model to date'. Willison's post only names the model as a tool Wiz used, so it does not independently support the definition.",
+            "flags": [
+              "sources_do_not_support"
+            ]
+          },
+          "tier": "nicole",
+          "tierReason": "reviewer flagged it: sources do not support"
+        }
+      ],
+      "waitingEarlier": 4,
+      "thread": []
     }
   ]
 }

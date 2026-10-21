@@ -1,235 +1,242 @@
 {
-  "generatedAt": "2026-10-20T21:15:51.629Z",
+  "generatedAt": "2026-10-21T21:16:07.143Z",
   "model": "claude-sonnet-4-6",
   "sourcesConfigured": 15,
   "articlesConsidered": [
     {
-      "id": "4eb9f7080b11166e",
+      "id": "7104bc51c29585cc",
       "source": "Hugging Face Blog",
-      "title": "NVIDIA Cosmos3-H-Dreams: Bringing Clinical Surgery to Life Through Generative Simulation",
-      "url": "https://huggingface.co/blog/nvidia/cosmos3-h-dreams",
-      "publishedAt": "Tue, 20 Oct 2026 18:17:47 GMT"
+      "title": "NVIDIA Kumo Relational Outperforms Supervised Machine Learning on Relational Data, No Training Required",
+      "url": "https://huggingface.co/blog/nvidia/kumo-relational",
+      "publishedAt": "Wed, 21 Oct 2026 18:26:30 GMT"
     },
     {
-      "id": "b3fcb2e42d321123",
-      "source": "OpenAI News",
-      "title": "Franchisee reconciles cash in 94% less time with ChatGPT Work",
-      "url": "https://openai.com/index/ted-taylor-restaurant",
-      "publishedAt": "Tue, 20 Oct 2026 10:00:00 GMT"
-    },
-    {
-      "id": "f691b33b16339eed",
+      "id": "5918c4a7c98a66fe",
       "source": "Stratechery",
-      "title": "Muse Spark Open, Meta + Apple, Thin and Thick",
-      "url": "https://stratechery.com/2026/muse-spark-open-meta-apple-thin-and-thick/",
-      "publishedAt": "Tue, 20 Oct 2026 10:00:00 +0000"
+      "title": "Presented by Stripe",
+      "url": "https://stratechery.com/2026/presented-by-stripe/",
+      "publishedAt": "Wed, 21 Oct 2026 17:35:31 +0000"
     },
     {
-      "id": "c01e31c5a3a42d55",
-      "source": "Last Week in AI",
-      "title": "Last Week in AI #346 - 719 math manuscripts, 2 Western open models, 1 more safety resignation",
-      "url": "https://lastweekin.ai/p/last-week-in-ai-346-719-math-manuscripts",
-      "publishedAt": "Fri, 09 Oct 2026 05:06:58 GMT"
+      "id": "4ab93569e260b2b0",
+      "source": "OpenAI News",
+      "title": "How AT&T is rethinking in-house legal work with OpenAI",
+      "url": "https://openai.com/index/att-legal",
+      "publishedAt": "Wed, 21 Oct 2026 17:00:00 GMT"
     },
     {
-      "id": "3b5ce86c8c402c8d",
+      "id": "1778fb273dbb6c0b",
+      "source": "Google AI Blog",
+      "title": "Southeast Asia’s digital economy to hit $368 billion",
+      "url": "https://blog.google/company-news/inside-google/around-the-globe/google-asia/e-conomy-sea-report-2026/",
+      "publishedAt": "Wed, 21 Oct 2026 04:00:00 +0000"
+    },
+    {
+      "id": "952285572a8e70b9",
       "source": "Simon Willison's Weblog",
-      "title": "Battle Drones—a vibe coded RTS with audio-based multiplayer",
-      "url": "https://simonwillison.net/2026/Oct/20/battledrones/",
-      "publishedAt": "2026-10-20T19:34:19+00:00"
+      "title": "Today’s PHP Security Release, and How We’re Strengthening PHP Security",
+      "url": "https://simonwillison.net/2026/Oct/21/php-security-release/",
+      "publishedAt": "2026-10-21T18:41:53+00:00"
     },
     {
-      "id": "10310c209328b333",
+      "id": "94cadd3b5f06d67b",
       "source": "Anthropic Newsroom",
-      "title": "Announcements",
-      "url": "https://www.anthropic.com/news/announcements",
+      "title": "Features",
+      "url": "https://www.anthropic.com/news/features",
       "publishedAt": null
     }
   ],
   "harvestedTerms": [
     {
       "article": {
-        "title": "NVIDIA Cosmos3-H-Dreams: Bringing Clinical Surgery to Life Through Generative Simulation",
-        "url": "https://huggingface.co/blog/nvidia/cosmos3-h-dreams"
+        "title": "NVIDIA Kumo Relational Outperforms Supervised Machine Learning on Relational Data, No Training Required",
+        "url": "https://huggingface.co/blog/nvidia/kumo-relational"
       },
-      "summary": "NVIDIA introduces Cosmos3-H-Dreams, a real-time generative surgical simulator trained on clinical cholecystectomy recordings that uses world foundation model technology, Self-Forcing distillation, and a streaming inference library (FlashDreams) to enable interactive kinematic control of surgical scenes. The article is technically dense, covering teacher-to-student distillation, causal video generation, KV cache consolidation for long rollouts, and action-conditioned world models for surgical robotics.",
+      "summary": "NVIDIA Kumo Relational is a pre-trained foundation model for relational database prediction — a 'structured data foundation model' that replaces task-specific ML pipelines with in-context learning on raw relational graphs. The article introduces several trackable concepts: relational foundation models, a Predictive Query Language (PQL), and the broader paradigm shift from supervised pipelines to structured-data foundation models. These are novel enough to warrant longlist candidates.",
       "longlistAdditions": [
         {
-          "id": "world-foundation-model",
-          "label": "World Foundation Model"
+          "id": "relational-foundation-model",
+          "label": "Relational Foundation Model"
         },
         {
-          "id": "self-forcing-distillation",
-          "label": "Self-Forcing Distillation"
+          "id": "predictive-query-language",
+          "label": "Predictive Query Language"
         },
         {
-          "id": "action-conditioned-generation",
-          "label": "Action-Conditioned Generation"
+          "id": "in-context-learning-structured",
+          "label": "In-Context Learning (Structured Data)"
+        },
+        {
+          "id": "structured-data-foundation-model",
+          "label": "Structured Data Foundation Model"
+        }
+      ],
+      "longlistUpdates": [],
+      "rejections": [],
+      "proposalsQueued": [],
+      "mustReadFlagged": {
+        "priority": 2,
+        "reason": "A rare concrete instantiation of the 'foundation model paradigm shift' argument — applied not to language or vision but to enterprise relational databases. The Kumo Relational paper makes a genuinely testable claim (few-shot beats supervised ML on relational benchmarks) and introduces a new model category worth following as the structured-data AI space matures."
+      }
+    },
+    {
+      "article": {
+        "title": "Presented by Stripe",
+        "url": "https://stratechery.com/2026/presented-by-stripe/"
+      },
+      "summary": "Ben Thompson announces Stratechery is now 'presented by Stripe,' introducing a unified sponsorship model while maintaining editorial independence. The piece is primarily a business/ethics disclosure about a media-sponsor relationship, with tangential mentions of Stripe's AI-era data insights and a new in-person video podcast format. Limited AI terminology content.",
+      "longlistAdditions": [
+        {
+          "id": "unified-content-business-model",
+          "label": "Unified Content Business Model"
         }
       ],
       "longlistUpdates": [
         {
-          "id": "streaming-inference",
-          "label": "Streaming Inference",
+          "id": "aggregator-theory",
+          "label": "Aggregator Theory",
+          "sourceAdded": true,
+          "sourceCount": 5,
+          "independentSourceCount": 1
+        }
+      ],
+      "rejections": [],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "Southeast Asia’s digital economy to hit $368 billion",
+        "url": "https://blog.google/company-news/inside-google/around-the-globe/google-asia/e-conomy-sea-report-2026/"
+      },
+      "summary": "Google's 11th e-Conomy SEA report frames Southeast Asia's digital economy growth through the lens of generative AI adoption, projecting $1 trillion by 2035. The article introduces 'agentic commerce' as a consumer-trust-driven next phase, uses 'tokens' as an economic benchmark, and highlights data infrastructure and regional trade policy as enabling conditions. Limited terminological novelty but strong on framing terms around AI adoption at scale.",
+      "longlistAdditions": [
+        {
+          "id": "tokens-economic-benchmark",
+          "label": "Tokens as Economic Benchmark"
+        }
+      ],
+      "longlistUpdates": [],
+      "rejections": [
+        {
+          "label": "Agentic Commerce",
+          "reason": "already in graph (label match)"
+        },
+        {
+          "label": "Agentic Era",
+          "reason": "already in graph (label match)"
+        }
+      ],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "Today’s PHP Security Release, and How We’re Strengthening PHP Security",
+        "url": "https://simonwillison.net/2026/Oct/21/php-security-release/"
+      },
+      "summary": "Simon Willison links to a PHP security incident where a coordinated disclosure process failed — CVE details leaked early, triggering accelerated exploit development. Notable detail: the original vulnerability was discovered by Wiz Research using AI tools including Gemini 4 Argon and GPT-5.6 Sol. The post is a brief link-blog entry with a short summary of the disclosure timeline.",
+      "longlistAdditions": [],
+      "longlistUpdates": [
+        {
+          "id": "gemini-4-argon",
+          "label": "Gemini 4 Argon",
+          "sourceAdded": true,
+          "sourceCount": 2,
+          "independentSourceCount": 2
+        },
+        {
+          "id": "gpt6-sol",
+          "label": "GPT-6 Sol",
+          "sourceAdded": true,
+          "sourceCount": 2,
+          "independentSourceCount": 2
+        },
+        {
+          "id": "ai-generated-exploit",
+          "label": "AI-Generated Exploit",
           "sourceAdded": true,
           "sourceCount": 2,
           "independentSourceCount": 2
         }
       ],
-      "rejections": [],
+      "rejections": [
+        {
+          "label": "Coordinated Disclosure",
+          "reason": "already in graph (label match)"
+        }
+      ],
       "proposalsQueued": []
     },
     {
       "article": {
-        "title": "Muse Spark Open, Meta + Apple, Thin and Thick",
-        "url": "https://stratechery.com/2026/muse-spark-open-meta-apple-thin-and-thick/"
+        "title": "Features",
+        "url": "https://www.anthropic.com/news/features"
       },
-      "summary": "Stratechery paywalled article about Meta releasing an open-source model ('Muse Spark Open') and a surprise partnership with Apple to enable local on-device deployment. The excerpt is almost entirely behind the paywall — only the title, teaser line, and subscription page are visible. No substantive analytical content is accessible.",
-      "longlistAdditions": [
-        {
-          "id": "muse-spark-open",
-          "label": "Muse Spark Open"
-        }
-      ],
+      "summary": "Anthropic's Features page lists three editorial pieces: a global health AI case study (Ebola response with Claude), the origin story of Claude Code, and a NASA Mars rover AI-planning story. The page is essentially a curated feature journalism index with minimal terminology density — it names products and applications but introduces no new conceptual vocabulary.",
+      "longlistAdditions": [],
       "longlistUpdates": [],
-      "rejections": [],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "Last Week in AI #346 - 719 math manuscripts, 2 Western open models, 1 more safety resignation",
-        "url": "https://lastweekin.ai/p/last-week-in-ai-346-719-math-manuscripts"
-      },
-      "summary": "A news roundup covering: OpenAI releasing 719 math manuscripts from an unreleased frontier model (with governance debate); Mistral and Reflection AI launching large open-weight models pitched as Western rivals to Chinese models; OpenAI safety researcher David Robinson's resignation essay criticizing trial-and-error release culture; and Google opening SynthID Detector publicly while OpenAI adds EU text watermarking.",
-      "longlistAdditions": [
+      "rejections": [
         {
-          "id": "synthid",
-          "label": "SynthID"
+          "label": "Claude Code",
+          "reason": "already in graph (label match)"
         },
         {
-          "id": "preparedness-framework",
-          "label": "Preparedness Framework"
-        },
-        {
-          "id": "ai-mathematics",
-          "label": "AI Mathematics"
-        },
-        {
-          "id": "trial-error-release-culture",
-          "label": "Trial-and-Error Release Culture"
+          "label": "Coding Agent",
+          "reason": "already in graph (label match)"
         }
       ],
-      "longlistUpdates": [],
-      "rejections": [],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "Battle Drones—a vibe coded RTS with audio-based multiplayer",
-        "url": "https://simonwillison.net/2026/Oct/20/battledrones/"
-      },
-      "summary": "Simon Willison documents the iterative development of Battle Drones, a browser-based RTS game built almost entirely through vibe coding with Claude Code over 12 major versions. The article showcases audio-based multiplayer (synchronizing game state via sound), Ultracode dynamic workflows that orchestrated subagents for game balancing, and an agent-vs-agent play mode where two LLMs compete. It's primarily a personal project writeup with some interesting embedded concepts around multi-agent simulation and audio data encoding.",
-      "longlistAdditions": [
-        {
-          "id": "ultracode-mode",
-          "label": "Ultracode Mode"
-        },
-        {
-          "id": "audio-state-sync",
-          "label": "Audio-Based State Synchronization"
-        },
-        {
-          "id": "ai-vs-ai-mode",
-          "label": "AI vs. AI Mode"
-        }
-      ],
-      "longlistUpdates": [],
-      "rejections": [],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "Announcements",
-        "url": "https://www.anthropic.com/news/announcements"
-      },
-      "summary": "Anthropic announcements page covering October–July 2026: new model releases (Claude Haiku 5.5, Sonnet 5.5, Opus 5.5, Mythos, Fable 5.1), expansion of verification programs (Cyber, Life Sciences), the Claude Frontier Academy initiative, Model Hardware Standard preview, and various philanthropic/research funding commitments. Primarily a product/news digest with limited terminological novelty.",
-      "longlistAdditions": [
-        {
-          "id": "life-sciences-verification-program",
-          "label": "Life Sciences Verification Program"
-        },
-        {
-          "id": "claude-frontier-academy",
-          "label": "Claude Frontier Academy"
-        },
-        {
-          "id": "model-hardware-standard",
-          "label": "Model Hardware Standard"
-        }
-      ],
-      "longlistUpdates": [
-        {
-          "id": "claude-opus-55",
-          "label": "Claude Opus 5.5",
-          "sourceAdded": true,
-          "sourceCount": 3,
-          "independentSourceCount": 3
-        }
-      ],
-      "rejections": [],
       "proposalsQueued": []
     }
   ],
   "definitionReviews": [
     {
-      "id": "data-poisoning",
-      "status": "keep",
-      "reason": "No source material addresses data poisoning, the referenced study, or its findings. Definition stands."
-    },
-    {
-      "id": "data-residency",
-      "status": "keep",
-      "reason": "No source material addresses data residency requirements or regulations. Definition stands."
-    },
-    {
-      "id": "data-sovereignty",
-      "status": "keep",
-      "reason": "No source material addresses data sovereignty concepts or open-weight local deployment. Definition stands."
-    },
-    {
-      "id": "dead-internet-theory",
-      "status": "keep",
-      "reason": "No source material addresses the dead internet theory or bot-generated web content. Definition stands."
-    },
-    {
-      "id": "deceptive-alignment",
-      "status": "keep",
-      "reason": "No source material addresses deceptive alignment, scheming, or alignment faking research. Definition stands."
-    },
-    {
-      "id": "deep-learning",
-      "status": "keep",
-      "reason": "No source material challenges or updates the definition of deep learning. Definition stands."
-    },
-    {
-      "id": "deep-research",
-      "status": "keep",
-      "reason": "No source material addresses the deep research agentic mode concept. Definition stands."
-    },
-    {
-      "id": "deepfake",
-      "status": "keep",
-      "reason": "No source material addresses deepfakes, the TAKE IT DOWN Act, or EU AI Act labelling requirements. Definition stands."
-    },
-    {
-      "id": "deepseek",
-      "status": "keep",
-      "reason": "No source material updates or contradicts the January 2025 DeepSeek description. Definition stands."
-    },
-    {
       "id": "delegation",
       "status": "keep",
-      "reason": "No source material addresses the delegation interaction paradigm concept. Definition stands."
+      "reason": "No source material addresses this term."
+    },
+    {
+      "id": "deployment-company",
+      "status": "keep",
+      "reason": "The Stratechery excerpt is solely about a Stripe sponsorship announcement and contains nothing about deployment companies or OpenAI's organizational structure. The existing definition cannot be updated or contradicted by available sources."
+    },
+    {
+      "id": "deprecated",
+      "status": "keep",
+      "reason": "No source material addresses this term."
+    },
+    {
+      "id": "deskilling",
+      "status": "keep",
+      "reason": "No source material addresses this term."
+    },
+    {
+      "id": "devin",
+      "status": "keep",
+      "reason": "No source material addresses this term."
+    },
+    {
+      "id": "diffusion-language-models",
+      "status": "keep",
+      "reason": "No source material addresses this term."
+    },
+    {
+      "id": "diffusion-model",
+      "status": "keep",
+      "reason": "No source material addresses this term."
+    },
+    {
+      "id": "digital-labor",
+      "status": "keep",
+      "reason": "No source material addresses this term."
+    },
+    {
+      "id": "digital-omnibus",
+      "status": "keep",
+      "reason": "No source material addresses this term."
+    },
+    {
+      "id": "distillation",
+      "status": "keep",
+      "reason": "No source material addresses this term."
     }
   ],
   "notes": []

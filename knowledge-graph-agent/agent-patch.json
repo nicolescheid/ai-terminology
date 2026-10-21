@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-20T21:17:49.757Z",
+    "generatedAt": "2026-10-21T21:18:06.219Z",
     "sourceCount": 6,
     "note": "Agent-managed overlay. Graph-affecting changes are routed through the permissions matrix (actions.mjs) — see proposals.json for pending items."
   },
@@ -1201,6 +1201,33 @@
       ],
       "fullName": "Claude Opus 5.5 Extra (Anthropic)",
       "nodeType": "product"
+    },
+    {
+      "id": "streaming-inference",
+      "label": "Streaming Inference",
+      "clusters": [
+        "technical",
+        "models"
+      ],
+      "sz": 16,
+      "def": "A mode of model inference in which outputs are generated and transmitted incrementally in real time rather than waiting for full completion, essential for low-latency voice and conversational AI applications.",
+      "rels": [
+        "inference",
+        "latency",
+        "api"
+      ],
+      "refs": [
+        {
+          "n": 1,
+          "src": "OpenAI News, Mon, 04 May 2026 00:00:00 GMT",
+          "q": "How OpenAI delivers low-latency voice AI at scale OpenAI News"
+        },
+        {
+          "n": 2,
+          "src": "Hugging Face Blog, Tue, 20 Oct 2026 18:17:47 GMT",
+          "q": "NVIDIA Cosmos3-H-Dreams: Bringing Clinical Surgery to Life Through Generative Simulation Hugging Face Blog"
+        }
+      ]
     }
   ],
   "definitionOverrides": [

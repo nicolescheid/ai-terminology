@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generatedAt": "2026-10-20T21:15:51.629Z",
-    "unreadCount": 27,
-    "totalCount": 27,
+    "generatedAt": "2026-10-21T21:16:07.143Z",
+    "unreadCount": 28,
+    "totalCount": 28,
     "note": "Lexi's must-reads — articles she flags as worth Nicole reading in full. Editorial signal, not news feed. Set status to 'read' or 'dismissed' via mark-must-reads.mjs."
   },
   "entries": [
@@ -462,6 +462,23 @@
       ],
       "novelTermsInArticle": 2,
       "flaggedAt": "2026-10-19T22:00:12.148Z",
+      "status": "unread"
+    },
+    {
+      "id": "7104bc51c29585cc",
+      "title": "NVIDIA Kumo Relational Outperforms Supervised Machine Learning on Relational Data, No Training Required",
+      "url": "https://huggingface.co/blog/nvidia/kumo-relational",
+      "source": "Hugging Face Blog",
+      "publishedAt": "Wed, 21 Oct 2026 18:26:30 GMT",
+      "summary": "NVIDIA Kumo Relational is a pre-trained foundation model for relational database prediction — a 'structured data foundation model' that replaces task-specific ML pipelines with in-context learning on raw relational graphs. The article introduces several trackable concepts: relational foundation models, a Predictive Query Language (PQL), and the broader paradigm shift from supervised pipelines to structured-data foundation models. These are novel enough to warrant longlist candidates.",
+      "priority": 2,
+      "reason": "A rare concrete instantiation of the 'foundation model paradigm shift' argument — applied not to language or vision but to enterprise relational databases. The Kumo Relational paper makes a genuinely testable claim (few-shot beats supervised ML on relational benchmarks) and introduces a new model category worth following as the structured-data AI space matures.",
+      "clusters": [
+        "models",
+        "technical"
+      ],
+      "novelTermsInArticle": 4,
+      "flaggedAt": "2026-10-21T21:16:07.143Z",
       "status": "unread"
     }
   ]

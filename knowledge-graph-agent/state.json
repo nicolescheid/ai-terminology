@@ -1,6 +1,6 @@
 {
-  "lastRunAt": "2026-10-20T21:15:51.629Z",
-  "reviewCursor": 154,
+  "lastRunAt": "2026-10-21T21:16:07.143Z",
+  "reviewCursor": 164,
   "seenArticles": {
     "93a049d060bc295b": {
       "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/tpus-8t-8i-cloud-next/",
@@ -1219,6 +1219,42 @@
       "title": "Announcements",
       "publishedAt": null,
       "seenAt": "2026-10-20T21:15:51.629Z"
+    },
+    "7104bc51c29585cc": {
+      "url": "https://huggingface.co/blog/nvidia/kumo-relational",
+      "title": "NVIDIA Kumo Relational Outperforms Supervised Machine Learning on Relational Data, No Training Required",
+      "publishedAt": "Wed, 21 Oct 2026 18:26:30 GMT",
+      "seenAt": "2026-10-21T21:16:07.143Z"
+    },
+    "5918c4a7c98a66fe": {
+      "url": "https://stratechery.com/2026/presented-by-stripe/",
+      "title": "Presented by Stripe",
+      "publishedAt": "Wed, 21 Oct 2026 17:35:31 +0000",
+      "seenAt": "2026-10-21T21:16:07.143Z"
+    },
+    "4ab93569e260b2b0": {
+      "url": "https://openai.com/index/att-legal",
+      "title": "How AT&T is rethinking in-house legal work with OpenAI",
+      "publishedAt": "Wed, 21 Oct 2026 17:00:00 GMT",
+      "seenAt": "2026-10-21T21:16:07.143Z"
+    },
+    "1778fb273dbb6c0b": {
+      "url": "https://blog.google/company-news/inside-google/around-the-globe/google-asia/e-conomy-sea-report-2026/",
+      "title": "Southeast Asia’s digital economy to hit $368 billion",
+      "publishedAt": "Wed, 21 Oct 2026 04:00:00 +0000",
+      "seenAt": "2026-10-21T21:16:07.143Z"
+    },
+    "952285572a8e70b9": {
+      "url": "https://simonwillison.net/2026/Oct/21/php-security-release/",
+      "title": "Today’s PHP Security Release, and How We’re Strengthening PHP Security",
+      "publishedAt": "2026-10-21T18:41:53+00:00",
+      "seenAt": "2026-10-21T21:16:07.143Z"
+    },
+    "94cadd3b5f06d67b": {
+      "url": "https://www.anthropic.com/news/features",
+      "title": "Features",
+      "publishedAt": null,
+      "seenAt": "2026-10-21T21:16:07.143Z"
     }
   },
   "nodeReviews": {
@@ -1538,19 +1574,19 @@
       "reason": "No source material updates or contradicts the January 2025 DeepSeek description. Definition stands."
     },
     "delegation": {
-      "lastReviewedAt": "2026-10-20T21:15:51.629Z",
+      "lastReviewedAt": "2026-10-21T21:16:07.143Z",
       "status": "keep",
-      "reason": "No source material addresses the delegation interaction paradigm concept. Definition stands."
+      "reason": "No source material addresses this term."
     },
     "deprecated": {
-      "lastReviewedAt": "2026-06-03T20:54:34.002Z",
-      "status": "insufficient_evidence",
-      "reason": "No sources discuss deprecation of AI models or APIs."
+      "lastReviewedAt": "2026-10-21T21:16:07.143Z",
+      "status": "keep",
+      "reason": "No source material addresses this term."
     },
     "devin": {
-      "lastReviewedAt": "2026-06-03T20:54:34.002Z",
-      "status": "insufficient_evidence",
-      "reason": "The Uber/Claude Code source touches on agentic coding tools but does not provide new information about Devin specifically."
+      "lastReviewedAt": "2026-10-21T21:16:07.143Z",
+      "status": "keep",
+      "reason": "No source material addresses this term."
     },
     "distribution-shift": {
       "lastReviewedAt": "2026-06-03T20:54:34.002Z",
@@ -2381,6 +2417,41 @@
       "lastReviewedAt": "2026-10-20T21:15:51.629Z",
       "status": "keep",
       "reason": "No source material addresses deepfakes, the TAKE IT DOWN Act, or EU AI Act labelling requirements. Definition stands."
+    },
+    "deployment-company": {
+      "lastReviewedAt": "2026-10-21T21:16:07.143Z",
+      "status": "keep",
+      "reason": "The Stratechery excerpt is solely about a Stripe sponsorship announcement and contains nothing about deployment companies or OpenAI's organizational structure. The existing definition cannot be updated or contradicted by available sources."
+    },
+    "deskilling": {
+      "lastReviewedAt": "2026-10-21T21:16:07.143Z",
+      "status": "keep",
+      "reason": "No source material addresses this term."
+    },
+    "diffusion-language-models": {
+      "lastReviewedAt": "2026-10-21T21:16:07.143Z",
+      "status": "keep",
+      "reason": "No source material addresses this term."
+    },
+    "diffusion-model": {
+      "lastReviewedAt": "2026-10-21T21:16:07.143Z",
+      "status": "keep",
+      "reason": "No source material addresses this term."
+    },
+    "digital-labor": {
+      "lastReviewedAt": "2026-10-21T21:16:07.143Z",
+      "status": "keep",
+      "reason": "No source material addresses this term."
+    },
+    "digital-omnibus": {
+      "lastReviewedAt": "2026-10-21T21:16:07.143Z",
+      "status": "keep",
+      "reason": "No source material addresses this term."
+    },
+    "distillation": {
+      "lastReviewedAt": "2026-10-21T21:16:07.143Z",
+      "status": "keep",
+      "reason": "No source material addresses this term."
     }
   }
 }
