@@ -265,8 +265,8 @@
       "createdAt": "2026-10-21T21:18:06.279Z",
       "autoApplyHours": 72,
       "autoApplyAt": "2026-10-24T21:18:06.279Z",
-      "sentAt": null,
-      "messageId": null,
+      "sentAt": "2026-10-21T21:18:10.903Z",
+      "messageId": "<yOaZcDO1YYk6Of9MqpFF48nVyAT1q3Qxs2oU@ai-terminology.com>",
       "items": [
         {
           "n": 1,
@@ -341,7 +341,8 @@
         }
       ],
       "waitingEarlier": 4,
-      "thread": []
+      "thread": [],
+      "subject": "2 items to review [Lexi D-20261021-68be]"
     }
   ]
 }
