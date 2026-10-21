@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-10-21T21:18:06.279Z",
-    "count": 4,
+    "generatedAt": "2026-10-21T22:05:35.211Z",
+    "count": 5,
     "note": "Lexi's email digests to Nicole. Written by build-digest.mjs; sentAt/messageId/thread written by the Worker (src/lexi-mail)."
   },
   "digests": [
@@ -343,6 +343,54 @@
       "waitingEarlier": 4,
       "thread": [],
       "subject": "2 items to review [Lexi D-20261021-68be]"
+    },
+    {
+      "id": "D-20261021-f7e7",
+      "createdAt": "2026-10-21T22:05:35.211Z",
+      "autoApplyHours": 72,
+      "autoApplyAt": "2026-10-24T22:05:35.211Z",
+      "sentAt": null,
+      "messageId": null,
+      "items": [
+        {
+          "n": 1,
+          "proposalId": "7e67a3bf99a36323",
+          "action": "promote_to_graph",
+          "kind": "new_term",
+          "term": "Text-to-Game",
+          "termId": "text-to-game",
+          "definition": "A class of generative AI application in which users describe a desired game — its rules, characters, environments, or mechanics — using natural-language prompts, and the system generates a playable interactive artifact without requiring the user to write code. Exemplified by Google's Playground platform, which positions text-to-game generation as a natural extension of text-to-image and text-to-code paradigms. Sits at the intersection of generative UI, vibe coding, and AI-assisted creative tooling.",
+          "previousDefinition": null,
+          "sources": [
+            {
+              "label": "Google AI Blog: Introducing Playground: Create and play custom games",
+              "url": "https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform/"
+            },
+            {
+              "label": "Simon Willison's Weblog: Panache — RTS Belle Époque pour mobile",
+              "url": "https://simonwillison.net/2026/Oct/21/panache/"
+            }
+          ],
+          "nearest": {
+            "id": "vibe-coding",
+            "label": "Vibe Coding",
+            "relation": "related (application-specific variant)"
+          },
+          "rationale": "2 sources, 2 independent (blog.google + simonwillison.net), 5d on longlist. Trusted: simonwillison.net.",
+          "review": {
+            "verdict": "flag",
+            "summary": "Neither excerpt uses the term \"text-to-game\". Google's page only says \"create, play, and share custom games — no coding required\", and Willison's post is about a French fork of his vibe-coded RTS. The claim that Google positions this as an extension of text-to-image/text-to-code is not visible in the excerpts, and the definition leans on a single product launch.",
+            "flags": [
+              "sources_do_not_support",
+              "other"
+            ]
+          },
+          "tier": "nicole",
+          "tierReason": "reviewer flagged it: sources do not support, other"
+        }
+      ],
+      "waitingEarlier": 4,
+      "thread": []
     }
   ]
 }

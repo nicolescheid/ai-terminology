@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-10-21T22:03:10.704Z",
+  "generatedAt": "2026-10-21T22:05:35.294Z",
   "firstRunAt": "2026-04-27T01:07:31.335Z",
   "phase": 1,
   "headline": {
     "articlesRead": 215,
     "daysRunning": 178,
-    "longlistSize": 132,
-    "graphSize": 438
+    "longlistSize": 131,
+    "graphSize": 439
   },
   "thisWeek": {
     "articlesFetched": 48,
     "longlistAdded": 86,
     "sourcesAdded": 5,
-    "promotionsToGraph": 3,
-    "proposalsQueued": 7,
+    "promotionsToGraph": 4,
+    "proposalsQueued": 8,
     "auditFlags": 6,
     "notesAdded": 20
   },
@@ -345,7 +345,7 @@
         "id": "agentic",
         "label": "Agentic Systems",
         "hex": "#FF9040",
-        "count": 33
+        "count": 31
       },
       {
         "id": "models",
@@ -369,7 +369,13 @@
         "id": "human",
         "label": "Human Skills",
         "hex": "#40D080",
-        "count": 14
+        "count": 15
+      },
+      {
+        "id": "business",
+        "label": "Business Reality",
+        "hex": "#48C888",
+        "count": 13
       },
       {
         "id": "companies",
@@ -384,16 +390,16 @@
         "count": 12
       },
       {
-        "id": "business",
-        "label": "Business Reality",
-        "hex": "#48C888",
-        "count": 12
-      },
-      {
         "id": "landscape",
         "label": "Model Landscape",
         "hex": "#D0A050",
-        "count": 11
+        "count": 12
+      },
+      {
+        "id": "work",
+        "label": "Work & Output",
+        "hex": "#E8A838",
+        "count": 12
       },
       {
         "id": "security",
@@ -410,14 +416,14 @@
     ]
   },
   "velocity": {
-    "humanGated": 41,
+    "humanGated": 42,
     "autonomous": 0,
     "note": "All graph promotions and substantive edits are currently human-gated. Lexi proposes; Nicole approves."
   },
   "proposalsByStatus": {
     "pending": 5,
     "approved": 0,
-    "applied": 41,
+    "applied": 42,
     "rejected": 1
   },
   "decisionsByCluster": {
@@ -450,11 +456,11 @@
       "rejected": 0
     },
     "companies": {
-      "approved": 5,
+      "approved": 6,
       "rejected": 0
     },
     "models": {
-      "approved": 7,
+      "approved": 8,
       "rejected": 0
     },
     "business": {

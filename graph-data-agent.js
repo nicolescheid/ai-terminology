@@ -1,6 +1,6 @@
 window.AGENT_GRAPH_PATCH = {
   "meta": {
-    "generatedAt": "2026-10-21T22:03:10.570Z",
+    "generatedAt": "2026-10-21T22:05:35.131Z",
     "sourceCount": 6,
     "note": "Agent-managed overlay. Graph-affecting changes are routed through the permissions matrix (actions.mjs) — see proposals.json for pending items."
   },
@@ -1257,6 +1257,37 @@ window.AGENT_GRAPH_PATCH = {
         }
       ],
       "fullName": "AI-Generated Exploit (AI-Assisted Cyberattack Payload)"
+    },
+    {
+      "id": "gemini-4-argon",
+      "label": "Gemini 4 Argon",
+      "clusters": [
+        "models",
+        "companies"
+      ],
+      "sz": 14,
+      "def": "Google DeepMind's frontier model announced in September 2026, positioned as its most capable reasoning model to date. Built with a 1-million-token output limit and optimised for heavy-duty workloads including coding, cybersecurity defence, financial research, and legal drafting. Initially released in phased rollout to trusted cyber defenders via the Fairwind Program before broader developer and enterprise availability.",
+      "rels": [
+        "gemini",
+        "google-co",
+        "frontier-model",
+        "reasoning-models",
+        "long-horizon-autonomy"
+      ],
+      "refs": [
+        {
+          "n": 1,
+          "src": "Google AI Blog, Fri, 02 Oct 2026 15:00:00 +0000",
+          "q": "The latest AI news we announced in September 2026 Google AI Blog"
+        },
+        {
+          "n": 2,
+          "src": "Simon Willison's Weblog, 2026-10-21T18:41:53+00:00",
+          "q": "Today’s PHP Security Release, and How We’re Strengthening PHP Security Simon Willison's Weblog"
+        }
+      ],
+      "fullName": "Gemini 4 Argon (Google DeepMind)",
+      "nodeType": "product"
     }
   ],
   "definitionOverrides": [
