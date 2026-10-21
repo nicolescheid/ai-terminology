@@ -1,102 +1,109 @@
 {
-  "generatedAt": "2026-10-21T21:16:07.143Z",
+  "generatedAt": "2026-10-21T22:01:40.598Z",
   "model": "claude-sonnet-4-6",
   "sourcesConfigured": 15,
   "articlesConsidered": [
     {
-      "id": "7104bc51c29585cc",
+      "id": "354f89a6c7dbf10c",
       "source": "Hugging Face Blog",
-      "title": "NVIDIA Kumo Relational Outperforms Supervised Machine Learning on Relational Data, No Training Required",
-      "url": "https://huggingface.co/blog/nvidia/kumo-relational",
-      "publishedAt": "Wed, 21 Oct 2026 18:26:30 GMT"
+      "title": "How Specializing the Vocabulary of SLMs Can Cut Inference Cost by 77% in Real Applications",
+      "url": "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization",
+      "publishedAt": "Wed, 21 Oct 2026 17:35:36 GMT"
     },
     {
-      "id": "5918c4a7c98a66fe",
-      "source": "Stratechery",
-      "title": "Presented by Stripe",
-      "url": "https://stratechery.com/2026/presented-by-stripe/",
-      "publishedAt": "Wed, 21 Oct 2026 17:35:31 +0000"
-    },
-    {
-      "id": "4ab93569e260b2b0",
+      "id": "74fcf21eca7add4a",
       "source": "OpenAI News",
-      "title": "How AT&T is rethinking in-house legal work with OpenAI",
-      "url": "https://openai.com/index/att-legal",
-      "publishedAt": "Wed, 21 Oct 2026 17:00:00 GMT"
+      "title": "ChatGPT Ads expands to 26 new countries as over 100,000 advertisers have used the platform",
+      "url": "https://openai.com/index/chatgpt-ads-expands-26-new-countries",
+      "publishedAt": "Wed, 21 Oct 2026 13:00:00 GMT"
     },
     {
-      "id": "1778fb273dbb6c0b",
-      "source": "Google AI Blog",
-      "title": "Southeast Asia’s digital economy to hit $368 billion",
-      "url": "https://blog.google/company-news/inside-google/around-the-globe/google-asia/e-conomy-sea-report-2026/",
-      "publishedAt": "Wed, 21 Oct 2026 04:00:00 +0000"
+      "id": "3ff8eca96476a225",
+      "source": "MIT Sloan Management Review",
+      "title": "  The Hidden Upside of Tech Challenges",
+      "url": "https://sloanreview.mit.edu/article/the-hidden-upside-of-tech-challenges/",
+      "publishedAt": "Wed, 21 Oct 2026 11:00:48 +0000"
     },
     {
-      "id": "952285572a8e70b9",
+      "id": "c8a170de51e20202",
+      "source": "Stratechery",
+      "title": "Netflix Earnings, Business or Franchise, Disney’s Deal",
+      "url": "https://stratechery.com/2026/netflix-earnings-business-or-franchise-disneys-deal/",
+      "publishedAt": "Wed, 21 Oct 2026 10:00:00 +0000"
+    },
+    {
+      "id": "6c1da1b548c04122",
       "source": "Simon Willison's Weblog",
-      "title": "Today’s PHP Security Release, and How We’re Strengthening PHP Security",
-      "url": "https://simonwillison.net/2026/Oct/21/php-security-release/",
-      "publishedAt": "2026-10-21T18:41:53+00:00"
+      "title": "Panache — RTS Belle Époque pour mobile",
+      "url": "https://simonwillison.net/2026/Oct/21/panache/",
+      "publishedAt": "2026-10-21T16:25:16+00:00"
     },
     {
-      "id": "94cadd3b5f06d67b",
-      "source": "Anthropic Newsroom",
-      "title": "Features",
-      "url": "https://www.anthropic.com/news/features",
-      "publishedAt": null
+      "id": "0d8d033795840d49",
+      "source": "The Verge — AI",
+      "title": "Anthropic takes on Muse with Claude Duet, its new AI agent",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1015843/anthropic-claude-duet-ai-agent",
+      "publishedAt": "2026-10-21T15:53:20-04:00"
     }
   ],
   "harvestedTerms": [
     {
       "article": {
-        "title": "NVIDIA Kumo Relational Outperforms Supervised Machine Learning on Relational Data, No Training Required",
-        "url": "https://huggingface.co/blog/nvidia/kumo-relational"
+        "title": "How Specializing the Vocabulary of SLMs Can Cut Inference Cost by 77% in Real Applications",
+        "url": "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization"
       },
-      "summary": "NVIDIA Kumo Relational is a pre-trained foundation model for relational database prediction — a 'structured data foundation model' that replaces task-specific ML pipelines with in-context learning on raw relational graphs. The article introduces several trackable concepts: relational foundation models, a Predictive Query Language (PQL), and the broader paradigm shift from supervised pipelines to structured-data foundation models. These are novel enough to warrant longlist candidates.",
+      "summary": "A Hugging Face blog post from Dharma-AI describes VocabX, a vocabulary specialization method for small language models (SLMs) that reportedly cuts inference cost by 77% in a production essay-grading system. The piece is technically focused: it explains why generated tokens cost more than input tokens (the prefill vs. decode distinction), how general-purpose tokenizers create two kinds of waste (fragmentation and excess vocabulary entries), and how VocabX addresses both by optimizing vocabulary selection around token cost rather than frequency. The case study is a Portuguese essay grader built on Qwen3-4B.",
       "longlistAdditions": [
         {
-          "id": "relational-foundation-model",
-          "label": "Relational Foundation Model"
+          "id": "vocab-specialization",
+          "label": "Vocabulary Specialization"
         },
         {
-          "id": "predictive-query-language",
-          "label": "Predictive Query Language"
+          "id": "lm-head-cost",
+          "label": "LM Head Cost"
         },
         {
-          "id": "in-context-learning-structured",
-          "label": "In-Context Learning (Structured Data)"
+          "id": "prefill-decode-cost-asymmetry",
+          "label": "Prefill–Decode Cost Asymmetry"
         },
         {
-          "id": "structured-data-foundation-model",
-          "label": "Structured Data Foundation Model"
+          "id": "macro-token",
+          "label": "Macro Token"
         }
       ],
       "longlistUpdates": [],
       "rejections": [],
-      "proposalsQueued": [],
-      "mustReadFlagged": {
-        "priority": 2,
-        "reason": "A rare concrete instantiation of the 'foundation model paradigm shift' argument — applied not to language or vision but to enterprise relational databases. The Kumo Relational paper makes a genuinely testable claim (few-shot beats supervised ML on relational benchmarks) and introduces a new model category worth following as the structured-data AI space matures."
-      }
+      "proposalsQueued": []
     },
     {
       "article": {
-        "title": "Presented by Stripe",
-        "url": "https://stratechery.com/2026/presented-by-stripe/"
+        "title": "  The Hidden Upside of Tech Challenges",
+        "url": "https://sloanreview.mit.edu/article/the-hidden-upside-of-tech-challenges/"
       },
-      "summary": "Ben Thompson announces Stratechery is now 'presented by Stripe,' introducing a unified sponsorship model while maintaining editorial independence. The piece is primarily a business/ethics disclosure about a media-sponsor relationship, with tangential mentions of Stripe's AI-era data insights and a new in-person video podcast format. Limited AI terminology content.",
+      "summary": "MIT Sloan Management Review piece presenting research on 'technostress,' distinguishing technology-as-hindrance from technology-as-challenge, and arguing managers can reframe worker perceptions of digital tools to improve motivation and engagement. The article is grounded in workplace psychology and information systems research, with AI and generative AI mentioned only as examples of stress-inducing tools. It has minimal AI-specific conceptual content.",
       "longlistAdditions": [
         {
-          "id": "unified-content-business-model",
-          "label": "Unified Content Business Model"
+          "id": "technostress",
+          "label": "Technostress"
         }
       ],
+      "longlistUpdates": [],
+      "rejections": [],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "Netflix Earnings, Business or Franchise, Disney’s Deal",
+        "url": "https://stratechery.com/2026/netflix-earnings-business-or-franchise-disneys-deal/"
+      },
+      "summary": "A paywalled Stratechery piece by Ben Thompson analysing Netflix's earnings through the 'business vs franchise' framing, with passing references to Disney and entertainment/AI themes. The extractable content is minimal — most of the article is behind a subscription wall — so no substantive AI terminology is present in the excerpt.",
+      "longlistAdditions": [],
       "longlistUpdates": [
         {
           "id": "aggregator-theory",
           "label": "Aggregator Theory",
           "sourceAdded": true,
-          "sourceCount": 5,
+          "sourceCount": 6,
           "independentSourceCount": 1
         }
       ],
@@ -105,83 +112,48 @@
     },
     {
       "article": {
-        "title": "Southeast Asia’s digital economy to hit $368 billion",
-        "url": "https://blog.google/company-news/inside-google/around-the-globe/google-asia/e-conomy-sea-report-2026/"
+        "title": "Panache — RTS Belle Époque pour mobile",
+        "url": "https://simonwillison.net/2026/Oct/21/panache/"
       },
-      "summary": "Google's 11th e-Conomy SEA report frames Southeast Asia's digital economy growth through the lens of generative AI adoption, projecting $1 trillion by 2035. The article introduces 'agentic commerce' as a consumer-trust-driven next phase, uses 'tokens' as an economic benchmark, and highlights data infrastructure and regional trade policy as enabling conditions. Limited terminological novelty but strong on framing terms around AI adoption at scale.",
-      "longlistAdditions": [
-        {
-          "id": "tokens-economic-benchmark",
-          "label": "Tokens as Economic Benchmark"
-        }
-      ],
-      "longlistUpdates": [],
-      "rejections": [
-        {
-          "label": "Agentic Commerce",
-          "reason": "already in graph (label match)"
-        },
-        {
-          "label": "Agentic Era",
-          "reason": "already in graph (label match)"
-        }
-      ],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "Today’s PHP Security Release, and How We’re Strengthening PHP Security",
-        "url": "https://simonwillison.net/2026/Oct/21/php-security-release/"
-      },
-      "summary": "Simon Willison links to a PHP security incident where a coordinated disclosure process failed — CVE details leaked early, triggering accelerated exploit development. Notable detail: the original vulnerability was discovered by Wiz Research using AI tools including Gemini 4 Argon and GPT-5.6 Sol. The post is a brief link-blog entry with a short summary of the disclosure timeline.",
+      "summary": "Simon Willison links to Panache, a French steampunk fork of his Battle Drones vibe-coded RTS game. The fork reskins the mobile/browser game to Belle Époque France with new models and animated intro. Minimal AI terminology content — this is essentially a game release/fork announcement with a creative open-source story.",
       "longlistAdditions": [],
       "longlistUpdates": [
         {
-          "id": "gemini-4-argon",
-          "label": "Gemini 4 Argon",
+          "id": "audio-state-sync",
+          "label": "Audio-Based State Synchronization",
           "sourceAdded": true,
           "sourceCount": 2,
-          "independentSourceCount": 2
-        },
-        {
-          "id": "gpt6-sol",
-          "label": "GPT-6 Sol",
-          "sourceAdded": true,
-          "sourceCount": 2,
-          "independentSourceCount": 2
-        },
-        {
-          "id": "ai-generated-exploit",
-          "label": "AI-Generated Exploit",
-          "sourceAdded": true,
-          "sourceCount": 2,
-          "independentSourceCount": 2
+          "independentSourceCount": 1
         }
       ],
-      "rejections": [
-        {
-          "label": "Coordinated Disclosure",
-          "reason": "already in graph (label match)"
-        }
-      ],
+      "rejections": [],
       "proposalsQueued": []
     },
     {
       "article": {
-        "title": "Features",
-        "url": "https://www.anthropic.com/news/features"
+        "title": "Anthropic takes on Muse with Claude Duet, its new AI agent",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1015843/anthropic-claude-duet-ai-agent"
       },
-      "summary": "Anthropic's Features page lists three editorial pieces: a global health AI case study (Ebola response with Claude), the origin story of Claude Code, and a NASA Mars rover AI-planning story. The page is essentially a curated feature journalism index with minimal terminology density — it names products and applications but introduces no new conceptual vocabulary.",
-      "longlistAdditions": [],
+      "summary": "Anthropic announces Claude Duet, a new AI agent for professionals and small business owners, launching as a research preview on iOS, Android, and web. Built on Claude Opus 5.5, it offers morning briefings, proactive monitoring, task execution via a virtual machine, and human-in-the-loop approvals for sensitive actions. The article is primarily a product launch announcement.",
+      "longlistAdditions": [
+        {
+          "id": "claude-duet",
+          "label": "Claude Duet"
+        },
+        {
+          "id": "proactive-daily-brief",
+          "label": "Proactive Daily Brief"
+        },
+        {
+          "id": "dedicated-safety-classifier",
+          "label": "Dedicated Safety Classifier"
+        }
+      ],
       "longlistUpdates": [],
       "rejections": [
         {
-          "label": "Claude Code",
-          "reason": "already in graph (label match)"
-        },
-        {
-          "label": "Coding Agent",
-          "reason": "already in graph (label match)"
+          "label": "research-preview",
+          "reason": "already in graph (id match)"
         }
       ],
       "proposalsQueued": []
@@ -189,54 +161,54 @@
   ],
   "definitionReviews": [
     {
-      "id": "delegation",
+      "id": "distribution-shift",
       "status": "keep",
-      "reason": "No source material addresses this term."
+      "reason": "No source excerpt addresses distribution shift. Definition is accurate and no update is warranted."
     },
     {
-      "id": "deployment-company",
+      "id": "dpo",
       "status": "keep",
-      "reason": "The Stratechery excerpt is solely about a Stripe sponsorship announcement and contains nothing about deployment companies or OpenAI's organizational structure. The existing definition cannot be updated or contradicted by available sources."
+      "reason": "No source excerpt discusses DPO or RLHF alignment methods. Definition remains accurate."
     },
     {
-      "id": "deprecated",
+      "id": "eacc",
       "status": "keep",
-      "reason": "No source material addresses this term."
+      "reason": "No source excerpt addresses effective accelerationism. Definition remains accurate."
     },
     {
-      "id": "deskilling",
+      "id": "edge-ai",
       "status": "keep",
-      "reason": "No source material addresses this term."
+      "reason": "The HuggingFace article on vocabulary specialization for SLMs touches on inference cost reduction but does not materially change or contradict the edge AI definition. The definition remains accurate."
     },
     {
-      "id": "devin",
+      "id": "effort-control",
       "status": "keep",
-      "reason": "No source material addresses this term."
+      "reason": "No source excerpt addresses Anthropic's effort control setting. Definition remains accurate."
     },
     {
-      "id": "diffusion-language-models",
+      "id": "eliza-effect",
       "status": "keep",
-      "reason": "No source material addresses this term."
+      "reason": "No source excerpt addresses the ELIZA effect. Definition remains accurate."
     },
     {
-      "id": "diffusion-model",
+      "id": "embeddings",
       "status": "keep",
-      "reason": "No source material addresses this term."
+      "reason": "No source excerpt addresses embeddings. Definition remains accurate."
     },
     {
-      "id": "digital-labor",
+      "id": "emergent-capability",
       "status": "keep",
-      "reason": "No source material addresses this term."
+      "reason": "No source excerpt provides new information about emergent capabilities. Definition remains accurate."
     },
     {
-      "id": "digital-omnibus",
+      "id": "emergent-misalignment",
       "status": "keep",
-      "reason": "No source material addresses this term."
+      "reason": "No source excerpt addresses emergent misalignment. Definition remains accurate."
     },
     {
-      "id": "distillation",
+      "id": "eval-driven-development",
       "status": "keep",
-      "reason": "No source material addresses this term."
+      "reason": "No source excerpt addresses eval-driven development. Definition remains accurate."
     }
   ],
   "notes": []

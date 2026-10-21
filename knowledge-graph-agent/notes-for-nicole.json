@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generatedAt": "2026-10-21T21:16:07.143Z",
-    "unreadCount": 50,
-    "totalCount": 340,
+    "generatedAt": "2026-10-21T22:01:40.598Z",
+    "unreadCount": 51,
+    "totalCount": 341,
     "note": "Notes for Nicole — Lexi's manager channel (spec §6). Mandatory entry types fire when their triggering condition is met; discretionary entries are observations Lexi thinks Nicole should see. Set status to 'read', 'actioned', or 'dismissed' as appropriate."
   },
   "entries": [
@@ -8717,6 +8717,26 @@
       "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
       "source": "auditor",
       "readAt": "2026-10-20T06:14:07.194Z"
+    },
+    {
+      "id": "6d060825acddf949",
+      "type": "contested_cluster_omission",
+      "writtenAt": "2026-10-21T22:01:40.598Z",
+      "runId": "044f73cb-3e25-4e7d-9d83-878b76596395",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Contested cluster term added without naming the contestation: 'Dedicated Safety Classifier'",
+      "details": "The term 'Dedicated Safety Classifier' matches the contested-cluster pattern 'agentic' (per spec §10), but the working definition does not appear to acknowledge that the term is contested or that different camps use it differently. Per spec §6 entry type 5, this requires review before any move toward graph promotion.",
+      "evidence": {
+        "entryId": "dedicated-safety-classifier",
+        "label": "Dedicated Safety Classifier",
+        "fullName": "Dedicated Safety Classifier (Agentic Context)",
+        "matchedContestedTerm": "agentic",
+        "workingDef": "A purpose-built classifier model and accompanying system prompt deployed within an AI agent to enforce context-specific safety policies — for example, Claude Duet's classifier designed to reject requests involving the 'strictest tier' of sensitive information (e.g., credit card numbers). Distinct from a general guard model in that it is scoped to the agent's operational domain and data access tier.",
+        "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1015843/anthropic-claude-duet-ai-agent",
+        "sourceLabel": "The Verge — AI"
+      },
+      "suggestedAction": "Either revise the working definition to name the contestation (who uses it to mean what), or confirm this term doesn't warrant the contested treatment in this case."
     }
   ],
   "usedLinks": {

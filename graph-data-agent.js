@@ -1,6 +1,6 @@
 window.AGENT_GRAPH_PATCH = {
   "meta": {
-    "generatedAt": "2026-10-21T21:18:06.219Z",
+    "generatedAt": "2026-10-21T22:03:10.570Z",
     "sourceCount": 6,
     "note": "Agent-managed overlay. Graph-affecting changes are routed through the permissions matrix (actions.mjs) — see proposals.json for pending items."
   },
@@ -1228,6 +1228,35 @@ window.AGENT_GRAPH_PATCH = {
           "q": "NVIDIA Cosmos3-H-Dreams: Bringing Clinical Surgery to Life Through Generative Simulation Hugging Face Blog"
         }
       ]
+    },
+    {
+      "id": "ai-generated-exploit",
+      "label": "AI-Generated Exploit",
+      "clusters": [
+        "security",
+        "critical"
+      ],
+      "sz": 14,
+      "def": "An exploit or malicious payload whose code shows evidence of having been drafted or refined using a large language model — for example, hallucinated CVSS scores, structured 'textbook' formatting consistent with LLM training data, or AI-optimised payload tuning. Google Threat Intelligence Group's May 2026 report is the first public instance of a major threat-intelligence organisation attributing a zero-day exploit to AI-assisted development. The category is distinct from AI-discovered vulnerabilities (where AI finds flaws in legitimate code); here AI is used by the attacker to construct the offensive payload. Forensic identification relies partly on LLM output artefacts embedded in the code.",
+      "rels": [
+        "zero-day",
+        "hallucination",
+        "jailbreak",
+        "exploit"
+      ],
+      "refs": [
+        {
+          "n": 1,
+          "src": "The Verge — AI, 2026-05-11T12:09:42-04:00",
+          "q": "Google stopped a zero-day hack that it says was developed with AI The Verge — AI"
+        },
+        {
+          "n": 2,
+          "src": "Simon Willison's Weblog, 2026-10-21T18:41:53+00:00",
+          "q": "Today’s PHP Security Release, and How We’re Strengthening PHP Security Simon Willison's Weblog"
+        }
+      ],
+      "fullName": "AI-Generated Exploit (AI-Assisted Cyberattack Payload)"
     }
   ],
   "definitionOverrides": [

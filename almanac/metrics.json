@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-10-21T21:18:06.340Z",
+  "generatedAt": "2026-10-21T22:03:10.704Z",
   "firstRunAt": "2026-04-27T01:07:31.335Z",
   "phase": 1,
   "headline": {
-    "articlesRead": 209,
+    "articlesRead": 215,
     "daysRunning": 178,
-    "longlistSize": 125,
-    "graphSize": 437
+    "longlistSize": 132,
+    "graphSize": 438
   },
   "thisWeek": {
-    "articlesFetched": 42,
-    "longlistAdded": 78,
+    "articlesFetched": 48,
+    "longlistAdded": 86,
     "sourcesAdded": 5,
-    "promotionsToGraph": 2,
+    "promotionsToGraph": 3,
     "proposalsQueued": 7,
     "auditFlags": 6,
-    "notesAdded": 19
+    "notesAdded": 20
   },
   "almostThere": [
     {
@@ -45,13 +45,13 @@
       ],
       "sourceCount": 2,
       "independentSources": 2,
-      "daysOnLonglist": 1,
+      "daysOnLonglist": 2,
       "domains": [
         "lastweekin.ai",
         "simonwillison.net"
       ],
       "gapCount": 1,
-      "gap": "2 more days on longlist"
+      "gap": "1 more day on longlist"
     },
     {
       "id": "aggregator-theory",
@@ -61,7 +61,7 @@
         "business",
         "landscape"
       ],
-      "sourceCount": 5,
+      "sourceCount": 6,
       "independentSources": 1,
       "daysOnLonglist": 141,
       "domains": [
@@ -173,36 +173,36 @@
       "gap": "needs 1 more independent source; no source seen in past 90d"
     },
     {
-      "id": "text-to-game",
-      "label": "Text-to-Game",
-      "fullName": "Text-to-Game (AI-Driven Game Generation)",
+      "id": "audio-state-sync",
+      "label": "Audio-Based State Synchronization",
+      "fullName": "Audio-Based Game State Synchronization (Multiplayer via Sound)",
       "clusters": [
-        "tools",
-        "agentic"
+        "technical",
+        "tools"
       ],
-      "sourceCount": 1,
+      "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 5,
+      "daysOnLonglist": 1,
       "domains": [
-        "blog.google"
+        "simonwillison.net"
       ],
       "gapCount": 2,
-      "gap": "needs 1 more source; needs 1 more independent source"
+      "gap": "needs 1 more independent source; 2 more days on longlist"
     }
   ],
   "sources": {
     "byDomain": [
       {
         "domain": "openai.com",
-        "count": 49
+        "count": 50
       },
       {
         "domain": "simonwillison.net",
-        "count": 31
+        "count": 32
       },
       {
         "domain": "stratechery.com",
-        "count": 27
+        "count": 28
       },
       {
         "domain": "blog.google",
@@ -214,14 +214,14 @@
       },
       {
         "domain": "huggingface.co",
-        "count": 19
-      },
-      {
-        "domain": "lastweekin.ai",
-        "count": 11
+        "count": 20
       },
       {
         "domain": "theverge.com",
+        "count": 12
+      },
+      {
+        "domain": "lastweekin.ai",
         "count": 11
       },
       {
@@ -234,7 +234,7 @@
       },
       {
         "domain": "sloanreview.mit.edu",
-        "count": 2
+        "count": 3
       }
     ],
     "totalUniqueDomains": 11,
@@ -333,31 +333,31 @@
         "id": "technical",
         "label": "Technical",
         "hex": "#D0D040",
-        "count": 42
+        "count": 46
       },
       {
         "id": "safety",
         "label": "Safety",
         "hex": "#FF6090",
-        "count": 37
+        "count": 38
       },
       {
         "id": "agentic",
         "label": "Agentic Systems",
         "hex": "#FF9040",
-        "count": 30
+        "count": 33
       },
       {
         "id": "models",
         "label": "Models",
         "hex": "#FFB060",
-        "count": 27
+        "count": 28
       },
       {
         "id": "critical",
         "label": "Critical / Hype",
         "hex": "#FF5555",
-        "count": 24
+        "count": 23
       },
       {
         "id": "tools",
@@ -369,13 +369,19 @@
         "id": "human",
         "label": "Human Skills",
         "hex": "#40D080",
-        "count": 13
+        "count": 14
       },
       {
         "id": "companies",
         "label": "Companies",
         "hex": "#9090A8",
-        "count": 13
+        "count": 14
+      },
+      {
+        "id": "work",
+        "label": "Work & Output",
+        "hex": "#E8A838",
+        "count": 12
       },
       {
         "id": "business",
@@ -393,13 +399,7 @@
         "id": "security",
         "label": "AI Security",
         "hex": "#E05050",
-        "count": 10
-      },
-      {
-        "id": "work",
-        "label": "Work & Output",
-        "hex": "#E8A838",
-        "count": 10
+        "count": 9
       },
       {
         "id": "autonomy",
@@ -410,14 +410,14 @@
     ]
   },
   "velocity": {
-    "humanGated": 40,
+    "humanGated": 41,
     "autonomous": 0,
     "note": "All graph promotions and substantive edits are currently human-gated. Lexi proposes; Nicole approves."
   },
   "proposalsByStatus": {
-    "pending": 6,
+    "pending": 5,
     "approved": 0,
-    "applied": 40,
+    "applied": 41,
     "rejected": 1
   },
   "decisionsByCluster": {
@@ -462,11 +462,11 @@
       "rejected": 0
     },
     "security": {
-      "approved": 2,
+      "approved": 3,
       "rejected": 0
     },
     "critical": {
-      "approved": 4,
+      "approved": 5,
       "rejected": 0
     },
     "landscape": {

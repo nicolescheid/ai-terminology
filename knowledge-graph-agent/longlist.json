@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-10-21T21:16:07.143Z",
-    "entryCount": 206,
+    "generatedAt": "2026-10-21T22:01:40.598Z",
+    "entryCount": 214,
     "note": "Lexi-managed Tier 2 longlist — terms under observation, awaiting evidence to support promotion to the graph (Tier 1)."
   },
   "entries": [
@@ -3033,7 +3033,10 @@
       "dateLastSeen": "2026-10-21T21:16:07.143Z",
       "sz": 14,
       "fullName": "AI-Generated Exploit (AI-Assisted Cyberattack Payload)",
-      "proposalReason": "First confirmed real-world case of an AI-assisted zero-day exploit, establishing a new forensic category for threat intelligence."
+      "proposalReason": "First confirmed real-world case of an AI-assisted zero-day exploit, establishing a new forensic category for threat intelligence.",
+      "status": "promoted",
+      "promotedAt": "2026-10-21T22:03:10.570Z",
+      "promotedToGraphNodeId": "ai-generated-exploit"
     },
     {
       "id": "persona-driven-jailbreaking",
@@ -5098,12 +5101,20 @@
           "sourceLabel": "Stratechery",
           "publishedAt": "Wed, 21 Oct 2026 17:35:31 +0000",
           "firstSeen": "2026-10-21T21:16:07.143Z"
+        },
+        {
+          "url": "https://stratechery.com/2026/netflix-earnings-business-or-franchise-disneys-deal/",
+          "domain": "stratechery.com",
+          "title": "Netflix Earnings, Business or Franchise, Disney’s Deal",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Wed, 21 Oct 2026 10:00:00 +0000",
+          "firstSeen": "2026-10-21T22:01:40.598Z"
         }
       ],
-      "sourceCount": 5,
+      "sourceCount": 6,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-06-02T20:47:42.877Z",
-      "dateLastSeen": "2026-10-21T21:16:07.143Z",
+      "dateLastSeen": "2026-10-21T22:01:40.598Z",
       "sz": 14,
       "fullName": "Aggregator Theory (Stratechery)",
       "proposalReason": "A named analytic framework with significant ongoing use in AI business-model discussions; not yet in the graph and surfaces repeatedly in AI-era platform-strategy writing."
@@ -8067,12 +8078,20 @@
           "sourceLabel": "Simon Willison's Weblog",
           "publishedAt": "2026-10-20T19:34:19+00:00",
           "firstSeen": "2026-10-20T21:15:51.629Z"
+        },
+        {
+          "url": "https://simonwillison.net/2026/Oct/21/panache/",
+          "domain": "simonwillison.net",
+          "title": "Panache — RTS Belle Époque pour mobile",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-10-21T16:25:16+00:00",
+          "firstSeen": "2026-10-21T22:01:40.598Z"
         }
       ],
-      "sourceCount": 1,
+      "sourceCount": 2,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-10-20T21:15:51.629Z",
-      "dateLastSeen": "2026-10-20T21:15:51.629Z",
+      "dateLastSeen": "2026-10-21T22:01:40.598Z",
       "sz": 14,
       "fullName": "Audio-Based Game State Synchronization (Multiplayer via Sound)",
       "proposalReason": "A novel and concrete technique worth tracking as agentic and local-first applications explore alternatives to cloud-brokered communication channels."
@@ -8396,6 +8415,274 @@
       "sz": 14,
       "fullName": "Tokens as Economic Benchmark (AI Economy Metric)",
       "proposalReason": "A small but potentially durable framing concept: if token consumption becomes a standard economic reporting metric, this terminological move matters for how the AI economy is measured and compared."
+    },
+    {
+      "id": "vocab-specialization",
+      "label": "Vocabulary Specialization",
+      "workingDef": "A post-training technique in which the tokenizer vocabulary of a fine-tuned model is rebuilt or pruned to match the distribution of a specific domain or task, rather than inheriting the general-purpose vocabulary from the base model. Proposed to reduce two forms of waste: fragmentation (domain-frequent sequences tokenized into many pieces) and excess (vocabulary entries the task never uses but whose scores the model must compute at every decode step). Distinct from standard fine-tuning, which leaves the tokenizer fixed.",
+      "clusters": [
+        "technical",
+        "models"
+      ],
+      "suggestedRels": [
+        "tokenizer",
+        "small-language-model",
+        "fine-tuning",
+        "inference",
+        "latency",
+        "cost",
+        "quantization"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization",
+          "domain": "huggingface.co",
+          "title": "How Specializing the Vocabulary of SLMs Can Cut Inference Cost by 77% in Real Applications",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Wed, 21 Oct 2026 17:35:36 GMT",
+          "firstSeen": "2026-10-21T22:01:40.598Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-21T22:01:40.598Z",
+      "dateLastSeen": "2026-10-21T22:01:40.598Z",
+      "sz": 14,
+      "fullName": "Vocabulary Specialization (Domain-Specific Tokenizer Adaptation)",
+      "proposalReason": "The central technical concept of the article; not in the graph or longlist and has clear lasting relevance as SLMs become a deployment cost lever."
+    },
+    {
+      "id": "lm-head-cost",
+      "label": "LM Head Cost",
+      "workingDef": "The computational and memory-bandwidth cost imposed at every decode step by the language model head — the output layer matrix that maps internal states to probability scores over the full vocabulary. Because this matrix has one row per vocabulary entry, larger vocabularies increase the amount of data read from GPU memory at every generated token, compounding the already memory-bound nature of decode-phase inference. Reducing vocabulary size directly reduces LM head cost, independently of changes to the token count.",
+      "clusters": [
+        "technical"
+      ],
+      "suggestedRels": [
+        "inference",
+        "latency",
+        "cost",
+        "token",
+        "small-language-model",
+        "kv-cache"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization",
+          "domain": "huggingface.co",
+          "title": "How Specializing the Vocabulary of SLMs Can Cut Inference Cost by 77% in Real Applications",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Wed, 21 Oct 2026 17:35:36 GMT",
+          "firstSeen": "2026-10-21T22:01:40.598Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-21T22:01:40.598Z",
+      "dateLastSeen": "2026-10-21T22:01:40.598Z",
+      "sz": 14,
+      "fullName": "LM Head Cost (Output Layer Inference Overhead)",
+      "proposalReason": "A precise sub-concept explaining why vocabulary size affects inference cost — distinct from token count alone. Worth tracking as a framing term for SLM optimization discourse."
+    },
+    {
+      "id": "prefill-decode-cost-asymmetry",
+      "label": "Prefill–Decode Cost Asymmetry",
+      "workingDef": "The observation that in LLM inference, the decode (generation) phase is substantially more expensive per token than the prefill (input processing) phase. During prefill, the model makes a single parallel pass over all input tokens, reusing each weight read across the batch; during decode, each token requires a full sequential pass and the GPU is memory-bandwidth-bound. The article reports a 7.4× cost ratio in their measured case. The asymmetry motivates optimization strategies that preferentially reduce output token counts and output-layer sizes over input token counts.",
+      "clusters": [
+        "technical"
+      ],
+      "suggestedRels": [
+        "inference",
+        "latency",
+        "cost",
+        "token",
+        "kv-cache",
+        "prefill-decode-split",
+        "streaming-inference"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization",
+          "domain": "huggingface.co",
+          "title": "How Specializing the Vocabulary of SLMs Can Cut Inference Cost by 77% in Real Applications",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Wed, 21 Oct 2026 17:35:36 GMT",
+          "firstSeen": "2026-10-21T22:01:40.598Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-21T22:01:40.598Z",
+      "dateLastSeen": "2026-10-21T22:01:40.598Z",
+      "sz": 14,
+      "fullName": "Prefill–Decode Cost Asymmetry (Inference Phase Cost Differential)",
+      "proposalReason": "A clearly-named concept that underpins a class of inference optimization arguments; complements the existing prefill-decode-split longlist term with a cost-framing angle."
+    },
+    {
+      "id": "macro-token",
+      "label": "Macro Token",
+      "workingDef": "A vocabulary entry that encodes a multi-word or multi-symbol sequence — such as a repeated JSON envelope, a boilerplate clause, or a domain-specific phrase — as a single token, reducing fragmentation of high-cost repeated spans. Distinct from standard subword tokenization (BPE), which merges character sequences one level at a time. Used in VocabX alongside subword merges under a fixed budget to maximize cost reduction for sequences that appear frequently in model outputs.",
+      "clusters": [
+        "technical"
+      ],
+      "suggestedRels": [
+        "tokenizer",
+        "vocab-specialization",
+        "token",
+        "structured-output",
+        "small-language-model"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization",
+          "domain": "huggingface.co",
+          "title": "How Specializing the Vocabulary of SLMs Can Cut Inference Cost by 77% in Real Applications",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Wed, 21 Oct 2026 17:35:36 GMT",
+          "firstSeen": "2026-10-21T22:01:40.598Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-21T22:01:40.598Z",
+      "dateLastSeen": "2026-10-21T22:01:40.598Z",
+      "sz": 14,
+      "fullName": "Macro Token (Multi-Word Vocabulary Entry)",
+      "proposalReason": "A specific technical construct introduced in the VocabX paper with potential lasting relevance as vocabulary optimization becomes a recognized SLM engineering lever."
+    },
+    {
+      "id": "technostress",
+      "label": "Technostress",
+      "workingDef": "A term from information systems and occupational health research describing mental exhaustion, anxiety, and reduced wellbeing arising from the use or adaptation to digital technologies in the workplace. Popularised by Craig Brod (1984) and operationalised in IS research (Ragu-Nathan et al., 2008), technostress is distinguished from generic stress by its specifically technology-mediated cause — including tool complexity, notification overload, boundary-blurring between work and personal life, and surveillance anxiety. The concept predates generative AI but is increasingly applied to it; adoption of AI tools is now cited as a driver of technostress alongside earlier causes such as email, video conferencing, and enterprise software.",
+      "clusters": [
+        "human",
+        "work"
+      ],
+      "suggestedRels": [
+        "deskilling",
+        "automation-bias",
+        "cognitive-offloading",
+        "ai-brain-fry",
+        "cognitive-debt"
+      ],
+      "sources": [
+        {
+          "url": "https://sloanreview.mit.edu/article/the-hidden-upside-of-tech-challenges/",
+          "domain": "sloanreview.mit.edu",
+          "title": "  The Hidden Upside of Tech Challenges",
+          "sourceLabel": "MIT Sloan Management Review",
+          "publishedAt": "Wed, 21 Oct 2026 11:00:48 +0000",
+          "firstSeen": "2026-10-21T22:01:40.598Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-21T22:01:40.598Z",
+      "dateLastSeen": "2026-10-21T22:01:40.598Z",
+      "sz": 14,
+      "fullName": "Technostress (Technology-Induced Mental Exhaustion)",
+      "proposalReason": "The central concept of the article, appearing as the researchers' framing term for their empirical work. Relevant to the graph's growing cluster of human-impact concepts around AI adoption."
+    },
+    {
+      "id": "claude-duet",
+      "label": "Claude Duet",
+      "workingDef": "Anthropic's AI agent product for professionals and small business owners, announced in October 2026 as a research preview. Built on Claude Opus 5.5, Claude Duet provides proactive daily briefings, monitors connected apps, executes tasks via a virtual machine with browser access, and routes human-approval checkpoints before sensitive actions such as payments or deletions. Pulls memory, skills, and app integrations from the broader Claude platform. Positioned as a competitor to Meta's Muse and OpenAI's Dots in the emerging personal/professional AI agent category.",
+      "clusters": [
+        "agentic",
+        "companies"
+      ],
+      "suggestedRels": [
+        "claude-opus-55",
+        "claude-ai",
+        "anthropic-co",
+        "human-in-the-loop",
+        "memory",
+        "agentic-era",
+        "research-preview"
+      ],
+      "sources": [
+        {
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1015843/anthropic-claude-duet-ai-agent",
+          "domain": "theverge.com",
+          "title": "Anthropic takes on Muse with Claude Duet, its new AI agent",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-10-21T15:53:20-04:00",
+          "firstSeen": "2026-10-21T22:01:40.598Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-21T22:01:40.598Z",
+      "dateLastSeen": "2026-10-21T22:01:40.598Z",
+      "sz": 14,
+      "fullName": "Claude Duet (Anthropic)",
+      "nodeType": "product",
+      "proposalReason": "New product term worth tracking as it enters the competitive personal-agent landscape alongside Muse and Dots."
+    },
+    {
+      "id": "proactive-daily-brief",
+      "label": "Proactive Daily Brief",
+      "workingDef": "A feature pattern in personal AI agents — exemplified by Claude Duet — whereby the agent autonomously generates and delivers a morning summary of prioritised items from the user's connected apps, without requiring an explicit user query. Related to proactive-agent design, where the agent initiates contact rather than waiting for prompts.",
+      "clusters": [
+        "agentic",
+        "work"
+      ],
+      "suggestedRels": [
+        "proactive-agent",
+        "ambient-agents",
+        "background-agents",
+        "claude-duet"
+      ],
+      "sources": [
+        {
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1015843/anthropic-claude-duet-ai-agent",
+          "domain": "theverge.com",
+          "title": "Anthropic takes on Muse with Claude Duet, its new AI agent",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-10-21T15:53:20-04:00",
+          "firstSeen": "2026-10-21T22:01:40.598Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-21T22:01:40.598Z",
+      "dateLastSeen": "2026-10-21T22:01:40.598Z",
+      "sz": 14,
+      "fullName": "Proactive Daily Brief (AI Agent Feature)",
+      "proposalReason": "Names a recurring design pattern across personal AI agents worth tracking as it solidifies into a product convention."
+    },
+    {
+      "id": "dedicated-safety-classifier",
+      "label": "Dedicated Safety Classifier",
+      "workingDef": "A purpose-built classifier model and accompanying system prompt deployed within an AI agent to enforce context-specific safety policies — for example, Claude Duet's classifier designed to reject requests involving the 'strictest tier' of sensitive information (e.g., credit card numbers). Distinct from a general guard model in that it is scoped to the agent's operational domain and data access tier.",
+      "clusters": [
+        "safety",
+        "agentic"
+      ],
+      "suggestedRels": [
+        "guard-model",
+        "guardrails",
+        "agent-governance",
+        "sandboxing",
+        "blast-radius"
+      ],
+      "sources": [
+        {
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1015843/anthropic-claude-duet-ai-agent",
+          "domain": "theverge.com",
+          "title": "Anthropic takes on Muse with Claude Duet, its new AI agent",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-10-21T15:53:20-04:00",
+          "firstSeen": "2026-10-21T22:01:40.598Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-21T22:01:40.598Z",
+      "dateLastSeen": "2026-10-21T22:01:40.598Z",
+      "sz": 14,
+      "fullName": "Dedicated Safety Classifier (Agentic Context)",
+      "proposalReason": "Names a safety architecture pattern specific to agentic contexts where agents access sensitive personal and financial data."
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
-  "lastRunAt": "2026-10-21T21:16:07.143Z",
-  "reviewCursor": 164,
+  "lastRunAt": "2026-10-21T22:01:40.598Z",
+  "reviewCursor": 174,
   "seenArticles": {
     "93a049d060bc295b": {
       "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/tpus-8t-8i-cloud-next/",
@@ -1255,6 +1255,42 @@
       "title": "Features",
       "publishedAt": null,
       "seenAt": "2026-10-21T21:16:07.143Z"
+    },
+    "354f89a6c7dbf10c": {
+      "url": "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization",
+      "title": "How Specializing the Vocabulary of SLMs Can Cut Inference Cost by 77% in Real Applications",
+      "publishedAt": "Wed, 21 Oct 2026 17:35:36 GMT",
+      "seenAt": "2026-10-21T22:01:40.598Z"
+    },
+    "74fcf21eca7add4a": {
+      "url": "https://openai.com/index/chatgpt-ads-expands-26-new-countries",
+      "title": "ChatGPT Ads expands to 26 new countries as over 100,000 advertisers have used the platform",
+      "publishedAt": "Wed, 21 Oct 2026 13:00:00 GMT",
+      "seenAt": "2026-10-21T22:01:40.598Z"
+    },
+    "3ff8eca96476a225": {
+      "url": "https://sloanreview.mit.edu/article/the-hidden-upside-of-tech-challenges/",
+      "title": "  The Hidden Upside of Tech Challenges",
+      "publishedAt": "Wed, 21 Oct 2026 11:00:48 +0000",
+      "seenAt": "2026-10-21T22:01:40.598Z"
+    },
+    "c8a170de51e20202": {
+      "url": "https://stratechery.com/2026/netflix-earnings-business-or-franchise-disneys-deal/",
+      "title": "Netflix Earnings, Business or Franchise, Disney’s Deal",
+      "publishedAt": "Wed, 21 Oct 2026 10:00:00 +0000",
+      "seenAt": "2026-10-21T22:01:40.598Z"
+    },
+    "6c1da1b548c04122": {
+      "url": "https://simonwillison.net/2026/Oct/21/panache/",
+      "title": "Panache — RTS Belle Époque pour mobile",
+      "publishedAt": "2026-10-21T16:25:16+00:00",
+      "seenAt": "2026-10-21T22:01:40.598Z"
+    },
+    "0d8d033795840d49": {
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1015843/anthropic-claude-duet-ai-agent",
+      "title": "Anthropic takes on Muse with Claude Duet, its new AI agent",
+      "publishedAt": "2026-10-21T15:53:20-04:00",
+      "seenAt": "2026-10-21T22:01:40.598Z"
     }
   },
   "nodeReviews": {
@@ -1589,24 +1625,24 @@
       "reason": "No source material addresses this term."
     },
     "distribution-shift": {
-      "lastReviewedAt": "2026-06-03T20:54:34.002Z",
-      "status": "insufficient_evidence",
-      "reason": "No sources address distribution shift or related ML reliability concepts."
+      "lastReviewedAt": "2026-10-21T22:01:40.598Z",
+      "status": "keep",
+      "reason": "No source excerpt addresses distribution shift. Definition is accurate and no update is warranted."
     },
     "edge-ai": {
-      "lastReviewedAt": "2026-06-03T20:54:34.002Z",
+      "lastReviewedAt": "2026-10-21T22:01:40.598Z",
       "status": "keep",
-      "reason": "The Stratechery source confirms Nvidia's RTX Spark chip (N1X) with 128GB RAM is arriving for PCs in fall 2026, consistent with the edge-AI trend described. However, the definition already captures this trend and the existing Gemma 4 smartphone example is sufficient. No material update warranted."
+      "reason": "The HuggingFace article on vocabulary specialization for SLMs touches on inference cost reduction but does not materially change or contradict the edge AI definition. The definition remains accurate."
     },
     "embeddings": {
-      "lastReviewedAt": "2026-06-03T20:54:34.002Z",
-      "status": "insufficient_evidence",
-      "reason": "No sources address embeddings or vector representations."
+      "lastReviewedAt": "2026-10-21T22:01:40.598Z",
+      "status": "keep",
+      "reason": "No source excerpt addresses embeddings. Definition remains accurate."
     },
     "emergent-capability": {
-      "lastReviewedAt": "2026-06-03T20:54:34.002Z",
-      "status": "insufficient_evidence",
-      "reason": "No sources discuss emergent capabilities or the cited Anthropic/Mythos Preview example."
+      "lastReviewedAt": "2026-10-21T22:01:40.598Z",
+      "status": "keep",
+      "reason": "No source excerpt provides new information about emergent capabilities. Definition remains accurate."
     },
     "evals": {
       "lastReviewedAt": "2026-06-03T20:54:34.002Z",
@@ -2452,6 +2488,36 @@
       "lastReviewedAt": "2026-10-21T21:16:07.143Z",
       "status": "keep",
       "reason": "No source material addresses this term."
+    },
+    "dpo": {
+      "lastReviewedAt": "2026-10-21T22:01:40.598Z",
+      "status": "keep",
+      "reason": "No source excerpt discusses DPO or RLHF alignment methods. Definition remains accurate."
+    },
+    "eacc": {
+      "lastReviewedAt": "2026-10-21T22:01:40.598Z",
+      "status": "keep",
+      "reason": "No source excerpt addresses effective accelerationism. Definition remains accurate."
+    },
+    "effort-control": {
+      "lastReviewedAt": "2026-10-21T22:01:40.598Z",
+      "status": "keep",
+      "reason": "No source excerpt addresses Anthropic's effort control setting. Definition remains accurate."
+    },
+    "eliza-effect": {
+      "lastReviewedAt": "2026-10-21T22:01:40.598Z",
+      "status": "keep",
+      "reason": "No source excerpt addresses the ELIZA effect. Definition remains accurate."
+    },
+    "emergent-misalignment": {
+      "lastReviewedAt": "2026-10-21T22:01:40.598Z",
+      "status": "keep",
+      "reason": "No source excerpt addresses emergent misalignment. Definition remains accurate."
+    },
+    "eval-driven-development": {
+      "lastReviewedAt": "2026-10-21T22:01:40.598Z",
+      "status": "keep",
+      "reason": "No source excerpt addresses eval-driven development. Definition remains accurate."
     }
   }
 }
