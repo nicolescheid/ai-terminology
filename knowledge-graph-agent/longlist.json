@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-10-22T00:10:59.785Z",
-    "entryCount": 225,
+    "generatedAt": "2026-10-22T21:12:33.330Z",
+    "entryCount": 231,
     "note": "Lexi-managed Tier 2 longlist — terms under observation, awaiting evidence to support promotion to the graph (Tier 1)."
   },
   "entries": [
@@ -5109,12 +5109,20 @@
           "sourceLabel": "Stratechery",
           "publishedAt": "Wed, 21 Oct 2026 10:00:00 +0000",
           "firstSeen": "2026-10-21T22:03:58.255Z"
+        },
+        {
+          "url": "https://stratechery.com/2026/an-interview-with-craig-moffett-about-spacex-and-bubbles/",
+          "domain": "stratechery.com",
+          "title": "An Interview with Craig Moffett About SpaceX and Bubbles",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Thu, 22 Oct 2026 10:00:00 +0000",
+          "firstSeen": "2026-10-22T21:12:33.330Z"
         }
       ],
-      "sourceCount": 6,
+      "sourceCount": 7,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-06-02T20:47:42.877Z",
-      "dateLastSeen": "2026-10-21T22:03:58.255Z",
+      "dateLastSeen": "2026-10-22T21:12:33.330Z",
       "sz": 14,
       "fullName": "Aggregator Theory (Stratechery)",
       "proposalReason": "A named analytic framework with significant ongoing use in AI business-model discussions; not yet in the graph and surfaces repeatedly in AI-era platform-strategy writing."
@@ -9056,6 +9064,191 @@
       "sz": 14,
       "fullName": "Test-Time Compute Scaling",
       "proposalReason": "Re-sighting of a longlist term in a useful infrastructure-economics framing."
+    },
+    {
+      "id": "geospatial-foundation-model",
+      "label": "Geospatial Foundation Model",
+      "workingDef": "A foundation model trained on satellite or earth observation data (radar, multispectral imagery, time-series) to produce general-purpose representations of the physical world. OlmoEarth is the primary example: a vision transformer pre-trained on Sentinel-1, Sentinel-2, and Landsat time series that generates per-pixel embeddings reusable across downstream tasks (crop mapping, land cover, change detection) without per-task retraining. Distinct from general-purpose visual foundation models in its domain specificity and the geophysical meaning of its embedding space.",
+      "clusters": [
+        "models",
+        "technical"
+      ],
+      "suggestedRels": [
+        "foundation-model",
+        "embeddings",
+        "fine-tuning"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/allenai/olmoearth-v1-3",
+          "domain": "huggingface.co",
+          "title": "OlmoEarth v1.3: State-of-the-art embeddings for the whole planet",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Thu, 22 Oct 2026 16:11:31 GMT",
+          "firstSeen": "2026-10-22T21:12:33.330Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-22T21:12:33.330Z",
+      "dateLastSeen": "2026-10-22T21:12:33.330Z",
+      "sz": 16,
+      "proposalReason": "OlmoEarth v1.3 and its predecessors introduce a recognizable product category — geospatial foundation models — that is gaining traction in climate, environmental monitoring, and land-use research circles. Worth tracking as the category matures."
+    },
+    {
+      "id": "precomputed-global-embeddings",
+      "label": "Precomputed Global Embeddings",
+      "workingDef": "A deployment pattern in which a foundation model is run once over a large corpus — in OlmoEarth's case, the entire planet at 10-metre resolution, yielding ~150 TB per year — and the resulting embedding vectors are stored and shared publicly for downstream reuse. The compute-once-reuse-everywhere model lowers the barrier for users who lack GPU access or raw imagery storage, turning expensive pre-training into a sharable public good.",
+      "clusters": [
+        "technical",
+        "tools"
+      ],
+      "suggestedRels": [
+        "embeddings",
+        "foundation-model",
+        "cost",
+        "open-weight"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/allenai/olmoearth-v1-3",
+          "domain": "huggingface.co",
+          "title": "OlmoEarth v1.3: State-of-the-art embeddings for the whole planet",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Thu, 22 Oct 2026 16:11:31 GMT",
+          "firstSeen": "2026-10-22T21:12:33.330Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-22T21:12:33.330Z",
+      "dateLastSeen": "2026-10-22T21:12:33.330Z",
+      "sz": 16,
+      "proposalReason": "Naming this pattern is useful beyond geospatial AI: the idea of pre-computing and distributing embeddings as a public infrastructure layer applies broadly to any domain where foundation model inference is expensive."
+    },
+    {
+      "id": "planteur",
+      "label": "PLANTEUR",
+      "workingDef": "A crop-type classification benchmark for tropical smallholder farming introduced alongside OlmoEarth v1.3 by the Allen Institute for AI (Ai2). Designed to evaluate geospatial embedding models on out-of-distribution generalization — specifically on agricultural regions and crop types not well represented in existing benchmarks. Notable for covering six continents and prioritising settings in the Global South where conventional remote-sensing datasets are sparse.",
+      "clusters": [
+        "technical"
+      ],
+      "suggestedRels": [
+        "evals",
+        "embeddings"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/allenai/olmoearth-v1-3",
+          "domain": "huggingface.co",
+          "title": "OlmoEarth v1.3: State-of-the-art embeddings for the whole planet",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Thu, 22 Oct 2026 16:11:31 GMT",
+          "firstSeen": "2026-10-22T21:12:33.330Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-22T21:12:33.330Z",
+      "dateLastSeen": "2026-10-22T21:12:33.330Z",
+      "sz": 16,
+      "proposalReason": "A new domain-specific benchmark worth noting if the graph expands into geospatial or scientific AI evaluation coverage."
+    },
+    {
+      "id": "robots-txt",
+      "label": "Robots.txt",
+      "workingDef": "A plain-text file placed at a website's root that instructs automated crawlers — historically search engines, now also AI training scrapers — which paths they may or may not access. In the AI training context, robots.txt has become a contested legal and normative instrument: publishers treat it as an opt-out signal that AI labs should honour, while labs (including Meta) assert that their commercial terms of service may supersede robots.txt preferences. Legal experts note that robots.txt has no direct statutory force and its enforceability as a contract or trespass barrier remains unsettled in US courts.",
+      "clusters": [
+        "technical",
+        "security"
+      ],
+      "suggestedRels": [
+        "fair-use-ai",
+        "ai-content-licensing",
+        "data-poisoning",
+        "training"
+      ],
+      "sources": [
+        {
+          "url": "https://www.theverge.com/tech/1017082/meta-terms-update-ai-training-concerns",
+          "domain": "theverge.com",
+          "title": "Meta’s AI could still scrape news sites, legal experts say",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-10-22T16:32:05-04:00",
+          "firstSeen": "2026-10-22T21:12:33.330Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-22T21:12:33.330Z",
+      "dateLastSeen": "2026-10-22T21:12:33.330Z",
+      "sz": 14,
+      "fullName": "Robots.txt (Web Crawling Permission Protocol)",
+      "proposalReason": "Robots.txt is emerging as a key battleground term in AI training data disputes — worth tracking as courts and labs contest its legal weight."
+    },
+    {
+      "id": "web-scraping-ai",
+      "label": "Web Scraping for AI Training",
+      "workingDef": "The automated collection of publicly accessible web content — text, images, or other media — for use in training large language models or other AI systems. Distinct from traditional search-engine crawling in that the collected content is used to update model weights rather than to index for retrieval. The practice is at the centre of ongoing disputes between AI developers and content publishers over fair use, robots.txt compliance, and whether commercial terms of service can create new rights to scrape. Publishers argue scraping without licence constitutes copyright infringement or unfair appropriation; labs typically invoke the fair use doctrine and point to opt-out mechanisms like robots.txt as sufficient accommodation.",
+      "clusters": [
+        "technical",
+        "landscape"
+      ],
+      "suggestedRels": [
+        "fair-use-ai",
+        "ai-content-licensing",
+        "training",
+        "synthetic-data"
+      ],
+      "sources": [
+        {
+          "url": "https://www.theverge.com/tech/1017082/meta-terms-update-ai-training-concerns",
+          "domain": "theverge.com",
+          "title": "Meta’s AI could still scrape news sites, legal experts say",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-10-22T16:32:05-04:00",
+          "firstSeen": "2026-10-22T21:12:33.330Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-22T21:12:33.330Z",
+      "dateLastSeen": "2026-10-22T21:12:33.330Z",
+      "sz": 14,
+      "fullName": "Web Scraping for AI Training (Automated Data Collection for Model Training)",
+      "proposalReason": "A foundational practice term for AI data disputes that keeps appearing across legal and policy coverage; distinct enough from fair-use-ai to warrant its own node."
+    },
+    {
+      "id": "tos-ai-rights",
+      "label": "Terms-of-Service AI Rights",
+      "workingDef": "The practice — and associated legal argument — whereby a platform or service embeds language in its commercial terms of service asserting the right to use user- or third-party-generated content for AI training or development purposes. Contested: publishers and legal scholars argue that ToS provisions cannot unilaterally supersede existing copyright protections, robots.txt instructions, or other site-owner preferences; platforms and their counsel argue that accepting ToS constitutes consent to the described data uses. This article illustrates the gap: Meta removed explicit 'train' language from its terms but retained 'develop,' which legal experts say is functionally equivalent.",
+      "clusters": [
+        "landscape",
+        "critical"
+      ],
+      "suggestedRels": [
+        "fair-use-ai",
+        "ai-content-licensing",
+        "training",
+        "web-scraping-ai"
+      ],
+      "sources": [
+        {
+          "url": "https://www.theverge.com/tech/1017082/meta-terms-update-ai-training-concerns",
+          "domain": "theverge.com",
+          "title": "Meta’s AI could still scrape news sites, legal experts say",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-10-22T16:32:05-04:00",
+          "firstSeen": "2026-10-22T21:12:33.330Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-22T21:12:33.330Z",
+      "dateLastSeen": "2026-10-22T21:12:33.330Z",
+      "sz": 14,
+      "fullName": "Terms-of-Service AI Rights (Commercial Terms as AI Training Permission)",
+      "proposalReason": "A distinct and recurring legal framing in AI data disputes — the argument that ToS language creates AI training permission — worth tracking as a durable concept."
     }
   ]
 }

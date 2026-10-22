@@ -1,6 +1,6 @@
 {
-  "lastRunAt": "2026-10-22T00:10:59.785Z",
-  "reviewCursor": 184,
+  "lastRunAt": "2026-10-22T21:12:33.330Z",
+  "reviewCursor": 194,
   "seenArticles": {
     "93a049d060bc295b": {
       "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/tpus-8t-8i-cloud-next/",
@@ -1327,6 +1327,42 @@
       "title": "What Drives AI Inference Profitability?",
       "publishedAt": null,
       "seenAt": "2026-10-22T00:10:59.785Z"
+    },
+    "27825e3003584012": {
+      "url": "https://openai.com/index/decisions-api",
+      "title": "Build more responsive apps with the Decisions API",
+      "publishedAt": "Thu, 22 Oct 2026 19:00:00 GMT",
+      "seenAt": "2026-10-22T21:12:33.330Z"
+    },
+    "eaa0ebff7daf626e": {
+      "url": "https://huggingface.co/blog/allenai/olmoearth-v1-3",
+      "title": "OlmoEarth v1.3: State-of-the-art embeddings for the whole planet",
+      "publishedAt": "Thu, 22 Oct 2026 16:11:31 GMT",
+      "seenAt": "2026-10-22T21:12:33.330Z"
+    },
+    "271b7ab26b21c588": {
+      "url": "https://stratechery.com/2026/an-interview-with-craig-moffett-about-spacex-and-bubbles/",
+      "title": "An Interview with Craig Moffett About SpaceX and Bubbles",
+      "publishedAt": "Thu, 22 Oct 2026 10:00:00 +0000",
+      "seenAt": "2026-10-22T21:12:33.330Z"
+    },
+    "63c31ca523f91ccf": {
+      "url": "https://openai.com/index/forward-deployed-engineering-means",
+      "title": "What FDE means at OpenAI",
+      "publishedAt": "Thu, 22 Oct 2026 06:00:00 GMT",
+      "seenAt": "2026-10-22T21:12:33.330Z"
+    },
+    "474d46551650ea30": {
+      "url": "https://simonwillison.net/2026/Oct/22/de-staat-freedom/",
+      "title": "DE STAAT—FREEDOM (Official Music Video)",
+      "publishedAt": "2026-10-22T19:42:26+00:00",
+      "seenAt": "2026-10-22T21:12:33.330Z"
+    },
+    "29a87826b845358b": {
+      "url": "https://www.theverge.com/tech/1017082/meta-terms-update-ai-training-concerns",
+      "title": "Meta’s AI could still scrape news sites, legal experts say",
+      "publishedAt": "2026-10-22T16:32:05-04:00",
+      "seenAt": "2026-10-22T21:12:33.330Z"
     }
   },
   "nodeReviews": {
@@ -1706,19 +1742,19 @@
       "reason": "No source material addresses feature flags or the Claude Code leak. The existing definition stands."
     },
     "fine-tuning": {
-      "lastReviewedAt": "2026-06-04T20:04:46.217Z",
+      "lastReviewedAt": "2026-10-22T21:12:33.330Z",
       "status": "keep",
-      "reason": "No source material addresses fine-tuning methodology or practice. Definition remains valid as written."
+      "reason": "The OlmoEarth excerpt mentions fine-tuning only in passing as a prior usage mode for satellite imagery, which is consistent with the existing definition and adds nothing that would warrant a revision."
     },
     "frontier-model": {
-      "lastReviewedAt": "2026-06-04T20:04:46.217Z",
+      "lastReviewedAt": "2026-10-22T21:12:33.330Z",
       "status": "keep",
-      "reason": "No source material provides new information about frontier models or their safety implications beyond what is already captured. Definition remains valid as written."
+      "reason": "No source material addresses frontier models. Definition stands."
     },
     "frontier-red-team": {
-      "lastReviewedAt": "2026-06-04T20:04:46.217Z",
+      "lastReviewedAt": "2026-10-22T21:12:33.330Z",
       "status": "keep",
-      "reason": "No source material discusses red teaming or Anthropic's Frontier Red Team. Definition remains valid as written."
+      "reason": "No source material addresses frontier red teams. Definition stands."
     },
     "gemini": {
       "lastReviewedAt": "2026-06-04T20:04:46.217Z",
@@ -2574,6 +2610,41 @@
       "lastReviewedAt": "2026-10-22T00:10:59.785Z",
       "status": "keep",
       "reason": "No source material addresses AI copyright, fair use, or the Bartz v. Anthropic case. The existing definition stands."
+    },
+    "federal-preemption": {
+      "lastReviewedAt": "2026-10-22T21:12:33.330Z",
+      "status": "keep",
+      "reason": "No source material addresses federal preemption of state AI laws. Definition stands."
+    },
+    "forward-deployed-engineer": {
+      "lastReviewedAt": "2026-10-22T21:12:33.330Z",
+      "status": "insufficient_evidence",
+      "reason": "An OpenAI page titled 'What FDE means at OpenAI' is referenced but the excerpt is empty, so no content is available to assess whether the definition needs updating."
+    },
+    "foundation-model": {
+      "lastReviewedAt": "2026-10-22T21:12:33.330Z",
+      "status": "keep",
+      "reason": "No source material addresses the definition of foundation models. Definition stands."
+    },
+    "frontier-ai-framework": {
+      "lastReviewedAt": "2026-10-22T21:12:33.330Z",
+      "status": "keep",
+      "reason": "No source material addresses frontier AI frameworks. Definition stands."
+    },
+    "frontier-firm": {
+      "lastReviewedAt": "2026-10-22T21:12:33.330Z",
+      "status": "keep",
+      "reason": "No source material addresses the frontier firm concept. Definition stands."
+    },
+    "full-duplex-voice-ai": {
+      "lastReviewedAt": "2026-10-22T21:12:33.330Z",
+      "status": "keep",
+      "reason": "No source material addresses full-duplex voice AI. Definition stands."
+    },
+    "gdpval": {
+      "lastReviewedAt": "2026-10-22T21:12:33.330Z",
+      "status": "keep",
+      "reason": "No source material addresses the GDPval benchmark. Definition stands."
     }
   }
 }

@@ -1,82 +1,95 @@
 {
-  "generatedAt": "2026-10-22T00:10:59.785Z",
+  "generatedAt": "2026-10-22T21:12:33.330Z",
   "model": "claude-sonnet-4-6",
   "sourcesConfigured": 15,
   "articlesConsidered": [
     {
-      "id": "f9b499debdda31c0",
-      "source": "Hugging Face Blog",
-      "title": "Profiling TorchNeuron (Part 1): System-level profiling on AWS Trainium.",
-      "url": "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1",
-      "publishedAt": "Wed, 21 Oct 2026 16:04:43 GMT"
-    },
-    {
-      "id": "61f4d0141ff303c0",
+      "id": "27825e3003584012",
       "source": "OpenAI News",
-      "title": "OpenAI models are coming to Google Cloud",
-      "url": "https://openai.com/index/openai-models-google-cloud",
-      "publishedAt": "Wed, 21 Oct 2026 12:00:00 GMT"
+      "title": "Build more responsive apps with the Decisions API",
+      "url": "https://openai.com/index/decisions-api",
+      "publishedAt": "Thu, 22 Oct 2026 19:00:00 GMT"
     },
     {
-      "id": "7096c38588d2f160",
-      "source": "MIT Sloan Management Review",
-      "title": "  Why Data Modeling Is Not Enough",
-      "url": "https://sloanreview.mit.edu/article/why-data-modeling-is-not-enough/",
-      "publishedAt": "Mon, 19 Oct 2026 11:00:59 +0000"
+      "id": "eaa0ebff7daf626e",
+      "source": "Hugging Face Blog",
+      "title": "OlmoEarth v1.3: State-of-the-art embeddings for the whole planet",
+      "url": "https://huggingface.co/blog/allenai/olmoearth-v1-3",
+      "publishedAt": "Thu, 22 Oct 2026 16:11:31 GMT"
     },
     {
-      "id": "eaa3fbf80042951c",
-      "source": "The Verge — AI",
-      "title": "Data centers could erase decades of air quality gains",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1015958/data-center-pollution-rising-report",
-      "publishedAt": "2026-10-21T18:33:44-04:00"
+      "id": "271b7ab26b21c588",
+      "source": "Stratechery",
+      "title": "An Interview with Craig Moffett About SpaceX and Bubbles",
+      "url": "https://stratechery.com/2026/an-interview-with-craig-moffett-about-spacex-and-bubbles/",
+      "publishedAt": "Thu, 22 Oct 2026 10:00:00 +0000"
     },
     {
-      "id": "aac036aa8666576a",
+      "id": "63c31ca523f91ccf",
+      "source": "OpenAI News",
+      "title": "What FDE means at OpenAI",
+      "url": "https://openai.com/index/forward-deployed-engineering-means",
+      "publishedAt": "Thu, 22 Oct 2026 06:00:00 GMT"
+    },
+    {
+      "id": "474d46551650ea30",
       "source": "Simon Willison's Weblog",
-      "title": "eMudhra Intermediate CA Compromise",
-      "url": "https://simonwillison.net/2026/Oct/20/emudhra-certificates/",
-      "publishedAt": "2026-10-20T23:50:25+00:00"
+      "title": "DE STAAT—FREEDOM (Official Music Video)",
+      "url": "https://simonwillison.net/2026/Oct/22/de-staat-freedom/",
+      "publishedAt": "2026-10-22T19:42:26+00:00"
     },
     {
-      "id": "c4c9612a9e1352f2",
-      "source": "NVIDIA Blog — AI Inference Economics",
-      "title": "What Drives AI Inference Profitability?",
-      "url": "https://blogs.nvidia.com/blog/ai-inference-economics/",
-      "publishedAt": null
+      "id": "29a87826b845358b",
+      "source": "The Verge — AI",
+      "title": "Meta’s AI could still scrape news sites, legal experts say",
+      "url": "https://www.theverge.com/tech/1017082/meta-terms-update-ai-training-concerns",
+      "publishedAt": "2026-10-22T16:32:05-04:00"
     }
   ],
   "harvestedTerms": [
     {
       "article": {
-        "title": "Profiling TorchNeuron (Part 1): System-level profiling on AWS Trainium.",
-        "url": "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1"
+        "title": "OlmoEarth v1.3: State-of-the-art embeddings for the whole planet",
+        "url": "https://huggingface.co/blog/allenai/olmoearth-v1-3"
       },
-      "summary": "A technical walkthrough from the Hugging Face blog on profiling ML model inference on AWS Trainium using TorchNeuron, covering three implementations of RMSNorm and demonstrating use of Neuron Explorer and torch.profiler. Highly implementation-focused; limited terminological novelty but touches several longlist terms.",
+      "summary": "Allen AI's OlmoEarth v1.3 release introduces a satellite foundation model that generates pre-computed 128-dimensional embeddings for every 10-meter pixel on Earth across nine years of imagery. The article describes the technical architecture (vision transformer + attention pooler), evaluation against competing models, a new tropical crop benchmark (PLANTEUR), and an interactive browser-based explorer tool. The subject matter is geospatial/remote sensing AI — only tangentially related to the AI terminology graph's core concerns around agents, LLMs, and enterprise AI.",
+      "longlistAdditions": [
+        {
+          "id": "geospatial-foundation-model",
+          "label": "Geospatial Foundation Model"
+        },
+        {
+          "id": "precomputed-global-embeddings",
+          "label": "Precomputed Global Embeddings"
+        },
+        {
+          "id": "planteur",
+          "label": "PLANTEUR"
+        }
+      ],
+      "longlistUpdates": [],
+      "rejections": [],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "An Interview with Craig Moffett About SpaceX and Bubbles",
+        "url": "https://stratechery.com/2026/an-interview-with-craig-moffett-about-spacex-and-bubbles/"
+      },
+      "summary": "Paywalled Stratechery interview with telecom/media analyst Craig Moffett discussing SpaceX (launch, broadband, mobile) and drawing parallels between the dot-com bubble and today's AI/tech investment environment. Only the subscription teaser is visible — no substantive content is accessible for term extraction.",
       "longlistAdditions": [],
       "longlistUpdates": [
         {
-          "id": "torchneuron",
-          "label": "TorchNeuron",
+          "id": "aggregator-theory",
+          "label": "Aggregator Theory",
           "sourceAdded": true,
-          "sourceCount": 2,
-          "independentSourceCount": 1
-        },
-        {
-          "id": "static-shape-compilation",
-          "label": "Static Shape Compilation",
-          "sourceAdded": true,
-          "sourceCount": 2,
+          "sourceCount": 7,
           "independentSourceCount": 1
         }
       ],
       "rejections": [
         {
-          "label": "Trainium",
-          "reason": "already in graph (label match)"
-        },
-        {
-          "label": "Purpose-Built AI Infrastructure",
+          "label": "AI Bubble",
           "reason": "already in graph (label match)"
         }
       ],
@@ -84,234 +97,90 @@
     },
     {
       "article": {
-        "title": "  Why Data Modeling Is Not Enough",
-        "url": "https://sloanreview.mit.edu/article/why-data-modeling-is-not-enough/"
+        "title": "DE STAAT—FREEDOM (Official Music Video)",
+        "url": "https://simonwillison.net/2026/Oct/22/de-staat-freedom/"
       },
-      "summary": "An MIT Sloan Management Review article arguing that organizations over-invest in data science (prediction, ML) at the expense of decision science (modeling decisions themselves), resulting in high project failure rates. The piece introduces the distinction between data modeling and decision modeling as the key gap to bridge for analytics ROI.",
-      "longlistAdditions": [
-        {
-          "id": "decision-science",
-          "label": "Decision Science"
-        },
-        {
-          "id": "decision-modeling",
-          "label": "Decision Modeling"
-        },
-        {
-          "id": "data-science-disconnect",
-          "label": "Data Science Disconnect"
-        },
-        {
-          "id": "prediction-decision-gap",
-          "label": "Prediction-Decision Gap"
-        }
-      ],
+      "summary": "A brief link-blog post by Simon Willison noting an AI-generated visual effect at the 00:44 mark in a music video by Dutch band De Staat, credited to Matties Grooten of 'Fake it or Leave it.' The post itself contains almost no substantive AI content beyond the observation that generative AI was used in the video's visual effects.",
+      "longlistAdditions": [],
       "longlistUpdates": [],
       "rejections": [],
       "proposalsQueued": []
     },
     {
       "article": {
-        "title": "Data centers could erase decades of air quality gains",
-        "url": "https://www.theverge.com/ai-artificial-intelligence/1015958/data-center-pollution-rising-report"
+        "title": "Meta’s AI could still scrape news sites, legal experts say",
+        "url": "https://www.theverge.com/tech/1017082/meta-terms-update-ai-training-concerns"
       },
-      "summary": "The Verge reports on new HARC research showing that data center buildout in Texas — driven largely by generative AI demand — could reverse decades of air quality progress, with fine particle pollution potentially tripling and NOx emissions rising 136% within five years depending on energy mix choices. The article frames the data center boom as an acute environmental crisis with modeled outcomes across different energy scenarios.",
+      "summary": "Meta updated its business account terms to remove explicit 'training' language after publisher backlash, but legal experts say the revised language ('develop,' 'business product') is still broad enough to permit AI training on scraped news sites. The article hinges on the robots.txt file's legal standing and whether commercial terms can supersede it.",
       "longlistAdditions": [
         {
-          "id": "data-center-air-quality",
-          "label": "Data Center Air Quality Impact"
+          "id": "robots-txt",
+          "label": "Robots.txt"
         },
         {
-          "id": "onsite-power-generation",
-          "label": "Onsite Power Generation"
-        }
-      ],
-      "longlistUpdates": [],
-      "rejections": [
-        {
-          "label": "AI Energy Demand",
-          "reason": "already in graph (label match)"
+          "id": "web-scraping-ai",
+          "label": "Web Scraping for AI Training"
         },
         {
-          "label": "Data Center Backlash",
-          "reason": "already in graph (label match)"
-        }
-      ],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "eMudhra Intermediate CA Compromise",
-        "url": "https://simonwillison.net/2026/Oct/20/emudhra-certificates/"
-      },
-      "summary": "Brief link-blog post about a serious certificate authority compromise: eight eMudhra intermediate CA private keys were exposed, affecting major root trust stores. Simon Willison flags software updates needed in Python tooling (uv, pip, certifi). The sponsored message mentions AI agent access control as an aside. No substantive AI terminology introduced.",
-      "longlistAdditions": [
-        {
-          "id": "ca-compromise",
-          "label": "Certificate Authority Compromise"
+          "id": "tos-ai-rights",
+          "label": "Terms-of-Service AI Rights"
         }
       ],
       "longlistUpdates": [],
       "rejections": [],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "What Drives AI Inference Profitability?",
-        "url": "https://blogs.nvidia.com/blog/ai-inference-economics/"
-      },
-      "summary": "NVIDIA blog primer on AI inference economics covering throughput, latency, goodput, cost-per-token, and the interplay of pretraining/post-training/test-time scaling on inference costs. Primarily educational/marketing content explaining infrastructure economics for enterprise audiences. Introduces 'goodput' as a holistic inference performance metric and frames 'AI factory' as NVIDIA's full-stack inference platform concept.",
-      "longlistAdditions": [
-        {
-          "id": "goodput",
-          "label": "Goodput"
-        },
-        {
-          "id": "cost-per-token",
-          "label": "Cost Per Token"
-        },
-        {
-          "id": "inter-token-latency",
-          "label": "Inter-Token Latency"
-        },
-        {
-          "id": "test-time-scaling",
-          "label": "Test-Time Scaling"
-        }
-      ],
-      "longlistUpdates": [],
-      "rejections": [],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "Data centers could erase decades of air quality gains",
-        "url": "https://www.theverge.com/ai-artificial-intelligence/1015958/data-center-pollution-rising-report"
-      },
-      "summary": "A Verge article reporting on new HARC research quantifying how data center expansion in Texas could reverse decades of air quality gains, with NOx emissions potentially rising 136% and fine particle pollution more than tripling. The piece is primarily environmental reporting on the physical-infrastructure consequences of the AI buildout, with data on gas turbine use, onsite power generation, and pollution modelling scenarios.",
-      "longlistAdditions": [
-        {
-          "id": "onsite-power-generation",
-          "label": "Onsite Power Generation"
-        },
-        {
-          "id": "grid-interconnection-queue",
-          "label": "Grid Interconnection Queue"
-        }
-      ],
-      "longlistUpdates": [],
-      "rejections": [
-        {
-          "label": "Data Center Backlash",
-          "reason": "already in graph (label match)"
-        },
-        {
-          "label": "AI Energy Demand",
-          "reason": "already in graph (label match)"
-        }
-      ],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "eMudhra Intermediate CA Compromise",
-        "url": "https://simonwillison.net/2026/Oct/20/emudhra-certificates/"
-      },
-      "summary": "Simon Willison reports on the compromise of private keys for eight eMudhra intermediate CA certificates, which chain to roots trusted by major browser and OS root programs. The post notes downstream impact on Python tooling (pip, uv, certifi) and Linux ca-certificates packages.",
-      "longlistAdditions": [
-        {
-          "id": "ca-compromise",
-          "label": "Certificate Authority Compromise"
-        },
-        {
-          "id": "trust-store",
-          "label": "Trust Store"
-        }
-      ],
-      "longlistUpdates": [],
-      "rejections": [],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "What Drives AI Inference Profitability?",
-        "url": "https://blogs.nvidia.com/blog/ai-inference-economics/"
-      },
-      "summary": "An NVIDIA blog post explaining the economics of AI inference, covering key metrics (tokens, throughput, latency, goodput), scaling law types (pretraining, post-training, test-time), and the role of full-stack hardware/software codesign in reducing cost per token. Primarily a vendor explainer with some useful conceptual framing around 'goodput' as a holistic performance metric.",
-      "longlistAdditions": [
-        {
-          "id": "goodput",
-          "label": "Goodput"
-        },
-        {
-          "id": "cost-per-token",
-          "label": "Cost Per Token"
-        },
-        {
-          "id": "inter-token-latency",
-          "label": "Inter-Token Latency"
-        }
-      ],
-      "longlistUpdates": [],
-      "rejections": [
-        {
-          "label": "Test-Time Compute Scaling",
-          "reason": "already in graph (label match)"
-        }
-      ],
       "proposalsQueued": []
     }
   ],
   "definitionReviews": [
     {
-      "id": "eval-driven-development",
+      "id": "federal-preemption",
       "status": "keep",
-      "reason": "No source material addresses eval-driven development. The existing definition accurately describes the concept as TDD adapted for non-deterministic AI systems."
+      "reason": "No source material addresses federal preemption of state AI laws. Definition stands."
     },
     {
-      "id": "evals",
+      "id": "fine-tuning",
       "status": "keep",
-      "reason": "No source material addresses AI evals. The existing definition remains accurate and sufficient."
+      "reason": "The OlmoEarth excerpt mentions fine-tuning only in passing as a prior usage mode for satellite imagery, which is consistent with the existing definition and adds nothing that would warrant a revision."
     },
     {
-      "id": "evaluation-awareness",
-      "status": "keep",
-      "reason": "No source material addresses evaluation awareness. The existing definition stands."
+      "id": "forward-deployed-engineer",
+      "status": "insufficient_evidence",
+      "reason": "An OpenAI page titled 'What FDE means at OpenAI' is referenced but the excerpt is empty, so no content is available to assess whether the definition needs updating."
     },
     {
-      "id": "evaluation-gaming",
+      "id": "foundation-model",
       "status": "keep",
-      "reason": "No source material addresses evaluation gaming. The existing definition, including the Mythos-specific data points, stands."
+      "reason": "No source material addresses the definition of foundation models. Definition stands."
     },
     {
-      "id": "evaluation-gap",
+      "id": "frontier-ai-framework",
       "status": "keep",
-      "reason": "No source material references the International AI Safety Report 2026 or the evaluation gap concept. The existing definition stands."
+      "reason": "No source material addresses frontier AI frameworks. Definition stands."
     },
     {
-      "id": "excessive-agency",
+      "id": "frontier-firm",
       "status": "keep",
-      "reason": "No source material addresses OWASP LLM06 or excessive agency. The existing definition stands."
+      "reason": "No source material addresses the frontier firm concept. Definition stands."
     },
     {
-      "id": "exploit",
+      "id": "frontier-model",
       "status": "keep",
-      "reason": "No source material addresses the definition of an exploit or Claude Mythos's capabilities in this area. The existing definition stands."
+      "reason": "No source material addresses frontier models. Definition stands."
     },
     {
-      "id": "exploit-chain",
+      "id": "frontier-red-team",
       "status": "keep",
-      "reason": "No source material addresses exploit chains or automated vulnerability chaining. The existing definition stands."
+      "reason": "No source material addresses frontier red teams. Definition stands."
     },
     {
-      "id": "fair-use-ai",
+      "id": "full-duplex-voice-ai",
       "status": "keep",
-      "reason": "No source material addresses AI copyright, fair use, or the Bartz v. Anthropic case. The existing definition stands."
+      "reason": "No source material addresses full-duplex voice AI. Definition stands."
     },
     {
-      "id": "feature-flag",
+      "id": "gdpval",
       "status": "keep",
-      "reason": "No source material addresses feature flags or the Claude Code leak. The existing definition stands."
+      "reason": "No source material addresses the GDPval benchmark. Definition stands."
     }
   ],
   "notes": []
