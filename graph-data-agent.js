@@ -1,6 +1,6 @@
 window.AGENT_GRAPH_PATCH = {
   "meta": {
-    "generatedAt": "2026-10-21T22:05:35.131Z",
+    "generatedAt": "2026-10-22T00:06:41.706Z",
     "sourceCount": 6,
     "note": "Agent-managed overlay. Graph-affecting changes are routed through the permissions matrix (actions.mjs) — see proposals.json for pending items."
   },
@@ -1288,6 +1288,36 @@ window.AGENT_GRAPH_PATCH = {
       ],
       "fullName": "Gemini 4 Argon (Google DeepMind)",
       "nodeType": "product"
+    },
+    {
+      "id": "text-to-game",
+      "label": "Text-to-Game",
+      "clusters": [
+        "tools",
+        "agentic"
+      ],
+      "sz": 14,
+      "def": "A class of generative AI application in which users describe a desired game — its rules, characters, environments, or mechanics — using natural-language prompts, and the system generates a playable interactive artifact without requiring the user to write code. Exemplified by Google's Playground platform, which positions text-to-game generation as a natural extension of text-to-image and text-to-code paradigms. Sits at the intersection of generative UI, vibe coding, and AI-assisted creative tooling.",
+      "rels": [
+        "vibe-coding",
+        "generative-ui",
+        "prompt-engineering",
+        "agentic-engineering",
+        "personal-software"
+      ],
+      "refs": [
+        {
+          "n": 1,
+          "src": "Google AI Blog, Wed, 07 Oct 2026 12:00:00 +0000",
+          "q": "Introducing Playground: Create and play custom games Google AI Blog"
+        },
+        {
+          "n": 2,
+          "src": "Simon Willison's Weblog, 2026-10-21T16:25:16+00:00",
+          "q": "Panache — RTS Belle Époque pour mobile Simon Willison's Weblog"
+        }
+      ],
+      "fullName": "Text-to-Game (AI-Driven Game Generation)"
     }
   ],
   "definitionOverrides": [

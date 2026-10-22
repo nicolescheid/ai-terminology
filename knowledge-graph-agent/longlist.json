@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-10-21T22:03:58.255Z",
-    "entryCount": 214,
+    "generatedAt": "2026-10-22T00:04:56.203Z",
+    "entryCount": 225,
     "note": "Lexi-managed Tier 2 longlist — terms under observation, awaiting evidence to support promotion to the graph (Tier 1)."
   },
   "entries": [
@@ -5873,7 +5873,10 @@
       "dateLastSeen": "2026-10-21T22:03:58.255Z",
       "sz": 14,
       "fullName": "Text-to-Game (AI-Driven Game Generation)",
-      "proposalReason": "A new term not yet in the graph. Google's Playground makes text-to-game a concrete product category worth tracking as generative UI expands into interactive media."
+      "proposalReason": "A new term not yet in the graph. Google's Playground makes text-to-game a concrete product category worth tracking as generative UI expands into interactive media.",
+      "status": "promoted",
+      "promotedAt": "2026-10-22T00:06:41.706Z",
+      "promotedToGraphNodeId": "text-to-game"
     },
     {
       "id": "no-code-ai-creation",
@@ -7667,12 +7670,20 @@
           "sourceLabel": "Hugging Face Blog",
           "publishedAt": "Mon, 19 Oct 2026 00:00:00 GMT",
           "firstSeen": "2026-10-19T22:00:12.148Z"
+        },
+        {
+          "url": "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1",
+          "domain": "huggingface.co",
+          "title": "Profiling TorchNeuron (Part 1): System-level profiling on AWS Trainium.",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Wed, 21 Oct 2026 16:04:43 GMT",
+          "firstSeen": "2026-10-22T00:04:56.203Z"
         }
       ],
-      "sourceCount": 1,
+      "sourceCount": 2,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-10-19T22:00:12.148Z",
-      "dateLastSeen": "2026-10-19T22:00:12.148Z",
+      "dateLastSeen": "2026-10-22T00:04:56.203Z",
       "sz": 14,
       "fullName": "TorchNeuron (AWS/PyTorch Neuron Backend)",
       "nodeType": "product",
@@ -7734,12 +7745,20 @@
           "sourceLabel": "Hugging Face Blog",
           "publishedAt": "Mon, 19 Oct 2026 00:00:00 GMT",
           "firstSeen": "2026-10-19T22:00:12.148Z"
+        },
+        {
+          "url": "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1",
+          "domain": "huggingface.co",
+          "title": "Profiling TorchNeuron (Part 1): System-level profiling on AWS Trainium.",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Wed, 21 Oct 2026 16:04:43 GMT",
+          "firstSeen": "2026-10-22T00:04:56.203Z"
         }
       ],
-      "sourceCount": 1,
+      "sourceCount": 2,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-10-19T22:00:12.148Z",
-      "dateLastSeen": "2026-10-19T22:00:12.148Z",
+      "dateLastSeen": "2026-10-22T00:04:56.203Z",
       "sz": 14,
       "fullName": "Static Shape Compilation (AI Accelerator Constraint)",
       "proposalReason": "A recurring, named constraint that shapes how models are deployed on custom silicon; surfaces in this article with enough specificity to merit longlist tracking."
@@ -8689,6 +8708,357 @@
       "sz": 14,
       "fullName": "Dual-Class Share Structure for AI Financing",
       "proposalReason": "Tracks as a potential structural pattern in how AI labs and platforms are financing the infrastructure race without ceding governance."
+    },
+    {
+      "id": "kernel-fusion",
+      "label": "Kernel Fusion",
+      "workingDef": "An optimisation technique in which multiple discrete tensor operations (e.g., multiply, mean, rsqrt) are compiled into a single fused hardware kernel, reducing memory bandwidth overhead and intermediate tensor allocations. Demonstrated in the article by contrasting naive multi-op RMSNorm (producing separate ATen dispatches) with torch.rms_norm(), which lowers to a single fused Neuron kernel with significantly lower device time.",
+      "clusters": [
+        "technical"
+      ],
+      "suggestedRels": [
+        "inference",
+        "latency",
+        "torchneuron",
+        "trainium",
+        "quantization"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1",
+          "domain": "huggingface.co",
+          "title": "Profiling TorchNeuron (Part 1): System-level profiling on AWS Trainium.",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Wed, 21 Oct 2026 16:04:43 GMT",
+          "firstSeen": "2026-10-22T00:04:56.203Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-22T00:04:56.203Z",
+      "dateLastSeen": "2026-10-22T00:04:56.203Z",
+      "sz": 14,
+      "fullName": "Kernel Fusion (Operator Fusion)",
+      "proposalReason": "New term: the article provides a clear, reproducible contrast between fused and unfused kernel paths on real hardware, making it a good primary source for this concept."
+    },
+    {
+      "id": "decision-science",
+      "label": "Decision Science",
+      "workingDef": "An applied discipline that focuses on modeling the specific decisions that business managers must make, rather than modeling data alone. Decision science draws on data science outputs (predictions, statistical relationships) as inputs to decision models that directly inform and drive managerial choices. Distinguished from data science by its emphasis on problem framing, business domain knowledge, and connecting analytical work to measurable business outcomes (cost, profit, market share). The field has its own academic programs and job descriptions distinct from data science roles.",
+      "clusters": [
+        "business",
+        "work"
+      ],
+      "suggestedRels": [
+        "evals",
+        "outcome-focused-work",
+        "workflow",
+        "task"
+      ],
+      "sources": [
+        {
+          "url": "https://sloanreview.mit.edu/article/why-data-modeling-is-not-enough/",
+          "domain": "sloanreview.mit.edu",
+          "title": "  Why Data Modeling Is Not Enough",
+          "sourceLabel": "MIT Sloan Management Review",
+          "publishedAt": "Mon, 19 Oct 2026 11:00:59 +0000",
+          "firstSeen": "2026-10-22T00:04:56.203Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-22T00:04:56.203Z",
+      "dateLastSeen": "2026-10-22T00:04:56.203Z",
+      "sz": 16,
+      "proposalReason": "The article positions decision science as a corrective to data science's prediction-centric focus — a framing shift worth tracking as AI/ML investments come under ROI scrutiny."
+    },
+    {
+      "id": "decision-modeling",
+      "label": "Decision Modeling",
+      "workingDef": "The practice of formally representing the structure of a business decision — its choices, constraints, objectives, and relevant inputs — so that analytical outputs can be directly mapped to managerial action. Distinct from data modeling (building statistical or ML models of data) and from prediction tasks; decision modeling treats the decision itself as the object of analysis. Associated with decision science as its core technical skill, and positioned as the missing link between data science deliverables and business value.",
+      "clusters": [
+        "business",
+        "work"
+      ],
+      "suggestedRels": [
+        "outcome-focused-work",
+        "task",
+        "structured-output",
+        "workflow"
+      ],
+      "sources": [
+        {
+          "url": "https://sloanreview.mit.edu/article/why-data-modeling-is-not-enough/",
+          "domain": "sloanreview.mit.edu",
+          "title": "  Why Data Modeling Is Not Enough",
+          "sourceLabel": "MIT Sloan Management Review",
+          "publishedAt": "Mon, 19 Oct 2026 11:00:59 +0000",
+          "firstSeen": "2026-10-22T00:04:56.203Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-22T00:04:56.203Z",
+      "dateLastSeen": "2026-10-22T00:04:56.203Z",
+      "sz": 16,
+      "proposalReason": "The article introduces decision modeling as the specific technical practice that closes the data-science-to-business gap — a term with emerging canonical use in analytics discourse."
+    },
+    {
+      "id": "data-science-disconnect",
+      "label": "Data Science Disconnect",
+      "workingDef": "A practitioner framing for the gap between data science team outputs (predictions, accuracy metrics) and the information that business managers actually need to make decisions. Characterised by data scientists treating predictions as equivalent to decisions, using metrics that don't map to business outcomes, and solving problems that management didn't actually pose. The term captures an observed failure mode cited across multiple analytics ROI studies, with failure rates of 60–85% attributed at least partly to this disconnect.",
+      "clusters": [
+        "business",
+        "work"
+      ],
+      "suggestedRels": [
+        "ai-productivity-paradox",
+        "pilot-purgatory",
+        "hallucination",
+        "automation-bias"
+      ],
+      "sources": [
+        {
+          "url": "https://sloanreview.mit.edu/article/why-data-modeling-is-not-enough/",
+          "domain": "sloanreview.mit.edu",
+          "title": "  Why Data Modeling Is Not Enough",
+          "sourceLabel": "MIT Sloan Management Review",
+          "publishedAt": "Mon, 19 Oct 2026 11:00:59 +0000",
+          "firstSeen": "2026-10-22T00:04:56.203Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-22T00:04:56.203Z",
+      "dateLastSeen": "2026-10-22T00:04:56.203Z",
+      "sz": 16,
+      "proposalReason": "Captures a well-documented but under-named failure mode in applied analytics — relevant to any organisation assessing why AI/ML investments are underdelivering."
+    },
+    {
+      "id": "onsite-power-generation",
+      "label": "Onsite Power Generation",
+      "workingDef": "The practice of data center developers building dedicated electricity generation capacity — gas turbines, solar farms, wind installations, or combinations — directly tied to their facilities rather than drawing solely from the shared grid. Driven by long interconnection queues and the need to accelerate construction timelines. The HARC report highlights that the choice between gas turbines and renewables for onsite generation is the dominant variable determining whether data center expansion produces dramatically higher or dramatically lower air pollution, with NOx outcomes varying by up to 10x depending on the fuel mix chosen.",
+      "clusters": [
+        "landscape",
+        "technical"
+      ],
+      "suggestedRels": [
+        "ai-energy-demand",
+        "hyperscale-data-center",
+        "ai-factory",
+        "data-center-backlash"
+      ],
+      "sources": [
+        {
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1015958/data-center-pollution-rising-report",
+          "domain": "theverge.com",
+          "title": "Data centers could erase decades of air quality gains",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-10-21T18:33:44-04:00",
+          "firstSeen": "2026-10-22T00:04:56.203Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-22T00:04:56.203Z",
+      "dateLastSeen": "2026-10-22T00:04:56.203Z",
+      "sz": 14,
+      "fullName": "Onsite Power Generation (Data Center)",
+      "proposalReason": "A new, specific concept materially introduced in this article: the article frames onsite power generation choices as the pivotal policy and environmental variable in the data center boom, distinct from grid-connected demand."
+    },
+    {
+      "id": "grid-interconnection-queue",
+      "label": "Grid Interconnection Queue",
+      "workingDef": "The backlog of energy projects — including data centers seeking grid connection — awaiting approval and physical connection to the shared electricity grid. In the context of AI infrastructure, long queue wait times are cited as a key driver pushing data center developers toward onsite gas turbine generation, bypassing the grid but at the cost of higher local emissions. The HARC Texas research implicitly treats queue pressure as a structural cause of the pollution risk scenario.",
+      "clusters": [
+        "landscape",
+        "technical"
+      ],
+      "suggestedRels": [
+        "ai-energy-demand",
+        "hyperscale-data-center",
+        "onsite-power-generation"
+      ],
+      "sources": [
+        {
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1015958/data-center-pollution-rising-report",
+          "domain": "theverge.com",
+          "title": "Data centers could erase decades of air quality gains",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-10-21T18:33:44-04:00",
+          "firstSeen": "2026-10-22T00:04:56.203Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-22T00:04:56.203Z",
+      "dateLastSeen": "2026-10-22T00:04:56.203Z",
+      "sz": 14,
+      "fullName": "Grid Interconnection Queue (Data Center)",
+      "proposalReason": "A new infrastructure-constraint concept that the article identifies as a root cause of the pollution-intensive development pattern, worth tracking as AI buildout discourse matures."
+    },
+    {
+      "id": "ca-compromise",
+      "label": "Certificate Authority Compromise",
+      "workingDef": "A security incident in which the private keys of one or more Certificate Authority (CA) certificates are obtained by an unauthorized party, undermining the trust chain for all certificates signed by the affected CA. In this case, the private keys of eight eMudhra intermediate CA certificates were compromised, requiring downstream trust stores and certificate bundles to be updated across browsers, operating systems, and language ecosystem tooling (e.g., pip, certifi, uv).",
+      "clusters": [
+        "security",
+        "critical"
+      ],
+      "suggestedRels": [
+        "sandboxing",
+        "blast-radius",
+        "exploit",
+        "cve",
+        "ai-speed-cyber-defense"
+      ],
+      "sources": [
+        {
+          "url": "https://simonwillison.net/2026/Oct/20/emudhra-certificates/",
+          "domain": "simonwillison.net",
+          "title": "eMudhra Intermediate CA Compromise",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-10-20T23:50:25+00:00",
+          "firstSeen": "2026-10-22T00:04:56.203Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-22T00:04:56.203Z",
+      "dateLastSeen": "2026-10-22T00:04:56.203Z",
+      "sz": 14,
+      "fullName": "Certificate Authority (CA) Compromise",
+      "proposalReason": "A newly tracked term for a class of infrastructure security event with broad downstream effects, relevant to AI agent deployments that rely on TLS trust chains for secure tool use."
+    },
+    {
+      "id": "trust-store",
+      "label": "Trust Store",
+      "workingDef": "A curated list of trusted root and intermediate Certificate Authority certificates maintained by browsers, operating systems, and language runtime tooling (e.g., Mozilla, Microsoft, Apple, Chrome root programs, Python's certifi package). Trust stores determine which TLS certificates a client will accept as valid. A compromise of any CA in a trust store requires emergency updates across all software that bundles that store.",
+      "clusters": [
+        "security",
+        "technical"
+      ],
+      "suggestedRels": [
+        "sandboxing",
+        "exploit",
+        "zero-day",
+        "cve"
+      ],
+      "sources": [
+        {
+          "url": "https://simonwillison.net/2026/Oct/20/emudhra-certificates/",
+          "domain": "simonwillison.net",
+          "title": "eMudhra Intermediate CA Compromise",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-10-20T23:50:25+00:00",
+          "firstSeen": "2026-10-22T00:04:56.203Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-22T00:04:56.203Z",
+      "dateLastSeen": "2026-10-22T00:04:56.203Z",
+      "sz": 14,
+      "fullName": "Trust Store (Root Certificate Bundle)",
+      "proposalReason": "Foundational infrastructure concept relevant to any AI agent or agentic system making HTTPS calls; trust store integrity is a prerequisite for secure tool use."
+    },
+    {
+      "id": "goodput",
+      "label": "Goodput",
+      "workingDef": "A systems performance metric borrowed from networking and applied to AI inference: the throughput a system achieves while simultaneously meeting target latency thresholds (time to first token and time per output token). Distinguishes useful, on-spec output from raw token volume that may violate latency SLAs. Used by infrastructure teams to evaluate whether throughput, latency, and cost are jointly optimised rather than trading one off against another.",
+      "clusters": [
+        "technical",
+        "business"
+      ],
+      "suggestedRels": [
+        "inference",
+        "latency",
+        "token",
+        "cost",
+        "ai-factory"
+      ],
+      "sources": [
+        {
+          "url": "https://blogs.nvidia.com/blog/ai-inference-economics/",
+          "domain": "blogs.nvidia.com",
+          "title": "What Drives AI Inference Profitability?",
+          "sourceLabel": "NVIDIA Blog — AI Inference Economics",
+          "publishedAt": null,
+          "firstSeen": "2026-10-22T00:04:56.203Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-22T00:04:56.203Z",
+      "dateLastSeen": "2026-10-22T00:04:56.203Z",
+      "sz": 14,
+      "fullName": "Goodput (AI Inference Metric)",
+      "proposalReason": "'Goodput' is a concise, technically specific framing that adds precision to inference economics discussions — worth tracking as it circulates beyond networking into AI infrastructure evaluation vocabulary."
+    },
+    {
+      "id": "cost-per-token",
+      "label": "Cost Per Token",
+      "workingDef": "The primary economic unit for measuring AI inference efficiency: the total infrastructure and operational cost divided by the number of tokens generated. Positioned by NVIDIA and other AI infrastructure vendors as the key business metric for evaluating inference deployments. As a metric it elides model quality, latency, and goodput considerations, making it most useful when paired with SLA constraints.",
+      "clusters": [
+        "business",
+        "technical"
+      ],
+      "suggestedRels": [
+        "inference",
+        "token",
+        "latency",
+        "cost",
+        "scaling-laws",
+        "ai-factory"
+      ],
+      "sources": [
+        {
+          "url": "https://blogs.nvidia.com/blog/ai-inference-economics/",
+          "domain": "blogs.nvidia.com",
+          "title": "What Drives AI Inference Profitability?",
+          "sourceLabel": "NVIDIA Blog — AI Inference Economics",
+          "publishedAt": null,
+          "firstSeen": "2026-10-22T00:04:56.203Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-22T00:04:56.203Z",
+      "dateLastSeen": "2026-10-22T00:04:56.203Z",
+      "sz": 14,
+      "fullName": "Cost Per Token (AI Inference Economics Metric)",
+      "proposalReason": "'Cost per token' is becoming a standard cross-vendor economic benchmark for inference infrastructure; worth tracking as it solidifies into a procurement and business-case vocabulary term."
+    },
+    {
+      "id": "inter-token-latency",
+      "label": "Inter-Token Latency",
+      "workingDef": "The average elapsed time between consecutive generated tokens during an AI inference response, also called 'time per output token' or 'token-to-token latency.' Distinct from time-to-first-token (which measures initial processing lag); inter-token latency governs the perceived streaming speed of a model's output and is a key input to goodput calculations and user experience evaluation in production deployments.",
+      "clusters": [
+        "technical"
+      ],
+      "suggestedRels": [
+        "inference",
+        "latency",
+        "token",
+        "streaming-inference"
+      ],
+      "sources": [
+        {
+          "url": "https://blogs.nvidia.com/blog/ai-inference-economics/",
+          "domain": "blogs.nvidia.com",
+          "title": "What Drives AI Inference Profitability?",
+          "sourceLabel": "NVIDIA Blog — AI Inference Economics",
+          "publishedAt": null,
+          "firstSeen": "2026-10-22T00:04:56.203Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-22T00:04:56.203Z",
+      "dateLastSeen": "2026-10-22T00:04:56.203Z",
+      "sz": 14,
+      "fullName": "Inter-Token Latency (Time Per Output Token)",
+      "proposalReason": "A precise latency sub-concept that distinguishes initial response lag from ongoing generation speed — useful vocabulary for inference infrastructure evaluation."
     }
   ]
 }

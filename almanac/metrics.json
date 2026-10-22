@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-10-21T22:05:35.294Z",
+  "generatedAt": "2026-10-22T00:06:41.865Z",
   "firstRunAt": "2026-04-27T01:07:31.335Z",
   "phase": 1,
   "headline": {
-    "articlesRead": 215,
+    "articlesRead": 221,
     "daysRunning": 178,
-    "longlistSize": 131,
-    "graphSize": 439
+    "longlistSize": 141,
+    "graphSize": 440
   },
   "thisWeek": {
-    "articlesFetched": 48,
-    "longlistAdded": 86,
+    "articlesFetched": 54,
+    "longlistAdded": 97,
     "sourcesAdded": 5,
-    "promotionsToGraph": 4,
+    "promotionsToGraph": 5,
     "proposalsQueued": 8,
     "auditFlags": 6,
     "notesAdded": 20
@@ -173,32 +173,32 @@
       "gap": "needs 1 more independent source; no source seen in past 90d"
     },
     {
-      "id": "audio-state-sync",
-      "label": "Audio-Based State Synchronization",
-      "fullName": "Audio-Based Game State Synchronization (Multiplayer via Sound)",
+      "id": "torchneuron",
+      "label": "TorchNeuron",
+      "fullName": "TorchNeuron (AWS/PyTorch Neuron Backend)",
       "clusters": [
         "technical",
         "tools"
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 1,
+      "daysOnLonglist": 2,
       "domains": [
-        "simonwillison.net"
+        "huggingface.co"
       ],
       "gapCount": 2,
-      "gap": "needs 1 more independent source; 2 more days on longlist"
+      "gap": "needs 1 more independent source; 1 more day on longlist"
     }
   ],
   "sources": {
     "byDomain": [
       {
         "domain": "openai.com",
-        "count": 50
+        "count": 51
       },
       {
         "domain": "simonwillison.net",
-        "count": 32
+        "count": 33
       },
       {
         "domain": "stratechery.com",
@@ -214,11 +214,11 @@
       },
       {
         "domain": "huggingface.co",
-        "count": 20
+        "count": 21
       },
       {
         "domain": "theverge.com",
-        "count": 12
+        "count": 13
       },
       {
         "domain": "lastweekin.ai",
@@ -234,11 +234,20 @@
       },
       {
         "domain": "sloanreview.mit.edu",
-        "count": 3
+        "count": 4
+      },
+      {
+        "domain": "blogs.nvidia.com",
+        "count": 1
       }
     ],
-    "totalUniqueDomains": 11,
-    "newDomainsLast30d": []
+    "totalUniqueDomains": 12,
+    "newDomainsLast30d": [
+      {
+        "domain": "blogs.nvidia.com",
+        "firstSeen": "2026-10-22T00:04:56.203Z"
+      }
+    ]
   },
   "clusters": {
     "palette": [
@@ -333,37 +342,43 @@
         "id": "technical",
         "label": "Technical",
         "hex": "#D0D040",
-        "count": 46
+        "count": 53
       },
       {
         "id": "safety",
         "label": "Safety",
         "hex": "#FF6090",
-        "count": 38
+        "count": 37
       },
       {
         "id": "agentic",
         "label": "Agentic Systems",
         "hex": "#FF9040",
-        "count": 31
+        "count": 30
       },
       {
         "id": "models",
         "label": "Models",
         "hex": "#FFB060",
-        "count": 28
+        "count": 27
       },
       {
         "id": "critical",
         "label": "Critical / Hype",
         "hex": "#FF5555",
-        "count": 23
+        "count": 24
+      },
+      {
+        "id": "business",
+        "label": "Business Reality",
+        "hex": "#48C888",
+        "count": 18
       },
       {
         "id": "tools",
         "label": "Tools & Platforms",
         "hex": "#70C8F8",
-        "count": 16
+        "count": 15
       },
       {
         "id": "human",
@@ -372,40 +387,28 @@
         "count": 15
       },
       {
-        "id": "business",
-        "label": "Business Reality",
-        "hex": "#48C888",
-        "count": 13
-      },
-      {
-        "id": "companies",
-        "label": "Companies",
-        "hex": "#9090A8",
-        "count": 14
-      },
-      {
         "id": "work",
         "label": "Work & Output",
         "hex": "#E8A838",
-        "count": 12
+        "count": 15
       },
       {
         "id": "landscape",
         "label": "Model Landscape",
         "hex": "#D0A050",
-        "count": 12
+        "count": 14
       },
       {
-        "id": "work",
-        "label": "Work & Output",
-        "hex": "#E8A838",
-        "count": 12
+        "id": "companies",
+        "label": "Companies",
+        "hex": "#9090A8",
+        "count": 13
       },
       {
         "id": "security",
         "label": "AI Security",
         "hex": "#E05050",
-        "count": 9
+        "count": 11
       },
       {
         "id": "autonomy",
@@ -416,14 +419,14 @@
     ]
   },
   "velocity": {
-    "humanGated": 42,
+    "humanGated": 43,
     "autonomous": 0,
     "note": "All graph promotions and substantive edits are currently human-gated. Lexi proposes; Nicole approves."
   },
   "proposalsByStatus": {
-    "pending": 5,
+    "pending": 4,
     "approved": 0,
-    "applied": 42,
+    "applied": 43,
     "rejected": 1
   },
   "decisionsByCluster": {
@@ -432,7 +435,7 @@
       "rejected": 1
     },
     "agentic": {
-      "approved": 14,
+      "approved": 15,
       "rejected": 0
     },
     "autonomy": {
@@ -440,7 +443,7 @@
       "rejected": 0
     },
     "tools": {
-      "approved": 7,
+      "approved": 8,
       "rejected": 0
     },
     "work": {
