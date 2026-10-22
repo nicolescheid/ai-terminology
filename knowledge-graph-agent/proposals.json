@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-22T00:06:41.706Z",
+    "generatedAt": "2026-10-22T00:12:42.579Z",
     "pendingCount": 4,
     "approvedCount": 0,
     "appliedCount": 43,
@@ -2582,7 +2582,7 @@
       "approvedAt": "2026-10-22T00:04:32.438Z",
       "approvedBy": "nicole",
       "decidedVia": "email-link",
-      "appliedAt": "2026-10-22T00:06:41.706Z"
+      "appliedAt": "2026-10-22T00:12:42.579Z"
     }
   ],
   "usedLinks": {

@@ -1,5 +1,5 @@
 {
-  "lastRunAt": "2026-10-22T00:04:56.203Z",
+  "lastRunAt": "2026-10-22T00:10:59.785Z",
   "reviewCursor": 184,
   "seenArticles": {
     "93a049d060bc295b": {
@@ -1296,37 +1296,37 @@
       "url": "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1",
       "title": "Profiling TorchNeuron (Part 1): System-level profiling on AWS Trainium.",
       "publishedAt": "Wed, 21 Oct 2026 16:04:43 GMT",
-      "seenAt": "2026-10-22T00:04:56.203Z"
+      "seenAt": "2026-10-22T00:10:59.785Z"
     },
     "61f4d0141ff303c0": {
       "url": "https://openai.com/index/openai-models-google-cloud",
       "title": "OpenAI models are coming to Google Cloud",
       "publishedAt": "Wed, 21 Oct 2026 12:00:00 GMT",
-      "seenAt": "2026-10-22T00:04:56.203Z"
+      "seenAt": "2026-10-22T00:10:59.785Z"
     },
     "7096c38588d2f160": {
       "url": "https://sloanreview.mit.edu/article/why-data-modeling-is-not-enough/",
       "title": "  Why Data Modeling Is Not Enough",
       "publishedAt": "Mon, 19 Oct 2026 11:00:59 +0000",
-      "seenAt": "2026-10-22T00:04:56.203Z"
+      "seenAt": "2026-10-22T00:10:59.785Z"
     },
     "eaa3fbf80042951c": {
       "url": "https://www.theverge.com/ai-artificial-intelligence/1015958/data-center-pollution-rising-report",
       "title": "Data centers could erase decades of air quality gains",
       "publishedAt": "2026-10-21T18:33:44-04:00",
-      "seenAt": "2026-10-22T00:04:56.203Z"
+      "seenAt": "2026-10-22T00:10:59.785Z"
     },
     "aac036aa8666576a": {
       "url": "https://simonwillison.net/2026/Oct/20/emudhra-certificates/",
       "title": "eMudhra Intermediate CA Compromise",
       "publishedAt": "2026-10-20T23:50:25+00:00",
-      "seenAt": "2026-10-22T00:04:56.203Z"
+      "seenAt": "2026-10-22T00:10:59.785Z"
     },
     "c4c9612a9e1352f2": {
       "url": "https://blogs.nvidia.com/blog/ai-inference-economics/",
       "title": "What Drives AI Inference Profitability?",
       "publishedAt": null,
-      "seenAt": "2026-10-22T00:04:56.203Z"
+      "seenAt": "2026-10-22T00:10:59.785Z"
     }
   },
   "nodeReviews": {
@@ -1681,29 +1681,29 @@
       "reason": "No source material addresses emergent capabilities. Definition remains accurate."
     },
     "evals": {
-      "lastReviewedAt": "2026-10-22T00:04:56.203Z",
+      "lastReviewedAt": "2026-10-22T00:10:59.785Z",
       "status": "keep",
-      "reason": "No source material addresses AI evals. Definition remains accurate."
+      "reason": "No source material addresses AI evals. The existing definition remains accurate and sufficient."
     },
     "evaluation-gaming": {
-      "lastReviewedAt": "2026-10-22T00:04:56.203Z",
+      "lastReviewedAt": "2026-10-22T00:10:59.785Z",
       "status": "keep",
-      "reason": "No source material addresses evaluation gaming. Definition remains accurate."
+      "reason": "No source material addresses evaluation gaming. The existing definition, including the Mythos-specific data points, stands."
     },
     "exploit": {
-      "lastReviewedAt": "2026-10-22T00:04:56.203Z",
+      "lastReviewedAt": "2026-10-22T00:10:59.785Z",
       "status": "keep",
-      "reason": "No source material addresses exploits in the AI context. Definition remains accurate."
+      "reason": "No source material addresses the definition of an exploit or Claude Mythos's capabilities in this area. The existing definition stands."
     },
     "exploit-chain": {
-      "lastReviewedAt": "2026-10-22T00:04:56.203Z",
+      "lastReviewedAt": "2026-10-22T00:10:59.785Z",
       "status": "keep",
-      "reason": "No source material addresses exploit chains. Definition remains accurate."
+      "reason": "No source material addresses exploit chains or automated vulnerability chaining. The existing definition stands."
     },
     "feature-flag": {
-      "lastReviewedAt": "2026-10-22T00:04:56.203Z",
+      "lastReviewedAt": "2026-10-22T00:10:59.785Z",
       "status": "keep",
-      "reason": "No source material addresses feature flags in AI systems. Definition remains accurate."
+      "reason": "No source material addresses feature flags or the Claude Code leak. The existing definition stands."
     },
     "fine-tuning": {
       "lastReviewedAt": "2026-06-04T20:04:46.217Z",
@@ -2551,29 +2551,29 @@
       "reason": "No source material addresses emergent misalignment. Definition remains accurate."
     },
     "eval-driven-development": {
-      "lastReviewedAt": "2026-10-22T00:04:56.203Z",
+      "lastReviewedAt": "2026-10-22T00:10:59.785Z",
       "status": "keep",
-      "reason": "No source material touches on eval-driven development. Definition remains accurate and well-formed."
+      "reason": "No source material addresses eval-driven development. The existing definition accurately describes the concept as TDD adapted for non-deterministic AI systems."
     },
     "evaluation-awareness": {
-      "lastReviewedAt": "2026-10-22T00:04:56.203Z",
+      "lastReviewedAt": "2026-10-22T00:10:59.785Z",
       "status": "keep",
-      "reason": "No source material addresses evaluation awareness in AI models. Definition remains accurate."
+      "reason": "No source material addresses evaluation awareness. The existing definition stands."
     },
     "evaluation-gap": {
-      "lastReviewedAt": "2026-10-22T00:04:56.203Z",
+      "lastReviewedAt": "2026-10-22T00:10:59.785Z",
       "status": "keep",
-      "reason": "No source material references the evaluation gap or the International AI Safety Report 2026. Definition remains accurate."
+      "reason": "No source material references the International AI Safety Report 2026 or the evaluation gap concept. The existing definition stands."
     },
     "excessive-agency": {
-      "lastReviewedAt": "2026-10-22T00:04:56.203Z",
+      "lastReviewedAt": "2026-10-22T00:10:59.785Z",
       "status": "keep",
-      "reason": "No source material addresses OWASP LLM06 or excessive agency. Definition remains accurate."
+      "reason": "No source material addresses OWASP LLM06 or excessive agency. The existing definition stands."
     },
     "fair-use-ai": {
-      "lastReviewedAt": "2026-10-22T00:04:56.203Z",
+      "lastReviewedAt": "2026-10-22T00:10:59.785Z",
       "status": "keep",
-      "reason": "No source material addresses AI training copyright or Bartz v. Anthropic. Definition remains accurate."
+      "reason": "No source material addresses AI copyright, fair use, or the Bartz v. Anthropic case. The existing definition stands."
     }
   }
 }

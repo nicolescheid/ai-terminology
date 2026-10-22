@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T00:04:56.203Z",
+  "generatedAt": "2026-10-22T00:10:59.785Z",
   "model": "claude-sonnet-4-6",
   "sourcesConfigured": 15,
   "articlesConsidered": [
@@ -52,13 +52,8 @@
         "title": "Profiling TorchNeuron (Part 1): System-level profiling on AWS Trainium.",
         "url": "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1"
       },
-      "summary": "A technical deep-dive into profiling machine learning workloads on AWS Trainium using TorchNeuron, covering three RMSNorm implementations (naive PyTorch, fused kernel, torch.compile) and how to use Neuron Explorer and torch.profiler to identify performance bottlenecks at the hardware level.",
-      "longlistAdditions": [
-        {
-          "id": "kernel-fusion",
-          "label": "Kernel Fusion"
-        }
-      ],
+      "summary": "A technical walkthrough from the Hugging Face blog on profiling ML model inference on AWS Trainium using TorchNeuron, covering three implementations of RMSNorm and demonstrating use of Neuron Explorer and torch.profiler. Highly implementation-focused; limited terminological novelty but touches several longlist terms.",
+      "longlistAdditions": [],
       "longlistUpdates": [
         {
           "id": "torchneuron",
@@ -79,6 +74,10 @@
         {
           "label": "Trainium",
           "reason": "already in graph (label match)"
+        },
+        {
+          "label": "Purpose-Built AI Infrastructure",
+          "reason": "already in graph (label match)"
         }
       ],
       "proposalsQueued": []
@@ -88,7 +87,7 @@
         "title": "  Why Data Modeling Is Not Enough",
         "url": "https://sloanreview.mit.edu/article/why-data-modeling-is-not-enough/"
       },
-      "summary": "MIT Sloan Management Review article arguing that organizations over-invest in data science (prediction/modeling) while neglecting decision science (decision modeling), which focuses on connecting data outputs to actual business decisions managers face. Introduces 'decision science' and 'decision modeling' as distinct disciplines with their own skill sets, academic programs, and job roles.",
+      "summary": "An MIT Sloan Management Review article arguing that organizations over-invest in data science (prediction, ML) at the expense of decision science (modeling decisions themselves), resulting in high project failure rates. The piece introduces the distinction between data modeling and decision modeling as the key gap to bridge for analytics ROI.",
       "longlistAdditions": [
         {
           "id": "decision-science",
@@ -101,6 +100,83 @@
         {
           "id": "data-science-disconnect",
           "label": "Data Science Disconnect"
+        },
+        {
+          "id": "prediction-decision-gap",
+          "label": "Prediction-Decision Gap"
+        }
+      ],
+      "longlistUpdates": [],
+      "rejections": [],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "Data centers could erase decades of air quality gains",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1015958/data-center-pollution-rising-report"
+      },
+      "summary": "The Verge reports on new HARC research showing that data center buildout in Texas — driven largely by generative AI demand — could reverse decades of air quality progress, with fine particle pollution potentially tripling and NOx emissions rising 136% within five years depending on energy mix choices. The article frames the data center boom as an acute environmental crisis with modeled outcomes across different energy scenarios.",
+      "longlistAdditions": [
+        {
+          "id": "data-center-air-quality",
+          "label": "Data Center Air Quality Impact"
+        },
+        {
+          "id": "onsite-power-generation",
+          "label": "Onsite Power Generation"
+        }
+      ],
+      "longlistUpdates": [],
+      "rejections": [
+        {
+          "label": "AI Energy Demand",
+          "reason": "already in graph (label match)"
+        },
+        {
+          "label": "Data Center Backlash",
+          "reason": "already in graph (label match)"
+        }
+      ],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "eMudhra Intermediate CA Compromise",
+        "url": "https://simonwillison.net/2026/Oct/20/emudhra-certificates/"
+      },
+      "summary": "Brief link-blog post about a serious certificate authority compromise: eight eMudhra intermediate CA private keys were exposed, affecting major root trust stores. Simon Willison flags software updates needed in Python tooling (uv, pip, certifi). The sponsored message mentions AI agent access control as an aside. No substantive AI terminology introduced.",
+      "longlistAdditions": [
+        {
+          "id": "ca-compromise",
+          "label": "Certificate Authority Compromise"
+        }
+      ],
+      "longlistUpdates": [],
+      "rejections": [],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "What Drives AI Inference Profitability?",
+        "url": "https://blogs.nvidia.com/blog/ai-inference-economics/"
+      },
+      "summary": "NVIDIA blog primer on AI inference economics covering throughput, latency, goodput, cost-per-token, and the interplay of pretraining/post-training/test-time scaling on inference costs. Primarily educational/marketing content explaining infrastructure economics for enterprise audiences. Introduces 'goodput' as a holistic inference performance metric and frames 'AI factory' as NVIDIA's full-stack inference platform concept.",
+      "longlistAdditions": [
+        {
+          "id": "goodput",
+          "label": "Goodput"
+        },
+        {
+          "id": "cost-per-token",
+          "label": "Cost Per Token"
+        },
+        {
+          "id": "inter-token-latency",
+          "label": "Inter-Token Latency"
+        },
+        {
+          "id": "test-time-scaling",
+          "label": "Test-Time Scaling"
         }
       ],
       "longlistUpdates": [],
@@ -190,52 +266,52 @@
     {
       "id": "eval-driven-development",
       "status": "keep",
-      "reason": "No source material touches on eval-driven development. Definition remains accurate and well-formed."
+      "reason": "No source material addresses eval-driven development. The existing definition accurately describes the concept as TDD adapted for non-deterministic AI systems."
     },
     {
       "id": "evals",
       "status": "keep",
-      "reason": "No source material addresses AI evals. Definition remains accurate."
+      "reason": "No source material addresses AI evals. The existing definition remains accurate and sufficient."
     },
     {
       "id": "evaluation-awareness",
       "status": "keep",
-      "reason": "No source material addresses evaluation awareness in AI models. Definition remains accurate."
+      "reason": "No source material addresses evaluation awareness. The existing definition stands."
     },
     {
       "id": "evaluation-gaming",
       "status": "keep",
-      "reason": "No source material addresses evaluation gaming. Definition remains accurate."
+      "reason": "No source material addresses evaluation gaming. The existing definition, including the Mythos-specific data points, stands."
     },
     {
       "id": "evaluation-gap",
       "status": "keep",
-      "reason": "No source material references the evaluation gap or the International AI Safety Report 2026. Definition remains accurate."
+      "reason": "No source material references the International AI Safety Report 2026 or the evaluation gap concept. The existing definition stands."
     },
     {
       "id": "excessive-agency",
       "status": "keep",
-      "reason": "No source material addresses OWASP LLM06 or excessive agency. Definition remains accurate."
+      "reason": "No source material addresses OWASP LLM06 or excessive agency. The existing definition stands."
     },
     {
       "id": "exploit",
       "status": "keep",
-      "reason": "No source material addresses exploits in the AI context. Definition remains accurate."
+      "reason": "No source material addresses the definition of an exploit or Claude Mythos's capabilities in this area. The existing definition stands."
     },
     {
       "id": "exploit-chain",
       "status": "keep",
-      "reason": "No source material addresses exploit chains. Definition remains accurate."
+      "reason": "No source material addresses exploit chains or automated vulnerability chaining. The existing definition stands."
     },
     {
       "id": "fair-use-ai",
       "status": "keep",
-      "reason": "No source material addresses AI training copyright or Bartz v. Anthropic. Definition remains accurate."
+      "reason": "No source material addresses AI copyright, fair use, or the Bartz v. Anthropic case. The existing definition stands."
     },
     {
       "id": "feature-flag",
       "status": "keep",
-      "reason": "No source material addresses feature flags in AI systems. Definition remains accurate."
+      "reason": "No source material addresses feature flags or the Claude Code leak. The existing definition stands."
     }
   ],
   "notes": []

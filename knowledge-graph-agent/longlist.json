@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-22T00:04:56.203Z",
+    "generatedAt": "2026-10-22T00:10:59.785Z",
     "entryCount": 225,
     "note": "Lexi-managed Tier 2 longlist — terms under observation, awaiting evidence to support promotion to the graph (Tier 1)."
   },
@@ -5875,7 +5875,7 @@
       "fullName": "Text-to-Game (AI-Driven Game Generation)",
       "proposalReason": "A new term not yet in the graph. Google's Playground makes text-to-game a concrete product category worth tracking as generative UI expands into interactive media.",
       "status": "promoted",
-      "promotedAt": "2026-10-22T00:06:41.706Z",
+      "promotedAt": "2026-10-22T00:12:42.579Z",
       "promotedToGraphNodeId": "text-to-game"
     },
     {
@@ -7677,13 +7677,13 @@
           "title": "Profiling TorchNeuron (Part 1): System-level profiling on AWS Trainium.",
           "sourceLabel": "Hugging Face Blog",
           "publishedAt": "Wed, 21 Oct 2026 16:04:43 GMT",
-          "firstSeen": "2026-10-22T00:04:56.203Z"
+          "firstSeen": "2026-10-22T00:10:59.785Z"
         }
       ],
       "sourceCount": 2,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-10-19T22:00:12.148Z",
-      "dateLastSeen": "2026-10-22T00:04:56.203Z",
+      "dateLastSeen": "2026-10-22T00:10:59.785Z",
       "sz": 14,
       "fullName": "TorchNeuron (AWS/PyTorch Neuron Backend)",
       "nodeType": "product",
@@ -7752,13 +7752,13 @@
           "title": "Profiling TorchNeuron (Part 1): System-level profiling on AWS Trainium.",
           "sourceLabel": "Hugging Face Blog",
           "publishedAt": "Wed, 21 Oct 2026 16:04:43 GMT",
-          "firstSeen": "2026-10-22T00:04:56.203Z"
+          "firstSeen": "2026-10-22T00:10:59.785Z"
         }
       ],
       "sourceCount": 2,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-10-19T22:00:12.148Z",
-      "dateLastSeen": "2026-10-22T00:04:56.203Z",
+      "dateLastSeen": "2026-10-22T00:10:59.785Z",
       "sz": 14,
       "fullName": "Static Shape Compilation (AI Accelerator Constraint)",
       "proposalReason": "A recurring, named constraint that shapes how models are deployed on custom silicon; surfaces in this article with enough specificity to merit longlist tracking."
@@ -8710,50 +8710,18 @@
       "proposalReason": "Tracks as a potential structural pattern in how AI labs and platforms are financing the infrastructure race without ceding governance."
     },
     {
-      "id": "kernel-fusion",
-      "label": "Kernel Fusion",
-      "workingDef": "An optimisation technique in which multiple discrete tensor operations (e.g., multiply, mean, rsqrt) are compiled into a single fused hardware kernel, reducing memory bandwidth overhead and intermediate tensor allocations. Demonstrated in the article by contrasting naive multi-op RMSNorm (producing separate ATen dispatches) with torch.rms_norm(), which lowers to a single fused Neuron kernel with significantly lower device time.",
-      "clusters": [
-        "technical"
-      ],
-      "suggestedRels": [
-        "inference",
-        "latency",
-        "torchneuron",
-        "trainium",
-        "quantization"
-      ],
-      "sources": [
-        {
-          "url": "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1",
-          "domain": "huggingface.co",
-          "title": "Profiling TorchNeuron (Part 1): System-level profiling on AWS Trainium.",
-          "sourceLabel": "Hugging Face Blog",
-          "publishedAt": "Wed, 21 Oct 2026 16:04:43 GMT",
-          "firstSeen": "2026-10-22T00:04:56.203Z"
-        }
-      ],
-      "sourceCount": 1,
-      "independentSourceCount": 1,
-      "dateFirstSeen": "2026-10-22T00:04:56.203Z",
-      "dateLastSeen": "2026-10-22T00:04:56.203Z",
-      "sz": 14,
-      "fullName": "Kernel Fusion (Operator Fusion)",
-      "proposalReason": "New term: the article provides a clear, reproducible contrast between fused and unfused kernel paths on real hardware, making it a good primary source for this concept."
-    },
-    {
       "id": "decision-science",
       "label": "Decision Science",
-      "workingDef": "An applied discipline that focuses on modeling the specific decisions that business managers must make, rather than modeling data alone. Decision science draws on data science outputs (predictions, statistical relationships) as inputs to decision models that directly inform and drive managerial choices. Distinguished from data science by its emphasis on problem framing, business domain knowledge, and connecting analytical work to measurable business outcomes (cost, profit, market share). The field has its own academic programs and job descriptions distinct from data science roles.",
+      "workingDef": "A discipline that focuses on improving organizational decision-making by explicitly modeling the decisions managers must make — as distinct from data science, which focuses on modeling data and generating predictions. Decision science uses data, logic, and mathematics to frame, structure, and solve business problems directly, treating predictions from data science as inputs to decision models rather than outputs in themselves. In AI-adjacent contexts, the term surfaces as a corrective to the pattern of ML deployments that optimize prediction accuracy without connecting to actionable business outcomes.",
       "clusters": [
-        "business",
-        "work"
+        "work",
+        "business"
       ],
       "suggestedRels": [
         "evals",
         "outcome-focused-work",
         "workflow",
-        "task"
+        "calibration"
       ],
       "sources": [
         {
@@ -8762,60 +8730,91 @@
           "title": "  Why Data Modeling Is Not Enough",
           "sourceLabel": "MIT Sloan Management Review",
           "publishedAt": "Mon, 19 Oct 2026 11:00:59 +0000",
-          "firstSeen": "2026-10-22T00:04:56.203Z"
+          "firstSeen": "2026-10-22T00:10:59.785Z"
         }
       ],
       "sourceCount": 1,
       "independentSourceCount": 1,
-      "dateFirstSeen": "2026-10-22T00:04:56.203Z",
-      "dateLastSeen": "2026-10-22T00:04:56.203Z",
-      "sz": 16,
-      "proposalReason": "The article positions decision science as a corrective to data science's prediction-centric focus — a framing shift worth tracking as AI/ML investments come under ROI scrutiny."
+      "dateFirstSeen": "2026-10-22T00:10:59.785Z",
+      "dateLastSeen": "2026-10-22T00:10:59.785Z",
+      "sz": 14,
+      "proposalReason": "A meaningful conceptual distinction with direct relevance to how AI/ML projects are evaluated and deployed — the gap between prediction quality and decision utility maps closely onto questions the AI terminology graph already tracks around evals, outcome-focused work, and agent reliability."
     },
     {
       "id": "decision-modeling",
       "label": "Decision Modeling",
-      "workingDef": "The practice of formally representing the structure of a business decision — its choices, constraints, objectives, and relevant inputs — so that analytical outputs can be directly mapped to managerial action. Distinct from data modeling (building statistical or ML models of data) and from prediction tasks; decision modeling treats the decision itself as the object of analysis. Associated with decision science as its core technical skill, and positioned as the missing link between data science deliverables and business value.",
+      "workingDef": "The practice of formally representing a business decision — its objectives, constraints, and levers — so that quantitative analysis can directly inform a specific choice rather than merely characterize the data. As framed in decision science literature, decision modeling is the distinguishing competency separating decision science from data science: data science produces predictions; decision modeling connects those predictions to the choices managers actually face. Increasingly relevant in AI deployment contexts where high-accuracy ML outputs fail to translate into organizational action.",
+      "clusters": [
+        "work",
+        "business"
+      ],
+      "suggestedRels": [
+        "outcome-focused-work",
+        "workflow",
+        "evals",
+        "planning"
+      ],
+      "sources": [
+        {
+          "url": "https://sloanreview.mit.edu/article/why-data-modeling-is-not-enough/",
+          "domain": "sloanreview.mit.edu",
+          "title": "  Why Data Modeling Is Not Enough",
+          "sourceLabel": "MIT Sloan Management Review",
+          "publishedAt": "Mon, 19 Oct 2026 11:00:59 +0000",
+          "firstSeen": "2026-10-22T00:10:59.785Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-22T00:10:59.785Z",
+      "dateLastSeen": "2026-10-22T00:10:59.785Z",
+      "sz": 14,
+      "proposalReason": "Complements the decision-science candidate and is explicitly named as the core skill that differentiates decision science from data science — worth tracking as AI deployment critiques increasingly surface the prediction-vs-action gap."
+    },
+    {
+      "id": "data-science-disconnect",
+      "label": "Data Science Disconnect",
+      "workingDef": "A failure pattern in analytics projects where data science teams optimize for prediction accuracy or ML metrics that do not map onto the decisions managers need to make. Named explicitly in the MIT Sloan Management Review literature as a leading cause of data science project failure (estimated 60–85% failure rate). Manifests as elegant models that sit unused because they answer questions managers did not ask. Related to — but distinct from — AI-specific failure modes such as hallucination or benchmark gaming; this is a structural misalignment between the analytics function and business decision-making.",
+      "clusters": [
+        "business",
+        "work"
+      ],
+      "suggestedRels": [
+        "pilot-purgatory",
+        "ai-productivity-paradox",
+        "evals",
+        "benchmark-gaming"
+      ],
+      "sources": [
+        {
+          "url": "https://sloanreview.mit.edu/article/why-data-modeling-is-not-enough/",
+          "domain": "sloanreview.mit.edu",
+          "title": "  Why Data Modeling Is Not Enough",
+          "sourceLabel": "MIT Sloan Management Review",
+          "publishedAt": "Mon, 19 Oct 2026 11:00:59 +0000",
+          "firstSeen": "2026-10-22T00:10:59.785Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-22T00:10:59.785Z",
+      "dateLastSeen": "2026-10-22T00:10:59.785Z",
+      "sz": 14,
+      "proposalReason": "A named failure pattern with substantive overlap with AI deployment failure modes already in the graph — worth observing to see if it develops its own standing in AI/ML deployment discourse."
+    },
+    {
+      "id": "prediction-decision-gap",
+      "label": "Prediction-Decision Gap",
+      "workingDef": "The structural gap between a model's predictive output and the actionable decision a manager needs to make. Articulated in decision science literature as the core reason data science investments fail to generate ROI: predictions are not decisions, and organizations that treat them as equivalent end up with accurate models and no clear path to action. In AI deployment contexts, the concept extends to cases where LLM outputs are technically correct but operationally inert — answering questions that were not the ones actually posed.",
       "clusters": [
         "business",
         "work"
       ],
       "suggestedRels": [
         "outcome-focused-work",
-        "task",
-        "structured-output",
-        "workflow"
-      ],
-      "sources": [
-        {
-          "url": "https://sloanreview.mit.edu/article/why-data-modeling-is-not-enough/",
-          "domain": "sloanreview.mit.edu",
-          "title": "  Why Data Modeling Is Not Enough",
-          "sourceLabel": "MIT Sloan Management Review",
-          "publishedAt": "Mon, 19 Oct 2026 11:00:59 +0000",
-          "firstSeen": "2026-10-22T00:04:56.203Z"
-        }
-      ],
-      "sourceCount": 1,
-      "independentSourceCount": 1,
-      "dateFirstSeen": "2026-10-22T00:04:56.203Z",
-      "dateLastSeen": "2026-10-22T00:04:56.203Z",
-      "sz": 16,
-      "proposalReason": "The article introduces decision modeling as the specific technical practice that closes the data-science-to-business gap — a term with emerging canonical use in analytics discourse."
-    },
-    {
-      "id": "data-science-disconnect",
-      "label": "Data Science Disconnect",
-      "workingDef": "A practitioner framing for the gap between data science team outputs (predictions, accuracy metrics) and the information that business managers actually need to make decisions. Characterised by data scientists treating predictions as equivalent to decisions, using metrics that don't map to business outcomes, and solving problems that management didn't actually pose. The term captures an observed failure mode cited across multiple analytics ROI studies, with failure rates of 60–85% attributed at least partly to this disconnect.",
-      "clusters": [
-        "business",
-        "work"
-      ],
-      "suggestedRels": [
-        "ai-productivity-paradox",
         "pilot-purgatory",
-        "hallucination",
-        "automation-bias"
+        "ai-productivity-paradox",
+        "capability-reliability-gap"
       ],
       "sources": [
         {
@@ -8824,28 +8823,27 @@
           "title": "  Why Data Modeling Is Not Enough",
           "sourceLabel": "MIT Sloan Management Review",
           "publishedAt": "Mon, 19 Oct 2026 11:00:59 +0000",
-          "firstSeen": "2026-10-22T00:04:56.203Z"
+          "firstSeen": "2026-10-22T00:10:59.785Z"
         }
       ],
       "sourceCount": 1,
       "independentSourceCount": 1,
-      "dateFirstSeen": "2026-10-22T00:04:56.203Z",
-      "dateLastSeen": "2026-10-22T00:04:56.203Z",
-      "sz": 16,
-      "proposalReason": "Captures a well-documented but under-named failure mode in applied analytics — relevant to any organisation assessing why AI/ML investments are underdelivering."
+      "dateFirstSeen": "2026-10-22T00:10:59.785Z",
+      "dateLastSeen": "2026-10-22T00:10:59.785Z",
+      "sz": 14,
+      "proposalReason": "Captures a named structural tension that is likely to recur across AI deployment critiques — distinct enough from existing graph terms to merit tracking as evidence accumulates."
     },
     {
-      "id": "onsite-power-generation",
-      "label": "Onsite Power Generation",
-      "workingDef": "The practice of data center developers building dedicated electricity generation capacity — gas turbines, solar farms, wind installations, or combinations — directly tied to their facilities rather than drawing solely from the shared grid. Driven by long interconnection queues and the need to accelerate construction timelines. The HARC report highlights that the choice between gas turbines and renewables for onsite generation is the dominant variable determining whether data center expansion produces dramatically higher or dramatically lower air pollution, with NOx outcomes varying by up to 10x depending on the fuel mix chosen.",
+      "id": "data-center-air-quality",
+      "label": "Data Center Air Quality Impact",
+      "workingDef": "The documented and projected effect of large-scale data center electricity demand on local and regional air quality, particularly soot (fine particulate matter) and smog-forming NOx emissions. Research — including a 2026 HARC study on Texas — models scenarios in which AI-driven data center growth could reverse decades of air quality improvements, returning pollution levels to those seen in the early 2000s. The severity depends on whether demand is met by renewables, grid mix, or onsite gas turbine generation.",
       "clusters": [
-        "landscape",
-        "technical"
+        "critical",
+        "landscape"
       ],
       "suggestedRels": [
         "ai-energy-demand",
         "hyperscale-data-center",
-        "ai-factory",
         "data-center-backlash"
       ],
       "sources": [
@@ -8855,21 +8853,20 @@
           "title": "Data centers could erase decades of air quality gains",
           "sourceLabel": "The Verge — AI",
           "publishedAt": "2026-10-21T18:33:44-04:00",
-          "firstSeen": "2026-10-22T00:04:56.203Z"
+          "firstSeen": "2026-10-22T00:10:59.785Z"
         }
       ],
       "sourceCount": 1,
       "independentSourceCount": 1,
-      "dateFirstSeen": "2026-10-22T00:04:56.203Z",
-      "dateLastSeen": "2026-10-22T00:04:56.203Z",
+      "dateFirstSeen": "2026-10-22T00:10:59.785Z",
+      "dateLastSeen": "2026-10-22T00:10:59.785Z",
       "sz": 14,
-      "fullName": "Onsite Power Generation (Data Center)",
-      "proposalReason": "A new, specific concept materially introduced in this article: the article frames onsite power generation choices as the pivotal policy and environmental variable in the data center boom, distinct from grid-connected demand."
+      "proposalReason": "New candidate term capturing a specific and measurable harm pathway from AI infrastructure growth — distinct from energy demand alone."
     },
     {
-      "id": "grid-interconnection-queue",
-      "label": "Grid Interconnection Queue",
-      "workingDef": "The backlog of energy projects — including data centers seeking grid connection — awaiting approval and physical connection to the shared electricity grid. In the context of AI infrastructure, long queue wait times are cited as a key driver pushing data center developers toward onsite gas turbine generation, bypassing the grid but at the cost of higher local emissions. The HARC Texas research implicitly treats queue pressure as a structural cause of the pollution risk scenario.",
+      "id": "onsite-power-generation",
+      "label": "Onsite Power Generation",
+      "workingDef": "A data center development strategy in which operators build dedicated electricity generation capacity — typically gas turbines, or solar/wind farms — on or adjacent to the data center site, bypassing grid interconnection queues. Adopted to accelerate deployment timelines, but the fuel source choice (gas vs. renewable) determines whether the approach reduces or dramatically worsens local air and carbon emissions.",
       "clusters": [
         "landscape",
         "technical"
@@ -8877,7 +8874,8 @@
       "suggestedRels": [
         "ai-energy-demand",
         "hyperscale-data-center",
-        "onsite-power-generation"
+        "data-center-backlash",
+        "purpose-built-ai-infrastructure"
       ],
       "sources": [
         {
@@ -8886,31 +8884,27 @@
           "title": "Data centers could erase decades of air quality gains",
           "sourceLabel": "The Verge — AI",
           "publishedAt": "2026-10-21T18:33:44-04:00",
-          "firstSeen": "2026-10-22T00:04:56.203Z"
+          "firstSeen": "2026-10-22T00:10:59.785Z"
         }
       ],
       "sourceCount": 1,
       "independentSourceCount": 1,
-      "dateFirstSeen": "2026-10-22T00:04:56.203Z",
-      "dateLastSeen": "2026-10-22T00:04:56.203Z",
+      "dateFirstSeen": "2026-10-22T00:10:59.785Z",
+      "dateLastSeen": "2026-10-22T00:10:59.785Z",
       "sz": 14,
-      "fullName": "Grid Interconnection Queue (Data Center)",
-      "proposalReason": "A new infrastructure-constraint concept that the article identifies as a root cause of the pollution-intensive development pattern, worth tracking as AI buildout discourse matures."
+      "proposalReason": "Emerging infrastructure pattern with significant environmental policy implications, distinct from grid-connected data center operation."
     },
     {
       "id": "ca-compromise",
       "label": "Certificate Authority Compromise",
-      "workingDef": "A security incident in which the private keys of one or more Certificate Authority (CA) certificates are obtained by an unauthorized party, undermining the trust chain for all certificates signed by the affected CA. In this case, the private keys of eight eMudhra intermediate CA certificates were compromised, requiring downstream trust stores and certificate bundles to be updated across browsers, operating systems, and language ecosystem tooling (e.g., pip, certifi, uv).",
+      "workingDef": "An event in which private keys belonging to one or more Certificate Authority (CA) certificates are exposed or stolen, invalidating the chain of trust for any certificates signed by the affected CA. Downstream effects include the need to revoke affected certificates, update trust stores across operating systems and software package managers, and patch tooling that bundles certificate lists. The eMudhra incident (October 2026) is a recent example, affecting roots trusted by Mozilla, Microsoft, Apple, and Chrome programs.",
       "clusters": [
-        "security",
-        "critical"
+        "security"
       ],
       "suggestedRels": [
+        "security",
         "sandboxing",
-        "blast-radius",
-        "exploit",
-        "cve",
-        "ai-speed-cyber-defense"
+        "blast-radius"
       ],
       "sources": [
         {
@@ -8919,53 +8913,21 @@
           "title": "eMudhra Intermediate CA Compromise",
           "sourceLabel": "Simon Willison's Weblog",
           "publishedAt": "2026-10-20T23:50:25+00:00",
-          "firstSeen": "2026-10-22T00:04:56.203Z"
+          "firstSeen": "2026-10-22T00:10:59.785Z"
         }
       ],
       "sourceCount": 1,
       "independentSourceCount": 1,
-      "dateFirstSeen": "2026-10-22T00:04:56.203Z",
-      "dateLastSeen": "2026-10-22T00:04:56.203Z",
+      "dateFirstSeen": "2026-10-22T00:10:59.785Z",
+      "dateLastSeen": "2026-10-22T00:10:59.785Z",
       "sz": 14,
       "fullName": "Certificate Authority (CA) Compromise",
-      "proposalReason": "A newly tracked term for a class of infrastructure security event with broad downstream effects, relevant to AI agent deployments that rely on TLS trust chains for secure tool use."
-    },
-    {
-      "id": "trust-store",
-      "label": "Trust Store",
-      "workingDef": "A curated list of trusted root and intermediate Certificate Authority certificates maintained by browsers, operating systems, and language runtime tooling (e.g., Mozilla, Microsoft, Apple, Chrome root programs, Python's certifi package). Trust stores determine which TLS certificates a client will accept as valid. A compromise of any CA in a trust store requires emergency updates across all software that bundles that store.",
-      "clusters": [
-        "security",
-        "technical"
-      ],
-      "suggestedRels": [
-        "sandboxing",
-        "exploit",
-        "zero-day",
-        "cve"
-      ],
-      "sources": [
-        {
-          "url": "https://simonwillison.net/2026/Oct/20/emudhra-certificates/",
-          "domain": "simonwillison.net",
-          "title": "eMudhra Intermediate CA Compromise",
-          "sourceLabel": "Simon Willison's Weblog",
-          "publishedAt": "2026-10-20T23:50:25+00:00",
-          "firstSeen": "2026-10-22T00:04:56.203Z"
-        }
-      ],
-      "sourceCount": 1,
-      "independentSourceCount": 1,
-      "dateFirstSeen": "2026-10-22T00:04:56.203Z",
-      "dateLastSeen": "2026-10-22T00:04:56.203Z",
-      "sz": 14,
-      "fullName": "Trust Store (Root Certificate Bundle)",
-      "proposalReason": "Foundational infrastructure concept relevant to any AI agent or agentic system making HTTPS calls; trust store integrity is a prerequisite for secure tool use."
+      "proposalReason": "The eMudhra CA compromise is a significant real-world security event worth tracking as a concept; CA compromises have direct implications for AI agent infrastructure that relies on TLS trust chains."
     },
     {
       "id": "goodput",
       "label": "Goodput",
-      "workingDef": "A systems performance metric borrowed from networking and applied to AI inference: the throughput a system achieves while simultaneously meeting target latency thresholds (time to first token and time per output token). Distinguishes useful, on-spec output from raw token volume that may violate latency SLAs. Used by infrastructure teams to evaluate whether throughput, latency, and cost are jointly optimised rather than trading one off against another.",
+      "workingDef": "A throughput metric for AI inference systems that measures only the tokens delivered while simultaneously meeting target latency constraints (time to first token and time per output token). Distinct from raw throughput, which can be achieved by violating latency SLAs; goodput forces a holistic trade-off between speed, volume, and cost. Entering use among AI infrastructure operators as a more operationally honest measure of inference system performance than peak throughput figures.",
       "clusters": [
         "technical",
         "business"
@@ -8973,9 +8935,9 @@
       "suggestedRels": [
         "inference",
         "latency",
-        "token",
         "cost",
-        "ai-factory"
+        "token",
+        "agentic-inference"
       ],
       "sources": [
         {
@@ -8984,21 +8946,21 @@
           "title": "What Drives AI Inference Profitability?",
           "sourceLabel": "NVIDIA Blog — AI Inference Economics",
           "publishedAt": null,
-          "firstSeen": "2026-10-22T00:04:56.203Z"
+          "firstSeen": "2026-10-22T00:10:59.785Z"
         }
       ],
       "sourceCount": 1,
       "independentSourceCount": 1,
-      "dateFirstSeen": "2026-10-22T00:04:56.203Z",
-      "dateLastSeen": "2026-10-22T00:04:56.203Z",
+      "dateFirstSeen": "2026-10-22T00:10:59.785Z",
+      "dateLastSeen": "2026-10-22T00:10:59.785Z",
       "sz": 14,
-      "fullName": "Goodput (AI Inference Metric)",
-      "proposalReason": "'Goodput' is a concise, technically specific framing that adds precision to inference economics discussions — worth tracking as it circulates beyond networking into AI infrastructure evaluation vocabulary."
+      "fullName": "Goodput (AI Inference)",
+      "proposalReason": "Goodput is a useful operational metric term gaining traction in AI infrastructure practice — worth tracking as it moves from NVIDIA marketing into broader infrastructure discourse."
     },
     {
       "id": "cost-per-token",
       "label": "Cost Per Token",
-      "workingDef": "The primary economic unit for measuring AI inference efficiency: the total infrastructure and operational cost divided by the number of tokens generated. Positioned by NVIDIA and other AI infrastructure vendors as the key business metric for evaluating inference deployments. As a metric it elides model quality, latency, and goodput considerations, making it most useful when paired with SLA constraints.",
+      "workingDef": "The primary unit-economics metric for AI inference operations: total infrastructure and operational cost divided by the number of tokens generated. Used by enterprises and AI infrastructure vendors to evaluate the efficiency of hardware, software stacks, and model optimization techniques. NVIDIA and the broader AI infrastructure industry treat lowest cost per token as the key business metric for inference profitability, linking it to hardware choices, model quantization, batching strategies, and test-time compute scaling.",
       "clusters": [
         "business",
         "technical"
@@ -9006,10 +8968,10 @@
       "suggestedRels": [
         "inference",
         "token",
-        "latency",
         "cost",
-        "scaling-laws",
-        "ai-factory"
+        "latency",
+        "ai-factory",
+        "scaling-laws"
       ],
       "sources": [
         {
@@ -9018,21 +8980,21 @@
           "title": "What Drives AI Inference Profitability?",
           "sourceLabel": "NVIDIA Blog — AI Inference Economics",
           "publishedAt": null,
-          "firstSeen": "2026-10-22T00:04:56.203Z"
+          "firstSeen": "2026-10-22T00:10:59.785Z"
         }
       ],
       "sourceCount": 1,
       "independentSourceCount": 1,
-      "dateFirstSeen": "2026-10-22T00:04:56.203Z",
-      "dateLastSeen": "2026-10-22T00:04:56.203Z",
+      "dateFirstSeen": "2026-10-22T00:10:59.785Z",
+      "dateLastSeen": "2026-10-22T00:10:59.785Z",
       "sz": 14,
-      "fullName": "Cost Per Token (AI Inference Economics Metric)",
-      "proposalReason": "'Cost per token' is becoming a standard cross-vendor economic benchmark for inference infrastructure; worth tracking as it solidifies into a procurement and business-case vocabulary term."
+      "fullName": "Cost Per Token (AI Inference Economics)",
+      "proposalReason": "A foundational business metric for AI deployment economics worth tracking as it becomes a standard procurement and benchmarking criterion."
     },
     {
       "id": "inter-token-latency",
       "label": "Inter-Token Latency",
-      "workingDef": "The average elapsed time between consecutive generated tokens during an AI inference response, also called 'time per output token' or 'token-to-token latency.' Distinct from time-to-first-token (which measures initial processing lag); inter-token latency governs the perceived streaming speed of a model's output and is a key input to goodput calculations and user experience evaluation in production deployments.",
+      "workingDef": "The average time elapsed between the generation of consecutive output tokens during AI inference, also called 'time per output token.' Alongside time-to-first-token, it is one of the two primary latency dimensions used to evaluate inference system performance. High inter-token latency degrades perceived response fluency for interactive applications. Increasingly tracked separately from time-to-first-token as reasoning models generate longer token sequences.",
       "clusters": [
         "technical"
       ],
@@ -9040,7 +9002,8 @@
         "inference",
         "latency",
         "token",
-        "streaming-inference"
+        "streaming-inference",
+        "goodput"
       ],
       "sources": [
         {
@@ -9049,16 +9012,50 @@
           "title": "What Drives AI Inference Profitability?",
           "sourceLabel": "NVIDIA Blog — AI Inference Economics",
           "publishedAt": null,
-          "firstSeen": "2026-10-22T00:04:56.203Z"
+          "firstSeen": "2026-10-22T00:10:59.785Z"
         }
       ],
       "sourceCount": 1,
       "independentSourceCount": 1,
-      "dateFirstSeen": "2026-10-22T00:04:56.203Z",
-      "dateLastSeen": "2026-10-22T00:04:56.203Z",
+      "dateFirstSeen": "2026-10-22T00:10:59.785Z",
+      "dateLastSeen": "2026-10-22T00:10:59.785Z",
       "sz": 14,
-      "fullName": "Inter-Token Latency (Time Per Output Token)",
-      "proposalReason": "A precise latency sub-concept that distinguishes initial response lag from ongoing generation speed — useful vocabulary for inference infrastructure evaluation."
+      "fullName": "Inter-Token Latency (Time per Output Token)",
+      "proposalReason": "A precise latency sub-concept gaining operational importance as reasoning models generate longer sequences and streaming inference becomes standard."
+    },
+    {
+      "id": "test-time-scaling",
+      "label": "Test-Time Scaling",
+      "workingDef": "Already tracked under test-time-compute-scaling in the longlist — re-sighting: the article uses 'test-time scaling' as a core scaling law alongside pretraining and post-training, describing it as allocating additional compute during inference to evaluate multiple possible outcomes before selecting a final answer, also glossed as 'long thinking' or 'reasoning.' The NVIDIA framing emphasises the cost implications: test-time scaling multiplies token generation, raising inference costs substantially.",
+      "clusters": [
+        "technical",
+        "models"
+      ],
+      "suggestedRels": [
+        "inference",
+        "scaling-laws",
+        "reasoning-models",
+        "cost",
+        "token",
+        "chain-of-thought"
+      ],
+      "sources": [
+        {
+          "url": "https://blogs.nvidia.com/blog/ai-inference-economics/",
+          "domain": "blogs.nvidia.com",
+          "title": "What Drives AI Inference Profitability?",
+          "sourceLabel": "NVIDIA Blog — AI Inference Economics",
+          "publishedAt": null,
+          "firstSeen": "2026-10-22T00:10:59.785Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-22T00:10:59.785Z",
+      "dateLastSeen": "2026-10-22T00:10:59.785Z",
+      "sz": 14,
+      "fullName": "Test-Time Compute Scaling",
+      "proposalReason": "Re-sighting of a longlist term in a useful infrastructure-economics framing."
     }
   ]
 }

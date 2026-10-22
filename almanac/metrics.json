@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T00:06:41.865Z",
+  "generatedAt": "2026-10-22T00:12:42.738Z",
   "firstRunAt": "2026-04-27T01:07:31.335Z",
   "phase": 1,
   "headline": {
@@ -245,7 +245,7 @@
     "newDomainsLast30d": [
       {
         "domain": "blogs.nvidia.com",
-        "firstSeen": "2026-10-22T00:04:56.203Z"
+        "firstSeen": "2026-10-22T00:10:59.785Z"
       }
     ]
   },
@@ -342,7 +342,7 @@
         "id": "technical",
         "label": "Technical",
         "hex": "#D0D040",
-        "count": 53
+        "count": 51
       },
       {
         "id": "safety",
@@ -372,7 +372,13 @@
         "id": "business",
         "label": "Business Reality",
         "hex": "#48C888",
-        "count": 18
+        "count": 19
+      },
+      {
+        "id": "work",
+        "label": "Work & Output",
+        "hex": "#E8A838",
+        "count": 16
       },
       {
         "id": "tools",
@@ -384,12 +390,6 @@
         "id": "human",
         "label": "Human Skills",
         "hex": "#40D080",
-        "count": 15
-      },
-      {
-        "id": "work",
-        "label": "Work & Output",
-        "hex": "#E8A838",
         "count": 15
       },
       {
@@ -408,7 +408,7 @@
         "id": "security",
         "label": "AI Security",
         "hex": "#E05050",
-        "count": 11
+        "count": 10
       },
       {
         "id": "autonomy",
