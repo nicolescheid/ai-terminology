@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generatedAt": "2026-10-22T21:12:33.330Z",
-    "unreadCount": 29,
-    "totalCount": 29,
+    "generatedAt": "2026-10-23T21:00:16.038Z",
+    "unreadCount": 30,
+    "totalCount": 30,
     "note": "Lexi's must-reads — articles she flags as worth Nicole reading in full. Editorial signal, not news feed. Set status to 'read' or 'dismissed' via mark-must-reads.mjs."
   },
   "entries": [
@@ -496,6 +496,23 @@
       ],
       "novelTermsInArticle": 4,
       "flaggedAt": "2026-10-21T22:03:58.255Z",
+      "status": "unread"
+    },
+    {
+      "id": "95eb6975ad245049",
+      "title": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox",
+      "url": "https://huggingface.co/blog/microsoft/thinkingbox-training",
+      "source": "Hugging Face Blog",
+      "publishedAt": "Thu, 22 Oct 2026 22:24:34 GMT",
+      "summary": "Microsoft/Hugging Face post-training paper introducing ThinkingBox: a benchmark and RL training framework that converts executable database-state checks into GRPO rewards for agent reliability. Key technical contributions are 'offline policy-relative difficulty' for training pool selection, and a pass@20 vs pass@1 distinction that surfaces 'dependability' as a production-relevant metric distinct from headline accuracy.",
+      "priority": 2,
+      "reason": "A rare paper that closes the loop between evaluation and training: the same executable database-state checker used to grade agents is repurposed as the RL reward, and the results are evaluated on a held-out benchmark. The 'dependability vs. coverage' framing — and the concrete evidence that headline accuracy is a poor proxy for production reliability — is a substantive contribution to how we should think about model selection for agentic tasks.",
+      "clusters": [
+        "agentic",
+        "technical"
+      ],
+      "novelTermsInArticle": 3,
+      "flaggedAt": "2026-10-23T21:00:16.038Z",
       "status": "unread"
     }
   ]

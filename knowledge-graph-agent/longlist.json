@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-10-22T21:12:33.330Z",
-    "entryCount": 231,
+    "generatedAt": "2026-10-23T21:00:16.038Z",
+    "entryCount": 242,
     "note": "Lexi-managed Tier 2 longlist — terms under observation, awaiting evidence to support promotion to the graph (Tier 1)."
   },
   "entries": [
@@ -5117,12 +5117,20 @@
           "sourceLabel": "Stratechery",
           "publishedAt": "Thu, 22 Oct 2026 10:00:00 +0000",
           "firstSeen": "2026-10-22T21:12:33.330Z"
+        },
+        {
+          "url": "https://stratechery.com/2026/a-new-era/",
+          "domain": "stratechery.com",
+          "title": "2026.43: A New Era",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Fri, 23 Oct 2026 17:00:00 +0000",
+          "firstSeen": "2026-10-23T21:00:16.038Z"
         }
       ],
-      "sourceCount": 7,
+      "sourceCount": 8,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-06-02T20:47:42.877Z",
-      "dateLastSeen": "2026-10-22T21:12:33.330Z",
+      "dateLastSeen": "2026-10-23T21:00:16.038Z",
       "sz": 14,
       "fullName": "Aggregator Theory (Stratechery)",
       "proposalReason": "A named analytic framework with significant ongoing use in AI business-model discussions; not yet in the graph and surfaces repeatedly in AI-era platform-strategy writing."
@@ -6388,12 +6396,20 @@
           "sourceLabel": "OpenAI Research",
           "publishedAt": null,
           "firstSeen": "2026-10-16T20:31:05.113Z"
+        },
+        {
+          "url": "https://huggingface.co/blog/microsoft/thinkingbox-training",
+          "domain": "huggingface.co",
+          "title": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Thu, 22 Oct 2026 22:24:34 GMT",
+          "firstSeen": "2026-10-23T21:00:16.038Z"
         }
       ],
-      "sourceCount": 1,
-      "independentSourceCount": 1,
+      "sourceCount": 2,
+      "independentSourceCount": 2,
       "dateFirstSeen": "2026-10-16T20:31:05.113Z",
-      "dateLastSeen": "2026-10-16T20:31:05.113Z",
+      "dateLastSeen": "2026-10-23T21:00:16.038Z",
       "sz": 14,
       "fullName": "GPT-6 Astra (OpenAI)",
       "nodeType": "product",
@@ -7920,12 +7936,20 @@
           "sourceLabel": "Stratechery",
           "publishedAt": "Tue, 20 Oct 2026 10:00:00 +0000",
           "firstSeen": "2026-10-20T21:15:51.629Z"
+        },
+        {
+          "url": "https://stratechery.com/2026/a-new-era/",
+          "domain": "stratechery.com",
+          "title": "2026.43: A New Era",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Fri, 23 Oct 2026 17:00:00 +0000",
+          "firstSeen": "2026-10-23T21:00:16.038Z"
         }
       ],
-      "sourceCount": 1,
+      "sourceCount": 2,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-10-20T21:15:51.629Z",
-      "dateLastSeen": "2026-10-20T21:15:51.629Z",
+      "dateLastSeen": "2026-10-23T21:00:16.038Z",
       "sz": 16,
       "proposalReason": "First sighting of this model name; worth tracking as a named open-weight release from Meta with apparent on-device deployment significance."
     },
@@ -9249,6 +9273,363 @@
       "sz": 14,
       "fullName": "Terms-of-Service AI Rights (Commercial Terms as AI Training Permission)",
       "proposalReason": "A distinct and recurring legal framing in AI data disputes — the argument that ToS language creates AI training permission — worth tracking as a durable concept."
+    },
+    {
+      "id": "offline-policy-relative-difficulty",
+      "label": "Offline Policy-Relative Difficulty",
+      "workingDef": "A task-selection heuristic for reinforcement learning fine-tuning of agents in which a task's difficulty is assessed relative to the current base policy — not as an absolute property of the task itself. In the ThinkingBox-Training framework (Microsoft / Hugging Face, 2026), each candidate training task is probed once with the base policy before training begins; tasks that are already nearly always solved or nearly always failed are excluded, since neither provides a useful training gradient. Only tasks in the intermediate success-probability band are retained in the fixed training pool, on the reasoning that these tasks are learnable by the policy at its current capability level. The 'offline' modifier signals that this difficulty estimate is computed once and held fixed throughout training, avoiding policy-chasing instability.",
+      "clusters": [
+        "technical",
+        "agentic"
+      ],
+      "suggestedRels": [
+        "grpo",
+        "rlvr",
+        "agent-reliability",
+        "evals",
+        "post-training-scaling"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/microsoft/thinkingbox-training",
+          "domain": "huggingface.co",
+          "title": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Thu, 22 Oct 2026 22:24:34 GMT",
+          "firstSeen": "2026-10-23T21:00:16.038Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-23T21:00:16.038Z",
+      "dateLastSeen": "2026-10-23T21:00:16.038Z",
+      "sz": 14,
+      "fullName": "Offline Policy-Relative Difficulty (Task Selection for RL Agent Training)",
+      "proposalReason": "Novel, precisely named concept with a clear mechanism and lasting relevance to RL-based agent training. Worth tracking as it offers a principled vocabulary for the task-curation step that most RL agent papers leave implicit."
+    },
+    {
+      "id": "executable-reward-signal",
+      "label": "Executable Reward Signal",
+      "workingDef": "A reward function for reinforcement learning that derives its signal from the outcome of running executable checks against a system's terminal state — such as querying a database to verify that expected records were written, updated, or left unchanged — rather than from a human rater, a language model judge, or a proxy metric. In the ThinkingBox-Training framework, the same executable grader used to evaluate agent work on the benchmark is repurposed as the RL reward: the agent receives 1 if the final database state matches the expected outcome and 0 otherwise. This produces a binary, verifiable, and policy-independent signal. Closely related to RLVR (Reinforcement Learning with Verifiable Rewards) but distinguished by the reward's grounding in a real backend state rather than a mathematical verifier or pattern-matched string.",
+      "clusters": [
+        "technical",
+        "agentic"
+      ],
+      "suggestedRels": [
+        "rlvr",
+        "rubrics-as-rewards",
+        "grpo",
+        "evals",
+        "agent-reliability",
+        "verifiability"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/microsoft/thinkingbox-training",
+          "domain": "huggingface.co",
+          "title": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Thu, 22 Oct 2026 22:24:34 GMT",
+          "firstSeen": "2026-10-23T21:00:16.038Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-23T21:00:16.038Z",
+      "dateLastSeen": "2026-10-23T21:00:16.038Z",
+      "sz": 14,
+      "fullName": "Executable Reward Signal (Database-State RL Reward)",
+      "proposalReason": "A concrete instantiation of verifiable-reward RL applied to agentic tasks with real database backends. Captures a reproducible pattern that distinguishes this class of training from LLM-as-a-judge approaches."
+    },
+    {
+      "id": "dependability-coverage-tradeoff",
+      "label": "Dependability vs. Coverage Tradeoff",
+      "workingDef": "A measurement framing that distinguishes two orthogonal dimensions of agent reliability: coverage (whether a model can solve a task at least once across many attempts, measured by pass@k or pass@20) and dependability (whether a model solves a task correctly on every attempt, measured by pass@all or 'observed 20/20'). The ThinkingBox benchmark surfaced a sharp divergence: Kimi-K3 solved 93.89% of tasks at least once but passed all 20 recorded attempts on only 13.41% of tasks, while Claude Opus 5 showed narrower coverage with far greater consistency. The paper argues that for production use cases involving real database writes, headline pass@1 accuracy masks which model is actually safe to deploy, and that dependability (pass@all) is the operationally relevant metric. RL fine-tuning in this framework specifically improves the dependability column while accepting a small loss in coverage.",
+      "clusters": [
+        "agentic",
+        "technical"
+      ],
+      "suggestedRels": [
+        "agent-reliability",
+        "nines-of-reliability",
+        "evals",
+        "capability-reliability-gap",
+        "agent-count-fallacy"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/microsoft/thinkingbox-training",
+          "domain": "huggingface.co",
+          "title": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Thu, 22 Oct 2026 22:24:34 GMT",
+          "firstSeen": "2026-10-23T21:00:16.038Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-23T21:00:16.038Z",
+      "dateLastSeen": "2026-10-23T21:00:16.038Z",
+      "sz": 14,
+      "fullName": "Dependability vs. Coverage Tradeoff (Agent Reliability Metric Split)",
+      "proposalReason": "Sharpens and operationalises the capability-reliability gap with concrete benchmark data. The coverage/dependability split is a vocabulary contribution with lasting value for anyone choosing models for production agentic workflows."
+    },
+    {
+      "id": "kimi-k31-pro",
+      "label": "Kimi K3.1 Pro",
+      "workingDef": "A frontier-class large language model from Chinese AI lab Moonshot AI, released to the Kimi API in October 2026. Positioned against GPT-6 Astra and Claude Opus 5.5 on benchmark scores, with an open-weights release promised for November 2026. Offered in a standard and 'Highspeed' (2–3× faster, 2× price) variant, and supports adjustable reasoning effort levels (low, medium, max).",
+      "clusters": [
+        "models",
+        "landscape"
+      ],
+      "suggestedRels": [
+        "open-weight",
+        "reasoning-models",
+        "adjustable-reasoning-effort",
+        "frontier-model",
+        "benchmark-gaming"
+      ],
+      "sources": [
+        {
+          "url": "https://simonwillison.net/2026/Oct/23/kimi-k31-pro/",
+          "domain": "simonwillison.net",
+          "title": "Introducing Kimi K3.1 Pro",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-10-23T19:40:54+00:00",
+          "firstSeen": "2026-10-23T21:00:16.038Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-23T21:00:16.038Z",
+      "dateLastSeen": "2026-10-23T21:00:16.038Z",
+      "sz": 14,
+      "fullName": "Kimi K3.1 Pro (Moonshot AI)",
+      "nodeType": "product",
+      "proposalReason": "Kimi K3.1 Pro is the first soon-to-be open-weight model to score at the very top of the Artificial Analysis frontier ranking, making it notable for the open-weights landscape."
+    },
+    {
+      "id": "moonshot-ai",
+      "label": "Moonshot AI",
+      "workingDef": "A Chinese AI research company and the developer of the Kimi family of large language models, including Kimi K3 and Kimi K3.1 Pro. Notable for releasing high-scoring frontier-class models with commitments to open-weight releases.",
+      "clusters": [
+        "companies",
+        "landscape"
+      ],
+      "suggestedRels": [
+        "kimi-k31-pro",
+        "open-weight",
+        "frontier-model"
+      ],
+      "sources": [
+        {
+          "url": "https://simonwillison.net/2026/Oct/23/kimi-k31-pro/",
+          "domain": "simonwillison.net",
+          "title": "Introducing Kimi K3.1 Pro",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-10-23T19:40:54+00:00",
+          "firstSeen": "2026-10-23T21:00:16.038Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-23T21:00:16.038Z",
+      "dateLastSeen": "2026-10-23T21:00:16.038Z",
+      "sz": 14,
+      "fullName": "Moonshot AI (Chinese AI lab)",
+      "proposalReason": "Moonshot AI is an emerging non-Western frontier lab whose models are now benchmarking at the top of independent evaluations alongside OpenAI and Anthropic models."
+    },
+    {
+      "id": "claude-fable-51",
+      "label": "Claude Fable 5.1",
+      "workingDef": "An Anthropic Claude model referenced in Artificial Analysis benchmarking, scoring 53 on their intelligence index — placing it alongside GPT-6 Astra and Gemini 4 Argon and below Claude Opus 5.5 (58). The 'Fable' designation suggests a mid-tier position within Anthropic's model lineup as of late 2026.",
+      "clusters": [
+        "models",
+        "companies"
+      ],
+      "suggestedRels": [
+        "claude",
+        "frontier-model",
+        "claude-opus-55",
+        "gemini-4-argon"
+      ],
+      "sources": [
+        {
+          "url": "https://simonwillison.net/2026/Oct/23/kimi-k31-pro/",
+          "domain": "simonwillison.net",
+          "title": "Introducing Kimi K3.1 Pro",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-10-23T19:40:54+00:00",
+          "firstSeen": "2026-10-23T21:00:16.038Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-23T21:00:16.038Z",
+      "dateLastSeen": "2026-10-23T21:00:16.038Z",
+      "sz": 14,
+      "fullName": "Claude Fable 5.1 (Anthropic)",
+      "nodeType": "product",
+      "proposalReason": "A newly referenced Anthropic model variant appearing in frontier benchmark comparisons, suggesting continued expansion of Anthropic's named model family."
+    },
+    {
+      "id": "llm-openai-endpoint",
+      "label": "LLM-Compatible OpenAI Endpoint",
+      "workingDef": "A feature in Simon Willison's open-source LLM command-line tool (v0.32+) that allows users to query any OpenAI API-compatible inference endpoint by specifying a base URL and API key. Enables ad-hoc evaluation of third-party model providers such as Moonshot AI's Kimi API without native integration.",
+      "clusters": [
+        "tools",
+        "technical"
+      ],
+      "suggestedRels": [
+        "api",
+        "llm",
+        "prompt-engineering",
+        "open-weight"
+      ],
+      "sources": [
+        {
+          "url": "https://simonwillison.net/2026/Oct/23/kimi-k31-pro/",
+          "domain": "simonwillison.net",
+          "title": "Introducing Kimi K3.1 Pro",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-10-23T19:40:54+00:00",
+          "firstSeen": "2026-10-23T21:00:16.038Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-23T21:00:16.038Z",
+      "dateLastSeen": "2026-10-23T21:00:16.038Z",
+      "sz": 14,
+      "fullName": "LLM OpenAI-Compatible Endpoint (Simon Willison's LLM tool)",
+      "proposalReason": "Illustrates the growing practice of OpenAI API compatibility as a de-facto interoperability standard across frontier model providers."
+    },
+    {
+      "id": "speech-to-speech-model",
+      "label": "Speech-to-Speech Model",
+      "workingDef": "An AI architecture that processes audio input and generates audio output directly, without converting speech to text as an intermediate step. Contrasted with cascaded voice pipelines (VAD → STT → LLM → TTS), which flatten spoken language into tokens and lose prosodic, emotional, and timing information. The Dessa model by Block is a prominent example, trained solely on human speech with no text data.",
+      "clusters": [
+        "technical",
+        "tools"
+      ],
+      "suggestedRels": [
+        "cascaded-voice-pipeline",
+        "voice-ai",
+        "full-duplex-voice-ai"
+      ],
+      "sources": [
+        {
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech",
+          "domain": "theverge.com",
+          "title": "Jack Dorsey’s Block made an AI model that talks to you like an awkward new friend",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-10-23T15:32:39-04:00",
+          "firstSeen": "2026-10-23T21:00:16.038Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-23T21:00:16.038Z",
+      "dateLastSeen": "2026-10-23T21:00:16.038Z",
+      "sz": 14,
+      "fullName": "Speech-to-Speech Model (End-to-End Voice AI)",
+      "proposalReason": "A newly prominent architectural category distinct from cascaded pipelines, with its own tradeoffs and safety implications — worth tracking as voice AI matures."
+    },
+    {
+      "id": "speech-native-training",
+      "label": "Speech-Native Training",
+      "workingDef": "A training methodology in which a model is pretrained exclusively on raw speech audio — no transcribed text or written data — analogous to how human infants acquire language through auditory experience alone. Block's Dessa is the primary publicized example. Distinct from fine-tuning text-trained models on audio; proponents claim it preserves prosodic and emotional richness lost in text intermediation.",
+      "clusters": [
+        "technical",
+        "models"
+      ],
+      "suggestedRels": [
+        "pretraining",
+        "voice-ai",
+        "cascaded-voice-pipeline",
+        "speech-to-speech-model"
+      ],
+      "sources": [
+        {
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech",
+          "domain": "theverge.com",
+          "title": "Jack Dorsey’s Block made an AI model that talks to you like an awkward new friend",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-10-23T15:32:39-04:00",
+          "firstSeen": "2026-10-23T21:00:16.038Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-23T21:00:16.038Z",
+      "dateLastSeen": "2026-10-23T21:00:16.038Z",
+      "sz": 14,
+      "fullName": "Speech-Native Training (Audio-Only Pretraining)",
+      "proposalReason": "A genuinely distinctive training framing with potential lasting relevance to how voice AI is conceptualized and benchmarked."
+    },
+    {
+      "id": "affective-voice-safety",
+      "label": "Affective Voice Safety",
+      "workingDef": "A safety framing in which voice AI systems are expected to detect and respond appropriately to emotional or distress signals in a speaker's voice, rather than processing only linguistic content. Block's Dessa team articulates this as a distinct safety problem: current voice AI that 'flattens what we say into text' is 'nearly deaf to emotion,' creating risk when a user is in distress. Related to but distinct from content safety and alignment; focuses on real-time emotional context awareness.",
+      "clusters": [
+        "safety",
+        "human"
+      ],
+      "suggestedRels": [
+        "voice-ai",
+        "cascaded-voice-pipeline",
+        "guardrails",
+        "human-in-the-loop"
+      ],
+      "sources": [
+        {
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech",
+          "domain": "theverge.com",
+          "title": "Jack Dorsey’s Block made an AI model that talks to you like an awkward new friend",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-10-23T15:32:39-04:00",
+          "firstSeen": "2026-10-23T21:00:16.038Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-23T21:00:16.038Z",
+      "dateLastSeen": "2026-10-23T21:00:16.038Z",
+      "sz": 14,
+      "fullName": "Affective Voice Safety (Emotional-State Detection in Voice AI)",
+      "proposalReason": "An emerging safety concept with clear definitional hooks and practical stakes as voice AI proliferates in healthcare, companionship, and customer-service contexts."
+    },
+    {
+      "id": "on-device-voice-ai",
+      "label": "On-Device Voice AI",
+      "workingDef": "Voice AI models capable of running inference locally on consumer hardware (e.g., a MacBook Pro M4 Max) rather than in cloud data centers, enabling lower latency, offline use, and stronger privacy properties. Dessa's local-inference capability on Apple Silicon is a highlighted feature. Related to edge AI and privacy-by-design, but specific to voice/speech modalities.",
+      "clusters": [
+        "technical",
+        "tools"
+      ],
+      "suggestedRels": [
+        "edge-ai",
+        "voice-ai",
+        "privacy-by-design",
+        "latency"
+      ],
+      "sources": [
+        {
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech",
+          "domain": "theverge.com",
+          "title": "Jack Dorsey’s Block made an AI model that talks to you like an awkward new friend",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-10-23T15:32:39-04:00",
+          "firstSeen": "2026-10-23T21:00:16.038Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-23T21:00:16.038Z",
+      "dateLastSeen": "2026-10-23T21:00:16.038Z",
+      "sz": 14,
+      "fullName": "On-Device Voice AI (Local Speech Model Inference)",
+      "proposalReason": "A concrete instantiation of edge AI in the voice domain with privacy and latency implications worth distinguishing from generic edge-AI framing."
     }
   ]
 }

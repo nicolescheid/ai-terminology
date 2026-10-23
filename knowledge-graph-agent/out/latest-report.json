@@ -1,129 +1,164 @@
 {
-  "generatedAt": "2026-10-22T21:12:33.330Z",
+  "generatedAt": "2026-10-23T21:00:16.038Z",
   "model": "claude-sonnet-4-6",
   "sourcesConfigured": 15,
   "articlesConsidered": [
     {
-      "id": "27825e3003584012",
-      "source": "OpenAI News",
-      "title": "Build more responsive apps with the Decisions API",
-      "url": "https://openai.com/index/decisions-api",
-      "publishedAt": "Thu, 22 Oct 2026 19:00:00 GMT"
-    },
-    {
-      "id": "eaa0ebff7daf626e",
+      "id": "95eb6975ad245049",
       "source": "Hugging Face Blog",
-      "title": "OlmoEarth v1.3: State-of-the-art embeddings for the whole planet",
-      "url": "https://huggingface.co/blog/allenai/olmoearth-v1-3",
-      "publishedAt": "Thu, 22 Oct 2026 16:11:31 GMT"
+      "title": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox",
+      "url": "https://huggingface.co/blog/microsoft/thinkingbox-training",
+      "publishedAt": "Thu, 22 Oct 2026 22:24:34 GMT"
     },
     {
-      "id": "271b7ab26b21c588",
-      "source": "Stratechery",
-      "title": "An Interview with Craig Moffett About SpaceX and Bubbles",
-      "url": "https://stratechery.com/2026/an-interview-with-craig-moffett-about-spacex-and-bubbles/",
-      "publishedAt": "Thu, 22 Oct 2026 10:00:00 +0000"
-    },
-    {
-      "id": "63c31ca523f91ccf",
+      "id": "298c8de07d18f423",
       "source": "OpenAI News",
-      "title": "What FDE means at OpenAI",
-      "url": "https://openai.com/index/forward-deployed-engineering-means",
-      "publishedAt": "Thu, 22 Oct 2026 06:00:00 GMT"
+      "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
+      "url": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
+      "publishedAt": "Fri, 23 Oct 2026 17:00:00 GMT"
     },
     {
-      "id": "474d46551650ea30",
+      "id": "cf994644e0f354bf",
+      "source": "Stratechery",
+      "title": "2026.43: A New Era",
+      "url": "https://stratechery.com/2026/a-new-era/",
+      "publishedAt": "Fri, 23 Oct 2026 17:00:00 +0000"
+    },
+    {
+      "id": "48e2274fdf2ba9fe",
+      "source": "OpenAI News",
+      "title": "Securing our frontier model training environment",
+      "url": "https://openai.com/index/securing-our-frontier-model-training-environment",
+      "publishedAt": "Fri, 23 Oct 2026 10:00:00 GMT"
+    },
+    {
+      "id": "2e71264ea893e482",
       "source": "Simon Willison's Weblog",
-      "title": "DE STAAT—FREEDOM (Official Music Video)",
-      "url": "https://simonwillison.net/2026/Oct/22/de-staat-freedom/",
-      "publishedAt": "2026-10-22T19:42:26+00:00"
+      "title": "Introducing Kimi K3.1 Pro",
+      "url": "https://simonwillison.net/2026/Oct/23/kimi-k31-pro/",
+      "publishedAt": "2026-10-23T19:40:54+00:00"
     },
     {
-      "id": "29a87826b845358b",
+      "id": "f490e9c8ed30cee3",
       "source": "The Verge — AI",
-      "title": "Meta’s AI could still scrape news sites, legal experts say",
-      "url": "https://www.theverge.com/tech/1017082/meta-terms-update-ai-training-concerns",
-      "publishedAt": "2026-10-22T16:32:05-04:00"
+      "title": "Jack Dorsey’s Block made an AI model that talks to you like an awkward new friend",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech",
+      "publishedAt": "2026-10-23T15:32:39-04:00"
     }
   ],
   "harvestedTerms": [
     {
       "article": {
-        "title": "OlmoEarth v1.3: State-of-the-art embeddings for the whole planet",
-        "url": "https://huggingface.co/blog/allenai/olmoearth-v1-3"
+        "title": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox",
+        "url": "https://huggingface.co/blog/microsoft/thinkingbox-training"
       },
-      "summary": "Allen AI's OlmoEarth v1.3 release introduces a satellite foundation model that generates pre-computed 128-dimensional embeddings for every 10-meter pixel on Earth across nine years of imagery. The article describes the technical architecture (vision transformer + attention pooler), evaluation against competing models, a new tropical crop benchmark (PLANTEUR), and an interactive browser-based explorer tool. The subject matter is geospatial/remote sensing AI — only tangentially related to the AI terminology graph's core concerns around agents, LLMs, and enterprise AI.",
+      "summary": "Microsoft/Hugging Face post-training paper introducing ThinkingBox: a benchmark and RL training framework that converts executable database-state checks into GRPO rewards for agent reliability. Key technical contributions are 'offline policy-relative difficulty' for training pool selection, and a pass@20 vs pass@1 distinction that surfaces 'dependability' as a production-relevant metric distinct from headline accuracy.",
       "longlistAdditions": [
         {
-          "id": "geospatial-foundation-model",
-          "label": "Geospatial Foundation Model"
+          "id": "offline-policy-relative-difficulty",
+          "label": "Offline Policy-Relative Difficulty"
         },
         {
-          "id": "precomputed-global-embeddings",
-          "label": "Precomputed Global Embeddings"
+          "id": "executable-reward-signal",
+          "label": "Executable Reward Signal"
         },
         {
-          "id": "planteur",
-          "label": "PLANTEUR"
+          "id": "dependability-coverage-tradeoff",
+          "label": "Dependability vs. Coverage Tradeoff"
         }
       ],
-      "longlistUpdates": [],
+      "longlistUpdates": [
+        {
+          "id": "gpt6-astra",
+          "label": "GPT-6 Astra",
+          "sourceAdded": true,
+          "sourceCount": 2,
+          "independentSourceCount": 2
+        }
+      ],
       "rejections": [],
-      "proposalsQueued": []
+      "proposalsQueued": [],
+      "mustReadFlagged": {
+        "priority": 2,
+        "reason": "A rare paper that closes the loop between evaluation and training: the same executable database-state checker used to grade agents is repurposed as the RL reward, and the results are evaluated on a held-out benchmark. The 'dependability vs. coverage' framing — and the concrete evidence that headline accuracy is a poor proxy for production reliability — is a substantive contribution to how we should think about model selection for agentic tasks."
+      }
     },
     {
       "article": {
-        "title": "An Interview with Craig Moffett About SpaceX and Bubbles",
-        "url": "https://stratechery.com/2026/an-interview-with-craig-moffett-about-spacex-and-bubbles/"
+        "title": "2026.43: A New Era",
+        "url": "https://stratechery.com/2026/a-new-era/"
       },
-      "summary": "Paywalled Stratechery interview with telecom/media analyst Craig Moffett discussing SpaceX (launch, broadband, mobile) and drawing parallels between the dot-com bubble and today's AI/tech investment environment. Only the subscription teaser is visible — no substantive content is accessible for term extraction.",
+      "summary": "A weekly digest/newsletter post from Stratechery covering: a new Stripe sponsorship, Apple-Meta edge AI partnership, Netflix troubles, and media commentary. The article is primarily a roundup/digest format with no substantive AI terminology development. It references Anthropic alignment tangentially in a podcast title and mentions Meta's open-source model ('Muse Spark Open') and Apple+Meta local AI running. No deep conceptual AI content is present.",
       "longlistAdditions": [],
       "longlistUpdates": [
+        {
+          "id": "muse-spark-open",
+          "label": "Muse Spark Open",
+          "sourceAdded": true,
+          "sourceCount": 2,
+          "independentSourceCount": 1
+        },
         {
           "id": "aggregator-theory",
           "label": "Aggregator Theory",
           "sourceAdded": true,
-          "sourceCount": 7,
+          "sourceCount": 8,
           "independentSourceCount": 1
         }
       ],
-      "rejections": [
-        {
-          "label": "AI Bubble",
-          "reason": "already in graph (label match)"
-        }
-      ],
+      "rejections": [],
       "proposalsQueued": []
     },
     {
       "article": {
-        "title": "DE STAAT—FREEDOM (Official Music Video)",
-        "url": "https://simonwillison.net/2026/Oct/22/de-staat-freedom/"
+        "title": "Introducing Kimi K3.1 Pro",
+        "url": "https://simonwillison.net/2026/Oct/23/kimi-k31-pro/"
       },
-      "summary": "A brief link-blog post by Simon Willison noting an AI-generated visual effect at the 00:44 mark in a music video by Dutch band De Staat, credited to Matties Grooten of 'Fake it or Leave it.' The post itself contains almost no substantive AI content beyond the observation that generative AI was used in the video's visual effects.",
-      "longlistAdditions": [],
+      "summary": "Simon Willison briefly covers the launch of Kimi K3.1 Pro from Moonshot AI on the Kimi API, noting its competitive benchmark scores against frontier models (Claude Opus 5.5, GPT-6 Astra, Gemini 4 Argon), its pricing, an upcoming open-weights release, and a 'Highspeed' inference variant. The post is primarily a link-blog entry with a hands-on test via the LLM tool.",
+      "longlistAdditions": [
+        {
+          "id": "kimi-k31-pro",
+          "label": "Kimi K3.1 Pro"
+        },
+        {
+          "id": "moonshot-ai",
+          "label": "Moonshot AI"
+        },
+        {
+          "id": "claude-fable-51",
+          "label": "Claude Fable 5.1"
+        },
+        {
+          "id": "llm-openai-endpoint",
+          "label": "LLM-Compatible OpenAI Endpoint"
+        }
+      ],
       "longlistUpdates": [],
       "rejections": [],
       "proposalsQueued": []
     },
     {
       "article": {
-        "title": "Meta’s AI could still scrape news sites, legal experts say",
-        "url": "https://www.theverge.com/tech/1017082/meta-terms-update-ai-training-concerns"
+        "title": "Jack Dorsey’s Block made an AI model that talks to you like an awkward new friend",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech"
       },
-      "summary": "Meta updated its business account terms to remove explicit 'training' language after publisher backlash, but legal experts say the revised language ('develop,' 'business product') is still broad enough to permit AI training on scraped news sites. The article hinges on the robots.txt file's legal standing and whether commercial terms can supersede it.",
+      "summary": "Block (Jack Dorsey's company) has released Dessa, a speech-to-speech AI model trained exclusively on human speech audio — no text — claiming it better captures emotion, timing, and natural conversational flow. The article highlights Dessa's unusual training approach, local-device inference capability, and framing around voice AI safety (detecting emotional distress in speech).",
       "longlistAdditions": [
         {
-          "id": "robots-txt",
-          "label": "Robots.txt"
+          "id": "speech-to-speech-model",
+          "label": "Speech-to-Speech Model"
         },
         {
-          "id": "web-scraping-ai",
-          "label": "Web Scraping for AI Training"
+          "id": "speech-native-training",
+          "label": "Speech-Native Training"
         },
         {
-          "id": "tos-ai-rights",
-          "label": "Terms-of-Service AI Rights"
+          "id": "affective-voice-safety",
+          "label": "Affective Voice Safety"
+        },
+        {
+          "id": "on-device-voice-ai",
+          "label": "On-Device Voice AI"
         }
       ],
       "longlistUpdates": [],
@@ -133,54 +168,54 @@
   ],
   "definitionReviews": [
     {
-      "id": "federal-preemption",
+      "id": "gemini",
       "status": "keep",
-      "reason": "No source material addresses federal preemption of state AI laws. Definition stands."
+      "reason": "No source material addresses the Gemini family definition. Existing definition remains accurate based on available evidence."
     },
     {
-      "id": "fine-tuning",
-      "status": "keep",
-      "reason": "The OlmoEarth excerpt mentions fine-tuning only in passing as a prior usage mode for satellite imagery, which is consistent with the existing definition and adds nothing that would warrant a revision."
-    },
-    {
-      "id": "forward-deployed-engineer",
+      "id": "gemini-35-flash",
       "status": "insufficient_evidence",
-      "reason": "An OpenAI page titled 'What FDE means at OpenAI' is referenced but the excerpt is empty, so no content is available to assess whether the definition needs updating."
+      "reason": "No source material mentions Gemini 3.5 Flash. Cannot confirm or update the definition."
     },
     {
-      "id": "foundation-model",
+      "id": "gemini-4-argon",
       "status": "keep",
-      "reason": "No source material addresses the definition of foundation models. Definition stands."
+      "reason": "Simon Willison's excerpt references Gemini 4 Argon in a benchmark table (Artificial Analysis score 53), confirming it exists as a frontier model. This is consistent with the existing definition and does not require changes."
     },
     {
-      "id": "frontier-ai-framework",
-      "status": "keep",
-      "reason": "No source material addresses frontier AI frameworks. Definition stands."
+      "id": "gemini-omni",
+      "status": "insufficient_evidence",
+      "reason": "No source material mentions Gemini Omni. Cannot confirm or update the definition."
     },
     {
-      "id": "frontier-firm",
-      "status": "keep",
-      "reason": "No source material addresses the frontier firm concept. Definition stands."
+      "id": "gemini-spark",
+      "status": "insufficient_evidence",
+      "reason": "No source material mentions Gemini Spark. Cannot confirm or update the definition."
     },
     {
-      "id": "frontier-model",
-      "status": "keep",
-      "reason": "No source material addresses frontier models. Definition stands."
+      "id": "gemma-4",
+      "status": "insufficient_evidence",
+      "reason": "No source material mentions Gemma 4. Cannot confirm or update the definition."
     },
     {
-      "id": "frontier-red-team",
+      "id": "genai-divide",
       "status": "keep",
-      "reason": "No source material addresses frontier red teams. Definition stands."
+      "reason": "No source material addresses the GenAI Divide. Definition remains as-is."
     },
     {
-      "id": "full-duplex-voice-ai",
+      "id": "general-availability",
       "status": "keep",
-      "reason": "No source material addresses full-duplex voice AI. Definition stands."
+      "reason": "No source material addresses General Availability. Definition remains as-is."
     },
     {
-      "id": "gdpval",
+      "id": "generative-ai",
       "status": "keep",
-      "reason": "No source material addresses the GDPval benchmark. Definition stands."
+      "reason": "No source material materially updates the definition of Generative AI."
+    },
+    {
+      "id": "generative-ui",
+      "status": "keep",
+      "reason": "No source material addresses Generative UI. Definition remains as-is."
     }
   ],
   "notes": []

@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-10-21T22:05:35.211Z",
-    "count": 5,
+    "generatedAt": "2026-10-23T21:02:21.088Z",
+    "count": 6,
     "note": "Lexi's email digests to Nicole. Written by build-digest.mjs; sentAt/messageId/thread written by the Worker (src/lexi-mail)."
   },
   "digests": [
@@ -392,6 +392,91 @@
       "waitingEarlier": 4,
       "thread": [],
       "subject": "1 item to review [Lexi D-20261021-f7e7]"
+    },
+    {
+      "id": "D-20261023-2dce",
+      "createdAt": "2026-10-23T21:02:21.088Z",
+      "autoApplyHours": 72,
+      "autoApplyAt": "2026-10-26T21:02:21.088Z",
+      "sentAt": null,
+      "messageId": null,
+      "items": [
+        {
+          "n": 1,
+          "proposalId": "134fa72d979276b8",
+          "action": "promote_to_graph",
+          "kind": "new_term",
+          "term": "GPT-6 Astra",
+          "termId": "gpt6-astra",
+          "definition": "OpenAI's flagship model released in the GPT-6 family, marketed as their most capable and aligned model to date. Benchmarked at near-saturation on ARC-AGI-3 (99.9%), FrontierMath Tier 4 (98%), and ExploitBench (100%), and positioned as state-of-the-art for computer use, software engineering, and professional work. Part of the GPT-6 family alongside GPT-6 Sol and GPT-6 Luna.",
+          "previousDefinition": null,
+          "sources": [
+            {
+              "label": "OpenAI Research: GPT-6 Astra: A new generation of intelligence",
+              "url": "https://openai.com/index/gpt-6-astra/"
+            },
+            {
+              "label": "Hugging Face Blog: Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox",
+              "url": "https://huggingface.co/blog/microsoft/thinkingbox-training"
+            }
+          ],
+          "nearest": {
+            "id": "gpt55",
+            "label": "GPT-5.5",
+            "relation": "sibling/successor model in OpenAI GPT line"
+          },
+          "rationale": "2 sources, 2 independent (openai.com + huggingface.co), 7d on longlist.",
+          "review": {
+            "verdict": "flag",
+            "summary": "The OpenAI page returned a 403, and the Hugging Face post only lists 'GPT-6 Astra' in a benchmark table, so the near-saturation benchmark figures (ARC-AGI-3 99.9%, FrontierMath T4 98%, ExploitBench 100%) and the 'GPT-6 Sol/Luna' family claim are unverified. HF actually lists 'GPT-5.6 Sol', which contradicts the family claim. 'Most capable and aligned' is vendor marketing copy and takes a side on the contested term alignment.",
+            "flags": [
+              "sources_do_not_support",
+              "too_promotional",
+              "contested_framing_missing",
+              "factual_error"
+            ]
+          },
+          "tier": "nicole",
+          "tierReason": "reviewer flagged it: sources do not support, too promotional, contested framing missing, factual error"
+        },
+        {
+          "n": 2,
+          "proposalId": "0337f2966018b5e0",
+          "action": "promote_to_graph",
+          "kind": "new_term",
+          "term": "GPT-6 Sol",
+          "termId": "gpt6-sol",
+          "definition": "A lower-cost tier of OpenAI's GPT-6 model family (alongside Luna), launched with claims of fewer mistakes but accompanied by concerns about reduced interpretability and limited external evaluation visibility.",
+          "previousDefinition": null,
+          "sources": [
+            {
+              "label": "Last Week in AI: LWiAI Podcast #258 - Opus 5.5, Sol and Luna, Muse, DeepSeek-V4.1-Flash, Xi",
+              "url": "https://lastweekin.ai/p/lwiai-podcast-258-opus-55-sol-and"
+            },
+            {
+              "label": "Simon Willison's Weblog: Today’s PHP Security Release, and How We’re Strengthening PHP Security",
+              "url": "https://simonwillison.net/2026/Oct/21/php-security-release/"
+            }
+          ],
+          "nearest": {
+            "id": "gpt55",
+            "label": "GPT-5.5",
+            "relation": "related (OpenAI GPT model family)"
+          },
+          "rationale": "2 sources, 2 independent (lastweekin.ai + simonwillison.net), 3d on longlist. Trusted: simonwillison.net.",
+          "review": {
+            "verdict": "flag",
+            "summary": "Only Last Week in AI supports this. The Simon Willison excerpt mentions 'GPT-5.6 Sol', not GPT-6 Sol, so it is not an independent second source. The definition also leans on one podcast's summary of the 'concerns', which is thin sourcing for a launch-week model tier.",
+            "flags": [
+              "sources_do_not_support"
+            ]
+          },
+          "tier": "nicole",
+          "tierReason": "reviewer flagged it: sources do not support"
+        }
+      ],
+      "waitingEarlier": 4,
+      "thread": []
     }
   ]
 }

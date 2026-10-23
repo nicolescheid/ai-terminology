@@ -1,6 +1,6 @@
 {
-  "lastRunAt": "2026-10-22T21:12:33.330Z",
-  "reviewCursor": 194,
+  "lastRunAt": "2026-10-23T21:00:16.038Z",
+  "reviewCursor": 204,
   "seenArticles": {
     "93a049d060bc295b": {
       "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/tpus-8t-8i-cloud-next/",
@@ -1363,6 +1363,42 @@
       "title": "Meta’s AI could still scrape news sites, legal experts say",
       "publishedAt": "2026-10-22T16:32:05-04:00",
       "seenAt": "2026-10-22T21:12:33.330Z"
+    },
+    "95eb6975ad245049": {
+      "url": "https://huggingface.co/blog/microsoft/thinkingbox-training",
+      "title": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox",
+      "publishedAt": "Thu, 22 Oct 2026 22:24:34 GMT",
+      "seenAt": "2026-10-23T21:00:16.038Z"
+    },
+    "298c8de07d18f423": {
+      "url": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
+      "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
+      "publishedAt": "Fri, 23 Oct 2026 17:00:00 GMT",
+      "seenAt": "2026-10-23T21:00:16.038Z"
+    },
+    "cf994644e0f354bf": {
+      "url": "https://stratechery.com/2026/a-new-era/",
+      "title": "2026.43: A New Era",
+      "publishedAt": "Fri, 23 Oct 2026 17:00:00 +0000",
+      "seenAt": "2026-10-23T21:00:16.038Z"
+    },
+    "48e2274fdf2ba9fe": {
+      "url": "https://openai.com/index/securing-our-frontier-model-training-environment",
+      "title": "Securing our frontier model training environment",
+      "publishedAt": "Fri, 23 Oct 2026 10:00:00 GMT",
+      "seenAt": "2026-10-23T21:00:16.038Z"
+    },
+    "2e71264ea893e482": {
+      "url": "https://simonwillison.net/2026/Oct/23/kimi-k31-pro/",
+      "title": "Introducing Kimi K3.1 Pro",
+      "publishedAt": "2026-10-23T19:40:54+00:00",
+      "seenAt": "2026-10-23T21:00:16.038Z"
+    },
+    "f490e9c8ed30cee3": {
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech",
+      "title": "Jack Dorsey’s Block made an AI model that talks to you like an awkward new friend",
+      "publishedAt": "2026-10-23T15:32:39-04:00",
+      "seenAt": "2026-10-23T21:00:16.038Z"
     }
   },
   "nodeReviews": {
@@ -1757,19 +1793,19 @@
       "reason": "No source material addresses frontier red teams. Definition stands."
     },
     "gemini": {
-      "lastReviewedAt": "2026-06-04T20:04:46.217Z",
-      "status": "insufficient_evidence",
-      "reason": "No source material provides updated specifics about Gemini's capabilities, context window, or integrations that would justify a rewrite. The existing definition is brief and no contradicting or enriching detail appears in the sources."
+      "lastReviewedAt": "2026-10-23T21:00:16.038Z",
+      "status": "keep",
+      "reason": "No source material addresses the Gemini family definition. Existing definition remains accurate based on available evidence."
     },
     "gemma-4": {
-      "lastReviewedAt": "2026-06-04T20:04:46.217Z",
-      "status": "keep",
-      "reason": "No source material references Gemma 4 or its specifications. Definition remains valid as written."
+      "lastReviewedAt": "2026-10-23T21:00:16.038Z",
+      "status": "insufficient_evidence",
+      "reason": "No source material mentions Gemma 4. Cannot confirm or update the definition."
     },
     "general-availability": {
-      "lastReviewedAt": "2026-06-04T20:04:46.217Z",
+      "lastReviewedAt": "2026-10-23T21:00:16.038Z",
       "status": "keep",
-      "reason": "No source material discusses general availability as a release concept. Definition remains valid as written."
+      "reason": "No source material addresses General Availability. Definition remains as-is."
     },
     "github-copilot": {
       "lastReviewedAt": "2026-06-05T19:53:16.670Z",
@@ -2645,6 +2681,41 @@
       "lastReviewedAt": "2026-10-22T21:12:33.330Z",
       "status": "keep",
       "reason": "No source material addresses the GDPval benchmark. Definition stands."
+    },
+    "gemini-35-flash": {
+      "lastReviewedAt": "2026-10-23T21:00:16.038Z",
+      "status": "insufficient_evidence",
+      "reason": "No source material mentions Gemini 3.5 Flash. Cannot confirm or update the definition."
+    },
+    "gemini-4-argon": {
+      "lastReviewedAt": "2026-10-23T21:00:16.038Z",
+      "status": "keep",
+      "reason": "Simon Willison's excerpt references Gemini 4 Argon in a benchmark table (Artificial Analysis score 53), confirming it exists as a frontier model. This is consistent with the existing definition and does not require changes."
+    },
+    "gemini-omni": {
+      "lastReviewedAt": "2026-10-23T21:00:16.038Z",
+      "status": "insufficient_evidence",
+      "reason": "No source material mentions Gemini Omni. Cannot confirm or update the definition."
+    },
+    "gemini-spark": {
+      "lastReviewedAt": "2026-10-23T21:00:16.038Z",
+      "status": "insufficient_evidence",
+      "reason": "No source material mentions Gemini Spark. Cannot confirm or update the definition."
+    },
+    "genai-divide": {
+      "lastReviewedAt": "2026-10-23T21:00:16.038Z",
+      "status": "keep",
+      "reason": "No source material addresses the GenAI Divide. Definition remains as-is."
+    },
+    "generative-ai": {
+      "lastReviewedAt": "2026-10-23T21:00:16.038Z",
+      "status": "keep",
+      "reason": "No source material materially updates the definition of Generative AI."
+    },
+    "generative-ui": {
+      "lastReviewedAt": "2026-10-23T21:00:16.038Z",
+      "status": "keep",
+      "reason": "No source material addresses Generative UI. Definition remains as-is."
     }
   }
 }
