@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-10-23T21:00:16.038Z",
-    "entryCount": 242,
+    "generatedAt": "2026-10-24T20:14:57.522Z",
+    "entryCount": 248,
     "note": "Lexi-managed Tier 2 longlist — terms under observation, awaiting evidence to support promotion to the graph (Tier 1)."
   },
   "entries": [
@@ -5125,12 +5125,20 @@
           "sourceLabel": "Stratechery",
           "publishedAt": "Fri, 23 Oct 2026 17:00:00 +0000",
           "firstSeen": "2026-10-23T21:00:16.038Z"
+        },
+        {
+          "url": "https://stratechery.com/2026/sharp-tech-on-video-netflix-angst-the-end-of-the-internet-and-metas-vr-glasses/",
+          "domain": "stratechery.com",
+          "title": "Sharp Tech on Video: Netflix Angst, the End of the Internet, and Meta’s VR Glasses",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Fri, 23 Oct 2026 10:00:00 +0000",
+          "firstSeen": "2026-10-24T20:14:57.522Z"
         }
       ],
-      "sourceCount": 8,
+      "sourceCount": 9,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-06-02T20:47:42.877Z",
-      "dateLastSeen": "2026-10-23T21:00:16.038Z",
+      "dateLastSeen": "2026-10-24T20:14:57.522Z",
       "sz": 14,
       "fullName": "Aggregator Theory (Stratechery)",
       "proposalReason": "A named analytic framework with significant ongoing use in AI business-model discussions; not yet in the graph and surfaces repeatedly in AI-era platform-strategy writing."
@@ -8148,12 +8156,20 @@
           "sourceLabel": "Simon Willison's Weblog",
           "publishedAt": "2026-10-21T16:25:16+00:00",
           "firstSeen": "2026-10-21T22:03:58.255Z"
+        },
+        {
+          "url": "https://simonwillison.net/2026/Oct/24/battledrones/",
+          "domain": "simonwillison.net",
+          "title": "Release: battledrones v14: Compass Rose, a four player map",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-10-24T03:59:57+00:00",
+          "firstSeen": "2026-10-24T20:14:57.522Z"
         }
       ],
-      "sourceCount": 2,
+      "sourceCount": 3,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-10-20T21:15:51.629Z",
-      "dateLastSeen": "2026-10-21T22:03:58.255Z",
+      "dateLastSeen": "2026-10-24T20:14:57.522Z",
       "sz": 14,
       "fullName": "Audio-Based Game State Synchronization (Multiplayer via Sound)",
       "proposalReason": "A novel and concrete technique worth tracking as agentic and local-first applications explore alternatives to cloud-brokered communication channels."
@@ -9461,12 +9477,20 @@
           "sourceLabel": "Simon Willison's Weblog",
           "publishedAt": "2026-10-23T19:40:54+00:00",
           "firstSeen": "2026-10-23T21:00:16.038Z"
+        },
+        {
+          "url": "https://simonwillison.net/2026/Oct/23/quick-study-painter/",
+          "domain": "simonwillison.net",
+          "title": "Tool: Quick Study",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-10-23T21:35:13+00:00",
+          "firstSeen": "2026-10-24T20:14:57.522Z"
         }
       ],
-      "sourceCount": 1,
+      "sourceCount": 2,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-10-23T21:00:16.038Z",
-      "dateLastSeen": "2026-10-23T21:00:16.038Z",
+      "dateLastSeen": "2026-10-24T20:14:57.522Z",
       "sz": 14,
       "fullName": "Claude Fable 5.1 (Anthropic)",
       "nodeType": "product",
@@ -9630,6 +9654,202 @@
       "sz": 14,
       "fullName": "On-Device Voice AI (Local Speech Model Inference)",
       "proposalReason": "A concrete instantiation of edge AI in the voice domain with privacy and latency implications worth distinguishing from generic edge-AI framing."
+    },
+    {
+      "id": "literature-initiated-pivot",
+      "label": "Literature-Initiated Pivot",
+      "workingDef": "A research workflow concept coined by Ai2 and collaborators at the University of Pennsylvania, denoting a change in research direction that is prompted by encountering prior work. Two subtypes are identified: differentiating an idea from existing work (establishing novelty) and aligning an idea with existing work (building on it). LitPivot operationalises the concept as a structured tool workflow, making explicit the steps of selecting literature to assess a proposal, using that evidence to revise it, and reconsidering which papers matter as the idea evolves.",
+      "clusters": [
+        "tools",
+        "human"
+      ],
+      "suggestedRels": [
+        "deep-research",
+        "agentic-search",
+        "context-engineering",
+        "rag"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/allenai/litpivot",
+          "domain": "huggingface.co",
+          "title": "LitPivot: Developing research ideas through dynamic contextualization within the literature landscape",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Fri, 23 Oct 2026 16:15:50 GMT",
+          "firstSeen": "2026-10-24T20:14:57.522Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-24T20:14:57.522Z",
+      "dateLastSeen": "2026-10-24T20:14:57.522Z",
+      "sz": 14,
+      "fullName": "Literature-Initiated Pivot (LitPivot)",
+      "proposalReason": "A formally named concept for a recognisable but previously unnamed research activity; likely to recur as AI writing and ideation tools proliferate."
+    },
+    {
+      "id": "facet-highlighting",
+      "label": "Facet Highlighting",
+      "workingDef": "A technique used in LitPivot in which an articulated research idea is segmented into distinct semantic facets — problem statement, proposed contribution, and evaluation plan — each of which is highlighted and addressed separately. Literature retrieval, grouping, and critique are scoped to the facet currently being edited, allowing different bodies of prior work to be applied to different parts of the same proposal.",
+      "clusters": [
+        "tools",
+        "context"
+      ],
+      "suggestedRels": [
+        "context-engineering",
+        "structured-output",
+        "task-decomposition",
+        "grounding"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/allenai/litpivot",
+          "domain": "huggingface.co",
+          "title": "LitPivot: Developing research ideas through dynamic contextualization within the literature landscape",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Fri, 23 Oct 2026 16:15:50 GMT",
+          "firstSeen": "2026-10-24T20:14:57.522Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-24T20:14:57.522Z",
+      "dateLastSeen": "2026-10-24T20:14:57.522Z",
+      "sz": 14,
+      "fullName": "Facet Highlighting (Research Proposal Segmentation)",
+      "proposalReason": "A novel interaction design pattern for AI-assisted writing and research that segments a document by semantic role rather than position — potentially generalisable beyond academic writing."
+    },
+    {
+      "id": "scientific-ideation-assistant",
+      "label": "Scientific Ideation Assistant",
+      "workingDef": "A class of AI-assisted tool designed to support the early stages of research idea formulation — including generating, critiquing, grounding, and revising hypotheses or research proposals in relation to existing literature. Distinguished from general writing assistants by its integration of retrieval, evidence-linking, and structured assessment against prior work. LitPivot, Asta (Theorizer, AutoDiscovery), and HARPA are examples from Ai2's portfolio.",
+      "clusters": [
+        "tools",
+        "human"
+      ],
+      "suggestedRels": [
+        "deep-research",
+        "agentic-search",
+        "rag",
+        "agentic-rag",
+        "grounding",
+        "evals"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/allenai/litpivot",
+          "domain": "huggingface.co",
+          "title": "LitPivot: Developing research ideas through dynamic contextualization within the literature landscape",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Fri, 23 Oct 2026 16:15:50 GMT",
+          "firstSeen": "2026-10-24T20:14:57.522Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-24T20:14:57.522Z",
+      "dateLastSeen": "2026-10-24T20:14:57.522Z",
+      "sz": 14,
+      "fullName": "Scientific Ideation Assistant (AI-Aided Research Idea Development)",
+      "proposalReason": "An emerging product category with distinct design requirements; worth tracking as AI lab tools increasingly target the research pipeline."
+    },
+    {
+      "id": "hypothesis-generation",
+      "label": "Hypothesis Generation",
+      "workingDef": "The use of AI models to propose testable scientific hypotheses, either from synthesis of existing literature or from structured analysis of experimental data. Distinct from general text generation in that outputs are expected to be novel, falsifiable, and grounded in evidence. Mentioned in the LitPivot article as a capability of Ai2's Asta system (AutoDiscovery component); increasingly a distinct evaluation target for frontier models in scientific domains.",
+      "clusters": [
+        "tools",
+        "models"
+      ],
+      "suggestedRels": [
+        "deep-research",
+        "grounding",
+        "evals",
+        "synthetic-data",
+        "llm-as-a-judge"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/allenai/litpivot",
+          "domain": "huggingface.co",
+          "title": "LitPivot: Developing research ideas through dynamic contextualization within the literature landscape",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Fri, 23 Oct 2026 16:15:50 GMT",
+          "firstSeen": "2026-10-24T20:14:57.522Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-24T20:14:57.522Z",
+      "dateLastSeen": "2026-10-24T20:14:57.522Z",
+      "sz": 14,
+      "fullName": "Hypothesis Generation (AI-Assisted Scientific Discovery)",
+      "proposalReason": "As AI tools move from literature search into active idea generation, hypothesis generation is emerging as a distinct capability category with its own evaluation criteria — worth tracking as it appears in both product and research contexts."
+    },
+    {
+      "id": "ai-deceptive-advertising-act",
+      "label": "AI Deceptive Advertising Act",
+      "workingDef": "Pennsylvania legislation signed into law in October 2026 requiring that any advertisement — still image, video, audio, or text — that has been 'significantly modified or generated by artificial intelligence' carry a disclosure label in the same format as the ad itself. The law applies regardless of where the ad was created, meaning out-of-state advertisers airing content in Pennsylvania must comply. Key ambiguities include what constitutes 'significant modification,' what qualifies as a 'false consumer perception,' and carve-outs for parody, satire, commentary, criticism, and 'evidently fictional' content. One of the first US state laws specifically targeting AI-generated commercial advertising.",
+      "clusters": [
+        "critical",
+        "landscape"
+      ],
+      "suggestedRels": [
+        "ai-content-labelling",
+        "watermarking",
+        "deepfake",
+        "ai-washing"
+      ],
+      "sources": [
+        {
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1018187/pennsylvania-ai-deceptive-advertising-act",
+          "domain": "theverge.com",
+          "title": "Pennsylvania will require labels on AI-generated ads",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-10-24T14:32:21-04:00",
+          "firstSeen": "2026-10-24T20:14:57.522Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-24T20:14:57.522Z",
+      "dateLastSeen": "2026-10-24T20:14:57.522Z",
+      "sz": 14,
+      "fullName": "AI Deceptive Advertising Act (Pennsylvania)",
+      "proposalReason": "Tracks a new US state-level regulatory category — AI-generated advertising disclosure — with direct implications for how AI content labelling law develops at the sub-federal level."
+    },
+    {
+      "id": "ai-generated-ad-disclosure",
+      "label": "AI-Generated Ad Disclosure",
+      "workingDef": "An emerging regulatory requirement, exemplified by Pennsylvania's AI Deceptive Advertising Act (2026), mandating that advertisements produced or substantially altered using AI include consumer-facing labels. Distinct from broader AI content labelling frameworks (such as EU AI Act Art. 50) in that it is targeted specifically at commercial advertising. The definition of 'significantly modified' and enforcement triggers remain contested across legislative efforts, with industry observers noting that carve-outs for parody and fictional content create wide interpretive latitude.",
+      "clusters": [
+        "critical",
+        "landscape"
+      ],
+      "suggestedRels": [
+        "ai-content-labelling",
+        "watermarking",
+        "ai-washing",
+        "deepfake",
+        "federal-preemption"
+      ],
+      "sources": [
+        {
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1018187/pennsylvania-ai-deceptive-advertising-act",
+          "domain": "theverge.com",
+          "title": "Pennsylvania will require labels on AI-generated ads",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-10-24T14:32:21-04:00",
+          "firstSeen": "2026-10-24T20:14:57.522Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-24T20:14:57.522Z",
+      "dateLastSeen": "2026-10-24T20:14:57.522Z",
+      "sz": 14,
+      "fullName": "AI-Generated Ad Disclosure (State-Level Advertising Law)",
+      "proposalReason": "Names a distinct regulatory concept — AI disclosure requirements scoped specifically to advertising — that is likely to accumulate more state-level instances and is worth tracking separately from general AI content labelling."
     }
   ]
 }

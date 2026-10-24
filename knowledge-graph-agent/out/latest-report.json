@@ -1,221 +1,227 @@
 {
-  "generatedAt": "2026-10-23T21:00:16.038Z",
+  "generatedAt": "2026-10-24T20:14:57.522Z",
   "model": "claude-sonnet-4-6",
   "sourcesConfigured": 15,
   "articlesConsidered": [
     {
-      "id": "95eb6975ad245049",
+      "id": "d5dfb55b012918e7",
       "source": "Hugging Face Blog",
-      "title": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox",
-      "url": "https://huggingface.co/blog/microsoft/thinkingbox-training",
-      "publishedAt": "Thu, 22 Oct 2026 22:24:34 GMT"
+      "title": "LitPivot: Developing research ideas through dynamic contextualization within the literature landscape",
+      "url": "https://huggingface.co/blog/allenai/litpivot",
+      "publishedAt": "Fri, 23 Oct 2026 16:15:50 GMT"
     },
     {
-      "id": "298c8de07d18f423",
-      "source": "OpenAI News",
-      "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
-      "url": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
-      "publishedAt": "Fri, 23 Oct 2026 17:00:00 GMT"
-    },
-    {
-      "id": "cf994644e0f354bf",
+      "id": "a50786f3965eda60",
       "source": "Stratechery",
-      "title": "2026.43: A New Era",
-      "url": "https://stratechery.com/2026/a-new-era/",
-      "publishedAt": "Fri, 23 Oct 2026 17:00:00 +0000"
+      "title": "Sharp Tech on Video: Netflix Angst, the End of the Internet, and Meta’s VR Glasses",
+      "url": "https://stratechery.com/2026/sharp-tech-on-video-netflix-angst-the-end-of-the-internet-and-metas-vr-glasses/",
+      "publishedAt": "Fri, 23 Oct 2026 10:00:00 +0000"
     },
     {
-      "id": "48e2274fdf2ba9fe",
+      "id": "15c1f8ef7a582594",
       "source": "OpenAI News",
-      "title": "Securing our frontier model training environment",
-      "url": "https://openai.com/index/securing-our-frontier-model-training-environment",
-      "publishedAt": "Fri, 23 Oct 2026 10:00:00 GMT"
+      "title": "OpenAI and Poland’s NASK partner to advance AI safety and security",
+      "url": "https://openai.com/index/openai-nask-ai-safety-security-partnership",
+      "publishedAt": "Fri, 23 Oct 2026 00:00:00 GMT"
     },
     {
-      "id": "2e71264ea893e482",
-      "source": "Simon Willison's Weblog",
-      "title": "Introducing Kimi K3.1 Pro",
-      "url": "https://simonwillison.net/2026/Oct/23/kimi-k31-pro/",
-      "publishedAt": "2026-10-23T19:40:54+00:00"
-    },
-    {
-      "id": "f490e9c8ed30cee3",
+      "id": "09a5dda451583962",
       "source": "The Verge — AI",
-      "title": "Jack Dorsey’s Block made an AI model that talks to you like an awkward new friend",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech",
-      "publishedAt": "2026-10-23T15:32:39-04:00"
+      "title": "Pennsylvania will require labels on AI-generated ads",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1018187/pennsylvania-ai-deceptive-advertising-act",
+      "publishedAt": "2026-10-24T14:32:21-04:00"
+    },
+    {
+      "id": "3812b4d599bb7adb",
+      "source": "Simon Willison's Weblog",
+      "title": "Release: battledrones v14: Compass Rose, a four player map",
+      "url": "https://simonwillison.net/2026/Oct/24/battledrones/",
+      "publishedAt": "2026-10-24T03:59:57+00:00"
+    },
+    {
+      "id": "ece6c921b830e7e3",
+      "source": "Simon Willison's Weblog",
+      "title": "Tool: Quick Study",
+      "url": "https://simonwillison.net/2026/Oct/23/quick-study-painter/",
+      "publishedAt": "2026-10-23T21:35:13+00:00"
     }
   ],
   "harvestedTerms": [
     {
       "article": {
-        "title": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox",
-        "url": "https://huggingface.co/blog/microsoft/thinkingbox-training"
+        "title": "LitPivot: Developing research ideas through dynamic contextualization within the literature landscape",
+        "url": "https://huggingface.co/blog/allenai/litpivot"
       },
-      "summary": "Microsoft/Hugging Face post-training paper introducing ThinkingBox: a benchmark and RL training framework that converts executable database-state checks into GRPO rewards for agent reliability. Key technical contributions are 'offline policy-relative difficulty' for training pool selection, and a pass@20 vs pass@1 distinction that surfaces 'dependability' as a production-relevant metric distinct from headline accuracy.",
+      "summary": "LitPivot is a research tool from Allen Institute for AI (Ai2) that helps researchers navigate literature-initiated pivots — changes in research direction prompted by reading prior work. The system segments research proposals into facets (problem, contribution, evaluation), retrieves and groups relevant papers per facet, offers critique supported by excerpts, and suggests targeted revisions. A study with 17 researchers showed proposals developed with LitPivot were rated better grounded in literature than those developed with standard AI chat tools.",
       "longlistAdditions": [
         {
-          "id": "offline-policy-relative-difficulty",
-          "label": "Offline Policy-Relative Difficulty"
+          "id": "literature-initiated-pivot",
+          "label": "Literature-Initiated Pivot"
         },
         {
-          "id": "executable-reward-signal",
-          "label": "Executable Reward Signal"
+          "id": "facet-highlighting",
+          "label": "Facet Highlighting"
         },
         {
-          "id": "dependability-coverage-tradeoff",
-          "label": "Dependability vs. Coverage Tradeoff"
-        }
-      ],
-      "longlistUpdates": [
+          "id": "scientific-ideation-assistant",
+          "label": "Scientific Ideation Assistant"
+        },
         {
-          "id": "gpt6-astra",
-          "label": "GPT-6 Astra",
-          "sourceAdded": true,
-          "sourceCount": 2,
-          "independentSourceCount": 2
+          "id": "hypothesis-generation",
+          "label": "Hypothesis Generation"
         }
       ],
+      "longlistUpdates": [],
       "rejections": [],
-      "proposalsQueued": [],
-      "mustReadFlagged": {
-        "priority": 2,
-        "reason": "A rare paper that closes the loop between evaluation and training: the same executable database-state checker used to grade agents is repurposed as the RL reward, and the results are evaluated on a held-out benchmark. The 'dependability vs. coverage' framing — and the concrete evidence that headline accuracy is a poor proxy for production reliability — is a substantive contribution to how we should think about model selection for agentic tasks."
-      }
+      "proposalsQueued": []
     },
     {
       "article": {
-        "title": "2026.43: A New Era",
-        "url": "https://stratechery.com/2026/a-new-era/"
+        "title": "Sharp Tech on Video: Netflix Angst, the End of the Internet, and Meta’s VR Glasses",
+        "url": "https://stratechery.com/2026/sharp-tech-on-video-netflix-angst-the-end-of-the-internet-and-metas-vr-glasses/"
       },
-      "summary": "A weekly digest/newsletter post from Stratechery covering: a new Stripe sponsorship, Apple-Meta edge AI partnership, Netflix troubles, and media commentary. The article is primarily a roundup/digest format with no substantive AI terminology development. It references Anthropic alignment tangentially in a podcast title and mentions Meta's open-source model ('Muse Spark Open') and Apple+Meta local AI running. No deep conceptual AI content is present.",
+      "summary": "A Stratechery podcast episode (Sharp Tech) covering Netflix, 'the end of the internet,' Meta VR glasses, and Anthropic alignment. The article is essentially a paywalled content page with minimal extractable substance — the excerpt is predominantly subscription/navigation boilerplate. The only AI-adjacent signals visible are the episode title referencing 'Anthropic Alignment' and 'The End of the Internet,' the latter likely touching on dead internet/zombie internet themes. Very little terminological content is accessible.",
       "longlistAdditions": [],
       "longlistUpdates": [
-        {
-          "id": "muse-spark-open",
-          "label": "Muse Spark Open",
-          "sourceAdded": true,
-          "sourceCount": 2,
-          "independentSourceCount": 1
-        },
         {
           "id": "aggregator-theory",
           "label": "Aggregator Theory",
           "sourceAdded": true,
-          "sourceCount": 8,
+          "sourceCount": 9,
           "independentSourceCount": 1
         }
       ],
+      "rejections": [
+        {
+          "label": "Dead Internet Theory",
+          "reason": "already in graph (label match)"
+        }
+      ],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "Pennsylvania will require labels on AI-generated ads",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1018187/pennsylvania-ai-deceptive-advertising-act"
+      },
+      "summary": "Pennsylvania's Governor signed the AI Deceptive Advertising Act, requiring labels on AI-generated or significantly modified advertising content across all formats. The law has notable loopholes around what constitutes 'significant modification' and 'false consumer perception,' and includes carve-outs for parody and evidently fictional content.",
+      "longlistAdditions": [
+        {
+          "id": "ai-deceptive-advertising-act",
+          "label": "AI Deceptive Advertising Act"
+        },
+        {
+          "id": "ai-generated-ad-disclosure",
+          "label": "AI-Generated Ad Disclosure"
+        }
+      ],
+      "longlistUpdates": [],
       "rejections": [],
       "proposalsQueued": []
     },
     {
       "article": {
-        "title": "Introducing Kimi K3.1 Pro",
-        "url": "https://simonwillison.net/2026/Oct/23/kimi-k31-pro/"
+        "title": "Release: battledrones v14: Compass Rose, a four player map",
+        "url": "https://simonwillison.net/2026/Oct/24/battledrones/"
       },
-      "summary": "Simon Willison briefly covers the launch of Kimi K3.1 Pro from Moonshot AI on the Kimi API, noting its competitive benchmark scores against frontier models (Claude Opus 5.5, GPT-6 Astra, Gemini 4 Argon), its pricing, an upcoming open-weights release, and a 'Highspeed' inference variant. The post is primarily a link-blog entry with a hands-on test via the LLM tool.",
-      "longlistAdditions": [
+      "summary": "Simon Willison's brief release note on Battledrones v14 describes using Claude Opus 5.5 to add a four-player map with rotational symmetry and WebSocket multiplayer to his vibe-coded mobile web RTS game. The post is primarily a developer diary entry with minimal terminological substance.",
+      "longlistAdditions": [],
+      "longlistUpdates": [
         {
-          "id": "kimi-k31-pro",
-          "label": "Kimi K3.1 Pro"
-        },
+          "id": "audio-state-sync",
+          "label": "Audio-Based State Synchronization",
+          "sourceAdded": true,
+          "sourceCount": 3,
+          "independentSourceCount": 1
+        }
+      ],
+      "rejections": [
         {
-          "id": "moonshot-ai",
-          "label": "Moonshot AI"
-        },
+          "label": "Claude Opus 5.5",
+          "reason": "already in graph (label match)"
+        }
+      ],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "Tool: Quick Study",
+        "url": "https://simonwillison.net/2026/Oct/23/quick-study-painter/"
+      },
+      "summary": "Simon Willison's brief post documents a quick experiment using Claude Opus 5.5 to build a canvas-based photo-painting artifact using Sobel edge detection, with no external libraries. It also references a prior P5.js watercolor experiment with Claude Fable. Minimal conceptual content beyond demonstrating vibe-coded artifact generation.",
+      "longlistAdditions": [],
+      "longlistUpdates": [
         {
           "id": "claude-fable-51",
-          "label": "Claude Fable 5.1"
-        },
-        {
-          "id": "llm-openai-endpoint",
-          "label": "LLM-Compatible OpenAI Endpoint"
+          "label": "Claude Fable 5.1",
+          "sourceAdded": true,
+          "sourceCount": 2,
+          "independentSourceCount": 1
         }
       ],
-      "longlistUpdates": [],
-      "rejections": [],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "Jack Dorsey’s Block made an AI model that talks to you like an awkward new friend",
-        "url": "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech"
-      },
-      "summary": "Block (Jack Dorsey's company) has released Dessa, a speech-to-speech AI model trained exclusively on human speech audio — no text — claiming it better captures emotion, timing, and natural conversational flow. The article highlights Dessa's unusual training approach, local-device inference capability, and framing around voice AI safety (detecting emotional distress in speech).",
-      "longlistAdditions": [
+      "rejections": [
         {
-          "id": "speech-to-speech-model",
-          "label": "Speech-to-Speech Model"
+          "label": "Claude Opus 5.5",
+          "reason": "already in graph (label match)"
         },
         {
-          "id": "speech-native-training",
-          "label": "Speech-Native Training"
-        },
-        {
-          "id": "affective-voice-safety",
-          "label": "Affective Voice Safety"
-        },
-        {
-          "id": "on-device-voice-ai",
-          "label": "On-Device Voice AI"
+          "label": "Artifact",
+          "reason": "already in graph (label match)"
         }
       ],
-      "longlistUpdates": [],
-      "rejections": [],
       "proposalsQueued": []
     }
   ],
   "definitionReviews": [
     {
-      "id": "gemini",
+      "id": "github-copilot",
       "status": "keep",
-      "reason": "No source material addresses the Gemini family definition. Existing definition remains accurate based on available evidence."
+      "reason": "No source material touches GitHub Copilot. Definition remains accurate."
     },
     {
-      "id": "gemini-35-flash",
+      "id": "goal-drift",
+      "status": "keep",
+      "reason": "No source material addresses goal drift. Definition remains sound."
+    },
+    {
+      "id": "google-ai-mode",
+      "status": "keep",
+      "reason": "No source material covers Google AI Mode. Definition remains accurate."
+    },
+    {
+      "id": "google-antigravity",
+      "status": "keep",
+      "reason": "No source material references Google Antigravity. Definition remains as-is."
+    },
+    {
+      "id": "google-co",
+      "status": "keep",
+      "reason": "No source material updates Google/DeepMind's profile. Definition remains accurate."
+    },
+    {
+      "id": "gpai-code-of-practice",
+      "status": "keep",
+      "reason": "No source material covers the GPAI Code of Practice. Definition remains accurate."
+    },
+    {
+      "id": "gpai-model",
+      "status": "keep",
+      "reason": "No source material addresses GPAI model definitions under the EU AI Act. Definition remains accurate."
+    },
+    {
+      "id": "gpt54",
       "status": "insufficient_evidence",
-      "reason": "No source material mentions Gemini 3.5 Flash. Cannot confirm or update the definition."
+      "reason": "No source material confirms or contradicts details about GPT-5.4. Cannot verify claims about release sequence, variants, or context window from these sources."
     },
     {
-      "id": "gemini-4-argon",
-      "status": "keep",
-      "reason": "Simon Willison's excerpt references Gemini 4 Argon in a benchmark table (Artificial Analysis score 53), confirming it exists as a frontier model. This is consistent with the existing definition and does not require changes."
-    },
-    {
-      "id": "gemini-omni",
+      "id": "gpt55",
       "status": "insufficient_evidence",
-      "reason": "No source material mentions Gemini Omni. Cannot confirm or update the definition."
+      "reason": "No source material confirms or contradicts details about GPT-5.5. Cannot verify claims about its release or positioning from these sources."
     },
     {
-      "id": "gemini-spark",
-      "status": "insufficient_evidence",
-      "reason": "No source material mentions Gemini Spark. Cannot confirm or update the definition."
-    },
-    {
-      "id": "gemma-4",
-      "status": "insufficient_evidence",
-      "reason": "No source material mentions Gemma 4. Cannot confirm or update the definition."
-    },
-    {
-      "id": "genai-divide",
+      "id": "graphrag",
       "status": "keep",
-      "reason": "No source material addresses the GenAI Divide. Definition remains as-is."
-    },
-    {
-      "id": "general-availability",
-      "status": "keep",
-      "reason": "No source material addresses General Availability. Definition remains as-is."
-    },
-    {
-      "id": "generative-ai",
-      "status": "keep",
-      "reason": "No source material materially updates the definition of Generative AI."
-    },
-    {
-      "id": "generative-ui",
-      "status": "keep",
-      "reason": "No source material addresses Generative UI. Definition remains as-is."
+      "reason": "No source material covers GraphRAG. Definition remains accurate."
     }
   ],
   "notes": []

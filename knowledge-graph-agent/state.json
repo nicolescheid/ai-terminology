@@ -1,6 +1,6 @@
 {
-  "lastRunAt": "2026-10-23T21:00:16.038Z",
-  "reviewCursor": 204,
+  "lastRunAt": "2026-10-24T20:14:57.522Z",
+  "reviewCursor": 214,
   "seenArticles": {
     "93a049d060bc295b": {
       "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/tpus-8t-8i-cloud-next/",
@@ -1399,6 +1399,42 @@
       "title": "Jack Dorsey’s Block made an AI model that talks to you like an awkward new friend",
       "publishedAt": "2026-10-23T15:32:39-04:00",
       "seenAt": "2026-10-23T21:00:16.038Z"
+    },
+    "d5dfb55b012918e7": {
+      "url": "https://huggingface.co/blog/allenai/litpivot",
+      "title": "LitPivot: Developing research ideas through dynamic contextualization within the literature landscape",
+      "publishedAt": "Fri, 23 Oct 2026 16:15:50 GMT",
+      "seenAt": "2026-10-24T20:14:57.522Z"
+    },
+    "a50786f3965eda60": {
+      "url": "https://stratechery.com/2026/sharp-tech-on-video-netflix-angst-the-end-of-the-internet-and-metas-vr-glasses/",
+      "title": "Sharp Tech on Video: Netflix Angst, the End of the Internet, and Meta’s VR Glasses",
+      "publishedAt": "Fri, 23 Oct 2026 10:00:00 +0000",
+      "seenAt": "2026-10-24T20:14:57.522Z"
+    },
+    "15c1f8ef7a582594": {
+      "url": "https://openai.com/index/openai-nask-ai-safety-security-partnership",
+      "title": "OpenAI and Poland’s NASK partner to advance AI safety and security",
+      "publishedAt": "Fri, 23 Oct 2026 00:00:00 GMT",
+      "seenAt": "2026-10-24T20:14:57.522Z"
+    },
+    "09a5dda451583962": {
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1018187/pennsylvania-ai-deceptive-advertising-act",
+      "title": "Pennsylvania will require labels on AI-generated ads",
+      "publishedAt": "2026-10-24T14:32:21-04:00",
+      "seenAt": "2026-10-24T20:14:57.522Z"
+    },
+    "3812b4d599bb7adb": {
+      "url": "https://simonwillison.net/2026/Oct/24/battledrones/",
+      "title": "Release: battledrones v14: Compass Rose, a four player map",
+      "publishedAt": "2026-10-24T03:59:57+00:00",
+      "seenAt": "2026-10-24T20:14:57.522Z"
+    },
+    "ece6c921b830e7e3": {
+      "url": "https://simonwillison.net/2026/Oct/23/quick-study-painter/",
+      "title": "Tool: Quick Study",
+      "publishedAt": "2026-10-23T21:35:13+00:00",
+      "seenAt": "2026-10-24T20:14:57.522Z"
     }
   },
   "nodeReviews": {
@@ -1808,24 +1844,24 @@
       "reason": "No source material addresses General Availability. Definition remains as-is."
     },
     "github-copilot": {
-      "lastReviewedAt": "2026-06-05T19:53:16.670Z",
+      "lastReviewedAt": "2026-10-24T20:14:57.522Z",
       "status": "keep",
-      "reason": "No source material addresses GitHub Copilot. Existing definition is stable and accurate."
+      "reason": "No source material touches GitHub Copilot. Definition remains accurate."
     },
     "goal-drift": {
-      "lastReviewedAt": "2026-06-05T19:53:16.670Z",
+      "lastReviewedAt": "2026-10-24T20:14:57.522Z",
       "status": "keep",
-      "reason": "No source material addresses goal drift. Conceptual definition remains sound."
+      "reason": "No source material addresses goal drift. Definition remains sound."
     },
     "google-co": {
-      "lastReviewedAt": "2026-06-05T19:53:16.670Z",
+      "lastReviewedAt": "2026-10-24T20:14:57.522Z",
       "status": "keep",
-      "reason": "The Google AI Blog source confirms Google DeepMind and Gemini products remain active, consistent with the existing definition. No material updates required."
+      "reason": "No source material updates Google/DeepMind's profile. Definition remains accurate."
     },
     "gpt54": {
-      "lastReviewedAt": "2026-06-05T19:53:16.670Z",
-      "status": "keep",
-      "reason": "The EVA-Bench source explicitly lists 'OpenAI GPT-5.4' as one of three frontier models used for benchmark validation, corroborating its existence. The existing definition is consistent with this evidence."
+      "lastReviewedAt": "2026-10-24T20:14:57.522Z",
+      "status": "insufficient_evidence",
+      "reason": "No source material confirms or contradicts details about GPT-5.4. Cannot verify claims about release sequence, variants, or context window from these sources."
     },
     "grok": {
       "lastReviewedAt": "2026-06-05T19:53:16.670Z",
@@ -2433,9 +2469,9 @@
       "reason": "No source material references Claude Design or Anthropic Labs design products. Cannot verify or update this definition."
     },
     "gpt55": {
-      "lastReviewedAt": "2026-06-05T19:53:16.670Z",
+      "lastReviewedAt": "2026-10-24T20:14:57.522Z",
       "status": "insufficient_evidence",
-      "reason": "No source material substantiates details about GPT-5.5 beyond what is already in the sparse existing definition. Cannot justify a rewrite or keep with confidence."
+      "reason": "No source material confirms or contradicts details about GPT-5.5. Cannot verify claims about its release or positioning from these sources."
     },
     "circular-deals": {
       "lastReviewedAt": "2026-10-16T07:47:38.193Z",
@@ -2716,6 +2752,31 @@
       "lastReviewedAt": "2026-10-23T21:00:16.038Z",
       "status": "keep",
       "reason": "No source material addresses Generative UI. Definition remains as-is."
+    },
+    "google-ai-mode": {
+      "lastReviewedAt": "2026-10-24T20:14:57.522Z",
+      "status": "keep",
+      "reason": "No source material covers Google AI Mode. Definition remains accurate."
+    },
+    "google-antigravity": {
+      "lastReviewedAt": "2026-10-24T20:14:57.522Z",
+      "status": "keep",
+      "reason": "No source material references Google Antigravity. Definition remains as-is."
+    },
+    "gpai-code-of-practice": {
+      "lastReviewedAt": "2026-10-24T20:14:57.522Z",
+      "status": "keep",
+      "reason": "No source material covers the GPAI Code of Practice. Definition remains accurate."
+    },
+    "gpai-model": {
+      "lastReviewedAt": "2026-10-24T20:14:57.522Z",
+      "status": "keep",
+      "reason": "No source material addresses GPAI model definitions under the EU AI Act. Definition remains accurate."
+    },
+    "graphrag": {
+      "lastReviewedAt": "2026-10-24T20:14:57.522Z",
+      "status": "keep",
+      "reason": "No source material covers GraphRAG. Definition remains accurate."
     }
   }
 }
