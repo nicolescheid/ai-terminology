@@ -1,6 +1,6 @@
 {
-  "lastRunAt": "2026-10-24T20:14:57.522Z",
-  "reviewCursor": 214,
+  "lastRunAt": "2026-10-25T20:23:29.996Z",
+  "reviewCursor": 224,
   "seenArticles": {
     "93a049d060bc295b": {
       "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/tpus-8t-8i-cloud-next/",
@@ -1435,6 +1435,30 @@
       "title": "Tool: Quick Study",
       "publishedAt": "2026-10-23T21:35:13+00:00",
       "seenAt": "2026-10-24T20:14:57.522Z"
+    },
+    "6430909168b58685": {
+      "url": "https://huggingface.co/blog/torch-neuronx-model-support",
+      "title": "Does Your Model Run on AWS Trainium? Look It Up",
+      "publishedAt": "Fri, 23 Oct 2026 00:00:00 GMT",
+      "seenAt": "2026-10-25T20:23:29.996Z"
+    },
+    "b366ba776fde8cd4": {
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1018217/reddit-opensource-ai-ban",
+      "title": "r/opensource just banned AI, non-English speakers, and more",
+      "publishedAt": "2026-10-25T09:25:32-04:00",
+      "seenAt": "2026-10-25T20:23:29.996Z"
+    },
+    "99c99157c7fa1579": {
+      "url": "https://www.theverge.com/column/1017983/google-ai-search-online-publishing",
+      "title": "Google’s AI search changes upended online publishing",
+      "publishedAt": "2026-10-25T08:00:00-04:00",
+      "seenAt": "2026-10-25T20:23:29.996Z"
+    },
+    "0509c80e85fbace7": {
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1018205/blue-planet-iii-authentic-organic-ai",
+      "title": "Blue Planet III is keeping the rough edges in the age of AI",
+      "publishedAt": "2026-10-24T17:29:12-04:00",
+      "seenAt": "2026-10-25T20:23:29.996Z"
     }
   },
   "nodeReviews": {
@@ -1864,44 +1888,44 @@
       "reason": "No source material confirms or contradicts details about GPT-5.4. Cannot verify claims about release sequence, variants, or context window from these sources."
     },
     "grok": {
-      "lastReviewedAt": "2026-06-05T19:53:16.670Z",
-      "status": "insufficient_evidence",
-      "reason": "No source material corroborates 'Grok 4.20' or the four-agent parallel processing architecture described. The version number appears unverified and the definition cannot be confirmed or updated from these sources."
+      "lastReviewedAt": "2026-10-25T20:23:29.996Z",
+      "status": "keep",
+      "reason": "No source material addresses Grok or xAI. The existing definition stands unchanged."
     },
     "grounding": {
-      "lastReviewedAt": "2026-06-05T19:53:16.670Z",
+      "lastReviewedAt": "2026-10-25T20:23:29.996Z",
       "status": "keep",
-      "reason": "No source material challenges or materially updates the grounding definition. It remains accurate."
+      "reason": "No source material addresses grounding, RAG, or enterprise grounding systems. Definition stands."
     },
     "guardrails": {
-      "lastReviewedAt": "2026-06-05T19:53:16.670Z",
+      "lastReviewedAt": "2026-10-25T20:23:29.996Z",
       "status": "keep",
-      "reason": "No source material addresses guardrails. Definition remains sound."
+      "reason": "No source material addresses AI guardrails. Definition stands."
     },
     "hallucination": {
-      "lastReviewedAt": "2026-06-05T19:53:16.670Z",
+      "lastReviewedAt": "2026-10-25T20:23:29.996Z",
       "status": "keep",
-      "reason": "No source material challenges or updates the hallucination definition."
+      "reason": "No source material addresses hallucination in AI systems. Definition stands."
     },
     "hallucination-cascade": {
-      "lastReviewedAt": "2026-06-05T19:53:16.670Z",
+      "lastReviewedAt": "2026-10-25T20:23:29.996Z",
       "status": "keep",
-      "reason": "No source material addresses hallucination cascade. Definition remains sound."
+      "reason": "No source material addresses hallucination cascades or agentic compounding errors. Definition stands."
     },
     "handoff": {
-      "lastReviewedAt": "2026-05-04T19:27:54.284Z",
+      "lastReviewedAt": "2026-10-25T20:23:29.996Z",
       "status": "keep",
-      "reason": "No source material addresses agent handoff. Definition remains accurate."
+      "reason": "No source material addresses agent handoffs. Definition stands."
     },
     "handoff-bundle": {
-      "lastReviewedAt": "2026-05-04T19:27:54.284Z",
+      "lastReviewedAt": "2026-10-25T20:23:29.996Z",
       "status": "keep",
-      "reason": "No source material addresses handoff bundles. Definition remains accurate."
+      "reason": "No source material addresses handoff bundles or design-to-development transitions. Definition stands."
     },
     "handoff-document": {
-      "lastReviewedAt": "2026-05-04T19:27:54.284Z",
+      "lastReviewedAt": "2026-10-25T20:23:29.996Z",
       "status": "keep",
-      "reason": "No source material addresses handoff documents. Definition remains accurate."
+      "reason": "No source material addresses handoff documents or context persistence mechanisms. Definition stands."
     },
     "harness": {
       "lastReviewedAt": "2026-05-04T19:27:54.284Z",
@@ -2777,6 +2801,16 @@
       "lastReviewedAt": "2026-10-24T20:14:57.522Z",
       "status": "keep",
       "reason": "No source material covers GraphRAG. Definition remains accurate."
+    },
+    "grpo": {
+      "lastReviewedAt": "2026-10-25T20:23:29.996Z",
+      "status": "keep",
+      "reason": "No source material addresses GRPO or reinforcement learning training methods. Definition stands."
+    },
+    "guard-model": {
+      "lastReviewedAt": "2026-10-25T20:23:29.996Z",
+      "status": "keep",
+      "reason": "No source material addresses guard models or safety classifiers. Definition stands."
     }
   }
 }

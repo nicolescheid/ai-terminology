@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-10-24T20:14:57.522Z",
-    "entryCount": 248,
+    "generatedAt": "2026-10-25T20:23:29.996Z",
+    "entryCount": 250,
     "note": "Lexi-managed Tier 2 longlist — terms under observation, awaiting evidence to support promotion to the graph (Tier 1)."
   },
   "entries": [
@@ -1527,12 +1527,20 @@
           "publishedAt": "2025-07",
           "firstSeen": "2026-10-16T07:18:12.092Z",
           "addedBy": "nicole-review-2026-10-16"
+        },
+        {
+          "url": "https://www.theverge.com/column/1017983/google-ai-search-online-publishing",
+          "domain": "theverge.com",
+          "title": "Google’s AI search changes upended online publishing",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-10-25T08:00:00-04:00",
+          "firstSeen": "2026-10-25T20:23:29.996Z"
         }
       ],
-      "sourceCount": 3,
-      "independentSourceCount": 3,
+      "sourceCount": 4,
+      "independentSourceCount": 4,
       "dateFirstSeen": "2026-05-09T07:44:17.196Z",
-      "dateLastSeen": "2026-05-09T07:44:17.196Z",
+      "dateLastSeen": "2026-10-25T20:23:29.996Z",
       "sz": 14,
       "fullName": "AI Mode (Google Search)",
       "nodeType": "product",
@@ -1875,12 +1883,20 @@
           "sourceLabel": "Google AI Blog",
           "publishedAt": "Mon, 01 Jun 2026 16:00:00 +0000",
           "firstSeen": "2026-06-01T21:31:49.667Z"
+        },
+        {
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1018205/blue-planet-iii-authentic-organic-ai",
+          "domain": "theverge.com",
+          "title": "Blue Planet III is keeping the rough edges in the age of AI",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-10-24T17:29:12-04:00",
+          "firstSeen": "2026-10-25T20:23:29.996Z"
         }
       ],
-      "sourceCount": 3,
-      "independentSourceCount": 1,
+      "sourceCount": 4,
+      "independentSourceCount": 2,
       "dateFirstSeen": "2026-05-09T19:00:00.611Z",
-      "dateLastSeen": "2026-06-01T21:31:49.667Z",
+      "dateLastSeen": "2026-10-25T20:23:29.996Z",
       "sz": 14,
       "proposalReason": "A framing concept for how AI is changing creative production pipelines; relevant as more AI tools target media creation."
     },
@@ -5709,12 +5725,20 @@
           "sourceLabel": "Simon Willison's Weblog",
           "publishedAt": "2026-06-05T11:10:05+00:00",
           "firstSeen": "2026-06-05T19:53:16.670Z"
+        },
+        {
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1018217/reddit-opensource-ai-ban",
+          "domain": "theverge.com",
+          "title": "r/opensource just banned AI, non-English speakers, and more",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-10-25T09:25:32-04:00",
+          "firstSeen": "2026-10-25T20:23:29.996Z"
         }
       ],
-      "sourceCount": 1,
-      "independentSourceCount": 1,
+      "sourceCount": 2,
+      "independentSourceCount": 2,
       "dateFirstSeen": "2026-06-05T19:53:16.670Z",
-      "dateLastSeen": "2026-06-05T19:53:16.670Z",
+      "dateLastSeen": "2026-10-25T20:23:29.996Z",
       "sz": 14,
       "fullName": "Maintainer Accountability (AI-Era Open Source)",
       "proposalReason": "A distinct normative concept emerging from the AI-code-in-open-source debate — accountability decoupled from authorship. Likely to appear in more open-source governance discussions as AI contributions scale."
@@ -7710,12 +7734,20 @@
           "sourceLabel": "Hugging Face Blog",
           "publishedAt": "Wed, 21 Oct 2026 16:04:43 GMT",
           "firstSeen": "2026-10-22T00:10:59.785Z"
+        },
+        {
+          "url": "https://huggingface.co/blog/torch-neuronx-model-support",
+          "domain": "huggingface.co",
+          "title": "Does Your Model Run on AWS Trainium? Look It Up",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Fri, 23 Oct 2026 00:00:00 GMT",
+          "firstSeen": "2026-10-25T20:23:29.996Z"
         }
       ],
-      "sourceCount": 2,
+      "sourceCount": 3,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-10-19T22:00:12.148Z",
-      "dateLastSeen": "2026-10-22T00:10:59.785Z",
+      "dateLastSeen": "2026-10-25T20:23:29.996Z",
       "sz": 14,
       "fullName": "TorchNeuron (AWS/PyTorch Neuron Backend)",
       "nodeType": "product",
@@ -7744,12 +7776,20 @@
           "sourceLabel": "Hugging Face Blog",
           "publishedAt": "Mon, 19 Oct 2026 00:00:00 GMT",
           "firstSeen": "2026-10-19T22:00:12.148Z"
+        },
+        {
+          "url": "https://huggingface.co/blog/torch-neuronx-model-support",
+          "domain": "huggingface.co",
+          "title": "Does Your Model Run on AWS Trainium? Look It Up",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Fri, 23 Oct 2026 00:00:00 GMT",
+          "firstSeen": "2026-10-25T20:23:29.996Z"
         }
       ],
-      "sourceCount": 1,
+      "sourceCount": 2,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-10-19T22:00:12.148Z",
-      "dateLastSeen": "2026-10-19T22:00:12.148Z",
+      "dateLastSeen": "2026-10-25T20:23:29.996Z",
       "sz": 14,
       "fullName": "Tensor Parallelism (Distributed Model Sharding)",
       "proposalReason": "Foundational infrastructure concept appearing materially in the article's code examples; not yet in the graph and distinct from generic distributed training."
@@ -7785,12 +7825,20 @@
           "sourceLabel": "Hugging Face Blog",
           "publishedAt": "Wed, 21 Oct 2026 16:04:43 GMT",
           "firstSeen": "2026-10-22T00:10:59.785Z"
+        },
+        {
+          "url": "https://huggingface.co/blog/torch-neuronx-model-support",
+          "domain": "huggingface.co",
+          "title": "Does Your Model Run on AWS Trainium? Look It Up",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Fri, 23 Oct 2026 00:00:00 GMT",
+          "firstSeen": "2026-10-25T20:23:29.996Z"
         }
       ],
-      "sourceCount": 2,
+      "sourceCount": 3,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-10-19T22:00:12.148Z",
-      "dateLastSeen": "2026-10-22T00:10:59.785Z",
+      "dateLastSeen": "2026-10-25T20:23:29.996Z",
       "sz": 14,
       "fullName": "Static Shape Compilation (AI Accelerator Constraint)",
       "proposalReason": "A recurring, named constraint that shapes how models are deployed on custom silicon; surfaces in this article with enough specificity to merit longlist tracking."
@@ -9850,6 +9898,69 @@
       "sz": 14,
       "fullName": "AI-Generated Ad Disclosure (State-Level Advertising Law)",
       "proposalReason": "Names a distinct regulatory concept — AI disclosure requirements scoped specifically to advertising — that is likely to accumulate more state-level instances and is worth tracking separately from general AI content labelling."
+    },
+    {
+      "id": "ai-content-detection",
+      "label": "AI Content Detection",
+      "workingDef": "The practice of attempting to distinguish AI-generated or AI-translated text from human-produced content, typically by moderators, platforms, or reviewers. The r/opensource moderators cited the impossibility of reliable detection as justification for blanket bans — if AI-written and AI-translated text cannot be distinguished, non-English speakers are effectively excluded. The field lacks consensus on whether reliable detection is technically achievable at scale, and false-positive rates are a persistent practical concern.",
+      "clusters": [
+        "critical",
+        "tools"
+      ],
+      "suggestedRels": [
+        "ai-slop",
+        "watermarking",
+        "ai-content-labelling",
+        "hallucination"
+      ],
+      "sources": [
+        {
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1018217/reddit-opensource-ai-ban",
+          "domain": "theverge.com",
+          "title": "r/opensource just banned AI, non-English speakers, and more",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-10-25T09:25:32-04:00",
+          "firstSeen": "2026-10-25T20:23:29.996Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-25T20:23:29.996Z",
+      "dateLastSeen": "2026-10-25T20:23:29.996Z",
+      "sz": 16,
+      "proposalReason": "A practical framing for moderation and governance contexts where the inability to reliably detect AI-generated content drives policy — worth tracking as detection limitations increasingly shape platform rules."
+    },
+    {
+      "id": "authenticity-signal",
+      "label": "Authenticity Signal",
+      "workingDef": "A deliberate production or communication choice made to demonstrate that content is human-made and unmediated, typically by retaining imperfections, artifacts, or rough edges that AI-generated content would likely polish away. In the context of AI Slop and the spread of AI-generated media, authenticity signals are increasingly deployed by human creators to differentiate their work from synthetic output. The practice reflects a broader cultural negotiation over what counts as 'real' in an era when flawlessness has become associated with machine generation rather than craft.",
+      "clusters": [
+        "critical",
+        "human"
+      ],
+      "suggestedRels": [
+        "ai-slop",
+        "deepfake",
+        "watermarking",
+        "ai-content-labelling",
+        "zombie-internet"
+      ],
+      "sources": [
+        {
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1018205/blue-planet-iii-authentic-organic-ai",
+          "domain": "theverge.com",
+          "title": "Blue Planet III is keeping the rough edges in the age of AI",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-10-24T17:29:12-04:00",
+          "firstSeen": "2026-10-25T20:23:29.996Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-25T20:23:29.996Z",
+      "dateLastSeen": "2026-10-25T20:23:29.996Z",
+      "sz": 16,
+      "proposalReason": "A genuinely new framing concept emerging from the AI era — the idea that imperfection itself becomes a credential of authenticity. Worth tracking as this dynamic plays out across media, documentary, journalism, and creative work."
     }
   ]
 }

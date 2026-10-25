@@ -1,135 +1,63 @@
 {
-  "generatedAt": "2026-10-24T20:14:57.522Z",
+  "generatedAt": "2026-10-25T20:23:29.996Z",
   "model": "claude-sonnet-4-6",
   "sourcesConfigured": 15,
   "articlesConsidered": [
     {
-      "id": "d5dfb55b012918e7",
+      "id": "6430909168b58685",
       "source": "Hugging Face Blog",
-      "title": "LitPivot: Developing research ideas through dynamic contextualization within the literature landscape",
-      "url": "https://huggingface.co/blog/allenai/litpivot",
-      "publishedAt": "Fri, 23 Oct 2026 16:15:50 GMT"
-    },
-    {
-      "id": "a50786f3965eda60",
-      "source": "Stratechery",
-      "title": "Sharp Tech on Video: Netflix Angst, the End of the Internet, and Meta’s VR Glasses",
-      "url": "https://stratechery.com/2026/sharp-tech-on-video-netflix-angst-the-end-of-the-internet-and-metas-vr-glasses/",
-      "publishedAt": "Fri, 23 Oct 2026 10:00:00 +0000"
-    },
-    {
-      "id": "15c1f8ef7a582594",
-      "source": "OpenAI News",
-      "title": "OpenAI and Poland’s NASK partner to advance AI safety and security",
-      "url": "https://openai.com/index/openai-nask-ai-safety-security-partnership",
+      "title": "Does Your Model Run on AWS Trainium? Look It Up",
+      "url": "https://huggingface.co/blog/torch-neuronx-model-support",
       "publishedAt": "Fri, 23 Oct 2026 00:00:00 GMT"
     },
     {
-      "id": "09a5dda451583962",
+      "id": "b366ba776fde8cd4",
       "source": "The Verge — AI",
-      "title": "Pennsylvania will require labels on AI-generated ads",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1018187/pennsylvania-ai-deceptive-advertising-act",
-      "publishedAt": "2026-10-24T14:32:21-04:00"
+      "title": "r/opensource just banned AI, non-English speakers, and more",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1018217/reddit-opensource-ai-ban",
+      "publishedAt": "2026-10-25T09:25:32-04:00"
     },
     {
-      "id": "3812b4d599bb7adb",
-      "source": "Simon Willison's Weblog",
-      "title": "Release: battledrones v14: Compass Rose, a four player map",
-      "url": "https://simonwillison.net/2026/Oct/24/battledrones/",
-      "publishedAt": "2026-10-24T03:59:57+00:00"
+      "id": "99c99157c7fa1579",
+      "source": "The Verge — AI",
+      "title": "Google’s AI search changes upended online publishing",
+      "url": "https://www.theverge.com/column/1017983/google-ai-search-online-publishing",
+      "publishedAt": "2026-10-25T08:00:00-04:00"
     },
     {
-      "id": "ece6c921b830e7e3",
-      "source": "Simon Willison's Weblog",
-      "title": "Tool: Quick Study",
-      "url": "https://simonwillison.net/2026/Oct/23/quick-study-painter/",
-      "publishedAt": "2026-10-23T21:35:13+00:00"
+      "id": "0509c80e85fbace7",
+      "source": "The Verge — AI",
+      "title": "Blue Planet III is keeping the rough edges in the age of AI",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1018205/blue-planet-iii-authentic-organic-ai",
+      "publishedAt": "2026-10-24T17:29:12-04:00"
     }
   ],
   "harvestedTerms": [
     {
       "article": {
-        "title": "LitPivot: Developing research ideas through dynamic contextualization within the literature landscape",
-        "url": "https://huggingface.co/blog/allenai/litpivot"
+        "title": "Does Your Model Run on AWS Trainium? Look It Up",
+        "url": "https://huggingface.co/blog/torch-neuronx-model-support"
       },
-      "summary": "LitPivot is a research tool from Allen Institute for AI (Ai2) that helps researchers navigate literature-initiated pivots — changes in research direction prompted by reading prior work. The system segments research proposals into facets (problem, contribution, evaluation), retrieves and groups relevant papers per facet, offers critique supported by excerpts, and suggests targeted revisions. A study with 17 researchers showed proposals developed with LitPivot were rated better grounded in literature than those developed with standard AI chat tools.",
-      "longlistAdditions": [
-        {
-          "id": "literature-initiated-pivot",
-          "label": "Literature-Initiated Pivot"
-        },
-        {
-          "id": "facet-highlighting",
-          "label": "Facet Highlighting"
-        },
-        {
-          "id": "scientific-ideation-assistant",
-          "label": "Scientific Ideation Assistant"
-        },
-        {
-          "id": "hypothesis-generation",
-          "label": "Hypothesis Generation"
-        }
-      ],
-      "longlistUpdates": [],
-      "rejections": [],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "Sharp Tech on Video: Netflix Angst, the End of the Internet, and Meta’s VR Glasses",
-        "url": "https://stratechery.com/2026/sharp-tech-on-video-netflix-angst-the-end-of-the-internet-and-metas-vr-glasses/"
-      },
-      "summary": "A Stratechery podcast episode (Sharp Tech) covering Netflix, 'the end of the internet,' Meta VR glasses, and Anthropic alignment. The article is essentially a paywalled content page with minimal extractable substance — the excerpt is predominantly subscription/navigation boilerplate. The only AI-adjacent signals visible are the episode title referencing 'Anthropic Alignment' and 'The End of the Internet,' the latter likely touching on dead internet/zombie internet themes. Very little terminological content is accessible.",
+      "summary": "A Hugging Face blog post announcing the torch-neuronx model support Space and dataset, which tells users whether a specific Hugging Face Transformers model runs on AWS Trainium hardware. Covers TorchNeuron as the PyTorch backend for Trainium, tensor parallelism and expert parallelism for model sharding, static cache compilation, and the NEFF (Neuron Executable File Format) cache for skipping recompilation. Highly technical, infrastructure-focused, with minimal conceptual novelty beyond the tooling announcement.",
       "longlistAdditions": [],
       "longlistUpdates": [
         {
-          "id": "aggregator-theory",
-          "label": "Aggregator Theory",
+          "id": "torchneuron",
+          "label": "TorchNeuron",
           "sourceAdded": true,
-          "sourceCount": 9,
+          "sourceCount": 3,
           "independentSourceCount": 1
-        }
-      ],
-      "rejections": [
-        {
-          "label": "Dead Internet Theory",
-          "reason": "already in graph (label match)"
-        }
-      ],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "Pennsylvania will require labels on AI-generated ads",
-        "url": "https://www.theverge.com/ai-artificial-intelligence/1018187/pennsylvania-ai-deceptive-advertising-act"
-      },
-      "summary": "Pennsylvania's Governor signed the AI Deceptive Advertising Act, requiring labels on AI-generated or significantly modified advertising content across all formats. The law has notable loopholes around what constitutes 'significant modification' and 'false consumer perception,' and includes carve-outs for parody and evidently fictional content.",
-      "longlistAdditions": [
-        {
-          "id": "ai-deceptive-advertising-act",
-          "label": "AI Deceptive Advertising Act"
         },
         {
-          "id": "ai-generated-ad-disclosure",
-          "label": "AI-Generated Ad Disclosure"
-        }
-      ],
-      "longlistUpdates": [],
-      "rejections": [],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "Release: battledrones v14: Compass Rose, a four player map",
-        "url": "https://simonwillison.net/2026/Oct/24/battledrones/"
-      },
-      "summary": "Simon Willison's brief release note on Battledrones v14 describes using Claude Opus 5.5 to add a four-player map with rotational symmetry and WebSocket multiplayer to his vibe-coded mobile web RTS game. The post is primarily a developer diary entry with minimal terminological substance.",
-      "longlistAdditions": [],
-      "longlistUpdates": [
+          "id": "tensor-parallelism",
+          "label": "Tensor Parallelism",
+          "sourceAdded": true,
+          "sourceCount": 2,
+          "independentSourceCount": 1
+        },
         {
-          "id": "audio-state-sync",
-          "label": "Audio-Based State Synchronization",
+          "id": "static-shape-compilation",
+          "label": "Static Shape Compilation",
           "sourceAdded": true,
           "sourceCount": 3,
           "independentSourceCount": 1
@@ -137,7 +65,7 @@
       ],
       "rejections": [
         {
-          "label": "Claude Opus 5.5",
+          "label": "Trainium",
           "reason": "already in graph (label match)"
         }
       ],
@@ -145,83 +73,140 @@
     },
     {
       "article": {
-        "title": "Tool: Quick Study",
-        "url": "https://simonwillison.net/2026/Oct/23/quick-study-painter/"
+        "title": "r/opensource just banned AI, non-English speakers, and more",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1018217/reddit-opensource-ai-ban"
       },
-      "summary": "Simon Willison's brief post documents a quick experiment using Claude Opus 5.5 to build a canvas-based photo-painting artifact using Sobel edge detection, with no external libraries. It also references a prior P5.js watercolor experiment with Claude Fable. Minimal conceptual content beyond demonstrating vibe-coded artifact generation.",
-      "longlistAdditions": [],
+      "summary": "The r/opensource subreddit has banned AI-related projects, non-English posts, and solo developers, sparking community backlash. The article covers the policy dispute but is primarily news-of-the-day about a Reddit moderation controversy with limited lasting terminological value.",
+      "longlistAdditions": [
+        {
+          "id": "ai-content-detection",
+          "label": "AI Content Detection"
+        }
+      ],
       "longlistUpdates": [
         {
-          "id": "claude-fable-51",
-          "label": "Claude Fable 5.1",
+          "id": "maintainer-accountability",
+          "label": "Maintainer Accountability",
           "sourceAdded": true,
           "sourceCount": 2,
-          "independentSourceCount": 1
+          "independentSourceCount": 2
         }
       ],
       "rejections": [
         {
-          "label": "Claude Opus 5.5",
-          "reason": "already in graph (label match)"
-        },
-        {
-          "label": "Artifact",
+          "label": "AI Code Provenance",
           "reason": "already in graph (label match)"
         }
       ],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "Google’s AI search changes upended online publishing",
+        "url": "https://www.theverge.com/column/1017983/google-ai-search-online-publishing"
+      },
+      "summary": "The Verge's retrospective column on how Google's AI search features — AI Overviews and AI Mode — disrupted the digital publishing ecosystem, citing traffic decline data from major outlets and contrasting publisher distress with Google's optimistic framing of web health.",
+      "longlistAdditions": [],
+      "longlistUpdates": [
+        {
+          "id": "ai-mode",
+          "label": "AI Mode",
+          "sourceAdded": true,
+          "sourceCount": 4,
+          "independentSourceCount": 4
+        }
+      ],
+      "rejections": [
+        {
+          "label": "AI Overviews",
+          "reason": "could not generate id"
+        },
+        {
+          "label": "Zero-Click Search",
+          "reason": "could not generate id"
+        },
+        {
+          "label": "Search Traffic Dependency",
+          "reason": "could not generate id"
+        }
+      ],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "Blue Planet III is keeping the rough edges in the age of AI",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1018205/blue-planet-iii-authentic-organic-ai"
+      },
+      "summary": "Blue Planet III documentary article describing how BBC is deliberately retaining imperfect footage — murky water, floating debris, misframed shots — as a authenticity signal against AI-generated content. The piece is primarily entertainment/media news with minimal AI terminology depth.",
+      "longlistAdditions": [
+        {
+          "id": "authenticity-signal",
+          "label": "Authenticity Signal"
+        }
+      ],
+      "longlistUpdates": [
+        {
+          "id": "ai-assisted-filmmaking",
+          "label": "AI-Assisted Filmmaking",
+          "sourceAdded": true,
+          "sourceCount": 4,
+          "independentSourceCount": 2
+        }
+      ],
+      "rejections": [],
       "proposalsQueued": []
     }
   ],
   "definitionReviews": [
     {
-      "id": "github-copilot",
+      "id": "grok",
       "status": "keep",
-      "reason": "No source material touches GitHub Copilot. Definition remains accurate."
+      "reason": "No source material addresses Grok or xAI. The existing definition stands unchanged."
     },
     {
-      "id": "goal-drift",
+      "id": "grounding",
       "status": "keep",
-      "reason": "No source material addresses goal drift. Definition remains sound."
+      "reason": "No source material addresses grounding, RAG, or enterprise grounding systems. Definition stands."
     },
     {
-      "id": "google-ai-mode",
+      "id": "grpo",
       "status": "keep",
-      "reason": "No source material covers Google AI Mode. Definition remains accurate."
+      "reason": "No source material addresses GRPO or reinforcement learning training methods. Definition stands."
     },
     {
-      "id": "google-antigravity",
+      "id": "guard-model",
       "status": "keep",
-      "reason": "No source material references Google Antigravity. Definition remains as-is."
+      "reason": "No source material addresses guard models or safety classifiers. Definition stands."
     },
     {
-      "id": "google-co",
+      "id": "guardrails",
       "status": "keep",
-      "reason": "No source material updates Google/DeepMind's profile. Definition remains accurate."
+      "reason": "No source material addresses AI guardrails. Definition stands."
     },
     {
-      "id": "gpai-code-of-practice",
+      "id": "hallucination",
       "status": "keep",
-      "reason": "No source material covers the GPAI Code of Practice. Definition remains accurate."
+      "reason": "No source material addresses hallucination in AI systems. Definition stands."
     },
     {
-      "id": "gpai-model",
+      "id": "hallucination-cascade",
       "status": "keep",
-      "reason": "No source material addresses GPAI model definitions under the EU AI Act. Definition remains accurate."
+      "reason": "No source material addresses hallucination cascades or agentic compounding errors. Definition stands."
     },
     {
-      "id": "gpt54",
-      "status": "insufficient_evidence",
-      "reason": "No source material confirms or contradicts details about GPT-5.4. Cannot verify claims about release sequence, variants, or context window from these sources."
-    },
-    {
-      "id": "gpt55",
-      "status": "insufficient_evidence",
-      "reason": "No source material confirms or contradicts details about GPT-5.5. Cannot verify claims about its release or positioning from these sources."
-    },
-    {
-      "id": "graphrag",
+      "id": "handoff",
       "status": "keep",
-      "reason": "No source material covers GraphRAG. Definition remains accurate."
+      "reason": "No source material addresses agent handoffs. Definition stands."
+    },
+    {
+      "id": "handoff-bundle",
+      "status": "keep",
+      "reason": "No source material addresses handoff bundles or design-to-development transitions. Definition stands."
+    },
+    {
+      "id": "handoff-document",
+      "status": "keep",
+      "reason": "No source material addresses handoff documents or context persistence mechanisms. Definition stands."
     }
   ],
   "notes": []

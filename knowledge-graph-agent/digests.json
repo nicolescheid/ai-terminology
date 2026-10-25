@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-10-23T21:02:21.088Z",
-    "count": 6,
+    "generatedAt": "2026-10-25T20:25:13.833Z",
+    "count": 7,
     "note": "Lexi's email digests to Nicole. Written by build-digest.mjs; sentAt/messageId/thread written by the Worker (src/lexi-mail)."
   },
   "digests": [
@@ -478,6 +478,98 @@
       "waitingEarlier": 4,
       "thread": [],
       "subject": "2 items to review [Lexi D-20261023-2dce]"
+    },
+    {
+      "id": "D-20261025-2a00",
+      "createdAt": "2026-10-25T20:25:13.833Z",
+      "autoApplyHours": 72,
+      "autoApplyAt": "2026-10-28T20:25:13.833Z",
+      "sentAt": null,
+      "messageId": null,
+      "items": [
+        {
+          "n": 1,
+          "proposalId": "b45206b700724bd9",
+          "action": "promote_to_graph",
+          "kind": "new_term",
+          "term": "AI-Assisted Filmmaking",
+          "termId": "ai-assisted-filmmaking",
+          "definition": "The use of AI tools to lower production barriers and augment the creative process for video and film creation, enabling emerging filmmakers to produce content that would traditionally require large budgets or crews.",
+          "previousDefinition": null,
+          "sources": [
+            {
+              "label": "Google AI Blog: Google is partnering with XPRIZE and Range Media Partners on the $3.5 million Future Vision film competition.",
+              "url": "https://blog.google/innovation-and-ai/technology/ai/future-vision-film-competition-xprize/"
+            },
+            {
+              "label": "Google AI Blog: See what happens when creative legends use AI to make ads for small businesses.",
+              "url": "https://blog.google/company-news/inside-google/company-announcements/the-small-brief/"
+            },
+            {
+              "label": "Google AI Blog: How we used Gemini to build Google I/O 2026",
+              "url": "https://blog.google/innovation-and-ai/technology/ai/io-2026-google-ai/"
+            },
+            {
+              "label": "The Verge — AI: Blue Planet III is keeping the rough edges in the age of AI",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1018205/blue-planet-iii-authentic-organic-ai"
+            }
+          ],
+          "nearest": {
+            "id": "interactive-prototyping",
+            "label": "Interactive Prototyping",
+            "relation": "related (AI in creative production)"
+          },
+          "rationale": "4 sources, 2 independent (blog.google + theverge.com), 169d on longlist.",
+          "review": {
+            "verdict": "flag",
+            "summary": "None of the visible excerpts use the phrase 'AI-assisted filmmaking'. Three are Google's own promotional posts about Flow (a single non-independent source), and the Verge excerpt isn't shown; its headline suggests a skeptical angle. The definition echoes vendor framing ('lower production barriers', 'enabling emerging filmmakers') rather than describing the practice neutrally.",
+            "flags": [
+              "sources_do_not_support",
+              "too_promotional"
+            ]
+          },
+          "tier": "nicole",
+          "tierReason": "reviewer flagged it: sources do not support, too promotional"
+        },
+        {
+          "n": 2,
+          "proposalId": "fec7f6d34ced2425",
+          "action": "promote_to_graph",
+          "kind": "new_term",
+          "term": "Maintainer Accountability",
+          "termId": "maintainer-accountability",
+          "definition": "The principle, foregrounded by open-source projects responding to AI-generated contributions, that the person introducing a change to a codebase must be the person who vouches for it and answers for its consequences — independent of whether they wrote it. Andreas Kling's Ladybird policy articulates this as the operative standard replacing effort-based proxies: responsibility, not authorship, is what qualifies a contribution.",
+          "previousDefinition": null,
+          "sources": [
+            {
+              "label": "Simon Willison's Weblog: A quote from Andreas Kling",
+              "url": "https://simonwillison.net/2026/Jun/5/andreas-kling/#atom-everything"
+            },
+            {
+              "label": "The Verge — AI: r/opensource just banned AI, non-English speakers, and more",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1018217/reddit-opensource-ai-ban"
+            }
+          ],
+          "nearest": {
+            "id": "ai-code-provenance",
+            "label": "AI Code Provenance",
+            "relation": "overlapping concept (responsibility half of provenance)"
+          },
+          "rationale": "2 sources, 2 independent (simonwillison.net + theverge.com), 142d on longlist. Trusted: simonwillison.net.",
+          "review": {
+            "verdict": "flag",
+            "summary": "Neither excerpt uses the term \"maintainer accountability\". Kling's quote expresses the idea, but the Verge piece is about r/opensource banning AI projects and says nothing about responsibility over authorship. The concept also substantially overlaps the existing ai-code-provenance node (\"who answers for it… a human to take full responsibility\").",
+            "flags": [
+              "sources_do_not_support",
+              "duplicate_or_alias"
+            ]
+          },
+          "tier": "nicole",
+          "tierReason": "reviewer flagged it: sources do not support, duplicate or alias"
+        }
+      ],
+      "waitingEarlier": 6,
+      "thread": []
     }
   ]
 }
