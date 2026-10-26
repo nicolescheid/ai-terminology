@@ -1,7 +1,7 @@
 window.AGENT_GRAPH_PATCH = {
   "meta": {
-    "generatedAt": "2026-10-25T20:23:29.996Z",
-    "sourceCount": 4,
+    "generatedAt": "2026-10-26T04:32:32.955Z",
+    "sourceCount": 1,
     "note": "Agent-managed overlay. Graph-affecting changes are routed through the permissions matrix (actions.mjs) — see proposals.json for pending items."
   },
   "nodes": [
@@ -1318,6 +1318,38 @@ window.AGENT_GRAPH_PATCH = {
         }
       ],
       "fullName": "Text-to-Game (AI-Driven Game Generation)"
+    },
+    {
+      "id": "ai-assisted-filmmaking",
+      "label": "AI-Assisted Filmmaking",
+      "clusters": [
+        "tools",
+        "human"
+      ],
+      "sz": 14,
+      "def": "The use of AI tools to lower production barriers and augment the creative process for video and film creation, enabling emerging filmmakers to produce content that would traditionally require large budgets or crews.",
+      "rels": [
+        "multimodal",
+        "vibe-coding",
+        "computer-use"
+      ],
+      "refs": [
+        {
+          "n": 1,
+          "src": "Google AI Blog, Tue, 05 May 2026 16:00:00 +0000",
+          "q": "Google is partnering with XPRIZE and Range Media Partners on the $3.5 million Future Vision film competition. Google AI Blog"
+        },
+        {
+          "n": 2,
+          "src": "Google AI Blog, Fri, 08 May 2026 15:00:00 +0000",
+          "q": "See what happens when creative legends use AI to make ads for small businesses. Google AI Blog"
+        },
+        {
+          "n": 3,
+          "src": "Google AI Blog, Mon, 01 Jun 2026 16:00:00 +0000",
+          "q": "How we used Gemini to build Google I/O 2026 Google AI Blog"
+        }
+      ]
     }
   ],
   "definitionOverrides": [

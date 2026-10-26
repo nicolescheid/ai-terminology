@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-25T20:23:29.996Z",
+    "generatedAt": "2026-10-26T04:32:20.834Z",
     "entryCount": 250,
     "note": "Lexi-managed Tier 2 longlist — terms under observation, awaiting evidence to support promotion to the graph (Tier 1)."
   },
@@ -1898,7 +1898,10 @@
       "dateFirstSeen": "2026-05-09T19:00:00.611Z",
       "dateLastSeen": "2026-10-25T20:23:29.996Z",
       "sz": 14,
-      "proposalReason": "A framing concept for how AI is changing creative production pipelines; relevant as more AI tools target media creation."
+      "proposalReason": "A framing concept for how AI is changing creative production pipelines; relevant as more AI tools target media creation.",
+      "status": "promoted",
+      "promotedAt": "2026-10-26T04:32:32.955Z",
+      "promotedToGraphNodeId": "ai-assisted-filmmaking"
     },
     {
       "id": "voice-to-action",

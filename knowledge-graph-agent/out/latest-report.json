@@ -1,212 +1,79 @@
 {
-  "generatedAt": "2026-10-25T20:23:29.996Z",
+  "generatedAt": "2026-10-26T04:32:20.834Z",
   "model": "claude-sonnet-4-6",
   "sourcesConfigured": 15,
   "articlesConsidered": [
     {
-      "id": "6430909168b58685",
-      "source": "Hugging Face Blog",
-      "title": "Does Your Model Run on AWS Trainium? Look It Up",
-      "url": "https://huggingface.co/blog/torch-neuronx-model-support",
-      "publishedAt": "Fri, 23 Oct 2026 00:00:00 GMT"
-    },
-    {
-      "id": "b366ba776fde8cd4",
-      "source": "The Verge — AI",
-      "title": "r/opensource just banned AI, non-English speakers, and more",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1018217/reddit-opensource-ai-ban",
-      "publishedAt": "2026-10-25T09:25:32-04:00"
-    },
-    {
-      "id": "99c99157c7fa1579",
-      "source": "The Verge — AI",
-      "title": "Google’s AI search changes upended online publishing",
-      "url": "https://www.theverge.com/column/1017983/google-ai-search-online-publishing",
-      "publishedAt": "2026-10-25T08:00:00-04:00"
-    },
-    {
-      "id": "0509c80e85fbace7",
-      "source": "The Verge — AI",
-      "title": "Blue Planet III is keeping the rough edges in the age of AI",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1018205/blue-planet-iii-authentic-organic-ai",
-      "publishedAt": "2026-10-24T17:29:12-04:00"
+      "id": "0c0ce1d91251a58f",
+      "source": "Simon Willison's Weblog",
+      "title": "Tool: Seam Cutter",
+      "url": "https://simonwillison.net/2026/Oct/25/seam-cutter/",
+      "publishedAt": "2026-10-25T15:10:19+00:00"
     }
   ],
   "harvestedTerms": [
     {
       "article": {
-        "title": "Does Your Model Run on AWS Trainium? Look It Up",
-        "url": "https://huggingface.co/blog/torch-neuronx-model-support"
+        "title": "Tool: Seam Cutter",
+        "url": "https://simonwillison.net/2026/Oct/25/seam-cutter/"
       },
-      "summary": "A Hugging Face blog post announcing the torch-neuronx model support Space and dataset, which tells users whether a specific Hugging Face Transformers model runs on AWS Trainium hardware. Covers TorchNeuron as the PyTorch backend for Trainium, tensor parallelism and expert parallelism for model sharding, static cache compilation, and the NEFF (Neuron Executable File Format) cache for skipping recompilation. Highly technical, infrastructure-focused, with minimal conceptual novelty beyond the tooling announcement.",
+      "summary": "A brief personal post by Simon Willison announcing 'Seam Cutter,' a niche image-cropping browser tool he built for personal use. No substantive AI terminology, framing, or concepts are introduced.",
       "longlistAdditions": [],
-      "longlistUpdates": [
-        {
-          "id": "torchneuron",
-          "label": "TorchNeuron",
-          "sourceAdded": true,
-          "sourceCount": 3,
-          "independentSourceCount": 1
-        },
-        {
-          "id": "tensor-parallelism",
-          "label": "Tensor Parallelism",
-          "sourceAdded": true,
-          "sourceCount": 2,
-          "independentSourceCount": 1
-        },
-        {
-          "id": "static-shape-compilation",
-          "label": "Static Shape Compilation",
-          "sourceAdded": true,
-          "sourceCount": 3,
-          "independentSourceCount": 1
-        }
-      ],
-      "rejections": [
-        {
-          "label": "Trainium",
-          "reason": "already in graph (label match)"
-        }
-      ],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "r/opensource just banned AI, non-English speakers, and more",
-        "url": "https://www.theverge.com/ai-artificial-intelligence/1018217/reddit-opensource-ai-ban"
-      },
-      "summary": "The r/opensource subreddit has banned AI-related projects, non-English posts, and solo developers, sparking community backlash. The article covers the policy dispute but is primarily news-of-the-day about a Reddit moderation controversy with limited lasting terminological value.",
-      "longlistAdditions": [
-        {
-          "id": "ai-content-detection",
-          "label": "AI Content Detection"
-        }
-      ],
-      "longlistUpdates": [
-        {
-          "id": "maintainer-accountability",
-          "label": "Maintainer Accountability",
-          "sourceAdded": true,
-          "sourceCount": 2,
-          "independentSourceCount": 2
-        }
-      ],
-      "rejections": [
-        {
-          "label": "AI Code Provenance",
-          "reason": "already in graph (label match)"
-        }
-      ],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "Google’s AI search changes upended online publishing",
-        "url": "https://www.theverge.com/column/1017983/google-ai-search-online-publishing"
-      },
-      "summary": "The Verge's retrospective column on how Google's AI search features — AI Overviews and AI Mode — disrupted the digital publishing ecosystem, citing traffic decline data from major outlets and contrasting publisher distress with Google's optimistic framing of web health.",
-      "longlistAdditions": [],
-      "longlistUpdates": [
-        {
-          "id": "ai-mode",
-          "label": "AI Mode",
-          "sourceAdded": true,
-          "sourceCount": 4,
-          "independentSourceCount": 4
-        }
-      ],
-      "rejections": [
-        {
-          "label": "AI Overviews",
-          "reason": "could not generate id"
-        },
-        {
-          "label": "Zero-Click Search",
-          "reason": "could not generate id"
-        },
-        {
-          "label": "Search Traffic Dependency",
-          "reason": "could not generate id"
-        }
-      ],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "Blue Planet III is keeping the rough edges in the age of AI",
-        "url": "https://www.theverge.com/ai-artificial-intelligence/1018205/blue-planet-iii-authentic-organic-ai"
-      },
-      "summary": "Blue Planet III documentary article describing how BBC is deliberately retaining imperfect footage — murky water, floating debris, misframed shots — as a authenticity signal against AI-generated content. The piece is primarily entertainment/media news with minimal AI terminology depth.",
-      "longlistAdditions": [
-        {
-          "id": "authenticity-signal",
-          "label": "Authenticity Signal"
-        }
-      ],
-      "longlistUpdates": [
-        {
-          "id": "ai-assisted-filmmaking",
-          "label": "AI-Assisted Filmmaking",
-          "sourceAdded": true,
-          "sourceCount": 4,
-          "independentSourceCount": 2
-        }
-      ],
+      "longlistUpdates": [],
       "rejections": [],
       "proposalsQueued": []
     }
   ],
   "definitionReviews": [
     {
-      "id": "grok",
-      "status": "keep",
-      "reason": "No source material addresses Grok or xAI. The existing definition stands unchanged."
+      "id": "harness",
+      "status": "insufficient_evidence",
+      "reason": "No source material addresses the harness concept."
     },
     {
-      "id": "grounding",
-      "status": "keep",
-      "reason": "No source material addresses grounding, RAG, or enterprise grounding systems. Definition stands."
+      "id": "harness-engineering",
+      "status": "insufficient_evidence",
+      "reason": "No source material addresses harness engineering."
     },
     {
-      "id": "grpo",
-      "status": "keep",
-      "reason": "No source material addresses GRPO or reinforcement learning training methods. Definition stands."
+      "id": "high-risk-ai-system",
+      "status": "insufficient_evidence",
+      "reason": "No source material addresses EU AI Act high-risk system classifications or the Digital Omnibus timeline."
     },
     {
-      "id": "guard-model",
-      "status": "keep",
-      "reason": "No source material addresses guard models or safety classifiers. Definition stands."
+      "id": "hugging-face",
+      "status": "insufficient_evidence",
+      "reason": "No source material addresses Hugging Face platform statistics or capabilities."
     },
     {
-      "id": "guardrails",
-      "status": "keep",
-      "reason": "No source material addresses AI guardrails. Definition stands."
+      "id": "human-in-the-loop",
+      "status": "insufficient_evidence",
+      "reason": "No source material addresses human-in-the-loop design patterns."
     },
     {
-      "id": "hallucination",
-      "status": "keep",
-      "reason": "No source material addresses hallucination in AI systems. Definition stands."
+      "id": "hyperscale-data-center",
+      "status": "insufficient_evidence",
+      "reason": "No source material addresses hyperscale data centers."
     },
     {
-      "id": "hallucination-cascade",
-      "status": "keep",
-      "reason": "No source material addresses hallucination cascades or agentic compounding errors. Definition stands."
+      "id": "hyperscaler",
+      "status": "insufficient_evidence",
+      "reason": "No source material addresses hyperscalers or cloud platform providers."
     },
     {
-      "id": "handoff",
-      "status": "keep",
-      "reason": "No source material addresses agent handoffs. Definition stands."
+      "id": "idempotency",
+      "status": "insufficient_evidence",
+      "reason": "No source material addresses idempotency."
     },
     {
-      "id": "handoff-bundle",
-      "status": "keep",
-      "reason": "No source material addresses handoff bundles or design-to-development transitions. Definition stands."
+      "id": "indirect-prompt-injection",
+      "status": "insufficient_evidence",
+      "reason": "No source material addresses indirect prompt injection."
     },
     {
-      "id": "handoff-document",
-      "status": "keep",
-      "reason": "No source material addresses handoff documents or context persistence mechanisms. Definition stands."
+      "id": "inference",
+      "status": "insufficient_evidence",
+      "reason": "No source material addresses AI inference."
     }
   ],
   "notes": []

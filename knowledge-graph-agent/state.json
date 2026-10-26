@@ -1,6 +1,6 @@
 {
-  "lastRunAt": "2026-10-25T20:23:29.996Z",
-  "reviewCursor": 224,
+  "lastRunAt": "2026-10-26T04:32:20.834Z",
+  "reviewCursor": 234,
   "seenArticles": {
     "93a049d060bc295b": {
       "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/tpus-8t-8i-cloud-next/",
@@ -1459,6 +1459,12 @@
       "title": "Blue Planet III is keeping the rough edges in the age of AI",
       "publishedAt": "2026-10-24T17:29:12-04:00",
       "seenAt": "2026-10-25T20:23:29.996Z"
+    },
+    "0c0ce1d91251a58f": {
+      "url": "https://simonwillison.net/2026/Oct/25/seam-cutter/",
+      "title": "Tool: Seam Cutter",
+      "publishedAt": "2026-10-25T15:10:19+00:00",
+      "seenAt": "2026-10-26T04:32:20.834Z"
     }
   },
   "nodeReviews": {
@@ -1928,29 +1934,29 @@
       "reason": "No source material addresses handoff documents or context persistence mechanisms. Definition stands."
     },
     "harness": {
-      "lastReviewedAt": "2026-05-04T19:27:54.284Z",
-      "status": "keep",
-      "reason": "No source material addresses the harness concept. Definition remains accurate."
+      "lastReviewedAt": "2026-10-26T04:32:20.834Z",
+      "status": "insufficient_evidence",
+      "reason": "No source material addresses the harness concept."
     },
     "hugging-face": {
-      "lastReviewedAt": "2026-05-04T19:27:54.284Z",
+      "lastReviewedAt": "2026-10-26T04:32:20.834Z",
       "status": "insufficient_evidence",
-      "reason": "No source material references Hugging Face or provides updated statistics on model/dataset counts that could be used to refresh the definition's figures."
+      "reason": "No source material addresses Hugging Face platform statistics or capabilities."
     },
     "human-in-the-loop": {
-      "lastReviewedAt": "2026-05-04T19:27:54.284Z",
-      "status": "keep",
-      "reason": "No source material addresses human-in-the-loop as a concept. Definition remains accurate."
+      "lastReviewedAt": "2026-10-26T04:32:20.834Z",
+      "status": "insufficient_evidence",
+      "reason": "No source material addresses human-in-the-loop design patterns."
     },
     "idempotency": {
-      "lastReviewedAt": "2026-05-04T19:27:54.284Z",
-      "status": "keep",
-      "reason": "No source material addresses idempotency. Definition remains accurate."
+      "lastReviewedAt": "2026-10-26T04:32:20.834Z",
+      "status": "insufficient_evidence",
+      "reason": "No source material addresses idempotency."
     },
     "inference": {
-      "lastReviewedAt": "2026-05-09T07:44:17.196Z",
-      "status": "keep",
-      "reason": "No source material addresses or contradicts this definition. It remains accurate as written."
+      "lastReviewedAt": "2026-10-26T04:32:20.834Z",
+      "status": "insufficient_evidence",
+      "reason": "No source material addresses AI inference."
     },
     "information-literacy": {
       "lastReviewedAt": "2026-05-09T07:44:17.196Z",
@@ -2811,6 +2817,31 @@
       "lastReviewedAt": "2026-10-25T20:23:29.996Z",
       "status": "keep",
       "reason": "No source material addresses guard models or safety classifiers. Definition stands."
+    },
+    "harness-engineering": {
+      "lastReviewedAt": "2026-10-26T04:32:20.834Z",
+      "status": "insufficient_evidence",
+      "reason": "No source material addresses harness engineering."
+    },
+    "high-risk-ai-system": {
+      "lastReviewedAt": "2026-10-26T04:32:20.834Z",
+      "status": "insufficient_evidence",
+      "reason": "No source material addresses EU AI Act high-risk system classifications or the Digital Omnibus timeline."
+    },
+    "hyperscale-data-center": {
+      "lastReviewedAt": "2026-10-26T04:32:20.834Z",
+      "status": "insufficient_evidence",
+      "reason": "No source material addresses hyperscale data centers."
+    },
+    "hyperscaler": {
+      "lastReviewedAt": "2026-10-26T04:32:20.834Z",
+      "status": "insufficient_evidence",
+      "reason": "No source material addresses hyperscalers or cloud platform providers."
+    },
+    "indirect-prompt-injection": {
+      "lastReviewedAt": "2026-10-26T04:32:20.834Z",
+      "status": "insufficient_evidence",
+      "reason": "No source material addresses indirect prompt injection."
     }
   }
 }

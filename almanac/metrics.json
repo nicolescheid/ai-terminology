@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-10-25T20:25:13.912Z",
+  "generatedAt": "2026-10-26T04:32:33.119Z",
   "firstRunAt": "2026-04-27T01:07:31.335Z",
   "phase": 1,
   "headline": {
-    "articlesRead": 243,
-    "daysRunning": 182,
-    "longlistSize": 166,
-    "graphSize": 440
+    "articlesRead": 244,
+    "daysRunning": 183,
+    "longlistSize": 165,
+    "graphSize": 441
   },
   "thisWeek": {
-    "articlesFetched": 52,
+    "articlesFetched": 53,
     "longlistAdded": 73,
     "sourcesAdded": 13,
-    "promotionsToGraph": 5,
+    "promotionsToGraph": 6,
     "proposalsQueued": 10,
     "auditFlags": 6,
     "notesAdded": 11
@@ -45,7 +45,7 @@
       ],
       "sourceCount": 9,
       "independentSources": 1,
-      "daysOnLonglist": 144,
+      "daysOnLonglist": 145,
       "domains": [
         "stratechery.com"
       ],
@@ -79,7 +79,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 5,
+      "daysOnLonglist": 6,
       "domains": [
         "huggingface.co"
       ],
@@ -95,7 +95,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 5,
+      "daysOnLonglist": 6,
       "domains": [
         "huggingface.co"
       ],
@@ -112,7 +112,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 4,
+      "daysOnLonglist": 5,
       "domains": [
         "simonwillison.net"
       ],
@@ -146,7 +146,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 148,
+      "daysOnLonglist": 149,
       "domains": [
         "normaltech.ai"
       ],
@@ -162,7 +162,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 5,
+      "daysOnLonglist": 6,
       "domains": [
         "huggingface.co"
       ],
@@ -179,7 +179,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 4,
+      "daysOnLonglist": 5,
       "domains": [
         "stratechery.com"
       ],
@@ -195,7 +195,7 @@
       },
       {
         "domain": "simonwillison.net",
-        "count": 37
+        "count": 38
       },
       {
         "domain": "stratechery.com",
@@ -369,7 +369,7 @@
         "id": "tools",
         "label": "Tools & Platforms",
         "hex": "#70C8F8",
-        "count": 24
+        "count": 23
       },
       {
         "id": "landscape",
@@ -378,16 +378,16 @@
         "count": 20
       },
       {
-        "id": "human",
-        "label": "Human Skills",
-        "hex": "#40D080",
-        "count": 19
-      },
-      {
         "id": "business",
         "label": "Business Reality",
         "hex": "#48C888",
         "count": 19
+      },
+      {
+        "id": "human",
+        "label": "Human Skills",
+        "hex": "#40D080",
+        "count": 18
       },
       {
         "id": "work",
@@ -422,14 +422,14 @@
     ]
   },
   "velocity": {
-    "humanGated": 43,
+    "humanGated": 44,
     "autonomous": 0,
     "note": "All graph promotions and substantive edits are currently human-gated. Lexi proposes; Nicole approves."
   },
   "proposalsByStatus": {
-    "pending": 8,
+    "pending": 7,
     "approved": 0,
-    "applied": 43,
+    "applied": 44,
     "rejected": 1
   },
   "decisionsByCluster": {
@@ -446,7 +446,7 @@
       "rejected": 0
     },
     "tools": {
-      "approved": 8,
+      "approved": 9,
       "rejected": 0
     },
     "work": {
@@ -483,6 +483,10 @@
     },
     "landscape": {
       "approved": 7,
+      "rejected": 0
+    },
+    "human": {
+      "approved": 1,
       "rejected": 0
     }
   },
