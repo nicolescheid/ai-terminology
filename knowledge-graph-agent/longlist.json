@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-26T04:32:20.834Z",
+    "generatedAt": "2026-10-26T04:33:28.058Z",
     "entryCount": 250,
     "note": "Lexi-managed Tier 2 longlist — terms under observation, awaiting evidence to support promotion to the graph (Tier 1)."
   },
@@ -1900,7 +1900,7 @@
       "sz": 14,
       "proposalReason": "A framing concept for how AI is changing creative production pipelines; relevant as more AI tools target media creation.",
       "status": "promoted",
-      "promotedAt": "2026-10-26T04:32:32.955Z",
+      "promotedAt": "2026-10-26T04:33:40.771Z",
       "promotedToGraphNodeId": "ai-assisted-filmmaking"
     },
     {
@@ -5744,7 +5744,10 @@
       "dateLastSeen": "2026-10-25T20:23:29.996Z",
       "sz": 14,
       "fullName": "Maintainer Accountability (AI-Era Open Source)",
-      "proposalReason": "A distinct normative concept emerging from the AI-code-in-open-source debate — accountability decoupled from authorship. Likely to appear in more open-source governance discussions as AI contributions scale."
+      "proposalReason": "A distinct normative concept emerging from the AI-code-in-open-source debate — accountability decoupled from authorship. Likely to appear in more open-source governance discussions as AI contributions scale.",
+      "status": "promoted",
+      "promotedAt": "2026-10-26T04:33:40.771Z",
+      "promotedToGraphNodeId": "maintainer-accountability"
     },
     {
       "id": "papal-ai-encyclical",

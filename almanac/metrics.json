@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-10-26T04:32:33.119Z",
+  "generatedAt": "2026-10-26T04:33:40.931Z",
   "firstRunAt": "2026-04-27T01:07:31.335Z",
   "phase": 1,
   "headline": {
     "articlesRead": 244,
     "daysRunning": 183,
-    "longlistSize": 165,
-    "graphSize": 441
+    "longlistSize": 164,
+    "graphSize": 442
   },
   "thisWeek": {
     "articlesFetched": 53,
     "longlistAdded": 73,
     "sourcesAdded": 13,
-    "promotionsToGraph": 6,
+    "promotionsToGraph": 7,
     "proposalsQueued": 10,
     "auditFlags": 6,
     "notesAdded": 11
@@ -363,7 +363,7 @@
         "id": "critical",
         "label": "Critical / Hype",
         "hex": "#FF5555",
-        "count": 29
+        "count": 28
       },
       {
         "id": "tools",
@@ -387,7 +387,7 @@
         "id": "human",
         "label": "Human Skills",
         "hex": "#40D080",
-        "count": 18
+        "count": 17
       },
       {
         "id": "work",
@@ -422,14 +422,14 @@
     ]
   },
   "velocity": {
-    "humanGated": 44,
+    "humanGated": 45,
     "autonomous": 0,
     "note": "All graph promotions and substantive edits are currently human-gated. Lexi proposes; Nicole approves."
   },
   "proposalsByStatus": {
-    "pending": 7,
+    "pending": 6,
     "approved": 0,
-    "applied": 44,
+    "applied": 45,
     "rejected": 1
   },
   "decisionsByCluster": {
@@ -478,7 +478,7 @@
       "rejected": 0
     },
     "critical": {
-      "approved": 5,
+      "approved": 6,
       "rejected": 0
     },
     "landscape": {
@@ -486,7 +486,7 @@
       "rejected": 0
     },
     "human": {
-      "approved": 1,
+      "approved": 2,
       "rejected": 0
     }
   },

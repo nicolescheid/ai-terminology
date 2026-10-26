@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-26T04:32:32.955Z",
+    "generatedAt": "2026-10-26T04:33:40.771Z",
     "sourceCount": 1,
     "note": "Agent-managed overlay. Graph-affecting changes are routed through the permissions matrix (actions.mjs) — see proposals.json for pending items."
   },
@@ -1350,6 +1350,35 @@
           "q": "How we used Gemini to build Google I/O 2026 Google AI Blog"
         }
       ]
+    },
+    {
+      "id": "maintainer-accountability",
+      "label": "Maintainer Accountability",
+      "clusters": [
+        "critical",
+        "human"
+      ],
+      "sz": 14,
+      "def": "The principle, foregrounded by open-source projects responding to AI-generated contributions, that the person introducing a change to a codebase must be the person who vouches for it and answers for its consequences — independent of whether they wrote it. Andreas Kling's Ladybird policy articulates this as the operative standard replacing effort-based proxies: responsibility, not authorship, is what qualifies a contribution.",
+      "rels": [
+        "human-in-the-loop",
+        "agent-governance",
+        "delegation",
+        "guardrails"
+      ],
+      "refs": [
+        {
+          "n": 1,
+          "src": "Simon Willison's Weblog, 2026-06-05T11:10:05+00:00",
+          "q": "A quote from Andreas Kling Simon Willison's Weblog"
+        },
+        {
+          "n": 2,
+          "src": "The Verge — AI, 2026-10-25T09:25:32-04:00",
+          "q": "r/opensource just banned AI, non-English speakers, and more The Verge — AI"
+        }
+      ],
+      "fullName": "Maintainer Accountability (AI-Era Open Source)"
     }
   ],
   "definitionOverrides": [

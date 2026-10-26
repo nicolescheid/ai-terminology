@@ -1,5 +1,5 @@
 {
-  "lastRunAt": "2026-10-26T04:32:20.834Z",
+  "lastRunAt": "2026-10-26T04:33:28.058Z",
   "reviewCursor": 234,
   "seenArticles": {
     "93a049d060bc295b": {
@@ -1464,7 +1464,7 @@
       "url": "https://simonwillison.net/2026/Oct/25/seam-cutter/",
       "title": "Tool: Seam Cutter",
       "publishedAt": "2026-10-25T15:10:19+00:00",
-      "seenAt": "2026-10-26T04:32:20.834Z"
+      "seenAt": "2026-10-26T04:33:28.058Z"
     }
   },
   "nodeReviews": {
@@ -1934,29 +1934,29 @@
       "reason": "No source material addresses handoff documents or context persistence mechanisms. Definition stands."
     },
     "harness": {
-      "lastReviewedAt": "2026-10-26T04:32:20.834Z",
+      "lastReviewedAt": "2026-10-26T04:33:28.058Z",
       "status": "insufficient_evidence",
-      "reason": "No source material addresses the harness concept."
+      "reason": "The source excerpt is about an image-cropping tool and contains no information relevant to the definition of 'harness' in the AI context."
     },
     "hugging-face": {
-      "lastReviewedAt": "2026-10-26T04:32:20.834Z",
+      "lastReviewedAt": "2026-10-26T04:33:28.058Z",
       "status": "insufficient_evidence",
-      "reason": "No source material addresses Hugging Face platform statistics or capabilities."
+      "reason": "The source excerpt contains no information about Hugging Face, its platform statistics, or its role in the open-weight ecosystem."
     },
     "human-in-the-loop": {
-      "lastReviewedAt": "2026-10-26T04:32:20.834Z",
+      "lastReviewedAt": "2026-10-26T04:33:28.058Z",
       "status": "insufficient_evidence",
-      "reason": "No source material addresses human-in-the-loop design patterns."
+      "reason": "The source excerpt contains no information relevant to human-in-the-loop design patterns or agentic workflows."
     },
     "idempotency": {
-      "lastReviewedAt": "2026-10-26T04:32:20.834Z",
+      "lastReviewedAt": "2026-10-26T04:33:28.058Z",
       "status": "insufficient_evidence",
-      "reason": "No source material addresses idempotency."
+      "reason": "The source excerpt contains no information relevant to idempotency in agentic systems or otherwise."
     },
     "inference": {
-      "lastReviewedAt": "2026-10-26T04:32:20.834Z",
+      "lastReviewedAt": "2026-10-26T04:33:28.058Z",
       "status": "insufficient_evidence",
-      "reason": "No source material addresses AI inference."
+      "reason": "The source excerpt contains no information about AI inference, training, or model generation."
     },
     "information-literacy": {
       "lastReviewedAt": "2026-05-09T07:44:17.196Z",
@@ -2819,29 +2819,29 @@
       "reason": "No source material addresses guard models or safety classifiers. Definition stands."
     },
     "harness-engineering": {
-      "lastReviewedAt": "2026-10-26T04:32:20.834Z",
+      "lastReviewedAt": "2026-10-26T04:33:28.058Z",
       "status": "insufficient_evidence",
-      "reason": "No source material addresses harness engineering."
+      "reason": "The source excerpt contains no information relevant to harness engineering as an AI practice or coinage."
     },
     "high-risk-ai-system": {
-      "lastReviewedAt": "2026-10-26T04:32:20.834Z",
+      "lastReviewedAt": "2026-10-26T04:33:28.058Z",
       "status": "insufficient_evidence",
-      "reason": "No source material addresses EU AI Act high-risk system classifications or the Digital Omnibus timeline."
+      "reason": "The source excerpt contains no information about the EU AI Act, high-risk AI systems, or the Digital Omnibus timeline changes."
     },
     "hyperscale-data-center": {
-      "lastReviewedAt": "2026-10-26T04:32:20.834Z",
+      "lastReviewedAt": "2026-10-26T04:33:28.058Z",
       "status": "insufficient_evidence",
-      "reason": "No source material addresses hyperscale data centers."
+      "reason": "The source excerpt contains no information about hyperscale data centers, their capacity, or energy demands."
     },
     "hyperscaler": {
-      "lastReviewedAt": "2026-10-26T04:32:20.834Z",
+      "lastReviewedAt": "2026-10-26T04:33:28.058Z",
       "status": "insufficient_evidence",
-      "reason": "No source material addresses hyperscalers or cloud platform providers."
+      "reason": "The source excerpt contains no information about hyperscalers, cloud providers, or AI infrastructure investment."
     },
     "indirect-prompt-injection": {
-      "lastReviewedAt": "2026-10-26T04:32:20.834Z",
+      "lastReviewedAt": "2026-10-26T04:33:28.058Z",
       "status": "insufficient_evidence",
-      "reason": "No source material addresses indirect prompt injection."
+      "reason": "The source excerpt contains no information about prompt injection, agents, or related security concepts."
     }
   }
 }
