@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generatedAt": "2026-10-26T22:18:30.604Z",
-    "unreadCount": 53,
-    "totalCount": 345,
+    "generatedAt": "2026-10-26T23:03:44.786Z",
+    "unreadCount": 61,
+    "totalCount": 353,
     "note": "Notes for Nicole — Lexi's manager channel (spec §6). Mandatory entry types fire when their triggering condition is met; discretionary entries are observations Lexi thinks Nicole should see. Set status to 'read', 'actioned', or 'dismissed' as appropriate."
   },
   "entries": [
@@ -8819,6 +8819,228 @@
         "sourceLabel": "Google AI Blog"
       },
       "suggestedAction": "Either revise the working definition to name the contestation (who uses it to mean what), or confirm this term doesn't warrant the contested treatment in this case."
+    },
+    {
+      "id": "6d8a1c0e271428ab",
+      "type": "source_pattern",
+      "writtenAt": "2026-10-26T23:03:44.786Z",
+      "runId": "40afee3f-c331-4633-9ccd-a4ca4e6610f1",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Source pattern: domain 'stratechery.com' appears in 6 recent longlist entries",
+      "details": "In the past 30 days, 6 longlist entries have at least one source from stratechery.com. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
+      "evidence": {
+        "check": "cross_temporal_domain_share",
+        "domain": "stratechery.com",
+        "entryIds": [
+          "apple-homeview",
+          "two-towers-advertising",
+          "generation-of-human-desire",
+          "personalized-ad-predictor",
+          "muse-spark-open",
+          "unified-content-business-model"
+        ],
+        "windowDays": 30,
+        "recentEntryCount": 129
+      },
+      "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
+      "source": "auditor"
+    },
+    {
+      "id": "a31b7056db0204ca",
+      "type": "source_pattern",
+      "writtenAt": "2026-10-26T23:03:44.786Z",
+      "runId": "40afee3f-c331-4633-9ccd-a4ca4e6610f1",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Source pattern: domain 'blog.google' appears in 14 recent longlist entries",
+      "details": "In the past 30 days, 14 longlist entries have at least one source from blog.google. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
+      "evidence": {
+        "check": "cross_temporal_domain_share",
+        "domain": "blog.google",
+        "entryIds": [
+          "text-to-game",
+          "no-code-ai-creation",
+          "vals-index",
+          "multi-agent-visual-critique-loop",
+          "ai-voice-resurrection",
+          "ai-filmmaking-competition",
+          "gemini-4-argon",
+          "fairwind-program",
+          "alphagenome-atlas",
+          "project-suncatcher",
+          "tokens-economic-benchmark",
+          "ai-quests",
+          "connectomics",
+          "k12-ai-education"
+        ],
+        "windowDays": 30,
+        "recentEntryCount": 129
+      },
+      "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
+      "source": "auditor"
+    },
+    {
+      "id": "f17934b28173f4ef",
+      "type": "source_pattern",
+      "writtenAt": "2026-10-26T23:03:44.786Z",
+      "runId": "40afee3f-c331-4633-9ccd-a4ca4e6610f1",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Source pattern: domain 'sloanreview.mit.edu' appears in 9 recent longlist entries",
+      "details": "In the past 30 days, 9 longlist entries have at least one source from sloanreview.mit.edu. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
+      "evidence": {
+        "check": "cross_temporal_domain_share",
+        "domain": "sloanreview.mit.edu",
+        "entryIds": [
+          "technostress",
+          "tech-hindrance-challenge",
+          "decision-science",
+          "decision-modeling",
+          "data-science-disconnect",
+          "prediction-decision-gap",
+          "hr-tech-stack",
+          "accumulation-trap",
+          "vendor-default-problem"
+        ],
+        "windowDays": 30,
+        "recentEntryCount": 129
+      },
+      "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
+      "source": "auditor"
+    },
+    {
+      "id": "bf79c233664bb193",
+      "type": "source_pattern",
+      "writtenAt": "2026-10-26T23:03:44.786Z",
+      "runId": "40afee3f-c331-4633-9ccd-a4ca4e6610f1",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Source pattern: domain 'theverge.com' appears in 16 recent longlist entries",
+      "details": "In the past 30 days, 16 longlist entries have at least one source from theverge.com. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
+      "evidence": {
+        "check": "cross_temporal_domain_share",
+        "domain": "theverge.com",
+        "entryIds": [
+          "meta-muse",
+          "dual-class-ai-financing",
+          "data-center-air-quality",
+          "onsite-power-generation",
+          "robots-txt",
+          "web-scraping-ai",
+          "tos-ai-rights",
+          "speech-to-speech-model",
+          "speech-native-training",
+          "affective-voice-safety",
+          "on-device-voice-ai",
+          "ai-deceptive-advertising-act",
+          "ai-generated-ad-disclosure",
+          "ai-content-detection",
+          "authenticity-signal",
+          "agent-bot-defense"
+        ],
+        "windowDays": 30,
+        "recentEntryCount": 129
+      },
+      "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
+      "source": "auditor"
+    },
+    {
+      "id": "c34127e5bd46ed6f",
+      "type": "source_pattern",
+      "writtenAt": "2026-10-26T23:03:44.786Z",
+      "runId": "40afee3f-c331-4633-9ccd-a4ca4e6610f1",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Source pattern: domain 'blogs.nvidia.com' appears in 4 recent longlist entries",
+      "details": "In the past 30 days, 4 longlist entries have at least one source from blogs.nvidia.com. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
+      "evidence": {
+        "check": "cross_temporal_domain_share",
+        "domain": "blogs.nvidia.com",
+        "entryIds": [
+          "goodput",
+          "cost-per-token",
+          "inter-token-latency",
+          "test-time-scaling"
+        ],
+        "windowDays": 30,
+        "recentEntryCount": 129
+      },
+      "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
+      "source": "auditor"
+    },
+    {
+      "id": "4f20ec6b1d9c825f",
+      "type": "source_pattern",
+      "writtenAt": "2026-10-26T23:03:44.786Z",
+      "runId": "40afee3f-c331-4633-9ccd-a4ca4e6610f1",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Adoption velocity: 'GPT-6 Sol' hit 2 sources in 2d",
+      "details": "This entry accumulated 2 sources within 2 day(s) of first sighting. Often legitimate for product launches, but rapid multi-sourcing from a tight source pool can also signal coordinated promotion. Source labels involved: Last Week in AI, Simon Willison's Weblog.",
+      "evidence": {
+        "check": "adoption_velocity",
+        "entryId": "gpt6-sol",
+        "label": "GPT-6 Sol",
+        "sourceCount": 2,
+        "spanDays": 2,
+        "sourceLabels": [
+          "Last Week in AI",
+          "Simon Willison's Weblog"
+        ],
+        "firstSourceTs": "2026-10-19T22:00:12.148Z",
+        "lastSourceTs": "2026-10-21T21:16:07.143Z"
+      },
+      "suggestedAction": "Cross-check the sources for shared authors or cross-citation. If sources are tightly coupled (same publication network, same author byline), treat as one source for promotion-eligibility purposes.",
+      "source": "auditor"
+    },
+    {
+      "id": "95934e32961bd248",
+      "type": "source_pattern",
+      "writtenAt": "2026-10-26T23:03:44.786Z",
+      "runId": "40afee3f-c331-4633-9ccd-a4ca4e6610f1",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Adoption velocity: 'Muse Spark Open' hit 2 sources in 3d",
+      "details": "This entry accumulated 2 sources within 3 day(s) of first sighting. Often legitimate for product launches, but rapid multi-sourcing from a tight source pool can also signal coordinated promotion. Source labels involved: Stratechery.",
+      "evidence": {
+        "check": "adoption_velocity",
+        "entryId": "muse-spark-open",
+        "label": "Muse Spark Open",
+        "sourceCount": 2,
+        "spanDays": 3,
+        "sourceLabels": [
+          "Stratechery"
+        ],
+        "firstSourceTs": "2026-10-20T21:15:51.629Z",
+        "lastSourceTs": "2026-10-23T21:00:16.038Z"
+      },
+      "suggestedAction": "Cross-check the sources for shared authors or cross-citation. If sources are tightly coupled (same publication network, same author byline), treat as one source for promotion-eligibility purposes.",
+      "source": "auditor"
+    },
+    {
+      "id": "3f52bf48cc55ee48",
+      "type": "source_pattern",
+      "writtenAt": "2026-10-26T23:03:44.786Z",
+      "runId": "40afee3f-c331-4633-9ccd-a4ca4e6610f1",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Adoption velocity: 'Claude Fable 5.1' hit 2 sources in 1d",
+      "details": "This entry accumulated 2 sources within 1 day(s) of first sighting. Often legitimate for product launches, but rapid multi-sourcing from a tight source pool can also signal coordinated promotion. Source labels involved: Simon Willison's Weblog.",
+      "evidence": {
+        "check": "adoption_velocity",
+        "entryId": "claude-fable-51",
+        "label": "Claude Fable 5.1",
+        "sourceCount": 2,
+        "spanDays": 1,
+        "sourceLabels": [
+          "Simon Willison's Weblog"
+        ],
+        "firstSourceTs": "2026-10-23T21:00:16.038Z",
+        "lastSourceTs": "2026-10-24T20:14:57.522Z"
+      },
+      "suggestedAction": "Cross-check the sources for shared authors or cross-citation. If sources are tightly coupled (same publication network, same author byline), treat as one source for promotion-eligibility purposes.",
+      "source": "auditor"
     }
   ],
   "usedLinks": {

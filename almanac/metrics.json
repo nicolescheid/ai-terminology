@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-26T22:20:32.201Z",
+  "generatedAt": "2026-10-26T23:03:46.703Z",
   "firstRunAt": "2026-04-27T01:07:31.335Z",
   "phase": 1,
   "headline": {
@@ -14,8 +14,8 @@
     "sourcesAdded": 15,
     "promotionsToGraph": 7,
     "proposalsQueued": 8,
-    "auditFlags": 6,
-    "notesAdded": 11
+    "auditFlags": 8,
+    "notesAdded": 13
   },
   "almostThere": [
     {
@@ -497,9 +497,9 @@
     }
   },
   "audit": {
-    "flagsTotal": 81,
+    "flagsTotal": 89,
     "flagsByType": {
-      "source_pattern": 81
+      "source_pattern": 89
     }
   },
   "costs": {
