@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-10-26T04:33:40.931Z",
+  "generatedAt": "2026-10-26T22:20:32.201Z",
   "firstRunAt": "2026-04-27T01:07:31.335Z",
   "phase": 1,
   "headline": {
-    "articlesRead": 244,
+    "articlesRead": 250,
     "daysRunning": 183,
-    "longlistSize": 164,
+    "longlistSize": 171,
     "graphSize": 442
   },
   "thisWeek": {
     "articlesFetched": 53,
-    "longlistAdded": 73,
-    "sourcesAdded": 13,
+    "longlistAdded": 71,
+    "sourcesAdded": 15,
     "promotionsToGraph": 7,
-    "proposalsQueued": 10,
+    "proposalsQueued": 8,
     "auditFlags": 6,
     "notesAdded": 11
   },
@@ -27,7 +27,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 2,
-      "daysOnLonglist": 174,
+      "daysOnLonglist": 175,
       "domains": [
         "openai.com",
         "simonwillison.net"
@@ -43,9 +43,9 @@
         "business",
         "landscape"
       ],
-      "sourceCount": 9,
+      "sourceCount": 10,
       "independentSources": 1,
-      "daysOnLonglist": 145,
+      "daysOnLonglist": 146,
       "domains": [
         "stratechery.com"
       ],
@@ -62,7 +62,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 9,
+      "daysOnLonglist": 10,
       "domains": [
         "stratechery.com"
       ],
@@ -79,7 +79,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 6,
+      "daysOnLonglist": 7,
       "domains": [
         "huggingface.co"
       ],
@@ -95,7 +95,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 6,
+      "daysOnLonglist": 7,
       "domains": [
         "huggingface.co"
       ],
@@ -112,7 +112,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 5,
+      "daysOnLonglist": 6,
       "domains": [
         "simonwillison.net"
       ],
@@ -129,7 +129,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 149,
+      "daysOnLonglist": 150,
       "domains": [
         "normaltech.ai"
       ],
@@ -146,9 +146,26 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 149,
+      "daysOnLonglist": 150,
       "domains": [
         "normaltech.ai"
+      ],
+      "gapCount": 1,
+      "gap": "needs 1 more independent source"
+    },
+    {
+      "id": "ai-support-bot-takeover",
+      "label": "Account Takeover via AI Support Bot",
+      "fullName": null,
+      "clusters": [
+        "security",
+        "agentic"
+      ],
+      "sourceCount": 2,
+      "independentSources": 1,
+      "daysOnLonglist": 147,
+      "domains": [
+        "simonwillison.net"
       ],
       "gapCount": 1,
       "gap": "needs 1 more independent source"
@@ -162,26 +179,9 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 6,
+      "daysOnLonglist": 7,
       "domains": [
         "huggingface.co"
-      ],
-      "gapCount": 1,
-      "gap": "needs 1 more independent source"
-    },
-    {
-      "id": "muse-spark-open",
-      "label": "Muse Spark Open",
-      "fullName": null,
-      "clusters": [
-        "models",
-        "companies"
-      ],
-      "sourceCount": 2,
-      "independentSources": 1,
-      "daysOnLonglist": 5,
-      "domains": [
-        "stratechery.com"
       ],
       "gapCount": 1,
       "gap": "needs 1 more independent source"
@@ -191,15 +191,15 @@
     "byDomain": [
       {
         "domain": "openai.com",
-        "count": 56
+        "count": 57
       },
       {
         "domain": "simonwillison.net",
-        "count": 38
+        "count": 39
       },
       {
         "domain": "stratechery.com",
-        "count": 31
+        "count": 32
       },
       {
         "domain": "huggingface.co",
@@ -207,7 +207,7 @@
       },
       {
         "domain": "blog.google",
-        "count": 23
+        "count": 24
       },
       {
         "domain": "anthropic.com",
@@ -215,7 +215,7 @@
       },
       {
         "domain": "theverge.com",
-        "count": 19
+        "count": 20
       },
       {
         "domain": "lastweekin.ai",
@@ -231,7 +231,7 @@
       },
       {
         "domain": "sloanreview.mit.edu",
-        "count": 4
+        "count": 5
       },
       {
         "domain": "blogs.nvidia.com",
@@ -339,7 +339,7 @@
         "id": "technical",
         "label": "Technical",
         "hex": "#D0D040",
-        "count": 63
+        "count": 64
       },
       {
         "id": "safety",
@@ -351,7 +351,7 @@
         "id": "agentic",
         "label": "Agentic Systems",
         "hex": "#FF9040",
-        "count": 33
+        "count": 34
       },
       {
         "id": "models",
@@ -369,7 +369,13 @@
         "id": "tools",
         "label": "Tools & Platforms",
         "hex": "#70C8F8",
-        "count": 23
+        "count": 27
+      },
+      {
+        "id": "business",
+        "label": "Business Reality",
+        "hex": "#48C888",
+        "count": 22
       },
       {
         "id": "landscape",
@@ -378,16 +384,10 @@
         "count": 20
       },
       {
-        "id": "business",
-        "label": "Business Reality",
-        "hex": "#48C888",
-        "count": 19
-      },
-      {
         "id": "human",
         "label": "Human Skills",
         "hex": "#40D080",
-        "count": 17
+        "count": 20
       },
       {
         "id": "work",
@@ -405,7 +405,7 @@
         "id": "security",
         "label": "AI Security",
         "hex": "#E05050",
-        "count": 11
+        "count": 12
       },
       {
         "id": "autonomy",
@@ -417,6 +417,12 @@
         "id": "context",
         "label": "Context Health",
         "hex": "#A0D060",
+        "count": 1
+      },
+      {
+        "id": "core",
+        "label": "Core",
+        "hex": "#C070FF",
         "count": 1
       }
     ]

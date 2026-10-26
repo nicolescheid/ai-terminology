@@ -1,79 +1,256 @@
 {
-  "generatedAt": "2026-10-26T04:33:28.058Z",
+  "generatedAt": "2026-10-26T22:18:30.604Z",
   "model": "claude-sonnet-4-6",
   "sourcesConfigured": 15,
   "articlesConsidered": [
     {
-      "id": "0c0ce1d91251a58f",
+      "id": "be77c96c39b4ea3e",
+      "source": "Google AI Blog",
+      "title": "Our newest AI Quest: Mapping the human brain",
+      "url": "https://blog.google/products-and-platforms/products/education/ai-quests-polar-peaks/",
+      "publishedAt": "Mon, 26 Oct 2026 16:00:00 +0000"
+    },
+    {
+      "id": "1a1d4bf2fc111eb8",
+      "source": "OpenAI News",
+      "title": "GPT-6.1 Sol helps CodeRabbit strengthen security across complex codebases",
+      "url": "https://openai.com/index/gpt-6-1-sol-coderabbit-code-security",
+      "publishedAt": "Mon, 26 Oct 2026 13:45:00 GMT"
+    },
+    {
+      "id": "f2dd8a063825556a",
+      "source": "MIT Sloan Management Review",
+      "title": "  Is HR Tech Undermining Your Strategy?",
+      "url": "https://sloanreview.mit.edu/article/is-hr-tech-undermining-your-strategy/",
+      "publishedAt": "Mon, 26 Oct 2026 11:00:29 +0000"
+    },
+    {
+      "id": "989309fdcda3c5cb",
+      "source": "Stratechery",
+      "title": "The End of the Internet",
+      "url": "https://stratechery.com/2026/the-end-of-the-internet/",
+      "publishedAt": "Mon, 26 Oct 2026 10:00:00 +0000"
+    },
+    {
+      "id": "34adadfb171aaca1",
       "source": "Simon Willison's Weblog",
-      "title": "Tool: Seam Cutter",
-      "url": "https://simonwillison.net/2026/Oct/25/seam-cutter/",
-      "publishedAt": "2026-10-25T15:10:19+00:00"
+      "title": "A quote from Jason Koebler",
+      "url": "https://simonwillison.net/2026/Oct/26/jason-koebler/",
+      "publishedAt": "2026-10-26T19:00:25+00:00"
+    },
+    {
+      "id": "2500a6aad8741c76",
+      "source": "The Verge — AI",
+      "title": "The RealReal won’t let AI agents hog designer clothing",
+      "url": "https://www.theverge.com/news/1018713/meta-muse-agentic-shopping-ai-the-realreal",
+      "publishedAt": "2026-10-26T13:30:55-04:00"
     }
   ],
   "harvestedTerms": [
     {
       "article": {
-        "title": "Tool: Seam Cutter",
-        "url": "https://simonwillison.net/2026/Oct/25/seam-cutter/"
+        "title": "Our newest AI Quest: Mapping the human brain",
+        "url": "https://blog.google/products-and-platforms/products/education/ai-quests-polar-peaks/"
       },
-      "summary": "Simon Willison's personal blog post announcing a small, bespoke image-cropping tool called 'Seam Cutter' that allows horizontal or vertical cuts through an image to remove middle sections. The post contains no substantive AI content — it is a brief tool announcement with no terminology, framing, or conceptual material worth tracking.",
-      "longlistAdditions": [],
+      "summary": "Google launches 'Polar Peaks,' the third in its AI Quests series — an interactive educational game for ages 11–14 that teaches AI literacy through a neuroscience/brain-mapping scenario, developed with Stanford. The article announces accompanying teacher training modules via the Google AI Educator Series. The piece is primarily a product/program announcement with light educational-methodology content.",
+      "longlistAdditions": [
+        {
+          "id": "ai-quests",
+          "label": "AI Quests"
+        },
+        {
+          "id": "connectomics",
+          "label": "Connectomics"
+        },
+        {
+          "id": "k12-ai-education",
+          "label": "K–12 AI Education"
+        }
+      ],
+      "longlistUpdates": [],
+      "rejections": [
+        {
+          "label": "AI Literacy",
+          "reason": "already in graph (label match)"
+        }
+      ],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "  Is HR Tech Undermining Your Strategy?",
+        "url": "https://sloanreview.mit.edu/article/is-hr-tech-undermining-your-strategy/"
+      },
+      "summary": "MIT Sloan Management Review article on HR technology strategy, arguing that vendor-default HR platforms undermine organizational strategy through 'accumulation trap' dynamics. The piece introduces a 'Strategy-First Check-In' framework for aligning HR tech stacks to talent management priorities. Minimal AI-specific terminology; primarily a management/strategy piece with light AI context.",
+      "longlistAdditions": [
+        {
+          "id": "hr-tech-stack",
+          "label": "HR Tech Stack"
+        },
+        {
+          "id": "accumulation-trap",
+          "label": "Accumulation Trap"
+        },
+        {
+          "id": "vendor-default-problem",
+          "label": "Vendor Default Problem"
+        }
+      ],
       "longlistUpdates": [],
       "rejections": [],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "The End of the Internet",
+        "url": "https://stratechery.com/2026/the-end-of-the-internet/"
+      },
+      "summary": "Ben Thompson's 'The End of the Internet' traces the full arc of the open web — from blogs to social media to SEO to AI — arguing that each phase ends when infinite supply destroys discovery value, and that aggregators (Google, then social, now AI) capture the value created by open content while hollowing out the creators. The piece extends Thompson's Aggregator Theory into the AI era, arguing AI assistants now disintermediate even the aggregators, ending the web as a distribution channel and raising foundational questions about content creation incentives.",
+      "longlistAdditions": [],
+      "longlistUpdates": [
+        {
+          "id": "aggregator-theory",
+          "label": "Aggregator Theory",
+          "sourceAdded": true,
+          "sourceCount": 10,
+          "independentSourceCount": 1
+        },
+        {
+          "id": "ai-mode",
+          "label": "AI Mode",
+          "sourceAdded": true,
+          "sourceCount": 5,
+          "independentSourceCount": 5
+        }
+      ],
+      "rejections": [
+        {
+          "label": "Dead Internet Theory",
+          "reason": "already in graph (label match)"
+        },
+        {
+          "label": "Zombie Internet",
+          "reason": "already in graph (label match)"
+        }
+      ],
+      "proposalsQueued": [],
+      "mustReadFlagged": {
+        "priority": 1,
+        "reason": "One of the clearest long-form arguments that AI assistants are not just another wave of internet change but represent a structural endpoint — the final aggregation layer that breaks the incentive chain that made open web publishing viable. Thompson traces this thesis through his own twenty-year publishing history, making it both analytically rigorous and unusually concrete. Essential reading for anyone trying to understand how AI reshapes the information ecosystem, not just its products."
+      }
+    },
+    {
+      "article": {
+        "title": "A quote from Jason Koebler",
+        "url": "https://simonwillison.net/2026/Oct/26/jason-koebler/"
+      },
+      "summary": "A brief Simon Willison blog post quoting Jason Koebler on ChatGPT hallucinating that ordinary tech support problems are journalistically notable stories for 404 Media — a niche but telling illustration of chatbot confabulation and misuse in a customer-support vacuum.",
+      "longlistAdditions": [],
+      "longlistUpdates": [
+        {
+          "id": "ai-support-bot-takeover",
+          "label": "Account Takeover via AI Support Bot",
+          "sourceAdded": true,
+          "sourceCount": 2,
+          "independentSourceCount": 1
+        }
+      ],
+      "rejections": [
+        {
+          "label": "Botshit",
+          "reason": "already in graph (label match)"
+        },
+        {
+          "label": "Hallucination",
+          "reason": "already in graph (label match)"
+        },
+        {
+          "label": "AI Slop",
+          "reason": "already in graph (label match)"
+        }
+      ],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "The RealReal won’t let AI agents hog designer clothing",
+        "url": "https://www.theverge.com/news/1018713/meta-muse-agentic-shopping-ai-the-realreal"
+      },
+      "summary": "The RealReal updates its bot-defense system after The Verge demonstrated that Meta's Muse AI agent could exploit its shopping cart reserve system to effectively block other consumers from purchasing luxury items for hours. The article surfaces real-world friction emerging as AI agents become mainstream shopping tools, touching on agentic commerce, bot defenses, and the disruption to retail business models as agents mediate consumer-web interactions.",
+      "longlistAdditions": [
+        {
+          "id": "agent-bot-defense",
+          "label": "Agent Bot Defense"
+        }
+      ],
+      "longlistUpdates": [
+        {
+          "id": "meta-muse",
+          "label": "Muse",
+          "sourceAdded": true,
+          "sourceCount": 2,
+          "independentSourceCount": 1
+        }
+      ],
+      "rejections": [
+        {
+          "label": "Agentic Commerce",
+          "reason": "already in graph (label match)"
+        }
+      ],
       "proposalsQueued": []
     }
   ],
   "definitionReviews": [
     {
-      "id": "harness",
-      "status": "insufficient_evidence",
-      "reason": "The source excerpt is about an image-cropping tool and contains no information relevant to the definition of 'harness' in the AI context."
-    },
-    {
-      "id": "harness-engineering",
-      "status": "insufficient_evidence",
-      "reason": "The source excerpt contains no information relevant to harness engineering as an AI practice or coinage."
-    },
-    {
-      "id": "high-risk-ai-system",
-      "status": "insufficient_evidence",
-      "reason": "The source excerpt contains no information about the EU AI Act, high-risk AI systems, or the Digital Omnibus timeline changes."
-    },
-    {
-      "id": "hugging-face",
-      "status": "insufficient_evidence",
-      "reason": "The source excerpt contains no information about Hugging Face, its platform statistics, or its role in the open-weight ecosystem."
-    },
-    {
-      "id": "human-in-the-loop",
-      "status": "insufficient_evidence",
-      "reason": "The source excerpt contains no information relevant to human-in-the-loop design patterns or agentic workflows."
-    },
-    {
-      "id": "hyperscale-data-center",
-      "status": "insufficient_evidence",
-      "reason": "The source excerpt contains no information about hyperscale data centers, their capacity, or energy demands."
-    },
-    {
-      "id": "hyperscaler",
-      "status": "insufficient_evidence",
-      "reason": "The source excerpt contains no information about hyperscalers, cloud providers, or AI infrastructure investment."
-    },
-    {
-      "id": "idempotency",
-      "status": "insufficient_evidence",
-      "reason": "The source excerpt contains no information relevant to idempotency in agentic systems or otherwise."
-    },
-    {
-      "id": "indirect-prompt-injection",
-      "status": "insufficient_evidence",
-      "reason": "The source excerpt contains no information about prompt injection, agents, or related security concepts."
-    },
-    {
       "id": "inference",
+      "status": "keep",
+      "reason": "No source material updates or contradicts this definition. The description of inference as the act of a trained model generating a response from a prompt is accurate and uncontested."
+    },
+    {
+      "id": "inference-shift",
       "status": "insufficient_evidence",
-      "reason": "The source excerpt contains no information about AI inference, training, or model generation."
+      "reason": "The definition attributes the 'inference shift' framing to a specific Ben Thompson Stratechery piece. The only Stratechery excerpt provided is 'The End of the Internet,' which is about web/blog history and contains nothing about inference shift or AI compute trends. Cannot verify or update the attributed framing from available sources."
+    },
+    {
+      "id": "information-literacy",
+      "status": "keep",
+      "reason": "No source material addresses information literacy. The definition is reasonable and well-grounded; no update warranted."
+    },
+    {
+      "id": "infrastructure",
+      "status": "keep",
+      "reason": "No source material updates or contradicts this definition. The characterisation of infrastructure as the enabling compute/storage/networking/API layer is accurate and stable."
+    },
+    {
+      "id": "interactive-prototyping",
+      "status": "keep",
+      "reason": "No source material addresses interactive prototyping. Definition stands as written."
+    },
+    {
+      "id": "interpretability",
+      "status": "keep",
+      "reason": "No source material addresses model interpretability. The definition accurately characterises it as an open research problem aimed at making AI outputs legible."
+    },
+    {
+      "id": "iso-42001",
+      "status": "keep",
+      "reason": "No source material addresses ISO/IEC 42001. Definition stands as written."
+    },
+    {
+      "id": "jagged-frontier",
+      "status": "keep",
+      "reason": "No source material updates or contradicts this definition. The 2023 Harvard–BCG study attribution and the characterisation of uneven AI capability remain accurate."
+    },
+    {
+      "id": "jailbreak",
+      "status": "keep",
+      "reason": "No source material updates or contradicts this definition. The description of jailbreaks as intentional prompt-based safety-bypass attempts, distinct from prompt injection, is accurate."
+    },
+    {
+      "id": "kairos",
+      "status": "insufficient_evidence",
+      "reason": "The definition references a 'Claude Code source code leak, March 2026' as its sole evidentiary basis. None of the provided source excerpts reference KAIROS, Claude Code, or the alleged leak. Cannot verify or update this claim from available sources."
     }
   ],
   "notes": []

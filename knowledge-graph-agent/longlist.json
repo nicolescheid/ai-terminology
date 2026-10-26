@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-10-26T04:33:28.058Z",
-    "entryCount": 250,
+    "generatedAt": "2026-10-26T22:18:30.604Z",
+    "entryCount": 257,
     "note": "Lexi-managed Tier 2 longlist — terms under observation, awaiting evidence to support promotion to the graph (Tier 1)."
   },
   "entries": [
@@ -1535,12 +1535,20 @@
           "sourceLabel": "The Verge — AI",
           "publishedAt": "2026-10-25T08:00:00-04:00",
           "firstSeen": "2026-10-25T20:23:29.996Z"
+        },
+        {
+          "url": "https://stratechery.com/2026/the-end-of-the-internet/",
+          "domain": "stratechery.com",
+          "title": "The End of the Internet",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Mon, 26 Oct 2026 10:00:00 +0000",
+          "firstSeen": "2026-10-26T22:18:30.604Z"
         }
       ],
-      "sourceCount": 4,
-      "independentSourceCount": 4,
+      "sourceCount": 5,
+      "independentSourceCount": 5,
       "dateFirstSeen": "2026-05-09T07:44:17.196Z",
-      "dateLastSeen": "2026-10-25T20:23:29.996Z",
+      "dateLastSeen": "2026-10-26T22:18:30.604Z",
       "sz": 14,
       "fullName": "AI Mode (Google Search)",
       "nodeType": "product",
@@ -4929,12 +4937,20 @@
           "sourceLabel": "Simon Willison's Weblog",
           "publishedAt": "2026-06-01T21:14:47+00:00",
           "firstSeen": "2026-06-01T21:31:49.667Z"
+        },
+        {
+          "url": "https://simonwillison.net/2026/Oct/26/jason-koebler/",
+          "domain": "simonwillison.net",
+          "title": "A quote from Jason Koebler",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-10-26T19:00:25+00:00",
+          "firstSeen": "2026-10-26T22:18:30.604Z"
         }
       ],
-      "sourceCount": 1,
+      "sourceCount": 2,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-06-01T21:31:49.667Z",
-      "dateLastSeen": "2026-06-01T21:31:49.667Z",
+      "dateLastSeen": "2026-10-26T22:18:30.604Z",
       "sz": 14,
       "proposalReason": "A vivid real-world case illustrating the blast-radius and permission-creep risks of deploying agentic support bots with irreversible account-management capabilities. Worth tracking as a named failure class."
     },
@@ -5152,12 +5168,20 @@
           "sourceLabel": "Stratechery",
           "publishedAt": "Fri, 23 Oct 2026 10:00:00 +0000",
           "firstSeen": "2026-10-24T20:14:57.522Z"
+        },
+        {
+          "url": "https://stratechery.com/2026/the-end-of-the-internet/",
+          "domain": "stratechery.com",
+          "title": "The End of the Internet",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Mon, 26 Oct 2026 10:00:00 +0000",
+          "firstSeen": "2026-10-26T22:18:30.604Z"
         }
       ],
-      "sourceCount": 9,
+      "sourceCount": 10,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-06-02T20:47:42.877Z",
-      "dateLastSeen": "2026-10-24T20:14:57.522Z",
+      "dateLastSeen": "2026-10-26T22:18:30.604Z",
       "sz": 14,
       "fullName": "Aggregator Theory (Stratechery)",
       "proposalReason": "A named analytic framework with significant ongoing use in AI business-model discussions; not yet in the graph and surfaces repeatedly in AI-era platform-strategy writing."
@@ -8768,12 +8792,20 @@
           "sourceLabel": "The Verge — AI",
           "publishedAt": "2026-10-21T17:30:02-04:00",
           "firstSeen": "2026-10-21T22:03:58.255Z"
+        },
+        {
+          "url": "https://www.theverge.com/news/1018713/meta-muse-agentic-shopping-ai-the-realreal",
+          "domain": "theverge.com",
+          "title": "The RealReal won’t let AI agents hog designer clothing",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-10-26T13:30:55-04:00",
+          "firstSeen": "2026-10-26T22:18:30.604Z"
         }
       ],
-      "sourceCount": 1,
+      "sourceCount": 2,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-10-21T22:03:58.255Z",
-      "dateLastSeen": "2026-10-21T22:03:58.255Z",
+      "dateLastSeen": "2026-10-26T22:18:30.604Z",
       "sz": 14,
       "fullName": "Muse (Meta AI Agent)",
       "nodeType": "product",
@@ -9967,6 +9999,234 @@
       "dateLastSeen": "2026-10-25T20:23:29.996Z",
       "sz": 16,
       "proposalReason": "A genuinely new framing concept emerging from the AI era — the idea that imperfection itself becomes a credential of authenticity. Worth tracking as this dynamic plays out across media, documentary, journalism, and creative work."
+    },
+    {
+      "id": "ai-quests",
+      "label": "AI Quests",
+      "workingDef": "A Google Research initiative, developed with the Stanford Accelerator for Learning, consisting of interactive educational games targeting students ages 11–14. Each 'quest' places students in simulated research scenarios (flood forecasting, eye disease detection, brain mapping) to teach how AI systems work, including data cleaning, model testing, and the necessity of human oversight. Aimed at building AI literacy and critical thinking in K–12 contexts.",
+      "clusters": [
+        "human",
+        "tools"
+      ],
+      "suggestedRels": [
+        "ai-literacy",
+        "ai-tutoring",
+        "human-in-the-loop",
+        "critical-thinking",
+        "grounding"
+      ],
+      "sources": [
+        {
+          "url": "https://blog.google/products-and-platforms/products/education/ai-quests-polar-peaks/",
+          "domain": "blog.google",
+          "title": "Our newest AI Quest: Mapping the human brain",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Mon, 26 Oct 2026 16:00:00 +0000",
+          "firstSeen": "2026-10-26T22:18:30.604Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-26T22:18:30.604Z",
+      "dateLastSeen": "2026-10-26T22:18:30.604Z",
+      "sz": 14,
+      "fullName": "AI Quests (Google Research Educational Game Series)",
+      "nodeType": "product",
+      "proposalReason": "A named Google product series with an ongoing curriculum presence — worth tracking as a concrete instantiation of K–12 AI literacy programming at scale."
+    },
+    {
+      "id": "connectomics",
+      "label": "Connectomics",
+      "workingDef": "The scientific discipline of mapping the complete structural connectivity of neural networks in the brain — identifying neurons and the synaptic connections between them to produce a 'connectome.' In AI contexts, connectomics is increasingly cited as a domain where machine learning accelerates data processing: automated segmentation of electron-microscopy images enables mapping at scales (e.g., the complete fruit fly brain) previously impractical by hand. The term appears in AI literature primarily as an application domain for computer vision and large-scale data pipelines.",
+      "clusters": [
+        "technical",
+        "human"
+      ],
+      "suggestedRels": [
+        "grounding",
+        "synthetic-data",
+        "evals",
+        "multimodal"
+      ],
+      "sources": [
+        {
+          "url": "https://blog.google/products-and-platforms/products/education/ai-quests-polar-peaks/",
+          "domain": "blog.google",
+          "title": "Our newest AI Quest: Mapping the human brain",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Mon, 26 Oct 2026 16:00:00 +0000",
+          "firstSeen": "2026-10-26T22:18:30.604Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-26T22:18:30.604Z",
+      "dateLastSeen": "2026-10-26T22:18:30.604Z",
+      "sz": 14,
+      "fullName": "Connectomics (Neural Network Brain Mapping)",
+      "proposalReason": "An emerging application domain for AI — worth tracking as AI-accelerated scientific discovery expands into biological mapping."
+    },
+    {
+      "id": "k12-ai-education",
+      "label": "K–12 AI Education",
+      "workingDef": "A growing category of structured programs, curricula, and institutional partnerships aimed at teaching AI concepts, critical thinking about AI, and hands-on AI skills to students at primary and secondary school level. Includes game-based approaches (e.g., Google AI Quests), teacher training modules, and cross-disciplinary integration with science and technology curricula. Distinct from higher-education or workforce AI upskilling; the field lacks consensus on pedagogical standards or coverage requirements.",
+      "clusters": [
+        "human",
+        "core"
+      ],
+      "suggestedRels": [
+        "ai-literacy",
+        "ai-tutoring",
+        "critical-thinking",
+        "ai-fluency",
+        "information-literacy"
+      ],
+      "sources": [
+        {
+          "url": "https://blog.google/products-and-platforms/products/education/ai-quests-polar-peaks/",
+          "domain": "blog.google",
+          "title": "Our newest AI Quest: Mapping the human brain",
+          "sourceLabel": "Google AI Blog",
+          "publishedAt": "Mon, 26 Oct 2026 16:00:00 +0000",
+          "firstSeen": "2026-10-26T22:18:30.604Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-26T22:18:30.604Z",
+      "dateLastSeen": "2026-10-26T22:18:30.604Z",
+      "sz": 14,
+      "fullName": "K–12 AI Education (Formal AI Curriculum for School-Age Learners)",
+      "proposalReason": "A distinct and growing programmatic category sitting beneath the broader AI literacy concept — worth tracking as institutional investment in school-age AI education accelerates."
+    },
+    {
+      "id": "hr-tech-stack",
+      "label": "HR Tech Stack",
+      "workingDef": "The aggregated portfolio of software platforms an organization uses across the employee lifecycle — including recruiting, performance management, learning, and workforce analytics. Often grows through incremental 'point solution' acquisitions rather than intentional architectural design, resulting in redundancy, misalignment with organizational strategy, and reliance on vendor defaults rather than organization-specific configurations.",
+      "clusters": [
+        "tools",
+        "business"
+      ],
+      "suggestedRels": [
+        "stack",
+        "workflow",
+        "saas",
+        "vendor-lock-in"
+      ],
+      "sources": [
+        {
+          "url": "https://sloanreview.mit.edu/article/is-hr-tech-undermining-your-strategy/",
+          "domain": "sloanreview.mit.edu",
+          "title": "  Is HR Tech Undermining Your Strategy?",
+          "sourceLabel": "MIT Sloan Management Review",
+          "publishedAt": "Mon, 26 Oct 2026 11:00:29 +0000",
+          "firstSeen": "2026-10-26T22:18:30.604Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-26T22:18:30.604Z",
+      "dateLastSeen": "2026-10-26T22:18:30.604Z",
+      "sz": 14,
+      "fullName": "HR Technology Stack (Talent Management Platforms)",
+      "proposalReason": "A domain-specific instantiation of the broader 'stack' concept, relevant to the emerging literature on AI-enabled enterprise tooling and the risks of uncritical platform adoption."
+    },
+    {
+      "id": "accumulation-trap",
+      "label": "Accumulation Trap",
+      "workingDef": "The organizational pattern in which an ever-expanding portfolio of specialized point-solution platforms accretes over time — each acquired to solve a localized problem — resulting in a fragmented, uncoordinated technology landscape that undermines strategic intent. Coined in the HR technology context but applicable to enterprise AI tooling broadly.",
+      "clusters": [
+        "business",
+        "tools"
+      ],
+      "suggestedRels": [
+        "stack",
+        "vendor-lock-in",
+        "pilot-purgatory",
+        "saas"
+      ],
+      "sources": [
+        {
+          "url": "https://sloanreview.mit.edu/article/is-hr-tech-undermining-your-strategy/",
+          "domain": "sloanreview.mit.edu",
+          "title": "  Is HR Tech Undermining Your Strategy?",
+          "sourceLabel": "MIT Sloan Management Review",
+          "publishedAt": "Mon, 26 Oct 2026 11:00:29 +0000",
+          "firstSeen": "2026-10-26T22:18:30.604Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-26T22:18:30.604Z",
+      "dateLastSeen": "2026-10-26T22:18:30.604Z",
+      "sz": 14,
+      "fullName": "Accumulation Trap (HR Technology / Enterprise Software)",
+      "proposalReason": "A crisp named pattern for a dynamic highly relevant to AI tool adoption — organizations adding AI point solutions without architectural coherence — worth tracking as AI-enabled HR and enterprise tooling proliferates."
+    },
+    {
+      "id": "vendor-default-problem",
+      "label": "Vendor Default Problem",
+      "workingDef": "The tendency for organizations to accept out-of-the-box platform configurations designed for scalability and broad applicability — rather than customizing to organizational strategy — effectively outsourcing decision-making criteria, workflows, and reporting to vendors whose interests differ from those of the deploying organization. Particularly salient when platforms embed AI-driven analytics or recommendations.",
+      "clusters": [
+        "business",
+        "tools"
+      ],
+      "suggestedRels": [
+        "stack",
+        "automation-bias",
+        "saas",
+        "workflow"
+      ],
+      "sources": [
+        {
+          "url": "https://sloanreview.mit.edu/article/is-hr-tech-undermining-your-strategy/",
+          "domain": "sloanreview.mit.edu",
+          "title": "  Is HR Tech Undermining Your Strategy?",
+          "sourceLabel": "MIT Sloan Management Review",
+          "publishedAt": "Mon, 26 Oct 2026 11:00:29 +0000",
+          "firstSeen": "2026-10-26T22:18:30.604Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-26T22:18:30.604Z",
+      "dateLastSeen": "2026-10-26T22:18:30.604Z",
+      "sz": 14,
+      "fullName": "Vendor Default Problem (Enterprise Platform Configuration)",
+      "proposalReason": "Relevant to the growing concern about AI systems embedding normative assumptions through defaults; intersects with automation bias and the broader question of who configures the lens through which organizations understand themselves."
+    },
+    {
+      "id": "agent-bot-defense",
+      "label": "Agent Bot Defense",
+      "workingDef": "Retailer- and platform-side technical controls specifically designed to detect and block AI agents from interacting with commercial websites — distinct from traditional bot-management systems in that they target the login, cart, and checkout flows used by LLM-powered shopping agents rather than simple scrapers. The RealReal's response to Muse's reserve-system exploit illustrates an emerging category of defensive infrastructure as agentic commerce scales.",
+      "clusters": [
+        "agentic",
+        "security"
+      ],
+      "suggestedRels": [
+        "agentic-commerce",
+        "agentic-web",
+        "agent",
+        "sandboxing",
+        "guardrails"
+      ],
+      "sources": [
+        {
+          "url": "https://www.theverge.com/news/1018713/meta-muse-agentic-shopping-ai-the-realreal",
+          "domain": "theverge.com",
+          "title": "The RealReal won’t let AI agents hog designer clothing",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-10-26T13:30:55-04:00",
+          "firstSeen": "2026-10-26T22:18:30.604Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-26T22:18:30.604Z",
+      "dateLastSeen": "2026-10-26T22:18:30.604Z",
+      "sz": 14,
+      "fullName": "Agent Bot Defense (Retailer Anti-Agent Controls)",
+      "proposalReason": "New term: the article is the first clear source documenting retailer-side anti-agent infrastructure as a distinct defensive category, triggered by real exploitation of a cart-reserve system by a major consumer AI agent."
     }
   ]
 }

@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generatedAt": "2026-10-26T04:33:28.058Z",
-    "unreadCount": 52,
-    "totalCount": 344,
+    "generatedAt": "2026-10-26T22:18:30.604Z",
+    "unreadCount": 53,
+    "totalCount": 345,
     "note": "Notes for Nicole — Lexi's manager channel (spec §6). Mandatory entry types fire when their triggering condition is met; discretionary entries are observations Lexi thinks Nicole should see. Set status to 'read', 'actioned', or 'dismissed' as appropriate."
   },
   "entries": [
@@ -8797,6 +8797,26 @@
         "workingDef": "A training methodology in which a model is pretrained exclusively on raw speech audio — no transcribed text or written data — analogous to how human infants acquire language through auditory experience alone. Block's Dessa is the primary publicized example. Distinct from fine-tuning text-trained models on audio; proponents claim it preserves prosodic and emotional richness lost in text intermediation.",
         "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech",
         "sourceLabel": "The Verge — AI"
+      },
+      "suggestedAction": "Either revise the working definition to name the contestation (who uses it to mean what), or confirm this term doesn't warrant the contested treatment in this case."
+    },
+    {
+      "id": "14a1343bf11650bc",
+      "type": "contested_cluster_omission",
+      "writtenAt": "2026-10-26T22:18:30.604Z",
+      "runId": "00c2cf49-a823-43f4-b198-b4c992d37fb3",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Contested cluster term added without naming the contestation: 'Connectomics'",
+      "details": "The term 'Connectomics' matches the contested-cluster pattern 'responsible AI' (per spec §10), but the working definition does not appear to acknowledge that the term is contested or that different camps use it differently. Per spec §6 entry type 5, this requires review before any move toward graph promotion.",
+      "evidence": {
+        "entryId": "connectomics",
+        "label": "Connectomics",
+        "fullName": "Connectomics (Neural Network Brain Mapping)",
+        "matchedContestedTerm": "responsible AI",
+        "workingDef": "The scientific discipline of mapping the complete structural connectivity of neural networks in the brain — identifying neurons and the synaptic connections between them to produce a 'connectome.' In AI contexts, connectomics is increasingly cited as a domain where machine learning accelerates data processing: automated segmentation of electron-microscopy images enables mapping at scales (e.g., the complete fruit fly brain) previously impractical by hand. The term appears in AI literature primarily as an application domain for computer vision and large-scale data pipelines.",
+        "sourceUrl": "https://blog.google/products-and-platforms/products/education/ai-quests-polar-peaks/",
+        "sourceLabel": "Google AI Blog"
       },
       "suggestedAction": "Either revise the working definition to name the contestation (who uses it to mean what), or confirm this term doesn't warrant the contested treatment in this case."
     }

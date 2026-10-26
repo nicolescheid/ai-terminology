@@ -1,6 +1,6 @@
 {
-  "lastRunAt": "2026-10-26T04:33:28.058Z",
-  "reviewCursor": 234,
+  "lastRunAt": "2026-10-26T22:18:30.604Z",
+  "reviewCursor": 244,
   "seenArticles": {
     "93a049d060bc295b": {
       "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/tpus-8t-8i-cloud-next/",
@@ -1465,6 +1465,42 @@
       "title": "Tool: Seam Cutter",
       "publishedAt": "2026-10-25T15:10:19+00:00",
       "seenAt": "2026-10-26T04:33:28.058Z"
+    },
+    "be77c96c39b4ea3e": {
+      "url": "https://blog.google/products-and-platforms/products/education/ai-quests-polar-peaks/",
+      "title": "Our newest AI Quest: Mapping the human brain",
+      "publishedAt": "Mon, 26 Oct 2026 16:00:00 +0000",
+      "seenAt": "2026-10-26T22:18:30.604Z"
+    },
+    "1a1d4bf2fc111eb8": {
+      "url": "https://openai.com/index/gpt-6-1-sol-coderabbit-code-security",
+      "title": "GPT-6.1 Sol helps CodeRabbit strengthen security across complex codebases",
+      "publishedAt": "Mon, 26 Oct 2026 13:45:00 GMT",
+      "seenAt": "2026-10-26T22:18:30.604Z"
+    },
+    "f2dd8a063825556a": {
+      "url": "https://sloanreview.mit.edu/article/is-hr-tech-undermining-your-strategy/",
+      "title": "  Is HR Tech Undermining Your Strategy?",
+      "publishedAt": "Mon, 26 Oct 2026 11:00:29 +0000",
+      "seenAt": "2026-10-26T22:18:30.604Z"
+    },
+    "989309fdcda3c5cb": {
+      "url": "https://stratechery.com/2026/the-end-of-the-internet/",
+      "title": "The End of the Internet",
+      "publishedAt": "Mon, 26 Oct 2026 10:00:00 +0000",
+      "seenAt": "2026-10-26T22:18:30.604Z"
+    },
+    "34adadfb171aaca1": {
+      "url": "https://simonwillison.net/2026/Oct/26/jason-koebler/",
+      "title": "A quote from Jason Koebler",
+      "publishedAt": "2026-10-26T19:00:25+00:00",
+      "seenAt": "2026-10-26T22:18:30.604Z"
+    },
+    "2500a6aad8741c76": {
+      "url": "https://www.theverge.com/news/1018713/meta-muse-agentic-shopping-ai-the-realreal",
+      "title": "The RealReal won’t let AI agents hog designer clothing",
+      "publishedAt": "2026-10-26T13:30:55-04:00",
+      "seenAt": "2026-10-26T22:18:30.604Z"
     }
   },
   "nodeReviews": {
@@ -1954,39 +1990,39 @@
       "reason": "The source excerpt contains no information relevant to idempotency in agentic systems or otherwise."
     },
     "inference": {
-      "lastReviewedAt": "2026-10-26T04:33:28.058Z",
-      "status": "insufficient_evidence",
-      "reason": "The source excerpt contains no information about AI inference, training, or model generation."
+      "lastReviewedAt": "2026-10-26T22:18:30.604Z",
+      "status": "keep",
+      "reason": "No source material updates or contradicts this definition. The description of inference as the act of a trained model generating a response from a prompt is accurate and uncontested."
     },
     "information-literacy": {
-      "lastReviewedAt": "2026-05-09T07:44:17.196Z",
+      "lastReviewedAt": "2026-10-26T22:18:30.604Z",
       "status": "keep",
-      "reason": "No source material addresses this definition. It remains accurate as written."
+      "reason": "No source material addresses information literacy. The definition is reasonable and well-grounded; no update warranted."
     },
     "infrastructure": {
-      "lastReviewedAt": "2026-05-09T07:44:17.196Z",
+      "lastReviewedAt": "2026-10-26T22:18:30.604Z",
       "status": "keep",
-      "reason": "No source material addresses this definition. It remains accurate as written."
+      "reason": "No source material updates or contradicts this definition. The characterisation of infrastructure as the enabling compute/storage/networking/API layer is accurate and stable."
     },
     "interactive-prototyping": {
-      "lastReviewedAt": "2026-05-09T07:44:17.196Z",
+      "lastReviewedAt": "2026-10-26T22:18:30.604Z",
       "status": "keep",
-      "reason": "No source material addresses this definition. It remains accurate as written."
+      "reason": "No source material addresses interactive prototyping. Definition stands as written."
     },
     "interpretability": {
-      "lastReviewedAt": "2026-05-09T07:44:17.196Z",
+      "lastReviewedAt": "2026-10-26T22:18:30.604Z",
       "status": "keep",
-      "reason": "No source material addresses this definition. It remains accurate as written."
+      "reason": "No source material addresses model interpretability. The definition accurately characterises it as an open research problem aimed at making AI outputs legible."
     },
     "jailbreak": {
-      "lastReviewedAt": "2026-05-09T07:44:17.196Z",
+      "lastReviewedAt": "2026-10-26T22:18:30.604Z",
       "status": "keep",
-      "reason": "No source material addresses this definition. It remains accurate as written."
+      "reason": "No source material updates or contradicts this definition. The description of jailbreaks as intentional prompt-based safety-bypass attempts, distinct from prompt injection, is accurate."
     },
     "kairos": {
-      "lastReviewedAt": "2026-05-09T07:44:17.196Z",
+      "lastReviewedAt": "2026-10-26T22:18:30.604Z",
       "status": "insufficient_evidence",
-      "reason": "The definition makes a specific and extraordinary claim about an unreleased autonomous background mode inside Claude Code revealed via a source code leak in March 2026. None of the provided sources reference KAIROS, the described leak, or these specific capabilities. The claim cannot be verified or refuted from available evidence and warrants scrutiny before publication."
+      "reason": "The definition references a 'Claude Code source code leak, March 2026' as its sole evidentiary basis. None of the provided source excerpts reference KAIROS, Claude Code, or the alleged leak. Cannot verify or update this claim from available sources."
     },
     "kv-cache": {
       "lastReviewedAt": "2026-05-09T07:44:17.196Z",
@@ -2842,6 +2878,21 @@
       "lastReviewedAt": "2026-10-26T04:33:28.058Z",
       "status": "insufficient_evidence",
       "reason": "The source excerpt contains no information about prompt injection, agents, or related security concepts."
+    },
+    "inference-shift": {
+      "lastReviewedAt": "2026-10-26T22:18:30.604Z",
+      "status": "insufficient_evidence",
+      "reason": "The definition attributes the 'inference shift' framing to a specific Ben Thompson Stratechery piece. The only Stratechery excerpt provided is 'The End of the Internet,' which is about web/blog history and contains nothing about inference shift or AI compute trends. Cannot verify or update the attributed framing from available sources."
+    },
+    "iso-42001": {
+      "lastReviewedAt": "2026-10-26T22:18:30.604Z",
+      "status": "keep",
+      "reason": "No source material addresses ISO/IEC 42001. Definition stands as written."
+    },
+    "jagged-frontier": {
+      "lastReviewedAt": "2026-10-26T22:18:30.604Z",
+      "status": "keep",
+      "reason": "No source material updates or contradicts this definition. The 2023 Harvard–BCG study attribution and the characterisation of uneven AI capability remain accurate."
     }
   }
 }

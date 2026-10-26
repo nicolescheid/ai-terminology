@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generatedAt": "2026-10-26T04:33:28.058Z",
-    "unreadCount": 30,
-    "totalCount": 30,
+    "generatedAt": "2026-10-26T22:18:30.604Z",
+    "unreadCount": 31,
+    "totalCount": 31,
     "note": "Lexi's must-reads — articles she flags as worth Nicole reading in full. Editorial signal, not news feed. Set status to 'read' or 'dismissed' via mark-must-reads.mjs."
   },
   "entries": [
@@ -513,6 +513,23 @@
       ],
       "novelTermsInArticle": 3,
       "flaggedAt": "2026-10-23T21:00:16.038Z",
+      "status": "unread"
+    },
+    {
+      "id": "989309fdcda3c5cb",
+      "title": "The End of the Internet",
+      "url": "https://stratechery.com/2026/the-end-of-the-internet/",
+      "source": "Stratechery",
+      "publishedAt": "Mon, 26 Oct 2026 10:00:00 +0000",
+      "summary": "Ben Thompson's 'The End of the Internet' traces the full arc of the open web — from blogs to social media to SEO to AI — arguing that each phase ends when infinite supply destroys discovery value, and that aggregators (Google, then social, now AI) capture the value created by open content while hollowing out the creators. The piece extends Thompson's Aggregator Theory into the AI era, arguing AI assistants now disintermediate even the aggregators, ending the web as a distribution channel and raising foundational questions about content creation incentives.",
+      "priority": 1,
+      "reason": "One of the clearest long-form arguments that AI assistants are not just another wave of internet change but represent a structural endpoint — the final aggregation layer that breaks the incentive chain that made open web publishing viable. Thompson traces this thesis through his own twenty-year publishing history, making it both analytically rigorous and unusually concrete. Essential reading for anyone trying to understand how AI reshapes the information ecosystem, not just its products.",
+      "clusters": [
+        "landscape",
+        "business"
+      ],
+      "novelTermsInArticle": 0,
+      "flaggedAt": "2026-10-26T22:18:30.604Z",
       "status": "unread"
     }
   ]

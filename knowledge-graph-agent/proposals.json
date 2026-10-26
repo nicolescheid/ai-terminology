@@ -1,8 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-10-26T04:33:40.771Z",
+    "generatedAt": "2026-10-26T22:20:31.886Z",
     "pendingCount": 6,
-    "approvedCount": 0,
     "appliedCount": 45,
     "rejectedCount": 1,
     "note": "Lexi proposals queue. Actions gated as PROPOSE land here as status: 'pending'. Edit a proposal's status to 'approved' or 'rejected' and run the apply step (TBD) to commit."
