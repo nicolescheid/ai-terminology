@@ -1,7 +1,8 @@
 {
   "meta": {
-    "generatedAt": "2026-10-27T21:51:32.766Z",
-    "pendingCount": 7,
+    "generatedAt": "2026-10-27T23:23:05.050Z",
+    "pendingCount": 6,
+    "approvedCount": 1,
     "appliedCount": 45,
     "rejectedCount": 1,
     "note": "Lexi proposals queue. Actions gated as PROPOSE land here as status: 'pending'. Edit a proposal's status to 'approved' or 'rejected' and run the apply step (TBD) to commit."
@@ -2897,7 +2898,7 @@
       "action": "promote_to_graph",
       "gate": "propose",
       "proposedAt": "2026-10-27T21:51:32.766Z",
-      "status": "pending",
+      "status": "approved",
       "source": "promote-eligibility-scan",
       "target": {
         "kind": "longlist_entry",
@@ -2965,7 +2966,10 @@
       "tier": "nicole",
       "tierReason": "reviewer flagged it: sources do not support, factual error, too promotional, stale or dated",
       "digestId": "D-20261027-4607",
-      "digestN": 1
+      "digestN": 1,
+      "approvedAt": "2026-10-27T23:23:05.050Z",
+      "approvedBy": "nicole",
+      "decidedVia": "email-link"
     }
   ],
   "usedLinks": {
@@ -2975,6 +2979,7 @@
     "2eO1qKJxp4VOPtQ4": "2026-10-21T22:01:46.575Z",
     "fwBQnu1XYTsgoz7h": "2026-10-22T00:04:32.438Z",
     "X6VC7tnutopBmL8o": "2026-10-26T04:31:58.316Z",
-    "o9fgW3FwU4aD-osa": "2026-10-26T04:32:09.989Z"
+    "o9fgW3FwU4aD-osa": "2026-10-26T04:32:09.989Z",
+    "fyp-aOUbmht7SJ6p": "2026-10-27T23:23:05.050Z"
   }
 }
