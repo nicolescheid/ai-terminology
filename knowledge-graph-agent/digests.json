@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-10-27T21:51:42.259Z",
-    "count": 8,
+    "generatedAt": "2026-10-27T23:25:27.783Z",
+    "count": 9,
     "note": "Lexi's email digests to Nicole. Written by build-digest.mjs; sentAt/messageId/thread written by the Worker (src/lexi-mail)."
   },
   "digests": [
@@ -622,6 +622,54 @@
       "waitingEarlier": 6,
       "thread": [],
       "subject": "1 item to review [Lexi D-20261027-4607]"
+    },
+    {
+      "id": "D-20261027-f586",
+      "createdAt": "2026-10-27T23:25:27.783Z",
+      "autoApplyHours": 72,
+      "autoApplyAt": "2026-10-30T23:25:27.783Z",
+      "sentAt": null,
+      "messageId": null,
+      "items": [
+        {
+          "n": 1,
+          "proposalId": "396befe13b8a12b4",
+          "action": "promote_to_graph",
+          "kind": "new_term",
+          "term": "GPT-6.1 Sol",
+          "termId": "gpt61-sol",
+          "definition": "An OpenAI model released as an upgrade to GPT-6 Sol, positioned between GPT-6 Luna and GPT-6 Astra in the capability-cost hierarchy. Priced at $2 per million input tokens and $0.10 per million cached input tokens — roughly one-fifth of Astra's pricing — it targets agentic coding, computer use, and professional workflows where cost efficiency is a priority.",
+          "previousDefinition": null,
+          "sources": [
+            {
+              "label": "OpenAI Research: Introducing GPT-6.1 Sol",
+              "url": "https://openai.com/index/introducing-gpt-6-1-sol/"
+            },
+            {
+              "label": "Simon Willison's Weblog: GPT-6.1 Terra",
+              "url": "https://simonwillison.net/2026/Oct/26/gpt-61-terra/"
+            }
+          ],
+          "nearest": {
+            "id": "gpt55",
+            "label": "GPT-5.5",
+            "relation": "sibling OpenAI model release"
+          },
+          "rationale": "2 sources, 2 independent (openai.com + simonwillison.net), 11d on longlist. Trusted: simonwillison.net.",
+          "review": {
+            "verdict": "flag",
+            "summary": "The OpenAI source returned a 403, and the only readable excerpt is about GPT-6.1 Terra. It implies Sol costs about $2/M input but does not support the $0.10 cached price or the 'one-fifth of Astra' claim. The 'between Luna and Astra' positioning also omits Terra, which now sits between Sol and Luna.",
+            "flags": [
+              "sources_do_not_support",
+              "stale_or_dated"
+            ]
+          },
+          "tier": "nicole",
+          "tierReason": "reviewer flagged it: sources do not support, stale or dated"
+        }
+      ],
+      "waitingEarlier": 6,
+      "thread": []
     }
   ]
 }

@@ -1,6 +1,6 @@
 window.AGENT_GRAPH_PATCH = {
   "meta": {
-    "generatedAt": "2026-10-27T21:49:48.879Z",
+    "generatedAt": "2026-10-27T23:25:27.703Z",
     "sourceCount": 6,
     "note": "Agent-managed overlay. Graph-affecting changes are routed through the permissions matrix (actions.mjs) — see proposals.json for pending items."
   },
@@ -1379,6 +1379,35 @@ window.AGENT_GRAPH_PATCH = {
         }
       ],
       "fullName": "Maintainer Accountability (AI-Era Open Source)"
+    },
+    {
+      "id": "ai-mathematics",
+      "label": "AI Mathematics",
+      "clusters": [
+        "models",
+        "critical"
+      ],
+      "sz": 14,
+      "def": "The use of frontier AI models to generate novel mathematical results — including formal proofs, conjectures, and derivations — at a scale and pace that outpaces traditional human mathematical research workflows. Exemplified by OpenAI's October 2026 release of 719 manuscripts produced by an unreleased internal model, including a claimed solution to the Navier-Stokes Millennium Prize Problem. Raises contested questions about credit attribution, reproducibility, peer review, and whether AI-generated proofs constitute mathematical knowledge in the same sense as human-authored ones. The Advisory Group on Mathematics and Artificial Intelligence (AGMAI) at the Institute for Advanced Study has called for disclosure of model names, prompts, and compute costs, and has objected to treating mathematical results as marketing vehicles.",
+      "rels": [
+        "frontier-model",
+        "benchmark-gaming",
+        "evals",
+        "structured-output"
+      ],
+      "refs": [
+        {
+          "n": 1,
+          "src": "Last Week in AI, Fri, 09 Oct 2026 05:06:58 GMT",
+          "q": "Last Week in AI #346 - 719 math manuscripts, 2 Western open models, 1 more safety resignation Last Week in AI"
+        },
+        {
+          "n": 2,
+          "src": "The Verge — AI, 2026-10-27T16:48:58-04:00",
+          "q": "Researchers are getting tired of OpenAI gatekeeping its breakthroughs The Verge — AI"
+        }
+      ],
+      "fullName": "AI-Generated Mathematical Research"
     }
   ],
   "definitionOverrides": [

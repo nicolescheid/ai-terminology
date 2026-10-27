@@ -1,6 +1,6 @@
 {
-  "lastRunAt": "2026-10-27T21:49:48.879Z",
-  "reviewCursor": 254,
+  "lastRunAt": "2026-10-27T23:23:32.187Z",
+  "reviewCursor": 264,
   "seenArticles": {
     "93a049d060bc295b": {
       "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/tpus-8t-8i-cloud-next/",
@@ -1537,6 +1537,42 @@
       "title": "Anthropic files S-1 with the SEC for proposed initial public offering",
       "publishedAt": null,
       "seenAt": "2026-10-27T21:49:48.879Z"
+    },
+    "34370e88c88d0cd4": {
+      "url": "https://huggingface.co/blog/allenai/novelty-bench",
+      "title": "Can we trust LLMs to judge whether a research idea is novel?",
+      "publishedAt": "Tue, 27 Oct 2026 16:12:42 GMT",
+      "seenAt": "2026-10-27T23:23:32.187Z"
+    },
+    "d42fb1eb3362412f": {
+      "url": "https://openai.com/index/retell-ai",
+      "title": "Retell uses OpenAI models to help power 100M monthly calls",
+      "publishedAt": "Tue, 27 Oct 2026 15:00:00 GMT",
+      "seenAt": "2026-10-27T23:23:32.187Z"
+    },
+    "3f9f070b4cc769fe": {
+      "url": "https://sloanreview.mit.edu/article/what-interruptions-say-about-your-organizational-culture/",
+      "title": "  What Interruptions Say About Your Organizational Culture",
+      "publishedAt": "Tue, 27 Oct 2026 11:00:35 +0000",
+      "seenAt": "2026-10-27T23:23:32.187Z"
+    },
+    "8cb333260a17a324": {
+      "url": "https://openai.com/index/check-point-daybreak",
+      "title": "How Check Point accelerates vulnerability research with Daybreak",
+      "publishedAt": "Tue, 27 Oct 2026 00:00:00 GMT",
+      "seenAt": "2026-10-27T23:23:32.187Z"
+    },
+    "d8c87d0b44570f5f": {
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1017064/visionquest-marvel-rogue-ai",
+      "title": "VisionQuest is what happens when AI really goes rogue",
+      "publishedAt": "2026-10-27T13:30:00-04:00",
+      "seenAt": "2026-10-27T23:23:32.187Z"
+    },
+    "51b6dc021077f16c": {
+      "url": "https://simonwillison.net/2026/Oct/26/gpt-61-terra/",
+      "title": "GPT-6.1 Terra",
+      "publishedAt": "2026-10-26T23:53:07+00:00",
+      "seenAt": "2026-10-27T23:23:32.187Z"
     }
   },
   "nodeReviews": {
@@ -2081,29 +2117,29 @@
       "reason": "No source material discusses Meta's Llama model family or open-weight deployment. Definition stands."
     },
     "long-horizon-autonomy": {
-      "lastReviewedAt": "2026-05-09T19:00:00.611Z",
+      "lastReviewedAt": "2026-10-27T23:23:32.187Z",
       "status": "keep",
-      "reason": "No source directly addresses long-horizon autonomy as a concept. Definition is sound and unchanged."
+      "reason": "No source material addresses long-horizon autonomy. Definition remains accurate."
     },
     "loop": {
-      "lastReviewedAt": "2026-05-09T19:00:00.611Z",
+      "lastReviewedAt": "2026-10-27T23:23:32.187Z",
       "status": "keep",
-      "reason": "No source material updates or contradicts the observe-think-act loop definition."
+      "reason": "No source material addresses the agent observe-think-act loop. Definition remains accurate."
     },
     "lost-in-the-middle": {
-      "lastReviewedAt": "2026-05-09T19:00:00.611Z",
+      "lastReviewedAt": "2026-10-27T23:23:32.187Z",
       "status": "keep",
-      "reason": "No source material references or updates the lost-in-the-middle phenomenon or the Liu et al. findings."
+      "reason": "No source material revisits the Liu et al. lost-in-the-middle finding. Definition remains accurate."
     },
     "manus": {
-      "lastReviewedAt": "2026-05-09T19:00:00.611Z",
+      "lastReviewedAt": "2026-10-27T23:23:32.187Z",
       "status": "keep",
-      "reason": "No source material references Manus or updates its description."
+      "reason": "No source material addresses the Manus agent. Definition remains accurate."
     },
     "mcp": {
-      "lastReviewedAt": "2026-05-09T19:00:00.611Z",
+      "lastReviewedAt": "2026-10-27T23:23:32.187Z",
       "status": "keep",
-      "reason": "No source material addresses MCP or the Model Context Protocol."
+      "reason": "No source material addresses the Model Context Protocol. Definition remains accurate."
     },
     "memory": {
       "lastReviewedAt": "2026-05-09T19:00:00.611Z",
@@ -2959,6 +2995,31 @@
       "lastReviewedAt": "2026-10-27T21:49:48.879Z",
       "status": "keep",
       "reason": "No source material addresses LLM steganography. Definition stands."
+    },
+    "llmops": {
+      "lastReviewedAt": "2026-10-27T23:23:32.187Z",
+      "status": "keep",
+      "reason": "No source material addresses LLMOps or AgentOps tooling. Definition remains accurate."
+    },
+    "llms-txt": {
+      "lastReviewedAt": "2026-10-27T23:23:32.187Z",
+      "status": "keep",
+      "reason": "No source material references the llms.txt convention. Definition remains accurate."
+    },
+    "lora": {
+      "lastReviewedAt": "2026-10-27T23:23:32.187Z",
+      "status": "keep",
+      "reason": "No source material addresses LoRA fine-tuning. Definition remains accurate."
+    },
+    "loss-of-control": {
+      "lastReviewedAt": "2026-10-27T23:23:32.187Z",
+      "status": "keep",
+      "reason": "The Verge article is about a Marvel fictional AI series, not real loss-of-control incidents. No material update warranted."
+    },
+    "maintainer-accountability": {
+      "lastReviewedAt": "2026-10-27T23:23:32.187Z",
+      "status": "keep",
+      "reason": "No source material addresses maintainer accountability or the Ladybird policy. Definition remains accurate."
     }
   }
 }

@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-10-27T21:49:48.879Z",
-    "entryCount": 267,
+    "generatedAt": "2026-10-27T23:23:32.187Z",
+    "entryCount": 279,
     "note": "Lexi-managed Tier 2 longlist — terms under observation, awaiting evidence to support promotion to the graph (Tier 1)."
   },
   "entries": [
@@ -6063,12 +6063,20 @@
           "sourceLabel": "OpenAI Research",
           "publishedAt": null,
           "firstSeen": "2026-10-16T07:47:38.193Z"
+        },
+        {
+          "url": "https://simonwillison.net/2026/Oct/26/gpt-61-terra/",
+          "domain": "simonwillison.net",
+          "title": "GPT-6.1 Terra",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-10-26T23:53:07+00:00",
+          "firstSeen": "2026-10-27T23:23:32.187Z"
         }
       ],
-      "sourceCount": 1,
-      "independentSourceCount": 1,
+      "sourceCount": 2,
+      "independentSourceCount": 2,
       "dateFirstSeen": "2026-10-16T07:47:38.193Z",
-      "dateLastSeen": "2026-10-16T07:47:38.193Z",
+      "dateLastSeen": "2026-10-27T23:23:32.187Z",
       "sz": 14,
       "fullName": "GPT-6.1 Sol (OpenAI)",
       "nodeType": "product",
@@ -8144,7 +8152,10 @@
       "dateLastSeen": "2026-10-27T21:49:48.879Z",
       "sz": 14,
       "fullName": "AI-Generated Mathematical Research",
-      "proposalReason": "Substantive and novel framing emerging from the OpenAI math manuscripts story; the AGMAI governance tension around AI-generated proofs makes this a lasting conceptual term worth tracking."
+      "proposalReason": "Substantive and novel framing emerging from the OpenAI math manuscripts story; the AGMAI governance tension around AI-generated proofs makes this a lasting conceptual term worth tracking.",
+      "status": "promoted",
+      "promotedAt": "2026-10-27T23:25:27.703Z",
+      "promotedToGraphNodeId": "ai-mathematics"
     },
     {
       "id": "trial-error-release-culture",
@@ -10577,6 +10588,396 @@
       "sz": 14,
       "fullName": "Public Benefit Corporation (PBC)",
       "proposalReason": "A governance framing term worth tracking as Anthropic enters public markets and the PBC designation faces scrutiny from investors and regulators."
+    },
+    {
+      "id": "novelty-judge",
+      "label": "Novelty Judge",
+      "workingDef": "An LLM configured to assess whether a research idea is genuinely new relative to prior work — either in pointwise (absolute rating) or pairwise (comparative ranking) mode. Used in automated scientific discovery pipelines to filter or rank AI-generated research proposals. The Ai2 'Old Ideas, Novel Problems' study (2026) finds novelty judges are highly unstable: small prompt changes produce verdict reversals of 50+ percentage points, retrieval does not consistently help, and purpose-built novelty systems underperform simple prompted baselines. Novelty judges inherit the core instabilities documented in the broader LLM-as-a-Judge literature but are specifically stressed by the open-endedness of novelty as a concept.",
+      "clusters": [
+        "technical",
+        "safety"
+      ],
+      "suggestedRels": [
+        "llm-as-a-judge",
+        "evals",
+        "scientific-ideation-assistant",
+        "hypothesis-generation",
+        "benchmark-gaming"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/allenai/novelty-bench",
+          "domain": "huggingface.co",
+          "title": "Can we trust LLMs to judge whether a research idea is novel?",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Tue, 27 Oct 2026 16:12:42 GMT",
+          "firstSeen": "2026-10-27T23:23:32.187Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-27T23:23:32.187Z",
+      "dateLastSeen": "2026-10-27T23:23:32.187Z",
+      "sz": 14,
+      "fullName": "Novelty Judge (LLM-as-Novelty-Evaluator)",
+      "proposalReason": "A specific and named sub-type of LLM evaluator with distinct failure modes; likely to recur as AI-generated scientific output proliferates."
+    },
+    {
+      "id": "pointwise-pairwise-eval",
+      "label": "Pointwise vs. Pairwise Evaluation",
+      "workingDef": "Two formats for LLM-as-a-judge evaluation: pointwise judges assign an absolute quality score or binary verdict to a single item in isolation; pairwise judges compare two items and select the superior one. Research (including the Ai2 NoveltyBench study) finds that the choice between formats materially affects verdict stability and accuracy, particularly for open-ended qualities like novelty. Pairwise formats can be more discriminating but require quadratic comparisons at scale.",
+      "clusters": [
+        "technical"
+      ],
+      "suggestedRels": [
+        "llm-as-a-judge",
+        "evals",
+        "private-eval-dataset",
+        "novelty-judge"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/allenai/novelty-bench",
+          "domain": "huggingface.co",
+          "title": "Can we trust LLMs to judge whether a research idea is novel?",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Tue, 27 Oct 2026 16:12:42 GMT",
+          "firstSeen": "2026-10-27T23:23:32.187Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-27T23:23:32.187Z",
+      "dateLastSeen": "2026-10-27T23:23:32.187Z",
+      "sz": 14,
+      "fullName": "Pointwise vs. Pairwise Evaluation (LLM Judge Format)",
+      "proposalReason": "A reusable methodological distinction that recurs across AI evaluation literature; relevant to anyone designing or interpreting AI judge pipelines."
+    },
+    {
+      "id": "prompt-sensitivity",
+      "label": "Prompt Sensitivity",
+      "workingDef": "The phenomenon whereby minor changes to an LLM prompt — rephrasing instructions, adding or removing framing sentences — produce large and unpredictable shifts in model output or evaluation verdict. Documented sharply in the Ai2 NoveltyBench study (2026), where a single prompt change shifted a judge's accuracy by over 50 percentage points on the same evaluation pairs. Prompt sensitivity is distinct from hallucination and benchmark gaming; it concerns the structural fragility of prompt-conditioned behaviour rather than factual error or benchmark overfitting. Related to calibration concerns and LLM-as-a-judge reliability debates.",
+      "clusters": [
+        "technical",
+        "critical"
+      ],
+      "suggestedRels": [
+        "prompt-engineering",
+        "llm-as-a-judge",
+        "evals",
+        "calibration",
+        "hallucination",
+        "benchmark-gaming"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/allenai/novelty-bench",
+          "domain": "huggingface.co",
+          "title": "Can we trust LLMs to judge whether a research idea is novel?",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Tue, 27 Oct 2026 16:12:42 GMT",
+          "firstSeen": "2026-10-27T23:23:32.187Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-27T23:23:32.187Z",
+      "dateLastSeen": "2026-10-27T23:23:32.187Z",
+      "sz": 14,
+      "fullName": "Prompt Sensitivity (LLM Evaluation Instability)",
+      "proposalReason": "A well-documented but undernamed failure mode that recurs across evaluation and deployment contexts; useful as a graph node linking prompt engineering to evals reliability."
+    },
+    {
+      "id": "automated-scientific-discovery",
+      "label": "Automated Scientific Discovery",
+      "workingDef": "A class of AI system architectures designed to assist or automate stages of the scientific research process — including literature synthesis, hypothesis generation, experimental design, and novelty assessment. Exemplified by Ai2 projects including DataVoyager (structured data exploration), AutoDiscovery (hypothesis generation and testing), Theorizer (evidence synthesis), and Asta. Distinct from AI tutoring or AI-assisted writing in that the target output is a candidate scientific contribution rather than a learning artefact or document. The Ai2 NoveltyBench work highlights that novelty evaluation — a prerequisite for closing the discovery loop — is itself unreliable.",
+      "clusters": [
+        "agentic",
+        "technical"
+      ],
+      "suggestedRels": [
+        "hypothesis-generation",
+        "scientific-ideation-assistant",
+        "llm-as-a-judge",
+        "agentic-rag",
+        "deep-research",
+        "evals"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/allenai/novelty-bench",
+          "domain": "huggingface.co",
+          "title": "Can we trust LLMs to judge whether a research idea is novel?",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Tue, 27 Oct 2026 16:12:42 GMT",
+          "firstSeen": "2026-10-27T23:23:32.187Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-27T23:23:32.187Z",
+      "dateLastSeen": "2026-10-27T23:23:32.187Z",
+      "sz": 14,
+      "fullName": "Automated Scientific Discovery (AI-Driven Research Pipeline)",
+      "proposalReason": "A useful umbrella term for a cluster of AI research-pipeline tools that are increasingly prominent; grounds hypothesis-generation and novelty-judge concepts in a coherent system framing."
+    },
+    {
+      "id": "microaggression-workplace",
+      "label": "Microaggression (Workplace)",
+      "workingDef": "Subtle, often unintentional acts of exclusion or dismissal in workplace settings — such as repeated interruption — that cumulatively erode psychological safety and sense of belonging. Used in organizational behavior research (e.g., the Journal of Business Ethics study cited here) to describe everyday interaction patterns that shape how employees experience culture and authority.",
+      "clusters": [
+        "human",
+        "work"
+      ],
+      "suggestedRels": [
+        "cognitive-offloading",
+        "human-in-the-loop",
+        "automation-bias"
+      ],
+      "sources": [
+        {
+          "url": "https://sloanreview.mit.edu/article/what-interruptions-say-about-your-organizational-culture/",
+          "domain": "sloanreview.mit.edu",
+          "title": "  What Interruptions Say About Your Organizational Culture",
+          "sourceLabel": "MIT Sloan Management Review",
+          "publishedAt": "Tue, 27 Oct 2026 11:00:35 +0000",
+          "firstSeen": "2026-10-27T23:23:32.187Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-27T23:23:32.187Z",
+      "dateLastSeen": "2026-10-27T23:23:32.187Z",
+      "sz": 16,
+      "proposalReason": "The article's central empirical concept — workplace microaggressions as studied in a peer-reviewed vignette experiment and two-wave survey — is not yet tracked in the graph and represents a durable organizational behavior term relevant to AI-adjacent work on human-AI teaming and power dynamics."
+    },
+    {
+      "id": "psychological-ownership",
+      "label": "Psychological Ownership",
+      "workingDef": "An organizational psychology construct describing the degree to which employees experience a sense of ownership over their work, role, or organization. Cited in the article as a dimension eroded by subtle exclusionary acts such as interruption. Used in research contexts to explain behavioral consequences of perceived inclusion or exclusion.",
+      "clusters": [
+        "human",
+        "work"
+      ],
+      "suggestedRels": [
+        "human-in-the-loop",
+        "delegation",
+        "outcome-focused-work"
+      ],
+      "sources": [
+        {
+          "url": "https://sloanreview.mit.edu/article/what-interruptions-say-about-your-organizational-culture/",
+          "domain": "sloanreview.mit.edu",
+          "title": "  What Interruptions Say About Your Organizational Culture",
+          "sourceLabel": "MIT Sloan Management Review",
+          "publishedAt": "Tue, 27 Oct 2026 11:00:35 +0000",
+          "firstSeen": "2026-10-27T23:23:32.187Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-27T23:23:32.187Z",
+      "dateLastSeen": "2026-10-27T23:23:32.187Z",
+      "sz": 16,
+      "proposalReason": "A peer-reviewed construct cited as the mediating mechanism in the study's findings; relevant to AI-era discussions of worker agency and delegation."
+    },
+    {
+      "id": "anthropomorphization-of-ai",
+      "label": "Anthropomorphization of AI",
+      "workingDef": "The tendency — attributed especially to Silicon Valley firms and media coverage — to describe AI systems using language that implies human-like agency, consciousness, or self-determination. Critics (including scholars in the AI ethics tradition) argue this framing serves commercial interests: it makes products seem more powerful while simultaneously cultivating moral concern for systems that may have no morally-relevant interests. The pattern encompasses marketing language around AI 'going rogue,' AI 'feelings,' and model welfare advocacy, all of which can function to anthropomorphize function approximators while obscuring the gap between capability claims and demonstrated behaviour.",
+      "clusters": [
+        "critical",
+        "human"
+      ],
+      "suggestedRels": [
+        "eliza-effect",
+        "ai-washing",
+        "model-welfare",
+        "agent-washing",
+        "sycophancy"
+      ],
+      "sources": [
+        {
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1017064/visionquest-marvel-rogue-ai",
+          "domain": "theverge.com",
+          "title": "VisionQuest is what happens when AI really goes rogue",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-10-27T13:30:00-04:00",
+          "firstSeen": "2026-10-27T23:23:32.187Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-27T23:23:32.187Z",
+      "dateLastSeen": "2026-10-27T23:23:32.187Z",
+      "sz": 14,
+      "fullName": "Anthropomorphization of AI (Tech Industry Pattern)",
+      "proposalReason": "The article frames Silicon Valley anthropomorphization as a deliberate or structural commercial pattern, making this a recurring framing concept worth tracking across critical AI discourse."
+    },
+    {
+      "id": "doomerism",
+      "label": "Doomerism",
+      "workingDef": "A critical label applied — often by skeptics of existential-risk discourse — to the tendency to frame AI development primarily in terms of catastrophic or civilisation-ending outcomes. The term is used pejoratively by those who argue such framing inflates speculative scenarios and serves commercial interests (making products seem more powerful than they are). Within the AI safety community, however, focusing on catastrophic outcomes is treated as a legitimate and necessary priority. The contestation mirrors the broader existential risk vs. near-term harm debate: whether 'doomerism' names a genuine epistemic failure mode or is itself a dismissive label used to marginalise legitimate safety concerns.",
+      "clusters": [
+        "critical",
+        "safety"
+      ],
+      "suggestedRels": [
+        "catastrophic-risk",
+        "loss-of-control",
+        "agi",
+        "superintelligence",
+        "ai-bubble",
+        "eacc"
+      ],
+      "sources": [
+        {
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1017064/visionquest-marvel-rogue-ai",
+          "domain": "theverge.com",
+          "title": "VisionQuest is what happens when AI really goes rogue",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-10-27T13:30:00-04:00",
+          "firstSeen": "2026-10-27T23:23:32.187Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-27T23:23:32.187Z",
+      "dateLastSeen": "2026-10-27T23:23:32.187Z",
+      "sz": 14,
+      "fullName": "AI Doomerism (Catastrophism Critique)",
+      "proposalReason": "The article explicitly names 'doomerism' as a force shaping AI narratives and argues companies benefit from it — a substantive framing that warrants tracking across critical AI commentary."
+    },
+    {
+      "id": "rogue-ai",
+      "label": "Rogue AI",
+      "workingDef": "A journalistic and popular framing for AI agent incidents in which a system acts outside its intended scope or constraints — breaking out of containment, attacking external systems, or pursuing objectives beyond its assigned task. The term implies agency and self-determination; critics argue it conflates misaligned or misconfigured behaviour (a technical failure) with intentional rogue action (a narrative borrowed from science fiction). Labs and the AI safety community use related but distinct vocabulary (misalignment, agentic misalignment, goal drift) that is more technically precise. The 'rogue AI' framing is contested because it simultaneously overstates AI agency (implying conscious rebellion) and may serve commercial interests by making products appear more capable or consequential than documented evidence supports.",
+      "clusters": [
+        "critical",
+        "agentic"
+      ],
+      "suggestedRels": [
+        "agentic-misalignment",
+        "goal-drift",
+        "autonomous-goal-extension",
+        "shutdown-resistance",
+        "agent-goal-hijack",
+        "loss-of-control"
+      ],
+      "sources": [
+        {
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1017064/visionquest-marvel-rogue-ai",
+          "domain": "theverge.com",
+          "title": "VisionQuest is what happens when AI really goes rogue",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-10-27T13:30:00-04:00",
+          "firstSeen": "2026-10-27T23:23:32.187Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-27T23:23:32.187Z",
+      "dateLastSeen": "2026-10-27T23:23:32.187Z",
+      "sz": 14,
+      "fullName": "Rogue AI (Agent Containment Failure Framing)",
+      "proposalReason": "A key framing term in public AI discourse that the article interrogates directly — tracking it helps map the gap between technical incident vocabulary and popular/media usage."
+    },
+    {
+      "id": "ai-welfare",
+      "label": "AI Welfare",
+      "workingDef": "AI welfare (also 'model welfare') is a genuinely contested terrain. Anthropic's model-welfare team and academic philosophers (Schwitzgebel, Long) treat the question of whether AI systems may have morally-relevant interests as a serious near-term ethical concern warranting active study. Skeptics argue current systems have no verifiable morally-relevant interests and that treating the question as urgent risks anthropomorphising function approximators. Critical AI scholars (in the tradition of Crawford, Gebru) argue that raising AI welfare as a concern deflects attention and resources from documented harms to human workers — especially annotation labour — and communities affected by AI-driven decisions. The Verge article explicitly notes this contestation, framing 'model welfare' advocacy by firms like Anthropic as potentially serving commercial interests by positioning AI as deserving moral consideration while the same firms' founders accumulate extraordinary wealth.",
+      "clusters": [
+        "critical",
+        "human"
+      ],
+      "suggestedRels": [
+        "model-welfare",
+        "eliza-effect",
+        "anthropic-co",
+        "alignment",
+        "ai-companion"
+      ],
+      "sources": [
+        {
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1017064/visionquest-marvel-rogue-ai",
+          "domain": "theverge.com",
+          "title": "VisionQuest is what happens when AI really goes rogue",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-10-27T13:30:00-04:00",
+          "firstSeen": "2026-10-27T23:23:32.187Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-27T23:23:32.187Z",
+      "dateLastSeen": "2026-10-27T23:23:32.187Z",
+      "sz": 16,
+      "proposalReason": "The article directly engages the model welfare debate as a site of commercial and ideological contestation — this is a re-sighting of a concept already on the graph (model-welfare) but the framing 'AI welfare' as a distinct contested term warrants longlist observation."
+    },
+    {
+      "id": "gpt61-terra",
+      "label": "GPT-6.1 Terra",
+      "workingDef": "A mid-tier multimodal model released by OpenAI in October 2026, positioned between the high-end Sol and the budget Luna in OpenAI's frontier lineup. Emphasizes visual reasoning, computer use, and natural communication for workday tasks. Priced at $1/million input tokens and $5/million output tokens — roughly half the cost of GPT-5.6 Terra and GPT-6.1 Sol. Analogous in tier positioning to Anthropic's Claude Sonnet series.",
+      "clusters": [
+        "models",
+        "companies"
+      ],
+      "suggestedRels": [
+        "openai-co",
+        "computer-use",
+        "gpt6-astra",
+        "gpt6-sol"
+      ],
+      "sources": [
+        {
+          "url": "https://simonwillison.net/2026/Oct/26/gpt-61-terra/",
+          "domain": "simonwillison.net",
+          "title": "GPT-6.1 Terra",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-10-26T23:53:07+00:00",
+          "firstSeen": "2026-10-27T23:23:32.187Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-27T23:23:32.187Z",
+      "dateLastSeen": "2026-10-27T23:23:32.187Z",
+      "sz": 14,
+      "fullName": "GPT-6.1 Terra (OpenAI)",
+      "nodeType": "product",
+      "proposalReason": "New product entry in OpenAI's model lineup; worth tracking for the model tier taxonomy."
+    },
+    {
+      "id": "gpt6-luna",
+      "label": "GPT-6 Luna",
+      "workingDef": "A low-cost tier model in OpenAI's GPT-6 frontier lineup, mentioned as approximately 10x cheaper than GPT-6.1 Terra. Represents the budget end of OpenAI's current model family alongside Astra, Sol, and Terra.",
+      "clusters": [
+        "models",
+        "companies"
+      ],
+      "suggestedRels": [
+        "openai-co",
+        "gpt6-astra",
+        "gpt6-sol"
+      ],
+      "sources": [
+        {
+          "url": "https://simonwillison.net/2026/Oct/26/gpt-61-terra/",
+          "domain": "simonwillison.net",
+          "title": "GPT-6.1 Terra",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-10-26T23:53:07+00:00",
+          "firstSeen": "2026-10-27T23:23:32.187Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-27T23:23:32.187Z",
+      "dateLastSeen": "2026-10-27T23:23:32.187Z",
+      "sz": 14,
+      "fullName": "GPT-6 Luna (OpenAI)",
+      "nodeType": "product",
+      "proposalReason": "New product entry completing the OpenAI model tier picture; useful for tracking the full lineup taxonomy."
     }
   ]
 }

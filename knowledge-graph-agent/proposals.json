@@ -1,9 +1,9 @@
 {
   "meta": {
-    "generatedAt": "2026-10-27T23:23:05.050Z",
-    "pendingCount": 6,
-    "approvedCount": 1,
-    "appliedCount": 45,
+    "generatedAt": "2026-10-27T23:25:27.703Z",
+    "pendingCount": 7,
+    "approvedCount": 0,
+    "appliedCount": 46,
     "rejectedCount": 1,
     "note": "Lexi proposals queue. Actions gated as PROPOSE land here as status: 'pending'. Edit a proposal's status to 'approved' or 'rejected' and run the apply step (TBD) to commit."
   },
@@ -2898,7 +2898,7 @@
       "action": "promote_to_graph",
       "gate": "propose",
       "proposedAt": "2026-10-27T21:51:32.766Z",
-      "status": "approved",
+      "status": "applied",
       "source": "promote-eligibility-scan",
       "target": {
         "kind": "longlist_entry",
@@ -2969,7 +2969,84 @@
       "digestN": 1,
       "approvedAt": "2026-10-27T23:23:05.050Z",
       "approvedBy": "nicole",
-      "decidedVia": "email-link"
+      "decidedVia": "email-link",
+      "appliedAt": "2026-10-27T23:25:27.703Z"
+    },
+    {
+      "id": "396befe13b8a12b4",
+      "action": "promote_to_graph",
+      "gate": "propose",
+      "proposedAt": "2026-10-27T23:25:15.781Z",
+      "status": "pending",
+      "source": "promote-eligibility-scan",
+      "target": {
+        "kind": "longlist_entry",
+        "id": "gpt61-sol"
+      },
+      "payload": {
+        "graphNode": {
+          "id": "gpt61-sol",
+          "label": "GPT-6.1 Sol",
+          "clusters": [
+            "models",
+            "companies"
+          ],
+          "sz": 14,
+          "def": "An OpenAI model released as an upgrade to GPT-6 Sol, positioned between GPT-6 Luna and GPT-6 Astra in the capability-cost hierarchy. Priced at $2 per million input tokens and $0.10 per million cached input tokens — roughly one-fifth of Astra's pricing — it targets agentic coding, computer use, and professional workflows where cost efficiency is a priority.",
+          "rels": [
+            "openai-co",
+            "gpt55",
+            "coding-agent",
+            "computer-use",
+            "agentic-inference",
+            "adjustable-reasoning-effort"
+          ],
+          "refs": [
+            {
+              "n": 1,
+              "src": "OpenAI Research",
+              "q": "Introducing GPT-6.1 Sol OpenAI Research"
+            },
+            {
+              "n": 2,
+              "src": "Simon Willison's Weblog, 2026-10-26T23:53:07+00:00",
+              "q": "GPT-6.1 Terra Simon Willison's Weblog"
+            }
+          ],
+          "fullName": "GPT-6.1 Sol (OpenAI)",
+          "nodeType": "product"
+        }
+      },
+      "reason": "2 sources, 2 independent (openai.com + simonwillison.net), 11d on longlist. Trusted: simonwillison.net.",
+      "runId": "49db480e-2450-4395-a5a7-6e50f84f0144",
+      "review": {
+        "verdict": "flag",
+        "summary": "The OpenAI source returned a 403, and the only readable excerpt is about GPT-6.1 Terra. It implies Sol costs about $2/M input but does not support the $0.10 cached price or the 'one-fifth of Astra' claim. The 'between Luna and Astra' positioning also omits Terra, which now sits between Sol and Luna.",
+        "sources_support": "partially_supports",
+        "duplicate_of": "",
+        "nearest_node_id": "gpt55",
+        "nearest_relation": "sibling OpenAI model release",
+        "is_fad": false,
+        "contested_framing": "not_applicable",
+        "edit_size": "not_applicable",
+        "flags": [
+          "sources_do_not_support",
+          "stale_or_dated"
+        ],
+        "nearest": {
+          "id": "gpt55",
+          "label": "GPT-5.5",
+          "relation": "sibling OpenAI model release"
+        },
+        "model": "claude-opus-5-5",
+        "promptVersion": "reviewer-v1",
+        "reviewedAt": "2026-10-27T23:25:27.636Z",
+        "sourcesChecked": 2
+      },
+      "tier": "nicole",
+      "tierReason": "reviewer flagged it: sources do not support, stale or dated",
+      "digestId": "D-20261027-f586",
+      "digestN": 1
     }
   ],
   "usedLinks": {

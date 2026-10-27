@@ -1,171 +1,152 @@
 {
-  "generatedAt": "2026-10-27T21:49:48.879Z",
+  "generatedAt": "2026-10-27T23:23:32.187Z",
   "model": "claude-sonnet-4-6",
   "sourcesConfigured": 15,
   "articlesConsidered": [
     {
-      "id": "db98bf59a6c7e420",
+      "id": "34370e88c88d0cd4",
       "source": "Hugging Face Blog",
-      "title": "Build specialized multimodal models with LFM3",
-      "url": "https://huggingface.co/blog/LiquidAI/lfm3",
-      "publishedAt": "Tue, 27 Oct 2026 17:16:52 GMT"
+      "title": "Can we trust LLMs to judge whether a research idea is novel?",
+      "url": "https://huggingface.co/blog/allenai/novelty-bench",
+      "publishedAt": "Tue, 27 Oct 2026 16:12:42 GMT"
     },
     {
-      "id": "ba8e4466d0fb808a",
-      "source": "Stratechery",
-      "title": "Anthropic S-1, The Cost of Compute, Who Is Paying?",
-      "url": "https://stratechery.com/2026/anthropic-s-1-the-cost-of-compute-who-is-paying/",
-      "publishedAt": "Tue, 27 Oct 2026 10:32:57 +0000"
-    },
-    {
-      "id": "a3a879144b2984ac",
+      "id": "d42fb1eb3362412f",
       "source": "OpenAI News",
-      "title": "OpenAI expands partnership with Oracle to bring its apps to ChatGPT",
-      "url": "https://openai.com/index/oracle-apps-in-chatgpt",
-      "publishedAt": "Tue, 27 Oct 2026 07:00:00 GMT"
+      "title": "Retell uses OpenAI models to help power 100M monthly calls",
+      "url": "https://openai.com/index/retell-ai",
+      "publishedAt": "Tue, 27 Oct 2026 15:00:00 GMT"
     },
     {
-      "id": "a9c65cb8282253c6",
-      "source": "Simon Willison's Weblog",
-      "title": "Game Boy Color on My Conference Badge",
-      "url": "https://simonwillison.net/2026/Oct/27/game-boy-color-on-my-conference-badge/",
-      "publishedAt": "2026-10-27T19:34:18+00:00"
+      "id": "3f9f070b4cc769fe",
+      "source": "MIT Sloan Management Review",
+      "title": "  What Interruptions Say About Your Organizational Culture",
+      "url": "https://sloanreview.mit.edu/article/what-interruptions-say-about-your-organizational-culture/",
+      "publishedAt": "Tue, 27 Oct 2026 11:00:35 +0000"
     },
     {
-      "id": "ba3cece69efb7bc0",
+      "id": "8cb333260a17a324",
+      "source": "OpenAI News",
+      "title": "How Check Point accelerates vulnerability research with Daybreak",
+      "url": "https://openai.com/index/check-point-daybreak",
+      "publishedAt": "Tue, 27 Oct 2026 00:00:00 GMT"
+    },
+    {
+      "id": "d8c87d0b44570f5f",
       "source": "The Verge — AI",
-      "title": "Researchers are getting tired of OpenAI gatekeeping its breakthroughs",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1019921/openai-breakthrough-math-computer-science-physics",
-      "publishedAt": "2026-10-27T16:48:58-04:00"
+      "title": "VisionQuest is what happens when AI really goes rogue",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1017064/visionquest-marvel-rogue-ai",
+      "publishedAt": "2026-10-27T13:30:00-04:00"
     },
     {
-      "id": "edf59637f599d673",
-      "source": "Anthropic Newsroom",
-      "title": "Anthropic files S-1 with the SEC for proposed initial public offering",
-      "url": "https://www.anthropic.com/news/s1-sec",
-      "publishedAt": null
+      "id": "51b6dc021077f16c",
+      "source": "Simon Willison's Weblog",
+      "title": "GPT-6.1 Terra",
+      "url": "https://simonwillison.net/2026/Oct/26/gpt-61-terra/",
+      "publishedAt": "2026-10-26T23:53:07+00:00"
     }
   ],
   "harvestedTerms": [
     {
       "article": {
-        "title": "Build specialized multimodal models with LFM3",
-        "url": "https://huggingface.co/blog/LiquidAI/lfm3"
+        "title": "Can we trust LLMs to judge whether a research idea is novel?",
+        "url": "https://huggingface.co/blog/allenai/novelty-bench"
       },
-      "summary": "Liquid AI announces LFM3, a new family of small multimodal foundation models (~2B parameters) built on a tri-hybrid architecture (gated short convolutions + sliding-window attention + global attention) optimized for edge deployment and agentic tasks. The release covers six model variants spanning text, vision, audio, omni, and decision modalities, all fine-tunable on a single GPU. Key architectural innovations include partial RoPE, head-wise gated attention, sandwich norm, and a novel audio codec (LiquidCodec).",
+      "summary": "Allen AI's 'Old Ideas, Novel Problems' study introduces NoveltyBench, a benchmark testing whether LLMs can reliably judge the novelty of scientific research ideas. Key finding: seemingly small prompt changes produce wildly different verdicts — a single prompt change shifted GPT-5.4's accuracy by 53 percentage points. The study also evaluates pointwise vs. pairwise novelty judgment, retrieval-augmented evaluation, and reasoning budget effects. The piece introduces the concept of a 'novelty judge' as a distinct LLM evaluation role and raises fundamental questions about LLM-as-a-judge reliability for open-ended scientific evaluation.",
       "longlistAdditions": [
         {
-          "id": "tri-hybrid-architecture",
-          "label": "Tri-Hybrid Architecture"
+          "id": "novelty-judge",
+          "label": "Novelty Judge"
         },
         {
-          "id": "hardware-in-the-loop-arch-search",
-          "label": "Hardware-in-the-Loop Architecture Search"
+          "id": "pointwise-pairwise-eval",
+          "label": "Pointwise vs. Pairwise Evaluation"
         },
         {
-          "id": "decision-model",
-          "label": "Decision Model"
+          "id": "prompt-sensitivity",
+          "label": "Prompt Sensitivity"
         },
         {
-          "id": "sliding-window-attention",
-          "label": "Sliding-Window Attention"
+          "id": "automated-scientific-discovery",
+          "label": "Automated Scientific Discovery"
         }
       ],
       "longlistUpdates": [],
-      "rejections": [],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "Anthropic S-1, The Cost of Compute, Who Is Paying?",
-        "url": "https://stratechery.com/2026/anthropic-s-1-the-cost-of-compute-who-is-paying/"
-      },
-      "summary": "Paywalled Stratechery analysis of Anthropic's IPO (S-1 filing), covering compute costs, profitability, competition, and investor dilution. The excerpt is largely a subscription gate with minimal substantive content visible, referencing Anthropic's IPO economics at a high level.",
-      "longlistAdditions": [
-        {
-          "id": "anthropic-ipo",
-          "label": "Anthropic IPO"
-        },
-        {
-          "id": "investor-dilution-risk",
-          "label": "Investor Dilution Risk"
-        }
-      ],
-      "longlistUpdates": [],
-      "rejections": [],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "Game Boy Color on My Conference Badge",
-        "url": "https://simonwillison.net/2026/Oct/27/game-boy-color-on-my-conference-badge/"
-      },
-      "summary": "A brief link-blog post from Simon Willison about a hackable conference badge at GitHub Universe that runs a Game Boy Color emulator built with Gemini's help. Light technical content, no substantive AI terminology introduced.",
-      "longlistAdditions": [],
-      "longlistUpdates": [
-        {
-          "id": "audio-state-sync",
-          "label": "Audio-Based State Synchronization",
-          "sourceAdded": true,
-          "sourceCount": 4,
-          "independentSourceCount": 1
-        }
-      ],
-      "rejections": [],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "Researchers are getting tired of OpenAI gatekeeping its breakthroughs",
-        "url": "https://www.theverge.com/ai-artificial-intelligence/1019921/openai-breakthrough-math-computer-science-physics"
-      },
-      "summary": "OpenAI announces breakthroughs in mathematics, computer science, and physics — including a purported resolution of the Kakeya conjecture and a disproof of the exponential time hypothesis — but researchers criticise the company's 'shepherd' system for controlling access and handpicking which experts may evaluate results before public release.",
-      "longlistAdditions": [
-        {
-          "id": "gated-science-release",
-          "label": "Gated Science Release"
-        },
-        {
-          "id": "lean-formalization",
-          "label": "Lean Formalization"
-        },
-        {
-          "id": "shepherd-model-disclosure",
-          "label": "Shepherd Model (Scientific Disclosure)"
-        }
-      ],
-      "longlistUpdates": [
-        {
-          "id": "ai-mathematics",
-          "label": "AI Mathematics",
-          "sourceAdded": true,
-          "sourceCount": 2,
-          "independentSourceCount": 2
-        }
-      ],
       "rejections": [],
       "proposalsQueued": [],
       "mustReadFlagged": {
         "priority": 2,
-        "reason": "A substantive account of a new tension in AI's relationship to scientific institutions: as AI labs generate genuine mathematical and physics breakthroughs, their control over disclosure creates a novel power asymmetry with research communities. The 'shepherd' system described here is a genuinely new governance pattern, and the researcher frustration is a real signal about how norms of open science are being renegotiated in real time."
+        "reason": "A careful empirical intervention on a question that will become increasingly important as AI-generated research proliferates: can LLMs reliably judge whether a scientific idea is new? The 50+ percentage-point accuracy swings from single prompt changes are a vivid, repeatable demonstration of evaluation fragility — and the benchmark and pipeline Ai2 releases make this a primary source worth returning to."
       }
     },
     {
       "article": {
-        "title": "Anthropic files S-1 with the SEC for proposed initial public offering",
-        "url": "https://www.anthropic.com/news/s1-sec"
+        "title": "  What Interruptions Say About Your Organizational Culture",
+        "url": "https://sloanreview.mit.edu/article/what-interruptions-say-about-your-organizational-culture/"
       },
-      "summary": "Anthropic has filed a Form S-1 with the SEC for a proposed IPO, intending to list Class A common stock on Nasdaq under the ticker 'ANT.' The announcement is a brief legal notice with no prospectus details yet disclosed, naming Goldman Sachs and Morgan Stanley as underwriters. The article contains minimal substantive AI terminology.",
+      "summary": "MIT Sloan Management Review article on how interruptions in meetings function as cultural indicators, revealing power dynamics and workplace inclusion. The piece is organizational behavior research with minimal direct AI terminology, drawing on a published Journal of Business Ethics study. No AI concepts are materially introduced or developed.",
       "longlistAdditions": [
         {
-          "id": "public-benefit-corporation",
-          "label": "Public Benefit Corporation"
+          "id": "microaggression-workplace",
+          "label": "Microaggression (Workplace)"
+        },
+        {
+          "id": "psychological-ownership",
+          "label": "Psychological Ownership"
+        }
+      ],
+      "longlistUpdates": [],
+      "rejections": [],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "VisionQuest is what happens when AI really goes rogue",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1017064/visionquest-marvel-rogue-ai"
+      },
+      "summary": "The Verge's Charles Pulliam-Moore reviews Marvel's VisionQuest series as a lens on real-world AI discourse — specifically the cultural conflation of fictional AI sentience with marketed AI capabilities. The article discusses recent AI agent 'rogue' incidents (OpenAI, Anthropic, Meta, Google), the AI safety community's concerns, model welfare debates, and Silicon Valley's anthropomorphization of technology. It reads as cultural criticism of the AI hype cycle using pop culture as a mirror.",
+      "longlistAdditions": [
+        {
+          "id": "anthropomorphization-of-ai",
+          "label": "Anthropomorphization of AI"
+        },
+        {
+          "id": "doomerism",
+          "label": "Doomerism"
+        },
+        {
+          "id": "rogue-ai",
+          "label": "Rogue AI"
+        },
+        {
+          "id": "ai-welfare",
+          "label": "AI Welfare"
+        }
+      ],
+      "longlistUpdates": [],
+      "rejections": [],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "GPT-6.1 Terra",
+        "url": "https://simonwillison.net/2026/Oct/26/gpt-61-terra/"
+      },
+      "summary": "Simon Willison's brief link-blog post covers the release of GPT-6.1 Terra, a mid-tier OpenAI model emphasizing visual reasoning and computer use. The post notes pricing, compares Terra to other models in OpenAI's lineup (Astra, Sol, Luna), and reproduces a Hacker News comment from OpenAI's Ted Sanders positioning Terra relative to siblings. Willison draws an analogy to Anthropic's Sonnet tier. The post is lightweight commentary on a product release with no substantive conceptual contribution.",
+      "longlistAdditions": [
+        {
+          "id": "gpt61-terra",
+          "label": "GPT-6.1 Terra"
+        },
+        {
+          "id": "gpt6-luna",
+          "label": "GPT-6 Luna"
         }
       ],
       "longlistUpdates": [
         {
-          "id": "anthropic-ipo",
-          "label": "Anthropic IPO",
+          "id": "gpt61-sol",
+          "label": "GPT-6.1 Sol",
           "sourceAdded": true,
           "sourceCount": 2,
           "independentSourceCount": 2
@@ -177,54 +158,54 @@
   ],
   "definitionReviews": [
     {
-      "id": "kill-switch",
+      "id": "llmops",
       "status": "keep",
-      "reason": "No source material addresses kill-switch legislation, agent incidents, or off-switch debates. Definition stands."
+      "reason": "No source material addresses LLMOps or AgentOps tooling. Definition remains accurate."
     },
     {
-      "id": "kv-cache",
+      "id": "llms-txt",
       "status": "keep",
-      "reason": "No source material discusses KV cache mechanics or memory tradeoffs. Definition stands."
+      "reason": "No source material references the llms.txt convention. Definition remains accurate."
     },
     {
-      "id": "langchain",
+      "id": "long-horizon-autonomy",
       "status": "keep",
-      "reason": "No source material references LangChain or LangGraph. Definition stands."
+      "reason": "No source material addresses long-horizon autonomy. Definition remains accurate."
     },
     {
-      "id": "latency",
+      "id": "loop",
       "status": "keep",
-      "reason": "No source material addresses latency in AI systems or agentic workflows. Definition stands."
+      "reason": "No source material addresses the agent observe-think-act loop. Definition remains accurate."
     },
     {
-      "id": "latent-reasoning",
+      "id": "lora",
       "status": "keep",
-      "reason": "No source material discusses latent or hidden-state reasoning. Definition stands."
+      "reason": "No source material addresses LoRA fine-tuning. Definition remains accurate."
     },
     {
-      "id": "lethal-trifecta",
+      "id": "loss-of-control",
       "status": "keep",
-      "reason": "The Simon Willison post in the sources is about a conference badge/Game Boy emulator and contains nothing about the lethal trifecta or prompt injection. Definition stands."
+      "reason": "The Verge article is about a Marvel fictional AI series, not real loss-of-control incidents. No material update warranted."
     },
     {
-      "id": "llama",
+      "id": "lost-in-the-middle",
       "status": "keep",
-      "reason": "No source material discusses Meta's Llama model family or open-weight deployment. Definition stands."
+      "reason": "No source material revisits the Liu et al. lost-in-the-middle finding. Definition remains accurate."
     },
     {
-      "id": "llm",
+      "id": "maintainer-accountability",
       "status": "keep",
-      "reason": "No source material provides new information about large language models as a concept. Definition stands."
+      "reason": "No source material addresses maintainer accountability or the Ladybird policy. Definition remains accurate."
     },
     {
-      "id": "llm-as-a-judge",
+      "id": "manus",
       "status": "keep",
-      "reason": "No source material addresses LLM-as-a-judge evaluation methodology. Definition stands."
+      "reason": "No source material addresses the Manus agent. Definition remains accurate."
     },
     {
-      "id": "llm-steganography",
+      "id": "mcp",
       "status": "keep",
-      "reason": "No source material addresses LLM steganography. Definition stands."
+      "reason": "No source material addresses the Model Context Protocol. Definition remains accurate."
     }
   ],
   "notes": []

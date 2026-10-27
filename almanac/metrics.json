@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-10-27T21:51:42.350Z",
+  "generatedAt": "2026-10-27T23:25:27.862Z",
   "firstRunAt": "2026-04-27T01:07:31.335Z",
   "phase": 1,
   "headline": {
-    "articlesRead": 256,
+    "articlesRead": 262,
     "daysRunning": 184,
-    "longlistSize": 181,
-    "graphSize": 442
+    "longlistSize": 192,
+    "graphSize": 443
   },
   "thisWeek": {
-    "articlesFetched": 53,
-    "longlistAdded": 67,
-    "sourcesAdded": 16,
-    "promotionsToGraph": 6,
-    "proposalsQueued": 8,
+    "articlesFetched": 59,
+    "longlistAdded": 79,
+    "sourcesAdded": 17,
+    "promotionsToGraph": 7,
+    "proposalsQueued": 9,
     "auditFlags": 8,
     "notesAdded": 13
   },
@@ -114,7 +114,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 7,
+      "daysOnLonglist": 8,
       "domains": [
         "huggingface.co"
       ],
@@ -130,7 +130,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 7,
+      "daysOnLonglist": 8,
       "domains": [
         "huggingface.co"
       ],
@@ -193,11 +193,11 @@
     "byDomain": [
       {
         "domain": "openai.com",
-        "count": 58
+        "count": 60
       },
       {
         "domain": "simonwillison.net",
-        "count": 40
+        "count": 41
       },
       {
         "domain": "stratechery.com",
@@ -205,7 +205,7 @@
       },
       {
         "domain": "huggingface.co",
-        "count": 26
+        "count": 27
       },
       {
         "domain": "blog.google",
@@ -217,7 +217,7 @@
       },
       {
         "domain": "theverge.com",
-        "count": 21
+        "count": 22
       },
       {
         "domain": "lastweekin.ai",
@@ -228,11 +228,11 @@
         "count": 8
       },
       {
-        "domain": "hbr.org",
-        "count": 5
+        "domain": "sloanreview.mit.edu",
+        "count": 6
       },
       {
-        "domain": "sloanreview.mit.edu",
+        "domain": "hbr.org",
         "count": 5
       },
       {
@@ -341,31 +341,31 @@
         "id": "technical",
         "label": "Technical",
         "hex": "#D0D040",
-        "count": 68
+        "count": 72
       },
       {
         "id": "safety",
         "label": "Safety",
         "hex": "#FF6090",
-        "count": 39
+        "count": 41
       },
       {
         "id": "models",
         "label": "Models",
         "hex": "#FFB060",
-        "count": 38
+        "count": 39
       },
       {
         "id": "agentic",
         "label": "Agentic Systems",
         "hex": "#FF9040",
-        "count": 35
+        "count": 37
       },
       {
         "id": "critical",
         "label": "Critical / Hype",
         "hex": "#FF5555",
-        "count": 31
+        "count": 35
       },
       {
         "id": "tools",
@@ -380,28 +380,28 @@
         "count": 25
       },
       {
+        "id": "human",
+        "label": "Human Skills",
+        "hex": "#40D080",
+        "count": 24
+      },
+      {
         "id": "landscape",
         "label": "Model Landscape",
         "hex": "#D0A050",
         "count": 22
       },
       {
-        "id": "human",
-        "label": "Human Skills",
-        "hex": "#40D080",
-        "count": 20
-      },
-      {
         "id": "work",
         "label": "Work & Output",
         "hex": "#E8A838",
-        "count": 16
+        "count": 18
       },
       {
         "id": "companies",
         "label": "Companies",
         "hex": "#9090A8",
-        "count": 16
+        "count": 18
       },
       {
         "id": "security",
@@ -430,14 +430,14 @@
     ]
   },
   "velocity": {
-    "humanGated": 45,
+    "humanGated": 46,
     "autonomous": 0,
     "note": "All graph promotions and substantive edits are currently human-gated. Lexi proposes; Nicole approves."
   },
   "proposalsByStatus": {
     "pending": 7,
     "approved": 0,
-    "applied": 45,
+    "applied": 46,
     "rejected": 1
   },
   "decisionsByCluster": {
@@ -474,7 +474,7 @@
       "rejected": 0
     },
     "models": {
-      "approved": 8,
+      "approved": 9,
       "rejected": 0
     },
     "business": {
@@ -486,7 +486,7 @@
       "rejected": 0
     },
     "critical": {
-      "approved": 6,
+      "approved": 7,
       "rejected": 0
     },
     "landscape": {

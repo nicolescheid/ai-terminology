@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generatedAt": "2026-10-27T21:49:48.879Z",
-    "unreadCount": 32,
-    "totalCount": 32,
+    "generatedAt": "2026-10-27T23:23:32.187Z",
+    "unreadCount": 33,
+    "totalCount": 33,
     "note": "Lexi's must-reads — articles she flags as worth Nicole reading in full. Editorial signal, not news feed. Set status to 'read' or 'dismissed' via mark-must-reads.mjs."
   },
   "entries": [
@@ -547,6 +547,23 @@
       ],
       "novelTermsInArticle": 3,
       "flaggedAt": "2026-10-27T21:49:48.879Z",
+      "status": "unread"
+    },
+    {
+      "id": "34370e88c88d0cd4",
+      "title": "Can we trust LLMs to judge whether a research idea is novel?",
+      "url": "https://huggingface.co/blog/allenai/novelty-bench",
+      "source": "Hugging Face Blog",
+      "publishedAt": "Tue, 27 Oct 2026 16:12:42 GMT",
+      "summary": "Allen AI's 'Old Ideas, Novel Problems' study introduces NoveltyBench, a benchmark testing whether LLMs can reliably judge the novelty of scientific research ideas. Key finding: seemingly small prompt changes produce wildly different verdicts — a single prompt change shifted GPT-5.4's accuracy by 53 percentage points. The study also evaluates pointwise vs. pairwise novelty judgment, retrieval-augmented evaluation, and reasoning budget effects. The piece introduces the concept of a 'novelty judge' as a distinct LLM evaluation role and raises fundamental questions about LLM-as-a-judge reliability for open-ended scientific evaluation.",
+      "priority": 2,
+      "reason": "A careful empirical intervention on a question that will become increasingly important as AI-generated research proliferates: can LLMs reliably judge whether a scientific idea is new? The 50+ percentage-point accuracy swings from single prompt changes are a vivid, repeatable demonstration of evaluation fragility — and the benchmark and pipeline Ai2 releases make this a primary source worth returning to.",
+      "clusters": [
+        "technical",
+        "critical"
+      ],
+      "novelTermsInArticle": 4,
+      "flaggedAt": "2026-10-27T23:23:32.187Z",
       "status": "unread"
     }
   ]
