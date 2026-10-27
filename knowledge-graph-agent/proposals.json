@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-10-26T22:20:31.886Z",
-    "pendingCount": 6,
+    "generatedAt": "2026-10-27T21:51:32.766Z",
+    "pendingCount": 7,
     "appliedCount": 45,
     "rejectedCount": 1,
     "note": "Lexi proposals queue. Actions gated as PROPOSE land here as status: 'pending'. Edit a proposal's status to 'approved' or 'rejected' and run the apply step (TBD) to commit."
@@ -2891,6 +2891,81 @@
       "approvedBy": "nicole",
       "decidedVia": "email-link",
       "appliedAt": "2026-10-26T04:33:40.771Z"
+    },
+    {
+      "id": "8e5586750d09e02d",
+      "action": "promote_to_graph",
+      "gate": "propose",
+      "proposedAt": "2026-10-27T21:51:32.766Z",
+      "status": "pending",
+      "source": "promote-eligibility-scan",
+      "target": {
+        "kind": "longlist_entry",
+        "id": "ai-mathematics"
+      },
+      "payload": {
+        "graphNode": {
+          "id": "ai-mathematics",
+          "label": "AI Mathematics",
+          "clusters": [
+            "models",
+            "critical"
+          ],
+          "sz": 14,
+          "def": "The use of frontier AI models to generate novel mathematical results — including formal proofs, conjectures, and derivations — at a scale and pace that outpaces traditional human mathematical research workflows. Exemplified by OpenAI's October 2026 release of 719 manuscripts produced by an unreleased internal model, including a claimed solution to the Navier-Stokes Millennium Prize Problem. Raises contested questions about credit attribution, reproducibility, peer review, and whether AI-generated proofs constitute mathematical knowledge in the same sense as human-authored ones. The Advisory Group on Mathematics and Artificial Intelligence (AGMAI) at the Institute for Advanced Study has called for disclosure of model names, prompts, and compute costs, and has objected to treating mathematical results as marketing vehicles.",
+          "rels": [
+            "frontier-model",
+            "benchmark-gaming",
+            "evals",
+            "structured-output"
+          ],
+          "refs": [
+            {
+              "n": 1,
+              "src": "Last Week in AI, Fri, 09 Oct 2026 05:06:58 GMT",
+              "q": "Last Week in AI #346 - 719 math manuscripts, 2 Western open models, 1 more safety resignation Last Week in AI"
+            },
+            {
+              "n": 2,
+              "src": "The Verge — AI, 2026-10-27T16:48:58-04:00",
+              "q": "Researchers are getting tired of OpenAI gatekeeping its breakthroughs The Verge — AI"
+            }
+          ],
+          "fullName": "AI-Generated Mathematical Research"
+        }
+      },
+      "reason": "2 sources, 2 independent (lastweekin.ai + theverge.com), 7d on longlist.",
+      "runId": "3d97c6a9-a231-4f08-9226-d4d77d2563a5",
+      "review": {
+        "verdict": "flag",
+        "summary": "Neither excerpt uses 'AI Mathematics' or 'AI-Generated Mathematical Research' as a term; they report one OpenAI release. The definition also misstates that the Navier-Stokes result was part of the 719-manuscript release, when the source says it was announced about a month earlier. The 'outpaces human research' framing is promotional, and the event-anchored wording will date quickly.",
+        "sources_support": "partially_supports",
+        "duplicate_of": "",
+        "nearest_node_id": "frontier-model",
+        "nearest_relation": "related (application domain)",
+        "is_fad": false,
+        "contested_framing": "not_applicable",
+        "edit_size": "not_applicable",
+        "flags": [
+          "sources_do_not_support",
+          "factual_error",
+          "too_promotional",
+          "stale_or_dated"
+        ],
+        "nearest": {
+          "id": "frontier-model",
+          "label": "Frontier Model",
+          "relation": "related (application domain)"
+        },
+        "model": "claude-opus-5-5",
+        "promptVersion": "reviewer-v1",
+        "reviewedAt": "2026-10-27T21:51:42.095Z",
+        "sourcesChecked": 2
+      },
+      "tier": "nicole",
+      "tierReason": "reviewer flagged it: sources do not support, factual error, too promotional, stale or dated",
+      "digestId": "D-20261027-4607",
+      "digestN": 1
     }
   ],
   "usedLinks": {

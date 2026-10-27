@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-10-26T22:18:30.604Z",
-    "entryCount": 257,
+    "generatedAt": "2026-10-27T21:49:48.879Z",
+    "entryCount": 267,
     "note": "Lexi-managed Tier 2 longlist — terms under observation, awaiting evidence to support promotion to the graph (Tier 1)."
   },
   "entries": [
@@ -8128,12 +8128,20 @@
           "sourceLabel": "Last Week in AI",
           "publishedAt": "Fri, 09 Oct 2026 05:06:58 GMT",
           "firstSeen": "2026-10-20T21:15:51.629Z"
+        },
+        {
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1019921/openai-breakthrough-math-computer-science-physics",
+          "domain": "theverge.com",
+          "title": "Researchers are getting tired of OpenAI gatekeeping its breakthroughs",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-10-27T16:48:58-04:00",
+          "firstSeen": "2026-10-27T21:49:48.879Z"
         }
       ],
-      "sourceCount": 1,
-      "independentSourceCount": 1,
+      "sourceCount": 2,
+      "independentSourceCount": 2,
       "dateFirstSeen": "2026-10-20T21:15:51.629Z",
-      "dateLastSeen": "2026-10-20T21:15:51.629Z",
+      "dateLastSeen": "2026-10-27T21:49:48.879Z",
       "sz": 14,
       "fullName": "AI-Generated Mathematical Research",
       "proposalReason": "Substantive and novel framing emerging from the OpenAI math manuscripts story; the AGMAI governance tension around AI-generated proofs makes this a lasting conceptual term worth tracking."
@@ -8242,12 +8250,20 @@
           "sourceLabel": "Simon Willison's Weblog",
           "publishedAt": "2026-10-24T03:59:57+00:00",
           "firstSeen": "2026-10-24T20:14:57.522Z"
+        },
+        {
+          "url": "https://simonwillison.net/2026/Oct/27/game-boy-color-on-my-conference-badge/",
+          "domain": "simonwillison.net",
+          "title": "Game Boy Color on My Conference Badge",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-10-27T19:34:18+00:00",
+          "firstSeen": "2026-10-27T21:49:48.879Z"
         }
       ],
-      "sourceCount": 3,
+      "sourceCount": 4,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-10-20T21:15:51.629Z",
-      "dateLastSeen": "2026-10-24T20:14:57.522Z",
+      "dateLastSeen": "2026-10-27T21:49:48.879Z",
       "sz": 14,
       "fullName": "Audio-Based Game State Synchronization (Multiplayer via Sound)",
       "proposalReason": "A novel and concrete technique worth tracking as agentic and local-first applications explore alternatives to cloud-brokered communication channels."
@@ -10227,6 +10243,340 @@
       "sz": 14,
       "fullName": "Agent Bot Defense (Retailer Anti-Agent Controls)",
       "proposalReason": "New term: the article is the first clear source documenting retailer-side anti-agent infrastructure as a distinct defensive category, triggered by real exploitation of a cart-reserve system by a major consumer AI agent."
+    },
+    {
+      "id": "tri-hybrid-architecture",
+      "label": "Tri-Hybrid Architecture",
+      "workingDef": "A neural network backbone design that combines three types of layers — gated short convolutions, sliding-window attention (SWA), and global attention — in a single model. Used in Liquid AI's LFM3 to achieve better capability-per-parameter ratios, especially over long contexts, compared to purely attention-based or purely convolutional architectures. The combination is motivated by inference efficiency across heterogeneous edge hardware.",
+      "clusters": [
+        "models",
+        "technical"
+      ],
+      "suggestedRels": [
+        "state-space-models",
+        "attention",
+        "small-language-model",
+        "edge-ai",
+        "quantization"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/LiquidAI/lfm3",
+          "domain": "huggingface.co",
+          "title": "Build specialized multimodal models with LFM3",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Tue, 27 Oct 2026 17:16:52 GMT",
+          "firstSeen": "2026-10-27T21:49:48.879Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-27T21:49:48.879Z",
+      "dateLastSeen": "2026-10-27T21:49:48.879Z",
+      "sz": 14,
+      "fullName": "Tri-Hybrid Architecture (Conv + SWA + Global Attention)",
+      "proposalReason": "A distinct architectural pattern for small/edge models combining three layer types; worth tracking as hybrid architectures challenge the pure-transformer orthodoxy."
+    },
+    {
+      "id": "hardware-in-the-loop-arch-search",
+      "label": "Hardware-in-the-Loop Architecture Search",
+      "workingDef": "A neural architecture search methodology in which candidate model architectures are evaluated directly on real target hardware (phones, edge SoCs, cloud GPUs, etc.) during the search process, rather than using proxy metrics. Liquid AI's LFM3 uses this across 14 device and backend combinations to co-optimize model capability and inference latency for specific deployment environments.",
+      "clusters": [
+        "technical",
+        "models"
+      ],
+      "suggestedRels": [
+        "edge-ai",
+        "small-language-model",
+        "inference",
+        "quantization",
+        "purpose-built-ai-infrastructure"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/LiquidAI/lfm3",
+          "domain": "huggingface.co",
+          "title": "Build specialized multimodal models with LFM3",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Tue, 27 Oct 2026 17:16:52 GMT",
+          "firstSeen": "2026-10-27T21:49:48.879Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-27T21:49:48.879Z",
+      "dateLastSeen": "2026-10-27T21:49:48.879Z",
+      "sz": 14,
+      "fullName": "Hardware-in-the-Loop Architecture Search (Neural Architecture Search)",
+      "proposalReason": "A methodology term for co-designing model architectures with hardware targets; increasingly relevant as edge AI deployment demands tighter coupling of model design to inference constraints."
+    },
+    {
+      "id": "decision-model",
+      "label": "Decision Model",
+      "workingDef": "A model variant within the LFM3 family (d1-2B, d1-omni-2B) that produces calibrated answers — outputs accompanied by uncertainty or confidence scores — rather than unconstrained generative text. Positioned for agentic and decision-support use cases where downstream systems need to know how confident the model is, not just what it predicts.",
+      "clusters": [
+        "models",
+        "agentic"
+      ],
+      "suggestedRels": [
+        "calibration",
+        "agentic-ai",
+        "small-language-model",
+        "multimodal",
+        "autonomous-agent"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/LiquidAI/lfm3",
+          "domain": "huggingface.co",
+          "title": "Build specialized multimodal models with LFM3",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Tue, 27 Oct 2026 17:16:52 GMT",
+          "firstSeen": "2026-10-27T21:49:48.879Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-27T21:49:48.879Z",
+      "dateLastSeen": "2026-10-27T21:49:48.879Z",
+      "sz": 14,
+      "fullName": "Decision Model (Calibrated-Output AI Model)",
+      "proposalReason": "A named model category distinct from generative/chat and from pure classifier models; the calibration-as-output framing is a useful terminological distinction for agentic deployment contexts."
+    },
+    {
+      "id": "sliding-window-attention",
+      "label": "Sliding-Window Attention",
+      "workingDef": "An attention mechanism that restricts each token's attention span to a fixed local window of nearby tokens rather than attending to the full sequence. Reduces the quadratic cost of full self-attention, enabling efficient processing of long contexts on memory-constrained hardware. Used in LFM3 as one of three layer types, paired with global attention layers that handle long-range dependencies.",
+      "clusters": [
+        "technical",
+        "models"
+      ],
+      "suggestedRels": [
+        "attention",
+        "context-window",
+        "kv-cache",
+        "edge-ai",
+        "state-space-models"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/LiquidAI/lfm3",
+          "domain": "huggingface.co",
+          "title": "Build specialized multimodal models with LFM3",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Tue, 27 Oct 2026 17:16:52 GMT",
+          "firstSeen": "2026-10-27T21:49:48.879Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-27T21:49:48.879Z",
+      "dateLastSeen": "2026-10-27T21:49:48.879Z",
+      "sz": 14,
+      "fullName": "Sliding-Window Attention (SWA)",
+      "proposalReason": "A concrete architectural primitive appearing across an increasing number of efficient model families; useful to have as a tracked node distinct from full self-attention."
+    },
+    {
+      "id": "anthropic-ipo",
+      "label": "Anthropic IPO",
+      "workingDef": "The public market debut of Anthropic via an S-1 registration filing, discussed here in the context of the company's compute cost structure, core business profitability, and competitive dynamics that may erode margins. As an AI safety-focused lab pursuing an IPO, Anthropic's S-1 is a primary financial disclosure document carrying significance for how AI lab economics are publicly understood.",
+      "clusters": [
+        "business",
+        "companies"
+      ],
+      "suggestedRels": [
+        "anthropic-co",
+        "ai-capex",
+        "cost",
+        "circular-deals",
+        "ai-bubble",
+        "run-rate-revenue"
+      ],
+      "sources": [
+        {
+          "url": "https://stratechery.com/2026/anthropic-s-1-the-cost-of-compute-who-is-paying/",
+          "domain": "stratechery.com",
+          "title": "Anthropic S-1, The Cost of Compute, Who Is Paying?",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Tue, 27 Oct 2026 10:32:57 +0000",
+          "firstSeen": "2026-10-27T21:49:48.879Z"
+        },
+        {
+          "url": "https://www.anthropic.com/news/s1-sec",
+          "domain": "anthropic.com",
+          "title": "Anthropic files S-1 with the SEC for proposed initial public offering",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-10-27T21:49:48.879Z"
+        }
+      ],
+      "sourceCount": 2,
+      "independentSourceCount": 2,
+      "dateFirstSeen": "2026-10-27T21:49:48.879Z",
+      "dateLastSeen": "2026-10-27T21:49:48.879Z",
+      "sz": 14,
+      "fullName": "Anthropic IPO (S-1 Filing)",
+      "proposalReason": "Re-sighting of the Anthropic IPO concept as framed by Stratechery; the piece appears to analyse compute cost burden versus profitability in depth, relevant to tracking AI lab business model evolution."
+    },
+    {
+      "id": "investor-dilution-risk",
+      "label": "Investor Dilution Risk",
+      "workingDef": "The structural risk to shareholders in AI lab IPOs arising from ongoing capital requirements for compute and model development, which may require repeated equity issuance. Discussed in the context of Anthropic's S-1 as a concern where competition may eliminate operating profits even while the underlying business is operationally profitable, setting up investors for continuous dilution.",
+      "clusters": [
+        "business",
+        "landscape"
+      ],
+      "suggestedRels": [
+        "anthropic-co",
+        "ai-capex",
+        "cost",
+        "circular-deals",
+        "run-rate-revenue"
+      ],
+      "sources": [
+        {
+          "url": "https://stratechery.com/2026/anthropic-s-1-the-cost-of-compute-who-is-paying/",
+          "domain": "stratechery.com",
+          "title": "Anthropic S-1, The Cost of Compute, Who Is Paying?",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Tue, 27 Oct 2026 10:32:57 +0000",
+          "firstSeen": "2026-10-27T21:49:48.879Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-27T21:49:48.879Z",
+      "dateLastSeen": "2026-10-27T21:49:48.879Z",
+      "sz": 14,
+      "fullName": "Investor Dilution Risk (AI Lab Capital Structure)",
+      "proposalReason": "A framing term for understanding AI lab capital market dynamics, distinct from standard tech IPO dilution patterns due to the extreme ongoing compute capex requirements."
+    },
+    {
+      "id": "gated-science-release",
+      "label": "Gated Science Release",
+      "workingDef": "A disclosure practice in which an AI laboratory announces scientific results while restricting access to the underlying materials — delegating review authority to a small, lab-selected group of external 'shepherds' or experts rather than releasing findings for open community scrutiny. Distinct from coordinated vulnerability disclosure (which has an established rationale around exploitability): critics argue that gating scientific results concentrates epistemic power in the lab's hands, undermines the open peer-review norms science depends on, and conflates responsible stewardship with competitive gatekeeping. The term is applied critically to OpenAI's October 2026 practice of releasing some mathematics results publicly while withholding physics findings pending shepherd approval.",
+      "clusters": [
+        "critical",
+        "safety"
+      ],
+      "suggestedRels": [
+        "coordinated-disclosure",
+        "ai-mathematics",
+        "benchmark-gaming",
+        "independent-model-evaluation"
+      ],
+      "sources": [
+        {
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1019921/openai-breakthrough-math-computer-science-physics",
+          "domain": "theverge.com",
+          "title": "Researchers are getting tired of OpenAI gatekeeping its breakthroughs",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-10-27T16:48:58-04:00",
+          "firstSeen": "2026-10-27T21:49:48.879Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-27T21:49:48.879Z",
+      "dateLastSeen": "2026-10-27T21:49:48.879Z",
+      "sz": 14,
+      "fullName": "Gated Science Release (AI Lab Controlled Disclosure)",
+      "proposalReason": "Newly coined critical framing for a practice appearing specifically in this article's coverage of OpenAI's multi-tier disclosure approach; worth tracking as AI labs move deeper into scientific research."
+    },
+    {
+      "id": "lean-formalization",
+      "label": "Lean Formalization",
+      "workingDef": "The process of encoding a mathematical proof in the Lean interactive theorem prover — a formal language that allows a proof to be computationally checked for logical correctness. In the context of AI-generated mathematics, Lean formalization serves as an independent verification layer: because LLM outputs can be plausible-sounding but subtly wrong, checking the formal Lean derivation is treated as the gold standard for confirming a result. The term appears in The Verge's 2026 coverage of OpenAI's Kakeya conjecture claim, where reviewers noted they had not yet checked the Lean formalization.",
+      "clusters": [
+        "technical",
+        "models"
+      ],
+      "suggestedRels": [
+        "ai-mathematics",
+        "evals",
+        "verifiability",
+        "structured-output"
+      ],
+      "sources": [
+        {
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1019921/openai-breakthrough-math-computer-science-physics",
+          "domain": "theverge.com",
+          "title": "Researchers are getting tired of OpenAI gatekeeping its breakthroughs",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-10-27T16:48:58-04:00",
+          "firstSeen": "2026-10-27T21:49:48.879Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-27T21:49:48.879Z",
+      "dateLastSeen": "2026-10-27T21:49:48.879Z",
+      "sz": 14,
+      "fullName": "Lean Formalization (Formal Proof Verification)",
+      "proposalReason": "New term introduced in the article as a specific technical verification mechanism for AI-generated proofs; has lasting relevance as AI-in-science discourse matures."
+    },
+    {
+      "id": "shepherd-model-disclosure",
+      "label": "Shepherd Model (Scientific Disclosure)",
+      "workingDef": "A disclosure governance structure in which an AI lab designates trusted external expert 'shepherds' to advise on how, when, and to whom scientific results are released — acting as intermediaries between the lab and the broader research community. OpenAI introduced the term and practice in late 2026 to describe its approach to communicating breakthroughs in mathematics, computer science, and physics. Critics argue the shepherd model gives labs undue control over which scientists gain early access, creating a 'winners and losers' dynamic inconsistent with scientific norms of open inquiry; proponents frame it as responsible staged disclosure that prevents misinterpretation of highly technical results.",
+      "clusters": [
+        "critical",
+        "landscape"
+      ],
+      "suggestedRels": [
+        "gated-science-release",
+        "coordinated-disclosure",
+        "independent-model-evaluation",
+        "deployment-company"
+      ],
+      "sources": [
+        {
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1019921/openai-breakthrough-math-computer-science-physics",
+          "domain": "theverge.com",
+          "title": "Researchers are getting tired of OpenAI gatekeeping its breakthroughs",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-10-27T16:48:58-04:00",
+          "firstSeen": "2026-10-27T21:49:48.879Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-27T21:49:48.879Z",
+      "dateLastSeen": "2026-10-27T21:49:48.879Z",
+      "sz": 14,
+      "fullName": "Shepherd Model (AI Lab Scientific Disclosure)",
+      "proposalReason": "Named explicitly in the article and directly contested by researchers quoted; captures a new governance pattern worth tracking as AI labs become primary generators of scientific claims."
+    },
+    {
+      "id": "public-benefit-corporation",
+      "label": "Public Benefit Corporation",
+      "workingDef": "A US corporate legal structure that requires the company to pursue a stated public benefit alongside shareholder returns. Anthropic is incorporated as a PBC, a designation it prominently includes in its IPO filing. The structure is contested in the AI governance context: proponents argue it formally constrains the company to its safety mission even under capital-market pressure; critics argue it provides minimal legal teeth because courts rarely second-guess business judgment, and that it functions primarily as a branding signal without enforceable accountability.",
+      "clusters": [
+        "business",
+        "critical"
+      ],
+      "suggestedRels": [
+        "anthropic-co",
+        "responsible-scaling-policy",
+        "agent-governance"
+      ],
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/s1-sec",
+          "domain": "anthropic.com",
+          "title": "Anthropic files S-1 with the SEC for proposed initial public offering",
+          "sourceLabel": "Anthropic Newsroom",
+          "publishedAt": null,
+          "firstSeen": "2026-10-27T21:49:48.879Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-27T21:49:48.879Z",
+      "dateLastSeen": "2026-10-27T21:49:48.879Z",
+      "sz": 14,
+      "fullName": "Public Benefit Corporation (PBC)",
+      "proposalReason": "A governance framing term worth tracking as Anthropic enters public markets and the PBC designation faces scrutiny from investors and regulators."
     }
   ]
 }

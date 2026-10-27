@@ -1,6 +1,6 @@
 {
-  "lastRunAt": "2026-10-26T22:18:30.604Z",
-  "reviewCursor": 244,
+  "lastRunAt": "2026-10-27T21:49:48.879Z",
+  "reviewCursor": 254,
   "seenArticles": {
     "93a049d060bc295b": {
       "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/tpus-8t-8i-cloud-next/",
@@ -1501,6 +1501,42 @@
       "title": "The RealReal won’t let AI agents hog designer clothing",
       "publishedAt": "2026-10-26T13:30:55-04:00",
       "seenAt": "2026-10-26T22:18:30.604Z"
+    },
+    "db98bf59a6c7e420": {
+      "url": "https://huggingface.co/blog/LiquidAI/lfm3",
+      "title": "Build specialized multimodal models with LFM3",
+      "publishedAt": "Tue, 27 Oct 2026 17:16:52 GMT",
+      "seenAt": "2026-10-27T21:49:48.879Z"
+    },
+    "ba8e4466d0fb808a": {
+      "url": "https://stratechery.com/2026/anthropic-s-1-the-cost-of-compute-who-is-paying/",
+      "title": "Anthropic S-1, The Cost of Compute, Who Is Paying?",
+      "publishedAt": "Tue, 27 Oct 2026 10:32:57 +0000",
+      "seenAt": "2026-10-27T21:49:48.879Z"
+    },
+    "a3a879144b2984ac": {
+      "url": "https://openai.com/index/oracle-apps-in-chatgpt",
+      "title": "OpenAI expands partnership with Oracle to bring its apps to ChatGPT",
+      "publishedAt": "Tue, 27 Oct 2026 07:00:00 GMT",
+      "seenAt": "2026-10-27T21:49:48.879Z"
+    },
+    "a9c65cb8282253c6": {
+      "url": "https://simonwillison.net/2026/Oct/27/game-boy-color-on-my-conference-badge/",
+      "title": "Game Boy Color on My Conference Badge",
+      "publishedAt": "2026-10-27T19:34:18+00:00",
+      "seenAt": "2026-10-27T21:49:48.879Z"
+    },
+    "ba3cece69efb7bc0": {
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1019921/openai-breakthrough-math-computer-science-physics",
+      "title": "Researchers are getting tired of OpenAI gatekeeping its breakthroughs",
+      "publishedAt": "2026-10-27T16:48:58-04:00",
+      "seenAt": "2026-10-27T21:49:48.879Z"
+    },
+    "edf59637f599d673": {
+      "url": "https://www.anthropic.com/news/s1-sec",
+      "title": "Anthropic files S-1 with the SEC for proposed initial public offering",
+      "publishedAt": null,
+      "seenAt": "2026-10-27T21:49:48.879Z"
     }
   },
   "nodeReviews": {
@@ -2025,24 +2061,24 @@
       "reason": "The definition references a 'Claude Code source code leak, March 2026' as its sole evidentiary basis. None of the provided source excerpts reference KAIROS, Claude Code, or the alleged leak. Cannot verify or update this claim from available sources."
     },
     "kv-cache": {
-      "lastReviewedAt": "2026-05-09T07:44:17.196Z",
+      "lastReviewedAt": "2026-10-27T21:49:48.879Z",
       "status": "keep",
-      "reason": "No source material addresses this definition. It remains accurate as written."
+      "reason": "No source material discusses KV cache mechanics or memory tradeoffs. Definition stands."
     },
     "langchain": {
-      "lastReviewedAt": "2026-05-09T07:44:17.196Z",
+      "lastReviewedAt": "2026-10-27T21:49:48.879Z",
       "status": "keep",
-      "reason": "No source material addresses this definition. It remains accurate as written."
+      "reason": "No source material references LangChain or LangGraph. Definition stands."
     },
     "latency": {
-      "lastReviewedAt": "2026-05-09T07:44:17.196Z",
+      "lastReviewedAt": "2026-10-27T21:49:48.879Z",
       "status": "keep",
-      "reason": "The WebRTC/latency excerpt discusses latency tradeoffs in voice AI (packet dropping to maintain low latency) but does not contradict or materially expand the existing definition, which correctly characterizes latency compounding in agentic systems. No update is warranted."
+      "reason": "No source material addresses latency in AI systems or agentic workflows. Definition stands."
     },
     "llama": {
-      "lastReviewedAt": "2026-05-09T19:00:00.611Z",
+      "lastReviewedAt": "2026-10-27T21:49:48.879Z",
       "status": "keep",
-      "reason": "No source material addresses Llama or Meta's open-weight model releases. Definition remains accurate and unsupported for revision."
+      "reason": "No source material discusses Meta's Llama model family or open-weight deployment. Definition stands."
     },
     "long-horizon-autonomy": {
       "lastReviewedAt": "2026-05-09T19:00:00.611Z",
@@ -2893,6 +2929,36 @@
       "lastReviewedAt": "2026-10-26T22:18:30.604Z",
       "status": "keep",
       "reason": "No source material updates or contradicts this definition. The 2023 Harvard–BCG study attribution and the characterisation of uneven AI capability remain accurate."
+    },
+    "kill-switch": {
+      "lastReviewedAt": "2026-10-27T21:49:48.879Z",
+      "status": "keep",
+      "reason": "No source material addresses kill-switch legislation, agent incidents, or off-switch debates. Definition stands."
+    },
+    "latent-reasoning": {
+      "lastReviewedAt": "2026-10-27T21:49:48.879Z",
+      "status": "keep",
+      "reason": "No source material discusses latent or hidden-state reasoning. Definition stands."
+    },
+    "lethal-trifecta": {
+      "lastReviewedAt": "2026-10-27T21:49:48.879Z",
+      "status": "keep",
+      "reason": "The Simon Willison post in the sources is about a conference badge/Game Boy emulator and contains nothing about the lethal trifecta or prompt injection. Definition stands."
+    },
+    "llm": {
+      "lastReviewedAt": "2026-10-27T21:49:48.879Z",
+      "status": "keep",
+      "reason": "No source material provides new information about large language models as a concept. Definition stands."
+    },
+    "llm-as-a-judge": {
+      "lastReviewedAt": "2026-10-27T21:49:48.879Z",
+      "status": "keep",
+      "reason": "No source material addresses LLM-as-a-judge evaluation methodology. Definition stands."
+    },
+    "llm-steganography": {
+      "lastReviewedAt": "2026-10-27T21:49:48.879Z",
+      "status": "keep",
+      "reason": "No source material addresses LLM steganography. Definition stands."
     }
   }
 }

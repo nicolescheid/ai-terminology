@@ -1,99 +1,74 @@
 {
-  "generatedAt": "2026-10-26T22:18:30.604Z",
+  "generatedAt": "2026-10-27T21:49:48.879Z",
   "model": "claude-sonnet-4-6",
   "sourcesConfigured": 15,
   "articlesConsidered": [
     {
-      "id": "be77c96c39b4ea3e",
-      "source": "Google AI Blog",
-      "title": "Our newest AI Quest: Mapping the human brain",
-      "url": "https://blog.google/products-and-platforms/products/education/ai-quests-polar-peaks/",
-      "publishedAt": "Mon, 26 Oct 2026 16:00:00 +0000"
+      "id": "db98bf59a6c7e420",
+      "source": "Hugging Face Blog",
+      "title": "Build specialized multimodal models with LFM3",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm3",
+      "publishedAt": "Tue, 27 Oct 2026 17:16:52 GMT"
     },
     {
-      "id": "1a1d4bf2fc111eb8",
-      "source": "OpenAI News",
-      "title": "GPT-6.1 Sol helps CodeRabbit strengthen security across complex codebases",
-      "url": "https://openai.com/index/gpt-6-1-sol-coderabbit-code-security",
-      "publishedAt": "Mon, 26 Oct 2026 13:45:00 GMT"
-    },
-    {
-      "id": "f2dd8a063825556a",
-      "source": "MIT Sloan Management Review",
-      "title": "  Is HR Tech Undermining Your Strategy?",
-      "url": "https://sloanreview.mit.edu/article/is-hr-tech-undermining-your-strategy/",
-      "publishedAt": "Mon, 26 Oct 2026 11:00:29 +0000"
-    },
-    {
-      "id": "989309fdcda3c5cb",
+      "id": "ba8e4466d0fb808a",
       "source": "Stratechery",
-      "title": "The End of the Internet",
-      "url": "https://stratechery.com/2026/the-end-of-the-internet/",
-      "publishedAt": "Mon, 26 Oct 2026 10:00:00 +0000"
+      "title": "Anthropic S-1, The Cost of Compute, Who Is Paying?",
+      "url": "https://stratechery.com/2026/anthropic-s-1-the-cost-of-compute-who-is-paying/",
+      "publishedAt": "Tue, 27 Oct 2026 10:32:57 +0000"
     },
     {
-      "id": "34adadfb171aaca1",
+      "id": "a3a879144b2984ac",
+      "source": "OpenAI News",
+      "title": "OpenAI expands partnership with Oracle to bring its apps to ChatGPT",
+      "url": "https://openai.com/index/oracle-apps-in-chatgpt",
+      "publishedAt": "Tue, 27 Oct 2026 07:00:00 GMT"
+    },
+    {
+      "id": "a9c65cb8282253c6",
       "source": "Simon Willison's Weblog",
-      "title": "A quote from Jason Koebler",
-      "url": "https://simonwillison.net/2026/Oct/26/jason-koebler/",
-      "publishedAt": "2026-10-26T19:00:25+00:00"
+      "title": "Game Boy Color on My Conference Badge",
+      "url": "https://simonwillison.net/2026/Oct/27/game-boy-color-on-my-conference-badge/",
+      "publishedAt": "2026-10-27T19:34:18+00:00"
     },
     {
-      "id": "2500a6aad8741c76",
+      "id": "ba3cece69efb7bc0",
       "source": "The Verge — AI",
-      "title": "The RealReal won’t let AI agents hog designer clothing",
-      "url": "https://www.theverge.com/news/1018713/meta-muse-agentic-shopping-ai-the-realreal",
-      "publishedAt": "2026-10-26T13:30:55-04:00"
+      "title": "Researchers are getting tired of OpenAI gatekeeping its breakthroughs",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1019921/openai-breakthrough-math-computer-science-physics",
+      "publishedAt": "2026-10-27T16:48:58-04:00"
+    },
+    {
+      "id": "edf59637f599d673",
+      "source": "Anthropic Newsroom",
+      "title": "Anthropic files S-1 with the SEC for proposed initial public offering",
+      "url": "https://www.anthropic.com/news/s1-sec",
+      "publishedAt": null
     }
   ],
   "harvestedTerms": [
     {
       "article": {
-        "title": "Our newest AI Quest: Mapping the human brain",
-        "url": "https://blog.google/products-and-platforms/products/education/ai-quests-polar-peaks/"
+        "title": "Build specialized multimodal models with LFM3",
+        "url": "https://huggingface.co/blog/LiquidAI/lfm3"
       },
-      "summary": "Google launches 'Polar Peaks,' the third in its AI Quests series — an interactive educational game for ages 11–14 that teaches AI literacy through a neuroscience/brain-mapping scenario, developed with Stanford. The article announces accompanying teacher training modules via the Google AI Educator Series. The piece is primarily a product/program announcement with light educational-methodology content.",
+      "summary": "Liquid AI announces LFM3, a new family of small multimodal foundation models (~2B parameters) built on a tri-hybrid architecture (gated short convolutions + sliding-window attention + global attention) optimized for edge deployment and agentic tasks. The release covers six model variants spanning text, vision, audio, omni, and decision modalities, all fine-tunable on a single GPU. Key architectural innovations include partial RoPE, head-wise gated attention, sandwich norm, and a novel audio codec (LiquidCodec).",
       "longlistAdditions": [
         {
-          "id": "ai-quests",
-          "label": "AI Quests"
+          "id": "tri-hybrid-architecture",
+          "label": "Tri-Hybrid Architecture"
         },
         {
-          "id": "connectomics",
-          "label": "Connectomics"
+          "id": "hardware-in-the-loop-arch-search",
+          "label": "Hardware-in-the-Loop Architecture Search"
         },
         {
-          "id": "k12-ai-education",
-          "label": "K–12 AI Education"
-        }
-      ],
-      "longlistUpdates": [],
-      "rejections": [
-        {
-          "label": "AI Literacy",
-          "reason": "already in graph (label match)"
-        }
-      ],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "  Is HR Tech Undermining Your Strategy?",
-        "url": "https://sloanreview.mit.edu/article/is-hr-tech-undermining-your-strategy/"
-      },
-      "summary": "MIT Sloan Management Review article on HR technology strategy, arguing that vendor-default HR platforms undermine organizational strategy through 'accumulation trap' dynamics. The piece introduces a 'Strategy-First Check-In' framework for aligning HR tech stacks to talent management priorities. Minimal AI-specific terminology; primarily a management/strategy piece with light AI context.",
-      "longlistAdditions": [
-        {
-          "id": "hr-tech-stack",
-          "label": "HR Tech Stack"
+          "id": "decision-model",
+          "label": "Decision Model"
         },
         {
-          "id": "accumulation-trap",
-          "label": "Accumulation Trap"
-        },
-        {
-          "id": "vendor-default-problem",
-          "label": "Vendor Default Problem"
+          "id": "sliding-window-attention",
+          "label": "Sliding-Window Attention"
         }
       ],
       "longlistUpdates": [],
@@ -102,155 +77,154 @@
     },
     {
       "article": {
-        "title": "The End of the Internet",
-        "url": "https://stratechery.com/2026/the-end-of-the-internet/"
+        "title": "Anthropic S-1, The Cost of Compute, Who Is Paying?",
+        "url": "https://stratechery.com/2026/anthropic-s-1-the-cost-of-compute-who-is-paying/"
       },
-      "summary": "Ben Thompson's 'The End of the Internet' traces the full arc of the open web — from blogs to social media to SEO to AI — arguing that each phase ends when infinite supply destroys discovery value, and that aggregators (Google, then social, now AI) capture the value created by open content while hollowing out the creators. The piece extends Thompson's Aggregator Theory into the AI era, arguing AI assistants now disintermediate even the aggregators, ending the web as a distribution channel and raising foundational questions about content creation incentives.",
-      "longlistAdditions": [],
-      "longlistUpdates": [
+      "summary": "Paywalled Stratechery analysis of Anthropic's IPO (S-1 filing), covering compute costs, profitability, competition, and investor dilution. The excerpt is largely a subscription gate with minimal substantive content visible, referencing Anthropic's IPO economics at a high level.",
+      "longlistAdditions": [
         {
-          "id": "aggregator-theory",
-          "label": "Aggregator Theory",
-          "sourceAdded": true,
-          "sourceCount": 10,
-          "independentSourceCount": 1
+          "id": "anthropic-ipo",
+          "label": "Anthropic IPO"
         },
         {
-          "id": "ai-mode",
-          "label": "AI Mode",
-          "sourceAdded": true,
-          "sourceCount": 5,
-          "independentSourceCount": 5
+          "id": "investor-dilution-risk",
+          "label": "Investor Dilution Risk"
         }
       ],
-      "rejections": [
-        {
-          "label": "Dead Internet Theory",
-          "reason": "already in graph (label match)"
-        },
-        {
-          "label": "Zombie Internet",
-          "reason": "already in graph (label match)"
-        }
-      ],
-      "proposalsQueued": [],
-      "mustReadFlagged": {
-        "priority": 1,
-        "reason": "One of the clearest long-form arguments that AI assistants are not just another wave of internet change but represent a structural endpoint — the final aggregation layer that breaks the incentive chain that made open web publishing viable. Thompson traces this thesis through his own twenty-year publishing history, making it both analytically rigorous and unusually concrete. Essential reading for anyone trying to understand how AI reshapes the information ecosystem, not just its products."
-      }
-    },
-    {
-      "article": {
-        "title": "A quote from Jason Koebler",
-        "url": "https://simonwillison.net/2026/Oct/26/jason-koebler/"
-      },
-      "summary": "A brief Simon Willison blog post quoting Jason Koebler on ChatGPT hallucinating that ordinary tech support problems are journalistically notable stories for 404 Media — a niche but telling illustration of chatbot confabulation and misuse in a customer-support vacuum.",
-      "longlistAdditions": [],
-      "longlistUpdates": [
-        {
-          "id": "ai-support-bot-takeover",
-          "label": "Account Takeover via AI Support Bot",
-          "sourceAdded": true,
-          "sourceCount": 2,
-          "independentSourceCount": 1
-        }
-      ],
-      "rejections": [
-        {
-          "label": "Botshit",
-          "reason": "already in graph (label match)"
-        },
-        {
-          "label": "Hallucination",
-          "reason": "already in graph (label match)"
-        },
-        {
-          "label": "AI Slop",
-          "reason": "already in graph (label match)"
-        }
-      ],
+      "longlistUpdates": [],
+      "rejections": [],
       "proposalsQueued": []
     },
     {
       "article": {
-        "title": "The RealReal won’t let AI agents hog designer clothing",
-        "url": "https://www.theverge.com/news/1018713/meta-muse-agentic-shopping-ai-the-realreal"
+        "title": "Game Boy Color on My Conference Badge",
+        "url": "https://simonwillison.net/2026/Oct/27/game-boy-color-on-my-conference-badge/"
       },
-      "summary": "The RealReal updates its bot-defense system after The Verge demonstrated that Meta's Muse AI agent could exploit its shopping cart reserve system to effectively block other consumers from purchasing luxury items for hours. The article surfaces real-world friction emerging as AI agents become mainstream shopping tools, touching on agentic commerce, bot defenses, and the disruption to retail business models as agents mediate consumer-web interactions.",
+      "summary": "A brief link-blog post from Simon Willison about a hackable conference badge at GitHub Universe that runs a Game Boy Color emulator built with Gemini's help. Light technical content, no substantive AI terminology introduced.",
+      "longlistAdditions": [],
+      "longlistUpdates": [
+        {
+          "id": "audio-state-sync",
+          "label": "Audio-Based State Synchronization",
+          "sourceAdded": true,
+          "sourceCount": 4,
+          "independentSourceCount": 1
+        }
+      ],
+      "rejections": [],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "Researchers are getting tired of OpenAI gatekeeping its breakthroughs",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1019921/openai-breakthrough-math-computer-science-physics"
+      },
+      "summary": "OpenAI announces breakthroughs in mathematics, computer science, and physics — including a purported resolution of the Kakeya conjecture and a disproof of the exponential time hypothesis — but researchers criticise the company's 'shepherd' system for controlling access and handpicking which experts may evaluate results before public release.",
       "longlistAdditions": [
         {
-          "id": "agent-bot-defense",
-          "label": "Agent Bot Defense"
+          "id": "gated-science-release",
+          "label": "Gated Science Release"
+        },
+        {
+          "id": "lean-formalization",
+          "label": "Lean Formalization"
+        },
+        {
+          "id": "shepherd-model-disclosure",
+          "label": "Shepherd Model (Scientific Disclosure)"
         }
       ],
       "longlistUpdates": [
         {
-          "id": "meta-muse",
-          "label": "Muse",
+          "id": "ai-mathematics",
+          "label": "AI Mathematics",
           "sourceAdded": true,
           "sourceCount": 2,
-          "independentSourceCount": 1
+          "independentSourceCount": 2
         }
       ],
-      "rejections": [
+      "rejections": [],
+      "proposalsQueued": [],
+      "mustReadFlagged": {
+        "priority": 2,
+        "reason": "A substantive account of a new tension in AI's relationship to scientific institutions: as AI labs generate genuine mathematical and physics breakthroughs, their control over disclosure creates a novel power asymmetry with research communities. The 'shepherd' system described here is a genuinely new governance pattern, and the researcher frustration is a real signal about how norms of open science are being renegotiated in real time."
+      }
+    },
+    {
+      "article": {
+        "title": "Anthropic files S-1 with the SEC for proposed initial public offering",
+        "url": "https://www.anthropic.com/news/s1-sec"
+      },
+      "summary": "Anthropic has filed a Form S-1 with the SEC for a proposed IPO, intending to list Class A common stock on Nasdaq under the ticker 'ANT.' The announcement is a brief legal notice with no prospectus details yet disclosed, naming Goldman Sachs and Morgan Stanley as underwriters. The article contains minimal substantive AI terminology.",
+      "longlistAdditions": [
         {
-          "label": "Agentic Commerce",
-          "reason": "already in graph (label match)"
+          "id": "public-benefit-corporation",
+          "label": "Public Benefit Corporation"
         }
       ],
+      "longlistUpdates": [
+        {
+          "id": "anthropic-ipo",
+          "label": "Anthropic IPO",
+          "sourceAdded": true,
+          "sourceCount": 2,
+          "independentSourceCount": 2
+        }
+      ],
+      "rejections": [],
       "proposalsQueued": []
     }
   ],
   "definitionReviews": [
     {
-      "id": "inference",
+      "id": "kill-switch",
       "status": "keep",
-      "reason": "No source material updates or contradicts this definition. The description of inference as the act of a trained model generating a response from a prompt is accurate and uncontested."
+      "reason": "No source material addresses kill-switch legislation, agent incidents, or off-switch debates. Definition stands."
     },
     {
-      "id": "inference-shift",
-      "status": "insufficient_evidence",
-      "reason": "The definition attributes the 'inference shift' framing to a specific Ben Thompson Stratechery piece. The only Stratechery excerpt provided is 'The End of the Internet,' which is about web/blog history and contains nothing about inference shift or AI compute trends. Cannot verify or update the attributed framing from available sources."
-    },
-    {
-      "id": "information-literacy",
+      "id": "kv-cache",
       "status": "keep",
-      "reason": "No source material addresses information literacy. The definition is reasonable and well-grounded; no update warranted."
+      "reason": "No source material discusses KV cache mechanics or memory tradeoffs. Definition stands."
     },
     {
-      "id": "infrastructure",
+      "id": "langchain",
       "status": "keep",
-      "reason": "No source material updates or contradicts this definition. The characterisation of infrastructure as the enabling compute/storage/networking/API layer is accurate and stable."
+      "reason": "No source material references LangChain or LangGraph. Definition stands."
     },
     {
-      "id": "interactive-prototyping",
+      "id": "latency",
       "status": "keep",
-      "reason": "No source material addresses interactive prototyping. Definition stands as written."
+      "reason": "No source material addresses latency in AI systems or agentic workflows. Definition stands."
     },
     {
-      "id": "interpretability",
+      "id": "latent-reasoning",
       "status": "keep",
-      "reason": "No source material addresses model interpretability. The definition accurately characterises it as an open research problem aimed at making AI outputs legible."
+      "reason": "No source material discusses latent or hidden-state reasoning. Definition stands."
     },
     {
-      "id": "iso-42001",
+      "id": "lethal-trifecta",
       "status": "keep",
-      "reason": "No source material addresses ISO/IEC 42001. Definition stands as written."
+      "reason": "The Simon Willison post in the sources is about a conference badge/Game Boy emulator and contains nothing about the lethal trifecta or prompt injection. Definition stands."
     },
     {
-      "id": "jagged-frontier",
+      "id": "llama",
       "status": "keep",
-      "reason": "No source material updates or contradicts this definition. The 2023 Harvard–BCG study attribution and the characterisation of uneven AI capability remain accurate."
+      "reason": "No source material discusses Meta's Llama model family or open-weight deployment. Definition stands."
     },
     {
-      "id": "jailbreak",
+      "id": "llm",
       "status": "keep",
-      "reason": "No source material updates or contradicts this definition. The description of jailbreaks as intentional prompt-based safety-bypass attempts, distinct from prompt injection, is accurate."
+      "reason": "No source material provides new information about large language models as a concept. Definition stands."
     },
     {
-      "id": "kairos",
-      "status": "insufficient_evidence",
-      "reason": "The definition references a 'Claude Code source code leak, March 2026' as its sole evidentiary basis. None of the provided source excerpts reference KAIROS, Claude Code, or the alleged leak. Cannot verify or update this claim from available sources."
+      "id": "llm-as-a-judge",
+      "status": "keep",
+      "reason": "No source material addresses LLM-as-a-judge evaluation methodology. Definition stands."
+    },
+    {
+      "id": "llm-steganography",
+      "status": "keep",
+      "reason": "No source material addresses LLM steganography. Definition stands."
     }
   ],
   "notes": []

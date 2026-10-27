@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generatedAt": "2026-10-26T22:18:30.604Z",
-    "unreadCount": 31,
-    "totalCount": 31,
+    "generatedAt": "2026-10-27T21:49:48.879Z",
+    "unreadCount": 32,
+    "totalCount": 32,
     "note": "Lexi's must-reads — articles she flags as worth Nicole reading in full. Editorial signal, not news feed. Set status to 'read' or 'dismissed' via mark-must-reads.mjs."
   },
   "entries": [
@@ -530,6 +530,23 @@
       ],
       "novelTermsInArticle": 0,
       "flaggedAt": "2026-10-26T22:18:30.604Z",
+      "status": "unread"
+    },
+    {
+      "id": "ba3cece69efb7bc0",
+      "title": "Researchers are getting tired of OpenAI gatekeeping its breakthroughs",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1019921/openai-breakthrough-math-computer-science-physics",
+      "source": "The Verge — AI",
+      "publishedAt": "2026-10-27T16:48:58-04:00",
+      "summary": "OpenAI announces breakthroughs in mathematics, computer science, and physics — including a purported resolution of the Kakeya conjecture and a disproof of the exponential time hypothesis — but researchers criticise the company's 'shepherd' system for controlling access and handpicking which experts may evaluate results before public release.",
+      "priority": 2,
+      "reason": "A substantive account of a new tension in AI's relationship to scientific institutions: as AI labs generate genuine mathematical and physics breakthroughs, their control over disclosure creates a novel power asymmetry with research communities. The 'shepherd' system described here is a genuinely new governance pattern, and the researcher frustration is a real signal about how norms of open science are being renegotiated in real time.",
+      "clusters": [
+        "critical",
+        "landscape"
+      ],
+      "novelTermsInArticle": 3,
+      "flaggedAt": "2026-10-27T21:49:48.879Z",
       "status": "unread"
     }
   ]

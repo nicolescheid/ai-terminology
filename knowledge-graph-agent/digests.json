@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-10-25T20:25:13.833Z",
-    "count": 7,
+    "generatedAt": "2026-10-27T21:51:42.259Z",
+    "count": 8,
     "note": "Lexi's email digests to Nicole. Written by build-digest.mjs; sentAt/messageId/thread written by the Worker (src/lexi-mail)."
   },
   "digests": [
@@ -571,6 +571,56 @@
       "waitingEarlier": 6,
       "thread": [],
       "subject": "2 items to review [Lexi D-20261025-2a00]"
+    },
+    {
+      "id": "D-20261027-4607",
+      "createdAt": "2026-10-27T21:51:42.259Z",
+      "autoApplyHours": 72,
+      "autoApplyAt": "2026-10-30T21:51:42.259Z",
+      "sentAt": null,
+      "messageId": null,
+      "items": [
+        {
+          "n": 1,
+          "proposalId": "8e5586750d09e02d",
+          "action": "promote_to_graph",
+          "kind": "new_term",
+          "term": "AI Mathematics",
+          "termId": "ai-mathematics",
+          "definition": "The use of frontier AI models to generate novel mathematical results — including formal proofs, conjectures, and derivations — at a scale and pace that outpaces traditional human mathematical research workflows. Exemplified by OpenAI's October 2026 release of 719 manuscripts produced by an unreleased internal model, including a claimed solution to the Navier-Stokes Millennium Prize Problem. Raises contested questions about credit attribution, reproducibility, peer review, and whether AI-generated proofs constitute mathematical knowledge in the same sense as human-authored ones. The Advisory Group on Mathematics and Artificial Intelligence (AGMAI) at the Institute for Advanced Study has called for disclosure of model names, prompts, and compute costs, and has objected to treating mathematical results as marketing vehicles.",
+          "previousDefinition": null,
+          "sources": [
+            {
+              "label": "Last Week in AI: Last Week in AI #346 - 719 math manuscripts, 2 Western open models, 1 more safety resignation",
+              "url": "https://lastweekin.ai/p/last-week-in-ai-346-719-math-manuscripts"
+            },
+            {
+              "label": "The Verge — AI: Researchers are getting tired of OpenAI gatekeeping its breakthroughs",
+              "url": "https://www.theverge.com/ai-artificial-intelligence/1019921/openai-breakthrough-math-computer-science-physics"
+            }
+          ],
+          "nearest": {
+            "id": "frontier-model",
+            "label": "Frontier Model",
+            "relation": "related (application domain)"
+          },
+          "rationale": "2 sources, 2 independent (lastweekin.ai + theverge.com), 7d on longlist.",
+          "review": {
+            "verdict": "flag",
+            "summary": "Neither excerpt uses 'AI Mathematics' or 'AI-Generated Mathematical Research' as a term; they report one OpenAI release. The definition also misstates that the Navier-Stokes result was part of the 719-manuscript release, when the source says it was announced about a month earlier. The 'outpaces human research' framing is promotional, and the event-anchored wording will date quickly.",
+            "flags": [
+              "sources_do_not_support",
+              "factual_error",
+              "too_promotional",
+              "stale_or_dated"
+            ]
+          },
+          "tier": "nicole",
+          "tierReason": "reviewer flagged it: sources do not support, factual error, too promotional, stale or dated"
+        }
+      ],
+      "waitingEarlier": 6,
+      "thread": []
     }
   ]
 }

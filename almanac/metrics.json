@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-10-26T23:03:46.703Z",
+  "generatedAt": "2026-10-27T21:51:42.350Z",
   "firstRunAt": "2026-04-27T01:07:31.335Z",
   "phase": 1,
   "headline": {
-    "articlesRead": 250,
-    "daysRunning": 183,
-    "longlistSize": 171,
+    "articlesRead": 256,
+    "daysRunning": 184,
+    "longlistSize": 181,
     "graphSize": 442
   },
   "thisWeek": {
     "articlesFetched": 53,
-    "longlistAdded": 71,
-    "sourcesAdded": 15,
-    "promotionsToGraph": 7,
+    "longlistAdded": 67,
+    "sourcesAdded": 16,
+    "promotionsToGraph": 6,
     "proposalsQueued": 8,
     "auditFlags": 8,
     "notesAdded": 13
@@ -27,13 +27,31 @@
       ],
       "sourceCount": 3,
       "independentSources": 2,
-      "daysOnLonglist": 175,
+      "daysOnLonglist": 176,
       "domains": [
         "openai.com",
         "simonwillison.net"
       ],
       "gapCount": 1,
       "gap": "no source seen in past 90d"
+    },
+    {
+      "id": "anthropic-ipo",
+      "label": "Anthropic IPO",
+      "fullName": "Anthropic IPO (S-1 Filing)",
+      "clusters": [
+        "business",
+        "companies"
+      ],
+      "sourceCount": 2,
+      "independentSources": 2,
+      "daysOnLonglist": 0,
+      "domains": [
+        "stratechery.com",
+        "anthropic.com"
+      ],
+      "gapCount": 1,
+      "gap": "3 more days on longlist"
     },
     {
       "id": "aggregator-theory",
@@ -45,9 +63,26 @@
       ],
       "sourceCount": 10,
       "independentSources": 1,
-      "daysOnLonglist": 146,
+      "daysOnLonglist": 147,
       "domains": [
         "stratechery.com"
+      ],
+      "gapCount": 1,
+      "gap": "needs 1 more independent source"
+    },
+    {
+      "id": "audio-state-sync",
+      "label": "Audio-Based State Synchronization",
+      "fullName": "Audio-Based Game State Synchronization (Multiplayer via Sound)",
+      "clusters": [
+        "technical",
+        "tools"
+      ],
+      "sourceCount": 4,
+      "independentSources": 1,
+      "daysOnLonglist": 7,
+      "domains": [
+        "simonwillison.net"
       ],
       "gapCount": 1,
       "gap": "needs 1 more independent source"
@@ -62,7 +97,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 10,
+      "daysOnLonglist": 11,
       "domains": [
         "stratechery.com"
       ],
@@ -103,23 +138,6 @@
       "gap": "needs 1 more independent source"
     },
     {
-      "id": "audio-state-sync",
-      "label": "Audio-Based State Synchronization",
-      "fullName": "Audio-Based Game State Synchronization (Multiplayer via Sound)",
-      "clusters": [
-        "technical",
-        "tools"
-      ],
-      "sourceCount": 3,
-      "independentSources": 1,
-      "daysOnLonglist": 6,
-      "domains": [
-        "simonwillison.net"
-      ],
-      "gapCount": 1,
-      "gap": "needs 1 more independent source"
-    },
-    {
       "id": "societal-resilience",
       "label": "Societal Resilience",
       "fullName": "Societal Resilience (AI Risk Governance)",
@@ -129,7 +147,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 150,
+      "daysOnLonglist": 151,
       "domains": [
         "normaltech.ai"
       ],
@@ -146,7 +164,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 150,
+      "daysOnLonglist": 151,
       "domains": [
         "normaltech.ai"
       ],
@@ -163,25 +181,9 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 147,
+      "daysOnLonglist": 148,
       "domains": [
         "simonwillison.net"
-      ],
-      "gapCount": 1,
-      "gap": "needs 1 more independent source"
-    },
-    {
-      "id": "tensor-parallelism",
-      "label": "Tensor Parallelism",
-      "fullName": "Tensor Parallelism (Distributed Model Sharding)",
-      "clusters": [
-        "technical"
-      ],
-      "sourceCount": 2,
-      "independentSources": 1,
-      "daysOnLonglist": 7,
-      "domains": [
-        "huggingface.co"
       ],
       "gapCount": 1,
       "gap": "needs 1 more independent source"
@@ -191,19 +193,19 @@
     "byDomain": [
       {
         "domain": "openai.com",
-        "count": 57
+        "count": 58
       },
       {
         "domain": "simonwillison.net",
-        "count": 39
+        "count": 40
       },
       {
         "domain": "stratechery.com",
-        "count": 32
+        "count": 33
       },
       {
         "domain": "huggingface.co",
-        "count": 25
+        "count": 26
       },
       {
         "domain": "blog.google",
@@ -211,11 +213,11 @@
       },
       {
         "domain": "anthropic.com",
-        "count": 23
+        "count": 24
       },
       {
         "domain": "theverge.com",
-        "count": 20
+        "count": 21
       },
       {
         "domain": "lastweekin.ai",
@@ -339,31 +341,31 @@
         "id": "technical",
         "label": "Technical",
         "hex": "#D0D040",
-        "count": 64
+        "count": 68
       },
       {
         "id": "safety",
         "label": "Safety",
         "hex": "#FF6090",
+        "count": 39
+      },
+      {
+        "id": "models",
+        "label": "Models",
+        "hex": "#FFB060",
         "count": 38
       },
       {
         "id": "agentic",
         "label": "Agentic Systems",
         "hex": "#FF9040",
-        "count": 34
-      },
-      {
-        "id": "models",
-        "label": "Models",
-        "hex": "#FFB060",
-        "count": 33
+        "count": 35
       },
       {
         "id": "critical",
         "label": "Critical / Hype",
         "hex": "#FF5555",
-        "count": 28
+        "count": 31
       },
       {
         "id": "tools",
@@ -375,13 +377,13 @@
         "id": "business",
         "label": "Business Reality",
         "hex": "#48C888",
-        "count": 22
+        "count": 25
       },
       {
         "id": "landscape",
         "label": "Model Landscape",
         "hex": "#D0A050",
-        "count": 20
+        "count": 22
       },
       {
         "id": "human",
@@ -399,7 +401,7 @@
         "id": "companies",
         "label": "Companies",
         "hex": "#9090A8",
-        "count": 15
+        "count": 16
       },
       {
         "id": "security",
@@ -433,7 +435,7 @@
     "note": "All graph promotions and substantive edits are currently human-gated. Lexi proposes; Nicole approves."
   },
   "proposalsByStatus": {
-    "pending": 6,
+    "pending": 7,
     "approved": 0,
     "applied": 45,
     "rejected": 1
