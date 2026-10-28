@@ -1,7 +1,8 @@
 {
   "meta": {
-    "generatedAt": "2026-10-28T22:13:30.237Z",
-    "pendingCount": 10,
+    "generatedAt": "2026-10-28T23:19:17.246Z",
+    "pendingCount": 7,
+    "approvedCount": 3,
     "appliedCount": 46,
     "rejectedCount": 1,
     "note": "Lexi proposals queue. Actions gated as PROPOSE land here as status: 'pending'. Edit a proposal's status to 'approved' or 'rejected' and run the apply step (TBD) to commit."
@@ -3052,7 +3053,7 @@
       "action": "promote_to_graph",
       "gate": "propose",
       "proposedAt": "2026-10-28T22:13:30.237Z",
-      "status": "pending",
+      "status": "approved",
       "source": "promote-eligibility-scan",
       "target": {
         "kind": "longlist_entry",
@@ -3120,14 +3121,17 @@
       "tier": "nicole",
       "tierReason": "reviewer flagged it: sources do not support, stale or dated",
       "digestId": "D-20261028-ac0c",
-      "digestN": 1
+      "digestN": 1,
+      "approvedAt": "2026-10-28T23:19:17.246Z",
+      "approvedBy": "nicole",
+      "decidedVia": "email-link"
     },
     {
       "id": "c6d35c3e1fef7548",
       "action": "promote_to_graph",
       "gate": "propose",
       "proposedAt": "2026-10-28T22:13:30.237Z",
-      "status": "pending",
+      "status": "approved",
       "source": "promote-eligibility-scan",
       "target": {
         "kind": "longlist_entry",
@@ -3194,14 +3198,17 @@
       "tierReason": "new term, 2 independent sources, reviewer passed",
       "digestId": "D-20261028-ac0c",
       "digestN": 3,
-      "autoApplyAt": "2026-10-31T22:13:54.936Z"
+      "autoApplyAt": "2026-10-31T22:13:54.936Z",
+      "approvedAt": "2026-10-28T23:19:17.246Z",
+      "approvedBy": "nicole",
+      "decidedVia": "email-link"
     },
     {
       "id": "5c4fcd13cab8486b",
       "action": "promote_to_graph",
       "gate": "propose",
       "proposedAt": "2026-10-28T22:13:30.237Z",
-      "status": "pending",
+      "status": "approved",
       "source": "promote-eligibility-scan",
       "target": {
         "kind": "longlist_entry",
@@ -3273,7 +3280,10 @@
       "tier": "nicole",
       "tierReason": "reviewer flagged it: sources do not support, stale or dated",
       "digestId": "D-20261028-ac0c",
-      "digestN": 2
+      "digestN": 2,
+      "approvedAt": "2026-10-28T23:19:17.246Z",
+      "approvedBy": "nicole",
+      "decidedVia": "email-link"
     }
   ],
   "usedLinks": {
@@ -3284,6 +3294,7 @@
     "fwBQnu1XYTsgoz7h": "2026-10-22T00:04:32.438Z",
     "X6VC7tnutopBmL8o": "2026-10-26T04:31:58.316Z",
     "o9fgW3FwU4aD-osa": "2026-10-26T04:32:09.989Z",
-    "fyp-aOUbmht7SJ6p": "2026-10-27T23:23:05.050Z"
+    "fyp-aOUbmht7SJ6p": "2026-10-27T23:23:05.050Z",
+    "weLJBpxshrVsqmb5": "2026-10-28T23:19:17.246Z"
   }
 }
