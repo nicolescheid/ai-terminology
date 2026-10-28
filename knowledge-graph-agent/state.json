@@ -1,6 +1,6 @@
 {
-  "lastRunAt": "2026-10-27T23:23:32.187Z",
-  "reviewCursor": 264,
+  "lastRunAt": "2026-10-28T22:11:47.310Z",
+  "reviewCursor": 274,
   "seenArticles": {
     "93a049d060bc295b": {
       "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/tpus-8t-8i-cloud-next/",
@@ -1573,6 +1573,42 @@
       "title": "GPT-6.1 Terra",
       "publishedAt": "2026-10-26T23:53:07+00:00",
       "seenAt": "2026-10-27T23:23:32.187Z"
+    },
+    "7ae8eb20550eee76": {
+      "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
+      "title": "NVIDIA Nemotron 3.5 Transcribe and Granary v2: Intelligent Multilingual Transcription You Can Prompt and Adapt",
+      "publishedAt": "Wed, 28 Oct 2026 14:58:17 GMT",
+      "seenAt": "2026-10-28T22:11:47.310Z"
+    },
+    "75e2017ed4c5a2ec": {
+      "url": "https://openai.com/index/openai-servicenow-partnership-expansion",
+      "title": "OpenAI and ServiceNow expand partnership across enterprise workflows",
+      "publishedAt": "Wed, 28 Oct 2026 13:15:00 GMT",
+      "seenAt": "2026-10-28T22:11:47.310Z"
+    },
+    "a27eaeb8785f5eee": {
+      "url": "https://sloanreview.mit.edu/article/ai-is-thriving-at-capital-one/",
+      "title": "AI Is Thriving at Capital One | Thomas H. Davenport and Randy Bean",
+      "publishedAt": "Wed, 28 Oct 2026 11:00:15 +0000",
+      "seenAt": "2026-10-28T22:11:47.310Z"
+    },
+    "8ba9767bae988606": {
+      "url": "https://stratechery.com/2026/meta-earnings-muse-and-the-frontier-musebook/",
+      "title": "Meta Earnings, Muse and the Frontier, Musebook",
+      "publishedAt": "Wed, 28 Oct 2026 10:06:13 +0000",
+      "seenAt": "2026-10-28T22:11:47.310Z"
+    },
+    "d8f853e661d65a1d": {
+      "url": "https://simonwillison.net/2026/Oct/28/github-octoverse-2026/",
+      "title": "GitHub Octoverse 2026",
+      "publishedAt": "2026-10-28T16:45:23+00:00",
+      "seenAt": "2026-10-28T22:11:47.310Z"
+    },
+    "fc7d1d71bde9a18e": {
+      "url": "https://www.theverge.com/tech/1021339/google-gemini-4-carbon-cybersecurity-frontier",
+      "title": "Google launches Gemini 4 Carbon with a ‘significant leap’ in cybersecurity",
+      "publishedAt": "2026-10-28T16:03:00-04:00",
+      "seenAt": "2026-10-28T22:11:47.310Z"
     }
   },
   "nodeReviews": {
@@ -2137,34 +2173,34 @@
       "reason": "No source material addresses the Manus agent. Definition remains accurate."
     },
     "mcp": {
-      "lastReviewedAt": "2026-10-27T23:23:32.187Z",
+      "lastReviewedAt": "2026-10-28T22:11:47.310Z",
       "status": "keep",
-      "reason": "No source material addresses the Model Context Protocol. Definition remains accurate."
+      "reason": "No source addresses MCP directly. The GitHub Octoverse data on agentic engineering growth is consistent with the existing definition's framing but adds nothing specific. Definition stands."
     },
     "memory": {
-      "lastReviewedAt": "2026-05-09T19:00:00.611Z",
+      "lastReviewedAt": "2026-10-28T22:11:47.310Z",
       "status": "keep",
-      "reason": "No source material updates the definition of AI memory."
+      "reason": "No source addresses AI memory concepts. Definition stands."
     },
     "memory-consolidation": {
-      "lastReviewedAt": "2026-05-09T19:00:00.611Z",
+      "lastReviewedAt": "2026-10-28T22:11:47.310Z",
       "status": "keep",
-      "reason": "No source material addresses memory consolidation in AI agents."
+      "reason": "No source addresses memory consolidation in AI agents. Definition stands."
     },
     "meta-co": {
-      "lastReviewedAt": "2026-05-09T19:00:00.611Z",
-      "status": "keep",
-      "reason": "No source material updates Meta's open-weight strategy or Llama releases."
+      "lastReviewedAt": "2026-10-28T22:11:47.310Z",
+      "status": "insufficient_evidence",
+      "reason": "The Stratechery article references Meta earnings and something called 'Muse' in an October 2026 context, but it is paywalled and provides no extractable detail. Cannot confirm whether the open-weight/Llama framing remains fully accurate or needs updating. Insufficient evidence to revise."
     },
     "metacognition": {
-      "lastReviewedAt": "2026-05-10T19:02:19.492Z",
+      "lastReviewedAt": "2026-10-28T22:11:47.310Z",
       "status": "keep",
-      "reason": "No source material touches on metacognition. Definition stands as written."
+      "reason": "No source addresses metacognition. Definition stands."
     },
     "microsoft-co": {
-      "lastReviewedAt": "2026-05-10T19:02:19.492Z",
+      "lastReviewedAt": "2026-10-28T22:11:47.310Z",
       "status": "keep",
-      "reason": "The podcast briefly mentions a 'revamped OpenAI–Microsoft agreement' but provides no detail sufficient to justify updating the definition. Core description of Microsoft as enterprise AI distribution layer, Azure AI, GitHub Copilot, and Microsoft 365 integration remains accurate."
+      "reason": "No source materially updates the Microsoft definition. Definition stands."
     },
     "mistral": {
       "lastReviewedAt": "2026-05-10T19:02:19.492Z",
@@ -3020,6 +3056,26 @@
       "lastReviewedAt": "2026-10-27T23:23:32.187Z",
       "status": "keep",
       "reason": "No source material addresses maintainer accountability or the Ladybird policy. Definition remains accurate."
+    },
+    "meat-proxy": {
+      "lastReviewedAt": "2026-10-28T22:11:47.310Z",
+      "status": "insufficient_evidence",
+      "reason": "No source mentions or implies this slang term. Cannot confirm or deny the 2026 dating. Insufficient evidence to update or validate."
+    },
+    "mechanistic-interpretability": {
+      "lastReviewedAt": "2026-10-28T22:11:47.310Z",
+      "status": "keep",
+      "reason": "No source addresses mechanistic interpretability, sparse autoencoders, circuit tracing, or activation steering. Definition stands as written."
+    },
+    "micro-app": {
+      "lastReviewedAt": "2026-10-28T22:11:47.310Z",
+      "status": "keep",
+      "reason": "No source directly addresses micro-apps. Definition stands."
+    },
+    "mid-training": {
+      "lastReviewedAt": "2026-10-28T22:11:47.310Z",
+      "status": "keep",
+      "reason": "No source addresses mid-training as a concept. Definition stands."
     }
   }
 }

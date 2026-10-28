@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-10-27T23:23:32.187Z",
-    "entryCount": 279,
+    "generatedAt": "2026-10-28T22:11:47.310Z",
+    "entryCount": 291,
     "note": "Lexi-managed Tier 2 longlist — terms under observation, awaiting evidence to support promotion to the graph (Tier 1)."
   },
   "entries": [
@@ -6576,12 +6576,20 @@
           "sourceLabel": "OpenAI Research",
           "publishedAt": null,
           "firstSeen": "2026-10-16T20:31:05.113Z"
+        },
+        {
+          "url": "https://www.theverge.com/tech/1021339/google-gemini-4-carbon-cybersecurity-frontier",
+          "domain": "theverge.com",
+          "title": "Google launches Gemini 4 Carbon with a ‘significant leap’ in cybersecurity",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-10-28T16:03:00-04:00",
+          "firstSeen": "2026-10-28T22:11:47.310Z"
         }
       ],
-      "sourceCount": 1,
-      "independentSourceCount": 1,
+      "sourceCount": 2,
+      "independentSourceCount": 2,
       "dateFirstSeen": "2026-10-16T20:31:05.113Z",
-      "dateLastSeen": "2026-10-16T20:31:05.113Z",
+      "dateLastSeen": "2026-10-28T22:11:47.310Z",
       "sz": 14,
       "fullName": "ExploitBench (Cybersecurity AI Benchmark)",
       "nodeType": "product",
@@ -7399,12 +7407,20 @@
           "sourceLabel": "Google AI Blog",
           "publishedAt": "Fri, 02 Oct 2026 15:00:00 +0000",
           "firstSeen": "2026-10-18T20:07:14.716Z"
+        },
+        {
+          "url": "https://www.theverge.com/tech/1021339/google-gemini-4-carbon-cybersecurity-frontier",
+          "domain": "theverge.com",
+          "title": "Google launches Gemini 4 Carbon with a ‘significant leap’ in cybersecurity",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-10-28T16:03:00-04:00",
+          "firstSeen": "2026-10-28T22:11:47.310Z"
         }
       ],
-      "sourceCount": 1,
-      "independentSourceCount": 1,
+      "sourceCount": 2,
+      "independentSourceCount": 2,
       "dateFirstSeen": "2026-10-18T20:07:14.716Z",
-      "dateLastSeen": "2026-10-18T20:07:14.716Z",
+      "dateLastSeen": "2026-10-28T22:11:47.310Z",
       "sz": 14,
       "fullName": "Fairwind Program (Google DeepMind Phased Capability Release)",
       "nodeType": "initiative",
@@ -8827,12 +8843,20 @@
           "sourceLabel": "The Verge — AI",
           "publishedAt": "2026-10-26T13:30:55-04:00",
           "firstSeen": "2026-10-26T22:18:30.604Z"
+        },
+        {
+          "url": "https://stratechery.com/2026/meta-earnings-muse-and-the-frontier-musebook/",
+          "domain": "stratechery.com",
+          "title": "Meta Earnings, Muse and the Frontier, Musebook",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Wed, 28 Oct 2026 10:06:13 +0000",
+          "firstSeen": "2026-10-28T22:11:47.310Z"
         }
       ],
-      "sourceCount": 2,
-      "independentSourceCount": 1,
+      "sourceCount": 3,
+      "independentSourceCount": 2,
       "dateFirstSeen": "2026-10-21T22:03:58.255Z",
-      "dateLastSeen": "2026-10-26T22:18:30.604Z",
+      "dateLastSeen": "2026-10-28T22:11:47.310Z",
       "sz": 14,
       "fullName": "Muse (Meta AI Agent)",
       "nodeType": "product",
@@ -10978,6 +11002,402 @@
       "fullName": "GPT-6 Luna (OpenAI)",
       "nodeType": "product",
       "proposalReason": "New product entry completing the OpenAI model tier picture; useful for tracking the full lineup taxonomy."
+    },
+    {
+      "id": "speaker-diarization",
+      "label": "Speaker Diarization",
+      "workingDef": "The automatic process of partitioning an audio stream into segments attributed to individual speakers — answering 'who spoke when.' Diarization error rate (DER) measures the fraction of speaker-time incorrectly attributed. In the context of speech AI, diarization is increasingly being integrated into transcription models end-to-end rather than applied as a post-processing step, as illustrated by architectures like Sortformer that inject speaker cues directly into generation.",
+      "clusters": [
+        "technical",
+        "models"
+      ],
+      "suggestedRels": [
+        "word-error-rate",
+        "multimodal",
+        "voice-ai",
+        "cascaded-voice-pipeline"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
+          "domain": "huggingface.co",
+          "title": "NVIDIA Nemotron 3.5 Transcribe and Granary v2: Intelligent Multilingual Transcription You Can Prompt and Adapt",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Wed, 28 Oct 2026 14:58:17 GMT",
+          "firstSeen": "2026-10-28T22:11:47.310Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-28T22:11:47.310Z",
+      "dateLastSeen": "2026-10-28T22:11:47.310Z",
+      "sz": 14,
+      "fullName": "Speaker Diarization (Speaker Attribution)",
+      "proposalReason": "A well-established but undertracked speech AI concept now materially relevant as it gets absorbed into end-to-end transcription models rather than existing as a standalone pipeline step."
+    },
+    {
+      "id": "automatic-speech-recognition",
+      "label": "Automatic Speech Recognition",
+      "workingDef": "The computational task of converting spoken audio into text. Modern ASR systems range from dedicated encoder–decoder architectures (e.g., Whisper-class models) to hybrid systems pairing speech encoders with large language models. ASR is increasingly evaluated on multilingual, long-form, and diarized conditions, and is becoming a component capability within broader multimodal and voice-AI stacks rather than a standalone product category.",
+      "clusters": [
+        "technical",
+        "models"
+      ],
+      "suggestedRels": [
+        "voice-ai",
+        "word-error-rate",
+        "cascaded-voice-pipeline",
+        "multimodal",
+        "open-weight"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
+          "domain": "huggingface.co",
+          "title": "NVIDIA Nemotron 3.5 Transcribe and Granary v2: Intelligent Multilingual Transcription You Can Prompt and Adapt",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Wed, 28 Oct 2026 14:58:17 GMT",
+          "firstSeen": "2026-10-28T22:11:47.310Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-28T22:11:47.310Z",
+      "dateLastSeen": "2026-10-28T22:11:47.310Z",
+      "sz": 14,
+      "fullName": "Automatic Speech Recognition (ASR)",
+      "proposalReason": "A foundational concept in voice AI that the article treats as its primary technical domain; tracking it enables the graph to connect voice pipelines, WER benchmarks, and speech-to-text product categories coherently."
+    },
+    {
+      "id": "promptable-transcription",
+      "label": "Promptable Transcription",
+      "workingDef": "An ASR paradigm in which the model's output behaviour — task selection, vocabulary constraints, output format, and language — is controlled via natural language prompts at inference time, rather than being fixed by model architecture or post-processing logic. Allows a single checkpoint to produce transcriptions, translations, speaker-attributed outputs, or audio question-answering responses depending on the instruction, without retraining. Distinct from fine-tuning-based domain adaptation, though the two are complementary.",
+      "clusters": [
+        "technical",
+        "agentic"
+      ],
+      "suggestedRels": [
+        "prompt",
+        "structured-output",
+        "voice-ai",
+        "automatic-speech-recognition",
+        "multimodal",
+        "fine-tuning"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
+          "domain": "huggingface.co",
+          "title": "NVIDIA Nemotron 3.5 Transcribe and Granary v2: Intelligent Multilingual Transcription You Can Prompt and Adapt",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Wed, 28 Oct 2026 14:58:17 GMT",
+          "firstSeen": "2026-10-28T22:11:47.310Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-28T22:11:47.310Z",
+      "dateLastSeen": "2026-10-28T22:11:47.310Z",
+      "sz": 14,
+      "fullName": "Promptable Transcription (Instruction-Guided ASR)",
+      "proposalReason": "A genuinely novel framing within ASR — the idea that a speech model can be steered with prompts the way an LLM can — with lasting relevance as voice AI matures toward instruction-following interfaces."
+    },
+    {
+      "id": "call-summarization-agent",
+      "label": "Call Summarization Agent",
+      "workingDef": "An agentic AI pattern — illustrated at Capital One — in which complex customer call summaries are decomposed into subtasks handled by multiple agents, with a reasoning agent coordinating the overall process to interpret nuanced issues (particularly fraud-related). The pattern is notable for demonstrating that task decomposition plus a reasoning layer was required before the summarization process became satisfactory, pointing to the role of orchestration in applied agentic deployments.",
+      "clusters": [
+        "agentic",
+        "work"
+      ],
+      "suggestedRels": [
+        "agent",
+        "agentic-ai",
+        "task-decomposition",
+        "orchestrator",
+        "reasoning-models",
+        "workflow",
+        "human-in-the-loop"
+      ],
+      "sources": [
+        {
+          "url": "https://sloanreview.mit.edu/article/ai-is-thriving-at-capital-one/",
+          "domain": "sloanreview.mit.edu",
+          "title": "AI Is Thriving at Capital One | Thomas H. Davenport and Randy Bean",
+          "sourceLabel": "MIT Sloan Management Review",
+          "publishedAt": "Wed, 28 Oct 2026 11:00:15 +0000",
+          "firstSeen": "2026-10-28T22:11:47.310Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-28T22:11:47.310Z",
+      "dateLastSeen": "2026-10-28T22:11:47.310Z",
+      "sz": 14,
+      "fullName": "Call Summarization Agent (Agentic AI for Customer Service)",
+      "proposalReason": "A concrete, named production pattern worth tracking as agentic AI matures in customer-service operations."
+    },
+    {
+      "id": "information-based-strategy",
+      "label": "Information-Based Strategy",
+      "workingDef": "An organisational model, associated historically with Capital One and popularised by Davenport's 2006 'competing on analytics' framing, in which a company treats proprietary data collection and analytical decision-making as the core competitive advantage — driving product pricing, marketing experimentation, and risk management rather than treating data as a support function. The term predates generative AI but is increasingly invoked to explain why certain incumbents absorb AI capabilities more readily than peers.",
+      "clusters": [
+        "business",
+        "work"
+      ],
+      "suggestedRels": [
+        "ai-first-company",
+        "frontier-firm",
+        "outcome-focused-work",
+        "evals"
+      ],
+      "sources": [
+        {
+          "url": "https://sloanreview.mit.edu/article/ai-is-thriving-at-capital-one/",
+          "domain": "sloanreview.mit.edu",
+          "title": "AI Is Thriving at Capital One | Thomas H. Davenport and Randy Bean",
+          "sourceLabel": "MIT Sloan Management Review",
+          "publishedAt": "Wed, 28 Oct 2026 11:00:15 +0000",
+          "firstSeen": "2026-10-28T22:11:47.310Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-28T22:11:47.310Z",
+      "dateLastSeen": "2026-10-28T22:11:47.310Z",
+      "sz": 14,
+      "fullName": "Information-Based Strategy (Analytics-Driven Business Model)",
+      "proposalReason": "A durable strategic framing that contextualises why some legacy firms are early AI adopters; worth observing as it resurfaces in the generative AI era."
+    },
+    {
+      "id": "intelligent-compliance-assistant",
+      "label": "Intelligent Compliance Assistant",
+      "workingDef": "An enterprise AI pattern in which open-weight models and analytical AI are combined to assist risk and compliance associates with audit tasks — including script review, root cause analysis, and data-driven quality assurance at scale. Illustrated by Capital One's deployment, which reportedly reduced quality errors by 85% and saved 5,000 audit hours across 30 auditors within months. Distinct from general AI assistants in that the domain is regulated, the outputs feed formal audit records, and error reduction (not speed alone) is the primary metric.",
+      "clusters": [
+        "work",
+        "business"
+      ],
+      "suggestedRels": [
+        "open-weight",
+        "agentic-ai",
+        "agent",
+        "workflow",
+        "evals",
+        "guardrails",
+        "vertical-ai"
+      ],
+      "sources": [
+        {
+          "url": "https://sloanreview.mit.edu/article/ai-is-thriving-at-capital-one/",
+          "domain": "sloanreview.mit.edu",
+          "title": "AI Is Thriving at Capital One | Thomas H. Davenport and Randy Bean",
+          "sourceLabel": "MIT Sloan Management Review",
+          "publishedAt": "Wed, 28 Oct 2026 11:00:15 +0000",
+          "firstSeen": "2026-10-28T22:11:47.310Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-28T22:11:47.310Z",
+      "dateLastSeen": "2026-10-28T22:11:47.310Z",
+      "sz": 14,
+      "fullName": "Intelligent Compliance Assistant (AI for Audit Risk)",
+      "proposalReason": "A concrete enterprise deployment pattern in a regulated domain; useful to track as AI moves into compliance and audit workflows."
+    },
+    {
+      "id": "long-term-ai-roi",
+      "label": "Long-Term AI ROI",
+      "workingDef": "An investment framing — articulated by Capital One's chief AI officer and echoed in practitioner literature — that positions short-term ROI measurement as an impediment to meaningful AI transformation. Proponents argue that fast-moving foundational technologies require multi-year value horizons and that 'ultimate ROI' is downstream customer and business outcomes rather than quarterly metrics. The framing is directionally opposed to the 'pilot purgatory' pattern, in which organisations demand immediate ROI before scaling.",
+      "clusters": [
+        "business",
+        "work"
+      ],
+      "suggestedRels": [
+        "pilot-purgatory",
+        "ai-productivity-paradox",
+        "outcome-focused-work",
+        "agentic-business-model",
+        "ai-first-company"
+      ],
+      "sources": [
+        {
+          "url": "https://sloanreview.mit.edu/article/ai-is-thriving-at-capital-one/",
+          "domain": "sloanreview.mit.edu",
+          "title": "AI Is Thriving at Capital One | Thomas H. Davenport and Randy Bean",
+          "sourceLabel": "MIT Sloan Management Review",
+          "publishedAt": "Wed, 28 Oct 2026 11:00:15 +0000",
+          "firstSeen": "2026-10-28T22:11:47.310Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-28T22:11:47.310Z",
+      "dateLastSeen": "2026-10-28T22:11:47.310Z",
+      "sz": 14,
+      "fullName": "Long-Term AI ROI (Transformation-Oriented AI Investment Philosophy)",
+      "proposalReason": "A practitioner counter-narrative to short-horizon AI measurement worth tracking as enterprises debate how to justify AI investment."
+    },
+    {
+      "id": "musebook",
+      "label": "Musebook",
+      "workingDef": "A product announced or discussed by Meta in the context of the Muse AI agent, referenced in Ben Thompson's Stratechery analysis of Meta's Q3 2026 earnings. Insufficient public detail is available from this excerpt to define it further.",
+      "clusters": [
+        "companies",
+        "tools"
+      ],
+      "suggestedRels": [
+        "meta-co",
+        "meta-muse"
+      ],
+      "sources": [
+        {
+          "url": "https://stratechery.com/2026/meta-earnings-muse-and-the-frontier-musebook/",
+          "domain": "stratechery.com",
+          "title": "Meta Earnings, Muse and the Frontier, Musebook",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Wed, 28 Oct 2026 10:06:13 +0000",
+          "firstSeen": "2026-10-28T22:11:47.310Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-28T22:11:47.310Z",
+      "dateLastSeen": "2026-10-28T22:11:47.310Z",
+      "sz": 16,
+      "proposalReason": "Appears as a named Meta product alongside Muse in Thompson's earnings analysis; worth tracking as a potential new surface for Meta's AI strategy."
+    },
+    {
+      "id": "multilingual-embedding-model",
+      "label": "Multilingual Embedding Model",
+      "workingDef": "A fine-tuned embedding model capable of processing text in multiple languages, used here by GitHub to classify public repositories into NAICS industry sectors based on name, description, topics, and README content. Represents applied use of embedding models for large-scale taxonomic classification of software artefacts.",
+      "clusters": [
+        "technical",
+        "models"
+      ],
+      "suggestedRels": [
+        "embeddings",
+        "fine-tuning",
+        "llm"
+      ],
+      "sources": [
+        {
+          "url": "https://simonwillison.net/2026/Oct/28/github-octoverse-2026/",
+          "domain": "simonwillison.net",
+          "title": "GitHub Octoverse 2026",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-10-28T16:45:23+00:00",
+          "firstSeen": "2026-10-28T22:11:47.310Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-28T22:11:47.310Z",
+      "dateLastSeen": "2026-10-28T22:11:47.310Z",
+      "sz": 14,
+      "fullName": "Multilingual Embedding Model (Fine-Tuned Repository Classification)",
+      "proposalReason": "A concrete applied use case of fine-tuned multilingual embeddings for repository classification at GitHub scale — worth tracking as a pattern of embedding model deployment in developer infrastructure."
+    },
+    {
+      "id": "llm-geographic-classification",
+      "label": "LLM-Based Geographic Classification",
+      "workingDef": "The use of a large language model to extract standardised geographic codes (e.g., ISO 3166-1 alpha-2) from free-text user profile fields, applied here by GitHub to adjust for VPN-induced bias in country-level push attribution. Represents a pattern of using LLMs as structured information extractors in data pipeline contexts.",
+      "clusters": [
+        "technical",
+        "tools"
+      ],
+      "suggestedRels": [
+        "llm",
+        "structured-output",
+        "grounding"
+      ],
+      "sources": [
+        {
+          "url": "https://simonwillison.net/2026/Oct/28/github-octoverse-2026/",
+          "domain": "simonwillison.net",
+          "title": "GitHub Octoverse 2026",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-10-28T16:45:23+00:00",
+          "firstSeen": "2026-10-28T22:11:47.310Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-28T22:11:47.310Z",
+      "dateLastSeen": "2026-10-28T22:11:47.310Z",
+      "sz": 14,
+      "fullName": "LLM-Based Geographic Classification (Profile Location Extraction)",
+      "proposalReason": "An underappreciated but practically significant pattern: LLMs used not to generate content but to normalise and extract structured metadata at scale — worth noting as a recurring infrastructure use case."
+    },
+    {
+      "id": "gemini-4-carbon",
+      "label": "Gemini 4 Carbon",
+      "workingDef": "Google DeepMind's frontier model released October 2026, positioned as a significant advance over Gemini 4 Argon particularly in cybersecurity, coding, and agentic tasks. Leads the Artificial Analysis Intelligence Index (v5.0) benchmark and holds top position on SEC-bench Pro and ExploitGym. Initially restricted to a select group of cybersecurity defence companies via the Fairwind Program, priced at $2 per million input tokens and $10 per million output tokens.",
+      "clusters": [
+        "models",
+        "companies"
+      ],
+      "suggestedRels": [
+        "gemini",
+        "gemini-4-argon",
+        "fairwind-program",
+        "frontier-model",
+        "google-co",
+        "exploitbench",
+        "gpt6-astra",
+        "claude-opus-55"
+      ],
+      "sources": [
+        {
+          "url": "https://www.theverge.com/tech/1021339/google-gemini-4-carbon-cybersecurity-frontier",
+          "domain": "theverge.com",
+          "title": "Google launches Gemini 4 Carbon with a ‘significant leap’ in cybersecurity",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-10-28T16:03:00-04:00",
+          "firstSeen": "2026-10-28T22:11:47.310Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-28T22:11:47.310Z",
+      "dateLastSeen": "2026-10-28T22:11:47.310Z",
+      "sz": 14,
+      "fullName": "Gemini 4 Carbon (Google DeepMind)",
+      "nodeType": "product",
+      "proposalReason": "New model release from Google DeepMind; should be tracked as a named product entry alongside Gemini 4 Argon."
+    },
+    {
+      "id": "sec-bench-pro",
+      "label": "SEC-bench Pro",
+      "workingDef": "A cybersecurity benchmark measuring an AI model's ability to discover real-world software vulnerabilities. Distinct from ExploitGym, which measures exploit generation. Used by Google to position Gemini 4 Carbon's cyberdefense capabilities. One of an emerging class of domain-specific security benchmarks for frontier model evaluation.",
+      "clusters": [
+        "technical",
+        "security"
+      ],
+      "suggestedRels": [
+        "exploitbench",
+        "benchmark-gaming",
+        "frontier-model",
+        "evals",
+        "gemini-4-argon",
+        "offense-defense-balance"
+      ],
+      "sources": [
+        {
+          "url": "https://www.theverge.com/tech/1021339/google-gemini-4-carbon-cybersecurity-frontier",
+          "domain": "theverge.com",
+          "title": "Google launches Gemini 4 Carbon with a ‘significant leap’ in cybersecurity",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-10-28T16:03:00-04:00",
+          "firstSeen": "2026-10-28T22:11:47.310Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-28T22:11:47.310Z",
+      "dateLastSeen": "2026-10-28T22:11:47.310Z",
+      "sz": 14,
+      "fullName": "SEC-bench Pro (Cybersecurity AI Benchmark)",
+      "proposalReason": "A named cybersecurity-specific benchmark appearing in frontier model comparisons; worth tracking as the ecosystem of domain-specific security evals grows."
     }
   ]
 }

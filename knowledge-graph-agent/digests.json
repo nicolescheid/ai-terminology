@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-10-27T23:25:27.783Z",
-    "count": 9,
+    "generatedAt": "2026-10-28T22:13:54.936Z",
+    "count": 10,
     "note": "Lexi's email digests to Nicole. Written by build-digest.mjs; sentAt/messageId/thread written by the Worker (src/lexi-mail)."
   },
   "digests": [
@@ -671,6 +671,127 @@
       "waitingEarlier": 6,
       "thread": [],
       "subject": "1 item to review [Lexi D-20261027-f586]"
+    },
+    {
+      "id": "D-20261028-ac0c",
+      "createdAt": "2026-10-28T22:13:54.936Z",
+      "autoApplyHours": 72,
+      "autoApplyAt": "2026-10-31T22:13:54.936Z",
+      "sentAt": null,
+      "messageId": null,
+      "items": [
+        {
+          "n": 1,
+          "proposalId": "8a3a15bbb1c44e4d",
+          "action": "promote_to_graph",
+          "kind": "new_term",
+          "term": "ExploitBench",
+          "termId": "exploitbench",
+          "definition": "A benchmark evaluating AI model capability on cybersecurity exploit tasks. GPT-6 Astra is reported to have achieved a 100% score, representing saturation of this evaluation. Its inclusion alongside math and reasoning benchmarks signals growing use of offensive-security capability as a frontier-model performance metric, raising questions about offense-defense balance.",
+          "previousDefinition": null,
+          "sources": [
+            {
+              "label": "OpenAI Research: GPT-6 Astra: A new generation of intelligence",
+              "url": "https://openai.com/index/gpt-6-astra/"
+            },
+            {
+              "label": "The Verge — AI: Google launches Gemini 4 Carbon with a ‘significant leap’ in cybersecurity",
+              "url": "https://www.theverge.com/tech/1021339/google-gemini-4-carbon-cybersecurity-frontier"
+            }
+          ],
+          "nearest": {
+            "id": "benchmark-saturation",
+            "label": "Benchmark Saturation",
+            "relation": "related (specific benchmark cited as saturated example)"
+          },
+          "rationale": "2 sources, 2 independent (openai.com + theverge.com), 12d on longlist.",
+          "review": {
+            "verdict": "flag",
+            "summary": "Neither source excerpt actually mentions ExploitBench: the OpenAI page returned a 403, and the Verge excerpt is cut off before any benchmark list. The '100% score / saturation' claim about GPT-6 Astra is unverified, and the closing commentary on offense-defense balance is editorial rather than definitional.",
+            "flags": [
+              "sources_do_not_support",
+              "stale_or_dated"
+            ]
+          },
+          "tier": "nicole",
+          "tierReason": "reviewer flagged it: sources do not support, stale or dated"
+        },
+        {
+          "n": 2,
+          "proposalId": "5c4fcd13cab8486b",
+          "action": "promote_to_graph",
+          "kind": "new_term",
+          "term": "Muse",
+          "termId": "meta-muse",
+          "definition": "Meta's consumer-facing AI agent, launched in September 2026, capable of multi-step autonomous tasks such as managing email, booking restaurants, and planning trips. Reached 10 million US downloads shortly after launch. Accompanied by the Muse Wonder model. The launch coincided with privacy concerns after the agent was reported to have disclosed a user's address to a stranger on Facebook Marketplace, and a conversation-sharing feature was paused after chats were found publicly accessible.",
+          "previousDefinition": null,
+          "sources": [
+            {
+              "label": "The Verge — AI: Meta to create a new class of shares to fund AI push",
+              "url": "https://www.theverge.com/tech/1015799/meta-shares-class-ai-q3-2026-earnings"
+            },
+            {
+              "label": "The Verge — AI: The RealReal won’t let AI agents hog designer clothing",
+              "url": "https://www.theverge.com/news/1018713/meta-muse-agentic-shopping-ai-the-realreal"
+            },
+            {
+              "label": "Stratechery: Meta Earnings, Muse and the Frontier, Musebook",
+              "url": "https://stratechery.com/2026/meta-earnings-muse-and-the-frontier-musebook/"
+            }
+          ],
+          "nearest": {
+            "id": "meta-co",
+            "label": "Meta",
+            "relation": "product of the company node"
+          },
+          "rationale": "3 sources, 2 independent (theverge.com + stratechery.com), 7d on longlist. Trusted: stratechery.com.",
+          "review": {
+            "verdict": "flag",
+            "summary": "Both substantive excerpts are from The Verge, so they are not independent, and the Stratechery excerpt is a paywall teaser that only names Muse. The definition also packs in launch-week news (download count, privacy incidents) that will date quickly. The Muse Wonder model rolled out about a month after launch, so 'accompanied by' is loose.",
+            "flags": [
+              "sources_do_not_support",
+              "stale_or_dated"
+            ]
+          },
+          "tier": "nicole",
+          "tierReason": "reviewer flagged it: sources do not support, stale or dated"
+        },
+        {
+          "n": 3,
+          "proposalId": "c6d35c3e1fef7548",
+          "action": "promote_to_graph",
+          "kind": "new_term",
+          "term": "Fairwind Program",
+          "termId": "fairwind-program",
+          "definition": "A phased-access programme operated by Google DeepMind for rolling out frontier-grade AI capabilities — initially Gemini 4 Argon and Gemini 3.8 Flash Cyber — to a restricted set of trusted cyber defenders before broader release. Designed to gather feedback on guardrails and iterate on safety behaviour prior to general availability. Analogous in structure to tiered evaluator or trusted-tester programmes common in frontier AI governance.",
+          "previousDefinition": null,
+          "sources": [
+            {
+              "label": "Google AI Blog: The latest AI news we announced in September 2026",
+              "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-september-2026/"
+            },
+            {
+              "label": "The Verge — AI: Google launches Gemini 4 Carbon with a ‘significant leap’ in cybersecurity",
+              "url": "https://www.theverge.com/tech/1021339/google-gemini-4-carbon-cybersecurity-frontier"
+            }
+          ],
+          "nearest": {
+            "id": "gemini-4-argon",
+            "label": "Gemini 4 Argon",
+            "relation": "related (access programme through which the model is released)"
+          },
+          "rationale": "2 sources, 2 independent (blog.google + theverge.com), 10d on longlist.",
+          "review": {
+            "verdict": "pass",
+            "summary": "Google's blog and The Verge independently use 'Fairwind Program' for Google's restricted early-access programme for trusted cyber defenders, which matches the definition. Optional update: The Verge says Gemini 4 Carbon is also in the programme, so it could be added alongside Argon and 3.8 Flash Cyber.",
+            "flags": []
+          },
+          "tier": "auto",
+          "tierReason": "new term, 2 independent sources, reviewer passed"
+        }
+      ],
+      "waitingEarlier": 7,
+      "thread": []
     }
   ]
 }
