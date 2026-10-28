@@ -1,239 +1,207 @@
 {
-  "generatedAt": "2026-10-28T22:11:47.310Z",
+  "generatedAt": "2026-10-28T23:19:46.493Z",
   "model": "claude-sonnet-4-6",
   "sourcesConfigured": 15,
   "articlesConsidered": [
     {
-      "id": "7ae8eb20550eee76",
-      "source": "Hugging Face Blog",
-      "title": "NVIDIA Nemotron 3.5 Transcribe and Granary v2: Intelligent Multilingual Transcription You Can Prompt and Adapt",
-      "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
-      "publishedAt": "Wed, 28 Oct 2026 14:58:17 GMT"
-    },
-    {
-      "id": "75e2017ed4c5a2ec",
+      "id": "0dc3cf0b7c98dcde",
       "source": "OpenAI News",
-      "title": "OpenAI and ServiceNow expand partnership across enterprise workflows",
-      "url": "https://openai.com/index/openai-servicenow-partnership-expansion",
-      "publishedAt": "Wed, 28 Oct 2026 13:15:00 GMT"
+      "title": "The future of the firm",
+      "url": "https://openai.com/index/the-future-of-the-firm",
+      "publishedAt": "Wed, 28 Oct 2026 10:00:00 GMT"
     },
     {
-      "id": "a27eaeb8785f5eee",
-      "source": "MIT Sloan Management Review",
-      "title": "AI Is Thriving at Capital One | Thomas H. Davenport and Randy Bean",
-      "url": "https://sloanreview.mit.edu/article/ai-is-thriving-at-capital-one/",
-      "publishedAt": "Wed, 28 Oct 2026 11:00:15 +0000"
+      "id": "41c97fe8dc29ac4a",
+      "source": "OpenAI News",
+      "title": "Legora is building the agentic operating system for legal work",
+      "url": "https://openai.com/index/legora",
+      "publishedAt": "Wed, 28 Oct 2026 09:30:00 GMT"
     },
     {
-      "id": "8ba9767bae988606",
-      "source": "Stratechery",
-      "title": "Meta Earnings, Muse and the Frontier, Musebook",
-      "url": "https://stratechery.com/2026/meta-earnings-muse-and-the-frontier-musebook/",
-      "publishedAt": "Wed, 28 Oct 2026 10:06:13 +0000"
-    },
-    {
-      "id": "d8f853e661d65a1d",
-      "source": "Simon Willison's Weblog",
-      "title": "GitHub Octoverse 2026",
-      "url": "https://simonwillison.net/2026/Oct/28/github-octoverse-2026/",
-      "publishedAt": "2026-10-28T16:45:23+00:00"
-    },
-    {
-      "id": "fc7d1d71bde9a18e",
+      "id": "e4867209a9cdfe0b",
       "source": "The Verge — AI",
-      "title": "Google launches Gemini 4 Carbon with a ‘significant leap’ in cybersecurity",
-      "url": "https://www.theverge.com/tech/1021339/google-gemini-4-carbon-cybersecurity-frontier",
-      "publishedAt": "2026-10-28T16:03:00-04:00"
+      "title": "Akai is embracing vibe-coded mods with an open-source MPC",
+      "url": "https://www.theverge.com/gadgets/1021405/akai-open-source-mpc-sample-key",
+      "publishedAt": "2026-10-28T17:34:04-04:00"
+    },
+    {
+      "id": "d0753be868cc7807",
+      "source": "The Verge — AI",
+      "title": "Microsoft is ending Copilot support on smart TVs",
+      "url": "https://www.theverge.com/tech/1021143/microsoft-lg-samsung-copilot-ai-assistant-smart-tvs-ending",
+      "publishedAt": "2026-10-28T14:36:26-04:00"
+    },
+    {
+      "id": "93b9dc1d31289278",
+      "source": "Simon Willison's Weblog",
+      "title": "The October inflection point for vibe game development",
+      "url": "https://simonwillison.net/2026/Oct/28/vibe-game-development/",
+      "publishedAt": "2026-10-28T13:55:15+00:00"
+    },
+    {
+      "id": "5d9615019ec259be",
+      "source": "Simon Willison's Weblog",
+      "title": "A quote from Terk Terkowitz",
+      "url": "https://simonwillison.net/2026/Oct/28/terk-terkowitz/",
+      "publishedAt": "2026-10-28T10:09:07+00:00"
     }
   ],
   "harvestedTerms": [
     {
       "article": {
-        "title": "NVIDIA Nemotron 3.5 Transcribe and Granary v2: Intelligent Multilingual Transcription You Can Prompt and Adapt",
-        "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary"
+        "title": "Akai is embracing vibe-coded mods with an open-source MPC",
+        "url": "https://www.theverge.com/gadgets/1021405/akai-open-source-mpc-sample-key"
       },
-      "summary": "NVIDIA announces Nemotron 3.5 Transcribe, an open-weight multimodal speech model handling transcription, speaker diarization, translation, and audio Q&A across dozens of languages. The article also covers the Granary v2 data pipeline for fine-tuning and benchmarks across multiple ASR leaderboards. Core technical concepts include speaker diarization, a hybrid Mamba–Transformer MoE architecture, and prompt-guided transcription control.",
+      "summary": "Akai is releasing an open-source MPC Sample Key hardware synthesizer and embracing community firmware mods created through vibe coding, including custom synths built with Claude. The article describes how hardware manufacturers are beginning to actively court AI-assisted modding communities by providing early access, open-source firmware, and SDKs.",
       "longlistAdditions": [
         {
-          "id": "speaker-diarization",
-          "label": "Speaker Diarization"
+          "id": "open-source-firmware",
+          "label": "Open-Source Firmware"
         },
         {
-          "id": "automatic-speech-recognition",
-          "label": "Automatic Speech Recognition"
-        },
-        {
-          "id": "promptable-transcription",
-          "label": "Promptable Transcription"
+          "id": "ai-music-generation",
+          "label": "AI Music Generation"
         }
       ],
+      "longlistUpdates": [],
+      "rejections": [],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "Microsoft is ending Copilot support on smart TVs",
+        "url": "https://www.theverge.com/tech/1021143/microsoft-lg-samsung-copilot-ai-assistant-smart-tvs-ending"
+      },
+      "summary": "Microsoft is ending Copilot support on LG and Samsung smart TVs, discontinuing a feature announced at CES 2025. The article describes Microsoft repositioning Copilot away from a TV-based AI companion toward a business/productivity 'super app.' Thin on lasting conceptual content — primarily a product discontinuation story.",
+      "longlistAdditions": [
+        {
+          "id": "copilot-super-app",
+          "label": "Copilot Super App"
+        },
+        {
+          "id": "ai-companion-deprecation",
+          "label": "AI Companion Deprecation"
+        }
+      ],
+      "longlistUpdates": [],
+      "rejections": [],
+      "proposalsQueued": []
+    },
+    {
+      "article": {
+        "title": "The October inflection point for vibe game development",
+        "url": "https://simonwillison.net/2026/Oct/28/vibe-game-development/"
+      },
+      "summary": "Simon Willison documents what he considers an October 2026 inflection point in vibe-coded game development, arguing that Claude Opus 5.5 (and to a lesser extent GPT-6 Astra) now exhibits genuine 'game design' capability — producing fun, emotionally resonant games from minimal prompts. The post covers four games built with vibe coding techniques, notes multiplayer and AI-vs-AI features in Battle Drones, and observes that the new constraint is concept novelty rather than technical execution.",
+      "longlistAdditions": [],
+      "longlistUpdates": [
+        {
+          "id": "ai-vs-ai-mode",
+          "label": "AI vs. AI Mode",
+          "sourceAdded": true,
+          "sourceCount": 2,
+          "independentSourceCount": 1
+        },
+        {
+          "id": "gpt6-astra",
+          "label": "GPT-6 Astra",
+          "sourceAdded": true,
+          "sourceCount": 3,
+          "independentSourceCount": 3
+        },
+        {
+          "id": "claude-fable-51",
+          "label": "Claude Fable 5.1",
+          "sourceAdded": true,
+          "sourceCount": 3,
+          "independentSourceCount": 1
+        },
+        {
+          "id": "gpt6-luna",
+          "label": "GPT-6 Luna",
+          "sourceAdded": true,
+          "sourceCount": 2,
+          "independentSourceCount": 1
+        }
+      ],
+      "rejections": [],
+      "proposalsQueued": [],
+      "mustReadFlagged": {
+        "priority": 2,
+        "reason": "A practitioner's honest, specific account of a capability threshold moment — not a product announcement but a working developer's before-and-after evidence that models have crossed into genuine game *design* (not just game *generation*). The 'make it a LOT more fun — and it did' passage is a memorable data point for anyone tracking the jagged frontier of AI creative capability."
+      }
+    },
+    {
+      "article": {
+        "title": "A quote from Terk Terkowitz",
+        "url": "https://simonwillison.net/2026/Oct/28/terk-terkowitz/"
+      },
+      "summary": "A brief Simon Willison post quoting Amazon engineering leadership (via a persona 'Terk Terkowitz') on how engineers should treat AI limitations as documented findings rather than personal failings — framing non-adoption as a form of professional judgment.",
+      "longlistAdditions": [],
       "longlistUpdates": [],
       "rejections": [
         {
-          "label": "Word Error Rate",
-          "reason": "already in graph (label match)"
-        }
-      ],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "AI Is Thriving at Capital One | Thomas H. Davenport and Randy Bean",
-        "url": "https://sloanreview.mit.edu/article/ai-is-thriving-at-capital-one/"
-      },
-      "summary": "A practitioner-focused case study on Capital One's AI deployment, covering agentic AI for call summarization, open-weight models in risk/compliance, AI-assisted software development, and the bank's philosophy of long-term value over short-term ROI. The article draws on interviews with Capital One's chief AI officer and chief data officer.",
-      "longlistAdditions": [
-        {
-          "id": "call-summarization-agent",
-          "label": "Call Summarization Agent"
+          "label": "AI Limitations Documentation",
+          "reason": "could not generate id"
         },
         {
-          "id": "information-based-strategy",
-          "label": "Information-Based Strategy"
-        },
-        {
-          "id": "intelligent-compliance-assistant",
-          "label": "Intelligent Compliance Assistant"
-        },
-        {
-          "id": "long-term-ai-roi",
-          "label": "Long-Term AI ROI"
+          "label": "Non-Adoption as Finding",
+          "reason": "could not generate id"
         }
       ],
-      "longlistUpdates": [],
-      "rejections": [],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "Meta Earnings, Muse and the Frontier, Musebook",
-        "url": "https://stratechery.com/2026/meta-earnings-muse-and-the-frontier-musebook/"
-      },
-      "summary": "A paywalled Stratechery article about Meta's Q3 2026 earnings, covering Meta's AI agent 'Muse,' its investment thesis around frontier compute, and a product called 'Musebook.' The excerpt is largely a subscription gate with minimal technical content exposed. Only the framing around Muse and Meta's compute spending is visible.",
-      "longlistAdditions": [
-        {
-          "id": "musebook",
-          "label": "Musebook"
-        }
-      ],
-      "longlistUpdates": [
-        {
-          "id": "meta-muse",
-          "label": "Muse",
-          "sourceAdded": true,
-          "sourceCount": 3,
-          "independentSourceCount": 2
-        }
-      ],
-      "rejections": [],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "GitHub Octoverse 2026",
-        "url": "https://simonwillison.net/2026/Oct/28/github-octoverse-2026/"
-      },
-      "summary": "Simon Willison's brief note on the GitHub Octoverse 2026 report highlights dramatic growth metrics — tripled pull requests, tripled commits, doubled repository creation — attributed to agentic engineering's impact on developer workflows. The post also notes methodological details: LLM-based classification for geographic attribution and a fine-tuned multilingual embedding model for industry sector classification of repositories.",
-      "longlistAdditions": [
-        {
-          "id": "multilingual-embedding-model",
-          "label": "Multilingual Embedding Model"
-        },
-        {
-          "id": "llm-geographic-classification",
-          "label": "LLM-Based Geographic Classification"
-        }
-      ],
-      "longlistUpdates": [],
-      "rejections": [],
-      "proposalsQueued": []
-    },
-    {
-      "article": {
-        "title": "Google launches Gemini 4 Carbon with a ‘significant leap’ in cybersecurity",
-        "url": "https://www.theverge.com/tech/1021339/google-gemini-4-carbon-cybersecurity-frontier"
-      },
-      "summary": "Google has released Gemini 4 Carbon, a new frontier model positioned primarily around cybersecurity capabilities, with benchmark leadership on SEC-bench Pro and ExploitGym. The article covers the model's availability through Google's Fairwind Program, pricing, and capability comparisons with Claude Opus 5.5 and GPT-6 Astra.",
-      "longlistAdditions": [
-        {
-          "id": "gemini-4-carbon",
-          "label": "Gemini 4 Carbon"
-        },
-        {
-          "id": "sec-bench-pro",
-          "label": "SEC-bench Pro"
-        }
-      ],
-      "longlistUpdates": [
-        {
-          "id": "fairwind-program",
-          "label": "Fairwind Program",
-          "sourceAdded": true,
-          "sourceCount": 2,
-          "independentSourceCount": 2
-        },
-        {
-          "id": "exploitbench",
-          "label": "ExploitBench",
-          "sourceAdded": true,
-          "sourceCount": 2,
-          "independentSourceCount": 2
-        }
-      ],
-      "rejections": [],
       "proposalsQueued": []
     }
   ],
   "definitionReviews": [
     {
-      "id": "mcp",
-      "status": "keep",
-      "reason": "No source addresses MCP directly. The GitHub Octoverse data on agentic engineering growth is consistent with the existing definition's framing but adds nothing specific. Definition stands."
-    },
-    {
-      "id": "meat-proxy",
+      "id": "mistral",
       "status": "insufficient_evidence",
-      "reason": "No source mentions or implies this slang term. Cannot confirm or deny the 2026 dating. Insufficient evidence to update or validate."
+      "reason": "No source material touches on Mistral or its models. Cannot confirm or update the definition."
     },
     {
-      "id": "mechanistic-interpretability",
-      "status": "keep",
-      "reason": "No source addresses mechanistic interpretability, sparse autoencoders, circuit tracing, or activation steering. Definition stands as written."
-    },
-    {
-      "id": "memory",
-      "status": "keep",
-      "reason": "No source addresses AI memory concepts. Definition stands."
-    },
-    {
-      "id": "memory-consolidation",
-      "status": "keep",
-      "reason": "No source addresses memory consolidation in AI agents. Definition stands."
-    },
-    {
-      "id": "meta-co",
+      "id": "mistral-co",
       "status": "insufficient_evidence",
-      "reason": "The Stratechery article references Meta earnings and something called 'Muse' in an October 2026 context, but it is paywalled and provides no extractable detail. Cannot confirm whether the open-weight/Llama framing remains fully accurate or needs updating. Insufficient evidence to revise."
+      "reason": "No source material references Mistral AI. Cannot confirm or update the definition."
     },
     {
-      "id": "metacognition",
-      "status": "keep",
-      "reason": "No source addresses metacognition. Definition stands."
+      "id": "mixture-of-experts",
+      "status": "insufficient_evidence",
+      "reason": "No source material discusses MoE architecture. Cannot confirm or update the definition."
     },
     {
-      "id": "micro-app",
-      "status": "keep",
-      "reason": "No source directly addresses micro-apps. Definition stands."
+      "id": "ml-observability",
+      "status": "insufficient_evidence",
+      "reason": "No source material addresses ML observability tooling or infrastructure. Cannot confirm or update the definition."
     },
     {
-      "id": "microsoft-co",
-      "status": "keep",
-      "reason": "No source materially updates the Microsoft definition. Definition stands."
+      "id": "model-collapse",
+      "status": "insufficient_evidence",
+      "reason": "No source material references model collapse or training data degradation. Cannot confirm or update the definition."
     },
     {
-      "id": "mid-training",
-      "status": "keep",
-      "reason": "No source addresses mid-training as a concept. Definition stands."
+      "id": "model-concept",
+      "status": "insufficient_evidence",
+      "reason": "No source material speaks to the general concept of a model. Cannot confirm or update the definition."
+    },
+    {
+      "id": "model-routing",
+      "status": "insufficient_evidence",
+      "reason": "No source material addresses model routing or AI gateways. Cannot confirm or update the definition."
+    },
+    {
+      "id": "model-weight-security",
+      "status": "insufficient_evidence",
+      "reason": "No source material references model weight security or related frameworks. Cannot confirm or update the definition."
+    },
+    {
+      "id": "model-welfare",
+      "status": "insufficient_evidence",
+      "reason": "No source material touches on model welfare research. Cannot confirm or update the definition."
+    },
+    {
+      "id": "moltbook",
+      "status": "insufficient_evidence",
+      "reason": "No source material references Moltbook or the OpenClaw ecosystem. Cannot confirm or update the definition."
     }
   ],
   "notes": []

@@ -1,9 +1,9 @@
 {
   "meta": {
-    "generatedAt": "2026-10-28T23:19:17.246Z",
+    "generatedAt": "2026-10-28T23:21:00.463Z",
     "pendingCount": 7,
-    "approvedCount": 3,
-    "appliedCount": 46,
+    "approvedCount": 0,
+    "appliedCount": 49,
     "rejectedCount": 1,
     "note": "Lexi proposals queue. Actions gated as PROPOSE land here as status: 'pending'. Edit a proposal's status to 'approved' or 'rejected' and run the apply step (TBD) to commit."
   },
@@ -3053,7 +3053,7 @@
       "action": "promote_to_graph",
       "gate": "propose",
       "proposedAt": "2026-10-28T22:13:30.237Z",
-      "status": "approved",
+      "status": "applied",
       "source": "promote-eligibility-scan",
       "target": {
         "kind": "longlist_entry",
@@ -3124,14 +3124,15 @@
       "digestN": 1,
       "approvedAt": "2026-10-28T23:19:17.246Z",
       "approvedBy": "nicole",
-      "decidedVia": "email-link"
+      "decidedVia": "email-link",
+      "appliedAt": "2026-10-28T23:21:00.463Z"
     },
     {
       "id": "c6d35c3e1fef7548",
       "action": "promote_to_graph",
       "gate": "propose",
       "proposedAt": "2026-10-28T22:13:30.237Z",
-      "status": "approved",
+      "status": "applied",
       "source": "promote-eligibility-scan",
       "target": {
         "kind": "longlist_entry",
@@ -3201,14 +3202,15 @@
       "autoApplyAt": "2026-10-31T22:13:54.936Z",
       "approvedAt": "2026-10-28T23:19:17.246Z",
       "approvedBy": "nicole",
-      "decidedVia": "email-link"
+      "decidedVia": "email-link",
+      "appliedAt": "2026-10-28T23:21:00.463Z"
     },
     {
       "id": "5c4fcd13cab8486b",
       "action": "promote_to_graph",
       "gate": "propose",
       "proposedAt": "2026-10-28T22:13:30.237Z",
-      "status": "approved",
+      "status": "applied",
       "source": "promote-eligibility-scan",
       "target": {
         "kind": "longlist_entry",
@@ -3283,7 +3285,8 @@
       "digestN": 2,
       "approvedAt": "2026-10-28T23:19:17.246Z",
       "approvedBy": "nicole",
-      "decidedVia": "email-link"
+      "decidedVia": "email-link",
+      "appliedAt": "2026-10-28T23:21:00.463Z"
     }
   ],
   "usedLinks": {

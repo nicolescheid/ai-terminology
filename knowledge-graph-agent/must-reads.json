@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generatedAt": "2026-10-28T22:11:47.310Z",
-    "unreadCount": 33,
-    "totalCount": 33,
+    "generatedAt": "2026-10-28T23:19:46.493Z",
+    "unreadCount": 34,
+    "totalCount": 34,
     "note": "Lexi's must-reads — articles she flags as worth Nicole reading in full. Editorial signal, not news feed. Set status to 'read' or 'dismissed' via mark-must-reads.mjs."
   },
   "entries": [
@@ -564,6 +564,23 @@
       ],
       "novelTermsInArticle": 4,
       "flaggedAt": "2026-10-27T23:23:32.187Z",
+      "status": "unread"
+    },
+    {
+      "id": "93b9dc1d31289278",
+      "title": "The October inflection point for vibe game development",
+      "url": "https://simonwillison.net/2026/Oct/28/vibe-game-development/",
+      "source": "Simon Willison's Weblog",
+      "publishedAt": "2026-10-28T13:55:15+00:00",
+      "summary": "Simon Willison documents what he considers an October 2026 inflection point in vibe-coded game development, arguing that Claude Opus 5.5 (and to a lesser extent GPT-6 Astra) now exhibits genuine 'game design' capability — producing fun, emotionally resonant games from minimal prompts. The post covers four games built with vibe coding techniques, notes multiplayer and AI-vs-AI features in Battle Drones, and observes that the new constraint is concept novelty rather than technical execution.",
+      "priority": 2,
+      "reason": "A practitioner's honest, specific account of a capability threshold moment — not a product announcement but a working developer's before-and-after evidence that models have crossed into genuine game *design* (not just game *generation*). The 'make it a LOT more fun — and it did' passage is a memorable data point for anyone tracking the jagged frontier of AI creative capability.",
+      "clusters": [
+        "tools",
+        "agentic"
+      ],
+      "novelTermsInArticle": 0,
+      "flaggedAt": "2026-10-28T23:19:46.493Z",
       "status": "unread"
     }
   ]

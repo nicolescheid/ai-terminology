@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-28T22:11:47.310Z",
+    "generatedAt": "2026-10-28T23:21:00.463Z",
     "sourceCount": 6,
     "note": "Agent-managed overlay. Graph-affecting changes are routed through the permissions matrix (actions.mjs) — see proposals.json for pending items."
   },
@@ -1408,6 +1408,104 @@
         }
       ],
       "fullName": "AI-Generated Mathematical Research"
+    },
+    {
+      "id": "exploitbench",
+      "label": "ExploitBench",
+      "clusters": [
+        "security",
+        "technical"
+      ],
+      "sz": 14,
+      "def": "A benchmark evaluating AI model capability on cybersecurity exploit tasks. GPT-6 Astra is reported to have achieved a 100% score, representing saturation of this evaluation. Its inclusion alongside math and reasoning benchmarks signals growing use of offensive-security capability as a frontier-model performance metric, raising questions about offense-defense balance.",
+      "rels": [
+        "evals",
+        "benchmark-saturation",
+        "offense-defense-balance",
+        "red-teaming",
+        "uplift"
+      ],
+      "refs": [
+        {
+          "n": 1,
+          "src": "OpenAI Research",
+          "q": "GPT-6 Astra: A new generation of intelligence OpenAI Research"
+        },
+        {
+          "n": 2,
+          "src": "The Verge — AI, 2026-10-28T16:03:00-04:00",
+          "q": "Google launches Gemini 4 Carbon with a ‘significant leap’ in cybersecurity The Verge — AI"
+        }
+      ],
+      "fullName": "ExploitBench (Cybersecurity AI Benchmark)",
+      "nodeType": "product"
+    },
+    {
+      "id": "fairwind-program",
+      "label": "Fairwind Program",
+      "clusters": [
+        "safety",
+        "companies"
+      ],
+      "sz": 14,
+      "def": "A phased-access programme operated by Google DeepMind for rolling out frontier-grade AI capabilities — initially Gemini 4 Argon and Gemini 3.8 Flash Cyber — to a restricted set of trusted cyber defenders before broader release. Designed to gather feedback on guardrails and iterate on safety behaviour prior to general availability. Analogous in structure to tiered evaluator or trusted-tester programmes common in frontier AI governance.",
+      "rels": [
+        "google-co",
+        "frontier-model",
+        "pre-deployment-evaluation",
+        "guardrails",
+        "responsible-scaling-policy",
+        "gemini"
+      ],
+      "refs": [
+        {
+          "n": 1,
+          "src": "Google AI Blog, Fri, 02 Oct 2026 15:00:00 +0000",
+          "q": "The latest AI news we announced in September 2026 Google AI Blog"
+        },
+        {
+          "n": 2,
+          "src": "The Verge — AI, 2026-10-28T16:03:00-04:00",
+          "q": "Google launches Gemini 4 Carbon with a ‘significant leap’ in cybersecurity The Verge — AI"
+        }
+      ],
+      "fullName": "Fairwind Program (Google DeepMind Phased Capability Release)",
+      "nodeType": "initiative"
+    },
+    {
+      "id": "meta-muse",
+      "label": "Muse",
+      "clusters": [
+        "agentic",
+        "companies"
+      ],
+      "sz": 14,
+      "def": "Meta's consumer-facing AI agent, launched in September 2026, capable of multi-step autonomous tasks such as managing email, booking restaurants, and planning trips. Reached 10 million US downloads shortly after launch. Accompanied by the Muse Wonder model. The launch coincided with privacy concerns after the agent was reported to have disclosed a user's address to a stranger on Facebook Marketplace, and a conversation-sharing feature was paused after chats were found publicly accessible.",
+      "rels": [
+        "agent",
+        "meta-co",
+        "autonomous-agent",
+        "agentic-commerce"
+      ],
+      "refs": [
+        {
+          "n": 1,
+          "src": "The Verge — AI, 2026-10-21T17:30:02-04:00",
+          "q": "Meta to create a new class of shares to fund AI push The Verge — AI"
+        },
+        {
+          "n": 2,
+          "src": "The Verge — AI, 2026-10-26T13:30:55-04:00",
+          "q": "The RealReal won’t let AI agents hog designer clothing The Verge — AI"
+        },
+        {
+          "n": 3,
+          "src": "Stratechery, Wed, 28 Oct 2026 10:06:13 +0000",
+          "q": "Meta Earnings, Muse and the Frontier, Musebook Stratechery"
+        }
+      ],
+      "fullName": "Muse (Meta AI Agent)",
+      "nodeType": "product"
     }
   ],
   "definitionOverrides": [

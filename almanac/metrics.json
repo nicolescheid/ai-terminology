@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-10-28T22:13:55.003Z",
+  "generatedAt": "2026-10-28T23:21:00.637Z",
   "firstRunAt": "2026-04-27T01:07:31.335Z",
   "phase": 1,
   "headline": {
-    "articlesRead": 268,
+    "articlesRead": 274,
     "daysRunning": 185,
-    "longlistSize": 204,
-    "graphSize": 443
+    "longlistSize": 205,
+    "graphSize": 446
   },
   "thisWeek": {
-    "articlesFetched": 53,
-    "longlistAdded": 77,
-    "sourcesAdded": 16,
-    "promotionsToGraph": 4,
+    "articlesFetched": 59,
+    "longlistAdded": 81,
+    "sourcesAdded": 17,
+    "promotionsToGraph": 7,
     "proposalsQueued": 9,
     "auditFlags": 8,
     "notesAdded": 13
@@ -138,6 +138,23 @@
       "gap": "needs 1 more independent source"
     },
     {
+      "id": "claude-fable-51",
+      "label": "Claude Fable 5.1",
+      "fullName": "Claude Fable 5.1 (Anthropic)",
+      "clusters": [
+        "models",
+        "companies"
+      ],
+      "sourceCount": 3,
+      "independentSources": 1,
+      "daysOnLonglist": 5,
+      "domains": [
+        "simonwillison.net"
+      ],
+      "gapCount": 1,
+      "gap": "needs 1 more independent source"
+    },
+    {
       "id": "societal-resilience",
       "label": "Societal Resilience",
       "fullName": "Societal Resilience (AI Risk Governance)",
@@ -170,34 +187,17 @@
       ],
       "gapCount": 1,
       "gap": "needs 1 more independent source"
-    },
-    {
-      "id": "ai-support-bot-takeover",
-      "label": "Account Takeover via AI Support Bot",
-      "fullName": null,
-      "clusters": [
-        "security",
-        "agentic"
-      ],
-      "sourceCount": 2,
-      "independentSources": 1,
-      "daysOnLonglist": 149,
-      "domains": [
-        "simonwillison.net"
-      ],
-      "gapCount": 1,
-      "gap": "needs 1 more independent source"
     }
   ],
   "sources": {
     "byDomain": [
       {
         "domain": "openai.com",
-        "count": 61
+        "count": 63
       },
       {
         "domain": "simonwillison.net",
-        "count": 42
+        "count": 44
       },
       {
         "domain": "stratechery.com",
@@ -208,16 +208,16 @@
         "count": 28
       },
       {
+        "domain": "theverge.com",
+        "count": 25
+      },
+      {
         "domain": "blog.google",
         "count": 24
       },
       {
         "domain": "anthropic.com",
         "count": 24
-      },
-      {
-        "domain": "theverge.com",
-        "count": 23
       },
       {
         "domain": "lastweekin.ai",
@@ -341,7 +341,7 @@
         "id": "technical",
         "label": "Technical",
         "hex": "#D0D040",
-        "count": 78
+        "count": 79
       },
       {
         "id": "models",
@@ -353,13 +353,13 @@
         "id": "safety",
         "label": "Safety",
         "hex": "#FF6090",
-        "count": 41
+        "count": 40
       },
       {
         "id": "agentic",
         "label": "Agentic Systems",
         "hex": "#FF9040",
-        "count": 39
+        "count": 38
       },
       {
         "id": "critical",
@@ -371,13 +371,13 @@
         "id": "tools",
         "label": "Tools & Platforms",
         "hex": "#70C8F8",
-        "count": 29
+        "count": 32
       },
       {
         "id": "business",
         "label": "Business Reality",
         "hex": "#48C888",
-        "count": 28
+        "count": 29
       },
       {
         "id": "human",
@@ -389,7 +389,7 @@
         "id": "landscape",
         "label": "Model Landscape",
         "hex": "#D0A050",
-        "count": 22
+        "count": 23
       },
       {
         "id": "work",
@@ -401,13 +401,13 @@
         "id": "companies",
         "label": "Companies",
         "hex": "#9090A8",
-        "count": 20
+        "count": 19
       },
       {
         "id": "security",
         "label": "AI Security",
         "hex": "#E05050",
-        "count": 13
+        "count": 12
       },
       {
         "id": "autonomy",
@@ -430,23 +430,23 @@
     ]
   },
   "velocity": {
-    "humanGated": 46,
+    "humanGated": 49,
     "autonomous": 0,
     "note": "All graph promotions and substantive edits are currently human-gated. Lexi proposes; Nicole approves."
   },
   "proposalsByStatus": {
-    "pending": 10,
+    "pending": 7,
     "approved": 0,
-    "applied": 46,
+    "applied": 49,
     "rejected": 1
   },
   "decisionsByCluster": {
     "technical": {
-      "approved": 15,
+      "approved": 16,
       "rejected": 1
     },
     "agentic": {
-      "approved": 15,
+      "approved": 16,
       "rejected": 0
     },
     "autonomy": {
@@ -466,11 +466,11 @@
       "rejected": 0
     },
     "safety": {
-      "approved": 4,
+      "approved": 5,
       "rejected": 0
     },
     "companies": {
-      "approved": 6,
+      "approved": 8,
       "rejected": 0
     },
     "models": {
@@ -482,7 +482,7 @@
       "rejected": 0
     },
     "security": {
-      "approved": 3,
+      "approved": 4,
       "rejected": 0
     },
     "critical": {

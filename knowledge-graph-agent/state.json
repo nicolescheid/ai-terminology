@@ -1,6 +1,6 @@
 {
-  "lastRunAt": "2026-10-28T22:11:47.310Z",
-  "reviewCursor": 274,
+  "lastRunAt": "2026-10-28T23:19:46.493Z",
+  "reviewCursor": 284,
   "seenArticles": {
     "93a049d060bc295b": {
       "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/tpus-8t-8i-cloud-next/",
@@ -1609,6 +1609,42 @@
       "title": "Google launches Gemini 4 Carbon with a ‘significant leap’ in cybersecurity",
       "publishedAt": "2026-10-28T16:03:00-04:00",
       "seenAt": "2026-10-28T22:11:47.310Z"
+    },
+    "0dc3cf0b7c98dcde": {
+      "url": "https://openai.com/index/the-future-of-the-firm",
+      "title": "The future of the firm",
+      "publishedAt": "Wed, 28 Oct 2026 10:00:00 GMT",
+      "seenAt": "2026-10-28T23:19:46.493Z"
+    },
+    "41c97fe8dc29ac4a": {
+      "url": "https://openai.com/index/legora",
+      "title": "Legora is building the agentic operating system for legal work",
+      "publishedAt": "Wed, 28 Oct 2026 09:30:00 GMT",
+      "seenAt": "2026-10-28T23:19:46.493Z"
+    },
+    "e4867209a9cdfe0b": {
+      "url": "https://www.theverge.com/gadgets/1021405/akai-open-source-mpc-sample-key",
+      "title": "Akai is embracing vibe-coded mods with an open-source MPC",
+      "publishedAt": "2026-10-28T17:34:04-04:00",
+      "seenAt": "2026-10-28T23:19:46.493Z"
+    },
+    "d0753be868cc7807": {
+      "url": "https://www.theverge.com/tech/1021143/microsoft-lg-samsung-copilot-ai-assistant-smart-tvs-ending",
+      "title": "Microsoft is ending Copilot support on smart TVs",
+      "publishedAt": "2026-10-28T14:36:26-04:00",
+      "seenAt": "2026-10-28T23:19:46.493Z"
+    },
+    "93b9dc1d31289278": {
+      "url": "https://simonwillison.net/2026/Oct/28/vibe-game-development/",
+      "title": "The October inflection point for vibe game development",
+      "publishedAt": "2026-10-28T13:55:15+00:00",
+      "seenAt": "2026-10-28T23:19:46.493Z"
+    },
+    "5d9615019ec259be": {
+      "url": "https://simonwillison.net/2026/Oct/28/terk-terkowitz/",
+      "title": "A quote from Terk Terkowitz",
+      "publishedAt": "2026-10-28T10:09:07+00:00",
+      "seenAt": "2026-10-28T23:19:46.493Z"
     }
   },
   "nodeReviews": {
@@ -2203,29 +2239,29 @@
       "reason": "No source materially updates the Microsoft definition. Definition stands."
     },
     "mistral": {
-      "lastReviewedAt": "2026-05-10T19:02:19.492Z",
-      "status": "keep",
-      "reason": "No source material references Mistral or its models. Definition stands."
+      "lastReviewedAt": "2026-10-28T23:19:46.493Z",
+      "status": "insufficient_evidence",
+      "reason": "No source material touches on Mistral or its models. Cannot confirm or update the definition."
     },
     "mistral-co": {
-      "lastReviewedAt": "2026-05-10T19:02:19.492Z",
-      "status": "keep",
-      "reason": "No source material references Mistral AI. Definition stands."
+      "lastReviewedAt": "2026-10-28T23:19:46.493Z",
+      "status": "insufficient_evidence",
+      "reason": "No source material references Mistral AI. Cannot confirm or update the definition."
     },
     "mixture-of-experts": {
-      "lastReviewedAt": "2026-05-10T19:02:19.492Z",
-      "status": "keep",
-      "reason": "DeepSeek V4 release with MoE scaling is briefly mentioned in the podcast excerpt, corroborating the existing definition. No new information that would require a change."
+      "lastReviewedAt": "2026-10-28T23:19:46.493Z",
+      "status": "insufficient_evidence",
+      "reason": "No source material discusses MoE architecture. Cannot confirm or update the definition."
     },
     "model-concept": {
-      "lastReviewedAt": "2026-05-10T19:02:19.492Z",
-      "status": "keep",
-      "reason": "No source material challenges or materially adds to this definition."
+      "lastReviewedAt": "2026-10-28T23:19:46.493Z",
+      "status": "insufficient_evidence",
+      "reason": "No source material speaks to the general concept of a model. Cannot confirm or update the definition."
     },
     "moltbook": {
-      "lastReviewedAt": "2026-05-10T19:02:19.492Z",
-      "status": "keep",
-      "reason": "No source material references Moltbook or the OpenClaw ecosystem."
+      "lastReviewedAt": "2026-10-28T23:19:46.493Z",
+      "status": "insufficient_evidence",
+      "reason": "No source material references Moltbook or the OpenClaw ecosystem. Cannot confirm or update the definition."
     },
     "multi-agent": {
       "lastReviewedAt": "2026-05-10T19:02:19.492Z",
@@ -3076,6 +3112,31 @@
       "lastReviewedAt": "2026-10-28T22:11:47.310Z",
       "status": "keep",
       "reason": "No source addresses mid-training as a concept. Definition stands."
+    },
+    "ml-observability": {
+      "lastReviewedAt": "2026-10-28T23:19:46.493Z",
+      "status": "insufficient_evidence",
+      "reason": "No source material addresses ML observability tooling or infrastructure. Cannot confirm or update the definition."
+    },
+    "model-collapse": {
+      "lastReviewedAt": "2026-10-28T23:19:46.493Z",
+      "status": "insufficient_evidence",
+      "reason": "No source material references model collapse or training data degradation. Cannot confirm or update the definition."
+    },
+    "model-routing": {
+      "lastReviewedAt": "2026-10-28T23:19:46.493Z",
+      "status": "insufficient_evidence",
+      "reason": "No source material addresses model routing or AI gateways. Cannot confirm or update the definition."
+    },
+    "model-weight-security": {
+      "lastReviewedAt": "2026-10-28T23:19:46.493Z",
+      "status": "insufficient_evidence",
+      "reason": "No source material references model weight security or related frameworks. Cannot confirm or update the definition."
+    },
+    "model-welfare": {
+      "lastReviewedAt": "2026-10-28T23:19:46.493Z",
+      "status": "insufficient_evidence",
+      "reason": "No source material touches on model welfare research. Cannot confirm or update the definition."
     }
   }
 }

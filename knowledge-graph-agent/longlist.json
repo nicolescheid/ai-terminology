@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-10-28T22:11:47.310Z",
-    "entryCount": 291,
+    "generatedAt": "2026-10-28T23:19:46.493Z",
+    "entryCount": 295,
     "note": "Lexi-managed Tier 2 longlist — terms under observation, awaiting evidence to support promotion to the graph (Tier 1)."
   },
   "entries": [
@@ -6474,12 +6474,20 @@
           "sourceLabel": "Hugging Face Blog",
           "publishedAt": "Thu, 22 Oct 2026 22:24:34 GMT",
           "firstSeen": "2026-10-23T21:00:16.038Z"
+        },
+        {
+          "url": "https://simonwillison.net/2026/Oct/28/vibe-game-development/",
+          "domain": "simonwillison.net",
+          "title": "The October inflection point for vibe game development",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-10-28T13:55:15+00:00",
+          "firstSeen": "2026-10-28T23:19:46.493Z"
         }
       ],
-      "sourceCount": 2,
-      "independentSourceCount": 2,
+      "sourceCount": 3,
+      "independentSourceCount": 3,
       "dateFirstSeen": "2026-10-16T20:31:05.113Z",
-      "dateLastSeen": "2026-10-23T21:00:16.038Z",
+      "dateLastSeen": "2026-10-28T23:19:46.493Z",
       "sz": 14,
       "fullName": "GPT-6 Astra (OpenAI)",
       "nodeType": "product",
@@ -6593,7 +6601,10 @@
       "sz": 14,
       "fullName": "ExploitBench (Cybersecurity AI Benchmark)",
       "nodeType": "product",
-      "proposalReason": "A named benchmark used materially in the article with direct implications for the security cluster and offense-defense balance terminology."
+      "proposalReason": "A named benchmark used materially in the article with direct implications for the security cluster and offense-defense balance terminology.",
+      "status": "promoted",
+      "promotedAt": "2026-10-28T23:21:00.463Z",
+      "promotedToGraphNodeId": "exploitbench"
     },
     {
       "id": "independent-model-evaluation",
@@ -7424,7 +7435,10 @@
       "sz": 14,
       "fullName": "Fairwind Program (Google DeepMind Phased Capability Release)",
       "nodeType": "initiative",
-      "proposalReason": "New named access-control mechanism tied to high-capability cybersecurity models; relevant to AI governance and responsible scaling tracking."
+      "proposalReason": "New named access-control mechanism tied to high-capability cybersecurity models; relevant to AI governance and responsible scaling tracking.",
+      "status": "promoted",
+      "promotedAt": "2026-10-28T23:21:00.463Z",
+      "promotedToGraphNodeId": "fairwind-program"
     },
     {
       "id": "alphagenome-atlas",
@@ -8318,12 +8332,20 @@
           "sourceLabel": "Simon Willison's Weblog",
           "publishedAt": "2026-10-20T19:34:19+00:00",
           "firstSeen": "2026-10-20T21:15:51.629Z"
+        },
+        {
+          "url": "https://simonwillison.net/2026/Oct/28/vibe-game-development/",
+          "domain": "simonwillison.net",
+          "title": "The October inflection point for vibe game development",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-10-28T13:55:15+00:00",
+          "firstSeen": "2026-10-28T23:19:46.493Z"
         }
       ],
-      "sourceCount": 1,
+      "sourceCount": 2,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-10-20T21:15:51.629Z",
-      "dateLastSeen": "2026-10-20T21:15:51.629Z",
+      "dateLastSeen": "2026-10-28T23:19:46.493Z",
       "sz": 14,
       "fullName": "AI vs. AI Mode (Agent Battle Mode)",
       "proposalReason": "Worth tracking as a concept bridging autonomous agent evaluation and game design — the use of agent-vs-agent simulation as an automatic playtesting and balancing methodology is a transferable pattern."
@@ -8860,7 +8882,10 @@
       "sz": 14,
       "fullName": "Muse (Meta AI Agent)",
       "nodeType": "product",
-      "proposalReason": "Useful to track as a named consumer agentic product with documented early safety incidents — a pattern worth comparing across deployments."
+      "proposalReason": "Useful to track as a named consumer agentic product with documented early safety incidents — a pattern worth comparing across deployments.",
+      "status": "promoted",
+      "promotedAt": "2026-10-28T23:21:00.463Z",
+      "promotedToGraphNodeId": "meta-muse"
     },
     {
       "id": "dual-class-ai-financing",
@@ -9622,12 +9647,20 @@
           "sourceLabel": "Simon Willison's Weblog",
           "publishedAt": "2026-10-23T21:35:13+00:00",
           "firstSeen": "2026-10-24T20:14:57.522Z"
+        },
+        {
+          "url": "https://simonwillison.net/2026/Oct/28/vibe-game-development/",
+          "domain": "simonwillison.net",
+          "title": "The October inflection point for vibe game development",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-10-28T13:55:15+00:00",
+          "firstSeen": "2026-10-28T23:19:46.493Z"
         }
       ],
-      "sourceCount": 2,
+      "sourceCount": 3,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-10-23T21:00:16.038Z",
-      "dateLastSeen": "2026-10-24T20:14:57.522Z",
+      "dateLastSeen": "2026-10-28T23:19:46.493Z",
       "sz": 14,
       "fullName": "Claude Fable 5.1 (Anthropic)",
       "nodeType": "product",
@@ -10992,12 +11025,20 @@
           "sourceLabel": "Simon Willison's Weblog",
           "publishedAt": "2026-10-26T23:53:07+00:00",
           "firstSeen": "2026-10-27T23:23:32.187Z"
+        },
+        {
+          "url": "https://simonwillison.net/2026/Oct/28/vibe-game-development/",
+          "domain": "simonwillison.net",
+          "title": "The October inflection point for vibe game development",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-10-28T13:55:15+00:00",
+          "firstSeen": "2026-10-28T23:19:46.493Z"
         }
       ],
-      "sourceCount": 1,
+      "sourceCount": 2,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-10-27T23:23:32.187Z",
-      "dateLastSeen": "2026-10-27T23:23:32.187Z",
+      "dateLastSeen": "2026-10-28T23:19:46.493Z",
       "sz": 14,
       "fullName": "GPT-6 Luna (OpenAI)",
       "nodeType": "product",
@@ -11398,6 +11439,134 @@
       "sz": 14,
       "fullName": "SEC-bench Pro (Cybersecurity AI Benchmark)",
       "proposalReason": "A named cybersecurity-specific benchmark appearing in frontier model comparisons; worth tracking as the ecosystem of domain-specific security evals grows."
+    },
+    {
+      "id": "open-source-firmware",
+      "label": "Open-Source Firmware",
+      "workingDef": "A hardware manufacturer practice of publicly releasing the firmware source code for a device, enabling third-party developers and hobbyists to inspect, modify, and redistribute custom variants. In the AI-tools era, open-source firmware has become a catalyst for vibe-coded hardware mods — community members use AI coding assistants (e.g., Claude) to author custom synths or alternate operating systems for consumer hardware without deep embedded-systems expertise. Distinct from open-weight AI model releases: open-source firmware concerns the software controlling a physical device, not model parameters.",
+      "clusters": [
+        "tools",
+        "technical"
+      ],
+      "suggestedRels": [
+        "vibe-coding",
+        "open-weight",
+        "mcp"
+      ],
+      "sources": [
+        {
+          "url": "https://www.theverge.com/gadgets/1021405/akai-open-source-mpc-sample-key",
+          "domain": "theverge.com",
+          "title": "Akai is embracing vibe-coded mods with an open-source MPC",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-10-28T17:34:04-04:00",
+          "firstSeen": "2026-10-28T23:19:46.493Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-28T23:19:46.493Z",
+      "dateLastSeen": "2026-10-28T23:19:46.493Z",
+      "sz": 14,
+      "fullName": "Open-Source Hardware Firmware (Community Modding)",
+      "proposalReason": "A new context for tracking: hardware manufacturers explicitly cultivating AI-assisted modding communities through firmware openness. Relevant to how vibe coding is diffusing from software into physical product ecosystems."
+    },
+    {
+      "id": "ai-music-generation",
+      "label": "AI Music Generation",
+      "workingDef": "The use of AI models — typically large language models, generative audio models, or code-generation tools — to produce, assist in producing, or modify musical content or audio synthesis software. Encompasses both direct audio output (text-to-audio models) and AI-assisted creation of synthesizer software or custom firmware for hardware instruments. In the hardware modding context described by Akai, vibe coding tools like Claude are used to author synthesizer plugins running on open-source MPC hardware, collapsing the barrier between music-gear hacking and AI-assisted software development.",
+      "clusters": [
+        "tools",
+        "technical"
+      ],
+      "suggestedRels": [
+        "vibe-coding",
+        "generative-ai",
+        "claude"
+      ],
+      "sources": [
+        {
+          "url": "https://www.theverge.com/gadgets/1021405/akai-open-source-mpc-sample-key",
+          "domain": "theverge.com",
+          "title": "Akai is embracing vibe-coded mods with an open-source MPC",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-10-28T17:34:04-04:00",
+          "firstSeen": "2026-10-28T23:19:46.493Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-28T23:19:46.493Z",
+      "dateLastSeen": "2026-10-28T23:19:46.493Z",
+      "sz": 14,
+      "fullName": "AI Music Generation (AI-Assisted Audio Synthesis)",
+      "proposalReason": "The article documents a concrete, named product context where vibe coding meets audio hardware — a conjunction of AI coding tools and music production that is expanding into hardware manufacturer strategy."
+    },
+    {
+      "id": "copilot-super-app",
+      "label": "Copilot Super App",
+      "workingDef": "Microsoft's 2026 rebranding/repositioning of Copilot from a general-purpose AI companion (deployed across consumer surfaces including smart TVs) into a bundled productivity platform combining chat, agents, and coding capabilities. The move reflects a strategic pivot away from consumer ambient AI deployments toward enterprise and developer use cases.",
+      "clusters": [
+        "tools",
+        "companies"
+      ],
+      "suggestedRels": [
+        "copilot",
+        "microsoft-co",
+        "agentic-era",
+        "ai-assistant"
+      ],
+      "sources": [
+        {
+          "url": "https://www.theverge.com/tech/1021143/microsoft-lg-samsung-copilot-ai-assistant-smart-tvs-ending",
+          "domain": "theverge.com",
+          "title": "Microsoft is ending Copilot support on smart TVs",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-10-28T14:36:26-04:00",
+          "firstSeen": "2026-10-28T23:19:46.493Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-28T23:19:46.493Z",
+      "dateLastSeen": "2026-10-28T23:19:46.493Z",
+      "sz": 14,
+      "fullName": "Copilot Super App (Microsoft)",
+      "nodeType": "product",
+      "proposalReason": "Relevant as a product-category signal: Microsoft's decision to pull Copilot from TVs and reframe it as a 'super app' illustrates the tension between ambient AI companion deployments and productivity-focused agentic positioning."
+    },
+    {
+      "id": "ai-companion-deprecation",
+      "label": "AI Companion Deprecation",
+      "workingDef": "The pattern of AI labs withdrawing AI assistant or companion features from consumer hardware surfaces (smart TVs, appliances) as product strategy shifts toward productivity, enterprise, or agentic use cases. Illustrated by Microsoft ending Copilot on LG and Samsung TVs in 2026.",
+      "clusters": [
+        "landscape",
+        "business"
+      ],
+      "suggestedRels": [
+        "ai-companion",
+        "copilot",
+        "deprecated",
+        "agentic-era",
+        "ai-assistant"
+      ],
+      "sources": [
+        {
+          "url": "https://www.theverge.com/tech/1021143/microsoft-lg-samsung-copilot-ai-assistant-smart-tvs-ending",
+          "domain": "theverge.com",
+          "title": "Microsoft is ending Copilot support on smart TVs",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-10-28T14:36:26-04:00",
+          "firstSeen": "2026-10-28T23:19:46.493Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-28T23:19:46.493Z",
+      "dateLastSeen": "2026-10-28T23:19:46.493Z",
+      "sz": 14,
+      "fullName": "AI Companion Deprecation (Consumer Surface Withdrawal)",
+      "proposalReason": "A potentially recurring pattern worth watching: the lifecycle of AI features on consumer devices and the strategic forces that drive their removal."
     }
   ]
 }
