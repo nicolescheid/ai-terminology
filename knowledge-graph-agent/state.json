@@ -1,6 +1,6 @@
 {
-  "lastRunAt": "2026-10-28T23:19:46.493Z",
-  "reviewCursor": 284,
+  "lastRunAt": "2026-10-29T22:27:01.225Z",
+  "reviewCursor": 294,
   "seenArticles": {
     "93a049d060bc295b": {
       "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/tpus-8t-8i-cloud-next/",
@@ -1645,6 +1645,42 @@
       "title": "A quote from Terk Terkowitz",
       "publishedAt": "2026-10-28T10:09:07+00:00",
       "seenAt": "2026-10-28T23:19:46.493Z"
+    },
+    "7bf0065ceb1646f5": {
+      "url": "https://openai.com/index/updated-model-spec",
+      "title": "An updated Model Spec for more capable and beneficial AI",
+      "publishedAt": "Thu, 29 Oct 2026 17:00:00 GMT",
+      "seenAt": "2026-10-29T22:27:01.225Z"
+    },
+    "f3538b6fb36f4f58": {
+      "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1-1",
+      "title": "Granite Switch 4.1.1 — Update models like you update software",
+      "publishedAt": "Thu, 29 Oct 2026 13:37:07 GMT",
+      "seenAt": "2026-10-29T22:27:01.225Z"
+    },
+    "a9148380e01427aa": {
+      "url": "https://stratechery.com/2026/an-interview-with-palantir-cto-shyam-sankar-about-the-ai-religious-war/",
+      "title": "An Interview with Palantir CTO Shyam Sankar About the AI Religious War",
+      "publishedAt": "Thu, 29 Oct 2026 10:00:00 +0000",
+      "seenAt": "2026-10-29T22:27:01.225Z"
+    },
+    "d28967fce9c692cd": {
+      "url": "https://openai.com/index/how-we-detect-frontier-model-misalignment",
+      "title": "How we detect frontier model misalignment",
+      "publishedAt": "Thu, 29 Oct 2026 09:00:00 GMT",
+      "seenAt": "2026-10-29T22:27:01.225Z"
+    },
+    "672400a4a73efc0d": {
+      "url": "https://simonwillison.net/2026/Oct/29/how-i-built-the-most-ai-pilled-company-in-the-world/",
+      "title": "Building a multiplayer game world with autonomous Fable-class models",
+      "publishedAt": "2026-10-29T17:00:26+00:00",
+      "seenAt": "2026-10-29T22:27:01.225Z"
+    },
+    "2a1a8a7c88a01340": {
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1022519/google-gemini-file-editing-documents-pdfs",
+      "title": "You can generate and edit Google Docs files directly in Gemini chats now",
+      "publishedAt": "2026-10-29T14:45:31-04:00",
+      "seenAt": "2026-10-29T22:27:01.225Z"
     }
   },
   "nodeReviews": {
@@ -2259,24 +2295,24 @@
       "reason": "No source material speaks to the general concept of a model. Cannot confirm or update the definition."
     },
     "moltbook": {
-      "lastReviewedAt": "2026-10-28T23:19:46.493Z",
+      "lastReviewedAt": "2026-10-29T22:27:01.225Z",
       "status": "insufficient_evidence",
-      "reason": "No source material references Moltbook or the OpenClaw ecosystem. Cannot confirm or update the definition."
+      "reason": "No source material references Moltbook or the OpenClaw ecosystem. Cannot confirm, update, or refute the definition."
     },
     "multi-agent": {
-      "lastReviewedAt": "2026-05-10T19:02:19.492Z",
+      "lastReviewedAt": "2026-10-29T22:27:01.225Z",
       "status": "keep",
-      "reason": "The MachinaCheck article illustrates multi-agent design with specialised agents (parser, classifier, matcher, decision agent, report generator), consistent with the existing definition. No update needed."
+      "reason": "No source contradicts the definition. The Spawn/Fable article illustrates multi-agent patterns but adds no new conceptual content that would require a rewrite."
     },
     "multi-agent-orchestration": {
-      "lastReviewedAt": "2026-05-10T19:02:19.492Z",
+      "lastReviewedAt": "2026-10-29T22:27:01.225Z",
       "status": "keep",
-      "reason": "MachinaCheck's architecture corroborates the pattern described, but adds nothing that would require revising the definition."
+      "reason": "No source materially updates this architectural definition. The Spawn article is consistent with it but adds no new terminology or distinctions."
     },
     "multimodal": {
-      "lastReviewedAt": "2026-05-10T19:02:19.492Z",
+      "lastReviewedAt": "2026-10-29T22:27:01.225Z",
       "status": "keep",
-      "reason": "No source material challenges this definition. Voice/audio capabilities mentioned in OpenAI's realtime models article are consistent with the existing multimodal framing but do not require a rewrite."
+      "reason": "No source materially updates this definition. The Gemini Docs editing article is not about multimodality in the sense defined."
     },
     "nvidia-co": {
       "lastReviewedAt": "2026-05-11T07:07:01.775Z",
@@ -3129,14 +3165,34 @@
       "reason": "No source material addresses model routing or AI gateways. Cannot confirm or update the definition."
     },
     "model-weight-security": {
-      "lastReviewedAt": "2026-10-28T23:19:46.493Z",
-      "status": "insufficient_evidence",
-      "reason": "No source material references model weight security or related frameworks. Cannot confirm or update the definition."
+      "lastReviewedAt": "2026-10-29T22:27:01.225Z",
+      "status": "keep",
+      "reason": "No source material addresses model weight security, RAND's SL framework, or California SB 53. Definition stands as written."
     },
     "model-welfare": {
-      "lastReviewedAt": "2026-10-28T23:19:46.493Z",
+      "lastReviewedAt": "2026-10-29T22:27:01.225Z",
+      "status": "keep",
+      "reason": "No source material touches on model welfare, AI moral consideration, or the named researchers/organisations. Definition stands."
+    },
+    "multi-token-prediction": {
+      "lastReviewedAt": "2026-10-29T22:27:01.225Z",
+      "status": "keep",
+      "reason": "No source addresses multi-token prediction training objectives. Definition stands."
+    },
+    "nano-banana": {
+      "lastReviewedAt": "2026-10-29T22:27:01.225Z",
       "status": "insufficient_evidence",
-      "reason": "No source material touches on model welfare research. Cannot confirm or update the definition."
+      "reason": "The Verge article is about Gemini editing Google Docs files, not about image generation models or a 'Nano Banana' product line. No source confirms or refutes the Nano Banana definition."
+    },
+    "neocloud": {
+      "lastReviewedAt": "2026-10-29T22:27:01.225Z",
+      "status": "keep",
+      "reason": "No source addresses neocloud providers. Definition stands."
+    },
+    "neural-network": {
+      "lastReviewedAt": "2026-10-29T22:27:01.225Z",
+      "status": "keep",
+      "reason": "No source materially updates this foundational definition. Definition stands."
     }
   }
 }

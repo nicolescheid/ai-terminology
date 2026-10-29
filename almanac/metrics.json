@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-10-28T23:21:00.637Z",
+  "generatedAt": "2026-10-29T22:28:45.093Z",
   "firstRunAt": "2026-04-27T01:07:31.335Z",
   "phase": 1,
   "headline": {
-    "articlesRead": 274,
-    "daysRunning": 185,
-    "longlistSize": 205,
+    "articlesRead": 280,
+    "daysRunning": 186,
+    "longlistSize": 215,
     "graphSize": 446
   },
   "thisWeek": {
-    "articlesFetched": 59,
-    "longlistAdded": 81,
+    "articlesFetched": 53,
+    "longlistAdded": 74,
     "sourcesAdded": 17,
-    "promotionsToGraph": 7,
+    "promotionsToGraph": 6,
     "proposalsQueued": 9,
     "auditFlags": 8,
     "notesAdded": 13
@@ -27,7 +27,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 2,
-      "daysOnLonglist": 177,
+      "daysOnLonglist": 178,
       "domains": [
         "openai.com",
         "simonwillison.net"
@@ -45,13 +45,13 @@
       ],
       "sourceCount": 2,
       "independentSources": 2,
-      "daysOnLonglist": 1,
+      "daysOnLonglist": 2,
       "domains": [
         "stratechery.com",
         "anthropic.com"
       ],
       "gapCount": 1,
-      "gap": "2 more days on longlist"
+      "gap": "1 more day on longlist"
     },
     {
       "id": "aggregator-theory",
@@ -63,7 +63,7 @@
       ],
       "sourceCount": 10,
       "independentSources": 1,
-      "daysOnLonglist": 148,
+      "daysOnLonglist": 149,
       "domains": [
         "stratechery.com"
       ],
@@ -80,7 +80,24 @@
       ],
       "sourceCount": 4,
       "independentSources": 1,
-      "daysOnLonglist": 8,
+      "daysOnLonglist": 9,
+      "domains": [
+        "simonwillison.net"
+      ],
+      "gapCount": 1,
+      "gap": "needs 1 more independent source"
+    },
+    {
+      "id": "claude-fable-51",
+      "label": "Claude Fable 5.1",
+      "fullName": "Claude Fable 5.1 (Anthropic)",
+      "clusters": [
+        "models",
+        "companies"
+      ],
+      "sourceCount": 4,
+      "independentSources": 1,
+      "daysOnLonglist": 6,
       "domains": [
         "simonwillison.net"
       ],
@@ -97,7 +114,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 12,
+      "daysOnLonglist": 13,
       "domains": [
         "stratechery.com"
       ],
@@ -114,7 +131,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 9,
+      "daysOnLonglist": 10,
       "domains": [
         "huggingface.co"
       ],
@@ -130,26 +147,9 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 9,
+      "daysOnLonglist": 10,
       "domains": [
         "huggingface.co"
-      ],
-      "gapCount": 1,
-      "gap": "needs 1 more independent source"
-    },
-    {
-      "id": "claude-fable-51",
-      "label": "Claude Fable 5.1",
-      "fullName": "Claude Fable 5.1 (Anthropic)",
-      "clusters": [
-        "models",
-        "companies"
-      ],
-      "sourceCount": 3,
-      "independentSources": 1,
-      "daysOnLonglist": 5,
-      "domains": [
-        "simonwillison.net"
       ],
       "gapCount": 1,
       "gap": "needs 1 more independent source"
@@ -164,7 +164,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 152,
+      "daysOnLonglist": 153,
       "domains": [
         "normaltech.ai"
       ],
@@ -181,7 +181,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 152,
+      "daysOnLonglist": 153,
       "domains": [
         "normaltech.ai"
       ],
@@ -193,23 +193,23 @@
     "byDomain": [
       {
         "domain": "openai.com",
-        "count": 63
+        "count": 65
       },
       {
         "domain": "simonwillison.net",
-        "count": 44
+        "count": 45
       },
       {
         "domain": "stratechery.com",
-        "count": 34
+        "count": 35
       },
       {
         "domain": "huggingface.co",
-        "count": 28
+        "count": 29
       },
       {
         "domain": "theverge.com",
-        "count": 25
+        "count": 26
       },
       {
         "domain": "blog.google",
@@ -341,61 +341,61 @@
         "id": "technical",
         "label": "Technical",
         "hex": "#D0D040",
-        "count": 79
+        "count": 81
       },
       {
         "id": "models",
         "label": "Models",
         "hex": "#FFB060",
-        "count": 43
-      },
-      {
-        "id": "safety",
-        "label": "Safety",
-        "hex": "#FF6090",
-        "count": 40
+        "count": 44
       },
       {
         "id": "agentic",
         "label": "Agentic Systems",
         "hex": "#FF9040",
-        "count": 38
+        "count": 41
       },
       {
-        "id": "critical",
-        "label": "Critical / Hype",
-        "hex": "#FF5555",
-        "count": 35
+        "id": "safety",
+        "label": "Safety",
+        "hex": "#FF6090",
+        "count": 41
       },
       {
         "id": "tools",
         "label": "Tools & Platforms",
         "hex": "#70C8F8",
-        "count": 32
+        "count": 36
+      },
+      {
+        "id": "critical",
+        "label": "Critical / Hype",
+        "hex": "#FF5555",
+        "count": 36
       },
       {
         "id": "business",
         "label": "Business Reality",
         "hex": "#48C888",
-        "count": 29
+        "count": 31
+      },
+      {
+        "id": "work",
+        "label": "Work & Output",
+        "hex": "#E8A838",
+        "count": 25
+      },
+      {
+        "id": "landscape",
+        "label": "Model Landscape",
+        "hex": "#D0A050",
+        "count": 24
       },
       {
         "id": "human",
         "label": "Human Skills",
         "hex": "#40D080",
         "count": 24
-      },
-      {
-        "id": "landscape",
-        "label": "Model Landscape",
-        "hex": "#D0A050",
-        "count": 23
-      },
-      {
-        "id": "work",
-        "label": "Work & Output",
-        "hex": "#E8A838",
-        "count": 22
       },
       {
         "id": "companies",
@@ -414,6 +414,12 @@
         "label": "Autonomy Spectrum",
         "hex": "#58B8E8",
         "count": 4
+      },
+      {
+        "id": "lifecycle",
+        "label": "Product Lifecycle",
+        "hex": "#B888D8",
+        "count": 2
       },
       {
         "id": "context",

@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generatedAt": "2026-10-28T23:19:46.493Z",
-    "unreadCount": 34,
-    "totalCount": 34,
+    "generatedAt": "2026-10-29T22:27:01.225Z",
+    "unreadCount": 36,
+    "totalCount": 36,
     "note": "Lexi's must-reads — articles she flags as worth Nicole reading in full. Editorial signal, not news feed. Set status to 'read' or 'dismissed' via mark-must-reads.mjs."
   },
   "entries": [
@@ -581,6 +581,40 @@
       ],
       "novelTermsInArticle": 0,
       "flaggedAt": "2026-10-28T23:19:46.493Z",
+      "status": "unread"
+    },
+    {
+      "id": "a9148380e01427aa",
+      "title": "An Interview with Palantir CTO Shyam Sankar About the AI Religious War",
+      "url": "https://stratechery.com/2026/an-interview-with-palantir-cto-shyam-sankar-about-the-ai-religious-war/",
+      "source": "Stratechery",
+      "publishedAt": "Thu, 29 Oct 2026 10:00:00 +0000",
+      "summary": "A Stratechery interview with Palantir CTO Shyam Sankar covering AI diffusion, systems engineering approaches to AI safety, forward-deployed engineering, the 'AI religious war' framing, and Palantir's lessons from AI adoption. Rich in geopolitical-industrial framing and contrarian perspectives on how AI value is actually created and captured.",
+      "priority": 2,
+      "reason": "A rare extended interview with a senior Palantir executive who offers a genuinely distinct perspective on AI adoption — focused on diffusion over capability, systems engineering over alignment philosophy, and alpha-capture over productivity gains. Worth reading for the contrarian framing and the practitioner critique of how labs approach safety.",
+      "clusters": [
+        "business",
+        "critical"
+      ],
+      "novelTermsInArticle": 3,
+      "flaggedAt": "2026-10-29T22:27:01.225Z",
+      "status": "unread"
+    },
+    {
+      "id": "672400a4a73efc0d",
+      "title": "Building a multiplayer game world with autonomous Fable-class models",
+      "url": "https://simonwillison.net/2026/Oct/29/how-i-built-the-most-ai-pilled-company-in-the-world/",
+      "source": "Simon Willison's Weblog",
+      "publishedAt": "2026-10-29T17:00:26+00:00",
+      "summary": "Simon Willison links to a Jacob Sansbury post describing Spawn, a multiplayer game built and continuously deployed by a swarm of autonomous Fable-class agents at ~$3M/month in token spend. The piece is a live case study in extreme agentic engineering: agents read their own error logs, file their own bugs, ship to production hourly, and treat an hour without a ship as a SEV-0 incident. The article also documents model-switching experiments (Fable 5.1 vs Opus 5.5 vs GPT-6 Astra) revealing sharp differences in autonomous reliability at this task scope.",
+      "priority": 2,
+      "reason": "A rare primary source on what fully autonomous, production-grade agentic engineering actually looks like at scale: agents that file their own bugs, read their own logs, and ship hourly under a norm where not shipping is the emergency. The model-comparison vignette (Fable 5.1 vs. Opus 5.5 vs. GPT-6 Astra's security-review fiasco) is the kind of empirical detail that sharpens thinking about autonomous reliability in ways that benchmarks don't.",
+      "clusters": [
+        "agentic",
+        "work"
+      ],
+      "novelTermsInArticle": 1,
+      "flaggedAt": "2026-10-29T22:27:01.225Z",
       "status": "unread"
     }
   ]

@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-10-28T23:19:46.493Z",
-    "entryCount": 295,
+    "generatedAt": "2026-10-29T22:27:01.225Z",
+    "entryCount": 305,
     "note": "Lexi-managed Tier 2 longlist — terms under observation, awaiting evidence to support promotion to the graph (Tier 1)."
   },
   "entries": [
@@ -6482,12 +6482,20 @@
           "sourceLabel": "Simon Willison's Weblog",
           "publishedAt": "2026-10-28T13:55:15+00:00",
           "firstSeen": "2026-10-28T23:19:46.493Z"
+        },
+        {
+          "url": "https://simonwillison.net/2026/Oct/29/how-i-built-the-most-ai-pilled-company-in-the-world/",
+          "domain": "simonwillison.net",
+          "title": "Building a multiplayer game world with autonomous Fable-class models",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-10-29T17:00:26+00:00",
+          "firstSeen": "2026-10-29T22:27:01.225Z"
         }
       ],
-      "sourceCount": 3,
+      "sourceCount": 4,
       "independentSourceCount": 3,
       "dateFirstSeen": "2026-10-16T20:31:05.113Z",
-      "dateLastSeen": "2026-10-28T23:19:46.493Z",
+      "dateLastSeen": "2026-10-29T22:27:01.225Z",
       "sz": 14,
       "fullName": "GPT-6 Astra (OpenAI)",
       "nodeType": "product",
@@ -9655,12 +9663,20 @@
           "sourceLabel": "Simon Willison's Weblog",
           "publishedAt": "2026-10-28T13:55:15+00:00",
           "firstSeen": "2026-10-28T23:19:46.493Z"
+        },
+        {
+          "url": "https://simonwillison.net/2026/Oct/29/how-i-built-the-most-ai-pilled-company-in-the-world/",
+          "domain": "simonwillison.net",
+          "title": "Building a multiplayer game world with autonomous Fable-class models",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-10-29T17:00:26+00:00",
+          "firstSeen": "2026-10-29T22:27:01.225Z"
         }
       ],
-      "sourceCount": 3,
+      "sourceCount": 4,
       "independentSourceCount": 1,
       "dateFirstSeen": "2026-10-23T21:00:16.038Z",
-      "dateLastSeen": "2026-10-28T23:19:46.493Z",
+      "dateLastSeen": "2026-10-29T22:27:01.225Z",
       "sz": 14,
       "fullName": "Claude Fable 5.1 (Anthropic)",
       "nodeType": "product",
@@ -11567,6 +11583,327 @@
       "sz": 14,
       "fullName": "AI Companion Deprecation (Consumer Surface Withdrawal)",
       "proposalReason": "A potentially recurring pattern worth watching: the lifecycle of AI features on consumer devices and the strategic forces that drive their removal."
+    },
+    {
+      "id": "modular-adapter-arch",
+      "label": "Modular Adapter Architecture",
+      "workingDef": "An LLM deployment pattern — exemplified by IBM's Granite Switch architecture — in which a single base model checkpoint is extended via swappable, specialised adapter modules (e.g., for speech, decisions, domain expertise) rather than retraining the full model. Each adapter can be versioned and updated independently, enabling software-style patch releases without recomputing the base weights. Related to LoRA and mixture-of-experts patterns but distinct in its explicit software versioning framing and endpoint-level composability.",
+      "clusters": [
+        "models",
+        "technical"
+      ],
+      "suggestedRels": [
+        "lora",
+        "mixture-of-experts",
+        "fine-tuning",
+        "distillation"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1-1",
+          "domain": "huggingface.co",
+          "title": "Granite Switch 4.1.1 — Update models like you update software",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Thu, 29 Oct 2026 13:37:07 GMT",
+          "firstSeen": "2026-10-29T22:27:01.225Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-29T22:27:01.225Z",
+      "dateLastSeen": "2026-10-29T22:27:01.225Z",
+      "sz": 14,
+      "fullName": "Modular Adapter Architecture (LLM)",
+      "proposalReason": "Novel architectural framing for modular, versioned LLM deployment with independent adapter updates — distinct enough from LoRA or MoE to warrant tracking as its own pattern."
+    },
+    {
+      "id": "model-versioning",
+      "label": "Model Versioning",
+      "workingDef": "The practice of applying software semantic versioning conventions (major.minor.patch) to AI model releases, with explicit backwards-compatibility guarantees between versions. Emerging in enterprise AI contexts (e.g., IBM Granite Switch) as a discipline that treats model updates as analogous to software patches — incremental, non-breaking, and independently deployable. Distinct from the more common practice of releasing numbered model generations (e.g., GPT-4 to GPT-5) which often involve full capability breaks rather than patch-level compatibility.",
+      "clusters": [
+        "lifecycle",
+        "technical"
+      ],
+      "suggestedRels": [
+        "fine-tuning",
+        "general-availability",
+        "deprecated",
+        "continual-learning"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1-1",
+          "domain": "huggingface.co",
+          "title": "Granite Switch 4.1.1 — Update models like you update software",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Thu, 29 Oct 2026 13:37:07 GMT",
+          "firstSeen": "2026-10-29T22:27:01.225Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-29T22:27:01.225Z",
+      "dateLastSeen": "2026-10-29T22:27:01.225Z",
+      "sz": 14,
+      "fullName": "Model Versioning (Software-Style AI Releases)",
+      "proposalReason": "A genuinely emerging practice framing — treating AI model releases with software-engineering versioning discipline. Has lasting terminological relevance as enterprise AI matures."
+    },
+    {
+      "id": "speech-to-decisions",
+      "label": "Speech-to-Decisions Pipeline",
+      "workingDef": "An end-to-end AI pipeline that converts live or recorded speech into structured decision outputs, typically by chaining a speech recognition model into a downstream decision or classification adapter. Demonstrated by IBM's Granite Switch 'Speech to Decisions' demo, which feeds ASR transcripts directly into a Decision adapter without an intermediate formatting pass. Represents a specialised compound architecture pattern within the broader cascaded voice pipeline family.",
+      "clusters": [
+        "tools",
+        "agentic"
+      ],
+      "suggestedRels": [
+        "cascaded-voice-pipeline",
+        "voice-ai",
+        "word-error-rate",
+        "structured-output"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1-1",
+          "domain": "huggingface.co",
+          "title": "Granite Switch 4.1.1 — Update models like you update software",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Thu, 29 Oct 2026 13:37:07 GMT",
+          "firstSeen": "2026-10-29T22:27:01.225Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-29T22:27:01.225Z",
+      "dateLastSeen": "2026-10-29T22:27:01.225Z",
+      "sz": 14,
+      "proposalReason": "Concrete named pattern for voice-to-structured-decision pipelines; distinct from generic voice AI and worth tracking as agentic voice use cases proliferate."
+    },
+    {
+      "id": "adapter-sdk",
+      "label": "Adapter SDK",
+      "workingDef": "A software development kit enabling third-party developers and enterprises to build, version, test, and publish specialised adapter modules for a base language model — analogous to plugin or extension SDKs in conventional software ecosystems. IBM's Granite Switch Adapter SDK (announced but not yet released) frames adapter development as an external ecosystem activity rather than a lab-internal process. Relates to broader questions of model extensibility, vendor lock-in, and who controls LLM capability updates.",
+      "clusters": [
+        "tools",
+        "lifecycle"
+      ],
+      "suggestedRels": [
+        "fine-tuning",
+        "lora",
+        "vendor-lock-in",
+        "infrastructure"
+      ],
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1-1",
+          "domain": "huggingface.co",
+          "title": "Granite Switch 4.1.1 — Update models like you update software",
+          "sourceLabel": "Hugging Face Blog",
+          "publishedAt": "Thu, 29 Oct 2026 13:37:07 GMT",
+          "firstSeen": "2026-10-29T22:27:01.225Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-29T22:27:01.225Z",
+      "dateLastSeen": "2026-10-29T22:27:01.225Z",
+      "sz": 14,
+      "fullName": "Adapter SDK (Third-Party LLM Extension)",
+      "proposalReason": "Emerging ecosystem concept — if adapter SDKs become standard, they reshape who can extend frontier models and how; worth tracking as a distinct platform-layer term."
+    },
+    {
+      "id": "ai-diffusion",
+      "label": "AI Diffusion",
+      "workingDef": "The spread and adoption of AI capabilities across organizations and society — as distinct from AI development. Palantir CTO Shyam Sankar uses the term to argue that the AI industry is insufficiently focused on diffusion relative to model-building: the bottleneck to AI value is not capability but organizational uptake, workflow integration, and cultural change. The framing positions diffusion as a first-class engineering and strategy problem, not a downstream sales or marketing question.",
+      "clusters": [
+        "business",
+        "landscape"
+      ],
+      "suggestedRels": [
+        "forward-deployed-engineer",
+        "agentic-era",
+        "ai-first-company",
+        "pilot-purgatory"
+      ],
+      "sources": [
+        {
+          "url": "https://stratechery.com/2026/an-interview-with-palantir-cto-shyam-sankar-about-the-ai-religious-war/",
+          "domain": "stratechery.com",
+          "title": "An Interview with Palantir CTO Shyam Sankar About the AI Religious War",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Thu, 29 Oct 2026 10:00:00 +0000",
+          "firstSeen": "2026-10-29T22:27:01.225Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-29T22:27:01.225Z",
+      "dateLastSeen": "2026-10-29T22:27:01.225Z",
+      "sz": 14,
+      "fullName": "AI Diffusion (Deployment-Side AI Adoption)",
+      "proposalReason": "A new framing term from a prominent practitioner voice, positioning AI diffusion as undervalued relative to capability development — useful for tracking how the field conceptualises deployment vs. research priority."
+    },
+    {
+      "id": "systems-engineering-ai-safety",
+      "label": "Systems Engineering Approach to AI Safety",
+      "workingDef": "A position, articulated here by Palantir CTO Shyam Sankar, that AI safety should be treated as a systems engineering discipline — with rigorous failure-mode analysis, adversarial testing, and reliability engineering — rather than as either alignment philosophy or behavioural guardrails. Sankar frames current lab safety efforts as insufficiently grounded in engineering methodology, describing the gap as a source of frustration. The framing is distinct from both the existential-risk AI safety tradition and from mainstream ML safety (bias, toxicity), positioning reliability and operational robustness as the core concern.",
+      "clusters": [
+        "safety",
+        "critical"
+      ],
+      "suggestedRels": [
+        "agent-reliability",
+        "guardrails",
+        "safety-case",
+        "alignment",
+        "evals",
+        "nines-of-reliability"
+      ],
+      "sources": [
+        {
+          "url": "https://stratechery.com/2026/an-interview-with-palantir-cto-shyam-sankar-about-the-ai-religious-war/",
+          "domain": "stratechery.com",
+          "title": "An Interview with Palantir CTO Shyam Sankar About the AI Religious War",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Thu, 29 Oct 2026 10:00:00 +0000",
+          "firstSeen": "2026-10-29T22:27:01.225Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-29T22:27:01.225Z",
+      "dateLastSeen": "2026-10-29T22:27:01.225Z",
+      "sz": 14,
+      "proposalReason": "Captures a practitioner critique of current AI safety paradigms worth tracking — the 'systems engineering' framing is a distinct third position between alignment philosophy and compliance guardrails."
+    },
+    {
+      "id": "alpha-beta-ai-value",
+      "label": "Alpha vs. Beta (AI Value Capture)",
+      "workingDef": "A framing used by Palantir CTO Shyam Sankar to distinguish idiosyncratic, firm-specific value created through AI (alpha) from commoditised, industry-wide productivity gains (beta). The argument is that companies which adopt AI in ways that preserve proprietary insight, unique workflows, or domain-specific capabilities capture alpha; companies that simply deploy off-the-shelf AI tools converge toward the median (beta). The framing imports financial terminology to argue that competitive advantage in AI depends on how, not just whether, a firm adopts it.",
+      "clusters": [
+        "business",
+        "work"
+      ],
+      "suggestedRels": [
+        "ai-first-company",
+        "frontier-firm",
+        "outcome-focused-work",
+        "vertical-ai",
+        "jagged-frontier"
+      ],
+      "sources": [
+        {
+          "url": "https://stratechery.com/2026/an-interview-with-palantir-cto-shyam-sankar-about-the-ai-religious-war/",
+          "domain": "stratechery.com",
+          "title": "An Interview with Palantir CTO Shyam Sankar About the AI Religious War",
+          "sourceLabel": "Stratechery",
+          "publishedAt": "Thu, 29 Oct 2026 10:00:00 +0000",
+          "firstSeen": "2026-10-29T22:27:01.225Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-29T22:27:01.225Z",
+      "dateLastSeen": "2026-10-29T22:27:01.225Z",
+      "sz": 14,
+      "fullName": "Alpha vs. Beta in AI Value Capture",
+      "proposalReason": "A crisp conceptual distinction with real strategic implications for how firms think about AI adoption — useful for tracking how 'AI competitive advantage' is being theorized by practitioners."
+    },
+    {
+      "id": "sev-0-shipping-threshold",
+      "label": "SEV-0 Shipping Threshold",
+      "workingDef": "A reliability framing — illustrated by the Spawn team — in which failing to ship within a defined window (here, one hour) is treated as a severity-zero incident equivalent to a production outage. The framing inverts traditional incident response: the absence of deployment, not a failure of deployment, is the alert condition. A novel operational norm emerging from extreme continuous-AI pipelines.",
+      "clusters": [
+        "agentic",
+        "work"
+      ],
+      "suggestedRels": [
+        "continuous-ai",
+        "agentic-engineering",
+        "agent-reliability",
+        "loop",
+        "nines-of-reliability"
+      ],
+      "sources": [
+        {
+          "url": "https://simonwillison.net/2026/Oct/29/how-i-built-the-most-ai-pilled-company-in-the-world/",
+          "domain": "simonwillison.net",
+          "title": "Building a multiplayer game world with autonomous Fable-class models",
+          "sourceLabel": "Simon Willison's Weblog",
+          "publishedAt": "2026-10-29T17:00:26+00:00",
+          "firstSeen": "2026-10-29T22:27:01.225Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-29T22:27:01.225Z",
+      "dateLastSeen": "2026-10-29T22:27:01.225Z",
+      "sz": 16,
+      "proposalReason": "Captures a genuinely novel operational concept — the 'no-ship' as the incident — that generalises beyond games and is worth tracking as agentic deployment practices mature."
+    },
+    {
+      "id": "in-chat-file-editing",
+      "label": "In-Chat File Editing",
+      "workingDef": "A chat-native capability allowing users to generate, preview, and edit structured documents (Docs, Sheets, PDFs, slide decks, code files) without leaving the AI chat interface. First surfaced in Claude chats (Anthropic) and now in Google Gemini. Represents an incremental integration step where AI assistants absorb light document-editing workflows previously requiring separate productivity applications.",
+      "clusters": [
+        "tools",
+        "agentic"
+      ],
+      "suggestedRels": [
+        "gemini",
+        "claude-ai",
+        "artifact",
+        "workflow",
+        "generative-ui"
+      ],
+      "sources": [
+        {
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1022519/google-gemini-file-editing-documents-pdfs",
+          "domain": "theverge.com",
+          "title": "You can generate and edit Google Docs files directly in Gemini chats now",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-10-29T14:45:31-04:00",
+          "firstSeen": "2026-10-29T22:27:01.225Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-29T22:27:01.225Z",
+      "dateLastSeen": "2026-10-29T22:27:01.225Z",
+      "sz": 16,
+      "proposalReason": "A new product feature pattern worth tracking as AI chat interfaces absorb document editing workflows previously handled by separate apps. Not yet canonical but appearing in multiple products."
+    },
+    {
+      "id": "workspace-native-ai",
+      "label": "Workspace-Native AI",
+      "workingDef": "An integration pattern where AI assistant capabilities are embedded directly into productivity suite applications (e.g., Google Workspace, Microsoft 365), allowing AI-powered editing, generation, and querying within existing document workflows rather than as a separate tool. Distinct from standalone AI chat; refers to the bidirectional integration between chat AI and office productivity formats.",
+      "clusters": [
+        "tools",
+        "work"
+      ],
+      "suggestedRels": [
+        "gemini",
+        "copilot",
+        "workflow",
+        "artifact",
+        "saas"
+      ],
+      "sources": [
+        {
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1022519/google-gemini-file-editing-documents-pdfs",
+          "domain": "theverge.com",
+          "title": "You can generate and edit Google Docs files directly in Gemini chats now",
+          "sourceLabel": "The Verge — AI",
+          "publishedAt": "2026-10-29T14:45:31-04:00",
+          "firstSeen": "2026-10-29T22:27:01.225Z"
+        }
+      ],
+      "sourceCount": 1,
+      "independentSourceCount": 1,
+      "dateFirstSeen": "2026-10-29T22:27:01.225Z",
+      "dateLastSeen": "2026-10-29T22:27:01.225Z",
+      "sz": 16,
+      "proposalReason": "A recurring product pattern across Google and Microsoft worth tracking as a distinct integration category, separate from standalone AI assistants or agentic systems."
     }
   ]
 }
