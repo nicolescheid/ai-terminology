@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-10-28T22:13:54.936Z",
-    "count": 10,
+    "generatedAt": "2026-10-30T21:56:42.189Z",
+    "count": 11,
     "note": "Lexi's email digests to Nicole. Written by build-digest.mjs; sentAt/messageId/thread written by the Worker (src/lexi-mail)."
   },
   "digests": [
@@ -793,6 +793,56 @@
       "waitingEarlier": 7,
       "thread": [],
       "subject": "3 items to review [Lexi D-20261028-ac0c]"
+    },
+    {
+      "id": "D-20261030-3c73",
+      "createdAt": "2026-10-30T21:56:42.189Z",
+      "autoApplyHours": 72,
+      "autoApplyAt": "2026-11-02T21:56:42.189Z",
+      "sentAt": null,
+      "messageId": null,
+      "items": [
+        {
+          "n": 1,
+          "proposalId": "06c8027eab3c3c5c",
+          "action": "promote_to_graph",
+          "kind": "new_term",
+          "term": "Anthropic IPO",
+          "termId": "anthropic-ipo",
+          "definition": "The public market debut of Anthropic via an S-1 registration filing, discussed here in the context of the company's compute cost structure, core business profitability, and competitive dynamics that may erode margins. As an AI safety-focused lab pursuing an IPO, Anthropic's S-1 is a primary financial disclosure document carrying significance for how AI lab economics are publicly understood.",
+          "previousDefinition": null,
+          "sources": [
+            {
+              "label": "Stratechery: Anthropic S-1, The Cost of Compute, Who Is Paying?",
+              "url": "https://stratechery.com/2026/anthropic-s-1-the-cost-of-compute-who-is-paying/"
+            },
+            {
+              "label": "Anthropic Newsroom: Anthropic files S-1 with the SEC for proposed initial public offering",
+              "url": "https://www.anthropic.com/news/s1-sec"
+            }
+          ],
+          "nearest": {
+            "id": "anthropic-co",
+            "label": "Anthropic",
+            "relation": "event concerning this company"
+          },
+          "rationale": "2 sources, 2 independent (stratechery.com + anthropic.com), 3d on longlist. Trusted: stratechery.com.",
+          "review": {
+            "verdict": "flag",
+            "summary": "This is a one-off corporate news event (Anthropic's proposed IPO), not a lasting AI term, and it belongs as context on the existing anthropic-co node. The definition also wrongly calls the S-1 filing a 'public market debut' when the registration is not yet effective, and its 'discussed here' wording ties it to one source.",
+            "flags": [
+              "fad",
+              "factual_error",
+              "stale_or_dated",
+              "other"
+            ]
+          },
+          "tier": "nicole",
+          "tierReason": "reviewer flagged it: fad, factual error, stale or dated, other"
+        }
+      ],
+      "waitingEarlier": 7,
+      "thread": []
     }
   ]
 }

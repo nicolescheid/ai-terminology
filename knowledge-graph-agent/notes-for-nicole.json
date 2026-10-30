@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generatedAt": "2026-10-29T22:27:01.225Z",
-    "unreadCount": 54,
-    "totalCount": 355,
+    "generatedAt": "2026-10-30T21:56:31.964Z",
+    "unreadCount": 5,
+    "totalCount": 356,
     "note": "Notes for Nicole — Lexi's manager channel (spec §6). Mandatory entry types fire when their triggering condition is met; discretionary entries are observations Lexi thinks Nicole should see. Set status to 'read', 'actioned', or 'dismissed' as appropriate."
   },
   "entries": [
@@ -7204,7 +7204,7 @@
       "writtenAt": "2026-08-28T02:02:09.344Z",
       "runId": "3f1a8682-2638-4faa-bc86-4de47b7fea54",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "1 Note(s) for Nicole have been unread for more than 7 days (oldest: 89d). Read or action them to resume publication.",
       "evidence": {
@@ -7218,7 +7218,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "supersededByRunId": "65bf9778-20f4-4455-a8bb-57c0e4e143ac"
     },
     {
       "id": "4daa87e42c01e3a3",
@@ -7226,7 +7227,7 @@
       "writtenAt": "2026-08-29T01:28:14.623Z",
       "runId": "5f0ee9ca-fb8b-4a2c-a3e1-0f8522c94949",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "1 Note(s) for Nicole have been unread for more than 7 days (oldest: 90d). Read or action them to resume publication.",
       "evidence": {
@@ -7240,7 +7241,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "supersededByRunId": "65bf9778-20f4-4455-a8bb-57c0e4e143ac"
     },
     {
       "id": "5d3a1120e8bcf6aa",
@@ -7248,7 +7250,7 @@
       "writtenAt": "2026-08-29T20:25:46.381Z",
       "runId": "cf57e8ad-72ff-41e5-abe0-06ab1257aa53",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "1 Note(s) for Nicole have been unread for more than 7 days (oldest: 91d). Read or action them to resume publication.",
       "evidence": {
@@ -7262,7 +7264,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "supersededByRunId": "65bf9778-20f4-4455-a8bb-57c0e4e143ac"
     },
     {
       "id": "36c1d4211ff6ed45",
@@ -7270,7 +7273,7 @@
       "writtenAt": "2026-08-30T20:35:28.399Z",
       "runId": "f1231b2e-1d99-4942-9c59-ec15b2b92ffe",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "1 Note(s) for Nicole have been unread for more than 7 days (oldest: 92d). Read or action them to resume publication.",
       "evidence": {
@@ -7284,7 +7287,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "supersededByRunId": "65bf9778-20f4-4455-a8bb-57c0e4e143ac"
     },
     {
       "id": "2308232b54527bae",
@@ -7292,7 +7296,7 @@
       "writtenAt": "2026-08-31T22:28:14.085Z",
       "runId": "7ec87097-816b-47be-b1d0-1007109e857a",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "1 Note(s) for Nicole have been unread for more than 7 days (oldest: 93d). Read or action them to resume publication.",
       "evidence": {
@@ -7306,7 +7310,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "supersededByRunId": "65bf9778-20f4-4455-a8bb-57c0e4e143ac"
     },
     {
       "id": "9281bcbd0bacee9e",
@@ -7314,7 +7319,7 @@
       "writtenAt": "2026-09-01T20:34:39.872Z",
       "runId": "5961ae49-caa3-4370-9dff-35e1f9f49438",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "1 Note(s) for Nicole have been unread for more than 7 days (oldest: 94d). Read or action them to resume publication.",
       "evidence": {
@@ -7328,7 +7333,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "supersededByRunId": "65bf9778-20f4-4455-a8bb-57c0e4e143ac"
     },
     {
       "id": "4baf00e4f2f48290",
@@ -7336,7 +7342,7 @@
       "writtenAt": "2026-09-02T20:30:50.802Z",
       "runId": "0e9f6f37-c3ee-42d8-bb76-d5d14cf7a1a8",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "1 Note(s) for Nicole have been unread for more than 7 days (oldest: 95d). Read or action them to resume publication.",
       "evidence": {
@@ -7350,7 +7356,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "supersededByRunId": "65bf9778-20f4-4455-a8bb-57c0e4e143ac"
     },
     {
       "id": "e91b2b281e955429",
@@ -7358,7 +7365,7 @@
       "writtenAt": "2026-09-03T20:31:16.313Z",
       "runId": "5eae2cc4-b10d-4908-adfc-2794771e6753",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "1 Note(s) for Nicole have been unread for more than 7 days (oldest: 96d). Read or action them to resume publication.",
       "evidence": {
@@ -7372,7 +7379,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "supersededByRunId": "65bf9778-20f4-4455-a8bb-57c0e4e143ac"
     },
     {
       "id": "a20268086d9e166b",
@@ -7380,7 +7388,7 @@
       "writtenAt": "2026-09-04T20:17:28.374Z",
       "runId": "4d1aff80-a6e8-4967-83e0-c487e37d7a47",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "2 Note(s) for Nicole have been unread for more than 7 days (oldest: 97d). Read or action them to resume publication.",
       "evidence": {
@@ -7394,7 +7402,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "supersededByRunId": "65bf9778-20f4-4455-a8bb-57c0e4e143ac"
     },
     {
       "id": "90bdb528da0e3446",
@@ -7402,7 +7411,7 @@
       "writtenAt": "2026-09-05T19:56:55.010Z",
       "runId": "80f86f44-6bc1-4dff-b479-9349811b99e4",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "3 Note(s) for Nicole have been unread for more than 7 days (oldest: 98d). Read or action them to resume publication.",
       "evidence": {
@@ -7416,7 +7425,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "supersededByRunId": "65bf9778-20f4-4455-a8bb-57c0e4e143ac"
     },
     {
       "id": "3f8d0254dcd030f5",
@@ -7424,7 +7434,7 @@
       "writtenAt": "2026-09-06T20:00:17.157Z",
       "runId": "3473296a-819b-40fe-9469-fd181b09c02f",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "4 Note(s) for Nicole have been unread for more than 7 days (oldest: 99d). Read or action them to resume publication.",
       "evidence": {
@@ -7438,7 +7448,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "supersededByRunId": "65bf9778-20f4-4455-a8bb-57c0e4e143ac"
     },
     {
       "id": "d9db4711acff2887",
@@ -7446,7 +7457,7 @@
       "writtenAt": "2026-09-07T21:07:42.132Z",
       "runId": "cf9b2148-ce35-47f8-9c2f-57087c74b074",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "5 Note(s) for Nicole have been unread for more than 7 days (oldest: 100d). Read or action them to resume publication.",
       "evidence": {
@@ -7460,7 +7471,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "supersededByRunId": "65bf9778-20f4-4455-a8bb-57c0e4e143ac"
     },
     {
       "id": "10635ac58c47d054",
@@ -7468,7 +7480,7 @@
       "writtenAt": "2026-09-08T20:44:19.574Z",
       "runId": "d51d9d6b-cc7e-481c-9351-6e8af5b69df4",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "7 Note(s) for Nicole have been unread for more than 7 days (oldest: 101d). Read or action them to resume publication.",
       "evidence": {
@@ -7482,7 +7494,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "supersededByRunId": "65bf9778-20f4-4455-a8bb-57c0e4e143ac"
     },
     {
       "id": "2ade9be76d10dae4",
@@ -7490,7 +7503,7 @@
       "writtenAt": "2026-09-09T20:26:07.640Z",
       "runId": "e49e17ff-623b-4e0b-9a2e-a4264712f0a3",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "7 Note(s) for Nicole have been unread for more than 7 days (oldest: 102d). Read or action them to resume publication.",
       "evidence": {
@@ -7504,7 +7517,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "supersededByRunId": "65bf9778-20f4-4455-a8bb-57c0e4e143ac"
     },
     {
       "id": "0cf05d662aff30b0",
@@ -7512,7 +7526,7 @@
       "writtenAt": "2026-09-10T20:26:08.678Z",
       "runId": "6e5c8c17-18c0-4ebe-bf6a-a9af345d7ddf",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "8 Note(s) for Nicole have been unread for more than 7 days (oldest: 103d). Read or action them to resume publication.",
       "evidence": {
@@ -7526,7 +7540,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "supersededByRunId": "65bf9778-20f4-4455-a8bb-57c0e4e143ac"
     },
     {
       "id": "bda511a6e786fe86",
@@ -7534,7 +7549,7 @@
       "writtenAt": "2026-09-11T20:28:04.693Z",
       "runId": "b034c3c8-c039-487e-9326-d4375c18cbb1",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "10 Note(s) for Nicole have been unread for more than 7 days (oldest: 104d). Read or action them to resume publication.",
       "evidence": {
@@ -7548,7 +7563,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "supersededByRunId": "65bf9778-20f4-4455-a8bb-57c0e4e143ac"
     },
     {
       "id": "9bdaff781811ac6c",
@@ -7556,7 +7572,7 @@
       "writtenAt": "2026-09-12T20:11:45.360Z",
       "runId": "cb4b904f-2f93-44f7-8d17-8e2783f6de16",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "11 Note(s) for Nicole have been unread for more than 7 days (oldest: 105d). Read or action them to resume publication.",
       "evidence": {
@@ -7570,7 +7586,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "supersededByRunId": "65bf9778-20f4-4455-a8bb-57c0e4e143ac"
     },
     {
       "id": "09f73ba934440af1",
@@ -7578,7 +7595,7 @@
       "writtenAt": "2026-09-13T20:20:42.851Z",
       "runId": "207266cf-1af0-4cad-b8f9-e862ad173a6a",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "12 Note(s) for Nicole have been unread for more than 7 days (oldest: 106d). Read or action them to resume publication.",
       "evidence": {
@@ -7592,7 +7609,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "supersededByRunId": "65bf9778-20f4-4455-a8bb-57c0e4e143ac"
     },
     {
       "id": "55400036366a07d7",
@@ -7600,7 +7618,7 @@
       "writtenAt": "2026-09-14T21:30:05.790Z",
       "runId": "11710992-f6fe-4492-9397-fc35ada406de",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "13 Note(s) for Nicole have been unread for more than 7 days (oldest: 107d). Read or action them to resume publication.",
       "evidence": {
@@ -7614,7 +7632,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "supersededByRunId": "65bf9778-20f4-4455-a8bb-57c0e4e143ac"
     },
     {
       "id": "8599c549c2831b74",
@@ -7622,7 +7641,7 @@
       "writtenAt": "2026-09-15T20:52:38.823Z",
       "runId": "05928563-b9b3-4d61-a0a6-6de2a49eb513",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "14 Note(s) for Nicole have been unread for more than 7 days (oldest: 108d). Read or action them to resume publication.",
       "evidence": {
@@ -7636,7 +7655,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "supersededByRunId": "65bf9778-20f4-4455-a8bb-57c0e4e143ac"
     },
     {
       "id": "cc6b160f2d1859b5",
@@ -7644,7 +7664,7 @@
       "writtenAt": "2026-09-16T20:53:08.665Z",
       "runId": "fb24cff5-872c-41e6-85a4-b4ccec54015a",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "15 Note(s) for Nicole have been unread for more than 7 days (oldest: 109d). Read or action them to resume publication.",
       "evidence": {
@@ -7658,7 +7678,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "supersededByRunId": "65bf9778-20f4-4455-a8bb-57c0e4e143ac"
     },
     {
       "id": "8df257d8fb653c47",
@@ -7666,7 +7687,7 @@
       "writtenAt": "2026-09-17T20:57:35.759Z",
       "runId": "2191fc9d-ea30-45ee-9acf-6db9440590e9",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "16 Note(s) for Nicole have been unread for more than 7 days (oldest: 110d). Read or action them to resume publication.",
       "evidence": {
@@ -7680,7 +7701,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "supersededByRunId": "65bf9778-20f4-4455-a8bb-57c0e4e143ac"
     },
     {
       "id": "9bd6deff75f88e40",
@@ -7688,7 +7710,7 @@
       "writtenAt": "2026-09-18T20:25:15.645Z",
       "runId": "80f7d5be-3e79-47b2-af7a-3ea030590d8f",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "16 Note(s) for Nicole have been unread for more than 7 days (oldest: 111d). Read or action them to resume publication.",
       "evidence": {
@@ -7702,7 +7724,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "supersededByRunId": "65bf9778-20f4-4455-a8bb-57c0e4e143ac"
     },
     {
       "id": "fd4bf1534dc4a884",
@@ -7710,7 +7733,7 @@
       "writtenAt": "2026-09-19T20:03:56.661Z",
       "runId": "db65d43b-2f94-4ce1-ba7a-e9ce1d63b0f8",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "17 Note(s) for Nicole have been unread for more than 7 days (oldest: 112d). Read or action them to resume publication.",
       "evidence": {
@@ -7724,7 +7747,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "supersededByRunId": "65bf9778-20f4-4455-a8bb-57c0e4e143ac"
     },
     {
       "id": "41f3817037deae08",
@@ -7732,7 +7756,7 @@
       "writtenAt": "2026-09-20T20:20:51.547Z",
       "runId": "38caa10b-0cfd-4120-b4d8-8cc9cde0d5a7",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "19 Note(s) for Nicole have been unread for more than 7 days (oldest: 113d). Read or action them to resume publication.",
       "evidence": {
@@ -7746,7 +7770,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "supersededByRunId": "65bf9778-20f4-4455-a8bb-57c0e4e143ac"
     },
     {
       "id": "7d53a144328edc3d",
@@ -7754,7 +7779,7 @@
       "writtenAt": "2026-09-21T21:42:39.335Z",
       "runId": "907a2d1c-f5a6-4d93-9450-bdcd34d2fe7d",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "20 Note(s) for Nicole have been unread for more than 7 days (oldest: 114d). Read or action them to resume publication.",
       "evidence": {
@@ -7768,7 +7793,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "supersededByRunId": "65bf9778-20f4-4455-a8bb-57c0e4e143ac"
     },
     {
       "id": "f37ecf613a509db5",
@@ -7776,7 +7802,7 @@
       "writtenAt": "2026-09-22T20:54:12.594Z",
       "runId": "e9967f76-408a-4c26-a315-2dc432363e69",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "21 Note(s) for Nicole have been unread for more than 7 days (oldest: 115d). Read or action them to resume publication.",
       "evidence": {
@@ -7790,7 +7816,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "supersededByRunId": "65bf9778-20f4-4455-a8bb-57c0e4e143ac"
     },
     {
       "id": "2fad2684d38efcb6",
@@ -7798,7 +7825,7 @@
       "writtenAt": "2026-09-23T21:05:42.513Z",
       "runId": "acef2994-c4f5-4158-85a4-de10d9bde660",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "22 Note(s) for Nicole have been unread for more than 7 days (oldest: 116d). Read or action them to resume publication.",
       "evidence": {
@@ -7812,7 +7839,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "supersededByRunId": "65bf9778-20f4-4455-a8bb-57c0e4e143ac"
     },
     {
       "id": "e6e978fafc9f4987",
@@ -7820,7 +7848,7 @@
       "writtenAt": "2026-09-24T21:09:35.896Z",
       "runId": "86f8cb76-2620-47b2-a81c-8ac4cdbc98f8",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "23 Note(s) for Nicole have been unread for more than 7 days (oldest: 117d). Read or action them to resume publication.",
       "evidence": {
@@ -7834,7 +7862,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "supersededByRunId": "65bf9778-20f4-4455-a8bb-57c0e4e143ac"
     },
     {
       "id": "2f03f7d79ea9cf7f",
@@ -7842,7 +7871,7 @@
       "writtenAt": "2026-09-25T21:06:35.100Z",
       "runId": "c4e25529-3bac-45ab-83e9-cc68cbd2ea3d",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "24 Note(s) for Nicole have been unread for more than 7 days (oldest: 118d). Read or action them to resume publication.",
       "evidence": {
@@ -7856,7 +7885,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "supersededByRunId": "65bf9778-20f4-4455-a8bb-57c0e4e143ac"
     },
     {
       "id": "4c1ff9e325d73399",
@@ -7864,7 +7894,7 @@
       "writtenAt": "2026-09-26T20:39:34.325Z",
       "runId": "951b9d9b-0ccd-473e-b143-eb23eb42279d",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "25 Note(s) for Nicole have been unread for more than 7 days (oldest: 119d). Read or action them to resume publication.",
       "evidence": {
@@ -7878,7 +7908,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "supersededByRunId": "65bf9778-20f4-4455-a8bb-57c0e4e143ac"
     },
     {
       "id": "2b2acc4244005ab6",
@@ -7886,7 +7917,7 @@
       "writtenAt": "2026-09-27T20:54:19.518Z",
       "runId": "1156ac4b-0a24-45c2-bb60-c82b34b08f5c",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "26 Note(s) for Nicole have been unread for more than 7 days (oldest: 120d). Read or action them to resume publication.",
       "evidence": {
@@ -7900,7 +7931,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "supersededByRunId": "65bf9778-20f4-4455-a8bb-57c0e4e143ac"
     },
     {
       "id": "80e6f233d843ed14",
@@ -7908,7 +7940,7 @@
       "writtenAt": "2026-09-28T22:57:05.306Z",
       "runId": "86e79bc2-2b6b-4737-bb84-b3f6b235df70",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "27 Note(s) for Nicole have been unread for more than 7 days (oldest: 121d). Read or action them to resume publication.",
       "evidence": {
@@ -7922,7 +7954,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "supersededByRunId": "65bf9778-20f4-4455-a8bb-57c0e4e143ac"
     },
     {
       "id": "de8e1dfdd6e65def",
@@ -7930,7 +7963,7 @@
       "writtenAt": "2026-09-29T21:53:15.424Z",
       "runId": "ea72566a-4ea9-4ae3-8f5d-384eae530028",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "28 Note(s) for Nicole have been unread for more than 7 days (oldest: 122d). Read or action them to resume publication.",
       "evidence": {
@@ -7944,7 +7977,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "supersededByRunId": "65bf9778-20f4-4455-a8bb-57c0e4e143ac"
     },
     {
       "id": "f618c5d361252597",
@@ -7952,7 +7986,7 @@
       "writtenAt": "2026-09-30T21:53:03.815Z",
       "runId": "16d94b18-dde0-47e4-8206-bb9d1c3835fd",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "29 Note(s) for Nicole have been unread for more than 7 days (oldest: 123d). Read or action them to resume publication.",
       "evidence": {
@@ -7966,7 +8000,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "supersededByRunId": "65bf9778-20f4-4455-a8bb-57c0e4e143ac"
     },
     {
       "id": "5c0d70e575ab57b5",
@@ -7974,7 +8009,7 @@
       "writtenAt": "2026-10-01T22:21:19.454Z",
       "runId": "3b1737d0-a924-4af4-b859-485bca440c0f",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "30 Note(s) for Nicole have been unread for more than 7 days (oldest: 124d). Read or action them to resume publication.",
       "evidence": {
@@ -7988,7 +8023,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "supersededByRunId": "65bf9778-20f4-4455-a8bb-57c0e4e143ac"
     },
     {
       "id": "9d089ba55f022980",
@@ -7996,7 +8032,7 @@
       "writtenAt": "2026-10-02T21:50:14.180Z",
       "runId": "1218f7cf-c665-435b-ad96-6014278272e1",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "31 Note(s) for Nicole have been unread for more than 7 days (oldest: 125d). Read or action them to resume publication.",
       "evidence": {
@@ -8010,7 +8046,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "supersededByRunId": "65bf9778-20f4-4455-a8bb-57c0e4e143ac"
     },
     {
       "id": "5427cee9ee4fed49",
@@ -8018,7 +8055,7 @@
       "writtenAt": "2026-10-03T20:36:21.347Z",
       "runId": "cbb054ae-dfcb-42f8-a30c-bb7844d8db36",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "31 Note(s) for Nicole have been unread for more than 7 days (oldest: 126d). Read or action them to resume publication.",
       "evidence": {
@@ -8032,7 +8069,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "supersededByRunId": "65bf9778-20f4-4455-a8bb-57c0e4e143ac"
     },
     {
       "id": "cb2f73f95c2b4525",
@@ -8040,7 +8078,7 @@
       "writtenAt": "2026-10-04T20:52:57.762Z",
       "runId": "f2ca955c-0041-4c76-a0d6-6fbdc837cf2e",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "32 Note(s) for Nicole have been unread for more than 7 days (oldest: 127d). Read or action them to resume publication.",
       "evidence": {
@@ -8054,7 +8092,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "supersededByRunId": "65bf9778-20f4-4455-a8bb-57c0e4e143ac"
     },
     {
       "id": "4cbdb40e4e7fbf2e",
@@ -8062,7 +8101,7 @@
       "writtenAt": "2026-10-05T23:45:23.466Z",
       "runId": "6087aed1-ff79-4510-a680-964870826880",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "34 Note(s) for Nicole have been unread for more than 7 days (oldest: 128d). Read or action them to resume publication.",
       "evidence": {
@@ -8076,7 +8115,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "supersededByRunId": "65bf9778-20f4-4455-a8bb-57c0e4e143ac"
     },
     {
       "id": "420970ea8a0012d1",
@@ -8084,7 +8124,7 @@
       "writtenAt": "2026-10-06T22:21:00.583Z",
       "runId": "90de1207-e65a-4a5d-81fc-5d6cb47af926",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "35 Note(s) for Nicole have been unread for more than 7 days (oldest: 129d). Read or action them to resume publication.",
       "evidence": {
@@ -8098,7 +8138,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "supersededByRunId": "65bf9778-20f4-4455-a8bb-57c0e4e143ac"
     },
     {
       "id": "0f4a4cdb7b03ffea",
@@ -8106,7 +8147,7 @@
       "writtenAt": "2026-10-07T22:43:58.825Z",
       "runId": "406bcf26-2fb9-401f-acba-400f225022ee",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "36 Note(s) for Nicole have been unread for more than 7 days (oldest: 130d). Read or action them to resume publication.",
       "evidence": {
@@ -8120,7 +8161,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "supersededByRunId": "65bf9778-20f4-4455-a8bb-57c0e4e143ac"
     },
     {
       "id": "750883f6e70c1923",
@@ -8128,7 +8170,7 @@
       "writtenAt": "2026-10-08T22:55:03.762Z",
       "runId": "fa7ba6b1-8a02-4b8a-8a4b-ef0c6e5a9795",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "37 Note(s) for Nicole have been unread for more than 7 days (oldest: 131d). Read or action them to resume publication.",
       "evidence": {
@@ -8142,7 +8184,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "supersededByRunId": "65bf9778-20f4-4455-a8bb-57c0e4e143ac"
     },
     {
       "id": "102770cea6760bbf",
@@ -8150,7 +8193,7 @@
       "writtenAt": "2026-10-09T22:16:35.163Z",
       "runId": "3efd2ed8-445c-4c75-adc2-15ecc4ae1124",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "38 Note(s) for Nicole have been unread for more than 7 days (oldest: 132d). Read or action them to resume publication.",
       "evidence": {
@@ -8164,7 +8207,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "supersededByRunId": "65bf9778-20f4-4455-a8bb-57c0e4e143ac"
     },
     {
       "id": "0ae042d339d3982e",
@@ -8172,7 +8216,7 @@
       "writtenAt": "2026-10-10T21:10:39.897Z",
       "runId": "aa7e38e3-c0e4-4f54-bee4-b48eb43cb5d5",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "39 Note(s) for Nicole have been unread for more than 7 days (oldest: 133d). Read or action them to resume publication.",
       "evidence": {
@@ -8186,7 +8230,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "supersededByRunId": "65bf9778-20f4-4455-a8bb-57c0e4e143ac"
     },
     {
       "id": "6dd0d1dbc7399b0f",
@@ -8194,7 +8239,7 @@
       "writtenAt": "2026-10-11T21:29:48.085Z",
       "runId": "945c5e06-e3a7-467d-8d33-e2b03db5a081",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "40 Note(s) for Nicole have been unread for more than 7 days (oldest: 134d). Read or action them to resume publication.",
       "evidence": {
@@ -8208,7 +8253,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "supersededByRunId": "65bf9778-20f4-4455-a8bb-57c0e4e143ac"
     },
     {
       "id": "9a42adde02942533",
@@ -8216,7 +8262,7 @@
       "writtenAt": "2026-10-13T00:09:29.536Z",
       "runId": "7678decf-d625-4a44-a08f-0d695b597a82",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "41 Note(s) for Nicole have been unread for more than 7 days (oldest: 135d). Read or action them to resume publication.",
       "evidence": {
@@ -8230,7 +8276,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "supersededByRunId": "65bf9778-20f4-4455-a8bb-57c0e4e143ac"
     },
     {
       "id": "e516784c7c6c4cd2",
@@ -8238,7 +8285,7 @@
       "writtenAt": "2026-10-13T22:18:00.959Z",
       "runId": "24d25302-28dd-45b2-94c7-6b895278f29c",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "41 Note(s) for Nicole have been unread for more than 7 days (oldest: 136d). Read or action them to resume publication.",
       "evidence": {
@@ -8252,7 +8299,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "supersededByRunId": "65bf9778-20f4-4455-a8bb-57c0e4e143ac"
     },
     {
       "id": "7841be1722539213",
@@ -8260,7 +8308,7 @@
       "writtenAt": "2026-10-14T21:17:37.886Z",
       "runId": "4976c112-0e96-4b53-8935-c3679d6a3538",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "42 Note(s) for Nicole have been unread for more than 7 days (oldest: 137d). Read or action them to resume publication.",
       "evidence": {
@@ -8274,7 +8322,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "supersededByRunId": "65bf9778-20f4-4455-a8bb-57c0e4e143ac"
     },
     {
       "id": "68734fa8746fc2f0",
@@ -8282,7 +8331,7 @@
       "writtenAt": "2026-10-15T20:56:31.224Z",
       "runId": "4c737b2f-ec30-4f54-904c-39e4040c2624",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "43 Note(s) for Nicole have been unread for more than 7 days (oldest: 138d). Read or action them to resume publication.",
       "evidence": {
@@ -8296,7 +8345,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "supersededByRunId": "65bf9778-20f4-4455-a8bb-57c0e4e143ac"
     },
     {
       "id": "b6bd1c73008667c0",
@@ -9090,6 +9140,28 @@
         "sourceLabel": "Stratechery"
       },
       "suggestedAction": "Either revise the working definition to name the contestation (who uses it to mean what), or confirm this term doesn't warrant the contested treatment in this case."
+    },
+    {
+      "id": "171538073965491e",
+      "type": "run_paused",
+      "writtenAt": "2026-10-30T21:56:31.964Z",
+      "runId": "65bf9778-20f4-4455-a8bb-57c0e4e143ac",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Lexi run paused: unread_notes_over_7d",
+      "details": "2 Note(s) for Nicole have been unread for more than 7 days (oldest: 7d). Read or action them to resume publication.",
+      "evidence": {
+        "pauseReasons": [
+          {
+            "type": "unread_notes_over_7d",
+            "unreadCount": 2,
+            "oldestUnreadAgeDays": 7,
+            "oldestWrittenAt": "2026-10-23T21:00:16.038Z",
+            "details": "2 Note(s) for Nicole have been unread for more than 7 days (oldest: 7d). Read or action them to resume publication."
+          }
+        ]
+      },
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
     }
   ],
   "usedLinks": {
