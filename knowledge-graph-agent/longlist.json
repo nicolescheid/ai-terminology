@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-30T21:56:31.964Z",
+    "generatedAt": "2026-10-31T00:06:30.189Z",
     "entryCount": 305,
     "note": "Lexi-managed Tier 2 longlist — terms under observation, awaiting evidence to support promotion to the graph (Tier 1)."
   },
@@ -10500,7 +10500,10 @@
       "dateLastSeen": "2026-10-27T21:49:48.879Z",
       "sz": 14,
       "fullName": "Anthropic IPO (S-1 Filing)",
-      "proposalReason": "Re-sighting of the Anthropic IPO concept as framed by Stratechery; the piece appears to analyse compute cost burden versus profitability in depth, relevant to tracking AI lab business model evolution."
+      "proposalReason": "Re-sighting of the Anthropic IPO concept as framed by Stratechery; the piece appears to analyse compute cost burden versus profitability in depth, relevant to tracking AI lab business model evolution.",
+      "status": "promoted",
+      "promotedAt": "2026-10-31T00:06:31.298Z",
+      "promotedToGraphNodeId": "anthropic-ipo"
     },
     {
       "id": "investor-dilution-risk",

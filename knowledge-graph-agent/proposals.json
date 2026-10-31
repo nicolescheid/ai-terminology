@@ -1,9 +1,9 @@
 {
   "meta": {
-    "generatedAt": "2026-10-31T00:06:15.881Z",
+    "generatedAt": "2026-10-31T00:06:31.298Z",
     "pendingCount": 7,
-    "approvedCount": 1,
-    "appliedCount": 49,
+    "approvedCount": 0,
+    "appliedCount": 50,
     "rejectedCount": 1,
     "note": "Lexi proposals queue. Actions gated as PROPOSE land here as status: 'pending'. Edit a proposal's status to 'approved' or 'rejected' and run the apply step (TBD) to commit."
   },
@@ -3293,7 +3293,7 @@
       "action": "promote_to_graph",
       "gate": "propose",
       "proposedAt": "2026-10-30T21:56:33.211Z",
-      "status": "approved",
+      "status": "applied",
       "source": "promote-eligibility-scan",
       "target": {
         "kind": "longlist_entry",
@@ -3366,7 +3366,8 @@
       "digestN": 1,
       "approvedAt": "2026-10-31T00:06:15.881Z",
       "approvedBy": "nicole",
-      "decidedVia": "email-link"
+      "decidedVia": "email-link",
+      "appliedAt": "2026-10-31T00:06:31.298Z"
     }
   ],
   "usedLinks": {

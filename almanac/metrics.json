@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-10-30T21:56:42.236Z",
+  "generatedAt": "2026-10-31T00:06:31.426Z",
   "firstRunAt": "2026-04-27T01:07:31.335Z",
   "phase": 1,
   "headline": {
     "articlesRead": 280,
     "daysRunning": 187,
-    "longlistSize": 215,
-    "graphSize": 446
+    "longlistSize": 214,
+    "graphSize": 447
   },
   "thisWeek": {
     "articlesFetched": 47,
     "longlistAdded": 63,
     "sourcesAdded": 17,
-    "promotionsToGraph": 6,
+    "promotionsToGraph": 7,
     "proposalsQueued": 8,
     "auditFlags": 8,
-    "notesAdded": 12
+    "notesAdded": 13
   },
   "almostThere": [
     {
@@ -113,7 +113,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 10,
+      "daysOnLonglist": 11,
       "domains": [
         "huggingface.co"
       ],
@@ -129,7 +129,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 10,
+      "daysOnLonglist": 11,
       "domains": [
         "huggingface.co"
       ],
@@ -376,7 +376,7 @@
         "id": "business",
         "label": "Business Reality",
         "hex": "#48C888",
-        "count": 31
+        "count": 30
       },
       {
         "id": "work",
@@ -400,7 +400,7 @@
         "id": "companies",
         "label": "Companies",
         "hex": "#9090A8",
-        "count": 19
+        "count": 18
       },
       {
         "id": "security",
@@ -435,14 +435,14 @@
     ]
   },
   "velocity": {
-    "humanGated": 49,
+    "humanGated": 50,
     "autonomous": 0,
     "note": "All graph promotions and substantive edits are currently human-gated. Lexi proposes; Nicole approves."
   },
   "proposalsByStatus": {
-    "pending": 8,
+    "pending": 7,
     "approved": 0,
-    "applied": 49,
+    "applied": 50,
     "rejected": 1
   },
   "decisionsByCluster": {
@@ -475,7 +475,7 @@
       "rejected": 0
     },
     "companies": {
-      "approved": 8,
+      "approved": 9,
       "rejected": 0
     },
     "models": {
@@ -483,7 +483,7 @@
       "rejected": 0
     },
     "business": {
-      "approved": 7,
+      "approved": 8,
       "rejected": 0
     },
     "security": {

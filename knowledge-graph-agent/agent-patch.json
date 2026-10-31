@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-10-30T21:56:31.964Z",
+    "generatedAt": "2026-10-31T00:06:31.298Z",
     "sourceCount": 0,
     "note": "Agent-managed overlay. Graph-affecting changes are routed through the permissions matrix (actions.mjs) — see proposals.json for pending items."
   },
@@ -1506,6 +1506,37 @@
       ],
       "fullName": "Muse (Meta AI Agent)",
       "nodeType": "product"
+    },
+    {
+      "id": "anthropic-ipo",
+      "label": "Anthropic IPO",
+      "clusters": [
+        "business",
+        "companies"
+      ],
+      "sz": 14,
+      "def": "The public market debut of Anthropic via an S-1 registration filing, discussed here in the context of the company's compute cost structure, core business profitability, and competitive dynamics that may erode margins. As an AI safety-focused lab pursuing an IPO, Anthropic's S-1 is a primary financial disclosure document carrying significance for how AI lab economics are publicly understood.",
+      "rels": [
+        "anthropic-co",
+        "ai-capex",
+        "cost",
+        "circular-deals",
+        "ai-bubble",
+        "run-rate-revenue"
+      ],
+      "refs": [
+        {
+          "n": 1,
+          "src": "Stratechery, Tue, 27 Oct 2026 10:32:57 +0000",
+          "q": "Anthropic S-1, The Cost of Compute, Who Is Paying? Stratechery"
+        },
+        {
+          "n": 2,
+          "src": "Anthropic Newsroom",
+          "q": "Anthropic files S-1 with the SEC for proposed initial public offering Anthropic Newsroom"
+        }
+      ],
+      "fullName": "Anthropic IPO (S-1 Filing)"
     }
   ],
   "definitionOverrides": [
