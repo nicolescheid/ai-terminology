@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generatedAt": "2026-11-01T21:42:28.576Z",
+    "generatedAt": "2026-11-03T00:31:48.299Z",
     "unreadCount": 5,
-    "totalCount": 359,
+    "totalCount": 360,
     "note": "Notes for Nicole — Lexi's manager channel (spec §6). Mandatory entry types fire when their triggering condition is met; discretionary entries are observations Lexi thinks Nicole should see. Set status to 'read', 'actioned', or 'dismissed' as appropriate."
   },
   "entries": [
@@ -9216,7 +9216,7 @@
       "writtenAt": "2026-11-01T21:42:28.576Z",
       "runId": "4cf2385f-d686-4124-86c3-50013c56fd02",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "2 Note(s) for Nicole have been unread for more than 7 days (oldest: 9d). Read or action them to resume publication.",
       "evidence": {
@@ -9227,6 +9227,29 @@
             "oldestUnreadAgeDays": 9,
             "oldestWrittenAt": "2026-10-23T21:00:16.038Z",
             "details": "2 Note(s) for Nicole have been unread for more than 7 days (oldest: 9d). Read or action them to resume publication."
+          }
+        ]
+      },
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "supersededByRunId": "a4273aa0-025a-46df-86ab-00f81e60abba"
+    },
+    {
+      "id": "9102f1b0ce1651ed",
+      "type": "run_paused",
+      "writtenAt": "2026-11-03T00:31:48.299Z",
+      "runId": "a4273aa0-025a-46df-86ab-00f81e60abba",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Lexi run paused: unread_notes_over_7d",
+      "details": "3 Note(s) for Nicole have been unread for more than 7 days (oldest: 10d). Read or action them to resume publication.",
+      "evidence": {
+        "pauseReasons": [
+          {
+            "type": "unread_notes_over_7d",
+            "unreadCount": 3,
+            "oldestUnreadAgeDays": 10,
+            "oldestWrittenAt": "2026-10-23T21:00:16.038Z",
+            "details": "3 Note(s) for Nicole have been unread for more than 7 days (oldest: 10d). Read or action them to resume publication."
           }
         ]
       },
