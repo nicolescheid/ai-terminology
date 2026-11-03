@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-03T00:31:49.632Z",
+  "generatedAt": "2026-11-03T01:27:59.499Z",
   "firstRunAt": "2026-04-27T01:07:31.335Z",
   "phase": 1,
   "headline": {
     "articlesRead": 280,
-    "daysRunning": 190,
+    "daysRunning": 191,
     "longlistSize": 214,
     "graphSize": 447
   },
@@ -14,8 +14,8 @@
     "sourcesAdded": 9,
     "promotionsToGraph": 5,
     "proposalsQueued": 6,
-    "auditFlags": 0,
-    "notesAdded": 7
+    "auditFlags": 7,
+    "notesAdded": 14
   },
   "almostThere": [
     {
@@ -504,9 +504,9 @@
     }
   },
   "audit": {
-    "flagsTotal": 89,
+    "flagsTotal": 96,
     "flagsByType": {
-      "source_pattern": 89
+      "source_pattern": 96
     }
   },
   "costs": {
