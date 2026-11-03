@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generatedAt": "2026-11-03T01:27:58.083Z",
-    "unreadCount": 12,
+    "generatedAt": "2026-11-03T01:52:16.287Z",
+    "unreadCount": 5,
     "totalCount": 367,
     "note": "Notes for Nicole — Lexi's manager channel (spec §6). Mandatory entry types fire when their triggering condition is met; discretionary entries are observations Lexi thinks Nicole should see. Set status to 'read', 'actioned', or 'dismissed' as appropriate."
   },
@@ -9261,7 +9261,7 @@
       "writtenAt": "2026-11-03T01:27:58.083Z",
       "runId": "7cdf8112-2268-4dcc-af62-b4f45fa399e8",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Source pattern: domain 'stratechery.com' appears in 13 recent longlist entries",
       "details": "In the past 30 days, 13 longlist entries have at least one source from stratechery.com. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
       "evidence": {
@@ -9286,7 +9286,8 @@
         "recentEntryCount": 177
       },
       "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
-      "source": "auditor"
+      "source": "auditor",
+      "readAt": "2026-11-03T01:52:16.287Z"
     },
     {
       "id": "35fb86252c71b266",
@@ -9294,7 +9295,7 @@
       "writtenAt": "2026-11-03T01:27:58.083Z",
       "runId": "7cdf8112-2268-4dcc-af62-b4f45fa399e8",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Source pattern: domain 'simonwillison.net' appears in 22 recent longlist entries",
       "details": "In the past 30 days, 22 longlist entries have at least one source from simonwillison.net. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
       "evidence": {
@@ -9328,7 +9329,8 @@
         "recentEntryCount": 177
       },
       "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
-      "source": "auditor"
+      "source": "auditor",
+      "readAt": "2026-11-03T01:52:16.287Z"
     },
     {
       "id": "dcd22411cd16e904",
@@ -9336,7 +9338,7 @@
       "writtenAt": "2026-11-03T01:27:58.083Z",
       "runId": "7cdf8112-2268-4dcc-af62-b4f45fa399e8",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Source pattern: domain 'huggingface.co' appears in 40 recent longlist entries",
       "details": "In the past 30 days, 40 longlist entries have at least one source from huggingface.co. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
       "evidence": {
@@ -9388,7 +9390,8 @@
         "recentEntryCount": 177
       },
       "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
-      "source": "auditor"
+      "source": "auditor",
+      "readAt": "2026-11-03T01:52:16.287Z"
     },
     {
       "id": "02eef9b20cccd2eb",
@@ -9396,7 +9399,7 @@
       "writtenAt": "2026-11-03T01:27:58.083Z",
       "runId": "7cdf8112-2268-4dcc-af62-b4f45fa399e8",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Source pattern: domain 'theverge.com' appears in 34 recent longlist entries",
       "details": "In the past 30 days, 34 longlist entries have at least one source from theverge.com. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
       "evidence": {
@@ -9442,7 +9445,8 @@
         "recentEntryCount": 177
       },
       "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
-      "source": "auditor"
+      "source": "auditor",
+      "readAt": "2026-11-03T01:52:16.287Z"
     },
     {
       "id": "55da36953dbe1a88",
@@ -9450,7 +9454,7 @@
       "writtenAt": "2026-11-03T01:27:58.083Z",
       "runId": "7cdf8112-2268-4dcc-af62-b4f45fa399e8",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Source pattern: domain 'sloanreview.mit.edu' appears in 15 recent longlist entries",
       "details": "In the past 30 days, 15 longlist entries have at least one source from sloanreview.mit.edu. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
       "evidence": {
@@ -9477,7 +9481,8 @@
         "recentEntryCount": 177
       },
       "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
-      "source": "auditor"
+      "source": "auditor",
+      "readAt": "2026-11-03T01:52:16.287Z"
     },
     {
       "id": "67e06609867f2afe",
@@ -9485,7 +9490,7 @@
       "writtenAt": "2026-11-03T01:27:58.083Z",
       "runId": "7cdf8112-2268-4dcc-af62-b4f45fa399e8",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Adoption velocity: 'Anthropic IPO' hit 2 sources in 1d",
       "details": "This entry accumulated 2 sources within 1 day(s) of first sighting. Often legitimate for product launches, but rapid multi-sourcing from a tight source pool can also signal coordinated promotion. Source labels involved: Stratechery, Anthropic Newsroom.",
       "evidence": {
@@ -9502,7 +9507,8 @@
         "lastSourceTs": "2026-10-27T21:49:48.879Z"
       },
       "suggestedAction": "Cross-check the sources for shared authors or cross-citation. If sources are tightly coupled (same publication network, same author byline), treat as one source for promotion-eligibility purposes.",
-      "source": "auditor"
+      "source": "auditor",
+      "readAt": "2026-11-03T01:52:16.287Z"
     },
     {
       "id": "8235b9baf39cdf39",
@@ -9510,7 +9516,7 @@
       "writtenAt": "2026-11-03T01:27:58.083Z",
       "runId": "7cdf8112-2268-4dcc-af62-b4f45fa399e8",
       "phase": 1,
-      "status": "unread",
+      "status": "read",
       "subject": "Adoption velocity: 'GPT-6 Luna' hit 2 sources in 1d",
       "details": "This entry accumulated 2 sources within 1 day(s) of first sighting. Often legitimate for product launches, but rapid multi-sourcing from a tight source pool can also signal coordinated promotion. Source labels involved: Simon Willison's Weblog.",
       "evidence": {
@@ -9526,7 +9532,8 @@
         "lastSourceTs": "2026-10-28T23:19:46.493Z"
       },
       "suggestedAction": "Cross-check the sources for shared authors or cross-citation. If sources are tightly coupled (same publication network, same author byline), treat as one source for promotion-eligibility purposes.",
-      "source": "auditor"
+      "source": "auditor",
+      "readAt": "2026-11-03T01:52:16.287Z"
     }
   ],
   "usedLinks": {
@@ -9540,6 +9547,7 @@
     "t7Rw36bug8BM3HVf": "2026-10-26T23:09:29.734Z",
     "IyyvGjPhWzr-E5k2": "2026-10-28T23:19:41.154Z",
     "uoTLhJ7PQvJwCvGE": "2026-10-31T00:06:48.961Z",
-    "KNpfAbfMhTEFrrU5": "2026-10-31T00:07:02.422Z"
+    "KNpfAbfMhTEFrrU5": "2026-10-31T00:07:02.422Z",
+    "wPCbjBYLTmtPG696": "2026-11-03T01:52:16.287Z"
   }
 }
