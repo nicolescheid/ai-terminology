@@ -3,6 +3,7 @@
 // Routes:
 //   POST /api/mark-note     → handleMarkNote     (Basic Auth + GitHub commit)
 //   POST /api/mark-proposal → handleMarkProposal (Basic Auth + GitHub commit + workflow_dispatch on approve)
+//   POST /api/mark-must-read → handleMarkMustRead (Basic Auth + GitHub commit; one id or all unread)
 //   POST /api/ask-lexi      → handleAskLexi      (PUBLIC; streamed Anthropic response, persona = lexi-interlocutor-spec §2.7)
 //   POST /api/lexi/notify   → handleNotify       (Bearer LEXI_NOTIFY_TOKEN; GitHub Actions → email to Nicole)
 //   GET  /lexi/act          → confirm page for a signed email link (no state change)
@@ -41,7 +42,7 @@
 // callbacks.
 
 import {
-  NOTES_PATH, PROPOSALS_PATH,
+  NOTES_PATH, PROPOSALS_PATH, MUST_READS_PATH,
   commitJsonChange, refreshProposalsMeta, triggerLexiRunWorkflow,
   jsonError
 } from "./github.js";
@@ -51,6 +52,7 @@ import { handleInboundEmail } from "./lexi-mail/inbound.js";
 
 const VALID_NOTE_STATUSES     = new Set(["read", "actioned", "dismissed"]);
 const VALID_PROPOSAL_STATUSES = new Set(["approved", "rejected"]);
+const VALID_MUST_READ_STATUSES = new Set(["read", "dismissed"]);
 
 // Browser security headers (SEC-012). Static assets get these from the
 // _headers file; this covers everything the Worker answers itself, and
@@ -98,6 +100,12 @@ async function route(request, env, ctx) {
         return new Response("Method not allowed", { status: 405, headers: { Allow: "POST" } });
       }
       return handleMarkProposal(request, env);
+    }
+    if (url.pathname === "/api/mark-must-read") {
+      if (request.method !== "POST") {
+        return new Response("Method not allowed", { status: 405, headers: { Allow: "POST" } });
+      }
+      return handleMarkMustRead(request, env);
     }
     if (url.pathname === "/api/ask-lexi") {
       if (request.method !== "POST") {
@@ -165,6 +173,63 @@ async function handleMarkNote(request, env) {
       json.meta.generatedAt = now;
     },
     commitMessage: () => `Mark note ${id.slice(0, 8)}… as ${status}\n\nVia /api/mark-note from /manager dashboard.`
+  });
+}
+
+// Must-reads: Nicole's "I read it" / "not for me" for the articles Lexi
+// recommends. Same auth and commit path as mark-note. Body is
+// { id, status } for one article (id, or url for the backfilled entries
+// that have no id), or { all: true, status } for every unread one. Replaces running mark-must-reads.mjs by hand.
+async function handleMarkMustRead(request, env) {
+  // await works whether requireAuth is sync or async.
+  const authError = await requireAuth(request, env);
+  if (authError) return authError;
+
+  let body;
+  try { body = await request.json(); }
+  catch { return jsonError(400, "Invalid JSON body"); }
+  const { id, all, status } = body || {};
+  if (all !== true && (!id || typeof id !== "string")) {
+    return jsonError(400, "id (string) or all: true is required");
+  }
+  if (!VALID_MUST_READ_STATUSES.has(status)) {
+    return jsonError(400, `status must be one of: ${[...VALID_MUST_READ_STATUSES].join(", ")}`);
+  }
+
+  let changed = 0;
+  return commitJsonChange(env, {
+    path: MUST_READS_PATH,
+    workerLabel: "ai-terminology-mark-must-read-worker",
+    parseErrorContext: "must-reads.json",
+    mutate: (json) => {
+      const entries = json.entries || [];
+      const targets = all === true
+        ? entries.filter(e => e.status === "unread")
+        : entries.filter(e => (e.id || e.url) === id);  // backfilled entries have no id; their url is the key
+      if (all !== true && targets.length === 0) {
+        return { ok: false, status: 404, error: `Must-read id ${id} not found` };
+      }
+      const now = new Date().toISOString();
+      changed = 0;
+      for (const e of targets) {
+        if (e.status === status) continue;
+        e.status = status;
+        e.readAt = now;
+        changed++;
+      }
+      const unreadCount = entries.filter(e => e.status === "unread").length;
+      if (changed === 0) return { ok: true, noChange: true, payload: { changed: 0, status, unreadCount } };
+      return { ok: true, payload: { changed, status, readAt: now, unreadCount } };
+    },
+    refreshMeta: (json, now) => {
+      json.meta = json.meta || {};
+      json.meta.unreadCount = (json.entries || []).filter(e => e.status === "unread").length;
+      json.meta.totalCount = (json.entries || []).length;
+      json.meta.generatedAt = now;
+    },
+    commitMessage: () => all === true
+      ? `Mark ${changed} must-read(s) ${status}\n\nVia /api/mark-must-read from /manager dashboard.`
+      : `Mark must-read ${id.slice(0, 8)}… as ${status}\n\nVia /api/mark-must-read from /manager dashboard.`
   });
 }
 
