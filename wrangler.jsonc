@@ -17,7 +17,9 @@
   // Per-IP cap on the public /api/ask-lexi endpoint (free, built into Workers).
   // period must be 10 or 60 seconds. namespace_id is any account-unique number.
   "ratelimits": [
-    { "name": "LEXI_LIMITER", "namespace_id": "1002", "simple": { "limit": 8, "period": 60 } }
+    { "name": "LEXI_LIMITER", "namespace_id": "1002", "simple": { "limit": 8, "period": 60 } },
+    // Per-IP cap on the Basic-auth write endpoints /api/mark-* (SEC-029).
+    { "name": "AUTH_LIMITER", "namespace_id": "1006", "simple": { "limit": 20, "period": 60 } }
   ],
   // Lexi email channel (src/lexi-mail/). Sender restricted to lexi@; the domain
   // is onboarded to Cloudflare Email Sending. Inbound mail to lexi@ arrives via
