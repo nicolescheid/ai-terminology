@@ -1,0 +1,11 @@
+# Browser security headers for static assets (SEC-012, plan
+# C:\dev\security\plans\2026-10-22-zone-hardening.md Part C).
+# Worker-generated responses (/api/*, /lexi/act) get the same set from
+# withSecurityHeaders() in src/worker.js.
+# frame-ancestors 'self' rather than 'none' so same-site embeds keep working.
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Content-Security-Policy: frame-ancestors 'self'
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  X-Frame-Options: SAMEORIGIN
