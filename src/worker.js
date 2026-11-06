@@ -52,8 +52,39 @@ import { handleInboundEmail } from "./lexi-mail/inbound.js";
 const VALID_NOTE_STATUSES     = new Set(["read", "actioned", "dismissed"]);
 const VALID_PROPOSAL_STATUSES = new Set(["approved", "rejected"]);
 
+// Browser security headers (SEC-012). Static assets get these from the
+// _headers file; this covers everything the Worker answers itself, and
+// fills any gap on asset responses. Headers already present win.
+const SECURITY_HEADERS = {
+  "X-Content-Type-Options": "nosniff",
+  "Referrer-Policy": "strict-origin-when-cross-origin",
+  "Content-Security-Policy": "frame-ancestors 'self'",
+  "Permissions-Policy": "camera=(), microphone=(), geolocation=()",
+  "X-Frame-Options": "SAMEORIGIN"
+};
+
+function withSecurityHeaders(response) {
+  // Re-wrap so headers are mutable (asset and fetch() responses are
+  // immutable). Passing the body through keeps ask-lexi streaming.
+  const out = new Response(response.body, response);
+  for (const [name, value] of Object.entries(SECURITY_HEADERS)) {
+    if (!out.headers.has(name)) out.headers.set(name, value);
+  }
+  return out;
+}
+
 export default {
   async fetch(request, env, ctx) {
+    return withSecurityHeaders(await route(request, env, ctx));
+  },
+
+  // Email Routing: lexi@ai-terminology.com → this Worker.
+  async email(message, env, ctx) {
+    await handleInboundEmail(message, env, ctx);
+  }
+};
+
+async function route(request, env, ctx) {
     const url = new URL(request.url);
 
     if (url.pathname === "/api/mark-note") {
@@ -91,13 +122,7 @@ export default {
 
     // Static assets (HTML, CSS, JSON, images, etc.)
     return env.ASSETS.fetch(request);
-  },
-
-  // Email Routing: lexi@ai-terminology.com → this Worker.
-  async email(message, env, ctx) {
-    await handleInboundEmail(message, env, ctx);
-  }
-};
+}
 
 // ─────────────────────────────────────────────────────────────────────
 // Endpoint handlers — thin. Validate body; delegate to commitJsonChange.
