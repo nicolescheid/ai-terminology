@@ -45,6 +45,11 @@ export function detectGlobalPauseReasons(notes, config) {
       unreadCount: oldUnread.length,
       oldestUnreadAgeDays: ageDays,
       oldestWrittenAt,
+      // The notes that cause the pause, so the pause email can list them and
+      // its "mark read" link can clear them. Before this, the link only
+      // covered the run_paused note itself, so clicking it daily never
+      // lifted the pause (30 Oct to 6 Nov 2026).
+      noteIds: oldUnread.map(n => n.id),
       details: `${oldUnread.length} Note(s) for Nicole have been unread for more than 7 days (oldest: ${ageDays}d). Read or action them to resume publication.`
     });
   }

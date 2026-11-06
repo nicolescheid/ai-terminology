@@ -67,6 +67,18 @@ const CONTESTATION_MARKERS = [
  * in their own way without using a known marker phrase) are preferable to
  * false negatives.
  */
+// Whole-word match of a contested trigger inside a label. Substring matching
+// let short aliases fire inside ordinary words: "RAI" matched "tRAIning" and
+// "bRAIn", which wrote false contested-cluster notes (Oct 2026) and, left
+// unread, paused Lexi from 30 Oct. A trigger must now start and end at a
+// word boundary (letters and digits count as word characters).
+export function containsTrigger(candidate, trigger) {
+  if (!candidate || !trigger) return false;
+  if (candidate === trigger) return true;
+  const escaped = trigger.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  return new RegExp(`(^|[^a-z0-9])${escaped}($|[^a-z0-9])`, "i").test(candidate);
+}
+
 export function detectContestedOmission(termLabel, termFullName, workingDef, contestedTerms) {
   const candidates = [termLabel, termFullName].filter(Boolean).map(s => s.toLowerCase());
   const terms = contestedTerms?.terms || [];
@@ -78,7 +90,7 @@ export function detectContestedOmission(termLabel, termFullName, workingDef, con
       .filter(Boolean)
       .map(s => s.toLowerCase());
     const hit = triggers.some(trigger =>
-      candidates.some(c => c === trigger || c.includes(trigger))
+      candidates.some(c => containsTrigger(c, trigger))
     );
     if (hit) { matchedEntry = t; break; }
   }
