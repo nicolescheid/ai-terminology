@@ -78,10 +78,21 @@ export function createNotifier({ token = process.env.LEXI_NOTIFY_TOKEN, endpoint
       const newNotes = (notes?.entries || []).filter(n => n.runId === runId);
       if (newNotes.length === 0 && !paused) return { skipped: "no_news" };
       const lines = [];
+      // Notes that are holding the pause. They go in the email and in the
+      // "mark read" link, so one click on a pause email lifts the pause.
+      const blockingIds = new Set();
       if (paused) {
-        for (const r of pauseReasons || []) lines.push(`Paused (${r.type}): ${truncate(r.details, 300)}`);
+        for (const r of pauseReasons || []) {
+          lines.push(`Paused (${r.type}): ${truncate(r.details, 300)}`);
+          for (const id of r.noteIds || []) blockingIds.add(id);
+        }
+        const blocking = (notes?.entries || []).filter(n => blockingIds.has(n.id));
+        for (const n of blocking.slice(0, 15)) {
+          lines.push(`Waiting since ${String(n.writtenAt || "").slice(0, 10)} · ${TYPE_LABEL[n.type] || n.type}: ${truncate(n.subject, 200)}`);
+        }
+        if (blocking.length > 15) lines.push(`…and ${blocking.length - 15} more on /manager.`);
       }
-      for (const n of newNotes.slice(0, 15)) {
+      for (const n of newNotes.filter(n => !blockingIds.has(n.id)).slice(0, 15)) {
         lines.push(`${TYPE_LABEL[n.type] || n.type}: ${truncate(n.subject, 200)}${n.suggestedAction ? ` — ${truncate(n.suggestedAction, 200)}` : ""}`);
       }
       if (newNotes.length > 15) lines.push(`…and ${newNotes.length - 15} more on /manager.`);
@@ -91,7 +102,10 @@ export function createNotifier({ token = process.env.LEXI_NOTIFY_TOKEN, endpoint
         intro: `${newNotes.length} new note(s), ${unread} unread in total. Unread notes older than 7 days pause my runs.`,
         lines,
         link: { href: DASHBOARD_URL, label: "Open /manager" },
-        noteIds: newNotes.filter(n => n.status === "unread").map(n => n.id)
+        noteIds: [...new Set([
+          ...blockingIds,
+          ...newNotes.filter(n => n.status === "unread").map(n => n.id)
+        ])]
       });
     },
 

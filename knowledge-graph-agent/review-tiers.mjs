@@ -12,19 +12,20 @@
 // Pure functions; no I/O. Fail-safe: when in doubt the answer is "nicole".
 
 import { ACTIONS } from "./actions.mjs";
+import { containsTrigger } from "./notes.mjs";
 
 const auto = (reason) => ({ tier: "auto", tierReason: reason });
 const nicole = (reason) => ({ tier: "nicole", tierReason: reason });
 
 // Does this label/fullName touch a contested-cluster term? Same trigger rule
-// as notes.mjs detectContestedOmission (label or alias, case-insensitive
-// substring), but without the "def already names the contestation" escape:
+// as notes.mjs detectContestedOmission (label or alias, case-insensitive,
+// whole words via containsTrigger), but without the "def already names the contestation" escape:
 // a contested term always waits for Nicole, however well it's framed.
 export function matchContested(labels, contestedTerms) {
   const candidates = labels.filter(Boolean).map(s => s.toLowerCase());
   for (const t of contestedTerms?.terms || []) {
     const triggers = [t.label, ...(t.aliases || [])].filter(Boolean).map(s => s.toLowerCase());
-    if (triggers.some(tr => candidates.some(c => c === tr || c.includes(tr)))) return t.label;
+    if (triggers.some(tr => candidates.some(c => containsTrigger(c, tr)))) return t.label;
   }
   return null;
 }
