@@ -131,7 +131,7 @@ async function route(request, env, ctx) {
 async function handleMarkNote(request, env) {
   // Auth gate FIRST — preserves original precedence so unauthenticated
   // callers get 401, not 400, even when their body is also malformed.
-  const authError = requireAuth(request, env);
+  const authError = await requireAuth(request, env);
   if (authError) return authError;
 
   let body;
@@ -169,7 +169,7 @@ async function handleMarkNote(request, env) {
 }
 
 async function handleMarkProposal(request, env) {
-  const authError = requireAuth(request, env);
+  const authError = await requireAuth(request, env);
   if (authError) return authError;
 
   let body;
@@ -451,7 +451,23 @@ function buildProposalNote(status, dispatchResult) {
 // their body is also malformed — matches the original pre-refactor
 // precedence and avoids leaking endpoint-specific validation behaviour
 // to unauthenticated probers.
-function requireAuth(request, env) {
+async function requireAuth(request, env) {
+  // Throttle per IP before checking the password (SEC-029), so password
+  // guessing is capped at AUTH_LIMITER's rate. Counts every attempt, not
+  // only failures: the binding cannot peek, and one manager click is one
+  // request (plus one unauthenticated 401 on the first click of a session),
+  // so 20 a minute leaves room for real use. Per-colo, like LEXI_LIMITER.
+  // Skipped if the binding is absent (local dev without it).
+  if (env.AUTH_LIMITER) {
+    const ip = request.headers.get("cf-connecting-ip") || "unknown";
+    const { success } = await env.AUTH_LIMITER.limit({ key: ip });
+    if (!success) {
+      return new Response("Too many attempts. Wait a minute and try again.", {
+        status: 429,
+        headers: { "Retry-After": "60" }
+      });
+    }
+  }
   if (!checkBasicAuth(request.headers.get("Authorization"), env.MARK_NOTE_PASSWORD)) {
     return new Response("Unauthorized", {
       status: 401,
