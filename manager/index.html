@@ -247,6 +247,16 @@ function renderMustReads(mustReads) {
     "Unread ", el("strong", null, String(unread.length))));
   pills.appendChild(el("span", { class: "pill" }, "Total ", el("strong", null, String(all.length))));
   card.appendChild(pills);
+  if (unread.length > 0) {
+    const bulk = el("div", { class: "note-actions" });
+    const allBtn = el("button", { class: "mark-btn read", type: "button" }, "mark all " + unread.length + " read");
+    allBtn.addEventListener("click", () => {
+      if (!window.confirm("Mark all " + unread.length + " unread must-reads as read?")) return;
+      markMustRead({ all: true }, "read", allBtn, card);
+    });
+    bulk.appendChild(allBtn);
+    card.appendChild(bulk);
+  }
 
   if (all.length === 0) {
     card.appendChild(el("div", { class: "empty" },
@@ -281,6 +291,15 @@ function renderMustReads(mustReads) {
     if (e.novelTermsInArticle > 0) {
       body.appendChild(el("div", { class: "mr-meta" },
         e.novelTermsInArticle + " novel term" + (e.novelTermsInArticle === 1 ? "" : "s") + " surfaced from this article."));
+    }
+    if (e.status === "unread") {
+      const actions = el("div", { class: "note-actions" });
+      for (const [target, label] of [["read", "mark read"], ["dismissed", "not for me"]]) {
+        const btn = el("button", { class: "mark-btn " + target, type: "button" }, label);
+        btn.addEventListener("click", () => markMustRead({ id: e.id || e.url }, target, btn, body));
+        actions.appendChild(btn);
+      }
+      body.appendChild(actions);
     }
     row.appendChild(body);
     card.appendChild(row);
@@ -377,6 +396,39 @@ async function markNote(noteId, status, clickedBtn, bodyEl) {
     actionsEl.remove();
     bodyEl.appendChild(el("div", { class: "mark-indicator" },
       "Marked as " + status + ". Live state catches up after the redeploy (~30s)."));
+  } catch (err) {
+    for (const b of buttons) b.disabled = false;
+    bodyEl.appendChild(el("div", { class: "mark-error" }, "Failed: " + err.message));
+  }
+}
+
+// Mark one must-read ({ id }) or every unread one ({ all: true }) via the
+// /api/mark-must-read Worker endpoint. Same Basic Auth and optimistic-UI
+// pattern as markNote.
+async function markMustRead(target, status, clickedBtn, bodyEl) {
+  const actionsEl = clickedBtn.parentElement;
+  const buttons = actionsEl.querySelectorAll("button");
+  for (const b of buttons) b.disabled = true;
+  for (const e of bodyEl.querySelectorAll(".mark-error")) e.remove();
+
+  try {
+    const resp = await fetch("/api/mark-must-read", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({ ...target, status })
+    });
+    if (resp.status === 401) {
+      throw new Error("Authentication required (or wrong password). Reload the page to re-prompt.");
+    }
+    if (!resp.ok) {
+      const errText = await resp.text();
+      throw new Error("HTTP " + resp.status + ": " + errText.slice(0, 200));
+    }
+    const data = await resp.json().catch(() => ({}));
+    actionsEl.remove();
+    const what = target.all ? (data.changed ?? "All") + " marked " + status : "Marked " + (status === "dismissed" ? "not for me" : status);
+    bodyEl.appendChild(el("div", { class: "mark-indicator" },
+      what + ". Live state catches up after the redeploy (~30s)."));
   } catch (err) {
     for (const b of buttons) b.disabled = false;
     bodyEl.appendChild(el("div", { class: "mark-error" }, "Failed: " + err.message));

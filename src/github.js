@@ -11,6 +11,7 @@ export const REPO_NAME  = "ai-terminology";
 export const NOTES_PATH     = "knowledge-graph-agent/notes-for-nicole.json";
 export const PROPOSALS_PATH = "knowledge-graph-agent/proposals.json";
 export const DIGESTS_PATH   = "knowledge-graph-agent/digests.json";
+export const MUST_READS_PATH = "knowledge-graph-agent/must-reads.json";
 
 function ghHeaders(env, label) {
   return {

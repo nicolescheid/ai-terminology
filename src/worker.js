@@ -3,6 +3,7 @@
 // Routes:
 //   POST /api/mark-note     → handleMarkNote     (Basic Auth + GitHub commit)
 //   POST /api/mark-proposal → handleMarkProposal (Basic Auth + GitHub commit + workflow_dispatch on approve)
+//   POST /api/mark-must-read → handleMarkMustRead (Basic Auth + GitHub commit; one id or all unread)
 //   POST /api/ask-lexi      → handleAskLexi      (PUBLIC; streamed Anthropic response, persona = lexi-interlocutor-spec §2.7)
 //   POST /api/lexi/notify   → handleNotify       (Bearer LEXI_NOTIFY_TOKEN; GitHub Actions → email to Nicole)
 //   GET  /lexi/act          → confirm page for a signed email link (no state change)
@@ -41,7 +42,7 @@
 // callbacks.
 
 import {
-  NOTES_PATH, PROPOSALS_PATH,
+  NOTES_PATH, PROPOSALS_PATH, MUST_READS_PATH,
   commitJsonChange, refreshProposalsMeta, triggerLexiRunWorkflow,
   jsonError
 } from "./github.js";
@@ -51,6 +52,7 @@ import { handleInboundEmail } from "./lexi-mail/inbound.js";
 
 const VALID_NOTE_STATUSES     = new Set(["read", "actioned", "dismissed"]);
 const VALID_PROPOSAL_STATUSES = new Set(["approved", "rejected"]);
+const VALID_MUST_READ_STATUSES = new Set(["read", "dismissed"]);
 
 // Browser security headers (SEC-012). Static assets get these from the
 // _headers file; this covers everything the Worker answers itself, and
@@ -98,6 +100,12 @@ async function route(request, env, ctx) {
         return new Response("Method not allowed", { status: 405, headers: { Allow: "POST" } });
       }
       return handleMarkProposal(request, env);
+    }
+    if (url.pathname === "/api/mark-must-read") {
+      if (request.method !== "POST") {
+        return new Response("Method not allowed", { status: 405, headers: { Allow: "POST" } });
+      }
+      return handleMarkMustRead(request, env);
     }
     if (url.pathname === "/api/ask-lexi") {
       if (request.method !== "POST") {
@@ -165,6 +173,63 @@ async function handleMarkNote(request, env) {
       json.meta.generatedAt = now;
     },
     commitMessage: () => `Mark note ${id.slice(0, 8)}… as ${status}\n\nVia /api/mark-note from /manager dashboard.`
+  });
+}
+
+// Must-reads: Nicole's "I read it" / "not for me" for the articles Lexi
+// recommends. Same auth and commit path as mark-note. Body is
+// { id, status } for one article (id, or url for the backfilled entries
+// that have no id), or { all: true, status } for every unread one. Replaces running mark-must-reads.mjs by hand.
+async function handleMarkMustRead(request, env) {
+  // await works whether requireAuth is sync or async.
+  const authError = await requireAuth(request, env);
+  if (authError) return authError;
+
+  let body;
+  try { body = await request.json(); }
+  catch { return jsonError(400, "Invalid JSON body"); }
+  const { id, all, status } = body || {};
+  if (all !== true && (!id || typeof id !== "string")) {
+    return jsonError(400, "id (string) or all: true is required");
+  }
+  if (!VALID_MUST_READ_STATUSES.has(status)) {
+    return jsonError(400, `status must be one of: ${[...VALID_MUST_READ_STATUSES].join(", ")}`);
+  }
+
+  let changed = 0;
+  return commitJsonChange(env, {
+    path: MUST_READS_PATH,
+    workerLabel: "ai-terminology-mark-must-read-worker",
+    parseErrorContext: "must-reads.json",
+    mutate: (json) => {
+      const entries = json.entries || [];
+      const targets = all === true
+        ? entries.filter(e => e.status === "unread")
+        : entries.filter(e => (e.id || e.url) === id);  // backfilled entries have no id; their url is the key
+      if (all !== true && targets.length === 0) {
+        return { ok: false, status: 404, error: `Must-read id ${id} not found` };
+      }
+      const now = new Date().toISOString();
+      changed = 0;
+      for (const e of targets) {
+        if (e.status === status) continue;
+        e.status = status;
+        e.readAt = now;
+        changed++;
+      }
+      const unreadCount = entries.filter(e => e.status === "unread").length;
+      if (changed === 0) return { ok: true, noChange: true, payload: { changed: 0, status, unreadCount } };
+      return { ok: true, payload: { changed, status, readAt: now, unreadCount } };
+    },
+    refreshMeta: (json, now) => {
+      json.meta = json.meta || {};
+      json.meta.unreadCount = (json.entries || []).filter(e => e.status === "unread").length;
+      json.meta.totalCount = (json.entries || []).length;
+      json.meta.generatedAt = now;
+    },
+    commitMessage: () => all === true
+      ? `Mark ${changed} must-read(s) ${status}\n\nVia /api/mark-must-read from /manager dashboard.`
+      : `Mark must-read ${id.slice(0, 8)}… as ${status}\n\nVia /api/mark-must-read from /manager dashboard.`
   });
 }
 
@@ -452,6 +517,22 @@ function buildProposalNote(status, dispatchResult) {
 // precedence and avoids leaking endpoint-specific validation behaviour
 // to unauthenticated probers.
 async function requireAuth(request, env) {
+  // Cross-site request forgery guard (SEC-043). Browsers resend cached Basic
+  // Auth credentials on any request to this origin, including a text/plain
+  // form posted from another site, and the handlers parse the body as JSON
+  // whatever its type. So: refuse anything the browser marks as not
+  // same-origin, any foreign Origin, and any non-JSON body. The manager page
+  // sends same-origin JSON and is unaffected. Runs before the limiter so
+  // forged requests don't spend Nicole's attempts.
+  const site = request.headers.get("sec-fetch-site");
+  if (site && site !== "same-origin") return new Response("Forbidden", { status: 403 });
+  const origin = request.headers.get("origin");
+  if (origin && origin !== new URL(request.url).origin) return new Response("Forbidden", { status: 403 });
+  const contentType = request.headers.get("content-type") || "";
+  if (!contentType.toLowerCase().startsWith("application/json")) {
+    return new Response("Content-Type must be application/json", { status: 415 });
+  }
+
   // Throttle per IP before checking the password (SEC-029), so password
   // guessing is capped at AUTH_LIMITER's rate. Counts every attempt, not
   // only failures: the binding cannot peek, and one manager click is one
@@ -468,7 +549,7 @@ async function requireAuth(request, env) {
       });
     }
   }
-  if (!checkBasicAuth(request.headers.get("Authorization"), env.MARK_NOTE_PASSWORD)) {
+  if (!(await checkBasicAuth(request.headers.get("Authorization"), env.MARK_NOTE_PASSWORD))) {
     return new Response("Unauthorized", {
       status: 401,
       headers: { "WWW-Authenticate": 'Basic realm="ai-terminology manager"' }
@@ -480,7 +561,7 @@ async function requireAuth(request, env) {
   return null;
 }
 
-function checkBasicAuth(authHeader, expectedPassword) {
+async function checkBasicAuth(authHeader, expectedPassword) {
   if (!expectedPassword) return false;          // misconfigured: secret not set → all requests denied
   if (!authHeader || !authHeader.startsWith("Basic ")) return false;
   let decoded;
@@ -488,12 +569,16 @@ function checkBasicAuth(authHeader, expectedPassword) {
   const colonIdx = decoded.indexOf(":");
   if (colonIdx < 0) return false;
   const password = decoded.slice(colonIdx + 1);  // username ignored — only password matters
-  // Constant-time-ish comparison — close enough for shared-password use.
-  if (password.length !== expectedPassword.length) return false;
+  // Compare SHA-256 digests byte by byte: both are always 32 bytes, so the
+  // time taken no longer reveals the password's length (SEC-029 residual).
+  const enc = new TextEncoder();
+  const [a, b] = await Promise.all([
+    crypto.subtle.digest("SHA-256", enc.encode(password)),
+    crypto.subtle.digest("SHA-256", enc.encode(expectedPassword))
+  ]);
+  const x = new Uint8Array(a), y = new Uint8Array(b);
   let mismatch = 0;
-  for (let i = 0; i < password.length; i++) {
-    mismatch |= password.charCodeAt(i) ^ expectedPassword.charCodeAt(i);
-  }
+  for (let i = 0; i < x.length; i++) mismatch |= x[i] ^ y[i];
   return mismatch === 0;
 }
 

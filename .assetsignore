@@ -57,3 +57,6 @@ package-lock.json
 # Internal handoff / collaboration docs — not user-facing.
 HANDOFF.md
 CLAUDE.md
+
+# Worker tests (npm test). Not user-facing.
+test
