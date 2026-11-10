@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T01:11:48.735Z",
+  "generatedAt": "2026-11-10T01:54:33.742Z",
   "firstRunAt": "2026-04-27T01:07:31.335Z",
   "phase": 1,
   "headline": {
@@ -14,8 +14,8 @@
     "sourcesAdded": 0,
     "promotionsToGraph": 0,
     "proposalsQueued": 0,
-    "auditFlags": 7,
-    "notesAdded": 14
+    "auditFlags": 0,
+    "notesAdded": 7
   },
   "almostThere": [
     {
