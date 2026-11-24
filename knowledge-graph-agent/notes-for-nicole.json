@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generatedAt": "2026-11-24T03:49:14.204Z",
-    "unreadCount": 11,
-    "totalCount": 394,
+    "generatedAt": "2026-11-24T04:13:33.447Z",
+    "unreadCount": 14,
+    "totalCount": 397,
     "note": "Notes for Nicole — Lexi's manager channel (spec §6). Mandatory entry types fire when their triggering condition is met; discretionary entries are observations Lexi thinks Nicole should see. Set status to 'read', 'actioned', or 'dismissed' as appropriate."
   },
   "entries": [
@@ -10248,6 +10248,76 @@
         ]
       },
       "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+    },
+    {
+      "id": "ce08619b5ed5e303",
+      "type": "source_pattern",
+      "writtenAt": "2026-11-24T04:13:33.447Z",
+      "runId": "9808b73f-c269-43b2-9e82-38fcb2af5695",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Source pattern: domain 'blog.google' appears in 3 recent longlist entries",
+      "details": "In the past 30 days, 3 longlist entries have at least one source from blog.google. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
+      "evidence": {
+        "check": "cross_temporal_domain_share",
+        "domain": "blog.google",
+        "entryIds": [
+          "ai-quests",
+          "connectomics",
+          "k12-ai-education"
+        ],
+        "windowDays": 30,
+        "recentEntryCount": 57
+      },
+      "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
+      "source": "auditor"
+    },
+    {
+      "id": "cc15b6f636152c09",
+      "type": "source_pattern",
+      "writtenAt": "2026-11-24T04:13:33.447Z",
+      "runId": "9808b73f-c269-43b2-9e82-38fcb2af5695",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Source pattern: domain 'anthropic.com' appears in 2 recent longlist entries",
+      "details": "In the past 30 days, 2 longlist entries have at least one source from anthropic.com. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
+      "evidence": {
+        "check": "cross_temporal_domain_share",
+        "domain": "anthropic.com",
+        "entryIds": [
+          "anthropic-ipo",
+          "public-benefit-corporation"
+        ],
+        "windowDays": 30,
+        "recentEntryCount": 57
+      },
+      "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
+      "source": "auditor"
+    },
+    {
+      "id": "26d3f2e67a844639",
+      "type": "source_pattern",
+      "writtenAt": "2026-11-24T04:13:33.447Z",
+      "runId": "9808b73f-c269-43b2-9e82-38fcb2af5695",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Source pattern: domain 'simonwillison.net' appears in 5 recent longlist entries",
+      "details": "In the past 30 days, 5 longlist entries have at least one source from simonwillison.net. This isn't necessarily wrong — official-source feeds naturally cluster — but it's a signal worth checking, especially if these entries also share authors or were promoted in close temporal proximity.",
+      "evidence": {
+        "check": "cross_temporal_domain_share",
+        "domain": "simonwillison.net",
+        "entryIds": [
+          "gpt61-terra",
+          "gpt6-luna",
+          "multilingual-embedding-model",
+          "llm-geographic-classification",
+          "sev-0-shipping-threshold"
+        ],
+        "windowDays": 30,
+        "recentEntryCount": 57
+      },
+      "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
+      "source": "auditor"
     }
   ],
   "usedLinks": {
