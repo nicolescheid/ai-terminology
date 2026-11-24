@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-22T23:15:00.030Z",
+  "generatedAt": "2026-11-24T03:49:15.211Z",
   "firstRunAt": "2026-04-27T01:07:31.335Z",
   "phase": 1,
   "headline": {
     "articlesRead": 280,
-    "daysRunning": 210,
+    "daysRunning": 212,
     "longlistSize": 214,
     "graphSize": 447
   },
@@ -14,8 +14,8 @@
     "sourcesAdded": 0,
     "promotionsToGraph": 0,
     "proposalsQueued": 0,
-    "auditFlags": 6,
-    "notesAdded": 13
+    "auditFlags": 0,
+    "notesAdded": 7
   },
   "almostThere": [
     {
@@ -27,7 +27,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 2,
-      "daysOnLonglist": 202,
+      "daysOnLonglist": 203,
       "domains": [
         "openai.com",
         "simonwillison.net"
@@ -45,7 +45,7 @@
       ],
       "sourceCount": 10,
       "independentSources": 1,
-      "daysOnLonglist": 173,
+      "daysOnLonglist": 174,
       "domains": [
         "stratechery.com"
       ],
@@ -62,7 +62,7 @@
       ],
       "sourceCount": 4,
       "independentSources": 1,
-      "daysOnLonglist": 33,
+      "daysOnLonglist": 34,
       "domains": [
         "simonwillison.net"
       ],
@@ -79,7 +79,7 @@
       ],
       "sourceCount": 4,
       "independentSources": 1,
-      "daysOnLonglist": 30,
+      "daysOnLonglist": 31,
       "domains": [
         "simonwillison.net"
       ],
@@ -96,7 +96,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 37,
+      "daysOnLonglist": 38,
       "domains": [
         "stratechery.com"
       ],
@@ -113,7 +113,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 34,
+      "daysOnLonglist": 35,
       "domains": [
         "huggingface.co"
       ],
@@ -129,7 +129,7 @@
       ],
       "sourceCount": 3,
       "independentSources": 1,
-      "daysOnLonglist": 34,
+      "daysOnLonglist": 35,
       "domains": [
         "huggingface.co"
       ],
@@ -146,7 +146,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 177,
+      "daysOnLonglist": 178,
       "domains": [
         "normaltech.ai"
       ],
@@ -163,7 +163,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 177,
+      "daysOnLonglist": 178,
       "domains": [
         "normaltech.ai"
       ],
@@ -180,7 +180,7 @@
       ],
       "sourceCount": 2,
       "independentSources": 1,
-      "daysOnLonglist": 174,
+      "daysOnLonglist": 175,
       "domains": [
         "simonwillison.net"
       ],
