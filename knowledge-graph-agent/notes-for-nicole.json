@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generatedAt": "2026-11-24T04:13:33.447Z",
+    "generatedAt": "2026-11-25T01:54:59.202Z",
     "unreadCount": 14,
-    "totalCount": 397,
+    "totalCount": 398,
     "note": "Notes for Nicole — Lexi's manager channel (spec §6). Mandatory entry types fire when their triggering condition is met; discretionary entries are observations Lexi thinks Nicole should see. Set status to 'read', 'actioned', or 'dismissed' as appropriate."
   },
   "entries": [
@@ -10233,7 +10233,7 @@
       "writtenAt": "2026-11-24T03:49:14.204Z",
       "runId": "dcdaa894-0d74-4158-9edc-1cdc3eb98ac6",
       "phase": 1,
-      "status": "unread",
+      "status": "dismissed",
       "subject": "Lexi run paused: unread_notes_over_7d",
       "details": "10 Note(s) for Nicole have been unread for more than 7 days (oldest: 31d). Read or action them to resume publication.",
       "evidence": {
@@ -10247,7 +10247,8 @@
           }
         ]
       },
-      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally.",
+      "supersededByRunId": "23355e3d-7673-4f84-bc2c-06be6beee969"
     },
     {
       "id": "ce08619b5ed5e303",
@@ -10318,6 +10319,28 @@
       },
       "suggestedAction": "Skim the listed entries: are they describing genuinely new vocabulary, or different framings of the same underlying concept from the same source-network? If the latter, consider conflating or holding for additional independent sources before promotion.",
       "source": "auditor"
+    },
+    {
+      "id": "9c56f5575dcc2030",
+      "type": "run_paused",
+      "writtenAt": "2026-11-25T01:54:59.202Z",
+      "runId": "23355e3d-7673-4f84-bc2c-06be6beee969",
+      "phase": 1,
+      "status": "unread",
+      "subject": "Lexi run paused: unread_notes_over_7d",
+      "details": "10 Note(s) for Nicole have been unread for more than 7 days (oldest: 32d). Read or action them to resume publication.",
+      "evidence": {
+        "pauseReasons": [
+          {
+            "type": "unread_notes_over_7d",
+            "unreadCount": 10,
+            "oldestUnreadAgeDays": 32,
+            "oldestWrittenAt": "2026-10-23T21:00:16.038Z",
+            "details": "10 Note(s) for Nicole have been unread for more than 7 days (oldest: 32d). Read or action them to resume publication."
+          }
+        ]
+      },
+      "suggestedAction": "Read or action the pending notes in notes-for-nicole.json (set status to 'read', 'actioned', or 'dismissed'). Once no unread notes are older than 7 days, the next run will resume normally."
     }
   ],
   "usedLinks": {
